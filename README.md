@@ -1,1 +1,3 @@
-# cl_st3_arianne
+# Corpus Linguistics - Study 3 - Arianne
+
+## Phase 1 - Data Collection and Preprocessing
