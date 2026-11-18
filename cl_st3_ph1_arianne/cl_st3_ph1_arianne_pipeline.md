@@ -11,7 +11,7 @@ The following seed terms are defined for selecting texts from GETTR, NOW, and Tw
 - Global Warming
 - Climate Change
 - Climate Emergency
-- Climate Crises
+- Climate Crisis
 
 Search precision validation is pending.
 
