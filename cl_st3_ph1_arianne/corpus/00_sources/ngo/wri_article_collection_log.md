@@ -56,7 +56,7 @@ Save each article as `wri-pNN-SS.html`, where `NN` is the saved listing page and
 | wri-p24-01.html |           24 | 2019-09-04   | https://www.wri.org/insights/climate-disasters-are-getting-worse-heres-how-developing-countries-are-insuring-against |
 | wri-p24-02.html |           24 | 2019-09-19   | https://www.wri.org/insights/low-carbon-cities-are-24-trillion-opportunity                                           |
 | wri-p23-01.html |           23 | 2019-10-15   | https://www.wri.org/insights/so-far-green-bonds-fail-raise-much-money-resilience-climate-resilience-principles-aim   |
-| wri-p23-02.html |           23 | 2019-11-18   | https://www.wri.org/insights/pour-la-durabilite-de-la-production-du-cacao-les-pays-et-les-societes-doivent-sengager  |
+| wri-p23-02.html |           23 | 2019-11-08   | https://www.wri.org/insights/us-climate-action-week-hope-amidst-despair  |
 | wri-p22-01.html |           22 | 2020-01-30   | https://www.wri.org/insights/2020-budget-shows-progress-climate-finance-us-continues-fall-behind-peers               |
 | wri-p22-02.html |           22 | 2020-01-15   | https://www.wri.org/insights/2020-could-be-year-carbon-removal-takes                                                 |
 | wri-p21-01.html |           21 | 2020-03-09   | https://www.wri.org/insights/how-can-financial-institutions-deliver-paris-agreement                                  |
