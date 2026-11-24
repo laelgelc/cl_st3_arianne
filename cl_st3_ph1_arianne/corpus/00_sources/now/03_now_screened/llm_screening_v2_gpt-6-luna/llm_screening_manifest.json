@@ -1,8 +1,8 @@
 {
-  "run_id": "20261124T210132Z_876f0616",
+  "run_id": "20261124T213151Z_e23ba845",
   "programme": "llm_screening.py",
-  "start_time": "2026-11-24T21:01:32Z",
-  "end_time": "2026-11-24T21:02:04Z",
+  "start_time": "2026-11-24T21:31:51Z",
+  "end_time": "2026-11-24T21:32:20Z",
   "status": "success",
   "paths": {
     "manifest": "02_now_organised_reconciled/climate_now.ndjson",
@@ -15,10 +15,10 @@
     "invalid_responses_ndjson": "03_now_screened/llm_screening_v2_gpt-6-luna/llm_screening_invalid_responses.ndjson",
     "summary_file": "03_now_screened/llm_screening_v2_gpt-6-luna/llm_screening_summary.json",
     "manifest_file": "03_now_screened/llm_screening_v2_gpt-6-luna/llm_screening_manifest.json",
-    "timestamped_manifest_file": "03_now_screened/llm_screening_v2_gpt-6-luna/llm_screening_manifest_20261124T210132Z_876f0616.json"
+    "timestamped_manifest_file": "03_now_screened/llm_screening_v2_gpt-6-luna/llm_screening_manifest_20261124T213151Z_e23ba845.json"
   },
   "environment": {
-    "env_file": "/home/eyamrog/PycharmProjects/cl_st3_arianne/cl_st3_ph1_arianne/env/.env",
+    "env_file": "/home/ubuntu/cl_st3_arianne/cl_st3_ph1_arianne/env/.env",
     "env_file_found": true,
     "openai_api_key_available": true,
     "openai_api_key_source": "env_file_or_process_environment",
@@ -27,13 +27,13 @@
   "model_configuration": {
     "model": "gpt-6-luna",
     "temperature": 0.0,
-    "max_output_tokens": 500,
+    "max_output_tokens": 1000,
     "temperature_sent_to_api": false
   },
   "processing": {
-    "workers": 1,
-    "limit": 10,
-    "resume": false,
+    "workers": 20,
+    "limit": 200,
+    "resume": true,
     "reprocess": false,
     "dry_run": false,
     "max_retries": 2,
@@ -46,90 +46,1420 @@
   },
   "counts": {
     "manifest_rows_total": 155597,
-    "articles_planned": 10,
-    "articles_succeeded": 10,
+    "articles_planned": 200,
+    "articles_succeeded": 190,
     "articles_failed": 0,
     "articles_invalid_response": 0,
-    "articles_skipped_existing": 0,
+    "articles_skipped_existing": 10,
     "articles_dry_run": 0,
-    "category_core": 3,
-    "category_peripheral": 4,
-    "category_exclude": 3
+    "category_core": 75,
+    "category_peripheral": 91,
+    "category_exclude": 34
   },
   "usage_totals": {
-    "input_tokens": 16447,
-    "output_tokens": 2555,
-    "total_tokens": 19002
+    "input_tokens": 295321,
+    "output_tokens": 50322,
+    "total_tokens": 345643
   },
   "articles": [
     {
       "article_id": "10000261",
-      "status": "success",
+      "status": "skipped_existing",
       "category": "CORE",
       "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10000261.json",
       "error": null
     },
     {
       "article_id": "10000458",
-      "status": "success",
+      "status": "skipped_existing",
       "category": "PERIPHERAL",
       "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10000458.json",
       "error": null
     },
     {
       "article_id": "10000464",
-      "status": "success",
+      "status": "skipped_existing",
       "category": "EXCLUDE",
       "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10000464.json",
       "error": null
     },
     {
       "article_id": "10001171",
-      "status": "success",
+      "status": "skipped_existing",
       "category": "EXCLUDE",
       "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/za/10001171.json",
       "error": null
     },
     {
       "article_id": "10001417",
-      "status": "success",
+      "status": "skipped_existing",
       "category": "EXCLUDE",
       "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/gh/10001417.json",
       "error": null
     },
     {
       "article_id": "10002764",
-      "status": "success",
+      "status": "skipped_existing",
       "category": "CORE",
       "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/jm/10002764.json",
       "error": null
     },
     {
       "article_id": "10002857",
-      "status": "success",
+      "status": "skipped_existing",
       "category": "PERIPHERAL",
       "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/in/10002857.json",
       "error": null
     },
     {
       "article_id": "10002943",
-      "status": "success",
+      "status": "skipped_existing",
       "category": "PERIPHERAL",
       "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/in/10002943.json",
       "error": null
     },
     {
       "article_id": "10002963",
-      "status": "success",
-      "category": "CORE",
+      "status": "skipped_existing",
+      "category": "PERIPHERAL",
       "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/in/10002963.json",
       "error": null
     },
     {
       "article_id": "10002976",
-      "status": "success",
+      "status": "skipped_existing",
       "category": "PERIPHERAL",
       "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/in/10002976.json",
+      "error": null
+    },
+    {
+      "article_id": "10003184",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/in/10003184.json",
+      "error": null
+    },
+    {
+      "article_id": "10003325",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/in/10003325.json",
+      "error": null
+    },
+    {
+      "article_id": "10003571",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/in/10003571.json",
+      "error": null
+    },
+    {
+      "article_id": "10003790",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/lk/10003790.json",
+      "error": null
+    },
+    {
+      "article_id": "10004462",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10004462.json",
+      "error": null
+    },
+    {
+      "article_id": "10004662",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10004662.json",
+      "error": null
+    },
+    {
+      "article_id": "10004664",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10004664.json",
+      "error": null
+    },
+    {
+      "article_id": "10004856",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10004856.json",
+      "error": null
+    },
+    {
+      "article_id": "10005138",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10005138.json",
+      "error": null
+    },
+    {
+      "article_id": "10005164",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10005164.json",
+      "error": null
+    },
+    {
+      "article_id": "10005801",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10005801.json",
+      "error": null
+    },
+    {
+      "article_id": "10005860",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10005860.json",
+      "error": null
+    },
+    {
+      "article_id": "10006236",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/in/10006236.json",
+      "error": null
+    },
+    {
+      "article_id": "10006565",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/in/10006565.json",
+      "error": null
+    },
+    {
+      "article_id": "10006673",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/in/10006673.json",
+      "error": null
+    },
+    {
+      "article_id": "10007342",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10007342.json",
+      "error": null
+    },
+    {
+      "article_id": "10007360",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10007360.json",
+      "error": null
+    },
+    {
+      "article_id": "10008183",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10008183.json",
+      "error": null
+    },
+    {
+      "article_id": "10008428",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10008428.json",
+      "error": null
+    },
+    {
+      "article_id": "10009040",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10009040.json",
+      "error": null
+    },
+    {
+      "article_id": "10009196",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10009196.json",
+      "error": null
+    },
+    {
+      "article_id": "10009537",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10009537.json",
+      "error": null
+    },
+    {
+      "article_id": "10009668",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10009668.json",
+      "error": null
+    },
+    {
+      "article_id": "10009703",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10009703.json",
+      "error": null
+    },
+    {
+      "article_id": "10010078",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10010078.json",
+      "error": null
+    },
+    {
+      "article_id": "10012910",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ke/10012910.json",
+      "error": null
+    },
+    {
+      "article_id": "10013306",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10013306.json",
+      "error": null
+    },
+    {
+      "article_id": "10013345",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10013345.json",
+      "error": null
+    },
+    {
+      "article_id": "10013581",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10013581.json",
+      "error": null
+    },
+    {
+      "article_id": "10014137",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10014137.json",
+      "error": null
+    },
+    {
+      "article_id": "10014677",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10014677.json",
+      "error": null
+    },
+    {
+      "article_id": "10015612",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10015612.json",
+      "error": null
+    },
+    {
+      "article_id": "10015995",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10015995.json",
+      "error": null
+    },
+    {
+      "article_id": "10015997",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10015997.json",
+      "error": null
+    },
+    {
+      "article_id": "10016401",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10016401.json",
+      "error": null
+    },
+    {
+      "article_id": "10016509",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10016509.json",
+      "error": null
+    },
+    {
+      "article_id": "10016528",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10016528.json",
+      "error": null
+    },
+    {
+      "article_id": "10016763",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10016763.json",
+      "error": null
+    },
+    {
+      "article_id": "10016851",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10016851.json",
+      "error": null
+    },
+    {
+      "article_id": "10017270",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/za/10017270.json",
+      "error": null
+    },
+    {
+      "article_id": "10017271",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/za/10017271.json",
+      "error": null
+    },
+    {
+      "article_id": "10017350",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/za/10017350.json",
+      "error": null
+    },
+    {
+      "article_id": "10017432",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/za/10017432.json",
+      "error": null
+    },
+    {
+      "article_id": "10018552",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/gh/10018552.json",
+      "error": null
+    },
+    {
+      "article_id": "10019916",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/tz/10019916.json",
+      "error": null
+    },
+    {
+      "article_id": "10020100",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/lk/10020100.json",
+      "error": null
+    },
+    {
+      "article_id": "10020697",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10020697.json",
+      "error": null
+    },
+    {
+      "article_id": "10021037",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10021037.json",
+      "error": null
+    },
+    {
+      "article_id": "10021039",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10021039.json",
+      "error": null
+    },
+    {
+      "article_id": "10021123",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10021123.json",
+      "error": null
+    },
+    {
+      "article_id": "10021278",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10021278.json",
+      "error": null
+    },
+    {
+      "article_id": "10021288",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10021288.json",
+      "error": null
+    },
+    {
+      "article_id": "10021299",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10021299.json",
+      "error": null
+    },
+    {
+      "article_id": "10021605",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10021605.json",
+      "error": null
+    },
+    {
+      "article_id": "10021627",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10021627.json",
+      "error": null
+    },
+    {
+      "article_id": "10021977",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10021977.json",
+      "error": null
+    },
+    {
+      "article_id": "10022431",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10022431.json",
+      "error": null
+    },
+    {
+      "article_id": "10023179",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10023179.json",
+      "error": null
+    },
+    {
+      "article_id": "10023212",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10023212.json",
+      "error": null
+    },
+    {
+      "article_id": "10023595",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10023595.json",
+      "error": null
+    },
+    {
+      "article_id": "10023761",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10023761.json",
+      "error": null
+    },
+    {
+      "article_id": "10023848",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10023848.json",
+      "error": null
+    },
+    {
+      "article_id": "10024931",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/za/10024931.json",
+      "error": null
+    },
+    {
+      "article_id": "10025251",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/gh/10025251.json",
+      "error": null
+    },
+    {
+      "article_id": "10026442",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ke/10026442.json",
+      "error": null
+    },
+    {
+      "article_id": "10027068",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/lk/10027068.json",
+      "error": null
+    },
+    {
+      "article_id": "10027190",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/lk/10027190.json",
+      "error": null
+    },
+    {
+      "article_id": "10027599",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10027599.json",
+      "error": null
+    },
+    {
+      "article_id": "10028891",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10028891.json",
+      "error": null
+    },
+    {
+      "article_id": "10029066",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10029066.json",
+      "error": null
+    },
+    {
+      "article_id": "10029275",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10029275.json",
+      "error": null
+    },
+    {
+      "article_id": "10029415",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10029415.json",
+      "error": null
+    },
+    {
+      "article_id": "10029497",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10029497.json",
+      "error": null
+    },
+    {
+      "article_id": "10029522",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10029522.json",
+      "error": null
+    },
+    {
+      "article_id": "10029551",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10029551.json",
+      "error": null
+    },
+    {
+      "article_id": "10029559",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10029559.json",
+      "error": null
+    },
+    {
+      "article_id": "10029595",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10029595.json",
+      "error": null
+    },
+    {
+      "article_id": "10030069",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10030069.json",
+      "error": null
+    },
+    {
+      "article_id": "10030091",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10030091.json",
+      "error": null
+    },
+    {
+      "article_id": "10030478",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10030478.json",
+      "error": null
+    },
+    {
+      "article_id": "10030732",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10030732.json",
+      "error": null
+    },
+    {
+      "article_id": "10032313",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/gh/10032313.json",
+      "error": null
+    },
+    {
+      "article_id": "10033472",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ke/10033472.json",
+      "error": null
+    },
+    {
+      "article_id": "10033473",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ke/10033473.json",
+      "error": null
+    },
+    {
+      "article_id": "10034082",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/jm/10034082.json",
+      "error": null
+    },
+    {
+      "article_id": "10034989",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10034989.json",
+      "error": null
+    },
+    {
+      "article_id": "10035180",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10035180.json",
+      "error": null
+    },
+    {
+      "article_id": "10035219",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10035219.json",
+      "error": null
+    },
+    {
+      "article_id": "10035232",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10035232.json",
+      "error": null
+    },
+    {
+      "article_id": "10036088",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10036088.json",
+      "error": null
+    },
+    {
+      "article_id": "10036209",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10036209.json",
+      "error": null
+    },
+    {
+      "article_id": "10036903",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10036903.json",
+      "error": null
+    },
+    {
+      "article_id": "10037021",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10037021.json",
+      "error": null
+    },
+    {
+      "article_id": "10037032",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10037032.json",
+      "error": null
+    },
+    {
+      "article_id": "10037118",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10037118.json",
+      "error": null
+    },
+    {
+      "article_id": "10037146",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10037146.json",
+      "error": null
+    },
+    {
+      "article_id": "10037188",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10037188.json",
+      "error": null
+    },
+    {
+      "article_id": "10037411",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10037411.json",
+      "error": null
+    },
+    {
+      "article_id": "10037487",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10037487.json",
+      "error": null
+    },
+    {
+      "article_id": "10037877",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/za/10037877.json",
+      "error": null
+    },
+    {
+      "article_id": "10037928",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/za/10037928.json",
+      "error": null
+    },
+    {
+      "article_id": "10039147",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ng/10039147.json",
+      "error": null
+    },
+    {
+      "article_id": "10039661",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ng/10039661.json",
+      "error": null
+    },
+    {
+      "article_id": "10040598",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/lk/10040598.json",
+      "error": null
+    },
+    {
+      "article_id": "10040965",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10040965.json",
+      "error": null
+    },
+    {
+      "article_id": "10041469",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10041469.json",
+      "error": null
+    },
+    {
+      "article_id": "10041470",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10041470.json",
+      "error": null
+    },
+    {
+      "article_id": "10041628",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10041628.json",
+      "error": null
+    },
+    {
+      "article_id": "10041631",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10041631.json",
+      "error": null
+    },
+    {
+      "article_id": "10041690",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10041690.json",
+      "error": null
+    },
+    {
+      "article_id": "10042211",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10042211.json",
+      "error": null
+    },
+    {
+      "article_id": "10042639",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10042639.json",
+      "error": null
+    },
+    {
+      "article_id": "10042803",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10042803.json",
+      "error": null
+    },
+    {
+      "article_id": "10043242",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10043242.json",
+      "error": null
+    },
+    {
+      "article_id": "10043257",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10043257.json",
+      "error": null
+    },
+    {
+      "article_id": "10043262",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10043262.json",
+      "error": null
+    },
+    {
+      "article_id": "10043266",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10043266.json",
+      "error": null
+    },
+    {
+      "article_id": "10043287",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10043287.json",
+      "error": null
+    },
+    {
+      "article_id": "10043297",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10043297.json",
+      "error": null
+    },
+    {
+      "article_id": "10043298",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10043298.json",
+      "error": null
+    },
+    {
+      "article_id": "10043547",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10043547.json",
+      "error": null
+    },
+    {
+      "article_id": "10043602",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10043602.json",
+      "error": null
+    },
+    {
+      "article_id": "10043610",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10043610.json",
+      "error": null
+    },
+    {
+      "article_id": "10043661",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10043661.json",
+      "error": null
+    },
+    {
+      "article_id": "10043875",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/za/10043875.json",
+      "error": null
+    },
+    {
+      "article_id": "10045631",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ng/10045631.json",
+      "error": null
+    },
+    {
+      "article_id": "10045757",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ke/10045757.json",
+      "error": null
+    },
+    {
+      "article_id": "10045948",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/tz/10045948.json",
+      "error": null
+    },
+    {
+      "article_id": "10046016",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/jm/10046016.json",
+      "error": null
+    },
+    {
+      "article_id": "10046145",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10046145.json",
+      "error": null
+    },
+    {
+      "article_id": "10046175",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10046175.json",
+      "error": null
+    },
+    {
+      "article_id": "10046219",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10046219.json",
+      "error": null
+    },
+    {
+      "article_id": "10046233",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10046233.json",
+      "error": null
+    },
+    {
+      "article_id": "10046782",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10046782.json",
+      "error": null
+    },
+    {
+      "article_id": "10046803",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10046803.json",
+      "error": null
+    },
+    {
+      "article_id": "10046956",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10046956.json",
+      "error": null
+    },
+    {
+      "article_id": "10047060",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10047060.json",
+      "error": null
+    },
+    {
+      "article_id": "10047148",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10047148.json",
+      "error": null
+    },
+    {
+      "article_id": "10047610",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10047610.json",
+      "error": null
+    },
+    {
+      "article_id": "10048245",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10048245.json",
+      "error": null
+    },
+    {
+      "article_id": "10048740",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10048740.json",
+      "error": null
+    },
+    {
+      "article_id": "10048743",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10048743.json",
+      "error": null
+    },
+    {
+      "article_id": "10048875",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10048875.json",
+      "error": null
+    },
+    {
+      "article_id": "10048898",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10048898.json",
+      "error": null
+    },
+    {
+      "article_id": "10048901",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10048901.json",
+      "error": null
+    },
+    {
+      "article_id": "10048917",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10048917.json",
+      "error": null
+    },
+    {
+      "article_id": "10049353",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/za/10049353.json",
+      "error": null
+    },
+    {
+      "article_id": "10050173",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ng/10050173.json",
+      "error": null
+    },
+    {
+      "article_id": "10052549",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10052549.json",
+      "error": null
+    },
+    {
+      "article_id": "10052916",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10052916.json",
+      "error": null
+    },
+    {
+      "article_id": "10053590",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10053590.json",
+      "error": null
+    },
+    {
+      "article_id": "10053725",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10053725.json",
+      "error": null
+    },
+    {
+      "article_id": "10053883",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10053883.json",
+      "error": null
+    },
+    {
+      "article_id": "10053939",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10053939.json",
+      "error": null
+    },
+    {
+      "article_id": "10054261",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10054261.json",
+      "error": null
+    },
+    {
+      "article_id": "10054413",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10054413.json",
+      "error": null
+    },
+    {
+      "article_id": "10054697",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10054697.json",
+      "error": null
+    },
+    {
+      "article_id": "10054781",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10054781.json",
+      "error": null
+    },
+    {
+      "article_id": "10054807",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10054807.json",
+      "error": null
+    },
+    {
+      "article_id": "10054897",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10054897.json",
+      "error": null
+    },
+    {
+      "article_id": "10054978",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10054978.json",
+      "error": null
+    },
+    {
+      "article_id": "10055113",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10055113.json",
+      "error": null
+    },
+    {
+      "article_id": "10055231",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10055231.json",
+      "error": null
+    },
+    {
+      "article_id": "10055303",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10055303.json",
+      "error": null
+    },
+    {
+      "article_id": "10055323",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10055323.json",
+      "error": null
+    },
+    {
+      "article_id": "10055787",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/za/10055787.json",
+      "error": null
+    },
+    {
+      "article_id": "10056295",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/za/10056295.json",
+      "error": null
+    },
+    {
+      "article_id": "10056770",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/gh/10056770.json",
+      "error": null
+    },
+    {
+      "article_id": "10057181",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ng/10057181.json",
+      "error": null
+    },
+    {
+      "article_id": "10057288",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ng/10057288.json",
+      "error": null
+    },
+    {
+      "article_id": "10057833",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ke/10057833.json",
+      "error": null
+    },
+    {
+      "article_id": "10058058",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ke/10058058.json",
+      "error": null
+    },
+    {
+      "article_id": "10058456",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/jm/10058456.json",
+      "error": null
+    },
+    {
+      "article_id": "10058461",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/jm/10058461.json",
+      "error": null
+    },
+    {
+      "article_id": "10058516",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/lk/10058516.json",
+      "error": null
+    },
+    {
+      "article_id": "10058715",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10058715.json",
+      "error": null
+    },
+    {
+      "article_id": "10058760",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10058760.json",
+      "error": null
+    },
+    {
+      "article_id": "10059009",
+      "status": "success",
+      "category": "EXCLUDE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/pk/10059009.json",
+      "error": null
+    },
+    {
+      "article_id": "10059565",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10059565.json",
+      "error": null
+    },
+    {
+      "article_id": "10059700",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10059700.json",
+      "error": null
+    },
+    {
+      "article_id": "10059845",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/bd/10059845.json",
+      "error": null
+    },
+    {
+      "article_id": "10060483",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10060483.json",
+      "error": null
+    },
+    {
+      "article_id": "10060863",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10060863.json",
+      "error": null
+    },
+    {
+      "article_id": "10060870",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10060870.json",
+      "error": null
+    },
+    {
+      "article_id": "10061099",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10061099.json",
+      "error": null
+    },
+    {
+      "article_id": "10061381",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/sg/10061381.json",
+      "error": null
+    },
+    {
+      "article_id": "10061759",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10061759.json",
+      "error": null
+    },
+    {
+      "article_id": "10062041",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10062041.json",
+      "error": null
+    },
+    {
+      "article_id": "10062170",
+      "status": "success",
+      "category": "PERIPHERAL",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10062170.json",
+      "error": null
+    },
+    {
+      "article_id": "10062176",
+      "status": "success",
+      "category": "CORE",
+      "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ph/10062176.json",
       "error": null
     }
   ]

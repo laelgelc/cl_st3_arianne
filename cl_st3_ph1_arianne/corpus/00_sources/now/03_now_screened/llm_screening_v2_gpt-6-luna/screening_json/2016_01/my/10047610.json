@@ -1,0 +1,77 @@
+{
+  "article_id": "10047610",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/my/10047610.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10047610.json"
+  },
+  "manifest_row": {
+    "article_id": "10047610",
+    "group": "2016_01",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/my/10047610.txt",
+    "now_field_2": "1043",
+    "date_original": "16-01-10",
+    "date_iso": "2016-01-10",
+    "source_name": "The Sun Daily",
+    "url": "http://www.thesundaily.my/node/345527",
+    "title": "US 'grand strategy' towards China",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "US strategy toward China and efforts to preserve US geopolitical primacy",
+    "climate_relevance": "Climate change is briefly listed alongside the world economy and nuclear weapons as an issue that could face negative consequences.",
+    "reason": "The article is about US-China strategy and contains only a passing mention of climate change, with no substantive discussion of its causes, impacts, or policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b2df00456480c72ad1bc996750ace5a1269421a600a57d48a1abe35660f2e86c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ce1da2414387425a8b7ffc8bf944345b9e25e5bcf7f665a1ed26c515833a2f82",
+    "raw_response_text_sha256": "b87bc5fe3cd0a3175e409eee814e98150ab4a1c694a0615f10badb3589b82412"
+  },
+  "api_metadata": {
+    "id": "resp_0167689d4061a522006b060259847487d287d96936c7e091df",
+    "model": "gpt-6-luna",
+    "created_at": 1795555930.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1857,
+      "input_tokens_details": {
+        "cache_write_tokens": 1854,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1854
+        }
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 2129
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"US strategy toward China and efforts to preserve US geopolitical primacy\",\n  \"climate_relevance\": \"Climate change is briefly listed alongside the world economy and nuclear weapons as an issue that could face negative consequences.\",\n  \"reason\": \"The article is about US-China strategy and contains only a passing mention of climate change, with no substantive discussion of its causes, impacts, or policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:32:12Z",
+  "duration_seconds": 3.016,
+  "error": null
+}
