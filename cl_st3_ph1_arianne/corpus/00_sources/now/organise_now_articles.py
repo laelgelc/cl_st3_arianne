@@ -206,7 +206,9 @@ def organise(input_dir: Path, output_dir: Path, manifest_dir: Path, initial: dat
     frame = pd.DataFrame(manifest, columns=MANIFEST_COLUMNS)
     frame.to_json(manifest_dir / "climate_now.ndjson", orient="records", lines=True, force_ascii=False)
     frame.to_csv(manifest_dir / "climate_now.tsv", sep="\t", index=False)
-    frame.to_excel(manifest_dir / "climate_now.xlsx", index=False)
+    # Excel cannot represent these control characters; preserve them in the other exports.
+    excel_frame = frame.replace(r"[\x00-\x08\x0b-\x0c\x0e-\x1f]", "", regex=True)
+    excel_frame.to_excel(manifest_dir / "climate_now.xlsx", index=False)
     logger.info("Selected month directories: %d; articles: %d; duplicate IDs: %d; malformed lines: %d; malformed filenames: %d", selected, len(manifest), len(duplicates), len(malformed_lines), len(malformed_files))
 
 

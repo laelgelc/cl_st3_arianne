@@ -130,6 +130,18 @@ def test_rerun_excludes_stale_articles_and_empty_manifest(tmp_path):
     assert list(pd.read_excel(output / "climate_now.xlsx").columns) == organiser.MANIFEST_COLUMNS
 
 
+def test_excel_removes_illegal_controls_without_changing_other_manifests(tmp_path):
+    source, output = tmp_path / "input", tmp_path / "output"
+    put(source / "19-07-text/19-07-us.txt", "@@1 climate change\n")
+    metadata = metadata_file(tmp_path / "matched_sources.tsv", [("1", "2019-07-06", "us")])
+    content = metadata.read_text(encoding="utf-8").replace("\ttitle\tselected.txt", '\t"title\x01 café\tkept"\tselected.txt')
+    metadata.write_text(content, encoding="utf-8")
+    organiser.organise(source, output, output, date(2019, 7, 1), date(2019, 7, 31), metadata)
+    assert rows(output / "climate_now.tsv")[0]["title"] == "title\x01 café\tkept"
+    assert json.loads((output / "climate_now.ndjson").read_text(encoding="utf-8"))["title"] == "title\x01 café\tkept"
+    assert pd.read_excel(output / "climate_now.xlsx").iloc[0]["title"] == "title café\tkept"
+
+
 def test_validation_and_unreadable_input(tmp_path, capsys):
     source = tmp_path / "input"
     article = source / "15-11-text/15-11-us.txt"

@@ -53,7 +53,7 @@ python corpus/00_sources/now/find_now_sources_text_matches.py \
 
 #### Organise NOW articles and create manifest
 
-Reconcile selected lines with `matched_sources.tsv` by article ID, metadata publication date, directory month and filename country. The inclusive research window is applied to metadata dates; grouping uses the matched year and month. Conflicting metadata, missing or invalid metadata countries and differing eligible text occurrences are excluded for review. A filename such as `xx` does not supply a missing metadata country. Requires `pandas` and `openpyxl`. Matching does not prove article identity, and selected lines are not necessarily complete articles.
+Reconcile selected lines with `matched_sources.tsv` by article ID, metadata publication date, directory month and filename country. The inclusive research window is applied to metadata dates; grouping uses the matched year and month. Conflicting metadata, missing or invalid metadata countries and differing eligible text occurrences are excluded for review. A filename such as `xx` does not supply a missing metadata country. Requires `pandas` and `openpyxl`. Matching does not prove article identity, and selected lines are not necessarily complete articles. The XLSX export removes Excel-forbidden control characters; NDJSON and TSV preserve the original metadata.
 
 Use fresh output and manifest directories to preserve the previous run. Existing outputs are overwritten on rerun; stale article files are not removed, but are excluded from a successful run's manifest. A failed run can leave partial outputs; do not use its manifest. Manifest paths are relative to the working directory.
 
