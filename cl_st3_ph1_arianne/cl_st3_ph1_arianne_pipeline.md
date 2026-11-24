@@ -69,6 +69,61 @@ python corpus/00_sources/now/organise_now_articles.py \
 
 The previous, unreconciled run contained 367,242 IDs. Its counts do not describe the new manifest; the matcher also reported malformed metadata, so excluded records are not necessarily invalid.
 
+#### Screen NOW texts with an LLM
+
+Screen the reconciled manifest using the climate relevance prompt and `gpt-6-luna`. The input consists of selected matching lines, not necessarily complete articles; classifications are provisional and require human review. Review reconciliation diagnostics before screening and evaluate a pilot before committing to a full run. Live calls require the `openai` Python SDK, `OPENAI_API_KEY`, model access and network connectivity; costs and rate limits apply. The programme does not send `temperature`.
+
+Run a dry run in a separate directory (it writes run-level outputs but makes no API calls):
+
+```shell
+python corpus/00_sources/now/llm_screening.py \
+    --manifest corpus/00_sources/now/02_now_organised_reconciled/climate_now.ndjson \
+    --output corpus/00_sources/now/03_now_screened/dry_run \
+    --prompt corpus/00_sources/now/llm_screening_prompts/llm_screening_v2.md \
+    --model gpt-6-luna --limit 10 --dry-run
+```
+
+Pilot with 10 texts, then test concurrency with 200. `--resume` skips compatible successful results; without it existing per-article results may be overwritten. Use a new output directory when changing the model, prompt or inputs; review failures and invalid responses before continuing.
+
+```shell
+python corpus/00_sources/now/llm_screening.py \
+    --manifest corpus/00_sources/now/02_now_organised_reconciled/climate_now.ndjson \
+    --output corpus/00_sources/now/03_now_screened/llm_screening_v2_gpt-6-luna \
+    --prompt corpus/00_sources/now/llm_screening_prompts/llm_screening_v2.md \
+    --model gpt-6-luna --limit 10
+```
+
+```shell
+python corpus/00_sources/now/llm_screening.py \
+    --manifest corpus/00_sources/now/02_now_organised_reconciled/climate_now.ndjson \
+    --output corpus/00_sources/now/03_now_screened/llm_screening_v2_gpt-6-luna \
+    --prompt corpus/00_sources/now/llm_screening_prompts/llm_screening_v2.md \
+    --model gpt-6-luna --limit 200 --workers 20 --resume --max-output-tokens 1000
+```
+
+Full run after pilot review:
+
+```shell
+python corpus/00_sources/now/llm_screening.py \
+    --manifest corpus/00_sources/now/02_now_organised_reconciled/climate_now.ndjson \
+    --output corpus/00_sources/now/03_now_screened/llm_screening_v2_gpt-6-luna \
+    --prompt corpus/00_sources/now/llm_screening_prompts/llm_screening_v2.md \
+    --model gpt-6-luna --workers 20 --resume --max-output-tokens 1000 --max-retries 5
+```
+
+For EC2, the existing wrapper activates its configured Conda environment and **requests instance shutdown on exit, including failure**. Review its hard-coded environment and SNS settings, IAM permissions and storage persistence before use; ensure the manifest and article paths are available on the instance from the phase directory.
+
+```shell
+bash corpus/00_sources/now/run_python_ec2.sh \
+    corpus/00_sources/now/llm_screening.py \
+    --manifest corpus/00_sources/now/02_now_organised_reconciled/climate_now.ndjson \
+    --output corpus/00_sources/now/03_now_screened/llm_screening_v2_gpt-6-luna \
+    --prompt corpus/00_sources/now/llm_screening_prompts/llm_screening_v2.md \
+    --model gpt-6-luna --workers 20 --resume --max-output-tokens 1000 --max-retries 5
+```
+
+**Output:** The chosen output directory contains `climate_now_screened.ndjson`, per-article JSON, failure and invalid-response reports, run manifests, summary and log. Check these outputs and manually validate classifications; screening does not establish article completeness or eligibility.
+
 ### 3.4. NGO institutional stories
 
 Greenpeace and WWF datasets have been collected in `corpus/00_sources/ngo/grp.jsonl` and `corpus/00_sources/ngo/wwf.jsonl`.
