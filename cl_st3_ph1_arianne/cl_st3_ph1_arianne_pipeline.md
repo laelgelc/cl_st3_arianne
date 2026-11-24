@@ -24,6 +24,51 @@ Search precision validation is pending.
 
 ### 3.3. Press news reports
 
+#### Select NOW matching lines
+
+Filter the raw NOW text files for the case-insensitive whole-word phrase `climate change`, preserving their directory structure. This first stage selects lines, not complete articles, and does not apply the research date window. Requires only the Python standard library. Matching output files are overwritten; use a clean output directory to avoid retaining stale results.
+
+```shell
+python corpus/00_sources/now/select_now_files.py \
+    --input corpus/00_sources/now/01_now_dataset_raw/02_now_text_raw \
+    --output corpus/00_sources/now/01_now_dataset/02_now_text
+```
+
+**Output:** `corpus/00_sources/now/01_now_dataset/02_now_text/`; processing is also logged to `corpus/00_sources/now/select_now_files.log`.
+
+#### Match NOW source metadata
+
+Match selected article IDs to source metadata within the inclusive research window. Requires only the Python standard library. The output files are overwritten; unmatched IDs include articles outside the date range as well as missing or invalid metadata.
+
+```shell
+python corpus/00_sources/now/find_now_sources_text_matches.py \
+    --initial-date 2015-11-01 \
+    --final-date 2022-11-30 \
+    --input-sources corpus/00_sources/now/01_now_dataset_raw/01_now_sources_raw \
+    --input-articles corpus/00_sources/now/01_now_dataset/02_now_text \
+    --match corpus/00_sources/now/01_now_dataset/01_now_matched_sources
+```
+
+**Output:** `corpus/00_sources/now/01_now_dataset/01_now_matched_sources/`, including `matched_sources.tsv`, diagnostics and the processing log. Review duplicate, malformed and unreadable inputs before using the results.
+
+#### Organise NOW articles and create manifest
+
+Reconcile selected lines with `matched_sources.tsv` by article ID, metadata publication date, directory month and filename country. The inclusive research window is applied to metadata dates; grouping uses the matched year and month. Conflicting metadata, missing or invalid metadata countries and differing eligible text occurrences are excluded for review. A filename such as `xx` does not supply a missing metadata country. Requires `pandas` and `openpyxl`. Matching does not prove article identity, and selected lines are not necessarily complete articles.
+
+Use fresh output and manifest directories to preserve the previous run. Existing outputs are overwritten on rerun; stale article files are not removed, but are excluded from a successful run's manifest. A failed run can leave partial outputs; do not use its manifest. Manifest paths are relative to the working directory.
+
+```shell
+python corpus/00_sources/now/organise_now_articles.py \
+    --input-articles corpus/00_sources/now/01_now_dataset/02_now_text \
+    --matched-sources corpus/00_sources/now/01_now_dataset/01_now_matched_sources/matched_sources.tsv \
+    --output-articles corpus/00_sources/now/02_now_organised_reconciled \
+    --manifest-dir corpus/00_sources/now/02_now_organised_reconciled
+```
+
+**Output:** `corpus/00_sources/now/02_now_organised_reconciled/`, containing `climate_now.ndjson`, `climate_now.tsv`, `climate_now.xlsx`, article files and diagnostics. Review `unmatched_occurrences.tsv`, `duplicate_article_ids.tsv` and `duplicate_metadata_rows.tsv`, as well as the matcher diagnostics, before sampling.
+
+The previous, unreconciled run contained 367,242 IDs. Its counts do not describe the new manifest; the matcher also reported malformed metadata, so excluded records are not necessarily invalid.
+
 ### 3.4. NGO institutional stories
 
 Greenpeace and WWF datasets have been collected in `corpus/00_sources/ngo/grp.jsonl` and `corpus/00_sources/ngo/wwf.jsonl`.
