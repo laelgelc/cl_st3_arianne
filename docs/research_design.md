@@ -45,7 +45,7 @@ Total Corpus (N = 2,382 sampling units)
 │   ├── Press – News Reports (n = 200)
 │   ├── NGOs – Institutional Stories (n = 200)
 │   ├── Academia – Research Abstracts (n = 200)
-│   ├── Social Media – Microblog Posts (n = 200: 100 GETTR, 100 Twitter)
+│   ├── Social Media – Microblog Posts (n = 200 GETTR, provisional)
 │   └── Sceptical Blog – Blog Posts (n = 200)
 └── LLM Subcorpus (n = 1,191)
     ├── ChatGPT / OpenAI (n = 298)
@@ -71,8 +71,10 @@ Total Corpus (N = 2,382 sampling units)
 | **Press** | News Reports (`Reportagem`) | NOW Corpus (News on the Web) | 200 texts | Mainstream journalistic coverage and public framing of climate events. |
 | **NGOs** | Institutional Stories (`Story`) | Greenpeace, WWF (World Wildlife Fund), WRI (World Resources Institute) | 200 texts (66 WWF, 67 WRI, 67 Greenpeace) | Advocacy, narrative-driven awareness, and grassroots mobilization. |
 | **Academia** | Research Article Abstracts (`Abstract`) | AntCorGen / Peer-reviewed Journals (e.g., PLOS) | 200 abstracts | Specialized, academic, and empirical knowledge dissemination. |
-| **Social Media** | Microblog Posts (`Postagem`) | GETTR (100) and Twitter / Internet Archive (100) | 200 posts | Non-institutional public commentary across mainstream and alternative social platforms. |
+| **Social Media** | Microblog Posts (`Postagem`) | GETTR | 200 posts (provisional) | Non-institutional public commentary on GETTR. |
 | **Sceptical Blog** | Blog Posts (`Post de Blog`) | Leading climate-sceptic blogs and contrarian commentary portals | 200 blog posts | Non-consensus and contrarian climate arguments circulating within informal opinion-shaping communities. |
+
+Twitter collection remains pending discussion with Professor Berber Sardinha because most archives are unavailable for download. The GETTR allocation is provisional and does not imply coverage of the entire research period; Twitter may be reconsidered with the advisor.
 
 ---
 
@@ -113,8 +115,7 @@ The synthetic subcorpus mirrors the human subcorpus in a strict 1:1 mapping:
 | **Press – News Reports** | `200` | `50` | `50` | `50` | `50` | `200` |
 | **NGOs – Institutional Stories** | `200` | `50` | `50` | `50` | `50` | `200` |
 | **Academia – Research Abstracts** | `200` | `50` | `50` | `50` | `50` | `200` |
-| **Social Media – GETTR** | `100` | `25` | `25` | `25` | `25` | `100` |
-| **Social Media – Twitter** | `100` | `25` | `25` | `25` | `25` | `100` |
+| **Social Media – GETTR** | `200` | `50` | `50` | `50` | `50` | `200` |
 | **Sceptical Blog – Blog Posts** | `200` | `50` | `50` | `50` | `50` | `200` |
 | **Total Units** | **`1,191`** | **`298`** | **`298`** | **`298`** | **`297`** | **`1,191`** |
 
