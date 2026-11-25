@@ -9,6 +9,10 @@ import tempfile
 from pathlib import Path
 
 
+def normalize_newlines(value):
+    return value.replace('\r\n', '\n').replace('\r', '\n') if isinstance(value, str) else value
+
+
 def import_review(manifest, spreadsheet, output):
     """Validate the entire review sheet before publishing a new manifest."""
     from openpyxl import load_workbook
@@ -38,7 +42,8 @@ def import_review(manifest, spreadsheet, output):
             if not isinstance(cid, str) or cid not in original or cid in seen:
                 raise ValueError(f'Unknown or duplicate candidate ID: {cid}')
             row = original[cid]
-            if text != row.get('text') or published != row.get('publication_datetime_utc'):
+            original_text = row.get('text')
+            if normalize_newlines(text) != normalize_newlines(original_text) or published != row.get('publication_datetime_utc'):
                 raise ValueError(f'Changed source data for {cid}')
             if status not in ('pending', 'approved', 'rejected') or not isinstance(notes, (str, type(None))):
                 raise ValueError(f'Invalid review decision for {cid}')

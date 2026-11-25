@@ -106,3 +106,27 @@ def test_review_rejects_bad_decisions(tmp_path, change):
     with pytest.raises(ValueError):
         import_review(manifest, xlsx, output)
     assert not output.exists()
+
+
+def test_review_accepts_normalized_line_endings_preserving_original(tmp_path):
+    from openpyxl import load_workbook
+
+    source = tmp_path / 'source.ndjson'
+    text = 'Climate change\r\nsecond line\rthird line'
+    write_rows(source, [{'_id': '1', 'text': text, 'cdate': 1625164646880}])
+    manifest = tmp_path / 'candidates.ndjson'
+    adapter.prepare(source, manifest)
+    xlsx = tmp_path / 'review.xlsx'
+    adapter.export_review(manifest, xlsx)
+    book = load_workbook(xlsx)
+    book['Review']['B2'] = text.replace('\r\n', '\n').replace('\r', '\n')
+    book['Review']['D2'] = 'approved'
+    book.save(xlsx)
+    output = tmp_path / 'reviewed.ndjson'
+    import_review(manifest, xlsx, output)
+    assert json.loads(output.read_text())['text'] == text
+
+    book['Review']['B2'] = 'Climate change\nchanged line\nthird line'
+    book.save(xlsx)
+    with pytest.raises(ValueError, match='Changed source'):
+        import_review(manifest, xlsx, tmp_path / 'invalid.ndjson')
