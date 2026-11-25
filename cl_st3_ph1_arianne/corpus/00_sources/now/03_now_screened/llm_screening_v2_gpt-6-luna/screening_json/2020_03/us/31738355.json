@@ -1,6 +1,6 @@
 {
   "article_id": "31738355",
-  "status": "invalid_response",
+  "status": "success",
   "input": {
     "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
     "article_file": "02_now_organised_reconciled/2020_03/us/31738355.txt",
@@ -23,13 +23,32 @@
     "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
     "metadata_article_files": "[\"text-20-03/20-03-us5.txt\"]"
   },
-  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"COVID-19 testing technology and the rollout of testing in Canada and the United States\",",
-  "validation_error": "Expecting property name enclosed in double quotes: line 5 column 106 (char 200)",
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "A mixed Ottawa Citizen RSS feed containing numerous unrelated local business, economic, and news articles",
+    "climate_relevance": "One included article reports survey findings about Canadian views on energy policy and climate change, including carbon taxes, pipelines, emissions, and the tension between climate goals and energy affordability. Another opinion piece briefly connects climate concerns to supply chains and consumer choices.",
+    "reason": "The text is a collection of unrelated articles rather than a single climate-focused report. It contains meaningful climate discourse in a discrete article about energy and climate attitudes, but that article is only one item within the broader feed, so the supplied text is peripheral overall.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f37f01b3033a27a9bf3a9bb650b3b81c700e3e6a470e6be280fc28e7b9066171",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3213700aba28eb07b7d1ae95c882354bcd71c9c1a191388de76cbc4d9b3a766d",
+    "raw_response_text_sha256": "03e69190b47d9934bbcc399db6f247fe4a0f33584595f7881fede0d4beebbb45"
+  },
   "api_metadata": {
-    "id": "resp_0829edf1917213ce006b06192d248087d2adda88da22757e35",
+    "id": "resp_0417cee1c3468dc8006b06dfef9e2c87d1bb9859d4b2e02985",
     "model": "gpt-6-luna",
-    "created_at": 1795561773.0,
-    "status": "incomplete",
+    "created_at": 1795612655.0,
+    "status": "completed",
     "usage": {
       "input_tokens": 95971,
       "input_tokens_details": {
@@ -40,28 +59,19 @@
           "ttl_30m_tokens": 95968
         }
       },
-      "output_tokens": 1000,
+      "output_tokens": 708,
       "output_tokens_details": {
-        "reasoning_tokens": 940
+        "reasoning_tokens": 516
       },
-      "total_tokens": 96971
+      "total_tokens": 96679
     }
   },
-  "hashes": {
-    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
-    "article_text_sha256": "f37f01b3033a27a9bf3a9bb650b3b81c700e3e6a470e6be280fc28e7b9066171",
-    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
-    "rendered_prompt_sha256": "3213700aba28eb07b7d1ae95c882354bcd71c9c1a191388de76cbc4d9b3a766d",
-    "raw_response_text_sha256": "90421c1c9777606cf88be85e43b35bf9053ca7e8141e92d6967659849773e339"
-  },
-  "model": {
-    "configured_model": "gpt-6-luna",
-    "response_model": "gpt-6-luna"
-  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A mixed Ottawa Citizen RSS feed containing numerous unrelated local business, economic, and news articles\",\n  \"climate_relevance\": \"One included article reports survey findings about Canadian views on energy policy and climate change, including carbon taxes, pipelines, emissions, and the tension between climate goals and energy affordability. Another opinion piece briefly connects climate concerns to supply chains and consumer choices.\",\n  \"reason\": \"The text is a collection of unrelated articles rather than a single climate-focused report. It contains meaningful climate discourse in a discrete article about energy and climate attitudes, but that article is only one item within the broader feed, so the supplied text is peripheral overall.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
   "temperature": 0.0,
   "temperature_sent_to_api": false,
-  "max_output_tokens": 1000,
+  "max_output_tokens": 2000,
   "max_output_tokens_sent_to_api": true,
-  "created_at": "2026-11-24T23:09:41Z",
-  "duration_seconds": 8.364
+  "created_at": "2026-11-25T13:17:42Z",
+  "duration_seconds": 7.366,
+  "error": null
 }

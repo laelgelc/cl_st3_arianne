@@ -1,6 +1,6 @@
 {
   "article_id": "71527847",
-  "status": "invalid_response",
+  "status": "success",
   "input": {
     "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
     "article_file": "02_now_organised_reconciled/2019_12/in/71527847.txt",
@@ -23,13 +23,32 @@
     "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
     "metadata_article_files": "[\"text-19-12/19-12-in1.txt\"]"
   },
-  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.84,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Water scarcity and drought in Kerala, including rainfall patterns and water management\",\n  \"climate_relevance\": \"The identifiable main article discusses declining and increasingly unpredictable rainfall and monsoon patterns in the context of Kerala’s drought, but does not substantially frame these trends as climate change. A separate appended section focuses on renewable energy and explicitly discusses climate change and the Kyoto",
-  "validation_error": "Unterminated string starting at: line 6 column 24 (char 213)",
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "Water scarcity, drought, and water management in Kerala",
+    "climate_relevance": "The identifiable main article discusses changing rainfall patterns, monsoon unpredictability, and drought impacts, but focuses chiefly on water management and does not centrally frame these issues as climate change. A later, apparently separate section discusses renewable energy and climate policy in depth.",
+    "reason": "The main article contains meaningful discussion of rainfall trends and drought, making it relevant to broader climate discourse, but climate change is not its central subject. The appended renewable-energy and climate-policy material appears to be a separate article or snippet and should not determine classification of the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5f7a36e31010b5745b0472a99b3067bb0507d6dc76c829d3683154d75fffe6aa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "630245e84ea53e8430aee4e6cebaa26a1744c886e7a57f77bdb538ab18b5afd5",
+    "raw_response_text_sha256": "e68ac35840447a3517dfee30e70f03c40ac0f79c92e8897ef2f63f163d2f3701"
+  },
   "api_metadata": {
-    "id": "resp_0d9ebde003af10c5006b0641c970f087d190fc10cbd0fd60d0",
+    "id": "resp_0833755bdfc15fc8006b06e0173a7487d1b472bc62a19f0039",
     "model": "gpt-6-luna",
-    "created_at": 1795572169.0,
-    "status": "incomplete",
+    "created_at": 1795612695.0,
+    "status": "completed",
     "usage": {
       "input_tokens": 12292,
       "input_tokens_details": {
@@ -40,28 +59,19 @@
           "ttl_30m_tokens": 12289
         }
       },
-      "output_tokens": 1000,
+      "output_tokens": 694,
       "output_tokens_details": {
-        "reasoning_tokens": 890
+        "reasoning_tokens": 502
       },
-      "total_tokens": 13292
+      "total_tokens": 12986
     }
   },
-  "hashes": {
-    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
-    "article_text_sha256": "5f7a36e31010b5745b0472a99b3067bb0507d6dc76c829d3683154d75fffe6aa",
-    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
-    "rendered_prompt_sha256": "630245e84ea53e8430aee4e6cebaa26a1744c886e7a57f77bdb538ab18b5afd5",
-    "raw_response_text_sha256": "964ac59fe577522468047e1193f184fe6785aa6c0e611f101e19d89658e101e9"
-  },
-  "model": {
-    "configured_model": "gpt-6-luna",
-    "response_model": "gpt-6-luna"
-  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Water scarcity, drought, and water management in Kerala\",\n  \"climate_relevance\": \"The identifiable main article discusses changing rainfall patterns, monsoon unpredictability, and drought impacts, but focuses chiefly on water management and does not centrally frame these issues as climate change. A later, apparently separate section discusses renewable energy and climate policy in depth.\",\n  \"reason\": \"The main article contains meaningful discussion of rainfall trends and drought, making it relevant to broader climate discourse, but climate change is not its central subject. The appended renewable-energy and climate-policy material appears to be a separate article or snippet and should not determine classification of the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
   "temperature": 0.0,
   "temperature_sent_to_api": false,
-  "max_output_tokens": 1000,
+  "max_output_tokens": 2000,
   "max_output_tokens_sent_to_api": true,
-  "created_at": "2026-11-25T02:02:57Z",
-  "duration_seconds": 7.71
+  "created_at": "2026-11-25T13:18:21Z",
+  "duration_seconds": 6.331,
+  "error": null
 }

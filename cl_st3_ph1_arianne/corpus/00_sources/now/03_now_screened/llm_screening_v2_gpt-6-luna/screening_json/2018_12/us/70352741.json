@@ -1,6 +1,6 @@
 {
   "article_id": "70352741",
-  "status": "invalid_response",
+  "status": "success",
   "input": {
     "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
     "article_file": "02_now_organised_reconciled/2018_12/us/70352741.txt",
@@ -23,13 +23,32 @@
     "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
     "metadata_article_files": "[\"text-18-12/18-12-us2.txt\"]"
   },
-  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.78,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Investment risks and economic outlook across countries\",\n  \"climate_relevance\": \"A separate McDonald’s passage discusses emissions targets",
-  "validation_error": "Unterminated string starting at: line 6 column 24 (char 192)",
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.95,
+    "climate_role": "substantial",
+    "main_topic": "McDonald’s climate strategy and greenhouse-gas reduction commitments",
+    "climate_relevance": "The first article discusses McDonald’s emissions targets, renewable energy efforts, climate action, and climate-change threats to coffee crops.",
+    "reason": "Climate change is a substantial focus of the identifiable McDonald’s article, which describes specific emissions-reduction targets and related initiatives. A separate investment-risk survey follows and appears unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4a6fd35fd6e7b47a809d96197a56cb6c4327930393bc79172c491433d10aa9c2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2f4a30717deede890134cac88616e2eeb984384ee29e4a3b6f4028035914e3ae",
+    "raw_response_text_sha256": "e893cbd80b10b563fc3d11312660ca1d8c0bec3b63205e529e91c9235d2661a8"
+  },
   "api_metadata": {
-    "id": "resp_061a7b8d867ea0fe006b063c2216c887d1935d28cea7f93745",
+    "id": "resp_0d36ca7c5e539f81006b06e00fa45c87d1996cd3992e6cbf8a",
     "model": "gpt-6-luna",
-    "created_at": 1795570722.0,
-    "status": "incomplete",
+    "created_at": 1795612687.0,
+    "status": "completed",
     "usage": {
       "input_tokens": 1960,
       "input_tokens_details": {
@@ -40,28 +59,19 @@
           "ttl_30m_tokens": 1957
         }
       },
-      "output_tokens": 1000,
+      "output_tokens": 335,
       "output_tokens_details": {
-        "reasoning_tokens": 932
+        "reasoning_tokens": 189
       },
-      "total_tokens": 2960
+      "total_tokens": 2295
     }
   },
-  "hashes": {
-    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
-    "article_text_sha256": "4a6fd35fd6e7b47a809d96197a56cb6c4327930393bc79172c491433d10aa9c2",
-    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
-    "rendered_prompt_sha256": "2f4a30717deede890134cac88616e2eeb984384ee29e4a3b6f4028035914e3ae",
-    "raw_response_text_sha256": "db563853efabae99101bbb14ab6b13a9f7994deaf7362f7a05de133b36356125"
-  },
-  "model": {
-    "configured_model": "gpt-6-luna",
-    "response_model": "gpt-6-luna"
-  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"McDonald’s climate strategy and greenhouse-gas reduction commitments\",\n  \"climate_relevance\": \"The first article discusses McDonald’s emissions targets, renewable energy efforts, climate action, and climate-change threats to coffee crops.\",\n  \"reason\": \"Climate change is a substantial focus of the identifiable McDonald’s article, which describes specific emissions-reduction targets and related initiatives. A separate investment-risk survey follows and appears unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
   "temperature": 0.0,
   "temperature_sent_to_api": false,
-  "max_output_tokens": 1000,
+  "max_output_tokens": 2000,
   "max_output_tokens_sent_to_api": true,
-  "created_at": "2026-11-25T01:38:49Z",
-  "duration_seconds": 7.098
+  "created_at": "2026-11-25T13:18:10Z",
+  "duration_seconds": 3.432,
+  "error": null
 }

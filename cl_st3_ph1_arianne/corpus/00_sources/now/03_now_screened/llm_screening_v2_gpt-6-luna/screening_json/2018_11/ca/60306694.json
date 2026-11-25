@@ -1,6 +1,6 @@
 {
   "article_id": "60306694",
-  "status": "invalid_response",
+  "status": "success",
   "input": {
     "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
     "article_file": "02_now_organised_reconciled/2018_11/ca/60306694.txt",
@@ -23,13 +23,32 @@
     "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
     "metadata_article_files": "[\"text-18-11/18-11-ca.txt\"]"
   },
-  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.78,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A church thrift store’s volunteers, community service, and charitable donations\",\n  \"climate_relevance\": \"A later, apparently separate town-council snippet contains meaningful discussion of emissions targets, climate adaptation, and energy-efficiency projects, but it is not part of the identifiable main article.\",\n  \"reason\": \"The main article is about the thrift store and contains no meaningful climate discourse. The climate-related council material appears to be an appended, unrelated snippet, so it does not make the identifiable main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet",
-  "validation_error": "Unterminated string starting at: line 8 column 3 (char 699)",
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A church thrift store’s volunteers, charitable work, and efforts to recruit business volunteers",
+    "climate_relevance": "A separate town-council passage describes Devon’s climate initiatives, including greenhouse-gas inventories, emissions-reduction targets, climate-risk mitigation, and energy-efficiency projects.",
+    "reason": "The identifiable main article is about the thrift store, not climate change. The text also contains meaningful local climate-policy and mitigation discussion in what appears to be an appended, unrelated council-report snippet, making the material relevant peripherally.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "507ac54e3aad53ddf3affa6fd95fbd0cb9a4b5c3deaa412f84f614e592f89c95",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "80cc735d28abc06a1c51ef6e310da8591eb980a0a986227abe6a11d1cd86e9a6",
+    "raw_response_text_sha256": "5a87bf361b42a1c990f5c2a6e57999a5c3ada744ab15e465cd12623af05e4274"
+  },
   "api_metadata": {
-    "id": "resp_0d781455bfa6a562006b0631fd7cc487d183188af463939e04",
+    "id": "resp_0490de8189f2df9a006b06e00787b087d1bbc3d8784bdd7e1c",
     "model": "gpt-6-luna",
-    "created_at": 1795568125.0,
-    "status": "incomplete",
+    "created_at": 1795612679.0,
+    "status": "completed",
     "usage": {
       "input_tokens": 1606,
       "input_tokens_details": {
@@ -40,28 +59,19 @@
           "ttl_30m_tokens": 1603
         }
       },
-      "output_tokens": 1000,
+      "output_tokens": 336,
       "output_tokens_details": {
-        "reasoning_tokens": 842
+        "reasoning_tokens": 164
       },
-      "total_tokens": 2606
+      "total_tokens": 1942
     }
   },
-  "hashes": {
-    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
-    "article_text_sha256": "507ac54e3aad53ddf3affa6fd95fbd0cb9a4b5c3deaa412f84f614e592f89c95",
-    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
-    "rendered_prompt_sha256": "80cc735d28abc06a1c51ef6e310da8591eb980a0a986227abe6a11d1cd86e9a6",
-    "raw_response_text_sha256": "f3a73c054747fb9626f133c78d71c2b6a3f3a78696cbdbeebcc02d2e1647fccf"
-  },
-  "model": {
-    "configured_model": "gpt-6-luna",
-    "response_model": "gpt-6-luna"
-  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A church thrift store’s volunteers, charitable work, and efforts to recruit business volunteers\",\n  \"climate_relevance\": \"A separate town-council passage describes Devon’s climate initiatives, including greenhouse-gas inventories, emissions-reduction targets, climate-risk mitigation, and energy-efficiency projects.\",\n  \"reason\": \"The identifiable main article is about the thrift store, not climate change. The text also contains meaningful local climate-policy and mitigation discussion in what appears to be an appended, unrelated council-report snippet, making the material relevant peripherally.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
   "temperature": 0.0,
   "temperature_sent_to_api": false,
-  "max_output_tokens": 1000,
+  "max_output_tokens": 2000,
   "max_output_tokens_sent_to_api": true,
-  "created_at": "2026-11-25T00:55:32Z",
-  "duration_seconds": 7.114
+  "created_at": "2026-11-25T13:18:02Z",
+  "duration_seconds": 3.333,
+  "error": null
 }

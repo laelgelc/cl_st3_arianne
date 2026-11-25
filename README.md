@@ -8,9 +8,9 @@ Greenpeace and WWF datasets have been collected. WRI listings and manually saved
 
 The provisional social-media target is 200 GETTR posts. Twitter collection remains pending discussion with Professor Berber Sardinha because most Stream Grab archives are unavailable for download.
 
-For press reports, the NOW pipeline selects lines containing `climate change`, matches source metadata within 1 November 2015–30 November 2022, and reconciles article IDs, months and countries before exporting manifests and review diagnostics. The reconciled organiser must be rerun successfully after the Excel export fix; review its diagnostics before sampling. Selected lines are not necessarily complete articles.
+For press reports, the NOW pipeline selects lines containing `climate change`, matches source metadata within 1 November 2015–30 November 2022, and reconciles article IDs, months and countries before exporting manifests and review diagnostics. Review the diagnostics before sampling; selected lines are not necessarily complete articles.
 
-Climate-relevance screening with `gpt-6-luna` is available for the reconciled NOW manifest, with dry-run, pilot, resume and EC2 instructions in the pipeline. Live model access and screening have not been verified; classifications require human review. The pipeline records commands, dependencies, output locations and overwrite warnings. Other source collection, segmentation, LLM generation, preprocessing and validation remain pending.
+Climate-relevance screening with `gpt-6-luna` completed for all 155,597 reconciled NOW records. A resumed run with a 2,000-token output limit resolved the 11 previously invalid responses. Classifications remain provisional and require human review. The pipeline records results, commands, dependencies, output locations and overwrite warnings. Other source collection, segmentation, LLM generation, preprocessing and validation remain pending.
 
 
 

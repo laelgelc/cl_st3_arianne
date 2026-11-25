@@ -1,6 +1,6 @@
 {
   "article_id": "30984968",
-  "status": "invalid_response",
+  "status": "success",
   "input": {
     "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
     "article_file": "02_now_organised_reconciled/2019_06/in/30984968.txt",
@@ -23,13 +23,32 @@
     "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
     "metadata_article_files": "[\"text-19-06/19-06-in2.txt\"]"
   },
-  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Pakistani cricket fan's reaction to his team's loss to India\",\n  \"climate_relevance\": \"The opening article is about cricket fans and contains no meaningful climate discourse. A separate, substantial article about climate change and cricket sustainability appears appended afterward.\",\n  \"reason\": \"The identifiable main article concerns a fan's emotional reaction to a cricket match, not climate change. The later climate-focused article is a distinct, unrelated piece, so it does not make the main article",
-  "validation_error": "Unterminated string starting at: line 7 column 13 (char 411)",
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Pakistani cricket fan's reaction to his team's loss to India in the 2019 Cricket World Cup.",
+    "climate_relevance": "The opening article mentions rain in connection with the match but does not meaningfully discuss climate change. A separate appended article discusses climate change and cricket at length, but it is unrelated to the identifiable opening article.",
+    "reason": "The identifiable main article is about a fan's reaction to a cricket match, not climate change. The text appears to append a separate, substantial climate-related article, so that material should not be treated as part of the main article for classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ffd99acd18efbfefc1c847c2ec37b42b3a7e9005fcc0396c29b6c2676e1ef5a6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1dc75311aa9b8b9c667e5112d3302283cdb490e5c79ed6bc070dc22a565caa8c",
+    "raw_response_text_sha256": "c8ab28b79d9d2ce2a6219a7648df9be7b9e0defc2224332429a9ef11f2e60df6"
+  },
   "api_metadata": {
-    "id": "resp_0e39640b3dde1303006b0615eda19c87d2b37e1c99dd025880",
+    "id": "resp_0829121ea54bfeeb006b06dfea430887d1b3913088a0510af8",
     "model": "gpt-6-luna",
-    "created_at": 1795560941.0,
-    "status": "incomplete",
+    "created_at": 1795612650.0,
+    "status": "completed",
     "usage": {
       "input_tokens": 2300,
       "input_tokens_details": {
@@ -40,28 +59,19 @@
           "ttl_30m_tokens": 2297
         }
       },
-      "output_tokens": 1000,
+      "output_tokens": 541,
       "output_tokens_details": {
-        "reasoning_tokens": 863
+        "reasoning_tokens": 352
       },
-      "total_tokens": 3300
+      "total_tokens": 2841
     }
   },
-  "hashes": {
-    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
-    "article_text_sha256": "ffd99acd18efbfefc1c847c2ec37b42b3a7e9005fcc0396c29b6c2676e1ef5a6",
-    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
-    "rendered_prompt_sha256": "1dc75311aa9b8b9c667e5112d3302283cdb490e5c79ed6bc070dc22a565caa8c",
-    "raw_response_text_sha256": "3f029011e22ec7ad827f882998412f51e32c5e2c7f68cb8c6fda3319d260e552"
-  },
-  "model": {
-    "configured_model": "gpt-6-luna",
-    "response_model": "gpt-6-luna"
-  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Pakistani cricket fan's reaction to his team's loss to India in the 2019 Cricket World Cup.\",\n  \"climate_relevance\": \"The opening article mentions rain in connection with the match but does not meaningfully discuss climate change. A separate appended article discusses climate change and cricket at length, but it is unrelated to the identifiable opening article.\",\n  \"reason\": \"The identifiable main article is about a fan's reaction to a cricket match, not climate change. The text appears to append a separate, substantial climate-related article, so that material should not be treated as part of the main article for classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
   "temperature": 0.0,
   "temperature_sent_to_api": false,
-  "max_output_tokens": 1000,
+  "max_output_tokens": 2000,
   "max_output_tokens_sent_to_api": true,
-  "created_at": "2026-11-24T22:55:48Z",
-  "duration_seconds": 7.376
+  "created_at": "2026-11-25T13:17:35Z",
+  "duration_seconds": 5.38,
+  "error": null
 }

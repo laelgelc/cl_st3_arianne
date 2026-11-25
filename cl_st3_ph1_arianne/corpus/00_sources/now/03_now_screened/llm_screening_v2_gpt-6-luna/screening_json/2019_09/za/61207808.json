@@ -1,6 +1,6 @@
 {
   "article_id": "61207808",
-  "status": "invalid_response",
+  "status": "success",
   "input": {
     "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
     "article_file": "02_now_organised_reconciled/2019_09/za/61207808.txt",
@@ -23,13 +23,32 @@
     "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
     "metadata_article_files": "[\"text-19-09/19-09-za.txt\"]"
   },
-  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Artificial intelligence, the Fourth Industrial Revolution, and technology in Africa\",\n  \"climate_relevance\": \"The identifiable main article does not meaningfully discuss climate change. A separate business-sustainability article in the supplied text contains meaningful climate-related discussion, including emissions and climate change, but appears to be an unrelated concatenated article.\",\n  \"reason\": \"The main article is an interview about AI and technological change, with no substantive climate discourse. The climate discussion belongs to a distinct article titled “Businesses At The Heart Of A Greener Future,” so it does not make the identifiable main article relevant to the climate corpus.\",\n  \"multi_article_or",
-  "validation_error": "Unterminated string starting at: line 8 column 3 (char 818)",
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "climate_role": "background",
+    "main_topic": "A compilation of articles about technology, business sustainability, workplace issues, and cybersecurity.",
+    "climate_relevance": "One article discusses business sustainability, corporate emissions, and climate change, while the other identifiable articles are unrelated to climate.",
+    "reason": "The sustainability article contains meaningful climate discourse, including a direct link between climate change and environmental decline and discussion of business emissions. However, climate is part of a broader sustainability focus, and the supplied text combines several unrelated articles.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f431eac57c6f2c9a38ef95a2b2ff2a87b28de1455583892cd7fa3d2cda5bf5ea",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d5b3f2872ab60ca8c1b8635626b77d1a179c3dfb4a9e4316f0170c7b9ebddf06",
+    "raw_response_text_sha256": "33ce0226620f0945d08102ca9b8372ace8d96b844b60b25b0208c720e86906e3"
+  },
   "api_metadata": {
-    "id": "resp_08b8ba75669d3e73006b06362566f887d1b48e79134595c3f9",
+    "id": "resp_03c3269e6de82840006b06e00ae2fc87d198f0717a253464ac",
     "model": "gpt-6-luna",
-    "created_at": 1795569189.0,
-    "status": "incomplete",
+    "created_at": 1795612683.0,
+    "status": "completed",
     "usage": {
       "input_tokens": 4273,
       "input_tokens_details": {
@@ -40,28 +59,19 @@
           "ttl_30m_tokens": 4270
         }
       },
-      "output_tokens": 1000,
+      "output_tokens": 444,
       "output_tokens_details": {
-        "reasoning_tokens": 828
+        "reasoning_tokens": 286
       },
-      "total_tokens": 5273
+      "total_tokens": 4717
     }
   },
-  "hashes": {
-    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
-    "article_text_sha256": "f431eac57c6f2c9a38ef95a2b2ff2a87b28de1455583892cd7fa3d2cda5bf5ea",
-    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
-    "rendered_prompt_sha256": "d5b3f2872ab60ca8c1b8635626b77d1a179c3dfb4a9e4316f0170c7b9ebddf06",
-    "raw_response_text_sha256": "f93cfb65e08b74e2071bd149210a5d61c3ea0cfb24a49b2f0fcc883a14ddbbe6"
-  },
-  "model": {
-    "configured_model": "gpt-6-luna",
-    "response_model": "gpt-6-luna"
-  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A compilation of articles about technology, business sustainability, workplace issues, and cybersecurity.\",\n  \"climate_relevance\": \"One article discusses business sustainability, corporate emissions, and climate change, while the other identifiable articles are unrelated to climate.\",\n  \"reason\": \"The sustainability article contains meaningful climate discourse, including a direct link between climate change and environmental decline and discussion of business emissions. However, climate is part of a broader sustainability focus, and the supplied text combines several unrelated articles.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
   "temperature": 0.0,
   "temperature_sent_to_api": false,
-  "max_output_tokens": 1000,
+  "max_output_tokens": 2000,
   "max_output_tokens_sent_to_api": true,
-  "created_at": "2026-11-25T01:13:17Z",
-  "duration_seconds": 8.101
+  "created_at": "2026-11-25T13:18:07Z",
+  "duration_seconds": 4.747,
+  "error": null
 }

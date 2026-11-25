@@ -1,6 +1,6 @@
 {
   "article_id": "22776773",
-  "status": "invalid_response",
+  "status": "success",
   "input": {
     "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
     "article_file": "02_now_organised_reconciled/2018_01/ca/22776773.txt",
@@ -23,13 +23,32 @@
     "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
     "metadata_article_files": "[\"text-18-01/text_18-01-CA.txt\"]"
   },
-  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.78,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Canadian energy regulation and policy developments, including climate-related energy transition measures\",\n  \"climate_relevance\": \"The text gives detailed attention to Alberta’s climate leadership plan and carbon pricing, greenhouse-gas regulation, emissions reductions, clean power and renewable energy, and differing Canadian and U",
-  "validation_error": "Unterminated string starting at: line 6 column 24 (char 226)",
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.89,
+    "climate_role": "substantial",
+    "main_topic": "Canadian energy regulation and policy developments, including climate action and the transition to cleaner energy",
+    "climate_relevance": "The text discusses Alberta’s climate leadership plan and carbon levy, greenhouse-gas emissions rules, renewable energy and electricity policies, and differing Canadian and U.S. approaches to climate change and clean energy.",
+    "reason": "Although the article is a broad energy-sector regulatory roundup, climate policy and emissions reduction recur across multiple substantive sections and are not merely incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "52f14f04fa2fb05bf13de413f3c7020ce9d639feaf047057bee4263aac498bd7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8417647456f28d2752cc503534195c9a03f707a282f565bf5c1b41d2991562c6",
+    "raw_response_text_sha256": "fca67027b292a23eb74cc4f09234831c29bc9ae214d8227b1211caa353e25c7f"
+  },
   "api_metadata": {
-    "id": "resp_0e011ef8d4c30d53006b061081617087d2849efdbab6fdfa13",
+    "id": "resp_054e69e1f9c85e62006b06dfe5f24087d1b180daccbd7c65f9",
     "model": "gpt-6-luna",
-    "created_at": 1795559553.0,
-    "status": "incomplete",
+    "created_at": 1795612646.0,
+    "status": "completed",
     "usage": {
       "input_tokens": 6505,
       "input_tokens_details": {
@@ -40,28 +59,19 @@
           "ttl_30m_tokens": 6502
         }
       },
-      "output_tokens": 1000,
+      "output_tokens": 468,
       "output_tokens_details": {
-        "reasoning_tokens": 906
+        "reasoning_tokens": 311
       },
-      "total_tokens": 7505
+      "total_tokens": 6973
     }
   },
-  "hashes": {
-    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
-    "article_text_sha256": "52f14f04fa2fb05bf13de413f3c7020ce9d639feaf047057bee4263aac498bd7",
-    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
-    "rendered_prompt_sha256": "8417647456f28d2752cc503534195c9a03f707a282f565bf5c1b41d2991562c6",
-    "raw_response_text_sha256": "242f19a39f2f1220350e24b72736d23df48a46041bb36ac478291fa0563f1ba4"
-  },
-  "model": {
-    "configured_model": "gpt-6-luna",
-    "response_model": "gpt-6-luna"
-  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.89,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Canadian energy regulation and policy developments, including climate action and the transition to cleaner energy\",\n  \"climate_relevance\": \"The text discusses Alberta’s climate leadership plan and carbon levy, greenhouse-gas emissions rules, renewable energy and electricity policies, and differing Canadian and U.S. approaches to climate change and clean energy.\",\n  \"reason\": \"Although the article is a broad energy-sector regulatory roundup, climate policy and emissions reduction recur across multiple substantive sections and are not merely incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
   "temperature": 0.0,
   "temperature_sent_to_api": false,
-  "max_output_tokens": 1000,
+  "max_output_tokens": 2000,
   "max_output_tokens_sent_to_api": true,
-  "created_at": "2026-11-24T22:32:40Z",
-  "duration_seconds": 6.761
+  "created_at": "2026-11-25T13:17:30Z",
+  "duration_seconds": 4.918,
+  "error": null
 }

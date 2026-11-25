@@ -1,6 +1,6 @@
 {
   "article_id": "31989751",
-  "status": "invalid_response",
+  "status": "success",
   "input": {
     "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
     "article_file": "02_now_organised_reconciled/2020_08/gh/31989751.txt",
@@ -23,45 +23,55 @@
     "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
     "metadata_article_files": "[\"text-20-08/20-08-gh.txt\"]"
   },
-  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.82,\n  \"climate_role\": \"boiler",
-  "validation_error": "Unterminated string starting at: line 4 column 19 (char 67)",
-  "api_metadata": {
-    "id": "resp_0ef7d67fdbf95b21006b061a9c9b2087d2ad2fd46275fd0f22",
-    "model": "gpt-6-luna",
-    "created_at": 1795562140.0,
-    "status": "incomplete",
-    "usage": {
-      "input_tokens": 7888,
-      "input_tokens_details": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 7885,
-        "cache_write_tokens_details": {
-          "ttl_12h_tokens": 0,
-          "ttl_30m_tokens": 0
-        }
-      },
-      "output_tokens": 1000,
-      "output_tokens_details": {
-        "reasoning_tokens": 968
-      },
-      "total_tokens": 8888
-    }
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.88,
+    "climate_role": "substantial",
+    "main_topic": "A collection of Ghanaian opinion-column material, including a substantial discussion of climate change, climate impacts, emissions, and sustainable finance.",
+    "climate_relevance": "The climate-focused section discusses global warming, human causes and impacts, greenhouse-gas emissions, climate policy, carbon trading, and the financial sector’s role in the transition to a net-zero economy.",
+    "reason": "Although the supplied text contains several unrelated articles or snippets, an identifiable section contains sustained, meaningful climate discourse rather than a passing mention. That section is suitable for the core climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
   },
   "hashes": {
     "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
     "article_text_sha256": "a9c1613b758b74601da5740a4b80e3801f66ebfa4fd2677ef3a0267e73f7c5bf",
     "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
     "rendered_prompt_sha256": "4b4afc6ebbf612e0eb80a8a7019e2c60176931baef2660c2fde05b214f799f5f",
-    "raw_response_text_sha256": "8060fce77b7b56eeb6185602d8d72f7c965d00271f33830bf3a900532e473335"
+    "raw_response_text_sha256": "a2ed1c124ea4ba4a39a5ee0c9cc85772dd0621fadcff3222265d0b39e2be4b44"
   },
-  "model": {
-    "configured_model": "gpt-6-luna",
-    "response_model": "gpt-6-luna"
+  "api_metadata": {
+    "id": "resp_0a216a59b080742f006b06dff6f91487d19a036cfc2277e2bf",
+    "model": "gpt-6-luna",
+    "created_at": 1795612663.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7888,
+      "input_tokens_details": {
+        "cache_write_tokens": 7885,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 7885
+        }
+      },
+      "output_tokens": 375,
+      "output_tokens_details": {
+        "reasoning_tokens": 200
+      },
+      "total_tokens": 8263
+    }
   },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"A collection of Ghanaian opinion-column material, including a substantial discussion of climate change, climate impacts, emissions, and sustainable finance.\",\n  \"climate_relevance\": \"The climate-focused section discusses global warming, human causes and impacts, greenhouse-gas emissions, climate policy, carbon trading, and the financial sector’s role in the transition to a net-zero economy.\",\n  \"reason\": \"Although the supplied text contains several unrelated articles or snippets, an identifiable section contains sustained, meaningful climate discourse rather than a passing mention. That section is suitable for the core climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
   "temperature": 0.0,
   "temperature_sent_to_api": false,
-  "max_output_tokens": 1000,
+  "max_output_tokens": 2000,
   "max_output_tokens_sent_to_api": true,
-  "created_at": "2026-11-24T23:15:47Z",
-  "duration_seconds": 18.916
+  "created_at": "2026-11-25T13:17:47Z",
+  "duration_seconds": 4.293,
+  "error": null
 }

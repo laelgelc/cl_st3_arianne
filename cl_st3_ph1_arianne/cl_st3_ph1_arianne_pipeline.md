@@ -98,7 +98,7 @@ python corpus/00_sources/now/llm_screening.py \
     --manifest corpus/00_sources/now/02_now_organised_reconciled/climate_now.ndjson \
     --output corpus/00_sources/now/03_now_screened/llm_screening_v2_gpt-6-luna \
     --prompt corpus/00_sources/now/llm_screening_prompts/llm_screening_v2.md \
-    --model gpt-6-luna --limit 200 --workers 20 --resume --max-output-tokens 1000
+    --model gpt-6-luna --limit 200 --workers 20 --resume --max-output-tokens 2000
 ```
 
 Full run after pilot review:
@@ -108,7 +108,7 @@ python corpus/00_sources/now/llm_screening.py \
     --manifest corpus/00_sources/now/02_now_organised_reconciled/climate_now.ndjson \
     --output corpus/00_sources/now/03_now_screened/llm_screening_v2_gpt-6-luna \
     --prompt corpus/00_sources/now/llm_screening_prompts/llm_screening_v2.md \
-    --model gpt-6-luna --workers 20 --resume --max-output-tokens 1000 --max-retries 5
+    --model gpt-6-luna --workers 20 --resume --max-output-tokens 2000 --max-retries 5
 ```
 
 For EC2, the existing wrapper activates its configured Conda environment and **requests instance shutdown on exit, including failure**. Review its hard-coded environment and SNS settings, IAM permissions and storage persistence before use; ensure the manifest and article paths are available on the instance from the phase directory.
@@ -119,10 +119,12 @@ bash corpus/00_sources/now/run_python_ec2.sh \
     --manifest corpus/00_sources/now/02_now_organised_reconciled/climate_now.ndjson \
     --output corpus/00_sources/now/03_now_screened/llm_screening_v2_gpt-6-luna \
     --prompt corpus/00_sources/now/llm_screening_prompts/llm_screening_v2.md \
-    --model gpt-6-luna --workers 20 --resume --max-output-tokens 1000 --max-retries 5
+    --model gpt-6-luna --workers 20 --resume --max-output-tokens 2000 --max-retries 5
 ```
 
 **Output:** The chosen output directory contains `climate_now_screened.ndjson`, per-article JSON, failure and invalid-response reports, run manifests, summary and log. Check these outputs and manually validate classifications; screening does not establish article completeness or eligibility.
+
+The completed run in `corpus/00_sources/now/03_now_screened/llm_screening_v2_gpt-6-luna/` contains 155,597 unique classifications: 52,308 `CORE`, 72,199 `PERIPHERAL` and 31,090 `EXCLUDE`. A resumed run with `--max-output-tokens 2000` successfully classified the 11 previously invalid responses and reused 155,586 existing results; the current failure and invalid-response reports are empty. All input IDs are represented, but classification accuracy and eligibility still require human review.
 
 ### 3.4. NGO institutional stories
 

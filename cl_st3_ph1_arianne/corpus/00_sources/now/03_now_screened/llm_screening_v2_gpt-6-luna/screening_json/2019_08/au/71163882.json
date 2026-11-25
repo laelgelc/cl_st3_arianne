@@ -1,6 +1,6 @@
 {
   "article_id": "71163882",
-  "status": "invalid_response",
+  "status": "success",
   "input": {
     "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
     "article_file": "02_now_organised_reconciled/2019_08/au/71163882.txt",
@@ -23,13 +23,32 @@
     "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
     "metadata_article_files": "[\"text-19-08/19-08-au.txt\"]"
   },
-  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Consumer considerations for leaving the electricity grid using solar panels and battery storage\",\n  \"climate_relevance\": \"The identifiable main article discusses off-grid energy systems, costs, and reliability, but does not meaningfully frame these topics in terms of climate change. A separate appended article is centrally about climate and energy policy.\",\n  \"reason\": \"The first article is about the practical and financial considerations of going off-grid, not climate discourse. The later clean-coal article contains substantial climate discussion, but appears to be a distinct, appended article",
-  "validation_error": "Unterminated string starting at: line 7 column 13 (char 484)",
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "The Coalition’s clean-coal policy, its emissions, and its implications for climate targets and renewable energy.",
+    "climate_relevance": "The second article directly discusses climate change, fossil-fuel emissions, emissions-reduction targets, the Paris climate treaty, and energy policy. The first article is a separate guide to household off-grid systems and is not the main climate-focused text.",
+    "reason": "The supplied text contains two distinct articles. The later article is centrally about clean coal and its climate implications, making the available climate-focused article core research material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f881b0b2cc06057982b3c51891ec17b1bbcfca689edfc61a384bfc7e1bf50914",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dbb227079ec52135719869df50a4bd8e53927f47729ee9d548942ee1b9ebcf04",
+    "raw_response_text_sha256": "c5cfa93df312b3cb7816fdf0945a92773e129d74001820197290828659d0dc68"
+  },
   "api_metadata": {
-    "id": "resp_023f12fe1e490412006b06402d135487d19f5b5add677093a4",
+    "id": "resp_00aad1cbecacf4cb006b06e01312ac87d192964c52f41132fc",
     "model": "gpt-6-luna",
-    "created_at": 1795571757.0,
-    "status": "incomplete",
+    "created_at": 1795612691.0,
+    "status": "completed",
     "usage": {
       "input_tokens": 13321,
       "input_tokens_details": {
@@ -40,28 +59,19 @@
           "ttl_30m_tokens": 13318
         }
       },
-      "output_tokens": 1000,
+      "output_tokens": 478,
       "output_tokens_details": {
-        "reasoning_tokens": 850
+        "reasoning_tokens": 305
       },
-      "total_tokens": 14321
+      "total_tokens": 13799
     }
   },
-  "hashes": {
-    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
-    "article_text_sha256": "f881b0b2cc06057982b3c51891ec17b1bbcfca689edfc61a384bfc7e1bf50914",
-    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
-    "rendered_prompt_sha256": "dbb227079ec52135719869df50a4bd8e53927f47729ee9d548942ee1b9ebcf04",
-    "raw_response_text_sha256": "ca0142d4655dc56014e86d7eb7f7d0e278339a7ca4593409f7693d9c168960c2"
-  },
-  "model": {
-    "configured_model": "gpt-6-luna",
-    "response_model": "gpt-6-luna"
-  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"The Coalition’s clean-coal policy, its emissions, and its implications for climate targets and renewable energy.\",\n  \"climate_relevance\": \"The second article directly discusses climate change, fossil-fuel emissions, emissions-reduction targets, the Paris climate treaty, and energy policy. The first article is a separate guide to household off-grid systems and is not the main climate-focused text.\",\n  \"reason\": \"The supplied text contains two distinct articles. The later article is centrally about clean coal and its climate implications, making the available climate-focused article core research material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
   "temperature": 0.0,
   "temperature_sent_to_api": false,
-  "max_output_tokens": 1000,
+  "max_output_tokens": 2000,
   "max_output_tokens_sent_to_api": true,
-  "created_at": "2026-11-25T01:56:04Z",
-  "duration_seconds": 7.643
+  "created_at": "2026-11-25T13:18:15Z",
+  "duration_seconds": 4.152,
+  "error": null
 }

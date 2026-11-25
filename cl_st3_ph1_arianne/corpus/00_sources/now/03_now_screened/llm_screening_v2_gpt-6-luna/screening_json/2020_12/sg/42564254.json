@@ -1,6 +1,6 @@
 {
   "article_id": "42564254",
-  "status": "invalid_response",
+  "status": "success",
   "input": {
     "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
     "article_file": "02_now_organised_reconciled/2020_12/sg/42564254.txt",
@@ -23,13 +23,32 @@
     "source_files": "[\"now-sources-2020.txt\"]",
     "metadata_article_files": "[\"text-20-12/20-12-sg.txt\"]"
   },
-  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.84,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A compilation of unrelated news excerpts, including political events, health, discrimination, employment, technology, and Singapore's climate rally.\",\n  \"climate_relevance\": \"Several excerpts meaningfully discuss the Singapore climate rally, calls for stronger government and corporate action, and public concern about climate impacts. These are substantial within their individual excerpts, but climate change is not the main topic of the compilation as a whole.\",\n  \"reason\": \"The text combines multiple unrelated news items, and no single main article can confidently be identified. The climate-rally passages provide meaningful climate discourse, so the text is relevant beyond an incidental mention, but the overall material is mixed rather",
-  "validation_error": "Unterminated string starting at: line 7 column 13 (char 579)",
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.86,
+    "climate_role": "substantial",
+    "main_topic": "Mixed news snippets, including coverage of Singapore's first climate change rally and public responses to climate action",
+    "climate_relevance": "Several passages directly discuss climate change, including rally coverage, calls for stronger government and corporate action, youth concerns about future impacts, and the contrast between climate advocacy and litter at a major event.",
+    "reason": "The text is a compilation of unrelated reports, but it contains substantial, identifiable climate-change coverage rather than only incidental mentions. The rally passages meaningfully address climate discourse and public action.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1f86cd11971f4fde40ac355bca0abeaf96b406d85c9a25ad4aa2b115e7dce4b6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "47ea3a2cb6d06c4caa8201bfd7962a822313c4721db749c6d7ebd0a9fb44b694",
+    "raw_response_text_sha256": "cc43bf3e6cc2d83d957fb5559a78b52013b85c4090d515acd7b59813587d26b4"
+  },
   "api_metadata": {
-    "id": "resp_0e5b40784b870755006b062685613087d299899823b74abdd6",
+    "id": "resp_02f00d736fc580df006b06dffde34c87d1a41e85d04ba126c7",
     "model": "gpt-6-luna",
-    "created_at": 1795565189.0,
-    "status": "incomplete",
+    "created_at": 1795612669.0,
+    "status": "completed",
     "usage": {
       "input_tokens": 5516,
       "input_tokens_details": {
@@ -40,28 +59,19 @@
           "ttl_30m_tokens": 5513
         }
       },
-      "output_tokens": 1000,
+      "output_tokens": 727,
       "output_tokens_details": {
-        "reasoning_tokens": 830
+        "reasoning_tokens": 559
       },
-      "total_tokens": 6516
+      "total_tokens": 6243
     }
   },
-  "hashes": {
-    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
-    "article_text_sha256": "1f86cd11971f4fde40ac355bca0abeaf96b406d85c9a25ad4aa2b115e7dce4b6",
-    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
-    "rendered_prompt_sha256": "47ea3a2cb6d06c4caa8201bfd7962a822313c4721db749c6d7ebd0a9fb44b694",
-    "raw_response_text_sha256": "921efd0f1c938e044bd9fec5ad49bc9fc47022a20212d5135b11872e7c4c85f8"
-  },
-  "model": {
-    "configured_model": "gpt-6-luna",
-    "response_model": "gpt-6-luna"
-  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Mixed news snippets, including coverage of Singapore's first climate change rally and public responses to climate action\",\n  \"climate_relevance\": \"Several passages directly discuss climate change, including rally coverage, calls for stronger government and corporate action, youth concerns about future impacts, and the contrast between climate advocacy and litter at a major event.\",\n  \"reason\": \"The text is a compilation of unrelated reports, but it contains substantial, identifiable climate-change coverage rather than only incidental mentions. The rally passages meaningfully address climate discourse and public action.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
   "temperature": 0.0,
   "temperature_sent_to_api": false,
-  "max_output_tokens": 1000,
+  "max_output_tokens": 2000,
   "max_output_tokens_sent_to_api": true,
-  "created_at": "2026-11-25T00:06:37Z",
-  "duration_seconds": 7.828
+  "created_at": "2026-11-25T13:17:56Z",
+  "duration_seconds": 9.423,
+  "error": null
 }
