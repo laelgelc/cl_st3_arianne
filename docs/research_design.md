@@ -58,7 +58,7 @@ Total Corpus (N = 3,573 texts)
 
 - **Language:** English.
 - **Medium:** Digital texts circulated on the Internet.
-- **Temporal Horizon:** 1 November 2015 through 30 November 2022, inclusive. The Paris Agreement was adopted at COP21 on 12 December 2015. As a documented exception, the treaty stratum may also include segments from the 1992 UNFCCC and 1997 Kyoto Protocol; their original dates must not be confused with their collection dates.
+- **Temporal Horizon:** 1 November 2015 through 30 November 2022, inclusive. The Paris Agreement was adopted at COP21 on 12 December 2015. As documented exceptions, the treaty stratum may include segments from the 1992 UNFCCC and 1997 Kyoto Protocol, and the synthesis-report stratum may include earlier IPCC reports. Original publication dates must not be confused with collection dates.
 
 ### Summary of Corpus Strata and Data Sources
 

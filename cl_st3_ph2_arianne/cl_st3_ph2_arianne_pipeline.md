@@ -96,6 +96,26 @@ Back up the existing corpus before compilation. The compiler selects approved ca
 
 Earlier ONU review bundles use the legacy stratum label `treaty-segment`; the compiler maps ONU treaty candidates to `gov-treaty` without modifying the reviewed manifest or spreadsheet.
 
+### IPCC report candidate preparation and review
+
+From `cl_st3_ph1_arianne/`, create a new bundle (requires `openpyxl`):
+
+```shell
+python corpus/00_sources/government_onu_ipcc/prepare_ipcc_candidates.py --output-dir corpus/00_sources/government_onu_ipcc/ipcc_review
+```
+
+The directory must not already exist. The bundle contains 107 pending candidates; inspect `diagnostics.jsonl`, including five suspicious `20014` subject labels. Earlier IPCC reports are a permitted timeframe exception; reports after 30 November 2022 remain outside scope. The collection date is not the publication date.
+
+Open each `full_text_path` and verify the full text, report identity, original publication date, section and boundaries against the official source. Record verified publication dates and any corrections in `review_notes`; the publication date field remains unverified and is not editable in this workbook. Edit only `review_status` and `review_notes`. The segmentation document mentions a 2023 report absent from the metadata, so verify source identity rather than assuming it is represented. Any rejection leaves fewer than the target of 107 and requires a replacement.
+
+After review, from `cl_st3_ph2_arianne/`:
+
+```shell
+python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/government_onu_ipcc/ipcc_review/candidates.ndjson --review-xlsx ../cl_st3_ph1_arianne/corpus/00_sources/government_onu_ipcc/ipcc_review/review.xlsx --reviewed-manifest ../cl_st3_ph1_arianne/corpus/00_sources/government_onu_ipcc/ipcc_review/reviewed.ndjson --output corpus --stratum gov-report --count 107 --seed 42
+```
+
+Back up the corpus before compilation. The compiler selects approved candidates only; original-document boundary offsets remain to be verified.
+
 ## 2. Tag the corpus
 
 This stage tags the finalized ENADE target corpus with POS tags and lemmas using TreeTagger (`tree-tagger-portuguese2`), producing 3-column tab-delimited files in `corpus/05_enade_tagged/` alongside provenance manifests.
