@@ -1,0 +1,77 @@
+{
+  "article_id": "70501159",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70501159.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70501159.json"
+  },
+  "manifest_row": {
+    "article_id": "70501159",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70501159.txt",
+    "now_field_2": "625",
+    "date_original": "19-02-10",
+    "date_iso": "2019-02-10",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PO1902/S00062/esr-scientists-show-women-closing-the-gender-gap.htm",
+    "title": "ESR scientists show women closing the gender gap",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Gender representation and women’s participation in science at ESR",
+    "climate_relevance": "Climate change appears only in a separate, truncated snippet about a political party’s environment proposals; it is not part of the identifiable main article.",
+    "reason": "The main article focuses on gender representation in science and contains no meaningful climate discourse. The brief climate reference belongs to an unrelated snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ef9ff7552f779f7d9bc846772601f7e4c95cd30e42e6b642c8631c8aacfe12b9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c9311b5f966c164c4672ebcdf01d49bd43f07bb0073b3d3f9f2488685d557ca4",
+    "raw_response_text_sha256": "c89417198b011369fdc737aa1c6eee4f51b3fddeb822bcd319f060d8b576e013"
+  },
+  "api_metadata": {
+    "id": "resp_0499605d242a766f006b063d0270ec87d1904e669956af516c",
+    "model": "gpt-6-luna",
+    "created_at": 1795570946.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1299,
+      "input_tokens_details": {
+        "cache_write_tokens": 1296,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1296
+        }
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 1640
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Gender representation and women’s participation in science at ESR\",\n  \"climate_relevance\": \"Climate change appears only in a separate, truncated snippet about a political party’s environment proposals; it is not part of the identifiable main article.\",\n  \"reason\": \"The main article focuses on gender representation in science and contains no meaningful climate discourse. The brief climate reference belongs to an unrelated snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:29Z",
+  "duration_seconds": 2.67,
+  "error": null
+}

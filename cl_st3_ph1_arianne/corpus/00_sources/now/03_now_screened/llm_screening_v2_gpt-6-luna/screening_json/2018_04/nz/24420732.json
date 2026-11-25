@@ -1,0 +1,77 @@
+{
+  "article_id": "24420732",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_04/nz/24420732.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_04/nz/24420732.json"
+  },
+  "manifest_row": {
+    "article_id": "24420732",
+    "group": "2018_04",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_04/nz/24420732.txt",
+    "now_field_2": "1362",
+    "date_original": "18-04-30",
+    "date_iso": "2018-04-30",
+    "source_name": "Indian NewsLink",
+    "url": "http://www.indiannewslink.co.nz/biggest-truck-shop-fined-1-6-million-for-beach-of-law/",
+    "title": "Biggest truck shop fined $1.6 million for breach of law",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-04.txt\"]",
+    "metadata_article_files": "[\"text-18-04/18-04-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A mobile trader's consumer-law violations and resulting fines",
+    "climate_relevance": "Climate change appears only in a separate biosecurity announcement, where it is briefly listed as one pressure on biosecurity.",
+    "reason": "The identifiable main article concerns consumer-law enforcement and contains no climate discourse. The appended, unrelated biosecurity announcement mentions climate change once without meaningful elaboration, so it does not make the main article relevant to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a4901ed33e2e863ed96735b9c962a67fe86f1766eb6efe68b5ee659314883bdf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "98159cd07cfa91b4e06f807a4e896696d8a7d25b549f53ba4c9546313cd6544b",
+    "raw_response_text_sha256": "073ca05eb90ace31fe2ec38aaa8d671fe91a431093baa42c3d682515b23e32e3"
+  },
+  "api_metadata": {
+    "id": "resp_06378813476f2506006b06126b3be087d2b87ba728866d6104",
+    "model": "gpt-6-luna",
+    "created_at": 1795560043.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1938,
+      "input_tokens_details": {
+        "cache_write_tokens": 1935,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1935
+        }
+      },
+      "output_tokens": 437,
+      "output_tokens_details": {
+        "reasoning_tokens": 280
+      },
+      "total_tokens": 2375
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A mobile trader's consumer-law violations and resulting fines\",\n  \"climate_relevance\": \"Climate change appears only in a separate biosecurity announcement, where it is briefly listed as one pressure on biosecurity.\",\n  \"reason\": \"The identifiable main article concerns consumer-law enforcement and contains no climate discourse. The appended, unrelated biosecurity announcement mentions climate change once without meaningful elaboration, so it does not make the main article relevant to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:40:46Z",
+  "duration_seconds": 3.373,
+  "error": null
+}

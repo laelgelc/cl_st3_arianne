@@ -1,0 +1,77 @@
+{
+  "article_id": "16752096",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/za/16752096.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/za/16752096.json"
+  },
+  "manifest_row": {
+    "article_id": "16752096",
+    "group": "2017_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/za/16752096.txt",
+    "now_field_2": "485",
+    "date_original": "17-02-05",
+    "date_iso": "2017-02-05",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/local/2017/02/05/Another-slaying-at-notorious-Glebelands-Hostel",
+    "title": "Another slaying at notorious Glebelands Hostel",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A murder investigation at Glebelands Hostel in Durban",
+    "climate_relevance": "A fragment about emissions targets and uncertainty regarding U.S. climate policy appears among unrelated snippets, but the identifiable main article is about a murder investigation.",
+    "reason": "The climate-related text is an isolated fragment unrelated to the main article and does not provide enough context for meaningful climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f0bd5b458f58429368b9ef04c5d32c82b11706a18af556469f95718ead26c717",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0b98d6947ff19814afdef21d5d96bf73430cf6b84237278e5d61c6ebd88bca6a",
+    "raw_response_text_sha256": "62a8187338769e7b8d14e5f84bfe932c9f5f129b7361243e0fd53906be9b5a12"
+  },
+  "api_metadata": {
+    "id": "resp_09d5468ec3b06eaa006b060829866087d2ba9e63fdd1a39f91",
+    "model": "gpt-6-luna",
+    "created_at": 1795557417.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1148,
+      "input_tokens_details": {
+        "cache_write_tokens": 1145,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1145
+        }
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 1462
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A murder investigation at Glebelands Hostel in Durban\",\n  \"climate_relevance\": \"A fragment about emissions targets and uncertainty regarding U.S. climate policy appears among unrelated snippets, but the identifiable main article is about a murder investigation.\",\n  \"reason\": \"The climate-related text is an isolated fragment unrelated to the main article and does not provide enough context for meaningful climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:57:00Z",
+  "duration_seconds": 2.573,
+  "error": null
+}

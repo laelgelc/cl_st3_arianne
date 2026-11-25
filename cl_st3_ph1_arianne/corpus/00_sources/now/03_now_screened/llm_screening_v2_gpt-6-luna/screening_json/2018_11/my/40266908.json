@@ -1,0 +1,77 @@
+{
+  "article_id": "40266908",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/my/40266908.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/my/40266908.json"
+  },
+  "manifest_row": {
+    "article_id": "40266908",
+    "group": "2018_11",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/my/40266908.txt",
+    "now_field_2": "1115",
+    "date_original": "18-11-13",
+    "date_iso": "2018-11-13",
+    "source_name": "The Star Online",
+    "url": "https://www.thestar.com.my/opinion/columnists/so-aunty-so-what/2018/11/14/repent-oh-ye-killers-of-the-earth-its-up-to-us-to-significantly-reduce-the-use-of-murderous-singleus/",
+    "title": "Repent, oh ye killers of the Earth!",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Plastic pollution and policies to reduce single-use plastics",
+    "climate_relevance": "Climate change appears only as part of the name of Malaysia’s Ministry of Energy, Science, Technology, Environment and Climate Change; the article does not discuss climate change or its implications.",
+    "reason": "The article focuses on plastic waste, its effects on wildlife and waterways, and measures to reduce single-use plastics. The ministry-name reference is incidental and does not constitute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "17106c29ab6eb667a04ebcb793b2ea55010b48fa9540e9734e7a6d442e6ef0e1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9642bd85b190897fba6a11922e61631775062bfa677f3d66c55dfbb2113986d6",
+    "raw_response_text_sha256": "ba42fc621a31f256a650b34f785536fc2722ec357d37a1eb97c150542a05e986"
+  },
+  "api_metadata": {
+    "id": "resp_0ac7761b0fa1ebd2006b061e9c834087d2ab3da68530d32280",
+    "model": "gpt-6-luna",
+    "created_at": 1795563164.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1958,
+      "input_tokens_details": {
+        "cache_write_tokens": 1955,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1955
+        }
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 2187
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Plastic pollution and policies to reduce single-use plastics\",\n  \"climate_relevance\": \"Climate change appears only as part of the name of Malaysia’s Ministry of Energy, Science, Technology, Environment and Climate Change; the article does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on plastic waste, its effects on wildlife and waterways, and measures to reduce single-use plastics. The ministry-name reference is incidental and does not constitute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:32:46Z",
+  "duration_seconds": 1.852,
+  "error": null
+}

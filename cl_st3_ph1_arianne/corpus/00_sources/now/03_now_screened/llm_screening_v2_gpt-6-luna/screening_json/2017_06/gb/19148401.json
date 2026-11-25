@@ -1,0 +1,77 @@
+{
+  "article_id": "19148401",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/gb/19148401.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/gb/19148401.json"
+  },
+  "manifest_row": {
+    "article_id": "19148401",
+    "group": "2017_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/gb/19148401.txt",
+    "now_field_2": "845",
+    "date_original": "17-06-24",
+    "date_iso": "2017-06-24",
+    "source_name": "The Independent",
+    "url": "http://www.independent.co.uk/news/world/americas/us-politics/trump-golf-course-visits-latest-month-30-obama-43-properties-a7806736.html",
+    "title": "Donald Trump spends a 30th day of his presidency visiting one of ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-GB.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Donald Trump's visits to his golf courses and criticism of his use of presidential time",
+    "climate_relevance": "A gallery caption briefly mentions Trump's efforts to dismantle actions by his predecessor and an EPA review of the Clean Power Plan, which would cap power-plant emissions.",
+    "reason": "The main article concerns Trump's golf visits, not climate change. However, the climate-policy caption provides a meaningful, if brief, reference to climate-related regulation, making the text peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5024ca0ac7e16d4536c786febc45f3f934a817a1d471c1595287d725ea904857",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "676af8cbcb3c26423dc57252c4839fc06d696f114533ccfec95dbd650399bb51",
+    "raw_response_text_sha256": "61be5b294621cf34be33b5adfc2e40031b4718c4047a22f072f66e3559ee8d69"
+  },
+  "api_metadata": {
+    "id": "resp_0078e6369564e0d1006b060b85df1c87d2ac043eedeeb522d0",
+    "model": "gpt-6-luna",
+    "created_at": 1795558277.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1600,
+      "input_tokens_details": {
+        "cache_write_tokens": 1597,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1597
+        }
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 1905
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Donald Trump's visits to his golf courses and criticism of his use of presidential time\",\n  \"climate_relevance\": \"A gallery caption briefly mentions Trump's efforts to dismantle actions by his predecessor and an EPA review of the Clean Power Plan, which would cap power-plant emissions.\",\n  \"reason\": \"The main article concerns Trump's golf visits, not climate change. However, the climate-policy caption provides a meaningful, if brief, reference to climate-related regulation, making the text peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:11:20Z",
+  "duration_seconds": 2.577,
+  "error": null
+}

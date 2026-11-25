@@ -1,0 +1,77 @@
+{
+  "article_id": "82749178",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82749178.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82749178.json"
+  },
+  "manifest_row": {
+    "article_id": "82749178",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82749178.txt",
+    "now_field_2": "198",
+    "date_original": "19-12-18",
+    "date_iso": "2019-12-18",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191218220323-l3dtg",
+    "title": "Australia's NSW declares state of emergency for bushfires",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us7.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "New South Wales state of emergency amid extreme heat and bushfires",
+    "climate_relevance": "Climate change appears only in a boilerplate description of Reuters' coverage areas, not in the report itself.",
+    "reason": "The report describes a heat wave, record temperatures, and bushfires but does not connect them to climate change or discuss climate-related causes, impacts, or policy. The only explicit climate change reference is boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "541a8bc3387671678eb8e18df15cff7e57f473260e661db982ec6ca288ea0207",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8924e57e6114aa1979c16af6ad3ee5fe635b8d2738f64961a4e58f54bf6281d3",
+    "raw_response_text_sha256": "73f270a993cc50c052dd90505a1ced060bb1afffcd653dd4aa172eb5ac69999b"
+  },
+  "api_metadata": {
+    "id": "resp_04c0909ff0ca5700006b0648cfdcec87d1893d0894bf495545",
+    "model": "gpt-6-luna",
+    "created_at": 1795573967.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 766,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 203,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 969
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"New South Wales state of emergency amid extreme heat and bushfires\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of Reuters' coverage areas, not in the report itself.\",\n  \"reason\": \"The report describes a heat wave, record temperatures, and bushfires but does not connect them to climate change or discuss climate-related causes, impacts, or policy. The only explicit climate change reference is boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:32:49Z",
+  "duration_seconds": 1.782,
+  "error": null
+}

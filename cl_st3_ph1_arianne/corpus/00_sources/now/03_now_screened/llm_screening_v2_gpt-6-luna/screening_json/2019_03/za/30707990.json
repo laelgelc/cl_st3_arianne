@@ -1,0 +1,77 @@
+{
+  "article_id": "30707990",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/za/30707990.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/za/30707990.json"
+  },
+  "manifest_row": {
+    "article_id": "30707990",
+    "group": "2019_03",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/za/30707990.txt",
+    "now_field_2": "290",
+    "date_original": "19-03-27",
+    "date_iso": "2019-03-27",
+    "source_name": "Logistics Update Africa",
+    "url": "https://www.logupdateafrica.com/egyptair-cargo-carries-40-tonnes-of-live-honeybees-from-cairo-to-uae",
+    "title": "EgyptAir Cargo carries 40 tonnes of live honeybees from Cairo to UAE",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Airfreight transport of live honeybees from Egypt to the UAE",
+    "climate_relevance": "Climate change appears only in the name of a government ministry thanked for its assistance.",
+    "reason": "The text focuses on transporting and exporting live honeybees; it contains no meaningful discussion of climate change or its implications.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cd524051cbd26392c0bb32c194ceef37b1d30bb96bae1af971e108ce1b5aee30",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3fef3c23cc2aa9ab825456f67a986c3c5ac59fc461ee54db195e46ebc2f7b2f1",
+    "raw_response_text_sha256": "2f18a26f97d298c9b5bcef1c799477b2ac243cabd1e26a7a788076be58f5060b"
+  },
+  "api_metadata": {
+    "id": "resp_046bbcb0bba3db45006b0614fb420087d2984ffecfc66748ce",
+    "model": "gpt-6-luna",
+    "created_at": 1795560699.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 857,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 1047
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Airfreight transport of live honeybees from Egypt to the UAE\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government ministry thanked for its assistance.\",\n  \"reason\": \"The text focuses on transporting and exporting live honeybees; it contains no meaningful discussion of climate change or its implications.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:51:41Z",
+  "duration_seconds": 1.936,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "22688557",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_01/ca/22688557.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_01/ca/22688557.json"
+  },
+  "manifest_row": {
+    "article_id": "22688557",
+    "group": "2018_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_01/ca/22688557.txt",
+    "now_field_2": "469",
+    "date_original": "18-01-11",
+    "date_iso": "2018-01-11",
+    "source_name": "Lethbridge Herald",
+    "url": "http://lethbridgeherald.com/news/lethbridge-news/2018/01/11/city-helps-out-ironworkers/",
+    "title": "City helps out ironworkers",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
+    "metadata_article_files": "[\"text-18-01/text_18-01-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Ironworking training programs and workforce development in Lethbridge",
+    "climate_relevance": "The article connects the training program to wind-turbine work and green energy, and mentions a course called “Trades and Climate Change,” but does not discuss climate change in depth.",
+    "reason": "Climate change is relevant as background to the program’s green-energy context, while the article is mainly about vocational training and workforce development.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4cecb5ce6361dbf321dd56dc3e1bf799210ab4415052f8f8df15ecc753f84cac",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7afa035e91e24e4aa0f9fff4cd95b91bd9168a8f50e8aa339d3b44ad8fa8ccf1",
+    "raw_response_text_sha256": "386f5f27165950ba788a2e3638f7ed49bccb41697ddfc6117d39c6ae3fe71e66"
+  },
+  "api_metadata": {
+    "id": "resp_020058b359a726e9006b06106baac887d28cfb5e52c2423e59",
+    "model": "gpt-6-luna",
+    "created_at": 1795559532.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1118,
+      "input_tokens_details": {
+        "cache_write_tokens": 1115,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1115
+        }
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 1395
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Ironworking training programs and workforce development in Lethbridge\",\n  \"climate_relevance\": \"The article connects the training program to wind-turbine work and green energy, and mentions a course called “Trades and Climate Change,” but does not discuss climate change in depth.\",\n  \"reason\": \"Climate change is relevant as background to the program’s green-energy context, while the article is mainly about vocational training and workforce development.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:32:14Z",
+  "duration_seconds": 2.44,
+  "error": null
+}

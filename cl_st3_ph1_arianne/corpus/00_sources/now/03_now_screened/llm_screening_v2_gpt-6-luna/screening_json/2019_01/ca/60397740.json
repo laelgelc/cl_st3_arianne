@@ -1,0 +1,77 @@
+{
+  "article_id": "60397740",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/ca/60397740.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/ca/60397740.json"
+  },
+  "manifest_row": {
+    "article_id": "60397740",
+    "group": "2019_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/ca/60397740.txt",
+    "now_field_2": "1008",
+    "date_original": "19-01-01",
+    "date_iso": "2019-01-01",
+    "source_name": "National Post",
+    "url": "https://nationalpost.com/pmn/news-pmn/nys-1st-female-attorney-general-closes-her-surprise-tenure",
+    "title": "NY's 1st female attorney general closes her surprise tenure",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "passing",
+    "main_topic": "Barbara Underwood's tenure as New York attorney general",
+    "climate_relevance": "The article briefly mentions Underwood's lawsuit against Exxon, alleging that it misled investors about climate change.",
+    "reason": "The main article is about Underwood's career and political work, not climate change. Its reference to climate-related investor deception is relevant to climate discourse but too brief to make the article core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "560d4fa40da297b0dfeb32b11a002d8c1b80fc8c7864fe18d7dae8e70a1cfcc7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ef49c10ebbb8b6ec5a621119b313b3467e71c7d0e3d317c7b9b497a3408f89a8",
+    "raw_response_text_sha256": "b4d6f6acd2531a29e718044535e8ae28c084accc3b6a069690310c199db2e97b"
+  },
+  "api_metadata": {
+    "id": "resp_00507d7bd142233a006b063279ad6887d1a1c79517d556d808",
+    "model": "gpt-6-luna",
+    "created_at": 1795568249.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1823,
+      "input_tokens_details": {
+        "cache_write_tokens": 1820,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1820
+        }
+      },
+      "output_tokens": 418,
+      "output_tokens_details": {
+        "reasoning_tokens": 272
+      },
+      "total_tokens": 2241
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Barbara Underwood's tenure as New York attorney general\",\n  \"climate_relevance\": \"The article briefly mentions Underwood's lawsuit against Exxon, alleging that it misled investors about climate change.\",\n  \"reason\": \"The main article is about Underwood's career and political work, not climate change. Its reference to climate-related investor deception is relevant to climate discourse but too brief to make the article core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:57:33Z",
+  "duration_seconds": 3.421,
+  "error": null
+}

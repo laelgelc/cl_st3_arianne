@@ -1,0 +1,77 @@
+{
+  "article_id": "60928330",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ca/60928330.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ca/60928330.json"
+  },
+  "manifest_row": {
+    "article_id": "60928330",
+    "group": "2019_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ca/60928330.txt",
+    "now_field_2": "511",
+    "date_original": "19-06-16",
+    "date_iso": "2019-06-16",
+    "source_name": "Toronto Star",
+    "url": "https://www.thestar.com/news/world/us/2019/06/16/trump-calls-newspaper-report-on-russia-power-grid-treason.html",
+    "title": "Trump calls newspaper report on Russia power grid 'treason'",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Donald Trump's reaction to a newspaper report about U.S. cyber operations against Russia",
+    "climate_relevance": "The identifiable main article contains no meaningful climate discourse. A separate appended article discusses iceberg tourism, glacier melt, and climate change, but it is unrelated to the main article.",
+    "reason": "The main article is about cybersecurity and Trump's dispute with The New York Times, not climate change. The climate-related material belongs to a distinct appended article, so it does not make the identifiable main article suitable for the main climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cf4a71c32c6f34decb4351f11d97a86d1e2c8b58c1c96a37116007338290b306",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "61f7d6a6a0b87dc54b9bfdeec601b7f47941bfade25a096a260c3568f1e272b4",
+    "raw_response_text_sha256": "a844b1829305193c4c5e3b11b80b9ad556e7d13940408d3e46a8130b972e40f2"
+  },
+  "api_metadata": {
+    "id": "resp_0619e38bcf3306c1006b0635830e7087d189b791772c237a2a",
+    "model": "gpt-6-luna",
+    "created_at": 1795569027.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2217,
+      "input_tokens_details": {
+        "cache_write_tokens": 2214,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2214
+        }
+      },
+      "output_tokens": 443,
+      "output_tokens_details": {
+        "reasoning_tokens": 268
+      },
+      "total_tokens": 2660
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Donald Trump's reaction to a newspaper report about U.S. cyber operations against Russia\",\n  \"climate_relevance\": \"The identifiable main article contains no meaningful climate discourse. A separate appended article discusses iceberg tourism, glacier melt, and climate change, but it is unrelated to the main article.\",\n  \"reason\": \"The main article is about cybersecurity and Trump's dispute with The New York Times, not climate change. The climate-related material belongs to a distinct appended article, so it does not make the identifiable main article suitable for the main climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:10:30Z",
+  "duration_seconds": 3.539,
+  "error": null
+}

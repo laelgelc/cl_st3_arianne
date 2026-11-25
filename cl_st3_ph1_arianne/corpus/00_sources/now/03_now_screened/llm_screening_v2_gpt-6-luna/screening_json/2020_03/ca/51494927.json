@@ -1,0 +1,77 @@
+{
+  "article_id": "51494927",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/ca/51494927.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/ca/51494927.json"
+  },
+  "manifest_row": {
+    "article_id": "51494927",
+    "group": "2020_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/ca/51494927.txt",
+    "now_field_2": "425",
+    "date_original": "20-03-01",
+    "date_iso": "2020-03-01",
+    "source_name": "macleans.ca",
+    "url": "https://www.macleans.ca/schools/university-of-ottawa/",
+    "title": "University of Ottawa: Tuition and Profile",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-ca1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "University of Ottawa programs, campus, and student opportunities",
+    "climate_relevance": "Climate change appears only as one example of a topic students might study using data science.",
+    "reason": "The text is a university profile and promotional listing; its single passing mention of climate change contains no meaningful climate-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a8ae260ffb54b78cee3edd2eceb974040aedcfae3399d7d4acee5dd1317531d7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "25b820275c2e44230f3ae4fbc58d4dfb8777f279a17f61adc55d245c75ca4f55",
+    "raw_response_text_sha256": "37b3e5b3a03458a436e5a1d32e18f6aaefd7588f87938676d2571f4b92670170"
+  },
+  "api_metadata": {
+    "id": "resp_06b469028d8b2012006b062dda716887d1a76773079e14ae17",
+    "model": "gpt-6-luna",
+    "created_at": 1795567066.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1037,
+      "input_tokens_details": {
+        "cache_write_tokens": 1034,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1034
+        }
+      },
+      "output_tokens": 170,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 1207
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"University of Ottawa programs, campus, and student opportunities\",\n  \"climate_relevance\": \"Climate change appears only as one example of a topic students might study using data science.\",\n  \"reason\": \"The text is a university profile and promotional listing; its single passing mention of climate change contains no meaningful climate-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:37:48Z",
+  "duration_seconds": 1.754,
+  "error": null
+}

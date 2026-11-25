@@ -1,0 +1,77 @@
+{
+  "article_id": "60308609",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/ca/60308609.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/ca/60308609.json"
+  },
+  "manifest_row": {
+    "article_id": "60308609",
+    "group": "2018_11",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/ca/60308609.txt",
+    "now_field_2": "507",
+    "date_original": "18-11-30",
+    "date_iso": "2018-11-30",
+    "source_name": "CTV News",
+    "url": "https://www.ctvnews.ca/canada/former-patrick-brown-aide-dismissed-from-post-amid-allegations-of-tory-meddling-1.4200254",
+    "title": "Former Patrick Brown aide dismissed from post amid allegations of ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The dismissal of a former political aide from Ontario Power Generation and allegations of political interference.",
+    "climate_relevance": "Climate change appears only in the job title of an opposition critic; the article contains no discussion of climate issues.",
+    "reason": "The climate reference is incidental and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "35b93316139f4c6b567d02c8242a9883209adbbea9d27678476bea53cd75a06a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "688ae153b30fc17811bcd744d7159d6b2f36e29b14b12dfd48f8453b79047036",
+    "raw_response_text_sha256": "9b2ee9d5aa9ff339b114a6348295efb27fa506d77d39d841c54a6d8528beee99"
+  },
+  "api_metadata": {
+    "id": "resp_07dbbc30f1243b91006b0631fff5ac87d1b6b219f1e42cadf3",
+    "model": "gpt-6-luna",
+    "created_at": 1795568128.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1154,
+      "input_tokens_details": {
+        "cache_write_tokens": 1151,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1151
+        }
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 1366
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The dismissal of a former political aide from Ontario Power Generation and allegations of political interference.\",\n  \"climate_relevance\": \"Climate change appears only in the job title of an opposition critic; the article contains no discussion of climate issues.\",\n  \"reason\": \"The climate reference is incidental and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:55:29Z",
+  "duration_seconds": 1.813,
+  "error": null
+}

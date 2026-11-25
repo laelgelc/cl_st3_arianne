@@ -1,0 +1,77 @@
+{
+  "article_id": "82714445",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82714445.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82714445.json"
+  },
+  "manifest_row": {
+    "article_id": "82714445",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82714445.txt",
+    "now_field_2": "177",
+    "date_original": "19-12-16",
+    "date_iso": "2019-12-16",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191216200210-26tkv",
+    "title": "Trump says U.S. is watching North Korea closely",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Tensions between the United States and North Korea",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the publication's coverage.",
+    "reason": "The article concerns U.S.–North Korea relations and contains no meaningful climate discourse; the sole climate reference is in boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3d9aa2756c70740ae61a55c381ee387b75f0feb56135e08c7250d3ac21b93a3e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ccf898698f0769607cec3ec6b9e44f53cc83f810fa68c6037a6940dfb0ed063b",
+    "raw_response_text_sha256": "bad9b1ae1ed0f168d1888f823bc9b791ef334f5eabd94d6d43330d6bcbc3d3f3"
+  },
+  "api_metadata": {
+    "id": "resp_09b1c643de71750f006b0648c5543087d1a4cab64b15b29ee9",
+    "model": "gpt-6-luna",
+    "created_at": 1795573957.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 715,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 189,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 904
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Tensions between the United States and North Korea\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the publication's coverage.\",\n  \"reason\": \"The article concerns U.S.–North Korea relations and contains no meaningful climate discourse; the sole climate reference is in boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:32:39Z",
+  "duration_seconds": 2.143,
+  "error": null
+}

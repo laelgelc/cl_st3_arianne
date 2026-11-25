@@ -1,0 +1,77 @@
+{
+  "article_id": "83068038",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83068038.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83068038.json"
+  },
+  "manifest_row": {
+    "article_id": "83068038",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83068038.txt",
+    "now_field_2": "166",
+    "date_original": "20-01-04",
+    "date_iso": "2020-01-04",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20200104153232-139xc",
+    "title": "France's Macron discusses Middle East tensions with Iraq's Salih and UAE",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Middle East tensions following the killing of Qassem Soleimani and Abu Mahdi al-Muhandis",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news organization's coverage.",
+    "reason": "The article concerns diplomatic and military tensions in the Middle East; its sole climate reference is unrelated editorial boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "22aa5d5bc40462fb1fcdd020090f511157cc8f2be8d94e1bdd92dcb55f66e759",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "58515f57dbb9944f01915e5a2e994ed4f7c818f04de9795991e5ec9a9a16c907",
+    "raw_response_text_sha256": "edeecb743ecd0067ee97b413d25b8bcfb1da3747f3896174a7f226600b11ef79"
+  },
+  "api_metadata": {
+    "id": "resp_01d44dae8db054a8006b0649182c2087d1a22a7b414d31efe4",
+    "model": "gpt-6-luna",
+    "created_at": 1795574040.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 703,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 165,
+      "output_tokens_details": {
+        "reasoning_tokens": 28
+      },
+      "total_tokens": 868
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Middle East tensions following the killing of Qassem Soleimani and Abu Mahdi al-Muhandis\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news organization's coverage.\",\n  \"reason\": \"The article concerns diplomatic and military tensions in the Middle East; its sole climate reference is unrelated editorial boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:34:01Z",
+  "duration_seconds": 1.492,
+  "error": null
+}

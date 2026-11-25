@@ -1,0 +1,77 @@
+{
+  "article_id": "3885117",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/ie/3885117.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/ie/3885117.json"
+  },
+  "manifest_row": {
+    "article_id": "3885117",
+    "group": "2015_12",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/ie/3885117.txt",
+    "now_field_2": "278",
+    "date_original": "15-12-10",
+    "date_iso": "2015-12-10",
+    "source_name": "Irish Times",
+    "url": "http://www.irishtimes.com/news/ireland/irish-news/images-of-the-day-1.2461991",
+    "title": "Images of the Day",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "A collection of unrelated photo captions",
+    "climate_relevance": "One caption identifies a protest outside the 2015 World Climate Change Conference, but gives no substantive information about climate change or the protest's message.",
+    "reason": "Climate change appears only as a passing reference in one caption among several unrelated photographs, so the text offers little meaningful material for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2c787f8f2f3329269f3aa5f1fb8099b11ca39842cae2b2f06a492f1c5e52b97e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2ac0ff906324aa0d41824a7efdd634beff307a8e17e958e714033f877dd2bee1",
+    "raw_response_text_sha256": "b1203e4bedb85191d57b79c2585f1e8ce928fb30b0ebdc56228ce7bb31b8d7c5"
+  },
+  "api_metadata": {
+    "id": "resp_016527c98dece9b7006b061da9408087d282c7692f3a09e816",
+    "model": "gpt-6-luna",
+    "created_at": 1795562921.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 914,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 1233
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of unrelated photo captions\",\n  \"climate_relevance\": \"One caption identifies a protest outside the 2015 World Climate Change Conference, but gives no substantive information about climate change or the protest's message.\",\n  \"reason\": \"Climate change appears only as a passing reference in one caption among several unrelated photographs, so the text offers little meaningful material for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:28:43Z",
+  "duration_seconds": 2.567,
+  "error": null
+}

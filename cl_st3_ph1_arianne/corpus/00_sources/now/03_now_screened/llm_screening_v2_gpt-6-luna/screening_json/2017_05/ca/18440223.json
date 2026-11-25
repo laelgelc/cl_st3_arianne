@@ -1,0 +1,77 @@
+{
+  "article_id": "18440223",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/ca/18440223.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/ca/18440223.json"
+  },
+  "manifest_row": {
+    "article_id": "18440223",
+    "group": "2017_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/ca/18440223.txt",
+    "now_field_2": "2949",
+    "date_original": "17-05-14",
+    "date_iso": "2017-05-14",
+    "source_name": "Toronto Star",
+    "url": "https://www.thestar.com/news/gta/2017/05/14/georgina-island-residents-raise-concerns-over-proposed-sewage-plant.html",
+    "title": "Georgina Island residents raise concerns over proposed sewage plant",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "Proposed sewage treatment infrastructure in the Lake Simcoe watershed and concerns raised by Georgina Island First Nation residents",
+    "climate_relevance": "The text meaningfully links global warming to reduced lake-ice duration and describes climate change and fluctuating water temperatures as making travel to and from the island more hazardous. These points are relevant but secondary to the sewage project and its environmental and community impacts.",
+    "reason": "Climate change is discussed in specific terms, but it is not the article's central subject; the main coverage concerns the proposed sewage plant, water quality, and Indigenous community concerns.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "83a067f17f5b4a3bb6335253690f444b51a35037a654f6494f696c8ec0090a2b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bdf2754bda9c82aa3def73accd1557b517a095a32671d76eba259d1d9a6ff460",
+    "raw_response_text_sha256": "16a0f06c42152032dea973fc5d2053922c37249806ac24b046e2fbe98bdc3775"
+  },
+  "api_metadata": {
+    "id": "resp_06301dfa150ffb66006b060a3e5a0487d2a048adf97d211d15",
+    "model": "gpt-6-luna",
+    "created_at": 1795557950.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4381,
+      "input_tokens_details": {
+        "cache_write_tokens": 4378,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4378
+        }
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 4666
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Proposed sewage treatment infrastructure in the Lake Simcoe watershed and concerns raised by Georgina Island First Nation residents\",\n  \"climate_relevance\": \"The text meaningfully links global warming to reduced lake-ice duration and describes climate change and fluctuating water temperatures as making travel to and from the island more hazardous. These points are relevant but secondary to the sewage project and its environmental and community impacts.\",\n  \"reason\": \"Climate change is discussed in specific terms, but it is not the article's central subject; the main coverage concerns the proposed sewage plant, water quality, and Indigenous community concerns.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:05:53Z",
+  "duration_seconds": 3.253,
+  "error": null
+}

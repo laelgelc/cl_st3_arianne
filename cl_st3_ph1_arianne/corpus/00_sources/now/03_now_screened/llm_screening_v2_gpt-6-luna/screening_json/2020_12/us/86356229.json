@@ -1,0 +1,77 @@
+{
+  "article_id": "86356229",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/86356229.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/86356229.json"
+  },
+  "manifest_row": {
+    "article_id": "86356229",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/86356229.txt",
+    "now_field_2": "1203",
+    "date_original": "20-12-02",
+    "date_iso": "2020-12-02",
+    "source_name": "New York Times",
+    "url": "https://www.nytimes.com/2020/12/02/climate/kids-toxic-smoke-and-inequality.html",
+    "title": "Kids, toxic smoke and inequality",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "Wildfire smoke and its health effects on children, alongside separate newsletter material about sustainable toys and personal climate pledges",
+    "climate_relevance": "The wildfire-smoke discussion connects unequal health impacts to the human toll of climate change, and a later newsletter section explicitly invites personal climate pledges. Climate change is relevant but is not the main focus of the smoke-health reporting.",
+    "reason": "The identifiable main article focuses on wildfire smoke, children's health, and inequality, with climate change providing meaningful context rather than dominating the discussion. The supplied text also includes separate newsletter sections on sustainable toys and climate pledges.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1105673f20e4efbbb2b4ee91ba9e74e1f5cca9b1785d69e0e7b9dd90864d21f8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e697b1a962e2ffea01885ade9720d4b1e298999e3f17090fec28299c14e627b4",
+    "raw_response_text_sha256": "a6b9b2003b861df5f3fcfda47900a82f53fb279592d93e583a10fa00bda9e44c"
+  },
+  "api_metadata": {
+    "id": "resp_0f75301e278c295e006b064fc7454c87d1aea30fd192ad1ea3",
+    "model": "gpt-6-luna",
+    "created_at": 1795575751.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2008,
+      "input_tokens_details": {
+        "cache_write_tokens": 2005,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2005
+        }
+      },
+      "output_tokens": 572,
+      "output_tokens_details": {
+        "reasoning_tokens": 386
+      },
+      "total_tokens": 2580
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Wildfire smoke and its health effects on children, alongside separate newsletter material about sustainable toys and personal climate pledges\",\n  \"climate_relevance\": \"The wildfire-smoke discussion connects unequal health impacts to the human toll of climate change, and a later newsletter section explicitly invites personal climate pledges. Climate change is relevant but is not the main focus of the smoke-health reporting.\",\n  \"reason\": \"The identifiable main article focuses on wildfire smoke, children's health, and inequality, with climate change providing meaningful context rather than dominating the discussion. The supplied text also includes separate newsletter sections on sustainable toys and climate pledges.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:02:36Z",
+  "duration_seconds": 5.058,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "83586562",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/83586562.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/83586562.json"
+  },
+  "manifest_row": {
+    "article_id": "83586562",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/83586562.txt",
+    "now_field_2": "402",
+    "date_original": "20-02-02",
+    "date_iso": "2020-02-02",
+    "source_name": "Vanity Fair",
+    "url": "https://www.vanityfair.com/style/2020/02/punxsutawney-phil-says-winter-is-cancelled",
+    "title": "Punxsutawney Phil Says Winter is Cancelled",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A humorous article about Punxsutawney Phil and Groundhog Day weather predictions",
+    "climate_relevance": "Climate change appears only in an appended promotional line for a film segment about its future effects on New York City.",
+    "reason": "The main article concerns Groundhog Day folklore and seasonal weather, not climate change. The sole climate-related mention is a brief promotional teaser that does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "73c919693e3b8933608484f65b71a29c5658872b2f1ccb5131ab132b2a3ff043",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2de08c23a8a474d2d96bc96cdc1d308ad77cc064393377a8ac48566dc48c66c0",
+    "raw_response_text_sha256": "e5bd7810b3ec595051a7a0142f62b42b428b2dbdec615d30a9127049e3496ae2"
+  },
+  "api_metadata": {
+    "id": "resp_08a504ded79d6f2a006b0649c6203087d1bff63b91da23f497",
+    "model": "gpt-6-luna",
+    "created_at": 1795574214.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1050,
+      "input_tokens_details": {
+        "cache_write_tokens": 1047,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1047
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1300
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A humorous article about Punxsutawney Phil and Groundhog Day weather predictions\",\n  \"climate_relevance\": \"Climate change appears only in an appended promotional line for a film segment about its future effects on New York City.\",\n  \"reason\": \"The main article concerns Groundhog Day folklore and seasonal weather, not climate change. The sole climate-related mention is a brief promotional teaser that does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:36:56Z",
+  "duration_seconds": 2.332,
+  "error": null
+}

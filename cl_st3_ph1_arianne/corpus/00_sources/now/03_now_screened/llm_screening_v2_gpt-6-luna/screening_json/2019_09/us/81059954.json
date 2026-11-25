@@ -1,0 +1,77 @@
+{
+  "article_id": "81059954",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/81059954.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/81059954.json"
+  },
+  "manifest_row": {
+    "article_id": "81059954",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/81059954.txt",
+    "now_field_2": "355",
+    "date_original": "19-09-13",
+    "date_iso": "2019-09-13",
+    "source_name": "WLKY",
+    "url": "https://www.wlky.com/article/indianas-mayor-pete-campaigning-in-louisville-next-week/29026708",
+    "title": "Indiana's 'Mayor Pete' making presidential campaign stop in Louisville",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "Pete Buttigieg's campaign rally and presidential candidacy",
+    "climate_relevance": "Climate change is briefly listed among several national problems, with no further discussion of its causes, impacts, or proposed responses.",
+    "reason": "The article is about a campaign rally; the climate reference is a passing item in a list and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "50f2cab04fe9bc5cf01498cc78dee0397cd86194e1fbe3ae152e617f2f2fb020",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "eb36cefefc118c020b87172a158c9142818675718f6bb6fb72995d368571ba03",
+    "raw_response_text_sha256": "38f2e93f23d1ab8d59da82324a30e86f24edb047f04386adf29087c340fd8de9"
+  },
+  "api_metadata": {
+    "id": "resp_0bfe4a307a67e1c8006b0646de139887d19639675172e88701",
+    "model": "gpt-6-luna",
+    "created_at": 1795573470.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 931,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1143
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Pete Buttigieg's campaign rally and presidential candidacy\",\n  \"climate_relevance\": \"Climate change is briefly listed among several national problems, with no further discussion of its causes, impacts, or proposed responses.\",\n  \"reason\": \"The article is about a campaign rally; the climate reference is a passing item in a list and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:24:32Z",
+  "duration_seconds": 2.235,
+  "error": null
+}

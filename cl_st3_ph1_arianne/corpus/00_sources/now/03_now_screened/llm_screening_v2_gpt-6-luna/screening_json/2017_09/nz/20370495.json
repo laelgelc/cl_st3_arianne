@@ -1,0 +1,77 @@
+{
+  "article_id": "20370495",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_09/nz/20370495.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_09/nz/20370495.json"
+  },
+  "manifest_row": {
+    "article_id": "20370495",
+    "group": "2017_09",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_09/nz/20370495.txt",
+    "now_field_2": "685",
+    "date_original": "17-09-04",
+    "date_iso": "2017-09-04",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1709/S00094/auckland-transport-to-address-flooding-along-tamaki-drive.htm",
+    "title": "Auckland Transport to address flooding along Tamaki Drive",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-09.txt\"]",
+    "metadata_article_files": "[\"text-17-09/text_17-09-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Auckland Transport plans to reduce coastal flooding on Tamaki Drive",
+    "climate_relevance": "The report frames the road and seawall improvements as helping Auckland adapt to climate change, rising sea levels, and coastal flooding, but its main focus is a local transport and infrastructure project.",
+    "reason": "Climate adaptation is meaningfully mentioned in the main report, though it is supporting context rather than the central subject. The text also includes unrelated snippets, including a fragment about sea-level inundation.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3de269fcbbece005483d6d22ce625afcd6d7343f2738a55597f1c170bd68b40d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5cf989df77b65abd0322f6aa1b59c91dec23e90ae4b963e5ab656bd2d7a0b968",
+    "raw_response_text_sha256": "f8f534353b9dab4d15f3d2a950b0723ce7504b7c9c778d04d4b6540911059bfd"
+  },
+  "api_metadata": {
+    "id": "resp_002fb33a872e96f8006b060d2f2a2c87d28847aa4c23dafe89",
+    "model": "gpt-6-luna",
+    "created_at": 1795558703.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1377,
+      "input_tokens_details": {
+        "cache_write_tokens": 1374,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1374
+        }
+      },
+      "output_tokens": 430,
+      "output_tokens_details": {
+        "reasoning_tokens": 267
+      },
+      "total_tokens": 1807
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Auckland Transport plans to reduce coastal flooding on Tamaki Drive\",\n  \"climate_relevance\": \"The report frames the road and seawall improvements as helping Auckland adapt to climate change, rising sea levels, and coastal flooding, but its main focus is a local transport and infrastructure project.\",\n  \"reason\": \"Climate adaptation is meaningfully mentioned in the main report, though it is supporting context rather than the central subject. The text also includes unrelated snippets, including a fragment about sea-level inundation.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:18:26Z",
+  "duration_seconds": 3.456,
+  "error": null
+}

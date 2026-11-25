@@ -1,0 +1,77 @@
+{
+  "article_id": "41497882",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/sg/41497882.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/sg/41497882.json"
+  },
+  "manifest_row": {
+    "article_id": "41497882",
+    "group": "2019_11",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/sg/41497882.txt",
+    "now_field_2": "1132",
+    "date_original": "19-11-19",
+    "date_iso": "2019-11-19",
+    "source_name": "eco-business.com",
+    "url": "https://www.eco-business.com/news/built-to-scale-growing-pains-hit-cambodias-businesses-for-good/",
+    "title": "Built to scale? Growing pains hit Cambodia's businesses ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Social enterprises in Southeast Asia and the challenges of scaling while preserving their social mission",
+    "climate_relevance": "Climate change appears only in boilerplate describing the Thomson Reuters Foundation's coverage areas; the article itself contains no meaningful climate discourse.",
+    "reason": "The article focuses on businesses supporting vulnerable communities in Cambodia. Its sole climate reference is an unrelated description of the foundation and a climate news link.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "77adbbe3f8479928f4ea3646bb3ef41ce9f6841140b05579a69a34224de5d94e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bfb8db7bc50558f1b60c4cb397db69490e05a6937ca6f47888095424248a231f",
+    "raw_response_text_sha256": "ac332e84f23d86bad7fa7b7339d1719d4bdea339f111abdb401b256c39340cf5"
+  },
+  "api_metadata": {
+    "id": "resp_0c59c34f87ba2c2c006b06220116e487d2b27adfbf10ad1e6f",
+    "model": "gpt-6-luna",
+    "created_at": 1795564033.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2012,
+      "input_tokens_details": {
+        "cache_write_tokens": 2009,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2009
+        }
+      },
+      "output_tokens": 204,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 2216
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Social enterprises in Southeast Asia and the challenges of scaling while preserving their social mission\",\n  \"climate_relevance\": \"Climate change appears only in boilerplate describing the Thomson Reuters Foundation's coverage areas; the article itself contains no meaningful climate discourse.\",\n  \"reason\": \"The article focuses on businesses supporting vulnerable communities in Cambodia. Its sole climate reference is an unrelated description of the foundation and a climate news link.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:47:14Z",
+  "duration_seconds": 1.985,
+  "error": null
+}

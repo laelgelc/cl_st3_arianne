@@ -1,0 +1,77 @@
+{
+  "article_id": "23724939",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_03/ca/23724939.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_03/ca/23724939.json"
+  },
+  "manifest_row": {
+    "article_id": "23724939",
+    "group": "2018_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_03/ca/23724939.txt",
+    "now_field_2": "593",
+    "date_original": "18-03-18",
+    "date_iso": "2018-03-18",
+    "source_name": "Timmins Press",
+    "url": "http://www.timminspress.com/2018/03/18/dyer-on-donald-trump-war-poverty-climate-change",
+    "title": "Dyer on Donald Trump, war, poverty, climate change",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-03.txt\"]",
+    "metadata_article_files": "[\"text-18-03/text_18-03-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "A report on a public talk about global affairs, including Donald Trump, war, and poverty.",
+    "climate_relevance": "Climate change is mentioned in the headline and in a list of topics covered, but the supplied text contains no substantive discussion of it.",
+    "reason": "The climate references are limited to brief topic listings and do not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "28f624ac86bee27f9daabe88b535f4f33b609d1f5e52fdac6d8fa5345f691fbc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7919902ffe8dfbc7898b28f38c1b2f137ee0e3c155b64641082fe37f5393a624",
+    "raw_response_text_sha256": "aff47b03cd8f4de3ab8c1843684eeded78a60591f837d4e6ecc4963fbcb6a019"
+  },
+  "api_metadata": {
+    "id": "resp_0c83c7bd60f79b4d006b061198cc6c87d295b5045531e81d83",
+    "model": "gpt-6-luna",
+    "created_at": 1795559832.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1320,
+      "input_tokens_details": {
+        "cache_write_tokens": 1317,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1317
+        }
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 1537
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A report on a public talk about global affairs, including Donald Trump, war, and poverty.\",\n  \"climate_relevance\": \"Climate change is mentioned in the headline and in a list of topics covered, but the supplied text contains no substantive discussion of it.\",\n  \"reason\": \"The climate references are limited to brief topic listings and do not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:37:14Z",
+  "duration_seconds": 1.864,
+  "error": null
+}

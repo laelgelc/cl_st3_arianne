@@ -1,0 +1,77 @@
+{
+  "article_id": "20304304",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/gb/20304304.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/gb/20304304.json"
+  },
+  "manifest_row": {
+    "article_id": "20304304",
+    "group": "2017_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/gb/20304304.txt",
+    "now_field_2": "791",
+    "date_original": "17-08-31",
+    "date_iso": "2017-08-31",
+    "source_name": "The Independent",
+    "url": "http://www.independent.co.uk/news/world/americas/us-politics/daca-dreamers-americans-opinion-support-trump-a7922851.html",
+    "title": "Majority of Americans support programme for young immigrants ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Public support for the DACA immigration programme",
+    "climate_relevance": "Climate change appears only in a caption within an unrelated gallery item about Trump's executive orders.",
+    "reason": "The identifiable main article concerns DACA and immigration. The brief climate-policy reference is confined to an unrelated gallery caption and does not meaningfully contribute to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9e7a6958a0615a577caecddaacc0378fb6ad119d1a18fc867ce8a244f844c17e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "83c3d5c9150d0b5b393412667825ed4f6852d2dc4308e84648fe04447fd12321",
+    "raw_response_text_sha256": "850a5d4cbb9e620e2710b6612176a0dc296f290d1763950bf80ccad46136c40e"
+  },
+  "api_metadata": {
+    "id": "resp_0c10a6c1a04dff8d006b060d1a610487d2912e719e9cdec9ad",
+    "model": "gpt-6-luna",
+    "created_at": 1795558682.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1529,
+      "input_tokens_details": {
+        "cache_write_tokens": 1526,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1526
+        }
+      },
+      "output_tokens": 394,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 1923
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Public support for the DACA immigration programme\",\n  \"climate_relevance\": \"Climate change appears only in a caption within an unrelated gallery item about Trump's executive orders.\",\n  \"reason\": \"The identifiable main article concerns DACA and immigration. The brief climate-policy reference is confined to an unrelated gallery caption and does not meaningfully contribute to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:18:05Z",
+  "duration_seconds": 3.096,
+  "error": null
+}

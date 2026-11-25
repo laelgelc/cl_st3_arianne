@@ -1,0 +1,77 @@
+{
+  "article_id": "9885124",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_07/gb/9885124.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_07/gb/9885124.json"
+  },
+  "manifest_row": {
+    "article_id": "9885124",
+    "group": "2016_07",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_07/gb/9885124.txt",
+    "now_field_2": "968",
+    "date_original": "16-07-14",
+    "date_iso": "2016-07-14",
+    "source_name": "Herald Scotland",
+    "url": "http://www.heraldscotland.com/news/14620606.May_accused_of_lurch_to_the_right/",
+    "title": "May accused of lurch to the right",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-07-qxx/16-07-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Theresa May's cabinet appointments and reshuffle",
+    "climate_relevance": "Climate change appears only in the name of the Department of Energy and Climate Change, which the article says was scrapped; the discussion concerns government structure and the energy sector, not climate issues.",
+    "reason": "The article contains no meaningful discussion of climate change, its impacts, science, or policy. The department name is incidental to coverage of the cabinet reshuffle.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7f40d61739c9f959fdbcc32f1db89457f14ba423139b42d9422a017f8c3ec14b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7171bef4514e99d4007f6325870794fc14479de1f329febd8bdcb85f1caa0ec3",
+    "raw_response_text_sha256": "6919a991b8c4a9dbfb20b1035e696fd5f0d2f613dada022c21a11ab5d8db3d7c"
+  },
+  "api_metadata": {
+    "id": "resp_0a5d1200d496c4f9006b06516b1a2087d1ace6c6bd345e9cc5",
+    "model": "gpt-6-luna",
+    "created_at": 1795576171.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1781,
+      "input_tokens_details": {
+        "cache_write_tokens": 1778,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1778
+        }
+      },
+      "output_tokens": 367,
+      "output_tokens_details": {
+        "reasoning_tokens": 209
+      },
+      "total_tokens": 2148
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Theresa May's cabinet appointments and reshuffle\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Department of Energy and Climate Change, which the article says was scrapped; the discussion concerns government structure and the energy sector, not climate issues.\",\n  \"reason\": \"The article contains no meaningful discussion of climate change, its impacts, science, or policy. The department name is incidental to coverage of the cabinet reshuffle.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:09:33Z",
+  "duration_seconds": 2.965,
+  "error": null
+}

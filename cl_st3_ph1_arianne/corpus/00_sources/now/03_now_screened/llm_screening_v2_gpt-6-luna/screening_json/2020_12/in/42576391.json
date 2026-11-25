@@ -1,0 +1,77 @@
+{
+  "article_id": "42576391",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/in/42576391.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/in/42576391.json"
+  },
+  "manifest_row": {
+    "article_id": "42576391",
+    "group": "2020_12",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/in/42576391.txt",
+    "now_field_2": "267",
+    "date_original": "20-12-23",
+    "date_iso": "2020-12-23",
+    "source_name": "orissadiary.com",
+    "url": "https://orissadiary.com/air-quality-commission-directs-strict-enforcement-of-dust-control-measures-to-curb-air-pollution/",
+    "title": "Air Quality Commission directs strict enforcement of dust ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-in.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Enforcement of construction and demolition dust controls to reduce air pollution in Delhi-NCR",
+    "climate_relevance": "Climate change appears only in the formal name of the Ministry of Environment, Forest and Climate Change; the text contains no meaningful climate-related discussion.",
+    "reason": "The article focuses on dust emissions, air quality, and regulatory enforcement. The climate reference is incidental institutional boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1247e3344ec705495a16874daa50c6ead0ff135ac351f275e7e38cb737fa9bb4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "91deb328aef6756949814516bec6a000fd87b2064ea480bfffddd31fe3e5e2eb",
+    "raw_response_text_sha256": "a0a4a3282d4e6d36bb8a084c589245513496a1e06f005b28940e1b38dfe73f35"
+  },
+  "api_metadata": {
+    "id": "resp_077d71b6976d68d9006b062694204887d2a659b410adceb571",
+    "model": "gpt-6-luna",
+    "created_at": 1795565204.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 804,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 200,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 1004
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Enforcement of construction and demolition dust controls to reduce air pollution in Delhi-NCR\",\n  \"climate_relevance\": \"Climate change appears only in the formal name of the Ministry of Environment, Forest and Climate Change; the text contains no meaningful climate-related discussion.\",\n  \"reason\": \"The article focuses on dust emissions, air quality, and regulatory enforcement. The climate reference is incidental institutional boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:06:45Z",
+  "duration_seconds": 5.272,
+  "error": null
+}

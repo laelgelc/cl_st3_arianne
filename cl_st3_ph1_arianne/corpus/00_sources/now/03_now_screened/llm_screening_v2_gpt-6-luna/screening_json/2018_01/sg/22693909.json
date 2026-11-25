@@ -1,0 +1,77 @@
+{
+  "article_id": "22693909",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_01/sg/22693909.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_01/sg/22693909.json"
+  },
+  "manifest_row": {
+    "article_id": "22693909",
+    "group": "2018_01",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_01/sg/22693909.txt",
+    "now_field_2": "484",
+    "date_original": "18-01-11",
+    "date_iso": "2018-01-11",
+    "source_name": "The News Minute",
+    "url": "https://www.thenewsminute.com/article/gay-indian-prince-throws-open-palace-doors-vulnerable-lgbtq-people-74579",
+    "title": "Gay Indian prince throws open palace doors to vulnerable LGBTQ ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
+    "metadata_article_files": "[\"text-18-01/text_18-01-SG.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An Indian prince establishing a support center for LGBT people",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the Thomson Reuters Foundation's coverage areas.",
+    "reason": "The article focuses on LGBT rights and support services. Its sole climate reference is unrelated boilerplate and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e65379cca0881a0d68ac4f03e2cc8229b41eab7441b448be1be90a3d49be74a9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "092998b8ace1b5703974f2724a39247fe2681f502b3d47ef52f05d8477329036",
+    "raw_response_text_sha256": "ef07a2694d62a8a25d87bcfd3e6d7396dd4bb77e84072e2f981448d1c2f63634"
+  },
+  "api_metadata": {
+    "id": "resp_0ed436141fb16724006b06106d0bbc87d28a420df2aafe2b96",
+    "model": "gpt-6-luna",
+    "created_at": 1795559533.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1140,
+      "input_tokens_details": {
+        "cache_write_tokens": 1137,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1137
+        }
+      },
+      "output_tokens": 183,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 1323
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An Indian prince establishing a support center for LGBT people\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the Thomson Reuters Foundation's coverage areas.\",\n  \"reason\": \"The article focuses on LGBT rights and support services. Its sole climate reference is unrelated boilerplate and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:32:14Z",
+  "duration_seconds": 1.699,
+  "error": null
+}

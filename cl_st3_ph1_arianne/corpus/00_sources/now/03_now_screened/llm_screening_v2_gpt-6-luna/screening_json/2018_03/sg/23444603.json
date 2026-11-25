@@ -1,0 +1,77 @@
+{
+  "article_id": "23444603",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_03/sg/23444603.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_03/sg/23444603.json"
+  },
+  "manifest_row": {
+    "article_id": "23444603",
+    "group": "2018_03",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_03/sg/23444603.txt",
+    "now_field_2": "881",
+    "date_original": "18-03-01",
+    "date_iso": "2018-03-01",
+    "source_name": "The Straits Times",
+    "url": "http://www.straitstimes.com/asia/south-asia/with-pumps-and-canals-sri-lankas-capital-moves-to-cut-worsening-flood-risk",
+    "title": "With pumps and canals, Sri Lanka's capital moves to cut worsening ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-03.txt\"]",
+    "metadata_article_files": "[\"text-18-03/text_18-03-SG.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Flood risk and infrastructure projects in Colombo",
+    "climate_relevance": "The article links more frequent flooding and changing rainfall patterns to climate change, and discusses adapting urban water management to those risks.",
+    "reason": "The main focus is Colombo's flooding and planned pumping stations, canals, and other flood-management measures. Climate change is meaningfully discussed as context for worsening rainfall risks and the need to adapt, but it is not the central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "639980b4d70b871ec1b90c54e86c3d3e64191b562d9bb8ab7b80b92b99b70d85",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fa46bab0a3bea438f8c13786703c4e4276f581437ed3c14b6a6446cc6dbaf62b",
+    "raw_response_text_sha256": "20d3e5532c71cde57c8df753615d8e496e74311d1cf789d9e07fb53f3796b7c4"
+  },
+  "api_metadata": {
+    "id": "resp_0a9490d845b2c7bf006b06113d860c87d29d2df9f7d23fb5f2",
+    "model": "gpt-6-luna",
+    "created_at": 1795559741.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1667,
+      "input_tokens_details": {
+        "cache_write_tokens": 1664,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1664
+        }
+      },
+      "output_tokens": 326,
+      "output_tokens_details": {
+        "reasoning_tokens": 173
+      },
+      "total_tokens": 1993
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Flood risk and infrastructure projects in Colombo\",\n  \"climate_relevance\": \"The article links more frequent flooding and changing rainfall patterns to climate change, and discusses adapting urban water management to those risks.\",\n  \"reason\": \"The main focus is Colombo's flooding and planned pumping stations, canals, and other flood-management measures. Climate change is meaningfully discussed as context for worsening rainfall risks and the need to adapt, but it is not the central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:35:43Z",
+  "duration_seconds": 2.24,
+  "error": null
+}

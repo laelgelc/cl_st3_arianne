@@ -1,0 +1,77 @@
+{
+  "article_id": "21845724",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/us/21845724.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/us/21845724.json"
+  },
+  "manifest_row": {
+    "article_id": "21845724",
+    "group": "2017_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/us/21845724.txt",
+    "now_field_2": "1387",
+    "date_original": "17-11-23",
+    "date_iso": "2017-11-23",
+    "source_name": "MyPalmBeachPost",
+    "url": "http://www.mypalmbeachpost.com/weather/hurricanes/2017-hurricane-season-was-intense-deadly/6uk3otVBNNhd6nc2u7TdAI/",
+    "title": "2017 hurricane season was intense, deadly",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The 2017 Atlantic hurricane season, its storms, impacts, and forecasting",
+    "climate_relevance": "The main article discusses warm sea-surface temperatures as a factor in the season’s storm activity but does not meaningfully address climate change. A separate related-news teaser mentions climate change and projected impacts.",
+    "reason": "The identifiable main article is about the hurricane season and contains no substantive climate-change discourse. The climate-change reference appears in an unrelated teaser, not in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "97e5853a1363a42aa24cb489fdad2601c9f6bf5ed5007de771153b7a7c7279ca",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c32dee428c03202ca8478b0d307c9808f57c0c26edbd527c6acd8e6aebd1d72d",
+    "raw_response_text_sha256": "81e002d6851b07be89627c70c8cd003dd040107f1f83aa80d21f1b781bbb9de1"
+  },
+  "api_metadata": {
+    "id": "resp_0016414b3fdf1b9a006b060f7a737487d2a1a90b9c65db11cd",
+    "model": "gpt-6-luna",
+    "created_at": 1795559290.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2375,
+      "input_tokens_details": {
+        "cache_write_tokens": 2372,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2372
+        }
+      },
+      "output_tokens": 389,
+      "output_tokens_details": {
+        "reasoning_tokens": 222
+      },
+      "total_tokens": 2764
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The 2017 Atlantic hurricane season, its storms, impacts, and forecasting\",\n  \"climate_relevance\": \"The main article discusses warm sea-surface temperatures as a factor in the season’s storm activity but does not meaningfully address climate change. A separate related-news teaser mentions climate change and projected impacts.\",\n  \"reason\": \"The identifiable main article is about the hurricane season and contains no substantive climate-change discourse. The climate-change reference appears in an unrelated teaser, not in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:28:13Z",
+  "duration_seconds": 2.774,
+  "error": null
+}

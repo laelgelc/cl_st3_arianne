@@ -1,0 +1,77 @@
+{
+  "article_id": "70208475",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/us/70208475.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/us/70208475.json"
+  },
+  "manifest_row": {
+    "article_id": "70208475",
+    "group": "2018_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/us/70208475.txt",
+    "now_field_2": "669",
+    "date_original": "18-11-03",
+    "date_iso": "2018-11-03",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/vnsk-minnesota-orchestra-deliver-a-visceral-mahler-s-seventh/499510181/",
+    "title": "V�nsk�, Minnesota Orchestra deliver a visceral Mahler's Seventh",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A review of a Minnesota Orchestra performance of Mahler's Seventh Symphony",
+    "climate_relevance": "A separate, truncated snippet mentions Trump's remarks about global warming and climate change, but climate is unrelated to the identifiable main article.",
+    "reason": "The main article is a classical music review. The climate-related passage appears to be an unrelated snippet rather than part of that article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "da64fb6f97f3aebb103f3a84d75b159ff4511499c26eeb6f0934fca831900e73",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fcc7d081ed90099c74c63007032fc308fcf1a833c2251acf4e546c2fef3769bf",
+    "raw_response_text_sha256": "a1d5fb1926a05bbb51bf5d0f75787b92424bdb641a4079295745555dccb564e8"
+  },
+  "api_metadata": {
+    "id": "resp_0d1bdc890c0af4a6006b063b55ee4c87d186c8cb76b776cd38",
+    "model": "gpt-6-luna",
+    "created_at": 1795570518.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1358,
+      "input_tokens_details": {
+        "cache_write_tokens": 1355,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1355
+        }
+      },
+      "output_tokens": 361,
+      "output_tokens_details": {
+        "reasoning_tokens": 217
+      },
+      "total_tokens": 1719
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A review of a Minnesota Orchestra performance of Mahler's Seventh Symphony\",\n  \"climate_relevance\": \"A separate, truncated snippet mentions Trump's remarks about global warming and climate change, but climate is unrelated to the identifiable main article.\",\n  \"reason\": \"The main article is a classical music review. The climate-related passage appears to be an unrelated snippet rather than part of that article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:35:20Z",
+  "duration_seconds": 2.951,
+  "error": null
+}

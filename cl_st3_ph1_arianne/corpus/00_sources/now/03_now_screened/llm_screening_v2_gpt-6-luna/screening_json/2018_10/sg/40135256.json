@@ -1,0 +1,77 @@
+{
+  "article_id": "40135256",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/sg/40135256.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/sg/40135256.json"
+  },
+  "manifest_row": {
+    "article_id": "40135256",
+    "group": "2018_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/sg/40135256.txt",
+    "now_field_2": "308",
+    "date_original": "18-10-10",
+    "date_iso": "2018-10-10",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/amazon-dumps-ai-tool-burger-kings-latest-deal-mcdonalds-franchisees-meet-154503130.html",
+    "title": "Amazon dumps AI tool, Burger King's latest deal, McDonald's ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "A business-news roundup covering several companies and corporate developments.",
+    "climate_relevance": "One item reports that ExxonMobil is committing $1 million to promote a national carbon tax, linking the measure to managing risk and reducing emissions, and notes the company's earlier skepticism about global warming.",
+    "reason": "Climate change and carbon policy receive meaningful discussion in one segment, but the text as a whole is a roundup of unrelated business news rather than climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "48643f29a9636bc2891ce371bb5fed653f6bb4228541590a76cc2592676b981f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ea3f072e3a2c4418032be1ce2f58ec13ecd7d822fb7b3998be11b68bb4422ee5",
+    "raw_response_text_sha256": "348e4abbc5b35335a2e80257da688c3088535b1c44eb5d249aa68f17a72e5dd3"
+  },
+  "api_metadata": {
+    "id": "resp_0db297c2c7158c20006b061e4b3ee487d28d9f75146e0e8952",
+    "model": "gpt-6-luna",
+    "created_at": 1795563083.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 857,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 1133
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A business-news roundup covering several companies and corporate developments.\",\n  \"climate_relevance\": \"One item reports that ExxonMobil is committing $1 million to promote a national carbon tax, linking the measure to managing risk and reducing emissions, and notes the company's earlier skepticism about global warming.\",\n  \"reason\": \"Climate change and carbon policy receive meaningful discussion in one segment, but the text as a whole is a roundup of unrelated business news rather than climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:31:25Z",
+  "duration_seconds": 2.32,
+  "error": null
+}

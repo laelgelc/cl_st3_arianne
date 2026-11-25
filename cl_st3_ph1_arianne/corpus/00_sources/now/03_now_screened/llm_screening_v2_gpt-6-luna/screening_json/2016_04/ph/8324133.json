@@ -1,0 +1,77 @@
+{
+  "article_id": "8324133",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_04/ph/8324133.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_04/ph/8324133.json"
+  },
+  "manifest_row": {
+    "article_id": "8324133",
+    "group": "2016_04",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_04/ph/8324133.txt",
+    "now_field_2": "535",
+    "date_original": "16-04-18",
+    "date_iso": "2016-04-18",
+    "source_name": "Philippine Information Agency",
+    "url": "http://news.pia.gov.ph/article/view/2791460961495/dswd-ready-to-provide-more-support-for-drought-hit-lgus",
+    "title": "DSWD ready to provide more support for drought-hit LGUs",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-04-ovb/16-04-ph.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Government assistance for families and local governments affected by drought",
+    "climate_relevance": "The article reports that drought-relief assistance included funding from the department’s Climate Change Adaptation and Mitigation and Quick Response Funds, but does not discuss climate change or connect it to the drought in any depth.",
+    "reason": "The main article is about drought response and social assistance. Its specific reference to climate adaptation and mitigation funding provides relevant background, but climate change is not a central or substantial topic. The text also includes unrelated snippets under an “Other News” heading.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e5cba47f714f15890bb393d8336fa3aa44b7c875e2198558c674f82b57d65041",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "70c817752c09a487d19078ff315004b8f2538bdf267a43a792413741b2dce715",
+    "raw_response_text_sha256": "f0ec8e433f3cdf976ff511bc1b6efd8ccd92306efab3a9aeb3985cbf08711255"
+  },
+  "api_metadata": {
+    "id": "resp_0f5f59ce71f0047a006b064955ad7887d18324e6a67b70c0e8",
+    "model": "gpt-6-luna",
+    "created_at": 1795574101.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1290,
+      "input_tokens_details": {
+        "cache_write_tokens": 1287,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1287
+        }
+      },
+      "output_tokens": 331,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 1621
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Government assistance for families and local governments affected by drought\",\n  \"climate_relevance\": \"The article reports that drought-relief assistance included funding from the department’s Climate Change Adaptation and Mitigation and Quick Response Funds, but does not discuss climate change or connect it to the drought in any depth.\",\n  \"reason\": \"The main article is about drought response and social assistance. Its specific reference to climate adaptation and mitigation funding provides relevant background, but climate change is not a central or substantial topic. The text also includes unrelated snippets under an “Other News” heading.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:35:04Z",
+  "duration_seconds": 3.195,
+  "error": null
+}

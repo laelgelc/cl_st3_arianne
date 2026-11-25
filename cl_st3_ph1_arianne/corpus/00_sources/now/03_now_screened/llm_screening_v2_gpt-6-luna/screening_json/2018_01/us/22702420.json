@@ -1,0 +1,77 @@
+{
+  "article_id": "22702420",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_01/us/22702420.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_01/us/22702420.json"
+  },
+  "manifest_row": {
+    "article_id": "22702420",
+    "group": "2018_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_01/us/22702420.txt",
+    "now_field_2": "696",
+    "date_original": "18-01-11",
+    "date_iso": "2018-01-11",
+    "source_name": "New York Times",
+    "url": "https://www.nytimes.com/2018/01/11/nyregion/battling-climate-change-from-the-back-seat-of-an-suv.html",
+    "title": "Battling Climate Change from the Back Seat of an SUV",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
+    "metadata_article_files": "[\"text-18-01/text_18-01-US.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.97,
+    "climate_role": "substantial",
+    "main_topic": "Mayor Bill de Blasio’s climate-change lawsuit and policies, contrasted with his use of S.U.V.s",
+    "climate_relevance": "The article discusses climate-change impacts, the fossil-fuel industry’s role, litigation, and city policies including divestment, while framing these actions through a debate about the mayor’s personal and official vehicle use.",
+    "reason": "Climate change and the mayor’s response to it are central to the article’s argument, rather than incidental background.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c3420f61cae2f14169a50218ceb2f54aeb697ce247cb6245b7282110b105e4ff",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d7f8624fea0247d76aade2098e7104f7f8aca1467ef2d0acf2966f6ea1d0f6b0",
+    "raw_response_text_sha256": "6151bf5851230ce522fb561b0b734a6ef3cf8f933fa72543e22a0bb8e41cf14f"
+  },
+  "api_metadata": {
+    "id": "resp_02751316f502282d006b06106f911c87d2a0effee01a531cb7",
+    "model": "gpt-6-luna",
+    "created_at": 1795559535.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1402,
+      "input_tokens_details": {
+        "cache_write_tokens": 1399,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1399
+        }
+      },
+      "output_tokens": 396,
+      "output_tokens_details": {
+        "reasoning_tokens": 236
+      },
+      "total_tokens": 1798
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Mayor Bill de Blasio’s climate-change lawsuit and policies, contrasted with his use of S.U.V.s\",\n  \"climate_relevance\": \"The article discusses climate-change impacts, the fossil-fuel industry’s role, litigation, and city policies including divestment, while framing these actions through a debate about the mayor’s personal and official vehicle use.\",\n  \"reason\": \"Climate change and the mayor’s response to it are central to the article’s argument, rather than incidental background.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:32:19Z",
+  "duration_seconds": 3.658,
+  "error": null
+}

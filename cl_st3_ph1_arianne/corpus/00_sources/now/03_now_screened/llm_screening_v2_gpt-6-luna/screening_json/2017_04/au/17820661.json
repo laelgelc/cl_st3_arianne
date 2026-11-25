@@ -1,0 +1,77 @@
+{
+  "article_id": "17820661",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/au/17820661.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/au/17820661.json"
+  },
+  "manifest_row": {
+    "article_id": "17820661",
+    "group": "2017_04",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/au/17820661.txt",
+    "now_field_2": "370",
+    "date_original": "17-04-06",
+    "date_iso": "2017-04-06",
+    "source_name": "Yahoo7 News",
+    "url": "https://au.news.yahoo.com/world/a/34945183/twitter-silent-on-anti-trump-account/",
+    "title": "Twitter silent on anti-Trump account",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Twitter's lawsuit challenging a government request to identify an anonymous account opposing Trump’s immigration policies",
+    "climate_relevance": "Climate change is mentioned only as one of several issues challenged by anonymous government-agency accounts.",
+    "reason": "The article focuses on immigration policy, anonymous political speech, and Twitter's legal action. It offers no substantive discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "503020bef6e77489d01ca96cb1f416669d7f4e894b4984728ae06331bdebec6e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d02666daefd759a1be5732c4f740714e5c5a1c858eb92b10ca6910d075cddfe8",
+    "raw_response_text_sha256": "90581addc5c1e06e0ccb5f09637906d7ada6f0feda5b5c3b8f6100305b71d7b2"
+  },
+  "api_metadata": {
+    "id": "resp_05b7c1aad59386ac006b060974fa8087d2a11e3043cc2a0a5d",
+    "model": "gpt-6-luna",
+    "created_at": 1795557749.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 1259
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Twitter's lawsuit challenging a government request to identify an anonymous account opposing Trump’s immigration policies\",\n  \"climate_relevance\": \"Climate change is mentioned only as one of several issues challenged by anonymous government-agency accounts.\",\n  \"reason\": \"The article focuses on immigration policy, anonymous political speech, and Twitter's legal action. It offers no substantive discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:02:31Z",
+  "duration_seconds": 2.59,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "18998253",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/gb/18998253.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/gb/18998253.json"
+  },
+  "manifest_row": {
+    "article_id": "18998253",
+    "group": "2017_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/gb/18998253.txt",
+    "now_field_2": "615",
+    "date_original": "17-06-15",
+    "date_iso": "2017-06-15",
+    "source_name": "Daily Mail",
+    "url": "http://www.dailymail.co.uk/indiahome/indianews/article-4608894/33-000-kg-rare-Himalayan-sex-herb-seized-Mumbai.html",
+    "title": "Massive 33000 kg of 'rare' Himalayan 'sex herb' seized in Mumbai",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Smuggling and conservation protection of the endangered Himalayan herb Saussurea costus (kuth).",
+    "climate_relevance": "Climate change is not meaningfully discussed. References to a very cold habitat are descriptive, and the ministry name is incidental.",
+    "reason": "The article focuses on wildlife trafficking, endangered-plant status, and trade regulations. It contains no substantive climate-change discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c5f35fd0d49e4e567a245a9680453e04f9cacfac0e1d916dfff9a906ced88c87",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "144a098d32bccdb0540767e1b5b9f570a1dd72bd42bfbd583180e8d47a8efce6",
+    "raw_response_text_sha256": "4ee0ed6848cbbb86270023062facf9916cd316218cf0f9bc5a59bd9b2ea6c8d9"
+  },
+  "api_metadata": {
+    "id": "resp_0c8c38425c7bfb84006b060b53074c87d2ab3281577f001fb7",
+    "model": "gpt-6-luna",
+    "created_at": 1795558227.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1346,
+      "input_tokens_details": {
+        "cache_write_tokens": 1343,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1343
+        }
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 1644
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Smuggling and conservation protection of the endangered Himalayan herb Saussurea costus (kuth).\",\n  \"climate_relevance\": \"Climate change is not meaningfully discussed. References to a very cold habitat are descriptive, and the ministry name is incidental.\",\n  \"reason\": \"The article focuses on wildlife trafficking, endangered-plant status, and trade regulations. It contains no substantive climate-change discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:10:29Z",
+  "duration_seconds": 2.49,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "3914039",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/us/3914039.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/us/3914039.json"
+  },
+  "manifest_row": {
+    "article_id": "3914039",
+    "group": "2015_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/us/3914039.txt",
+    "now_field_2": "5813",
+    "date_original": "15-12-18",
+    "date_iso": "2015-12-18",
+    "source_name": "The Atlantic",
+    "url": "http://www.theatlantic.com/entertainment/archive/2015/12/the-best-television-episodes-of-2015/421053/",
+    "title": "The Best Television Episodes of 2015",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A roundup of notable television episodes, followed by unrelated article snippets.",
+    "climate_relevance": "A separate snippet at the end is about climate change, but it is unrelated to the identifiable main article.",
+    "reason": "The main article reviews television episodes and contains no meaningful climate discourse. The climate-focused text appears only as a separate article snippet in a mixed collection.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a7095f516046ff9683381e95c7627ae1a4cfebdfe36e032c0d9dc21ecb2f67fd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "db9835205fc6253d6be2e0c5621a6def9f414f8fa0ae72d98595e28efd8fdf2d",
+    "raw_response_text_sha256": "281d5410e4832f0123982fca630f3f15b652ed3c9359ac5e7f3bed06a19e20f1"
+  },
+  "api_metadata": {
+    "id": "resp_05e0821b1d667e73006b061dd9f32c87d296d3a49792d89b2e",
+    "model": "gpt-6-luna",
+    "created_at": 1795562970.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8014,
+      "input_tokens_details": {
+        "cache_write_tokens": 8011,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 8011
+        }
+      },
+      "output_tokens": 636,
+      "output_tokens_details": {
+        "reasoning_tokens": 494
+      },
+      "total_tokens": 8650
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A roundup of notable television episodes, followed by unrelated article snippets.\",\n  \"climate_relevance\": \"A separate snippet at the end is about climate change, but it is unrelated to the identifiable main article.\",\n  \"reason\": \"The main article reviews television episodes and contains no meaningful climate discourse. The climate-focused text appears only as a separate article snippet in a mixed collection.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:29:34Z",
+  "duration_seconds": 4.922,
+  "error": null
+}

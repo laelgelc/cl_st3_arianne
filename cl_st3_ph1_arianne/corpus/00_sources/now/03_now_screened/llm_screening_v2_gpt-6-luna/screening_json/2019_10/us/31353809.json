@@ -1,0 +1,77 @@
+{
+  "article_id": "31353809",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/31353809.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/31353809.json"
+  },
+  "manifest_row": {
+    "article_id": "31353809",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/31353809.txt",
+    "now_field_2": "866",
+    "date_original": "19-10-17",
+    "date_iso": "2019-10-17",
+    "source_name": "theatlantic.com",
+    "url": "https://www.theatlantic.com/ideas/archive/2019/10/trump-doral-g-7-profiteering/600244/",
+    "title": "Trump Doral G7 Profiteering - The Atlantic",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "A concatenation of unrelated news and opinion excerpts, including pieces on Trump’s Doral summit decision, local journalism, California wildfires and housing, impeachment, and infrastructure.",
+    "climate_relevance": "The California excerpt explicitly links climate change to wildfire risk and discusses how housing pressures push construction into more fire-prone areas. Another excerpt connects climate change to infrastructure vulnerability. These are meaningful climate discussions, but they appear among multiple unrelated pieces rather than forming a coherent primary article.",
+    "reason": "The text contains substantial climate-related material, but the overall supplied text is a mixture of unrelated articles and snippets, with no identifiable single climate-focused main article. PERIPHERAL best captures the relevance of the climate passages without treating the whole text as core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0720f284d00cca1c45c449134e42ed4b69cd0ef45247eb9d1329317aa7a1de15",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "63cc36bf3c48aa70835e6be2b91f71970ab77f5391c04d2f044f1fa006f91861",
+    "raw_response_text_sha256": "a9af036c99c96eb4b16be60d75b70b9fe079b82ba27d2510f70434977f4d5030"
+  },
+  "api_metadata": {
+    "id": "resp_061e0013aba970c4006b0616f8bf7487d29d8065aef11371c8",
+    "model": "gpt-6-luna",
+    "created_at": 1795561208.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8003,
+      "input_tokens_details": {
+        "cache_write_tokens": 8000,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 8000
+        }
+      },
+      "output_tokens": 876,
+      "output_tokens_details": {
+        "reasoning_tokens": 661
+      },
+      "total_tokens": 8879
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A concatenation of unrelated news and opinion excerpts, including pieces on Trump’s Doral summit decision, local journalism, California wildfires and housing, impeachment, and infrastructure.\",\n  \"climate_relevance\": \"The California excerpt explicitly links climate change to wildfire risk and discusses how housing pressures push construction into more fire-prone areas. Another excerpt connects climate change to infrastructure vulnerability. These are meaningful climate discussions, but they appear among multiple unrelated pieces rather than forming a coherent primary article.\",\n  \"reason\": \"The text contains substantial climate-related material, but the overall supplied text is a mixture of unrelated articles and snippets, with no identifiable single climate-focused main article. PERIPHERAL best captures the relevance of the climate passages without treating the whole text as core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:00:15Z",
+  "duration_seconds": 7.035,
+  "error": null
+}

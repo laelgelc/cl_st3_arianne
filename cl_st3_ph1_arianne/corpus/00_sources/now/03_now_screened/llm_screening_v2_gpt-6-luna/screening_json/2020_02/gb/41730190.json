@@ -1,0 +1,77 @@
+{
+  "article_id": "41730190",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/gb/41730190.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/gb/41730190.json"
+  },
+  "manifest_row": {
+    "article_id": "41730190",
+    "group": "2020_02",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/gb/41730190.txt",
+    "now_field_2": "1026",
+    "date_original": "20-02-11",
+    "date_iso": "2020-02-11",
+    "source_name": "standard.co.uk",
+    "url": "https://www.standard.co.uk/lifestyle/health/best-exercises-to-tone-arms-back-shoulders-a4358446.html",
+    "title": "7 of the best arm, back and shoulder exercises to tone and ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A resistance-band upper-body workout and exercise advice",
+    "climate_relevance": "The main article contains no climate discourse. A separate flooding-news passage briefly refers to the climate emergency and tree planting.",
+    "reason": "The identifiable main article is about fitness. The climate-related passage appears to belong to a separate, unrelated news item and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4eba1acfc5dd0c8e15b2e041e4a5762f2f1b09006c25f471ddd5102da6c69924",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e414f7162a63c1e21e7ec5aaa435612f13980d3ae961000e022b864135760ad1",
+    "raw_response_text_sha256": "259b81ee86dc60eca7f64e486ddd4332d23706e057e5b6cc8a6c617bf3de947d"
+  },
+  "api_metadata": {
+    "id": "resp_051b9c75410fe944006b0622f13a3c87d28b55f3c6599ccb72",
+    "model": "gpt-6-luna",
+    "created_at": 1795564273.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2488,
+      "input_tokens_details": {
+        "cache_write_tokens": 2485,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2485
+        }
+      },
+      "output_tokens": 568,
+      "output_tokens_details": {
+        "reasoning_tokens": 422
+      },
+      "total_tokens": 3056
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A resistance-band upper-body workout and exercise advice\",\n  \"climate_relevance\": \"The main article contains no climate discourse. A separate flooding-news passage briefly refers to the climate emergency and tree planting.\",\n  \"reason\": \"The identifiable main article is about fitness. The climate-related passage appears to belong to a separate, unrelated news item and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:51:16Z",
+  "duration_seconds": 3.84,
+  "error": null
+}

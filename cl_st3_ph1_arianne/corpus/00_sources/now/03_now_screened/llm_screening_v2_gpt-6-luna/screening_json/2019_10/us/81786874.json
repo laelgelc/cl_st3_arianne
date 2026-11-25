@@ -1,0 +1,77 @@
+{
+  "article_id": "81786874",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81786874.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81786874.json"
+  },
+  "manifest_row": {
+    "article_id": "81786874",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81786874.txt",
+    "now_field_2": "213",
+    "date_original": "19-10-24",
+    "date_iso": "2019-10-24",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191024131712-c9ehs",
+    "title": "Exhumation of former Spanish dictator is act of reconciliation says acting PM",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The exhumation of Francisco Franco and its significance for Spain’s reconciliation and democracy",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news organization's coverage areas.",
+    "reason": "The article discusses Franco’s exhumation and Spain’s historical divisions; it contains no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ddd3e68ec421afaf876d7e414d6639f22e65a04b39887607a31dee02775642c1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b611aad26389ddf35ebcddf02c4052f0cca134121fe9710e270ee5a8e8000b02",
+    "raw_response_text_sha256": "53aaec83ca0c454e040e9bbaa877816a56889efcb04978dd6dddb890dd3dc799"
+  },
+  "api_metadata": {
+    "id": "resp_0ea576bf252ba580006b0647b35f7887d184471bc44c9ded94",
+    "model": "gpt-6-luna",
+    "created_at": 1795573683.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 774,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 186,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 960
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The exhumation of Francisco Franco and its significance for Spain’s reconciliation and democracy\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news organization's coverage areas.\",\n  \"reason\": \"The article discusses Franco’s exhumation and Spain’s historical divisions; it contains no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:28:05Z",
+  "duration_seconds": 2.056,
+  "error": null
+}

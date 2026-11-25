@@ -1,0 +1,77 @@
+{
+  "article_id": "60959433",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ie/60959433.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ie/60959433.json"
+  },
+  "manifest_row": {
+    "article_id": "60959433",
+    "group": "2019_06",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ie/60959433.txt",
+    "now_field_2": "457",
+    "date_original": "19-06-26",
+    "date_iso": "2019-06-26",
+    "source_name": "Ethical Corporation Magazine",
+    "url": "http://www.ethicalcorp.com/press-release-hewlett-packard-enterprises-strategy-circularity",
+    "title": "Press Release: Hewlett Packard Enterprise's strategy on circularity",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Hewlett Packard Enterprise's circular-economy strategy and promotion of a responsible-business event",
+    "climate_relevance": "Climate change is mentioned only in an unrelated Top Stories snippet, not in the main press release.",
+    "reason": "The identifiable main text discusses circularity, resource use, waste, and business sustainability, but contains no meaningful climate-change discourse. The climate reference appears in a separate, unrelated news snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "183745653ec290794df82469a1ddaebf8e3974655e1ac6dc320bca013442a594",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e2f7e97f897871f70c21ed566715ffa85f36e7be5cf9bceb8f545248552f0223",
+    "raw_response_text_sha256": "98d1821f8fb996aa38c1c4e752d8f05debec1ce20c99c75993cec04e6ca8e499"
+  },
+  "api_metadata": {
+    "id": "resp_07563c5884b04048006b0635c7f88487d1a0fd1fb81b22a721",
+    "model": "gpt-6-luna",
+    "created_at": 1795569096.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1065,
+      "input_tokens_details": {
+        "cache_write_tokens": 1062,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1062
+        }
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 1347
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Hewlett Packard Enterprise's circular-economy strategy and promotion of a responsible-business event\",\n  \"climate_relevance\": \"Climate change is mentioned only in an unrelated Top Stories snippet, not in the main press release.\",\n  \"reason\": \"The identifiable main text discusses circularity, resource use, waste, and business sustainability, but contains no meaningful climate-change discourse. The climate reference appears in a separate, unrelated news snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:11:38Z",
+  "duration_seconds": 2.714,
+  "error": null
+}

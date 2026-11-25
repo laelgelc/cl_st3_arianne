@@ -1,0 +1,77 @@
+{
+  "article_id": "50067740",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/gb/50067740.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/gb/50067740.json"
+  },
+  "manifest_row": {
+    "article_id": "50067740",
+    "group": "2018_09",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/gb/50067740.txt",
+    "now_field_2": "347",
+    "date_original": "18-09-03",
+    "date_iso": "2018-09-03",
+    "source_name": "Border Counties Advertizer",
+    "url": "http://www.bordercountiesadvertizer.co.uk/news/16685691.new-lease-of-life-proposed-for-former-oswestry-bank/",
+    "title": "New lease of life proposed for former Oswestry bank",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "A study of Jurassic marine reptiles and how their environments shaped their evolution",
+    "climate_relevance": "The article says the findings may help explain how present-day marine food chains could respond to climate change, pollution, rising temperatures, and rising sea levels.",
+    "reason": "The paleontology article is mainly about ancient marine ecosystems, but it makes a meaningful connection between the findings and current climate-related changes. The text also includes an unrelated article about a former bank, so the supplied material contains multiple snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f9b33310b90a30df4b1b3fcebaeb0e5aab3613dfc1a376f39004a12ae53da964",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6493cbc316b7a38653c60789890448928ce25ef399e283c933fd4fafab7f63ca",
+    "raw_response_text_sha256": "4016ff0f9ad432b09b5ae1c2ee682e49b11603c880218dbd8c18ecc4ea3708fd"
+  },
+  "api_metadata": {
+    "id": "resp_05e263e91d5cbeb3006b06277f2e8887d1a3fa79551d784bf3",
+    "model": "gpt-6-luna",
+    "created_at": 1795565439.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1559,
+      "input_tokens_details": {
+        "cache_write_tokens": 1556,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1556
+        }
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 1864
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A study of Jurassic marine reptiles and how their environments shaped their evolution\",\n  \"climate_relevance\": \"The article says the findings may help explain how present-day marine food chains could respond to climate change, pollution, rising temperatures, and rising sea levels.\",\n  \"reason\": \"The paleontology article is mainly about ancient marine ecosystems, but it makes a meaningful connection between the findings and current climate-related changes. The text also includes an unrelated article about a former bank, so the supplied material contains multiple snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:10:41Z",
+  "duration_seconds": 2.806,
+  "error": null
+}

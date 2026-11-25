@@ -1,0 +1,77 @@
+{
+  "article_id": "82211744",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82211744.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82211744.json"
+  },
+  "manifest_row": {
+    "article_id": "82211744",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82211744.txt",
+    "now_field_2": "215",
+    "date_original": "19-11-18",
+    "date_iso": "2019-11-18",
+    "source_name": "Esquire Middle East",
+    "url": "https://www.esquireme.com/content/41091-these-photos-show-venice-completely-under-water",
+    "title": "These photos show Venice completely under water",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Severe high-tide flooding and damage in Venice",
+    "climate_relevance": "The mayor explicitly attributes the flooding to climate change, but climate change is not the article's main focus.",
+    "reason": "The report primarily covers the flooding, its damage, and the city's emergency response. Its brief climate-change attribution is meaningful but does not make this core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e0e71da91041ef794d0ffd34769a84fa1511a22be2d0c6b93140693b3f0a81ff",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d695e9933100de6b9e37192abb9efdec6514969287ad515fab31b6e583aa409d",
+    "raw_response_text_sha256": "6136df6f85e9030d659db9d0755b76ee2a7a2fcc533a539b56b25df713e1bb3c"
+  },
+  "api_metadata": {
+    "id": "resp_06a032c489604aaa006b064832bbc887d1ad0fc3d3f91f583f",
+    "model": "gpt-6-luna",
+    "created_at": 1795573810.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 778,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 374,
+      "output_tokens_details": {
+        "reasoning_tokens": 235
+      },
+      "total_tokens": 1152
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Severe high-tide flooding and damage in Venice\",\n  \"climate_relevance\": \"The mayor explicitly attributes the flooding to climate change, but climate change is not the article's main focus.\",\n  \"reason\": \"The report primarily covers the flooding, its damage, and the city's emergency response. Its brief climate-change attribution is meaningful but does not make this core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:30:14Z",
+  "duration_seconds": 3.475,
+  "error": null
+}

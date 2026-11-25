@@ -1,0 +1,77 @@
+{
+  "article_id": "42355315",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/gb/42355315.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/gb/42355315.json"
+  },
+  "manifest_row": {
+    "article_id": "42355315",
+    "group": "2020_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/gb/42355315.txt",
+    "now_field_2": "152",
+    "date_original": "20-10-20",
+    "date_iso": "2020-10-20",
+    "source_name": "politico.eu",
+    "url": "https://www.politico.eu/staff/karl-mathiesen-2/",
+    "title": "Karl Mathiesen - POLITICO",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Journalist biography and contact information",
+    "climate_relevance": "Climate change is mentioned only to describe the journalist's professional background and specialization; the text contains no substantive climate discourse.",
+    "reason": "This is a staff biography and contact form, not climate coverage. The climate references are incidental credentials.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "63b527025e06672dff64f6f9f7c133e80ac8712f368a871ce9b329dc912ed6fa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f0a6546e6d6c7f470653ed816961ddf74b23cd0fecf295506dd12a9094eccca7",
+    "raw_response_text_sha256": "c2b5333bb4355e7a5c1da39e8393fb775ab2f543c48321d58fc15e7c69dce2ab"
+  },
+  "api_metadata": {
+    "id": "resp_0bdc62c74d51016f006b0625e2b58087d2b23a4f32ea88292a",
+    "model": "gpt-6-luna",
+    "created_at": 1795565026.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 687,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 159,
+      "output_tokens_details": {
+        "reasoning_tokens": 30
+      },
+      "total_tokens": 846
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Journalist biography and contact information\",\n  \"climate_relevance\": \"Climate change is mentioned only to describe the journalist's professional background and specialization; the text contains no substantive climate discourse.\",\n  \"reason\": \"This is a staff biography and contact form, not climate coverage. The climate references are incidental credentials.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:03:48Z",
+  "duration_seconds": 1.634,
+  "error": null
+}

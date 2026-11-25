@@ -1,0 +1,77 @@
+{
+  "article_id": "86089126",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86089126.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86089126.json"
+  },
+  "manifest_row": {
+    "article_id": "86089126",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86089126.txt",
+    "now_field_2": "694",
+    "date_original": "20-10-07",
+    "date_iso": "2020-10-07",
+    "source_name": "New York Times",
+    "url": "https://www.nytimes.com/2020/10/06/books/review/the-arsonist-chloe-hooper.html",
+    "title": "Untangling the Story of a Deadly Blaze and `The Arsonist' Who Lit It",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "A review of Chloe Hooper's book about the 2009 Black Saturday bushfire and the case against the man who deliberately lit one of the fires.",
+    "climate_relevance": "Climate change is mentioned as a broader, systemic factor in understanding bushfire risk, alongside corporate negligence, but the review does not substantially discuss climate science, policy, or impacts.",
+    "reason": "The text is mainly literary criticism and a discussion of bushfire arson, culpability, and social conditions. Its explicit reference to climate change contributes a meaningful but brief broader framing, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "44e11bd05de3325a51e58b1c2ca832926a1757d7837697bcab427933db937659",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fb0a14c2f6cee40b4de98baecf204d1cf25258f1b91701ef1ba7670922889e89",
+    "raw_response_text_sha256": "7af4bd47b9f73ef86f6da1df244566ad7bef3cd01e2ca3584ee291c5cb1185bf"
+  },
+  "api_metadata": {
+    "id": "resp_0fdb67929bd568de006b064e5ebc1887d18d0a33b18e23795b",
+    "model": "gpt-6-luna",
+    "created_at": 1795575390.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1485,
+      "input_tokens_details": {
+        "cache_write_tokens": 1482,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1482
+        }
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1746
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A review of Chloe Hooper's book about the 2009 Black Saturday bushfire and the case against the man who deliberately lit one of the fires.\",\n  \"climate_relevance\": \"Climate change is mentioned as a broader, systemic factor in understanding bushfire risk, alongside corporate negligence, but the review does not substantially discuss climate science, policy, or impacts.\",\n  \"reason\": \"The text is mainly literary criticism and a discussion of bushfire arson, culpability, and social conditions. Its explicit reference to climate change contributes a meaningful but brief broader framing, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:56:32Z",
+  "duration_seconds": 2.255,
+  "error": null
+}

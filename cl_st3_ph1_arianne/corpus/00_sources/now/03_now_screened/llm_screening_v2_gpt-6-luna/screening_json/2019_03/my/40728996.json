@@ -1,0 +1,77 @@
+{
+  "article_id": "40728996",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/my/40728996.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/my/40728996.json"
+  },
+  "manifest_row": {
+    "article_id": "40728996",
+    "group": "2019_03",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/my/40728996.txt",
+    "now_field_2": "303",
+    "date_original": "19-03-16",
+    "date_iso": "2019-03-16",
+    "source_name": "Malaysiakini",
+    "url": "https://www.malaysiakini.com/news/468233",
+    "title": "Two days left for team to clean up chemical waste in Sungai Kim Kim",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Cleanup of chemical pollution in Sungai Kim Kim and the risk that rain could spread the contamination.",
+    "climate_relevance": "Climate change appears only in the minister's official portfolio title. The forecast rain is discussed as an immediate weather hazard, not in relation to climate change.",
+    "reason": "The text focuses on a chemical pollution cleanup operation and contains no meaningful discourse about climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c511a6e4e9d2511466b399fc69feaa14a4460f3344470a335c00c79147fd6313",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8e4a592286f57c5c91ab8b955cfc63d77615e28a0109d40f214a48766c173d94",
+    "raw_response_text_sha256": "0583c7aba22a34704936ff4daf737f4c641a6e3b2370a1b772f0001ed919c4c3"
+  },
+  "api_metadata": {
+    "id": "resp_09d428880bd6da39006b061f8f820087d2a09763f1b863f154",
+    "model": "gpt-6-luna",
+    "created_at": 1795563407.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 880,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 1112
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Cleanup of chemical pollution in Sungai Kim Kim and the risk that rain could spread the contamination.\",\n  \"climate_relevance\": \"Climate change appears only in the minister's official portfolio title. The forecast rain is discussed as an immediate weather hazard, not in relation to climate change.\",\n  \"reason\": \"The text focuses on a chemical pollution cleanup operation and contains no meaningful discourse about climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:36:49Z",
+  "duration_seconds": 2.031,
+  "error": null
+}

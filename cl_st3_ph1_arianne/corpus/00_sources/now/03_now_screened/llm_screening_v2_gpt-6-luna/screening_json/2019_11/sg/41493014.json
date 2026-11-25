@@ -1,0 +1,77 @@
+{
+  "article_id": "41493014",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/sg/41493014.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/sg/41493014.json"
+  },
+  "manifest_row": {
+    "article_id": "41493014",
+    "group": "2019_11",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/sg/41493014.txt",
+    "now_field_2": "1254",
+    "date_original": "19-11-17",
+    "date_iso": "2019-11-17",
+    "source_name": "asianews.network",
+    "url": "https://asianews.network/2019/11/15/hong-kong-dismisses-curfew-rumours/",
+    "title": "Hong Kong dismisses curfew rumours - ANN",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "A collection of unrelated current-affairs reports, including Hong Kong unrest, protests in India, Myanmar and the Rohingya, and Japanese climate policy.",
+    "climate_relevance": "One identifiable passage discusses Japan’s environment minister at the UN climate summit and the lack of concrete steps to reduce coal-fired power generation.",
+    "reason": "The climate passage contains meaningful discussion of climate policy and coal, but it is one item among several unrelated reports rather than the focus of the supplied text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8077ffbe8e31d4c22a64bb577024a4aebb42322abbc061b53188da972a4e131c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b76830c68bfdd90d92deb5ca47c8465cd665c5c60709ff90144c20304f7f64d1",
+    "raw_response_text_sha256": "56e96c4ce5cb66e9a38757d9bfe1a25446f9c5f780e22926b58719d3a23a43e4"
+  },
+  "api_metadata": {
+    "id": "resp_025ed202c5aeb1bd006b0621fae9e087d2a1123ba3cf958f32",
+    "model": "gpt-6-luna",
+    "created_at": 1795564027.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2075,
+      "input_tokens_details": {
+        "cache_write_tokens": 2072,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2072
+        }
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 176
+      },
+      "total_tokens": 2412
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of unrelated current-affairs reports, including Hong Kong unrest, protests in India, Myanmar and the Rohingya, and Japanese climate policy.\",\n  \"climate_relevance\": \"One identifiable passage discusses Japan’s environment minister at the UN climate summit and the lack of concrete steps to reduce coal-fired power generation.\",\n  \"reason\": \"The climate passage contains meaningful discussion of climate policy and coal, but it is one item among several unrelated reports rather than the focus of the supplied text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:47:09Z",
+  "duration_seconds": 2.969,
+  "error": null
+}

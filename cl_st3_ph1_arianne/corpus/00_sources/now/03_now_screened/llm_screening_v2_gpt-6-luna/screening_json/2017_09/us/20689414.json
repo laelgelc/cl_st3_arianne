@@ -1,0 +1,77 @@
+{
+  "article_id": "20689414",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_09/us/20689414.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_09/us/20689414.json"
+  },
+  "manifest_row": {
+    "article_id": "20689414",
+    "group": "2017_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_09/us/20689414.txt",
+    "now_field_2": "642",
+    "date_original": "17-09-22",
+    "date_iso": "2017-09-22",
+    "source_name": "Greentech Media",
+    "url": "https://www.greentechmedia.com/articles/read/duke-energy-invests-30-million-in-battery-storage",
+    "title": "Duke Energy's $30 Million Investment in Battery Storage Is 'a ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-09.txt\"]",
+    "metadata_article_files": "[\"text-17-09/text_17-09-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Duke Energy's investment in utility-scale battery storage projects in North Carolina",
+    "climate_relevance": "The article discusses battery storage, solar, wind, and changes in the region's energy infrastructure, but does not meaningfully connect them to climate change or emissions. Climate change appears only in the author's biography.",
+    "reason": "The main article focuses on the economics and utility applications of battery storage. The sole explicit climate-change reference is unrelated biographical information about the writer.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a489ac2bba1c59bac6a1b6965253551986482b49fdbcf80187f8836ab6e0c59b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e05f8b05ae77724eda88e5552fc2bf992ce1ca49f2f1952ed2457b69307a8b09",
+    "raw_response_text_sha256": "f623d849e8df00ea524712e04341b6d4cd55c954ba0f7c0099fbdee98c579685"
+  },
+  "api_metadata": {
+    "id": "resp_0d3f2a4ea5cf7d63006b060daba74087d2ab7a79dd2ca86555",
+    "model": "gpt-6-luna",
+    "created_at": 1795558827.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1352,
+      "input_tokens_details": {
+        "cache_write_tokens": 1349,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1349
+        }
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 1671
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Duke Energy's investment in utility-scale battery storage projects in North Carolina\",\n  \"climate_relevance\": \"The article discusses battery storage, solar, wind, and changes in the region's energy infrastructure, but does not meaningfully connect them to climate change or emissions. Climate change appears only in the author's biography.\",\n  \"reason\": \"The main article focuses on the economics and utility applications of battery storage. The sole explicit climate-change reference is unrelated biographical information about the writer.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:20:30Z",
+  "duration_seconds": 2.655,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "61972817",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/za/61972817.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/za/61972817.json"
+  },
+  "manifest_row": {
+    "article_id": "61972817",
+    "group": "2020_07",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/za/61972817.txt",
+    "now_field_2": "1146",
+    "date_original": "20-07-05",
+    "date_iso": "2020-07-05",
+    "source_name": "engineeringnews.co.za",
+    "url": "https://www.engineeringnews.co.za/page/issue/iss_id:2321",
+    "title": "Engineering News | Issue | Magazine Content",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-za.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "A search-results page containing snippets about infrastructure, business, energy, mining, and other topics",
+    "climate_relevance": "One mining-company snippet explicitly discusses a net-zero operational emissions target and a climate change strategy; most other snippets are unrelated to climate change.",
+    "reason": "The text is an aggregation of unrelated search-result snippets rather than a single climate-focused article. The Fortescue Metals snippet contains meaningful climate discourse, but climate change is not the main subject of the available text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a47a6f43fcd5f586acf23a4ffff3a956106ae706ccfcda42c4cd4eb58ba056ab",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c7dd3f3f2ed08248b5c73397958d9dd0fb51f6734883d627d72550d7caf86aaa",
+    "raw_response_text_sha256": "dfadd78cb4d7bb9c094fbebe1b79ac15d10db7b4119cc67a8748c5d1a4d49b90"
+  },
+  "api_metadata": {
+    "id": "resp_03c0734672178e9f006b0638fa4b8887d1a4344e1f05f7c004",
+    "model": "gpt-6-luna",
+    "created_at": 1795569914.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2085,
+      "input_tokens_details": {
+        "cache_write_tokens": 2082,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2082
+        }
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 2337
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A search-results page containing snippets about infrastructure, business, energy, mining, and other topics\",\n  \"climate_relevance\": \"One mining-company snippet explicitly discusses a net-zero operational emissions target and a climate change strategy; most other snippets are unrelated to climate change.\",\n  \"reason\": \"The text is an aggregation of unrelated search-result snippets rather than a single climate-focused article. The Fortescue Metals snippet contains meaningful climate discourse, but climate change is not the main subject of the available text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:25:16Z",
+  "duration_seconds": 2.329,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "13704953",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_08/ca/13704953.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_08/ca/13704953.json"
+  },
+  "manifest_row": {
+    "article_id": "13704953",
+    "group": "2016_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_08/ca/13704953.txt",
+    "now_field_2": "239",
+    "date_original": "16-08-05",
+    "date_iso": "2016-08-05",
+    "source_name": "durhamregion.com",
+    "url": "http://www.durhamregion.com/news-story/6797724-region-of-durham-to-restart-off-line-incinerator-boiler/",
+    "title": "Region of Durham to restart off-line incinerator boiler",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-08-pcg/16-08-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Restarting an incinerator boiler after it exceeded limits for dioxin and furan emissions",
+    "climate_relevance": "The article concerns toxic air pollutants and emissions testing, not climate change. Climate change appears only in the ministry's name.",
+    "reason": "There is no meaningful discussion of climate change, greenhouse gases, or climate policy; the reference is part of an institutional name.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "afaf29632709d9003afd32e7034c1d039858dd88aaab0d9b4cb502fa03260673",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ace2f04cb9e6cb0065f781e954f8e9f860415712dba6bd76e40bdc7ae0998aae",
+    "raw_response_text_sha256": "a90d4fa42a3b379ad31be68ea959aaab01488b1756ac6a62b3a9b1ee861c3e87"
+  },
+  "api_metadata": {
+    "id": "resp_0c23160c7d57cb28006b060534cf2087d2bb9bc8fe6ea67843",
+    "model": "gpt-6-luna",
+    "created_at": 1795556660.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 802,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 211,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 1013
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Restarting an incinerator boiler after it exceeded limits for dioxin and furan emissions\",\n  \"climate_relevance\": \"The article concerns toxic air pollutants and emissions testing, not climate change. Climate change appears only in the ministry's name.\",\n  \"reason\": \"There is no meaningful discussion of climate change, greenhouse gases, or climate policy; the reference is part of an institutional name.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:44:22Z",
+  "duration_seconds": 2.063,
+  "error": null
+}

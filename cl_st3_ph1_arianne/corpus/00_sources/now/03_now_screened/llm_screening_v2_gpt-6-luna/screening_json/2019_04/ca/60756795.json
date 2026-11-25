@@ -1,0 +1,77 @@
+{
+  "article_id": "60756795",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/ca/60756795.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/ca/60756795.json"
+  },
+  "manifest_row": {
+    "article_id": "60756795",
+    "group": "2019_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/ca/60756795.txt",
+    "now_field_2": "518",
+    "date_original": "19-04-19",
+    "date_iso": "2019-04-19",
+    "source_name": "Truro Daily News",
+    "url": "https://www.trurodaily.com/news/isle-haute-to-receive-federal-wilderness-preserve-designation-on-tuesday-303412/",
+    "title": "Isle Haute to receive federal wilderness preserve designation on ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The planned designation of Isle Haute as a protected wildlife area.",
+    "climate_relevance": "Climate change appears only in the name of the Department of Environment and Climate Change; the text contains no meaningful discussion of climate.",
+    "reason": "The article focuses on habitat protection, wildlife, and the island's history. The department name is incidental and does not contribute climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c35ecd8f4aeb0b6e18cd11f44136684abe73bd5d90bad8b7e68d58c0e493df1e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e4a439ad94af771ca24aa97b84087209341a2e8df39db7da4b3fef5949d97aa6",
+    "raw_response_text_sha256": "37d0aa970353328c4e98e274e5f2de9ac46d41731fe09bdd7cc4da81027555a0"
+  },
+  "api_metadata": {
+    "id": "resp_0618c7e671707620006b063442bb0487d19d0ed9bfd8496a46",
+    "model": "gpt-6-luna",
+    "created_at": 1795568706.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1175,
+      "input_tokens_details": {
+        "cache_write_tokens": 1172,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1172
+        }
+      },
+      "output_tokens": 197,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1372
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The planned designation of Isle Haute as a protected wildlife area.\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Department of Environment and Climate Change; the text contains no meaningful discussion of climate.\",\n  \"reason\": \"The article focuses on habitat protection, wildlife, and the island's history. The department name is incidental and does not contribute climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:05:08Z",
+  "duration_seconds": 2.138,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40510434",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/sg/40510434.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/sg/40510434.json"
+  },
+  "manifest_row": {
+    "article_id": "40510434",
+    "group": "2019_01",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/sg/40510434.txt",
+    "now_field_2": "821",
+    "date_original": "19-01-16",
+    "date_iso": "2019-01-16",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/government-shutdown-taking-toll-wildfire-preparations-060851609.html",
+    "title": "Government shutdown taking toll on wildfire preparations",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "The U.S. government shutdown's disruption of wildfire-season training and preparation",
+    "climate_relevance": "The article notes that climate change is making wildfire seasons longer, deadlier, and more destructive, contextualizing the need for preparation.",
+    "reason": "The main focus is the shutdown's effects on firefighting training, staffing, and prevention work. Climate change is meaningfully mentioned as a factor increasing wildfire risks, but it is not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f21983fb5b038a23cce5c6779d27447a4ba8cc142f8338f98611d1f4f18fb4d9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6fbace20870d9fc8840ba4d2585552e5aded4316cc28d744a6e41d07c9690cf6",
+    "raw_response_text_sha256": "8f6da3153cfe35ab992ee0662b154e5cd721bc4e99410e020b514cb658bccb74"
+  },
+  "api_metadata": {
+    "id": "resp_0b813f9776300ba1006b061f1794c487d2b88f74128b18731a",
+    "model": "gpt-6-luna",
+    "created_at": 1795563287.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1540,
+      "input_tokens_details": {
+        "cache_write_tokens": 1537,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1537
+        }
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1756
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The U.S. government shutdown's disruption of wildfire-season training and preparation\",\n  \"climate_relevance\": \"The article notes that climate change is making wildfire seasons longer, deadlier, and more destructive, contextualizing the need for preparation.\",\n  \"reason\": \"The main focus is the shutdown's effects on firefighting training, staffing, and prevention work. Climate change is meaningfully mentioned as a factor increasing wildfire risks, but it is not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:34:49Z",
+  "duration_seconds": 1.945,
+  "error": null
+}

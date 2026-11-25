@@ -1,0 +1,77 @@
+{
+  "article_id": "70401138",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/us/70401138.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/us/70401138.json"
+  },
+  "manifest_row": {
+    "article_id": "70401138",
+    "group": "2019_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/us/70401138.txt",
+    "now_field_2": "1430",
+    "date_original": "19-01-09",
+    "date_iso": "2019-01-09",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/nation/2019/01/09/trump-threatens-cut-off-fema-aid-california-forest-fires/",
+    "title": "Trump threatens to cut off FEMA aid to California for forest fires",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Trump's threat to withhold federal disaster aid from California wildfire victims and the authority to do so.",
+    "climate_relevance": "A senator links wildfire mitigation to combating climate change, but the article otherwise focuses on disaster assistance, forest management, and political responses.",
+    "reason": "Climate change appears in a meaningful statement about mitigating wildfires, but it is not a substantial focus of the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ae17f8a0efa406779d3e0f145a922d83d335f56c6ad65be1e6786ef05f2666f0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "64af9bcdcfa5da6d76d36746b07c3c7c7ba166cfb09487e742e58d6b0723d798",
+    "raw_response_text_sha256": "15d2c1cffd5f9e9b198ae8837fe05ab9a7860dccd65ee54bcceb333ef94bf485"
+  },
+  "api_metadata": {
+    "id": "resp_0f644a2f04a5a522006b063c59634487d1b2115884b252ed11",
+    "model": "gpt-6-luna",
+    "created_at": 1795570777.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2377,
+      "input_tokens_details": {
+        "cache_write_tokens": 2374,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2374
+        }
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 198
+      },
+      "total_tokens": 2719
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Trump's threat to withhold federal disaster aid from California wildfire victims and the authority to do so.\",\n  \"climate_relevance\": \"A senator links wildfire mitigation to combating climate change, but the article otherwise focuses on disaster assistance, forest management, and political responses.\",\n  \"reason\": \"Climate change appears in a meaningful statement about mitigating wildfires, but it is not a substantial focus of the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:39:40Z",
+  "duration_seconds": 3.145,
+  "error": null
+}

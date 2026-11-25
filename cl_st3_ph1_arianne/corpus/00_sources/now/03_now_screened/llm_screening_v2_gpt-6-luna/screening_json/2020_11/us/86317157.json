@@ -1,0 +1,77 @@
+{
+  "article_id": "86317157",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/us/86317157.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/us/86317157.json"
+  },
+  "manifest_row": {
+    "article_id": "86317157",
+    "group": "2020_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/us/86317157.txt",
+    "now_field_2": "737",
+    "date_original": "20-11-24",
+    "date_iso": "2020-11-24",
+    "source_name": "Chicago Tribune",
+    "url": "https://www.chicagotribune.com/opinion/letters/ct-letters-vp-111120-20201110-zq3y6utbnjg4bggrfgyeq6oihy-story.html",
+    "title": "Letters: We owe a debt of gratitude to our veterans",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Veterans Day letters and military service",
+    "climate_relevance": "One letter discusses climate change as a national-security threat multiplier and supports policies to reduce emissions; the other letters focus on veterans and military service.",
+    "reason": "The supplied text is a collection of unrelated letters, mostly about veterans. One letter contains meaningful climate discourse, but climate change is not the focus of the collection as a whole.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f77eb299bfeb5ae0541530971449e071f2e47f51698f5b94314f20ce610d93fa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5d23be6672fb091d206e47eea07f66f1997706483e65e197e02650900d0f2b3a",
+    "raw_response_text_sha256": "70ffa8b5194fd0d69786928cedab85c93bd44cf3ca8c0ff4cfe628c1841fbf59"
+  },
+  "api_metadata": {
+    "id": "resp_0dbebf7bd5065344006b064f90de5487d191e3c0fc768f4191",
+    "model": "gpt-6-luna",
+    "created_at": 1795575696.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1449,
+      "input_tokens_details": {
+        "cache_write_tokens": 1446,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1446
+        }
+      },
+      "output_tokens": 365,
+      "output_tokens_details": {
+        "reasoning_tokens": 219
+      },
+      "total_tokens": 1814
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Veterans Day letters and military service\",\n  \"climate_relevance\": \"One letter discusses climate change as a national-security threat multiplier and supports policies to reduce emissions; the other letters focus on veterans and military service.\",\n  \"reason\": \"The supplied text is a collection of unrelated letters, mostly about veterans. One letter contains meaningful climate discourse, but climate change is not the focus of the collection as a whole.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:01:40Z",
+  "duration_seconds": 3.318,
+  "error": null
+}

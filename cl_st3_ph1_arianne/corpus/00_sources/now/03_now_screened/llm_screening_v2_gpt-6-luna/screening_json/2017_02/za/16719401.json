@@ -1,0 +1,77 @@
+{
+  "article_id": "16719401",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/za/16719401.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/za/16719401.json"
+  },
+  "manifest_row": {
+    "article_id": "16719401",
+    "group": "2017_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/za/16719401.txt",
+    "now_field_2": "767",
+    "date_original": "17-02-03",
+    "date_iso": "2017-02-03",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/local/2017/02/03/Salaries-and-food-parcels-for-families-of-lost-Lily-mineworkers1",
+    "title": "Salaries and food parcels for families of lost Lily mineworkers",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The Lily Mine's support for the families of three workers killed in a sinkhole accident and delays in the mine's rescue and reopening efforts.",
+    "climate_relevance": "A fragment mentions greenhouse-gas emissions and uncertainty about U.S. climate policy, but it is disconnected from the identifiable Lily Mine article.",
+    "reason": "The main article concerns the mine accident and the affected families. The climate reference appears in an unrelated, fragmented passage among several unrelated snippets and does not contribute to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "af055571a5438f016e4f7f9c14dd2fbad11a1fb03215ecc8f977b7ccee2f8b93",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bffab546b6ad7fc7d0fb36eba632c46d02f1844a33deb269f2f54251d94af6d1",
+    "raw_response_text_sha256": "6201c88b8d7fe821c6105a8a5ceaa5dc56f7eed98ebb09c5522cc09d26c0b160"
+  },
+  "api_metadata": {
+    "id": "resp_0e8792429cd4ab4e006b06081a7eec87d2a98bb8a44adae69c",
+    "model": "gpt-6-luna",
+    "created_at": 1795557402.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1504,
+      "input_tokens_details": {
+        "cache_write_tokens": 1501,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1501
+        }
+      },
+      "output_tokens": 436,
+      "output_tokens_details": {
+        "reasoning_tokens": 265
+      },
+      "total_tokens": 1940
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The Lily Mine's support for the families of three workers killed in a sinkhole accident and delays in the mine's rescue and reopening efforts.\",\n  \"climate_relevance\": \"A fragment mentions greenhouse-gas emissions and uncertainty about U.S. climate policy, but it is disconnected from the identifiable Lily Mine article.\",\n  \"reason\": \"The main article concerns the mine accident and the affected families. The climate reference appears in an unrelated, fragmented passage among several unrelated snippets and does not contribute to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:56:45Z",
+  "duration_seconds": 3.556,
+  "error": null
+}

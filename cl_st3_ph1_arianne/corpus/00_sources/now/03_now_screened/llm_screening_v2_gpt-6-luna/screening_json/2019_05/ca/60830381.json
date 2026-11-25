@@ -1,0 +1,77 @@
+{
+  "article_id": "60830381",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/ca/60830381.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/ca/60830381.json"
+  },
+  "manifest_row": {
+    "article_id": "60830381",
+    "group": "2019_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/ca/60830381.txt",
+    "now_field_2": "340",
+    "date_original": "19-05-15",
+    "date_iso": "2019-05-15",
+    "source_name": "Canada NewsWir",
+    "url": "https://www.newswire.ca/news-releases/the-government-of-canada-facilitates-access-to-nature-in-the-greater-quebec-city-area-848084093.html",
+    "title": "The Government of Canada facilitates access to nature in the Greater ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Opening of a new hiking trail at the Cap Tourmente National Wildlife Area",
+    "climate_relevance": "Climate change appears only in the minister's and department's titles; the text contains no substantive climate-related discussion.",
+    "reason": "The release focuses on access to nature, trail development, and protected-area recreation. Climate change is mentioned only as part of official titles.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5fddacc2c93c4c949c3bc2b18c72df525a4209417a3bd22c7cccc076f5282615",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3075390d91d6c960a9ebe64f9c21bf2143abf832baee765ca461bed99dbd2a54",
+    "raw_response_text_sha256": "d322ff210c0c814078a72bf1d18f8e93b8a3e2bab402c8def1d3642f7694054f"
+  },
+  "api_metadata": {
+    "id": "resp_025b9fb546e08b11006b0634c4df7887d1895fc2e3cf716f41",
+    "model": "gpt-6-luna",
+    "created_at": 1795568836.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 936,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 195,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1131
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Opening of a new hiking trail at the Cap Tourmente National Wildlife Area\",\n  \"climate_relevance\": \"Climate change appears only in the minister's and department's titles; the text contains no substantive climate-related discussion.\",\n  \"reason\": \"The release focuses on access to nature, trail development, and protected-area recreation. Climate change is mentioned only as part of official titles.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:07:18Z",
+  "duration_seconds": 2.022,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "15389365",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_11/gb/15389365.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_11/gb/15389365.json"
+  },
+  "manifest_row": {
+    "article_id": "15389365",
+    "group": "2016_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_11/gb/15389365.txt",
+    "now_field_2": "20096",
+    "date_original": "16-11-14",
+    "date_iso": "2016-11-14",
+    "source_name": "Belfast Telegraph",
+    "url": "http://www.belfasttelegraph.co.uk/news/world-news/donald-trump-and-vladimir-putin-agree-to-meet-usher-in-new-era-of-constructive-cooperation-says-kremlin-35215796.html",
+    "title": "Donald Trump and Vladimir Putin agree to meet, usher in new era of ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-11.txt\"]",
+    "metadata_article_files": "[\"text-16-11/text_16-11-GB.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "climate_role": "background",
+    "main_topic": "Donald Trump’s planned meeting with Vladimir Putin and the prospects for US-Russia relations after the 2016 election",
+    "climate_relevance": "A caption about the COP22 climate talks says participants viewed Trump as a climate change denier and expressed confidence that he could not derail the shift to clean energy; some described his election as a disaster.",
+    "reason": "The identifiable main article concerns US-Russia relations, not climate change. However, the COP22 caption contains meaningful discourse about Trump’s climate stance and its perceived implications, making the text peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c1182b8f1a54577c444fea271c7dd2152e7fe27f0f740c069b7f27ba83bc11be",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f1b4e02d18cdb1160f954a776c22a5ad9326022962f57463dd08d2ed1f4d1fcd",
+    "raw_response_text_sha256": "6c0bb5094b780c23b89d0c771afd81e3ace0a9b1b9118c9e2b73ddbe9996bbd4"
+  },
+  "api_metadata": {
+    "id": "resp_0e9fdc344a54b376006b06069c539887d2b845d7e16fecf55a",
+    "model": "gpt-6-luna",
+    "created_at": 1795557020.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 28880,
+      "input_tokens_details": {
+        "cache_write_tokens": 28877,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 28877
+        }
+      },
+      "output_tokens": 478,
+      "output_tokens_details": {
+        "reasoning_tokens": 297
+      },
+      "total_tokens": 29358
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Donald Trump’s planned meeting with Vladimir Putin and the prospects for US-Russia relations after the 2016 election\",\n  \"climate_relevance\": \"A caption about the COP22 climate talks says participants viewed Trump as a climate change denier and expressed confidence that he could not derail the shift to clean energy; some described his election as a disaster.\",\n  \"reason\": \"The identifiable main article concerns US-Russia relations, not climate change. However, the COP22 caption contains meaningful discourse about Trump’s climate stance and its perceived implications, making the text peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:50:24Z",
+  "duration_seconds": 4.275,
+  "error": null
+}

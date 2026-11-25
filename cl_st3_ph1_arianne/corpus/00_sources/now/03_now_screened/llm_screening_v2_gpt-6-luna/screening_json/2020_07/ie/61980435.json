@@ -1,0 +1,77 @@
+{
+  "article_id": "61980435",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/ie/61980435.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/ie/61980435.json"
+  },
+  "manifest_row": {
+    "article_id": "61980435",
+    "group": "2020_07",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/ie/61980435.txt",
+    "now_field_2": "698",
+    "date_original": "20-07-10",
+    "date_iso": "2020-07-10",
+    "source_name": "tradearabia.com",
+    "url": "http://www.tradearabia.com/news/MISC_370115.html",
+    "title": "UAE council assesses trends in food security",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "UAE food security planning and management",
+    "climate_relevance": "Climate change appears only as part of a ministry's name; the text does not discuss climate change or its implications.",
+    "reason": "The article focuses on food supply, strategic stocks, pandemic response, and food-security committees. The ministry reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d29f40fd5d68069334f60bd3a98b8474fac2c2dbf4be54555a810b7b2466ca49",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8751ed1e6dabae816f1b01bc13c0ab40986b89c16d8901ff3136bb04078eeb96",
+    "raw_response_text_sha256": "82006bf441e939fb6bf7aa71ddfe911281516f963ca830e66506c55bedf899c1"
+  },
+  "api_metadata": {
+    "id": "resp_068f450cb9a5b3f2006b0639011ee087d1b72cc87502793c0e",
+    "model": "gpt-6-luna",
+    "created_at": 1795569921.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1341,
+      "input_tokens_details": {
+        "cache_write_tokens": 1338,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1338
+        }
+      },
+      "output_tokens": 176,
+      "output_tokens_details": {
+        "reasoning_tokens": 35
+      },
+      "total_tokens": 1517
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"UAE food security planning and management\",\n  \"climate_relevance\": \"Climate change appears only as part of a ministry's name; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on food supply, strategic stocks, pandemic response, and food-security committees. The ministry reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:25:22Z",
+  "duration_seconds": 1.786,
+  "error": null
+}

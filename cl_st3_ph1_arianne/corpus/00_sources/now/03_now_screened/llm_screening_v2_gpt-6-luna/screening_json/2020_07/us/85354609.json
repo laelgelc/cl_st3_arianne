@@ -1,0 +1,77 @@
+{
+  "article_id": "85354609",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/85354609.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/85354609.json"
+  },
+  "manifest_row": {
+    "article_id": "85354609",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/85354609.txt",
+    "now_field_2": "605",
+    "date_original": "20-07-06",
+    "date_iso": "2020-07-06",
+    "source_name": "NJ.com",
+    "url": "https://www.nj.com/opinion/2020/07/nj-environmental-injustice-law-long-overdue-letters.html",
+    "title": "N.J. environmental injustice law long overdue | Letters",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.97,
+    "climate_role": "substantial",
+    "main_topic": "Climate change, fossil-fuel pollution, and health inequities in support of New Jersey legislation",
+    "climate_relevance": "The opening letter substantially discusses climate-change health effects, greenhouse-gas emissions and particulate pollution, and disproportionate harms to communities of color as reasons to pass legislation.",
+    "reason": "The identifiable opening letter is substantially about climate change and its health implications. The remaining text consists of unrelated letters about mortgage relief and a baseball team name.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8f833934058daf42c4722d446166cab093d1c5d4e3cbccfa7d10abeb78998b63",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c4dee8daf0418744e70e6b8f76abcbe3b39d1ded75cae2a7a07c57713a66e178",
+    "raw_response_text_sha256": "eb65eb1f92b9db4cae0d5c59c371a9c116c33dceb46dd3f0b6b05c45c7080aac"
+  },
+  "api_metadata": {
+    "id": "resp_09dd81ce5bed6228006b064bdfe3b887d1be1f3862f521c10b",
+    "model": "gpt-6-luna",
+    "created_at": 1795574751.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1244,
+      "input_tokens_details": {
+        "cache_write_tokens": 1241,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1241
+        }
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 1524
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Climate change, fossil-fuel pollution, and health inequities in support of New Jersey legislation\",\n  \"climate_relevance\": \"The opening letter substantially discusses climate-change health effects, greenhouse-gas emissions and particulate pollution, and disproportionate harms to communities of color as reasons to pass legislation.\",\n  \"reason\": \"The identifiable opening letter is substantially about climate change and its health implications. The remaining text consists of unrelated letters about mortgage relief and a baseball team name.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:45:54Z",
+  "duration_seconds": 2.788,
+  "error": null
+}

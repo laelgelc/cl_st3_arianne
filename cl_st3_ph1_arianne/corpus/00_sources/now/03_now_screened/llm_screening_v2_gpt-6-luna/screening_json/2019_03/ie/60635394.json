@@ -1,0 +1,77 @@
+{
+  "article_id": "60635394",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/ie/60635394.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/ie/60635394.json"
+  },
+  "manifest_row": {
+    "article_id": "60635394",
+    "group": "2019_03",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/ie/60635394.txt",
+    "now_field_2": "174",
+    "date_original": "19-03-15",
+    "date_iso": "2019-03-15",
+    "source_name": "BreakingNews.ie",
+    "url": "https://www.breakingnews.ie/ireland/students-around-the-country-march-in-climate-action-protest-911188.html",
+    "title": "Students around the country march in climate action protest",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Drumshanbo Gunpowder Gin winning an international spirits award",
+    "climate_relevance": "A separate opening fragment reports on students marching for climate action, but climate change is not discussed in the identifiable main article about the gin award.",
+    "reason": "The text combines unrelated snippets. The identifiable, substantially complete article is about gin; the climate-strike fragment appears unrelated and should not make the main article climate-relevant.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "009399159fea8ee5b1c79382dfc684d5a9f4c37c30caa495e6cf5a06931df871",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "00c482ac17e01202bf8c312f373f7d6ede8aa7da7713d616a398456d7e0bed26",
+    "raw_response_text_sha256": "82a621a3b08d8c7bd9440ea1df95259af341622ae6ae96ae343286a44e91796e"
+  },
+  "api_metadata": {
+    "id": "resp_089e4c0f731c79ca006b0633814e6887d18b59b3a5f0a1afe3",
+    "model": "gpt-6-luna",
+    "created_at": 1795568513.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1659,
+      "input_tokens_details": {
+        "cache_write_tokens": 1656,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1656
+        }
+      },
+      "output_tokens": 431,
+      "output_tokens_details": {
+        "reasoning_tokens": 276
+      },
+      "total_tokens": 2090
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Drumshanbo Gunpowder Gin winning an international spirits award\",\n  \"climate_relevance\": \"A separate opening fragment reports on students marching for climate action, but climate change is not discussed in the identifiable main article about the gin award.\",\n  \"reason\": \"The text combines unrelated snippets. The identifiable, substantially complete article is about gin; the climate-strike fragment appears unrelated and should not make the main article climate-relevant.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:01:57Z",
+  "duration_seconds": 4.276,
+  "error": null
+}

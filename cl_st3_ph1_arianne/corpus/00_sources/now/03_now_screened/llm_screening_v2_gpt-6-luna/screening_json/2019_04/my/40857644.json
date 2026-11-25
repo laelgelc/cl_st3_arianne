@@ -1,0 +1,77 @@
+{
+  "article_id": "40857644",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40857644.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40857644.json"
+  },
+  "manifest_row": {
+    "article_id": "40857644",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40857644.txt",
+    "now_field_2": "431",
+    "date_original": "19-04-19",
+    "date_iso": "2019-04-19",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/19/bandar-malaysia-to-restart-ihw-crec-remains-master-developer/",
+    "title": "Bandar Malaysia to restart, IHW-CREC remains master developer",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Reinstatement and revised development plans for the Bandar Malaysia project",
+    "climate_relevance": "Climate change appears only in a minister's portfolio title in an unrelated leading bullet; the reference to exhibiting sustainable energy solutions is also part of that separate bullet and is not developed in the main article.",
+    "reason": "The identifiable main article concerns an urban development project and contains no meaningful discussion of climate change. The climate-related wording occurs only in a separate snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f1e8ef23e6a836fc17b3b04b3b9da4ea24b446b0fc32141504579859744e1600",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "49805bb319158028f0eb22f9a182633b839b54d2b6317bb753384d35eae81a50",
+    "raw_response_text_sha256": "08b4212edb2607a40e9893cba41b7bae3829696311528a792d3bdd824dd78f1c"
+  },
+  "api_metadata": {
+    "id": "resp_0f27aa4696ab98fb006b062014579487d2bc5cee587b83fe5e",
+    "model": "gpt-6-luna",
+    "created_at": 1795563540.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1068,
+      "input_tokens_details": {
+        "cache_write_tokens": 1065,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1065
+        }
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "total_tokens": 1381
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Reinstatement and revised development plans for the Bandar Malaysia project\",\n  \"climate_relevance\": \"Climate change appears only in a minister's portfolio title in an unrelated leading bullet; the reference to exhibiting sustainable energy solutions is also part of that separate bullet and is not developed in the main article.\",\n  \"reason\": \"The identifiable main article concerns an urban development project and contains no meaningful discussion of climate change. The climate-related wording occurs only in a separate snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:02Z",
+  "duration_seconds": 2.61,
+  "error": null
+}

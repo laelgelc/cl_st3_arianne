@@ -1,0 +1,77 @@
+{
+  "article_id": "18876636",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/us/18876636.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/us/18876636.json"
+  },
+  "manifest_row": {
+    "article_id": "18876636",
+    "group": "2017_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/us/18876636.txt",
+    "now_field_2": "3348",
+    "date_original": "17-06-08",
+    "date_iso": "2017-06-08",
+    "source_name": "The Atlantic",
+    "url": "https://www.theatlantic.com/technology/archive/2017/06/horse-meat/529665/",
+    "title": "The Troubled History of Horse Meat in America",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.87,
+    "climate_role": "passing",
+    "main_topic": "The history and politics of horse meat and wild horse management in the United States",
+    "climate_relevance": "The identifiable main article mentions climate cooling in the Pleistocene as background to the history of horses in North America; it does not meaningfully discuss contemporary climate change. A separate snippet discusses climate change and shifting tree populations.",
+    "reason": "The main article is about horse meat, not climate change, and its climate reference is incidental. The tree-population passage is meaningful climate coverage but appears to be an unrelated article snippet, so it does not change the classification of the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "382f174df4cbd2f2e4c8b8eff1851d83b240287540095e9720c6c6240d182449",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c46dbd0ff7755e4b090d1f6f584a68658fa4ae278d805604bf36fd4a75a92f5b",
+    "raw_response_text_sha256": "4d963ed2f0db535ebe56fc80f11fb7250b7bb303df17a70812415b17b1b12038"
+  },
+  "api_metadata": {
+    "id": "resp_08eed46fcf5351a8006b060b2e13dc87d29df3542c6f90eeef",
+    "model": "gpt-6-luna",
+    "created_at": 1795558190.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4861,
+      "input_tokens_details": {
+        "cache_write_tokens": 4858,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4858
+        }
+      },
+      "output_tokens": 626,
+      "output_tokens_details": {
+        "reasoning_tokens": 442
+      },
+      "total_tokens": 5487
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The history and politics of horse meat and wild horse management in the United States\",\n  \"climate_relevance\": \"The identifiable main article mentions climate cooling in the Pleistocene as background to the history of horses in North America; it does not meaningfully discuss contemporary climate change. A separate snippet discusses climate change and shifting tree populations.\",\n  \"reason\": \"The main article is about horse meat, not climate change, and its climate reference is incidental. The tree-population passage is meaningful climate coverage but appears to be an unrelated article snippet, so it does not change the classification of the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:09:55Z",
+  "duration_seconds": 5.079,
+  "error": null
+}

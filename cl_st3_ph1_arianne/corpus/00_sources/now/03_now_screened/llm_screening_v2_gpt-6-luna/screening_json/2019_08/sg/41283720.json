@@ -1,0 +1,77 @@
+{
+  "article_id": "41283720",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/sg/41283720.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/sg/41283720.json"
+  },
+  "manifest_row": {
+    "article_id": "41283720",
+    "group": "2019_08",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/sg/41283720.txt",
+    "now_field_2": "127",
+    "date_original": "19-08-19",
+    "date_iso": "2019-08-19",
+    "source_name": "sg.news.yahoo.com",
+    "url": "https://sg.news.yahoo.com/ndr-2019-singapore-prime-minister-speaks-on-climate-change-the-economy-and-more-132959191.html",
+    "title": "NDR 2019: Singapore's Prime Minister speaks on climate ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Singapore Prime Minister Lee Hsien Loong's annual National Day Rally speech",
+    "climate_relevance": "Climate change is listed as one of several topics covered, but the supplied text gives no substantive discussion of it.",
+    "reason": "The available text is an introduction to a broad political speech and only mentions climate change in a list of topics.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7e7450c9f7733a895e261f3a75a2221eea5c99007b98951b481d044809e06a81",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fbcb68f6ef58d843ce87c4d6e6e1498e9d9f037e4b317774bfb1c246ab843d22",
+    "raw_response_text_sha256": "7b84d5ae7f35ec2e055fb56a7ae499a6c0a88943e2c65ce82a2d3390435bed2b"
+  },
+  "api_metadata": {
+    "id": "resp_05cf2a8e961a49ad006b062101593487d28da9951eae7bbd50",
+    "model": "gpt-6-luna",
+    "created_at": 1795563777.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 664,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 865
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Singapore Prime Minister Lee Hsien Loong's annual National Day Rally speech\",\n  \"climate_relevance\": \"Climate change is listed as one of several topics covered, but the supplied text gives no substantive discussion of it.\",\n  \"reason\": \"The available text is an introduction to a broad political speech and only mentions climate change in a list of topics.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:42:58Z",
+  "duration_seconds": 1.659,
+  "error": null
+}

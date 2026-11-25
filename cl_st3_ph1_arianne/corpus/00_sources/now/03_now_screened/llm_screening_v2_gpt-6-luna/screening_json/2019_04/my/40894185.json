@@ -1,0 +1,77 @@
+{
+  "article_id": "40894185",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40894185.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40894185.json"
+  },
+  "manifest_row": {
+    "article_id": "40894185",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40894185.txt",
+    "now_field_2": "960",
+    "date_original": "19-04-28",
+    "date_iso": "2019-04-28",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/29/dirty-russian-oil-has-made-a-fragile-market-worse/",
+    "title": "Dirty Russian oil has made a fragile market worse",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Oil markets, Iranian sanctions, and disruptions to Russian crude supplies",
+    "climate_relevance": "Climate change appears only in a minister's job title in an unrelated introductory item; the main article contains no meaningful climate discourse.",
+    "reason": "The identifiable main article discusses oil supply, sanctions, and petrol prices. The isolated climate reference is part of a title in a separate snippet and does not contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "09687b822b8e16aade79e5965805c3cfdba2b606ec8f5659ef6467fc3d76a239",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f3a6c46913d4efa6458ad0c568664f315adb3dae19ba344fac2e574809eaa062",
+    "raw_response_text_sha256": "dc87fd0929878c803e950c07f715ce1b353ef13e0edad8e4735d2ec5bec39920"
+  },
+  "api_metadata": {
+    "id": "resp_013bcf7089649d4a006b062040e5c487d29bbd0ae94a53b379",
+    "model": "gpt-6-luna",
+    "created_at": 1795563585.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1700,
+      "input_tokens_details": {
+        "cache_write_tokens": 1697,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1697
+        }
+      },
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 1934
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Oil markets, Iranian sanctions, and disruptions to Russian crude supplies\",\n  \"climate_relevance\": \"Climate change appears only in a minister's job title in an unrelated introductory item; the main article contains no meaningful climate discourse.\",\n  \"reason\": \"The identifiable main article discusses oil supply, sanctions, and petrol prices. The isolated climate reference is part of a title in a separate snippet and does not contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:46Z",
+  "duration_seconds": 1.975,
+  "error": null
+}

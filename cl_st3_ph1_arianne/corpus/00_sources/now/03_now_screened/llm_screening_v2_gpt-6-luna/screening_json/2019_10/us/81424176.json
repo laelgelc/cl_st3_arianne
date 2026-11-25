@@ -1,0 +1,77 @@
+{
+  "article_id": "81424176",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81424176.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81424176.json"
+  },
+  "manifest_row": {
+    "article_id": "81424176",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81424176.txt",
+    "now_field_2": "199",
+    "date_original": "19-10-03",
+    "date_iso": "2019-10-03",
+    "source_name": "SFGate",
+    "url": "https://www.sfgate.com/cnet/article/This-sprayable-gel-could-prevent-wildfires-from-14490391.php?ipid=newsrecirc",
+    "title": "This sprayable gel could prevent wildfires from catching hold",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A gel-based fire retardant designed to prevent wildfires",
+    "climate_relevance": "The wildfire article links climate change and drought to more intense fire seasons, providing meaningful context for the prevention technology.",
+    "reason": "The identifiable main article focuses on wildfire prevention technology rather than climate change, but it makes a meaningful connection between climate change, drought, and worsening fire seasons. A separate construction-software article is also included and is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "eadb9b24d64969d9e61b213e1f3f5b66bcad141e42a23f2bca2dcd18b44216b9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2fdbd73f8b1d71bfa1d99cd854df255c9375a3f2261f08518956559ecde7a88b",
+    "raw_response_text_sha256": "f5129c5b3f665f99b5123efcbee4d442782223992ee7fcb8937fd07f82cd374b"
+  },
+  "api_metadata": {
+    "id": "resp_0864c8cb946c7fb1006b06474fa17087d1840f300021d11086",
+    "model": "gpt-6-luna",
+    "created_at": 1795573583.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1160,
+      "input_tokens_details": {
+        "cache_write_tokens": 1157,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1157
+        }
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1405
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A gel-based fire retardant designed to prevent wildfires\",\n  \"climate_relevance\": \"The wildfire article links climate change and drought to more intense fire seasons, providing meaningful context for the prevention technology.\",\n  \"reason\": \"The identifiable main article focuses on wildfire prevention technology rather than climate change, but it makes a meaningful connection between climate change, drought, and worsening fire seasons. A separate construction-software article is also included and is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:26:26Z",
+  "duration_seconds": 2.503,
+  "error": null
+}

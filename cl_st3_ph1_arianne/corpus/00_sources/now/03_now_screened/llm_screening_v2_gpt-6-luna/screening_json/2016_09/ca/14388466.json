@@ -1,0 +1,77 @@
+{
+  "article_id": "14388466",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_09/ca/14388466.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_09/ca/14388466.json"
+  },
+  "manifest_row": {
+    "article_id": "14388466",
+    "group": "2016_09",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_09/ca/14388466.txt",
+    "now_field_2": "550",
+    "date_original": "16-09-16",
+    "date_iso": "2016-09-16",
+    "source_name": "CBC.ca",
+    "url": "http://www.cbc.ca/news/canada/sudbury/gogama-oil-spill-clean-up-1.3763171",
+    "title": "'The science is not what they want to hear': CN spokesperson on ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-09-bmb/16-09-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Cleanup and environmental effects of an oil spill near Gogama, Ontario",
+    "climate_relevance": "Climate change appears only as part of the name of Ontario's Ministry of the Environment and Climate Change; the text contains no meaningful climate discourse.",
+    "reason": "The article focuses on oil-spill remediation and local environmental concerns. The ministry name is incidental, and the remaining comments material is boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "99675e679b121b2eea558bb68c0881e45623a3be25a67103096d62e776a5032f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "acdf085d3709162abd43fa5ea2bf51de88696a6a05f8fbde7fca003bc3dc4aeb",
+    "raw_response_text_sha256": "385f8dd1505288d5b6dbb042edc19e9ffbe8856827d488b8c4b5f365b16eba4d"
+  },
+  "api_metadata": {
+    "id": "resp_0a6ead71e95d8ab4006b0605af7dbc87d29dae023625d1c148",
+    "model": "gpt-6-luna",
+    "created_at": 1795556783.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1202,
+      "input_tokens_details": {
+        "cache_write_tokens": 1199,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1199
+        }
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 1417
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Cleanup and environmental effects of an oil spill near Gogama, Ontario\",\n  \"climate_relevance\": \"Climate change appears only as part of the name of Ontario's Ministry of the Environment and Climate Change; the text contains no meaningful climate discourse.\",\n  \"reason\": \"The article focuses on oil-spill remediation and local environmental concerns. The ministry name is incidental, and the remaining comments material is boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:46:25Z",
+  "duration_seconds": 1.965,
+  "error": null
+}

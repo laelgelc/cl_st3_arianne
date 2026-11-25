@@ -1,0 +1,77 @@
+{
+  "article_id": "41353994",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/gb/41353994.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/gb/41353994.json"
+  },
+  "manifest_row": {
+    "article_id": "41353994",
+    "group": "2019_09",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/gb/41353994.txt",
+    "now_field_2": "3731",
+    "date_original": "19-09-17",
+    "date_iso": "2019-09-17",
+    "source_name": "politico.eu",
+    "url": "https://www.politico.eu/newsletter/london-playbook/politico-london-playbook-presented-by-bp-lux-whos-talking-bourne-again-news-from-the-shepherds-hut/",
+    "title": "POLITICO - London Playbook",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "A political news briefing focused mainly on Brexit, UK party politics, and David Cameron.",
+    "climate_relevance": "Sponsored BP messages frame the challenge of supplying energy while reducing emissions and refer to reaching net zero; Cameron's daughter is also briefly identified as a climate change activist.",
+    "reason": "Climate change is not a focus of the briefing, but the BP messages contain meaningful corporate discourse about emissions and net zero, making the text relevant as background rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "51e291e6c60e11d1f8130dc1c6f4b31433b4438f4a8a98656d8ba177e264ca51",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "038cf676e268ea0014b5d6122256b91ae5dc79f6c4eec229d4284c1059814f41",
+    "raw_response_text_sha256": "30da67bcd914eca754b67ea60c2a99cf83e798261ed43132ce6c4d0072131584"
+  },
+  "api_metadata": {
+    "id": "resp_0cde7542029f48b6006b0621585f5487d2821598fb3941a55c",
+    "model": "gpt-6-luna",
+    "created_at": 1795563864.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5460,
+      "input_tokens_details": {
+        "cache_write_tokens": 5457,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5457
+        }
+      },
+      "output_tokens": 446,
+      "output_tokens_details": {
+        "reasoning_tokens": 286
+      },
+      "total_tokens": 5906
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A political news briefing focused mainly on Brexit, UK party politics, and David Cameron.\",\n  \"climate_relevance\": \"Sponsored BP messages frame the challenge of supplying energy while reducing emissions and refer to reaching net zero; Cameron's daughter is also briefly identified as a climate change activist.\",\n  \"reason\": \"Climate change is not a focus of the briefing, but the BP messages contain meaningful corporate discourse about emissions and net zero, making the text relevant as background rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:44:27Z",
+  "duration_seconds": 3.064,
+  "error": null
+}

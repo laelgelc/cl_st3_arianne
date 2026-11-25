@@ -1,0 +1,77 @@
+{
+  "article_id": "17022382",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/us/17022382.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/us/17022382.json"
+  },
+  "manifest_row": {
+    "article_id": "17022382",
+    "group": "2017_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/us/17022382.txt",
+    "now_field_2": "225",
+    "date_original": "17-02-20",
+    "date_iso": "2017-02-20",
+    "source_name": "WLS-TV",
+    "url": "http://abc7chicago.com/politics/hundreds-gather-at-not-my-presidents-day-protest-in-chicago/1763372/",
+    "title": "Hundreds gather at 'Not My President's Day' protest in Chicago",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "A protest against President Donald Trump and his policies",
+    "climate_relevance": "Climate change is mentioned only as an example of an issue the protest organizer says the event is not specifically about.",
+    "reason": "The article focuses on the protest and its broader defense of groups the demonstrators felt were disenfranchised; it contains no substantive discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d7c3f20a24be6c5d38b4a5818cdde5fda44050f2321f534a9a8110b1fb062da5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e214b54ed6cb3d9f76bf8bc7c8b98e09ddbf78715b644ac8fa15a89b6c903be6",
+    "raw_response_text_sha256": "d4bf4e91f5d5a787325c6069cf39df4cd417ac3751b238535291be336e3c1c11"
+  },
+  "api_metadata": {
+    "id": "resp_0599f6d18143ad30006b06087a2f9487d2accd377b84814d43",
+    "model": "gpt-6-luna",
+    "created_at": 1795557498.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 797,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1023
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A protest against President Donald Trump and his policies\",\n  \"climate_relevance\": \"Climate change is mentioned only as an example of an issue the protest organizer says the event is not specifically about.\",\n  \"reason\": \"The article focuses on the protest and its broader defense of groups the demonstrators felt were disenfranchised; it contains no substantive discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:58:20Z",
+  "duration_seconds": 2.4,
+  "error": null
+}

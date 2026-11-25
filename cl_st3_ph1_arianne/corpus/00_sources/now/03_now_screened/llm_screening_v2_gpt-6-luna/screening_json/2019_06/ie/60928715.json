@@ -1,0 +1,77 @@
+{
+  "article_id": "60928715",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ie/60928715.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ie/60928715.json"
+  },
+  "manifest_row": {
+    "article_id": "60928715",
+    "group": "2019_06",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ie/60928715.txt",
+    "now_field_2": "1216",
+    "date_original": "19-06-16",
+    "date_iso": "2019-06-16",
+    "source_name": "Independent.ie",
+    "url": "https://www.independent.ie/news/environment/revealed-how-climate-change-action-strategy-will-affect-you-38224591.html",
+    "title": "Revealed: How climate change action strategy will affect you",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ie.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Ireland’s Climate Action Plan and proposed measures to reduce greenhouse gas emissions",
+    "climate_relevance": "The first and substantial part of the text focuses on climate policy, emissions targets, carbon taxes, transport, home heating, retrofitting, and other measures to address climate change.",
+    "reason": "The identifiable main article is centrally about the Irish Government’s climate strategy. A separate, unrelated article about the US economy and the 2020 election is appended, but it does not change the classification of the climate-focused article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "604bb0cca944f38fea985ffdc93fff426d1ab85df741c24f019a3cf1220f6306",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e9a5a58f8a509d62641f0c77c4be8bcf5f8202a96aed146f1fdf52da4694df1c",
+    "raw_response_text_sha256": "2c8489622eddef555d555463d96190ef2749201b988f9b530edfbed7fd9de32d"
+  },
+  "api_metadata": {
+    "id": "resp_0930cbf4c52b3b93006b0635844c8087d1bf41f16de0d4a34a",
+    "model": "gpt-6-luna",
+    "created_at": 1795569028.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3272,
+      "input_tokens_details": {
+        "cache_write_tokens": 3269,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3269
+        }
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 3539
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Ireland’s Climate Action Plan and proposed measures to reduce greenhouse gas emissions\",\n  \"climate_relevance\": \"The first and substantial part of the text focuses on climate policy, emissions targets, carbon taxes, transport, home heating, retrofitting, and other measures to address climate change.\",\n  \"reason\": \"The identifiable main article is centrally about the Irish Government’s climate strategy. A separate, unrelated article about the US economy and the 2020 election is appended, but it does not change the classification of the climate-focused article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:10:31Z",
+  "duration_seconds": 3.044,
+  "error": null
+}

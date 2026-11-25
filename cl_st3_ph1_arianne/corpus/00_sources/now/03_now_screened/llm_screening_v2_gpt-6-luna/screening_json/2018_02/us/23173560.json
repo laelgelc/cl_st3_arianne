@@ -1,0 +1,77 @@
+{
+  "article_id": "23173560",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_02/us/23173560.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_02/us/23173560.json"
+  },
+  "manifest_row": {
+    "article_id": "23173560",
+    "group": "2018_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_02/us/23173560.txt",
+    "now_field_2": "428",
+    "date_original": "18-02-13",
+    "date_iso": "2018-02-13",
+    "source_name": "Hindustan Times",
+    "url": "https://www.hindustantimes.com/environment/number-of-forest-fires-jump-by-38-in-13-years-but-national-policy-still-lacking/story-fX5SF6medR3E81waNtBSKI.html",
+    "title": "Number of forest fires jump by 38% in 13 years but national policy ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-02.txt\"]",
+    "metadata_article_files": "[\"text-18-02/text_18-02-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "climate_role": "background",
+    "main_topic": "Forest-fire trends, reporting, causes, and prevention in India",
+    "climate_relevance": "The article links warming and drying conditions to greater fire risk and connects forest carbon storage to meeting the Paris goals.",
+    "reason": "The climate links are meaningful and appear in the framing and expert comments, but most of the article focuses on forest-fire data, human causes, and government management measures.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1e4d069f9e7af4dc51d7825f7b9f019a58604b55f525d24765f29c124a531e10",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "588be37407081aa3300d4a1f8e44688d7b0b8c66e191163c41ad8225c75f7f27",
+    "raw_response_text_sha256": "9b78f3c9267ded3bde0b5e25e9b93916cb34f654bac6a594f31b916b6839c8b3"
+  },
+  "api_metadata": {
+    "id": "resp_0a7f8c5a0476f50b006b0610f4121087d2848a8cbad2810843",
+    "model": "gpt-6-luna",
+    "created_at": 1795559668.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1058,
+      "input_tokens_details": {
+        "cache_write_tokens": 1055,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1055
+        }
+      },
+      "output_tokens": 383,
+      "output_tokens_details": {
+        "reasoning_tokens": 240
+      },
+      "total_tokens": 1441
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Forest-fire trends, reporting, causes, and prevention in India\",\n  \"climate_relevance\": \"The article links warming and drying conditions to greater fire risk and connects forest carbon storage to meeting the Paris goals.\",\n  \"reason\": \"The climate links are meaningful and appear in the framing and expert comments, but most of the article focuses on forest-fire data, human causes, and government management measures.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:34:30Z",
+  "duration_seconds": 2.986,
+  "error": null
+}

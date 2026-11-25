@@ -1,0 +1,77 @@
+{
+  "article_id": "23047208",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_02/sg/23047208.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_02/sg/23047208.json"
+  },
+  "manifest_row": {
+    "article_id": "23047208",
+    "group": "2018_02",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_02/sg/23047208.txt",
+    "now_field_2": "708",
+    "date_original": "18-02-05",
+    "date_iso": "2018-02-05",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/anti-gay-marriage-pastor-ex-minister-run-off-191323250.html",
+    "title": "Anti-gay marriage pastor and ex-minister in run-off to be Costa Rica ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-02.txt\"]",
+    "metadata_article_files": "[\"text-18-02/text_18-02-SG.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Costa Rica's presidential election and debate over same-sex marriage",
+    "climate_relevance": "Climate change is briefly listed as one of several challenges facing the country, with no further discussion.",
+    "reason": "The article focuses on the presidential runoff and social issues; its single passing reference to climate change does not provide meaningful material for climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ed05abf35b2ed5b9f24acf85fde7d442886f12fc9a287933d09f856c1c807461",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b09e679be2812d8a068615640002ad5a18979025dfd3cae0f183d7a7484069f8",
+    "raw_response_text_sha256": "f3df45f9dcb157b65d1cf7b99925388870c2b43da86e0108b7fe6007dac99942"
+  },
+  "api_metadata": {
+    "id": "resp_030e8daecb3e59f9006b0610d20c4887d2a9b2e46cd82b8ac9",
+    "model": "gpt-6-luna",
+    "created_at": 1795559634.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1458,
+      "input_tokens_details": {
+        "cache_write_tokens": 1455,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1455
+        }
+      },
+      "output_tokens": 223,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 1681
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Costa Rica's presidential election and debate over same-sex marriage\",\n  \"climate_relevance\": \"Climate change is briefly listed as one of several challenges facing the country, with no further discussion.\",\n  \"reason\": \"The article focuses on the presidential runoff and social issues; its single passing reference to climate change does not provide meaningful material for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:33:55Z",
+  "duration_seconds": 1.843,
+  "error": null
+}

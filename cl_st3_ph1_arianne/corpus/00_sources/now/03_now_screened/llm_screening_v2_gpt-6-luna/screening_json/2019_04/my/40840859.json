@@ -1,0 +1,77 @@
+{
+  "article_id": "40840859",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40840859.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40840859.json"
+  },
+  "manifest_row": {
+    "article_id": "40840859",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40840859.txt",
+    "now_field_2": "339",
+    "date_original": "19-04-15",
+    "date_iso": "2019-04-15",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/15/kedah-among-the-state-that-agrees-on-the-water-tariff-increase-exco/",
+    "title": "Kedah among the state that agrees on the water tariff increase - Exco",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Kedah's position on a proposed water tariff increase and the adequacy of its water supply",
+    "climate_relevance": "Climate change appears only in the name of a ministerial portfolio in an unrelated introductory snippet; the identifiable main article contains no meaningful climate discourse.",
+    "reason": "The main article concerns water tariffs and supply. The climate reference is incidental to a separate snippet and does not contribute meaningfully to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "722ef7d0377f437eb9988129a36afe274a8bca75c26f691fffdbd8f43dd6deee",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "73c070079e0feff3abd2d3cd91e5c5478531c08d251f234acb309badaa9a4d62",
+    "raw_response_text_sha256": "a3e357c83105f0e9b1b7475b0d28770bdd2630cc32e72900fc3b47618d577a13"
+  },
+  "api_metadata": {
+    "id": "resp_028b79ca31d8d8fd006b061ff9e37c87d2bf552858c160f766",
+    "model": "gpt-6-luna",
+    "created_at": 1795563513.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 920,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1175
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Kedah's position on a proposed water tariff increase and the adequacy of its water supply\",\n  \"climate_relevance\": \"Climate change appears only in the name of a ministerial portfolio in an unrelated introductory snippet; the identifiable main article contains no meaningful climate discourse.\",\n  \"reason\": \"The main article concerns water tariffs and supply. The climate reference is incidental to a separate snippet and does not contribute meaningfully to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:36Z",
+  "duration_seconds": 2.203,
+  "error": null
+}

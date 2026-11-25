@@ -1,0 +1,77 @@
+{
+  "article_id": "70111200",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/us/70111200.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/us/70111200.json"
+  },
+  "manifest_row": {
+    "article_id": "70111200",
+    "group": "2018_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/us/70111200.txt",
+    "now_field_2": "806",
+    "date_original": "18-10-04",
+    "date_iso": "2018-10-04",
+    "source_name": "Washington Examiner",
+    "url": "https://www.washingtonexaminer.com/news/ari-fleischer-hopes-james-comey-takes-note-of-how-chris-wray-handles-an-fbi-investigation",
+    "title": "Ari Fleischer hopes James Comey takes note of how Chris Wray ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-us-1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "FBI handling of investigations and the Brett Kavanaugh allegations",
+    "climate_relevance": "Climate change appears only in a separate, unrelated snippet about a lawsuit brought by children against the U.S. government.",
+    "reason": "The identifiable main article concerns James Comey, the FBI, and the Kavanaugh investigation. The climate-related sentence belongs to a separate news item and does not contribute meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fcaf5b17d37fb2cacc5a521d6ffa2f0364cbca4de17fc8a5059d4e849ea1b9bc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "211e6a93209e07160323c9260d10774aaaeb2295b3843ac7f0ca211063a133c3",
+    "raw_response_text_sha256": "9009883f86f3e052db80d5046526caa764259748ba27d10325af61fb8a896fce"
+  },
+  "api_metadata": {
+    "id": "resp_0c0b1b571c227c27006b063ae6f08887d197348ea1c19c3701",
+    "model": "gpt-6-luna",
+    "created_at": 1795570407.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1542,
+      "input_tokens_details": {
+        "cache_write_tokens": 1539,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1539
+        }
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 139
+      },
+      "total_tokens": 1835
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"FBI handling of investigations and the Brett Kavanaugh allegations\",\n  \"climate_relevance\": \"Climate change appears only in a separate, unrelated snippet about a lawsuit brought by children against the U.S. government.\",\n  \"reason\": \"The identifiable main article concerns James Comey, the FBI, and the Kavanaugh investigation. The climate-related sentence belongs to a separate news item and does not contribute meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:33:29Z",
+  "duration_seconds": 2.531,
+  "error": null
+}

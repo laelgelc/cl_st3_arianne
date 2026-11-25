@@ -1,0 +1,77 @@
+{
+  "article_id": "72095460",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/au/72095460.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/au/72095460.json"
+  },
+  "manifest_row": {
+    "article_id": "72095460",
+    "group": "2020_07",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/au/72095460.txt",
+    "now_field_2": "922",
+    "date_original": "20-07-19",
+    "date_iso": "2020-07-19",
+    "source_name": "miragenews.com",
+    "url": "https://www.miragenews.com/new-lease-of-life-planned-for-st-kilda-marina/",
+    "title": "New lease of life planned for St Kilda Marina | Mirage News",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Proposed long-term lease and redevelopment of St Kilda Marina",
+    "climate_relevance": "Climate change appears only in the formal title of a government minister; the article contains no meaningful discussion of climate change.",
+    "reason": "The text focuses on marina redevelopment, public access, facilities, and lease arrangements. A passing mention in an official title does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c82c9fb525c70164825a9cd900f9ac534ec78831244e72747434911cea7cb002",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "df5f044d3b51913dc71fd8b1ed7932bf51588b435726458e6fc4b4f4845b1789",
+    "raw_response_text_sha256": "e851b2ca252cec266f53efb821eab58a580e2ca901ae92ad9d557e5149c14b70"
+  },
+  "api_metadata": {
+    "id": "resp_0a41dce9b6b18100006b06440aa88887d195d790aa5ac92465",
+    "model": "gpt-6-luna",
+    "created_at": 1795572746.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1641,
+      "input_tokens_details": {
+        "cache_write_tokens": 1638,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1638
+        }
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 1905
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Proposed long-term lease and redevelopment of St Kilda Marina\",\n  \"climate_relevance\": \"Climate change appears only in the formal title of a government minister; the article contains no meaningful discussion of climate change.\",\n  \"reason\": \"The text focuses on marina redevelopment, public access, facilities, and lease arrangements. A passing mention in an official title does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:12:29Z",
+  "duration_seconds": 2.467,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "51024512",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ng/51024512.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ng/51024512.json"
+  },
+  "manifest_row": {
+    "article_id": "51024512",
+    "group": "2019_09",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ng/51024512.txt",
+    "now_field_2": "259",
+    "date_original": "19-09-09",
+    "date_iso": "2019-09-09",
+    "source_name": "blueprint.ng",
+    "url": "https://www.blueprint.ng/breaking-jeff-booted-out-of-bbnaija/",
+    "title": "Breaking: Jeff `booted out' of BBNaija - Blueprint",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ng.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "A collection of unrelated news and opinion snippets, including a column excerpt about Greta Thunberg and leaders’ inaction on climate change.",
+    "climate_relevance": "The column excerpt explicitly connects Greta Thunberg’s public challenge to world leaders with inaction on climate change, but the available text does not establish that climate change is the main subject of the collection.",
+    "reason": "Climate change receives meaningful mention in one excerpt, making the text relevant beyond an incidental reference. The text is otherwise a set of unrelated snippets, and the climate excerpt is too limited to classify the available material as core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9c97b836d2fe9c5fdb42e044a5f7b3d13872d72545261fd403ea0137fa14a011",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "510a4a8206534dcd06e7e1ec49e136aca8198c0a36c056977156dfde7a225260",
+    "raw_response_text_sha256": "08531c7287f65761c080651ec81e7225c7eb105081de9ee0ac596795815fe0c3"
+  },
+  "api_metadata": {
+    "id": "resp_0a66621ea01458b1006b062b781cf487d18cce05d6ac751190",
+    "model": "gpt-6-luna",
+    "created_at": 1795566456.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 848,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 415,
+      "output_tokens_details": {
+        "reasoning_tokens": 228
+      },
+      "total_tokens": 1263
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of unrelated news and opinion snippets, including a column excerpt about Greta Thunberg and leaders’ inaction on climate change.\",\n  \"climate_relevance\": \"The column excerpt explicitly connects Greta Thunberg’s public challenge to world leaders with inaction on climate change, but the available text does not establish that climate change is the main subject of the collection.\",\n  \"reason\": \"Climate change receives meaningful mention in one excerpt, making the text relevant beyond an incidental reference. The text is otherwise a set of unrelated snippets, and the climate excerpt is too limited to classify the available material as core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:27:39Z",
+  "duration_seconds": 3.553,
+  "error": null
+}

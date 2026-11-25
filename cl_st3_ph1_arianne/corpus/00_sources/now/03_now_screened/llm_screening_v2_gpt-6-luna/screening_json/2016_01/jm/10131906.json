@@ -1,0 +1,77 @@
+{
+  "article_id": "10131906",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/jm/10131906.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/jm/10131906.json"
+  },
+  "manifest_row": {
+    "article_id": "10131906",
+    "group": "2016_01",
+    "country_code": "jm",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/jm/10131906.txt",
+    "now_field_2": "769",
+    "date_original": "16-01-20",
+    "date_iso": "2016-01-20",
+    "source_name": "Jamaica Observer",
+    "url": "http://www.jamaicaobserver.com/news/Water-caution_49148",
+    "title": "Water caution",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-jm.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Water conservation and drought preparedness in Jamaica",
+    "climate_relevance": "The article discusses dry conditions, water security, and rainwater harvesting, and explicitly says climate change impacts will intensify drought conditions.",
+    "reason": "The main focus is water restrictions and conservation measures during a dry period. Climate change is meaningfully connected to drought and water security, but is not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b32ff2645c8f4db165ef3c03e348b4e647d253c76fa31862ea7a7df3ccfb1d61",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7132781c01f14f77a47dd9322ce619cd9cd64c6226af2b04b0bb1bca4c37dc32",
+    "raw_response_text_sha256": "b1cfbb7b7fe3d757306fcb07bd1056683c376c794635c9db2969a54fa1bbad04"
+  },
+  "api_metadata": {
+    "id": "resp_0ef44b6a038a639f006b0604f12a6487d2823f1fb7662ef913",
+    "model": "gpt-6-luna",
+    "created_at": 1795556593.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1525,
+      "input_tokens_details": {
+        "cache_write_tokens": 1522,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1522
+        }
+      },
+      "output_tokens": 213,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1738
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Water conservation and drought preparedness in Jamaica\",\n  \"climate_relevance\": \"The article discusses dry conditions, water security, and rainwater harvesting, and explicitly says climate change impacts will intensify drought conditions.\",\n  \"reason\": \"The main focus is water restrictions and conservation measures during a dry period. Climate change is meaningfully connected to drought and water security, but is not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:43:15Z",
+  "duration_seconds": 2.173,
+  "error": null
+}

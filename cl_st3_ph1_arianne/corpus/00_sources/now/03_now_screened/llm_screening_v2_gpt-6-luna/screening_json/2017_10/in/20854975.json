@@ -1,0 +1,77 @@
+{
+  "article_id": "20854975",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/in/20854975.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/in/20854975.json"
+  },
+  "manifest_row": {
+    "article_id": "20854975",
+    "group": "2017_10",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/in/20854975.txt",
+    "now_field_2": "422",
+    "date_original": "17-10-01",
+    "date_iso": "2017-10-01",
+    "source_name": "Assam Tribune",
+    "url": "http://www.assamtribune.com/scripts/detailsnew.asp?id=oct0217/state050",
+    "title": "Siltation destroys 24511 hectares of cropland in Lakhimpur",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-IN.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "Flood-related siltation, agricultural damage, and livelihood impacts in Lakhimpur district",
+    "climate_relevance": "Climate change is briefly invoked as a broader challenge facing the State’s agriculture sector, but the text does not discuss its causes, impacts, or responses in detail.",
+    "reason": "The article focuses on flood damage and siltation; its closing reference to agriculture battling climate change provides some relevant context but is not central to the report.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "412d557f424f44a522db90ed0091fb4ec44bd8bda04aa3310163d98762b06001",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7eaefcc6b74c8ec37d989ecd079777e2dcd9575f02eccca90d69ed9c1485973c",
+    "raw_response_text_sha256": "6747eff0eca1b03af613a8147fddb96a6221ec06d07d0d4b982aee2783241182"
+  },
+  "api_metadata": {
+    "id": "resp_03a8857c42a992aa006b060de9ecc887d2810d75fbc735b33c",
+    "model": "gpt-6-luna",
+    "created_at": 1795558890.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1073,
+      "input_tokens_details": {
+        "cache_write_tokens": 1070,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1070
+        }
+      },
+      "output_tokens": 249,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1322
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Flood-related siltation, agricultural damage, and livelihood impacts in Lakhimpur district\",\n  \"climate_relevance\": \"Climate change is briefly invoked as a broader challenge facing the State’s agriculture sector, but the text does not discuss its causes, impacts, or responses in detail.\",\n  \"reason\": \"The article focuses on flood damage and siltation; its closing reference to agriculture battling climate change provides some relevant context but is not central to the report.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:21:31Z",
+  "duration_seconds": 1.999,
+  "error": null
+}

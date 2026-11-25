@@ -1,0 +1,77 @@
+{
+  "article_id": "40860738",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40860738.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40860738.json"
+  },
+  "manifest_row": {
+    "article_id": "40860738",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40860738.txt",
+    "now_field_2": "439",
+    "date_original": "19-04-20",
+    "date_iso": "2019-04-20",
+    "source_name": "The Star Online",
+    "url": "https://www.thestar.com.my/news/nation/2019/04/20/healthy-debate-needed-on-lynas-says-saifuddin/",
+    "title": "Healthy debate needed on Lynas, says Saifuddin",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Debate over the safety and management of waste from the Lynas rare-earth refinery",
+    "climate_relevance": "Climate change appears only as part of a ministerial portfolio title; the article does not discuss climate issues.",
+    "reason": "The article focuses on radioactive residues, refinery safety, and worker welfare. Its sole climate reference is incidental to the name of a government ministry.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "57241c714d4b076965a9fdbb001ecd5e3af3cf422d3683e58508af414df530d1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d3efb30f7264b6bb42d1233ac43b671134d1bcb58cc041f2788454d1c6299084",
+    "raw_response_text_sha256": "71b3585dd6a70ebc5c79393954ebd4534e2e55a7d1030f3fdf3aef29b2ea819f"
+  },
+  "api_metadata": {
+    "id": "resp_0dfa0a24819b3687006b062016cd4087d2b33b2fbe8ab2909a",
+    "model": "gpt-6-luna",
+    "created_at": 1795563542.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1095,
+      "input_tokens_details": {
+        "cache_write_tokens": 1092,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1092
+        }
+      },
+      "output_tokens": 191,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 1286
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Debate over the safety and management of waste from the Lynas rare-earth refinery\",\n  \"climate_relevance\": \"Climate change appears only as part of a ministerial portfolio title; the article does not discuss climate issues.\",\n  \"reason\": \"The article focuses on radioactive residues, refinery safety, and worker welfare. Its sole climate reference is incidental to the name of a government ministry.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:04Z",
+  "duration_seconds": 1.646,
+  "error": null
+}

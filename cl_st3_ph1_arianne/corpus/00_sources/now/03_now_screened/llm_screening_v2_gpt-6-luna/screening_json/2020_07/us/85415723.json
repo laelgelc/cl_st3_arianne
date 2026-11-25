@@ -1,0 +1,77 @@
+{
+  "article_id": "85415723",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/85415723.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/85415723.json"
+  },
+  "manifest_row": {
+    "article_id": "85415723",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/85415723.txt",
+    "now_field_2": "884",
+    "date_original": "20-07-14",
+    "date_iso": "2020-07-14",
+    "source_name": "Washington Examiner",
+    "url": "https://www.washingtonexaminer.com/opinion/we-cannot-wait-for-a-vaccine-to-reopen-fully",
+    "title": "We cannot wait for a vaccine to reopen fully",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Reopening businesses, schools, and religious institutions during the COVID-19 pandemic",
+    "climate_relevance": "Climate change appears only in separate Washington Examiner teaser snippets, not in the identifiable main article.",
+    "reason": "The main article discusses COVID-19 restrictions and reopening. The climate-related references concern the Green New Deal and a congressional climate committee in unrelated snippets, so they are not meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "857ca90294a53b4e6e454a0abf57a02eadebb40cbd24886af15cdb264e3b01f8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "58e26a1c351c7f824e9844249103f97f52685f8ae61c320eb7917927fe295505",
+    "raw_response_text_sha256": "a9539098cba44ca38489db7e6ee1e59fd31ebbf3de437b8c0e43453365b4c0ee"
+  },
+  "api_metadata": {
+    "id": "resp_018e1dda89c1230c006b064c0c385c87d1821889fe60190855",
+    "model": "gpt-6-luna",
+    "created_at": 1795574796.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1586,
+      "input_tokens_details": {
+        "cache_write_tokens": 1583,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1583
+        }
+      },
+      "output_tokens": 294,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 1880
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Reopening businesses, schools, and religious institutions during the COVID-19 pandemic\",\n  \"climate_relevance\": \"Climate change appears only in separate Washington Examiner teaser snippets, not in the identifiable main article.\",\n  \"reason\": \"The main article discusses COVID-19 restrictions and reopening. The climate-related references concern the Green New Deal and a congressional climate committee in unrelated snippets, so they are not meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:46:38Z",
+  "duration_seconds": 2.622,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70678499",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/us/70678499.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/us/70678499.json"
+  },
+  "manifest_row": {
+    "article_id": "70678499",
+    "group": "2019_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/us/70678499.txt",
+    "now_field_2": "1666",
+    "date_original": "19-04-12",
+    "date_iso": "2019-04-12",
+    "source_name": "Energy News Network",
+    "url": "https://energynews.us/2019/04/12/us/in-illinois-the-risk-of-coal-ash-contamination-rises-with-floodwaters/",
+    "title": "In Illinois, the risk of coal ash contamination rises with floodwaters",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Flood and erosion risks to Illinois coal-ash impoundments and the potential contamination of rivers and groundwater",
+    "climate_relevance": "The article connects climate change with more intense storms and increasingly frequent severe floods, and notes that changing climate may heighten risks to coal-ash impoundments beside rivers.",
+    "reason": "The identifiable main article is primarily about coal-ash contamination risks and proposed remediation, not climate change. Climate change is meaningfully discussed as a factor that can worsen flooding and related risks, making the article relevant to broader climate discourse but peripheral to a core climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3380fa43601c54d817767e5ba883a53aebd8950d659aa05b2b5b9b54a480ec81",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "08cf34285a1ee0e41fbf812053e36f332902bc14af4a6aa48da16d85b91443bc",
+    "raw_response_text_sha256": "4cc76fc5f234a9a2752cc6da3e80dd050905d09b47ecb364ecb4025a39f82177"
+  },
+  "api_metadata": {
+    "id": "resp_0727cc688fc9f23c006b063e6f17ec87d1842876c9ae9959a2",
+    "model": "gpt-6-luna",
+    "created_at": 1795571311.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3742,
+      "input_tokens_details": {
+        "cache_write_tokens": 3739,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3739
+        }
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 4005
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Flood and erosion risks to Illinois coal-ash impoundments and the potential contamination of rivers and groundwater\",\n  \"climate_relevance\": \"The article connects climate change with more intense storms and increasingly frequent severe floods, and notes that changing climate may heighten risks to coal-ash impoundments beside rivers.\",\n  \"reason\": \"The identifiable main article is primarily about coal-ash contamination risks and proposed remediation, not climate change. Climate change is meaningfully discussed as a factor that can worsen flooding and related risks, making the article relevant to broader climate discourse but peripheral to a core climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:48:33Z",
+  "duration_seconds": 2.494,
+  "error": null
+}

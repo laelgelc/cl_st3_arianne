@@ -1,0 +1,77 @@
+{
+  "article_id": "50253571",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/au/50253571.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/au/50253571.json"
+  },
+  "manifest_row": {
+    "article_id": "50253571",
+    "group": "2018_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/au/50253571.txt",
+    "now_field_2": "512",
+    "date_original": "18-11-30",
+    "date_iso": "2018-11-30",
+    "source_name": "ABC News",
+    "url": "https://www.abc.net.au/news/2018-12-01/christmas-tree-farmers-battle-weather-conditions/10563120",
+    "title": "Christmas tree farmers battle dry conditions to provide festive cheer",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Christmas tree growers coping with drought and dry summer conditions",
+    "climate_relevance": "The main article describes drought-related crop losses and preparation for hot, dry weather, but does not connect these conditions to climate change. A separate closing snippet explicitly discusses climate change and bushfires.",
+    "reason": "The identifiable main article concerns Christmas tree farming and seasonal drought, without meaningful climate-change framing. The climate-change discussion appears in an apparently unrelated appended snippet and does not make the main article suitable for the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3e149260af12a22de1ca13f36406b404054212d110efe33905c974232f38ddcf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a240ed3edf57a7dc8996131029c9902eec4d677735f446e1a877d4ad5dda250e",
+    "raw_response_text_sha256": "b75aa5c1f7e73247ccbd28e955771ca9af16534497dbac610e26ae478e608711"
+  },
+  "api_metadata": {
+    "id": "resp_03c74d3357150b6b006b06283a007c87d19b295f215b0c9d9b",
+    "model": "gpt-6-luna",
+    "created_at": 1795565626.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1148,
+      "input_tokens_details": {
+        "cache_write_tokens": 1145,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1145
+        }
+      },
+      "output_tokens": 393,
+      "output_tokens_details": {
+        "reasoning_tokens": 223
+      },
+      "total_tokens": 1541
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Christmas tree growers coping with drought and dry summer conditions\",\n  \"climate_relevance\": \"The main article describes drought-related crop losses and preparation for hot, dry weather, but does not connect these conditions to climate change. A separate closing snippet explicitly discusses climate change and bushfires.\",\n  \"reason\": \"The identifiable main article concerns Christmas tree farming and seasonal drought, without meaningful climate-change framing. The climate-change discussion appears in an apparently unrelated appended snippet and does not make the main article suitable for the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:13:48Z",
+  "duration_seconds": 3.059,
+  "error": null
+}

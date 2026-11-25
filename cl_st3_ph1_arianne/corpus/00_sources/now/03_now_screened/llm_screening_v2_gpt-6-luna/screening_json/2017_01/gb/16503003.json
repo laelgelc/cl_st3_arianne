@@ -1,0 +1,77 @@
+{
+  "article_id": "16503003",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/gb/16503003.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/gb/16503003.json"
+  },
+  "manifest_row": {
+    "article_id": "16503003",
+    "group": "2017_01",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/gb/16503003.txt",
+    "now_field_2": "1159",
+    "date_original": "17-01-20",
+    "date_iso": "2017-01-20",
+    "source_name": "The Independent",
+    "url": "http://www.independent.co.uk/news/world/americas/donald-trump-inauguration-civil-rights-deleted-white-house-website-a7538581.html",
+    "title": "Donald Trump inauguration: US civil rights history deleted from ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "The removal of the White House civil-rights webpage after Donald Trump’s inauguration",
+    "climate_relevance": "Climate change appears only in a passing reference to a deleted webpage; the text offers no meaningful discussion of climate issues.",
+    "reason": "The article is about the White House website and the inauguration, not climate change. The climate reference is incidental and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "964dbfb74a14a964e56493fb63bcf9a8f8a3db7fd2f3cda5cacfb8b2be6cc3c2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6ec579e3e1e8184a81b2d27b84bce6b2a2753e715c14371d773479850d0c6f2b",
+    "raw_response_text_sha256": "1a71104d6cc375d46daaf5cd2f2aa0b2787322c38e6a79efddd0deac411f7693"
+  },
+  "api_metadata": {
+    "id": "resp_0d08d36b151386f9006b0607bd6ac487d28d9ed4a448269c41",
+    "model": "gpt-6-luna",
+    "created_at": 1795557309.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2191,
+      "input_tokens_details": {
+        "cache_write_tokens": 2188,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2188
+        }
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "total_tokens": 2507
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The removal of the White House civil-rights webpage after Donald Trump’s inauguration\",\n  \"climate_relevance\": \"Climate change appears only in a passing reference to a deleted webpage; the text offers no meaningful discussion of climate issues.\",\n  \"reason\": \"The article is about the White House website and the inauguration, not climate change. The climate reference is incidental and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:55:11Z",
+  "duration_seconds": 2.603,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "72520000",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/ph/72520000.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/ph/72520000.json"
+  },
+  "manifest_row": {
+    "article_id": "72520000",
+    "group": "2020_12",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/ph/72520000.txt",
+    "now_field_2": "1981",
+    "date_original": "20-12-17",
+    "date_iso": "2020-12-17",
+    "source_name": "ph.news.yahoo.com",
+    "url": "https://ph.news.yahoo.com/color-change-recording-academy-unveil-142506349.html",
+    "title": "Color of Change and Recording Academy Unveil #ChangeMusic ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A music-industry roadmap addressing racial justice and the treatment of Black people.",
+    "climate_relevance": "Climate change appears only in a separate snippet about Joe Biden’s climate team and proposed policies, not in the identifiable main article.",
+    "reason": "The headline and main article concern racial equity in the music industry. The climate-related passage is an unrelated inserted news snippet and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "872c50a7a80c33c2cd1b7cd0d3cfa9d360a65e898cd746c16e3f21744fed7140",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c712e1307aecd4fd2662a7c1c789e2d453da6f5dbd1b809a356a9d10afa45e4d",
+    "raw_response_text_sha256": "9b9d3ead9a08cda9217b2edf716d77ddb6a0d88ba065da3d79b1c2b979e79f5c"
+  },
+  "api_metadata": {
+    "id": "resp_0973cbb1c49bc938006b0645d4d18487d182ff66b717694ad1",
+    "model": "gpt-6-luna",
+    "created_at": 1795573204.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2997,
+      "input_tokens_details": {
+        "cache_write_tokens": 2994,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2994
+        }
+      },
+      "output_tokens": 362,
+      "output_tokens_details": {
+        "reasoning_tokens": 208
+      },
+      "total_tokens": 3359
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A music-industry roadmap addressing racial justice and the treatment of Black people.\",\n  \"climate_relevance\": \"Climate change appears only in a separate snippet about Joe Biden’s climate team and proposed policies, not in the identifiable main article.\",\n  \"reason\": \"The headline and main article concern racial equity in the music industry. The climate-related passage is an unrelated inserted news snippet and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:20:07Z",
+  "duration_seconds": 3.273,
+  "error": null
+}

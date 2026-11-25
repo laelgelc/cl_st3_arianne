@@ -1,0 +1,77 @@
+{
+  "article_id": "14069356",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_08/au/14069356.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_08/au/14069356.json"
+  },
+  "manifest_row": {
+    "article_id": "14069356",
+    "group": "2016_08",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_08/au/14069356.txt",
+    "now_field_2": "620",
+    "date_original": "16-08-28",
+    "date_iso": "2016-08-28",
+    "source_name": "The New Daily",
+    "url": "http://thenewdaily.com.au/life/tech/2016/08/28/hide-earth-aliens-laser/",
+    "title": "Scientists work out how to hide Earth from aliens",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-08-pcg/16-08-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A proposed laser cloaking device to hide Earth from extraterrestrial civilizations",
+    "climate_relevance": "Climate change appears only in the author's biographical note, which says he writes about climate change among other subjects.",
+    "reason": "The article discusses extraterrestrial detection, exoplanets, and laser cloaking. The brief climate-change mention is unrelated author-bio material and offers no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "75ed225c2614c0c69b1c3a38e05a903d92230149a2b4d903732385ace3414cf0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "655d875802422a78a46fcc994a22536911cd84bda576f2c6d41a632ee68dba5e",
+    "raw_response_text_sha256": "453c0f7e320ee3cb085c9a9bf01da48d421380f87dfe99bbef414335d0785088"
+  },
+  "api_metadata": {
+    "id": "resp_010683c71e134966006b06057171d087d2b5dd9eed91566ccb",
+    "model": "gpt-6-luna",
+    "created_at": 1795556721.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1312,
+      "input_tokens_details": {
+        "cache_write_tokens": 1309,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1309
+        }
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1553
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A proposed laser cloaking device to hide Earth from extraterrestrial civilizations\",\n  \"climate_relevance\": \"Climate change appears only in the author's biographical note, which says he writes about climate change among other subjects.\",\n  \"reason\": \"The article discusses extraterrestrial detection, exoplanets, and laser cloaking. The brief climate-change mention is unrelated author-bio material and offers no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:45:23Z",
+  "duration_seconds": 2.345,
+  "error": null
+}

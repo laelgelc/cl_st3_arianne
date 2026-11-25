@@ -1,0 +1,77 @@
+{
+  "article_id": "82645047",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82645047.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82645047.json"
+  },
+  "manifest_row": {
+    "article_id": "82645047",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82645047.txt",
+    "now_field_2": "1115",
+    "date_original": "19-12-12",
+    "date_iso": "2019-12-12",
+    "source_name": "Lansing State Journal",
+    "url": "https://www.lansingstatejournal.com/story/news/2019/12/12/growing-cannabis-power-hungry-business-michigan-prepared/2629729001/",
+    "title": "Marijuana growers gobble up electricity, but Michigan pot law doesn't address energy efficiency",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Energy use and efficiency in Michigan's cannabis cultivation industry",
+    "climate_relevance": "The article reports that indoor cannabis cultivation uses more energy and produces more carbon emissions than outdoor growing, and explicitly connects carbon-dioxide emissions from fossil fuels to climate change. Climate change is relevant context, but the main focus is energy use, regulation, and costs in the cannabis industry.",
+    "reason": "Climate discourse is meaningful but secondary to the article's focus on cannabis-farm energy consumption and efficiency.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "29f7a9fd93fdae0c91451d2e3506a1bc499a573a1bd8e6c13e9b1f1e3ef3c735",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4e828bbe0736e17c8e80b930395471ec4be91894ab87df4c62c1f06a90866d67",
+    "raw_response_text_sha256": "3c7706911eaa2f8477a4b35be231afb068268332400cdc51630143ca0e04c476"
+  },
+  "api_metadata": {
+    "id": "resp_0c2f3eae48116690006b0648af940c87d19b6ff5e3161d3bcf",
+    "model": "gpt-6-luna",
+    "created_at": 1795573935.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1984,
+      "input_tokens_details": {
+        "cache_write_tokens": 1981,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1981
+        }
+      },
+      "output_tokens": 249,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 2233
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Energy use and efficiency in Michigan's cannabis cultivation industry\",\n  \"climate_relevance\": \"The article reports that indoor cannabis cultivation uses more energy and produces more carbon emissions than outdoor growing, and explicitly connects carbon-dioxide emissions from fossil fuels to climate change. Climate change is relevant context, but the main focus is energy use, regulation, and costs in the cannabis industry.\",\n  \"reason\": \"Climate discourse is meaningful but secondary to the article's focus on cannabis-farm energy consumption and efficiency.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:32:18Z",
+  "duration_seconds": 2.997,
+  "error": null
+}

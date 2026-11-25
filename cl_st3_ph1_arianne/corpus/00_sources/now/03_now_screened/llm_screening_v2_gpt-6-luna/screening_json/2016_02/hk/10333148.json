@@ -1,0 +1,77 @@
+{
+  "article_id": "10333148",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_02/hk/10333148.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_02/hk/10333148.json"
+  },
+  "manifest_row": {
+    "article_id": "10333148",
+    "group": "2016_02",
+    "country_code": "hk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_02/hk/10333148.txt",
+    "now_field_2": "775",
+    "date_original": "16-02-19",
+    "date_iso": "2016-02-19",
+    "source_name": "EJ Insight",
+    "url": "http://www.ejinsight.com/20160220-china-us-vying-bigger-role-regional-trade-deals/",
+    "title": "China, US vying for bigger role in regional trade deals",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-02-iuq/16-02-hk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Regional trade agreements, especially competition between the United States and China over the Trans-Pacific Partnership",
+    "climate_relevance": "The main article concerns trade policy. A final sentence mentions climate change and projected warming, but it appears to be an unrelated snippet and contains no further climate discussion.",
+    "reason": "The identifiable main article is about regional trade deals, not climate change. The isolated climate sentence at the end does not make the article meaningfully relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6c3a5f251821016373ce7fab177b7af87951f7314b575942616e46c9d5c1cd50",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d812d25970898a38d4e1533e7d5aa7e3fe2fbd01c13e48e21a57de27e2f047fa",
+    "raw_response_text_sha256": "729cd14d707bed57db73f6257c70a038bcc7dacc256d4d497b4769196471404c"
+  },
+  "api_metadata": {
+    "id": "resp_093769b19e1c5db9006b06050a97ec87d294fa461aa7c77632",
+    "model": "gpt-6-luna",
+    "created_at": 1795556618.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1572,
+      "input_tokens_details": {
+        "cache_write_tokens": 1569,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1569
+        }
+      },
+      "output_tokens": 407,
+      "output_tokens_details": {
+        "reasoning_tokens": 245
+      },
+      "total_tokens": 1979
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Regional trade agreements, especially competition between the United States and China over the Trans-Pacific Partnership\",\n  \"climate_relevance\": \"The main article concerns trade policy. A final sentence mentions climate change and projected warming, but it appears to be an unrelated snippet and contains no further climate discussion.\",\n  \"reason\": \"The identifiable main article is about regional trade deals, not climate change. The isolated climate sentence at the end does not make the article meaningfully relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:43:41Z",
+  "duration_seconds": 3.02,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31445831",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/31445831.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/31445831.json"
+  },
+  "manifest_row": {
+    "article_id": "31445831",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/31445831.txt",
+    "now_field_2": "718",
+    "date_original": "19-11-20",
+    "date_iso": "2019-11-20",
+    "source_name": "latimes.com",
+    "url": "https://www.latimes.com/california/story/2019-11-19/mariachi-plaza-los-angeles-celebration",
+    "title": "With a saintly procession and music, L.A. celebrates 30 ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Santa Cecilia celebration and Mariachi Plaza in Boyle Heights",
+    "climate_relevance": "A final, unrelated sentence mentions climate change and Los Angeles considering storing Sierra Nevada snowmelt beneath Owens Lake, but the main article contains no meaningful climate discussion.",
+    "reason": "The identifiable main article is about a mariachi procession and celebration. The climate-related sentence appears to be an unrelated snippet and is too isolated to contribute meaningfully to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5c80496401a67229b001410affae9cc5745b670f7409c2b23fa210c49cb938e1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0429ad73fc1846639f0d59e04eb935dda1b38077f0b871b25fbb4ed6fdb4b23f",
+    "raw_response_text_sha256": "9a599d6c61564a2ef0b3601a01e1ea77d74ad83aa9708d0d55309ba9748fc1f3"
+  },
+  "api_metadata": {
+    "id": "resp_03defdc88468ddff006b061758cfd487d28a74eb54b1dd02a3",
+    "model": "gpt-6-luna",
+    "created_at": 1795561304.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1460,
+      "input_tokens_details": {
+        "cache_write_tokens": 1457,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1457
+        }
+      },
+      "output_tokens": 213,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1673
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Santa Cecilia celebration and Mariachi Plaza in Boyle Heights\",\n  \"climate_relevance\": \"A final, unrelated sentence mentions climate change and Los Angeles considering storing Sierra Nevada snowmelt beneath Owens Lake, but the main article contains no meaningful climate discussion.\",\n  \"reason\": \"The identifiable main article is about a mariachi procession and celebration. The climate-related sentence appears to be an unrelated snippet and is too isolated to contribute meaningfully to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:01:46Z",
+  "duration_seconds": 1.805,
+  "error": null
+}

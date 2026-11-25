@@ -1,0 +1,77 @@
+{
+  "article_id": "70377968",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/nz/70377968.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/nz/70377968.json"
+  },
+  "manifest_row": {
+    "article_id": "70377968",
+    "group": "2019_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/nz/70377968.txt",
+    "now_field_2": "624",
+    "date_original": "19-01-01",
+    "date_iso": "2019-01-01",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/WO1901/S00003/mosop-president-rekindles-hope-for-a-free-ogoniland.htm",
+    "title": "MOSOP President Rekindles Hope for a Free Ogoniland",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "MOSOP leadership and the Ogoni struggle for political rights, environmental cleanup, and redress for oil-related damage",
+    "climate_relevance": "The main article discusses environmental destruction associated with oil extraction, but does not meaningfully address climate change. A separate climate-conference teaser appears among unrelated snippets.",
+    "reason": "The identifiable main article is about Ogoni self-determination and the effects of oil exploitation. The climate-related material is an unrelated teaser rather than substantive discourse in the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9250a022ed1681e0f43d99592fd58202411c18fa3cd8f6abb2a215469138b834",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "96732207c751989819de011e00d377aa388cf786395c87f8b5289a5d0e113e2c",
+    "raw_response_text_sha256": "b6558af6ed1cf94b908b1ab5461841bf490bb33e810f29c703865dd12ef00b3a"
+  },
+  "api_metadata": {
+    "id": "resp_0d2c56bb9fb8bfd8006b063c3f95b887d1b9c55223662ca627",
+    "model": "gpt-6-luna",
+    "created_at": 1795570751.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1340,
+      "input_tokens_details": {
+        "cache_write_tokens": 1337,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1337
+        }
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 1571
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"MOSOP leadership and the Ogoni struggle for political rights, environmental cleanup, and redress for oil-related damage\",\n  \"climate_relevance\": \"The main article discusses environmental destruction associated with oil extraction, but does not meaningfully address climate change. A separate climate-conference teaser appears among unrelated snippets.\",\n  \"reason\": \"The identifiable main article is about Ogoni self-determination and the effects of oil exploitation. The climate-related material is an unrelated teaser rather than substantive discourse in the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:39:13Z",
+  "duration_seconds": 2.042,
+  "error": null
+}

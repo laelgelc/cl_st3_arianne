@@ -1,0 +1,77 @@
+{
+  "article_id": "20791117",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_09/pk/20791117.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_09/pk/20791117.json"
+  },
+  "manifest_row": {
+    "article_id": "20791117",
+    "group": "2017_09",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_09/pk/20791117.txt",
+    "now_field_2": "242",
+    "date_original": "17-09-27",
+    "date_iso": "2017-09-27",
+    "source_name": "The Express Tribune",
+    "url": "https://tribune.com.pk/story/1518088/human-rights-violations-pakistan-attempts-counter-negative-image/",
+    "title": "Human rights violations: Pakistan attempts to counter negative image",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-09.txt\"]",
+    "metadata_article_files": "[\"text-17-09/text_17-09-PK.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Pakistan's plan to hold an international conference presenting its human rights record",
+    "climate_relevance": "Climate change is mentioned only as part of the name of a government ministry whose officials attended a meeting; no climate-related issue is discussed.",
+    "reason": "The article focuses on Pakistan's international image and a planned human rights conference. The passing institutional reference to the Ministry of Climate Change does not constitute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3096b22b6755d1f799f7648f21f5ee9ae6d255bfed73f521c78f0e26bed02301",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ec15d5896e776a7c374529cd9099257902ce096dfa41ffeef0fe2b81d9643bc0",
+    "raw_response_text_sha256": "d6fdec8701419a620ed00cc51bb3fd073d35f2a21a227584d9a1c9919ccde898"
+  },
+  "api_metadata": {
+    "id": "resp_0e11d3f76289bc95006b060dd315ec87d28e6dca1ed21abc08",
+    "model": "gpt-6-luna",
+    "created_at": 1795558867.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 775,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 204,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 979
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Pakistan's plan to hold an international conference presenting its human rights record\",\n  \"climate_relevance\": \"Climate change is mentioned only as part of the name of a government ministry whose officials attended a meeting; no climate-related issue is discussed.\",\n  \"reason\": \"The article focuses on Pakistan's international image and a planned human rights conference. The passing institutional reference to the Ministry of Climate Change does not constitute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:21:09Z",
+  "duration_seconds": 2.981,
+  "error": null
+}

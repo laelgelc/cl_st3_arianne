@@ -1,0 +1,77 @@
+{
+  "article_id": "13991371",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_08/us/13991371.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_08/us/13991371.json"
+  },
+  "manifest_row": {
+    "article_id": "13991371",
+    "group": "2016_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_08/us/13991371.txt",
+    "now_field_2": "601",
+    "date_original": "16-08-23",
+    "date_iso": "2016-08-23",
+    "source_name": "The Bellingham Herald",
+    "url": "http://www.bellinghamherald.com/news/state/washington/article97348087.html",
+    "title": "Inslee: Climate change increasing risks of wildfires",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-08-pcg/16-08-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "Wildfires in eastern Washington and the state’s emergency response",
+    "climate_relevance": "The governor explicitly links rising temperatures and climate change to worsening wildfire conditions, but climate change is not the article’s main focus.",
+    "reason": "The report primarily covers ongoing fires, evacuations, damage, and emergency measures. Its direct discussion of climate change and wildfire risk is meaningful but brief, so the text is relevant as peripheral climate discourse rather than core coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6258d8f68b20b78ad797ee2a4e6c680055e237f6920ae0ec4f0f7baca4e7e4fc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "07ff87abceeb5be3b7ea054f8b1a3439ffe573a975635594e61416c17f2aef50",
+    "raw_response_text_sha256": "47e6fda6a335d23dc89d55a177b99cbf28e9312d90510c32f71a4f54695eabe6"
+  },
+  "api_metadata": {
+    "id": "resp_0439e616303ceda6006b0605635cd087d281aba0abc20619af",
+    "model": "gpt-6-luna",
+    "created_at": 1795556707.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1314,
+      "input_tokens_details": {
+        "cache_write_tokens": 1311,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1311
+        }
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 1571
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Wildfires in eastern Washington and the state’s emergency response\",\n  \"climate_relevance\": \"The governor explicitly links rising temperatures and climate change to worsening wildfire conditions, but climate change is not the article’s main focus.\",\n  \"reason\": \"The report primarily covers ongoing fires, evacuations, damage, and emergency measures. Its direct discussion of climate change and wildfire risk is meaningful but brief, so the text is relevant as peripheral climate discourse rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:45:09Z",
+  "duration_seconds": 2.445,
+  "error": null
+}

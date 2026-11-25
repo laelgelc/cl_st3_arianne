@@ -1,0 +1,77 @@
+{
+  "article_id": "13649945",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_08/nz/13649945.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_08/nz/13649945.json"
+  },
+  "manifest_row": {
+    "article_id": "13649945",
+    "group": "2016_08",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_08/nz/13649945.txt",
+    "now_field_2": "524",
+    "date_original": "16-08-02",
+    "date_iso": "2016-08-02",
+    "source_name": "The Press",
+    "url": "http://www.stuff.co.nz/environment/82723202/canterbury-residents-face-water-restrictions-as-aquifers-empty-out",
+    "title": "Canterbury residents face water restrictions as aquifers empty out",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-08-pcg/16-08-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Prolonged drought, water shortages, and agricultural impacts in Canterbury, New Zealand",
+    "climate_relevance": "The text raises whether climate change is contributing to the drought or could make similar events more frequent, but most of the reporting concerns current rainfall, groundwater, irrigation, and farmers’ responses.",
+    "reason": "Climate change is discussed meaningfully but briefly; it is not the central subject of the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "74a851f8c5c79f69cfc9f5cc6e8fb4700e160932aace053462b5b1d838071dad",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8d76f82fbca2edc306c966468243b471deab4464ba7cd0e1c6fcfc0e7f09dc5a",
+    "raw_response_text_sha256": "7e5e7009f1fdb38cacbc0c0abef7c43b401f157e0aab708e96b703d2548fa4bc"
+  },
+  "api_metadata": {
+    "id": "resp_0cb0149927cd73e4006b06052c546087d2afff0e94b6be7de2",
+    "model": "gpt-6-luna",
+    "created_at": 1795556652.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1227,
+      "input_tokens_details": {
+        "cache_write_tokens": 1224,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1224
+        }
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 1459
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Prolonged drought, water shortages, and agricultural impacts in Canterbury, New Zealand\",\n  \"climate_relevance\": \"The text raises whether climate change is contributing to the drought or could make similar events more frequent, but most of the reporting concerns current rainfall, groundwater, irrigation, and farmers’ responses.\",\n  \"reason\": \"Climate change is discussed meaningfully but briefly; it is not the central subject of the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:44:14Z",
+  "duration_seconds": 1.969,
+  "error": null
+}

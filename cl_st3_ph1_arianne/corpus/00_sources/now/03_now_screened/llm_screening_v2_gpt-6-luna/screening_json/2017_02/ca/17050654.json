@@ -1,0 +1,77 @@
+{
+  "article_id": "17050654",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/ca/17050654.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/ca/17050654.json"
+  },
+  "manifest_row": {
+    "article_id": "17050654",
+    "group": "2017_02",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/ca/17050654.txt",
+    "now_field_2": "2360",
+    "date_original": "17-02-22",
+    "date_iso": "2017-02-22",
+    "source_name": "Toronto Star",
+    "url": "https://www.thestar.com/news/canada/2017/02/22/prominent-canadians-share-love-letters-to-ontario-in-150-words.html",
+    "title": "Prominent Canadians share love letters to Ontario in 150 words",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "A collection of personal reflections celebrating Ontario's 150th anniversary",
+    "climate_relevance": "Climate change appears only in a brief, isolated phrase about adapting to 21st-century challenges.",
+    "reason": "The article is primarily about Ontario and its contributors' personal stories. The lone climate reference provides no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "12056bedf5712fe45f77b7c33c5276f4fd0dd99d9e976894cf77976667ab44fa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "57bebad783fa604ce744850da609cecec90e8010d5e0c2351dff2d2d280245ec",
+    "raw_response_text_sha256": "0c292159da267f907c5cc667a0012532c4952c6d099d967515e1346d50a8db10"
+  },
+  "api_metadata": {
+    "id": "resp_0c778201b6f55bc6006b060880e27c87d29c54c80be9a1360f",
+    "model": "gpt-6-luna",
+    "created_at": 1795557505.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3638,
+      "input_tokens_details": {
+        "cache_write_tokens": 3635,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3635
+        }
+      },
+      "output_tokens": 390,
+      "output_tokens_details": {
+        "reasoning_tokens": 259
+      },
+      "total_tokens": 4028
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of personal reflections celebrating Ontario's 150th anniversary\",\n  \"climate_relevance\": \"Climate change appears only in a brief, isolated phrase about adapting to 21st-century challenges.\",\n  \"reason\": \"The article is primarily about Ontario and its contributors' personal stories. The lone climate reference provides no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:58:27Z",
+  "duration_seconds": 2.914,
+  "error": null
+}

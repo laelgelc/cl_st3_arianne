@@ -1,0 +1,77 @@
+{
+  "article_id": "31440243",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/31440243.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/31440243.json"
+  },
+  "manifest_row": {
+    "article_id": "31440243",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/31440243.txt",
+    "now_field_2": "412",
+    "date_original": "19-11-17",
+    "date_iso": "2019-11-17",
+    "source_name": "latimes.com",
+    "url": "https://www.latimes.com/california/story/2019-11-15/teacher-students-recount-horrifying-moment-of-shooting-at-saugus-high-school",
+    "title": "Saugus High School teacher and students recount the ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A school shooting and a teacher's efforts to protect and treat students.",
+    "climate_relevance": "The final sentence mentions climate change in what appears to be a separate article snippet about Los Angeles and Sierra Nevada snowmelt.",
+    "reason": "The identifiable main article is about a school shooting; climate change appears only in an unrelated appended snippet and does not meaningfully contribute to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "efcc01d5998ea113f2114876e619931401500a22d9705f73426a020dfa693e7e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "697eb42a25798276cb5a49e168542e7f9e63ee870356e4dd18a748a14e7fc463",
+    "raw_response_text_sha256": "afea2cb4a23dc981e75ae89c66b4a24362e79986797c1c9865c5d52da54d84fb"
+  },
+  "api_metadata": {
+    "id": "resp_0dff3f0a837ead09006b06174b4b1887d29de631f0105c17e6",
+    "model": "gpt-6-luna",
+    "created_at": 1795561291.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1033,
+      "input_tokens_details": {
+        "cache_write_tokens": 1030,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1030
+        }
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 1278
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A school shooting and a teacher's efforts to protect and treat students.\",\n  \"climate_relevance\": \"The final sentence mentions climate change in what appears to be a separate article snippet about Los Angeles and Sierra Nevada snowmelt.\",\n  \"reason\": \"The identifiable main article is about a school shooting; climate change appears only in an unrelated appended snippet and does not meaningfully contribute to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:01:33Z",
+  "duration_seconds": 2.292,
+  "error": null
+}

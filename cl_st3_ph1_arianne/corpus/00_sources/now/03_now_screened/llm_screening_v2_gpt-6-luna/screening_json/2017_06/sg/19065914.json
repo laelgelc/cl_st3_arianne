@@ -1,0 +1,77 @@
+{
+  "article_id": "19065914",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/sg/19065914.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/sg/19065914.json"
+  },
+  "manifest_row": {
+    "article_id": "19065914",
+    "group": "2017_06",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/sg/19065914.txt",
+    "now_field_2": "528",
+    "date_original": "17-06-20",
+    "date_iso": "2017-06-20",
+    "source_name": "eco-business.com",
+    "url": "http://www.eco-business.com/news/from-tea-to-tobacco-which-everyday-products-are-most-at-risk-of-modern-slavery-links/",
+    "title": "From tea to tobacco - which everyday products are most at risk of ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-SG.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Modern slavery and forced labour in global supply chains",
+    "climate_relevance": "Climate change appears only in a footer-style list of Thomson Reuters Foundation coverage areas.",
+    "reason": "The article focuses on slavery risks in product supply chains. The climate change reference is incidental metadata and contributes no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "029749030c9d591f911f797984bc72000ae5b29bc58d914f42f4806b3a6b8d4c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1f33d527d98d60086f8a1581a735c4d9eefad3745eded83ea4c8a035f5505100",
+    "raw_response_text_sha256": "8e546d3f9151a8729ab173346af3c909560ff2ee38e1698f72d4ed4a96a5855f"
+  },
+  "api_metadata": {
+    "id": "resp_01134b0c9bb0fb83006b060b6b745487d2b019a8ba995cda4e",
+    "model": "gpt-6-luna",
+    "created_at": 1795558251.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1197,
+      "input_tokens_details": {
+        "cache_write_tokens": 1194,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1194
+        }
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1396
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Modern slavery and forced labour in global supply chains\",\n  \"climate_relevance\": \"Climate change appears only in a footer-style list of Thomson Reuters Foundation coverage areas.\",\n  \"reason\": \"The article focuses on slavery risks in product supply chains. The climate change reference is incidental metadata and contributes no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:10:52Z",
+  "duration_seconds": 1.561,
+  "error": null
+}

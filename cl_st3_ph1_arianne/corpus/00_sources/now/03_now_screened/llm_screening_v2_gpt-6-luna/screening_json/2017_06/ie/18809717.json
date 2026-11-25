@@ -1,0 +1,77 @@
+{
+  "article_id": "18809717",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/ie/18809717.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/ie/18809717.json"
+  },
+  "manifest_row": {
+    "article_id": "18809717",
+    "group": "2017_06",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/ie/18809717.txt",
+    "now_field_2": "1335",
+    "date_original": "17-06-04",
+    "date_iso": "2017-06-04",
+    "source_name": "Irish Times",
+    "url": "http://www.irishtimes.com/sport/other-sports/angling-notes-bid-begins-to-reverse-decline-in-atlantic-salmon-1.3104489",
+    "title": "Angling Notes: Bid begins to reverse decline in Atlantic salmon",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-IE.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "A study investigating causes of declining wild Atlantic salmon numbers",
+    "climate_relevance": "Climate change and moving sea currents are named among the suspected causes of salmon mortality, but the text does not discuss them in detail.",
+    "reason": "The identifiable main article focuses on wild salmon decline and research into its causes. Climate change is included as one factor in a substantive list of suspected threats, making it relevant background rather than the central subject. The text also contains several unrelated angling and water-safety items.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c183a364c537e6c1cb72f332cc0f2113b32003924d7a666276f9050fa1ac0cfd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "426197847d5115704297fce5809b0a269ebb8521db03afbb6af6cc8ab20a3912",
+    "raw_response_text_sha256": "f613440a77c4df04b81dcd6bfd9581d67f321ef3e7345c8be766d7af6a090f6c"
+  },
+  "api_metadata": {
+    "id": "resp_0f0e9284f4b75cfd006b060b043f7887d2a638eb12d000106a",
+    "model": "gpt-6-luna",
+    "created_at": 1795558148.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2268,
+      "input_tokens_details": {
+        "cache_write_tokens": 2265,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2265
+        }
+      },
+      "output_tokens": 335,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 2603
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A study investigating causes of declining wild Atlantic salmon numbers\",\n  \"climate_relevance\": \"Climate change and moving sea currents are named among the suspected causes of salmon mortality, but the text does not discuss them in detail.\",\n  \"reason\": \"The identifiable main article focuses on wild salmon decline and research into its causes. Climate change is included as one factor in a substantive list of suspected threats, making it relevant background rather than the central subject. The text also contains several unrelated angling and water-safety items.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:09:11Z",
+  "duration_seconds": 3.011,
+  "error": null
+}

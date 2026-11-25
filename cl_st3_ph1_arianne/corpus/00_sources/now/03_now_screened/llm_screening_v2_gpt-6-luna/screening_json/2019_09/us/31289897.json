@@ -1,0 +1,77 @@
+{
+  "article_id": "31289897",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/31289897.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/31289897.json"
+  },
+  "manifest_row": {
+    "article_id": "31289897",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/31289897.txt",
+    "now_field_2": "3866",
+    "date_original": "19-09-16",
+    "date_iso": "2019-09-16",
+    "source_name": "newyorker.com",
+    "url": "https://www.newyorker.com/magazine/2019/09/09/what-statistics-can-and-cant-tell-us-about-ourselves",
+    "title": "What Statistics Can and Can't Tell Us About Ourselves ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Statistics, uncertainty, and the interpretation of scientific research",
+    "climate_relevance": "Climate change appears only as a brief example of a scientific hypothesis; the text does not discuss it or its implications.",
+    "reason": "The main article is about statistics and uncertainty, with a passing reference to evidence for climate change. A separate video snippet mentions surging Amazon fires but does not connect them to climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "76ad3784e5b57925e122edd593aba320486b9c89857aa8eb42fa82f5336e2485",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0f0ac7607c732f512207df9d23fb691f4245710902a0fdc3df39963bfbcbdeae",
+    "raw_response_text_sha256": "2b5dfcebf0ceefcfa3d813c3b9dd45543e3b1b6ed9dbbc66d99289a32a2e10de"
+  },
+  "api_metadata": {
+    "id": "resp_036153c52e2132a0006b06169624ec87d2a6f7a9733895ba1f",
+    "model": "gpt-6-luna",
+    "created_at": 1795561110.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5301,
+      "input_tokens_details": {
+        "cache_write_tokens": 5298,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5298
+        }
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 5600
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Statistics, uncertainty, and the interpretation of scientific research\",\n  \"climate_relevance\": \"Climate change appears only as a brief example of a scientific hypothesis; the text does not discuss it or its implications.\",\n  \"reason\": \"The main article is about statistics and uncertainty, with a passing reference to evidence for climate change. A separate video snippet mentions surging Amazon fires but does not connect them to climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:58:33Z",
+  "duration_seconds": 2.981,
+  "error": null
+}

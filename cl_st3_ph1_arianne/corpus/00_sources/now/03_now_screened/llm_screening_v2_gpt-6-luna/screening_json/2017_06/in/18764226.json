@@ -1,0 +1,77 @@
+{
+  "article_id": "18764226",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/in/18764226.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/in/18764226.json"
+  },
+  "manifest_row": {
+    "article_id": "18764226",
+    "group": "2017_06",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/in/18764226.txt",
+    "now_field_2": "1737",
+    "date_original": "17-06-01",
+    "date_iso": "2017-06-01",
+    "source_name": "The Shillong Times",
+    "url": "http://www.theshillongtimes.com/2017/06/02/news-from-across-the-state-15/",
+    "title": "News from across the state.",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-IN.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "A roundup of local news briefs from Meghalaya",
+    "climate_relevance": "One brief announces a student sensitisation programme on climate change; the rest of the roundup is unrelated to climate.",
+    "reason": "The text is mainly a collection of local news items, and the climate-related notice does not discuss climate change in depth. However, it is a substantive event announcement rather than a boilerplate or incidental keyword mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "13660fdd1181e780512482acde7184d317103dcd927add9ef20b5e3c5b5bd1f7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f18933c5a51a97d31d067f07516e9026f14d0cac645d84bd70a35827870b8752",
+    "raw_response_text_sha256": "2942f38f4238d5927d5b0674120ee975ffe4720389bdee7ddbe0003506858b71"
+  },
+  "api_metadata": {
+    "id": "resp_00b030b3d6350ac7006b060ad15dec87d2b8a6d922b6f74b4d",
+    "model": "gpt-6-luna",
+    "created_at": 1795558097.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2876,
+      "input_tokens_details": {
+        "cache_write_tokens": 2873,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2873
+        }
+      },
+      "output_tokens": 385,
+      "output_tokens_details": {
+        "reasoning_tokens": 237
+      },
+      "total_tokens": 3261
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A roundup of local news briefs from Meghalaya\",\n  \"climate_relevance\": \"One brief announces a student sensitisation programme on climate change; the rest of the roundup is unrelated to climate.\",\n  \"reason\": \"The text is mainly a collection of local news items, and the climate-related notice does not discuss climate change in depth. However, it is a substantive event announcement rather than a boilerplate or incidental keyword mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:08:20Z",
+  "duration_seconds": 3.208,
+  "error": null
+}

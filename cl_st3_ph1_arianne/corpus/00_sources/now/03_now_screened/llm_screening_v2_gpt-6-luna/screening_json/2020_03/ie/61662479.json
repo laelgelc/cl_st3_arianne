@@ -1,0 +1,77 @@
+{
+  "article_id": "61662479",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/ie/61662479.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/ie/61662479.json"
+  },
+  "manifest_row": {
+    "article_id": "61662479",
+    "group": "2020_03",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/ie/61662479.txt",
+    "now_field_2": "1167",
+    "date_original": "20-03-03",
+    "date_iso": "2020-03-03",
+    "source_name": "theparliamentmagazine.eu",
+    "url": "https://www.theparliamentmagazine.eu/articles/news/european-parliament-suspends-visitor-access-bid-reduce-spread-coronavirus",
+    "title": "European Parliament suspends visitor access in bid to ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "European Parliament measures to limit the spread of coronavirus",
+    "climate_relevance": "Climate change appears only in a final sentence about an EU Green Deal and decarbonising heating, which appears unrelated to the main article.",
+    "reason": "The article is centrally about coronavirus-related restrictions and research funding. The lone climate reference is an appended, unrelated sentence and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "eb204df3af6017d774ae865cd595410bc64bbb89e00882bad0a7f97fe2e11c2f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a27e25986ebf414f6259d4cfec5d38607b4b03b71b1a33b756b08ec1ee16e353",
+    "raw_response_text_sha256": "61334cdc5ff5c4dbe188862714a28b8f7c814f61494d7311a9f685dd70e8c877"
+  },
+  "api_metadata": {
+    "id": "resp_08a774320a94c77b006b06380f74b487d1b669d9095ad1b681",
+    "model": "gpt-6-luna",
+    "created_at": 1795569679.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1990,
+      "input_tokens_details": {
+        "cache_write_tokens": 1987,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1987
+        }
+      },
+      "output_tokens": 370,
+      "output_tokens_details": {
+        "reasoning_tokens": 219
+      },
+      "total_tokens": 2360
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"European Parliament measures to limit the spread of coronavirus\",\n  \"climate_relevance\": \"Climate change appears only in a final sentence about an EU Green Deal and decarbonising heating, which appears unrelated to the main article.\",\n  \"reason\": \"The article is centrally about coronavirus-related restrictions and research funding. The lone climate reference is an appended, unrelated sentence and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:21:22Z",
+  "duration_seconds": 3.318,
+  "error": null
+}

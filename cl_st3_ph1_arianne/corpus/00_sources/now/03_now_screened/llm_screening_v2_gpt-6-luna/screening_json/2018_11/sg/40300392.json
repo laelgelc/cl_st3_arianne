@@ -1,0 +1,77 @@
+{
+  "article_id": "40300392",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/sg/40300392.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/sg/40300392.json"
+  },
+  "manifest_row": {
+    "article_id": "40300392",
+    "group": "2018_11",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/sg/40300392.txt",
+    "now_field_2": "668",
+    "date_original": "18-11-22",
+    "date_iso": "2018-11-22",
+    "source_name": "Eco-Business",
+    "url": "https://www.eco-business.com/news/why-are-cities-so-unaffordable-a-crowdfunded-film-finds-out/",
+    "title": "Why are cities so unaffordable? A crowdfunded film finds out",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Housing affordability and a documentary about the global housing crisis",
+    "climate_relevance": "Climate change appears only in boilerplate describing the Thomson Reuters Foundation's coverage areas; the text contains no meaningful climate discourse.",
+    "reason": "The identifiable main article concerns housing affordability, displacement, and housing rights. Climate change is mentioned only in a publisher description, while a long, unrelated article about Etsy sellers also appears in the supplied text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a5a95742cc3c96f1a6ef6d6ae0c8a34f49390504beba33892282a4c9c51ae1f9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1538ccaa3d4b8975ee70088258eb9b6b558137c584ca5485045f59f439f14f8a",
+    "raw_response_text_sha256": "34140b46421a674b715c6912301045f29f2ce68988cf8b61e3bf2e95a4b299a3"
+  },
+  "api_metadata": {
+    "id": "resp_0cc082967c8dafb8006b061eadf2c487d28bd02f6fc14669c5",
+    "model": "gpt-6-luna",
+    "created_at": 1795563182.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4868,
+      "input_tokens_details": {
+        "cache_write_tokens": 4865,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4865
+        }
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 5089
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Housing affordability and a documentary about the global housing crisis\",\n  \"climate_relevance\": \"Climate change appears only in boilerplate describing the Thomson Reuters Foundation's coverage areas; the text contains no meaningful climate discourse.\",\n  \"reason\": \"The identifiable main article concerns housing affordability, displacement, and housing rights. Climate change is mentioned only in a publisher description, while a long, unrelated article about Etsy sellers also appears in the supplied text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:33:04Z",
+  "duration_seconds": 2.585,
+  "error": null
+}

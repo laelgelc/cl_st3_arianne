@@ -1,0 +1,77 @@
+{
+  "article_id": "80916631",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/80916631.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/80916631.json"
+  },
+  "manifest_row": {
+    "article_id": "80916631",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/80916631.txt",
+    "now_field_2": "150",
+    "date_original": "19-09-05",
+    "date_iso": "2019-09-05",
+    "source_name": "WKTV",
+    "url": "https://www.wktv.com/content/video/559530382.html",
+    "title": "Climate change seminar",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us2.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "climate_role": "central",
+    "main_topic": "A public seminar on climate change and its potential impacts on the local community",
+    "climate_relevance": "The report focuses on a climate change seminar addressing impacts such as severe weather and rising sea levels, with discussion of community preparedness.",
+    "reason": "Climate change is the central subject of the seminar and the news report. The opening weather fragment appears unrelated to the main report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "be467bc954786c0498ba7dbb9224ef3a88ad74e3d775ce9fcf3b5bb7659b250a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6901e67326c3fbc393f360a61bc0de02c3dad2eb9dc7a5a6dc1b2c36ba0fee05",
+    "raw_response_text_sha256": "249cf3262446619b1583eaa6fadaca4b0a01b7f90261f08e91c085fb0645c2fe"
+  },
+  "api_metadata": {
+    "id": "resp_03d54f43ffbbfc92006b0646b607c487d1a958f71f40c2a489",
+    "model": "gpt-6-luna",
+    "created_at": 1795573430.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 683,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 149
+      },
+      "total_tokens": 970
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"A public seminar on climate change and its potential impacts on the local community\",\n  \"climate_relevance\": \"The report focuses on a climate change seminar addressing impacts such as severe weather and rising sea levels, with discussion of community preparedness.\",\n  \"reason\": \"Climate change is the central subject of the seminar and the news report. The opening weather fragment appears unrelated to the main report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:23:52Z",
+  "duration_seconds": 2.513,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "83185560",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83185560.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83185560.json"
+  },
+  "manifest_row": {
+    "article_id": "83185560",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83185560.txt",
+    "now_field_2": "451",
+    "date_original": "20-01-11",
+    "date_iso": "2020-01-11",
+    "source_name": "My Central Oregon",
+    "url": "https://www.mycentraloregon.com/2020/01/11/prime-minister-justin-trudeau-calls-deadly-plane-shooting-a-national-tragedy-canadian-crash-team-en-route-to-iran-to-investigate/",
+    "title": "Prime minister Justin Trudeau calls deadly plane shooting a 'national tragedy,' Canadian crash team en route to Iran to investigate",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The investigation into the Iran plane crash and support for victims' families",
+    "climate_relevance": "Climate change is mentioned as a threat to coral reefs in a separate, incomplete snippet, not in the identifiable main article.",
+    "reason": "The main article concerns the plane crash and its investigation. The climate reference occurs only in an unrelated coral-reef snippet and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "294c40ff73c429c7f6226dd92570bf39e5e03852a4d4581ae0fea94c5ee8de46",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cd957498f3aad0823adab8da0dc9d4625c71a96f2dd0afe5f757571f59e95ec5",
+    "raw_response_text_sha256": "13dbf8db7f36e4f8a4f9877eb5c95369274ebc386d0bdcbbb91f1c48166fc090"
+  },
+  "api_metadata": {
+    "id": "resp_0883bf639ecd7f09006b0649441f0087d1b88b3e21a9ce63e0",
+    "model": "gpt-6-luna",
+    "created_at": 1795574084.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1104,
+      "input_tokens_details": {
+        "cache_write_tokens": 1101,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1101
+        }
+      },
+      "output_tokens": 357,
+      "output_tokens_details": {
+        "reasoning_tokens": 205
+      },
+      "total_tokens": 1461
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The investigation into the Iran plane crash and support for victims' families\",\n  \"climate_relevance\": \"Climate change is mentioned as a threat to coral reefs in a separate, incomplete snippet, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns the plane crash and its investigation. The climate reference occurs only in an unrelated coral-reef snippet and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:34:47Z",
+  "duration_seconds": 3.111,
+  "error": null
+}

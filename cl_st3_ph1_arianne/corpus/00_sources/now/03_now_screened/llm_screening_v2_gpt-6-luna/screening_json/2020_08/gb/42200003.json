@@ -1,0 +1,77 @@
+{
+  "article_id": "42200003",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/gb/42200003.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/gb/42200003.json"
+  },
+  "manifest_row": {
+    "article_id": "42200003",
+    "group": "2020_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/gb/42200003.txt",
+    "now_field_2": "262",
+    "date_original": "20-08-18",
+    "date_iso": "2020-08-18",
+    "source_name": "gov.uk",
+    "url": "https://elsenham-pc.gov.uk/footpaths-and-rights-of-way/",
+    "title": "Footpaths and Rights of Way | Elsenham Parish Council",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "Local footpaths, rights of way, and parish open spaces",
+    "climate_relevance": "Climate change is mentioned only in passing as a qualification about the future longevity of oak trees.",
+    "reason": "The text is a local information page about rights of way and open spaces; it contains no meaningful discussion of climate change, its effects, or related policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b5cd8e25e6f02792d3e8e471c9d95fa58ca4783f76d49ec656d070a3a34f2221",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c9df8dc63b9922a52d578ad3f3db0b484940c88964ed95c4ed822540cf51c574",
+    "raw_response_text_sha256": "ab2b1f1f0d7e3c0f2516c6a4c60a0a44a373bea53ba8915d97566a230e045424"
+  },
+  "api_metadata": {
+    "id": "resp_06dafa5561e4e839006b0624ff10e887d2ba392f7868257bb0",
+    "model": "gpt-6-luna",
+    "created_at": 1795564799.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 827,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 1063
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Local footpaths, rights of way, and parish open spaces\",\n  \"climate_relevance\": \"Climate change is mentioned only in passing as a qualification about the future longevity of oak trees.\",\n  \"reason\": \"The text is a local information page about rights of way and open spaces; it contains no meaningful discussion of climate change, its effects, or related policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:00:01Z",
+  "duration_seconds": 2.292,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70099426",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/us/70099426.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/us/70099426.json"
+  },
+  "manifest_row": {
+    "article_id": "70099426",
+    "group": "2018_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/us/70099426.txt",
+    "now_field_2": "1874",
+    "date_original": "18-10-01",
+    "date_iso": "2018-10-01",
+    "source_name": "The Mercury News",
+    "url": "https://www.mercurynews.com/2018/10/01/martins-beach-u-s-supreme-court-denies-appeal-of-billionaire-vinod-khosla/",
+    "title": "Martins Beach: US Supreme Court denies appeal of billionaire Vinod ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-us-1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The legal dispute over public access to Martins Beach and California coastal access laws.",
+    "climate_relevance": "Climate change appears only in the reporter's biography as one of the issues he has covered.",
+    "reason": "The article focuses on beach access, property rights, and litigation under the California Coastal Act. The climate-change mention is incidental biographical boilerplate and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7240c8a73dfc703ceb034948e2e9e36ad322469586ecc53455944494cdb8ee53",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fcff20529ebe82282fff598599d64f461dbfb386a2f843e800dbb73e51e3a4d2",
+    "raw_response_text_sha256": "583f38a34e692fcc3ed1e4d656f41aaf933029210e2334792782740a9d14a657"
+  },
+  "api_metadata": {
+    "id": "resp_066cabb292ef851f006b063add721087d1b05f25431ecf63e2",
+    "model": "gpt-6-luna",
+    "created_at": 1795570397.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3112,
+      "input_tokens_details": {
+        "cache_write_tokens": 3109,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3109
+        }
+      },
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 3334
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The legal dispute over public access to Martins Beach and California coastal access laws.\",\n  \"climate_relevance\": \"Climate change appears only in the reporter's biography as one of the issues he has covered.\",\n  \"reason\": \"The article focuses on beach access, property rights, and litigation under the California Coastal Act. The climate-change mention is incidental biographical boilerplate and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:33:19Z",
+  "duration_seconds": 2.1,
+  "error": null
+}

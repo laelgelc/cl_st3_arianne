@@ -1,0 +1,77 @@
+{
+  "article_id": "82034942",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82034942.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82034942.json"
+  },
+  "manifest_row": {
+    "article_id": "82034942",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82034942.txt",
+    "now_field_2": "1353",
+    "date_original": "19-11-07",
+    "date_iso": "2019-11-07",
+    "source_name": "San Diego Union-Tribune",
+    "url": "https://www.sandiegouniontribune.com/news/nation-world/story/2019-11-07/trump-campaign-launching-black-outreach-effort-for-2020",
+    "title": "Trump campaign launching black outreach effort for 2020",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Donald Trump's 2020 outreach to Black voters",
+    "climate_relevance": "The identifiable main article is about election campaigning and race, with no meaningful climate discussion. A separate one-sentence snippet mentions a New Year's Eve event spotlighting efforts to combat climate change.",
+    "reason": "The climate reference belongs to an unrelated snippet rather than the main article, so it does not make the identifiable article relevant for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4aa83188981833586b5200398457165d3569fbc59f61a3a132a20a134ad3b26f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c04347b70be280f0f8d216ef198bea10f968a285cd432f61e487f81f9f688c02",
+    "raw_response_text_sha256": "cb9fcac4153f21e973b91af03f0ad7a29084b2db6e0d80736efe7bae8cc1a657"
+  },
+  "api_metadata": {
+    "id": "resp_07d978eb31b456d7006b0647fdd37c87d183834fdde5a6bf20",
+    "model": "gpt-6-luna",
+    "created_at": 1795573757.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2287,
+      "input_tokens_details": {
+        "cache_write_tokens": 2284,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2284
+        }
+      },
+      "output_tokens": 445,
+      "output_tokens_details": {
+        "reasoning_tokens": 291
+      },
+      "total_tokens": 2732
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Donald Trump's 2020 outreach to Black voters\",\n  \"climate_relevance\": \"The identifiable main article is about election campaigning and race, with no meaningful climate discussion. A separate one-sentence snippet mentions a New Year's Eve event spotlighting efforts to combat climate change.\",\n  \"reason\": \"The climate reference belongs to an unrelated snippet rather than the main article, so it does not make the identifiable article relevant for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:29:21Z",
+  "duration_seconds": 3.309,
+  "error": null
+}

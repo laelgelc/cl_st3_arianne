@@ -1,0 +1,77 @@
+{
+  "article_id": "71184881",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/au/71184881.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/au/71184881.json"
+  },
+  "manifest_row": {
+    "article_id": "71184881",
+    "group": "2019_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/au/71184881.txt",
+    "now_field_2": "171",
+    "date_original": "19-09-05",
+    "date_iso": "2019-09-05",
+    "source_name": "abc.net.au",
+    "url": "https://www.abc.net.au/news/2019-09-05/uk-needs-restart-button-brexit-stalemate-early-election/11480322",
+    "title": "Brexit: United Kingdom needs to hit restart button to ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Australian and UK party politics, especially Brexit and Conservative electoral prospects",
+    "climate_relevance": "Climate change appears only in a separate features blurb about an Australian emissions fact check, not in the identifiable main article.",
+    "reason": "The main article concerns Brexit and party politics. The climate-related text is an unrelated snippet and does not provide climate discourse within the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9a3dcb1ff6ac8e12126104e0de7727e84bd1a9baf27491e35a1f72cd5e0f4a64",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2fac464c2320f25c6eaeb06260682f80ae16ad09c6647e37c0a6037acca1a7f9",
+    "raw_response_text_sha256": "6a76cb91a77523e98f3134739e8b4058d2617ad55387fc7e83acf9716a623d3c"
+  },
+  "api_metadata": {
+    "id": "resp_0577f6da82ae8ef5006b064046244087d196518b61991a4793",
+    "model": "gpt-6-luna",
+    "created_at": 1795571782.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 696,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 985
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Australian and UK party politics, especially Brexit and Conservative electoral prospects\",\n  \"climate_relevance\": \"Climate change appears only in a separate features blurb about an Australian emissions fact check, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns Brexit and party politics. The climate-related text is an unrelated snippet and does not provide climate discourse within the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:56:24Z",
+  "duration_seconds": 2.461,
+  "error": null
+}

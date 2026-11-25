@@ -1,0 +1,77 @@
+{
+  "article_id": "81232706",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/81232706.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/81232706.json"
+  },
+  "manifest_row": {
+    "article_id": "81232706",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/81232706.txt",
+    "now_field_2": "246",
+    "date_original": "19-09-22",
+    "date_iso": "2019-09-22",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20190922214208-sa75h",
+    "title": "UK opposition Labour to vote on Brexit stance",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Labour Party's possible Brexit policies",
+    "climate_relevance": "Climate change appears only in a boilerplate description of Reuters' global editorial coverage, not in the article's reporting.",
+    "reason": "The article focuses on internal Labour Party debate over Brexit; the climate reference is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ea40503efe9a65be7674afd4cf5a28bc14b830ba38700c60016672cdd67f0ce0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "76a5601fb37ebcf354279f1a5552c84086852e3ff17a1d8ed175f2fdfc45dd3a",
+    "raw_response_text_sha256": "6b8df2f6fd4c0d575d5dc33399482491914449e4a8a831053ed92f01d19800c1"
+  },
+  "api_metadata": {
+    "id": "resp_0fca4023d518e563006b0647142c2887d1bee189e5e41010a8",
+    "model": "gpt-6-luna",
+    "created_at": 1795573524.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 782,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 154,
+      "output_tokens_details": {
+        "reasoning_tokens": 25
+      },
+      "total_tokens": 936
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Labour Party's possible Brexit policies\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of Reuters' global editorial coverage, not in the article's reporting.\",\n  \"reason\": \"The article focuses on internal Labour Party debate over Brexit; the climate reference is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:25:25Z",
+  "duration_seconds": 1.685,
+  "error": null
+}

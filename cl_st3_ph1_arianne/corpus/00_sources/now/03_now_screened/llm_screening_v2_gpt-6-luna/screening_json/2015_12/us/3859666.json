@@ -1,0 +1,77 @@
+{
+  "article_id": "3859666",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/us/3859666.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/us/3859666.json"
+  },
+  "manifest_row": {
+    "article_id": "3859666",
+    "group": "2015_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/us/3859666.txt",
+    "now_field_2": "1537",
+    "date_original": "15-12-04",
+    "date_iso": "2015-12-04",
+    "source_name": "Wall Street Journal",
+    "url": "http://www.wsj.com/articles/predict-the-future-how-to-improve-the-accuracy-of-forecasts-1449245817",
+    "title": "Predict the Future: How to Improve the Accuracy of Forecasts",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "Forecasting methods, probability, and the communication of uncertainty",
+    "climate_relevance": "Reader comments discuss IPCC climate forecasts, the use of numerical probabilities, and political expectations about certainty in climate-change predictions.",
+    "reason": "The main article is about forecasting generally, not climate change. However, the comments contain meaningful discussion of climate forecasts and uncertainty, making the text relevant as peripheral climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1d15e525ef89227e61af865f982f8277605705783a00c868efcf0f0b9ff56150",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "899520667caee2c1aba451944c8510ce6d83e7aa7d9dd69e369eca1cdc8b4d74",
+    "raw_response_text_sha256": "c7da7df72b75b5cd4d8d336035346eb104e48ff1129507214cf3929a262db45b"
+  },
+  "api_metadata": {
+    "id": "resp_0fda717c446bee9f006b061d75dae087d2bba239e329e6bfcc",
+    "model": "gpt-6-luna",
+    "created_at": 1795562870.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2560,
+      "input_tokens_details": {
+        "cache_write_tokens": 2557,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2557
+        }
+      },
+      "output_tokens": 295,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 2855
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Forecasting methods, probability, and the communication of uncertainty\",\n  \"climate_relevance\": \"Reader comments discuss IPCC climate forecasts, the use of numerical probabilities, and political expectations about certainty in climate-change predictions.\",\n  \"reason\": \"The main article is about forecasting generally, not climate change. However, the comments contain meaningful discussion of climate forecasts and uncertainty, making the text relevant as peripheral climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:27:52Z",
+  "duration_seconds": 2.599,
+  "error": null
+}

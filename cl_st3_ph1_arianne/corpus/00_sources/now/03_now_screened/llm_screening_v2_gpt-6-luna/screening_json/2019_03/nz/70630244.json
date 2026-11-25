@@ -1,0 +1,77 @@
+{
+  "article_id": "70630244",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70630244.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70630244.json"
+  },
+  "manifest_row": {
+    "article_id": "70630244",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70630244.txt",
+    "now_field_2": "496",
+    "date_original": "19-03-26",
+    "date_iso": "2019-03-26",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/BU1903/S00673/nail-salons-must-be-regulated-says-podiatrynz.htm",
+    "title": "Nail Salons must be Regulated says PodiatryNZ",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Regulation and hygiene standards for nail salons",
+    "climate_relevance": "Climate-related material appears only in separate, unrelated snippets near the end of the text.",
+    "reason": "The identifiable main article concerns infection control and regulation in nail salons. Brief snippets about forestry and emissions trading, and a climate-policy report, are unrelated additions rather than meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "242e3c2c5922d557a3dd85d6b6a842048516fa51fa44bf33000f7d389888127a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "25f22c59bb9bdee4c1b66720e26c7ec347ed3465985fca1017abe9e82b463aa6",
+    "raw_response_text_sha256": "4f4bf8c382b0a697abe5a96a89c9e9ae446b9a55580dc70aca412c48176b3a50"
+  },
+  "api_metadata": {
+    "id": "resp_0db1e2fb22cb42c0006b063e18792487d18a75d7ad15512b31",
+    "model": "gpt-6-luna",
+    "created_at": 1795571224.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1113,
+      "input_tokens_details": {
+        "cache_write_tokens": 1110,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1110
+        }
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 1406
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Regulation and hygiene standards for nail salons\",\n  \"climate_relevance\": \"Climate-related material appears only in separate, unrelated snippets near the end of the text.\",\n  \"reason\": \"The identifiable main article concerns infection control and regulation in nail salons. Brief snippets about forestry and emissions trading, and a climate-policy report, are unrelated additions rather than meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:47:07Z",
+  "duration_seconds": 2.732,
+  "error": null
+}

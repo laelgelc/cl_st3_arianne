@@ -1,0 +1,77 @@
+{
+  "article_id": "70505745",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/ph/70505745.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/ph/70505745.json"
+  },
+  "manifest_row": {
+    "article_id": "70505745",
+    "group": "2019_02",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/ph/70505745.txt",
+    "now_field_2": "174",
+    "date_original": "19-02-12",
+    "date_iso": "2019-02-12",
+    "source_name": "FOX Sports Asia",
+    "url": "https://www.foxsportsasia.com/football/asian-football/afc-champions-league/1040641/live-afc-champions-league-2019-bangkok-united-vs-hanoi-fc/",
+    "title": "LIVE: AFC Champions League 2019 - Bangkok United vs Hanoi FC",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "A live football match blog and a report about a regional education assembly",
+    "climate_relevance": "Climate change appears only in a list of challenges mentioned in passing by an education official.",
+    "reason": "The text contains unrelated snippets, and its sole climate reference is a brief mention without meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3f990644f14077e152d28e1b7e14eda03c7174578c088f2f4df4d086631295d4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a356e00e3ffa1aee8d0f64a46d7977249b26c602986d44c0ebcab7aaf6c67fea",
+    "raw_response_text_sha256": "bbc3ab3a8e06e4820672583f3f121838be4194337385417ddbc7771fee6533c5"
+  },
+  "api_metadata": {
+    "id": "resp_01a992b90a036d18006b063d0ec23c87d19689343bde903796",
+    "model": "gpt-6-luna",
+    "created_at": 1795570958.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1630,
+      "input_tokens_details": {
+        "cache_write_tokens": 1627,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1627
+        }
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 171
+      },
+      "total_tokens": 1928
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A live football match blog and a report about a regional education assembly\",\n  \"climate_relevance\": \"Climate change appears only in a list of challenges mentioned in passing by an education official.\",\n  \"reason\": \"The text contains unrelated snippets, and its sole climate reference is a brief mention without meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:41Z",
+  "duration_seconds": 3.108,
+  "error": null
+}

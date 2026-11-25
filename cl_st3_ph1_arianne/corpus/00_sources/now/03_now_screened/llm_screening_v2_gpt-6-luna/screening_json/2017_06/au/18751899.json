@@ -1,0 +1,77 @@
+{
+  "article_id": "18751899",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/au/18751899.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/au/18751899.json"
+  },
+  "manifest_row": {
+    "article_id": "18751899",
+    "group": "2017_06",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/au/18751899.txt",
+    "now_field_2": "637",
+    "date_original": "17-06-01",
+    "date_iso": "2017-06-01",
+    "source_name": "SBS",
+    "url": "http://www.sbs.com.au/news/article/2017/06/01/levesons-take-aim-sons-former-partner-police-believe-remains-are-matthews",
+    "title": "Levesons take aim at son's former partner as police 'believe ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The search for the remains of Matthew Leveson and his family's response to the case.",
+    "climate_relevance": "Climate change appears only in an unrelated news teaser about Trump's withdrawal from the Paris accord, not in the identifiable main article.",
+    "reason": "The main article concerns a murder investigation and its legal aftermath. The climate-related lines are an unrelated news snippet and do not provide meaningful climate discourse in the article itself.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7a0c702a09f5895949c9cdc7794d37e6451ad82fc95f113046ef6b1368f133d1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ca816ca145cf7e81d2fa8970ab67849f5719f9a43789eb81a6ff413d9ef1836f",
+    "raw_response_text_sha256": "ef548e607029a4bb2035c01ae38a0084821a8059e18e311b2483678b5e1a6013"
+  },
+  "api_metadata": {
+    "id": "resp_04f577bb471c21c0006b060abef59087d2b10447e7fda32acc",
+    "model": "gpt-6-luna",
+    "created_at": 1795558079.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1322,
+      "input_tokens_details": {
+        "cache_write_tokens": 1319,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1319
+        }
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 1583
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The search for the remains of Matthew Leveson and his family's response to the case.\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated news teaser about Trump's withdrawal from the Paris accord, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns a murder investigation and its legal aftermath. The climate-related lines are an unrelated news snippet and do not provide meaningful climate discourse in the article itself.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:08:01Z",
+  "duration_seconds": 2.63,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "21065120",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/ng/21065120.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/ng/21065120.json"
+  },
+  "manifest_row": {
+    "article_id": "21065120",
+    "group": "2017_10",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/ng/21065120.txt",
+    "now_field_2": "639",
+    "date_original": "17-10-12",
+    "date_iso": "2017-10-12",
+    "source_name": "TODAY.NG",
+    "url": "https://www.today.ng/news/nigeria/21984/bank-warns-nigeria-relying-oil-price-rise",
+    "title": "World Bank warns Nigeria against relying on oil price rise",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-NG.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "Nigeria’s economic growth and the World Bank’s advice to reduce reliance on oil",
+    "climate_relevance": "Climate change is briefly named as one of several overlapping challenges countries should build resilience against.",
+    "reason": "The main article concerns Nigeria’s economic strategy, not climate change. Its reference to climate change is meaningful but brief and embedded in a list, so it is peripheral rather than core. Unrelated snippets about Japanese politics and Nigerian federalism appear after the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "65884bbabab51aa18b5204b5ca6ea2c6f4cdaf6ac7fa501df5e8d2a72e8b5baa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "807753a51b76adfc47ea51bfc3b77f4624da8f5fae16b89277e50944cfc51c32",
+    "raw_response_text_sha256": "cbddb32ab3c93b1d32eb1497452e4cff04586cf009cf8cc964f46f2aeac48ebc"
+  },
+  "api_metadata": {
+    "id": "resp_0112da33cd68ceae006b060e3100fc87d2b105f5c747c29ce5",
+    "model": "gpt-6-luna",
+    "created_at": 1795558961.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1289,
+      "input_tokens_details": {
+        "cache_write_tokens": 1286,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1286
+        }
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 1589
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Nigeria’s economic growth and the World Bank’s advice to reduce reliance on oil\",\n  \"climate_relevance\": \"Climate change is briefly named as one of several overlapping challenges countries should build resilience against.\",\n  \"reason\": \"The main article concerns Nigeria’s economic strategy, not climate change. Its reference to climate change is meaningful but brief and embedded in a list, so it is peripheral rather than core. Unrelated snippets about Japanese politics and Nigerian federalism appear after the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:22:43Z",
+  "duration_seconds": 2.587,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "19134876",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/ca/19134876.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/ca/19134876.json"
+  },
+  "manifest_row": {
+    "article_id": "19134876",
+    "group": "2017_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/ca/19134876.txt",
+    "now_field_2": "320",
+    "date_original": "17-06-23",
+    "date_iso": "2017-06-23",
+    "source_name": "Chatham Daily News",
+    "url": "http://www.chathamdailynews.ca/2017/06/23/ministry-of-the-environment-and-climate-change-responds-to-protest",
+    "title": "Ministry of the Environment and Climate Change responds to protest",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Residents’ groundwater and health concerns about construction and operation of the North Kent Wind project.",
+    "climate_relevance": "Climate change appears in the ministry’s name; the article does not discuss climate change, its impacts, or the project’s climate rationale.",
+    "reason": "The report focuses on local concerns about possible groundwater contamination and the ministry’s monitoring requirements. The wind-energy context alone does not amount to meaningful climate discourse in the supplied text.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a845604af7fc6d3dcb4ba7e448d84690e84dacd1c4b8a5aedd31789e4169aff8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4c5bbacb737a3106505000b72a5a18ce723f1e6d6ccfeb35fbcb3394ce199688",
+    "raw_response_text_sha256": "e0ca4f0de42e5fa14393510393a3eaec12b1142282ef9b059408177d1e626523"
+  },
+  "api_metadata": {
+    "id": "resp_030a827a3c4ab1fc006b060b81452887d28a466710856f0c4e",
+    "model": "gpt-6-luna",
+    "created_at": 1795558273.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 889,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 185
+      },
+      "total_tokens": 1231
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Residents’ groundwater and health concerns about construction and operation of the North Kent Wind project.\",\n  \"climate_relevance\": \"Climate change appears in the ministry’s name; the article does not discuss climate change, its impacts, or the project’s climate rationale.\",\n  \"reason\": \"The report focuses on local concerns about possible groundwater contamination and the ministry’s monitoring requirements. The wind-energy context alone does not amount to meaningful climate discourse in the supplied text.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:11:16Z",
+  "duration_seconds": 2.912,
+  "error": null
+}

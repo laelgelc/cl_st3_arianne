@@ -1,0 +1,77 @@
+{
+  "article_id": "41339337",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/my/41339337.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/my/41339337.json"
+  },
+  "manifest_row": {
+    "article_id": "41339337",
+    "group": "2019_09",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/my/41339337.txt",
+    "now_field_2": "396",
+    "date_original": "19-09-11",
+    "date_iso": "2019-09-11",
+    "source_name": "edgeprop.my",
+    "url": "https://www.edgeprop.my/content/1584445/keep-your-wits-about-you-disaster-management-staff-told",
+    "title": "Keep your wits about you, disaster management staff told ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Disaster management responses to air pollution in Pasir Gudang and a forest fire in Gelang Patah",
+    "climate_relevance": "Climate change is not meaningfully discussed; it appears only in the name of a government ministry.",
+    "reason": "The article focuses on staff conduct and agency responses to pollution and a forest fire, without connecting either incident to climate change. The appended property-news material is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4254d156e15bd60cc16187121b5b31f6a3fe0514494117f528dfd79bfd1d3644",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f7a7b431379f51dce954d12d3102f03b4d830fe52cc1922243c067abdfa94b1c",
+    "raw_response_text_sha256": "ed4c22a0ba75c84fabb37f5a94b744a8b9dcdacea1ca42ab72b6d4c4e06a1f28"
+  },
+  "api_metadata": {
+    "id": "resp_0f7d14cfe656fe2f006b0621454fb887d28e89cefe4a6843fb",
+    "model": "gpt-6-luna",
+    "created_at": 1795563845.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1011,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 203,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 1214
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Disaster management responses to air pollution in Pasir Gudang and a forest fire in Gelang Patah\",\n  \"climate_relevance\": \"Climate change is not meaningfully discussed; it appears only in the name of a government ministry.\",\n  \"reason\": \"The article focuses on staff conduct and agency responses to pollution and a forest fire, without connecting either incident to climate change. The appended property-news material is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:44:07Z",
+  "duration_seconds": 1.895,
+  "error": null
+}

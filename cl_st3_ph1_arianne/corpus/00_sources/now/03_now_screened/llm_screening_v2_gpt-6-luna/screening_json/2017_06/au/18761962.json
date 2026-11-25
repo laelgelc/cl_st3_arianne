@@ -1,0 +1,77 @@
+{
+  "article_id": "18761962",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/au/18761962.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/au/18761962.json"
+  },
+  "manifest_row": {
+    "article_id": "18761962",
+    "group": "2017_06",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/au/18761962.txt",
+    "now_field_2": "1286",
+    "date_original": "17-06-01",
+    "date_iso": "2017-06-01",
+    "source_name": "Gizmodo Australia",
+    "url": "https://www.gizmodo.com.au/2017/06/more-rumours-about-the-next-monsters-joining-universals-dark-universe/",
+    "title": "More Rumours About The Next Monsters Joining Universal's Dark ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Entertainment news roundup covering films and television",
+    "climate_relevance": "Climate change appears only in a separate trending-stories snippet about the US withdrawal from the Paris Climate Agreement.",
+    "reason": "The identifiable main article is an entertainment roundup, and the climate-related material is an unrelated embedded trending-story item rather than part of its substantive coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "242b6beeead9ab3e249e35c72bf89c5932f343d8c8343ea7a2e5697d4523aa45",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b7aa5ff00a831f24b89038ad52c7e5b248a7ff805cde841c04ec1ec720cd89dd",
+    "raw_response_text_sha256": "1a17931348140be0c6a9b0a541aadafbc81c285012e8f0f7e40b350550f450e5"
+  },
+  "api_metadata": {
+    "id": "resp_00098f660c307c66006b060acbfd6c87d2937e5c0bfe1222cb",
+    "model": "gpt-6-luna",
+    "created_at": 1795558092.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2169,
+      "input_tokens_details": {
+        "cache_write_tokens": 2166,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2166
+        }
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 2462
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Entertainment news roundup covering films and television\",\n  \"climate_relevance\": \"Climate change appears only in a separate trending-stories snippet about the US withdrawal from the Paris Climate Agreement.\",\n  \"reason\": \"The identifiable main article is an entertainment roundup, and the climate-related material is an unrelated embedded trending-story item rather than part of its substantive coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:08:14Z",
+  "duration_seconds": 2.505,
+  "error": null
+}

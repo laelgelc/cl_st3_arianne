@@ -1,0 +1,77 @@
+{
+  "article_id": "83385885",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83385885.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83385885.json"
+  },
+  "manifest_row": {
+    "article_id": "83385885",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83385885.txt",
+    "now_field_2": "139",
+    "date_original": "20-01-22",
+    "date_iso": "2020-01-22",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20200122182854-ivsvr",
+    "title": "Chinese virus-hit city of Wuhan closes transport networks -state media",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us7.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Wuhan's suspension of transport services during a virus outbreak",
+    "climate_relevance": "Climate change appears only in a standard description of Reuters' coverage areas.",
+    "reason": "The report is about public-health restrictions in Wuhan; the climate reference is boilerplate and contains no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "69872b94a0fb6b5650d487f8ad1e942880687f0f978e0fe79ba92bd3d8b3d0fe",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "37e24aa24ef10662af9aab23df43cf9d6d6d4b802b7a0eb2b88abeadc80eebd3",
+    "raw_response_text_sha256": "79d8f86233467b0eb9b68d3add8e221f55cd7a9e33594b544560dc3c53dbfd3b"
+  },
+  "api_metadata": {
+    "id": "resp_0a7452c3a3c625d2006b0649880e7087d18314c1e151bbfe06",
+    "model": "gpt-6-luna",
+    "created_at": 1795574152.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 669,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 191,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 860
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Wuhan's suspension of transport services during a virus outbreak\",\n  \"climate_relevance\": \"Climate change appears only in a standard description of Reuters' coverage areas.\",\n  \"reason\": \"The report is about public-health restrictions in Wuhan; the climate reference is boilerplate and contains no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:35:53Z",
+  "duration_seconds": 1.714,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "81732354",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81732354.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81732354.json"
+  },
+  "manifest_row": {
+    "article_id": "81732354",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81732354.txt",
+    "now_field_2": "1012",
+    "date_original": "19-10-21",
+    "date_iso": "2019-10-21",
+    "source_name": "Madison.com",
+    "url": "https://madison.com/news/national/exxon-trial-probes-how-oil-giant-accounts-for-climate-change/article_85d15bb0-75ef-59a1-b5fb-704fd6e24836.html",
+    "title": "Exxon trial probes how oil giant accounts for climate change",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us3.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "A New York lawsuit alleging Exxon misled investors about the financial risks of climate regulations and climate change.",
+    "climate_relevance": "The article focuses on how climate policies and efforts to limit global warming may affect fossil-fuel investments, and on allegations that Exxon understated those risks.",
+    "reason": "Climate change and its regulation are central to the lawsuit, the alleged investor disclosures, and the potential financial consequences discussed. The opening weather alert is an unrelated snippet, but the main article is identifiable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8f65e482fdba307f28eac4c397c53f861e8a638cf913f45220b1599574da374a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f21aef19c98c784aed6f16711146f6c83162c017cd6da6254175d220015ccaae",
+    "raw_response_text_sha256": "6978d5b5643c572667e09031308c26939c0f01c8910bbc0ed0299a9d14cd0544"
+  },
+  "api_metadata": {
+    "id": "resp_055aa328633b557e006b0647a3e67087d1aec11878aaf7d97d",
+    "model": "gpt-6-luna",
+    "created_at": 1795573667.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1819,
+      "input_tokens_details": {
+        "cache_write_tokens": 1816,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1816
+        }
+      },
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 2041
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"A New York lawsuit alleging Exxon misled investors about the financial risks of climate regulations and climate change.\",\n  \"climate_relevance\": \"The article focuses on how climate policies and efforts to limit global warming may affect fossil-fuel investments, and on allegations that Exxon understated those risks.\",\n  \"reason\": \"Climate change and its regulation are central to the lawsuit, the alleged investor disclosures, and the potential financial consequences discussed. The opening weather alert is an unrelated snippet, but the main article is identifiable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:27:50Z",
+  "duration_seconds": 2.278,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70326394",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/nz/70326394.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/nz/70326394.json"
+  },
+  "manifest_row": {
+    "article_id": "70326394",
+    "group": "2018_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/nz/70326394.txt",
+    "now_field_2": "1032",
+    "date_original": "18-12-10",
+    "date_iso": "2018-12-10",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/WO1812/S00068/prosecution-of-muslims-in-china-world-needs-attention.htm",
+    "title": "Prosecution of Muslims in China - World Needs Attention",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Persecution of Muslim communities in China, particularly Uyghurs",
+    "climate_relevance": "Climate change appears only in an unrelated teaser about climate disasters and the UN Climate Change Conference; it is not part of the main article.",
+    "reason": "The identifiable main article discusses religious repression and human rights in China. The climate-related text is a separate news teaser and does not provide meaningful climate discourse within the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e0208a56304379252a600c46e8ed71c53d07cf391a93b54af0a6e45771565b47",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "02a60b0d29fa742107f0e46c18062b57edd1182c82f8f2dc896369d19b94a1b5",
+    "raw_response_text_sha256": "eb96e9eeddc6cb7bb292e45553feb11ad77978a2a60745b56e15667436ec035c"
+  },
+  "api_metadata": {
+    "id": "resp_0d3511fc55d003e6006b063bfaad5487d18ab29376379a45de",
+    "model": "gpt-6-luna",
+    "created_at": 1795570682.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1789,
+      "input_tokens_details": {
+        "cache_write_tokens": 1786,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1786
+        }
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 2021
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Persecution of Muslim communities in China, particularly Uyghurs\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated teaser about climate disasters and the UN Climate Change Conference; it is not part of the main article.\",\n  \"reason\": \"The identifiable main article discusses religious repression and human rights in China. The climate-related text is a separate news teaser and does not provide meaningful climate discourse within the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:38:04Z",
+  "duration_seconds": 2.131,
+  "error": null
+}

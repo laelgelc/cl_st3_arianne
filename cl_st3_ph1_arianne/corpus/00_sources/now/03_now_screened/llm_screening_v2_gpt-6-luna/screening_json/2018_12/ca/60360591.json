@@ -1,0 +1,77 @@
+{
+  "article_id": "60360591",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ca/60360591.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ca/60360591.json"
+  },
+  "manifest_row": {
+    "article_id": "60360591",
+    "group": "2018_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ca/60360591.txt",
+    "now_field_2": "604",
+    "date_original": "18-12-17",
+    "date_iso": "2018-12-17",
+    "source_name": "The Daily Courier",
+    "url": "http://www.kelownadailycourier.ca/news/article_b8b1806c-0289-11e9-872a-53f7ccb47dbd.html",
+    "title": "Woman who fled drug sentencing finally sent to jail 3 1/2 years later",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Drug trafficking sentencing",
+    "climate_relevance": "A separate trailing snippet links climate change to worsening wildfires and infestations affecting timber forests, but this is unrelated to the identifiable main article.",
+    "reason": "The main article concerns a drug trafficking sentence and contains no climate discourse. The only climate-related statement appears in an unrelated trailing snippet, so it does not make the main article useful for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2e5e160f7821b67349af71473136277b87b24f4ec6b532dcd9375eff8cc55ba4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cb2adc364a018f705bd3475353bc6d42558f22722a5fd8b1bd994e411c95b90b",
+    "raw_response_text_sha256": "b7bd8530e6b94b5602039c2587d215d60e23cbfed734010711f7a0412454806d"
+  },
+  "api_metadata": {
+    "id": "resp_0c5b9e3ff6418202006b06324a335087d1b7399a49acf891b2",
+    "model": "gpt-6-luna",
+    "created_at": 1795568202.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1295,
+      "input_tokens_details": {
+        "cache_write_tokens": 1292,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1292
+        }
+      },
+      "output_tokens": 347,
+      "output_tokens_details": {
+        "reasoning_tokens": 196
+      },
+      "total_tokens": 1642
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Drug trafficking sentencing\",\n  \"climate_relevance\": \"A separate trailing snippet links climate change to worsening wildfires and infestations affecting timber forests, but this is unrelated to the identifiable main article.\",\n  \"reason\": \"The main article concerns a drug trafficking sentence and contains no climate discourse. The only climate-related statement appears in an unrelated trailing snippet, so it does not make the main article useful for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:56:45Z",
+  "duration_seconds": 3.487,
+  "error": null
+}

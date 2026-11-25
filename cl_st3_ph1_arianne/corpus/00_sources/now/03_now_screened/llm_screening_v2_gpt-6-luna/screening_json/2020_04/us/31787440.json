@@ -1,0 +1,77 @@
+{
+  "article_id": "31787440",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_04/us/31787440.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_04/us/31787440.json"
+  },
+  "manifest_row": {
+    "article_id": "31787440",
+    "group": "2020_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_04/us/31787440.txt",
+    "now_field_2": "2305",
+    "date_original": "20-04-18",
+    "date_iso": "2020-04-18",
+    "source_name": "theatlantic.com",
+    "url": "https://www.theatlantic.com/technology/archive/2020/04/us-coronavirus-outbreak-out-control-test-positivity-rate/610132/",
+    "title": "How Bad Is the Coronavirus Outbreak? Here's a Key Number ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-04.txt\"]",
+    "metadata_article_files": "[\"text-20-04/20-04-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "COVID-19 testing rates, test positivity, and undercounting of cases in the United States",
+    "climate_relevance": "Climate change appears only in the author's biographical description.",
+    "reason": "The article is centrally about COVID-19 and contains no meaningful climate-change discourse; the sole reference is unrelated author-bio boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7a7cf12c1ede1b3726e9701782e73c16b5fdcd71a764d1e88598734bf4a04654",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7dee06e4287a75defe82c97fc886e17c31ddf30b2e0fd4bb391426005231c010",
+    "raw_response_text_sha256": "d97fc514bd754f2e4a60e27de366fef26371d1d640c5a393b4321cb6004a1377"
+  },
+  "api_metadata": {
+    "id": "resp_0f98b5db161b6c22006b06196714d887d2b006a79f0b131f7a",
+    "model": "gpt-6-luna",
+    "created_at": 1795561831.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3459,
+      "input_tokens_details": {
+        "cache_write_tokens": 3456,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3456
+        }
+      },
+      "output_tokens": 187,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 3646
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"COVID-19 testing rates, test positivity, and undercounting of cases in the United States\",\n  \"climate_relevance\": \"Climate change appears only in the author's biographical description.\",\n  \"reason\": \"The article is centrally about COVID-19 and contains no meaningful climate-change discourse; the sole reference is unrelated author-bio boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:10:32Z",
+  "duration_seconds": 1.76,
+  "error": null
+}

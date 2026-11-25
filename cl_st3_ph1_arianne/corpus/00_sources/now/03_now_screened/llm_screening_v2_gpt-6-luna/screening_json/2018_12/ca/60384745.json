@@ -1,0 +1,77 @@
+{
+  "article_id": "60384745",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ca/60384745.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ca/60384745.json"
+  },
+  "manifest_row": {
+    "article_id": "60384745",
+    "group": "2018_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ca/60384745.txt",
+    "now_field_2": "1010",
+    "date_original": "18-12-27",
+    "date_iso": "2018-12-27",
+    "source_name": "The Daily Courier",
+    "url": "http://www.kelownadailycourier.ca/opinion/article_a904358a-0a43-11e9-b86d-ef2675edd1c9.html",
+    "title": "Letters to the Editor (6): Friday, December 28, 2018",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "A collection of letters to the editor on Canadian politics, electric-vehicle safety, cannabis, and other topics",
+    "climate_relevance": "One letter notes that electric vehicles do not produce greenhouse gases and refers to the B.C. government’s future electric-vehicle policy; a separate news snippet links climate change to wildfire and forest-infestation impacts.",
+    "reason": "The text is not centrally about climate change. It contains meaningful but brief climate-related discourse in the electric-vehicle letter and the appended forest-industry snippet, making it relevant as peripheral material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4e3939a3104014256cb1224fe0deb46fc3e27c760d390469d629eb13e9cf3617",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f399c21dde1366fdbab80ca27d76c36f917c2d5920e9e3a9856e8613e4b5c8fe",
+    "raw_response_text_sha256": "73e4dc249e8e398cad778350f73ec8ac2841c47698c63271c619cd216dc48669"
+  },
+  "api_metadata": {
+    "id": "resp_06648a332c77c558006b06326ab86887d1b21fa86c0d2cdea8",
+    "model": "gpt-6-luna",
+    "created_at": 1795568234.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1893,
+      "input_tokens_details": {
+        "cache_write_tokens": 1890,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1890
+        }
+      },
+      "output_tokens": 356,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 2249
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of letters to the editor on Canadian politics, electric-vehicle safety, cannabis, and other topics\",\n  \"climate_relevance\": \"One letter notes that electric vehicles do not produce greenhouse gases and refers to the B.C. government’s future electric-vehicle policy; a separate news snippet links climate change to wildfire and forest-infestation impacts.\",\n  \"reason\": \"The text is not centrally about climate change. It contains meaningful but brief climate-related discourse in the electric-vehicle letter and the appended forest-industry snippet, making it relevant as peripheral material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:57:17Z",
+  "duration_seconds": 3.18,
+  "error": null
+}

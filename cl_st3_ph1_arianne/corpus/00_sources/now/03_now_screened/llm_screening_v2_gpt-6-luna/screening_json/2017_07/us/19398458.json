@@ -1,0 +1,77 @@
+{
+  "article_id": "19398458",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/us/19398458.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/us/19398458.json"
+  },
+  "manifest_row": {
+    "article_id": "19398458",
+    "group": "2017_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/us/19398458.txt",
+    "now_field_2": "841",
+    "date_original": "17-07-09",
+    "date_iso": "2017-07-09",
+    "source_name": "The Hill",
+    "url": "http://thehill.com/homenews/sunday-talk-shows/341192-trump-talk-of-cyber-security-unit-with-russia-earns-mixed-reviews",
+    "title": "Trump talk of cyber security unit with Russia takes the spotlight",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "U.S.-Russia cybersecurity cooperation and election interference",
+    "climate_relevance": "Climate change is mentioned only as one of several topics at the G-20 summit.",
+    "reason": "The article focuses on cybersecurity and U.S.-Russia relations; the brief reference to climate change contains no substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "31345557d71e68e2a5044d7a73401e0bc7d1f97d85b375dee18ce0d1f68be9fd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a8918f0bbb3610bc0b340ea9c02eaa59ef89941881759f77506c820dc6e67e9c",
+    "raw_response_text_sha256": "6392200c11ff5f40334265d3228ffb77da68c2de645cc7f3af9f5e69adffc5ca"
+  },
+  "api_metadata": {
+    "id": "resp_0c54c8ce14d1219c006b060be99f2087d2b83588a9f8f423c1",
+    "model": "gpt-6-luna",
+    "created_at": 1795558377.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1616,
+      "input_tokens_details": {
+        "cache_write_tokens": 1613,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1613
+        }
+      },
+      "output_tokens": 175,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 1791
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"U.S.-Russia cybersecurity cooperation and election interference\",\n  \"climate_relevance\": \"Climate change is mentioned only as one of several topics at the G-20 summit.\",\n  \"reason\": \"The article focuses on cybersecurity and U.S.-Russia relations; the brief reference to climate change contains no substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:12:59Z",
+  "duration_seconds": 1.723,
+  "error": null
+}

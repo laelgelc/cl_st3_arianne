@@ -1,0 +1,77 @@
+{
+  "article_id": "85415378",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/85415378.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/85415378.json"
+  },
+  "manifest_row": {
+    "article_id": "85415378",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/85415378.txt",
+    "now_field_2": "2186",
+    "date_original": "20-07-14",
+    "date_iso": "2020-07-14",
+    "source_name": "StarTribune",
+    "url": "https://www.startribune.com/midpoint-of-meteorological-summer-another-heat-spike-saturday/571770402/",
+    "title": "Midpoint of Meteorological Summer - Another Heat Spike Saturday",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us7.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.84,
+    "climate_role": "background",
+    "main_topic": "Minnesota weather forecasts and a roundup of unrelated news items",
+    "climate_relevance": "The text includes meaningful climate-related excerpts on global temperatures, offshore wind investment, climate impacts on water availability, extreme-weather coverage, and economic approaches to climate action, but these are embedded in a broader weather blog and roundup.",
+    "reason": "Climate change is discussed in several substantive passages, so the text has research value beyond an incidental mention. However, the identifiable main content is a local weather forecast and miscellaneous link roundup rather than centrally climate-focused coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "becd6539348726a126b60cb755e6d6caea99dad9467693abba14cf4ddab20f05",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4c2f2a20d5408646ce1d0a30de32f6c6c144bae8ae3d4267f7bfff29d700594d",
+    "raw_response_text_sha256": "57601f84c99ab446957742b4938f59b8e57fac381be02b86243a5a10aeaf05fd"
+  },
+  "api_metadata": {
+    "id": "resp_03b04cce71587945006b064c0b9c5487d1ac4993d6d31dc55a",
+    "model": "gpt-6-luna",
+    "created_at": 1795574795.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3443,
+      "input_tokens_details": {
+        "cache_write_tokens": 3440,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3440
+        }
+      },
+      "output_tokens": 550,
+      "output_tokens_details": {
+        "reasoning_tokens": 377
+      },
+      "total_tokens": 3993
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.84,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Minnesota weather forecasts and a roundup of unrelated news items\",\n  \"climate_relevance\": \"The text includes meaningful climate-related excerpts on global temperatures, offshore wind investment, climate impacts on water availability, extreme-weather coverage, and economic approaches to climate action, but these are embedded in a broader weather blog and roundup.\",\n  \"reason\": \"Climate change is discussed in several substantive passages, so the text has research value beyond an incidental mention. However, the identifiable main content is a local weather forecast and miscellaneous link roundup rather than centrally climate-focused coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:46:40Z",
+  "duration_seconds": 4.662,
+  "error": null
+}

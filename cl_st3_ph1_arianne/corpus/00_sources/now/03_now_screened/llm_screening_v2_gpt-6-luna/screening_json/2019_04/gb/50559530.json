@@ -1,0 +1,77 @@
+{
+  "article_id": "50559530",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/gb/50559530.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/gb/50559530.json"
+  },
+  "manifest_row": {
+    "article_id": "50559530",
+    "group": "2019_04",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/gb/50559530.txt",
+    "now_field_2": "5128",
+    "date_original": "19-04-02",
+    "date_iso": "2019-04-02",
+    "source_name": "The Independent",
+    "url": "https://www.independent.co.uk/voices/big-four-accountants-mps-select-committee-corporate-scandal-a8850911.html",
+    "title": "The Big Four accountants remind me of ice cream vans selling drugs ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Calls to break up the UK's Big Four accounting firms and reform auditing",
+    "climate_relevance": "The main article is about accounting and auditing, but an embedded photo gallery contains several captions describing climate protests, Extinction Rebellion, and youth demands for government action on climate change.",
+    "reason": "Climate change is not meaningfully discussed in the identifiable main article. However, the repeated gallery captions provide meaningful discourse about climate activism and public calls for action, making the text relevant peripherally rather than suitable as core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "969e119ce0b59666998d52128ca7ca95c1090a50576e096b04ade90de380b67b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7d351aabb22534f1d749a813a3ce488ab15b66b644b51bc81226a8dd6cb5c3cf",
+    "raw_response_text_sha256": "1d5086641b575e5bfddba33c4e4b9b0ec3da3759e09e4c33ee8f89797457c52d"
+  },
+  "api_metadata": {
+    "id": "resp_02920ba811df977c006b06297cd70087d1868ab08c4f796492",
+    "model": "gpt-6-luna",
+    "created_at": 1795565949.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8034,
+      "input_tokens_details": {
+        "cache_write_tokens": 8031,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 8031
+        }
+      },
+      "output_tokens": 353,
+      "output_tokens_details": {
+        "reasoning_tokens": 182
+      },
+      "total_tokens": 8387
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Calls to break up the UK's Big Four accounting firms and reform auditing\",\n  \"climate_relevance\": \"The main article is about accounting and auditing, but an embedded photo gallery contains several captions describing climate protests, Extinction Rebellion, and youth demands for government action on climate change.\",\n  \"reason\": \"Climate change is not meaningfully discussed in the identifiable main article. However, the repeated gallery captions provide meaningful discourse about climate activism and public calls for action, making the text relevant peripherally rather than suitable as core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:19:12Z",
+  "duration_seconds": 3.395,
+  "error": null
+}

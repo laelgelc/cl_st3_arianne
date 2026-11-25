@@ -1,0 +1,77 @@
+{
+  "article_id": "16505217",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/ca/16505217.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/ca/16505217.json"
+  },
+  "manifest_row": {
+    "article_id": "16505217",
+    "group": "2017_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/ca/16505217.txt",
+    "now_field_2": "515",
+    "date_original": "17-01-20",
+    "date_iso": "2017-01-20",
+    "source_name": "Sudbury.com",
+    "url": "https://www.sudbury.com/local-news/after-three-year-delay-second-avenue-gets-green-light-from-province-516350",
+    "title": "After three-year delay, Second Avenue gets green light from province",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Provincial approval and planned reconstruction of Second Avenue",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Environment and Climate Change; the environmental review, road salt, drainage, and traffic discussion does not address climate change.",
+    "reason": "The article is about a road project and its approval process, with no meaningful discussion of climate change, its impacts, or climate policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "af2a1036035c92e885e53e7c4c96055311065938252c4ab0c96114a3a0ae86db",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e9229870decfcd89466b356ba9990ca39ceb609a57130059eb12b5e31590d971",
+    "raw_response_text_sha256": "209127822fa65a761072782fe312a422d526be407aef5bd9766ed18434eac52e"
+  },
+  "api_metadata": {
+    "id": "resp_0ffc04bb6adfa9f4006b0607bfe49087d2b87aecf260a6fe97",
+    "model": "gpt-6-luna",
+    "created_at": 1795557311.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1136,
+      "input_tokens_details": {
+        "cache_write_tokens": 1133,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1133
+        }
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1374
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Provincial approval and planned reconstruction of Second Avenue\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Environment and Climate Change; the environmental review, road salt, drainage, and traffic discussion does not address climate change.\",\n  \"reason\": \"The article is about a road project and its approval process, with no meaningful discussion of climate change, its impacts, or climate policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:55:14Z",
+  "duration_seconds": 2.197,
+  "error": null
+}

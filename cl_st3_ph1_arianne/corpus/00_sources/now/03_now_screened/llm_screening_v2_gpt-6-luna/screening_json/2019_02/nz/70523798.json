@@ -1,0 +1,77 @@
+{
+  "article_id": "70523798",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70523798.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70523798.json"
+  },
+  "manifest_row": {
+    "article_id": "70523798",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70523798.txt",
+    "now_field_2": "636",
+    "date_original": "19-02-17",
+    "date_iso": "2019-02-17",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00434/slsnr-weekend-stats-17-18-february-2019.htm",
+    "title": "SLSNR weekend stats 17 - 18 February 2019",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Surf lifesaving weekend rescue statistics, followed by unrelated news snippets",
+    "climate_relevance": "An appended Greenpeace snippet says the National Party's environment proposals fail to address climate change and agriculture.",
+    "reason": "The identifiable main article reports surf lifesaving activity and contains no climate discussion. A separate, brief snippet makes a meaningful point about climate change, so the text has peripheral relevance; the unrelated snippets are flagged.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7d1d0aa5823fdd11c9e88bbd0549af85ce5b0f4bed39b01e51998f770d98fce2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f867da5c6f3cd88e4d54fa53d416783b58a3a7285dc245382f6bf30b546bae1a",
+    "raw_response_text_sha256": "e1f14bc09d270ef3419cf6f84aa97e8784a9f1aaf30e6ab461594dd8ae5c6646"
+  },
+  "api_metadata": {
+    "id": "resp_04ec9d19f26dda04006b063d3c8e3087d18737f9c15f7bb29e",
+    "model": "gpt-6-luna",
+    "created_at": 1795571005.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1554,
+      "input_tokens_details": {
+        "cache_write_tokens": 1551,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1551
+        }
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 1852
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Surf lifesaving weekend rescue statistics, followed by unrelated news snippets\",\n  \"climate_relevance\": \"An appended Greenpeace snippet says the National Party's environment proposals fail to address climate change and agriculture.\",\n  \"reason\": \"The identifiable main article reports surf lifesaving activity and contains no climate discussion. A separate, brief snippet makes a meaningful point about climate change, so the text has peripheral relevance; the unrelated snippets are flagged.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:27Z",
+  "duration_seconds": 2.926,
+  "error": null
+}

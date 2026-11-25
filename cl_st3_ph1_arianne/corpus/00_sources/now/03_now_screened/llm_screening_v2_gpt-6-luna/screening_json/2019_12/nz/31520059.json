@@ -1,0 +1,77 @@
+{
+  "article_id": "31520059",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/nz/31520059.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/nz/31520059.json"
+  },
+  "manifest_row": {
+    "article_id": "31520059",
+    "group": "2019_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/nz/31520059.txt",
+    "now_field_2": "852",
+    "date_original": "19-12-21",
+    "date_iso": "2019-12-21",
+    "source_name": "nz.news.yahoo.com",
+    "url": "https://nz.news.yahoo.com/trump-tests-impeachment-election-slogan-104551762.html",
+    "title": "Trump Tests Impeachment as Re-Election Slogan",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "Donald Trump’s impeachment and its use as a re-election slogan",
+    "climate_relevance": "A separate newsletter item links climate change to growing ‘flying shame’ and declining air travel in Germany and Sweden.",
+    "reason": "The identifiable main article concerns Trump’s impeachment and election prospects, not climate change. However, the ‘Greta effect’ item contains meaningful climate discourse, so the text is relevant peripherally. The article is a newsletter containing multiple unrelated snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "feaf74cb08fc3713cc436865690493570ff7b94a8781a0b50a6d0c754cb2676a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ba9554a252ffa1120e0da699b373a76fee8f28d2561ce9a5badd29cb3ccfd678",
+    "raw_response_text_sha256": "58b374f803a1378a578e4202c0246e7b600e9f50930c37d413d14e4eaf1489f2"
+  },
+  "api_metadata": {
+    "id": "resp_0c5a608f0a1060d1006b0617c65f3c87d2bff6eb12a75d9c66",
+    "model": "gpt-6-luna",
+    "created_at": 1795561414.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1593,
+      "input_tokens_details": {
+        "cache_write_tokens": 1590,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1590
+        }
+      },
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 1815
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Donald Trump’s impeachment and its use as a re-election slogan\",\n  \"climate_relevance\": \"A separate newsletter item links climate change to growing ‘flying shame’ and declining air travel in Germany and Sweden.\",\n  \"reason\": \"The identifiable main article concerns Trump’s impeachment and election prospects, not climate change. However, the ‘Greta effect’ item contains meaningful climate discourse, so the text is relevant peripherally. The article is a newsletter containing multiple unrelated snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:03:36Z",
+  "duration_seconds": 2.214,
+  "error": null
+}

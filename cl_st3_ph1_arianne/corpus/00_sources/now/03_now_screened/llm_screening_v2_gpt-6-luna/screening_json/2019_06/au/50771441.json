@@ -1,0 +1,77 @@
+{
+  "article_id": "50771441",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/au/50771441.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/au/50771441.json"
+  },
+  "manifest_row": {
+    "article_id": "50771441",
+    "group": "2019_06",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/au/50771441.txt",
+    "now_field_2": "1018",
+    "date_original": "19-06-17",
+    "date_iso": "2019-06-17",
+    "source_name": "Bellingen Courier Sun",
+    "url": "https://www.bellingencourier.com.au/story/6221960/celebrations-on-wednesday-as-victorian-bill-becomes-law/?cs=483",
+    "title": "Dying with Dignity demands nationwide laws",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Voluntary assisted dying laws and public debate in Australia",
+    "climate_relevance": "Climate change appears only in an unrelated headline embedded among the assisted-dying article text; there is no meaningful climate discourse.",
+    "reason": "The identifiable main article concerns voluntary assisted dying. The climate-change mention is an unrelated headline and does not contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b94260ea7a2835c2264f3d4665c0bd976a017a564f913e705454091fef10986c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "72ab5639c3cfe52b2f56d0aed3d1187142c77abf884d209f8bcec12350808c9e",
+    "raw_response_text_sha256": "0cd92da745408e7bf63080178ee4754085fc75a965da93ccf9f571736e3774d2"
+  },
+  "api_metadata": {
+    "id": "resp_044c64ce29cb7874006b062ad21b4c87d1b9b4ac3a143ff95a",
+    "model": "gpt-6-luna",
+    "created_at": 1795566290.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1767,
+      "input_tokens_details": {
+        "cache_write_tokens": 1764,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1764
+        }
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1972
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Voluntary assisted dying laws and public debate in Australia\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated headline embedded among the assisted-dying article text; there is no meaningful climate discourse.\",\n  \"reason\": \"The identifiable main article concerns voluntary assisted dying. The climate-change mention is an unrelated headline and does not contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:24:52Z",
+  "duration_seconds": 2.057,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50266295",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/gb/50266295.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/gb/50266295.json"
+  },
+  "manifest_row": {
+    "article_id": "50266295",
+    "group": "2018_12",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/gb/50266295.txt",
+    "now_field_2": "518",
+    "date_original": "18-12-05",
+    "date_iso": "2018-12-05",
+    "source_name": "Warc",
+    "url": "https://www.warc.com/newsandopinion/news/the_future_of_banking_is_/41417",
+    "title": "The future of banking is .",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Digital transformation and changing consumer preferences in banking",
+    "climate_relevance": "The identifiable main article is about banking and contains no meaningful climate discourse. A separate, substantial snippet about climate change and the UK heatwave appears embedded later in the text.",
+    "reason": "The text combines an identifiable banking article with an unrelated climate-news snippet. Following the instruction to assess the main article when identifiable, the banking article is not relevant to the climate discourse corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2bc23ece069cd762d066568af1b6913758396aafc314bb5746a8872f8bd82b1e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "459426ff91254f08ff36034da0fdef38ff17abb3b3f25aeadb2b3e736f2ba2e2",
+    "raw_response_text_sha256": "0a61066b90e2c74051068af03ecbe1c8f16cd034f644b3ee841045b699635ce3"
+  },
+  "api_metadata": {
+    "id": "resp_0336caa07db2d08b006b062850e36087d1b4ee4d74060761c8",
+    "model": "gpt-6-luna",
+    "created_at": 1795565649.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2620,
+      "input_tokens_details": {
+        "cache_write_tokens": 2617,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2617
+        }
+      },
+      "output_tokens": 339,
+      "output_tokens_details": {
+        "reasoning_tokens": 180
+      },
+      "total_tokens": 2959
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Digital transformation and changing consumer preferences in banking\",\n  \"climate_relevance\": \"The identifiable main article is about banking and contains no meaningful climate discourse. A separate, substantial snippet about climate change and the UK heatwave appears embedded later in the text.\",\n  \"reason\": \"The text combines an identifiable banking article with an unrelated climate-news snippet. Following the instruction to assess the main article when identifiable, the banking article is not relevant to the climate discourse corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:14:11Z",
+  "duration_seconds": 2.764,
+  "error": null
+}

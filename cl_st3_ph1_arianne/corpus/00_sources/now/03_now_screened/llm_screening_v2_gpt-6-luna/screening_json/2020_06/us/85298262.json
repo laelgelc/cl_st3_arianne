@@ -1,0 +1,77 @@
+{
+  "article_id": "85298262",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/us/85298262.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/us/85298262.json"
+  },
+  "manifest_row": {
+    "article_id": "85298262",
+    "group": "2020_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/us/85298262.txt",
+    "now_field_2": "488",
+    "date_original": "20-06-29",
+    "date_iso": "2020-06-29",
+    "source_name": "Law",
+    "url": "https://www.law.com/americanlawyer/2020/06/29/kirkland-sidley-davis-polk-and-akin-gump-snag-work-in-chesapeake-energy-case/",
+    "title": "Kirkland, Sidley, Davis Polk and Akin Gump Snag Work in Chesapeake Energy Case",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-us5.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.82,
+    "climate_role": "background",
+    "main_topic": "A recommended-story snippet about Yale law students protesting a law firm's representation of ExxonMobil in climate litigation",
+    "climate_relevance": "The snippet connects student activism to climate-change litigation, but the rest of the supplied text is unrelated promotional and subscription material.",
+    "reason": "The climate reference conveys meaningful context about climate litigation and related activism, so it is relevant beyond a purely incidental mention. However, climate change is not the focus of the supplied text as a whole.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "aaa0dabed7a0860f249de1bb0fa97512786bf855883596068631ad22b3689e03",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2488eccff503c060d4e4193db83bd4ff0dfc3b20b5970b74a1333d4d05140463",
+    "raw_response_text_sha256": "a507340da739b7ce029ef048564cf53a4e08cb2d677969cd6d01cb58e017e4c0"
+  },
+  "api_metadata": {
+    "id": "resp_0c763048a4061c5d006b064bbaeec087d1962b694a1e989cb1",
+    "model": "gpt-6-luna",
+    "created_at": 1795574715.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1120,
+      "input_tokens_details": {
+        "cache_write_tokens": 1117,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1117
+        }
+      },
+      "output_tokens": 502,
+      "output_tokens_details": {
+        "reasoning_tokens": 344
+      },
+      "total_tokens": 1622
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.82,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A recommended-story snippet about Yale law students protesting a law firm's representation of ExxonMobil in climate litigation\",\n  \"climate_relevance\": \"The snippet connects student activism to climate-change litigation, but the rest of the supplied text is unrelated promotional and subscription material.\",\n  \"reason\": \"The climate reference conveys meaningful context about climate litigation and related activism, so it is relevant beyond a purely incidental mention. However, climate change is not the focus of the supplied text as a whole.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:45:18Z",
+  "duration_seconds": 3.831,
+  "error": null
+}

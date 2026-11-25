@@ -1,0 +1,77 @@
+{
+  "article_id": "24480919",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/ca/24480919.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/ca/24480919.json"
+  },
+  "manifest_row": {
+    "article_id": "24480919",
+    "group": "2018_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/ca/24480919.txt",
+    "now_field_2": "251",
+    "date_original": "18-05-03",
+    "date_iso": "2018-05-03",
+    "source_name": "CBC.ca",
+    "url": "http://www.cbc.ca/news/canada/windsor/large-ont-cities-have-7-years-to-add-curbside-collection-of-organic-and-food-waste-1.4647042",
+    "title": "Large Ont. cities have 7 years to add curbside collection of organic ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Ontario requirements for municipalities and businesses to collect and separate food and organic waste",
+    "climate_relevance": "The article discusses waste collection policy but does not connect it to climate change, emissions, or climate impacts. Climate change appears only in the name of the provincial ministry.",
+    "reason": "The waste-policy discussion is not meaningfully framed in climate terms, and the ministry name is only an incidental reference.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e8b5f7db0bd637d353b3097bbce36491ebe0ea24d675bb0596187756749fdd7f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a141faf9c9507708049820bc2cef81f5e0c98ff9de29fd17f2b1610a1ef56cdd",
+    "raw_response_text_sha256": "7034eadb7fffb8056e51e34838ac37d48647693c6a2eec356a5863e73ea6b669"
+  },
+  "api_metadata": {
+    "id": "resp_0cdb65024a1b4e58006b0612772c0887d2998c1a53ae29f571",
+    "model": "gpt-6-luna",
+    "created_at": 1795560055.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 820,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 1016
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ontario requirements for municipalities and businesses to collect and separate food and organic waste\",\n  \"climate_relevance\": \"The article discusses waste collection policy but does not connect it to climate change, emissions, or climate impacts. Climate change appears only in the name of the provincial ministry.\",\n  \"reason\": \"The waste-policy discussion is not meaningfully framed in climate terms, and the ministry name is only an incidental reference.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:40:56Z",
+  "duration_seconds": 1.686,
+  "error": null
+}

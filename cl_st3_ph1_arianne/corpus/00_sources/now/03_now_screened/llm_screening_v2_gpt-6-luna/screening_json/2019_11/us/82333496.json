@@ -1,0 +1,77 @@
+{
+  "article_id": "82333496",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82333496.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82333496.json"
+  },
+  "manifest_row": {
+    "article_id": "82333496",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82333496.txt",
+    "now_field_2": "172",
+    "date_original": "19-11-25",
+    "date_iso": "2019-11-25",
+    "source_name": "Los Angeles Times",
+    "url": "https://www.latimes.com/california/story/2019-11-25/gunfire-reported-at-valley-plaza-mall-in-bakersfield",
+    "title": "Gunfire reported at Valley Plaza Mall in Bakersfield",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us8.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A shooting at a shopping mall in Bakersfield",
+    "climate_relevance": "A truncated sentence about climate change and storing Sierra Nevada snowmelt appears after the shooting report, but is an unrelated article fragment.",
+    "reason": "The identifiable main article is about a mall shooting. The climate-related text is an appended, unrelated snippet and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "867c4ade8eb4130b6dcd6e5b8deeff5313098165cb5687ec0cc17a11ad1bacf5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "90faccae58c3e8303e855f2d30e61e60313721a56c14ea3dec91670f86cfc68b",
+    "raw_response_text_sha256": "d915d8c70288b67882f6692e4f91dd4920cac00a178ed0a785b167ab9d9676a1"
+  },
+  "api_metadata": {
+    "id": "resp_076969860539edcc006b06485cd7ac87d1854307e31d633c9d",
+    "model": "gpt-6-luna",
+    "created_at": 1795573853.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 720,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 973
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A shooting at a shopping mall in Bakersfield\",\n  \"climate_relevance\": \"A truncated sentence about climate change and storing Sierra Nevada snowmelt appears after the shooting report, but is an unrelated article fragment.\",\n  \"reason\": \"The identifiable main article is about a mall shooting. The climate-related text is an appended, unrelated snippet and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:30:54Z",
+  "duration_seconds": 2.188,
+  "error": null
+}

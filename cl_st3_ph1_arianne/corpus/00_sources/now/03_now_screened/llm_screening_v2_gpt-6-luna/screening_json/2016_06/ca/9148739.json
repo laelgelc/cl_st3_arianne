@@ -1,0 +1,77 @@
+{
+  "article_id": "9148739",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_06/ca/9148739.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_06/ca/9148739.json"
+  },
+  "manifest_row": {
+    "article_id": "9148739",
+    "group": "2016_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_06/ca/9148739.txt",
+    "now_field_2": "1078",
+    "date_original": "16-06-01",
+    "date_iso": "2016-06-01",
+    "source_name": "OurWindsor.ca",
+    "url": "http://www.ourwindsor.ca/news-story/6702913-ontario-s-tire-recycling-system-too-inviting-for-manipulation-says-audit/",
+    "title": "Ontario's tire recycling system 'too inviting for manipulation,' says audit",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-06-uda/16-06-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Financial oversight and alleged misconduct at Ontario's tire recycling stewardship agency",
+    "climate_relevance": "Climate change appears only in the minister's title; the article discusses tire recycling fees, audits, and agency governance.",
+    "reason": "The text contains no meaningful discussion of climate change, its impacts, or climate policy. The sole reference is part of a government minister's title.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f71f66a024e4a427f8e1bf3123f5e1904cf1f7d21a77c43cbe4f0b81779eae71",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "352166047a6ebcd5590f1e9fb10e7c46202f1932720b8d3812e69e8f87b9c018",
+    "raw_response_text_sha256": "91fa7b21da362411b13dc15e8156cf6e1272e3a752c262d3b0c679d5b9de7962"
+  },
+  "api_metadata": {
+    "id": "resp_0e3cd90d323a5d58006b0650edbf9487d1a04154803975bf5d",
+    "model": "gpt-6-luna",
+    "created_at": 1795576045.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1884,
+      "input_tokens_details": {
+        "cache_write_tokens": 1881,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1881
+        }
+      },
+      "output_tokens": 203,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 2087
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Financial oversight and alleged misconduct at Ontario's tire recycling stewardship agency\",\n  \"climate_relevance\": \"Climate change appears only in the minister's title; the article discusses tire recycling fees, audits, and agency governance.\",\n  \"reason\": \"The text contains no meaningful discussion of climate change, its impacts, or climate policy. The sole reference is part of a government minister's title.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:07:27Z",
+  "duration_seconds": 2.075,
+  "error": null
+}

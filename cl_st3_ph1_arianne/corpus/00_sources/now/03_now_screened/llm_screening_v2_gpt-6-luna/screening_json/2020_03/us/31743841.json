@@ -1,0 +1,77 @@
+{
+  "article_id": "31743841",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/us/31743841.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/us/31743841.json"
+  },
+  "manifest_row": {
+    "article_id": "31743841",
+    "group": "2020_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/us/31743841.txt",
+    "now_field_2": "40992",
+    "date_original": "20-03-26",
+    "date_iso": "2020-03-26",
+    "source_name": "montrealgazette.com",
+    "url": "https://montrealgazette.com/category/business/feed.xml",
+    "title": "Montreal Gazette - RSS Feed",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "A Montreal Gazette RSS feed containing multiple unrelated local, business, and coronavirus news articles.",
+    "climate_relevance": "Several included articles discuss climate-related policy and implications, including Quebec budget measures to reduce greenhouse gas emissions and address climate risks, debate over a proposed LNG project’s emissions, and claims that rail and electric vehicles could help reduce emissions.",
+    "reason": "The feed is not centrally about climate change, but it contains meaningful climate discourse in multiple article snippets. The broader collection is dominated by other subjects, so it is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c42ae20e4cacecdef7bb3fb787269a80072c6d967951ab6fb9089abc5b2f5468",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c39f090fb6e19ec0e9526bab0841163f1a4745ef3ce2a14e64f7c6a08bce2735",
+    "raw_response_text_sha256": "9c698d9c3a9871282db99ae7b45569fa9c7f66c21279387e0965cb501934b5db"
+  },
+  "api_metadata": {
+    "id": "resp_0e664f23f48eb25b006b0619345e2087d283ebbcde58d63605",
+    "model": "gpt-6-luna",
+    "created_at": 1795561780.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 90489,
+      "input_tokens_details": {
+        "cache_write_tokens": 90486,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 90486
+        }
+      },
+      "output_tokens": 490,
+      "output_tokens_details": {
+        "reasoning_tokens": 314
+      },
+      "total_tokens": 90979
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A Montreal Gazette RSS feed containing multiple unrelated local, business, and coronavirus news articles.\",\n  \"climate_relevance\": \"Several included articles discuss climate-related policy and implications, including Quebec budget measures to reduce greenhouse gas emissions and address climate risks, debate over a proposed LNG project’s emissions, and claims that rail and electric vehicles could help reduce emissions.\",\n  \"reason\": \"The feed is not centrally about climate change, but it contains meaningful climate discourse in multiple article snippets. The broader collection is dominated by other subjects, so it is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:09:45Z",
+  "duration_seconds": 4.928,
+  "error": null
+}

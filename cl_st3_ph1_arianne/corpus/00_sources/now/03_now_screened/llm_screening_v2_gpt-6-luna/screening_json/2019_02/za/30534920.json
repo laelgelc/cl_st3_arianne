@@ -1,0 +1,77 @@
+{
+  "article_id": "30534920",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/za/30534920.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/za/30534920.json"
+  },
+  "manifest_row": {
+    "article_id": "30534920",
+    "group": "2019_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/za/30534920.txt",
+    "now_field_2": "873",
+    "date_original": "19-02-06",
+    "date_iso": "2019-02-06",
+    "source_name": "Artslink.co.za New",
+    "url": "https://www.artlink.co.za/news_article.htm?contentID=44753",
+    "title": "From Shakespeare to Kente at NSA Festival",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "A listing of performances and activities at the National School of the Arts Festival",
+    "climate_relevance": "Climate change appears only in the title of a protest poem listed among the festival events; the text provides no discussion of climate change.",
+    "reason": "The article is primarily a festival announcement. Its passing reference to a Climate Change Protest poem does not contain meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "38969470cb698916f5e583632665286b691820b586ce70603069669801e0e6e7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cfc5250b1d9a22a35e28ff07e80f44ccf370d280734ca96e65b4d52f52407865",
+    "raw_response_text_sha256": "3aee754707d655b6a8d4b06cae261939c97a8318dc1039aaf19664fb545d2d01"
+  },
+  "api_metadata": {
+    "id": "resp_02d127d9280069cb006b061472828887d2a00d0dd16ffea62a",
+    "model": "gpt-6-luna",
+    "created_at": 1795560562.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1687,
+      "input_tokens_details": {
+        "cache_write_tokens": 1684,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1684
+        }
+      },
+      "output_tokens": 243,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 1930
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A listing of performances and activities at the National School of the Arts Festival\",\n  \"climate_relevance\": \"Climate change appears only in the title of a protest poem listed among the festival events; the text provides no discussion of climate change.\",\n  \"reason\": \"The article is primarily a festival announcement. Its passing reference to a Climate Change Protest poem does not contain meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:49:24Z",
+  "duration_seconds": 2.103,
+  "error": null
+}

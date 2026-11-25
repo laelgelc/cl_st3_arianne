@@ -1,0 +1,77 @@
+{
+  "article_id": "70329543",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/us/70329543.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/us/70329543.json"
+  },
+  "manifest_row": {
+    "article_id": "70329543",
+    "group": "2018_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/us/70329543.txt",
+    "now_field_2": "340",
+    "date_original": "18-12-11",
+    "date_iso": "2018-12-11",
+    "source_name": "Fort Worth Star Telegram",
+    "url": "https://www.star-telegram.com/sports/dfwvarsity/article222966475.html",
+    "title": "Aledo, Fort Worth Christian runners finish in Top 10 of Foot Locker ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A poll and public debate about bottled-water companies’ groundwater extraction permits in Ontario",
+    "climate_relevance": "Climate change is cited as one of the effects that make groundwater resources vulnerable, and a source connects climate change and drought to concerns about water extraction.",
+    "reason": "The identifiable water-policy discussion is mainly about bottled-water extraction and permits, not climate change. However, climate change is meaningfully invoked in explaining the debate, so the text is peripheral rather than excluded. The opening cross-country running material is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "01820bf50e7d5970bd98781629c1bcebcda6a740b2da55af8f5f2c05f2e110f7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1a497654f7d8984aa568c90e16071138f51af0a2253d043ced31514aa5eec53c",
+    "raw_response_text_sha256": "3fa2adf7a49dbf2ba325b42ceb539b06c12b160219ddcc0ced605cf1f710582b"
+  },
+  "api_metadata": {
+    "id": "resp_0018c61608ebe298006b063bfec87887d19ac6b87291fbcf74",
+    "model": "gpt-6-luna",
+    "created_at": 1795570686.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1388,
+      "input_tokens_details": {
+        "cache_write_tokens": 1385,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1385
+        }
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 1677
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A poll and public debate about bottled-water companies’ groundwater extraction permits in Ontario\",\n  \"climate_relevance\": \"Climate change is cited as one of the effects that make groundwater resources vulnerable, and a source connects climate change and drought to concerns about water extraction.\",\n  \"reason\": \"The identifiable water-policy discussion is mainly about bottled-water extraction and permits, not climate change. However, climate change is meaningfully invoked in explaining the debate, so the text is peripheral rather than excluded. The opening cross-country running material is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:38:09Z",
+  "duration_seconds": 3.149,
+  "error": null
+}

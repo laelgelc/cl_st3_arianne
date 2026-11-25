@@ -1,0 +1,77 @@
+{
+  "article_id": "82313180",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82313180.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82313180.json"
+  },
+  "manifest_row": {
+    "article_id": "82313180",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82313180.txt",
+    "now_field_2": "161",
+    "date_original": "19-11-24",
+    "date_iso": "2019-11-24",
+    "source_name": "WHDH",
+    "url": "https://whdh.com/news/42-charged-after-protest-delays-harvard-yale-game/",
+    "title": "42 charged after protest delays Harvard-Yale game",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us7.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Charges following a protest that interrupted the Harvard-Yale football game",
+    "climate_relevance": "Climate change is mentioned only as one of several causes represented by protest signs.",
+    "reason": "The article focuses on the protest, arrests, and football game; it provides no substantive discussion of climate change or the protesters’ climate-related demands.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1676fd5a938f9fbaa60d2c2e22ff86a86416d3380a2e39c0edc75e789da658b5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "543317cd80a8f21124fbb55ae413ab9a963f4eba5749ad9a34662fc9e8fd48d1",
+    "raw_response_text_sha256": "9e074462093122d18028c312a35c38e946e35cba50393b95e8c6fa9276063798"
+  },
+  "api_metadata": {
+    "id": "resp_09a462d2638f03e5006b0648549dfc87d1b5f00c3d0b5a5359",
+    "model": "gpt-6-luna",
+    "created_at": 1795573844.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 716,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 975
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Charges following a protest that interrupted the Harvard-Yale football game\",\n  \"climate_relevance\": \"Climate change is mentioned only as one of several causes represented by protest signs.\",\n  \"reason\": \"The article focuses on the protest, arrests, and football game; it provides no substantive discussion of climate change or the protesters’ climate-related demands.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:30:46Z",
+  "duration_seconds": 2.351,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70701250",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/us/70701250.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/us/70701250.json"
+  },
+  "manifest_row": {
+    "article_id": "70701250",
+    "group": "2019_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/us/70701250.txt",
+    "now_field_2": "729",
+    "date_original": "19-04-19",
+    "date_iso": "2019-04-19",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/rochester-john-marshall-basketball-star-matthew-hurt-chooses-duke/508818451/",
+    "title": "Rochester basketball star Matthew Hurt chooses Duke",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "High-school basketball recruit Matthew Hurt's decision to play for Duke",
+    "climate_relevance": "A final sentence mentions climate change's effects on wildfire management, crops, flooding, forestry, and lakefront development, but it appears unrelated to the basketball article.",
+    "reason": "The identifiable main article is about basketball recruitment and contains no meaningful climate discussion. The climate-related sentence appears to be an unrelated snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cef3c992452491e1298e732814c7380635c0a3e512cb3d72d84a8692e80f3f55",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "36d50081bb633a29e88f3e517e114d7c063a76fe009e7326c0e6692dc798e170",
+    "raw_response_text_sha256": "098d298a39959c3f87847ee90ea48a80c4790e61aa90e2550fd9ee5a73eadc8e"
+  },
+  "api_metadata": {
+    "id": "resp_0abc4cffffd1e821006b063e98dd7087d1bb9c9eb1a71e8857",
+    "model": "gpt-6-luna",
+    "created_at": 1795571352.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1440,
+      "input_tokens_details": {
+        "cache_write_tokens": 1437,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1437
+        }
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 1728
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"High-school basketball recruit Matthew Hurt's decision to play for Duke\",\n  \"climate_relevance\": \"A final sentence mentions climate change's effects on wildfire management, crops, flooding, forestry, and lakefront development, but it appears unrelated to the basketball article.\",\n  \"reason\": \"The identifiable main article is about basketball recruitment and contains no meaningful climate discussion. The climate-related sentence appears to be an unrelated snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:49:15Z",
+  "duration_seconds": 2.675,
+  "error": null
+}

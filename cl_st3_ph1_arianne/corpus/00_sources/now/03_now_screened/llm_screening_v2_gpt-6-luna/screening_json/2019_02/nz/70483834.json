@@ -1,0 +1,77 @@
+{
+  "article_id": "70483834",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70483834.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70483834.json"
+  },
+  "manifest_row": {
+    "article_id": "70483834",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70483834.txt",
+    "now_field_2": "392",
+    "date_original": "19-02-04",
+    "date_iso": "2019-02-04",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PA1902/S00044/australian-foreign-minister-to-visit-new-zealand.htm",
+    "title": "Australian Foreign Minister to visit New Zealand",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Foreign policy discussions and assorted unrelated news snippets",
+    "climate_relevance": "One snippet reports Greenpeace's criticism that National Party environment proposals fail to address climate change and agriculture.",
+    "reason": "The available text is a compilation of unrelated items, not a climate-focused article. The Greenpeace snippet contains a meaningful, though brief, reference to climate policy, so the text is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e3ce5f8da524d61aa314be80f2a4c9ce1f5d24c1f83960b93e189530e4e4b9a8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "81b0dbee7b42e22c0da704e4e6a2b5a89422d102c19346415ed8f6f74ea633f0",
+    "raw_response_text_sha256": "d44ea94155fce204458dd56c903d4985cb08e278bd6062227bf8e22a9541152e"
+  },
+  "api_metadata": {
+    "id": "resp_069491e6ab708085006b063cd9d3dc87d180efa21885dfd7d5",
+    "model": "gpt-6-luna",
+    "created_at": 1795570906.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 981,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 1287
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Foreign policy discussions and assorted unrelated news snippets\",\n  \"climate_relevance\": \"One snippet reports Greenpeace's criticism that National Party environment proposals fail to address climate change and agriculture.\",\n  \"reason\": \"The available text is a compilation of unrelated items, not a climate-focused article. The Greenpeace snippet contains a meaningful, though brief, reference to climate policy, so the text is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:41:48Z",
+  "duration_seconds": 2.947,
+  "error": null
+}

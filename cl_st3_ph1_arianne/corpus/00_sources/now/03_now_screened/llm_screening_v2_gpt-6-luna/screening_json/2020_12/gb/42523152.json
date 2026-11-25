@@ -1,0 +1,77 @@
+{
+  "article_id": "42523152",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/gb/42523152.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/gb/42523152.json"
+  },
+  "manifest_row": {
+    "article_id": "42523152",
+    "group": "2020_12",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/gb/42523152.txt",
+    "now_field_2": "1969",
+    "date_original": "20-12-04",
+    "date_iso": "2020-12-04",
+    "source_name": "blogs.lse.ac.uk",
+    "url": "https://blogs.lse.ac.uk/internationaldevelopment/2020/12/03/cutting-edge-issues-in-development-inequality-in-latin-america/",
+    "title": "Cutting Edge Issues in Development - Inequality in Latin ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Inequality in Latin America, including the effects of COVID-19 and social policy",
+    "climate_relevance": "Climate change appears only in a separate SouthAsia@LSE related-content snippet about water scarcity and India-China tensions, not in the main article.",
+    "reason": "The identifiable main article discusses a lecture on inequality, poverty, and COVID-19. The only climate-related sentence belongs to an unrelated sidebar snippet and does not contribute to the main article's climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "668a277edfd32670b3bd3a9b509244201bba030cf7c0499d4c0db28b1e4c2271",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "36348e1c3306c503a15837e95c0fb0982c2bd888a42c7029954b7f89a7b10cd7",
+    "raw_response_text_sha256": "37ff9978d6b57a0b9117680896ac998f8a76902bb50d232acda9abbf2050ed25"
+  },
+  "api_metadata": {
+    "id": "resp_0bcf7ad0d01e5141006b06266358c487d2903689ca698022f9",
+    "model": "gpt-6-luna",
+    "created_at": 1795565155.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2929,
+      "input_tokens_details": {
+        "cache_write_tokens": 2926,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2926
+        }
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 3228
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Inequality in Latin America, including the effects of COVID-19 and social policy\",\n  \"climate_relevance\": \"Climate change appears only in a separate SouthAsia@LSE related-content snippet about water scarcity and India-China tensions, not in the main article.\",\n  \"reason\": \"The identifiable main article discusses a lecture on inequality, poverty, and COVID-19. The only climate-related sentence belongs to an unrelated sidebar snippet and does not contribute to the main article's climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:05:57Z",
+  "duration_seconds": 2.491,
+  "error": null
+}

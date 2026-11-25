@@ -1,0 +1,77 @@
+{
+  "article_id": "42489430",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/us/42489430.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/us/42489430.json"
+  },
+  "manifest_row": {
+    "article_id": "42489430",
+    "group": "2020_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/us/42489430.txt",
+    "now_field_2": "609",
+    "date_original": "20-11-22",
+    "date_iso": "2020-11-22",
+    "source_name": "fastcompany.com",
+    "url": "https://www.fastcompany.com/90578203/microplastics-are-everywhere-even-on-top-of-mount-everest",
+    "title": "Mount Everest is full of microplastics",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Microplastic pollution on Mount Everest and plastic fibers from outdoor clothing",
+    "climate_relevance": "Climate change appears only in the author's biography; methane emissions are mentioned briefly as a source for experimental fabric, without climate-focused discussion.",
+    "reason": "The article focuses on microplastics, waste, and textile materials. Its climate references do not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "06d0d4227769e39e0af5835b0a7eb0680736876a6f81f6edfea2a5c7d80c31f9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d4eb9eb9b11d7d811dca39f7dc0d788ae1f5eea8aa762b65387140ac97e4c662",
+    "raw_response_text_sha256": "cea1f0494bd9a3a9cd0d83d632b4a422a1e5eb94e3560efa2fe02aa67e5d2e57"
+  },
+  "api_metadata": {
+    "id": "resp_02d8125b229c62f9006b062646df8887d284d2812140e329d6",
+    "model": "gpt-6-luna",
+    "created_at": 1795565126.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1289,
+      "input_tokens_details": {
+        "cache_write_tokens": 1286,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1286
+        }
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 1561
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Microplastic pollution on Mount Everest and plastic fibers from outdoor clothing\",\n  \"climate_relevance\": \"Climate change appears only in the author's biography; methane emissions are mentioned briefly as a source for experimental fabric, without climate-focused discussion.\",\n  \"reason\": \"The article focuses on microplastics, waste, and textile materials. Its climate references do not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:05:29Z",
+  "duration_seconds": 2.27,
+  "error": null
+}

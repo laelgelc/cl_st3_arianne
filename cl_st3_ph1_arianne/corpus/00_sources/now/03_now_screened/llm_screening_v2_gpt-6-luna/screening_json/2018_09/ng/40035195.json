@@ -1,0 +1,77 @@
+{
+  "article_id": "40035195",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/ng/40035195.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/ng/40035195.json"
+  },
+  "manifest_row": {
+    "article_id": "40035195",
+    "group": "2018_09",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/ng/40035195.txt",
+    "now_field_2": "988",
+    "date_original": "18-09-16",
+    "date_iso": "2018-09-16",
+    "source_name": "Premium Times",
+    "url": "https://www.premiumtimesng.com/news/more-news/283938-major-health-stories-last-week-23.html",
+    "title": "Major health stories last week",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-ng.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "climate_role": "passing",
+    "main_topic": "A roundup of health and public-health stories",
+    "climate_relevance": "One item reports that conflict and climate change contributed to rising global hunger, linking climate change to food insecurity.",
+    "reason": "The roundup is mainly about unrelated health topics, but its hunger report includes a meaningful statement about climate change as a driver of food insecurity. Climate discourse is brief and not central.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "806321a6c649a92053f0c227067b2ba401abd4e3fe6e177195ae09d7c76ffba0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "77d108a8a20239bc1c37965a4a353f62a3366611b21151387f63cd6cd8aa83be",
+    "raw_response_text_sha256": "2e43884e8ad6226c747c16fad6cedfeed34597f2bfc5e628f4c19d1b6d49bc40"
+  },
+  "api_metadata": {
+    "id": "resp_07885d446959d90b006b061e04ae9887d2adc5eb834b8a95bb",
+    "model": "gpt-6-luna",
+    "created_at": 1795563012.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1859,
+      "input_tokens_details": {
+        "cache_write_tokens": 1856,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1856
+        }
+      },
+      "output_tokens": 391,
+      "output_tokens_details": {
+        "reasoning_tokens": 251
+      },
+      "total_tokens": 2250
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A roundup of health and public-health stories\",\n  \"climate_relevance\": \"One item reports that conflict and climate change contributed to rising global hunger, linking climate change to food insecurity.\",\n  \"reason\": \"The roundup is mainly about unrelated health topics, but its hunger report includes a meaningful statement about climate change as a driver of food insecurity. Climate discourse is brief and not central.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:30:16Z",
+  "duration_seconds": 3.403,
+  "error": null
+}

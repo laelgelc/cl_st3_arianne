@@ -1,0 +1,77 @@
+{
+  "article_id": "50158266",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/gb/50158266.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/gb/50158266.json"
+  },
+  "manifest_row": {
+    "article_id": "50158266",
+    "group": "2018_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/gb/50158266.txt",
+    "now_field_2": "1261",
+    "date_original": "18-10-25",
+    "date_iso": "2018-10-25",
+    "source_name": "GOV.UK",
+    "url": "https://www.gov.uk/government/news/major-new-scheme-launched-to-support-young-people-leaving-care",
+    "title": "Major new scheme launched to support young people leaving care",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A government scheme offering employment and skills support to young people leaving care.",
+    "climate_relevance": "The identifiable main article contains no meaningful climate discourse. A separate article snippet about proposed development in the Oxford-Cambridge area mentions carbon emissions and climate change in its discussion of transport and environmental assessment.",
+    "reason": "The main article is about support for care leavers, with no climate-related content. Although a separate, identifiable news snippet contains meaningful climate references, it is unrelated to the main article and does not change the classification of that article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "249d1aafdd3ef02a73372be76d839d81dc0a4a5e14d6d13219cbca0fef621ec2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6b9eda98a2e82b1e1cf6e263e5102f11ca3e044f33c424928ddff2e9a9fa38ee",
+    "raw_response_text_sha256": "3af14a8fd85891887ffeb67c4952962714ab2997c52f5c14dfdf054a33f2a6a5"
+  },
+  "api_metadata": {
+    "id": "resp_0bd986671e6e919d006b0627d4aba887d1b43449c942a7057f",
+    "model": "gpt-6-luna",
+    "created_at": 1795565524.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2843,
+      "input_tokens_details": {
+        "cache_write_tokens": 2840,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2840
+        }
+      },
+      "output_tokens": 450,
+      "output_tokens_details": {
+        "reasoning_tokens": 272
+      },
+      "total_tokens": 3293
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A government scheme offering employment and skills support to young people leaving care.\",\n  \"climate_relevance\": \"The identifiable main article contains no meaningful climate discourse. A separate article snippet about proposed development in the Oxford-Cambridge area mentions carbon emissions and climate change in its discussion of transport and environmental assessment.\",\n  \"reason\": \"The main article is about support for care leavers, with no climate-related content. Although a separate, identifiable news snippet contains meaningful climate references, it is unrelated to the main article and does not change the classification of that article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:12:08Z",
+  "duration_seconds": 3.692,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "18771868",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/my/18771868.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/my/18771868.json"
+  },
+  "manifest_row": {
+    "article_id": "18771868",
+    "group": "2017_06",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/my/18771868.txt",
+    "now_field_2": "279",
+    "date_original": "17-06-02",
+    "date_iso": "2017-06-02",
+    "source_name": "The Sun Daily",
+    "url": "http://www.thesundaily.my/news/2017/06/02/chemical-cocktail-found-barrier-reef-turtles",
+    "title": "Chemical cocktail found in Barrier Reef turtles",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-MY.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Chemical contamination in Great Barrier Reef turtles and its effects on marine life",
+    "climate_relevance": "Climate change is identified as one of several pressures on the reef, alongside a reference to severe coral bleaching.",
+    "reason": "The article focuses on chemical pollutants and turtle health, not climate change. Its reference to climate change and bleaching is meaningful context but brief.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "230dd1df71d8613ed06c968f760b1123c891f80467416ab9f7e739fb7fd035a5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "883df4fcd499142cc4f26a3ce1506c99a5dd7d332e81f276f32a211e487d583e",
+    "raw_response_text_sha256": "50c1c70aeb910c2ddaac04ddf2008ad8672d4ce94c3ac88c23ce07c97268be75"
+  },
+  "api_metadata": {
+    "id": "resp_0137f52f1389617e006b060addfbf487d2b2411536f38c2427",
+    "model": "gpt-6-luna",
+    "created_at": 1795558110.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 854,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 1110
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Chemical contamination in Great Barrier Reef turtles and its effects on marine life\",\n  \"climate_relevance\": \"Climate change is identified as one of several pressures on the reef, alongside a reference to severe coral bleaching.\",\n  \"reason\": \"The article focuses on chemical pollutants and turtle health, not climate change. Its reference to climate change and bleaching is meaningful context but brief.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:08:32Z",
+  "duration_seconds": 2.493,
+  "error": null
+}

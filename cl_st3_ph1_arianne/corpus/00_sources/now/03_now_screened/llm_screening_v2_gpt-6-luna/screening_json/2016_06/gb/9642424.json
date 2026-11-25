@@ -1,0 +1,77 @@
+{
+  "article_id": "9642424",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_06/gb/9642424.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_06/gb/9642424.json"
+  },
+  "manifest_row": {
+    "article_id": "9642424",
+    "group": "2016_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_06/gb/9642424.txt",
+    "now_field_2": "456",
+    "date_original": "16-06-30",
+    "date_iso": "2016-06-30",
+    "source_name": "Daily Mail",
+    "url": "http://www.dailymail.co.uk/wires/reuters/article-3668421/US-embassy-Abidjan-pulls-photo-gay-men-Orlando-tribute-attacks.html",
+    "title": "US embassy in Abidjan pulls photo of gay men at Orlando tribute ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-06-uda/16-06-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The U.S. embassy's removal of a photo from an LGBT tribute after the people pictured faced abuse and threats in Ivory Coast.",
+    "climate_relevance": "Climate change appears only in the Thomson Reuters Foundation's boilerplate description of its coverage.",
+    "reason": "The article contains no meaningful climate discourse; the sole reference is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "261feaea9549a26700068a9c3c3956dcf2b217995668aa8d5fb7959c939e2133",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bca599e2736ed5faef64210d9480bf3ad888880e33f24bf561b7e8e80f923a1d",
+    "raw_response_text_sha256": "dfb342fba4d80cf6c2dc42d6cb6ef14cc96b1df512286f136da9755eb2d6f922"
+  },
+  "api_metadata": {
+    "id": "resp_09a9987243d4b923006b065144d04c87d19c522c8e02db4717",
+    "model": "gpt-6-luna",
+    "created_at": 1795576132.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1073,
+      "input_tokens_details": {
+        "cache_write_tokens": 1070,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1070
+        }
+      },
+      "output_tokens": 183,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 1256
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The U.S. embassy's removal of a photo from an LGBT tribute after the people pictured faced abuse and threats in Ivory Coast.\",\n  \"climate_relevance\": \"Climate change appears only in the Thomson Reuters Foundation's boilerplate description of its coverage.\",\n  \"reason\": \"The article contains no meaningful climate discourse; the sole reference is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:08:54Z",
+  "duration_seconds": 1.891,
+  "error": null
+}

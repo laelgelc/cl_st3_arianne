@@ -1,0 +1,77 @@
+{
+  "article_id": "16674634",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/gb/16674634.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/gb/16674634.json"
+  },
+  "manifest_row": {
+    "article_id": "16674634",
+    "group": "2017_01",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/gb/16674634.txt",
+    "now_field_2": "1160",
+    "date_original": "17-01-31",
+    "date_iso": "2017-01-31",
+    "source_name": "The Guardian",
+    "url": "https://www.theguardian.com/us-news/2017/jan/31/trumps-state-visit-to-the-uk-divides-opinion",
+    "title": "UK public opinion divided over US president's state visit",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Letters-page debate about Donald Trump, racism, democracy, and political opposition",
+    "climate_relevance": "Climate change is mentioned once as a brief item in a list of concerns, with no further discussion.",
+    "reason": "The available text consists of multiple letters focused on other political issues. The climate reference is incidental and does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5685cdc4c7289c931e178b3f5860d621b1fea9449f3bf17f966b0059f479210d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4f3ec05efb0d4489d539003663b84f5c22f86ef7d510f2b6de29013bc4943c7f",
+    "raw_response_text_sha256": "330e18d09bd67a1e45e61e0b0feba093e5716cd1b138e2a6378dea698d47b2bb"
+  },
+  "api_metadata": {
+    "id": "resp_01d85a1a35123f14006b060805a35887d29f4e1906055304ff",
+    "model": "gpt-6-luna",
+    "created_at": 1795557381.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1952,
+      "input_tokens_details": {
+        "cache_write_tokens": 1949,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1949
+        }
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 2209
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Letters-page debate about Donald Trump, racism, democracy, and political opposition\",\n  \"climate_relevance\": \"Climate change is mentioned once as a brief item in a list of concerns, with no further discussion.\",\n  \"reason\": \"The available text consists of multiple letters focused on other political issues. The climate reference is incidental and does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:56:23Z",
+  "duration_seconds": 2.341,
+  "error": null
+}

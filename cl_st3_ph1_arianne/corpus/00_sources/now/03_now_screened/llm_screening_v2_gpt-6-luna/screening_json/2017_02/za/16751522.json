@@ -1,0 +1,77 @@
+{
+  "article_id": "16751522",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/za/16751522.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/za/16751522.json"
+  },
+  "manifest_row": {
+    "article_id": "16751522",
+    "group": "2017_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/za/16751522.txt",
+    "now_field_2": "811",
+    "date_original": "17-02-05",
+    "date_iso": "2017-02-05",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/sport/other/2017/02/05/Murray-to-renew-triathlon-rivalry-with-with-Schoeman-in-Cape-Town",
+    "title": "Murray to renew triathlon rivalry with with Schoeman in Cape Town",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A triathlon race and athlete Richard Murray",
+    "climate_relevance": "A clipped fragment mentions emissions targets and uncertainty about U.S. climate policy, but it is separate from the identifiable triathlon article.",
+    "reason": "The main article is sports coverage. The only climate-related text is an isolated fragment from an unrelated item and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4abc48782c5eb7c58dcbedd315e5e232999bfae09df2e3e71c539695d86878f2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8a95fa2265777a2ba0565243d6196fb75605e2685bfe1e040d579b44753cc485",
+    "raw_response_text_sha256": "235d8e8331a9370bf52ab2aec3423847f044c6a459017811b92edd07969fdade"
+  },
+  "api_metadata": {
+    "id": "resp_0d54059db8f109bc006b060829833487d28c3490d430131032",
+    "model": "gpt-6-luna",
+    "created_at": 1795557417.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1558,
+      "input_tokens_details": {
+        "cache_write_tokens": 1555,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1555
+        }
+      },
+      "output_tokens": 297,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 1855
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A triathlon race and athlete Richard Murray\",\n  \"climate_relevance\": \"A clipped fragment mentions emissions targets and uncertainty about U.S. climate policy, but it is separate from the identifiable triathlon article.\",\n  \"reason\": \"The main article is sports coverage. The only climate-related text is an isolated fragment from an unrelated item and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:56:59Z",
+  "duration_seconds": 2.407,
+  "error": null
+}

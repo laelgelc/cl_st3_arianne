@@ -1,0 +1,77 @@
+{
+  "article_id": "21569042",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/ph/21569042.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/ph/21569042.json"
+  },
+  "manifest_row": {
+    "article_id": "21569042",
+    "group": "2017_11",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/ph/21569042.txt",
+    "now_field_2": "765",
+    "date_original": "17-11-08",
+    "date_iso": "2017-11-08",
+    "source_name": "CNN Philippines",
+    "url": "http://cnnphilippines.com/world/2017/11/09/Delhi-India-third-day-of-heavy-pollution.html",
+    "title": "Delhi urged to declare emergency after third day of heavy pollution",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-PH.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Severe air pollution in Delhi, its causes, health effects, and government responses",
+    "climate_relevance": "Climate change appears only in the name of a government ministry; the article discusses air pollution rather than climate change or its implications.",
+    "reason": "The article focuses on particulate pollution, crop burning, emissions, and public health. It contains no meaningful discourse about climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9161f98ae4a9325087fab8ed957338ca327650d2468755fa8b3ee4981cfbaaaf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "51ba792562cad84c395a21c96b6e6d10adb7a680d67a0cecd21ad0c626d47b46",
+    "raw_response_text_sha256": "41921fc4b0b797b30217d0816c4813a10d23ae3ba3b747dc447f22b7e88d2ed8"
+  },
+  "api_metadata": {
+    "id": "resp_0bb851c11324a761006b060f09b26c87d28c7119ef14424770",
+    "model": "gpt-6-luna",
+    "created_at": 1795559177.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1485,
+      "input_tokens_details": {
+        "cache_write_tokens": 1482,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1482
+        }
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 1691
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Severe air pollution in Delhi, its causes, health effects, and government responses\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government ministry; the article discusses air pollution rather than climate change or its implications.\",\n  \"reason\": \"The article focuses on particulate pollution, crop burning, emissions, and public health. It contains no meaningful discourse about climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:26:19Z",
+  "duration_seconds": 1.722,
+  "error": null
+}

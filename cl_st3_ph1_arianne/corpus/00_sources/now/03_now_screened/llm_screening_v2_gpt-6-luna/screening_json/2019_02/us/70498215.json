@@ -1,0 +1,77 @@
+{
+  "article_id": "70498215",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/us/70498215.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/us/70498215.json"
+  },
+  "manifest_row": {
+    "article_id": "70498215",
+    "group": "2019_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/us/70498215.txt",
+    "now_field_2": "365",
+    "date_original": "19-02-09",
+    "date_iso": "2019-02-09",
+    "source_name": "Comicbook.com",
+    "url": "https://comicbook.com/gaming/2019/02/09/league-of-legends-update-conqueror-rune/",
+    "title": "'League of Legends' Update Expected to Change Conqueror Rune",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Australian extreme weather, climate change impacts, public debate, and climate policy amid dependence on coal mining",
+    "climate_relevance": "The main article extensively discusses whether climate change is intensifying floods, fires, heat and drought, alongside climate science, public attitudes, government responses, emissions policy, and the coal industry.",
+    "reason": "Climate change and its impacts and political implications are the central subject of the identifiable main article. The text also contains an unrelated League of Legends snippet, but the substantial climate article is clearly identifiable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "954e07aea80a153c2140f36cb0575e50742ab4292876f99477f07519a2f1a403",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "732f26c0b403c6ce89d08e0907f132fa3e42295938065c53a75fb9ba0dd05447",
+    "raw_response_text_sha256": "eef457c4bf59b0bd9bad11c690bc908bff8e4b9dbbc2ffe32835666df8115abb"
+  },
+  "api_metadata": {
+    "id": "resp_059562f42039eaa4006b063cf9b69c87d180dc383cca8d1c39",
+    "model": "gpt-6-luna",
+    "created_at": 1795570937.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3829,
+      "input_tokens_details": {
+        "cache_write_tokens": 3826,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3826
+        }
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 4081
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Australian extreme weather, climate change impacts, public debate, and climate policy amid dependence on coal mining\",\n  \"climate_relevance\": \"The main article extensively discusses whether climate change is intensifying floods, fires, heat and drought, alongside climate science, public attitudes, government responses, emissions policy, and the coal industry.\",\n  \"reason\": \"Climate change and its impacts and political implications are the central subject of the identifiable main article. The text also contains an unrelated League of Legends snippet, but the substantial climate article is clearly identifiable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:20Z",
+  "duration_seconds": 2.577,
+  "error": null
+}

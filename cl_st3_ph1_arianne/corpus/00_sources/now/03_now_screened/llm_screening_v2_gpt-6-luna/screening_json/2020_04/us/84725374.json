@@ -1,0 +1,77 @@
+{
+  "article_id": "84725374",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_04/us/84725374.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_04/us/84725374.json"
+  },
+  "manifest_row": {
+    "article_id": "84725374",
+    "group": "2020_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_04/us/84725374.txt",
+    "now_field_2": "1127",
+    "date_original": "20-04-26",
+    "date_iso": "2020-04-26",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/weather/2020/04/11/risk-severe-storms-perhaps-few-tornadoes-dc-area-monday/",
+    "title": "Risk of severe storms and a perhaps a few tornadoes in the D.C. area Monday",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-04.txt\"]",
+    "metadata_article_files": "[\"text-20-04/20-04-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Forecast of severe thunderstorms, damaging winds, and possible tornadoes in the Washington, D.C. region",
+    "climate_relevance": "Climate change appears only in an author biography describing the weather editor's former work as a climate change science analyst.",
+    "reason": "The article is a detailed short-term weather forecast and contains no meaningful discussion of climate change; the only reference is incidental biographical information.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "da7cca3a176212f07e1bfb59e0d0b390a19703696da9bfe78fa66b249a85c0e4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "698609b5e66f9adddbac1fcd056c46274a677c2b5aba6d1aecefd72ca9fef515",
+    "raw_response_text_sha256": "eab217fe2dd3941a790e237278b6fcb1744cebb9b35e72a91cffc7359f56ca74"
+  },
+  "api_metadata": {
+    "id": "resp_0fd3fbef8982fd11006b064ac585a087d1aaf4f532520fef7d",
+    "model": "gpt-6-luna",
+    "created_at": 1795574469.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1936,
+      "input_tokens_details": {
+        "cache_write_tokens": 1933,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1933
+        }
+      },
+      "output_tokens": 187,
+      "output_tokens_details": {
+        "reasoning_tokens": 38
+      },
+      "total_tokens": 2123
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Forecast of severe thunderstorms, damaging winds, and possible tornadoes in the Washington, D.C. region\",\n  \"climate_relevance\": \"Climate change appears only in an author biography describing the weather editor's former work as a climate change science analyst.\",\n  \"reason\": \"The article is a detailed short-term weather forecast and contains no meaningful discussion of climate change; the only reference is incidental biographical information.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:41:11Z",
+  "duration_seconds": 1.825,
+  "error": null
+}

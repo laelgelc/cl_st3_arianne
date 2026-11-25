@@ -1,0 +1,77 @@
+{
+  "article_id": "22597971",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_01/ca/22597971.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_01/ca/22597971.json"
+  },
+  "manifest_row": {
+    "article_id": "22597971",
+    "group": "2018_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_01/ca/22597971.txt",
+    "now_field_2": "980",
+    "date_original": "18-01-05",
+    "date_iso": "2018-01-05",
+    "source_name": "Financial Post",
+    "url": "http://business.financialpost.com/commodities/mining/weather-leaves-centerra-investors-cold-even-as-gold-prices-sizzle",
+    "title": "Weather leaves Centerra investors cold even as gold prices sizzle",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
+    "metadata_article_files": "[\"text-18-01/text_18-01-CA.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.88,
+    "climate_role": "substantial",
+    "main_topic": "Climate-related water and weather risks affecting a British Columbia mine",
+    "climate_relevance": "The article connects drought, freezing conditions, and changing precipitation patterns to mine operations, discusses climate-related risks to businesses and investors, and addresses climate disclosure.",
+    "reason": "Although the immediate story concerns Centerra Gold's water shortage and suspended processing at Mount Milligan, climate change and its implications for water management and business risk are a substantial part of the reporting.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f91223a4ff9fbfab33122bb0072b6ed584e9bea29c1f2aa346069f0fd1777261",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "328b678a2fe803c034d4798dd457728befc997d00248443709b16c00acccb6e3",
+    "raw_response_text_sha256": "23132f372ee33ada69c532845ed4bdbda7aa4f4264406479837172389d8a138a"
+  },
+  "api_metadata": {
+    "id": "resp_04d035eb65b8630e006b06105311d487d28794c3704a97d5aa",
+    "model": "gpt-6-luna",
+    "created_at": 1795559507.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1779,
+      "input_tokens_details": {
+        "cache_write_tokens": 1776,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1776
+        }
+      },
+      "output_tokens": 360,
+      "output_tokens_details": {
+        "reasoning_tokens": 206
+      },
+      "total_tokens": 2139
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Climate-related water and weather risks affecting a British Columbia mine\",\n  \"climate_relevance\": \"The article connects drought, freezing conditions, and changing precipitation patterns to mine operations, discusses climate-related risks to businesses and investors, and addresses climate disclosure.\",\n  \"reason\": \"Although the immediate story concerns Centerra Gold's water shortage and suspended processing at Mount Milligan, climate change and its implications for water management and business risk are a substantial part of the reporting.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:31:49Z",
+  "duration_seconds": 2.785,
+  "error": null
+}

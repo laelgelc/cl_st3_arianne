@@ -1,0 +1,77 @@
+{
+  "article_id": "60197315",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/pk/60197315.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/pk/60197315.json"
+  },
+  "manifest_row": {
+    "article_id": "60197315",
+    "group": "2018_10",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/pk/60197315.txt",
+    "now_field_2": "1182",
+    "date_original": "18-10-26",
+    "date_iso": "2018-10-26",
+    "source_name": "The News International",
+    "url": "https://www.thenews.com.pk/print/385991-doubts-and-droughts",
+    "title": "Doubts and droughts",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-pk.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Climate change and the risk that warming intensifies droughts, crop losses, and famine.",
+    "climate_relevance": "The opinion text centrally discusses anthropogenic global warming, fossil-fuel emissions, drought severity, and potential impacts on global food production and mortality.",
+    "reason": "The identifiable main article is substantially about climate change and its projected consequences. A separate, unrelated news report about Kashmir is appended and should not affect classification of the climate article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9c970db01789edf228e1d85bafd1c1eb3948a1aff97b374b77640a30e46b62f2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "662aad0cbd6909b8ecf857a4bc6d4722e00f202d5d5f2a3612c3e5eb1e4dff22",
+    "raw_response_text_sha256": "ea1ce5d1239ea85a104355450567c4905df80c645146b65560f22ae93cba5b9d"
+  },
+  "api_metadata": {
+    "id": "resp_0aceed9729398c26006b063179206487d19ba727fc7a7eea58",
+    "model": "gpt-6-luna",
+    "created_at": 1795567993.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3106,
+      "input_tokens_details": {
+        "cache_write_tokens": 3103,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3103
+        }
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 3322
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Climate change and the risk that warming intensifies droughts, crop losses, and famine.\",\n  \"climate_relevance\": \"The opinion text centrally discusses anthropogenic global warming, fossil-fuel emissions, drought severity, and potential impacts on global food production and mortality.\",\n  \"reason\": \"The identifiable main article is substantially about climate change and its projected consequences. A separate, unrelated news report about Kashmir is appended and should not affect classification of the climate article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:53:15Z",
+  "duration_seconds": 2.12,
+  "error": null
+}

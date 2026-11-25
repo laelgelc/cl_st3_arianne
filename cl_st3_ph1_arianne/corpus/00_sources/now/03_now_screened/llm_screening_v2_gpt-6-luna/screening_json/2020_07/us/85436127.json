@@ -1,0 +1,77 @@
+{
+  "article_id": "85436127",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/85436127.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/85436127.json"
+  },
+  "manifest_row": {
+    "article_id": "85436127",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/85436127.txt",
+    "now_field_2": "717",
+    "date_original": "20-07-16",
+    "date_iso": "2020-07-16",
+    "source_name": "Wall Street Journal",
+    "url": "https://www.wsj.com/articles/energy-focused-firms-struggle-to-raise-capital-11594897200",
+    "title": "Energy-Focused Firms Struggle to Raise Capital",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Fundraising and investment trends among energy-focused private-equity firms",
+    "climate_relevance": "The article describes investor pressure to divest from fossil fuels because of climate concerns and the shift by some firms toward renewable energy and decarbonization.",
+    "reason": "Climate change is a meaningful factor in the investment trends discussed, but the article is primarily about energy-fund performance and capital raising rather than climate change itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9ced30093c8263f0c1b09392c3f6d8e83bb7ba3009989911eeb534070a02415f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e5c3006a8f06fba5c2f96b4b13504219fe349922fb5051db07b283af2f8a4323",
+    "raw_response_text_sha256": "6b8eca3c5e4a149060da59eeb2e9a4fc125b9d4f10bc80b6f28abfe4c601f88c"
+  },
+  "api_metadata": {
+    "id": "resp_0c89144eeab2831d006b064c19890c87d1b5589935c7759d49",
+    "model": "gpt-6-luna",
+    "created_at": 1795574809.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1451,
+      "input_tokens_details": {
+        "cache_write_tokens": 1448,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1448
+        }
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1661
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Fundraising and investment trends among energy-focused private-equity firms\",\n  \"climate_relevance\": \"The article describes investor pressure to divest from fossil fuels because of climate concerns and the shift by some firms toward renewable energy and decarbonization.\",\n  \"reason\": \"Climate change is a meaningful factor in the investment trends discussed, but the article is primarily about energy-fund performance and capital raising rather than climate change itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:46:51Z",
+  "duration_seconds": 2.275,
+  "error": null
+}

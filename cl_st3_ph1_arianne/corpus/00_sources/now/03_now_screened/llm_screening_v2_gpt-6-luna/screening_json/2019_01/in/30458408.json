@@ -1,0 +1,77 @@
+{
+  "article_id": "30458408",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/in/30458408.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/in/30458408.json"
+  },
+  "manifest_row": {
+    "article_id": "30458408",
+    "group": "2019_01",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/in/30458408.txt",
+    "now_field_2": "493",
+    "date_original": "19-01-16",
+    "date_iso": "2019-01-16",
+    "source_name": "Down To Earth Magazine",
+    "url": "https://www.downtoearth.org.in/news/wildlife-biodiversity/carcass-of-leopard-found-in-a-reservoir-in-odisha-62847",
+    "title": "Carcass of leopard found in a reservoir in Odisha",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-in2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Leopard death and poaching in Odisha",
+    "climate_relevance": "Climate change appears only as part of the name of the Ministry of Environment, Forest and Climate Change; there is no meaningful climate discourse.",
+    "reason": "The article focuses on leopard mortality, poaching, and illegal wildlife trade. The sole climate reference is institutional name metadata.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b3e68676819670453b3a95a9ff603c8087a6f304bc5565294715ab7ca591c9aa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4d2d067bbc1c836c80698348d41cda3399af5c3d86cacfc8fa08aecd5424e0e3",
+    "raw_response_text_sha256": "86ee18807c7c574c76b2247d00fb1362f151005b7223f9de693ee6419461d2de"
+  },
+  "api_metadata": {
+    "id": "resp_0119862e4c6a2bb3006b06143d8a2887d2b008fd9e3b0d3669",
+    "model": "gpt-6-luna",
+    "created_at": 1795560509.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1160,
+      "input_tokens_details": {
+        "cache_write_tokens": 1157,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1157
+        }
+      },
+      "output_tokens": 184,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 1344
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Leopard death and poaching in Odisha\",\n  \"climate_relevance\": \"Climate change appears only as part of the name of the Ministry of Environment, Forest and Climate Change; there is no meaningful climate discourse.\",\n  \"reason\": \"The article focuses on leopard mortality, poaching, and illegal wildlife trade. The sole climate reference is institutional name metadata.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:48:31Z",
+  "duration_seconds": 2.347,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "19941747",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/za/19941747.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/za/19941747.json"
+  },
+  "manifest_row": {
+    "article_id": "19941747",
+    "group": "2017_08",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/za/19941747.txt",
+    "now_field_2": "383",
+    "date_original": "17-08-10",
+    "date_iso": "2017-08-10",
+    "source_name": "Wheels24",
+    "url": "http://www.wheels24.co.za/News/Gear_and_Tech/leading-the-charge-nissan-celebrates-70-years-of-electric-vehicles-20170810",
+    "title": "Leading the charge: Nissan celebrates 70 years of electric vehicles",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.78,
+    "climate_role": "background",
+    "main_topic": "Nissan's electric-vehicle history, products, and performance",
+    "climate_relevance": "Electric vehicles are framed as zero-emission technology, and the text briefly mentions the Nissan LEAF's launch at a UN climate conference. An appended line refers to a proposed ban on new petrol and diesel cars.",
+    "reason": "The article is primarily promotional coverage of Nissan's electric vehicles, not substantive discussion of climate change. Its zero-emission framing and reference to a combustion-car ban provide some relevance to transport decarbonization, so it is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "49d806da28d08c86e20488daf498d2f46f0c082b940d212de4bc96ceb4e336c0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3142412fa2453928ce44eb0a11d0f34d38327c9a0bd1ac92985fb8ff89f72dc5",
+    "raw_response_text_sha256": "de2fff6a101ae593130888bb9b417d3f2c1221a63a26297f15174a1025ed161d"
+  },
+  "api_metadata": {
+    "id": "resp_0397b2be7bedab02006b060caa04a887d29ef42ecffc6fc659",
+    "model": "gpt-6-luna",
+    "created_at": 1795558570.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1001,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 674,
+      "output_tokens_details": {
+        "reasoning_tokens": 495
+      },
+      "total_tokens": 1675
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.78,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Nissan's electric-vehicle history, products, and performance\",\n  \"climate_relevance\": \"Electric vehicles are framed as zero-emission technology, and the text briefly mentions the Nissan LEAF's launch at a UN climate conference. An appended line refers to a proposed ban on new petrol and diesel cars.\",\n  \"reason\": \"The article is primarily promotional coverage of Nissan's electric vehicles, not substantive discussion of climate change. Its zero-emission framing and reference to a combustion-car ban provide some relevance to transport decarbonization, so it is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:16:15Z",
+  "duration_seconds": 5.122,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "24601264",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/us/24601264.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/us/24601264.json"
+  },
+  "manifest_row": {
+    "article_id": "24601264",
+    "group": "2018_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/us/24601264.txt",
+    "now_field_2": "3469",
+    "date_original": "18-05-11",
+    "date_iso": "2018-05-11",
+    "source_name": "New York Magazine",
+    "url": "http://nymag.com/daily/intelligencer/2018/05/andrew-sullivan-kanye-west-and-the-question-of-freedom.html",
+    "title": "Kanye West and the Question of Freedom",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Political tribalism, ideological polarization, and individual freedom, discussed through reactions to Kanye West and other public debates.",
+    "climate_relevance": "Climate change appears only as a brief example: Bret Stephens is described as having questioned it, prompting reader cancellations. The text does not develop the issue or the climate debate.",
+    "reason": "The article is not meaningfully about climate change; its single passing reference serves as an example in a discussion of ideological conformity.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0bdb84ea8f54c79fd5fafdd804e18065c3f61da67591f7161d2b723042089ece",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a8373a14d20801e08bde5c041798719eece4514a3c5dd2fbf2d162ca8128c8c6",
+    "raw_response_text_sha256": "6caa38e91b3a8437baae1b4195bcc99d5ff1b079a84e3f9c698f784fbb0392e2"
+  },
+  "api_metadata": {
+    "id": "resp_05af6aeb4f798a97006b06129b3d2087d29c156b60646b4ade",
+    "model": "gpt-6-luna",
+    "created_at": 1795560091.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4857,
+      "input_tokens_details": {
+        "cache_write_tokens": 4854,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4854
+        }
+      },
+      "output_tokens": 422,
+      "output_tokens_details": {
+        "reasoning_tokens": 267
+      },
+      "total_tokens": 5279
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Political tribalism, ideological polarization, and individual freedom, discussed through reactions to Kanye West and other public debates.\",\n  \"climate_relevance\": \"Climate change appears only as a brief example: Bret Stephens is described as having questioned it, prompting reader cancellations. The text does not develop the issue or the climate debate.\",\n  \"reason\": \"The article is not meaningfully about climate change; its single passing reference serves as an example in a discussion of ideological conformity.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:41:35Z",
+  "duration_seconds": 3.862,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "21237650",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/sg/21237650.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/sg/21237650.json"
+  },
+  "manifest_row": {
+    "article_id": "21237650",
+    "group": "2017_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/sg/21237650.txt",
+    "now_field_2": "990",
+    "date_original": "17-10-21",
+    "date_iso": "2017-10-21",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/three-wounded-shooting-near-us-mine-papua-050528862.html",
+    "title": "Three wounded in shooting near US mine in Papua",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-SG.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A collection of unrelated news briefs, including a report that the U.S. EPA canceled scientists' planned climate-change conference appearance",
+    "climate_relevance": "One brief meaningfully concerns climate-change communication and the EPA's cancellation of scientists' speaking plans; the other items are unrelated.",
+    "reason": "The text is a compilation of multiple unrelated news snippets rather than a climate-focused article. The EPA brief provides relevant climate discourse, so the text is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "294e9ee63196c9f23ea59f1cdcae25b8836bdcdbbde7761e99ba3f3cc86860b6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2b011ec3665a1c39c01a3811564cef1c67901c5c6922e8f7af3c4f26580568e7",
+    "raw_response_text_sha256": "4c90c9599413a1df64abed78020172f9179a604663950465b60e029af6798f9a"
+  },
+  "api_metadata": {
+    "id": "resp_0dcf3bf7cc3b8e81006b060e769b7c87d2b3395c785bd5472f",
+    "model": "gpt-6-luna",
+    "created_at": 1795559030.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1763,
+      "input_tokens_details": {
+        "cache_write_tokens": 1760,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1760
+        }
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 2049
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of unrelated news briefs, including a report that the U.S. EPA canceled scientists' planned climate-change conference appearance\",\n  \"climate_relevance\": \"One brief meaningfully concerns climate-change communication and the EPA's cancellation of scientists' speaking plans; the other items are unrelated.\",\n  \"reason\": \"The text is a compilation of multiple unrelated news snippets rather than a climate-focused article. The EPA brief provides relevant climate discourse, so the text is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:23:53Z",
+  "duration_seconds": 3.09,
+  "error": null
+}

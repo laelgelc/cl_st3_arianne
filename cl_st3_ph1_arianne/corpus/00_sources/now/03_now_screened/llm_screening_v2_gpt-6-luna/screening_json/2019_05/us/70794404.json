@@ -1,0 +1,77 @@
+{
+  "article_id": "70794404",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/us/70794404.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/us/70794404.json"
+  },
+  "manifest_row": {
+    "article_id": "70794404",
+    "group": "2019_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/us/70794404.txt",
+    "now_field_2": "1271",
+    "date_original": "19-05-21",
+    "date_iso": "2019-05-21",
+    "source_name": "Pascack Press &amp; Northern Valley Press",
+    "url": "https://thepressgroup.net/tenafly-5k-run-and-dog-walk-to-support-local-schools/",
+    "title": "Tenafly 5K Run and Dog Walk To Support Local Schools",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Tenafly 5K run and dog walk fundraiser supporting local schools.",
+    "climate_relevance": "The identifiable main article contains no meaningful climate discussion. A lengthy climate-focused interview appears later, but is unrelated to the main article.",
+    "reason": "The main article is a local event announcement. The climate discussion concerns a separate interview about climate impacts on World Heritage Sites and should not be treated as part of the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1f2421d46972a9b9d7cce5a1563ad27e5884dd9841fc391678c869005721c380",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0f26643b23d82ac1f01029af715ff85863f0dae3843df81c2c9bff76a06648a7",
+    "raw_response_text_sha256": "8f4f0774117c568faaac27b6b7a939fee80723810a24a7f306547713f02b778a"
+  },
+  "api_metadata": {
+    "id": "resp_0c09211d5dbfe9c7006b063f2dffa887d1bfa885fc417dab72",
+    "model": "gpt-6-luna",
+    "created_at": 1795571502.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6606,
+      "input_tokens_details": {
+        "cache_write_tokens": 6603,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6603
+        }
+      },
+      "output_tokens": 456,
+      "output_tokens_details": {
+        "reasoning_tokens": 299
+      },
+      "total_tokens": 7062
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Tenafly 5K run and dog walk fundraiser supporting local schools.\",\n  \"climate_relevance\": \"The identifiable main article contains no meaningful climate discussion. A lengthy climate-focused interview appears later, but is unrelated to the main article.\",\n  \"reason\": \"The main article is a local event announcement. The climate discussion concerns a separate interview about climate impacts on World Heritage Sites and should not be treated as part of the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:51:45Z",
+  "duration_seconds": 3.647,
+  "error": null
+}

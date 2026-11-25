@@ -1,0 +1,77 @@
+{
+  "article_id": "70501037",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70501037.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70501037.json"
+  },
+  "manifest_row": {
+    "article_id": "70501037",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70501037.txt",
+    "now_field_2": "1485",
+    "date_original": "19-02-10",
+    "date_iso": "2019-02-10",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/HL1902/S00035/mediawatch-cancer-and-the-unbearable-asymmetry-of-bs.htm",
+    "title": "Mediawatch: Cancer and the unbearable asymmetry of BS",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Media coverage of cancer treatments and New Zealand's public drug-buying agency",
+    "climate_relevance": "Climate change appears only in a separate 'ALSO' snippet about wildfire risk, drought, and firefighting costs; it is not part of the identifiable main article.",
+    "reason": "The main article concerns cancer reporting and drug funding, with no meaningful climate discussion. The climate-related passage is an unrelated appended snippet rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c84a41fecbf183941a68f092e19c711ab66943d701c73f8202e493c05b423e9a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f1a0c643ec8956197c68b6973363e21b132ff44544f2f08ddedc063ace0ce8f2",
+    "raw_response_text_sha256": "ee2926db10a4a6afb6f61ace196e3e0ea1a4d54cc8064b0fc7d9d4638b487d32"
+  },
+  "api_metadata": {
+    "id": "resp_0cec1e63e6724625006b063d01928887d1bbca78443e2d3f66",
+    "model": "gpt-6-luna",
+    "created_at": 1795570945.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2360,
+      "input_tokens_details": {
+        "cache_write_tokens": 2357,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2357
+        }
+      },
+      "output_tokens": 503,
+      "output_tokens_details": {
+        "reasoning_tokens": 343
+      },
+      "total_tokens": 2863
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Media coverage of cancer treatments and New Zealand's public drug-buying agency\",\n  \"climate_relevance\": \"Climate change appears only in a separate 'ALSO' snippet about wildfire risk, drought, and firefighting costs; it is not part of the identifiable main article.\",\n  \"reason\": \"The main article concerns cancer reporting and drug funding, with no meaningful climate discussion. The climate-related passage is an unrelated appended snippet rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:29Z",
+  "duration_seconds": 4.427,
+  "error": null
+}

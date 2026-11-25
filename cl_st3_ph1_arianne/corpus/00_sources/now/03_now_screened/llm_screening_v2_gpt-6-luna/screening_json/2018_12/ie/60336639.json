@@ -1,0 +1,77 @@
+{
+  "article_id": "60336639",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ie/60336639.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ie/60336639.json"
+  },
+  "manifest_row": {
+    "article_id": "60336639",
+    "group": "2018_12",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ie/60336639.txt",
+    "now_field_2": "481",
+    "date_original": "18-12-09",
+    "date_iso": "2018-12-09",
+    "source_name": "RTE.ie",
+    "url": "https://www.rte.ie/news/europe/2018/1209/1016135-un-migration/",
+    "title": "Flemish nationalists quit Belgian government after UN migration row",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Belgian government reshuffle following a dispute over the UN migration pact",
+    "climate_relevance": "Climate change is mentioned only as one item in a list of the government's priorities for its remaining months.",
+    "reason": "The article focuses on Belgian coalition politics and migration policy; the brief climate reference does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8868619fe2ef0593e24b4dfaea90a4a12fd627d9935c080f6b8ba51eef990fe7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "313496d96113568fa406cd4f177a2693f70a7e09e3aed4a5b64bbfd714c412bd",
+    "raw_response_text_sha256": "cfe4a51cf28582e6ec0cfacf6c8381bfc42b8d14d6f73296030e2c5184f0d443"
+  },
+  "api_metadata": {
+    "id": "resp_03a7d523a9d4213a006b06322c27c887d193456571c8d5c915",
+    "model": "gpt-6-luna",
+    "created_at": 1795568172.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1122,
+      "input_tokens_details": {
+        "cache_write_tokens": 1119,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1119
+        }
+      },
+      "output_tokens": 202,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1324
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Belgian government reshuffle following a dispute over the UN migration pact\",\n  \"climate_relevance\": \"Climate change is mentioned only as one item in a list of the government's priorities for its remaining months.\",\n  \"reason\": \"The article focuses on Belgian coalition politics and migration policy; the brief climate reference does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:56:14Z",
+  "duration_seconds": 1.995,
+  "error": null
+}

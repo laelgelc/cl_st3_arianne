@@ -1,0 +1,77 @@
+{
+  "article_id": "70427174",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/us/70427174.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/us/70427174.json"
+  },
+  "manifest_row": {
+    "article_id": "70427174",
+    "group": "2019_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/us/70427174.txt",
+    "now_field_2": "821",
+    "date_original": "19-01-17",
+    "date_iso": "2019-01-17",
+    "source_name": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/smart-news/more-half-all-coffee-species-are-risk-extinction-180971289/",
+    "title": "More Than Half of All Coffee Bean Species Are at Risk of Extinction",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-us2.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "substantial",
+    "main_topic": "Climate change threats to wild coffee species and coffee cultivation, alongside conservation strategies.",
+    "climate_relevance": "Climate change is identified as a major threat to Arabica and other coffee species. The text discusses rising temperatures, changing growing conditions, projected loss of suitable cultivation areas, and farmers’ adaptation efforts.",
+    "reason": "Climate impacts on coffee are a substantial focus of the article and are directly connected to species extinction risk, agricultural yields, and conservation. The final recommendation about The Last Supper is unrelated to the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2f7c90553c3346cb2032de054c63d45a4164452f51db899d025d5146d58011a6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "578afd447dfa5196adec954a8c4a7c679333c3a1b1297c0d813a746fed45c396",
+    "raw_response_text_sha256": "45ec54d692f062d2526eb03252e4cccd6a4e7a1c07b525e80fe3477722150a26"
+  },
+  "api_metadata": {
+    "id": "resp_03352df38bdeb13f006b063c7bcb5087d1ae05316f9c96251e",
+    "model": "gpt-6-luna",
+    "created_at": 1795570811.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1555,
+      "input_tokens_details": {
+        "cache_write_tokens": 1552,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1552
+        }
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1796
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Climate change threats to wild coffee species and coffee cultivation, alongside conservation strategies.\",\n  \"climate_relevance\": \"Climate change is identified as a major threat to Arabica and other coffee species. The text discusses rising temperatures, changing growing conditions, projected loss of suitable cultivation areas, and farmers’ adaptation efforts.\",\n  \"reason\": \"Climate impacts on coffee are a substantial focus of the article and are directly connected to species extinction risk, agricultural yields, and conservation. The final recommendation about The Last Supper is unrelated to the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:14Z",
+  "duration_seconds": 2.436,
+  "error": null
+}

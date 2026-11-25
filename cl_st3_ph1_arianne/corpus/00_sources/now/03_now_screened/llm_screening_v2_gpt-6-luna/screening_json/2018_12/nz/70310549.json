@@ -1,0 +1,77 @@
+{
+  "article_id": "70310549",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/nz/70310549.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/nz/70310549.json"
+  },
+  "manifest_row": {
+    "article_id": "70310549",
+    "group": "2018_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/nz/70310549.txt",
+    "now_field_2": "1063",
+    "date_original": "18-12-05",
+    "date_iso": "2018-12-05",
+    "source_name": "Stuff.co.nz",
+    "url": "https://www.stuff.co.nz/travel/108356874/how-to-travel-the-world-and-get-a-degree-at-the-same-time",
+    "title": "How to travel the world and get a degree at the same time",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A personal account of travelling while completing a university degree through distance learning.",
+    "climate_relevance": "The identifiable main article contains no meaningful climate-change discussion. A substantial climate-and-security passage appears after the travel article ends and appears to be an unrelated article excerpt.",
+    "reason": "The travel-degree article is identifiable from its headline and content. Following its conclusion, the text abruptly shifts to New Zealand Defence Force preparations for climate-change impacts, indicating that unrelated material has been appended; the main article is not climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f5c6dffb73d9f662222a53e5bcd5601c0e1b3ada8e9b4e51eb1235f0c563132d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9d1fbd29e56bcf0ed18c20a28137fe45675670d6a3a1b53d41b87150bd606f82",
+    "raw_response_text_sha256": "7b2b54048dce801c3433acfba0587fb682a34fea4a186a65c6759efd2790717f"
+  },
+  "api_metadata": {
+    "id": "resp_08f54a158ab5c785006b063bddbab887d1b22707d49056941c",
+    "model": "gpt-6-luna",
+    "created_at": 1795570653.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3764,
+      "input_tokens_details": {
+        "cache_write_tokens": 3761,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3761
+        }
+      },
+      "output_tokens": 506,
+      "output_tokens_details": {
+        "reasoning_tokens": 334
+      },
+      "total_tokens": 4270
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A personal account of travelling while completing a university degree through distance learning.\",\n  \"climate_relevance\": \"The identifiable main article contains no meaningful climate-change discussion. A substantial climate-and-security passage appears after the travel article ends and appears to be an unrelated article excerpt.\",\n  \"reason\": \"The travel-degree article is identifiable from its headline and content. Following its conclusion, the text abruptly shifts to New Zealand Defence Force preparations for climate-change impacts, indicating that unrelated material has been appended; the main article is not climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:37:37Z",
+  "duration_seconds": 4.092,
+  "error": null
+}

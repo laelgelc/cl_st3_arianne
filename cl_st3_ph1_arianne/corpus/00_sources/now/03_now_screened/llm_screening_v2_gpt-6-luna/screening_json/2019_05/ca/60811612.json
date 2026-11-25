@@ -1,0 +1,77 @@
+{
+  "article_id": "60811612",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/ca/60811612.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/ca/60811612.json"
+  },
+  "manifest_row": {
+    "article_id": "60811612",
+    "group": "2019_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/ca/60811612.txt",
+    "now_field_2": "642",
+    "date_original": "19-05-07",
+    "date_iso": "2019-05-07",
+    "source_name": "CTV News",
+    "url": "https://bc.ctvnews.ca/canada-will-bear-cost-of-bringing-trash-filled-containers-from-philippines-to-vancouver-1.4412346",
+    "title": "Canada will bear cost of bringing trash-filled containers from ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A dispute over Canada’s repatriation of garbage shipped to the Philippines",
+    "climate_relevance": "Climate change is not meaningfully discussed; it appears only in the name of the Canadian government department, Environment and Climate Change Canada.",
+    "reason": "The article focuses on waste shipment, permits, and diplomatic negotiations, not climate change or its implications.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5903bf9318b933c4984416e46cf8fe2c9c190e90e01dfed613874d5300bc4eb2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fda332abab081c6f3485357ab65d0215222ff23851b62bf1e5e93bafda1d9bf8",
+    "raw_response_text_sha256": "8855eb21d243be08f975fac1ae4e76755c501aa8958ac1c5c5e3aa6465cfc6dc"
+  },
+  "api_metadata": {
+    "id": "resp_0443ec41677788c0006b0634a665ec87d18ffe450e63e69108",
+    "model": "gpt-6-luna",
+    "created_at": 1795568806.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1279,
+      "input_tokens_details": {
+        "cache_write_tokens": 1276,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1276
+        }
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 1505
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A dispute over Canada’s repatriation of garbage shipped to the Philippines\",\n  \"climate_relevance\": \"Climate change is not meaningfully discussed; it appears only in the name of the Canadian government department, Environment and Climate Change Canada.\",\n  \"reason\": \"The article focuses on waste shipment, permits, and diplomatic negotiations, not climate change or its implications.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:06:48Z",
+  "duration_seconds": 2.182,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50259949",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/gb/50259949.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/gb/50259949.json"
+  },
+  "manifest_row": {
+    "article_id": "50259949",
+    "group": "2018_12",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/gb/50259949.txt",
+    "now_field_2": "2032",
+    "date_original": "18-12-03",
+    "date_iso": "2018-12-03",
+    "source_name": "The Independent",
+    "url": "https://www.independent.co.uk/news/science/lonesome-george-giant-tortoise-galapagos-extinct-genome-dna-cancer-nature-study-a8664931.html",
+    "title": "Lonesome George: Scientists are using DNA from last member of now ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.87,
+    "climate_role": "passing",
+    "main_topic": "Giant tortoise genetics and healthy ageing",
+    "climate_relevance": "Climate change is briefly listed as one of several threats to endangered tortoises. A separate gallery caption mentions an IPCC report, but it is unrelated to the identifiable main article.",
+    "reason": "The main article focuses on tortoise genomes and ageing; climate change receives no meaningful discussion beyond a passing mention in a list of threats. The climate-related gallery item is a separate snippet, not the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "52a190856c156b8e3d90e0bda8ae57259fa23390c1a049b33972bc1dd2a2ac69",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1fbe24ec5a656ca9b4714f5a92a5cf45bb3884d4f1b31a3f95912e6db0a8c4c3",
+    "raw_response_text_sha256": "09d0ad1230727d3a9497ef3d520dd3c684612c68acb4ddaff3d80c0f2b0a643c"
+  },
+  "api_metadata": {
+    "id": "resp_03fa8fd7bc03b60f006b06284543b087d18e3ec9a930d66564",
+    "model": "gpt-6-luna",
+    "created_at": 1795565637.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3282,
+      "input_tokens_details": {
+        "cache_write_tokens": 3279,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3279
+        }
+      },
+      "output_tokens": 455,
+      "output_tokens_details": {
+        "reasoning_tokens": 294
+      },
+      "total_tokens": 3737
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Giant tortoise genetics and healthy ageing\",\n  \"climate_relevance\": \"Climate change is briefly listed as one of several threats to endangered tortoises. A separate gallery caption mentions an IPCC report, but it is unrelated to the identifiable main article.\",\n  \"reason\": \"The main article focuses on tortoise genomes and ageing; climate change receives no meaningful discussion beyond a passing mention in a list of threats. The climate-related gallery item is a separate snippet, not the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:14:01Z",
+  "duration_seconds": 4.335,
+  "error": null
+}

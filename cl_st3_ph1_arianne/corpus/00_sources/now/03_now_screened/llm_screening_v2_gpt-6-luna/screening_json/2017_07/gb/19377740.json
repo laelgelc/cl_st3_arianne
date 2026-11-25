@@ -1,0 +1,77 @@
+{
+  "article_id": "19377740",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/gb/19377740.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/gb/19377740.json"
+  },
+  "manifest_row": {
+    "article_id": "19377740",
+    "group": "2017_07",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/gb/19377740.txt",
+    "now_field_2": "607",
+    "date_original": "17-07-07",
+    "date_iso": "2017-07-07",
+    "source_name": "Daily Mail",
+    "url": "http://www.dailymail.co.uk/news/article-4676860/Melbourne-student-misses-mum-s-funeral-flight-cancelled.html",
+    "title": "'It was the worst day of my life': Student flies home to see her family ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A woman's failed attempt to travel to her mother's funeral and her complaint about the airline.",
+    "climate_relevance": "Climate change appears only in a brief biographical note saying the deceased had raised awareness about it.",
+    "reason": "The article focuses on the travel disruption and funeral. The passing reference to climate advocacy contains no meaningful discussion of climate change or its implications.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7def33bf92aac2ff8d361f17a39297df3916b431c789fdc174bc6d9be5e36cfe",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "54eeb27439730a085670860f7293effe2a23da0d8b429579929f50ed94bb09e2",
+    "raw_response_text_sha256": "f8a8444619cd185826c31de01d395ff30a7849bd11e9bea6a924c7e51c1b0633"
+  },
+  "api_metadata": {
+    "id": "resp_09943b7bbda26dab006b060bdb525887d28f8bca88651aaae3",
+    "model": "gpt-6-luna",
+    "created_at": 1795558363.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1273,
+      "input_tokens_details": {
+        "cache_write_tokens": 1270,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1270
+        }
+      },
+      "output_tokens": 333,
+      "output_tokens_details": {
+        "reasoning_tokens": 196
+      },
+      "total_tokens": 1606
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A woman's failed attempt to travel to her mother's funeral and her complaint about the airline.\",\n  \"climate_relevance\": \"Climate change appears only in a brief biographical note saying the deceased had raised awareness about it.\",\n  \"reason\": \"The article focuses on the travel disruption and funeral. The passing reference to climate advocacy contains no meaningful discussion of climate change or its implications.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:12:46Z",
+  "duration_seconds": 2.918,
+  "error": null
+}

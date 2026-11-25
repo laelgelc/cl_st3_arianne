@@ -1,0 +1,77 @@
+{
+  "article_id": "20117254",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/us/20117254.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/us/20117254.json"
+  },
+  "manifest_row": {
+    "article_id": "20117254",
+    "group": "2017_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/us/20117254.txt",
+    "now_field_2": "363",
+    "date_original": "17-08-21",
+    "date_iso": "2017-08-21",
+    "source_name": "Markets Insider",
+    "url": "http://markets.businessinsider.com/news/stocks/Green-Energy-Development-and-its-Influence-on-Quality-Of-Life-Discussed-At-Expo-2017-1002271639",
+    "title": "Green Energy Development and its Influence on Quality Of Life ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.86,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A renewable-energy conference held as part of Astana EXPO 2017",
+    "climate_relevance": "Climate change appears only in the name of a speaker's program. The article discusses renewable energy, but does not connect it to climate change or its mitigation, impacts, or policy.",
+    "reason": "The available text focuses on renewable energy, energy access, and the conference. The climate reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b8ee3e68632fbfcafe11b1ea68dfb777ad60a0ac621569c07e2126375326c973",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ad198a4712f2fca58d38e92613031e133aa6d12484c133668d5f94ddd188e53a",
+    "raw_response_text_sha256": "27340def143e0750ac8bab5b1534f856c06b81e0a0a063b3c198b333de0e1b9f"
+  },
+  "api_metadata": {
+    "id": "resp_07cce35a30f7adfd006b060ce3e11487d2a2cc6926644fefe8",
+    "model": "gpt-6-luna",
+    "created_at": 1795558628.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 968,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 500,
+      "output_tokens_details": {
+        "reasoning_tokens": 341
+      },
+      "total_tokens": 1468
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A renewable-energy conference held as part of Astana EXPO 2017\",\n  \"climate_relevance\": \"Climate change appears only in the name of a speaker's program. The article discusses renewable energy, but does not connect it to climate change or its mitigation, impacts, or policy.\",\n  \"reason\": \"The available text focuses on renewable energy, energy access, and the conference. The climate reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:11Z",
+  "duration_seconds": 3.264,
+  "error": null
+}

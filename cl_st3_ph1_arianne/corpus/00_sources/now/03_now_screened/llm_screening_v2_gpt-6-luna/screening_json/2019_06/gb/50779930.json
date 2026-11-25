@@ -1,0 +1,77 @@
+{
+  "article_id": "50779930",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/gb/50779930.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/gb/50779930.json"
+  },
+  "manifest_row": {
+    "article_id": "50779930",
+    "group": "2019_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/gb/50779930.txt",
+    "now_field_2": "524",
+    "date_original": "19-06-19",
+    "date_iso": "2019-06-19",
+    "source_name": "Yahoo Finance UK",
+    "url": "https://uk.finance.yahoo.com/news/americans-different-definition-apos-medicare-200157938.html",
+    "title": "Americans have a different definition of 'Medicare for All' than Bernie ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Public understanding of Medicare for All proposals and their role in the 2020 presidential race",
+    "climate_relevance": "Climate change appears only in a list of issues that voters consider less important to discuss than health care.",
+    "reason": "The text is about health-care policy and contains no meaningful climate discourse; climate change is mentioned only in passing.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ad7c1c0f8b400adee49c89d335c03bbdb0b49c1a11cf2c771db0c53b099febeb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "966b58d8824213347bf3fc788f680f3320126e593702200dd5bdfb8611a7b0e0",
+    "raw_response_text_sha256": "7285f7110cb9e884e338ffa826cc390ef066ef72e7051d96a713faf1adc569af"
+  },
+  "api_metadata": {
+    "id": "resp_0bdf7ebdbd8ccfd8006b062ae1afa887d1a3e3e76644d125c0",
+    "model": "gpt-6-luna",
+    "created_at": 1795566305.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1196,
+      "input_tokens_details": {
+        "cache_write_tokens": 1193,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1193
+        }
+      },
+      "output_tokens": 164,
+      "output_tokens_details": {
+        "reasoning_tokens": 30
+      },
+      "total_tokens": 1360
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Public understanding of Medicare for All proposals and their role in the 2020 presidential race\",\n  \"climate_relevance\": \"Climate change appears only in a list of issues that voters consider less important to discuss than health care.\",\n  \"reason\": \"The text is about health-care policy and contains no meaningful climate discourse; climate change is mentioned only in passing.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:25:07Z",
+  "duration_seconds": 1.803,
+  "error": null
+}

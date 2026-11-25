@@ -1,0 +1,77 @@
+{
+  "article_id": "41330333",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/gb/41330333.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/gb/41330333.json"
+  },
+  "manifest_row": {
+    "article_id": "41330333",
+    "group": "2019_09",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/gb/41330333.txt",
+    "now_field_2": "310",
+    "date_original": "19-09-07",
+    "date_iso": "2019-09-07",
+    "source_name": "leicestermercury.co.uk",
+    "url": "https://www.leicestermercury.co.uk/news/local-news/huge-new-housing-industrial-development-3292980",
+    "title": "Huge new housing and industrial development could ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A proposed housing and commercial development near Stoney Stanton and Sapcote",
+    "climate_relevance": "Climate change appears only in a generic council statement about building properties with it in mind; no climate-related issues are developed.",
+    "reason": "The identifiable main article concerns local development planning. Its brief, boilerplate reference to climate change does not provide meaningful climate discourse. A separate dating-related article appears after the 'More' marker.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9fcaf5d49cb12cad819f2c411e84d1ef5d4874b8c248f33264b9acbfda1c71c8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c4b32b419afc9f75be59221e7742eb0f54343fc9f7f638b9b3daebb1e2917a86",
+    "raw_response_text_sha256": "4a28099fc8df2d06f6c9b207be68f80ea899c7fadd94de0ba712a9e6bbe60963"
+  },
+  "api_metadata": {
+    "id": "resp_0cd93f317281fb0b006b06213b499887d28337e19223b34ac1",
+    "model": "gpt-6-luna",
+    "created_at": 1795563835.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1548,
+      "input_tokens_details": {
+        "cache_write_tokens": 1545,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1545
+        }
+      },
+      "output_tokens": 519,
+      "output_tokens_details": {
+        "reasoning_tokens": 363
+      },
+      "total_tokens": 2067
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A proposed housing and commercial development near Stoney Stanton and Sapcote\",\n  \"climate_relevance\": \"Climate change appears only in a generic council statement about building properties with it in mind; no climate-related issues are developed.\",\n  \"reason\": \"The identifiable main article concerns local development planning. Its brief, boilerplate reference to climate change does not provide meaningful climate discourse. A separate dating-related article appears after the 'More' marker.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:43:59Z",
+  "duration_seconds": 4.304,
+  "error": null
+}

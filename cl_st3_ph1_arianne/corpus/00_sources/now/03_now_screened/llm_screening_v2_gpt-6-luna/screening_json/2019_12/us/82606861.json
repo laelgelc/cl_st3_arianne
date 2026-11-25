@@ -1,0 +1,77 @@
+{
+  "article_id": "82606861",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82606861.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82606861.json"
+  },
+  "manifest_row": {
+    "article_id": "82606861",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82606861.txt",
+    "now_field_2": "488",
+    "date_original": "19-12-10",
+    "date_iso": "2019-12-10",
+    "source_name": "Detroit News",
+    "url": "https://www.detroitnews.com/story/news/politics/2019/12/10/warren-offers-blue-new-deal-oceans-campaign-update/40796919/",
+    "title": "Warren offers `Blue New Deal' for oceans: Campaign update",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us5.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.91,
+    "climate_role": "substantial",
+    "main_topic": "Michael Bloomberg’s climate-policy positions and campaign commitments, alongside other Democratic candidates’ proposals",
+    "climate_relevance": "The text discusses climate change, the Paris accord, fossil-fuel subsidies, clean-energy investment, renewable-energy tax credits, and plans to phase out coal power.",
+    "reason": "Climate policy is a substantive focus of the Bloomberg item and appears meaningfully in the Warren-plan passage as well. The comments instructions and upcoming-events material are unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "269736bbbbf97b825436754ecd8c670abb5c2fcb3c4124ebe34aaf74f53fa43f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a01b4e467cc58c78a0a17536fe5f408900fba74692cae25d58dc41de61160b94",
+    "raw_response_text_sha256": "050cc0c3e3bd2deea0e42dde24cbed784ffdf6d8ab4ad8fedc422722144957dd"
+  },
+  "api_metadata": {
+    "id": "resp_0baa4b997fc08a18006b06489d4dec87d187649f566566706a",
+    "model": "gpt-6-luna",
+    "created_at": 1795573917.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1123,
+      "input_tokens_details": {
+        "cache_write_tokens": 1120,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1120
+        }
+      },
+      "output_tokens": 370,
+      "output_tokens_details": {
+        "reasoning_tokens": 215
+      },
+      "total_tokens": 1493
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Michael Bloomberg’s climate-policy positions and campaign commitments, alongside other Democratic candidates’ proposals\",\n  \"climate_relevance\": \"The text discusses climate change, the Paris accord, fossil-fuel subsidies, clean-energy investment, renewable-energy tax credits, and plans to phase out coal power.\",\n  \"reason\": \"Climate policy is a substantive focus of the Bloomberg item and appears meaningfully in the Warren-plan passage as well. The comments instructions and upcoming-events material are unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:32:00Z",
+  "duration_seconds": 3.446,
+  "error": null
+}

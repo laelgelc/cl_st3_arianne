@@ -1,0 +1,77 @@
+{
+  "article_id": "19611427",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/au/19611427.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/au/19611427.json"
+  },
+  "manifest_row": {
+    "article_id": "19611427",
+    "group": "2017_07",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/au/19611427.txt",
+    "now_field_2": "226",
+    "date_original": "17-07-21",
+    "date_iso": "2017-07-21",
+    "source_name": "ABC Online",
+    "url": "http://www.abc.net.au/news/2017-07-22/nsw-farmer-says-changing-climate-forcing-him-to-move-flock/8732448",
+    "title": "Southern NSW farmer says changing climate is forcing him to move ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-AU.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "climate_role": "substantial",
+    "main_topic": "Climate change impacts on agriculture in New South Wales",
+    "climate_relevance": "The text discusses a report projecting declines in wheat, sheep meat, and beef production due to climate change, alongside the effects of differing local conditions on farming.",
+    "reason": "Climate change impacts on food production are a substantial focus of the available article text. The final sentence about NSW Liberal Party politics appears unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "68a5c6a5ac7f888694bdaa0478f8012d5e778e4356acfb83dfe5c2eb92546ee9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6bad0a4dfcdba4d02d923c40a02831b87ac42e942901779e47573f465297f08f",
+    "raw_response_text_sha256": "49df84118ed2b2d7cf937ed9bf24310a12cd5859888702347d1d3d0af6adcafb"
+  },
+  "api_metadata": {
+    "id": "resp_0ca0d10837bac825006b060c3ec06487d29539b9c7b12b0b4d",
+    "model": "gpt-6-luna",
+    "created_at": 1795558462.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 771,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 972
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Climate change impacts on agriculture in New South Wales\",\n  \"climate_relevance\": \"The text discusses a report projecting declines in wheat, sheep meat, and beef production due to climate change, alongside the effects of differing local conditions on farming.\",\n  \"reason\": \"Climate change impacts on food production are a substantial focus of the available article text. The final sentence about NSW Liberal Party politics appears unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:14:24Z",
+  "duration_seconds": 1.984,
+  "error": null
+}

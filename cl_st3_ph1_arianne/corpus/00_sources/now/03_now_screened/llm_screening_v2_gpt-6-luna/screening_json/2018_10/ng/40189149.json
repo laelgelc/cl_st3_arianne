@@ -1,0 +1,77 @@
+{
+  "article_id": "40189149",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/ng/40189149.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/ng/40189149.json"
+  },
+  "manifest_row": {
+    "article_id": "40189149",
+    "group": "2018_10",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/ng/40189149.txt",
+    "now_field_2": "427",
+    "date_original": "18-10-24",
+    "date_iso": "2018-10-24",
+    "source_name": "Pulse Nigeria",
+    "url": "https://www.pulse.ng/news/local/kogi-govt-donates-relief-materials-to-ajaokuta-flood-victims-id9017411.html",
+    "title": "Kogi Government donates relief materials to Ajaokuta flood victims",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Government relief distribution to flood victims in Kogi State, Nigeria",
+    "climate_relevance": "Climate change appears only in the job title of a government official; the text does not discuss climate change or connect it to the flooding.",
+    "reason": "The article focuses on emergency relief and flood recovery. The sole climate-related reference is incidental and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f80a9e603b9e219efe0aeebcd4f5ee112726b419d72c2313ba709ce54edd98f4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "325df30fb71c3d87b5c09b800b04352fe7be8e4be4120c838cfde603891d1d2d",
+    "raw_response_text_sha256": "eae95bc6539902eddf2dc38f9232cd904f68e68fa9be0714872508a58d002072"
+  },
+  "api_metadata": {
+    "id": "resp_080f32400c65c8f9006b061e76c6e487d2ae9837fac22800eb",
+    "model": "gpt-6-luna",
+    "created_at": 1795563126.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1072,
+      "input_tokens_details": {
+        "cache_write_tokens": 1069,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1069
+        }
+      },
+      "output_tokens": 175,
+      "output_tokens_details": {
+        "reasoning_tokens": 36
+      },
+      "total_tokens": 1247
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Government relief distribution to flood victims in Kogi State, Nigeria\",\n  \"climate_relevance\": \"Climate change appears only in the job title of a government official; the text does not discuss climate change or connect it to the flooding.\",\n  \"reason\": \"The article focuses on emergency relief and flood recovery. The sole climate-related reference is incidental and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:32:08Z",
+  "duration_seconds": 1.643,
+  "error": null
+}

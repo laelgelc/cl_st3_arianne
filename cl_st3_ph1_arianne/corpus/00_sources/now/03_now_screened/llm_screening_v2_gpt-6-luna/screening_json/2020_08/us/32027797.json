@@ -1,0 +1,77 @@
+{
+  "article_id": "32027797",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/32027797.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/32027797.json"
+  },
+  "manifest_row": {
+    "article_id": "32027797",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/32027797.txt",
+    "now_field_2": "1404",
+    "date_original": "20-08-20",
+    "date_iso": "2020-08-20",
+    "source_name": "mercurynews.com",
+    "url": "https://www.mercurynews.com/2020/08/20/historic-buildings-destroyed-at-big-basin-redwoods-state-park/",
+    "title": "Wildfire devastates Big Basin Redwoods State Park",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Wildfire damage to Big Basin Redwoods State Park and the condition of its redwood forests and facilities",
+    "climate_relevance": "Climate change appears only in a reporter biography listing topics the reporter has covered; the article does not discuss climate change or connect it to the fires.",
+    "reason": "The text is primarily a report on wildfire destruction and park recovery. The sole climate-change reference is incidental biographical boilerplate, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8f25d0e6001434ecb5054991f7a929a425286de86db896fa94cb05a79df4ab21",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f7b65bbad654538ffbc3c7fde160148311288db36ba8f73726ebdca5007742b8",
+    "raw_response_text_sha256": "35b252ae125dcd23e397ce53825b78b1c0552b8648ad42df2e1c18ff1ac6f97a"
+  },
+  "api_metadata": {
+    "id": "resp_0766bc26daf525bf006b061acf7cb487d2ab282d447415d683",
+    "model": "gpt-6-luna",
+    "created_at": 1795562191.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2350,
+      "input_tokens_details": {
+        "cache_write_tokens": 2347,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2347
+        }
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 2620
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Wildfire damage to Big Basin Redwoods State Park and the condition of its redwood forests and facilities\",\n  \"climate_relevance\": \"Climate change appears only in a reporter biography listing topics the reporter has covered; the article does not discuss climate change or connect it to the fires.\",\n  \"reason\": \"The text is primarily a report on wildfire destruction and park recovery. The sole climate-change reference is incidental biographical boilerplate, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:16:33Z",
+  "duration_seconds": 1.749,
+  "error": null
+}

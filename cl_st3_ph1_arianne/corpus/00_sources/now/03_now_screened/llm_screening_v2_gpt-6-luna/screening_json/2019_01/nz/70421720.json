@@ -1,0 +1,77 @@
+{
+  "article_id": "70421720",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/nz/70421720.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/nz/70421720.json"
+  },
+  "manifest_row": {
+    "article_id": "70421720",
+    "group": "2019_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/nz/70421720.txt",
+    "now_field_2": "648",
+    "date_original": "19-01-15",
+    "date_iso": "2019-01-15",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/WO1901/S00059/two-malaysian-companies-to-develop-low-gi-roti-canai.htm",
+    "title": "Two Malaysian Companies to Develop Low GI Roti Canai",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A partnership to develop and market low-glycemic roti canai",
+    "climate_relevance": "Climate change appears only in an unrelated “ALSO” teaser about a UN climate conference and climate disasters, not in the main article.",
+    "reason": "The identifiable main article discusses food products, glycemic index, and obesity. The climate-related text is a separate, brief teaser and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "91d8d298adaa177ae6d6592c135c9c2240c901ce4f19cce4cd72a250ef354ce0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ea438313306d78ee1d684e15cd6f21b062e0eacc259ab08184e0d177aa29eca9",
+    "raw_response_text_sha256": "52c8405f0e9201fdf1cb89581fcf4ce39d46086e48179485e811adbd89db2352"
+  },
+  "api_metadata": {
+    "id": "resp_0fa33aea02c8421c006b063c73e46887d1ae6a0e005c0e0409",
+    "model": "gpt-6-luna",
+    "created_at": 1795570803.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1363,
+      "input_tokens_details": {
+        "cache_write_tokens": 1360,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1360
+        }
+      },
+      "output_tokens": 209,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 1572
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A partnership to develop and market low-glycemic roti canai\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated “ALSO” teaser about a UN climate conference and climate disasters, not in the main article.\",\n  \"reason\": \"The identifiable main article discusses food products, glycemic index, and obesity. The climate-related text is a separate, brief teaser and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:05Z",
+  "duration_seconds": 1.999,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "82112413",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82112413.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82112413.json"
+  },
+  "manifest_row": {
+    "article_id": "82112413",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82112413.txt",
+    "now_field_2": "177",
+    "date_original": "19-11-12",
+    "date_iso": "2019-11-12",
+    "source_name": "WAGMTV",
+    "url": "https://www.wagmtv.com/content/news/Superbug-Being-Estimated-To-Be-Huge-Hazard-On-Canadians-Health--564797092.html",
+    "title": "Superbug Being Estimated To Be Huge Hazard On Canadians' Health",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Antimicrobial resistance and its projected health and economic impacts in Canada",
+    "climate_relevance": "Climate change appears in a comparison of the urgency of antimicrobial resistance, but is not discussed further.",
+    "reason": "The main article concerns antimicrobial resistance. Its single comparison with climate change is meaningful but too brief to make the text core climate coverage. The text also includes an apparently unrelated water-advisory caption and FCC accessibility boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bfb9245ddecb37f1c0cd0a71be7c9f5f8dcc51fdcd8be7b9733f274c08b594e0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fff20d652da7a916911380ca71117ddd2a79ceb727f84b9cf44078ba16f21c9c",
+    "raw_response_text_sha256": "bfa9862fb7ebd580d72f1b9ba4c82d7c20253814c1a5585a0ef745396d290d4b"
+  },
+  "api_metadata": {
+    "id": "resp_0eb76fb54603be93006b06481382c087d1be45e22bfcad9548",
+    "model": "gpt-6-luna",
+    "created_at": 1795573779.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 735,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 279,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 1014
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Antimicrobial resistance and its projected health and economic impacts in Canada\",\n  \"climate_relevance\": \"Climate change appears in a comparison of the urgency of antimicrobial resistance, but is not discussed further.\",\n  \"reason\": \"The main article concerns antimicrobial resistance. Its single comparison with climate change is meaningful but too brief to make the text core climate coverage. The text also includes an apparently unrelated water-advisory caption and FCC accessibility boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:29:41Z",
+  "duration_seconds": 2.483,
+  "error": null
+}

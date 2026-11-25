@@ -1,0 +1,77 @@
+{
+  "article_id": "42023929",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/gb/42023929.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/gb/42023929.json"
+  },
+  "manifest_row": {
+    "article_id": "42023929",
+    "group": "2020_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/gb/42023929.txt",
+    "now_field_2": "982",
+    "date_original": "20-06-02",
+    "date_iso": "2020-06-02",
+    "source_name": "fool.co.uk",
+    "url": "https://www.fool.co.uk/investing/2020/06/01/ftse-100-stock-in-focus-is-the-rolls-royce-share-price-a-good-buy/",
+    "title": "FTSE 100 stock in focus: is the Rolls-Royce share price a ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "passing",
+    "main_topic": "Whether Rolls-Royce shares are a good investment",
+    "climate_relevance": "Climate change is briefly listed as one of several challenges facing the travel and aerospace industry, without explanation or discussion.",
+    "reason": "The article is primarily investment advice about Rolls-Royce. Its single vague climate-change reference does not provide meaningful material for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "99939d3d9bd343d9e03f219c93904c38e5d385d11a48141eaaef414cb612ef90",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5bda00e0df40af3b104a27b6cf7a8670badd48d9540af61742d5f9eb547d12f4",
+    "raw_response_text_sha256": "16d089a08d0b5e4c947ef92376742cb3f56a5b81134fe28f98c153fd22e58cba"
+  },
+  "api_metadata": {
+    "id": "resp_0e397ed266439843006b06240d226c87d293aa6dc878e13e4f",
+    "model": "gpt-6-luna",
+    "created_at": 1795564557.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1724,
+      "input_tokens_details": {
+        "cache_write_tokens": 1721,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1721
+        }
+      },
+      "output_tokens": 356,
+      "output_tokens_details": {
+        "reasoning_tokens": 221
+      },
+      "total_tokens": 2080
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Whether Rolls-Royce shares are a good investment\",\n  \"climate_relevance\": \"Climate change is briefly listed as one of several challenges facing the travel and aerospace industry, without explanation or discussion.\",\n  \"reason\": \"The article is primarily investment advice about Rolls-Royce. Its single vague climate-change reference does not provide meaningful material for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:56:00Z",
+  "duration_seconds": 3.257,
+  "error": null
+}

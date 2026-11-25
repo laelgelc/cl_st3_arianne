@@ -1,0 +1,77 @@
+{
+  "article_id": "30121474",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/in/30121474.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/in/30121474.json"
+  },
+  "manifest_row": {
+    "article_id": "30121474",
+    "group": "2018_10",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/in/30121474.txt",
+    "now_field_2": "405",
+    "date_original": "18-10-06",
+    "date_iso": "2018-10-06",
+    "source_name": "Times of India",
+    "url": "https://timesofindia.indiatimes.com/city/ahmedabad/ahmed-patel-writes-to-pm-modi-over-gir-lions-deaths/articleshow/66097701.cms",
+    "title": "Ahmed Patel writes to PM Modi over deaths of Gir lions",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-in-1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Political proposals to protect Gir lions and address threats to their survival",
+    "climate_relevance": "Climate change appears only in the formal name of the Union Ministry of Environment, Forests and Climate Change; the article discusses wildlife conservation, habitat protection, tourism, and lion deaths without meaningful climate discourse.",
+    "reason": "The climate reference is part of a ministry name and is incidental to the article’s focus on Gir lion conservation.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3858a9c2f50e9284aa3ade18d98b1e704a322fbbccf2bb775d7e56e39f606c90",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a59b65a48668cc82834d38703c182c2aeae578f1ba682887ca84c256f4cd7eba",
+    "raw_response_text_sha256": "2f9e7a775fbefa81d56d45a95d65082e23e6c61c5108113c477df8508d005fc7"
+  },
+  "api_metadata": {
+    "id": "resp_06391b969ea5767c006b06134593c887d2a906700d1b84f783",
+    "model": "gpt-6-luna",
+    "created_at": 1795560261.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1003,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "reasoning_tokens": 36
+      },
+      "total_tokens": 1193
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Political proposals to protect Gir lions and address threats to their survival\",\n  \"climate_relevance\": \"Climate change appears only in the formal name of the Union Ministry of Environment, Forests and Climate Change; the article discusses wildlife conservation, habitat protection, tourism, and lion deaths without meaningful climate discourse.\",\n  \"reason\": \"The climate reference is part of a ministry name and is incidental to the article’s focus on Gir lion conservation.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:44:23Z",
+  "duration_seconds": 1.61,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "7044751",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/us/7044751.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/us/7044751.json"
+  },
+  "manifest_row": {
+    "article_id": "7044751",
+    "group": "2016_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/us/7044751.txt",
+    "now_field_2": "705",
+    "date_original": "16-01-10",
+    "date_iso": "2016-01-10",
+    "source_name": "Bloomberg",
+    "url": "http://www.bloomberg.com/politics/articles/2016-01-10/microsoft-s-nadella-gets-coveted-spot-for-obama-s-state-of-union",
+    "title": "Microsoft's Nadella Gets Box Seat for Obama's State of Union",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "The guests invited to attend President Obama's final State of the Union address, including Microsoft CEO Satya Nadella",
+    "climate_relevance": "Climate change appears only in a brief description of Nadella's environmental commitments.",
+    "reason": "The article focuses on the guest list and its political significance. It offers no further discussion of climate change, so the mention is too passing to contribute meaningfully to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "753652292d5dd92d478d3409b1fccee0ad82262c9926ddfeb13c8f84e40ca16f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4505f3bbd5cfa83ea70f93e56801ca1b08c7c1c9f118b2d516ef19800bced14b",
+    "raw_response_text_sha256": "d9f74562cfb197f9922a6b76737f2cba925dfdaf9450bd59f13cd1b1cf7a0708"
+  },
+  "api_metadata": {
+    "id": "resp_0bcb7cf5b28c0600006b063c94814c87d19dc79b6bba2f630f",
+    "model": "gpt-6-luna",
+    "created_at": 1795570836.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1390,
+      "input_tokens_details": {
+        "cache_write_tokens": 1387,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1387
+        }
+      },
+      "output_tokens": 349,
+      "output_tokens_details": {
+        "reasoning_tokens": 202
+      },
+      "total_tokens": 1739
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The guests invited to attend President Obama's final State of the Union address, including Microsoft CEO Satya Nadella\",\n  \"climate_relevance\": \"Climate change appears only in a brief description of Nadella's environmental commitments.\",\n  \"reason\": \"The article focuses on the guest list and its political significance. It offers no further discussion of climate change, so the mention is too passing to contribute meaningfully to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:39Z",
+  "duration_seconds": 3.256,
+  "error": null
+}

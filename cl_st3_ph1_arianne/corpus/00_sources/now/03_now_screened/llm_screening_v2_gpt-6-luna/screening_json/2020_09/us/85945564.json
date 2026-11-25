@@ -1,0 +1,77 @@
+{
+  "article_id": "85945564",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/85945564.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/85945564.json"
+  },
+  "manifest_row": {
+    "article_id": "85945564",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/85945564.txt",
+    "now_field_2": "1208",
+    "date_original": "20-09-15",
+    "date_iso": "2020-09-15",
+    "source_name": "GeekWire on MSN.com",
+    "url": "https://www.msn.com/en-us/news/us/bill-gates-sr-1925-2020-microsoft-co-founder-e2-80-99s-father-made-his-own-mark-on-seattle-and-the-world/ar-BB194Skg",
+    "title": "Bill Gates Sr., 1925-2020: Microsoft co-founder's father made his own mark on Seattle and the world",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "Obituary and career profile of Bill Gates Sr.",
+    "climate_relevance": "Climate change is mentioned once, as a brief attribution linking climate change to the ferocity of wildfires.",
+    "reason": "The article is an obituary focused on Gates Sr.'s life and legacy. The single climate reference is incidental and does not develop climate-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1b08dc558123ccc8c75d960997253a97d985e36407c0f3e2f81c6ef8510768c1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9bbaa1ec7c3e2b915c97319b7164dfd64e48fe62479e431398d9cdaf907bf76e",
+    "raw_response_text_sha256": "4af1739b559dc5182d1bedb60197258ac19b70eea0393a8572a02cd008a13ba7"
+  },
+  "api_metadata": {
+    "id": "resp_0193eea74d57ee50006b064db3a05087d18e977724eb42fac9",
+    "model": "gpt-6-luna",
+    "created_at": 1795575219.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2073,
+      "input_tokens_details": {
+        "cache_write_tokens": 2070,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2070
+        }
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 2371
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Obituary and career profile of Bill Gates Sr.\",\n  \"climate_relevance\": \"Climate change is mentioned once, as a brief attribution linking climate change to the ferocity of wildfires.\",\n  \"reason\": \"The article is an obituary focused on Gates Sr.'s life and legacy. The single climate reference is incidental and does not develop climate-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:53:42Z",
+  "duration_seconds": 3.165,
+  "error": null
+}

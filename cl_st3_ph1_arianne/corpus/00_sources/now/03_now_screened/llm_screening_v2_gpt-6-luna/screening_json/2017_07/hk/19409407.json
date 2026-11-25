@@ -1,0 +1,77 @@
+{
+  "article_id": "19409407",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/hk/19409407.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/hk/19409407.json"
+  },
+  "manifest_row": {
+    "article_id": "19409407",
+    "group": "2017_07",
+    "country_code": "hk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/hk/19409407.txt",
+    "now_field_2": "551",
+    "date_original": "17-07-10",
+    "date_iso": "2017-07-10",
+    "source_name": "EJ Insight",
+    "url": "http://www.ejinsight.com/20170710-new-institute-to-lure-young-blood-into-construction-sector/",
+    "title": "New institute to lure young blood into construction sector",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-HK.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Attracting young people to Hong Kong's construction industry",
+    "climate_relevance": "The identifiable main article concerns construction-sector recruitment and does not discuss climate change. A fragment at the end mentions climate change, sustainability, and carbon emissions, but appears to come from an unrelated, truncated snippet.",
+    "reason": "Climate-related wording occurs only in a fragment separate from the identifiable main article, so it does not meaningfully contribute to the main article's climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "959612af95e3f17c965047bc83df4e9def339727a24a0906a6a7fc0e9ee859b7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ce805ac8dc9c87a48da7cdb0f2275195dc28a04b4afc93ab6e0ac87d4a08af64",
+    "raw_response_text_sha256": "a6a0117e040d8c8ceb2bfb1539fef7603694652a87748e29ee89e201749a113a"
+  },
+  "api_metadata": {
+    "id": "resp_0cc52fb5e8524d74006b060beea75487d2a1a3e5926a0d03a9",
+    "model": "gpt-6-luna",
+    "created_at": 1795558382.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1166,
+      "input_tokens_details": {
+        "cache_write_tokens": 1163,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1163
+        }
+      },
+      "output_tokens": 388,
+      "output_tokens_details": {
+        "reasoning_tokens": 226
+      },
+      "total_tokens": 1554
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Attracting young people to Hong Kong's construction industry\",\n  \"climate_relevance\": \"The identifiable main article concerns construction-sector recruitment and does not discuss climate change. A fragment at the end mentions climate change, sustainability, and carbon emissions, but appears to come from an unrelated, truncated snippet.\",\n  \"reason\": \"Climate-related wording occurs only in a fragment separate from the identifiable main article, so it does not meaningfully contribute to the main article's climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:13:05Z",
+  "duration_seconds": 3.122,
+  "error": null
+}

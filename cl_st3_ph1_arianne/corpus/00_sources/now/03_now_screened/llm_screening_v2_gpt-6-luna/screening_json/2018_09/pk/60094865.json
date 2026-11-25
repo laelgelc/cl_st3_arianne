@@ -1,0 +1,77 @@
+{
+  "article_id": "60094865",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/pk/60094865.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/pk/60094865.json"
+  },
+  "manifest_row": {
+    "article_id": "60094865",
+    "group": "2018_09",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/pk/60094865.txt",
+    "now_field_2": "263",
+    "date_original": "18-09-27",
+    "date_iso": "2018-09-27",
+    "source_name": "The News International",
+    "url": "https://www.thenews.com.pk/print/374035-wetlands-disappearing-faster-than-forests",
+    "title": "Wetlands disappearing faster than forests",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-pk.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Wetland loss and conservation",
+    "climate_relevance": "The text identifies climate change as one potential impact of wetland loss, but does not develop the connection.",
+    "reason": "The article focuses on disappearing wetlands and a conservation report. Climate change appears in a meaningful but brief reference to the consequences of wetland loss.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "af3e5f2c797cf487164fa699b92380c285a2a5cde40d79cf300d5c6a0b4c0622",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7ea5aaf439e149f99c3169c5603318f01e3996fc7fe9b91de8d88948a88734ac",
+    "raw_response_text_sha256": "62981a39952ed6b74d817a5e90e88fd9f6484e9938607845850ac8ecede3bc90"
+  },
+  "api_metadata": {
+    "id": "resp_0cae63baedb71170006b0630fdb46487d1bfec20fb023b8d09",
+    "model": "gpt-6-luna",
+    "created_at": 1795567869.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 864,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 405,
+      "output_tokens_details": {
+        "reasoning_tokens": 275
+      },
+      "total_tokens": 1269
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Wetland loss and conservation\",\n  \"climate_relevance\": \"The text identifies climate change as one potential impact of wetland loss, but does not develop the connection.\",\n  \"reason\": \"The article focuses on disappearing wetlands and a conservation report. Climate change appears in a meaningful but brief reference to the consequences of wetland loss.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:51:12Z",
+  "duration_seconds": 3.446,
+  "error": null
+}

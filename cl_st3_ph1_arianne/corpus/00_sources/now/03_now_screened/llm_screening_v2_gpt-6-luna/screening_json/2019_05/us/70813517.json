@@ -1,0 +1,77 @@
+{
+  "article_id": "70813517",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/us/70813517.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/us/70813517.json"
+  },
+  "manifest_row": {
+    "article_id": "70813517",
+    "group": "2019_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/us/70813517.txt",
+    "now_field_2": "339",
+    "date_original": "19-05-28",
+    "date_iso": "2019-05-28",
+    "source_name": "Free Malaysia Today",
+    "url": "https://www.freemalaysiatoday.com/category/nation/2019/05/28/return-to-sender-malaysia-to-send-back-60-containers-of-waste-to-exporters/",
+    "title": "Return to sender: Malaysia to send back 60 containers of waste to ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Malaysia returning illegally imported plastic waste to its countries of origin",
+    "climate_relevance": "Climate change appears only in the minister's official portfolio title; the text discusses plastic waste and environmental enforcement without meaningful climate discourse.",
+    "reason": "The article is about illegal plastic-waste imports and their return, not climate change or its causes, impacts, mitigation, adaptation, or policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b33d4c24afbb8647d6512bda08233aa487670611cd5691374c2876334a1a59a4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7b69609ce8b0112f6aeb80608051f3a9f80def34a24f17b580ab3e4ae1e9b479",
+    "raw_response_text_sha256": "606c61ab8cfee51bcc3164f5444652f02bb593e5e59804bdd36ac1ab449b1424"
+  },
+  "api_metadata": {
+    "id": "resp_095ce5b948fce6b5006b063f46299487d1a6eec1ce01ae44ef",
+    "model": "gpt-6-luna",
+    "created_at": 1795571526.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 932,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 1148
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Malaysia returning illegally imported plastic waste to its countries of origin\",\n  \"climate_relevance\": \"Climate change appears only in the minister's official portfolio title; the text discusses plastic waste and environmental enforcement without meaningful climate discourse.\",\n  \"reason\": \"The article is about illegal plastic-waste imports and their return, not climate change or its causes, impacts, mitigation, adaptation, or policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:52:08Z",
+  "duration_seconds": 2.372,
+  "error": null
+}

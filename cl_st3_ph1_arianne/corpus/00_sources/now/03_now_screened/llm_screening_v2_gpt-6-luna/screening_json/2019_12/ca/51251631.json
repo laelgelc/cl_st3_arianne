@@ -1,0 +1,77 @@
+{
+  "article_id": "51251631",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/ca/51251631.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/ca/51251631.json"
+  },
+  "manifest_row": {
+    "article_id": "51251631",
+    "group": "2019_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/ca/51251631.txt",
+    "now_field_2": "1129",
+    "date_original": "19-12-07",
+    "date_iso": "2019-12-07",
+    "source_name": "ca.finance.yahoo.com",
+    "url": "https://ca.finance.yahoo.com/news/meg-energy-announces-successful-completion-103000802.html",
+    "title": "MEG Energy announces successful completion of its 2020 ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-ca1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "MEG's bitumen production guidance and forward-looking statements",
+    "climate_relevance": "Climate change appears only in boilerplate references to climate policies and a brief corporate description claiming lower carbon emissions.",
+    "reason": "The release is about oil production guidance. Its climate references are incidental and do not develop meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e7386af37cb9015d4f3a6a0e20340e910be789438397226aec491fa4c7e1e686",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ee6719e1e4959beb5821d7eaa13989192d6dba8e8152f7f01cc7b31a0b389419",
+    "raw_response_text_sha256": "9588a9a0975322046eb0844485db883de4569c325e995177e5ac8abc514d6499"
+  },
+  "api_metadata": {
+    "id": "resp_0cc0a8250349627e006b062ce2a61087d1b2ef9285c0abd666",
+    "model": "gpt-6-luna",
+    "created_at": 1795566818.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1986,
+      "input_tokens_details": {
+        "cache_write_tokens": 1983,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1983
+        }
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 2273
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"MEG's bitumen production guidance and forward-looking statements\",\n  \"climate_relevance\": \"Climate change appears only in boilerplate references to climate policies and a brief corporate description claiming lower carbon emissions.\",\n  \"reason\": \"The release is about oil production guidance. Its climate references are incidental and do not develop meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:33:41Z",
+  "duration_seconds": 2.718,
+  "error": null
+}

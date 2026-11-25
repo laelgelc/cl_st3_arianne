@@ -1,0 +1,77 @@
+{
+  "article_id": "81633290",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81633290.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81633290.json"
+  },
+  "manifest_row": {
+    "article_id": "81633290",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81633290.txt",
+    "now_field_2": "263",
+    "date_original": "19-10-16",
+    "date_iso": "2019-10-16",
+    "source_name": "Las Vegas Review-Journal",
+    "url": "https://www.reviewjournal.com/opinion/letters/letter-fiddling-while-california-burns-1872264/",
+    "title": "LETTER: Fiddling while California burns",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us5.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.88,
+    "climate_role": "substantial",
+    "main_topic": "A letter about California wildfires, their causes, and responsibility for power outages and fire risk.",
+    "climate_relevance": "The letter directly disputes officials' attribution of extreme fires to climate change and argues that land-management practices and fire suppression are the real causes.",
+    "reason": "Climate change is a meaningful part of the letter's discussion of wildfire causes and public debate, even though the author rejects it as an explanation. The final sentence about school lunch periods appears unrelated to the letter.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f79cfd5333780e31138be082046b5d400abd333e91aa1b21f2636a700784d641",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "56a6349dcd28c228081837ab176cfb140eda1bfd11a82ffcb23c726e797433fe",
+    "raw_response_text_sha256": "ff38b3cea6bfd08739992c645b4d7be5d880b87127f67203a138c3ef4f3cef7b"
+  },
+  "api_metadata": {
+    "id": "resp_08cc346da38619e4006b064789ec2887d1879178a2e80e3a56",
+    "model": "gpt-6-luna",
+    "created_at": 1795573642.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 853,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 1178
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"A letter about California wildfires, their causes, and responsibility for power outages and fire risk.\",\n  \"climate_relevance\": \"The letter directly disputes officials' attribution of extreme fires to climate change and argues that land-management practices and fire suppression are the real causes.\",\n  \"reason\": \"Climate change is a meaningful part of the letter's discussion of wildfire causes and public debate, even though the author rejects it as an explanation. The final sentence about school lunch periods appears unrelated to the letter.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:27:24Z",
+  "duration_seconds": 2.591,
+  "error": null
+}

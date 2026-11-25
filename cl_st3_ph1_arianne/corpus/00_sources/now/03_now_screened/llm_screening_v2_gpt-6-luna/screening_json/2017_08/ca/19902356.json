@@ -1,0 +1,77 @@
+{
+  "article_id": "19902356",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/ca/19902356.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/ca/19902356.json"
+  },
+  "manifest_row": {
+    "article_id": "19902356",
+    "group": "2017_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/ca/19902356.txt",
+    "now_field_2": "540",
+    "date_original": "17-08-07",
+    "date_iso": "2017-08-07",
+    "source_name": "The Sarnia Journal",
+    "url": "http://thesarniajournal.ca/soil-dumped-at-the-airport-earning-heaps-of-criticism/",
+    "title": "Soil dumped at the airport earning heaps of criticism",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Complaints and delays concerning contaminated dredged soil dumped at the airport",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Environment and Climate Change. Weather and shoreline erosion are mentioned without meaningful discussion of climate change.",
+    "reason": "The article focuses on harbour dredging, soil disposal, and the resulting eyesore and costs. It contains no substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a41a77c60bfb9ba44f69db20be59a38f022179a9fbd3a74c3ad4bc39352d5a3c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e494fa866e8696324cdffefa1522e3a27e8dc5fe50de247136454a8681a73b54",
+    "raw_response_text_sha256": "9b46a3afce10d32a3d2bb65e592fee293c7a5ab65ae8585bc44e1886d22e9d94"
+  },
+  "api_metadata": {
+    "id": "resp_0b1dd2df079359ec006b060c9a951c87d2b5cafeaae3868b56",
+    "model": "gpt-6-luna",
+    "created_at": 1795558554.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1223,
+      "input_tokens_details": {
+        "cache_write_tokens": 1220,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1220
+        }
+      },
+      "output_tokens": 189,
+      "output_tokens_details": {
+        "reasoning_tokens": 41
+      },
+      "total_tokens": 1412
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Complaints and delays concerning contaminated dredged soil dumped at the airport\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Environment and Climate Change. Weather and shoreline erosion are mentioned without meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on harbour dredging, soil disposal, and the resulting eyesore and costs. It contains no substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:15:56Z",
+  "duration_seconds": 1.955,
+  "error": null
+}

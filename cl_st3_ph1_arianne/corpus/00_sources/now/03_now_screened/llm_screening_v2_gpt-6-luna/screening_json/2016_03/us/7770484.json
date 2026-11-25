@@ -1,0 +1,77 @@
+{
+  "article_id": "7770484",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_03/us/7770484.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_03/us/7770484.json"
+  },
+  "manifest_row": {
+    "article_id": "7770484",
+    "group": "2016_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_03/us/7770484.txt",
+    "now_field_2": "1139",
+    "date_original": "16-03-18",
+    "date_iso": "2016-03-18",
+    "source_name": "Phys.Org",
+    "url": "http://phys.org/news/2016-03-legacy-mercury-lake-superior.html",
+    "title": "The legacy of mercury in Lake Superior",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-03-sls/16-03-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Mercury contamination in Lake Superior linked to historical mining",
+    "climate_relevance": "The main article focuses on mercury deposition, methylation, and contamination from mining. Climate change appears only in unrelated related-story snippets.",
+    "reason": "The identifiable main article contains no meaningful climate-change discourse; climate-related references occur only in unrelated linked-story excerpts.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "821090030e8e8275554fa3ce1c64edf8169d538752d92f3f4c269816cd90a252",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ed9217ec01e6849944a7412ca94678fcfee7ee0db088307bf32255524f0f8420",
+    "raw_response_text_sha256": "e1ba6dc9d3f8a1bb8f25e757ca7babcc399745546033c1d9624dc455a92313ec"
+  },
+  "api_metadata": {
+    "id": "resp_06dd6c0faf9f9788006b06466604e887d18f64999767924862",
+    "model": "gpt-6-luna",
+    "created_at": 1795573350.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1931,
+      "input_tokens_details": {
+        "cache_write_tokens": 1928,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1928
+        }
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 2164
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Mercury contamination in Lake Superior linked to historical mining\",\n  \"climate_relevance\": \"The main article focuses on mercury deposition, methylation, and contamination from mining. Climate change appears only in unrelated related-story snippets.\",\n  \"reason\": \"The identifiable main article contains no meaningful climate-change discourse; climate-related references occur only in unrelated linked-story excerpts.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:22:32Z",
+  "duration_seconds": 2.43,
+  "error": null
+}

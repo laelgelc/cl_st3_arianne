@@ -1,0 +1,77 @@
+{
+  "article_id": "70408575",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/nz/70408575.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/nz/70408575.json"
+  },
+  "manifest_row": {
+    "article_id": "70408575",
+    "group": "2019_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/nz/70408575.txt",
+    "now_field_2": "1710",
+    "date_original": "19-01-11",
+    "date_iso": "2019-01-11",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/WO1901/S00045/proposal-to-protect-elephants-at-upcoming-cites-conference.htm",
+    "title": "Proposal to protect elephants at upcoming CITES conference",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "CITES proposals to protect wildlife from extinction, especially efforts to curb elephant ivory trafficking and regulate trade in other species.",
+    "climate_relevance": "Climate change is identified in a quotation as one of several human-driven pressures pushing wildlife toward extinction, but it is not developed elsewhere in the main article.",
+    "reason": "The main article focuses on wildlife conservation, poaching, and international trade regulation. Its explicit reference to climate change as a threat to species is meaningful but brief, so the text is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b0ed91e21ac2d10270011516615c574eb148cb5560faa52ab442aa5818edcc2c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e87f1fecf64ebbac69561bdcacc15457c9df78a08eb5bcd487ad41d0239fce17",
+    "raw_response_text_sha256": "4681d57837ea413616e0da904a6fd285d866bb7414ebe80828940278846109a3"
+  },
+  "api_metadata": {
+    "id": "resp_0d6438f48ac530f8006b063c6414cc87d1a147bd8dd23018d1",
+    "model": "gpt-6-luna",
+    "created_at": 1795570788.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2747,
+      "input_tokens_details": {
+        "cache_write_tokens": 2744,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2744
+        }
+      },
+      "output_tokens": 323,
+      "output_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "total_tokens": 3070
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"CITES proposals to protect wildlife from extinction, especially efforts to curb elephant ivory trafficking and regulate trade in other species.\",\n  \"climate_relevance\": \"Climate change is identified in a quotation as one of several human-driven pressures pushing wildlife toward extinction, but it is not developed elsewhere in the main article.\",\n  \"reason\": \"The main article focuses on wildlife conservation, poaching, and international trade regulation. Its explicit reference to climate change as a threat to species is meaningful but brief, so the text is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:39:51Z",
+  "duration_seconds": 3.453,
+  "error": null
+}

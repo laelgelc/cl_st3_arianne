@@ -1,0 +1,77 @@
+{
+  "article_id": "22836521",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_01/gb/22836521.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_01/gb/22836521.json"
+  },
+  "manifest_row": {
+    "article_id": "22836521",
+    "group": "2018_01",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_01/gb/22836521.txt",
+    "now_field_2": "1727",
+    "date_original": "18-01-19",
+    "date_iso": "2018-01-19",
+    "source_name": "The Independent",
+    "url": "http://www.independent.co.uk/news/world/americas/donald-trump-first-year-inauguration-anniversary-russia-vladimir-putin-relations-moscow-a8168801.html",
+    "title": "US-Russia relations were fraught in Trump's inaugural year, but they ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
+    "metadata_article_files": "[\"text-18-01/text_18-01-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "US–Russia relations during the first year of the Trump presidency",
+    "climate_relevance": "Climate change appears only in a photo-gallery caption about Putin expressing concern for polar bears.",
+    "reason": "The article is principally about political tensions and sanctions between the US and Russia. The sole climate reference is incidental to an unrelated image caption and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cc65a6b28dfe38a56fa1f7d98e1b79ab12352e71437e084034be5fc8cfa6d065",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9a734d0ef548d578c57466f16d179084fa688016b87a2abdf1815c880350820b",
+    "raw_response_text_sha256": "c0b2a70c88b281c8445909a8544cf27ee79ffdd7d439db2e4efe891ba3d43592"
+  },
+  "api_metadata": {
+    "id": "resp_067ae396285a7ae5006b0610959f0487d290e0fa053b8844a2",
+    "model": "gpt-6-luna",
+    "created_at": 1795559573.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2955,
+      "input_tokens_details": {
+        "cache_write_tokens": 2952,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2952
+        }
+      },
+      "output_tokens": 371,
+      "output_tokens_details": {
+        "reasoning_tokens": 229
+      },
+      "total_tokens": 3326
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"US–Russia relations during the first year of the Trump presidency\",\n  \"climate_relevance\": \"Climate change appears only in a photo-gallery caption about Putin expressing concern for polar bears.\",\n  \"reason\": \"The article is principally about political tensions and sanctions between the US and Russia. The sole climate reference is incidental to an unrelated image caption and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:32:56Z",
+  "duration_seconds": 2.828,
+  "error": null
+}

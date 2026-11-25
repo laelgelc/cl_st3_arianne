@@ -1,0 +1,77 @@
+{
+  "article_id": "86076572",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86076572.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86076572.json"
+  },
+  "manifest_row": {
+    "article_id": "86076572",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86076572.txt",
+    "now_field_2": "519",
+    "date_original": "20-10-05",
+    "date_iso": "2020-10-05",
+    "source_name": "CBS News",
+    "url": "https://www.cbsnews.com/news/amazon-workers-protest-jeff-bezos-house/",
+    "title": "Amazon workers outside Jeff Bezos' home call for a Prime Day boycott",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Amazon workers' labor conditions and protests against the company",
+    "climate_relevance": "Climate change appears only in a brief description of Extinction Rebellion, one of the groups at the protest.",
+    "reason": "The article focuses on worker pay, safety, and Amazon's business practices. It offers no substantive discussion of climate change beyond identifying one participating group's climate activism.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d625f89a22f2def8ddfe65ddb5ab3301c778ba8a3c0fd939e334e4b6319e4995",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fd794b395ae9fdcb41191a1630c760e334dc67878e841aac44cb422feef21538",
+    "raw_response_text_sha256": "1ca405216b210a62311e5b956c4568349e56449625bee689d6602a26acb512e7"
+  },
+  "api_metadata": {
+    "id": "resp_0efcc235dd48e9c1006b064e4fac1c87d1b0e173f20d493da7",
+    "model": "gpt-6-luna",
+    "created_at": 1795575375.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1159,
+      "input_tokens_details": {
+        "cache_write_tokens": 1156,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1156
+        }
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1380
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Amazon workers' labor conditions and protests against the company\",\n  \"climate_relevance\": \"Climate change appears only in a brief description of Extinction Rebellion, one of the groups at the protest.\",\n  \"reason\": \"The article focuses on worker pay, safety, and Amazon's business practices. It offers no substantive discussion of climate change beyond identifying one participating group's climate activism.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:56:17Z",
+  "duration_seconds": 2.367,
+  "error": null
+}

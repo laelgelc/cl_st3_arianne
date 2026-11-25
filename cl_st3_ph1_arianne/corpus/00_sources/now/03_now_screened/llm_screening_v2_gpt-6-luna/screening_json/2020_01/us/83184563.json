@@ -1,0 +1,77 @@
+{
+  "article_id": "83184563",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83184563.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83184563.json"
+  },
+  "manifest_row": {
+    "article_id": "83184563",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83184563.txt",
+    "now_field_2": "244",
+    "date_original": "20-01-11",
+    "date_iso": "2020-01-11",
+    "source_name": "WTOK",
+    "url": "https://www.wtok.com/content/news/2-Aussie-wildfires-merge-into-inferno-man-seriously-burned-566909131.html",
+    "title": "2 Aussie wildfires merge into inferno; man seriously burned",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us6.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "The Australian wildfire crisis and a firefighter's death",
+    "climate_relevance": "The report links climate change to fire danger and mentions government efforts to adapt and build resilience, but most of the article focuses on the immediate wildfire crisis.",
+    "reason": "Climate change has a meaningful role in the framing and discussion of adaptation, though it is not the article's main subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3f1d56578ec1065b9c2221f6dde84b5ba9a9e256b27dc2c4abe6e8ebf79d084f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fdcbade40051454391522fb84ac71a47560c3ec36cc676a5d2304b352d1ba0b3",
+    "raw_response_text_sha256": "c0d5bac18eb47df3e2a5c3e7302e144316d43d295581e374931f33c1240d5306"
+  },
+  "api_metadata": {
+    "id": "resp_090101b893537f7d006b0649434c8c87d1807ea5456c0cadc3",
+    "model": "gpt-6-luna",
+    "created_at": 1795574083.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 866,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 336,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 1202
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The Australian wildfire crisis and a firefighter's death\",\n  \"climate_relevance\": \"The report links climate change to fire danger and mentions government efforts to adapt and build resilience, but most of the article focuses on the immediate wildfire crisis.\",\n  \"reason\": \"Climate change has a meaningful role in the framing and discussion of adaptation, though it is not the article's main subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:34:46Z",
+  "duration_seconds": 2.971,
+  "error": null
+}

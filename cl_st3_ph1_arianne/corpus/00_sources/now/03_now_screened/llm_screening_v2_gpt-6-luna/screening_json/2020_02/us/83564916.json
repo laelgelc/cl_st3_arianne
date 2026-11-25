@@ -1,0 +1,77 @@
+{
+  "article_id": "83564916",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/83564916.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/83564916.json"
+  },
+  "manifest_row": {
+    "article_id": "83564916",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/83564916.txt",
+    "now_field_2": "737",
+    "date_original": "20-02-01",
+    "date_iso": "2020-02-01",
+    "source_name": "Wall Street Journal",
+    "url": "https://www.wsj.com/articles/trumps-gop-challengers-try-to-catch-voters-attention-11580588335",
+    "title": "Trump's GOP Challengers Try to Catch Voters' Attention",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Republican presidential primary challengers Joe Walsh and Bill Weld in Iowa",
+    "climate_relevance": "Climate change is listed among issues raised at a forum, but the article does not describe their views or develop the topic.",
+    "reason": "The article focuses on the GOP nomination contest and campaign strategy. Climate change receives only a passing mention, without meaningful discussion of climate policy or related issues.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "602443ca2ae60bf79b26ec3718a65a28efa8f8e8707f69947f2680b25fb9ec31",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "85d191e06e0f4804242b5e9839d6693573296c2fdeaf6f33ac95ed991f281444",
+    "raw_response_text_sha256": "d9fe93ba595b64bda9bc4b610182c88bd7a2cc48eaf8b64a9edfa9fdf3118a03"
+  },
+  "api_metadata": {
+    "id": "resp_0a8b848ea14da2bf006b0649c0ed8887d1a64687fde9353666",
+    "model": "gpt-6-luna",
+    "created_at": 1795574209.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1435,
+      "input_tokens_details": {
+        "cache_write_tokens": 1432,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1432
+        }
+      },
+      "output_tokens": 424,
+      "output_tokens_details": {
+        "reasoning_tokens": 282
+      },
+      "total_tokens": 1859
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Republican presidential primary challengers Joe Walsh and Bill Weld in Iowa\",\n  \"climate_relevance\": \"Climate change is listed among issues raised at a forum, but the article does not describe their views or develop the topic.\",\n  \"reason\": \"The article focuses on the GOP nomination contest and campaign strategy. Climate change receives only a passing mention, without meaningful discussion of climate policy or related issues.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:36:52Z",
+  "duration_seconds": 3.351,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50123842",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/au/50123842.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/au/50123842.json"
+  },
+  "manifest_row": {
+    "article_id": "50123842",
+    "group": "2018_10",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/au/50123842.txt",
+    "now_field_2": "1053",
+    "date_original": "18-10-14",
+    "date_iso": "2018-10-14",
+    "source_name": "The Sydney Morning Herald",
+    "url": "https://www.smh.com.au/politics/federal/fairfax-ipsos-poll-huge-majority-of-australians-oppose-laws-banning-gay-students-and-teachers-20181014-p509kv.html",
+    "title": "Fairfax-Ipsos poll: Huge majority of Australians oppose laws banning ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Religious schools’ exemptions from anti-discrimination law and treatment of LGBTI students and teachers",
+    "climate_relevance": "Climate change appears only in a brief list of topics debated during the previous month; the text gives no further climate-related discussion.",
+    "reason": "The article is about religious freedom and discrimination in schools. Its sole climate reference is a passing mention in a list of political issues, so it does not meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1125e32bfc034ac4f549896d87f45a740fdca5f08ae18cd7a2937f6e738d3d55",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9cb55be0b8ab105933f2edf3412d863525a3288f52893c56be97d5420b99cb9a",
+    "raw_response_text_sha256": "d31e53d2f1ad60c5804bb956f6d95ecae6c57d61f22bb433ed0470d95f9bd291"
+  },
+  "api_metadata": {
+    "id": "resp_0d7d871403b67fa6006b0627ac414c87d1a21135b7d5ae1ac2",
+    "model": "gpt-6-luna",
+    "created_at": 1795565484.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1821,
+      "input_tokens_details": {
+        "cache_write_tokens": 1818,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1818
+        }
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 2050
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Religious schools’ exemptions from anti-discrimination law and treatment of LGBTI students and teachers\",\n  \"climate_relevance\": \"Climate change appears only in a brief list of topics debated during the previous month; the text gives no further climate-related discussion.\",\n  \"reason\": \"The article is about religious freedom and discrimination in schools. Its sole climate reference is a passing mention in a list of political issues, so it does not meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:11:26Z",
+  "duration_seconds": 2.096,
+  "error": null
+}

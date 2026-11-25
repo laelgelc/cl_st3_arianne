@@ -1,0 +1,77 @@
+{
+  "article_id": "41920028",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_04/gb/41920028.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_04/gb/41920028.json"
+  },
+  "manifest_row": {
+    "article_id": "41920028",
+    "group": "2020_04",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_04/gb/41920028.txt",
+    "now_field_2": "411",
+    "date_original": "20-04-18",
+    "date_iso": "2020-04-18",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/boris-johnson-government-on-when-to-lift-coronavirus-lockdown-1-6613177",
+    "title": "Ministers torn between lifting coronavirus lockdown in May ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-04.txt\"]",
+    "metadata_article_files": "[\"text-20-04/20-04-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "COVID-19 lockdown and government exit strategies",
+    "climate_relevance": "Climate change appears only in repeated promotional descriptions of the publication's coverage, not in the article's substantive discussion.",
+    "reason": "The article focuses on coronavirus lockdown timing, transmission, and exit strategies. The climate-change mention is promotional boilerplate and provides no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "dc42961d27810b8ed2f9d5cf6f5ea1f9ff168a7687dd9861762de5c64393e065",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "578c27f3a2b3251a14dda157920f101470b53496caa275ae4be6ef29631caf62",
+    "raw_response_text_sha256": "d11dbb1adb0732902c5bf3cc40fb433963c865da9e0f37414fd8c51cd5996efa"
+  },
+  "api_metadata": {
+    "id": "resp_09e46eb7a4c50320006b06238f101887d2b7f18ed4402a250c",
+    "model": "gpt-6-luna",
+    "created_at": 1795564431.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 976,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 240,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 1216
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"COVID-19 lockdown and government exit strategies\",\n  \"climate_relevance\": \"Climate change appears only in repeated promotional descriptions of the publication's coverage, not in the article's substantive discussion.\",\n  \"reason\": \"The article focuses on coronavirus lockdown timing, transmission, and exit strategies. The climate-change mention is promotional boilerplate and provides no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:53:53Z",
+  "duration_seconds": 2.051,
+  "error": null
+}

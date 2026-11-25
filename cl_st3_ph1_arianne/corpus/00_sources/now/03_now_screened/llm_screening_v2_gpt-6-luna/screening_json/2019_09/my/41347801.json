@@ -1,0 +1,77 @@
+{
+  "article_id": "41347801",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/my/41347801.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/my/41347801.json"
+  },
+  "manifest_row": {
+    "article_id": "41347801",
+    "group": "2019_09",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/my/41347801.txt",
+    "now_field_2": "507",
+    "date_original": "19-09-14",
+    "date_iso": "2019-09-14",
+    "source_name": "edgeprop.my",
+    "url": "https://www.edgeprop.my/content/1586434/cloud-seeding-areas-more-200-api-selangor",
+    "title": "Cloud seeding for areas with more than 200 API in Selangor ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Haze pollution response and cloud seeding in Selangor",
+    "climate_relevance": "Climate change appears only in the name of a government ministry; the article discusses air pollution, open burning, and haze response without meaningful climate-change discourse.",
+    "reason": "The main report concerns haze-related public health measures and enforcement against open burning. The climate reference is limited to an institutional name, and the appended property-site material is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "affdcf86423eac1e868225dcc8e713eac6e698be9605023f695d8e7f1d99d265",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "480c0955106e2e07dbca70d782fcbba21fc64454e8f1459d7b0f1f150b505a54",
+    "raw_response_text_sha256": "e6eaf8574bcc6a96756c250dc30b596a3d62606716a487af5c1bb36eedb84ff8"
+  },
+  "api_metadata": {
+    "id": "resp_0147805776391b4d006b06214d902c87d28e09c47780ec4280",
+    "model": "gpt-6-luna",
+    "created_at": 1795563853.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1181,
+      "input_tokens_details": {
+        "cache_write_tokens": 1178,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1178
+        }
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 1437
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Haze pollution response and cloud seeding in Selangor\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government ministry; the article discusses air pollution, open burning, and haze response without meaningful climate-change discourse.\",\n  \"reason\": \"The main report concerns haze-related public health measures and enforcement against open burning. The climate reference is limited to an institutional name, and the appended property-site material is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:44:15Z",
+  "duration_seconds": 2.345,
+  "error": null
+}

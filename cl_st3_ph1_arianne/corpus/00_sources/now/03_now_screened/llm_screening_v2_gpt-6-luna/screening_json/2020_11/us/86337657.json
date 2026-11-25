@@ -1,0 +1,77 @@
+{
+  "article_id": "86337657",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/us/86337657.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/us/86337657.json"
+  },
+  "manifest_row": {
+    "article_id": "86337657",
+    "group": "2020_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/us/86337657.txt",
+    "now_field_2": "1254",
+    "date_original": "20-11-28",
+    "date_iso": "2020-11-28",
+    "source_name": "New York Times",
+    "url": "https://www.nytimes.com/2020/11/28/opinion/letters/joe-biden-advice.html",
+    "title": "`Dear Joe': Advice for Biden",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Readers' advice to President-elect Joe Biden about the challenges of his presidency",
+    "climate_relevance": "Climate change is a prominent concern in one reader letter and is also mentioned in calls for climate-focused investment and renewable energy, but the article as a whole covers several unrelated political and policy issues.",
+    "reason": "The article is a collection of letters about Biden's presidency rather than a climate-focused report. One letter discusses climate change at length, including its political obstacles, the Green New Deal, and a green economy, making the climate discourse meaningful but peripheral to the overall article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3ac55da921f63d3233ca21429af8ee3207f3f49f4af11910782e503b363214a6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0572110fd1503375b95a429232dd265da48f856374ef8c38c5915980b8b926b3",
+    "raw_response_text_sha256": "ea5e0a75163e1b7b787a99b06e3a062d9822f18306d41d81bff147643ce526c5"
+  },
+  "api_metadata": {
+    "id": "resp_0f38b1c537b7a413006b064fabcc6487d18f653e8c7e2e9cb4",
+    "model": "gpt-6-luna",
+    "created_at": 1795575723.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2150,
+      "input_tokens_details": {
+        "cache_write_tokens": 2147,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2147
+        }
+      },
+      "output_tokens": 408,
+      "output_tokens_details": {
+        "reasoning_tokens": 227
+      },
+      "total_tokens": 2558
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Readers' advice to President-elect Joe Biden about the challenges of his presidency\",\n  \"climate_relevance\": \"Climate change is a prominent concern in one reader letter and is also mentioned in calls for climate-focused investment and renewable energy, but the article as a whole covers several unrelated political and policy issues.\",\n  \"reason\": \"The article is a collection of letters about Biden's presidency rather than a climate-focused report. One letter discusses climate change at length, including its political obstacles, the Green New Deal, and a green economy, making the climate discourse meaningful but peripheral to the overall article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:02:07Z",
+  "duration_seconds": 3.746,
+  "error": null
+}

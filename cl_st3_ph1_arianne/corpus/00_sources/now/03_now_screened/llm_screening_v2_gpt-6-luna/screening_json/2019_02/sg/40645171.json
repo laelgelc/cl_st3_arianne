@@ -1,0 +1,77 @@
+{
+  "article_id": "40645171",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/sg/40645171.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/sg/40645171.json"
+  },
+  "manifest_row": {
+    "article_id": "40645171",
+    "group": "2019_02",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/sg/40645171.txt",
+    "now_field_2": "542",
+    "date_original": "19-02-20",
+    "date_iso": "2019-02-20",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/ex-fm-bishop-retires-blow-australian-government-060326267.html",
+    "title": "Ex-FM Bishop retires in new blow to Australian government",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "Julie Bishop's retirement from Australian politics and its implications for the Liberal Party",
+    "climate_relevance": "Climate change is mentioned only as one item in a list of issues on which the Morrison government has shifted to the right.",
+    "reason": "The article is about political leadership and party dynamics. Its brief climate reference provides no further discussion of climate policy or debate and is too incidental to contribute meaningfully to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7f1670a786e00da842aa0444290f8ee42dfab0aa07b4a9bd471fc15ac7a64fa8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0d252a37eac7401b3b528008bcda26e49294d12e6168b538190a330a617beea8",
+    "raw_response_text_sha256": "5c98687c1ecb51d0607ff2871d5ad9ca8e34c818e21729a8fbc645a14c334a95"
+  },
+  "api_metadata": {
+    "id": "resp_0c7730c5e8c169fb006b061f623f1887d28d4c8757b4e4d3da",
+    "model": "gpt-6-luna",
+    "created_at": 1795563362.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1214,
+      "input_tokens_details": {
+        "cache_write_tokens": 1211,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1211
+        }
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 1490
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Julie Bishop's retirement from Australian politics and its implications for the Liberal Party\",\n  \"climate_relevance\": \"Climate change is mentioned only as one item in a list of issues on which the Morrison government has shifted to the right.\",\n  \"reason\": \"The article is about political leadership and party dynamics. Its brief climate reference provides no further discussion of climate policy or debate and is too incidental to contribute meaningfully to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:36:04Z",
+  "duration_seconds": 2.379,
+  "error": null
+}

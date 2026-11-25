@@ -1,0 +1,77 @@
+{
+  "article_id": "7044318",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/us/7044318.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/us/7044318.json"
+  },
+  "manifest_row": {
+    "article_id": "7044318",
+    "group": "2016_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/us/7044318.txt",
+    "now_field_2": "1438",
+    "date_original": "16-01-10",
+    "date_iso": "2016-01-10",
+    "source_name": "The Seattle Times",
+    "url": "http://www.seattletimes.com/opinion/its-state-of-the-union-time/",
+    "title": "It's State of the Union time",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Commentary on President Obama's State of the Union address and its political reception; a separate snippet discusses a football transfer rumor.",
+    "climate_relevance": "Climate change appears only in a list of subjects Obama is expected to address, without further discussion.",
+    "reason": "The identifiable main article is about the State of the Union and political commentary, not climate change. The climate reference is brief and incidental. A separate, unrelated football article is also included.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e3dcf7b2f8ea71e6b9efaeca9da92936139dc3b550e3318e14006d7aa81bba7d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "47aca235ce6c4f20beec74ca5bf82e98192c4ce2533bd07fdefc37a2ad9a7f14",
+    "raw_response_text_sha256": "12698a90a1f743900015b12fa5d8be2c6321c4c51af32a3a1e9619cb55867945"
+  },
+  "api_metadata": {
+    "id": "resp_033fbc71cc223963006b063c8e633487d1a28e9e05e7730e5c",
+    "model": "gpt-6-luna",
+    "created_at": 1795570830.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2339,
+      "input_tokens_details": {
+        "cache_write_tokens": 2336,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2336
+        }
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 2655
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Commentary on President Obama's State of the Union address and its political reception; a separate snippet discusses a football transfer rumor.\",\n  \"climate_relevance\": \"Climate change appears only in a list of subjects Obama is expected to address, without further discussion.\",\n  \"reason\": \"The identifiable main article is about the State of the Union and political commentary, not climate change. The climate reference is brief and incidental. A separate, unrelated football article is also included.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:33Z",
+  "duration_seconds": 2.981,
+  "error": null
+}

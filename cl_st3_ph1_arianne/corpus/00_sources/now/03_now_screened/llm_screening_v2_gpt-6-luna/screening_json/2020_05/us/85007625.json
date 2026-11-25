@@ -1,0 +1,77 @@
+{
+  "article_id": "85007625",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/us/85007625.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/us/85007625.json"
+  },
+  "manifest_row": {
+    "article_id": "85007625",
+    "group": "2020_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/us/85007625.txt",
+    "now_field_2": "1864",
+    "date_original": "20-05-24",
+    "date_iso": "2020-05-24",
+    "source_name": "Forbes",
+    "url": "https://www.forbes.com/sites/andrewwight/2020/05/24/warning-for-the-us-diabetes-and-coronavirus-cocktail-killing-young-people-in-mexico/",
+    "title": "Warning For The US: Diabetes And Coronavirus Cocktail Killing Young People In Mexico",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "COVID-19 risks and diabetes in Mexico",
+    "climate_relevance": "Climate change appears only in the journalist's author biography, in a list of topics the Global South faces.",
+    "reason": "The article's substantive discussion concerns COVID-19, diabetes, and related health issues. The brief climate reference is part of author-profile boilerplate and offers no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "00162e6859e008817d81d2e2772641c64955f54daad6db54afc1c7ff646d5007",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "57fbc363f2acba87db9ce0bb02d57e2a6e9ddd2e8d2ad14caa52e8623ced763b",
+    "raw_response_text_sha256": "c8e80d5a96ed9574e18e8345f92439e404b41b901aa6d52b0e1453a257acd54f"
+  },
+  "api_metadata": {
+    "id": "resp_0fc432fca34bb951006b064b03f9bc87d1875c7e86dfb3f38e",
+    "model": "gpt-6-luna",
+    "created_at": 1795574532.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1723,
+      "input_tokens_details": {
+        "cache_write_tokens": 1720,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1720
+        }
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1939
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"COVID-19 risks and diabetes in Mexico\",\n  \"climate_relevance\": \"Climate change appears only in the journalist's author biography, in a list of topics the Global South faces.\",\n  \"reason\": \"The article's substantive discussion concerns COVID-19, diabetes, and related health issues. The brief climate reference is part of author-profile boilerplate and offers no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:42:13Z",
+  "duration_seconds": 2.071,
+  "error": null
+}

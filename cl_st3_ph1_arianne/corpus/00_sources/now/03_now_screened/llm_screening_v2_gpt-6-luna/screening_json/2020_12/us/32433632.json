@@ -1,0 +1,77 @@
+{
+  "article_id": "32433632",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/32433632.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/32433632.json"
+  },
+  "manifest_row": {
+    "article_id": "32433632",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/32433632.txt",
+    "now_field_2": "999",
+    "date_original": "20-12-17",
+    "date_iso": "2020-12-17",
+    "source_name": "financialbuzz.com",
+    "url": "https://www.financialbuzz.com/pennymac-financial-services-inc-announces-promotions-of-executive-officers/",
+    "title": "PennyMac Financial Services, Inc. Announces Promotions of ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "PennyMac Financial executive promotions and corporate information",
+    "climate_relevance": "Climate change appears only in a boilerplate list of risks that could affect company operations.",
+    "reason": "The text is a corporate announcement about management changes. Its brief climate-change reference is part of standard forward-looking risk language and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "00166ec3183dc64d8723a6ae504d39306468d66af73a4015b177439e63c86d38",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5b4ca7a67260bfe7b42d7111748cefb7673d307b2a775343b46156d863e0143f",
+    "raw_response_text_sha256": "768782edf2d6a7123ce35273befcc85a7f6fa4727db5b25574ba56056993ee55"
+  },
+  "api_metadata": {
+    "id": "resp_0a4e02e905e763d7006b061ca4b91087d2a8f14adfd051a24e",
+    "model": "gpt-6-luna",
+    "created_at": 1795562660.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1750,
+      "input_tokens_details": {
+        "cache_write_tokens": 1747,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1747
+        }
+      },
+      "output_tokens": 191,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1941
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"PennyMac Financial executive promotions and corporate information\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate list of risks that could affect company operations.\",\n  \"reason\": \"The text is a corporate announcement about management changes. Its brief climate-change reference is part of standard forward-looking risk language and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:24:22Z",
+  "duration_seconds": 1.927,
+  "error": null
+}

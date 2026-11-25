@@ -1,0 +1,77 @@
+{
+  "article_id": "18174922",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/in/18174922.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/in/18174922.json"
+  },
+  "manifest_row": {
+    "article_id": "18174922",
+    "group": "2017_04",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/in/18174922.txt",
+    "now_field_2": "274",
+    "date_original": "17-04-28",
+    "date_iso": "2017-04-28",
+    "source_name": "Times of India",
+    "url": "http://timesofindia.indiatimes.com/city/lucknow/up-police-drive-to-rehabilitate-homeless-mentally-unstable/articleshow/58425263.cms",
+    "title": "UP Police drive to rehabilitate homeless mentally unstable",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-IN.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A police initiative to identify and provide shelter or treatment for people with mental disabilities.",
+    "climate_relevance": "Climate change appears only in a separate sentence about India-Cyprus agreements and is not meaningfully discussed in the main article.",
+    "reason": "The identifiable main article concerns rehabilitation and support for people with mental disabilities. The climate reference is an unrelated passing item, not substantive climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "51286cd7cdada3b4fa4e648cccb0ffd5094890a647e3eeb299efce65f8301ee2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "476819db527dfd44f3ec4846d2a835df6c0742ffb61d04bbbbc388fface421b7",
+    "raw_response_text_sha256": "17b6a93d0e036429f36d615c13e6457d7d870046ec37a44698eaaa8b71883008"
+  },
+  "api_metadata": {
+    "id": "resp_0bef5f3b070adff9006b0609e2bb7887d2a9c8f7593535dbbc",
+    "model": "gpt-6-luna",
+    "created_at": 1795557858.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 846,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 202,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1048
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A police initiative to identify and provide shelter or treatment for people with mental disabilities.\",\n  \"climate_relevance\": \"Climate change appears only in a separate sentence about India-Cyprus agreements and is not meaningfully discussed in the main article.\",\n  \"reason\": \"The identifiable main article concerns rehabilitation and support for people with mental disabilities. The climate reference is an unrelated passing item, not substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:04:20Z",
+  "duration_seconds": 1.821,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "60647588",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/ca/60647588.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/ca/60647588.json"
+  },
+  "manifest_row": {
+    "article_id": "60647588",
+    "group": "2019_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/ca/60647588.txt",
+    "now_field_2": "525",
+    "date_original": "19-03-18",
+    "date_iso": "2019-03-18",
+    "source_name": "CBC.ca",
+    "url": "https://www.cbc.ca/news/canada/saskatchewan/arrest-history-moe-meili-1.5061894",
+    "title": "Arrest history of Premier Scott Moe and NDP leader Ryan Meili raised ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "passing",
+    "main_topic": "Saskatchewan political debate over yellow vest rallies, Islamophobia, and party leaders' past arrests",
+    "climate_relevance": "Climate change is mentioned only as one concern behind Meili's past protest; the article does not discuss it further.",
+    "reason": "The article focuses on political exchanges about rallies and the leaders' arrest histories. Its brief reference to climate change is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3b94986eb6ae9f698f3006497381361ab72c299505078328260dd4904e368459",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ff3c054215308f27142f1ab6ac4644eedbecd22b3ab9be005648163f5b8a7b71",
+    "raw_response_text_sha256": "5b134c6d5c4ae78be43d08a1fdaca2f909ccdd4b90633d7da93e4c76c2eb405c"
+  },
+  "api_metadata": {
+    "id": "resp_07b0c536fba5cc2c006b0633932ce487d1a1ce0ac5c7031c23",
+    "model": "gpt-6-luna",
+    "created_at": 1795568531.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1210,
+      "input_tokens_details": {
+        "cache_write_tokens": 1207,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1207
+        }
+      },
+      "output_tokens": 373,
+      "output_tokens_details": {
+        "reasoning_tokens": 225
+      },
+      "total_tokens": 1583
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Saskatchewan political debate over yellow vest rallies, Islamophobia, and party leaders' past arrests\",\n  \"climate_relevance\": \"Climate change is mentioned only as one concern behind Meili's past protest; the article does not discuss it further.\",\n  \"reason\": \"The article focuses on political exchanges about rallies and the leaders' arrest histories. Its brief reference to climate change is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:02:14Z",
+  "duration_seconds": 3.748,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70543253",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70543253.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70543253.json"
+  },
+  "manifest_row": {
+    "article_id": "70543253",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70543253.txt",
+    "now_field_2": "447",
+    "date_original": "19-02-23",
+    "date_iso": "2019-02-23",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00584/an-unseasonably-cold-start-to-the-week.htm",
+    "title": "An unseasonably cold start to the week",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "New Zealand weather, with additional unrelated news snippets",
+    "climate_relevance": "A Greenpeace snippet criticizes the National Party for failing to address climate change and agriculture, but climate change is not the focus of the identifiable weather report.",
+    "reason": "The text contains multiple snippets. The main identifiable article concerns short-term weather, while a separate snippet makes a meaningful but brief reference to climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "46b334b10ee577b4e16bc59f3fa1c14c5b8f071b9e7e97fad35bd1e3fc350b20",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fbd8c0c21c248830546602f8ddef122252a1a482bf6feb7b53da561fb970a97f",
+    "raw_response_text_sha256": "3c0757d9b02c53e8f724ef26c30c07a35b28d1d16ce104aac6e1e2363ac6bcc9"
+  },
+  "api_metadata": {
+    "id": "resp_049c41d061d375d6006b063d6e551487d18d05018c1ac28a1d",
+    "model": "gpt-6-luna",
+    "created_at": 1795571054.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1062,
+      "input_tokens_details": {
+        "cache_write_tokens": 1059,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1059
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 1290
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New Zealand weather, with additional unrelated news snippets\",\n  \"climate_relevance\": \"A Greenpeace snippet criticizes the National Party for failing to address climate change and agriculture, but climate change is not the focus of the identifiable weather report.\",\n  \"reason\": \"The text contains multiple snippets. The main identifiable article concerns short-term weather, while a separate snippet makes a meaningful but brief reference to climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:44:16Z",
+  "duration_seconds": 2.675,
+  "error": null
+}

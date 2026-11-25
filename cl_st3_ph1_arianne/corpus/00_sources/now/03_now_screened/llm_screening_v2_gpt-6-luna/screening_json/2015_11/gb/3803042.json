@@ -1,0 +1,77 @@
+{
+  "article_id": "3803042",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_11/gb/3803042.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_11/gb/3803042.json"
+  },
+  "manifest_row": {
+    "article_id": "3803042",
+    "group": "2015_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_11/gb/3803042.txt",
+    "now_field_2": "767",
+    "date_original": "15-11-19",
+    "date_iso": "2015-11-19",
+    "source_name": "Telegraph.co.uk",
+    "url": "http://www.telegraph.co.uk/finance/newsbysector/energy/12005819/Gas-prices-to-stay-low-for-the-rest-of-the-decade-Government-forecasts.html",
+    "title": "Gas prices to stay low for the rest of the decade, Government forecasts",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-11-xje/15-11-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Forecasts for UK wholesale gas and electricity prices and their effects on consumers, energy suppliers, and power generation.",
+    "climate_relevance": "The article discusses renewable-energy subsidies for wind and solar, their costs relative to gas-fired electricity, and plans to shut down coal-fired power stations. These are meaningful climate-policy and energy-transition references, but climate change is not the main focus.",
+    "reason": "The central subject is energy prices and their consequences. Climate-related energy policy and renewable generation appear as substantive context, making the text relevant beyond a passing mention but not core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "95ca75d1fd4fbce57baef5fc68f6663b005af7a9d026851877146b6386f9ecc1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0db48067e1578b906294c462c59246331f69030f288e864e7834c25347362f43",
+    "raw_response_text_sha256": "cdd53d8cdbf2f8cfd62f2087f91cb5bd9566fa3e32adcf07119d8ccd00bc891a"
+  },
+  "api_metadata": {
+    "id": "resp_08376f0fba017bcf006b061d0fd1b487d2b1b37841ecc8bbfe",
+    "model": "gpt-6-luna",
+    "created_at": 1795562767.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1491,
+      "input_tokens_details": {
+        "cache_write_tokens": 1488,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1488
+        }
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 1777
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Forecasts for UK wholesale gas and electricity prices and their effects on consumers, energy suppliers, and power generation.\",\n  \"climate_relevance\": \"The article discusses renewable-energy subsidies for wind and solar, their costs relative to gas-fired electricity, and plans to shut down coal-fired power stations. These are meaningful climate-policy and energy-transition references, but climate change is not the main focus.\",\n  \"reason\": \"The central subject is energy prices and their consequences. Climate-related energy policy and renewable generation appear as substantive context, making the text relevant beyond a passing mention but not core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:26:10Z",
+  "duration_seconds": 2.982,
+  "error": null
+}

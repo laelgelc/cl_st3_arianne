@@ -1,0 +1,77 @@
+{
+  "article_id": "16777851",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/us/16777851.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/us/16777851.json"
+  },
+  "manifest_row": {
+    "article_id": "16777851",
+    "group": "2017_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/us/16777851.txt",
+    "now_field_2": "464",
+    "date_original": "17-02-06",
+    "date_iso": "2017-02-06",
+    "source_name": "Chicago Tribune",
+    "url": "http://www.chicagotribune.com/news/local/breaking/ct-trump-epa-protest-chicago-20170206-story.html",
+    "title": "Hundreds of current and former EPA employees protest Trump's ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "Opposition to Scott Pruitt’s nomination to lead the EPA and concerns about his record and plans for the agency.",
+    "climate_relevance": "The article notes that Pruitt questioned climate science linking carbon emissions to climate change, but does not develop the issue further.",
+    "reason": "The main focus is Pruitt’s nomination and the EPA; the brief reference to his position on climate science is meaningful but not central to the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a72d3ba2338867b10aae4a99aedaa69e86435d0c441904ab7c81f183208ef740",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4cc5988e438dd6d811c6c5f27ab95f7525d8f608683016a8db1cdc0617168f5e",
+    "raw_response_text_sha256": "e88bbf44e287fab545ea0d2f2cca0967c79105264165ddffe7dad282b56a81db"
+  },
+  "api_metadata": {
+    "id": "resp_0cf0a0a15f0eff8e006b0608369b8087d29d90d72cc8a1f5a9",
+    "model": "gpt-6-luna",
+    "created_at": 1795557430.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1084,
+      "input_tokens_details": {
+        "cache_write_tokens": 1081,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1081
+        }
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 1336
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Opposition to Scott Pruitt’s nomination to lead the EPA and concerns about his record and plans for the agency.\",\n  \"climate_relevance\": \"The article notes that Pruitt questioned climate science linking carbon emissions to climate change, but does not develop the issue further.\",\n  \"reason\": \"The main focus is Pruitt’s nomination and the EPA; the brief reference to his position on climate science is meaningful but not central to the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:57:13Z",
+  "duration_seconds": 2.98,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "60903123",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ca/60903123.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ca/60903123.json"
+  },
+  "manifest_row": {
+    "article_id": "60903123",
+    "group": "2019_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ca/60903123.txt",
+    "now_field_2": "957",
+    "date_original": "19-06-08",
+    "date_iso": "2019-06-08",
+    "source_name": "The Sudbury Star",
+    "url": "https://www.thesudburystar.com/news/local-news/protesters-target-ford-government-during-sudbury-rally",
+    "title": "Protesters target Ford government during Sudbury rally",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "A Sudbury rally protesting the Ontario government's cuts and privatization of public services.",
+    "climate_relevance": "Climate change appears only as one item in a list of the protesters' demands; the article provides no further discussion of it.",
+    "reason": "The article is about labour and public-service protests. Its brief reference to action on climate change is incidental and does not meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d0bbf24ca7fc9e52a415448372107e3ab4c62b1dfd43e34b175b2965224cdb87",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e403e9a5948a2d28ed70050b8aedb10b821f39dfad275e6e4ace020853942715",
+    "raw_response_text_sha256": "51397af758dec065bea5891f202516681f0ceb1dfa6172dbb8ae4dd93af9398a"
+  },
+  "api_metadata": {
+    "id": "resp_0772fb7d04b0202f006b06355601ec87d19c6eda731aa438c3",
+    "model": "gpt-6-luna",
+    "created_at": 1795568982.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1779,
+      "input_tokens_details": {
+        "cache_write_tokens": 1776,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1776
+        }
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1997
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A Sudbury rally protesting the Ontario government's cuts and privatization of public services.\",\n  \"climate_relevance\": \"Climate change appears only as one item in a list of the protesters' demands; the article provides no further discussion of it.\",\n  \"reason\": \"The article is about labour and public-service protests. Its brief reference to action on climate change is incidental and does not meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:09:44Z",
+  "duration_seconds": 2.615,
+  "error": null
+}

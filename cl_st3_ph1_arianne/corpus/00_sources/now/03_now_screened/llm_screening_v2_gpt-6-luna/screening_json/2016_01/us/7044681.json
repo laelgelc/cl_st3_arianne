@@ -1,0 +1,77 @@
+{
+  "article_id": "7044681",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/us/7044681.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/us/7044681.json"
+  },
+  "manifest_row": {
+    "article_id": "7044681",
+    "group": "2016_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/us/7044681.txt",
+    "now_field_2": "422",
+    "date_original": "16-01-10",
+    "date_iso": "2016-01-10",
+    "source_name": "New York Post",
+    "url": "http://nypost.com/2016/01/10/sting-operation-finds-37-of-bodegas-sell-booze-to-minors/",
+    "title": "Sting operation finds 37% of bodegas sell booze to minors",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "climate_role": "background",
+    "main_topic": "A liquor-store enforcement report followed by Irish political and flood-insurance coverage, with an unrelated sports excerpt",
+    "climate_relevance": "Climate change is linked to flood risk and the limits of guaranteeing that areas will not flood; the surrounding discussion concerns homes at risk and flood-defence planning.",
+    "reason": "The climate reference is meaningful in the context of flooding, but climate change is not the main subject of the available text. The text contains multiple apparently unrelated excerpts.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5f87b04a12d91d1a7c03fb70038c082686e210be0ba273fd6c6378be16472aa5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "86fec7bac5e110fd0e391f30a24b7a72e81e4acefd62a9e36e26163ffd0245b9",
+    "raw_response_text_sha256": "0eb9b8ad1ea307aab0f831021a0b08f52548dc576c614aaef3ea4cdc7f7cbead"
+  },
+  "api_metadata": {
+    "id": "resp_0018de2f50f24cec006b063c93acf887d18cc606ef8d25f3df",
+    "model": "gpt-6-luna",
+    "created_at": 1795570835.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1059,
+      "input_tokens_details": {
+        "cache_write_tokens": 1056,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1056
+        }
+      },
+      "output_tokens": 365,
+      "output_tokens_details": {
+        "reasoning_tokens": 206
+      },
+      "total_tokens": 1424
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A liquor-store enforcement report followed by Irish political and flood-insurance coverage, with an unrelated sports excerpt\",\n  \"climate_relevance\": \"Climate change is linked to flood risk and the limits of guaranteeing that areas will not flood; the surrounding discussion concerns homes at risk and flood-defence planning.\",\n  \"reason\": \"The climate reference is meaningful in the context of flooding, but climate change is not the main subject of the available text. The text contains multiple apparently unrelated excerpts.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:38Z",
+  "duration_seconds": 3.319,
+  "error": null
+}

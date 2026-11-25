@@ -1,0 +1,77 @@
+{
+  "article_id": "40499869",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/sg/40499869.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/sg/40499869.json"
+  },
+  "manifest_row": {
+    "article_id": "40499869",
+    "group": "2019_01",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/sg/40499869.txt",
+    "now_field_2": "608",
+    "date_original": "19-01-14",
+    "date_iso": "2019-01-14",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/antarctica-ice-loss-increases-six-fold-since-1979-201330761.html",
+    "title": "Antarctica ice loss increases six fold since 1979: study",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-sg.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Antarctic ice loss, global warming, and resulting sea-level rise",
+    "climate_relevance": "The report directly examines evidence that warming is accelerating Antarctic ice loss and discusses its contribution to sea-level rise and future climate impacts.",
+    "reason": "Climate change and its physical impacts are the central subject throughout the text, which reports on scientific findings about Antarctic melting, ocean warming, and rising seas.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "90946a67a1866e3a3a8d74d4c23c88be0dc7b34a95cb2a74d5494a35d1273405",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "10d50dfe45da49506852f6281b92d1454d76ed1fe52c99997ff362e1dbcd27d9",
+    "raw_response_text_sha256": "14cae00603c534b8f7d8d8343801bd868a9f36c38fd9d2421ebedf379f333ad5"
+  },
+  "api_metadata": {
+    "id": "resp_0ab99a8d6e98d569006b061f108ad087d29c403494001b8eb4",
+    "model": "gpt-6-luna",
+    "created_at": 1795563280.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1302,
+      "input_tokens_details": {
+        "cache_write_tokens": 1299,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1299
+        }
+      },
+      "output_tokens": 200,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 1502
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Antarctic ice loss, global warming, and resulting sea-level rise\",\n  \"climate_relevance\": \"The report directly examines evidence that warming is accelerating Antarctic ice loss and discusses its contribution to sea-level rise and future climate impacts.\",\n  \"reason\": \"Climate change and its physical impacts are the central subject throughout the text, which reports on scientific findings about Antarctic melting, ocean warming, and rising seas.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:34:42Z",
+  "duration_seconds": 2.173,
+  "error": null
+}

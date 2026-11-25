@@ -1,0 +1,77 @@
+{
+  "article_id": "41615682",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/my/41615682.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/my/41615682.json"
+  },
+  "manifest_row": {
+    "article_id": "41615682",
+    "group": "2020_01",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/my/41615682.txt",
+    "now_field_2": "607",
+    "date_original": "20-01-02",
+    "date_iso": "2020-01-02",
+    "source_name": "thestar.com.my",
+    "url": "https://www.thestar.com.my/tech/tech-news/2020/01/03/e-bikes-show-distinct-pattern-of-severe-injuries",
+    "title": "E-bikes show distinct pattern of severe injuries | The ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-my.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.84,
+    "climate_role": "background",
+    "main_topic": "Injury risks and safety of e-bikes, electric scooters, and bicycles",
+    "climate_relevance": "Climate change is briefly mentioned in a comment about biking, and the article also describes these modes as potential greener transportation alternatives.",
+    "reason": "The article is primarily about injury patterns and transportation safety, not climate change. The brief climate reference and mention of greener alternatives provide some relevant background discourse, though the climate-related quote is partly obscured.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "22c53b9dca6dff284ba80f6869053fdfacca49b88838727fad24727a7cbb6999",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "096e886d80d48f12f107daa3dfcbf2773e281fcd9d3e6ee774477c3e245b69a7",
+    "raw_response_text_sha256": "1c7b645adaa68058fef5d7486c9032e0db8052d9eb70b013729d38acf125b0ec"
+  },
+  "api_metadata": {
+    "id": "resp_0b504e1e9baa716f006b0622767b7887d296a6096ad863b50d",
+    "model": "gpt-6-luna",
+    "created_at": 1795564150.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1355,
+      "input_tokens_details": {
+        "cache_write_tokens": 1352,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1352
+        }
+      },
+      "output_tokens": 362,
+      "output_tokens_details": {
+        "reasoning_tokens": 207
+      },
+      "total_tokens": 1717
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.84,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Injury risks and safety of e-bikes, electric scooters, and bicycles\",\n  \"climate_relevance\": \"Climate change is briefly mentioned in a comment about biking, and the article also describes these modes as potential greener transportation alternatives.\",\n  \"reason\": \"The article is primarily about injury patterns and transportation safety, not climate change. The brief climate reference and mention of greener alternatives provide some relevant background discourse, though the climate-related quote is partly obscured.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:49:13Z",
+  "duration_seconds": 2.753,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31353969",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/nz/31353969.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/nz/31353969.json"
+  },
+  "manifest_row": {
+    "article_id": "31353969",
+    "group": "2019_10",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/nz/31353969.txt",
+    "now_field_2": "1786",
+    "date_original": "19-10-18",
+    "date_iso": "2019-10-18",
+    "source_name": "thespinoff.co.nz",
+    "url": "https://thespinoff.co.nz/society/15-10-2019/all-your-questions-about-free-iuds-in-new-zealand-answered/",
+    "title": "Free IUD contraception is here: What it is and how to get ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Free IUD contraception in New Zealand; the text also includes appended newsletter and news roundup material.",
+    "climate_relevance": "A separate roundup item briefly mentions research on attributing extreme weather events to climate change, but this is not part of the identifiable main article.",
+    "reason": "The main article is about contraception and contains no meaningful climate discourse. The climate-related sentence appears only in an unrelated appended roundup snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ff30ac0b7b694a915f266ab273287e9d966054d9caf4ccb78aa96609711ca17b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f20b477d75ffbd3c7cdc214878c63fefbfd7511e3f5fd16164de34702979a6d7",
+    "raw_response_text_sha256": "6436b6557ecf14a5ea46dd25bebd2bebded24f78f2952a78140a3b7de3e35aa4"
+  },
+  "api_metadata": {
+    "id": "resp_046c2c7ce495dbf6006b0616f9451887d2aea7987f3930458c",
+    "model": "gpt-6-luna",
+    "created_at": 1795561209.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5056,
+      "input_tokens_details": {
+        "cache_write_tokens": 5053,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5053
+        }
+      },
+      "output_tokens": 497,
+      "output_tokens_details": {
+        "reasoning_tokens": 345
+      },
+      "total_tokens": 5553
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Free IUD contraception in New Zealand; the text also includes appended newsletter and news roundup material.\",\n  \"climate_relevance\": \"A separate roundup item briefly mentions research on attributing extreme weather events to climate change, but this is not part of the identifiable main article.\",\n  \"reason\": \"The main article is about contraception and contains no meaningful climate discourse. The climate-related sentence appears only in an unrelated appended roundup snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:00:13Z",
+  "duration_seconds": 4.112,
+  "error": null
+}

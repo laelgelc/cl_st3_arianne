@@ -1,0 +1,77 @@
+{
+  "article_id": "70204168",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/us/70204168.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/us/70204168.json"
+  },
+  "manifest_row": {
+    "article_id": "70204168",
+    "group": "2018_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/us/70204168.txt",
+    "now_field_2": "588",
+    "date_original": "18-11-02",
+    "date_iso": "2018-11-02",
+    "source_name": "KBZK Bozeman News",
+    "url": "https://kbzk.com/cnn-us-politics/2018/11/02/as-america-retreats-from-the-world-the-politics-of-fear-takes-over/",
+    "title": "As America retreats from the world, the politics of fear takes over",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "US midterm elections, Trump-era politics, and the use of fear in political messaging",
+    "climate_relevance": "Climate change is mentioned once in a list of foreign-policy issues, with no discussion of its causes, impacts, policy, or public debate.",
+    "reason": "The article is about US politics and election dynamics; the brief list mention of climate change is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b2d2bd93f5e372648dc9b7b492d5240bbda3db2bd50bd61a95231609e0957c5a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b9de06dd8b4b03f1bd0eafc3975ce5e49730c1ee363b2dcf9508c3b2dd7248e8",
+    "raw_response_text_sha256": "3304a39d6b1bacb843fd0bbcdd8340e3ff871efec476e88b15cc4debbcb7092e"
+  },
+  "api_metadata": {
+    "id": "resp_05bb64beb7d5189a006b063b4ef0d487d193472327be363237",
+    "model": "gpt-6-luna",
+    "created_at": 1795570511.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1209,
+      "input_tokens_details": {
+        "cache_write_tokens": 1206,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1206
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 1459
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"US midterm elections, Trump-era politics, and the use of fear in political messaging\",\n  \"climate_relevance\": \"Climate change is mentioned once in a list of foreign-policy issues, with no discussion of its causes, impacts, policy, or public debate.\",\n  \"reason\": \"The article is about US politics and election dynamics; the brief list mention of climate change is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:35:13Z",
+  "duration_seconds": 2.679,
+  "error": null
+}

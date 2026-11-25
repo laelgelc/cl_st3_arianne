@@ -1,0 +1,77 @@
+{
+  "article_id": "22210523",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_12/nz/22210523.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_12/nz/22210523.json"
+  },
+  "manifest_row": {
+    "article_id": "22210523",
+    "group": "2017_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_12/nz/22210523.txt",
+    "now_field_2": "449",
+    "date_original": "17-12-13",
+    "date_iso": "2017-12-13",
+    "source_name": "Newshub",
+    "url": "http://www.newshub.co.nz/home/politics/2017/12/are-high-schoolers-being-over-assessed-government-to-review-ncea.html",
+    "title": "Are high schoolers being over-assessed? Government to review ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-12.txt\"]",
+    "metadata_article_files": "[\"text-17-12/text_17-12-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "A government review of New Zealand’s NCEA secondary-school assessment framework",
+    "climate_relevance": "Climate change appears only as an example in a brief comparison about the value of cross-party consensus.",
+    "reason": "The article focuses on education and assessment. Its single passing reference to climate change contains no meaningful discussion of climate issues.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8fab2734b2d5e00ca0d42e57691309b89aac759c66f85103113a3bdff246543a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d2303e3f880157fd2724d548d88b90fff327984ef74a075684a97efabc5cbbf2",
+    "raw_response_text_sha256": "9332f3c5179ba39b279071a3600d044ee7269c0a36f10c614b52b93b89f35b6a"
+  },
+  "api_metadata": {
+    "id": "resp_0962d0b36c139a00006b060feaebe887d2b471a23b009ba7d7",
+    "model": "gpt-6-luna",
+    "created_at": 1795559403.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1074,
+      "input_tokens_details": {
+        "cache_write_tokens": 1071,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1071
+        }
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 1275
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A government review of New Zealand’s NCEA secondary-school assessment framework\",\n  \"climate_relevance\": \"Climate change appears only as an example in a brief comparison about the value of cross-party consensus.\",\n  \"reason\": \"The article focuses on education and assessment. Its single passing reference to climate change contains no meaningful discussion of climate issues.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:30:04Z",
+  "duration_seconds": 2.047,
+  "error": null
+}

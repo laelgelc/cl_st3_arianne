@@ -1,0 +1,77 @@
+{
+  "article_id": "70692622",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/us/70692622.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/us/70692622.json"
+  },
+  "manifest_row": {
+    "article_id": "70692622",
+    "group": "2019_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/us/70692622.txt",
+    "now_field_2": "463",
+    "date_original": "19-04-16",
+    "date_iso": "2019-04-16",
+    "source_name": "Washington Examiner",
+    "url": "https://www.washingtonexaminer.com/news/arizona-border-city-declares-state-of-emergency-in-face-of-migrant-surge",
+    "title": "Arizona border city declares state of emergency in face of migrant surge",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A border city’s response to an increase in migrant arrivals",
+    "climate_relevance": "Climate change appears only in a separate sentence about a presidential candidate’s climate plan, unrelated to the identifiable main article.",
+    "reason": "The main article concerns migration and local emergency resources. The climate-plan sentence is an unrelated snippet rather than meaningful climate discourse in that article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "07f43e7e28fa5205feabe959d3a90eee0b67501999eecb4ad283207a06e0e0e2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "44775f68d4b7425686888fef2f586ce01508068c6194fb3c5179cda5b3c4e3b9",
+    "raw_response_text_sha256": "554bbd0506f35a1b0a3e06318fa2488f32950b9095468ccf11e486e7c1ec10f5"
+  },
+  "api_metadata": {
+    "id": "resp_044d1fa7c95735e5006b063e846ebc87d18b07a972305b0aac",
+    "model": "gpt-6-luna",
+    "created_at": 1795571332.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1073,
+      "input_tokens_details": {
+        "cache_write_tokens": 1070,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1070
+        }
+      },
+      "output_tokens": 339,
+      "output_tokens_details": {
+        "reasoning_tokens": 198
+      },
+      "total_tokens": 1412
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A border city’s response to an increase in migrant arrivals\",\n  \"climate_relevance\": \"Climate change appears only in a separate sentence about a presidential candidate’s climate plan, unrelated to the identifiable main article.\",\n  \"reason\": \"The main article concerns migration and local emergency resources. The climate-plan sentence is an unrelated snippet rather than meaningful climate discourse in that article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:48:55Z",
+  "duration_seconds": 2.903,
+  "error": null
+}

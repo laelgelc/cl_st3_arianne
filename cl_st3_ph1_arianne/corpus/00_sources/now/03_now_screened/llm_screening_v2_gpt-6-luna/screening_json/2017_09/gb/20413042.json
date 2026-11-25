@@ -1,0 +1,77 @@
+{
+  "article_id": "20413042",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_09/gb/20413042.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_09/gb/20413042.json"
+  },
+  "manifest_row": {
+    "article_id": "20413042",
+    "group": "2017_09",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_09/gb/20413042.txt",
+    "now_field_2": "986",
+    "date_original": "17-09-07",
+    "date_iso": "2017-09-07",
+    "source_name": "Evening Standard",
+    "url": "https://www.standard.co.uk/news/world/richard-bransons-necker-island-home-left-uninhabitable-as-hurricane-irma-obliterates-swathes-of-the-a3628841.html",
+    "title": "Richard Branson's Necker Island home destroyed as Hurricane Irma ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-09.txt\"]",
+    "metadata_article_files": "[\"text-17-09/text_17-09-GB.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Hurricane Irma's destruction in the Caribbean and Richard Branson's experience on Necker Island",
+    "climate_relevance": "A quoted remark explicitly frames the hurricane as a warning about climate change and calls for action, but climate change is not otherwise discussed.",
+    "reason": "The text is primarily a report on Hurricane Irma's damage and Branson's response. Its brief, explicit climate-change statement is meaningful but insufficient to make climate change a central or substantial topic.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cafc1e6cf6aa4df71f42db2013bea79c5cf0fe03bccfe85508a706a87eeaf541",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7171123ea75602074499a3a21b306531bcccd2357537a769e908dfdd96c1a471",
+    "raw_response_text_sha256": "37db1a614a28369db56c5b0303986345de2889256ffcd3bd7de6b355355a9282"
+  },
+  "api_metadata": {
+    "id": "resp_0f6de874bf806157006b060d3db07087d2938c94e1301b86c1",
+    "model": "gpt-6-luna",
+    "created_at": 1795558717.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2005,
+      "input_tokens_details": {
+        "cache_write_tokens": 2002,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2002
+        }
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "total_tokens": 2317
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Hurricane Irma's destruction in the Caribbean and Richard Branson's experience on Necker Island\",\n  \"climate_relevance\": \"A quoted remark explicitly frames the hurricane as a warning about climate change and calls for action, but climate change is not otherwise discussed.\",\n  \"reason\": \"The text is primarily a report on Hurricane Irma's damage and Branson's response. Its brief, explicit climate-change statement is meaningful but insufficient to make climate change a central or substantial topic.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:18:40Z",
+  "duration_seconds": 2.711,
+  "error": null
+}

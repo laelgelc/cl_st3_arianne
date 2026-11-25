@@ -1,0 +1,77 @@
+{
+  "article_id": "9693769",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_07/ca/9693769.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_07/ca/9693769.json"
+  },
+  "manifest_row": {
+    "article_id": "9693769",
+    "group": "2016_07",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_07/ca/9693769.txt",
+    "now_field_2": "622",
+    "date_original": "16-07-03",
+    "date_iso": "2016-07-03",
+    "source_name": "Vancouver Sun",
+    "url": "http://vancouversun.com/opinion/letters/letters-brexit-has-lesson-for-canada",
+    "title": "Letters: Brexit has lesson for Canada",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-07-qxx/16-07-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "A collection of reader letters about Brexit and corporate influence, the Canada Pension Plan, and housing affordability.",
+    "climate_relevance": "Climate change is briefly listed alongside trade and security agreements, without discussion of its causes, impacts, policies, or implications.",
+    "reason": "The available climate reference is incidental and does not provide meaningful climate discourse. The text contains multiple unrelated reader-letter snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d4d459f2e9ef241a0fa255330c587582ba51572ea618fdd9883b2d0a69b6ae4d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c704855078363fb65b8e8683358fc1c187d02e9ee548b29e4d584b061201d327",
+    "raw_response_text_sha256": "9cc5bfc1f830a5286ac5bb04e7735122c8cf8d709e6dbc74033348312dc389d6"
+  },
+  "api_metadata": {
+    "id": "resp_0ab5463131d87163006b06514c242c87d18cedea7edc05f9b0",
+    "model": "gpt-6-luna",
+    "created_at": 1795576140.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1276,
+      "input_tokens_details": {
+        "cache_write_tokens": 1273,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1273
+        }
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 1532
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of reader letters about Brexit and corporate influence, the Canada Pension Plan, and housing affordability.\",\n  \"climate_relevance\": \"Climate change is briefly listed alongside trade and security agreements, without discussion of its causes, impacts, policies, or implications.\",\n  \"reason\": \"The available climate reference is incidental and does not provide meaningful climate discourse. The text contains multiple unrelated reader-letter snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:09:02Z",
+  "duration_seconds": 2.56,
+  "error": null
+}

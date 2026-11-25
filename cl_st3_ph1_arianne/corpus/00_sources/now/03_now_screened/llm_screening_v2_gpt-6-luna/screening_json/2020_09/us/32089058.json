@@ -1,0 +1,77 @@
+{
+  "article_id": "32089058",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/32089058.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/32089058.json"
+  },
+  "manifest_row": {
+    "article_id": "32089058",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/32089058.txt",
+    "now_field_2": "1054",
+    "date_original": "20-09-18",
+    "date_iso": "2020-09-18",
+    "source_name": "washingtonexaminer.com",
+    "url": "https://www.washingtonexaminer.com/news/restaurants-bars-and-theaters-at-risk-of-being-left-for-dead",
+    "title": "Restaurants, bars, and theaters at risk of being left for dead",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The economic impact of the COVID-19 pandemic on in-person businesses and calls for government aid.",
+    "climate_relevance": "Climate change appears only in a separate related-news snippet about a corporate climate policy document, not in the main article.",
+    "reason": "The identifiable main article concerns pandemic-related business losses and economic relief. The climate reference is in unrelated supplementary content and does not contribute climate discourse to the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cdfb27e67121182ec073baa39c5de77d5dc058d1850dc1462be354b34c79930f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "537ac39860ea10580a5c3e6c52fef6462c82498d0ce44e39fcace2ec977aaf45",
+    "raw_response_text_sha256": "ed9e8a10713ce205ef3a9e9e797fb4862d0d31660f0a7087371c925194602bdc"
+  },
+  "api_metadata": {
+    "id": "resp_046b9e40b769d8da006b061b266eb487d296ea6a71b967f17b",
+    "model": "gpt-6-luna",
+    "created_at": 1795562278.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1854,
+      "input_tokens_details": {
+        "cache_write_tokens": 1851,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1851
+        }
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 2101
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The economic impact of the COVID-19 pandemic on in-person businesses and calls for government aid.\",\n  \"climate_relevance\": \"Climate change appears only in a separate related-news snippet about a corporate climate policy document, not in the main article.\",\n  \"reason\": \"The identifiable main article concerns pandemic-related business losses and economic relief. The climate reference is in unrelated supplementary content and does not contribute climate discourse to the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:18:00Z",
+  "duration_seconds": 2.382,
+  "error": null
+}

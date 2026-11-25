@@ -1,0 +1,77 @@
+{
+  "article_id": "21047723",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/in/21047723.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/in/21047723.json"
+  },
+  "manifest_row": {
+    "article_id": "21047723",
+    "group": "2017_10",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/in/21047723.txt",
+    "now_field_2": "286",
+    "date_original": "17-10-11",
+    "date_iso": "2017-10-11",
+    "source_name": "India.com",
+    "url": "http://www.india.com/news/india/cabinet-committee-on-appointments-reshuffles-bureaucrats-in-ministries-ahead-of-budget-2528171/",
+    "title": "Appointments Committee of The Cabinet Reshuffles Bureaucrats",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-IN.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Government appointments and bureaucratic reshuffles ahead of the budget",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Environment, Forests and Climate Change; the text does not discuss climate issues.",
+    "reason": "The article reports appointments and portfolio changes. References to the climate-related ministry are incidental administrative details, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a0acfe4d8005ef614180371e7546dc1d00ad0570265f7057d57a7b6802945be7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "13ddc3d57d63d2721169892c90ab985c4c2d323b4828baed250dc34e927d1151",
+    "raw_response_text_sha256": "dae171e967dbd883bef347aa064a6ca980cb0312b76f9528aaa73778b7531f7c"
+  },
+  "api_metadata": {
+    "id": "resp_0da7d426092d2472006b060e2a774087d2a7d217ed8160427f",
+    "model": "gpt-6-luna",
+    "created_at": 1795558954.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 887,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 187,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 1074
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Government appointments and bureaucratic reshuffles ahead of the budget\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Environment, Forests and Climate Change; the text does not discuss climate issues.\",\n  \"reason\": \"The article reports appointments and portfolio changes. References to the climate-related ministry are incidental administrative details, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:22:35Z",
+  "duration_seconds": 1.601,
+  "error": null
+}

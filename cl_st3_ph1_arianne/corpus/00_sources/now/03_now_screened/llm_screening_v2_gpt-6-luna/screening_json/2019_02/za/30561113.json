@@ -1,0 +1,77 @@
+{
+  "article_id": "30561113",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/za/30561113.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/za/30561113.json"
+  },
+  "manifest_row": {
+    "article_id": "30561113",
+    "group": "2019_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/za/30561113.txt",
+    "now_field_2": "449",
+    "date_original": "19-02-13",
+    "date_iso": "2019-02-13",
+    "source_name": "Independent Online",
+    "url": "https://www.iol.co.za/capeargus/news/outcry-at-city-of-cape-towns-electricity-depot-plan-on-land-meant-for-housing-19260517",
+    "title": "Outcry at City of Cape Town's electricity depot plan on land meant for ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A dispute over the City of Cape Town’s plan to build an electricity depot on land residents say was intended for housing.",
+    "climate_relevance": "Climate change appears only in the title of a municipal official’s portfolio; the text contains no substantive discussion of climate change or its implications.",
+    "reason": "The article focuses on housing, consultation, and land use. The passing reference to the Energy and Climate Change portfolio does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "20952e225ef03b036898f53a773b2f94d5226b5949c988d56952dcefefaab485",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "130b74d6ce09224b4cbf79e01a3672f8ab92fa141157f1a5df3892f7f484f91e",
+    "raw_response_text_sha256": "4a9b15e32a591b59865023987d453e01d81971fddb77bc64fa3a7df8e6ab5b1b"
+  },
+  "api_metadata": {
+    "id": "resp_03ed329f4cbb64f1006b061485c8b087d2affc6511f15d79d6",
+    "model": "gpt-6-luna",
+    "created_at": 1795560581.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1067,
+      "input_tokens_details": {
+        "cache_write_tokens": 1064,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1064
+        }
+      },
+      "output_tokens": 223,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1290
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A dispute over the City of Cape Town’s plan to build an electricity depot on land residents say was intended for housing.\",\n  \"climate_relevance\": \"Climate change appears only in the title of a municipal official’s portfolio; the text contains no substantive discussion of climate change or its implications.\",\n  \"reason\": \"The article focuses on housing, consultation, and land use. The passing reference to the Energy and Climate Change portfolio does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:49:43Z",
+  "duration_seconds": 2.181,
+  "error": null
+}

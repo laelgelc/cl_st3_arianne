@@ -1,0 +1,77 @@
+{
+  "article_id": "19810235",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/us/19810235.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/us/19810235.json"
+  },
+  "manifest_row": {
+    "article_id": "19810235",
+    "group": "2017_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/us/19810235.txt",
+    "now_field_2": "1115",
+    "date_original": "17-08-02",
+    "date_iso": "2017-08-02",
+    "source_name": "New York Times",
+    "url": "https://www.nytimes.com/2017/08/02/climate/nations-will-start-talks-to-protect-fish-of-the-high-seas.html",
+    "title": "Nations Will Start Talks to Protect Fish of the High Seas",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "International negotiations to establish marine protected areas in the high seas",
+    "climate_relevance": "The article notes that marine sanctuaries may help ecosystems and coastal populations cope with climate change effects, including sea-level rise, stronger storms, shifting species distributions, and ocean acidification.",
+    "reason": "The main focus is biodiversity protection, fishing, and governance of international waters. Climate change is meaningfully discussed as one potential benefit of protected areas, but it is not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "febb541aab24adc89797ea52fe714198332f188f1106194b5b826e6a77cf09f7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "83b0bb789452caa5347e221569179508bbb948f023637edb579318a9fafa68af",
+    "raw_response_text_sha256": "cb9a1ab9043739f6b43db5885d0ab39750f04297297cacd7f4db3e910c6cddb6"
+  },
+  "api_metadata": {
+    "id": "resp_03a105b9a0e6c77c006b060c78b7b487d293d7c996a5ebb022",
+    "model": "gpt-6-luna",
+    "created_at": 1795558520.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1917,
+      "input_tokens_details": {
+        "cache_write_tokens": 1914,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1914
+        }
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 2137
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"International negotiations to establish marine protected areas in the high seas\",\n  \"climate_relevance\": \"The article notes that marine sanctuaries may help ecosystems and coastal populations cope with climate change effects, including sea-level rise, stronger storms, shifting species distributions, and ocean acidification.\",\n  \"reason\": \"The main focus is biodiversity protection, fishing, and governance of international waters. Climate change is meaningfully discussed as one potential benefit of protected areas, but it is not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:15:22Z",
+  "duration_seconds": 1.72,
+  "error": null
+}

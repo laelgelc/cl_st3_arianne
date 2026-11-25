@@ -1,0 +1,77 @@
+{
+  "article_id": "16706643",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/za/16706643.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/za/16706643.json"
+  },
+  "manifest_row": {
+    "article_id": "16706643",
+    "group": "2017_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/za/16706643.txt",
+    "now_field_2": "504",
+    "date_original": "17-02-02",
+    "date_iso": "2017-02-02",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/local/2017/02/02/Some-mentally-ill-patients-died-just-days-after-leaving-Life-Healthcare-Esidimeni1",
+    "title": "Some mentally ill patients died just days after leaving Life ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The deaths of psychiatric patients after their transfer from Life Healthcare Esidimeni facilities in South Africa",
+    "climate_relevance": "The main article contains no climate discussion. A separate sentence mentions Sweden's goal to phase out greenhouse gas emissions by 2045 and uncertainty about U.S. climate policy.",
+    "reason": "The identifiable main article concerns a psychiatric-care scandal. The climate-policy sentence appears among unrelated snippets and is not part of that article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "16632d30a2931cdb0dfe9b2d45212f31cc5e2ee636c3516c601183d24eb96f1e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7bf4414ff711cc0d90e3772667c63fa74f33f4d77cfb5e90751971d168d06466",
+    "raw_response_text_sha256": "05d1467a08350ad6506c10d2fed69fe701c3aa73b37c58342b01565ecfb56104"
+  },
+  "api_metadata": {
+    "id": "resp_0de436f644f50369006b0608136ed087d29b5c96af5e7e99a4",
+    "model": "gpt-6-luna",
+    "created_at": 1795557395.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1198,
+      "input_tokens_details": {
+        "cache_write_tokens": 1195,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1195
+        }
+      },
+      "output_tokens": 430,
+      "output_tokens_details": {
+        "reasoning_tokens": 271
+      },
+      "total_tokens": 1628
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The deaths of psychiatric patients after their transfer from Life Healthcare Esidimeni facilities in South Africa\",\n  \"climate_relevance\": \"The main article contains no climate discussion. A separate sentence mentions Sweden's goal to phase out greenhouse gas emissions by 2045 and uncertainty about U.S. climate policy.\",\n  \"reason\": \"The identifiable main article concerns a psychiatric-care scandal. The climate-policy sentence appears among unrelated snippets and is not part of that article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:56:38Z",
+  "duration_seconds": 3.489,
+  "error": null
+}

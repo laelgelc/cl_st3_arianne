@@ -1,0 +1,77 @@
+{
+  "article_id": "81019843",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/81019843.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/81019843.json"
+  },
+  "manifest_row": {
+    "article_id": "81019843",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/81019843.txt",
+    "now_field_2": "1117",
+    "date_original": "19-09-11",
+    "date_iso": "2019-09-11",
+    "source_name": "The Hill",
+    "url": "https://thehill.com/policy/energy-environment/overnights/461002-overnight-energy-house-approves-two-bills-to-block-trump",
+    "title": "Overnight Energy: House moves to block Trump drilling | House GOP rolls out proposal to counter offshore drilling ban | calls mount for NOAA probe",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "climate_role": "background",
+    "main_topic": "Congressional proposals concerning offshore drilling and energy development",
+    "climate_relevance": "The text briefly discusses climate change, emissions, and greenhouse-gas implications in relation to offshore drilling policy, but climate is not the main focus.",
+    "reason": "The primary coverage concerns competing energy and offshore-drilling bills. Climate-related implications appear in a meaningful but limited passage, making the text relevant as peripheral rather than core climate coverage. A later NOAA/Hurricane Dorian section appears to be a separate, unrelated news item.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "60c02296c01cf14a799bd64d11ec64600141c0bcd58afdc95581df334a9943c0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "be59d18b891c194f314aa4b8547bb435f90f65ff9a4641beaed4e1516dafc2ec",
+    "raw_response_text_sha256": "0efc815411d84409a252e3423905ef3cfde41698357e15216411bb9464ee450d"
+  },
+  "api_metadata": {
+    "id": "resp_00c0f1cb77fc61cc006b0646d09a4887d189a20962598d9dff",
+    "model": "gpt-6-luna",
+    "created_at": 1795573456.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1922,
+      "input_tokens_details": {
+        "cache_write_tokens": 1919,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1919
+        }
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 2251
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Congressional proposals concerning offshore drilling and energy development\",\n  \"climate_relevance\": \"The text briefly discusses climate change, emissions, and greenhouse-gas implications in relation to offshore drilling policy, but climate is not the main focus.\",\n  \"reason\": \"The primary coverage concerns competing energy and offshore-drilling bills. Climate-related implications appear in a meaningful but limited passage, making the text relevant as peripheral rather than core climate coverage. A later NOAA/Hurricane Dorian section appears to be a separate, unrelated news item.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:24:27Z",
+  "duration_seconds": 10.859,
+  "error": null
+}

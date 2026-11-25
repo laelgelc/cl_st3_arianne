@@ -1,0 +1,77 @@
+{
+  "article_id": "51527002",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/ca/51527002.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/ca/51527002.json"
+  },
+  "manifest_row": {
+    "article_id": "51527002",
+    "group": "2020_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/ca/51527002.txt",
+    "now_field_2": "844",
+    "date_original": "20-03-11",
+    "date_iso": "2020-03-11",
+    "source_name": "pembinavalleyonline.com",
+    "url": "https://pembinavalleyonline.com/local/province-announces-carbon-tax-drops-pst-one-point",
+    "title": "Province Announces Carbon Tax, Drops PST One Point ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-ca1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "substantial",
+    "main_topic": "Manitoba's planned carbon levy and related emissions-reduction policy",
+    "climate_relevance": "The report discusses carbon pricing, greenhouse-gas emissions targets, and provincial and federal approaches to climate action.",
+    "reason": "Climate policy is the central subject. The final lines are unrelated local-news website promotional boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2c2ff138dcf9acb191914c6d7669b0525b08452d8ec028efa33994ad6ef51250",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d5b197c4554342042fce70ed2c487805ec06339609d5cd2286ed8853d1f122a7",
+    "raw_response_text_sha256": "f01587d501ca9182ec0e59b9f02c05030886cdfb1c557bc5786e8a70dacd5345"
+  },
+  "api_metadata": {
+    "id": "resp_0a61ff5f12fe49f8006b062df8cdcc87d19e9bb12bcf7f19d6",
+    "model": "gpt-6-luna",
+    "created_at": 1795567096.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1035,
+      "input_tokens_details": {
+        "cache_write_tokens": 1032,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1032
+        }
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 1229
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Manitoba's planned carbon levy and related emissions-reduction policy\",\n  \"climate_relevance\": \"The report discusses carbon pricing, greenhouse-gas emissions targets, and provincial and federal approaches to climate action.\",\n  \"reason\": \"Climate policy is the central subject. The final lines are unrelated local-news website promotional boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:38:18Z",
+  "duration_seconds": 1.633,
+  "error": null
+}

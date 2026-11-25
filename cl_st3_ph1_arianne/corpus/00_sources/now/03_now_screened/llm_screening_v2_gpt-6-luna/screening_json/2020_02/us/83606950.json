@@ -1,0 +1,77 @@
+{
+  "article_id": "83606950",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/83606950.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/83606950.json"
+  },
+  "manifest_row": {
+    "article_id": "83606950",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/83606950.txt",
+    "now_field_2": "166",
+    "date_original": "20-02-03",
+    "date_iso": "2020-02-03",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20200203072328-cwimp",
+    "title": "Turkey sees Syrian forces as 'targets' around its Idlib posts -official",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Turkish-Syrian military tensions in Idlib",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news organization's coverage areas.",
+    "reason": "The report focuses on the conflict in Idlib and contains no meaningful climate discourse; the sole mention is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f9e2cede97450cfaf14c626ba4a8f64f5c49460f4f06665665c7d46345032736",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2569cbb32bce124eb6dbac5cfcb11051ff18712b8bdb877e779e1fcb2b0e7c54",
+    "raw_response_text_sha256": "b7f1b6c2e5a352c5e384372e286aadabc35c2f5035f7fdb79cf8f71f4395a042"
+  },
+  "api_metadata": {
+    "id": "resp_0bb854be868a7368006b0649cc1d1487d1b53bd21667238760",
+    "model": "gpt-6-luna",
+    "created_at": 1795574220.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 698,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 223,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 921
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Turkish-Syrian military tensions in Idlib\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news organization's coverage areas.\",\n  \"reason\": \"The report focuses on the conflict in Idlib and contains no meaningful climate discourse; the sole mention is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:37:02Z",
+  "duration_seconds": 2.091,
+  "error": null
+}

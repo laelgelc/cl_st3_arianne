@@ -1,0 +1,77 @@
+{
+  "article_id": "42225217",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/gb/42225217.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/gb/42225217.json"
+  },
+  "manifest_row": {
+    "article_id": "42225217",
+    "group": "2020_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/gb/42225217.txt",
+    "now_field_2": "409",
+    "date_original": "20-08-25",
+    "date_iso": "2020-08-25",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/george-osborne-wheres-wally-cartoon-boris-johnson-1-6801872",
+    "title": "Former Tory MP George Osborne criticises Boris Johnson for ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "George Osborne's criticism of Boris Johnson's absence during a political crisis",
+    "climate_relevance": "Climate change appears only in a promotional description of the publication's coverage areas, not as part of the article's discussion.",
+    "reason": "The article concerns political reactions to Johnson's absence. Its climate-change reference is incidental promotional boilerplate and offers no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a5b1ed7c32aae689e8343dfef7c1d091c540af1447d6b658f3a37a19e5632b34",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "000658656ba215ac5aa349f9493ad8526a6b957d3956a6a93610c92c71d7aca1",
+    "raw_response_text_sha256": "0b3c94d0590fd9744df7fcf8e12a3c974af2b3a53ccbc11ee5cd38e734894290"
+  },
+  "api_metadata": {
+    "id": "resp_0022f3bb80a51bc6006b062529c85487d2ae5f9576be8fdc9d",
+    "model": "gpt-6-luna",
+    "created_at": 1795564841.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1009,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 1263
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"George Osborne's criticism of Boris Johnson's absence during a political crisis\",\n  \"climate_relevance\": \"Climate change appears only in a promotional description of the publication's coverage areas, not as part of the article's discussion.\",\n  \"reason\": \"The article concerns political reactions to Johnson's absence. Its climate-change reference is incidental promotional boilerplate and offers no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:00:44Z",
+  "duration_seconds": 2.33,
+  "error": null
+}

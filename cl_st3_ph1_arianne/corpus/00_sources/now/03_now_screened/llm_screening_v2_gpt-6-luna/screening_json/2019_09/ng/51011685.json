@@ -1,0 +1,77 @@
+{
+  "article_id": "51011685",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ng/51011685.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ng/51011685.json"
+  },
+  "manifest_row": {
+    "article_id": "51011685",
+    "group": "2019_09",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ng/51011685.txt",
+    "now_field_2": "884",
+    "date_original": "19-09-04",
+    "date_iso": "2019-09-04",
+    "source_name": "blueprint.ng",
+    "url": "https://www.blueprint.ng/category/top-newspaper/page/406/",
+    "title": "Top Stories - Page 406 - Blueprint",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ng.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "passing",
+    "main_topic": "A collection of Nigerian news and opinion snippets on unrelated subjects",
+    "climate_relevance": "One column excerpt refers to Greta Thunberg and world leaders' inaction on climate change.",
+    "reason": "The climate reference is meaningful, but it appears in only one brief excerpt among many unrelated snippets, so the supplied text is not substantially about climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6f6f8b00e70f1ee3ea709b41482a8275a105ca9f05b93953b1620e8a1330f0cd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "72d7fdae0d322153d44b809c5def354a8d6d293b51290525c7484d7ff6b18c46",
+    "raw_response_text_sha256": "45e46478565061d639cfb5b639d5a95a043dba7ba89026918e0dbee50c986b35"
+  },
+  "api_metadata": {
+    "id": "resp_0c0e39240d96c3e4006b062b6230dc87d1a8a82b3c9c4cbfbc",
+    "model": "gpt-6-luna",
+    "created_at": 1795566434.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1714,
+      "input_tokens_details": {
+        "cache_write_tokens": 1711,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1711
+        }
+      },
+      "output_tokens": 496,
+      "output_tokens_details": {
+        "reasoning_tokens": 360
+      },
+      "total_tokens": 2210
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of Nigerian news and opinion snippets on unrelated subjects\",\n  \"climate_relevance\": \"One column excerpt refers to Greta Thunberg and world leaders' inaction on climate change.\",\n  \"reason\": \"The climate reference is meaningful, but it appears in only one brief excerpt among many unrelated snippets, so the supplied text is not substantially about climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:27:17Z",
+  "duration_seconds": 3.849,
+  "error": null
+}

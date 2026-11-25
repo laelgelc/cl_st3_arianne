@@ -1,0 +1,77 @@
+{
+  "article_id": "50977680",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/ca/50977680.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/ca/50977680.json"
+  },
+  "manifest_row": {
+    "article_id": "50977680",
+    "group": "2019_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/ca/50977680.txt",
+    "now_field_2": "887",
+    "date_original": "19-08-22",
+    "date_iso": "2019-08-22",
+    "source_name": "nationalobserver.com",
+    "url": "https://www.nationalobserver.com/2019/08/22/opinion/elections-canadas-attack-free-speech-will-hobble-advocacy-groups",
+    "title": "Elections Canada's attack on free speech will hobble ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "Canadian election law and its effects on advocacy groups, followed by a separate article about a news outlet and an editor's past affiliations",
+    "climate_relevance": "The first article meaningfully discusses climate-science advocacy and the potential regulation of climate-related campaigning, but its main focus is election rules and freedom of association rather than climate change itself. The later article is unrelated to climate change.",
+    "reason": "Climate advocacy is a substantive example in the election-law discussion, making the identifiable first article useful for broader climate discourse analysis but not core climate coverage. The supplied text also contains a separate, unrelated article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1aacfc3381670dcf19be460aceecbbc7a65081c31088dffe3c6e2d54442fa800",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "11a312c0344fa1015f2eb02f999d79d83af587814bba2d53ac26fb74a34b3969",
+    "raw_response_text_sha256": "f0bebcc2dd314eafa64ba1b715fab653d8f7dcba7df7fb26b055ef15558b4d70"
+  },
+  "api_metadata": {
+    "id": "resp_0ae78d06a020c855006b062b31a6e887d18fded4c3b3d6e471",
+    "model": "gpt-6-luna",
+    "created_at": 1795566385.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4803,
+      "input_tokens_details": {
+        "cache_write_tokens": 4800,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4800
+        }
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 5116
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Canadian election law and its effects on advocacy groups, followed by a separate article about a news outlet and an editor's past affiliations\",\n  \"climate_relevance\": \"The first article meaningfully discusses climate-science advocacy and the potential regulation of climate-related campaigning, but its main focus is election rules and freedom of association rather than climate change itself. The later article is unrelated to climate change.\",\n  \"reason\": \"Climate advocacy is a substantive example in the election-law discussion, making the identifiable first article useful for broader climate discourse analysis but not core climate coverage. The supplied text also contains a separate, unrelated article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:26:28Z",
+  "duration_seconds": 2.982,
+  "error": null
+}

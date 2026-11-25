@@ -1,0 +1,77 @@
+{
+  "article_id": "9690915",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_07/au/9690915.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_07/au/9690915.json"
+  },
+  "manifest_row": {
+    "article_id": "9690915",
+    "group": "2016_07",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_07/au/9690915.txt",
+    "now_field_2": "2696",
+    "date_original": "16-07-03",
+    "date_iso": "2016-07-03",
+    "source_name": "Lifehacker Australia",
+    "url": "http://www.lifehacker.com.au/2016/07/how-the-great-french-wine-blight-changed-grapes-forever/",
+    "title": "How The Great French Wine Blight Changed Grapes Forever",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-07-qxx/16-07-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "The history of the phylloxera blight and how grafting and resistant grape varieties have helped vineyards adapt to pests and disease.",
+    "climate_relevance": "Climate change is briefly mentioned as a factor that may push vintners to accept new grape varieties, alongside concerns about fungicide use.",
+    "reason": "The article is substantially about grape blight and viticulture, not climate change. Its brief reference to climate change has a meaningful connection to agricultural adaptation, so it is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6368004f8e8e122d5b5a9fe7e241fa0b805734e1f10ecd8237a977e5ac6d8108",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "83962477d3dc45223dc64e64c67113dc6a0d70a582a1edcd8ced5cbd26a763c4",
+    "raw_response_text_sha256": "ba44f5166fe2f41565a42bd25a53dfc0d1ef20dde47f83bc391764cffe93fa6c"
+  },
+  "api_metadata": {
+    "id": "resp_0758a449cc41be02006b06514bb42887d195940d56c7b4d370",
+    "model": "gpt-6-luna",
+    "created_at": 1795576139.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4154,
+      "input_tokens_details": {
+        "cache_write_tokens": 4151,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4151
+        }
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 4426
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The history of the phylloxera blight and how grafting and resistant grape varieties have helped vineyards adapt to pests and disease.\",\n  \"climate_relevance\": \"Climate change is briefly mentioned as a factor that may push vintners to accept new grape varieties, alongside concerns about fungicide use.\",\n  \"reason\": \"The article is substantially about grape blight and viticulture, not climate change. Its brief reference to climate change has a meaningful connection to agricultural adaptation, so it is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:09:02Z",
+  "duration_seconds": 2.47,
+  "error": null
+}

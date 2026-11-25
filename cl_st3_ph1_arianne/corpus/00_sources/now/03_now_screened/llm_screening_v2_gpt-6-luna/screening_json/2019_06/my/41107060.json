@@ -1,0 +1,77 @@
+{
+  "article_id": "41107060",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/my/41107060.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/my/41107060.json"
+  },
+  "manifest_row": {
+    "article_id": "41107060",
+    "group": "2019_06",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/my/41107060.txt",
+    "now_field_2": "305",
+    "date_original": "19-06-26",
+    "date_iso": "2019-06-26",
+    "source_name": "Malaysiakini",
+    "url": "https://www.malaysiakini.com/news/481343",
+    "title": "Ex-judge heads probe into Koh, Amri disappearances, and 7 other ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A roundup of Malaysian news headlines on unrelated events and issues",
+    "climate_relevance": "Climate change appears only in the minister's official portfolio title; no climate change discourse is present.",
+    "reason": "The item about toxic fumes concerns identifying chemicals and does not discuss climate change. The title reference is incidental rather than meaningful climate content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "56271af23dec7a2390a5d94adf3cfaf49a8257bddcf60f6b3eae56bfd032d3e5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "302c19eb3df1c042e995306e9896b759f1bd03db52f6c15cf289aee9f2a2e7f4",
+    "raw_response_text_sha256": "77a7921c224434105e636234caa8fe23a8ad9a0a4eff112dae6300fc917691ee"
+  },
+  "api_metadata": {
+    "id": "resp_094defcda958d58e006b0620eab1a887d2961206d2bfe124b8",
+    "model": "gpt-6-luna",
+    "created_at": 1795563754.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 893,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 1145
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A roundup of Malaysian news headlines on unrelated events and issues\",\n  \"climate_relevance\": \"Climate change appears only in the minister's official portfolio title; no climate change discourse is present.\",\n  \"reason\": \"The item about toxic fumes concerns identifying chemicals and does not discuss climate change. The title reference is incidental rather than meaningful climate content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:42:36Z",
+  "duration_seconds": 2.057,
+  "error": null
+}

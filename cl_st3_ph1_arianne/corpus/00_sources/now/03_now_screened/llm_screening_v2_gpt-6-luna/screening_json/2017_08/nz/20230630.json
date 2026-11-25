@@ -1,0 +1,77 @@
+{
+  "article_id": "20230630",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/nz/20230630.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/nz/20230630.json"
+  },
+  "manifest_row": {
+    "article_id": "20230630",
+    "group": "2017_08",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/nz/20230630.txt",
+    "now_field_2": "738",
+    "date_original": "17-08-27",
+    "date_iso": "2017-08-27",
+    "source_name": "New Zealand Herald",
+    "url": "http://www.nzherald.co.nz/hawkes-bay-today/opinion/news/article.cfm?c_id=1503459&amp;objectid=11912088",
+    "title": "Jacoby Poulain: MMP and the nature of politics",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "The role of minor parties in New Zealand politics and the influence of the MMP electoral system.",
+    "climate_relevance": "Climate change and environmental policy are discussed as examples of issues that minor parties, particularly the Greens, bring into political debate.",
+    "reason": "The text meaningfully connects the Greens’ influence and Labour’s environmental policies to climate change, but its main focus is the electoral system and minor-party influence rather than climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4349ef7756073a8d6c79bdb003aa5a987eb8aba643465f7271b75070bf814205",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e42015106c6f88f9e60479db94b01b32f83011b85ebc39746eac5e4a4ece3af2",
+    "raw_response_text_sha256": "c0eb79ac0e7d544030ea475bd184921e6022581f8096731914f6c3f52d77ae8b"
+  },
+  "api_metadata": {
+    "id": "resp_0eb5a665c9e76e4c006b060cffeb0c87d2bc9827fee3f33d1c",
+    "model": "gpt-6-luna",
+    "created_at": 1795558656.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1357,
+      "input_tokens_details": {
+        "cache_write_tokens": 1354,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1354
+        }
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1599
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The role of minor parties in New Zealand politics and the influence of the MMP electoral system.\",\n  \"climate_relevance\": \"Climate change and environmental policy are discussed as examples of issues that minor parties, particularly the Greens, bring into political debate.\",\n  \"reason\": \"The text meaningfully connects the Greens’ influence and Labour’s environmental policies to climate change, but its main focus is the electoral system and minor-party influence rather than climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:37Z",
+  "duration_seconds": 1.949,
+  "error": null
+}

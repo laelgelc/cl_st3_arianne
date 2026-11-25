@@ -1,0 +1,77 @@
+{
+  "article_id": "71175471",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/au/71175471.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/au/71175471.json"
+  },
+  "manifest_row": {
+    "article_id": "71175471",
+    "group": "2019_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/au/71175471.txt",
+    "now_field_2": "1025",
+    "date_original": "19-09-03",
+    "date_iso": "2019-09-03",
+    "source_name": "abc.net.au",
+    "url": "https://www.abc.net.au/news/2019-08-28/bury-kicked-out-of-english-football-league-after-125-years/11455758",
+    "title": "Bury Football Club's demise a stark warning for other ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Financial crises and the future of lower-league English football clubs",
+    "climate_relevance": "Climate change appears only in a final, unrelated feature teaser about an emissions fact-check.",
+    "reason": "The identifiable main article concerns the financial problems of Bury, Bolton, and the English football league system. The climate-related line is an unrelated promotional snippet and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c6ea83ef94a59e855a2dd7f96e9ccb753f204ae4b5840f985b58a765b2a18b96",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1bbc1f111fea448bcc74a1fa1d6baab2328723caf027f20e62171fbb2daa4e57",
+    "raw_response_text_sha256": "5043df83ac161e32d8374ea21436ba823f80a0c25a826ed5a70b2607fc875e47"
+  },
+  "api_metadata": {
+    "id": "resp_0d7c03f61995fd3d006b064039e2ac87d19f279d3071b43392",
+    "model": "gpt-6-luna",
+    "created_at": 1795571769.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1888,
+      "input_tokens_details": {
+        "cache_write_tokens": 1885,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1885
+        }
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 2105
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Financial crises and the future of lower-league English football clubs\",\n  \"climate_relevance\": \"Climate change appears only in a final, unrelated feature teaser about an emissions fact-check.\",\n  \"reason\": \"The identifiable main article concerns the financial problems of Bury, Bolton, and the English football league system. The climate-related line is an unrelated promotional snippet and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:56:11Z",
+  "duration_seconds": 2.023,
+  "error": null
+}

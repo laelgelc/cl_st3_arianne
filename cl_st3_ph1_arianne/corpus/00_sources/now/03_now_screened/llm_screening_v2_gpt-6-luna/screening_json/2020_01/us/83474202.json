@@ -1,0 +1,77 @@
+{
+  "article_id": "83474202",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83474202.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83474202.json"
+  },
+  "manifest_row": {
+    "article_id": "83474202",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83474202.txt",
+    "now_field_2": "454",
+    "date_original": "20-01-27",
+    "date_iso": "2020-01-27",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20200127152351-wkawx",
+    "title": "Libya's NOC issues warning over impact of oil blockade",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Libya's oil blockade, its effects on oil production, and the political conflict surrounding it",
+    "climate_relevance": "Climate change appears only in the outlet's boilerplate description of its coverage. The article's mention of environmental damage concerns potential pipeline corrosion and oil leaks, not climate change discourse.",
+    "reason": "The article focuses on Libya's oil industry blockade and its political and economic consequences. It contains no meaningful discussion of climate change; the sole explicit reference is boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d5fb88d9b5e9724cdcd7cae0d2bb8333d6413c937236e48e36a16a906a353b08",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4ddd713422e0a8d341c446288c63e44256693a9b9f41ebc47a9d4ab4b15b83ed",
+    "raw_response_text_sha256": "075dd644a4befc3be027a751ee30c8e978350458bdfc10e6b92f7427bd5df282"
+  },
+  "api_metadata": {
+    "id": "resp_0201fc8de3b12633006b0649a4fba087d180306912de3b8cbc",
+    "model": "gpt-6-luna",
+    "created_at": 1795574181.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1089,
+      "input_tokens_details": {
+        "cache_write_tokens": 1086,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1086
+        }
+      },
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 1323
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Libya's oil blockade, its effects on oil production, and the political conflict surrounding it\",\n  \"climate_relevance\": \"Climate change appears only in the outlet's boilerplate description of its coverage. The article's mention of environmental damage concerns potential pipeline corrosion and oil leaks, not climate change discourse.\",\n  \"reason\": \"The article focuses on Libya's oil industry blockade and its political and economic consequences. It contains no meaningful discussion of climate change; the sole explicit reference is boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:36:23Z",
+  "duration_seconds": 2.263,
+  "error": null
+}

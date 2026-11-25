@@ -1,0 +1,77 @@
+{
+  "article_id": "70580514",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70580514.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70580514.json"
+  },
+  "manifest_row": {
+    "article_id": "70580514",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70580514.txt",
+    "now_field_2": "347",
+    "date_original": "19-03-10",
+    "date_iso": "2019-03-10",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/CU1903/S00137/sweaty-pits-making-nz-debut-with-award-winning-pity-party.htm",
+    "title": "Sweaty Pits making NZ debut with award winning \"Pity Party\"",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "A collection of unrelated news and promotional snippets, including comedy, rat research, forestry policy, and a climate-policy report.",
+    "climate_relevance": "Climate change appears in a headline about long-term targets and policies, alongside a forestry-sector comment on simplifying the Emissions Trading Scheme and incentives to plant trees.",
+    "reason": "The text contains meaningful but brief climate-policy discourse; its main content is a mixture of other topics rather than climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "21088860a766ebbf53e93746c9df7243b001ccc9eed783e43bce3cddabe0d8b9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "551754416ace3593f8286651a5270932c74df32bfa839cb429ee32d2da9bdaab",
+    "raw_response_text_sha256": "094b21babb025fe68bf2b639c896eff2a19dcbf79ee0d8a5ea43b5fa58e9ed7a"
+  },
+  "api_metadata": {
+    "id": "resp_0fd6d2e72c996492006b063db59f8887d1973513b9277e2312",
+    "model": "gpt-6-luna",
+    "created_at": 1795571125.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1604,
+      "input_tokens_details": {
+        "cache_write_tokens": 1601,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1601
+        }
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 171
+      },
+      "total_tokens": 1929
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of unrelated news and promotional snippets, including comedy, rat research, forestry policy, and a climate-policy report.\",\n  \"climate_relevance\": \"Climate change appears in a headline about long-term targets and policies, alongside a forestry-sector comment on simplifying the Emissions Trading Scheme and incentives to plant trees.\",\n  \"reason\": \"The text contains meaningful but brief climate-policy discourse; its main content is a mixture of other topics rather than climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:45:28Z",
+  "duration_seconds": 3.07,
+  "error": null
+}

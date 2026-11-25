@@ -1,0 +1,77 @@
+{
+  "article_id": "40247755",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/ng/40247755.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/ng/40247755.json"
+  },
+  "manifest_row": {
+    "article_id": "40247755",
+    "group": "2018_11",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/ng/40247755.txt",
+    "now_field_2": "399",
+    "date_original": "18-11-08",
+    "date_iso": "2018-11-08",
+    "source_name": "TODAY.NG",
+    "url": "https://www.today.ng/news/nigeria/prince-charles-visit-benin-monarch-urges-return-artefacts-169087",
+    "title": "Prince Charles visit: Benin monarch urges return of artefacts",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Prince Charles’s visit to Nigeria and a request for the return of Benin artefacts",
+    "climate_relevance": "Climate change appears only in a brief list of topics discussed during the visit, with no further detail.",
+    "reason": "The identifiable main article focuses on artefacts, traditional rulers, and Prince Charles’s visit. Climate change receives only a passing mention; the additional recent-story snippets are unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7a1bcfeec046439cff89a97af72872bb4e3be271d66917cac9508c1788e3d4ab",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f784735696b39dfc219ec0a075b806af303d9ecdc229e36da947ab1e7d415e1f",
+    "raw_response_text_sha256": "fe230067194f448cda33e14c0e3fa869c1422d5c739f61ca58895381a879d9b9"
+  },
+  "api_metadata": {
+    "id": "resp_09aa221e09f9af30006b061e91dad887d2a558485e25e9bc6e",
+    "model": "gpt-6-luna",
+    "created_at": 1795563153.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1006,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 1263
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Prince Charles’s visit to Nigeria and a request for the return of Benin artefacts\",\n  \"climate_relevance\": \"Climate change appears only in a brief list of topics discussed during the visit, with no further detail.\",\n  \"reason\": \"The identifiable main article focuses on artefacts, traditional rulers, and Prince Charles’s visit. Climate change receives only a passing mention; the additional recent-story snippets are unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:32:36Z",
+  "duration_seconds": 2.317,
+  "error": null
+}

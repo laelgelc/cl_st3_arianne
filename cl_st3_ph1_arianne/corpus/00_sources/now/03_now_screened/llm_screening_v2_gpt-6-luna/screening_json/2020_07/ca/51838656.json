@@ -1,0 +1,77 @@
+{
+  "article_id": "51838656",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/ca/51838656.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/ca/51838656.json"
+  },
+  "manifest_row": {
+    "article_id": "51838656",
+    "group": "2020_07",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/ca/51838656.txt",
+    "now_field_2": "478",
+    "date_original": "20-07-23",
+    "date_iso": "2020-07-23",
+    "source_name": "intelligencer.ca",
+    "url": "https://www.intelligencer.ca/news/local-news/new-nature-reserve-created-on-prince-edward-countys-south-shore",
+    "title": "New nature reserve created on Prince Edward County's south ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-ca2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Creation of a nature reserve to protect wildlife habitat and biodiversity on Prince Edward County’s south shore",
+    "climate_relevance": "Climate change appears only in the official title of the Minister of Environment and Climate Change; the article does not discuss climate issues.",
+    "reason": "The article focuses on land conservation, wildlife habitat, and biodiversity. The minister’s title is not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e13b0d036c57de103086f0574c543b6607bb9eee884275e4f876fea7c1c4533b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3891484ca21f3253d4b9ae2e9c7f33b4a823030e30aaf3311bbb6c00f5fc08a1",
+    "raw_response_text_sha256": "c9f1154d8649587532c2aa99450c0e30b8715557160a1ad290762b5d146af49e"
+  },
+  "api_metadata": {
+    "id": "resp_09ad005dba253c6b006b062ee8e44887d19297fb1168e17b01",
+    "model": "gpt-6-luna",
+    "created_at": 1795567336.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1125,
+      "input_tokens_details": {
+        "cache_write_tokens": 1122,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1122
+        }
+      },
+      "output_tokens": 203,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 1328
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Creation of a nature reserve to protect wildlife habitat and biodiversity on Prince Edward County’s south shore\",\n  \"climate_relevance\": \"Climate change appears only in the official title of the Minister of Environment and Climate Change; the article does not discuss climate issues.\",\n  \"reason\": \"The article focuses on land conservation, wildlife habitat, and biodiversity. The minister’s title is not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:42:18Z",
+  "duration_seconds": 2.015,
+  "error": null
+}

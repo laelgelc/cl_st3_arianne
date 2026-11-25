@@ -1,0 +1,77 @@
+{
+  "article_id": "50238902",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/au/50238902.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/au/50238902.json"
+  },
+  "manifest_row": {
+    "article_id": "50238902",
+    "group": "2018_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/au/50238902.txt",
+    "now_field_2": "761",
+    "date_original": "18-11-25",
+    "date_iso": "2018-11-25",
+    "source_name": "Yahoo Finance",
+    "url": "https://au.finance.yahoo.com/news/powell-speaks-trump-xi-meet-need-know-week-ahead-194854338.html",
+    "title": "Powell speaks, Trump and Xi meet - What you need to know in the ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Financial markets, economic policy, and the upcoming G20 summit",
+    "climate_relevance": "Climate change is briefly listed as one of two issues expected to be discussed at the G20 summit, with no further detail.",
+    "reason": "The article is a financial and economic news preview. Its sole climate reference is a passing mention and does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "965e23cc203e492bc1f32679ee5a485aeab785b4bafc637d5de22143689ffb71",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ac9dd2a38d6e8f8b534e0fc06d00c1c490190a5304ec2c4005638374abc0463f",
+    "raw_response_text_sha256": "6b7227ca184bba9d72f72b8d9faf83c8774de79bb830b673a9f898c5f7d838df"
+  },
+  "api_metadata": {
+    "id": "resp_05b823988e2f9a98006b06281edaa887d196b9b2861e585328",
+    "model": "gpt-6-luna",
+    "created_at": 1795565598.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1500,
+      "input_tokens_details": {
+        "cache_write_tokens": 1497,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1497
+        }
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1727
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Financial markets, economic policy, and the upcoming G20 summit\",\n  \"climate_relevance\": \"Climate change is briefly listed as one of two issues expected to be discussed at the G20 summit, with no further detail.\",\n  \"reason\": \"The article is a financial and economic news preview. Its sole climate reference is a passing mention and does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:13:20Z",
+  "duration_seconds": 2.012,
+  "error": null
+}

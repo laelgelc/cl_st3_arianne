@@ -1,0 +1,77 @@
+{
+  "article_id": "62354132",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/ke/62354132.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/ke/62354132.json"
+  },
+  "manifest_row": {
+    "article_id": "62354132",
+    "group": "2020_11",
+    "country_code": "ke",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/ke/62354132.txt",
+    "now_field_2": "684",
+    "date_original": "20-11-08",
+    "date_iso": "2020-11-08",
+    "source_name": "the-star.co.ke",
+    "url": "https://www.the-star.co.ke/counties/eastern/2020-11-08-water-project-in-isiolo-village-ends-years-of-agonising-walks-to-distant-rivers/",
+    "title": "Water project in Isiolo village ends years of agonising ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-ke.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Water access, sanitation, and livelihood improvements in Isiolo County, Kenya",
+    "climate_relevance": "Climate change appears only in the title of a county executive; the article does not discuss climate change or its implications.",
+    "reason": "The text focuses on water scarcity and a development programme providing water infrastructure. Its lone climate reference is incidental and offers no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "247117e34cdae58d322744e5f34746c9e89cf87e3f1307f6df07ee7fd6bf9796",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3319d55ba184d506ca71d7620933a04ee4ff28339508b3446c2b0471cffb6ccc",
+    "raw_response_text_sha256": "64eab31215295aa513b98da3f275af3b9e1f1f3188889074116c4beebc7ce58e"
+  },
+  "api_metadata": {
+    "id": "resp_0523f70847ae2c69006b0639f348e087d1a6a4ba40dbba8c38",
+    "model": "gpt-6-luna",
+    "created_at": 1795570163.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1366,
+      "input_tokens_details": {
+        "cache_write_tokens": 1363,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1363
+        }
+      },
+      "output_tokens": 181,
+      "output_tokens_details": {
+        "reasoning_tokens": 42
+      },
+      "total_tokens": 1547
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Water access, sanitation, and livelihood improvements in Isiolo County, Kenya\",\n  \"climate_relevance\": \"Climate change appears only in the title of a county executive; the article does not discuss climate change or its implications.\",\n  \"reason\": \"The text focuses on water scarcity and a development programme providing water infrastructure. Its lone climate reference is incidental and offers no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:29:25Z",
+  "duration_seconds": 2.035,
+  "error": null
+}

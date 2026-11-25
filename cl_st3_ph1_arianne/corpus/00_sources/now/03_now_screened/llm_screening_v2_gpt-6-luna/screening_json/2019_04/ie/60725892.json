@@ -1,0 +1,77 @@
+{
+  "article_id": "60725892",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/ie/60725892.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/ie/60725892.json"
+  },
+  "manifest_row": {
+    "article_id": "60725892",
+    "group": "2019_04",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/ie/60725892.txt",
+    "now_field_2": "617",
+    "date_original": "19-04-10",
+    "date_iso": "2019-04-10",
+    "source_name": "TRT World",
+    "url": "https://www.trtworld.com/asia/australian-prime-minister-announces-may-18-election-25741",
+    "title": "Australian prime minister announces May 18 election",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Australian federal election, particularly asylum and border policy",
+    "climate_relevance": "Climate change is briefly listed as one of the issues the election will be fought on, but the text provides no further discussion of it.",
+    "reason": "The available text focuses on the election and asylum-seeker policies. The passing mention of climate change is not meaningful enough for discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ac6e2ac84fc315cf21c67432e669f5456f64716b31de0eaae7bb511a5d609615",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0b5d2e28dbd440517984b83ae9be70e9629877f9f2fb1800588d78ff31f7a218",
+    "raw_response_text_sha256": "f559a7a96d5e47725a86093e20db05e6dafa4101c2e73c9bb83f26130b23f69a"
+  },
+  "api_metadata": {
+    "id": "resp_06c20fcdfe08680c006b06340de31487d18879f24ac0217385",
+    "model": "gpt-6-luna",
+    "created_at": 1795568653.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1253,
+      "input_tokens_details": {
+        "cache_write_tokens": 1250,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1250
+        }
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 1529
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Australian federal election, particularly asylum and border policy\",\n  \"climate_relevance\": \"Climate change is briefly listed as one of the issues the election will be fought on, but the text provides no further discussion of it.\",\n  \"reason\": \"The available text focuses on the election and asylum-seeker policies. The passing mention of climate change is not meaningful enough for discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:04:16Z",
+  "duration_seconds": 2.259,
+  "error": null
+}

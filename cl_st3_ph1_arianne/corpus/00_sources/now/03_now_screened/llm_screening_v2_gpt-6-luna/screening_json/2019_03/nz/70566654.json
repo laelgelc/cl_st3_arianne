@@ -1,0 +1,77 @@
+{
+  "article_id": "70566654",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70566654.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70566654.json"
+  },
+  "manifest_row": {
+    "article_id": "70566654",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70566654.txt",
+    "now_field_2": "345",
+    "date_original": "19-03-05",
+    "date_iso": "2019-03-05",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/BU1903/S00128/hifx-morning-update-march-6-2019.htm",
+    "title": "HiFX morning Update, March 6, 2019",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "Foreign-exchange market commentary, with unrelated news snippets",
+    "climate_relevance": "Separate snippets mention forestry-sector incentives under the emissions trading scheme and a report on New Zealand’s climate-change targets and policies.",
+    "reason": "The main text concerns currency movements and exchange services, but the climate-policy snippets contain meaningful climate discourse. They are not central to the main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4dde9f25b6d95cd4bb970a0003ca56e66815aef15b7b6e0810a3256b4fe7c7a6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6de0cb43c16b7eb1f96e57d5023b699292af24ae1d79c594b10d252319cc6024",
+    "raw_response_text_sha256": "9bfab6a7f0d497e6b86567416fc5d60576dae68f01e5b1402fbe0e9efbc232da"
+  },
+  "api_metadata": {
+    "id": "resp_05783432c71d1194006b063d9c179887d1afba3b3cc86f7618",
+    "model": "gpt-6-luna",
+    "created_at": 1795571100.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 933,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 338,
+      "output_tokens_details": {
+        "reasoning_tokens": 199
+      },
+      "total_tokens": 1271
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Foreign-exchange market commentary, with unrelated news snippets\",\n  \"climate_relevance\": \"Separate snippets mention forestry-sector incentives under the emissions trading scheme and a report on New Zealand’s climate-change targets and policies.\",\n  \"reason\": \"The main text concerns currency movements and exchange services, but the climate-policy snippets contain meaningful climate discourse. They are not central to the main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:45:02Z",
+  "duration_seconds": 2.755,
+  "error": null
+}

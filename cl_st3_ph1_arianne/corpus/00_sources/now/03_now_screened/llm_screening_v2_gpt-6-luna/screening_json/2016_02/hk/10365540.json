@@ -1,0 +1,77 @@
+{
+  "article_id": "10365540",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_02/hk/10365540.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_02/hk/10365540.json"
+  },
+  "manifest_row": {
+    "article_id": "10365540",
+    "group": "2016_02",
+    "country_code": "hk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_02/hk/10365540.txt",
+    "now_field_2": "577",
+    "date_original": "16-02-24",
+    "date_iso": "2016-02-24",
+    "source_name": "EJ Insight",
+    "url": "http://www.ejinsight.com/20160225-indian-military-recruit-women-combat-roles/",
+    "title": "Indian military to recruit women for combat roles",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-02-iuq/16-02-hk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "India's decision to recruit women for combat roles in its armed forces",
+    "climate_relevance": "A separate, truncated snippet says climate change is pushing fish toward the poles and affecting poorer equatorial countries; it is unrelated to the identifiable main article.",
+    "reason": "The main article is about gender and military recruitment, not climate change. The climate-related sentence occurs only in an unrelated snippet and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0dd415a1bc44de5caa8ddf865df2576aa0176a0303eada7e095aeafed98a4774",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e8ff06c8392e70900b1d9cb76de9ef6b2d6ffb558a04fb5eea61c083286c044e",
+    "raw_response_text_sha256": "932651e57158ff79d965954f94255eb17f2cce7d9af8e8b5b38e356818323dd7"
+  },
+  "api_metadata": {
+    "id": "resp_0320bd94e19303b1006b060510005087d2844408a35e8a8e8a",
+    "model": "gpt-6-luna",
+    "created_at": 1795556624.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1257,
+      "input_tokens_details": {
+        "cache_write_tokens": 1254,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1254
+        }
+      },
+      "output_tokens": 413,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 1670
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"India's decision to recruit women for combat roles in its armed forces\",\n  \"climate_relevance\": \"A separate, truncated snippet says climate change is pushing fish toward the poles and affecting poorer equatorial countries; it is unrelated to the identifiable main article.\",\n  \"reason\": \"The main article is about gender and military recruitment, not climate change. The climate-related sentence occurs only in an unrelated snippet and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:43:47Z",
+  "duration_seconds": 3.301,
+  "error": null
+}

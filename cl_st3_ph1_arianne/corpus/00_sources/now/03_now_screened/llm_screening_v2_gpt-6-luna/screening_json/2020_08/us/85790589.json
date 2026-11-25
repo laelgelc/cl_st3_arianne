@@ -1,0 +1,77 @@
+{
+  "article_id": "85790589",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85790589.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85790589.json"
+  },
+  "manifest_row": {
+    "article_id": "85790589",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85790589.txt",
+    "now_field_2": "1103",
+    "date_original": "20-08-28",
+    "date_iso": "2020-08-28",
+    "source_name": "Sun Sentinel",
+    "url": "https://www.sun-sentinel.com/local/broward/fort-lauderdale/fl-ne-stormwater-tax-bill-fort-lauderdale-20200828-phl3ltzkmfeexkaarflybwfic4-story.html",
+    "title": "Live in Fort Lauderdale? You're about to pay more to help stop flooding.",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us5.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.88,
+    "climate_role": "substantial",
+    "main_topic": "Fort Lauderdale’s stormwater fee increases to fund flood-protection infrastructure.",
+    "climate_relevance": "The proposed spending is explicitly framed as protection against rising seas, high tides, heavy rains, and climate change, making local adaptation policy central to the article’s discussion.",
+    "reason": "Although the article focuses on who will pay for flood-prevention projects, it substantially covers measures intended to address climate-related flooding and sea-level rise.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "964a455d5b53b2b971244508c4f4351a59b674cd573ea0667f6c85ab53a1cebf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5f3ba4bdcaf3be57ff1ac01b4b0ebdb2751b3877d278714e407391d53ed3385d",
+    "raw_response_text_sha256": "310d229ee2876da7f7bf0f1ecda1f47670db1fc33d7cdb30193bc3b6899bd494"
+  },
+  "api_metadata": {
+    "id": "resp_0cce4fe8a6023446006b064d1f2e8087d1aa4f68be43ef1146",
+    "model": "gpt-6-luna",
+    "created_at": 1795575071.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2000,
+      "input_tokens_details": {
+        "cache_write_tokens": 1997,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1997
+        }
+      },
+      "output_tokens": 302,
+      "output_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "total_tokens": 2302
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Fort Lauderdale’s stormwater fee increases to fund flood-protection infrastructure.\",\n  \"climate_relevance\": \"The proposed spending is explicitly framed as protection against rising seas, high tides, heavy rains, and climate change, making local adaptation policy central to the article’s discussion.\",\n  \"reason\": \"Although the article focuses on who will pay for flood-prevention projects, it substantially covers measures intended to address climate-related flooding and sea-level rise.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:51:13Z",
+  "duration_seconds": 2.497,
+  "error": null
+}

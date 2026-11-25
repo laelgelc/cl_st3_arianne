@@ -1,0 +1,77 @@
+{
+  "article_id": "61642532",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/za/61642532.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/za/61642532.json"
+  },
+  "manifest_row": {
+    "article_id": "61642532",
+    "group": "2020_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/za/61642532.txt",
+    "now_field_2": "509",
+    "date_original": "20-02-25",
+    "date_iso": "2020-02-25",
+    "source_name": "biznews.com",
+    "url": "https://www.biznews.com/briefs/2020/02/25/sa-load-shedding-eskom-pollution-hit",
+    "title": "SA's load-shedding woes could deepen as Eskom takes ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Air pollution compliance and repairs at a South African coal-fired power plant",
+    "climate_relevance": "Climate change appears only in the job title of a quoted environmental advocate; the text does not discuss climate change or its implications.",
+    "reason": "The article focuses on particulate pollution, regulatory compliance, health effects, and power supply. The isolated climate-change reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cb315e0671517d61c84839cbab0f7efce02841a35048568d9ab490d0e3d079ad",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3b42a4b0da8a6d36829f478d5b89d02a868c10c5b8f1f1459328260264d5dfad",
+    "raw_response_text_sha256": "fb41f9e8637dd58956b55e9b1ed4a8062c6f9204c83edbfacede626915cc4661"
+  },
+  "api_metadata": {
+    "id": "resp_0f7e70953c00772a006b0637f5e22087d1bddfb467fd793e4e",
+    "model": "gpt-6-luna",
+    "created_at": 1795569654.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1172,
+      "input_tokens_details": {
+        "cache_write_tokens": 1169,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1169
+        }
+      },
+      "output_tokens": 243,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1415
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Air pollution compliance and repairs at a South African coal-fired power plant\",\n  \"climate_relevance\": \"Climate change appears only in the job title of a quoted environmental advocate; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on particulate pollution, regulatory compliance, health effects, and power supply. The isolated climate-change reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:20:56Z",
+  "duration_seconds": 2.381,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40173433",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/sg/40173433.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/sg/40173433.json"
+  },
+  "manifest_row": {
+    "article_id": "40173433",
+    "group": "2018_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/sg/40173433.txt",
+    "now_field_2": "364",
+    "date_original": "18-10-20",
+    "date_iso": "2018-10-20",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/no-electricity-tariff-increase-energy-082241630.html",
+    "title": "No electricity tariff increase for energy efficiency agenda - Yeo",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-sg.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.85,
+    "climate_role": "substantial",
+    "main_topic": "Malaysia's electricity tariff and energy-efficiency policy, including its relationship to emissions reduction and renewable energy",
+    "climate_relevance": "The discussion explicitly addresses carbon emissions, climate change, renewable electricity generation, and a target for reducing carbon intensity. Energy efficiency and electricity policy are presented in the context of the government's green agenda.",
+    "reason": "Although affordability and electricity tariffs dominate the article, climate mitigation is a substantial part of the policy discussion, not merely a passing reference.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a2da193a96f1667bd620a4230e922ba25f69adf2575b3f772ad3e6e9035f81a8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "223b7f0e87bd638fac151c0d9b7bb9b612e2598ff3974daaaba59179d094592b",
+    "raw_response_text_sha256": "9382094fe1b237bac9495756066495563f86d7ed526a8062031f6d95e1e98f73"
+  },
+  "api_metadata": {
+    "id": "resp_0786c6227097fb40006b061e6a881487d2a81982ca001478a1",
+    "model": "gpt-6-luna",
+    "created_at": 1795563114.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 925,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 393,
+      "output_tokens_details": {
+        "reasoning_tokens": 235
+      },
+      "total_tokens": 1318
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.85,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Malaysia's electricity tariff and energy-efficiency policy, including its relationship to emissions reduction and renewable energy\",\n  \"climate_relevance\": \"The discussion explicitly addresses carbon emissions, climate change, renewable electricity generation, and a target for reducing carbon intensity. Energy efficiency and electricity policy are presented in the context of the government's green agenda.\",\n  \"reason\": \"Although affordability and electricity tariffs dominate the article, climate mitigation is a substantial part of the policy discussion, not merely a passing reference.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:31:57Z",
+  "duration_seconds": 3.431,
+  "error": null
+}

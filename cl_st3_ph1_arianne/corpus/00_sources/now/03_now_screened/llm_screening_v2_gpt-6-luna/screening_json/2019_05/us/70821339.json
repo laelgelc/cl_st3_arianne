@@ -1,0 +1,77 @@
+{
+  "article_id": "70821339",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/us/70821339.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/us/70821339.json"
+  },
+  "manifest_row": {
+    "article_id": "70821339",
+    "group": "2019_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/us/70821339.txt",
+    "now_field_2": "529",
+    "date_original": "19-05-30",
+    "date_iso": "2019-05-30",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/superman-building-makes-national-list-of-endangered-places/510608362/",
+    "title": "Superman Building makes national list of endangered places",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Historic places at risk and preservation efforts",
+    "climate_relevance": "The identifiable main article concerns historic preservation and does not discuss climate change. A separate, unrelated sentence mentions a lawsuit over energy policies and climate change.",
+    "reason": "Climate change appears only in an unrelated snippet, not in the main article’s discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "171e0c04fb5c03385a8671701aafe870b587288a89dd3387b94a7aff57489053",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "07b663afc056cbe77defe5b17e2dba28bbdd7b26ac93f051fc127c0fc1afcb53",
+    "raw_response_text_sha256": "31a921235fd0017b29126ab93a2b3836b8571cf6cfb6209c1adeda136afd0e8f"
+  },
+  "api_metadata": {
+    "id": "resp_0ef321731731ce5f006b063f5436a087d1889e9bcc789f0410",
+    "model": "gpt-6-luna",
+    "created_at": 1795571540.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1169,
+      "input_tokens_details": {
+        "cache_write_tokens": 1166,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1166
+        }
+      },
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 1470
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Historic places at risk and preservation efforts\",\n  \"climate_relevance\": \"The identifiable main article concerns historic preservation and does not discuss climate change. A separate, unrelated sentence mentions a lawsuit over energy policies and climate change.\",\n  \"reason\": \"Climate change appears only in an unrelated snippet, not in the main article’s discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:52:22Z",
+  "duration_seconds": 2.629,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70549200",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70549200.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70549200.json"
+  },
+  "manifest_row": {
+    "article_id": "70549200",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70549200.txt",
+    "now_field_2": "536",
+    "date_original": "19-02-25",
+    "date_iso": "2019-02-25",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00635/ground-condition-work-starting-at-frank-kitts-park.htm",
+    "title": "Ground condition work starting at Frank Kitts Park",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Work beginning on a new playground at Frank Kitts Park",
+    "climate_relevance": "Climate change appears only in an unrelated Greenpeace policy teaser, not in the main playground announcement.",
+    "reason": "The identifiable main article concerns excavation and planning for a Wellington playground. A separate snippet briefly says a political party's environment proposals failed to address climate change, but this does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "32fc446aaccb56a6656b2cbc4d4d9db00e40841212a53c4a4aac8f2395b976be",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9cb7fbe13783c07fc4cfbf4ebac0f780519fac81fc05abd6d9035b928a2eaf22",
+    "raw_response_text_sha256": "7753122f9b5619333d80cc5601698ce2582f88b918c4068ea1cd10072b0c4cea"
+  },
+  "api_metadata": {
+    "id": "resp_0a4a43e50053a2c5006b063d7d641487d19737e8aa04e628e3",
+    "model": "gpt-6-luna",
+    "created_at": 1795571069.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1176,
+      "input_tokens_details": {
+        "cache_write_tokens": 1173,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1173
+        }
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 1475
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Work beginning on a new playground at Frank Kitts Park\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated Greenpeace policy teaser, not in the main playground announcement.\",\n  \"reason\": \"The identifiable main article concerns excavation and planning for a Wellington playground. A separate snippet briefly says a political party's environment proposals failed to address climate change, but this does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:44:31Z",
+  "duration_seconds": 2.482,
+  "error": null
+}

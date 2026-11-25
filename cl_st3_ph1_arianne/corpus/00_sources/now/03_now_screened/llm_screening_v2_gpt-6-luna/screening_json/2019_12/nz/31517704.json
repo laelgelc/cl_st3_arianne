@@ -1,0 +1,77 @@
+{
+  "article_id": "31517704",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/nz/31517704.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/nz/31517704.json"
+  },
+  "manifest_row": {
+    "article_id": "31517704",
+    "group": "2019_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/nz/31517704.txt",
+    "now_field_2": "470",
+    "date_original": "19-12-19",
+    "date_iso": "2019-12-19",
+    "source_name": "scoop.co.nz",
+    "url": "https://www.scoop.co.nz/stories/AK1705/S00692/aggravated-burglary-of-bottle-store-in-christchurch.htm",
+    "title": "Aggravated burglary of bottle store in Christchurch ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A burglary at a Christchurch liquor store",
+    "climate_relevance": "Climate change appears only in an unrelated site snippet quoting a statement about the Climate Change Commission.",
+    "reason": "The identifiable main article is a police report about a burglary. The climate-related quote is part of unrelated accompanying material and does not contribute meaningfully to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "71fce749282c5e7d411ad661d5baa7a4db9ac771aa9fb4c18f18bf11a8851caa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e4ded074cf3fb1e6d5691f1e4ed465c23bf681cf13a1f5dca7cae8a8e1967f00",
+    "raw_response_text_sha256": "e917702274ae4faf2f3da677682a1784a61394d9c284f686c3bd397fd50cf819"
+  },
+  "api_metadata": {
+    "id": "resp_0e87065b5bb27304006b0617c13f4487d29f4f6e0066a994f3",
+    "model": "gpt-6-luna",
+    "created_at": 1795561409.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1166,
+      "input_tokens_details": {
+        "cache_write_tokens": 1163,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1163
+        }
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 1433
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A burglary at a Christchurch liquor store\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated site snippet quoting a statement about the Climate Change Commission.\",\n  \"reason\": \"The identifiable main article is a police report about a burglary. The climate-related quote is part of unrelated accompanying material and does not contribute meaningfully to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:03:31Z",
+  "duration_seconds": 2.528,
+  "error": null
+}

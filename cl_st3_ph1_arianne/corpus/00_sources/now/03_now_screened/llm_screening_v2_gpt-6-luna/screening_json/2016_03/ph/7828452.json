@@ -1,0 +1,77 @@
+{
+  "article_id": "7828452",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_03/ph/7828452.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_03/ph/7828452.json"
+  },
+  "manifest_row": {
+    "article_id": "7828452",
+    "group": "2016_03",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_03/ph/7828452.txt",
+    "now_field_2": "1185",
+    "date_original": "16-03-21",
+    "date_iso": "2016-03-21",
+    "source_name": "CNN Philippines",
+    "url": "http://cnnphilippines.com/world/2016/03/22/why-do-they-hate-hillary-clinton-so-much.html",
+    "title": "'Why do they hate Hillary Clinton so much?'",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-03-sls/16-03-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Hillary Clinton’s public image, political record, and opposition to her candidacy",
+    "climate_relevance": "Climate change appears briefly as one item in a list of Clinton’s achievements, without further discussion.",
+    "reason": "The article is primarily about attitudes toward Hillary Clinton. Its single passing reference to her work on climate change does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "38be3635f66f0d867b0892e92e07f6336729751f80bfecb44f36fa72f7c4d568",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "180787d73dc4994a311c3ab79803db4259c241a05853e88b71ea01d92cc80fad",
+    "raw_response_text_sha256": "193322d2f88a6d7b4a087000b84af64d7fe402f646a08d550e1754407170420e"
+  },
+  "api_metadata": {
+    "id": "resp_0823bf66cd9e5318006b064675e62c87d18efafa245925cbb0",
+    "model": "gpt-6-luna",
+    "created_at": 1795573366.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2005,
+      "input_tokens_details": {
+        "cache_write_tokens": 2002,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2002
+        }
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 2256
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Hillary Clinton’s public image, political record, and opposition to her candidacy\",\n  \"climate_relevance\": \"Climate change appears briefly as one item in a list of Clinton’s achievements, without further discussion.\",\n  \"reason\": \"The article is primarily about attitudes toward Hillary Clinton. Its single passing reference to her work on climate change does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:22:48Z",
+  "duration_seconds": 2.823,
+  "error": null
+}

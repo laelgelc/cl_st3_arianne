@@ -1,0 +1,77 @@
+{
+  "article_id": "31617350",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/31617350.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/31617350.json"
+  },
+  "manifest_row": {
+    "article_id": "31617350",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/31617350.txt",
+    "now_field_2": "466",
+    "date_original": "20-02-01",
+    "date_iso": "2020-02-01",
+    "source_name": "euronews.com",
+    "url": "https://www.euronews.com/living/2020/01/28/europe-s-coolest-recycling-projects-being-crowdfunded-right-now",
+    "title": "Europe's coolest recycling projects being crowdfunded ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us5.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "Crowdfunded sustainable and recycled consumer products",
+    "climate_relevance": "The article briefly links discarded coffee grounds in landfills to climate change, but does not otherwise discuss climate causes, impacts, or responses.",
+    "reason": "The focus is on recycling projects and product sustainability. The landfill-related climate reference is meaningful but brief, so the text is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "128790791472d11fe1a50ca6a5d7f970bd9c7224729b2be6d8345d763a3ce0e3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c6c75af62eebe0445271a46a89b6e8d253a69a335f6299fcead21f6731052174",
+    "raw_response_text_sha256": "287e6e9fcce1a94dadade3184865fde163f616a3c5019c8df153da350a4e3d56"
+  },
+  "api_metadata": {
+    "id": "resp_0bc68d03da962c33006b061875512887d2ab8d2915de0c2460",
+    "model": "gpt-6-luna",
+    "created_at": 1795561589.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1089,
+      "input_tokens_details": {
+        "cache_write_tokens": 1086,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1086
+        }
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 1342
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Crowdfunded sustainable and recycled consumer products\",\n  \"climate_relevance\": \"The article briefly links discarded coffee grounds in landfills to climate change, but does not otherwise discuss climate causes, impacts, or responses.\",\n  \"reason\": \"The focus is on recycling projects and product sustainability. The landfill-related climate reference is meaningful but brief, so the text is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:06:31Z",
+  "duration_seconds": 2.197,
+  "error": null
+}

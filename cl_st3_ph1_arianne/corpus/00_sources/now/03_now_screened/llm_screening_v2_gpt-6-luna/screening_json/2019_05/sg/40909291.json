@@ -1,0 +1,77 @@
+{
+  "article_id": "40909291",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/sg/40909291.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/sg/40909291.json"
+  },
+  "manifest_row": {
+    "article_id": "40909291",
+    "group": "2019_05",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/sg/40909291.txt",
+    "now_field_2": "353",
+    "date_original": "19-05-02",
+    "date_iso": "2019-05-02",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/u-house-backs-paris-agreement-first-climate-bill-174401273.html",
+    "title": "US House backs Paris agreement in first climate bill in a decade",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-sg.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "U.S. House passage of legislation supporting continued U.S. participation in the Paris Agreement",
+    "climate_relevance": "The main article substantially discusses climate policy, greenhouse gas emissions targets, the Paris Agreement, and U.S. political debate over climate action.",
+    "reason": "Climate change and related policy are the central subject of the identifiable Reuters article. The supplied text also includes a separate, unrelated snippet about a Ford electric crossover.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d5a205ba1a597ddda02fb8f2d5d6e2831b74fdc1a699c2ed5ffa0f83c8c15343",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a368b8b1cf81bf411cd3a66d801205b7bb850310e8f61fe50a091bc1d5a1adf7",
+    "raw_response_text_sha256": "e5da743be1f66edf55a6ec8caece6724cf05c1e37e940806a24c7e7291873b7b"
+  },
+  "api_metadata": {
+    "id": "resp_04537d53197b2f3b006b06204ff3c487d2b8dcd50c59aa4a32",
+    "model": "gpt-6-luna",
+    "created_at": 1795563600.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1330,
+      "input_tokens_details": {
+        "cache_write_tokens": 1327,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1327
+        }
+      },
+      "output_tokens": 203,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1533
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"U.S. House passage of legislation supporting continued U.S. participation in the Paris Agreement\",\n  \"climate_relevance\": \"The main article substantially discusses climate policy, greenhouse gas emissions targets, the Paris Agreement, and U.S. political debate over climate action.\",\n  \"reason\": \"Climate change and related policy are the central subject of the identifiable Reuters article. The supplied text also includes a separate, unrelated snippet about a Ford electric crossover.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:40:01Z",
+  "duration_seconds": 2.073,
+  "error": null
+}

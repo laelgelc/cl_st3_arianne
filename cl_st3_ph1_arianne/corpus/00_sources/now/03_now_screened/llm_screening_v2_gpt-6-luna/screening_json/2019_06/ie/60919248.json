@@ -1,0 +1,77 @@
+{
+  "article_id": "60919248",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ie/60919248.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ie/60919248.json"
+  },
+  "manifest_row": {
+    "article_id": "60919248",
+    "group": "2019_06",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ie/60919248.txt",
+    "now_field_2": "174",
+    "date_original": "19-06-13",
+    "date_iso": "2019-06-13",
+    "source_name": "Camden New Journal newspapers website",
+    "url": "http://camdennewjournal.com/article/our-road-safety-pleas-have-been-ignored",
+    "title": "Our road safety pleas have been ignored",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ie.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.88,
+    "climate_role": "substantial",
+    "main_topic": "A road-safety complaint followed by a separate discussion of climate action and energy policy",
+    "climate_relevance": "The latter section discusses net-zero targets, carbon emissions, wind power, energy-efficient buildings, regulation, investment, and Extinction Rebellion.",
+    "reason": "The text appears to combine unrelated items. Although the opening concerns road safety, the later section contains sustained, meaningful discourse about climate mitigation and related policy, making that portion relevant to the main climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "57a616551fdc61edb7946b6903ff1c5b7e9bf599ff7ef5e255ca9b6a42401cf2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7158306b7f11f014e311b55b0aeb7c89f4761093652420dba4e2bd7fcc03f854",
+    "raw_response_text_sha256": "cf71268f3eb77e91b98f3b8a706daab0edff91caa989ede5fac68e379c418980"
+  },
+  "api_metadata": {
+    "id": "resp_0618eda51bea7c32006b0635750c0887d195824bdccb7063fe",
+    "model": "gpt-6-luna",
+    "created_at": 1795569013.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1168,
+      "input_tokens_details": {
+        "cache_write_tokens": 1165,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1165
+        }
+      },
+      "output_tokens": 386,
+      "output_tokens_details": {
+        "reasoning_tokens": 227
+      },
+      "total_tokens": 1554
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"A road-safety complaint followed by a separate discussion of climate action and energy policy\",\n  \"climate_relevance\": \"The latter section discusses net-zero targets, carbon emissions, wind power, energy-efficient buildings, regulation, investment, and Extinction Rebellion.\",\n  \"reason\": \"The text appears to combine unrelated items. Although the opening concerns road safety, the later section contains sustained, meaningful discourse about climate mitigation and related policy, making that portion relevant to the main climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:10:16Z",
+  "duration_seconds": 3.722,
+  "error": null
+}

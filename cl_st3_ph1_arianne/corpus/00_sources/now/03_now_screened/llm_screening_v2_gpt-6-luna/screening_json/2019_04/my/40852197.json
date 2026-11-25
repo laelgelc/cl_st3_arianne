@@ -1,0 +1,77 @@
+{
+  "article_id": "40852197",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40852197.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40852197.json"
+  },
+  "manifest_row": {
+    "article_id": "40852197",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40852197.txt",
+    "now_field_2": "515",
+    "date_original": "19-04-17",
+    "date_iso": "2019-04-17",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/18/hibiscus-little-impact-from-fpso-halt/",
+    "title": "Hibiscus: Little impact from FPSO halt",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Hibiscus Petroleum's temporary production halt and its effect on operations and earnings",
+    "climate_relevance": "Climate change appears only in a separate introductory news bullet through a minister's portfolio title; the brief reference to sustainable energy solutions is not developed in the main article.",
+    "reason": "The identifiable main article concerns an offshore production safety issue. The climate-related wording is confined to an unrelated snippet and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ab775ed1755b6009ec4f479d1dad1b6eb928c30ca6188829fcf6292ea2726280",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ac5b7a24ef26f418d512fd4a30af0ee3ca01b99bbf6a1407ee35fe77038d22cf",
+    "raw_response_text_sha256": "dde4d9c28557d0221b6dcc0375719898a2012410d0e25798c4da79194d9e8d59"
+  },
+  "api_metadata": {
+    "id": "resp_08ea940c77b0b7dc006b062009ca7887d2903c366bc17b9e05",
+    "model": "gpt-6-luna",
+    "created_at": 1795563529.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1210,
+      "input_tokens_details": {
+        "cache_write_tokens": 1207,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1207
+        }
+      },
+      "output_tokens": 338,
+      "output_tokens_details": {
+        "reasoning_tokens": 182
+      },
+      "total_tokens": 1548
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Hibiscus Petroleum's temporary production halt and its effect on operations and earnings\",\n  \"climate_relevance\": \"Climate change appears only in a separate introductory news bullet through a minister's portfolio title; the brief reference to sustainable energy solutions is not developed in the main article.\",\n  \"reason\": \"The identifiable main article concerns an offshore production safety issue. The climate-related wording is confined to an unrelated snippet and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:52Z",
+  "duration_seconds": 2.79,
+  "error": null
+}

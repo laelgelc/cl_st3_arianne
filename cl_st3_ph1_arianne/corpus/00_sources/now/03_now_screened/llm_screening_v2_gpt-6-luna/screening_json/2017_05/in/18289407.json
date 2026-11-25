@@ -1,0 +1,77 @@
+{
+  "article_id": "18289407",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/in/18289407.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/in/18289407.json"
+  },
+  "manifest_row": {
+    "article_id": "18289407",
+    "group": "2017_05",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/in/18289407.txt",
+    "now_field_2": "619",
+    "date_original": "17-05-05",
+    "date_iso": "2017-05-05",
+    "source_name": "Times of India",
+    "url": "http://timesofindia.indiatimes.com/city/hyderabad/state-govt-wants-no-buffer-for-kbr-park/articleshow/58541593.cms",
+    "title": "State govt wants no buffer for KBR Park",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-IN.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A proposal to remove the eco-sensitive buffer around KBR Park to accommodate Hyderabad road development",
+    "climate_relevance": "Climate change appears only in the name of the environment ministry; the article discusses park protection, wildlife, and road development, not climate change.",
+    "reason": "The main article contains no meaningful climate discourse. Unrelated snippets about a satellite launch and China-India relations appear after the article content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a5527a996b2bb744b92ac5b22a5126d1ec36683974eb1a2a34af8a5aac02e6c9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "331b2cdd9285a59de81dd0fde0194257c58e03e1ad477625eca4f2295475bde3",
+    "raw_response_text_sha256": "603a466834b61526eaab9cb21a1a8fc75c1ad63cded4469e35b79aa946314848"
+  },
+  "api_metadata": {
+    "id": "resp_0c81e778eed48dfc006b060a0dd16c87d2bcf5657c586ec811",
+    "model": "gpt-6-luna",
+    "created_at": 1795557901.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1336,
+      "input_tokens_details": {
+        "cache_write_tokens": 1333,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1333
+        }
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 1581
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A proposal to remove the eco-sensitive buffer around KBR Park to accommodate Hyderabad road development\",\n  \"climate_relevance\": \"Climate change appears only in the name of the environment ministry; the article discusses park protection, wildlife, and road development, not climate change.\",\n  \"reason\": \"The main article contains no meaningful climate discourse. Unrelated snippets about a satellite launch and China-India relations appear after the article content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:05:03Z",
+  "duration_seconds": 1.92,
+  "error": null
+}

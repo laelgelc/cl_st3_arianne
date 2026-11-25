@@ -1,0 +1,77 @@
+{
+  "article_id": "83044385",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83044385.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83044385.json"
+  },
+  "manifest_row": {
+    "article_id": "83044385",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83044385.txt",
+    "now_field_2": "1025",
+    "date_original": "20-01-03",
+    "date_iso": "2020-01-03",
+    "source_name": "The Raw Story",
+    "url": "https://www.rawstory.com/2020/01/the-golden-globes-are-going-vegan-for-the-first-time-ever-to-send-a-good-message/",
+    "title": "The Golden Globes are going vegan for the first time ever to `send a good message'",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us7.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.84,
+    "climate_role": "substantial",
+    "main_topic": "The Golden Globes’ decision to serve a vegan meal",
+    "climate_relevance": "The article presents the menu change as a signal about climate change and discusses food production and disposal as contributors to the climate crisis, alongside claims that plant-based eating can reduce greenhouse-gas emissions.",
+    "reason": "Although the event and its vegan menu are the immediate subject, climate mitigation is a substantial part of the article’s framing and supporting commentary. Unrelated political material appears after the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9dd6b71256e97e2437b0cdbb25bbabd0973ce483d77da5f55b83e4461deb28e2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "63726adb6cc5808bc3e021b60bcd21b40c414817d4afeb471d7bd913841a5bef",
+    "raw_response_text_sha256": "d1070520b60d9c91992b73cca20f612218e87de63dc5c59f06ecde7f88c5c16d"
+  },
+  "api_metadata": {
+    "id": "resp_0223c0f8fafd017a006b0649124ce887d181668c9da31e97ac",
+    "model": "gpt-6-luna",
+    "created_at": 1795574034.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1875,
+      "input_tokens_details": {
+        "cache_write_tokens": 1872,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1872
+        }
+      },
+      "output_tokens": 476,
+      "output_tokens_details": {
+        "reasoning_tokens": 315
+      },
+      "total_tokens": 2351
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.84,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"The Golden Globes’ decision to serve a vegan meal\",\n  \"climate_relevance\": \"The article presents the menu change as a signal about climate change and discusses food production and disposal as contributors to the climate crisis, alongside claims that plant-based eating can reduce greenhouse-gas emissions.\",\n  \"reason\": \"Although the event and its vegan menu are the immediate subject, climate mitigation is a substantial part of the article’s framing and supporting commentary. Unrelated political material appears after the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:33:58Z",
+  "duration_seconds": 3.913,
+  "error": null
+}

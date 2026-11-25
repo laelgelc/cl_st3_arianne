@@ -1,0 +1,77 @@
+{
+  "article_id": "84839623",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/ca/84839623.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/ca/84839623.json"
+  },
+  "manifest_row": {
+    "article_id": "84839623",
+    "group": "2020_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/ca/84839623.txt",
+    "now_field_2": "3009",
+    "date_original": "20-05-07",
+    "date_iso": "2020-05-07",
+    "source_name": "Digital Journal",
+    "url": "http://www.digitaljournal.com/pr/4674510",
+    "title": "CommScope Reports First Quarter 2020 Results",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "CommScope's first-quarter 2020 financial results and business response to the COVID-19 pandemic",
+    "climate_relevance": "Climate change appears only in a standard list of risks, as the phrase “the long-term impact of climate change.” No climate-related discussion is developed.",
+    "reason": "The text is an earnings press release focused on company performance, broadband connectivity, and COVID-19. Its sole climate reference is boilerplate in the forward-looking risk disclosures and does not meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "873fade8935a6aedcde52c50292e12f847028c9cc2f44d182aaf81bfa59980ec",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a1536eec14a5960df3d6084be1175c82a5adbf9484f7ff24a241d4156909647f",
+    "raw_response_text_sha256": "dc78789fc3d7142559394802cfcf2eb161cab483db7975657239b71d3c75d8e7"
+  },
+  "api_metadata": {
+    "id": "resp_067a0e10c11b8947006b064ada80f887d18cb60e823984ada9",
+    "model": "gpt-6-luna",
+    "created_at": 1795574490.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6357,
+      "input_tokens_details": {
+        "cache_write_tokens": 6354,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6354
+        }
+      },
+      "output_tokens": 213,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "total_tokens": 6570
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"CommScope's first-quarter 2020 financial results and business response to the COVID-19 pandemic\",\n  \"climate_relevance\": \"Climate change appears only in a standard list of risks, as the phrase “the long-term impact of climate change.” No climate-related discussion is developed.\",\n  \"reason\": \"The text is an earnings press release focused on company performance, broadband connectivity, and COVID-19. Its sole climate reference is boilerplate in the forward-looking risk disclosures and does not meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:41:32Z",
+  "duration_seconds": 2.524,
+  "error": null
+}

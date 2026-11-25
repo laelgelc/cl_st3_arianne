@@ -1,0 +1,77 @@
+{
+  "article_id": "72541978",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/72541978.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/72541978.json"
+  },
+  "manifest_row": {
+    "article_id": "72541978",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/72541978.txt",
+    "now_field_2": "766",
+    "date_original": "20-12-25",
+    "date_iso": "2020-12-25",
+    "source_name": "wfmz.com",
+    "url": "https://www.wfmz.com/news/pr_newswire/pr_newswire_business/3m-reports-sales-information-for-month-of-november-2020/article_c9ad3b7f-eef6-5ade-85ff-1022b9744b3a.html",
+    "title": "3M Reports Sales Information for Month of November 2020 ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "3M quarterly sales and forward-looking financial statements",
+    "climate_relevance": "Climate change appears only in a standard risk-factor list, as a possible factor affecting company operations and those of its customers and suppliers.",
+    "reason": "The text contains no meaningful discussion of climate change; the sole mention is boilerplate in a financial disclaimer.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0f48f7011ee305e100c84d8893a5db5b0b3358067ade8191b596700b1400478f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "907f9e47dca1d73dd20e35d526347d4586ae68d88d55341f5c55799f9edc0c02",
+    "raw_response_text_sha256": "e77fdd19fe8d62eef8309627018487e34197b13b245bba171029c1892ad78856"
+  },
+  "api_metadata": {
+    "id": "resp_0717aa22a9e905d9006b0645e5b0cc87d1a079ae171aaacb63",
+    "model": "gpt-6-luna",
+    "created_at": 1795573222.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1530,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1527,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1765
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"3M quarterly sales and forward-looking financial statements\",\n  \"climate_relevance\": \"Climate change appears only in a standard risk-factor list, as a possible factor affecting company operations and those of its customers and suppliers.\",\n  \"reason\": \"The text contains no meaningful discussion of climate change; the sole mention is boilerplate in a financial disclaimer.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:20:23Z",
+  "duration_seconds": 2.25,
+  "error": null
+}

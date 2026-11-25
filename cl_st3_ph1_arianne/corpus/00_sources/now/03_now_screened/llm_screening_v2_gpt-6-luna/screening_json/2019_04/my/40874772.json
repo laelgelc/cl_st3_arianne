@@ -1,0 +1,77 @@
+{
+  "article_id": "40874772",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40874772.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40874772.json"
+  },
+  "manifest_row": {
+    "article_id": "40874772",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40874772.txt",
+    "now_field_2": "487",
+    "date_original": "19-04-23",
+    "date_iso": "2019-04-23",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/24/fgv-tabung-haji-said-to-mull-up-to-rm4b-indonesian-sale/",
+    "title": "FGV, Tabung Haji said to mull up to RM4b Indonesian sale",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "FGV Holdings and Tabung Haji considering the sale of Indonesian plantation assets",
+    "climate_relevance": "The main article concerns a proposed asset sale and financial matters. Climate change appears only in a ministerial portfolio title in an unrelated introductory snippet; a separate brief mention of sustainable energy solutions does not develop climate discourse.",
+    "reason": "The identifiable main article contains no meaningful discussion of climate change. The climate-related wording is confined to unrelated introductory snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3b8267ab75f37eb7fe941ca65b0bb94fe640c45a5e0e38b77428f40d04980944",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bea32a05be273d0dfea7d19d9f9ce517a0d2967d58021cd12a7d0c514a3c369b",
+    "raw_response_text_sha256": "ca9bd1f5f1524d7ef479bfddec1e1da0c896f4b608a654410937e27fa69b4816"
+  },
+  "api_metadata": {
+    "id": "resp_0d9e6b95978b01f8006b062026fcfc87d2bfe8fb438521b4df",
+    "model": "gpt-6-luna",
+    "created_at": 1795563559.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1161,
+      "input_tokens_details": {
+        "cache_write_tokens": 1158,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1158
+        }
+      },
+      "output_tokens": 357,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 1518
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"FGV Holdings and Tabung Haji considering the sale of Indonesian plantation assets\",\n  \"climate_relevance\": \"The main article concerns a proposed asset sale and financial matters. Climate change appears only in a ministerial portfolio title in an unrelated introductory snippet; a separate brief mention of sustainable energy solutions does not develop climate discourse.\",\n  \"reason\": \"The identifiable main article contains no meaningful discussion of climate change. The climate-related wording is confined to unrelated introductory snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:21Z",
+  "duration_seconds": 2.999,
+  "error": null
+}

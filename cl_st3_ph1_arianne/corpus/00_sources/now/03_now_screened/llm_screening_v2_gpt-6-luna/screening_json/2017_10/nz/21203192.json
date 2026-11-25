@@ -1,0 +1,77 @@
+{
+  "article_id": "21203192",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/nz/21203192.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/nz/21203192.json"
+  },
+  "manifest_row": {
+    "article_id": "21203192",
+    "group": "2017_10",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/nz/21203192.txt",
+    "now_field_2": "291",
+    "date_original": "17-10-19",
+    "date_iso": "2017-10-19",
+    "source_name": "NZCity",
+    "url": "http://home.nzcity.co.nz/news/article.aspx?id=257825",
+    "title": "Vanuatu volcano: Ambae islanders to return to villages as Manaro ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Repatriation of people evacuated from Ambae after volcanic activity",
+    "climate_relevance": "Climate change appears only in the title of a minister mentioned in the article; there is no substantive climate-related discussion.",
+    "reason": "The article focuses on the volcanic eruption, evacuation, and repatriation process. The ministerial title is an incidental reference and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "40de819f8504cf246ca97907b5b513e30dcdc7b6599e30d78e8c7f79d805e7cc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "14a0b8e42d7a8e1ef383a298e0a536576a980a3c1a626125e0b456b6c01e8258",
+    "raw_response_text_sha256": "efd64d10ae571b5931c1b5438974c364f90e5ba20611a41860c59da71dbac042"
+  },
+  "api_metadata": {
+    "id": "resp_089efa5fa417933f006b060e68389c87d2967a60eff9df1827",
+    "model": "gpt-6-luna",
+    "created_at": 1795559016.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 872,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 193,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 1065
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Repatriation of people evacuated from Ambae after volcanic activity\",\n  \"climate_relevance\": \"Climate change appears only in the title of a minister mentioned in the article; there is no substantive climate-related discussion.\",\n  \"reason\": \"The article focuses on the volcanic eruption, evacuation, and repatriation process. The ministerial title is an incidental reference and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:23:37Z",
+  "duration_seconds": 1.851,
+  "error": null
+}

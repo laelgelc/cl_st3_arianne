@@ -1,0 +1,77 @@
+{
+  "article_id": "40789452",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/sg/40789452.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/sg/40789452.json"
+  },
+  "manifest_row": {
+    "article_id": "40789452",
+    "group": "2019_03",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/sg/40789452.txt",
+    "now_field_2": "823",
+    "date_original": "19-03-31",
+    "date_iso": "2019-03-31",
+    "source_name": "Eco-Business",
+    "url": "https://www.eco-business.com/opinion/how-do-we-protect-girls-in-the-aftermath-of-natural-disasters/",
+    "title": "How do we protect girls in the aftermath of natural disasters?",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Risks of child marriage for girls affected by Cyclone Idai and humanitarian responses",
+    "climate_relevance": "Climate change appears only in the Thomson Reuters Foundation boilerplate; the article discusses disasters and their effects without meaningful climate-change discourse.",
+    "reason": "The text focuses on child marriage and girls’ needs after Cyclone Idai. References to floods, droughts, and natural disasters are not connected to climate change, and the only explicit mention of climate change is in publisher boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "088b3ff68b63291cdb67b26eb1bf203a3950ce756ea4db42463dc1b8d7d59691",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "86bde6ac2c5a343085f6197b6b1a11557460246ca73e7b293f57bd156fcf0a83",
+    "raw_response_text_sha256": "90ea1febb74f406921c90457ad1e6ca4af4d05f77b4389650c7131f2be44cf87"
+  },
+  "api_metadata": {
+    "id": "resp_09477bbcb157df5a006b061fae339487d2afe1da8a8ba297e1",
+    "model": "gpt-6-luna",
+    "created_at": 1795563438.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1490,
+      "input_tokens_details": {
+        "cache_write_tokens": 1487,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1487
+        }
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 1776
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Risks of child marriage for girls affected by Cyclone Idai and humanitarian responses\",\n  \"climate_relevance\": \"Climate change appears only in the Thomson Reuters Foundation boilerplate; the article discusses disasters and their effects without meaningful climate-change discourse.\",\n  \"reason\": \"The text focuses on child marriage and girls’ needs after Cyclone Idai. References to floods, droughts, and natural disasters are not connected to climate change, and the only explicit mention of climate change is in publisher boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:20Z",
+  "duration_seconds": 2.444,
+  "error": null
+}

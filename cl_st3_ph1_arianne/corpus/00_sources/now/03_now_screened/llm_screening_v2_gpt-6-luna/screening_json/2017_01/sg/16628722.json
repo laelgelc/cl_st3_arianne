@@ -1,0 +1,77 @@
+{
+  "article_id": "16628722",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/sg/16628722.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/sg/16628722.json"
+  },
+  "manifest_row": {
+    "article_id": "16628722",
+    "group": "2017_01",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/sg/16628722.txt",
+    "now_field_2": "406",
+    "date_original": "17-01-28",
+    "date_iso": "2017-01-28",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/merkels-bavarian-ally-calls-quick-end-russian-sanctions-032458379.html",
+    "title": "Merkel's Bavarian ally calls for quick end to Russian sanctions",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-SG.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Calls by a Bavarian political leader to end sanctions against Russia and improve relations with the West",
+    "climate_relevance": "Climate change appears once in a list of issues for possible joint action, without further discussion.",
+    "reason": "The article focuses on Russia sanctions and diplomacy. The lone climate-change mention is incidental and does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d2f179166cd86a3fe2859316aaf22ec1b107b2253db0aaab183ff595378d1f1e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "eddba2e78450fb579c34a40da661840e2b9385739f4f0aa6a35401ec306829dc",
+    "raw_response_text_sha256": "61c40ab49962b7a04a85f902369aea9cb2e9bed74a88408b68d7b24c6d130144"
+  },
+  "api_metadata": {
+    "id": "resp_0ff5459aeb0885ed006b0607f7b00887d2a11f75d367c705a3",
+    "model": "gpt-6-luna",
+    "created_at": 1795557367.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1044,
+      "input_tokens_details": {
+        "cache_write_tokens": 1041,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1041
+        }
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 1317
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Calls by a Bavarian political leader to end sanctions against Russia and improve relations with the West\",\n  \"climate_relevance\": \"Climate change appears once in a list of issues for possible joint action, without further discussion.\",\n  \"reason\": \"The article focuses on Russia sanctions and diplomacy. The lone climate-change mention is incidental and does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:56:09Z",
+  "duration_seconds": 2.189,
+  "error": null
+}

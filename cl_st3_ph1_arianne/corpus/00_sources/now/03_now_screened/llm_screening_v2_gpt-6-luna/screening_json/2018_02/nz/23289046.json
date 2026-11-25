@@ -1,0 +1,77 @@
+{
+  "article_id": "23289046",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_02/nz/23289046.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_02/nz/23289046.json"
+  },
+  "manifest_row": {
+    "article_id": "23289046",
+    "group": "2018_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_02/nz/23289046.txt",
+    "now_field_2": "584",
+    "date_original": "18-02-20",
+    "date_iso": "2018-02-20",
+    "source_name": "InvestigateDaily",
+    "url": "http://www.investigatemagazine.co.nz/Investigate/22697/prayer-and-politics-abandon-it-at-your-peril/",
+    "title": "Prayer and politics: abandon it at your peril",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-02.txt\"]",
+    "metadata_article_files": "[\"text-18-02/text_18-02-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Prayer, religion, and the separation of church and state in politics",
+    "climate_relevance": "Climate change appears only in an unrelated, truncated snippet referring to a report on health impacts in New Zealand.",
+    "reason": "The identifiable main article discusses religion and politics, not climate change. The climate reference is confined to an unrelated snippet and does not provide enough context for meaningful climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e364fb2af1bdd57c6bd7bcb6372f36aa49ae0442b0bcc4a8ff9fd966ad3352d9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a64e34e29695963c21395d0953cf536f95059ce9f780f915d14b696ff6fd8197",
+    "raw_response_text_sha256": "99c407da49c0f0181aa993c42bcfe5cef043d26c9bcea632377c230c0d393fe3"
+  },
+  "api_metadata": {
+    "id": "resp_00b3a5b3ca49b02d006b061110843487d291116ba2ebcd1a2f",
+    "model": "gpt-6-luna",
+    "created_at": 1795559696.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1205,
+      "input_tokens_details": {
+        "cache_write_tokens": 1202,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1202
+        }
+      },
+      "output_tokens": 466,
+      "output_tokens_details": {
+        "reasoning_tokens": 318
+      },
+      "total_tokens": 1671
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Prayer, religion, and the separation of church and state in politics\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated, truncated snippet referring to a report on health impacts in New Zealand.\",\n  \"reason\": \"The identifiable main article discusses religion and politics, not climate change. The climate reference is confined to an unrelated snippet and does not provide enough context for meaningful climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:34:59Z",
+  "duration_seconds": 3.563,
+  "error": null
+}

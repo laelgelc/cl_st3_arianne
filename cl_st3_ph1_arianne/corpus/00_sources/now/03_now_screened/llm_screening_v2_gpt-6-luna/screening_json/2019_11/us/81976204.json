@@ -1,0 +1,77 @@
+{
+  "article_id": "81976204",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/81976204.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/81976204.json"
+  },
+  "manifest_row": {
+    "article_id": "81976204",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/81976204.txt",
+    "now_field_2": "264",
+    "date_original": "19-11-04",
+    "date_iso": "2019-11-04",
+    "source_name": "Wall Street Journal",
+    "url": "https://www.wsj.com/video/series/election-2020-candidates/election-2020-joe-biden-on-americas-standing-in-the-world/3404C52E-15D7-4005-ADC3-325DDA5D350B?mod=trending_now_video_pos4",
+    "title": "Election 2020: Joe Biden on America's Standing In the World",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Joe Biden's views on America's standing in the world",
+    "climate_relevance": "Climate change is mentioned in a blurb for a separate Tom Steyer interview, not in the identifiable main article.",
+    "reason": "The main article concerns Biden's foreign engagement. The climate reference belongs to an unrelated 'Up Next' snippet and does not provide climate discourse from the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cc31f6034d7bc4224071cd8089330d7e86b940f5e68ba9d1f0214d8a2b606bfe",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2ba8c9b665fa281487d3a5758b44bfdc911bbfd593607ba9b90ce9b123dc3b93",
+    "raw_response_text_sha256": "fb30a2e9192aa768a75f0f407e5a8279f0de66cada9c4b1e32b5827b2804239a"
+  },
+  "api_metadata": {
+    "id": "resp_074406c9feea0daf006b0647e7cc2087d19b66ea5d17fa04d0",
+    "model": "gpt-6-luna",
+    "created_at": 1795573735.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 858,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 1117
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Joe Biden's views on America's standing in the world\",\n  \"climate_relevance\": \"Climate change is mentioned in a blurb for a separate Tom Steyer interview, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns Biden's foreign engagement. The climate reference belongs to an unrelated 'Up Next' snippet and does not provide climate discourse from the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:28:58Z",
+  "duration_seconds": 2.468,
+  "error": null
+}

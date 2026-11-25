@@ -1,0 +1,77 @@
+{
+  "article_id": "41983663",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/gb/41983663.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/gb/41983663.json"
+  },
+  "manifest_row": {
+    "article_id": "41983663",
+    "group": "2020_05",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/gb/41983663.txt",
+    "now_field_2": "1028",
+    "date_original": "20-05-15",
+    "date_iso": "2020-05-15",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/steve-anglesey-on-farages-poor-journalistic-efforts-1-6653079",
+    "title": "Steve Anglesey on Nigel Farage's fictional migrant ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Nigel Farage's claims about Channel crossings and asylum seekers",
+    "climate_relevance": "Climate change appears only in repeated promotional copy describing the publication's coverage; the main article contains no meaningful climate discourse.",
+    "reason": "The climate reference is boilerplate rather than part of the article's discussion, which focuses on migration and asylum.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a41d35dbf0b4ca120660eccd06b8e0e7cbd610b9e68e27718f001f835d6ec1bc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "58b0eb531af58c96b0db57752a32d93cd801c5818cee69ee194e0d9941ec5a91",
+    "raw_response_text_sha256": "9b7d2910100b9962aa9484920799f0d7e5ee0ca0c78f63f2c72a4ef6974fa0e8"
+  },
+  "api_metadata": {
+    "id": "resp_0b37850e81e6271e006b0623dd91a087d2bfbc5c077a663ac0",
+    "model": "gpt-6-luna",
+    "created_at": 1795564509.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1785,
+      "input_tokens_details": {
+        "cache_write_tokens": 1782,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1782
+        }
+      },
+      "output_tokens": 195,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1980
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Nigel Farage's claims about Channel crossings and asylum seekers\",\n  \"climate_relevance\": \"Climate change appears only in repeated promotional copy describing the publication's coverage; the main article contains no meaningful climate discourse.\",\n  \"reason\": \"The climate reference is boilerplate rather than part of the article's discussion, which focuses on migration and asylum.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:55:11Z",
+  "duration_seconds": 2.107,
+  "error": null
+}

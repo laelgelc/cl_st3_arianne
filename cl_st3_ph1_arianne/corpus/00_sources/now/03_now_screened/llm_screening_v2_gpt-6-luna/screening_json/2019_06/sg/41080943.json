@@ -1,0 +1,77 @@
+{
+  "article_id": "41080943",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/sg/41080943.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/sg/41080943.json"
+  },
+  "manifest_row": {
+    "article_id": "41080943",
+    "group": "2019_06",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/sg/41080943.txt",
+    "now_field_2": "347",
+    "date_original": "19-06-19",
+    "date_iso": "2019-06-19",
+    "source_name": "The Business Times",
+    "url": "https://www.businesstimes.com.sg/government-economy/us-says-saudis-can-do-more-after-un-khashoggi-probe",
+    "title": "US says Saudis can do more after UN Khashoggi probe",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-sg.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "climate_role": "central",
+    "main_topic": "New York's climate legislation and US policies to reduce greenhouse-gas emissions",
+    "climate_relevance": "The identifiable climate article focuses on emissions targets, phasing out fossil-fuel power plants and petrol cars, renewable energy, and the contrast between New York's law and federal policy.",
+    "reason": "Climate change mitigation and related policy are the article's central subject. The text also contains an unrelated report about the Khashoggi killing before the climate article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "92dc1778e52c24a27acca79a12ef0e9fd9f873635ddab98fe0d28fd40ce7a944",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e88abf48127b08e5e2e88cbebe568412b2240b8fa53547514b0e12dbc6ed7a59",
+    "raw_response_text_sha256": "837949558db6ab59fc021c2fb09222f00fa76120a964430a0cafebe3f2f95b0c"
+  },
+  "api_metadata": {
+    "id": "resp_03fd9fe7a9ea19d5006b0620d4426887d2b4338507a2750358",
+    "model": "gpt-6-luna",
+    "created_at": 1795563732.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1851,
+      "input_tokens_details": {
+        "cache_write_tokens": 1848,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1848
+        }
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 2139
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"New York's climate legislation and US policies to reduce greenhouse-gas emissions\",\n  \"climate_relevance\": \"The identifiable climate article focuses on emissions targets, phasing out fossil-fuel power plants and petrol cars, renewable energy, and the contrast between New York's law and federal policy.\",\n  \"reason\": \"Climate change mitigation and related policy are the article's central subject. The text also contains an unrelated report about the Khashoggi killing before the climate article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:42:14Z",
+  "duration_seconds": 2.744,
+  "error": null
+}

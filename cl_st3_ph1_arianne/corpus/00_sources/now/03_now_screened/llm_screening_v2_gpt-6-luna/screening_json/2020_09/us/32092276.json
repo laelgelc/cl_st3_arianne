@@ -1,0 +1,77 @@
+{
+  "article_id": "32092276",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/32092276.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/32092276.json"
+  },
+  "manifest_row": {
+    "article_id": "32092276",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/32092276.txt",
+    "now_field_2": "537",
+    "date_original": "20-09-20",
+    "date_iso": "2020-09-20",
+    "source_name": "startribune.com",
+    "url": "https://www.startribune.com/donald-mayer-mechanical-engineer-and-patent-holder-dies-of-covid-19-complications-at-90/572436492/",
+    "title": "Donald Mayer, mechanical engineer and patent holder, dies ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "The text contains unrelated material, including a death notice, a mention of wild rice harvest season, and a passage about Marsy's Law.",
+    "climate_relevance": "One sentence reports concerns about climate change's effects on wild rice, but gives no further detail.",
+    "reason": "The climate reference is meaningful but brief; the supplied text is not centrally about climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bafad2fb7a0ad6d38c8ccdc7a58f488b80c8dc4451e36c1cc3a4457500b214d1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "465bf47545505470f7bff217c77e71ac5b9144946f9ab6693dae034cf28a2166",
+    "raw_response_text_sha256": "602906c06b01a798223cb9e9c3d3a5303063346eebf8cc435f55ef7e40d1d5b6"
+  },
+  "api_metadata": {
+    "id": "resp_03a20870e283359b006b061b2e712887d2ac647f4da5dbf24e",
+    "model": "gpt-6-luna",
+    "created_at": 1795562286.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1165,
+      "input_tokens_details": {
+        "cache_write_tokens": 1162,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1162
+        }
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 1490
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The text contains unrelated material, including a death notice, a mention of wild rice harvest season, and a passage about Marsy's Law.\",\n  \"climate_relevance\": \"One sentence reports concerns about climate change's effects on wild rice, but gives no further detail.\",\n  \"reason\": \"The climate reference is meaningful but brief; the supplied text is not centrally about climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:18:08Z",
+  "duration_seconds": 2.579,
+  "error": null
+}

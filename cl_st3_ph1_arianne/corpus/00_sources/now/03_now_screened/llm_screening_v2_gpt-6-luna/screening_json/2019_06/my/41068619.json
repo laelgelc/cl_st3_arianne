@@ -1,0 +1,77 @@
+{
+  "article_id": "41068619",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/my/41068619.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/my/41068619.json"
+  },
+  "manifest_row": {
+    "article_id": "41068619",
+    "group": "2019_06",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/my/41068619.txt",
+    "now_field_2": "343",
+    "date_original": "19-06-16",
+    "date_iso": "2019-06-16",
+    "source_name": "The Star Online",
+    "url": "https://www.thestar.com.my/news/nation/2019/06/17/canada-says-working-with-malaysia-over-shipment-of-waste/",
+    "title": "Canada says working with Malaysia over shipment of waste",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Dispute over Canadian plastic-waste shipments to Malaysia",
+    "climate_relevance": "Climate change appears only in the names of government ministries; the text discusses waste shipments, not climate change or its implications.",
+    "reason": "The identifiable main article concerns plastic-waste shipments, with no meaningful climate discourse. The text also includes an unrelated police story.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c807d61907f2cd0fb4d8bf6b5611c15d2fe6edc2dee20f7a89e8926ba800f652",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "05c65f21e6b137a044222a828a035e261ab5d79d9a3fc48d7cf60567c67fdce5",
+    "raw_response_text_sha256": "ca6a235247a75e6a02b1a6cf1c6d684ed671470d4fa62f3f22addd375e7df57c"
+  },
+  "api_metadata": {
+    "id": "resp_04ffaa4f8e202ad3006b0620cabb8487d2a177282d695adfe8",
+    "model": "gpt-6-luna",
+    "created_at": 1795563722.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1557,
+      "input_tokens_details": {
+        "cache_write_tokens": 1554,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1554
+        }
+      },
+      "output_tokens": 189,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 1746
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Dispute over Canadian plastic-waste shipments to Malaysia\",\n  \"climate_relevance\": \"Climate change appears only in the names of government ministries; the text discusses waste shipments, not climate change or its implications.\",\n  \"reason\": \"The identifiable main article concerns plastic-waste shipments, with no meaningful climate discourse. The text also includes an unrelated police story.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:42:04Z",
+  "duration_seconds": 1.778,
+  "error": null
+}

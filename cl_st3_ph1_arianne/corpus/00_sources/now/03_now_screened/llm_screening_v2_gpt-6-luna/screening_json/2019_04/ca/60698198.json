@@ -1,0 +1,77 @@
+{
+  "article_id": "60698198",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/ca/60698198.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/ca/60698198.json"
+  },
+  "manifest_row": {
+    "article_id": "60698198",
+    "group": "2019_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/ca/60698198.txt",
+    "now_field_2": "233",
+    "date_original": "19-04-02",
+    "date_iso": "2019-04-02",
+    "source_name": "Trail Times",
+    "url": "https://www.trailtimes.ca/news/environmental-audit-urges-feds-to-shore-up-monitoring-of-mining-waste/",
+    "title": "Environmental audit urges feds to shore up monitoring of mining waste",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An environmental audit of federal monitoring and inspections of mining waste and effluent",
+    "climate_relevance": "Climate change appears only in the name of Environment and Climate Change Canada; the text contains no substantive climate discourse.",
+    "reason": "The article focuses on mining-waste regulation, waterway impacts, and inspection practices. The climate reference is part of an agency name and is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7257e5902ab856cc8f27612f4899dd5770eed108786a55fea31c149818b557c5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b687e92ca5439d812d758af05a46bdebe0c1a1c379ffd90f23f1158feb4658c7",
+    "raw_response_text_sha256": "dc6d3ddc25ede9a9238d4dfc952d53ea02cea66a81a29d6e450b55452ffbb15f"
+  },
+  "api_metadata": {
+    "id": "resp_07dbbd456a59932f006b0633e2f7a087d19b2f59998c77251d",
+    "model": "gpt-6-luna",
+    "created_at": 1795568611.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 758,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 964
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An environmental audit of federal monitoring and inspections of mining waste and effluent\",\n  \"climate_relevance\": \"Climate change appears only in the name of Environment and Climate Change Canada; the text contains no substantive climate discourse.\",\n  \"reason\": \"The article focuses on mining-waste regulation, waterway impacts, and inspection practices. The climate reference is part of an agency name and is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:03:32Z",
+  "duration_seconds": 1.973,
+  "error": null
+}

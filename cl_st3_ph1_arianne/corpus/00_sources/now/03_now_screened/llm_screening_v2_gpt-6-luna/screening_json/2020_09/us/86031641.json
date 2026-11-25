@@ -1,0 +1,77 @@
+{
+  "article_id": "86031641",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/86031641.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/86031641.json"
+  },
+  "manifest_row": {
+    "article_id": "86031641",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/86031641.txt",
+    "now_field_2": "718",
+    "date_original": "20-09-29",
+    "date_iso": "2020-09-29",
+    "source_name": "WiscNews",
+    "url": "https://www.wiscnews.com/bdc/opinion/columnists/stellpflug-column-test-should-be-required-of-presidential-hopefuls/article_a60f4e41-e836-5684-926a-e82309741270.html",
+    "title": "STELLPFLUG COLUMN: Test should be required of presidential hopefuls",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Suggested qualifications and tests for presidential candidates",
+    "climate_relevance": "Climate change is named only as one topic for a subsection of a proposed candidate test; no climate-related discussion follows.",
+    "reason": "The column is about candidate qualifications, and the single passing reference to climate change does not provide meaningful discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c123c9b03d4fbe879f78af72c8080d13b6683c06f3abf03735b4b4f948f346c6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "550f334a77a05a4dbd256181722220c90a3e1c6e4774c6c48c0debd275bfa43e",
+    "raw_response_text_sha256": "41ac772f55c28e0c7b18025154d687780d49292dd3a34c86688e9daaa7bf4d2d"
+  },
+  "api_metadata": {
+    "id": "resp_0b2c27e3844431eb006b064e23bfa487d1ab9b18f4fa8295bf",
+    "model": "gpt-6-luna",
+    "created_at": 1795575331.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1377,
+      "input_tokens_details": {
+        "cache_write_tokens": 1374,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1374
+        }
+      },
+      "output_tokens": 160,
+      "output_tokens_details": {
+        "reasoning_tokens": 32
+      },
+      "total_tokens": 1537
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Suggested qualifications and tests for presidential candidates\",\n  \"climate_relevance\": \"Climate change is named only as one topic for a subsection of a proposed candidate test; no climate-related discussion follows.\",\n  \"reason\": \"The column is about candidate qualifications, and the single passing reference to climate change does not provide meaningful discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:55:33Z",
+  "duration_seconds": 1.667,
+  "error": null
+}

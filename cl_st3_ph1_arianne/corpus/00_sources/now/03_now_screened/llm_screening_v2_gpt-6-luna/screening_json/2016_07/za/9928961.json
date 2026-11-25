@@ -1,0 +1,77 @@
+{
+  "article_id": "9928961",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_07/za/9928961.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_07/za/9928961.json"
+  },
+  "manifest_row": {
+    "article_id": "9928961",
+    "group": "2016_07",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_07/za/9928961.txt",
+    "now_field_2": "801",
+    "date_original": "16-07-17",
+    "date_iso": "2016-07-17",
+    "source_name": "Independent Online",
+    "url": "http://www.iol.co.za/sundayindependent/terror-attacks-pose-threat-to-all-2046276",
+    "title": "Terror attacks pose threat to all",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-07-qxx/16-07-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Terrorism and the need for international solidarity",
+    "climate_relevance": "COP21 is mentioned briefly as an example of countries gathering in support of France; climate change itself is not discussed.",
+    "reason": "The article focuses on terror attacks and collective responses to them. Its sole climate reference is incidental and does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "242a42493f09a8ae689e389011eea72b391a47923731a42e8ff5b74cad2d3d6c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fd952fcb9812ee419973823950a9b9e8cf90e73cf15159bf912edb282c6f4340",
+    "raw_response_text_sha256": "78905ff2cac2ead841fe9c1c920d6e56217e3ffd2df7049cc6751aa0869cee27"
+  },
+  "api_metadata": {
+    "id": "resp_0ae8ae4750a45132006b065170b74487d1b0e96704e062c45f",
+    "model": "gpt-6-luna",
+    "created_at": 1795576176.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1535,
+      "input_tokens_details": {
+        "cache_write_tokens": 1532,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1532
+        }
+      },
+      "output_tokens": 347,
+      "output_tokens_details": {
+        "reasoning_tokens": 212
+      },
+      "total_tokens": 1882
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Terrorism and the need for international solidarity\",\n  \"climate_relevance\": \"COP21 is mentioned briefly as an example of countries gathering in support of France; climate change itself is not discussed.\",\n  \"reason\": \"The article focuses on terror attacks and collective responses to them. Its sole climate reference is incidental and does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:09:39Z",
+  "duration_seconds": 3.119,
+  "error": null
+}

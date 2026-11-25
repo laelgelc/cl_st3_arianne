@@ -1,0 +1,77 @@
+{
+  "article_id": "15766598",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_12/us/15766598.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_12/us/15766598.json"
+  },
+  "manifest_row": {
+    "article_id": "15766598",
+    "group": "2016_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_12/us/15766598.txt",
+    "now_field_2": "536",
+    "date_original": "16-12-06",
+    "date_iso": "2016-12-06",
+    "source_name": "CNNMoney",
+    "url": "http://money.cnn.com/2016/12/06/news/tillerson-trump-secretary-state-exxonmobil/",
+    "title": "Trump to interview ExxonMobil CEO for secretary of state",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-12.txt\"]",
+    "metadata_article_files": "[\"text-16-12/text_16-12-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Rex Tillerson's consideration for secretary of state and his ties to ExxonMobil and the oil industry",
+    "climate_relevance": "The article mentions serious concern about climate change and an investigation into whether Exxon withheld information about climate risks, but these points are secondary to its focus on Tillerson's potential appointment.",
+    "reason": "Climate change is meaningfully connected to the discussion of Tillerson's leadership of ExxonMobil and the company's investigation, but the article is mainly about Trump's cabinet selection.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "efc9997a2ce5b56e21bc71548e44d6ab354823479f11cfd0cd961a98f3e0f96a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "554f9b5d1c767b672da7f51baaf705235f0647045172bd0d8935054a272cda9e",
+    "raw_response_text_sha256": "69b67a03a1aaab712b04d3bf507dcf084dfdf695215ab2bf0d8fa0799c594c64"
+  },
+  "api_metadata": {
+    "id": "resp_0e05f6ab6c3e4ee4006b0606ff035087d2b16f63f0acac6a30",
+    "model": "gpt-6-luna",
+    "created_at": 1795557119.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1188,
+      "input_tokens_details": {
+        "cache_write_tokens": 1185,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1185
+        }
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1418
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Rex Tillerson's consideration for secretary of state and his ties to ExxonMobil and the oil industry\",\n  \"climate_relevance\": \"The article mentions serious concern about climate change and an investigation into whether Exxon withheld information about climate risks, but these points are secondary to its focus on Tillerson's potential appointment.\",\n  \"reason\": \"Climate change is meaningfully connected to the discussion of Tillerson's leadership of ExxonMobil and the company's investigation, but the article is mainly about Trump's cabinet selection.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:52:01Z",
+  "duration_seconds": 2.224,
+  "error": null
+}

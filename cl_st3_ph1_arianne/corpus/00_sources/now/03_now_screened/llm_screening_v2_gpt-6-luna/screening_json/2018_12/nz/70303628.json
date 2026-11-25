@@ -1,0 +1,77 @@
+{
+  "article_id": "70303628",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/nz/70303628.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/nz/70303628.json"
+  },
+  "manifest_row": {
+    "article_id": "70303628",
+    "group": "2018_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/nz/70303628.txt",
+    "now_field_2": "181",
+    "date_original": "18-12-03",
+    "date_iso": "2018-12-03",
+    "source_name": "waateanews.com",
+    "url": "https://www.waateanews.com/waateanews/x_news/MjA3MTk/Radio-Kahungunu-30-years-of-reo",
+    "title": "Radio Kahungunu 30 years of reo",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Radio Kahungunu's anniversary and role in preserving iwi reo and culture",
+    "climate_relevance": "A separate, truncated climate-change commentary appears between unrelated material, but it is not part of the identifiable main story.",
+    "reason": "The identifiable main article concerns the radio station's anniversary and cultural role. The climate-change passage is a distinct snippet, while the later material concerns a storm's effects on Auckland. Neither is meaningfully part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f58551928992e6a4d3bcbab6077c76e0616c91b4a594e5c85710529b7e9097fa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d89b162a55b951eae66c289bd7dea03a71b350776612ed292e9d07f129806fab",
+    "raw_response_text_sha256": "ca99d0fba21dc5f8fea0955b24bb2529d2913f45a0d30db342150b9ffe32b1e3"
+  },
+  "api_metadata": {
+    "id": "resp_008a3e89a2393fea006b063bd347cc87d1a004c6580611a98f",
+    "model": "gpt-6-luna",
+    "created_at": 1795570643.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 997,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 389,
+      "output_tokens_details": {
+        "reasoning_tokens": 227
+      },
+      "total_tokens": 1386
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Radio Kahungunu's anniversary and role in preserving iwi reo and culture\",\n  \"climate_relevance\": \"A separate, truncated climate-change commentary appears between unrelated material, but it is not part of the identifiable main story.\",\n  \"reason\": \"The identifiable main article concerns the radio station's anniversary and cultural role. The climate-change passage is a distinct snippet, while the later material concerns a storm's effects on Auckland. Neither is meaningfully part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:37:26Z",
+  "duration_seconds": 3.268,
+  "error": null
+}

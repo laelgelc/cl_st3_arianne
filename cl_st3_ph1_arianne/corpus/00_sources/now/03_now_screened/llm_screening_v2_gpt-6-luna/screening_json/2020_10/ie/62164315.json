@@ -1,0 +1,77 @@
+{
+  "article_id": "62164315",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/ie/62164315.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/ie/62164315.json"
+  },
+  "manifest_row": {
+    "article_id": "62164315",
+    "group": "2020_10",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/ie/62164315.txt",
+    "now_field_2": "371",
+    "date_original": "20-10-01",
+    "date_iso": "2020-10-01",
+    "source_name": "agriland.ie",
+    "url": "https://www.agriland.ie/farming-news/oireachtas-committee-on-agriculture-to-hit-the-ground-running-cahill/",
+    "title": "Oireachtas committee on agriculture to 'hit the ground ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "The work and priorities of Ireland’s Oireachtas Joint Committee on Agriculture, Food and the Marine",
+    "climate_relevance": "Climate change is named as one of three issues the committee should focus on, but the text provides no discussion of it or its implications.",
+    "reason": "The article is about agricultural committee business, and climate change appears only in a brief list of policy priorities without substantive elaboration.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c907d9f56466931dc0ae29cb78cd05b6869c90928cc847df8e8179d47991cfc2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "07a99e0ce9bb2bca89af086c34335829e273d069f89a7fc017645d10b9c1b93c",
+    "raw_response_text_sha256": "0027a801df2434b39bd30c4061b5c4781edaa131047c550e0e07ae39da191f7f"
+  },
+  "api_metadata": {
+    "id": "resp_057985f1e65a0246006b0639a0947087d1bda70a558d8a3029",
+    "model": "gpt-6-luna",
+    "created_at": 1795570080.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 972,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 1301
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The work and priorities of Ireland’s Oireachtas Joint Committee on Agriculture, Food and the Marine\",\n  \"climate_relevance\": \"Climate change is named as one of three issues the committee should focus on, but the text provides no discussion of it or its implications.\",\n  \"reason\": \"The article is about agricultural committee business, and climate change appears only in a brief list of policy priorities without substantive elaboration.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:28:03Z",
+  "duration_seconds": 2.624,
+  "error": null
+}

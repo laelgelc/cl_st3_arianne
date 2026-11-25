@@ -1,0 +1,77 @@
+{
+  "article_id": "81769116",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81769116.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81769116.json"
+  },
+  "manifest_row": {
+    "article_id": "81769116",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81769116.txt",
+    "now_field_2": "153",
+    "date_original": "19-10-23",
+    "date_iso": "2019-10-23",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191023145629-ovuwf",
+    "title": "UK PM Johnson tells Germany's Merkel: Brexit should not be delayed",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Brexit and the proposed delay to the UK's withdrawal from the European Union",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news organization's coverage.",
+    "reason": "The article is about Brexit and contains no meaningful climate discourse; the sole climate reference is in unrelated boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6ddf59bab0f76df3892c8d3d6911a8c9fd3547ae168bf533a5b702306c459d3a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "edf9616153c32afc485ef3b65aee747d2f79e21e5b50ec6fce99ffeb344056ca",
+    "raw_response_text_sha256": "d782ebea75d565260d83d26c0ff74f519af8b3234a3f031a1004ffab54abe717"
+  },
+  "api_metadata": {
+    "id": "resp_0c9d64725b2e88b7006b0647ae129887d183b83c94184fd16b",
+    "model": "gpt-6-luna",
+    "created_at": 1795573678.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 682,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 168,
+      "output_tokens_details": {
+        "reasoning_tokens": 37
+      },
+      "total_tokens": 850
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Brexit and the proposed delay to the UK's withdrawal from the European Union\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news organization's coverage.\",\n  \"reason\": \"The article is about Brexit and contains no meaningful climate discourse; the sole climate reference is in unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:27:59Z",
+  "duration_seconds": 1.762,
+  "error": null
+}

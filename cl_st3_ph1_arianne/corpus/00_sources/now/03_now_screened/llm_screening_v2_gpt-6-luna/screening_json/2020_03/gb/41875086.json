@@ -1,0 +1,77 @@
+{
+  "article_id": "41875086",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/gb/41875086.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/gb/41875086.json"
+  },
+  "manifest_row": {
+    "article_id": "41875086",
+    "group": "2020_03",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/gb/41875086.txt",
+    "now_field_2": "1442",
+    "date_original": "20-03-30",
+    "date_iso": "2020-03-30",
+    "source_name": "theguardian.com",
+    "url": "https://www.theguardian.com/discussion/p/dhg98",
+    "title": "The Guardian view on key workers: applause is not enough ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.89,
+    "climate_role": "passing",
+    "main_topic": "A collection of comments on UK politics, public services, COVID-19, and workers",
+    "climate_relevance": "Climate change appears once as a parenthetical example in a comment about MPs' scientific knowledge, without further discussion.",
+    "reason": "The climate reference is incidental and too brief to contribute meaningfully to climate discourse analysis. The text contains several unrelated comments, and no single main article is identifiable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c5759f56cefa553ae0e520fa723f89765c5bf9cd6c04f8ef5dbad7a9a2a1d30a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5e4f2bcba8f40cc1cb6e7c9c128365f54f5f4ac1773fe7dd2dfdc8c86d032556",
+    "raw_response_text_sha256": "76fe688e310f1c8b35141e02b6fb781216f6c77698c2720883b31e0266818914"
+  },
+  "api_metadata": {
+    "id": "resp_0ad25be761bdacad006b06236476a887d2a84bcd2157aca8e7",
+    "model": "gpt-6-luna",
+    "created_at": 1795564388.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2326,
+      "input_tokens_details": {
+        "cache_write_tokens": 2323,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2323
+        }
+      },
+      "output_tokens": 409,
+      "output_tokens_details": {
+        "reasoning_tokens": 263
+      },
+      "total_tokens": 2735
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.89,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of comments on UK politics, public services, COVID-19, and workers\",\n  \"climate_relevance\": \"Climate change appears once as a parenthetical example in a comment about MPs' scientific knowledge, without further discussion.\",\n  \"reason\": \"The climate reference is incidental and too brief to contribute meaningfully to climate discourse analysis. The text contains several unrelated comments, and no single main article is identifiable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:53:11Z",
+  "duration_seconds": 3.353,
+  "error": null
+}

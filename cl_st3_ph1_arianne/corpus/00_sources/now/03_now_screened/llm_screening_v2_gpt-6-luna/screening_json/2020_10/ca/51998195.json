@@ -1,0 +1,77 @@
+{
+  "article_id": "51998195",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/ca/51998195.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/ca/51998195.json"
+  },
+  "manifest_row": {
+    "article_id": "51998195",
+    "group": "2020_10",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/ca/51998195.txt",
+    "now_field_2": "15525",
+    "date_original": "20-10-03",
+    "date_iso": "2020-10-03",
+    "source_name": "ca.news.yahoo.com",
+    "url": "https://ca.news.yahoo.com/ap-fact-check-distortions-week-142105022.html",
+    "title": "AP FACT CHECK: Distortions from a week of wild disruption",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-ca.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.91,
+    "climate_role": "substantial",
+    "main_topic": "Federal-provincial conflict over Canada's clean fuel standard and climate policy",
+    "climate_relevance": "A substantial section discusses the clean fuel standard as a federal measure to reduce emissions, legal challenges from Alberta, carbon pricing, net-zero targets, oilsands emissions, and the costs and politics of climate regulation. Another section discusses climate change in the context of Green Party leadership.",
+    "reason": "The text contains many unrelated news items, but it includes a clearly identifiable, sustained report focused on climate policy and emissions regulation. That segment is centrally relevant to climate discourse and qualifies as CORE.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2c1db7d3813ee0f9d809345f6ab33f4150f033d38849684ce3ad5782a6a0e294",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d2f88e883880812e438659d4009b554b4486a02a9d574270dff12f3f9324939e",
+    "raw_response_text_sha256": "3030704f0c5e361fe76a2626cc9916d32982fef7d15a36a8f478af583af815a7"
+  },
+  "api_metadata": {
+    "id": "resp_0b9f4e9f19041090006b062fb1b35087d1948c2f7c743f4235",
+    "model": "gpt-6-luna",
+    "created_at": 1795567537.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 20606,
+      "input_tokens_details": {
+        "cache_write_tokens": 20603,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 20603
+        }
+      },
+      "output_tokens": 561,
+      "output_tokens_details": {
+        "reasoning_tokens": 381
+      },
+      "total_tokens": 21167
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Federal-provincial conflict over Canada's clean fuel standard and climate policy\",\n  \"climate_relevance\": \"A substantial section discusses the clean fuel standard as a federal measure to reduce emissions, legal challenges from Alberta, carbon pricing, net-zero targets, oilsands emissions, and the costs and politics of climate regulation. Another section discusses climate change in the context of Green Party leadership.\",\n  \"reason\": \"The text contains many unrelated news items, but it includes a clearly identifiable, sustained report focused on climate policy and emissions regulation. That segment is centrally relevant to climate discourse and qualifies as CORE.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:45:42Z",
+  "duration_seconds": 4.81,
+  "error": null
+}

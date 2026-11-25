@@ -1,0 +1,77 @@
+{
+  "article_id": "82190357",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82190357.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82190357.json"
+  },
+  "manifest_row": {
+    "article_id": "82190357",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82190357.txt",
+    "now_field_2": "147",
+    "date_original": "19-11-17",
+    "date_iso": "2019-11-17",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191117090648-lcrml",
+    "title": "Belarus threatens not to sign integration deal with Russia if \\\"oil and gas issues\\\" unresolved",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Belarus-Russia relations and energy subsidies",
+    "climate_relevance": "Climate change appears only in a generic editorial-team description, not in the report's subject matter.",
+    "reason": "The article concerns Belarusian-Russian negotiations over oil, gas, and subsidies. The climate change reference is boilerplate and provides no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "49c47840f56c64d6842a05a75996684359ba4e419fbbc12286d632560a286d56",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b130f3b2862ca0029905c91f334c81d6592fefbc28937996bb359975d830de7b",
+    "raw_response_text_sha256": "4a724c72ddf63df218002ad6c9cca68c7cf6369e8468f0c22fdbc4c993df839a"
+  },
+  "api_metadata": {
+    "id": "resp_0d06e77b75de1572006b06482ae43487d1b21cc530e3f92801",
+    "model": "gpt-6-luna",
+    "created_at": 1795573802.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 674,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 926
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Belarus-Russia relations and energy subsidies\",\n  \"climate_relevance\": \"Climate change appears only in a generic editorial-team description, not in the report's subject matter.\",\n  \"reason\": \"The article concerns Belarusian-Russian negotiations over oil, gas, and subsidies. The climate change reference is boilerplate and provides no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:30:05Z",
+  "duration_seconds": 2.272,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70736907",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/us/70736907.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/us/70736907.json"
+  },
+  "manifest_row": {
+    "article_id": "70736907",
+    "group": "2019_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/us/70736907.txt",
+    "now_field_2": "562",
+    "date_original": "19-05-01",
+    "date_iso": "2019-05-01",
+    "source_name": "KPBS",
+    "url": "https://www.kpbs.org/news/2019/may/01/here-are-the-winners-of-the-npr-student-podcast/",
+    "title": "Here Are The Winners Of The NPR Student Podcast Challenge",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Winners of the NPR Student Podcast Challenge",
+    "climate_relevance": "Climate change is mentioned only as one of several topics covered by student podcast entries.",
+    "reason": "The article focuses on the podcast competition and its winning stories; it contains no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b921c135a372630393e68dd968eabfd9836b395f5875572ddb6c296ba27d56b0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ab43e54d219128358f19f1087ca040a1cbd25d9caf97ef32f993ac7d7bd3dabe",
+    "raw_response_text_sha256": "97a447de1daa64dd8547371ed1642dd8eb62954850d73f558f954e27e61dd078"
+  },
+  "api_metadata": {
+    "id": "resp_0e2661e39baf4b18006b063ecf196887d197f3f926d875dc6e",
+    "model": "gpt-6-luna",
+    "created_at": 1795571407.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1203,
+      "input_tokens_details": {
+        "cache_write_tokens": 1200,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1200
+        }
+      },
+      "output_tokens": 168,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 1371
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Winners of the NPR Student Podcast Challenge\",\n  \"climate_relevance\": \"Climate change is mentioned only as one of several topics covered by student podcast entries.\",\n  \"reason\": \"The article focuses on the podcast competition and its winning stories; it contains no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:50:08Z",
+  "duration_seconds": 1.806,
+  "error": null
+}

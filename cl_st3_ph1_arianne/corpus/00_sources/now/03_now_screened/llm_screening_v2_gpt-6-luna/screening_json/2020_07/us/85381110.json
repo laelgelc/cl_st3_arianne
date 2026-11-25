@@ -1,0 +1,77 @@
+{
+  "article_id": "85381110",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/85381110.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/85381110.json"
+  },
+  "manifest_row": {
+    "article_id": "85381110",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/85381110.txt",
+    "now_field_2": "196",
+    "date_original": "20-07-09",
+    "date_iso": "2020-07-09",
+    "source_name": "Washington Times",
+    "url": "https://www.washingtontimes.com/news/2020/jul/9/right-whale-is-now-critically-endangered-global-gr/",
+    "title": "Right whale is now critically endangered, global group finds",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "The conservation status and population decline of North Atlantic right whales",
+    "climate_relevance": "Climate change is briefly identified as an additional concern for the species, alongside fishing-gear entanglement and vessel strikes.",
+    "reason": "The text is mainly about whale conservation and population decline. Its single climate-change reference is relevant but too brief for CORE classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9029f85a634e2b8f5399bc08c550b114ee0db9ca77a022c38b1d4854fa993c5d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7619a548101133dd1349011839acd58dafb07bef5691e142633d772d8803b1c6",
+    "raw_response_text_sha256": "ff7b7e26e3bc6a8a6eb354feff8b21072992d0fe1a56922debf7366daeda6b04"
+  },
+  "api_metadata": {
+    "id": "resp_0c469ed20d384abc006b064bf4186887d1aa7dbe72afb6ba61",
+    "model": "gpt-6-luna",
+    "created_at": 1795574772.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 741,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 987
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The conservation status and population decline of North Atlantic right whales\",\n  \"climate_relevance\": \"Climate change is briefly identified as an additional concern for the species, alongside fishing-gear entanglement and vessel strikes.\",\n  \"reason\": \"The text is mainly about whale conservation and population decline. Its single climate-change reference is relevant but too brief for CORE classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:46:14Z",
+  "duration_seconds": 2.435,
+  "error": null
+}

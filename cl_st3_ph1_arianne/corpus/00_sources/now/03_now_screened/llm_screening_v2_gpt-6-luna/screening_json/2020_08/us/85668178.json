@@ -1,0 +1,77 @@
+{
+  "article_id": "85668178",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85668178.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85668178.json"
+  },
+  "manifest_row": {
+    "article_id": "85668178",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85668178.txt",
+    "now_field_2": "534",
+    "date_original": "20-08-13",
+    "date_iso": "2020-08-13",
+    "source_name": "Reuters on MSN.com",
+    "url": "https://www.msn.com/en-ca/finance/topstories/australian-billionaire-woos-canadians-hoping-to-build-big-coal-mine-in-rocky-mountains/ar-BB17W5mZ",
+    "title": "Australian billionaire woos Canadians, hoping to build big coal mine in Rocky Mountains",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "climate_role": "background",
+    "main_topic": "A proposed coal mine in Alberta, corporate efforts to build local support, and opposition over environmental risks.",
+    "climate_relevance": "The report connects the project to Canada's coal phaseout and assessment of climate impacts from new thermal coal mines and exports, while noting the distinction between coking and thermal coal.",
+    "reason": "Climate policy is a meaningful part of the context, but the article mainly focuses on the mine proposal, local opposition, and water and habitat concerns rather than climate change itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "adc2bb39fab7628be26c4e1b8ee0d0007895649f8278d6de31281b85c38b2a0d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "20cb612fc8e99a063ec0c67d0ed3a442a79ccb987bbfe4c494fc0772ff768f06",
+    "raw_response_text_sha256": "2c4ebab3e9596b8b2bf175da9ae950e36c101dc7d3b33b4178a8435866711e93"
+  },
+  "api_metadata": {
+    "id": "resp_0f263131fd92327f006b064ca9311087d1af06b729c800592a",
+    "model": "gpt-6-luna",
+    "created_at": 1795574953.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1177,
+      "input_tokens_details": {
+        "cache_write_tokens": 1174,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1174
+        }
+      },
+      "output_tokens": 323,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 1500
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A proposed coal mine in Alberta, corporate efforts to build local support, and opposition over environmental risks.\",\n  \"climate_relevance\": \"The report connects the project to Canada's coal phaseout and assessment of climate impacts from new thermal coal mines and exports, while noting the distinction between coking and thermal coal.\",\n  \"reason\": \"Climate policy is a meaningful part of the context, but the article mainly focuses on the mine proposal, local opposition, and water and habitat concerns rather than climate change itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:49:16Z",
+  "duration_seconds": 3.045,
+  "error": null
+}

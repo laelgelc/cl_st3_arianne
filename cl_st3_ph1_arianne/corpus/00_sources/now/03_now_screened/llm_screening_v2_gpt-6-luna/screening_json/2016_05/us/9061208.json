@@ -1,0 +1,77 @@
+{
+  "article_id": "9061208",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_05/us/9061208.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_05/us/9061208.json"
+  },
+  "manifest_row": {
+    "article_id": "9061208",
+    "group": "2016_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_05/us/9061208.txt",
+    "now_field_2": "1022",
+    "date_original": "16-05-27",
+    "date_iso": "2016-05-27",
+    "source_name": "Phys.Org",
+    "url": "http://phys.org/news/2016-05-survey-one-third-older-americans-financially.html",
+    "title": "New survey shows that only one-third of older Americans feel ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-05-bvk/16-05-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Older Americans’ financial preparedness for retirement",
+    "climate_relevance": "Climate change appears only in an unrelated recommended-story snippet about an ancient mass extinction, not in the main article.",
+    "reason": "The main article discusses retirement savings, income, and financial anxiety. The sole climate reference is in a separate recommended-for-you item and does not provide meaningful climate discourse in the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "20bfbfc53c979c3b21a5da030f2704af83e60002bfda8465518b688829348877",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0c3dcfe5edcf717187d74ae625291cd57e470a4e0504bc940f90b896b655c078",
+    "raw_response_text_sha256": "6a2e755ea766e044412442cc910a67f7664c363cdd9257a690a83c7157e3c8ed"
+  },
+  "api_metadata": {
+    "id": "resp_0b2d6d97f41aca9a006b0650dbfd1087d18b9d5a2dc0cc6072",
+    "model": "gpt-6-luna",
+    "created_at": 1795576028.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1762,
+      "input_tokens_details": {
+        "cache_write_tokens": 1759,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1759
+        }
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1968
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Older Americans’ financial preparedness for retirement\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated recommended-story snippet about an ancient mass extinction, not in the main article.\",\n  \"reason\": \"The main article discusses retirement savings, income, and financial anxiety. The sole climate reference is in a separate recommended-for-you item and does not provide meaningful climate discourse in the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:07:09Z",
+  "duration_seconds": 1.934,
+  "error": null
+}

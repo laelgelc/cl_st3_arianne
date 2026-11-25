@@ -1,0 +1,77 @@
+{
+  "article_id": "24625149",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/ke/24625149.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/ke/24625149.json"
+  },
+  "manifest_row": {
+    "article_id": "24625149",
+    "group": "2018_05",
+    "country_code": "ke",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/ke/24625149.txt",
+    "now_field_2": "613",
+    "date_original": "18-05-12",
+    "date_iso": "2018-05-12",
+    "source_name": "Daily Nation",
+    "url": "https://www.nation.co.ke/news/President-Kenyatta-kicks-off-tree-planting-drive-/1056-4558776-12v3r4az/index.html",
+    "title": "President Kenyatta kicks off tree-planting drive",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-ke.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Government tree-planting initiatives, forest conservation, and flood relief in Kenya",
+    "climate_relevance": "Climate change appears only in the name of a county department; the text does not meaningfully discuss climate change or connect the tree-planting drive to it.",
+    "reason": "The article focuses on tree planting, environmental conservation, and assistance for flood victims. The isolated department-name reference is incidental and does not provide substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "be6ba03bf5080f336b4825e40002032fee64fba1bafba489dc0fb285d10317b6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c16ecc55bccfc35fcb70ae33ee6db7584808f444c86abcff27060160f62f0b8b",
+    "raw_response_text_sha256": "52e0e62895c62792deb109d27e84d33bef0260610edf752a2eda785a44f56645"
+  },
+  "api_metadata": {
+    "id": "resp_0c306a533904bf90006b0612a32dac87d2917f0070cfed3db4",
+    "model": "gpt-6-luna",
+    "created_at": 1795560099.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1318,
+      "input_tokens_details": {
+        "cache_write_tokens": 1315,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1315
+        }
+      },
+      "output_tokens": 279,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 1597
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Government tree-planting initiatives, forest conservation, and flood relief in Kenya\",\n  \"climate_relevance\": \"Climate change appears only in the name of a county department; the text does not meaningfully discuss climate change or connect the tree-planting drive to it.\",\n  \"reason\": \"The article focuses on tree planting, environmental conservation, and assistance for flood victims. The isolated department-name reference is incidental and does not provide substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:41:41Z",
+  "duration_seconds": 2.25,
+  "error": null
+}

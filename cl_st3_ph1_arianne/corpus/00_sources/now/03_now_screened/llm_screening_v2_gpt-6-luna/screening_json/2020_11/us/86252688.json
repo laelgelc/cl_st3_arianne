@@ -1,0 +1,77 @@
+{
+  "article_id": "86252688",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/us/86252688.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/us/86252688.json"
+  },
+  "manifest_row": {
+    "article_id": "86252688",
+    "group": "2020_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/us/86252688.txt",
+    "now_field_2": "4831",
+    "date_original": "20-11-09",
+    "date_iso": "2020-11-09",
+    "source_name": "MarketWatch",
+    "url": "https://www.marketwatch.com/press-release/beyond-meatr-reports-third-quarter-2020-financial-results-2020-11-09-161843735",
+    "title": "Beyond Meat(R) Reports Third Quarter 2020 Financial Results",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Beyond Meat's third-quarter 2020 financial results and the effects of COVID-19 on its business",
+    "climate_relevance": "Climate change is mentioned only in a generic corporate description of the potential benefits of switching from animal-based to plant-based meat.",
+    "reason": "The release is overwhelmingly about company earnings, operations, and pandemic-related disruption. Its sole climate reference appears in boilerplate company background material and does not develop climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cfee785dbe6d340a6a5ca8f4da91bd154507c05250d3116c6b7739c31b0655c2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7cab2d0b18e049e8d91225b7a7ab1853f754eb5c6e1770180a980fc9da08e6c4",
+    "raw_response_text_sha256": "4fb3899a571f65b587d5628a2070b8cac2d2accb82b19c0b302cdaa7d45aa796"
+  },
+  "api_metadata": {
+    "id": "resp_0ef2ffaa54269c5c006b064f10988087d1b9d4b6a080faaba4",
+    "model": "gpt-6-luna",
+    "created_at": 1795575568.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 9036,
+      "input_tokens_details": {
+        "cache_write_tokens": 9033,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 9033
+        }
+      },
+      "output_tokens": 350,
+      "output_tokens_details": {
+        "reasoning_tokens": 193
+      },
+      "total_tokens": 9386
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Beyond Meat's third-quarter 2020 financial results and the effects of COVID-19 on its business\",\n  \"climate_relevance\": \"Climate change is mentioned only in a generic corporate description of the potential benefits of switching from animal-based to plant-based meat.\",\n  \"reason\": \"The release is overwhelmingly about company earnings, operations, and pandemic-related disruption. Its sole climate reference appears in boilerplate company background material and does not develop climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:59:31Z",
+  "duration_seconds": 3.264,
+  "error": null
+}

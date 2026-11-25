@@ -1,0 +1,77 @@
+{
+  "article_id": "18245946",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/ie/18245946.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/ie/18245946.json"
+  },
+  "manifest_row": {
+    "article_id": "18245946",
+    "group": "2017_05",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/ie/18245946.txt",
+    "now_field_2": "1230",
+    "date_original": "17-05-03",
+    "date_iso": "2017-05-03",
+    "source_name": "Agriland",
+    "url": "http://www.agriland.ie/farming-news/fresh-probe-into-silvermines-lead-saga/",
+    "title": "Fresh probe into Silvermines cattle poisoning saga",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-IE.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Lead poisoning of cattle and environmental contamination from former mining sites in Silvermines",
+    "climate_relevance": "Climate change appears only in the name of a government department. The reference to extreme flooding describes how contaminated sediment spread, without connecting the flooding to climate change.",
+    "reason": "The article focuses on lead contamination, cattle deaths, public health, and mine-site remediation. It contains no meaningful discourse about climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "411c0d73740923424096e0b63c3368408bd93bbcd3f3eb49db6258e8fc43639e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "64808de9b11cef4e72888b7ffb3204aa6be8e28f0b4c999fec8efd8680677061",
+    "raw_response_text_sha256": "8b0d49b41e7a19e6cbeae3a293a1e10d527c5e2f5b74ac1de51b9cd0eae456f2"
+  },
+  "api_metadata": {
+    "id": "resp_0723d114aa84a078006b060a00883087d2a6ff9575f1141b97",
+    "model": "gpt-6-luna",
+    "created_at": 1795557888.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2079,
+      "input_tokens_details": {
+        "cache_write_tokens": 2076,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2076
+        }
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 2337
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Lead poisoning of cattle and environmental contamination from former mining sites in Silvermines\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government department. The reference to extreme flooding describes how contaminated sediment spread, without connecting the flooding to climate change.\",\n  \"reason\": \"The article focuses on lead contamination, cattle deaths, public health, and mine-site remediation. It contains no meaningful discourse about climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:04:50Z",
+  "duration_seconds": 2.298,
+  "error": null
+}

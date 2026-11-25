@@ -1,0 +1,77 @@
+{
+  "article_id": "70630901",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70630901.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70630901.json"
+  },
+  "manifest_row": {
+    "article_id": "70630901",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70630901.txt",
+    "now_field_2": "456",
+    "date_original": "19-03-27",
+    "date_iso": "2019-03-27",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/BU1903/S00682/deer-milk-on-the-menu.htm",
+    "title": "Deer Milk on the menu",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Promotion of Pamu deer milk and its appearance at a restaurant awards event",
+    "climate_relevance": "The main article contains no meaningful climate discourse. Climate change appears only in an unrelated brief link about a report on New Zealand climate targets and policies.",
+    "reason": "The identifiable main article is about deer milk and restaurant marketing. The climate-related material is a standalone snippet with no substantive discussion, so it does not make the supplied text useful for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3c7e20e3a810ab46f02cec46517720d9e8d6df3f0968c899b76e017de335dc25",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "64fa20a33cf5b11e6e0daff9c8b5d1c6825bb0b5cf5701fb984749ed7c4a28f7",
+    "raw_response_text_sha256": "6ad59f3f2ff72decdb9a66076beaa9aad9d29abb394d5e7685dcaa37747d0f7f"
+  },
+  "api_metadata": {
+    "id": "resp_077c012f604a7158006b063e1ae98087d18600eaee29593587",
+    "model": "gpt-6-luna",
+    "created_at": 1795571227.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1072,
+      "input_tokens_details": {
+        "cache_write_tokens": 1069,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1069
+        }
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 167
+      },
+      "total_tokens": 1401
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Promotion of Pamu deer milk and its appearance at a restaurant awards event\",\n  \"climate_relevance\": \"The main article contains no meaningful climate discourse. Climate change appears only in an unrelated brief link about a report on New Zealand climate targets and policies.\",\n  \"reason\": \"The identifiable main article is about deer milk and restaurant marketing. The climate-related material is a standalone snippet with no substantive discussion, so it does not make the supplied text useful for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:47:09Z",
+  "duration_seconds": 2.741,
+  "error": null
+}

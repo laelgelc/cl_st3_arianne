@@ -1,0 +1,77 @@
+{
+  "article_id": "30307946",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/za/30307946.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/za/30307946.json"
+  },
+  "manifest_row": {
+    "article_id": "30307946",
+    "group": "2018_11",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/za/30307946.txt",
+    "now_field_2": "388",
+    "date_original": "18-11-29",
+    "date_iso": "2018-11-29",
+    "source_name": "Independent Online",
+    "url": "https://www.iol.co.za/sport/soccer/bafana/numsa-salutes-banyana-demands-equal-pay-for-national-soccer-teams-18315009",
+    "title": "Numsa salutes Banyana, demands 'equal pay' for national soccer teams",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Equal pay and recognition for South Africa’s women’s national soccer team",
+    "climate_relevance": "The main article does not discuss climate change. A separate cyclone snippet mentions research by a climate change researcher and increasing cyclone frequency, but it is unrelated to the soccer article.",
+    "reason": "The identifiable main article concerns gender equality in soccer and contains no meaningful climate discourse. The appended cyclone report is a separate snippet, so it does not make the main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e78afe1bf8a6d81a756daf293afc482549fb02019e951e7ee0c8bb64e701c4c0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7c110443b3c1df7b9b780f4c2b99c81f9a23bd88c880bf93b60c67c072295013",
+    "raw_response_text_sha256": "9c425a650373d23bceafcf40222181a45fabbdf312c2f64a21a31bb9bbf979f4"
+  },
+  "api_metadata": {
+    "id": "resp_0fb59a9c086d65dd006b0613ce730887d2988e5f4c1931afe7",
+    "model": "gpt-6-luna",
+    "created_at": 1795560398.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1322,
+      "input_tokens_details": {
+        "cache_write_tokens": 1319,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1319
+        }
+      },
+      "output_tokens": 518,
+      "output_tokens_details": {
+        "reasoning_tokens": 352
+      },
+      "total_tokens": 1840
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Equal pay and recognition for South Africa’s women’s national soccer team\",\n  \"climate_relevance\": \"The main article does not discuss climate change. A separate cyclone snippet mentions research by a climate change researcher and increasing cyclone frequency, but it is unrelated to the soccer article.\",\n  \"reason\": \"The identifiable main article concerns gender equality in soccer and contains no meaningful climate discourse. The appended cyclone report is a separate snippet, so it does not make the main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:46:41Z",
+  "duration_seconds": 3.549,
+  "error": null
+}

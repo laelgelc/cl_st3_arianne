@@ -1,0 +1,77 @@
+{
+  "article_id": "14195211",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_09/au/14195211.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_09/au/14195211.json"
+  },
+  "manifest_row": {
+    "article_id": "14195211",
+    "group": "2016_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_09/au/14195211.txt",
+    "now_field_2": "597",
+    "date_original": "16-09-04",
+    "date_iso": "2016-09-04",
+    "source_name": "Huffington Post Australia",
+    "url": "http://www.huffingtonpost.com.au/2016/09/04/giant-panda-numbers-are-rising-but-its-not-that-black-and-whit/",
+    "title": "Giant Panda Numbers Are Rising, But It's Not That Black And White",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-09-bmb/16-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Giant panda conservation status and threats",
+    "climate_relevance": "The panda article reports that climate change could eliminate more than 35 percent of the species’ bamboo habitat, potentially reversing conservation gains.",
+    "reason": "The identifiable main article focuses on the giant panda’s conservation status and population trends. Climate change is a meaningful but secondary threat discussed in that context. A separate article about eastern gorillas appears afterward.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6cabb2d936aadbd0037b7497b6bc091f25f907fb6bdfa44a582a6e72b442abf6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "489544378d652aaa90b61ea2428e8c6f202e0623846f0b19a9c50b331084517c",
+    "raw_response_text_sha256": "bd5d4e6a8b68abc7c2a30c845de220783c1e6630dd35855ff691550570d39b68"
+  },
+  "api_metadata": {
+    "id": "resp_089a1ac162b3d0cb006b060589b22c87d2807972c999efd197",
+    "model": "gpt-6-luna",
+    "created_at": 1795556745.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1292,
+      "input_tokens_details": {
+        "cache_write_tokens": 1289,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1289
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1517
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Giant panda conservation status and threats\",\n  \"climate_relevance\": \"The panda article reports that climate change could eliminate more than 35 percent of the species’ bamboo habitat, potentially reversing conservation gains.\",\n  \"reason\": \"The identifiable main article focuses on the giant panda’s conservation status and population trends. Climate change is a meaningful but secondary threat discussed in that context. A separate article about eastern gorillas appears afterward.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:45:47Z",
+  "duration_seconds": 1.847,
+  "error": null
+}

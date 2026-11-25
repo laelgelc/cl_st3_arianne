@@ -1,0 +1,77 @@
+{
+  "article_id": "18473561",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/ca/18473561.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/ca/18473561.json"
+  },
+  "manifest_row": {
+    "article_id": "18473561",
+    "group": "2017_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/ca/18473561.txt",
+    "now_field_2": "2143",
+    "date_original": "17-05-16",
+    "date_iso": "2017-05-16",
+    "source_name": "Huffington Post Canada",
+    "url": "http://www.huffingtonpost.ca/2017/05/16/senator-stephen-greene-tr_n_16645748.html",
+    "title": "Senator Stephen Greene Kicked Out Of Tory Caucus Over Trudeau ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Canadian senator's dispute with the Conservative caucus over attending a dinner with the prime minister",
+    "climate_relevance": "Climate change appears only in a passing reference to a politician's ministerial title; there is no substantive climate discussion.",
+    "reason": "The identifiable main article concerns Senate politics. The other material is a collection of unrelated political profiles and snippets, with climate-related wording limited to a ministerial title and a brief reference to environmental causes.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "153836296364c001d4ed98be3c2ecda9f49ab4fe546643bb4540704902f90140",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d000b267803b8dc62e903a263ee3530ecdab74e16e9b0c2aee319d26043ec4fe",
+    "raw_response_text_sha256": "2cad558271faa46353be793757ba8f436a8bbd7a19a4f629f4ff79011c3ebd50"
+  },
+  "api_metadata": {
+    "id": "resp_00436c2bb6815d40006b060a4850ac87d29605863a1065e90e",
+    "model": "gpt-6-luna",
+    "created_at": 1795557960.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3445,
+      "input_tokens_details": {
+        "cache_write_tokens": 3442,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3442
+        }
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 3704
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Canadian senator's dispute with the Conservative caucus over attending a dinner with the prime minister\",\n  \"climate_relevance\": \"Climate change appears only in a passing reference to a politician's ministerial title; there is no substantive climate discussion.\",\n  \"reason\": \"The identifiable main article concerns Senate politics. The other material is a collection of unrelated political profiles and snippets, with climate-related wording limited to a ministerial title and a brief reference to environmental causes.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:06:02Z",
+  "duration_seconds": 2.581,
+  "error": null
+}

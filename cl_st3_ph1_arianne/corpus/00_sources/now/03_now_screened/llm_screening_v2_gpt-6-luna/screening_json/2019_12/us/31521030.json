@@ -1,0 +1,77 @@
+{
+  "article_id": "31521030",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/31521030.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/31521030.json"
+  },
+  "manifest_row": {
+    "article_id": "31521030",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/31521030.txt",
+    "now_field_2": "1686",
+    "date_original": "19-12-21",
+    "date_iso": "2019-12-21",
+    "source_name": "latimes.com",
+    "url": "https://www.latimes.com/local/lanow/la-me-officer-bone-marrow-transplant-20170622-htmlstory.html",
+    "title": "An LAPD officer needs a bone marrow transplant. His ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Ethnic disparities in bone marrow donor matching and the search for a transplant donor",
+    "climate_relevance": "Climate change appears only in a final, unrelated sentence about Los Angeles considering ways to store Sierra Nevada snowmelt.",
+    "reason": "The identifiable main article concerns bone marrow donation and ethnicity. The sole climate-related sentence is an unrelated appended snippet and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "274244e779c2bfbb48f1f4c237e698654381f81ad44584318fed78bd77d72847",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "24fb6e41efb49df376d8a2f5db7d57f674f66fa1cdf421da897efb1a193f881c",
+    "raw_response_text_sha256": "a95773260c2a5c26ee3d1fb22b1a2ee0715c7b0a2363deecafe6ad89068b69fe"
+  },
+  "api_metadata": {
+    "id": "resp_0bf2cab4994f7188006b0617cadbc087d2a93de3c5061a2f6b",
+    "model": "gpt-6-luna",
+    "created_at": 1795561419.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2794,
+      "input_tokens_details": {
+        "cache_write_tokens": 2791,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2791
+        }
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 3006
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ethnic disparities in bone marrow donor matching and the search for a transplant donor\",\n  \"climate_relevance\": \"Climate change appears only in a final, unrelated sentence about Los Angeles considering ways to store Sierra Nevada snowmelt.\",\n  \"reason\": \"The identifiable main article concerns bone marrow donation and ethnicity. The sole climate-related sentence is an unrelated appended snippet and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:03:41Z",
+  "duration_seconds": 4.237,
+  "error": null
+}

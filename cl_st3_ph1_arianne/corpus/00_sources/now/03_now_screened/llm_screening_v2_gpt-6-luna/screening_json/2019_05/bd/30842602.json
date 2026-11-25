@@ -1,0 +1,77 @@
+{
+  "article_id": "30842602",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/bd/30842602.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/bd/30842602.json"
+  },
+  "manifest_row": {
+    "article_id": "30842602",
+    "group": "2019_05",
+    "country_code": "bd",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/bd/30842602.txt",
+    "now_field_2": "223",
+    "date_original": "19-05-04",
+    "date_iso": "2019-05-04",
+    "source_name": "The Daily Star",
+    "url": "https://www.thedailystar.net/city/news/country-committed-biosafety-minister-1738771",
+    "title": "Country committed to biosafety: minister",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-bd.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Bangladesh's commitment to implementing the Cartagena Protocol on Biosafety",
+    "climate_relevance": "Climate change appears only in the minister's official title; the text contains no meaningful discussion of climate change.",
+    "reason": "The article focuses on biosafety and the regulation of living modified organisms, with no substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "152e283e0aed85b8b85a44776400d4c128263480bd47b961e54ffc8171d3c100",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "61221a1f3c83eefa9339a3f0b353c3818abb0bf8fe8702e733131097cad7a78e",
+    "raw_response_text_sha256": "d679069848e747f786673a4bdd74df1140779310d87e56f53749c7dbc814093f"
+  },
+  "api_metadata": {
+    "id": "resp_015c0f43a6f22005006b0615668b0c87d293ef7c1fa540187f",
+    "model": "gpt-6-luna",
+    "created_at": 1795560806.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 795,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 187,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 982
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Bangladesh's commitment to implementing the Cartagena Protocol on Biosafety\",\n  \"climate_relevance\": \"Climate change appears only in the minister's official title; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on biosafety and the regulation of living modified organisms, with no substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:53:28Z",
+  "duration_seconds": 2.024,
+  "error": null
+}

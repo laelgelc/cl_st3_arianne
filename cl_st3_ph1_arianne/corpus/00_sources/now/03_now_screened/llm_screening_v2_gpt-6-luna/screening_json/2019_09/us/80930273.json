@@ -1,0 +1,77 @@
+{
+  "article_id": "80930273",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/80930273.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/80930273.json"
+  },
+  "manifest_row": {
+    "article_id": "80930273",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/80930273.txt",
+    "now_field_2": "225",
+    "date_original": "19-09-06",
+    "date_iso": "2019-09-06",
+    "source_name": "Renewables Now",
+    "url": "https://renewablesnow.com/news/urban-grid-gets-crayhill-debt-for-5-gwp-of-solar-projects-668014/",
+    "title": "Urban Grid gets Crayhill debt for 5 GWp of solar projects",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.83,
+    "climate_role": "background",
+    "main_topic": "Financing and development of a utility-scale solar project portfolio",
+    "climate_relevance": "The identifiable main article concerns solar energy development, which is relevant to climate mitigation, but it does not explicitly discuss climate change or frame the projects in climate terms. A separate snippet discusses climate change proposals and political debate.",
+    "reason": "The main article is about financing solar projects rather than climate change discourse, so it is not core climate coverage. The separate climate-town-hall snippet contains meaningful climate discourse, but appears to be an unrelated article and does not change the classification of the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "25fb012f709c9c0f5dee0f6a05a6bf2f0444b0b38441cd597871102a5ddc4589",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e692ab96b3e6cef6d11a26a39c9817b45316fb6b5d269e4dd5ad263013781b8a",
+    "raw_response_text_sha256": "ab8517e3558fbfcafc7f107fbee5879c06ea425c8e6d1240523e6d5e9bafa215"
+  },
+  "api_metadata": {
+    "id": "resp_0d701aaf1956f0e0006b0646b9e72487d186965be5d101e94f",
+    "model": "gpt-6-luna",
+    "created_at": 1795573434.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1064,
+      "input_tokens_details": {
+        "cache_write_tokens": 1061,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1061
+        }
+      },
+      "output_tokens": 667,
+      "output_tokens_details": {
+        "reasoning_tokens": 484
+      },
+      "total_tokens": 1731
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.83,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Financing and development of a utility-scale solar project portfolio\",\n  \"climate_relevance\": \"The identifiable main article concerns solar energy development, which is relevant to climate mitigation, but it does not explicitly discuss climate change or frame the projects in climate terms. A separate snippet discusses climate change proposals and political debate.\",\n  \"reason\": \"The main article is about financing solar projects rather than climate change discourse, so it is not core climate coverage. The separate climate-town-hall snippet contains meaningful climate discourse, but appears to be an unrelated article and does not change the classification of the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:23:59Z",
+  "duration_seconds": 6.146,
+  "error": null
+}

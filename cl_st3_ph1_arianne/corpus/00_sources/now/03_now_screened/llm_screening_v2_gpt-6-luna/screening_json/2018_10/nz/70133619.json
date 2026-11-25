@@ -1,0 +1,77 @@
+{
+  "article_id": "70133619",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/nz/70133619.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/nz/70133619.json"
+  },
+  "manifest_row": {
+    "article_id": "70133619",
+    "group": "2018_10",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/nz/70133619.txt",
+    "now_field_2": "771",
+    "date_original": "18-10-11",
+    "date_iso": "2018-10-11",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/BU1810/S00367/climate-change-business-conference-communique-day-2.htm",
+    "title": "Climate Change &amp; Business Conference Communique Day 2",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-nz.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "New Zealand business conference on climate change mitigation, adaptation, emissions policy, and investment",
+    "climate_relevance": "The main article substantially discusses greenhouse-gas reductions, the Paris Agreement, carbon prices, agricultural methane, climate impacts and adaptation, and government and business responses.",
+    "reason": "Climate change is the central subject throughout the conference report. The text also includes unrelated EDS description and apparent snippets about pollution and kauri dieback, but these do not change the classification of the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3b06958895e8e81cede81cb6bcfb25aadcfab4ee15243f70884577764a9bcc40",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d97cdfa87ff9c2ccad8e5d9d44628856dc4c0b2f914aafa91a7662d4e09986c0",
+    "raw_response_text_sha256": "4513b229de15b250a10c4bb25432d6111c451c6fa4157ba1b48606e722153263"
+  },
+  "api_metadata": {
+    "id": "resp_02c02c7e2baaa732006b063b05b5ec87d19b306b6b61417d37",
+    "model": "gpt-6-luna",
+    "created_at": 1795570437.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1468,
+      "input_tokens_details": {
+        "cache_write_tokens": 1465,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1465
+        }
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 1707
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"New Zealand business conference on climate change mitigation, adaptation, emissions policy, and investment\",\n  \"climate_relevance\": \"The main article substantially discusses greenhouse-gas reductions, the Paris Agreement, carbon prices, agricultural methane, climate impacts and adaptation, and government and business responses.\",\n  \"reason\": \"Climate change is the central subject throughout the conference report. The text also includes unrelated EDS description and apparent snippets about pollution and kauri dieback, but these do not change the classification of the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:33:59Z",
+  "duration_seconds": 2.193,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "85658410",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85658410.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85658410.json"
+  },
+  "manifest_row": {
+    "article_id": "85658410",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85658410.txt",
+    "now_field_2": "516",
+    "date_original": "20-08-12",
+    "date_iso": "2020-08-12",
+    "source_name": "Tampa Bay Times",
+    "url": "https://www.tampabay.com/news/environment/2020/08/12/mote-researchers-observe-restored-corals-spawn-near-florida-keys/",
+    "title": "Mote researchers observe restored corals spawn near Florida Keys",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Restoration and reproduction of endangered mountainous star corals in the Florida Keys",
+    "climate_relevance": "The article identifies climate change as a threat to coral reefs and notes that the restored colonies survived a global coral bleaching event.",
+    "reason": "The main focus is coral restoration and the first spawning of restored colonies, not climate change. Climate-related threats provide meaningful context, so the article is relevant to broader climate discourse but is not core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "680b576b0e3dc3b39d274781610b3ea5e08fcf6ec85449100859a2e3d0df8a70",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f01b2def4504035ec398a2d8448c3827bbab286b2ce8c7a0b38d99035ff0f9a7",
+    "raw_response_text_sha256": "cfe647f1512d67ac5c1fbc2ce5c00da7742087af016af2a0197ba2a03785e527"
+  },
+  "api_metadata": {
+    "id": "resp_031ffdd8b869adc6006b064ca2cb0087d18bff9b8699c4cfa8",
+    "model": "gpt-6-luna",
+    "created_at": 1795574946.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1167,
+      "input_tokens_details": {
+        "cache_write_tokens": 1164,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1164
+        }
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 1406
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Restoration and reproduction of endangered mountainous star corals in the Florida Keys\",\n  \"climate_relevance\": \"The article identifies climate change as a threat to coral reefs and notes that the restored colonies survived a global coral bleaching event.\",\n  \"reason\": \"The main focus is coral restoration and the first spawning of restored colonies, not climate change. Climate-related threats provide meaningful context, so the article is relevant to broader climate discourse but is not core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:49:08Z",
+  "duration_seconds": 2.196,
+  "error": null
+}

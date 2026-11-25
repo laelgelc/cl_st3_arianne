@@ -1,0 +1,77 @@
+{
+  "article_id": "81834072",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81834072.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81834072.json"
+  },
+  "manifest_row": {
+    "article_id": "81834072",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81834072.txt",
+    "now_field_2": "256",
+    "date_original": "19-10-27",
+    "date_iso": "2019-10-27",
+    "source_name": "Jurist",
+    "url": "https://www.jurist.org/news/2019/10/massachusetts-brings-climate-related-fraud-case-against-exxon/",
+    "title": "Massachusetts brings climate-related fraud case against Exxon",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Massachusetts Attorney General lawsuit alleging ExxonMobil misled investors and consumers about climate-related business risks and the climate impacts of its fossil fuel products",
+    "climate_relevance": "The article focuses on allegations concerning climate-change risks, fossil fuel emissions, and ExxonMobil's disclosures and advertising.",
+    "reason": "Climate change is central to the lawsuit and to both claims described in the article. A separate, unrelated Lend-Lease snippet appears at the end.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "dbb45a17f161862e4efda84768c81c310307fadab5c6ef6529d9d412188391fb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "49e4d3d38e207df3af6cd7f3eb68ab699da5699d8453f2565079bc3fa490b567",
+    "raw_response_text_sha256": "64253f9de785fbff4538c97ae472cae15cae883cbb766b358a5ec0e3afde7b1e"
+  },
+  "api_metadata": {
+    "id": "resp_0d5df5ddd55e601c006b0647bf753087d190e4dda447957a23",
+    "model": "gpt-6-luna",
+    "created_at": 1795573695.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 807,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1014
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Massachusetts Attorney General lawsuit alleging ExxonMobil misled investors and consumers about climate-related business risks and the climate impacts of its fossil fuel products\",\n  \"climate_relevance\": \"The article focuses on allegations concerning climate-change risks, fossil fuel emissions, and ExxonMobil's disclosures and advertising.\",\n  \"reason\": \"Climate change is central to the lawsuit and to both claims described in the article. A separate, unrelated Lend-Lease snippet appears at the end.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:28:17Z",
+  "duration_seconds": 2.55,
+  "error": null
+}

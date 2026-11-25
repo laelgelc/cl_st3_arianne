@@ -1,0 +1,77 @@
+{
+  "article_id": "15811288",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_12/au/15811288.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_12/au/15811288.json"
+  },
+  "manifest_row": {
+    "article_id": "15811288",
+    "group": "2016_12",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_12/au/15811288.txt",
+    "now_field_2": "616",
+    "date_original": "16-12-08",
+    "date_iso": "2016-12-08",
+    "source_name": "ABC Online",
+    "url": "http://www.abc.net.au/news/2016-12-09/bom-a-year-in-australias-weather-calendar/8101768",
+    "title": "A year of Australian weather captured in a calendar",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-12.txt\"]",
+    "metadata_article_files": "[\"text-16-12/text_16-12-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A calendar featuring photographs of unusual weather phenomena in Australia",
+    "climate_relevance": "The article discusses weather events and a database of climatic conditions, but not climate change. Its only explicit climate-change reference is a disconnected sentence about the Paris Agreement.",
+    "reason": "The main article is about weather photography and the Australian Weather Calendar. The brief Paris Agreement reference contains no meaningful climate discourse and appears unrelated to the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4af2ee1d197747f30b6a3d26d30282c23542a3ce25497b4718da95ec21d12450",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9c318c8caeb36782481a748edefc5699dde96188c5fe28353f7f2d8df78fd4c4",
+    "raw_response_text_sha256": "5dbe88e29d1e7592895df6a127270997ede2b9ab7f7f85de5323896a15ecef4b"
+  },
+  "api_metadata": {
+    "id": "resp_06927b3177598c49006b06070e8c3887d2b122e80300b96de3",
+    "model": "gpt-6-luna",
+    "created_at": 1795557134.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1259,
+      "input_tokens_details": {
+        "cache_write_tokens": 1256,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1256
+        }
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 1532
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A calendar featuring photographs of unusual weather phenomena in Australia\",\n  \"climate_relevance\": \"The article discusses weather events and a database of climatic conditions, but not climate change. Its only explicit climate-change reference is a disconnected sentence about the Paris Agreement.\",\n  \"reason\": \"The main article is about weather photography and the Australian Weather Calendar. The brief Paris Agreement reference contains no meaningful climate discourse and appears unrelated to the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:52:16Z",
+  "duration_seconds": 2.102,
+  "error": null
+}

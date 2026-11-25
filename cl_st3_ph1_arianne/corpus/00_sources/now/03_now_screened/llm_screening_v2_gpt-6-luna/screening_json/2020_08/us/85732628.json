@@ -1,0 +1,77 @@
+{
+  "article_id": "85732628",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85732628.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85732628.json"
+  },
+  "manifest_row": {
+    "article_id": "85732628",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85732628.txt",
+    "now_field_2": "5308",
+    "date_original": "20-08-21",
+    "date_iso": "2020-08-21",
+    "source_name": "PR Newswire",
+    "url": "https://www.prnewswire.com/news-releases/deere-reports-third-quarter-net-income-of-811-million-301116126.html",
+    "title": "Deere Reports Third Quarter Net Income of $811 Million",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Deere & Company’s third-quarter 2020 financial results and business outlook",
+    "climate_relevance": "Climate change appears only in a list of potential regulatory and business risks; weather-pattern changes are also listed among general uncertainties.",
+    "reason": "The text is a corporate earnings release focused on financial results, market conditions, and COVID-19. Its brief climate references occur only in standard risk-factor language and do not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5578f47f93b3143e61e7960e2ee74797ed15a01ea1a9bf0179ca9668effe7929",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9eb271abdedb596232562810207b455fb7ac0c544f73b2dc053fa892b98c3072",
+    "raw_response_text_sha256": "82d6fc0cf8792cc039115ff7bcc527ce158c1ba108eec648826e1dae8c298913"
+  },
+  "api_metadata": {
+    "id": "resp_09eb297b2f3df75b006b064ced1c8487d1b49cb8a4e444faea",
+    "model": "gpt-6-luna",
+    "created_at": 1795575021.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 11228,
+      "input_tokens_details": {
+        "cache_write_tokens": 11225,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 11225
+        }
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 47
+      },
+      "total_tokens": 11433
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Deere & Company’s third-quarter 2020 financial results and business outlook\",\n  \"climate_relevance\": \"Climate change appears only in a list of potential regulatory and business risks; weather-pattern changes are also listed among general uncertainties.\",\n  \"reason\": \"The text is a corporate earnings release focused on financial results, market conditions, and COVID-19. Its brief climate references occur only in standard risk-factor language and do not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:50:23Z",
+  "duration_seconds": 2.533,
+  "error": null
+}

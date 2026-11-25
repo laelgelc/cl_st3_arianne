@@ -1,0 +1,77 @@
+{
+  "article_id": "40898796",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40898796.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40898796.json"
+  },
+  "manifest_row": {
+    "article_id": "40898796",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40898796.txt",
+    "now_field_2": "422",
+    "date_original": "19-04-30",
+    "date_iso": "2019-04-30",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/30/austria-joins-portugal-to-tap-chinas-bond-market/",
+    "title": "Austria joins Portugal to tap China's bond market",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Austria's plans to issue yuan-denominated Panda bonds",
+    "climate_relevance": "Climate change appears only in a separate headline fragment naming a minister whose portfolio includes it; the identifiable main article concerns bond issuance.",
+    "reason": "The main article contains no meaningful climate discourse. A separate headline mentions sustainable energy solutions and a climate-change minister, but only in passing and without substantive discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "648a8813b1d00cd2533ad1c6e36a6972a10696f002574c0de14bfbf53a851fc7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6a7e9d479a031470c1c7f1ee4d74663ff64aa0ec935b86ba6ac6706a214c682b",
+    "raw_response_text_sha256": "938ddccc8bb0014545a788f513be3b912cd89a0848bad5eba9d5f71ab726a4f1"
+  },
+  "api_metadata": {
+    "id": "resp_057d8afa8c825f2c006b062047a32887d29b27adc692db5fbd",
+    "model": "gpt-6-luna",
+    "created_at": 1795563591.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1039,
+      "input_tokens_details": {
+        "cache_write_tokens": 1036,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1036
+        }
+      },
+      "output_tokens": 373,
+      "output_tokens_details": {
+        "reasoning_tokens": 226
+      },
+      "total_tokens": 1412
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Austria's plans to issue yuan-denominated Panda bonds\",\n  \"climate_relevance\": \"Climate change appears only in a separate headline fragment naming a minister whose portfolio includes it; the identifiable main article concerns bond issuance.\",\n  \"reason\": \"The main article contains no meaningful climate discourse. A separate headline mentions sustainable energy solutions and a climate-change minister, but only in passing and without substantive discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:54Z",
+  "duration_seconds": 3.292,
+  "error": null
+}

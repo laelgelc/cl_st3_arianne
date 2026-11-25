@@ -1,0 +1,77 @@
+{
+  "article_id": "71208077",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/au/71208077.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/au/71208077.json"
+  },
+  "manifest_row": {
+    "article_id": "71208077",
+    "group": "2019_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/au/71208077.txt",
+    "now_field_2": "354",
+    "date_original": "19-09-13",
+    "date_iso": "2019-09-13",
+    "source_name": "dailymercury.com.au",
+    "url": "https://m.dailymercury.com.au/news/audi-reveals-future-of-off-roading/3829505/",
+    "title": "In Audi's future, off-roading takes its cues from drones ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Audi's AI:Trail electric off-road vehicle concept",
+    "climate_relevance": "The identifiable main article about Audi's vehicle concept contains no meaningful climate-change discourse. A separate appended article discusses climate change extensively.",
+    "reason": "The text contains two unrelated articles. The opening Audi article is identifiable as the main article and is unrelated to climate change; the substantial climate discussion belongs to a separate snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "70d4bb1beda702cfd6258568965ad6591aac8c5f745167741381418b4e8d7b3a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2be9eae2d53996ec244471cec2bf837fc642d3b172038c87792040e394b384ed",
+    "raw_response_text_sha256": "a0e1e4057ca53a1d1ed49d4c10888ceb7441a716673f841c32574057dd5043f8"
+  },
+  "api_metadata": {
+    "id": "resp_0e645cca503cf927006b0640623e6c87d18e50948a51f09948",
+    "model": "gpt-6-luna",
+    "created_at": 1795571810.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1474,
+      "input_tokens_details": {
+        "cache_write_tokens": 1471,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1471
+        }
+      },
+      "output_tokens": 586,
+      "output_tokens_details": {
+        "reasoning_tokens": 437
+      },
+      "total_tokens": 2060
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Audi's AI:Trail electric off-road vehicle concept\",\n  \"climate_relevance\": \"The identifiable main article about Audi's vehicle concept contains no meaningful climate-change discourse. A separate appended article discusses climate change extensively.\",\n  \"reason\": \"The text contains two unrelated articles. The opening Audi article is identifiable as the main article and is unrelated to climate change; the substantial climate discussion belongs to a separate snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:56:54Z",
+  "duration_seconds": 4.503,
+  "error": null
+}

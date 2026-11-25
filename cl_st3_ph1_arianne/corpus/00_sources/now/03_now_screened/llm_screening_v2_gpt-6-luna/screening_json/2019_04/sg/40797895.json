@@ -1,0 +1,77 @@
+{
+  "article_id": "40797895",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/sg/40797895.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/sg/40797895.json"
+  },
+  "manifest_row": {
+    "article_id": "40797895",
+    "group": "2019_04",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/sg/40797895.txt",
+    "now_field_2": "762",
+    "date_original": "19-04-03",
+    "date_iso": "2019-04-03",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/politics-gay-most-us-voters-200825523.html",
+    "title": "In politics and gay? So what, say most US voters",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "LGBTQ representation and acceptance in US politics",
+    "climate_relevance": "Climate change appears only in a list of issues relevant to presidential contests, without further discussion.",
+    "reason": "The article focuses on LGBTQ candidates, voter attitudes, and representation. Its single passing mention of climate change does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "25389635edfe4415b42bda2d74ef7de59f7ca0bd9413994b896988cf2800a0fb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "13144a187dd536e592618b82dd6108bf3b614794726ddbb3883fd9ea5a2cf7cb",
+    "raw_response_text_sha256": "e0fec4980ba0eebecd22bf83645682abe5034f3ecdf92d3dd2c90de26b0f9bda"
+  },
+  "api_metadata": {
+    "id": "resp_00d8799234f6d85b006b061fbbec4c87d29b9ae155d4920087",
+    "model": "gpt-6-luna",
+    "created_at": 1795563452.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1488,
+      "input_tokens_details": {
+        "cache_write_tokens": 1485,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1485
+        }
+      },
+      "output_tokens": 183,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1671
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"LGBTQ representation and acceptance in US politics\",\n  \"climate_relevance\": \"Climate change appears only in a list of issues relevant to presidential contests, without further discussion.\",\n  \"reason\": \"The article focuses on LGBTQ candidates, voter attitudes, and representation. Its single passing mention of climate change does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:33Z",
+  "duration_seconds": 1.653,
+  "error": null
+}

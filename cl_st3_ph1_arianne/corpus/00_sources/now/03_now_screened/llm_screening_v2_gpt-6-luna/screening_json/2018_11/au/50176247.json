@@ -1,0 +1,77 @@
+{
+  "article_id": "50176247",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/au/50176247.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/au/50176247.json"
+  },
+  "manifest_row": {
+    "article_id": "50176247",
+    "group": "2018_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/au/50176247.txt",
+    "now_field_2": "520",
+    "date_original": "18-11-01",
+    "date_iso": "2018-11-01",
+    "source_name": "New South Wales Rugby League",
+    "url": "https://www.nswrl.com.au/news/2018/11/01/innovative-jersey-suits-fittlers-new-age-philosophies/",
+    "title": "Innovative jersey suits Fittler's new-age philosophies",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A rugby league team's alternate jersey and its potential performance advantage",
+    "climate_relevance": "The main article is about a State of Origin jersey. A separate, appended news snippet discusses climate change and Australian-Pacific policy, but it is unrelated to the identifiable main article.",
+    "reason": "The identifiable article is about rugby league and contains no climate discourse. The climate-policy material appears to be a separate, unrelated article fragment, so it does not make the main article relevant to the corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "529e2a32b6d5707ab1beda20bc00fdeba7b7108158f557708675b01bacb8aafe",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ecab14ddc7d3ebad0342519d9503b30fa94fdf29d81a16d751d4ade855830cae",
+    "raw_response_text_sha256": "ebc137ceb38b26d41b121e89780ffd8643c83cb715761f501a6d70aa981cd2d8"
+  },
+  "api_metadata": {
+    "id": "resp_0d43443d69bd46d0006b0627e3932087d190a1de63b2e4a792",
+    "model": "gpt-6-luna",
+    "created_at": 1795565539.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1710,
+      "input_tokens_details": {
+        "cache_write_tokens": 1707,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1707
+        }
+      },
+      "output_tokens": 495,
+      "output_tokens_details": {
+        "reasoning_tokens": 329
+      },
+      "total_tokens": 2205
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A rugby league team's alternate jersey and its potential performance advantage\",\n  \"climate_relevance\": \"The main article is about a State of Origin jersey. A separate, appended news snippet discusses climate change and Australian-Pacific policy, but it is unrelated to the identifiable main article.\",\n  \"reason\": \"The identifiable article is about rugby league and contains no climate discourse. The climate-policy material appears to be a separate, unrelated article fragment, so it does not make the main article relevant to the corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:12:23Z",
+  "duration_seconds": 3.958,
+  "error": null
+}

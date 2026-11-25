@@ -1,0 +1,77 @@
+{
+  "article_id": "82907881",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82907881.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82907881.json"
+  },
+  "manifest_row": {
+    "article_id": "82907881",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82907881.txt",
+    "now_field_2": "135",
+    "date_original": "19-12-26",
+    "date_iso": "2019-12-26",
+    "source_name": "WGAN",
+    "url": "https://wgan.com/news/030030-kawhi-leonard-clippers-rally-to-beat-lakers-111-106/",
+    "title": "Kawhi Leonard, Clippers rally to beat Lakers 111-106",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us7.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "NBA basketball game",
+    "climate_relevance": "A separate snippet describes a study on feeding seaweed to cows to reduce greenhouse gas emissions, but climate change is not part of the identifiable main sports report.",
+    "reason": "The main article reports on an NBA game. The climate-related passage appears to be an unrelated article snippet, so it does not make the main article relevant for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b0a594c00d1f2848c5d8d2c7d5a51f456717d569f39128d9a236ea1da4c96462",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3829076bab5cb97fb6316c9a32b99a2891c455b9fda0eee3fab978285f7112d1",
+    "raw_response_text_sha256": "3b972112f8178b1ea97457ed6d99930647ea8333760871c3c592345e3f56b54b"
+  },
+  "api_metadata": {
+    "id": "resp_06a29717197c911b006b0648f6fa1487d18f81fa83563506f0",
+    "model": "gpt-6-luna",
+    "created_at": 1795574007.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 653,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 426,
+      "output_tokens_details": {
+        "reasoning_tokens": 277
+      },
+      "total_tokens": 1079
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"NBA basketball game\",\n  \"climate_relevance\": \"A separate snippet describes a study on feeding seaweed to cows to reduce greenhouse gas emissions, but climate change is not part of the identifiable main sports report.\",\n  \"reason\": \"The main article reports on an NBA game. The climate-related passage appears to be an unrelated article snippet, so it does not make the main article relevant for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:33:31Z",
+  "duration_seconds": 4.139,
+  "error": null
+}

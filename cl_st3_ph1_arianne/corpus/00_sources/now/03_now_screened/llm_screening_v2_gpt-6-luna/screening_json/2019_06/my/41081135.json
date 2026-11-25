@@ -1,0 +1,77 @@
+{
+  "article_id": "41081135",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/my/41081135.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/my/41081135.json"
+  },
+  "manifest_row": {
+    "article_id": "41081135",
+    "group": "2019_06",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/my/41081135.txt",
+    "now_field_2": "262",
+    "date_original": "19-06-19",
+    "date_iso": "2019-06-19",
+    "source_name": "The Star Online",
+    "url": "https://www.thestar.com.my/news/nation/2019/06/20/govt-bodies-urged-to-wean-off-singleuse-plastic/",
+    "title": "Govt bodies urged to wean off single-use plastic",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Government efforts to reduce single-use plastic",
+    "climate_relevance": "Climate change appears only in the ministry's official name; the article discusses plastic use and sustainable living without meaningful climate discourse.",
+    "reason": "The article is about policies to curb single-use plastics. The climate reference is incidental metadata in the ministry name and does not contribute to climate-change discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "886ac86d46edabff966789e748190843ce4f7422e309aafe90d452e2807ca815",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e47fdf47363f26a05d6dbf0037cb4e54311a7b7097aa650c5e39ed42dcb9e975",
+    "raw_response_text_sha256": "722ef4aee833e02a3b93e4f51646c7d9cd724bbb3b4c70a08159603eb4ee8079"
+  },
+  "api_metadata": {
+    "id": "resp_0593ff562c4727f3006b0620d45a3c87d2aece7c8c1c8830eb",
+    "model": "gpt-6-luna",
+    "created_at": 1795563732.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 810,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 173,
+      "output_tokens_details": {
+        "reasoning_tokens": 31
+      },
+      "total_tokens": 983
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Government efforts to reduce single-use plastic\",\n  \"climate_relevance\": \"Climate change appears only in the ministry's official name; the article discusses plastic use and sustainable living without meaningful climate discourse.\",\n  \"reason\": \"The article is about policies to curb single-use plastics. The climate reference is incidental metadata in the ministry name and does not contribute to climate-change discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:42:13Z",
+  "duration_seconds": 1.601,
+  "error": null
+}

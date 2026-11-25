@@ -1,0 +1,77 @@
+{
+  "article_id": "14964210",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_10/gb/14964210.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_10/gb/14964210.json"
+  },
+  "manifest_row": {
+    "article_id": "14964210",
+    "group": "2016_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_10/gb/14964210.txt",
+    "now_field_2": "1552",
+    "date_original": "16-10-20",
+    "date_iso": "2016-10-20",
+    "source_name": "BirdLife International",
+    "url": "http://www.birdlife.org/africa/news/conserving-madagascars-forest-hope",
+    "title": "Conserving Madagascar's forest of hope",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-10-ykw/16-10-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Forest and biodiversity conservation in Madagascar, particularly Tsitongambarika Forest",
+    "climate_relevance": "The identifiable main article does not discuss climate change. A separate, truncated snippet mentions ecosystem-based adaptation to climate change.",
+    "reason": "The main article focuses on biodiversity, deforestation, and community-led forest conservation. The only climate reference appears in an unrelated appended snippet and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7b87995d8989d2cd2eecd731815725da41edd19583c2c29af812f1e66cacf49e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5f6c19b6bd1ce1984d73df68fedb8c6656e63e0ee249d67a322c9620324921d0",
+    "raw_response_text_sha256": "1b6a0ffff4c8b7666a4c5b7a5b75e1f555ed3948e6eb633be599550ac32f23ca"
+  },
+  "api_metadata": {
+    "id": "resp_0789051508267fc1006b060630342887d296a52c293d5d53f1",
+    "model": "gpt-6-luna",
+    "created_at": 1795556912.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2513,
+      "input_tokens_details": {
+        "cache_write_tokens": 2510,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2510
+        }
+      },
+      "output_tokens": 394,
+      "output_tokens_details": {
+        "reasoning_tokens": 240
+      },
+      "total_tokens": 2907
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Forest and biodiversity conservation in Madagascar, particularly Tsitongambarika Forest\",\n  \"climate_relevance\": \"The identifiable main article does not discuss climate change. A separate, truncated snippet mentions ecosystem-based adaptation to climate change.\",\n  \"reason\": \"The main article focuses on biodiversity, deforestation, and community-led forest conservation. The only climate reference appears in an unrelated appended snippet and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:48:34Z",
+  "duration_seconds": 2.715,
+  "error": null
+}

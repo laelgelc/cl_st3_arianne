@@ -1,0 +1,77 @@
+{
+  "article_id": "81018463",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/81018463.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/81018463.json"
+  },
+  "manifest_row": {
+    "article_id": "81018463",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/81018463.txt",
+    "now_field_2": "289",
+    "date_original": "19-09-11",
+    "date_iso": "2019-09-11",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20190912001915-d4sth",
+    "title": "Another of Brazil president's sons facing civil, criminal probe - prosecutors",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Investigation into alleged improprieties by Jair Bolsonaro's son Carlos in his city council office.",
+    "climate_relevance": "Climate change appears only in a standard Reuters editorial-team description of topics it covers.",
+    "reason": "The article concerns political investigations and contains no meaningful climate discourse; the sole mention is boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "33550df92cba820931774f104baca29fea4456f73e4bbd5124a7257fb7a18f42",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "213366125bafbe9ffede74c13ef3c4d07207b803e4731c93e14d147cd7ea4993",
+    "raw_response_text_sha256": "a4e940aecef5fb807aad101ac59b1c44bf6a67ff9124d12720bdb969a26d8f76"
+  },
+  "api_metadata": {
+    "id": "resp_02ca14d37cdf0cad006b0646d054d087d1b50938e55d72b7ff",
+    "model": "gpt-6-luna",
+    "created_at": 1795573456.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 855,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 1045
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Investigation into alleged improprieties by Jair Bolsonaro's son Carlos in his city council office.\",\n  \"climate_relevance\": \"Climate change appears only in a standard Reuters editorial-team description of topics it covers.\",\n  \"reason\": \"The article concerns political investigations and contains no meaningful climate discourse; the sole mention is boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:24:18Z",
+  "duration_seconds": 1.935,
+  "error": null
+}

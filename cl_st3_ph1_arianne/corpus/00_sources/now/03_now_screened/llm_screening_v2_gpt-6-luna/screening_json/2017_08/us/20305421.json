@@ -1,0 +1,77 @@
+{
+  "article_id": "20305421",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/us/20305421.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/us/20305421.json"
+  },
+  "manifest_row": {
+    "article_id": "20305421",
+    "group": "2017_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/us/20305421.txt",
+    "now_field_2": "2082",
+    "date_original": "17-08-31",
+    "date_iso": "2017-08-31",
+    "source_name": "The Atlantic",
+    "url": "https://www.theatlantic.com/technology/archive/2017/08/before-and-after-satellite-images-of-harveys-devastation/538650/",
+    "title": "Before-and-After Satellite Images of Harvey's Devastation",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Satellite images documenting flooding caused by Hurricane Harvey in Texas",
+    "climate_relevance": "The final headline and paragraphs discuss climate change and changes to the water cycle, but they appear to be a separate article snippet rather than part of the identifiable main article.",
+    "reason": "The main article describes satellite imagery of Harvey's flooding without meaningful climate-change discourse. The climate-focused material is a distinct appended snippet, so it does not make the main article relevant for the corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1ba7b5d65563756a5064cbabc8a4e5878dafee9575661edb5d3ec4858bcea041",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "974dec8bba546e54419e370ebee4bfa559844a8bc85b675ac3ee4f86f9f8dd0c",
+    "raw_response_text_sha256": "fb9f56e3496bf596955585793c7a6b918385e21534fafd8299f000db9d5ea010"
+  },
+  "api_metadata": {
+    "id": "resp_0009d41cdfdcd45e006b060d1ad7a887d2814e02911d69fe20",
+    "model": "gpt-6-luna",
+    "created_at": 1795558683.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3254,
+      "input_tokens_details": {
+        "cache_write_tokens": 3251,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3251
+        }
+      },
+      "output_tokens": 561,
+      "output_tokens_details": {
+        "reasoning_tokens": 399
+      },
+      "total_tokens": 3815
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Satellite images documenting flooding caused by Hurricane Harvey in Texas\",\n  \"climate_relevance\": \"The final headline and paragraphs discuss climate change and changes to the water cycle, but they appear to be a separate article snippet rather than part of the identifiable main article.\",\n  \"reason\": \"The main article describes satellite imagery of Harvey's flooding without meaningful climate-change discourse. The climate-focused material is a distinct appended snippet, so it does not make the main article relevant for the corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:18:06Z",
+  "duration_seconds": 4.133,
+  "error": null
+}

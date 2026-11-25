@@ -1,0 +1,77 @@
+{
+  "article_id": "70566776",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70566776.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70566776.json"
+  },
+  "manifest_row": {
+    "article_id": "70566776",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70566776.txt",
+    "now_field_2": "579",
+    "date_original": "19-03-05",
+    "date_iso": "2019-03-05",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/BU1903/S00135/nikko-am-launches-robo-advice-platform-in-nz.htm",
+    "title": "Nikko AM launches 'robo advice' platform in NZ",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Launch of a digital investment and savings platform in New Zealand",
+    "climate_relevance": "The main article is about investment services. Separate snippets mention forestry incentives under the emissions trading scheme and a report on climate targets and policies, but they are unrelated to the main article.",
+    "reason": "The identifiable main article contains no meaningful climate discourse; climate-related content appears only in separate, unrelated snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e3b7073550c1bee9554183e3738fdc909da4a385264cc1788a05a993c1404927",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1994a3b90084a071d98911306ed8d2cacbb2b0cd577a72a196aff047b0d51abc",
+    "raw_response_text_sha256": "64411288cfe1ecdad398b29150a09c104bcb921e5d1cf7b83e95b565f48053a6"
+  },
+  "api_metadata": {
+    "id": "resp_01d60dee0a5c4c23006b063d9ce37487d19b8889d6faa48f33",
+    "model": "gpt-6-luna",
+    "created_at": 1795571100.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1272,
+      "input_tokens_details": {
+        "cache_write_tokens": 1269,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1269
+        }
+      },
+      "output_tokens": 354,
+      "output_tokens_details": {
+        "reasoning_tokens": 206
+      },
+      "total_tokens": 1626
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Launch of a digital investment and savings platform in New Zealand\",\n  \"climate_relevance\": \"The main article is about investment services. Separate snippets mention forestry incentives under the emissions trading scheme and a report on climate targets and policies, but they are unrelated to the main article.\",\n  \"reason\": \"The identifiable main article contains no meaningful climate discourse; climate-related content appears only in separate, unrelated snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:45:03Z",
+  "duration_seconds": 2.836,
+  "error": null
+}

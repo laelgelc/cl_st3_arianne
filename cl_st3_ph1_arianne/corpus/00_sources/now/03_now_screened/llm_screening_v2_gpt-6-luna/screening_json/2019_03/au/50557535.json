@@ -1,0 +1,77 @@
+{
+  "article_id": "50557535",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/au/50557535.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/au/50557535.json"
+  },
+  "manifest_row": {
+    "article_id": "50557535",
+    "group": "2019_03",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/au/50557535.txt",
+    "now_field_2": "1055",
+    "date_original": "19-03-31",
+    "date_iso": "2019-03-31",
+    "source_name": "Yahoo Finance Australi",
+    "url": "https://au.finance.yahoo.com/news/saudi-aramco-world-most-profitable-011230346.html",
+    "title": "Saudi Aramco Was the World's Most Profitable Company in 2018",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Saudi Aramco's financial performance, bond offering, and investment risks",
+    "climate_relevance": "Climate change appears only in a list of risks disclosed in Aramco's bond prospectus, as 'the fight against climate change.'",
+    "reason": "The article focuses on Aramco's finances and fundraising. The brief, list-style climate reference contains no substantive discussion of climate policy, impacts, or related debate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ae566b7818dd9697a6801bd52ae9cae9a764cd74bf5382f31adeb2306f38f18b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2d463136c29ef5d19827e62a13963ef4b47bacc5cbddb954070813ef42f65ebe",
+    "raw_response_text_sha256": "c3964eb7c2ed4a7448299a2a3707565a8b14ccaa2d88b0853f7f3bd60069f0f1"
+  },
+  "api_metadata": {
+    "id": "resp_09425b6aa7dae435006b062979961c87d189e4c758598093a1",
+    "model": "gpt-6-luna",
+    "created_at": 1795565945.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1885,
+      "input_tokens_details": {
+        "cache_write_tokens": 1882,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1882
+        }
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 2133
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Saudi Aramco's financial performance, bond offering, and investment risks\",\n  \"climate_relevance\": \"Climate change appears only in a list of risks disclosed in Aramco's bond prospectus, as 'the fight against climate change.'\",\n  \"reason\": \"The article focuses on Aramco's finances and fundraising. The brief, list-style climate reference contains no substantive discussion of climate policy, impacts, or related debate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:19:07Z",
+  "duration_seconds": 2.238,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "82185883",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82185883.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82185883.json"
+  },
+  "manifest_row": {
+    "article_id": "82185883",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82185883.txt",
+    "now_field_2": "282",
+    "date_original": "19-11-16",
+    "date_iso": "2019-11-16",
+    "source_name": "WAGMTV",
+    "url": "https://www.wagmtv.com/content/news/Its-the-season-of-giving-and-JMG-students-at-Fort-Fairfield-MiddleHigh-School-are--565034722.html",
+    "title": "It's the season of giving and JMG students at Fort Fairfield Middle/High School are working to help fellow students in need",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us7.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A student food drive and a community volunteer appreciation announcement",
+    "climate_relevance": "Climate change appears only as one item in a brief list of volunteer projects, without further discussion.",
+    "reason": "The text contains multiple unrelated snippets. The first concerns a school food drive; the second mentions climate change projects only in passing, which does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e7e25242ee94b118616b2b1958286f4f1dd013bb4168b936c40b7c75ae6211b6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ac2cc0a7b5358b0e74ddcd0e8129d8c11e9a4c2c2567e96090e2f47bed687ed9",
+    "raw_response_text_sha256": "e6db179695f98f6aeda444802bb50678d7c60cf8e41a52b8a923aab10c14834f"
+  },
+  "api_metadata": {
+    "id": "resp_0e5c502101475253006b06482a47ac87d1a887fc1d20f9bd66",
+    "model": "gpt-6-luna",
+    "created_at": 1795573802.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1132,
+      "input_tokens_details": {
+        "cache_write_tokens": 1129,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1129
+        }
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 1403
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A student food drive and a community volunteer appreciation announcement\",\n  \"climate_relevance\": \"Climate change appears only as one item in a brief list of volunteer projects, without further discussion.\",\n  \"reason\": \"The text contains multiple unrelated snippets. The first concerns a school food drive; the second mentions climate change projects only in passing, which does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:30:04Z",
+  "duration_seconds": 2.308,
+  "error": null
+}

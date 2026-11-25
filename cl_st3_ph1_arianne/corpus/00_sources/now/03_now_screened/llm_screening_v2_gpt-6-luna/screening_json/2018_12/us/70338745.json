@@ -1,0 +1,77 @@
+{
+  "article_id": "70338745",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/us/70338745.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/us/70338745.json"
+  },
+  "manifest_row": {
+    "article_id": "70338745",
+    "group": "2018_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/us/70338745.txt",
+    "now_field_2": "1132",
+    "date_original": "18-12-16",
+    "date_iso": "2018-12-16",
+    "source_name": "The Guardian",
+    "url": "https://www.theguardian.com/world/2018/dec/16/migrants-deportation-stansted-actvists",
+    "title": "Stansted 15: 'We are not terrorists, no lives were at risk. We have no ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "The Stansted 15's prosecution and conviction after protesting deportations, and the defendants' backgrounds and activism.",
+    "climate_relevance": "Climate change appears only in a brief biographical detail about one defendant's career; the text does not discuss climate issues.",
+    "reason": "The article is primarily about immigration activism and legal proceedings. Its sole explicit climate reference is incidental background information, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "999b49dcda2ff12afe23ceb5c5034627779e47a9bb68832625cda44ed37510d5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dce2c00478943769eeba6383c62d04eb797ff815384e1016dc47e3928be10c1e",
+    "raw_response_text_sha256": "cebdddce838039a35d4b1cd416d522a445b3b1e82df5c7ff3cba8750c0dfbf57"
+  },
+  "api_metadata": {
+    "id": "resp_07dc2a660973fbca006b063c0dd2c487d18964d97125405a85",
+    "model": "gpt-6-luna",
+    "created_at": 1795570702.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1947,
+      "input_tokens_details": {
+        "cache_write_tokens": 1944,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1944
+        }
+      },
+      "output_tokens": 243,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 2190
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The Stansted 15's prosecution and conviction after protesting deportations, and the defendants' backgrounds and activism.\",\n  \"climate_relevance\": \"Climate change appears only in a brief biographical detail about one defendant's career; the text does not discuss climate issues.\",\n  \"reason\": \"The article is primarily about immigration activism and legal proceedings. Its sole explicit climate reference is incidental background information, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:38:24Z",
+  "duration_seconds": 2.546,
+  "error": null
+}

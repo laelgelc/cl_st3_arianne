@@ -1,0 +1,77 @@
+{
+  "article_id": "60745969",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/ca/60745969.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/ca/60745969.json"
+  },
+  "manifest_row": {
+    "article_id": "60745969",
+    "group": "2019_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/ca/60745969.txt",
+    "now_field_2": "544",
+    "date_original": "19-04-16",
+    "date_iso": "2019-04-16",
+    "source_name": "Vancouver Is Awesome",
+    "url": "https://www.vancouverisawesome.com/2019/04/16/chinook-fishing-federal-government-canada/",
+    "title": "Federal government announces tough restrictions on chinook fishing",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Federal restrictions on chinook fishing to protect declining Fraser River stocks",
+    "climate_relevance": "Climate change is listed as one of several factors contributing to the decline of chinook stocks, alongside fishing and habitat destruction.",
+    "reason": "The article focuses on fisheries restrictions and salmon conservation. Its brief causal link between climate change and declining stocks is relevant, but climate change is not developed beyond that mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "740ed1284d5dbf1390444ae02014037d6485852ff4ab9b2a99f14ad1aaf1953a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "96c49d6701ce6bd6287d93d428b91d227cb6e02318d5c67e7ee06507c5542c75",
+    "raw_response_text_sha256": "3fb7edf954c71be44c11c6e00efd9850bf0efa2920700fa738d75fa165113e70"
+  },
+  "api_metadata": {
+    "id": "resp_0a6028043e92549e006b06342ae5e087d1b369cf2e2b85065a",
+    "model": "gpt-6-luna",
+    "created_at": 1795568683.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1201,
+      "input_tokens_details": {
+        "cache_write_tokens": 1198,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1198
+        }
+      },
+      "output_tokens": 415,
+      "output_tokens_details": {
+        "reasoning_tokens": 270
+      },
+      "total_tokens": 1616
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Federal restrictions on chinook fishing to protect declining Fraser River stocks\",\n  \"climate_relevance\": \"Climate change is listed as one of several factors contributing to the decline of chinook stocks, alongside fishing and habitat destruction.\",\n  \"reason\": \"The article focuses on fisheries restrictions and salmon conservation. Its brief causal link between climate change and declining stocks is relevant, but climate change is not developed beyond that mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:04:46Z",
+  "duration_seconds": 3.76,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "42205573",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/gb/42205573.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/gb/42205573.json"
+  },
+  "manifest_row": {
+    "article_id": "42205573",
+    "group": "2020_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/gb/42205573.txt",
+    "now_field_2": "1567",
+    "date_original": "20-08-19",
+    "date_iso": "2020-08-19",
+    "source_name": "heraldscotland.com",
+    "url": "https://www.heraldscotland.com/news/18656499.horror-sea-mystery-500-north-korean-boats-filled-corpses-finally-solved/",
+    "title": "Horror at sea: Mystery of 500 North Korean boats filled ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "North Korean ghost fishing boats and illegal Chinese fishing in North Korean waters",
+    "climate_relevance": "Climate change is mentioned as a proposed explanation for squid moving farther from North Korea and fishermen being driven farther offshore, but the article presents illegal fishing and displacement by Chinese vessels as the more likely explanation.",
+    "reason": "The article is mainly about illegal fishing, declining squid stocks, and the North Korean fishermen whose boats wash ashore. Its climate-change reference is a meaningful but brief hypothesis rather than a central focus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "52bc1717a70a4938874abe59264d5b0af412b63f125be4133b965eccb5410343",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9d1220c980e6cd84d51fb4daf1c346de3d15a8fb0fae17d106454279a00e4e63",
+    "raw_response_text_sha256": "03e4ee143cd405852e476707f8d591233329f0b62f62d4f1b0ec7f65d52036bc"
+  },
+  "api_metadata": {
+    "id": "resp_0df305070f7ba4a4006b062505e84c87d2a6d4899d84f2ebf1",
+    "model": "gpt-6-luna",
+    "created_at": 1795564806.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2486,
+      "input_tokens_details": {
+        "cache_write_tokens": 2483,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2483
+        }
+      },
+      "output_tokens": 296,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 2782
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"North Korean ghost fishing boats and illegal Chinese fishing in North Korean waters\",\n  \"climate_relevance\": \"Climate change is mentioned as a proposed explanation for squid moving farther from North Korea and fishermen being driven farther offshore, but the article presents illegal fishing and displacement by Chinese vessels as the more likely explanation.\",\n  \"reason\": \"The article is mainly about illegal fishing, declining squid stocks, and the North Korean fishermen whose boats wash ashore. Its climate-change reference is a meaningful but brief hypothesis rather than a central focus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:00:08Z",
+  "duration_seconds": 2.52,
+  "error": null
+}

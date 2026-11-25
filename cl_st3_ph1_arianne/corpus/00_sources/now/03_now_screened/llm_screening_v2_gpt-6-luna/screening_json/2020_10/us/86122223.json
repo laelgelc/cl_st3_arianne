@@ -1,0 +1,77 @@
+{
+  "article_id": "86122223",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86122223.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86122223.json"
+  },
+  "manifest_row": {
+    "article_id": "86122223",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86122223.txt",
+    "now_field_2": "660",
+    "date_original": "20-10-11",
+    "date_iso": "2020-10-11",
+    "source_name": "\u0000",
+    "url": "https://www.reuters.com/article/storm-delta-idUSL1N2H205P",
+    "title": "UPDATE 1-With no power, Louisiana residents return home to assess Hurricane Delta damage",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Hurricane Delta’s impacts, recovery, and disruption in Louisiana",
+    "climate_relevance": "The article briefly links rising insured losses from natural catastrophes to climate change and population growth.",
+    "reason": "The report is primarily about hurricane damage, evacuations, and recovery. Its explicit climate-change discussion is limited to one meaningful attribution about catastrophe losses, so it is relevant as background rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a34f745309dc72e843883dd348c48abf19fb6bb87f1cb1cbd92dc049814072ec",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "eca2118ddd5fee30020350c7ed9717356704786f81b1fbfb9b76509e995b06da",
+    "raw_response_text_sha256": "526be29cc3356c0951ae7aab4bce75fb1f1819412f5014acceefa4a15388b68b"
+  },
+  "api_metadata": {
+    "id": "resp_0a091d90dc4bf19b006b064e7a492487d1a2296394b75f7943",
+    "model": "gpt-6-luna",
+    "created_at": 1795575418.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1367,
+      "input_tokens_details": {
+        "cache_write_tokens": 1364,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1364
+        }
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1605
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Hurricane Delta’s impacts, recovery, and disruption in Louisiana\",\n  \"climate_relevance\": \"The article briefly links rising insured losses from natural catastrophes to climate change and population growth.\",\n  \"reason\": \"The report is primarily about hurricane damage, evacuations, and recovery. Its explicit climate-change discussion is limited to one meaningful attribution about catastrophe losses, so it is relevant as background rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:57:00Z",
+  "duration_seconds": 2.379,
+  "error": null
+}

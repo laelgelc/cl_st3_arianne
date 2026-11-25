@@ -1,0 +1,77 @@
+{
+  "article_id": "82787801",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82787801.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82787801.json"
+  },
+  "manifest_row": {
+    "article_id": "82787801",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82787801.txt",
+    "now_field_2": "395",
+    "date_original": "19-12-20",
+    "date_iso": "2019-12-20",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191220124921-duirc",
+    "title": "After court ruling, Catalan separatists get temporary badges as EU lawmakers",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Catalan separatist leaders' accreditation as members of the European Parliament",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the outlet's coverage areas.",
+    "reason": "The article concerns Catalan separatism and European Parliament accreditation. Its sole climate reference is unrelated editorial boilerplate and provides no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "208230ca3b580cefa5146440471d887b21fef5097cd18fec76c1c3189fb1dcbc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "580068b4dda0baaf5d283566997af3e8db00b8f247e72fdd345892c8ed3c42b1",
+    "raw_response_text_sha256": "bdf5adf5eb6da821fc30bb71b10b51ff40053b140277c62c44a679de3d9812ce"
+  },
+  "api_metadata": {
+    "id": "resp_053ab1b334c64a7f006b0648dfd95c87d1810054acfd51dcc5",
+    "model": "gpt-6-luna",
+    "created_at": 1795573983.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1009,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 1208
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Catalan separatist leaders' accreditation as members of the European Parliament\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the outlet's coverage areas.\",\n  \"reason\": \"The article concerns Catalan separatism and European Parliament accreditation. Its sole climate reference is unrelated editorial boilerplate and provides no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:33:05Z",
+  "duration_seconds": 2.202,
+  "error": null
+}

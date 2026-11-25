@@ -1,0 +1,77 @@
+{
+  "article_id": "60154853",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/ie/60154853.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/ie/60154853.json"
+  },
+  "manifest_row": {
+    "article_id": "60154853",
+    "group": "2018_10",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/ie/60154853.txt",
+    "now_field_2": "175",
+    "date_original": "18-10-15",
+    "date_iso": "2018-10-15",
+    "source_name": "Evening Echo Cork",
+    "url": "https://www.eveningecho.ie/corknews/Man-in-40s-dies-in-fire-as-Dunmanway-farmhouse-gutted-1b27dea5-7c71-4f58-9d7e-49e1aae9c4aa-ds",
+    "title": "Man in 40s dies in fire as Dunmanway farmhouse gutted",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-ie.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "An analysis of the IPCC's 2018 report on the 1.5°C warming target, climate impacts, emissions cuts, and the feasibility of carbon dioxide removal scenarios.",
+    "climate_relevance": "The identifiable main article focuses throughout on climate science, the Paris Agreement's temperature targets, climate impacts, mitigation, and the practical and political feasibility of pathways to 1.5°C.",
+    "reason": "The text contains a substantial climate-focused article. It is preceded by an unrelated report about a fatal house fire, indicating that multiple articles or snippets have been concatenated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cc2b96735b77f2529213a056942738733bf960449d91f4d75fed2b790836e6ff",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3ea51b70072d32ab91edbedaf09311d191d44b108467c2cd2241fab737ad6504",
+    "raw_response_text_sha256": "2e79bb24883a40c070d5d8f7e7f5e812a18495121d79a1c5bdff47c4a0b2a7ed"
+  },
+  "api_metadata": {
+    "id": "resp_0f380c8a5cedac00006b06314392c887d1be84d7f1be8055d5",
+    "model": "gpt-6-luna",
+    "created_at": 1795567939.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1809,
+      "input_tokens_details": {
+        "cache_write_tokens": 1806,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1806
+        }
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 2075
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"An analysis of the IPCC's 2018 report on the 1.5°C warming target, climate impacts, emissions cuts, and the feasibility of carbon dioxide removal scenarios.\",\n  \"climate_relevance\": \"The identifiable main article focuses throughout on climate science, the Paris Agreement's temperature targets, climate impacts, mitigation, and the practical and political feasibility of pathways to 1.5°C.\",\n  \"reason\": \"The text contains a substantial climate-focused article. It is preceded by an unrelated report about a fatal house fire, indicating that multiple articles or snippets have been concatenated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:52:21Z",
+  "duration_seconds": 2.336,
+  "error": null
+}

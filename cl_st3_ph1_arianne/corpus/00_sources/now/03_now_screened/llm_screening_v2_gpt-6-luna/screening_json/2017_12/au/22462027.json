@@ -1,0 +1,77 @@
+{
+  "article_id": "22462027",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_12/au/22462027.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_12/au/22462027.json"
+  },
+  "manifest_row": {
+    "article_id": "22462027",
+    "group": "2017_12",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_12/au/22462027.txt",
+    "now_field_2": "232",
+    "date_original": "17-12-28",
+    "date_iso": "2017-12-28",
+    "source_name": "Yahoo7 News",
+    "url": "https://au.news.yahoo.com/a/38432722/israeli-minister-turns-to-prayer-to-help-relieve-drought/",
+    "title": "Israeli minister turns to prayer to help relieve drought",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-12.txt\"]",
+    "metadata_article_files": "[\"text-17-12/text_17-12-AU.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Israel's water shortage and an agriculture minister's effort to address drought through public prayer",
+    "climate_relevance": "A newspaper commentary cited in the article calls for policies to fight climate change, including limiting greenhouse gas emissions in agriculture.",
+    "reason": "The article is mainly about drought, water policy, and religious prayer. Climate change appears in a meaningful but secondary reference to possible mitigation policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4064b436d9eaa341e3c359149168a07b3c3b1edb1a65ebbc7f0b45b2b73e77b2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1be7690a31d8a3f274c651b98674783d1c9fb35a335c83a8111ecbdd95985344",
+    "raw_response_text_sha256": "11987b28971aa11d451848a4e86cb3c522de5e0f9b2e80f0467bdf038f74fbb1"
+  },
+  "api_metadata": {
+    "id": "resp_00c82a298c55407e006b06102a094487d2853f93ee0f36a6e8",
+    "model": "gpt-6-luna",
+    "created_at": 1795559466.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 774,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 992
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Israel's water shortage and an agriculture minister's effort to address drought through public prayer\",\n  \"climate_relevance\": \"A newspaper commentary cited in the article calls for policies to fight climate change, including limiting greenhouse gas emissions in agriculture.\",\n  \"reason\": \"The article is mainly about drought, water policy, and religious prayer. Climate change appears in a meaningful but secondary reference to possible mitigation policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:31:07Z",
+  "duration_seconds": 1.859,
+  "error": null
+}

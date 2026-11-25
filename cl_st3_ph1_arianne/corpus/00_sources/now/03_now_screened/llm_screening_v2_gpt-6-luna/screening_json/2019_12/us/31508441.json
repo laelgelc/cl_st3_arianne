@@ -1,0 +1,77 @@
+{
+  "article_id": "31508441",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/31508441.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/31508441.json"
+  },
+  "manifest_row": {
+    "article_id": "31508441",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/31508441.txt",
+    "now_field_2": "540",
+    "date_original": "19-12-16",
+    "date_iso": "2019-12-16",
+    "source_name": "theatlantic.com",
+    "url": "https://www.theatlantic.com/photo/2019/12/photos-of-the-week-water-forest-royal-barge-abandoned-boxers/603598/",
+    "title": "Photos of the Week: Water Forest, Royal Barge, Abandoned ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "A weekly photo roundup covering unrelated news and events",
+    "climate_relevance": "One caption describes activists urging France's president to take action to slow climate change during the COP25 talks.",
+    "reason": "Climate change is meaningfully mentioned in a caption about climate activism, but the roundup as a whole is not focused on climate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "76f6e4cc51712bffe6bc4a22b37c049ee7044fcef6c98a49ea8c50ada9f6ed03",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2a6bd22a96e4ab4e4d8dae4ef9c8cd6c68b407048fcee0b17dd9cb8c443ec591",
+    "raw_response_text_sha256": "fdf49110d42c6bafa05de869ac9f8c35bc7b1b847905bfaa5cff29f1656bb01d"
+  },
+  "api_metadata": {
+    "id": "resp_04c768628f5ec721006b0617acb03c87d2bf817598933d5cfe",
+    "model": "gpt-6-luna",
+    "created_at": 1795561388.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1272,
+      "input_tokens_details": {
+        "cache_write_tokens": 1269,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1269
+        }
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 1507
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A weekly photo roundup covering unrelated news and events\",\n  \"climate_relevance\": \"One caption describes activists urging France's president to take action to slow climate change during the COP25 talks.\",\n  \"reason\": \"Climate change is meaningfully mentioned in a caption about climate activism, but the roundup as a whole is not focused on climate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:03:10Z",
+  "duration_seconds": 2.149,
+  "error": null
+}

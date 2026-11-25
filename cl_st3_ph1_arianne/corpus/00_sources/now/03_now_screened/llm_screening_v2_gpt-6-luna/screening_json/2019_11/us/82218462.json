@@ -1,0 +1,77 @@
+{
+  "article_id": "82218462",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82218462.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82218462.json"
+  },
+  "manifest_row": {
+    "article_id": "82218462",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82218462.txt",
+    "now_field_2": "499",
+    "date_original": "19-11-18",
+    "date_iso": "2019-11-18",
+    "source_name": "Phys.org",
+    "url": "https://phys.org/news/2019-11-pollution-athabasca-oil-sands-affects.html",
+    "title": "Pollution from Athabasca oil sands affects weather processes",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us5.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Effects of Athabasca oil-sands pollution on cloud formation and regional weather processes",
+    "climate_relevance": "The text connects nanoparticle pollution with climate change by citing the IPCC and describing effects on cloud formation and precipitation, but climate change is not the main focus.",
+    "reason": "The article primarily reports research on pollution-related weather processes around the oil sands. Its explicit climate-change connection is meaningful but secondary, so it is relevant as peripheral climate discourse rather than core coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "74def87290912363ac15eafe8cfff4cab51d689aa06859d15bc86e44a98a718c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0423f0ce15c3e7853ef8fa2c1644141d3bfcf4c1625de24baa72d2923e9e3340",
+    "raw_response_text_sha256": "30f6c7b5f37834b67c662cac945d3582d94ac740bbf4b0a3f4654cf8f55d2099"
+  },
+  "api_metadata": {
+    "id": "resp_0913b8f65266eec8006b064834784887d1884e10968cf095b7",
+    "model": "gpt-6-luna",
+    "created_at": 1795573812.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1105,
+      "input_tokens_details": {
+        "cache_write_tokens": 1102,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1102
+        }
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1356
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Effects of Athabasca oil-sands pollution on cloud formation and regional weather processes\",\n  \"climate_relevance\": \"The text connects nanoparticle pollution with climate change by citing the IPCC and describing effects on cloud formation and precipitation, but climate change is not the main focus.\",\n  \"reason\": \"The article primarily reports research on pollution-related weather processes around the oil sands. Its explicit climate-change connection is meaningful but secondary, so it is relevant as peripheral climate discourse rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:30:14Z",
+  "duration_seconds": 2.453,
+  "error": null
+}

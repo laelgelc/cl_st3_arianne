@@ -1,0 +1,77 @@
+{
+  "article_id": "70127173",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/us/70127173.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/us/70127173.json"
+  },
+  "manifest_row": {
+    "article_id": "70127173",
+    "group": "2018_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/us/70127173.txt",
+    "now_field_2": "179",
+    "date_original": "18-10-09",
+    "date_iso": "2018-10-09",
+    "source_name": "13WMAZ.com",
+    "url": "https://www.13wmaz.com/article/news/local/georgia-governor-declares-state-of-emergency-for-92-counties-ahead-of-hurricane-michael/93-602398802",
+    "title": "Georgia governor declares state of emergency for 92 counties ahead ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-us-1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Coastal marsh restoration in the San Francisco Bay Area as a response to sea-level rise and climate impacts",
+    "climate_relevance": "The main article substantially discusses sea-level rise, climate impacts, and wetlands as natural infrastructure for adaptation, including restoration strategies, scientific evidence, funding, and policy obstacles.",
+    "reason": "The identifiable main article is centrally concerned with adapting coastal ecosystems and communities to rising seas. The text also contains an unrelated Georgia hurricane news item and browser boilerplate, but these do not alter the main article's climate focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "eb2805a6dd870ca996d86f7d5a6b1061e2c9ffeca86fe923e89a895fed2a999b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d756cfae3e650853e3a6e5f7ca55f3b199eda36908a7b6283adec2c2dcfa20e1",
+    "raw_response_text_sha256": "356d3687e2fd0b2d92adda1585c2fded69eed1d225ab03048aa2200604077e01"
+  },
+  "api_metadata": {
+    "id": "resp_0a174078a492054f006b063afc4c9887d1b1e8bdf25746544d",
+    "model": "gpt-6-luna",
+    "created_at": 1795570428.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4200,
+      "input_tokens_details": {
+        "cache_write_tokens": 4197,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4197
+        }
+      },
+      "output_tokens": 274,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 4474
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Coastal marsh restoration in the San Francisco Bay Area as a response to sea-level rise and climate impacts\",\n  \"climate_relevance\": \"The main article substantially discusses sea-level rise, climate impacts, and wetlands as natural infrastructure for adaptation, including restoration strategies, scientific evidence, funding, and policy obstacles.\",\n  \"reason\": \"The identifiable main article is centrally concerned with adapting coastal ecosystems and communities to rising seas. The text also contains an unrelated Georgia hurricane news item and browser boilerplate, but these do not alter the main article's climate focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:33:50Z",
+  "duration_seconds": 2.636,
+  "error": null
+}

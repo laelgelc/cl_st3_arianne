@@ -1,0 +1,77 @@
+{
+  "article_id": "70081737",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/us/70081737.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/us/70081737.json"
+  },
+  "manifest_row": {
+    "article_id": "70081737",
+    "group": "2018_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/us/70081737.txt",
+    "now_field_2": "1214",
+    "date_original": "18-09-25",
+    "date_iso": "2018-09-25",
+    "source_name": "Phys.Org",
+    "url": "https://phys.org/news/2018-09-climate-main-driver-amphibian-decline.html",
+    "title": "Climate change not main driver of amphibian decline",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-us2.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "substantial",
+    "main_topic": "Drivers of amphibian population decline, including the role of climate change",
+    "climate_relevance": "The article reports research assessing climate variables and concludes that climate change may affect some local populations but does not explain the overall decline.",
+    "reason": "Climate change is a major focus of the article’s research question and findings, even though the reported conclusion limits its role relative to other causes.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "025bf3cc125ad3e49a6a94463f2c9ef8234808e6bde1fa63d2c097f31b587a94",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e10557a65c12cb23a4386f638e7356ce535888f1e7d2f045ef71cd0212d8d1a9",
+    "raw_response_text_sha256": "c5b7314aaffc6212e6ee2cfda8bfd3caa7c747d0e45423016e1b62b9c032abcf"
+  },
+  "api_metadata": {
+    "id": "resp_0e705a960411f38f006b063ac5652887d19d0a24a84d73d73b",
+    "model": "gpt-6-luna",
+    "created_at": 1795570373.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2084,
+      "input_tokens_details": {
+        "cache_write_tokens": 2081,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2081
+        }
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 2294
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Drivers of amphibian population decline, including the role of climate change\",\n  \"climate_relevance\": \"The article reports research assessing climate variables and concludes that climate change may affect some local populations but does not explain the overall decline.\",\n  \"reason\": \"Climate change is a major focus of the article’s research question and findings, even though the reported conclusion limits its role relative to other causes.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:32:55Z",
+  "duration_seconds": 2.288,
+  "error": null
+}

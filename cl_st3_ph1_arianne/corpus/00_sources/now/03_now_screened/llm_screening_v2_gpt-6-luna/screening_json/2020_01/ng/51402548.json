@@ -1,0 +1,77 @@
+{
+  "article_id": "51402548",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/ng/51402548.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/ng/51402548.json"
+  },
+  "manifest_row": {
+    "article_id": "51402548",
+    "group": "2020_01",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/ng/51402548.txt",
+    "now_field_2": "917",
+    "date_original": "20-01-29",
+    "date_iso": "2020-01-29",
+    "source_name": "blueprint.ng",
+    "url": "https://www.blueprint.ng/un-75-fct-minister-calls-on-un-to-tackle-terrorism/",
+    "title": "UN @ 75: FCT minister calls on UN to tackle terrorism ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A minister's call for the United Nations to address global challenges, especially terrorism",
+    "climate_relevance": "Climate change is named once in a list of challenges, without further discussion of its causes, impacts, policy, or public debate.",
+    "reason": "The identifiable main article focuses on the UN anniversary and broad calls for cooperation, with climate change only a passing mention. Additional unrelated snippets appear in the supplied text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "072c062635fec35f2ea88f82cbf00b6020974b4f7b4b246af882ff0bcfdf49a0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8dc15cfff570625fee7874dffcf1368afdc2120f5d97679647efe90c8be32d1d",
+    "raw_response_text_sha256": "9e941dee417360c7f01042f899f165de95fa2796db90ce392e41e8080789f905"
+  },
+  "api_metadata": {
+    "id": "resp_0ee95b113ca68e0a006b062d857a4c87d1b2e91ecbdccf17c3",
+    "model": "gpt-6-luna",
+    "created_at": 1795566981.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1704,
+      "input_tokens_details": {
+        "cache_write_tokens": 1701,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1701
+        }
+      },
+      "output_tokens": 213,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1917
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A minister's call for the United Nations to address global challenges, especially terrorism\",\n  \"climate_relevance\": \"Climate change is named once in a list of challenges, without further discussion of its causes, impacts, policy, or public debate.\",\n  \"reason\": \"The identifiable main article focuses on the UN anniversary and broad calls for cooperation, with climate change only a passing mention. Additional unrelated snippets appear in the supplied text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:36:23Z",
+  "duration_seconds": 2.127,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31292031",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/31292031.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/31292031.json"
+  },
+  "manifest_row": {
+    "article_id": "31292031",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/31292031.txt",
+    "now_field_2": "14143",
+    "date_original": "19-09-16",
+    "date_iso": "2019-09-16",
+    "source_name": "irishtimes.com",
+    "url": "https://www.irishtimes.com/rss/apple-rss-1.2384003",
+    "title": "&lt;![CDATA[Apple RSS]]&gt; - <strong>irishtimes.com</strong>",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "A compilation of unrelated Irish news, business, culture and opinion excerpts, including a substantial letters-page exchange about climate change and climate justice.",
+    "climate_relevance": "The letters-page excerpt discusses climate change, climate justice, emissions, scientific evidence, impacts and religious responses at length, but most of the supplied text concerns unrelated topics.",
+    "reason": "The text contains meaningful climate discourse, especially in the extended exchange responding to an article about climate justice, but it is one component of a much larger collection of unrelated material rather than the overall focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c348177bab721b25b4856438b81812d1f9ad28432670e22ccd834cfe9a8d6849",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "23d671f6a0a37736a24ce07d072a4a63352145ac95fcb69a1eb57a9185838aa3",
+    "raw_response_text_sha256": "ab96596eb8d6da14b3f5605cc8585c940e19e2b546699f6695c78796bfd1bd52"
+  },
+  "api_metadata": {
+    "id": "resp_04279dbfd5a46ea1006b06169c010887d2a357cc3922d76985",
+    "model": "gpt-6-luna",
+    "created_at": 1795561116.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 19897,
+      "input_tokens_details": {
+        "cache_write_tokens": 19894,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 19894
+        }
+      },
+      "output_tokens": 643,
+      "output_tokens_details": {
+        "reasoning_tokens": 469
+      },
+      "total_tokens": 20540
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A compilation of unrelated Irish news, business, culture and opinion excerpts, including a substantial letters-page exchange about climate change and climate justice.\",\n  \"climate_relevance\": \"The letters-page excerpt discusses climate change, climate justice, emissions, scientific evidence, impacts and religious responses at length, but most of the supplied text concerns unrelated topics.\",\n  \"reason\": \"The text contains meaningful climate discourse, especially in the extended exchange responding to an article about climate justice, but it is one component of a much larger collection of unrelated material rather than the overall focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:58:40Z",
+  "duration_seconds": 5.024,
+  "error": null
+}

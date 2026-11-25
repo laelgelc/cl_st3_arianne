@@ -1,0 +1,77 @@
+{
+  "article_id": "7022477",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/ca/7022477.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ca/7022477.json"
+  },
+  "manifest_row": {
+    "article_id": "7022477",
+    "group": "2016_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/ca/7022477.txt",
+    "now_field_2": "2554",
+    "date_original": "16-01-06",
+    "date_iso": "2016-01-06",
+    "source_name": "OurWindsor.ca",
+    "url": "http://www.ourwindsor.ca/news-story/6221448-the-lessons-of-new-delhi-s-radical-car-ban/",
+    "title": "The lessons of New Delhi's radical car ban",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "New Delhi's odd-even car ban and its effects on urban air pollution",
+    "climate_relevance": "Climate change appears only as context for a mention of the Paris climate summit. The article's discussion of emissions and sustainability is focused on local air pollution, not climate change.",
+    "reason": "The main article concerns smog, public health, and measures to reduce vehicle pollution. It contains no meaningful discussion of climate change; the summit reference is incidental.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2243805fbbb7ef28192d33f5019b651247e7b4ff171d62e86d526b95d40b4c4e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ebd8d760e36a015465f34dc2e2009328d2e80f55c31d928f74e323255a972c0f",
+    "raw_response_text_sha256": "523ad9adf15ad31efdf72b4df8678641e0facc3aec4873951347553b24f36e50"
+  },
+  "api_metadata": {
+    "id": "resp_02c56478513c35e4006b063b6c139487d1a9325aa673a69914",
+    "model": "gpt-6-luna",
+    "created_at": 1795570540.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3801,
+      "input_tokens_details": {
+        "cache_write_tokens": 3798,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3798
+        }
+      },
+      "output_tokens": 374,
+      "output_tokens_details": {
+        "reasoning_tokens": 219
+      },
+      "total_tokens": 4175
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New Delhi's odd-even car ban and its effects on urban air pollution\",\n  \"climate_relevance\": \"Climate change appears only as context for a mention of the Paris climate summit. The article's discussion of emissions and sustainability is focused on local air pollution, not climate change.\",\n  \"reason\": \"The main article concerns smog, public health, and measures to reduce vehicle pollution. It contains no meaningful discussion of climate change; the summit reference is incidental.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:35:43Z",
+  "duration_seconds": 3.983,
+  "error": null
+}

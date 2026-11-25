@@ -1,0 +1,77 @@
+{
+  "article_id": "70125741",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/us/70125741.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/us/70125741.json"
+  },
+  "manifest_row": {
+    "article_id": "70125741",
+    "group": "2018_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/us/70125741.txt",
+    "now_field_2": "1768",
+    "date_original": "18-10-08",
+    "date_iso": "2018-10-08",
+    "source_name": "Washington Examiner",
+    "url": "https://www.washingtonexaminer.com/business/the-outsized-impact-of-a-small-facebook-data-breach",
+    "title": "The outsized impact of a small Facebook data breach",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-us-1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Facebook data breach, consumer privacy, and regulation of technology companies",
+    "climate_relevance": "Climate change appears only in a separate one-sentence snippet about a climate-change lawsuit; the main article contains no meaningful climate discourse.",
+    "reason": "The identifiable main article concerns data privacy and regulation. The climate-related sentence is an unrelated snippet and does not provide substantive material for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a6d8ee69390a90dfb33c982556b93086f4c4afab71b74026cee0a787050d39c6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "384bb9d986ef5d744b28c8d19144e02ac9a55c38729776a9d86d626e83f63caa",
+    "raw_response_text_sha256": "438886eeb2fa95dc358aa744da76411352847544822c35eae9dfaf95e87ee207"
+  },
+  "api_metadata": {
+    "id": "resp_0073b2c3bc6ced48006b063af9b90c87d1bd7131db3d31fe46",
+    "model": "gpt-6-luna",
+    "created_at": 1795570425.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2743,
+      "input_tokens_details": {
+        "cache_write_tokens": 2740,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2740
+        }
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 2969
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Facebook data breach, consumer privacy, and regulation of technology companies\",\n  \"climate_relevance\": \"Climate change appears only in a separate one-sentence snippet about a climate-change lawsuit; the main article contains no meaningful climate discourse.\",\n  \"reason\": \"The identifiable main article concerns data privacy and regulation. The climate-related sentence is an unrelated snippet and does not provide substantive material for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:33:47Z",
+  "duration_seconds": 2.006,
+  "error": null
+}

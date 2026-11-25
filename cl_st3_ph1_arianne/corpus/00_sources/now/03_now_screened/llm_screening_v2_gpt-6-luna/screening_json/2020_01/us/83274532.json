@@ -1,0 +1,77 @@
+{
+  "article_id": "83274532",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83274532.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83274532.json"
+  },
+  "manifest_row": {
+    "article_id": "83274532",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83274532.txt",
+    "now_field_2": "698",
+    "date_original": "20-01-16",
+    "date_iso": "2020-01-16",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20200116120756-psera",
+    "title": "Ukraine asks FBI for help to probe suspected Russian hack of Burisma",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An alleged cyberattack on Burisma and investigations into surveillance of a former U.S. ambassador to Ukraine",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news agency’s coverage.",
+    "reason": "The article focuses on cybersecurity and U.S.-Ukraine political affairs; the sole climate reference is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ccb7af601907631aca8d441cfe469a5e144049183c91a8e2b10fe759d80507e3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "86958e7ceb2b50fedaebf040898f1febd3dfbce36c3ee8b9793306c3b2e2c41a",
+    "raw_response_text_sha256": "5ce6e8b6b8b40af2f1b0443ccccca9889d9d3059864046d6f50bf55dac6c59d9"
+  },
+  "api_metadata": {
+    "id": "resp_0e5de3efb50debff006b064962df4c87d1b6e8288209a86f46",
+    "model": "gpt-6-luna",
+    "created_at": 1795574115.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1439,
+      "input_tokens_details": {
+        "cache_write_tokens": 1436,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1436
+        }
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 1685
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An alleged cyberattack on Burisma and investigations into surveillance of a former U.S. ambassador to Ukraine\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news agency’s coverage.\",\n  \"reason\": \"The article focuses on cybersecurity and U.S.-Ukraine political affairs; the sole climate reference is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:35:17Z",
+  "duration_seconds": 2.292,
+  "error": null
+}

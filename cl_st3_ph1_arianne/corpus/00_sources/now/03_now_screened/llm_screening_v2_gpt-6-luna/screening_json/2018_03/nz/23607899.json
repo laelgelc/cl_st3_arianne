@@ -1,0 +1,77 @@
+{
+  "article_id": "23607899",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_03/nz/23607899.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_03/nz/23607899.json"
+  },
+  "manifest_row": {
+    "article_id": "23607899",
+    "group": "2018_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_03/nz/23607899.txt",
+    "now_field_2": "710",
+    "date_original": "18-03-10",
+    "date_iso": "2018-03-10",
+    "source_name": "Marlborough Express",
+    "url": "https://www.stuff.co.nz/marlborough-express/news/102125755/marlborough-district-council-plans-to-slash-emergency-reserves-by-more-than-half",
+    "title": "Marlborough District Council plans to slash emergency reserves by ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-03.txt\"]",
+    "metadata_article_files": "[\"text-18-03/text_18-03-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "Marlborough District Council's proposed cuts to emergency reserves for disaster recovery",
+    "climate_relevance": "Climate change is explicitly cited as one reason the region may continue to experience more emergency events, linking it to flood risk and the council's preparedness.",
+    "reason": "The article mainly concerns local-government funding and emergency reserves after floods and earthquakes. Climate change appears in a meaningful connection to future emergency events, but it is not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "41fa04a9881c577ac26f50cc2873d0205edf8741ce86f3886515a99294d513ca",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "197fe4b066825e4ba21baaa4b33f621c1013ca63473b34b25ceda6e51de10990",
+    "raw_response_text_sha256": "d04dae1a8b65b73549ef2f3e83637f0ec6dc5e727f9b69c4a9a66d3162007025"
+  },
+  "api_metadata": {
+    "id": "resp_0534cd8f06d2aeb7006b06116f8cc887d294ac5057c38046a4",
+    "model": "gpt-6-luna",
+    "created_at": 1795559791.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1489,
+      "input_tokens_details": {
+        "cache_write_tokens": 1486,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1486
+        }
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1728
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Marlborough District Council's proposed cuts to emergency reserves for disaster recovery\",\n  \"climate_relevance\": \"Climate change is explicitly cited as one reason the region may continue to experience more emergency events, linking it to flood risk and the council's preparedness.\",\n  \"reason\": \"The article mainly concerns local-government funding and emergency reserves after floods and earthquakes. Climate change appears in a meaningful connection to future emergency events, but it is not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:36:33Z",
+  "duration_seconds": 2.358,
+  "error": null
+}

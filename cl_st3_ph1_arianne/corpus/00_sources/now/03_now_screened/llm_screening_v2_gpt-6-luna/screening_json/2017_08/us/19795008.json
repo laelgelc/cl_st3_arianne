@@ -1,0 +1,77 @@
+{
+  "article_id": "19795008",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/us/19795008.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/us/19795008.json"
+  },
+  "manifest_row": {
+    "article_id": "19795008",
+    "group": "2017_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/us/19795008.txt",
+    "now_field_2": "699",
+    "date_original": "17-08-01",
+    "date_iso": "2017-08-01",
+    "source_name": "EcoWatch",
+    "url": "https://www.ecowatch.com/global-warming-2467897604.html",
+    "title": "We Have Less Than 5% Chance of Avoiding 'Dangerous' Global ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-US.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "climate_role": "central",
+    "main_topic": "Scientific projections of future global warming and the likelihood of meeting temperature limits",
+    "climate_relevance": "The opening article focuses on studies estimating the chances of limiting warming to 2°C or 1.5°C, committed warming from existing emissions, and the policy response. Another included snippet also discusses climate-change impacts and the time available for action.",
+    "reason": "Climate change is the central subject of the identifiable opening article, with substantial discussion of scientific findings, emissions, risks, and policy. The text also contains several apparently unrelated news snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "31b1a9937634b709b2402e776a938a2f32bc1607b9a08650c25c252ba38e1e19",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "45ab760114e7d75e7fb1fa57060bcedb1a5986e67854ddc70bd4dbee1466b654",
+    "raw_response_text_sha256": "77eb5d7f63b6a2afff014535a4302d37b9ecd8a1bd6f4d9cddfb10718e1cb7b7"
+  },
+  "api_metadata": {
+    "id": "resp_03be49b0810791ec006b060c7317a087d2a8b105a1a547ccc2",
+    "model": "gpt-6-luna",
+    "created_at": 1795558515.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1392,
+      "input_tokens_details": {
+        "cache_write_tokens": 1389,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1389
+        }
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1640
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Scientific projections of future global warming and the likelihood of meeting temperature limits\",\n  \"climate_relevance\": \"The opening article focuses on studies estimating the chances of limiting warming to 2°C or 1.5°C, committed warming from existing emissions, and the policy response. Another included snippet also discusses climate-change impacts and the time available for action.\",\n  \"reason\": \"Climate change is the central subject of the identifiable opening article, with substantial discussion of scientific findings, emissions, risks, and policy. The text also contains several apparently unrelated news snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:15:17Z",
+  "duration_seconds": 2.366,
+  "error": null
+}

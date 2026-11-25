@@ -1,0 +1,77 @@
+{
+  "article_id": "42323138",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/gb/42323138.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/gb/42323138.json"
+  },
+  "manifest_row": {
+    "article_id": "42323138",
+    "group": "2020_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/gb/42323138.txt",
+    "now_field_2": "401",
+    "date_original": "20-10-05",
+    "date_iso": "2020-10-05",
+    "source_name": "ibtimes.co.uk",
+    "url": "https://www.ibtimes.co.uk/australian-woman-suffers-headaches-caused-tapeworm-larvae-her-brain-1684133",
+    "title": "Australian woman suffers headaches caused by tapeworm ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.9,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A woman’s tapeworm infection and the causes, symptoms, and transmission of neurocysticercosis.",
+    "climate_relevance": "Climate change appears only in a standalone sentence at the end, apparently a separate related-content snippet rather than part of the main article’s discussion.",
+    "reason": "The identifiable main article concerns a medical case and parasite transmission. Its only climate reference is an isolated appended statement, so it does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e74b07d2c3fbe0b6e334867cfe7b6ff88187d7b9e7599a431a021c3b200b166d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3678adcbbd7693e37875f9c7279d796b347419072f2a3e74d8953ccd6193f2c6",
+    "raw_response_text_sha256": "630ff31c78e66648a4eae65272cc9242bbd5b80cea769b6d8872c50d0409604b"
+  },
+  "api_metadata": {
+    "id": "resp_0c334439f0647fe9006b0625bc501487d2a9ea2e08df9e4341",
+    "model": "gpt-6-luna",
+    "created_at": 1795564988.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 991,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 572,
+      "output_tokens_details": {
+        "reasoning_tokens": 407
+      },
+      "total_tokens": 1563
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A woman’s tapeworm infection and the causes, symptoms, and transmission of neurocysticercosis.\",\n  \"climate_relevance\": \"Climate change appears only in a standalone sentence at the end, apparently a separate related-content snippet rather than part of the main article’s discussion.\",\n  \"reason\": \"The identifiable main article concerns a medical case and parasite transmission. Its only climate reference is an isolated appended statement, so it does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:03:12Z",
+  "duration_seconds": 4.714,
+  "error": null
+}

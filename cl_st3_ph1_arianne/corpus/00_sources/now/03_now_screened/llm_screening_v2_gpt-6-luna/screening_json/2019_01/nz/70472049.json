@@ -1,0 +1,77 @@
+{
+  "article_id": "70472049",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/nz/70472049.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/nz/70472049.json"
+  },
+  "manifest_row": {
+    "article_id": "70472049",
+    "group": "2019_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/nz/70472049.txt",
+    "now_field_2": "539",
+    "date_original": "19-01-31",
+    "date_iso": "2019-01-31",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00012/consumer-launches-council-by-council-chemical-disposal-guide.htm",
+    "title": "Consumer launches council-by-council chemical disposal guide",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Safe disposal of household hazardous chemicals",
+    "climate_relevance": "Climate change appears only in a separate related-news teaser about sea-level rise and local-government infrastructure, not in the identifiable main article.",
+    "reason": "The main article concerns disposal guidance for household chemicals and does not meaningfully discuss climate change. The climate-related sentence is an appended teaser for another report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "77842cb084f4a9809acd1a93f75f207e35e559e77e7971f79d3595d8b64d64b8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b5062390a96b7d35b02e2121379858aba01993bd0eedd8d5dfe328218aaf0d21",
+    "raw_response_text_sha256": "d7bfe7808cecdb97c53b81eec0370ca9c96bf6ec7d26005ff6180eb550c7b6a7"
+  },
+  "api_metadata": {
+    "id": "resp_04f14fd14cab2e7b006b063cc0693c87d198810cb42a69b77b",
+    "model": "gpt-6-luna",
+    "created_at": 1795570880.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1183,
+      "input_tokens_details": {
+        "cache_write_tokens": 1180,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1180
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 1433
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Safe disposal of household hazardous chemicals\",\n  \"climate_relevance\": \"Climate change appears only in a separate related-news teaser about sea-level rise and local-government infrastructure, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns disposal guidance for household chemicals and does not meaningfully discuss climate change. The climate-related sentence is an appended teaser for another report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:41:22Z",
+  "duration_seconds": 2.273,
+  "error": null
+}

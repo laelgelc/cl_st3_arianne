@@ -1,0 +1,77 @@
+{
+  "article_id": "51438276",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/ca/51438276.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/ca/51438276.json"
+  },
+  "manifest_row": {
+    "article_id": "51438276",
+    "group": "2020_02",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/ca/51438276.txt",
+    "now_field_2": "866",
+    "date_original": "20-02-11",
+    "date_iso": "2020-02-11",
+    "source_name": "ca.finance.yahoo.com",
+    "url": "https://ca.finance.yahoo.com/news/basf-introduces-innovative-pilot-blockchain-150000516.html",
+    "title": "BASF introduces innovative pilot blockchain project to ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-ca2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "BASF's reciChain platform for improving plastic recycling and circularity",
+    "climate_relevance": "The text discusses plastic waste, recycling, and resource efficiency, but does not meaningfully address climate change. The reference to Environment and Climate Change Canada is part of an agency name.",
+    "reason": "The article is about plastic waste management and a blockchain-enabled recycling platform; climate change is not a substantive topic.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a7d5a9a12708213b28ca6fdfee61f82a3bae5b427e886d7caaa095fc445659a0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7c6d11e5149bf609564f5dff3a1a5eca05f402a0aae56b87b9174084abeb7e77",
+    "raw_response_text_sha256": "3c3a8ef0f4562f1e89c02dccf123e34d5a4d51823d4d697e4c7339a97714a7ba"
+  },
+  "api_metadata": {
+    "id": "resp_09497df96cc25010006b062da61b3887d1b65998febeaa9eec",
+    "model": "gpt-6-luna",
+    "created_at": 1795567014.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1651,
+      "input_tokens_details": {
+        "cache_write_tokens": 1648,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1648
+        }
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1902
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"BASF's reciChain platform for improving plastic recycling and circularity\",\n  \"climate_relevance\": \"The text discusses plastic waste, recycling, and resource efficiency, but does not meaningfully address climate change. The reference to Environment and Climate Change Canada is part of an agency name.\",\n  \"reason\": \"The article is about plastic waste management and a blockchain-enabled recycling platform; climate change is not a substantive topic.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:36:56Z",
+  "duration_seconds": 2.407,
+  "error": null
+}

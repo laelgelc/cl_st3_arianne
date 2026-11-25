@@ -1,0 +1,77 @@
+{
+  "article_id": "42110331",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/gb/42110331.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/gb/42110331.json"
+  },
+  "manifest_row": {
+    "article_id": "42110331",
+    "group": "2020_07",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/gb/42110331.txt",
+    "now_field_2": "561",
+    "date_original": "20-07-11",
+    "date_iso": "2020-07-11",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/scientist-praises-nicola-sturgeon-approach-to-lockdown-easing-1-6741095",
+    "title": "Scientist criticises PM's attempt to win `cheap headlines ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "COVID-19 lockdown policy and differences between the Scottish and Westminster governments' approaches",
+    "climate_relevance": "Climate change appears only in promotional boilerplate describing the publication's coverage.",
+    "reason": "The article is about pandemic restrictions and contains no meaningful climate-change discourse; the climate reference is unrelated promotional copy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e9daeee22ac70fd27ea811dea553fc8157c9c2c7639655f9249c74a35745f08b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4072f8bfe3f6b410f9404d337be6b4f15e63d6b64c7915c1194301f204713b04",
+    "raw_response_text_sha256": "31aceacab631d4284ebb24b4a778c8d1cf35a9e47faff0a0b2059437c4b89543"
+  },
+  "api_metadata": {
+    "id": "resp_0aeadeb3707435d0006b06248c46f887d2a166038fb759a666",
+    "model": "gpt-6-luna",
+    "created_at": 1795564684.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1192,
+      "input_tokens_details": {
+        "cache_write_tokens": 1189,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1189
+        }
+      },
+      "output_tokens": 192,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1384
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"COVID-19 lockdown policy and differences between the Scottish and Westminster governments' approaches\",\n  \"climate_relevance\": \"Climate change appears only in promotional boilerplate describing the publication's coverage.\",\n  \"reason\": \"The article is about pandemic restrictions and contains no meaningful climate-change discourse; the climate reference is unrelated promotional copy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:58:06Z",
+  "duration_seconds": 1.915,
+  "error": null
+}

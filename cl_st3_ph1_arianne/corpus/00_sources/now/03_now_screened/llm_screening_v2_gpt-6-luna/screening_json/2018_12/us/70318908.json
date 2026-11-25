@@ -1,0 +1,77 @@
+{
+  "article_id": "70318908",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/us/70318908.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/us/70318908.json"
+  },
+  "manifest_row": {
+    "article_id": "70318908",
+    "group": "2018_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/us/70318908.txt",
+    "now_field_2": "1009",
+    "date_original": "18-12-08",
+    "date_iso": "2018-12-08",
+    "source_name": "The Guardian",
+    "url": "https://www.theguardian.com/environment/2018/dec/08/we-live-in-a-lobstocracy-maine-feeling-effects-of-climate-change-lobster-fishing",
+    "title": "'We live in a lobstocracy': Maine town is feeling the effects of climate ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Climate change and its effects on Maine’s lobster fishery and coastal communities",
+    "climate_relevance": "The article links Gulf of Maine warming to the recent lobster boom and projected declines, discussing climate impacts on fisheries, livelihoods, and the need to control carbon emissions.",
+    "reason": "Climate change and its consequences for the lobster industry are the article’s central subject. Embedded related-article headlines and “Read more” links appear, but the main article is identifiable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "14836adc09f7b5e83cd9feb8cf865cec2916ce3efba5b400a5d6b3cc2af24201",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fbb834b86648c2799147753457716dbea302cc030b3e60d83d3147615a4f081d",
+    "raw_response_text_sha256": "e480474129fede6ac78d1845a4da4937ffd154eb1ac429ed5ae8d201fcbce1d8"
+  },
+  "api_metadata": {
+    "id": "resp_08d341bd080a71aa006b063bedc00887d1af1e431ac5863830",
+    "model": "gpt-6-luna",
+    "created_at": 1795570669.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1872,
+      "input_tokens_details": {
+        "cache_write_tokens": 1869,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1869
+        }
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 2152
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Climate change and its effects on Maine’s lobster fishery and coastal communities\",\n  \"climate_relevance\": \"The article links Gulf of Maine warming to the recent lobster boom and projected declines, discussing climate impacts on fisheries, livelihoods, and the need to control carbon emissions.\",\n  \"reason\": \"Climate change and its consequences for the lobster industry are the article’s central subject. Embedded related-article headlines and “Read more” links appear, but the main article is identifiable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:37:51Z",
+  "duration_seconds": 2.014,
+  "error": null
+}

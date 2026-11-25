@@ -1,0 +1,77 @@
+{
+  "article_id": "40852198",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40852198.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40852198.json"
+  },
+  "manifest_row": {
+    "article_id": "40852198",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40852198.txt",
+    "now_field_2": "244",
+    "date_original": "19-04-17",
+    "date_iso": "2019-04-17",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/18/dr-mahathir-among-times-100-most-influential-individuals/",
+    "title": "Dr Mahathir among Time's 100 most influential individuals",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Mahathir Mohamad's inclusion in Time Magazine's list of 100 most influential people",
+    "climate_relevance": "Climate change appears only in a minister's portfolio title; a separate headline mentions sustainable energy solutions without developing a climate-related point.",
+    "reason": "The identifiable main article concerns Mahathir Mohamad's political influence. The climate reference is incidental, and the surrounding headline fragments do not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ad792443f4ead4110ddfd0e4ab3f3927842dab054a9ab873bb1c818396038583",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "51d910ed8d870cb318cb09b0e36062f13022286d3ee0ff9e09a03da5a797bedb",
+    "raw_response_text_sha256": "da4f54de925dc22e11d5c222444ac9287bf9b13ba02f13448d11658e7fe14bca"
+  },
+  "api_metadata": {
+    "id": "resp_065b09e48f758f7b006b06200a02a487d2b2d4893d715e775c",
+    "model": "gpt-6-luna",
+    "created_at": 1795563530.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 832,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 384,
+      "output_tokens_details": {
+        "reasoning_tokens": 229
+      },
+      "total_tokens": 1216
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Mahathir Mohamad's inclusion in Time Magazine's list of 100 most influential people\",\n  \"climate_relevance\": \"Climate change appears only in a minister's portfolio title; a separate headline mentions sustainable energy solutions without developing a climate-related point.\",\n  \"reason\": \"The identifiable main article concerns Mahathir Mohamad's political influence. The climate reference is incidental, and the surrounding headline fragments do not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:52Z",
+  "duration_seconds": 2.949,
+  "error": null
+}

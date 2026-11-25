@@ -1,0 +1,77 @@
+{
+  "article_id": "32013554",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/nz/32013554.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/nz/32013554.json"
+  },
+  "manifest_row": {
+    "article_id": "32013554",
+    "group": "2020_08",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/nz/32013554.txt",
+    "now_field_2": "7824",
+    "date_original": "20-08-13",
+    "date_iso": "2020-08-13",
+    "source_name": "interest.co.nz",
+    "url": "https://www.interest.co.nz/property/106535/winter-weather-and-economic-uncertainty-not-holding-back-real-estate-industry",
+    "title": "Winter weather and economic uncertainty not holding back ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "New Zealand residential property sales, prices, and housing affordability",
+    "climate_relevance": "Climate change is mentioned only as one hypothetical factor in a comment about New Zealand's possible future; it is not discussed further.",
+    "reason": "The article and its comments focus on the housing market, while the lone climate-change reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "944c12da90d31be539e2caf1048615d09fd590ef604db4759cef9c3b3dde4c6a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "300f7ea05dc6903770ad207302a7a67a2b36de1f872d97f747593c76ee40d76a",
+    "raw_response_text_sha256": "04c23584982cfda37ab1c3aca1d00e64e4d73975860bb0fbe2f70def15b6b1d1"
+  },
+  "api_metadata": {
+    "id": "resp_08ef8d48166824bb006b061aba0b8087d2a2542a47184eebf0",
+    "model": "gpt-6-luna",
+    "created_at": 1795562170.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10135,
+      "input_tokens_details": {
+        "cache_write_tokens": 10132,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 10132
+        }
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 191
+      },
+      "total_tokens": 10464
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New Zealand residential property sales, prices, and housing affordability\",\n  \"climate_relevance\": \"Climate change is mentioned only as one hypothetical factor in a comment about New Zealand's possible future; it is not discussed further.\",\n  \"reason\": \"The article and its comments focus on the housing market, while the lone climate-change reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:16:13Z",
+  "duration_seconds": 3.432,
+  "error": null
+}

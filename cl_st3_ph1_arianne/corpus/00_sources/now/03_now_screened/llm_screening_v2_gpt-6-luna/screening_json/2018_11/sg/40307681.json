@@ -1,0 +1,77 @@
+{
+  "article_id": "40307681",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/sg/40307681.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/sg/40307681.json"
+  },
+  "manifest_row": {
+    "article_id": "40307681",
+    "group": "2018_11",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/sg/40307681.txt",
+    "now_field_2": "477",
+    "date_original": "18-11-23",
+    "date_iso": "2018-11-23",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/deforestation-brazilian-amazon-reaches-decade-high-032848984.html",
+    "title": "Deforestation in the Brazilian Amazon reaches decade high",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "Record deforestation in the Brazilian Amazon and its drivers, including illegal logging and agricultural expansion.",
+    "climate_relevance": "The article links deforestation to global-warming emissions and describes the Amazon as a carbon sink that helps protect against global warming.",
+    "reason": "The main focus is forest loss and its economic and political drivers, but the climate connections are meaningful context rather than the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6841f0b91192cdbec303455f5ea780488a3c9844c3b7b0a0d3bb23e789d5ccf5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b4f4f9c5612c9e79cec1788970f904029977d93ce87e4be1179bc7230a71dd80",
+    "raw_response_text_sha256": "11b4c4a4693cb93a2a0448e9d544533dd780c3a6515b880ced2688fb03883536"
+  },
+  "api_metadata": {
+    "id": "resp_086df61821a0c970006b061eb1ffe087d28dc3cb1f8921451e",
+    "model": "gpt-6-luna",
+    "created_at": 1795563186.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1118,
+      "input_tokens_details": {
+        "cache_write_tokens": 1115,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1115
+        }
+      },
+      "output_tokens": 376,
+      "output_tokens_details": {
+        "reasoning_tokens": 230
+      },
+      "total_tokens": 1494
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Record deforestation in the Brazilian Amazon and its drivers, including illegal logging and agricultural expansion.\",\n  \"climate_relevance\": \"The article links deforestation to global-warming emissions and describes the Amazon as a carbon sink that helps protect against global warming.\",\n  \"reason\": \"The main focus is forest loss and its economic and political drivers, but the climate connections are meaningful context rather than the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:33:09Z",
+  "duration_seconds": 3.395,
+  "error": null
+}

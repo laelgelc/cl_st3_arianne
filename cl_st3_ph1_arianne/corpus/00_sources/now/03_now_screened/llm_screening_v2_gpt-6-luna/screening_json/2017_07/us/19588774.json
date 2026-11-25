@@ -1,0 +1,77 @@
+{
+  "article_id": "19588774",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/us/19588774.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/us/19588774.json"
+  },
+  "manifest_row": {
+    "article_id": "19588774",
+    "group": "2017_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/us/19588774.txt",
+    "now_field_2": "795",
+    "date_original": "17-07-20",
+    "date_iso": "2017-07-20",
+    "source_name": "Los Angeles Times",
+    "url": "http://www.latimes.com/opinion/opinion-la/la-ol-trump-interview-20170720-story.html",
+    "title": "Trump trashes Sessions, Comey and the rule of law",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "President Trump's views on the rule of law and the Russia investigation",
+    "climate_relevance": "A separate, duplicated caption mentions California's climate-change program, but climate policy is not part of the identifiable main article.",
+    "reason": "The main article concerns legal norms and the Russia investigation. The climate-policy text appears as an unrelated caption, so it does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4b6198f06bc3186ecf9c0eb9a42790c0b792b3b6f937997371424e2fd99c907b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d3729b98c3af3ff6ca1ad046c31e45b7f7e8331da7c41f4e6e36ba71181c7783",
+    "raw_response_text_sha256": "c6123aa4895d2ee40cd3ee6c53b48ce4381b7d9b90a35bf60180188b65de22df"
+  },
+  "api_metadata": {
+    "id": "resp_00acb8e3cd522b30006b060c37793487d2a5be95f49940954d",
+    "model": "gpt-6-luna",
+    "created_at": 1795558455.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1482,
+      "input_tokens_details": {
+        "cache_write_tokens": 1479,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1479
+        }
+      },
+      "output_tokens": 433,
+      "output_tokens_details": {
+        "reasoning_tokens": 283
+      },
+      "total_tokens": 1915
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"President Trump's views on the rule of law and the Russia investigation\",\n  \"climate_relevance\": \"A separate, duplicated caption mentions California's climate-change program, but climate policy is not part of the identifiable main article.\",\n  \"reason\": \"The main article concerns legal norms and the Russia investigation. The climate-policy text appears as an unrelated caption, so it does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:14:19Z",
+  "duration_seconds": 4.134,
+  "error": null
+}

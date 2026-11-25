@@ -1,0 +1,77 @@
+{
+  "article_id": "24272643",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_04/us/24272643.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_04/us/24272643.json"
+  },
+  "manifest_row": {
+    "article_id": "24272643",
+    "group": "2018_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_04/us/24272643.txt",
+    "now_field_2": "506",
+    "date_original": "18-04-21",
+    "date_iso": "2018-04-21",
+    "source_name": "Boston.com",
+    "url": "https://www.boston.com/news/local-news/2018/04/21/mass-state-representative-dies-during-little-league-event",
+    "title": "Longtime Democratic State Rep. James Miceli of Wilmington dies ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-04.txt\"]",
+    "metadata_article_files": "[\"text-18-04/18-04-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "The death and public-service legacy of Massachusetts state representative James Miceli",
+    "climate_relevance": "Climate change appears only as part of the name of a legislative committee Miceli served on.",
+    "reason": "The article is an obituary and contains no substantive discussion of climate change, its causes, impacts, or policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "54ad3b3bb5474141b1414e7134bcc15c058577c451d19ab4d43b9e3e2389558a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "49468819240032ddf4f47cb1f64b414f0f4b4c1eb86b7c22af318e1c60e14d5a",
+    "raw_response_text_sha256": "76c43668f2a44c79e953a94aa4deafca507c069bd9912556304dd4fe5dbc315b"
+  },
+  "api_metadata": {
+    "id": "resp_068e3714a28ef04b006b061246421487d28c7f865c08112048",
+    "model": "gpt-6-luna",
+    "created_at": 1795560006.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1178,
+      "input_tokens_details": {
+        "cache_write_tokens": 1175,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1175
+        }
+      },
+      "output_tokens": 168,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "total_tokens": 1346
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The death and public-service legacy of Massachusetts state representative James Miceli\",\n  \"climate_relevance\": \"Climate change appears only as part of the name of a legislative committee Miceli served on.\",\n  \"reason\": \"The article is an obituary and contains no substantive discussion of climate change, its causes, impacts, or policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:40:07Z",
+  "duration_seconds": 1.564,
+  "error": null
+}

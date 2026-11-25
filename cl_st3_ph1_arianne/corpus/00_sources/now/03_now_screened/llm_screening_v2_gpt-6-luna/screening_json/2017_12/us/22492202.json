@@ -1,0 +1,77 @@
+{
+  "article_id": "22492202",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_12/us/22492202.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_12/us/22492202.json"
+  },
+  "manifest_row": {
+    "article_id": "22492202",
+    "group": "2017_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_12/us/22492202.txt",
+    "now_field_2": "643",
+    "date_original": "17-12-30",
+    "date_iso": "2017-12-30",
+    "source_name": "SwimSwam",
+    "url": "https://swimswam.com/orange-bowl-swim-classic-persevering-despite-hurricane-irma/",
+    "title": "Orange Bowl Swim Classic Persevering in Wake of Hurricane Irma",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-12.txt\"]",
+    "metadata_article_files": "[\"text-17-12/text_17-12-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A college swimming training and competition event in Key Largo recovering from Hurricane Irma",
+    "climate_relevance": "The main article discusses hurricane damage and community recovery, but not climate change. A separate appended comment discusses extreme weather and climate-change denial, without a clear connection to the article.",
+    "reason": "The identifiable main article is about a swimming event and its recovery after Hurricane Irma. The climate-related passage appears to be an unrelated appended snippet, so it does not make the main article relevant climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7b134539286418af5344238da55dd8460623972f851365812491b55baee07796",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ee3860f8ea33d6dea7fd6d37af803765d94e3100f3457994bb330600b890613a",
+    "raw_response_text_sha256": "471052748159aa12e0ea9fbe47b7303e4a9228df5d3634f88cd87b86ab690ca4"
+  },
+  "api_metadata": {
+    "id": "resp_0cfdcb182804fa13006b061033fc6087d2aae77c4c9c5f53c0",
+    "model": "gpt-6-luna",
+    "created_at": 1795559476.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1274,
+      "input_tokens_details": {
+        "cache_write_tokens": 1271,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1271
+        }
+      },
+      "output_tokens": 376,
+      "output_tokens_details": {
+        "reasoning_tokens": 205
+      },
+      "total_tokens": 1650
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A college swimming training and competition event in Key Largo recovering from Hurricane Irma\",\n  \"climate_relevance\": \"The main article discusses hurricane damage and community recovery, but not climate change. A separate appended comment discusses extreme weather and climate-change denial, without a clear connection to the article.\",\n  \"reason\": \"The identifiable main article is about a swimming event and its recovery after Hurricane Irma. The climate-related passage appears to be an unrelated appended snippet, so it does not make the main article relevant climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:31:19Z",
+  "duration_seconds": 3.095,
+  "error": null
+}

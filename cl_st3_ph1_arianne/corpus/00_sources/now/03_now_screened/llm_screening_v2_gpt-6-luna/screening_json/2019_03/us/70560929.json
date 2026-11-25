@@ -1,0 +1,77 @@
+{
+  "article_id": "70560929",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/us/70560929.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/us/70560929.json"
+  },
+  "manifest_row": {
+    "article_id": "70560929",
+    "group": "2019_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/us/70560929.txt",
+    "now_field_2": "557",
+    "date_original": "19-03-01",
+    "date_iso": "2019-03-01",
+    "source_name": "San Francisco Examiner",
+    "url": "http://www.sfexaminer.com/stefani-calls-hearing-impact-chariot-shutdown-riders/",
+    "title": "Stefani calls for hearing on impact of Chariot shutdown on riders",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "The impact of Chariot's shutdown on San Francisco transit riders and public transportation",
+    "climate_relevance": "The article briefly links getting people out of cars with fighting climate change.",
+    "reason": "Climate change appears in one meaningful sentence as a rationale for shifting travel from cars to public transportation, but the article is mainly about Chariot's closure and transit services.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0e85e9c7b890cd0f8b08d23082e7121d22edd5b7f75337fff4e49987f3df07df",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a7b809f3f725bd3a71a5f6c3b28aeb2a6c8373c8be650a1b2f9e6cd429b97b6b",
+    "raw_response_text_sha256": "1ab16332ad0a96a72077b5e91e711f95601291d9b5baaac792da30fef3ed7055"
+  },
+  "api_metadata": {
+    "id": "resp_0f198aa2bb4d3dae006b063d93d8d087d1a76108977d426369",
+    "model": "gpt-6-luna",
+    "created_at": 1795571091.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1222,
+      "input_tokens_details": {
+        "cache_write_tokens": 1219,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1219
+        }
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 1475
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The impact of Chariot's shutdown on San Francisco transit riders and public transportation\",\n  \"climate_relevance\": \"The article briefly links getting people out of cars with fighting climate change.\",\n  \"reason\": \"Climate change appears in one meaningful sentence as a rationale for shifting travel from cars to public transportation, but the article is mainly about Chariot's closure and transit services.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:44:53Z",
+  "duration_seconds": 2.533,
+  "error": null
+}

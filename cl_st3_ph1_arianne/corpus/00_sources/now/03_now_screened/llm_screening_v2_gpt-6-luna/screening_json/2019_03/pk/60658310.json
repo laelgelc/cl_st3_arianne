@@ -1,0 +1,77 @@
+{
+  "article_id": "60658310",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/pk/60658310.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/pk/60658310.json"
+  },
+  "manifest_row": {
+    "article_id": "60658310",
+    "group": "2019_03",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/pk/60658310.txt",
+    "now_field_2": "607",
+    "date_original": "19-03-21",
+    "date_iso": "2019-03-21",
+    "source_name": "Daily Times",
+    "url": "https://dailytimes.com.pk/368076/clean-green-pakistan-govt-joins-hands-with-pg-for-provision-of-clean-drinking-water-sanitation/",
+    "title": "Clean Green Pakistan: Govt joins hands with P&amp;G for provision of ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A corporate initiative to promote access to clean drinking water, sanitation, and hygiene in Pakistan",
+    "climate_relevance": "Climate change appears only in the title of a government minister and in a reference to the Climate Ministry; the text does not discuss climate change or its implications.",
+    "reason": "The article focuses on drinking water, sanitation, hygiene, and P&G programs. The climate-related references are incidental institutional identifiers rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b417989a986476776eff092aa01ba6d17a53caac64d1f34d2839679b5949a157",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "92a454215d8a343250654ce243d5ec42f3dd9017d6642ed2fe3eb60d1e1706a0",
+    "raw_response_text_sha256": "2fab9edb72ba8265bb97e9d539f0bd24e1171a1412fc232ea38945fe3ddbee8f"
+  },
+  "api_metadata": {
+    "id": "resp_07d53875950d505f006b0633a2a7f087d1b2adf1644c3da8af",
+    "model": "gpt-6-luna",
+    "created_at": 1795568546.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1287,
+      "input_tokens_details": {
+        "cache_write_tokens": 1284,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1284
+        }
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1534
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A corporate initiative to promote access to clean drinking water, sanitation, and hygiene in Pakistan\",\n  \"climate_relevance\": \"Climate change appears only in the title of a government minister and in a reference to the Climate Ministry; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on drinking water, sanitation, hygiene, and P&G programs. The climate-related references are incidental institutional identifiers rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:02:28Z",
+  "duration_seconds": 2.268,
+  "error": null
+}

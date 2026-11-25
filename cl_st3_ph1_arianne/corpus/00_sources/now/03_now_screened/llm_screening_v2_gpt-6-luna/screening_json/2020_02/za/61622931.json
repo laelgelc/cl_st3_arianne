@@ -1,0 +1,77 @@
+{
+  "article_id": "61622931",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/za/61622931.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/za/61622931.json"
+  },
+  "manifest_row": {
+    "article_id": "61622931",
+    "group": "2020_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/za/61622931.txt",
+    "now_field_2": "1255",
+    "date_original": "20-02-17",
+    "date_iso": "2020-02-17",
+    "source_name": "cnbcafrica.com",
+    "url": "https://www.cnbcafrica.com/category/news/technology/feed/",
+    "title": "Technology - CNBC Africa",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A technology news listing containing headlines and brief descriptions of unrelated articles",
+    "climate_relevance": "One isolated listing item links to a climate explainer and briefly summarizes human influence on climate change; the available text is otherwise a technology-news roundup.",
+    "reason": "The climate material appears only as one unrelated item in a multi-article technology listing, not as the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ce423f7bebf88a53e6bd96d7020ada9fddc95245b497ae82652034e403986921",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "529ba0de618be8814be7a9ae3d4cab3c7d1820b9997e999b7fe6b4876f8c02bf",
+    "raw_response_text_sha256": "18fca6dbbbd150bd4242f7857678adec89373ee6b16a223f17da0d19a2a8c5d4"
+  },
+  "api_metadata": {
+    "id": "resp_098bdbc782e01455006b0637ded9d487d1a87a062187de76b1",
+    "model": "gpt-6-luna",
+    "created_at": 1795569631.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2997,
+      "input_tokens_details": {
+        "cache_write_tokens": 2994,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2994
+        }
+      },
+      "output_tokens": 492,
+      "output_tokens_details": {
+        "reasoning_tokens": 347
+      },
+      "total_tokens": 3489
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A technology news listing containing headlines and brief descriptions of unrelated articles\",\n  \"climate_relevance\": \"One isolated listing item links to a climate explainer and briefly summarizes human influence on climate change; the available text is otherwise a technology-news roundup.\",\n  \"reason\": \"The climate material appears only as one unrelated item in a multi-article technology listing, not as the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:20:34Z",
+  "duration_seconds": 4.189,
+  "error": null
+}

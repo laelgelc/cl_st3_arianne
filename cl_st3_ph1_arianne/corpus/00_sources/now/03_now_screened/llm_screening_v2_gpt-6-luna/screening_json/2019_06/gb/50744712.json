@@ -1,0 +1,77 @@
+{
+  "article_id": "50744712",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/gb/50744712.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/gb/50744712.json"
+  },
+  "manifest_row": {
+    "article_id": "50744712",
+    "group": "2019_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/gb/50744712.txt",
+    "now_field_2": "2260",
+    "date_original": "19-06-07",
+    "date_iso": "2019-06-07",
+    "source_name": "The Independent",
+    "url": "https://www.independent.co.uk/news/world/europe/trump-trade-policy-conflict-war-vladimir-putin-a8948826.html",
+    "title": "Trump's trade policy is leading to spiral of 'endless conflicts and wars ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Vladimir Putin's remarks at Russia's annual investment forum, focused on trade, US policy, and Russia-China relations",
+    "climate_relevance": "Climate change appears only in a caption in a photo gallery, which says Putin expressed concern about polar bears threatened by climate change.",
+    "reason": "The main article does not discuss climate change. Its sole climate reference is an incidental gallery caption and does not provide substantial discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9b46003cce932416ed4a8cf793b79eccd3d14cf61d4547ef45faf62650ee7daf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3c18e2d82d2c74197a78ce34bff82bd7fd696477a0e0c08ff31e56543e197479",
+    "raw_response_text_sha256": "9c0beba92bb8cac902c92663a60530cbcb76e7dcfa44416e6072f7173e525b8a"
+  },
+  "api_metadata": {
+    "id": "resp_0c911a1298c2e339006b062aaefbd087d1897e555d223172e3",
+    "model": "gpt-6-luna",
+    "created_at": 1795566255.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3955,
+      "input_tokens_details": {
+        "cache_write_tokens": 3952,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3952
+        }
+      },
+      "output_tokens": 387,
+      "output_tokens_details": {
+        "reasoning_tokens": 237
+      },
+      "total_tokens": 4342
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Vladimir Putin's remarks at Russia's annual investment forum, focused on trade, US policy, and Russia-China relations\",\n  \"climate_relevance\": \"Climate change appears only in a caption in a photo gallery, which says Putin expressed concern about polar bears threatened by climate change.\",\n  \"reason\": \"The main article does not discuss climate change. Its sole climate reference is an incidental gallery caption and does not provide substantial discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:24:18Z",
+  "duration_seconds": 3.278,
+  "error": null
+}

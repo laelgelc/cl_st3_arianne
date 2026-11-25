@@ -1,0 +1,77 @@
+{
+  "article_id": "20029808",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/gb/20029808.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/gb/20029808.json"
+  },
+  "manifest_row": {
+    "article_id": "20029808",
+    "group": "2017_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/gb/20029808.txt",
+    "now_field_2": "1107",
+    "date_original": "17-08-15",
+    "date_iso": "2017-08-15",
+    "source_name": "The Guardian",
+    "url": "https://www.theguardian.com/australia-news/live/2017/aug/16/nick-xenophon-rejects-one-nation-abc-restrictions-but-pushes-small-media-tax-breaks-politics-live",
+    "title": "Nick Xenophon rejects One Nation ABC restrictions but pushes ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-GB.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Australian parliamentary proceedings, including citizenship issues and Australia Day",
+    "climate_relevance": "A section discusses coal, climate change, the Great Barrier Reef, and the Adani coalmine, including competing political claims about reef protection and coal policy.",
+    "reason": "The climate discussion is meaningful but occupies only one segment of a broader parliamentary account focused mainly on other political issues.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4a760645cd5aecc48007f0ee90d04274071d159b4437a7426a3e6d12a9badc5b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "15400017d84a1664b8c1d03f59bd23a6a15290044f220ff08e6963371faafe89",
+    "raw_response_text_sha256": "e6eb1f5cdb1471ec5baf988559ad149e43afb65e8725ee75f065870c09246f29"
+  },
+  "api_metadata": {
+    "id": "resp_0bb8b47c18159a18006b060cca408887d294b718b47e8be419",
+    "model": "gpt-6-luna",
+    "created_at": 1795558602.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1852,
+      "input_tokens_details": {
+        "cache_write_tokens": 1849,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1849
+        }
+      },
+      "output_tokens": 326,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 2178
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Australian parliamentary proceedings, including citizenship issues and Australia Day\",\n  \"climate_relevance\": \"A section discusses coal, climate change, the Great Barrier Reef, and the Adani coalmine, including competing political claims about reef protection and coal policy.\",\n  \"reason\": \"The climate discussion is meaningful but occupies only one segment of a broader parliamentary account focused mainly on other political issues.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:16:44Z",
+  "duration_seconds": 2.555,
+  "error": null
+}

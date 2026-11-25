@@ -1,0 +1,77 @@
+{
+  "article_id": "40348183",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ng/40348183.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ng/40348183.json"
+  },
+  "manifest_row": {
+    "article_id": "40348183",
+    "group": "2018_12",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ng/40348183.txt",
+    "now_field_2": "278",
+    "date_original": "18-12-04",
+    "date_iso": "2018-12-04",
+    "source_name": "Guardia",
+    "url": "https://guardian.ng/news/nigeria/national/chibok-girls-buhari/",
+    "title": "Freeing remaining Chibok girls my priority, says Buhari",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Efforts to secure the release of the kidnapped Chibok schoolgirls",
+    "climate_relevance": "COP24 is mentioned only as the setting for a bilateral meeting; the text contains no meaningful discussion of climate change.",
+    "reason": "The article focuses on the Chibok schoolgirls and their captivity. The climate conference reference is incidental context.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "65fcfb16fe88ebff55f8f44d0eed4efe9ca33c722ba37228c28b210be7cfe965",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "12d5ed1d6c8c0a02d0ac95133f1aa3751b69423422f1df9a09c581ef33588a35",
+    "raw_response_text_sha256": "90c7cf8d95d8183724a2aa122c02126c4be2e7e89bc1d5c51631c444203d51f4"
+  },
+  "api_metadata": {
+    "id": "resp_004296186f139fcb006b061ec831a887d286114793425b757c",
+    "model": "gpt-6-luna",
+    "created_at": 1795563208.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 857,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 197,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1054
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Efforts to secure the release of the kidnapped Chibok schoolgirls\",\n  \"climate_relevance\": \"COP24 is mentioned only as the setting for a bilateral meeting; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on the Chibok schoolgirls and their captivity. The climate conference reference is incidental context.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:33:29Z",
+  "duration_seconds": 1.626,
+  "error": null
+}

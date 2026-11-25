@@ -1,0 +1,77 @@
+{
+  "article_id": "71537462",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/in/71537462.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/in/71537462.json"
+  },
+  "manifest_row": {
+    "article_id": "71537462",
+    "group": "2020_01",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/in/71537462.txt",
+    "now_field_2": "882",
+    "date_original": "20-01-01",
+    "date_iso": "2020-01-01",
+    "source_name": "moneylife.in",
+    "url": "https://www.moneylife.in/article/nifty-sensex-still-on-an-uptrend-monday-closing-report/59028.html",
+    "title": "Nifty, Sensex still on an uptrend - Monday closing report",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-in2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Indian stock market performance and company news",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Environment, Forest & Climate Change; no climate-related issue or discourse is discussed.",
+    "reason": "The text is a stock-market roundup. Its sole climate reference is part of a ministry name in a brief item about an industrial expansion clearance, which does not meaningfully contribute to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6e60fd07c8d52cf915d91d879c68fa2f22337d3242d809b0299bf4afedaed17d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c5bdfcf5765c7545c309550eef9ea0c17abe71f263590c577b5010cde01c6647",
+    "raw_response_text_sha256": "5de6781388d32781be61c9724b45460a6bd9d85000f28a51d4d151b51a159b82"
+  },
+  "api_metadata": {
+    "id": "resp_0cf57021d53466f1006b0641d65e2887d1a000cd4a87e1b4c4",
+    "model": "gpt-6-luna",
+    "created_at": 1795572182.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1748,
+      "input_tokens_details": {
+        "cache_write_tokens": 1745,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1745
+        }
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 1979
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Indian stock market performance and company news\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Environment, Forest & Climate Change; no climate-related issue or discourse is discussed.\",\n  \"reason\": \"The text is a stock-market roundup. Its sole climate reference is part of a ministry name in a brief item about an industrial expansion clearance, which does not meaningfully contribute to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:03:04Z",
+  "duration_seconds": 2.386,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "19802012",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/in/19802012.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/in/19802012.json"
+  },
+  "manifest_row": {
+    "article_id": "19802012",
+    "group": "2017_08",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/in/19802012.txt",
+    "now_field_2": "136",
+    "date_original": "17-08-01",
+    "date_iso": "2017-08-01",
+    "source_name": "Daily News &amp; Analysis",
+    "url": "http://www.dnaindia.com/india/report-dna-morning-must-reads-new-development-plan-for-mumbai-sania-mirza-on-lack-of-titles-and-more-2520215",
+    "title": "DNA Morning Must Reads: New development plan for Mumbai ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-IN.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "A roundup of unrelated news items",
+    "climate_relevance": "One item summarizes a study linking climate change to farmer suicides in India and warning of increased risk as temperatures rise.",
+    "reason": "The supplied text is a collection of brief, mostly unrelated headlines and summaries rather than a climate-focused article. The climate item contains meaningful climate discourse, so it is relevant peripherally.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f58d51281bf234bda5d77bf774a25c2a97e8ca10fffcab761997a4d0397e85ad",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1ba05cfd0d4ed15c80c20ea3d17f4165e8dfdc8128c28412b19c0a67f287671b",
+    "raw_response_text_sha256": "4215545dee6c6407dc1a6a4fbc458fe4d7852d9ef1df05a665f58fb582a0f6fa"
+  },
+  "api_metadata": {
+    "id": "resp_08c6083ba1fc81ba006b060c75d7cc87d285fbe72f40711f99",
+    "model": "gpt-6-luna",
+    "created_at": 1795558518.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 683,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 411,
+      "output_tokens_details": {
+        "reasoning_tokens": 269
+      },
+      "total_tokens": 1094
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A roundup of unrelated news items\",\n  \"climate_relevance\": \"One item summarizes a study linking climate change to farmer suicides in India and warning of increased risk as temperatures rise.\",\n  \"reason\": \"The supplied text is a collection of brief, mostly unrelated headlines and summaries rather than a climate-focused article. The climate item contains meaningful climate discourse, so it is relevant peripherally.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:15:21Z",
+  "duration_seconds": 3.43,
+  "error": null
+}

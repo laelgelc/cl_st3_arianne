@@ -1,0 +1,77 @@
+{
+  "article_id": "31244863",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/us/31244863.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/us/31244863.json"
+  },
+  "manifest_row": {
+    "article_id": "31244863",
+    "group": "2019_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/us/31244863.txt",
+    "now_field_2": "1047",
+    "date_original": "19-08-26",
+    "date_iso": "2019-08-26",
+    "source_name": "forbes.com",
+    "url": "https://www.forbes.com/sites/trevorclawson/2019/08/26/direction-of-travel-why-international-airlines-group-is-reaching-out-to-startups/",
+    "title": "Direction Of Travel - Why International Airlines Group Is ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "British Airways and IAG’s aviation technology and startup-innovation programs",
+    "climate_relevance": "The main article briefly lists sustainability as an area of interest for IAG’s accelerator, without meaningful discussion of climate change. A separate biodesign article appended to the text contains substantial climate discourse.",
+    "reason": "The identifiable lead article is about aviation innovation, not climate change; its brief mention of sustainability is insufficient for inclusion. The later biodesign article is unrelated and appears to be a separate article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5229b9eb8104598532d69ae0bc752646e19fe94f86324fbb5f9410c097562bc6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9281c3040dc4b88931e9bde3f5bc33be3077306bc1a8185087cb6663084d72c5",
+    "raw_response_text_sha256": "19ff7ebe9767a6db3ad72eedc355d8b57f335fc5c08db93a97852a7b2f94b1c8"
+  },
+  "api_metadata": {
+    "id": "resp_00efdd52727deeda006b061654c64487d28592458c88efadeb",
+    "model": "gpt-6-luna",
+    "created_at": 1795561044.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3297,
+      "input_tokens_details": {
+        "cache_write_tokens": 3294,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3294
+        }
+      },
+      "output_tokens": 790,
+      "output_tokens_details": {
+        "reasoning_tokens": 624
+      },
+      "total_tokens": 4087
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"British Airways and IAG’s aviation technology and startup-innovation programs\",\n  \"climate_relevance\": \"The main article briefly lists sustainability as an area of interest for IAG’s accelerator, without meaningful discussion of climate change. A separate biodesign article appended to the text contains substantial climate discourse.\",\n  \"reason\": \"The identifiable lead article is about aviation innovation, not climate change; its brief mention of sustainability is insufficient for inclusion. The later biodesign article is unrelated and appears to be a separate article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:57:30Z",
+  "duration_seconds": 6.298,
+  "error": null
+}

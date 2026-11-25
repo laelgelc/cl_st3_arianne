@@ -1,0 +1,77 @@
+{
+  "article_id": "21586101",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/ca/21586101.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/ca/21586101.json"
+  },
+  "manifest_row": {
+    "article_id": "21586101",
+    "group": "2017_11",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/ca/21586101.txt",
+    "now_field_2": "175",
+    "date_original": "17-11-09",
+    "date_iso": "2017-11-09",
+    "source_name": "The Barrie Examiner",
+    "url": "http://www.thebarrieexaminer.com/2017/11/09/snow-squall-warning",
+    "title": "Snow squall warning",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An imminent snowstorm and related travel and emergency-preparedness advice in southern Ontario",
+    "climate_relevance": "The only climate-related wording is part of the official name Environment and Climate Change Canada; the text contains no meaningful discussion of climate change.",
+    "reason": "This is a short-term weather alert about lake-effect snow, not climate coverage. The climate reference is incidental institutional naming.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "def698ed084060f05182a8709270703ed72cb05cb5e43ff44ff482b39cd61ed5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cdb1fe550ae50fcad1da76c8d2853db8656b40093b7c127d19b69b92162a2758",
+    "raw_response_text_sha256": "cc3643491b1fde6831dc0ca0e064577b7b211d8bfe2e69bc4ecb11e31fbf77cd"
+  },
+  "api_metadata": {
+    "id": "resp_03ad8281ef889df6006b060f10e60887d2be6aacd4c0c5a2fb",
+    "model": "gpt-6-luna",
+    "created_at": 1795559185.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 714,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 186,
+      "output_tokens_details": {
+        "reasoning_tokens": 39
+      },
+      "total_tokens": 900
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An imminent snowstorm and related travel and emergency-preparedness advice in southern Ontario\",\n  \"climate_relevance\": \"The only climate-related wording is part of the official name Environment and Climate Change Canada; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"This is a short-term weather alert about lake-effect snow, not climate coverage. The climate reference is incidental institutional naming.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:26:26Z",
+  "duration_seconds": 1.534,
+  "error": null
+}

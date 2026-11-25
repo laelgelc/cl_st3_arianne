@@ -1,0 +1,77 @@
+{
+  "article_id": "85129751",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/us/85129751.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/us/85129751.json"
+  },
+  "manifest_row": {
+    "article_id": "85129751",
+    "group": "2020_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/us/85129751.txt",
+    "now_field_2": "563",
+    "date_original": "20-06-08",
+    "date_iso": "2020-06-08",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/world/europe/report-european-bathing-water-quality-remains-high/2020/06/08/fa12bf2c-a98a-11ea-a43b-be9f6494a87d_story.html",
+    "title": "Report: European bathing water quality remains high",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "European bathing water quality",
+    "climate_relevance": "Climate change appears only in a standard AP link to its climate coverage; the article discusses water quality and pollution, not climate change.",
+    "reason": "The main article reports on bathing-water quality across Europe. Its only explicit climate reference is boilerplate navigation, and the mention of heavy summer rains is not meaningfully connected to climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "609f3a21bba7f39f420e824224a01041cc010387a037ce942304e8ab13a8ce2f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "572864247d26397061323e944dc8436a3fb4361cba8eef18f381f4d297a138ec",
+    "raw_response_text_sha256": "789eb5c94f3473bdd9dca0b63cca162eba41f8a32244e5ec0123c735d2d07dc8"
+  },
+  "api_metadata": {
+    "id": "resp_06846378ec76fbb3006b064b4e99bc87d1aa079aca4b06915e",
+    "model": "gpt-6-luna",
+    "created_at": 1795574606.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1282,
+      "input_tokens_details": {
+        "cache_write_tokens": 1279,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1279
+        }
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1481
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"European bathing water quality\",\n  \"climate_relevance\": \"Climate change appears only in a standard AP link to its climate coverage; the article discusses water quality and pollution, not climate change.\",\n  \"reason\": \"The main article reports on bathing-water quality across Europe. Its only explicit climate reference is boilerplate navigation, and the mention of heavy summer rains is not meaningfully connected to climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:43:29Z",
+  "duration_seconds": 2.493,
+  "error": null
+}

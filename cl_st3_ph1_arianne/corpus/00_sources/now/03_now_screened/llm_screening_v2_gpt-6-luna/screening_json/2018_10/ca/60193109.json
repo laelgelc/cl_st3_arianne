@@ -1,0 +1,77 @@
+{
+  "article_id": "60193109",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/ca/60193109.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/ca/60193109.json"
+  },
+  "manifest_row": {
+    "article_id": "60193109",
+    "group": "2018_10",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/ca/60193109.txt",
+    "now_field_2": "652",
+    "date_original": "18-10-25",
+    "date_iso": "2018-10-25",
+    "source_name": "The Link",
+    "url": "https://thelinknewspaper.ca/article/complaints-of-sexual-misconduct-see-230-per-cent-increase-at-concordia",
+    "title": "Complaints of Sexual Misconduct See 230 Per Cent Increase at ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A university’s increase in reported sexual misconduct complaints",
+    "climate_relevance": "The identifiable main article does not discuss climate change. A separate appended snippet about a Dutch prime minister’s visit contains meaningful discussion of climate policy and the Paris Agreement.",
+    "reason": "The main article concerns sexual misconduct complaints at Concordia. The climate discussion appears only in a distinct, unrelated news snippet, so it does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3a57a2bb44a1b50ffb0dfa2394a30bdf31fa5cbeaae22827bc06846027ff957f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1bd3a2bf8c1f181d86f2dd39ee002af52ea636d45f291624d31c8764e0c5cb8c",
+    "raw_response_text_sha256": "842f9cd43143475ca119c741d183a563ef326e57b35512c46f9ee03f99d033ae"
+  },
+  "api_metadata": {
+    "id": "resp_039c0d3ebb023a30006b063174f77087d194478a76bdf8b97f",
+    "model": "gpt-6-luna",
+    "created_at": 1795567989.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2266,
+      "input_tokens_details": {
+        "cache_write_tokens": 2263,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2263
+        }
+      },
+      "output_tokens": 384,
+      "output_tokens_details": {
+        "reasoning_tokens": 226
+      },
+      "total_tokens": 2650
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A university’s increase in reported sexual misconduct complaints\",\n  \"climate_relevance\": \"The identifiable main article does not discuss climate change. A separate appended snippet about a Dutch prime minister’s visit contains meaningful discussion of climate policy and the Paris Agreement.\",\n  \"reason\": \"The main article concerns sexual misconduct complaints at Concordia. The climate discussion appears only in a distinct, unrelated news snippet, so it does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:53:12Z",
+  "duration_seconds": 3.166,
+  "error": null
+}

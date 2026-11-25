@@ -1,0 +1,77 @@
+{
+  "article_id": "51403595",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/ca/51403595.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/ca/51403595.json"
+  },
+  "manifest_row": {
+    "article_id": "51403595",
+    "group": "2020_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/ca/51403595.txt",
+    "now_field_2": "1087",
+    "date_original": "20-01-30",
+    "date_iso": "2020-01-30",
+    "source_name": "macleans.ca",
+    "url": "https://www.macleans.ca/politics/ottawa/a-john-baird-headline-will-surely-rank-high-on-google-politics-insider/",
+    "title": "What the Conservative race needs now is... John Baird ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-ca2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Canadian political news and newsletter items",
+    "climate_relevance": "The text mentions an oil sands mine proposal and Environment and Climate Change Canada, but does not meaningfully discuss climate change or its implications.",
+    "reason": "Climate-related terms appear only in an agency name; the oil sands item concerns the project's prospects without climate discussion. The other items are unrelated political news.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8497f39d2df035d7f30c57c79d9155964ab6d3a84952cbcd6e876a81607b830f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b8f61b63f70030e819e90545f3d0b98ddacf7c411038a61be71bba89b90c18eb",
+    "raw_response_text_sha256": "16adb1ea525571eb2c1f925d8c4a82b0500449beaeb813b7aeff8c30a2370968"
+  },
+  "api_metadata": {
+    "id": "resp_033af2b424c02f96006b062d8581c887d193368ff2996d93d7",
+    "model": "gpt-6-luna",
+    "created_at": 1795566981.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2011,
+      "input_tokens_details": {
+        "cache_write_tokens": 2008,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2008
+        }
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 2289
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Canadian political news and newsletter items\",\n  \"climate_relevance\": \"The text mentions an oil sands mine proposal and Environment and Climate Change Canada, but does not meaningfully discuss climate change or its implications.\",\n  \"reason\": \"Climate-related terms appear only in an agency name; the oil sands item concerns the project's prospects without climate discussion. The other items are unrelated political news.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:36:23Z",
+  "duration_seconds": 2.356,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "85127577",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/us/85127577.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/us/85127577.json"
+  },
+  "manifest_row": {
+    "article_id": "85127577",
+    "group": "2020_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/us/85127577.txt",
+    "now_field_2": "1745",
+    "date_original": "20-06-08",
+    "date_iso": "2020-06-08",
+    "source_name": "The New Yorker",
+    "url": "https://www.newyorker.com/magazine/2020/06/08/edward-hopper-and-american-solitude?utm_social-type=owned&mbid=social_twitter",
+    "title": "Edward Hopper and American Solitude",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-us7.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An art review of Edward Hopper and his paintings",
+    "climate_relevance": "Climate change appears only in a final sentence about cricket farmers, apparently from an unrelated snippet rather than the main article.",
+    "reason": "The identifiable main article discusses Hopper, his artistic style, and his influence. The sole climate reference is confined to an appended, unrelated sentence and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a8f41e10931759a454ef85145988cf276831941bef94578e993cf66fe9a3aa8c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1f8f8d04ee18b343a9c5d7e4589d82bb0963516e2413cea01d538128788dc4e1",
+    "raw_response_text_sha256": "5d1a829d196cdf325f86f7d401237d93c9b730fe230a00e28b883378affe7aef"
+  },
+  "api_metadata": {
+    "id": "resp_0195b1f2dbf6f13c006b064b4d2a0c87d19fb28e2962cbfa49",
+    "model": "gpt-6-luna",
+    "created_at": 1795574605.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2883,
+      "input_tokens_details": {
+        "cache_write_tokens": 2880,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2880
+        }
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 178
+      },
+      "total_tokens": 3212
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An art review of Edward Hopper and his paintings\",\n  \"climate_relevance\": \"Climate change appears only in a final sentence about cricket farmers, apparently from an unrelated snippet rather than the main article.\",\n  \"reason\": \"The identifiable main article discusses Hopper, his artistic style, and his influence. The sole climate reference is confined to an appended, unrelated sentence and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:43:28Z",
+  "duration_seconds": 2.928,
+  "error": null
+}

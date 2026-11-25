@@ -1,0 +1,77 @@
+{
+  "article_id": "23428456",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_02/au/23428456.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_02/au/23428456.json"
+  },
+  "manifest_row": {
+    "article_id": "23428456",
+    "group": "2018_02",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_02/au/23428456.txt",
+    "now_field_2": "373",
+    "date_original": "18-02-28",
+    "date_iso": "2018-02-28",
+    "source_name": "Yahoo7 News",
+    "url": "https://au.news.yahoo.com/a/39354442/chevron-board-member-tweet-implies-support-for-renewable-technologies/",
+    "title": "Chevron board member tweet implies support for renewable ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-02.txt\"]",
+    "metadata_article_files": "[\"text-18-02/text_18-02-AU.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "The future of the oil industry amid the growth of renewable energy",
+    "climate_relevance": "The article discusses pressure on oil producers to invest in renewables and mentions climate change policies as a potential threat to the industry, but climate change itself is not its main focus.",
+    "reason": "The report is primarily about a Chevron board member's tweet and debate over the oil industry's future. Its discussion of renewables and climate-policy pressures provides meaningful climate-related context, but not enough to make it core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8d6c2f298c1858aabb159d70d1b3dad68ce2199c9155be9e6aef1fdabc0754c9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "94f8db0591a9fe0659efb903e92b41a3ee98dd944ef1b3e8df533f57f467f275",
+    "raw_response_text_sha256": "a87e9e1c76c38ec7a3490b40c24ac0235b4006acc1bbe6bf574dd18be1c72c99"
+  },
+  "api_metadata": {
+    "id": "resp_031854807ad4c2c5006b061138efc087d2bb7bf77512a8c7e5",
+    "model": "gpt-6-luna",
+    "created_at": 1795559737.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 951,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 1258
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The future of the oil industry amid the growth of renewable energy\",\n  \"climate_relevance\": \"The article discusses pressure on oil producers to invest in renewables and mentions climate change policies as a potential threat to the industry, but climate change itself is not its main focus.\",\n  \"reason\": \"The report is primarily about a Chevron board member's tweet and debate over the oil industry's future. Its discussion of renewables and climate-policy pressures provides meaningful climate-related context, but not enough to make it core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:35:39Z",
+  "duration_seconds": 2.283,
+  "error": null
+}

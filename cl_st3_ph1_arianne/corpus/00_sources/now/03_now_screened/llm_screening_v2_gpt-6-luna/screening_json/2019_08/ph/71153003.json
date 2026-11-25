@@ -1,0 +1,77 @@
+{
+  "article_id": "71153003",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/ph/71153003.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/ph/71153003.json"
+  },
+  "manifest_row": {
+    "article_id": "71153003",
+    "group": "2019_08",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/ph/71153003.txt",
+    "now_field_2": "540",
+    "date_original": "19-08-25",
+    "date_iso": "2019-08-25",
+    "source_name": "pia.gov.ph",
+    "url": "https://pia.gov.ph/news/articles/1026332",
+    "title": "Farmers graduate from SOA chicken production | Philippine ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-ph.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "Farmer training in free-range chicken production in Eastern Samar",
+    "climate_relevance": "The article notes that the training covered effects of climate change and their possible implications for livestock production.",
+    "reason": "The main focus is an agricultural training program, but climate change is meaningfully connected to livestock production, making it relevant as background discourse rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f5a2d1ab55b77974baed3dcf7b145b6d138bdbc0b5e397a183dbe40491f1c769",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "429a0fdf7547009ff77a48bc314fcaf2485ce79869b1caa42a6b3a7c3d0d58cc",
+    "raw_response_text_sha256": "343462377bd639527467dce6ccdcfebc2c1932a931e78f09a57090b172fb454a"
+  },
+  "api_metadata": {
+    "id": "resp_0720e85718f482c0006b06402241b487d1bae4800a399d3966",
+    "model": "gpt-6-luna",
+    "created_at": 1795571746.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1255,
+      "input_tokens_details": {
+        "cache_write_tokens": 1252,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1252
+        }
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1460
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Farmer training in free-range chicken production in Eastern Samar\",\n  \"climate_relevance\": \"The article notes that the training covered effects of climate change and their possible implications for livestock production.\",\n  \"reason\": \"The main focus is an agricultural training program, but climate change is meaningfully connected to livestock production, making it relevant as background discourse rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:55:48Z",
+  "duration_seconds": 2.201,
+  "error": null
+}

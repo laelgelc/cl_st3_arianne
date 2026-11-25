@@ -1,0 +1,77 @@
+{
+  "article_id": "41115716",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/my/41115716.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/my/41115716.json"
+  },
+  "manifest_row": {
+    "article_id": "41115716",
+    "group": "2019_06",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/my/41115716.txt",
+    "now_field_2": "261",
+    "date_original": "19-06-28",
+    "date_iso": "2019-06-28",
+    "source_name": "The Star Online",
+    "url": "https://www.thestar.com.my/news/nation/2019/06/29/victims-plagued-by-anxiety-attacks/",
+    "title": "Victims plagued by anxiety attacks",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Chemical pollution in Pasir Gudang and its effects on students",
+    "climate_relevance": "Climate change appears only in the title of a minister; the text contains no substantive climate-related discussion.",
+    "reason": "The article focuses on chemical pollution incidents, health effects, and school closures. The climate reference is incidental to an official's title.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1c455d4318fb3aa010e93a333c666e8d182839d7eee2df04b1149be48afca459",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8abea9a729b20b4f5d7137a0e02116bfedc8a2d417a63bbc96401af83df1ae25",
+    "raw_response_text_sha256": "a78a0e94a3dd1d58c708c841f7fd204e59f184a805ab03bd406b67967a3395e9"
+  },
+  "api_metadata": {
+    "id": "resp_0d96d04893115e54006b0620f526b087d28abdbc18a0550ec4",
+    "model": "gpt-6-luna",
+    "created_at": 1795563765.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 838,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 179,
+      "output_tokens_details": {
+        "reasoning_tokens": 41
+      },
+      "total_tokens": 1017
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Chemical pollution in Pasir Gudang and its effects on students\",\n  \"climate_relevance\": \"Climate change appears only in the title of a minister; the text contains no substantive climate-related discussion.\",\n  \"reason\": \"The article focuses on chemical pollution incidents, health effects, and school closures. The climate reference is incidental to an official's title.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:42:46Z",
+  "duration_seconds": 1.71,
+  "error": null
+}

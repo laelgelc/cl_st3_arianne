@@ -1,0 +1,77 @@
+{
+  "article_id": "42246987",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/gb/42246987.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/gb/42246987.json"
+  },
+  "manifest_row": {
+    "article_id": "42246987",
+    "group": "2020_09",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/gb/42246987.txt",
+    "now_field_2": "541",
+    "date_original": "20-09-04",
+    "date_iso": "2020-09-04",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/transport-secretary-grant-shapps-interview-on-sky-news-1-6821883",
+    "title": "Grant Shapps squirms over questions about his private jet ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Transport Secretary Grant Shapps's private jet registration and compliance with aviation rules",
+    "climate_relevance": "Climate change appears only in promotional boilerplate describing the publication's coverage; the article contains no meaningful climate discourse.",
+    "reason": "The identifiable main article concerns aircraft registration and aviation regulation. The climate reference is incidental publication metadata, not part of the article's substantive discussion.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c710d166afaee6dce86ec1988b6380a60a0029095c2c9664b24cede5a1e2e314",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ad749b455ddbf6ded7efcdd0ea6a1b233206ce98a5b50272a3408a2ef802c800",
+    "raw_response_text_sha256": "4cb81535cdbefa656432e41fee8085df431bf775fbe9c5bbf88567a71a6d3065"
+  },
+  "api_metadata": {
+    "id": "resp_0ac165ed2e9c2e12006b0625496e1087d2b338732eaf8c9ed2",
+    "model": "gpt-6-luna",
+    "created_at": 1795564873.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1178,
+      "input_tokens_details": {
+        "cache_write_tokens": 1175,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1175
+        }
+      },
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 1412
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Transport Secretary Grant Shapps's private jet registration and compliance with aviation rules\",\n  \"climate_relevance\": \"Climate change appears only in promotional boilerplate describing the publication's coverage; the article contains no meaningful climate discourse.\",\n  \"reason\": \"The identifiable main article concerns aircraft registration and aviation regulation. The climate reference is incidental publication metadata, not part of the article's substantive discussion.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:01:15Z",
+  "duration_seconds": 2.185,
+  "error": null
+}

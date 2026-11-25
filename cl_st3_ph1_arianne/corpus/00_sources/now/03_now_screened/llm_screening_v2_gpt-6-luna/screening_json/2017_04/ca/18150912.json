@@ -1,0 +1,77 @@
+{
+  "article_id": "18150912",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/ca/18150912.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/ca/18150912.json"
+  },
+  "manifest_row": {
+    "article_id": "18150912",
+    "group": "2017_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/ca/18150912.txt",
+    "now_field_2": "916",
+    "date_original": "17-04-27",
+    "date_iso": "2017-04-27",
+    "source_name": "Raise the Hammer",
+    "url": "http://www.raisethehammer.org/article/3311/lrt_environmental_project_report_answers_a_lot_of_councils_questions",
+    "title": "LRT Environmental Project Report Answers a Lot of Council's ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Hamilton's Light Rail Transit project and the approval of its Environmental Project Report addendum",
+    "climate_relevance": "The text mentions the Ministry of the Environment and Climate Change by name and refers generally to environmental effects and benefits, but contains no meaningful discussion of climate change.",
+    "reason": "The article focuses on the LRT project's environmental assessment, contractual obligations, and local political and economic arguments. Climate change appears only in the name of a ministry.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6108e7348b546e9055599047158c2de6e285d4e204dd695bb5608c447cce9f12",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dd401141cb10d75a6aaa5118cd53a249efa34cb572305f95942ac61ae5ea45fc",
+    "raw_response_text_sha256": "88b8b9f9404b3ee26a3cc525a8659b5023a1b7f5e8319138e60d1dcde07bd55c"
+  },
+  "api_metadata": {
+    "id": "resp_0ad154d0bf3475e6006b0609d899d487d2aef3866cd7ec5bae",
+    "model": "gpt-6-luna",
+    "created_at": 1795557848.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1728,
+      "input_tokens_details": {
+        "cache_write_tokens": 1725,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1725
+        }
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1954
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Hamilton's Light Rail Transit project and the approval of its Environmental Project Report addendum\",\n  \"climate_relevance\": \"The text mentions the Ministry of the Environment and Climate Change by name and refers generally to environmental effects and benefits, but contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on the LRT project's environmental assessment, contractual obligations, and local political and economic arguments. Climate change appears only in the name of a ministry.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:04:10Z",
+  "duration_seconds": 1.971,
+  "error": null
+}

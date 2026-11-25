@@ -1,0 +1,77 @@
+{
+  "article_id": "42046514",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/gb/42046514.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/gb/42046514.json"
+  },
+  "manifest_row": {
+    "article_id": "42046514",
+    "group": "2020_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/gb/42046514.txt",
+    "now_field_2": "467",
+    "date_original": "20-06-12",
+    "date_iso": "2020-06-12",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/michael-gove-confirms-no-brexit-extension-with-eu-1-6697699",
+    "title": "Britain gives EU 'formal notice' over not seeking a Brexit ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The UK government's decision not to extend the Brexit transition period",
+    "climate_relevance": "Climate change appears only in repeated publication-description boilerplate, not in the article's substantive reporting.",
+    "reason": "The article is about Brexit negotiations and the transition period. Its only references to climate change occur in promotional descriptions of the publication's coverage, so they do not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4ba9954583719b8ff08453c8312ca65b98886307b39cfe510c5baae7a733d453",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "77b474661c24601b493ed8eb3745d0d91b62c84ab0d8cb2bbc60f8e93e63c8f0",
+    "raw_response_text_sha256": "6addfc72d5ad1325ff618dbb63909f0014e6bdc2e90b85a954e412ee683357b9"
+  },
+  "api_metadata": {
+    "id": "resp_0fc7045be128dc58006b06242e69e087d2a4ad90761eb6bcab",
+    "model": "gpt-6-luna",
+    "created_at": 1795564590.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1075,
+      "input_tokens_details": {
+        "cache_write_tokens": 1072,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1072
+        }
+      },
+      "output_tokens": 224,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 1299
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The UK government's decision not to extend the Brexit transition period\",\n  \"climate_relevance\": \"Climate change appears only in repeated publication-description boilerplate, not in the article's substantive reporting.\",\n  \"reason\": \"The article is about Brexit negotiations and the transition period. Its only references to climate change occur in promotional descriptions of the publication's coverage, so they do not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:56:32Z",
+  "duration_seconds": 1.993,
+  "error": null
+}

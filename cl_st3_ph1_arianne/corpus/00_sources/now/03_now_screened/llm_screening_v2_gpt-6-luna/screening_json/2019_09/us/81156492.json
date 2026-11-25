@@ -1,0 +1,77 @@
+{
+  "article_id": "81156492",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/81156492.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/81156492.json"
+  },
+  "manifest_row": {
+    "article_id": "81156492",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/81156492.txt",
+    "now_field_2": "281",
+    "date_original": "19-09-18",
+    "date_iso": "2019-09-18",
+    "source_name": "Statesman Journal",
+    "url": "https://www.statesmanjournal.com/story/news/2019/09/18/marion-county-trash-burned-covanta-least-another-year-brooks-salem-oregon-renewable-energy/2363424001/",
+    "title": "Marion County trash will be burned at Covanta incinerator for at least another year",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us5.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A contract extension and renewable-energy-credit eligibility for the Covanta Marion waste incinerator.",
+    "climate_relevance": "The text reports opponents' claim that landfilling the waste would produce fewer greenhouse gas emissions, explicitly linking those emissions to climate change.",
+    "reason": "The identifiable main article focuses on the incinerator, its eligibility for renewable energy credits, and local environmental concerns. Climate change is meaningfully mentioned in the emissions debate but is not the central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "26767121901c453ea1473287fcca815047a929f6408f3ad6d5c540231e8139b2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bb9b1daca7361ba898ff1b3ec184e09c866f2ead2b67fd2321e077e56c98b8c3",
+    "raw_response_text_sha256": "a7191874f60780fb381591c842d97b5f8f0f42b10cd0d98f604f0e6306f820a5"
+  },
+  "api_metadata": {
+    "id": "resp_0eede070ff7340a2006b0646f5ccec87d1bbc68af422ac74a3",
+    "model": "gpt-6-luna",
+    "created_at": 1795573494.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1116,
+      "input_tokens_details": {
+        "cache_write_tokens": 1113,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1113
+        }
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 1369
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A contract extension and renewable-energy-credit eligibility for the Covanta Marion waste incinerator.\",\n  \"climate_relevance\": \"The text reports opponents' claim that landfilling the waste would produce fewer greenhouse gas emissions, explicitly linking those emissions to climate change.\",\n  \"reason\": \"The identifiable main article focuses on the incinerator, its eligibility for renewable energy credits, and local environmental concerns. Climate change is meaningfully mentioned in the emissions debate but is not the central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:24:56Z",
+  "duration_seconds": 2.461,
+  "error": null
+}

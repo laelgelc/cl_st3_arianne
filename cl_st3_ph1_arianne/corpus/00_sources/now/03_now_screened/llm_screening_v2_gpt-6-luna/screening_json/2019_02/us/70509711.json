@@ -1,0 +1,77 @@
+{
+  "article_id": "70509711",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/us/70509711.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/us/70509711.json"
+  },
+  "manifest_row": {
+    "article_id": "70509711",
+    "group": "2019_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/us/70509711.txt",
+    "now_field_2": "1054",
+    "date_original": "19-02-13",
+    "date_iso": "2019-02-13",
+    "source_name": "The Guardian",
+    "url": "https://www.theguardian.com/commentisfree/2019/feb/13/ilhan-omar-is-right-about-the-influence-of-the-israel-lobby",
+    "title": "Ilhan Omar is right about the influence of the Israel lobby",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "The text combines an opinion piece about Ilhan Omar, antisemitism, and pro-Israel lobbying with a report on the politics of high-speed rail in the United States.",
+    "climate_relevance": "The high-speed-rail report mentions the Green New Deal as a plan to address climate change and income inequality, and discusses rail as part of that plan. Climate change is not the main focus.",
+    "reason": "The first article has no meaningful climate content. The second is mainly about high-speed rail but includes a substantive reference to climate policy through the Green New Deal, making the text peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "236d80df0ad96bd9c5c60005921f7a88b1767ef9ba03ef4d6262ba3ad5f4dc34",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5fec0ea479687a70c693b8ddcf48721af722d7a3c5cb95e2bcfc915a5c311702",
+    "raw_response_text_sha256": "14b135e889519b84cd0c4fb272e3267bd911653ceecdb02cb5954e7bc5daa13c"
+  },
+  "api_metadata": {
+    "id": "resp_0fc75e572b052097006b063d1c327887d1b80af4681845b1b2",
+    "model": "gpt-6-luna",
+    "created_at": 1795570972.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2928,
+      "input_tokens_details": {
+        "cache_write_tokens": 2925,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2925
+        }
+      },
+      "output_tokens": 431,
+      "output_tokens_details": {
+        "reasoning_tokens": 243
+      },
+      "total_tokens": 3359
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The text combines an opinion piece about Ilhan Omar, antisemitism, and pro-Israel lobbying with a report on the politics of high-speed rail in the United States.\",\n  \"climate_relevance\": \"The high-speed-rail report mentions the Green New Deal as a plan to address climate change and income inequality, and discusses rail as part of that plan. Climate change is not the main focus.\",\n  \"reason\": \"The first article has no meaningful climate content. The second is mainly about high-speed rail but includes a substantive reference to climate policy through the Green New Deal, making the text peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:55Z",
+  "duration_seconds": 3.668,
+  "error": null
+}

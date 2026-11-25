@@ -1,0 +1,77 @@
+{
+  "article_id": "21608431",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/au/21608431.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/au/21608431.json"
+  },
+  "manifest_row": {
+    "article_id": "21608431",
+    "group": "2017_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/au/21608431.txt",
+    "now_field_2": "690",
+    "date_original": "17-11-10",
+    "date_iso": "2017-11-10",
+    "source_name": "Riverine Herald",
+    "url": "http://www.riverineherald.com.au/2017/11/11/10904/two-hospitalised-after-plane-crashes",
+    "title": "Two hospitalised after plane crashes",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A collection of local news items, including an aircraft crash, hospital development, horse racing, and water allocations.",
+    "climate_relevance": "Climate change appears only in the title of a government minister. The references to water repayments and drought conditions do not meaningfully discuss climate change or connect these issues to it.",
+    "reason": "The available text contains no substantive climate discourse; its climate reference is part of an official title, while the drought mention is not framed in relation to climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c674c7de2d0d61e4577b31a8d05b23883073995afa605e668a9a40fbedd992b0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e12dc6beb305b4a71c9c1769902bcf8e352b9fa1070b15b4e84dabd91ca990aa",
+    "raw_response_text_sha256": "f611f47a9676dfe509f079190c960d2916af80850ff5bd4cd96a947413ef206b"
+  },
+  "api_metadata": {
+    "id": "resp_03a93cf0f35d9c5b006b060f1bc92487d2a584ce925d6d41aa",
+    "model": "gpt-6-luna",
+    "created_at": 1795559195.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1429,
+      "input_tokens_details": {
+        "cache_write_tokens": 1426,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1426
+        }
+      },
+      "output_tokens": 411,
+      "output_tokens_details": {
+        "reasoning_tokens": 244
+      },
+      "total_tokens": 1840
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A collection of local news items, including an aircraft crash, hospital development, horse racing, and water allocations.\",\n  \"climate_relevance\": \"Climate change appears only in the title of a government minister. The references to water repayments and drought conditions do not meaningfully discuss climate change or connect these issues to it.\",\n  \"reason\": \"The available text contains no substantive climate discourse; its climate reference is part of an official title, while the drought mention is not framed in relation to climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:26:39Z",
+  "duration_seconds": 3.768,
+  "error": null
+}

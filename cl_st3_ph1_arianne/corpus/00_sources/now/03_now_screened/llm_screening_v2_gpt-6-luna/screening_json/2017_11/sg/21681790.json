@@ -1,0 +1,77 @@
+{
+  "article_id": "21681790",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/sg/21681790.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/sg/21681790.json"
+  },
+  "manifest_row": {
+    "article_id": "21681790",
+    "group": "2017_11",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/sg/21681790.txt",
+    "now_field_2": "323",
+    "date_original": "17-11-14",
+    "date_iso": "2017-11-14",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/halle-berry-51-glows-gets-lost-dreamy-india-trip-grateful-034712204.html",
+    "title": "Halle Berry, 51, glows, gets 'lost' during dreamy India trip: 'So ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-SG.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Halle Berry's vacation in India",
+    "climate_relevance": "Climate change is briefly listed as one of several topics discussed during a meeting, with no further detail.",
+    "reason": "The article is celebrity travel coverage, and its sole climate-change reference is a passing mention that does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a6952148c4d655b2e2a15b408e38c4955026a82d820cc4bee09ffd0dc2a0bf2f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "69d5539dbc841292cacd090719fd405dbd8670f66ad17d5054d61ddc3178d75a",
+    "raw_response_text_sha256": "f78dbff7f862f333fdc225e5620505b80e5b2073647f68d978d341ab465979c1"
+  },
+  "api_metadata": {
+    "id": "resp_097dca414eded250006b060f3d1e0887d2aa870019d6c82029",
+    "model": "gpt-6-luna",
+    "created_at": 1795559229.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 917,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 211,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 1128
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Halle Berry's vacation in India\",\n  \"climate_relevance\": \"Climate change is briefly listed as one of several topics discussed during a meeting, with no further detail.\",\n  \"reason\": \"The article is celebrity travel coverage, and its sole climate-change reference is a passing mention that does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:27:10Z",
+  "duration_seconds": 1.812,
+  "error": null
+}

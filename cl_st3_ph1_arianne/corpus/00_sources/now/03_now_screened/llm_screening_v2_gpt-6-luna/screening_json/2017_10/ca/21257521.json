@@ -1,0 +1,77 @@
+{
+  "article_id": "21257521",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/ca/21257521.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/ca/21257521.json"
+  },
+  "manifest_row": {
+    "article_id": "21257521",
+    "group": "2017_10",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/ca/21257521.txt",
+    "now_field_2": "572",
+    "date_original": "17-10-23",
+    "date_iso": "2017-10-23",
+    "source_name": "Insurance Business",
+    "url": "http://www.insurancebusinessmag.com/ca/news/breaking-news/university-professor-says-climate-change-helped-aggravate-wildfires-82624.aspx",
+    "title": "University professor says climate change helped aggravate wildfires",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-CA.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "climate_role": "substantial",
+    "main_topic": "Climate change and the severity of wildfires",
+    "climate_relevance": "The article discusses how warming and related conditions can worsen wildfire activity, alongside wildfire impacts and insurers’ concerns about severe weather.",
+    "reason": "Climate change is a central part of the article’s explanation of worsening wildfire conditions, supported by discussion of warmer temperatures, drier fuels, lightning, and observed fire activity. An unrelated industry-news snippet appears at the end.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e43a93b1393bb2300be08ff39b5f93cc79b414d9eb6e31c37be0f5707a9d7af8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "753fbe99be85f78c7296e38de70ac8b23e5dac716955fc1c17b9c05ab58b4f03",
+    "raw_response_text_sha256": "5fb0e9d4710506a3ded43e4fdb9d42019695c4463a1d0420300f3c3987eac066"
+  },
+  "api_metadata": {
+    "id": "resp_0d9c65a732abfb31006b060e7e553087d2817973eb1fb14c83",
+    "model": "gpt-6-luna",
+    "created_at": 1795559038.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1241,
+      "input_tokens_details": {
+        "cache_write_tokens": 1238,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1238
+        }
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1461
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Climate change and the severity of wildfires\",\n  \"climate_relevance\": \"The article discusses how warming and related conditions can worsen wildfire activity, alongside wildfire impacts and insurers’ concerns about severe weather.\",\n  \"reason\": \"Climate change is a central part of the article’s explanation of worsening wildfire conditions, supported by discussion of warmer temperatures, drier fuels, lightning, and observed fire activity. An unrelated industry-news snippet appears at the end.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:24:00Z",
+  "duration_seconds": 2.108,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "42114863",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/gb/42114863.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/gb/42114863.json"
+  },
+  "manifest_row": {
+    "article_id": "42114863",
+    "group": "2020_07",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/gb/42114863.txt",
+    "now_field_2": "2360",
+    "date_original": "20-07-13",
+    "date_iso": "2020-07-13",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/exclusive-layla-moran-liberal-democrat-leadership-interview-1-6736508",
+    "title": "`I do not want us to be on the left of Labour' - Layla ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Layla Moran's Liberal Democrat leadership campaign, party strategy, and Brexit",
+    "climate_relevance": "Climate change appears only in repeated publication-support boilerplate; the article's discussion of the environment does not develop climate-related content.",
+    "reason": "The article is a political leadership interview. It contains no meaningful discourse about climate change; its only explicit mention is in boilerplate describing the publication's coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "eae487e6302c7bfb57b6c503b963968272058d9329a66a3c6317d610be792274",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a028834c248b0ae381f3c0505ae0fa46682b5614da38cef7df44e22332ba178f",
+    "raw_response_text_sha256": "ad01e673ca25655be1977f9eb043d55396f75dfb45258ec4929824b6813868ea"
+  },
+  "api_metadata": {
+    "id": "resp_00db4f25ded912ad006b062492f6a887d2953431552bfa7c05",
+    "model": "gpt-6-luna",
+    "created_at": 1795564691.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3520,
+      "input_tokens_details": {
+        "cache_write_tokens": 3517,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3517
+        }
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 3751
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Layla Moran's Liberal Democrat leadership campaign, party strategy, and Brexit\",\n  \"climate_relevance\": \"Climate change appears only in repeated publication-support boilerplate; the article's discussion of the environment does not develop climate-related content.\",\n  \"reason\": \"The article is a political leadership interview. It contains no meaningful discourse about climate change; its only explicit mention is in boilerplate describing the publication's coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:58:13Z",
+  "duration_seconds": 2.155,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "51912717",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/ca/51912717.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/ca/51912717.json"
+  },
+  "manifest_row": {
+    "article_id": "51912717",
+    "group": "2020_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/ca/51912717.txt",
+    "now_field_2": "827",
+    "date_original": "20-08-26",
+    "date_iso": "2020-08-26",
+    "source_name": "intelligencer.ca",
+    "url": "https://www.intelligencer.ca/executive/posthaste-the-canadian-dream-could-be-on-hold-for-longer-than-we-thought/wcm/376149a1-9c46-4b02-9358-f8224399bbbc",
+    "title": "Posthaste: The Canadian Dream could be on hold for longer ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The economic effects of COVID-19-related immigration declines in Canada",
+    "climate_relevance": "A separate newsletter item briefly discusses Greta Thunberg’s petition calling for an end to EU investment in fossil-fuel exploration and extraction.",
+    "reason": "The identifiable main article concerns immigration and the Canadian economy. Climate discourse appears only in a distinct, unrelated newsletter snippet, so it is not a meaningful part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "da8b9679965dcb9b8337e66091bf27b5d6501de12cf165d7c6cea8b78ad51b5d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d1c421b213da276aaee5b253ad786ac67fddecedb137a205bafea45372734041",
+    "raw_response_text_sha256": "d9bfcff7827283254fc669c26c17a87655d4ad854fde891f0608cf1a0e50329b"
+  },
+  "api_metadata": {
+    "id": "resp_0c5317c56f076149006b062f3572e887d1958d382bea446085",
+    "model": "gpt-6-luna",
+    "created_at": 1795567413.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1576,
+      "input_tokens_details": {
+        "cache_write_tokens": 1573,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1573
+        }
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 201
+      },
+      "total_tokens": 1931
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The economic effects of COVID-19-related immigration declines in Canada\",\n  \"climate_relevance\": \"A separate newsletter item briefly discusses Greta Thunberg’s petition calling for an end to EU investment in fossil-fuel exploration and extraction.\",\n  \"reason\": \"The identifiable main article concerns immigration and the Canadian economy. Climate discourse appears only in a distinct, unrelated newsletter snippet, so it is not a meaningful part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:43:36Z",
+  "duration_seconds": 2.944,
+  "error": null
+}

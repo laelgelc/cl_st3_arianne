@@ -1,0 +1,77 @@
+{
+  "article_id": "40188821",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/sg/40188821.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/sg/40188821.json"
+  },
+  "manifest_row": {
+    "article_id": "40188821",
+    "group": "2018_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/sg/40188821.txt",
+    "now_field_2": "337",
+    "date_original": "18-10-24",
+    "date_iso": "2018-10-24",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/meghan-markles-royal-fiji-visit-cut-short-security-risk-075653263.html",
+    "title": "Meghan Markle's royal Fiji visit cut short over 'security risk'",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "The Duchess of Sussex's visit to Fiji, including her remarks on education and tour schedule.",
+    "climate_relevance": "Climate change is mentioned only as the subject of a cultural performance the couple watched; no climate-related ideas or implications are discussed.",
+    "reason": "The article is primarily about the royal tour and education. The single climate reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fdbbbab4402f463b3947d982eab6931f36284538504c627c436d1e5afb3b675e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2cdd0e4c5fa010e94f7407089030488eb597a2776c5948a6a9f88f2bae388d40",
+    "raw_response_text_sha256": "91d9a3b4d1a620b33cd51032f3444cc161846da2d5d9944a1aa9a3f2a12351c9"
+  },
+  "api_metadata": {
+    "id": "resp_099ce24b432171cf006b061e76b22887d2af6496c40a9050d4",
+    "model": "gpt-6-luna",
+    "created_at": 1795563126.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 904,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 1164
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The Duchess of Sussex's visit to Fiji, including her remarks on education and tour schedule.\",\n  \"climate_relevance\": \"Climate change is mentioned only as the subject of a cultural performance the couple watched; no climate-related ideas or implications are discussed.\",\n  \"reason\": \"The article is primarily about the royal tour and education. The single climate reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:32:09Z",
+  "duration_seconds": 2.389,
+  "error": null
+}

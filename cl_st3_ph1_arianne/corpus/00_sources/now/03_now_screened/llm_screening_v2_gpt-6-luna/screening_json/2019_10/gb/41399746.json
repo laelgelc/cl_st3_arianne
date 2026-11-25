@@ -1,0 +1,77 @@
+{
+  "article_id": "41399746",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/gb/41399746.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/gb/41399746.json"
+  },
+  "manifest_row": {
+    "article_id": "41399746",
+    "group": "2019_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/gb/41399746.txt",
+    "now_field_2": "719",
+    "date_original": "19-10-08",
+    "date_iso": "2019-10-08",
+    "source_name": "inews.co.uk",
+    "url": "https://inews.co.uk/sport/rugby-union/billy-vunipola-injury-england-team-news-rugby-world-cup-2019-france-648926",
+    "title": "England are beginning to feel the effects of taking only ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "England rugby team selection and Billy Vunipola's injury ahead of a World Cup match",
+    "climate_relevance": "The identifiable main article is about rugby and contains no meaningful climate discussion. A separate, substantial extract about climate protests appears later in the text.",
+    "reason": "The main article concerns England's rugby squad. The climate-related material is a distinct, apparently concatenated news extract rather than part of that article, so it does not make the identifiable main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "afbea77f9ca7e790bb27c7c856902ae81630b6d5e4831a5fa0248215729098b4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a75c55d9eb7acf16ba4449260f6624ded4e1d5dba191ddacc4c0de68a5a54fa9",
+    "raw_response_text_sha256": "c61360854464bab7f87cc43879f5742ba9f2c55c6a01eedc6610d206a5b07efe"
+  },
+  "api_metadata": {
+    "id": "resp_0c595c53d3722966006b062191e23c87d29a81d0bc6294232f",
+    "model": "gpt-6-luna",
+    "created_at": 1795563922.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2157,
+      "input_tokens_details": {
+        "cache_write_tokens": 2154,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2154
+        }
+      },
+      "output_tokens": 497,
+      "output_tokens_details": {
+        "reasoning_tokens": 327
+      },
+      "total_tokens": 2654
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"England rugby team selection and Billy Vunipola's injury ahead of a World Cup match\",\n  \"climate_relevance\": \"The identifiable main article is about rugby and contains no meaningful climate discussion. A separate, substantial extract about climate protests appears later in the text.\",\n  \"reason\": \"The main article concerns England's rugby squad. The climate-related material is a distinct, apparently concatenated news extract rather than part of that article, so it does not make the identifiable main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:45:25Z",
+  "duration_seconds": 3.705,
+  "error": null
+}

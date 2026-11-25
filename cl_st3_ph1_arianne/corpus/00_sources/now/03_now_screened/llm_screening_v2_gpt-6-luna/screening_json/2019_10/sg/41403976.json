@@ -1,0 +1,77 @@
+{
+  "article_id": "41403976",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/sg/41403976.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/sg/41403976.json"
+  },
+  "manifest_row": {
+    "article_id": "41403976",
+    "group": "2019_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/sg/41403976.txt",
+    "now_field_2": "1242",
+    "date_original": "19-10-10",
+    "date_iso": "2019-10-10",
+    "source_name": "asianews.network",
+    "url": "https://asianews.network/2019/07/03/mumbai-virtually-crippled-as-continuous-rains-break-45-year-old-record/",
+    "title": "Mumbai crippled as rains break 45 year old record - ANN",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Fatal flooding and disruption caused by heavy rainfall in Mumbai",
+    "climate_relevance": "The identifiable main article reports rain-related deaths, flooding, and transport disruption but does not connect these events to climate change. Other appended snippets discuss climate change and sea-level rise, but appear unrelated to the main article.",
+    "reason": "The main article is about extreme rainfall impacts without meaningful climate-change discourse. The climate-related material occurs in separate, apparently appended snippets and should not make the main article core or peripheral climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8194967e27c1d5b83b34aebf4f5b16402c49298b1d30d869c04525a4286b64f1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ad4510a351aa353a7501f0778ef10f12aa4d72239435a3e47f93e8278091af2e",
+    "raw_response_text_sha256": "8f03137c20c116dc02c429201389acf1a42a60bc67f3272b825f02e8f8f05306"
+  },
+  "api_metadata": {
+    "id": "resp_04122323fc1b6efb006b062199d3a087d2b948a94d9f155a8f",
+    "model": "gpt-6-luna",
+    "created_at": 1795563929.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4361,
+      "input_tokens_details": {
+        "cache_write_tokens": 4358,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4358
+        }
+      },
+      "output_tokens": 428,
+      "output_tokens_details": {
+        "reasoning_tokens": 257
+      },
+      "total_tokens": 4789
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Fatal flooding and disruption caused by heavy rainfall in Mumbai\",\n  \"climate_relevance\": \"The identifiable main article reports rain-related deaths, flooding, and transport disruption but does not connect these events to climate change. Other appended snippets discuss climate change and sea-level rise, but appear unrelated to the main article.\",\n  \"reason\": \"The main article is about extreme rainfall impacts without meaningful climate-change discourse. The climate-related material occurs in separate, apparently appended snippets and should not make the main article core or peripheral climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:45:33Z",
+  "duration_seconds": 3.405,
+  "error": null
+}

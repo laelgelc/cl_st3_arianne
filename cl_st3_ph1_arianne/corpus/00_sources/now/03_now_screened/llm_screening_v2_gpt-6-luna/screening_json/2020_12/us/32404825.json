@@ -1,0 +1,77 @@
+{
+  "article_id": "32404825",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/32404825.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/32404825.json"
+  },
+  "manifest_row": {
+    "article_id": "32404825",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/32404825.txt",
+    "now_field_2": "688",
+    "date_original": "20-12-08",
+    "date_iso": "2020-12-08",
+    "source_name": "registerguard.com",
+    "url": "https://www.registerguard.com/story/opinion/letters/2020/12/08/letters-editor-tuesday-dec-8/6478020002/",
+    "title": "Letters to the editor for Tuesday Dec. 8",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "A compilation of letters to the editor about military spending, local businesses, COVID-19 restrictions, and political divisions.",
+    "climate_relevance": "Climate change appears once as a brief example of a cause that might receive funding redirected from military spending.",
+    "reason": "The climate reference is incidental and not developed into meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d139cad831ed7b44c1d08ba473f3170462ffc4fab4ab3a7735501f052b0ee68b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bee253cd41e9db29f06d95074c79359f33eeb4e2fa3838ff4a3c36b616c98ef5",
+    "raw_response_text_sha256": "1bde195ed0a57cb03919738c0e22d0b49c3640c2d87dd68b3f79d7132677f787"
+  },
+  "api_metadata": {
+    "id": "resp_00091d8e5a7344e5006b061c83d5f087d2a69049f9f8e7e99f",
+    "model": "gpt-6-luna",
+    "created_at": 1795562627.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1382,
+      "input_tokens_details": {
+        "cache_write_tokens": 1379,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1379
+        }
+      },
+      "output_tokens": 295,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 1677
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A compilation of letters to the editor about military spending, local businesses, COVID-19 restrictions, and political divisions.\",\n  \"climate_relevance\": \"Climate change appears once as a brief example of a cause that might receive funding redirected from military spending.\",\n  \"reason\": \"The climate reference is incidental and not developed into meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:23:50Z",
+  "duration_seconds": 2.586,
+  "error": null
+}

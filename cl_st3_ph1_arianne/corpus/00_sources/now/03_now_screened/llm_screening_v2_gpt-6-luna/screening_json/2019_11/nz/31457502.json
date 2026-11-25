@@ -1,0 +1,77 @@
+{
+  "article_id": "31457502",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/nz/31457502.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/nz/31457502.json"
+  },
+  "manifest_row": {
+    "article_id": "31457502",
+    "group": "2019_11",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/nz/31457502.txt",
+    "now_field_2": "650",
+    "date_original": "19-11-25",
+    "date_iso": "2019-11-25",
+    "source_name": "scoop.co.nz",
+    "url": "https://www.scoop.co.nz/stories/PO1910/S00045/campaigner-welcomes-removal-of-racist-refugee-restrictions.htm",
+    "title": "Campaigner welcomes removal of racist refugee restrictions ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Removal of discriminatory refugee restrictions in New Zealand",
+    "climate_relevance": "Climate change appears only in a separate appended quote about the Climate Change Commission, unrelated to the main article.",
+    "reason": "The identifiable main article concerns refugee policy and contains no meaningful climate discourse. The climate-related sentence is an unrelated snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e21ba81954e65f600307d8e355f3d0b4a47cfad9dc3e41f682a62659529c9504",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3ff9e08df53b957fa5b5e7a41f0896357a324c45fe5ca5bdd1fbbad66b61d868",
+    "raw_response_text_sha256": "5e767e4c247d7116b26754505befc2f8c3d6d6a2cbb9a88be9b30be7b62137fa"
+  },
+  "api_metadata": {
+    "id": "resp_07dc480b621e8f32006b06176eb9a087d2979432096e586928",
+    "model": "gpt-6-luna",
+    "created_at": 1795561326.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1336,
+      "input_tokens_details": {
+        "cache_write_tokens": 1333,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1333
+        }
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 1578
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Removal of discriminatory refugee restrictions in New Zealand\",\n  \"climate_relevance\": \"Climate change appears only in a separate appended quote about the Climate Change Commission, unrelated to the main article.\",\n  \"reason\": \"The identifiable main article concerns refugee policy and contains no meaningful climate discourse. The climate-related sentence is an unrelated snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:02:09Z",
+  "duration_seconds": 2.576,
+  "error": null
+}

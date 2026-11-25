@@ -1,0 +1,77 @@
+{
+  "article_id": "70000828",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/nz/70000828.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/nz/70000828.json"
+  },
+  "manifest_row": {
+    "article_id": "70000828",
+    "group": "2018_09",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/nz/70000828.txt",
+    "now_field_2": "7235",
+    "date_original": "18-09-04",
+    "date_iso": "2018-09-04",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PA1809/S00049/parliament-questions-and-answers-september-5.htm",
+    "title": "Parliament: Questions and Answers - September 5",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "New Zealand parliamentary questions and answers on government policy",
+    "climate_relevance": "A brief exchange discusses whether agriculture may be brought into the emissions trading scheme and the potential costs to farmers, explicitly in relation to climate change.",
+    "reason": "The transcript is mainly about a range of parliamentary and government matters, but the agriculture exchange contains meaningful climate-policy discourse about emissions pricing and its possible effects on farms. This is relevant as peripheral climate discourse, not core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1ea1812f5a3d4c3f596d3a3431e49d299e5dc0808e49b8893caefe0b27f6ec66",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9a87099491e54016b0624cd7f91806cf3c30ff8c8a677cf7d5af1f58d48048a0",
+    "raw_response_text_sha256": "221a634172ce4afa9d749381a20ee3d894f4336ea89343fe9f32e5bc86c58fd4"
+  },
+  "api_metadata": {
+    "id": "resp_0085570cccb4821e006b063a73b1bc87d1baaf6fad0deb865a",
+    "model": "gpt-6-luna",
+    "created_at": 1795570291.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10208,
+      "input_tokens_details": {
+        "cache_write_tokens": 10205,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 10205
+        }
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 10469
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New Zealand parliamentary questions and answers on government policy\",\n  \"climate_relevance\": \"A brief exchange discusses whether agriculture may be brought into the emissions trading scheme and the potential costs to farmers, explicitly in relation to climate change.\",\n  \"reason\": \"The transcript is mainly about a range of parliamentary and government matters, but the agriculture exchange contains meaningful climate-policy discourse about emissions pricing and its possible effects on farms. This is relevant as peripheral climate discourse, not core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:31:34Z",
+  "duration_seconds": 2.912,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "13928036",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_08/ph/13928036.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_08/ph/13928036.json"
+  },
+  "manifest_row": {
+    "article_id": "13928036",
+    "group": "2016_08",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_08/ph/13928036.txt",
+    "now_field_2": "884",
+    "date_original": "16-08-19",
+    "date_iso": "2016-08-19",
+    "source_name": "Philippine Information Agency",
+    "url": "http://news.pia.gov.ph/article/view/1141471593803/feature-philhealth-board-member-cited-globally-as-a-filipina-of-distinction",
+    "title": "Feature: PhilHealth board member cited globally as a Filipina of ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-08-pcg/16-08-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Philippine health-sector leader receiving recognition as an influential Filipina",
+    "climate_relevance": "Climate change appears only in a separate 'Other News' snippet listing Philippine development priorities; it is not discussed in the main article.",
+    "reason": "The identifiable main article concerns a leadership award and contains no meaningful climate discourse. The only climate reference is in an unrelated news snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d6e48182d969268b52130092e927691980ad87f46da80fdb36c23ee83e98239b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "defff7d71306dc32c3c38103759022183b6338fb2bbf7b77a319cc7a3ddd7037",
+    "raw_response_text_sha256": "853bf71ceaa5a4ca7ea7a8fae12542475f8f4768f65e30392e3459b869bddbe8"
+  },
+  "api_metadata": {
+    "id": "resp_052e8228e014ea2f006b060559250487d2949be9eb334b1a73",
+    "model": "gpt-6-luna",
+    "created_at": 1795556697.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1706,
+      "input_tokens_details": {
+        "cache_write_tokens": 1703,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1703
+        }
+      },
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1914
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Philippine health-sector leader receiving recognition as an influential Filipina\",\n  \"climate_relevance\": \"Climate change appears only in a separate 'Other News' snippet listing Philippine development priorities; it is not discussed in the main article.\",\n  \"reason\": \"The identifiable main article concerns a leadership award and contains no meaningful climate discourse. The only climate reference is in an unrelated news snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:44:59Z",
+  "duration_seconds": 2.251,
+  "error": null
+}

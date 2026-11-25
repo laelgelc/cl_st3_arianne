@@ -1,0 +1,77 @@
+{
+  "article_id": "81750027",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81750027.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81750027.json"
+  },
+  "manifest_row": {
+    "article_id": "81750027",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81750027.txt",
+    "now_field_2": "2238",
+    "date_original": "19-10-22",
+    "date_iso": "2019-10-22",
+    "source_name": "thedailytimes.com",
+    "url": "https://www.thedailytimes.com/business/w-r-berkley-corporation-reports-third-quarter-results/article_fa48fc6f-feae-5683-a0d5-3d41a9ee3e13.html",
+    "title": "W. R. Berkley Corporation Reports Third Quarter Results",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "W. R. Berkley Corporation's quarterly financial performance and insurance business",
+    "climate_relevance": "Climate change appears only in a standard forward-looking risk disclosure, noting it may increase the frequency and severity of catastrophe events.",
+    "reason": "The text is primarily a financial report, and its sole climate reference is boilerplate within a broad list of business risks rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a73fbb04b23b6b17758ab71858a080ade20048e0a571c9f879e5fb363d746cde",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "94dbaf1c97cb5181162b509cd0657a786970cbbceae44df830ff0d70bacc98b2",
+    "raw_response_text_sha256": "599cd0c57f4b73c6619cad93b841f87be8ba1466d1b22a2fdc055abf6fd94c33"
+  },
+  "api_metadata": {
+    "id": "resp_00d37c35e9ac93ad006b0647a9477487d1b8f95755bf9aad59",
+    "model": "gpt-6-luna",
+    "created_at": 1795573673.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6627,
+      "input_tokens_details": {
+        "cache_write_tokens": 6624,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6624
+        }
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 6879
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"W. R. Berkley Corporation's quarterly financial performance and insurance business\",\n  \"climate_relevance\": \"Climate change appears only in a standard forward-looking risk disclosure, noting it may increase the frequency and severity of catastrophe events.\",\n  \"reason\": \"The text is primarily a financial report, and its sole climate reference is boilerplate within a broad list of business risks rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:27:55Z",
+  "duration_seconds": 2.273,
+  "error": null
+}

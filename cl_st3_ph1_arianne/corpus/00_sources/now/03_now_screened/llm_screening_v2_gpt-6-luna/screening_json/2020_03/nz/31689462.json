@@ -1,0 +1,77 @@
+{
+  "article_id": "31689462",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/nz/31689462.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/nz/31689462.json"
+  },
+  "manifest_row": {
+    "article_id": "31689462",
+    "group": "2020_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/nz/31689462.txt",
+    "now_field_2": "483",
+    "date_original": "20-03-05",
+    "date_iso": "2020-03-05",
+    "source_name": "noted.co.nz",
+    "url": "https://www.noted.co.nz/currently/currently-politics/pressure-weighs-in-on-jacinda-ardern-over-shane-jones-immigration-remarks",
+    "title": "Pressure weighs in on Jacinda Ardern over Shane Jones ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Political responses to Shane Jones's comments about immigration and race",
+    "climate_relevance": "Climate change appears only in James Shaw's ministerial title; the text contains no meaningful climate discourse.",
+    "reason": "The article concerns immigration, race, and political accountability. The climate reference is incidental identification of a minister.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e6237bbd58096dec3309673756b33abc0fc969d1eec37340f4d4bcc5a1c8b845",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "76eeb3a0bf190067958996d83aba9dc889ff22ad1b3e78a052fcd9be5946c08c",
+    "raw_response_text_sha256": "ec6574e67301604dba864416cdcacef509c6e4ab9b68a673d8146d769780a7ed"
+  },
+  "api_metadata": {
+    "id": "resp_0d4c3da7c39e694e006b0618f99d3887d28b33af6bb13659e5",
+    "model": "gpt-6-luna",
+    "created_at": 1795561721.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1109,
+      "input_tokens_details": {
+        "cache_write_tokens": 1106,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1106
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 1334
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Political responses to Shane Jones's comments about immigration and race\",\n  \"climate_relevance\": \"Climate change appears only in James Shaw's ministerial title; the text contains no meaningful climate discourse.\",\n  \"reason\": \"The article concerns immigration, race, and political accountability. The climate reference is incidental identification of a minister.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:08:43Z",
+  "duration_seconds": 2.075,
+  "error": null
+}

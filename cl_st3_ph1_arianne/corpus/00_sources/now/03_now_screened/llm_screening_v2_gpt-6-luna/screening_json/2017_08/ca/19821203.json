@@ -1,0 +1,77 @@
+{
+  "article_id": "19821203",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/ca/19821203.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/ca/19821203.json"
+  },
+  "manifest_row": {
+    "article_id": "19821203",
+    "group": "2017_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/ca/19821203.txt",
+    "now_field_2": "201",
+    "date_original": "17-08-03",
+    "date_iso": "2017-08-03",
+    "source_name": "CTV News",
+    "url": "http://ottawa.ctvnews.ca/ottawa-light-rail-transit-constructors-charged-with-workplace-safety-violations-1.3530934",
+    "title": "Ottawa Light Rail Transit Constructors charged with workplace ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Workplace safety and contractor compliance on Ottawa's light-rail project",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Environment and Climate Change; the text contains no meaningful climate discourse.",
+    "reason": "The article concerns workplace safety violations and a liquid-waste disposal matter. The ministry's name is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d63d0445fe41625fb46657e4a0eabcb2fc083388ea64f67e1eb3593c4f91738d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2442ce7238919c7f5f521302f740c756e6e30f986a0aab3edd7abd78f10f034a",
+    "raw_response_text_sha256": "d3e3dbb8226b71c4bc1b9f6553c80a2e2e6d39e027729b111405de934ac53d52"
+  },
+  "api_metadata": {
+    "id": "resp_0a5ba091e67c4829006b060c7e0de487d28e2edd5c0f3c1de2",
+    "model": "gpt-6-luna",
+    "created_at": 1795558526.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 732,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "reasoning_tokens": 33
+      },
+      "total_tokens": 903
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Workplace safety and contractor compliance on Ottawa's light-rail project\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Environment and Climate Change; the text contains no meaningful climate discourse.\",\n  \"reason\": \"The article concerns workplace safety violations and a liquid-waste disposal matter. The ministry's name is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:15:27Z",
+  "duration_seconds": 1.783,
+  "error": null
+}

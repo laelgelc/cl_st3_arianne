@@ -1,0 +1,77 @@
+{
+  "article_id": "32023758",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/32023758.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/32023758.json"
+  },
+  "manifest_row": {
+    "article_id": "32023758",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/32023758.txt",
+    "now_field_2": "1423",
+    "date_original": "20-08-18",
+    "date_iso": "2020-08-18",
+    "source_name": "sfgate.com",
+    "url": "https://www.sfgate.com/opinion/chopra/article/The-Spread-of-Stranger-Than-We-Can-Think-15488011.php",
+    "title": "The Spread of 'Stranger Than We Can Think' - SFGate",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Quantum physics, consciousness, and the nature of reality",
+    "climate_relevance": "Climate change appears only in an author biography listing the co-author's areas of work.",
+    "reason": "The article's discussion is about quantum physics and consciousness; the brief climate-change reference is incidental biographical information and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "234c3bfbd27b9a16d1cbfc7c02ebf93f31f885f219b19d0d34dc9a0952274e2d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ac27c9b4bb0fe756f2f63e8acc3e196706d101322462eda65352adb40cda7bb8",
+    "raw_response_text_sha256": "06ae8d2a71989d500eb3cac2b043dbf518daf3f704f4eae07a5aa256f50c4b0d"
+  },
+  "api_metadata": {
+    "id": "resp_0703fd802fb0f9d8006b061ac9d79087d2a516c5889fde99da",
+    "model": "gpt-6-luna",
+    "created_at": 1795562185.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2266,
+      "input_tokens_details": {
+        "cache_write_tokens": 2263,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2263
+        }
+      },
+      "output_tokens": 167,
+      "output_tokens_details": {
+        "reasoning_tokens": 31
+      },
+      "total_tokens": 2433
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Quantum physics, consciousness, and the nature of reality\",\n  \"climate_relevance\": \"Climate change appears only in an author biography listing the co-author's areas of work.\",\n  \"reason\": \"The article's discussion is about quantum physics and consciousness; the brief climate-change reference is incidental biographical information and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:16:27Z",
+  "duration_seconds": 1.901,
+  "error": null
+}

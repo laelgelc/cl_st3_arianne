@@ -1,0 +1,77 @@
+{
+  "article_id": "19801767",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/ca/19801767.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/ca/19801767.json"
+  },
+  "manifest_row": {
+    "article_id": "19801767",
+    "group": "2017_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/ca/19801767.txt",
+    "now_field_2": "447",
+    "date_original": "17-08-01",
+    "date_iso": "2017-08-01",
+    "source_name": "Oshawa Express",
+    "url": "http://oshawaexpress.ca/air-contaminant-not-linked-to-incinerator-report-says/",
+    "title": "Air contaminant not linked to incinerator, report says",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A particulate-matter exceedance at an air monitoring station and its likely causes and health implications",
+    "climate_relevance": "Climate change appears only as part of the Ministry of Environment and Climate Change's name; the text contains no meaningful climate discourse.",
+    "reason": "The report focuses on local air-quality monitoring, highway construction, and an incinerator. The climate-related wording is incidental institutional boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "91458de1867eee313b33bd760e1e97ed3c39db91819b832c5ad1a48c36c9365c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e73266fc25774859ec2594dc8f2e403b461d350ec26430f78cc5aa18eab373b7",
+    "raw_response_text_sha256": "48518ea3fd115851816deb811c0e8569bdda7872ea19258082507b8243b3fdeb"
+  },
+  "api_metadata": {
+    "id": "resp_06acaf3a7eaf9b02006b060c756a0487d2b9fa1b0c34340467",
+    "model": "gpt-6-luna",
+    "created_at": 1795558517.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1110,
+      "input_tokens_details": {
+        "cache_write_tokens": 1107,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1107
+        }
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1320
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A particulate-matter exceedance at an air monitoring station and its likely causes and health implications\",\n  \"climate_relevance\": \"Climate change appears only as part of the Ministry of Environment and Climate Change's name; the text contains no meaningful climate discourse.\",\n  \"reason\": \"The report focuses on local air-quality monitoring, highway construction, and an incinerator. The climate-related wording is incidental institutional boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:15:19Z",
+  "duration_seconds": 1.984,
+  "error": null
+}

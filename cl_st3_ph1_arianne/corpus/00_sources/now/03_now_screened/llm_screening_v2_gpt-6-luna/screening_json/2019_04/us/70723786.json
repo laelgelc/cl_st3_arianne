@@ -1,0 +1,77 @@
+{
+  "article_id": "70723786",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/us/70723786.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/us/70723786.json"
+  },
+  "manifest_row": {
+    "article_id": "70723786",
+    "group": "2019_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/us/70723786.txt",
+    "now_field_2": "919",
+    "date_original": "19-04-26",
+    "date_iso": "2019-04-26",
+    "source_name": "Irish Times",
+    "url": "https://www.irishtimes.com/news/environment/river-barrow-prepares-for-next-hatching-season-of-lampreys-1.3863498",
+    "title": "River Barrow prepares for next hatching season of lampreys",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "Lamprey conservation and the effects of river works on migratory fish in Ireland",
+    "climate_relevance": "Climate change is briefly mentioned as context for conservation of vulnerable migratory fish, but its causes, impacts, or responses are not discussed.",
+    "reason": "The article is mainly about lampreys, river barriers, and freshwater conservation. Its brief reference to conserving migratory fish 'at a time of climate change' is relevant but not developed enough for CORE classification.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0925e2ae6ddbd3321181b294acb4abe982250799e1fb1431763999875b9c04c2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "234c7de73fe3280161ad73a4a8056a3fae257186211b00d57fb93f0a9d9c4d3e",
+    "raw_response_text_sha256": "e4bc2ebda64f2ebc22ea037edfe705daa4b81032668318fd24688a7665ab0e63"
+  },
+  "api_metadata": {
+    "id": "resp_00b45587826aded7006b063ebdaa6c87d1a1098b125846993d",
+    "model": "gpt-6-luna",
+    "created_at": 1795571389.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1709,
+      "input_tokens_details": {
+        "cache_write_tokens": 1706,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1706
+        }
+      },
+      "output_tokens": 375,
+      "output_tokens_details": {
+        "reasoning_tokens": 215
+      },
+      "total_tokens": 2084
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Lamprey conservation and the effects of river works on migratory fish in Ireland\",\n  \"climate_relevance\": \"Climate change is briefly mentioned as context for conservation of vulnerable migratory fish, but its causes, impacts, or responses are not discussed.\",\n  \"reason\": \"The article is mainly about lampreys, river barriers, and freshwater conservation. Its brief reference to conserving migratory fish 'at a time of climate change' is relevant but not developed enough for CORE classification.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:49:52Z",
+  "duration_seconds": 3.26,
+  "error": null
+}

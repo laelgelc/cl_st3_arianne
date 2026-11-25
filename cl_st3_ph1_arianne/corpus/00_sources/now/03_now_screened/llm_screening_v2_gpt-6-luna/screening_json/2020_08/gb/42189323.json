@@ -1,0 +1,77 @@
+{
+  "article_id": "42189323",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/gb/42189323.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/gb/42189323.json"
+  },
+  "manifest_row": {
+    "article_id": "42189323",
+    "group": "2020_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/gb/42189323.txt",
+    "now_field_2": "481",
+    "date_original": "20-08-14",
+    "date_iso": "2020-08-14",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/tory-minister-gives-himself-an-a-over-a-level-results-on-lbc-1-6788498",
+    "title": "Education minister gives himself an `A-' on handling of A ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The government’s handling of A-level results",
+    "climate_relevance": "Climate change appears only in repeated promotional copy describing the publication’s coverage.",
+    "reason": "The article is about A-level grading and government decisions; the climate reference is boilerplate and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "dce0e37c30e1385e576b751e77a0eaf39a0a22e120069b5bd7f8ad09a36f93ea",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "476f46df739a9608ad42d1fa46f1ba2c4c0332ee1de9dfa0f8948eb4e9b435cf",
+    "raw_response_text_sha256": "1a41ef1df7b3218761ee41b380a62adbc9c7d70a0884b05e9b39134fd4a2a745"
+  },
+  "api_metadata": {
+    "id": "resp_01de72651c60c9da006b0624eda43087d2aee8e830330cb696",
+    "model": "gpt-6-luna",
+    "created_at": 1795564781.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1120,
+      "input_tokens_details": {
+        "cache_write_tokens": 1117,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1117
+        }
+      },
+      "output_tokens": 295,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 1415
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The government’s handling of A-level results\",\n  \"climate_relevance\": \"Climate change appears only in repeated promotional copy describing the publication’s coverage.\",\n  \"reason\": \"The article is about A-level grading and government decisions; the climate reference is boilerplate and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:59:44Z",
+  "duration_seconds": 2.805,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50802100",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/gb/50802100.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/gb/50802100.json"
+  },
+  "manifest_row": {
+    "article_id": "50802100",
+    "group": "2019_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/gb/50802100.txt",
+    "now_field_2": "6678",
+    "date_original": "19-06-26",
+    "date_iso": "2019-06-26",
+    "source_name": "Daily Mail",
+    "url": "https://www.dailymail.co.uk/news/article-7182327/Britain-BOIL-Commuters-face-muggy-slog-work-Saharan-Bubble-turns-heat-UK.html",
+    "title": "June could be a record-breaker! Month's hottest-ever day may arrive ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "A European heatwave, including UK weather forecasts, public-health effects, and related local impacts",
+    "climate_relevance": "The text connects increasingly frequent and intense heatwaves with a warming planet and human fossil-fuel use, and includes climate-change policy remarks. Climate change is relevant context, but is not the main focus.",
+    "reason": "Most of the text reports weather conditions, forecasts, heat risks, and local impacts. Its explicit discussion of climate change and the changing frequency of heatwaves is meaningful but secondary, so the text is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "459410f36f73155680703b7aabdd219416770c28b19835a5ee6fd527bffdcac1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9f6cdfd61736e23e43fe5178316430aee865cb4303efb718b3e77bf51a7cf548",
+    "raw_response_text_sha256": "68bc6f04ccabcdc53cf493c4ddfd84ca91f80befa76145868530c2b6c46648f2"
+  },
+  "api_metadata": {
+    "id": "resp_07495a35daff9b2e006b062b025b8087d19a8f43b1fe2f4550",
+    "model": "gpt-6-luna",
+    "created_at": 1795566338.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 9379,
+      "input_tokens_details": {
+        "cache_write_tokens": 9376,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 9376
+        }
+      },
+      "output_tokens": 363,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 9742
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A European heatwave, including UK weather forecasts, public-health effects, and related local impacts\",\n  \"climate_relevance\": \"The text connects increasingly frequent and intense heatwaves with a warming planet and human fossil-fuel use, and includes climate-change policy remarks. Climate change is relevant context, but is not the main focus.\",\n  \"reason\": \"Most of the text reports weather conditions, forecasts, heat risks, and local impacts. Its explicit discussion of climate change and the changing frequency of heatwaves is meaningful but secondary, so the text is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:25:41Z",
+  "duration_seconds": 3.862,
+  "error": null
+}

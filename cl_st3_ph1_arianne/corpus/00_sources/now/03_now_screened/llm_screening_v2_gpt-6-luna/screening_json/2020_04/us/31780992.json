@@ -1,0 +1,77 @@
+{
+  "article_id": "31780992",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_04/us/31780992.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_04/us/31780992.json"
+  },
+  "manifest_row": {
+    "article_id": "31780992",
+    "group": "2020_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_04/us/31780992.txt",
+    "now_field_2": "577",
+    "date_original": "20-04-14",
+    "date_iso": "2020-04-14",
+    "source_name": "yahoo.com",
+    "url": "https://news.yahoo.com/sanders-endorses-biden-via-livestream-to-help-him-defeat-the-most-dangerous-president-in-the-history-of-this-country-195300072.html",
+    "title": "Sanders endorses Biden via live stream to help him defeat ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-04.txt\"]",
+    "metadata_article_files": "[\"text-20-04/20-04-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Bernie Sanders's endorsement of Joe Biden and their policy collaboration",
+    "climate_relevance": "Climate change is briefly named in a list of topics the candidates discussed, without further detail.",
+    "reason": "The article is principally about the presidential campaign endorsement. The climate reference is only a passing item in a list and provides no substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4241073fbcfa1f9b60d7e5ca333ad3d27934b48056885bc22522c5e941632951",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dbb8600c87d7387b788080a79eebcd31d44becbcd8485baa20a8ab00957c6824",
+    "raw_response_text_sha256": "fddad70ec04e21ae2430cc674f751860e87bf4bcc333ab0cbff392c1006ef3a8"
+  },
+  "api_metadata": {
+    "id": "resp_0ca4e03a11f586d2006b06195fbb6887d28c023b5d39a87fa7",
+    "model": "gpt-6-luna",
+    "created_at": 1795561823.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1195,
+      "input_tokens_details": {
+        "cache_write_tokens": 1192,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1192
+        }
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 1450
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Bernie Sanders's endorsement of Joe Biden and their policy collaboration\",\n  \"climate_relevance\": \"Climate change is briefly named in a list of topics the candidates discussed, without further detail.\",\n  \"reason\": \"The article is principally about the presidential campaign endorsement. The climate reference is only a passing item in a list and provides no substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:10:26Z",
+  "duration_seconds": 2.393,
+  "error": null
+}

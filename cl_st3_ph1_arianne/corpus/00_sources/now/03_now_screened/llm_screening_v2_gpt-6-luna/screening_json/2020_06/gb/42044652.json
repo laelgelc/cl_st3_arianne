@@ -1,0 +1,77 @@
+{
+  "article_id": "42044652",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/gb/42044652.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/gb/42044652.json"
+  },
+  "manifest_row": {
+    "article_id": "42044652",
+    "group": "2020_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/gb/42044652.txt",
+    "now_field_2": "49766",
+    "date_original": "20-06-12",
+    "date_iso": "2020-06-12",
+    "source_name": "scotsman.com",
+    "url": "https://foodanddrink.scotsman.com/author/catriona-thomson/feed/",
+    "title": "Catriona Thomson - Scotsman Food and Drink",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "A collection of Scottish food and restaurant reviews and chef profiles",
+    "climate_relevance": "Some snippets connect food choices and restaurant practices to climate or environmental concerns, including a reference to Greta Thunberg and climate change, and a chef's comment about CO2 emissions from imported wagyu beef.",
+    "reason": "The available text is primarily about restaurants, food, and chefs, not climate change. However, it contains meaningful, if limited, discussion linking food sourcing and veganism with climate and environmental concerns, making it peripheral rather than an incidental-only mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c25a3f11c2b8d7d4b6b4268344feeaa14657d640a62be1f064ee5691ac4255f8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "845dbdcf5b26fa38b99460a363d90fa9341c892188fe49aa5755feb2315f8108",
+    "raw_response_text_sha256": "2be8060b025a8f1b313705be9f7f85e0e6f64c1e74390232973c37e187a5cf66"
+  },
+  "api_metadata": {
+    "id": "resp_0fe1e7b88f1355f6006b06242ac20887d28c2dfb1753d4dc98",
+    "model": "gpt-6-luna",
+    "created_at": 1795564586.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 70986,
+      "input_tokens_details": {
+        "cache_write_tokens": 70983,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 70983
+        }
+      },
+      "output_tokens": 385,
+      "output_tokens_details": {
+        "reasoning_tokens": 208
+      },
+      "total_tokens": 71371
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of Scottish food and restaurant reviews and chef profiles\",\n  \"climate_relevance\": \"Some snippets connect food choices and restaurant practices to climate or environmental concerns, including a reference to Greta Thunberg and climate change, and a chef's comment about CO2 emissions from imported wagyu beef.\",\n  \"reason\": \"The available text is primarily about restaurants, food, and chefs, not climate change. However, it contains meaningful, if limited, discussion linking food sourcing and veganism with climate and environmental concerns, making it peripheral rather than an incidental-only mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:56:30Z",
+  "duration_seconds": 3.945,
+  "error": null
+}

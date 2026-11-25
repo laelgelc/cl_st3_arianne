@@ -1,0 +1,77 @@
+{
+  "article_id": "71195926",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/au/71195926.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/au/71195926.json"
+  },
+  "manifest_row": {
+    "article_id": "71195926",
+    "group": "2019_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/au/71195926.txt",
+    "now_field_2": "203",
+    "date_original": "19-09-09",
+    "date_iso": "2019-09-09",
+    "source_name": "abc.net.au",
+    "url": "https://www.abc.net.au/news/2019-09-09/brazil-court-overrules-rio-mayor-on-gay-kiss-book-ban/11491138",
+    "title": "Avengers characters' gay kiss sparks court stoush over ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Brazilian controversy involving homophobia and a raid",
+    "climate_relevance": "Climate change appears only in an unrelated fragment about a speech by Prime Minister Scott Morrison and a fact-check; no meaningful climate discussion is provided.",
+    "reason": "The identifiable main article concerns homophobia and Brazilian politics. The brief climate reference appears in a separate, incomplete snippet and does not provide substantive climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a28319f846c3b3ea7ffd200cd1d8e0e6b94ef5cc0995f8472b7dd2b8bf9ee1db",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "78bdafbb269b81595aaac1658d0a8095cab2fdebd54e3b1409a534fae044eba2",
+    "raw_response_text_sha256": "99203a9597f8a3ac704909e1ce20e538e5f512d2cf1c4efd5e3662523629384f"
+  },
+  "api_metadata": {
+    "id": "resp_00b31ea438ea4a98006b0640515bf487d1809b7e38fb1c6609",
+    "model": "gpt-6-luna",
+    "created_at": 1795571793.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 748,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 1011
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Brazilian controversy involving homophobia and a raid\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated fragment about a speech by Prime Minister Scott Morrison and a fact-check; no meaningful climate discussion is provided.\",\n  \"reason\": \"The identifiable main article concerns homophobia and Brazilian politics. The brief climate reference appears in a separate, incomplete snippet and does not provide substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:56:35Z",
+  "duration_seconds": 2.384,
+  "error": null
+}

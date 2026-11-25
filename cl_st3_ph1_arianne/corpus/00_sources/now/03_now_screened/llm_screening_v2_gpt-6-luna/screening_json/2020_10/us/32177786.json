@@ -1,0 +1,77 @@
+{
+  "article_id": "32177786",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/32177786.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/32177786.json"
+  },
+  "manifest_row": {
+    "article_id": "32177786",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/32177786.txt",
+    "now_field_2": "343",
+    "date_original": "20-10-27",
+    "date_iso": "2020-10-27",
+    "source_name": "eurekalert.org",
+    "url": "http://www.eurekalert.org/pub_releases/2020-10/aaft-rou102320.php",
+    "title": "Residents of U.S. counties with more connections to China ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Social connections and adherence to COVID-19 restrictions",
+    "climate_relevance": "Climate change appears only as one characteristic of counties whose residents were less likely to follow mobility restrictions.",
+    "reason": "The article does not discuss climate change or climate denial in any meaningful detail; the reference is incidental to its study of pandemic behavior.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "15c636e1b2e5fbe55d8e2edab0d32b172deb176fdf9d7c79ed46a4208cf548f2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0a0e5ba461edc7cdb886393e83fae99e6951c873d32b4ac610f62148d2cb8957",
+    "raw_response_text_sha256": "1922fa35428394d7220793b86cab843cba5c2c3479e6ebec7f1f7cd8a77ea396"
+  },
+  "api_metadata": {
+    "id": "resp_0ac42550e56c1903006b061bdd581887d298fe7a86388bc7a4",
+    "model": "gpt-6-luna",
+    "created_at": 1795562461.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 906,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 1157
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Social connections and adherence to COVID-19 restrictions\",\n  \"climate_relevance\": \"Climate change appears only as one characteristic of counties whose residents were less likely to follow mobility restrictions.\",\n  \"reason\": \"The article does not discuss climate change or climate denial in any meaningful detail; the reference is incidental to its study of pandemic behavior.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:21:03Z",
+  "duration_seconds": 2.244,
+  "error": null
+}

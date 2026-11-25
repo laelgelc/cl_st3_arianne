@@ -1,0 +1,77 @@
+{
+  "article_id": "7845744",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_03/ca/7845744.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_03/ca/7845744.json"
+  },
+  "manifest_row": {
+    "article_id": "7845744",
+    "group": "2016_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_03/ca/7845744.txt",
+    "now_field_2": "322",
+    "date_original": "16-03-22",
+    "date_iso": "2016-03-22",
+    "source_name": "CTV News",
+    "url": "http://barrie.ctvnews.ca/city-of-barrie-installs-new-drinking-water-protection-zone-signs-1.2827894",
+    "title": "City of Barrie installs new drinking water protection zone signs",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-03-sls/16-03-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Installation of drinking water protection zone signs in Barrie",
+    "climate_relevance": "Climate change appears only in the formal name of Ontario's Ministry of the Environment and Climate Change; the article discusses source-water protection and contamination risks, not climate issues.",
+    "reason": "The article's climate reference is incidental institutional naming and contributes no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d1c44f5f09e72681656871e58182ff6f26fe314d40ce690a5332d19c285ca726",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c9305e3d664658086591f21b9f57d641f79c53229a902fe94332dd030f6fe9a2",
+    "raw_response_text_sha256": "2601b3e711b3b90b6717346bf4db013c3cdc3b0d0c87bd741244b609f226c9a6"
+  },
+  "api_metadata": {
+    "id": "resp_0312ec3a02be39a8006b06467c4a8c87d1a0be3d3c6e357afd",
+    "model": "gpt-6-luna",
+    "created_at": 1795573372.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 897,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1116
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Installation of drinking water protection zone signs in Barrie\",\n  \"climate_relevance\": \"Climate change appears only in the formal name of Ontario's Ministry of the Environment and Climate Change; the article discusses source-water protection and contamination risks, not climate issues.\",\n  \"reason\": \"The article's climate reference is incidental institutional naming and contributes no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:22:54Z",
+  "duration_seconds": 2.193,
+  "error": null
+}

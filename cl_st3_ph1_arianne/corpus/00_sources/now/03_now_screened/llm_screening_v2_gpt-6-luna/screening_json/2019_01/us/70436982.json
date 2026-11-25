@@ -1,0 +1,77 @@
+{
+  "article_id": "70436982",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/us/70436982.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/us/70436982.json"
+  },
+  "manifest_row": {
+    "article_id": "70436982",
+    "group": "2019_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/us/70436982.txt",
+    "now_field_2": "887",
+    "date_original": "19-01-20",
+    "date_iso": "2019-01-20",
+    "source_name": "The Guardian",
+    "url": "https://www.theguardian.com/commentisfree/2019/jan/21/lure-ancient-egypt-revitalise-industrial-towns-mummies",
+    "title": "The lure of ancient Egypt is a way to revitalise faded industrial towns",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Regional museums, Egyptian collections and restitution; a separate commentary on Brexit",
+    "climate_relevance": "Climate change appears only as a passing comparison in the Brexit commentary, without discussion of the issue.",
+    "reason": "The text contains multiple unrelated articles. The only climate reference is a rhetorical aside imagining people being as worked up about climate change; it provides no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "763a1c65e72a6f72250a9baab28f87da3dbb17ab0977c177b16640e654735ad9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3b5dda1759bc8d109ec932b9dbc520d1d48c1327fc548ddd714ef4f78a0c0cac",
+    "raw_response_text_sha256": "4c6bc163c3de6cf10e90093f98abb58b6c57e1d5ee5d7b0988f5beca8f62a7f2"
+  },
+  "api_metadata": {
+    "id": "resp_0a1c12f472ebe5c4006b063c86b0d087d1a8550dc1606c149c",
+    "model": "gpt-6-luna",
+    "created_at": 1795570822.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3289,
+      "input_tokens_details": {
+        "cache_write_tokens": 3286,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3286
+        }
+      },
+      "output_tokens": 294,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 3583
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Regional museums, Egyptian collections and restitution; a separate commentary on Brexit\",\n  \"climate_relevance\": \"Climate change appears only as a passing comparison in the Brexit commentary, without discussion of the issue.\",\n  \"reason\": \"The text contains multiple unrelated articles. The only climate reference is a rhetorical aside imagining people being as worked up about climate change; it provides no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:25Z",
+  "duration_seconds": 2.485,
+  "error": null
+}

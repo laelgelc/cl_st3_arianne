@@ -1,0 +1,77 @@
+{
+  "article_id": "70508746",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70508746.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70508746.json"
+  },
+  "manifest_row": {
+    "article_id": "70508746",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70508746.txt",
+    "now_field_2": "8289",
+    "date_original": "19-02-12",
+    "date_iso": "2019-02-12",
+    "source_name": "Scoop.co.nz",
+    "url": "http://community.scoop.co.nz/2019/02/parliament-questions-and-answers-feb-13-2/",
+    "title": "Parliament: Questions and Answers - Feb 13",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "New Zealand parliamentary oral questions on economic policy, foreign relations, emergency response, and other government matters",
+    "climate_relevance": "Climate change appears only in the title of a minister mentioned among officials who visited China.",
+    "reason": "The text contains no substantive discussion of climate change; the sole reference is incidental.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "73e4022802d8548fe2a30e39c72cebbb3421a44426a56c8dbeca032b75f0f4cb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dcdabd4ad9c9ebe403b9fa84feed9d9551acfaca3a719aeeba830d085262aaf4",
+    "raw_response_text_sha256": "3f776b59d907742aba3e193385e05dfae31a832f92898d4d0e45683cf2c50aa8"
+  },
+  "api_metadata": {
+    "id": "resp_0a71275b5c7a2be7006b063d19a63c87d18e8736ded33fa4ae",
+    "model": "gpt-6-luna",
+    "created_at": 1795570969.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 11121,
+      "input_tokens_details": {
+        "cache_write_tokens": 11118,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 11118
+        }
+      },
+      "output_tokens": 262,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 11383
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New Zealand parliamentary oral questions on economic policy, foreign relations, emergency response, and other government matters\",\n  \"climate_relevance\": \"Climate change appears only in the title of a minister mentioned among officials who visited China.\",\n  \"reason\": \"The text contains no substantive discussion of climate change; the sole reference is incidental.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:52Z",
+  "duration_seconds": 2.549,
+  "error": null
+}

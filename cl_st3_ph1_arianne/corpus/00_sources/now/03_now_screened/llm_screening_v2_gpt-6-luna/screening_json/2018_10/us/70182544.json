@@ -1,0 +1,77 @@
+{
+  "article_id": "70182544",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/us/70182544.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/us/70182544.json"
+  },
+  "manifest_row": {
+    "article_id": "70182544",
+    "group": "2018_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/us/70182544.txt",
+    "now_field_2": "698",
+    "date_original": "18-10-26",
+    "date_iso": "2018-10-26",
+    "source_name": "Tampa Bay Times",
+    "url": "https://www.tampabay.com/news/breaking/news-at-noon-man-arrested-in-south-florida-for-spree-of-pipe-bomb-mailings-andrew-gillum-and-donald-trump-energize-black-voters-and-more-20181026/",
+    "title": "News at noon: Man arrested in south Florida for spree of pipe-bomb ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-us-2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "Florida political and local news, including election coverage and Governor Rick Scott's hurricane response",
+    "climate_relevance": "One passage connects climate change with future rising tides and stronger winds, and questions Florida's preparedness for those impacts.",
+    "reason": "The supplied text consists of multiple largely unrelated news snippets. Climate change is meaningfully mentioned in the passage about hurricane preparedness, but it is not the focus of the available text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "76947be56f94ef2dcbb6f85635c4c453822dd8bf6bb9d02d841ddafac4f60fe1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "211a1eab8ae4c4a2a9752680c460ca61e225eeba8f838e917a2177d6578ff2da",
+    "raw_response_text_sha256": "5b4da3a64fe1f036b9739ab47ae98809135af9a55d8bbe48a52e1fd8e13b4b05"
+  },
+  "api_metadata": {
+    "id": "resp_054fcf28582d09a4006b063b4583b487d19e92387d7050c9a5",
+    "model": "gpt-6-luna",
+    "created_at": 1795570501.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1407,
+      "input_tokens_details": {
+        "cache_write_tokens": 1404,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1404
+        }
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 1637
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Florida political and local news, including election coverage and Governor Rick Scott's hurricane response\",\n  \"climate_relevance\": \"One passage connects climate change with future rising tides and stronger winds, and questions Florida's preparedness for those impacts.\",\n  \"reason\": \"The supplied text consists of multiple largely unrelated news snippets. Climate change is meaningfully mentioned in the passage about hurricane preparedness, but it is not the focus of the available text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:35:03Z",
+  "duration_seconds": 2.236,
+  "error": null
+}

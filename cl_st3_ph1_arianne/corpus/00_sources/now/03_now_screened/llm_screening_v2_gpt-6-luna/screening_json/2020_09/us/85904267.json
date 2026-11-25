@@ -1,0 +1,77 @@
+{
+  "article_id": "85904267",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/85904267.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/85904267.json"
+  },
+  "manifest_row": {
+    "article_id": "85904267",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/85904267.txt",
+    "now_field_2": "315",
+    "date_original": "20-09-10",
+    "date_iso": "2020-09-10",
+    "source_name": "USA Today",
+    "url": "https://www.usatoday.com/in-depth/news/2020/09/10/wildfires-california-washington-oregon-drought-heat-climate-change-graphics/5764156002/",
+    "title": "Wildfires burned millions of acres across the West. See what that looks like.",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "The scale and impacts of 2020 wildfires across California, Oregon, and Washington.",
+    "climate_relevance": "The article links hotter and drier conditions associated with climate change to worsening wildfires and cites expectations that fires will become larger and more numerous.",
+    "reason": "Wildfires are the main subject, with most of the text focused on burned acreage, casualties, evacuations, and firefighting. Climate change is meaningfully discussed as a factor intensifying fires, but it is not the article's central focus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0f83421db8da4f77b4c40593132c419cacd35828d8140097ed5bdba6b113e6f2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e9cdced67f2d878ed1502e9e8eb1ee1f495e56ed8c891e826ee6b249e737d6bb",
+    "raw_response_text_sha256": "d20ce5216ca22151c92a0e6b65bb3c5655100a6118d8f6b186ecbbc40a4e7b33"
+  },
+  "api_metadata": {
+    "id": "resp_05c24fb3cd86c659006b064d7bf9f487d1aee86fcf65b8c56b",
+    "model": "gpt-6-luna",
+    "created_at": 1795575164.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 915,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 291,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 1206
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The scale and impacts of 2020 wildfires across California, Oregon, and Washington.\",\n  \"climate_relevance\": \"The article links hotter and drier conditions associated with climate change to worsening wildfires and cites expectations that fires will become larger and more numerous.\",\n  \"reason\": \"Wildfires are the main subject, with most of the text focused on burned acreage, casualties, evacuations, and firefighting. Climate change is meaningfully discussed as a factor intensifying fires, but it is not the article's central focus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:52:46Z",
+  "duration_seconds": 2.696,
+  "error": null
+}

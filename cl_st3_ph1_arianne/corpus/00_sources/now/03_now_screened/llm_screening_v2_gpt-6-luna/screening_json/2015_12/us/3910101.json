@@ -1,0 +1,77 @@
+{
+  "article_id": "3910101",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/us/3910101.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/us/3910101.json"
+  },
+  "manifest_row": {
+    "article_id": "3910101",
+    "group": "2015_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/us/3910101.txt",
+    "now_field_2": "2321",
+    "date_original": "15-12-17",
+    "date_iso": "2015-12-17",
+    "source_name": "Scientific American",
+    "url": "http://www.scientificamerican.com/article/ominous-story-of-syria-climate-refugees/",
+    "title": "The Ominous Story of Syria's Climate Refugees",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-us.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "substantial",
+    "main_topic": "The Syrian drought, its links to climate change and water mismanagement, and its effects on farming, social unrest, and displacement.",
+    "climate_relevance": "Climate change is explicitly discussed as exacerbating the drought, with scientific projections about future drought and water scarcity in the eastern Mediterranean. The article also examines how drought interacted with water mismanagement and political conditions.",
+    "reason": "Climate-related drought and its consequences are a major thread throughout the text, supported by discussion of climate research, greenhouse gas emissions, and future regional impacts. This is substantially relevant climate coverage even though the article also focuses on Syria's conflict and refugee crisis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4c7e57d78231e9034b921c5a768731f2b2055247a6d4f1fd3f196b0000dc3fc0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e6e3b9729efe318b4e129d468692ce9feff03da4d8df1f46099b3c4a52d15e96",
+    "raw_response_text_sha256": "66e633eca1ac0bfa6f470a25cfe341c9c1ff8fad12f26269db2be0181f7cf482"
+  },
+  "api_metadata": {
+    "id": "resp_0794b756976571a8006b061dd43ec087d2a6a852c2cd981262",
+    "model": "gpt-6-luna",
+    "created_at": 1795562964.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3565,
+      "input_tokens_details": {
+        "cache_write_tokens": 3562,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3562
+        }
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 3852
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"The Syrian drought, its links to climate change and water mismanagement, and its effects on farming, social unrest, and displacement.\",\n  \"climate_relevance\": \"Climate change is explicitly discussed as exacerbating the drought, with scientific projections about future drought and water scarcity in the eastern Mediterranean. The article also examines how drought interacted with water mismanagement and political conditions.\",\n  \"reason\": \"Climate-related drought and its consequences are a major thread throughout the text, supported by discussion of climate research, greenhouse gas emissions, and future regional impacts. This is substantially relevant climate coverage even though the article also focuses on Syria's conflict and refugee crisis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:29:26Z",
+  "duration_seconds": 2.804,
+  "error": null
+}

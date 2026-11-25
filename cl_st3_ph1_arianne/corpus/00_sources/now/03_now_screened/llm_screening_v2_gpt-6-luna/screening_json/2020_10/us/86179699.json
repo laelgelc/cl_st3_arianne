@@ -1,0 +1,77 @@
+{
+  "article_id": "86179699",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86179699.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86179699.json"
+  },
+  "manifest_row": {
+    "article_id": "86179699",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86179699.txt",
+    "now_field_2": "763",
+    "date_original": "20-10-20",
+    "date_iso": "2020-10-20",
+    "source_name": "NPR",
+    "url": "https://www.npr.org/2020/10/20/925759708/latin-jazz-album-el-duelo-features-lively-solos-and-moments-of-surprising-beauty",
+    "title": "Latin Jazz Album 'El Duelo' Features Lively Solos And Moments Of Surprising Beauty",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "A review of Diego Urcola's Latin jazz album El Duelo",
+    "climate_relevance": "Climate change appears only in a brief promotional mention of a novel featured on a later show.",
+    "reason": "The main text is a jazz album review. The sole climate reference is incidental to an unrelated program announcement and offers no substantive climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "dbdff2edcd0f7d0e884b7ca7e20eeb78c93dd4034a18b75595ebf6c0bc13496d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2c89b5079ac22f7166183c4db2e5c56c63a30ad0c04159ef8b155e289fba9923",
+    "raw_response_text_sha256": "7527a87c13729dc4e7b1b5d2fac936c147e2be4c97026add3ec24f4c0235efcb"
+  },
+  "api_metadata": {
+    "id": "resp_0d575b09d4fcd679006b064ea5d35887d1a2a6443213b68650",
+    "model": "gpt-6-luna",
+    "created_at": 1795575461.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1628,
+      "input_tokens_details": {
+        "cache_write_tokens": 1625,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1625
+        }
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 139
+      },
+      "total_tokens": 1900
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A review of Diego Urcola's Latin jazz album El Duelo\",\n  \"climate_relevance\": \"Climate change appears only in a brief promotional mention of a novel featured on a later show.\",\n  \"reason\": \"The main text is a jazz album review. The sole climate reference is incidental to an unrelated program announcement and offers no substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:57:44Z",
+  "duration_seconds": 2.913,
+  "error": null
+}

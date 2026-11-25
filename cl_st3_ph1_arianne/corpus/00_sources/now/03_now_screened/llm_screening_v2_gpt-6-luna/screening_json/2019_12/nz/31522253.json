@@ -1,0 +1,77 @@
+{
+  "article_id": "31522253",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/nz/31522253.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/nz/31522253.json"
+  },
+  "manifest_row": {
+    "article_id": "31522253",
+    "group": "2019_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/nz/31522253.txt",
+    "now_field_2": "574",
+    "date_original": "19-12-22",
+    "date_iso": "2019-12-22",
+    "source_name": "ourauckland.aucklandcouncil.govt.nz",
+    "url": "https://ourauckland.aucklandcouncil.govt.nz/articles/news/2019/12/the-weird-and-wonderful-contents-of-aucklanders-recycling-bins/",
+    "title": "The weird and wonderful contents of Aucklanders' recycling ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Auckland kerbside recycling guidance and incorrectly recycled items",
+    "climate_relevance": "Climate change appears only in the formal name of a council committee; the text does not discuss climate change or its implications.",
+    "reason": "The article focuses on recycling practices, waste disposal, and landfill. Its only climate reference is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "203edc4bea8bcba1fa74a52ad8f3a5cf8d9a6825f4ed9c1d5d621bc39c43bb77",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "48eb341012c4e8169e2ae519f8fdc77ac63c7fa1641188949149cbac433a5679",
+    "raw_response_text_sha256": "f08caad39d4525862806cd81955191a6f4a724ad56149a14a65f7f274c40649b"
+  },
+  "api_metadata": {
+    "id": "resp_04d58309d17baef2006b0617cb711c87d28e7734f5eea59a33",
+    "model": "gpt-6-luna",
+    "created_at": 1795561419.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1257,
+      "input_tokens_details": {
+        "cache_write_tokens": 1254,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1254
+        }
+      },
+      "output_tokens": 184,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 1441
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Auckland kerbside recycling guidance and incorrectly recycled items\",\n  \"climate_relevance\": \"Climate change appears only in the formal name of a council committee; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on recycling practices, waste disposal, and landfill. Its only climate reference is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:03:41Z",
+  "duration_seconds": 1.834,
+  "error": null
+}

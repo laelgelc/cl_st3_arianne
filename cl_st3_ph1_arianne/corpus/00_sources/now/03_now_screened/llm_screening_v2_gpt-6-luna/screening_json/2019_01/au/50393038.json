@@ -1,0 +1,77 @@
+{
+  "article_id": "50393038",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/au/50393038.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/au/50393038.json"
+  },
+  "manifest_row": {
+    "article_id": "50393038",
+    "group": "2019_01",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/au/50393038.txt",
+    "now_field_2": "599",
+    "date_original": "19-01-28",
+    "date_iso": "2019-01-28",
+    "source_name": "RACGP",
+    "url": "https://www1.racgp.org.au/newsgp/clinical/threats-to-humanity-calls-for-urgent-action-on-obe",
+    "title": "Calls for urgent action on obesity, undernutrition and climate change",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "background",
+    "main_topic": "Public health risks from obesity and malnutrition, with climate change discussed as a related health threat.",
+    "climate_relevance": "The text describes climate change’s health impacts, links food and transport systems to greenhouse gas emissions, and criticises inadequate policy responses.",
+    "reason": "Climate change receives meaningful discussion and is connected to the article’s public-health framing, but obesity and malnutrition remain the primary focus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8d79f8d8aa73573c68ee8d81f45c170225f55b072e537b3d0608a031c1fc4760",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2452342415b1b898b85239591a48aa31512839558e82f6d7b1c9b601beecd703",
+    "raw_response_text_sha256": "5c69ecbec56fdc06d007280bc5f80f456577f28c70908257f2a9d8bf36a0fce6"
+  },
+  "api_metadata": {
+    "id": "resp_00b80d25a99a368a006b0628c65d2487d1a48077422087cdb2",
+    "model": "gpt-6-luna",
+    "created_at": 1795565766.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1226,
+      "input_tokens_details": {
+        "cache_write_tokens": 1223,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1223
+        }
+      },
+      "output_tokens": 294,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 1520
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Public health risks from obesity and malnutrition, with climate change discussed as a related health threat.\",\n  \"climate_relevance\": \"The text describes climate change’s health impacts, links food and transport systems to greenhouse gas emissions, and criticises inadequate policy responses.\",\n  \"reason\": \"Climate change receives meaningful discussion and is connected to the article’s public-health framing, but obesity and malnutrition remain the primary focus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:16:08Z",
+  "duration_seconds": 2.41,
+  "error": null
+}

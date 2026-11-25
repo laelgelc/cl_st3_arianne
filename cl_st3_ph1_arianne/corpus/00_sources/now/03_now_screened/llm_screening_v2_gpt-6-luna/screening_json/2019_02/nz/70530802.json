@@ -1,0 +1,77 @@
+{
+  "article_id": "70530802",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70530802.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70530802.json"
+  },
+  "manifest_row": {
+    "article_id": "70530802",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70530802.txt",
+    "now_field_2": "766",
+    "date_original": "19-02-19",
+    "date_iso": "2019-02-19",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PO1902/S00174/maori-support-new-zealand-china-relationships.htm",
+    "title": "Maori support New Zealand China Relationships",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Māori economic and cultural relationships between New Zealand and China",
+    "climate_relevance": "Climate change appears only in a brief, separate snippet criticizing a National Party environment policy proposal.",
+    "reason": "The identifiable main article discusses Māori trade and cultural ties with China and contains no climate discourse. The only climate reference is in an unrelated, fragmentary news snippet and is too brief to contribute meaningfully to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ffd9299de0315ff6a0e6fd249e06b30dd923d66e0ca3a773b18dd970e2fdcc21",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "57a71c98f6382c0613ca03e0875a190b5754ba1e48333e2d00ef9d39e44dbf46",
+    "raw_response_text_sha256": "34e75151e542cf54840abdc33f7284549a0e4df9b0279c1ae522f3d880611247"
+  },
+  "api_metadata": {
+    "id": "resp_0647f61d0695d416006b063d51137087d1bbfc8c937bacfb0b",
+    "model": "gpt-6-luna",
+    "created_at": 1795571025.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1482,
+      "input_tokens_details": {
+        "cache_write_tokens": 1479,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1479
+        }
+      },
+      "output_tokens": 330,
+      "output_tokens_details": {
+        "reasoning_tokens": 176
+      },
+      "total_tokens": 1812
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Māori economic and cultural relationships between New Zealand and China\",\n  \"climate_relevance\": \"Climate change appears only in a brief, separate snippet criticizing a National Party environment policy proposal.\",\n  \"reason\": \"The identifiable main article discusses Māori trade and cultural ties with China and contains no climate discourse. The only climate reference is in an unrelated, fragmentary news snippet and is too brief to contribute meaningfully to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:48Z",
+  "duration_seconds": 3.024,
+  "error": null
+}

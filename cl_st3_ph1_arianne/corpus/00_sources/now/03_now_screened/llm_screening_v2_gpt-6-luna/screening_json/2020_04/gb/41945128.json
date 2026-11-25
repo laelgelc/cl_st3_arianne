@@ -1,0 +1,77 @@
+{
+  "article_id": "41945128",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_04/gb/41945128.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_04/gb/41945128.json"
+  },
+  "manifest_row": {
+    "article_id": "41945128",
+    "group": "2020_04",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_04/gb/41945128.txt",
+    "now_field_2": "281",
+    "date_original": "20-04-29",
+    "date_iso": "2020-04-29",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/dominic-cummings-swayed-sage-coronavirus-debate-in-his-favour-report-claims-bloomberg-lockdown-1-6628926",
+    "title": "Dominic Cummings swayed SAGE coronavirus debate in his ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-04.txt\"]",
+    "metadata_article_files": "[\"text-20-04/20-04-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Government influence on scientific advice and COVID-19 lockdown decisions",
+    "climate_relevance": "Climate change appears only in duplicated promotional text describing the publication's coverage areas; the article itself contains no meaningful climate discourse.",
+    "reason": "The substantive text concerns SAGE, government advisers, and coronavirus restrictions. The climate reference is boilerplate rather than part of the article's discussion.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "85e99d34ffdba804e4d224cee0425a8f7a0025a57a7bd7485b5298a901f0db8d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8cba937477116a0c5abaa4c2ca5913ad7388a5c04b56d0d38f80dafc00e17b57",
+    "raw_response_text_sha256": "89230796ec3b362c6cac1c24ad4ad98a91f7d7843129ae60cf153b6108cbb5a4"
+  },
+  "api_metadata": {
+    "id": "resp_0d07784b01bb4659006b0623a9780c87d284fb90183979d329",
+    "model": "gpt-6-luna",
+    "created_at": 1795564457.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 820,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 178,
+      "output_tokens_details": {
+        "reasoning_tokens": 34
+      },
+      "total_tokens": 998
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Government influence on scientific advice and COVID-19 lockdown decisions\",\n  \"climate_relevance\": \"Climate change appears only in duplicated promotional text describing the publication's coverage areas; the article itself contains no meaningful climate discourse.\",\n  \"reason\": \"The substantive text concerns SAGE, government advisers, and coronavirus restrictions. The climate reference is boilerplate rather than part of the article's discussion.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:54:19Z",
+  "duration_seconds": 1.988,
+  "error": null
+}

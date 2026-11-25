@@ -1,0 +1,77 @@
+{
+  "article_id": "40611323",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/sg/40611323.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/sg/40611323.json"
+  },
+  "manifest_row": {
+    "article_id": "40611323",
+    "group": "2019_02",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/sg/40611323.txt",
+    "now_field_2": "725",
+    "date_original": "19-02-12",
+    "date_iso": "2019-02-12",
+    "source_name": "IGN Southeast Asi",
+    "url": "https://sea.ign.com/super-hero/145876/feature/we-saw-captain-marvel-preparing-for-a-secret-starforce-missi",
+    "title": "We Saw Captain Marvel Preparing for a Secret Starforce Mission",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Lahore smog and air-quality policy, alongside unrelated article snippets",
+    "climate_relevance": "Climate change appears only in the title of a minister; the main article discusses air pollution, emissions, and clean-air policy without meaningfully connecting them to climate change.",
+    "reason": "The identifiable main article is substantially about Lahore's air pollution and government responses, not climate change. The climate reference is incidental, and the text also contains unrelated snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ca01ff4c80aeddc3ddab8bbc858092068f34b3cf992eadf179dac220c280a211",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0c5f9d6f579b7518a53effa4210d41876ed67248a6edeff3640ec5d5739ac3e4",
+    "raw_response_text_sha256": "b9f2f73c1d1a4fa60dd355b556aaa1dc1da1a33a544146d9a33b78315aba7c31"
+  },
+  "api_metadata": {
+    "id": "resp_046bd43208373f0e006b061f4ef03c87d28d90e6107f87075e",
+    "model": "gpt-6-luna",
+    "created_at": 1795563343.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4388,
+      "input_tokens_details": {
+        "cache_write_tokens": 4385,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4385
+        }
+      },
+      "output_tokens": 424,
+      "output_tokens_details": {
+        "reasoning_tokens": 269
+      },
+      "total_tokens": 4812
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Lahore smog and air-quality policy, alongside unrelated article snippets\",\n  \"climate_relevance\": \"Climate change appears only in the title of a minister; the main article discusses air pollution, emissions, and clean-air policy without meaningfully connecting them to climate change.\",\n  \"reason\": \"The identifiable main article is substantially about Lahore's air pollution and government responses, not climate change. The climate reference is incidental, and the text also contains unrelated snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:35:46Z",
+  "duration_seconds": 3.556,
+  "error": null
+}

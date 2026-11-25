@@ -1,0 +1,77 @@
+{
+  "article_id": "70696080",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/nz/70696080.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/nz/70696080.json"
+  },
+  "manifest_row": {
+    "article_id": "70696080",
+    "group": "2019_04",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/nz/70696080.txt",
+    "now_field_2": "693",
+    "date_original": "19-04-17",
+    "date_iso": "2019-04-17",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PO1904/S00213/call-for-kiwis-to-restrict-single-use-plastics.htm",
+    "title": "Call For Kiwis to Restrict Single Use Plastics",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "climate_role": "background",
+    "main_topic": "Reducing single-use plastics and addressing marine pollution",
+    "climate_relevance": "Climate change is mentioned as one of several causes of animal species decline, but the article focuses on plastic pollution and consumption.",
+    "reason": "The identifiable main article is about reducing single-use plastics. Its brief statement linking climate change to species decline provides meaningful but limited climate discourse, so it is peripheral rather than core coverage. The text also includes unrelated snippets after the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ef2c0e488a2c98901959581cc8b79b8ae1d241283063ad677363291d14491667",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "081bbaa372c152287fc0ba45adf5d5c8da6eb3a605cc47db45080ed605494f94",
+    "raw_response_text_sha256": "fadcdde23a391e6af68523f7067e6b84959db8aa6af008a8ce2ba478073169d9"
+  },
+  "api_metadata": {
+    "id": "resp_084819c97de69c28006b063e8c908c87d184561a76ff5cc8f0",
+    "model": "gpt-6-luna",
+    "created_at": 1795571340.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1356,
+      "input_tokens_details": {
+        "cache_write_tokens": 1353,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1353
+        }
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 1648
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Reducing single-use plastics and addressing marine pollution\",\n  \"climate_relevance\": \"Climate change is mentioned as one of several causes of animal species decline, but the article focuses on plastic pollution and consumption.\",\n  \"reason\": \"The identifiable main article is about reducing single-use plastics. Its brief statement linking climate change to species decline provides meaningful but limited climate discourse, so it is peripheral rather than core coverage. The text also includes unrelated snippets after the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:49:02Z",
+  "duration_seconds": 2.484,
+  "error": null
+}

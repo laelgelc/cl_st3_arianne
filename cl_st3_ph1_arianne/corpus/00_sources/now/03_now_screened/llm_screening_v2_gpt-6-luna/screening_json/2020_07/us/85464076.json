@@ -1,0 +1,77 @@
+{
+  "article_id": "85464076",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/85464076.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/85464076.json"
+  },
+  "manifest_row": {
+    "article_id": "85464076",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/85464076.txt",
+    "now_field_2": "640",
+    "date_original": "20-07-21",
+    "date_iso": "2020-07-21",
+    "source_name": "Nature",
+    "url": "https://www.nature.com/articles/d41586-020-02176-w",
+    "title": "Daily briefing: Huge drop in premature births during lockdown",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us7.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "A multi-topic science news daily briefing, including premature births during lockdown, the UAE Mars mission, coronavirus testing, universities, and other research news.",
+    "climate_relevance": "A brief segment about Arctic whitefish research raises how climate change is disrupting natural patterns and traditional knowledge.",
+    "reason": "The briefing is not centrally about climate change, but the Arctic research segment contains meaningful climate-related discourse, making it peripheral rather than incidental.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1de744803313cf77e4888a18a4299b6a542527d0ebf7206f52e25860cb5af573",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "81a0832a36e94d710902a700aed7c558b72e8a5e56d0d2c0c32dbbaddca07e2d",
+    "raw_response_text_sha256": "144f3fdb684298e78a2b085c32b70f5471794a45695c5ee9c43f61b66af4d5e6"
+  },
+  "api_metadata": {
+    "id": "resp_0418ce9fcd9a70d8006b064c29efc487d1b7d928633fecf4ce",
+    "model": "gpt-6-luna",
+    "created_at": 1795574826.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1307,
+      "input_tokens_details": {
+        "cache_write_tokens": 1304,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1304
+        }
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 1564
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A multi-topic science news daily briefing, including premature births during lockdown, the UAE Mars mission, coronavirus testing, universities, and other research news.\",\n  \"climate_relevance\": \"A brief segment about Arctic whitefish research raises how climate change is disrupting natural patterns and traditional knowledge.\",\n  \"reason\": \"The briefing is not centrally about climate change, but the Arctic research segment contains meaningful climate-related discourse, making it peripheral rather than incidental.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:47:08Z",
+  "duration_seconds": 2.409,
+  "error": null
+}

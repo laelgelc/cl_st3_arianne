@@ -1,0 +1,77 @@
+{
+  "article_id": "40879426",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40879426.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40879426.json"
+  },
+  "manifest_row": {
+    "article_id": "40879426",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40879426.txt",
+    "now_field_2": "685",
+    "date_original": "19-04-24",
+    "date_iso": "2019-04-24",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/25/bank-manager-tells-all-on-najibs-multimillion-fund-transactions/",
+    "title": "Bank manager tells all on Najib's multimillion fund transactions",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A bank manager's testimony in the trial of former Malaysian Prime Minister Najib Razak",
+    "climate_relevance": "Climate appears only in an unrelated introductory news item naming the minister's portfolio; a brief mention of sustainable energy solutions does not develop climate discourse.",
+    "reason": "The identifiable main article concerns financial transactions and a corruption trial. Climate-related wording is confined to a separate headline-style item and is not meaningfully discussed.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c425d3b33a58c0c9b3dcdc349194add504c57a2076621281b5c9dfe7776c4502",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "116da30dfd3fa40fff9a3ab4249b66f363c716fd9fc1be3f3d40884e0649dfb9",
+    "raw_response_text_sha256": "c52da736e3ce28541b6e8d0a086a3db693bae24d30446200c5995f950bdede2f"
+  },
+  "api_metadata": {
+    "id": "resp_05fe00cfeb002cd4006b06202f279c87d28401e89d306b46f9",
+    "model": "gpt-6-luna",
+    "created_at": 1795563567.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1505,
+      "input_tokens_details": {
+        "cache_write_tokens": 1502,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1502
+        }
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 1825
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A bank manager's testimony in the trial of former Malaysian Prime Minister Najib Razak\",\n  \"climate_relevance\": \"Climate appears only in an unrelated introductory news item naming the minister's portfolio; a brief mention of sustainable energy solutions does not develop climate discourse.\",\n  \"reason\": \"The identifiable main article concerns financial transactions and a corruption trial. Climate-related wording is confined to a separate headline-style item and is not meaningfully discussed.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:29Z",
+  "duration_seconds": 2.674,
+  "error": null
+}

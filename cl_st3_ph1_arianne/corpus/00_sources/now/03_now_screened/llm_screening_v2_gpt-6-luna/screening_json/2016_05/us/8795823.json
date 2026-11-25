@@ -1,0 +1,77 @@
+{
+  "article_id": "8795823",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_05/us/8795823.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_05/us/8795823.json"
+  },
+  "manifest_row": {
+    "article_id": "8795823",
+    "group": "2016_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_05/us/8795823.txt",
+    "now_field_2": "882",
+    "date_original": "16-05-12",
+    "date_iso": "2016-05-12",
+    "source_name": "UN News Centre",
+    "url": "http://www.un.org/apps/news/story.asp?NewsID=53914",
+    "title": "UN health agency warns of rise in urban air pollution, with poorest ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-05-bvk/16-05-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "Urban air pollution and its health effects",
+    "climate_relevance": "The text notes that reducing air pollution can bring a climate benefit and contribute to countries' commitments under the Paris Agreement.",
+    "reason": "The article is substantially about air quality, pollution, and public health. Climate change appears in a meaningful but brief discussion of pollution-reduction co-benefits and the climate treaty, so it is relevant as peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c3830717bc257def280cc33151f74fdab49abeec74ef190c5f5e7101718d227a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f2d92fa756d4ae6856753e893198f5343d88f94c78b7c5cdb7340322112680ea",
+    "raw_response_text_sha256": "c14575b497f628356480116e9f7a46a5c6c0f8ab3b0c7733cb3942ba9b18397f"
+  },
+  "api_metadata": {
+    "id": "resp_0ce3d4f957f44551006b0650a2967087d1bb72431c2349ae12",
+    "model": "gpt-6-luna",
+    "created_at": 1795575970.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1623,
+      "input_tokens_details": {
+        "cache_write_tokens": 1620,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1620
+        }
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1828
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Urban air pollution and its health effects\",\n  \"climate_relevance\": \"The text notes that reducing air pollution can bring a climate benefit and contribute to countries' commitments under the Paris Agreement.\",\n  \"reason\": \"The article is substantially about air quality, pollution, and public health. Climate change appears in a meaningful but brief discussion of pollution-reduction co-benefits and the climate treaty, so it is relevant as peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:06:12Z",
+  "duration_seconds": 2.489,
+  "error": null
+}

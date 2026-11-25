@@ -1,0 +1,77 @@
+{
+  "article_id": "40561097",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/my/40561097.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/my/40561097.json"
+  },
+  "manifest_row": {
+    "article_id": "40561097",
+    "group": "2019_01",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/my/40561097.txt",
+    "now_field_2": "479",
+    "date_original": "19-01-30",
+    "date_iso": "2019-01-30",
+    "source_name": "EdgeProp.my",
+    "url": "https://www.edgeprop.my/content/1466870/66600-households-enjoy-rm40-electricity-bill-rebate-jan-1",
+    "title": "66600 households enjoy RM40 electricity bill rebate since Jan 1",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Malaysian government electricity-bill rebate for low-income households",
+    "climate_relevance": "Climate change appears only as part of the energy minister's ministry name; the text does not discuss climate issues.",
+    "reason": "The article focuses on eligibility, registration, and funding for an electricity-bill subsidy. The ministry name is an incidental mention, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9a8f6e3b545fc80d0746443316d8c70cd3c3bafcd64c2a7fc2f685ae61d09e67",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2c72789fa61661084c9c472df085cadbce7a4c72dbd32929e6d1442ca6b5f09a",
+    "raw_response_text_sha256": "2c6dc7b4d9be430b36958d1df7253d027fb46db4f4a2753a71a0d045c5c494cd"
+  },
+  "api_metadata": {
+    "id": "resp_07bab7540fc3d331006b061f36f0c487d2bbfa154045c3b62e",
+    "model": "gpt-6-luna",
+    "created_at": 1795563319.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1147,
+      "input_tokens_details": {
+        "cache_write_tokens": 1144,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1144
+        }
+      },
+      "output_tokens": 177,
+      "output_tokens_details": {
+        "reasoning_tokens": 34
+      },
+      "total_tokens": 1324
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Malaysian government electricity-bill rebate for low-income households\",\n  \"climate_relevance\": \"Climate change appears only as part of the energy minister's ministry name; the text does not discuss climate issues.\",\n  \"reason\": \"The article focuses on eligibility, registration, and funding for an electricity-bill subsidy. The ministry name is an incidental mention, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:35:21Z",
+  "duration_seconds": 2.132,
+  "error": null
+}

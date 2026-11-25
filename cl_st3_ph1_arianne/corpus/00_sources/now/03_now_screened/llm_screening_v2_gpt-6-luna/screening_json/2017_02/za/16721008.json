@@ -1,0 +1,77 @@
+{
+  "article_id": "16721008",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/za/16721008.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/za/16721008.json"
+  },
+  "manifest_row": {
+    "article_id": "16721008",
+    "group": "2017_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/za/16721008.txt",
+    "now_field_2": "513",
+    "date_original": "17-02-03",
+    "date_iso": "2017-02-03",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/entertainment/2017/02/03/Yes-DJ-Sbu-is-leaving-Vuma-FM-but-dont-panic",
+    "title": "Yes, DJ Sbu is leaving Vuma FM, but don't panic",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "climate_role": "background",
+    "main_topic": "A collection of unrelated news snippets, including a fragment about greenhouse-gas emissions targets and climate policy uncertainty",
+    "climate_relevance": "A fragment refers to phasing out greenhouse-gas emissions by 2045 and uncertainty about U.S. climate policy under Donald Trump.",
+    "reason": "The text is a collection of unrelated snippets rather than a coherent climate article, but the emissions-target and climate-policy reference is meaningful enough to retain as peripheral discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "978326e737f3c5ea7fdb1bf5f70b9db4cd63869c5093dee79f804ce1066f4fbb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1e39b47b6ee6ed3d5a03b5c71d333a8892eb0a06bee0552e87397431a5ecb011",
+    "raw_response_text_sha256": "c1ed9594fa197ae7e6e3a4f2fd019bb805ce3d8d972606dc1a5d4a7ec012733a"
+  },
+  "api_metadata": {
+    "id": "resp_0b3a3c4e7d97c49c006b06081c142c87d2901cadcd480e2dab",
+    "model": "gpt-6-luna",
+    "created_at": 1795557404.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1133,
+      "input_tokens_details": {
+        "cache_write_tokens": 1130,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1130
+        }
+      },
+      "output_tokens": 380,
+      "output_tokens_details": {
+        "reasoning_tokens": 225
+      },
+      "total_tokens": 1513
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of unrelated news snippets, including a fragment about greenhouse-gas emissions targets and climate policy uncertainty\",\n  \"climate_relevance\": \"A fragment refers to phasing out greenhouse-gas emissions by 2045 and uncertainty about U.S. climate policy under Donald Trump.\",\n  \"reason\": \"The text is a collection of unrelated snippets rather than a coherent climate article, but the emissions-target and climate-policy reference is meaningful enough to retain as peripheral discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:56:47Z",
+  "duration_seconds": 3.073,
+  "error": null
+}

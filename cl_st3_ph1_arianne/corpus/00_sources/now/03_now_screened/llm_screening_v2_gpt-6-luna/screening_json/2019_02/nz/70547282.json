@@ -1,0 +1,77 @@
+{
+  "article_id": "70547282",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70547282.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70547282.json"
+  },
+  "manifest_row": {
+    "article_id": "70547282",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70547282.txt",
+    "now_field_2": "709",
+    "date_original": "19-02-25",
+    "date_iso": "2019-02-25",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PO1902/S00256/the-lifewise-big-sleepout-is-back.htm",
+    "title": "The Lifewise Big Sleepout is back",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A fundraiser supporting homelessness services in New Zealand",
+    "climate_relevance": "Climate change appears only in an unrelated teaser about Greenpeace's response to National Party environment proposals, not in the main article.",
+    "reason": "The identifiable main article concerns homelessness and the Lifewise Big Sleepout. The brief climate reference belongs to an unrelated snippet and does not make the main article useful for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8e50dbc1f571a54646b62bc57da6be1fa275d53c70146bc3942a95458f5641fa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5f45ec1ee7676b97fddc6952e5055d8ed08e5e0ffa594dc5311cba972bcdea0a",
+    "raw_response_text_sha256": "2615943e838d50260f084f71e862a7486e8d005652cdab20989d6b02b5ea9aa6"
+  },
+  "api_metadata": {
+    "id": "resp_028751004b66fd1d006b063d78847487d19b22f753d455e604",
+    "model": "gpt-6-luna",
+    "created_at": 1795571064.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1687,
+      "input_tokens_details": {
+        "cache_write_tokens": 1684,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1684
+        }
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 2024
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A fundraiser supporting homelessness services in New Zealand\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated teaser about Greenpeace's response to National Party environment proposals, not in the main article.\",\n  \"reason\": \"The identifiable main article concerns homelessness and the Lifewise Big Sleepout. The brief climate reference belongs to an unrelated snippet and does not make the main article useful for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:44:27Z",
+  "duration_seconds": 2.877,
+  "error": null
+}

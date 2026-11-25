@@ -1,0 +1,77 @@
+{
+  "article_id": "83593468",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/83593468.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/83593468.json"
+  },
+  "manifest_row": {
+    "article_id": "83593468",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/83593468.txt",
+    "now_field_2": "230",
+    "date_original": "20-02-02",
+    "date_iso": "2020-02-02",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20200202134857-iw0v8",
+    "title": "Plane repatriating 250 Europeans from China's Wuhan lands in France",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us6.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Repatriation and quarantine of people evacuated from Wuhan during the coronavirus outbreak",
+    "climate_relevance": "Climate change appears only in a generic description of the news organization's coverage areas.",
+    "reason": "The article reports on coronavirus evacuations from Wuhan and contains no meaningful climate discourse; the sole climate reference is boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b66cb564c2e610c14c454bdac82c325d6e050837f5342c0ae86e0bd0d3bc1123",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e10321b2b0676b30f2420ae03d49edfd386fadda51dfa9278773f46b2a97a906",
+    "raw_response_text_sha256": "85b4f4b025cce6824a9f2ac8fe61f35422ec266e1b5da1922a76fe1b6c6fd7fc"
+  },
+  "api_metadata": {
+    "id": "resp_04d82c588c79bb7d006b0649c7ab1087d1a25897ad681fd02f",
+    "model": "gpt-6-luna",
+    "created_at": 1795574215.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 799,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 182,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 981
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Repatriation and quarantine of people evacuated from Wuhan during the coronavirus outbreak\",\n  \"climate_relevance\": \"Climate change appears only in a generic description of the news organization's coverage areas.\",\n  \"reason\": \"The article reports on coronavirus evacuations from Wuhan and contains no meaningful climate discourse; the sole climate reference is boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:36:57Z",
+  "duration_seconds": 1.716,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31430312",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/31430312.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/31430312.json"
+  },
+  "manifest_row": {
+    "article_id": "31430312",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/31430312.txt",
+    "now_field_2": "1833",
+    "date_original": "19-11-13",
+    "date_iso": "2019-11-13",
+    "source_name": "latimes.com",
+    "url": "https://www.latimes.com/california/story/2019-11-05/mass-cellphone-outages-during-blackouts-and-fires-are-a-grim-preview-of-life-after-a-major-earthquake",
+    "title": "California suffered widespread cellphone outages during ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Cellphone and communications outages during California wildfire-related power shutoffs",
+    "climate_relevance": "The main article discusses wildfire-related power outages and emergency communications but does not meaningfully discuss climate change. The final sentence about climate change and storing Sierra Nevada snowmelt appears to be an unrelated article snippet.",
+    "reason": "The identifiable main article focuses on telecommunications resilience during power shutoffs and fires. Climate change appears only in a separate, apparently unrelated snippet at the end.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "39aaa01a1ea78332183196e5b68ee076d2b5dcc3d3bd79b4f4af163385a5e069",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "07095102934ecfcde3dd07475dac85b2b7ad97b0150bdb2f5cd55cd8dfe8fa19",
+    "raw_response_text_sha256": "89d8af412e9b6c29fa46e0a4bbd129098e9b9907a5e71a9f660775da361b697c"
+  },
+  "api_metadata": {
+    "id": "resp_01f624d8688a1a23006b0617379f0887d2a32df7544eea2961",
+    "model": "gpt-6-luna",
+    "created_at": 1795561271.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2877,
+      "input_tokens_details": {
+        "cache_write_tokens": 2874,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2874
+        }
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 3155
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Cellphone and communications outages during California wildfire-related power shutoffs\",\n  \"climate_relevance\": \"The main article discusses wildfire-related power outages and emergency communications but does not meaningfully discuss climate change. The final sentence about climate change and storing Sierra Nevada snowmelt appears to be an unrelated article snippet.\",\n  \"reason\": \"The identifiable main article focuses on telecommunications resilience during power shutoffs and fires. Climate change appears only in a separate, apparently unrelated snippet at the end.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:01:13Z",
+  "duration_seconds": 2.449,
+  "error": null
+}

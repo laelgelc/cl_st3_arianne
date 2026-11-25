@@ -1,0 +1,77 @@
+{
+  "article_id": "50253318",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/au/50253318.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/au/50253318.json"
+  },
+  "manifest_row": {
+    "article_id": "50253318",
+    "group": "2018_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/au/50253318.txt",
+    "now_field_2": "303",
+    "date_original": "18-11-30",
+    "date_iso": "2018-11-30",
+    "source_name": "ABC News",
+    "url": "https://www.abc.net.au/news/2018-12-01/ukraine-bans-russian-men-fearing-private-army-after-naval-clash/10573602?section=world",
+    "title": "Ukraine bans Russian men 16 to 60 travelling to country over fears of ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Ukraine’s restrictions on Russian men entering the country during martial law",
+    "climate_relevance": "A final, apparently unrelated snippet briefly links climate change to worsening Australian bushfires; it is not part of the identifiable main article.",
+    "reason": "The main article concerns Ukraine-Russia tensions and border restrictions. Climate change appears only in a separate appended snippet, not as meaningful coverage in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f7fda23732b0f5fd06d4d3a078928024df37ee79d876a64ea1e05aac427b4e69",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "63ea78c81b26668e07745ca0bbbfbbab0ad0803bf5fd4f60930172554b45b733",
+    "raw_response_text_sha256": "f35509b3a4cc2db28545658067e896367a7eb58c6637e63fc203e957132fa0be"
+  },
+  "api_metadata": {
+    "id": "resp_0d6db1f5667b1bec006b0628392d3c87d1a75920fc48f7746f",
+    "model": "gpt-6-luna",
+    "created_at": 1795565625.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 899,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 1154
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ukraine’s restrictions on Russian men entering the country during martial law\",\n  \"climate_relevance\": \"A final, apparently unrelated snippet briefly links climate change to worsening Australian bushfires; it is not part of the identifiable main article.\",\n  \"reason\": \"The main article concerns Ukraine-Russia tensions and border restrictions. Climate change appears only in a separate appended snippet, not as meaningful coverage in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:13:47Z",
+  "duration_seconds": 2.253,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50733532",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/gb/50733532.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/gb/50733532.json"
+  },
+  "manifest_row": {
+    "article_id": "50733532",
+    "group": "2019_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/gb/50733532.txt",
+    "now_field_2": "435",
+    "date_original": "19-06-04",
+    "date_iso": "2019-06-04",
+    "source_name": "Telegraph.co.uk",
+    "url": "https://www.telegraph.co.uk/news/2019/06/04/australia-sees-rare-snowfall-subtropical-sunshine-state-queensland/",
+    "title": "Australia sees 'rare' snowfall in subtropical Sunshine State of ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Severe and unusual weather across eastern Australia",
+    "climate_relevance": "The article briefly connects Australia's extreme weather to climate change, warning that it may bring more intense bushfires, droughts, and storms.",
+    "reason": "The report is mainly about a specific bout of storms, high winds, and unexpected snowfall. Its closing climate-change statement is meaningful but brief, so the text is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "502116e1ba6938ac28e6eaec754605a7da9958c99bd5a519ee9279ce089ae89d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "83bae8686ac6252d058b65a46195c852b241883fd03adfda94bf4dff158081ff",
+    "raw_response_text_sha256": "f30e3f15c4cf76273f8d5079073fe32c61570d4fe2efc2e616d915311b14d2ef"
+  },
+  "api_metadata": {
+    "id": "resp_01185fd414f0c895006b062a9aa28c87d1abc34f4423b040af",
+    "model": "gpt-6-luna",
+    "created_at": 1795566234.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1058,
+      "input_tokens_details": {
+        "cache_write_tokens": 1055,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1055
+        }
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 1259
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Severe and unusual weather across eastern Australia\",\n  \"climate_relevance\": \"The article briefly connects Australia's extreme weather to climate change, warning that it may bring more intense bushfires, droughts, and storms.\",\n  \"reason\": \"The report is mainly about a specific bout of storms, high winds, and unexpected snowfall. Its closing climate-change statement is meaningful but brief, so the text is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:23:56Z",
+  "duration_seconds": 2.215,
+  "error": null
+}

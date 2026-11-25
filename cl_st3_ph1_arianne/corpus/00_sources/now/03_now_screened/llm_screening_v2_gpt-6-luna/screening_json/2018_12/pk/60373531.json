@@ -1,0 +1,77 @@
+{
+  "article_id": "60373531",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/pk/60373531.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/pk/60373531.json"
+  },
+  "manifest_row": {
+    "article_id": "60373531",
+    "group": "2018_12",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/pk/60373531.txt",
+    "now_field_2": "452",
+    "date_original": "18-12-23",
+    "date_iso": "2018-12-23",
+    "source_name": "The News International",
+    "url": "https://www.thenews.com.pk/print/409945-zoo-botanical-garden-on-the-cards-in-capital",
+    "title": "Zoo-botanical garden on the cards in capital",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A proposed zoo-botanical garden in Islamabad and the recovery and preparation of land for the project.",
+    "climate_relevance": "Climate change appears only in the name of the Ministry overseeing the project; the text contains no meaningful discussion of climate change or its implications.",
+    "reason": "The article focuses on the garden project, land encroachment, planning, and access. Mentioning the Ministry of Climate Change as the responsible institution does not make this climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e16748a932489a94ab7ee8d3bcfb168e0e77d3451f4c75be7ceb4aa4930cec36",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5404e3f452e2aa50b39b1ea8bdf62c19fbbe71d3b92e2e752f97f713e40c71b4",
+    "raw_response_text_sha256": "98be0b6eb8650debf87d9dc4b451fa22e16c806f1421ffa2ee8ccabf1d2dfaf5"
+  },
+  "api_metadata": {
+    "id": "resp_035756629fde9ce9006b06325d4bec87d1bdbff797f5978abc",
+    "model": "gpt-6-luna",
+    "created_at": 1795568221.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1043,
+      "input_tokens_details": {
+        "cache_write_tokens": 1040,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1040
+        }
+      },
+      "output_tokens": 363,
+      "output_tokens_details": {
+        "reasoning_tokens": 201
+      },
+      "total_tokens": 1406
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A proposed zoo-botanical garden in Islamabad and the recovery and preparation of land for the project.\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry overseeing the project; the text contains no meaningful discussion of climate change or its implications.\",\n  \"reason\": \"The article focuses on the garden project, land encroachment, planning, and access. Mentioning the Ministry of Climate Change as the responsible institution does not make this climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:57:04Z",
+  "duration_seconds": 3.663,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31625253",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/31625253.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/31625253.json"
+  },
+  "manifest_row": {
+    "article_id": "31625253",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/31625253.txt",
+    "now_field_2": "3233",
+    "date_original": "20-02-05",
+    "date_iso": "2020-02-05",
+    "source_name": "cnbc.com",
+    "url": "https://www.cnbc.com/2020/02/04/trump-state-of-the-union-live-updates.html",
+    "title": "State of the Union 2020 live updates: Trump addresses the ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us5.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Live coverage of Donald Trump's 2020 State of the Union address and the political responses to it",
+    "climate_relevance": "A quoted excerpt from Gretchen Whitmer's Democratic response mentions young people pushing leaders to take action on climate change.",
+    "reason": "The live blog is primarily about U.S. politics, health care, and the economy. Climate change appears in one meaningful but brief sentence, so the text is relevant as peripheral discourse rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1570ee42c3ae5b7ca6d9dec5e551677e46b966a2b47f3fe3dad95a7acdadb176",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0a2dcb593f8ee8d62807dd5606291c87fb79fc69e0dd56a1a1ff04b32fb298cd",
+    "raw_response_text_sha256": "4e0729b5ed42e70244d4853b2adf33190dd62e03f41aaf20f787ae1b4092d149"
+  },
+  "api_metadata": {
+    "id": "resp_06c6d6b3c43f3681006b061884eaa887d295bdcac8eecb9df7",
+    "model": "gpt-6-luna",
+    "created_at": 1795561605.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4944,
+      "input_tokens_details": {
+        "cache_write_tokens": 4941,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4941
+        }
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 5250
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Live coverage of Donald Trump's 2020 State of the Union address and the political responses to it\",\n  \"climate_relevance\": \"A quoted excerpt from Gretchen Whitmer's Democratic response mentions young people pushing leaders to take action on climate change.\",\n  \"reason\": \"The live blog is primarily about U.S. politics, health care, and the economy. Climate change appears in one meaningful but brief sentence, so the text is relevant as peripheral discourse rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:06:47Z",
+  "duration_seconds": 2.403,
+  "error": null
+}

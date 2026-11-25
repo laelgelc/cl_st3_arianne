@@ -1,0 +1,77 @@
+{
+  "article_id": "40841045",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40841045.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40841045.json"
+  },
+  "manifest_row": {
+    "article_id": "40841045",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40841045.txt",
+    "now_field_2": "1097",
+    "date_original": "19-04-15",
+    "date_iso": "2019-04-15",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/15/ad-giant-wpp-struggles-with-founders-legacy-as-rivals-circle/",
+    "title": "Ad giant WPP struggles with founder's legacy as rivals circle",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "WPP's business performance and leadership transition",
+    "climate_relevance": "A separate headline-style item mentions Malaysia exhibiting sustainable energy solutions and names the climate change minister, but the main article does not discuss climate change.",
+    "reason": "The identifiable main article concerns WPP and the advertising industry. The brief climate-related reference appears in an unrelated item at the beginning rather than as meaningful discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6ea37c09a8be63b648f75249d35f3eb3cf40f7792596a6b9d21fdc2515b33d49",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "93a18700514da963cda808959da1306f900a4993bc8445da220e3ca8ca98986b",
+    "raw_response_text_sha256": "56a3b024468a9d8f0e5f4c66fcf214e50d54b7a16ac893ba422ee6b2edc1bf2a"
+  },
+  "api_metadata": {
+    "id": "resp_09f13ce57e2ed705006b061ffa1aec87d29958dc99ba5a9167",
+    "model": "gpt-6-luna",
+    "created_at": 1795563514.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1997,
+      "input_tokens_details": {
+        "cache_write_tokens": 1994,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1994
+        }
+      },
+      "output_tokens": 361,
+      "output_tokens_details": {
+        "reasoning_tokens": 210
+      },
+      "total_tokens": 2358
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"WPP's business performance and leadership transition\",\n  \"climate_relevance\": \"A separate headline-style item mentions Malaysia exhibiting sustainable energy solutions and names the climate change minister, but the main article does not discuss climate change.\",\n  \"reason\": \"The identifiable main article concerns WPP and the advertising industry. The brief climate-related reference appears in an unrelated item at the beginning rather than as meaningful discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:37Z",
+  "duration_seconds": 3.042,
+  "error": null
+}

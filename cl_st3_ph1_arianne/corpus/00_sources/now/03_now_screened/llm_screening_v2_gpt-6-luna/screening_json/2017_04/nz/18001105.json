@@ -1,0 +1,77 @@
+{
+  "article_id": "18001105",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/nz/18001105.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/nz/18001105.json"
+  },
+  "manifest_row": {
+    "article_id": "18001105",
+    "group": "2017_04",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/nz/18001105.txt",
+    "now_field_2": "302",
+    "date_original": "17-04-17",
+    "date_iso": "2017-04-17",
+    "source_name": "Otago Daily Times",
+    "url": "https://www.odt.co.nz/news/national/north-korea-mccullys-agenda",
+    "title": "North Korea on McCully's agenda",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "New Zealand–US relations and regional security",
+    "climate_relevance": "Climate change is mentioned only as one item in a list of areas for bilateral cooperation, with no further discussion.",
+    "reason": "The article focuses on diplomacy and military affairs; its brief climate reference does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "db39ee0478c5f65cddb18fc4a28647eee15375a525fdd3ea040116ad8388cf84",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7084950a1d1344f8e9bb0986fa91b070e73e340f511df0d23f55f47b8de105e9",
+    "raw_response_text_sha256": "fd4e361fecf8069b8fab83ade6d5b977c60b6ea3c1026cdb16074f2864a7d407"
+  },
+  "api_metadata": {
+    "id": "resp_014bb1e92c4fe5fb006b0609a4921c87d2a86e9f17886af4f8",
+    "model": "gpt-6-luna",
+    "created_at": 1795557796.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 884,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 1140
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New Zealand–US relations and regional security\",\n  \"climate_relevance\": \"Climate change is mentioned only as one item in a list of areas for bilateral cooperation, with no further discussion.\",\n  \"reason\": \"The article focuses on diplomacy and military affairs; its brief climate reference does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:03:18Z",
+  "duration_seconds": 2.322,
+  "error": null
+}

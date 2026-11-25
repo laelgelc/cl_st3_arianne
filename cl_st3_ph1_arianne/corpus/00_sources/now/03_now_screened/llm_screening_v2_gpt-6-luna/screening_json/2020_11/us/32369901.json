@@ -1,0 +1,77 @@
+{
+  "article_id": "32369901",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/us/32369901.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/us/32369901.json"
+  },
+  "manifest_row": {
+    "article_id": "32369901",
+    "group": "2020_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/us/32369901.txt",
+    "now_field_2": "144",
+    "date_original": "20-11-25",
+    "date_iso": "2020-11-25",
+    "source_name": "advances.sciencemag.org",
+    "url": "https://advances.sciencemag.org/highwire/markup/243348/expansion?width=1000&amp;height=500&amp;iframe=true&amp;postprocessors=highwire_figures%2Chighwire_math%2Chighwire_embed",
+    "title": "<strong>advances.sciencemag.org</strong>",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Social distancing and misinformation transmitted through social connections",
+    "climate_relevance": "Climate change denial is defined as one of several study variables, but the text provides no substantive discussion of climate change or denial.",
+    "reason": "The only climate reference is a brief operational definition of a variable in research focused on social distancing and COVID restrictions; it is not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "64ffc0e991034bfac3ef48eb345df59149f5dcd8c849d94f3527c4e04f606106",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5441ab1fa6ee89f60544ccef6f736d970702b749ee04d09f7b81be10ccd41e7a",
+    "raw_response_text_sha256": "250ed29a309fe29a9c608c9116ba11cd60b9a1c0c045332550417c933f8d8824"
+  },
+  "api_metadata": {
+    "id": "resp_01084165a49ee341006b061c61b82487d29d6314d6a3fc3ecf",
+    "model": "gpt-6-luna",
+    "created_at": 1795562593.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 681,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 334,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 1015
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Social distancing and misinformation transmitted through social connections\",\n  \"climate_relevance\": \"Climate change denial is defined as one of several study variables, but the text provides no substantive discussion of climate change or denial.\",\n  \"reason\": \"The only climate reference is a brief operational definition of a variable in research focused on social distancing and COVID restrictions; it is not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:23:16Z",
+  "duration_seconds": 3.013,
+  "error": null
+}

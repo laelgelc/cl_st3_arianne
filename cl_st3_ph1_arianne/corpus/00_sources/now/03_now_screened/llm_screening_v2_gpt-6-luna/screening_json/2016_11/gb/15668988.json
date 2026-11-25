@@ -1,0 +1,77 @@
+{
+  "article_id": "15668988",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_11/gb/15668988.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_11/gb/15668988.json"
+  },
+  "manifest_row": {
+    "article_id": "15668988",
+    "group": "2016_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_11/gb/15668988.txt",
+    "now_field_2": "747",
+    "date_original": "16-11-30",
+    "date_iso": "2016-11-30",
+    "source_name": "Reuters UK",
+    "url": "http://uk.reuters.com/article/us-usa-fires-tennessee-idUKKBN13Q34R",
+    "title": "Death toll rises to seven in Tennessee's Great Smoky Mountains fires",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-11.txt\"]",
+    "metadata_article_files": "[\"text-16-11/text_16-11-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Fatal wildfires and evacuations in Tennessee's Great Smoky Mountains",
+    "climate_relevance": "The main article reports on wildfire damage, casualties, and emergency response without discussing climate change. A separate 'Next In Environment' snippet mentions climate change, but it is unrelated to the main article.",
+    "reason": "Climate change appears only in an unrelated recommended-story snippet, not in the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "302adac5d47fefecd6d9b4b8f3edc9316af10feb688b5e7abcbbd9a4a30eb8aa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1ff6c4ca0b239f40f16701c758bad0c2a08f70e434b87102deacf33936c0a41d",
+    "raw_response_text_sha256": "5ef3db1b031b522b9f7b58b7f65a0699d98a75bd8515db169b62b5b2a321d7c5"
+  },
+  "api_metadata": {
+    "id": "resp_09a87a10c4e371d6006b0606e9e32c87d28f5d5714911095ce",
+    "model": "gpt-6-luna",
+    "created_at": 1795557098.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1515,
+      "input_tokens_details": {
+        "cache_write_tokens": 1512,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1512
+        }
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1747
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Fatal wildfires and evacuations in Tennessee's Great Smoky Mountains\",\n  \"climate_relevance\": \"The main article reports on wildfire damage, casualties, and emergency response without discussing climate change. A separate 'Next In Environment' snippet mentions climate change, but it is unrelated to the main article.\",\n  \"reason\": \"Climate change appears only in an unrelated recommended-story snippet, not in the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:51:40Z",
+  "duration_seconds": 3.051,
+  "error": null
+}

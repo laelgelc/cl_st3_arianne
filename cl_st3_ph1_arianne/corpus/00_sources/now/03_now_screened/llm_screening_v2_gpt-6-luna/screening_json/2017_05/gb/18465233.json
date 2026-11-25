@@ -1,0 +1,77 @@
+{
+  "article_id": "18465233",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/gb/18465233.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/gb/18465233.json"
+  },
+  "manifest_row": {
+    "article_id": "18465233",
+    "group": "2017_05",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/gb/18465233.txt",
+    "now_field_2": "2637",
+    "date_original": "17-05-16",
+    "date_iso": "2017-05-16",
+    "source_name": "The Independent",
+    "url": "http://www.independent.co.uk/news/business/news/ford-cut-jobs-10-per-cent-worldwide-investors-car-company-pathetic-performance-a7738116.html",
+    "title": "Ford to cut 10% of jobs worldwide as investors criticise 'pathetic ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Ford's employment cuts, share performance, and business strategy",
+    "climate_relevance": "Climate change appears in separate snippets about Heathrow expansion and the economic benefits of mitigation, not in the identifiable Ford article.",
+    "reason": "The main article concerns Ford's workforce and business performance. Although the text includes meaningful climate-related material, it appears in unrelated news snippets rather than the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b32456776e07cbd833c1e538d3498ed2c51eac51c3d89d81d09f9cea01cb513f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "38e5bbdcdfbc248f1b4bba9abb2265c6fd41fdd073e4e9224b36fa32eef41692",
+    "raw_response_text_sha256": "3bbe9482a5bfffc7e97416d61efca01ae330e24d1986eae75293cf9db7bdef53"
+  },
+  "api_metadata": {
+    "id": "resp_0d3b23535035c577006b060a46277487d2918bda33a0d679c1",
+    "model": "gpt-6-luna",
+    "created_at": 1795557958.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3945,
+      "input_tokens_details": {
+        "cache_write_tokens": 3942,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3942
+        }
+      },
+      "output_tokens": 474,
+      "output_tokens_details": {
+        "reasoning_tokens": 328
+      },
+      "total_tokens": 4419
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ford's employment cuts, share performance, and business strategy\",\n  \"climate_relevance\": \"Climate change appears in separate snippets about Heathrow expansion and the economic benefits of mitigation, not in the identifiable Ford article.\",\n  \"reason\": \"The main article concerns Ford's workforce and business performance. Although the text includes meaningful climate-related material, it appears in unrelated news snippets rather than the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:06:01Z",
+  "duration_seconds": 3.604,
+  "error": null
+}

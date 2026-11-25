@@ -1,0 +1,77 @@
+{
+  "article_id": "31242658",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/us/31242658.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/us/31242658.json"
+  },
+  "manifest_row": {
+    "article_id": "31242658",
+    "group": "2019_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/us/31242658.txt",
+    "now_field_2": "2194",
+    "date_original": "19-08-24",
+    "date_iso": "2019-08-24",
+    "source_name": "nymag.com",
+    "url": "http://nymag.com/intelligencer/2018/07/climate-change-wildfires-heatwave-media-old-news-end-of-the-world.html",
+    "title": "How Did the Climate Apocalypse Become Old News?",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-us3.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Media coverage of climate change, extreme weather, and the tendency to report disasters without connecting them to global warming",
+    "climate_relevance": "The main article extensively discusses climate change, its links to heat waves, wildfires and other extreme weather, projected impacts, and public and media responses.",
+    "reason": "Climate change and the public communication of its impacts are the article’s central subject. The text also contains several later, apparently unrelated news and social-media snippets, including one about methane regulation.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "16d018e80855effda733df979991e8bc2790d5e249aff272196a19b2c626d8a3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7a76b09ab8ff5c5d2df7a5db900077ef23c54b820700733cc9163e9f93d0d8a9",
+    "raw_response_text_sha256": "6060f2a074256f1ddff68e22b77ff1d7f917b4aa6510a113ee11676014279d17"
+  },
+  "api_metadata": {
+    "id": "resp_0ed16087e4021759006b06164fe65887d2bee6308dc237049e",
+    "model": "gpt-6-luna",
+    "created_at": 1795561040.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3336,
+      "input_tokens_details": {
+        "cache_write_tokens": 3333,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3333
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 3586
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Media coverage of climate change, extreme weather, and the tendency to report disasters without connecting them to global warming\",\n  \"climate_relevance\": \"The main article extensively discusses climate change, its links to heat waves, wildfires and other extreme weather, projected impacts, and public and media responses.\",\n  \"reason\": \"Climate change and the public communication of its impacts are the article’s central subject. The text also contains several later, apparently unrelated news and social-media snippets, including one about methane regulation.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:57:21Z",
+  "duration_seconds": 2.088,
+  "error": null
+}

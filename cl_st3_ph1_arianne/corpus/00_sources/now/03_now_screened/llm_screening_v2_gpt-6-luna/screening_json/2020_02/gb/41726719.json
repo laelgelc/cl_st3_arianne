@@ -1,0 +1,77 @@
+{
+  "article_id": "41726719",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/gb/41726719.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/gb/41726719.json"
+  },
+  "manifest_row": {
+    "article_id": "41726719",
+    "group": "2020_02",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/gb/41726719.txt",
+    "now_field_2": "326",
+    "date_original": "20-02-10",
+    "date_iso": "2020-02-10",
+    "source_name": "scotsman.com",
+    "url": "https://www.scotsman.com/news/politics/nicola-sturgeon-visits-brussels-to-discuss-future-of-scotland-eu-relationship-1-5088270",
+    "title": "Nicola Sturgeon visits Brussels to discuss future of ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Nicola Sturgeon's visit to Brussels and Scotland's relationship with the EU after Brexit",
+    "climate_relevance": "COP26 is mentioned only as one topic of a planned speech; the text provides no substantive discussion of climate change.",
+    "reason": "The article focuses on Brexit, Scottish independence, and EU relations. Its brief COP26 reference does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2d2c5c1869f27f128f33139a4c622a568eafad59a78c9173b6494b0284dfdd57",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9a37110a76bd21d651479b6c52b27e57e3ea8bdb2f97bb1c291ea1f80a500ec3",
+    "raw_response_text_sha256": "a105ea8dd11504b666b44563cc5b6b0e03f53302ee4c0f8ff1c891c850a70e08"
+  },
+  "api_metadata": {
+    "id": "resp_0c6eabb38c55d4f6006b0622ece95887d2b137ec7205d03f57",
+    "model": "gpt-6-luna",
+    "created_at": 1795564269.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 908,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 1188
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Nicola Sturgeon's visit to Brussels and Scotland's relationship with the EU after Brexit\",\n  \"climate_relevance\": \"COP26 is mentioned only as one topic of a planned speech; the text provides no substantive discussion of climate change.\",\n  \"reason\": \"The article focuses on Brexit, Scottish independence, and EU relations. Its brief COP26 reference does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:51:11Z",
+  "duration_seconds": 2.527,
+  "error": null
+}

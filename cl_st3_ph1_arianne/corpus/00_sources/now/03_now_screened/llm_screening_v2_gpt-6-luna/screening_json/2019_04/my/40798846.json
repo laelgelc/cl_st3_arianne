@@ -1,0 +1,77 @@
+{
+  "article_id": "40798846",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40798846.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40798846.json"
+  },
+  "manifest_row": {
+    "article_id": "40798846",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40798846.txt",
+    "now_field_2": "613",
+    "date_original": "19-04-03",
+    "date_iso": "2019-04-03",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/04/plus-malaysia-still-has-rm30-2b-debt-to-pay/",
+    "title": "PLUS Malaysia still has RM30.2b debt to pay",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "PLUS Malaysia's debt and the possibility of abolishing tolls",
+    "climate_relevance": "Climate change appears only in an unrelated headline-style item about Malaysia exhibiting sustainable energy solutions at Expo 2020; the article itself concerns toll-road debt and policy.",
+    "reason": "The identifiable main article contains no meaningful climate discourse. The brief sustainable-energy reference is part of an unrelated snippet rather than the article's discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f54e8bab7fa0949dcd9bbb3a175cbe7d6866c940d1e22a82f546329e57b1efd8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9af2a25cedd140951b59ff3d9f2e71bb5d0b8d27b2c7828893c9c59c7def8731",
+    "raw_response_text_sha256": "9bcff8fa89251503c9988839182208dabf4e446a5e6176796c593338c9318a69"
+  },
+  "api_metadata": {
+    "id": "resp_027d9892dc056cdb006b061fbf26c887d2afcb30c3b4a3d5a2",
+    "model": "gpt-6-luna",
+    "created_at": 1795563455.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1330,
+      "input_tokens_details": {
+        "cache_write_tokens": 1327,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1327
+        }
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 1623
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"PLUS Malaysia's debt and the possibility of abolishing tolls\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated headline-style item about Malaysia exhibiting sustainable energy solutions at Expo 2020; the article itself concerns toll-road debt and policy.\",\n  \"reason\": \"The identifiable main article contains no meaningful climate discourse. The brief sustainable-energy reference is part of an unrelated snippet rather than the article's discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:37Z",
+  "duration_seconds": 2.681,
+  "error": null
+}

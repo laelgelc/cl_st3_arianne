@@ -1,0 +1,77 @@
+{
+  "article_id": "42206338",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/gb/42206338.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/gb/42206338.json"
+  },
+  "manifest_row": {
+    "article_id": "42206338",
+    "group": "2020_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/gb/42206338.txt",
+    "now_field_2": "13122",
+    "date_original": "20-08-19",
+    "date_iso": "2020-08-19",
+    "source_name": "blogs.lse.ac.uk",
+    "url": "https://blogs.lse.ac.uk/usappblog/contributors/contributors-d-f/",
+    "title": "Contributors D-F | USAPP",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Contributor biographies and research profiles",
+    "climate_relevance": "A few biographies mention climate-related research, governance, or carbon emissions, but the text does not discuss climate change itself.",
+    "reason": "The supplied text is a contributor directory. Climate references occur only within biographical descriptions and function as profile metadata rather than substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4278e43314251da8fd9ff44e8c6b457d3523abb4f9f8f3a75bed33e3f0ec805f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b356f8b208cb5a9b2cbb5217bc4545b80546e3987b24093ebc2d1eccb6f11539",
+    "raw_response_text_sha256": "16088871a088799be4a1520d7a3af4fb82dd34aceeaac136936b7682ed0121d0"
+  },
+  "api_metadata": {
+    "id": "resp_0c7fb1b292cc5c66006b062506d5a887d2a0e7b737702a10ba",
+    "model": "gpt-6-luna",
+    "created_at": 1795564807.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 17634,
+      "input_tokens_details": {
+        "cache_write_tokens": 17631,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 17631
+        }
+      },
+      "output_tokens": 441,
+      "output_tokens_details": {
+        "reasoning_tokens": 305
+      },
+      "total_tokens": 18075
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Contributor biographies and research profiles\",\n  \"climate_relevance\": \"A few biographies mention climate-related research, governance, or carbon emissions, but the text does not discuss climate change itself.\",\n  \"reason\": \"The supplied text is a contributor directory. Climate references occur only within biographical descriptions and function as profile metadata rather than substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:00:10Z",
+  "duration_seconds": 3.857,
+  "error": null
+}

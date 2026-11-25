@@ -1,0 +1,77 @@
+{
+  "article_id": "20119144",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/us/20119144.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/us/20119144.json"
+  },
+  "manifest_row": {
+    "article_id": "20119144",
+    "group": "2017_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/us/20119144.txt",
+    "now_field_2": "3196",
+    "date_original": "17-08-21",
+    "date_iso": "2017-08-21",
+    "source_name": "The New Yorker",
+    "url": "http://www.newyorker.com/culture/culture-desk/game-of-thrones-season-7-episode-6-recap-you-dont-understand",
+    "title": "\"Game of Thrones\" Season 7, Episode 6 Recap: You Don't Understand",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "A recap and critique of a Game of Thrones episode.",
+    "climate_relevance": "Climate change appears only in a brief metaphor comparing a wight to glacier water used to prove climate change to Trump; it is not developed as a topic.",
+    "reason": "The article is entertainment coverage, and its sole climate reference is incidental rather than meaningful climate discourse. An unrelated video item appears after the recap.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "22c17db57ca5a14b56d4d963500dd6b912250c2377028a9ed493c4d24d806098",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dcd2956b80f2a089b27d531fbcca956bc3a0558fbf03d2d0f3f581b1815d56bc",
+    "raw_response_text_sha256": "88a4e0323765dc237345edf3cb5ba1165c15aabb978bd8084d5e93183d59e956"
+  },
+  "api_metadata": {
+    "id": "resp_0cbd563358ea3b9d006b060ce5138887d280a9221a1652e6e9",
+    "model": "gpt-6-luna",
+    "created_at": 1795558629.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5090,
+      "input_tokens_details": {
+        "cache_write_tokens": 5087,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5087
+        }
+      },
+      "output_tokens": 297,
+      "output_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "total_tokens": 5387
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A recap and critique of a Game of Thrones episode.\",\n  \"climate_relevance\": \"Climate change appears only in a brief metaphor comparing a wight to glacier water used to prove climate change to Trump; it is not developed as a topic.\",\n  \"reason\": \"The article is entertainment coverage, and its sole climate reference is incidental rather than meaningful climate discourse. An unrelated video item appears after the recap.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:11Z",
+  "duration_seconds": 2.894,
+  "error": null
+}

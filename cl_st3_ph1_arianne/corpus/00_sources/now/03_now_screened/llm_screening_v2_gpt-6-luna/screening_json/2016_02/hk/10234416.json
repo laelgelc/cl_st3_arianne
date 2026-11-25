@@ -1,0 +1,77 @@
+{
+  "article_id": "10234416",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_02/hk/10234416.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_02/hk/10234416.json"
+  },
+  "manifest_row": {
+    "article_id": "10234416",
+    "group": "2016_02",
+    "country_code": "hk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_02/hk/10234416.txt",
+    "now_field_2": "629",
+    "date_original": "16-02-04",
+    "date_iso": "2016-02-04",
+    "source_name": "Hong Kong Standard",
+    "url": "http://www.thestandard.com.hk/breaking-news.php?id=71063",
+    "title": "Hillary Clinton draws fire over Wall Street cash pile",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-02-iuq/16-02-hk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Hillary Clinton and Bernie Sanders's dispute over Clinton's progressive credentials and campaign funding",
+    "climate_relevance": "Climate change appears only in a list of issues cited as points of disagreement; the text gives no further climate-related discussion.",
+    "reason": "The article is about the Democratic presidential primary and Wall Street funding. Climate change is a passing mention in an issue list and does not provide meaningful discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c56fe05fefc5472a67640122dcdb21c1ed9f24249781095c0a373d5166f4c006",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e659a241ba47f50182825ae2b812f15f16f2a9d4abc4b07f391da2ea4d01b831",
+    "raw_response_text_sha256": "a33e5f3eb14a8e8064065bda6c219bd2f7182c4e0c56aa10a5ff727ad901672b"
+  },
+  "api_metadata": {
+    "id": "resp_01c4f2d51df75865006b0604fb4b9087d2a8eb39d6ec5385c7",
+    "model": "gpt-6-luna",
+    "created_at": 1795556603.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1248,
+      "input_tokens_details": {
+        "cache_write_tokens": 1245,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1245
+        }
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 1483
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Hillary Clinton and Bernie Sanders's dispute over Clinton's progressive credentials and campaign funding\",\n  \"climate_relevance\": \"Climate change appears only in a list of issues cited as points of disagreement; the text gives no further climate-related discussion.\",\n  \"reason\": \"The article is about the Democratic presidential primary and Wall Street funding. Climate change is a passing mention in an issue list and does not provide meaningful discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:43:25Z",
+  "duration_seconds": 2.156,
+  "error": null
+}

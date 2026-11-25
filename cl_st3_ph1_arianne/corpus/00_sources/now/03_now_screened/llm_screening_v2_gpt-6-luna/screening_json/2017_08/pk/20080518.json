@@ -1,0 +1,77 @@
+{
+  "article_id": "20080518",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/pk/20080518.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/pk/20080518.json"
+  },
+  "manifest_row": {
+    "article_id": "20080518",
+    "group": "2017_08",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/pk/20080518.txt",
+    "now_field_2": "253",
+    "date_original": "17-08-18",
+    "date_iso": "2017-08-18",
+    "source_name": "The News International",
+    "url": "https://www.thenews.com.pk/print/224480-A-stark-warning",
+    "title": "A stark warning",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-PK.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.91,
+    "climate_role": "substantial",
+    "main_topic": "Deforestation in Pakistan and the importance of planting trees",
+    "climate_relevance": "The text connects deforestation with climate change, regional weather changes, and carbon dioxide emissions, and presents tree planting as a way to curb climate change.",
+    "reason": "Climate change and its links to deforestation and tree planting are a substantial part of the article’s argument, rather than a passing mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "904fdbd6b5a4400248dd5c70702eaae720b77f81493a0e04d605a5d35bd78664",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f906ae2e734f32732b9c0f8980086967387319cf05aa224edc06b0be2cc14e76",
+    "raw_response_text_sha256": "6533b4cf529a6473a91d4b6a727d9d2fd9e59dfefd0fdb02d9cee0e4c61ef865"
+  },
+  "api_metadata": {
+    "id": "resp_0f6afbe82ded3e6a006b060cd8fed887d2b578945ae0976ec9",
+    "model": "gpt-6-luna",
+    "created_at": 1795558617.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 795,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 1005
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Deforestation in Pakistan and the importance of planting trees\",\n  \"climate_relevance\": \"The text connects deforestation with climate change, regional weather changes, and carbon dioxide emissions, and presents tree planting as a way to curb climate change.\",\n  \"reason\": \"Climate change and its links to deforestation and tree planting are a substantial part of the article’s argument, rather than a passing mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:16:58Z",
+  "duration_seconds": 1.889,
+  "error": null
+}

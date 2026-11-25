@@ -1,0 +1,77 @@
+{
+  "article_id": "70586930",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70586930.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70586930.json"
+  },
+  "manifest_row": {
+    "article_id": "70586930",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70586930.txt",
+    "now_field_2": "845",
+    "date_original": "19-03-12",
+    "date_iso": "2019-03-12",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/BU1903/S00315/new-zealands-first-5g-connected-driverless-car-tested.htm",
+    "title": "New Zealand's First 5G-Connected Driverless Car Tested",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Testing a 5G-connected driverless car in New Zealand",
+    "climate_relevance": "The identifiable main article is about 5G and autonomous vehicles. Climate-related material appears only in separate trailing news snippets about forestry and climate targets.",
+    "reason": "The climate references are unrelated snippets rather than part of the main article’s discussion, so they do not make this 5G technology story relevant for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ff9ef10a7682ab88d408d375818528b30d38e9fbe13469e0fb8de4c1f3aef14d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0a5c07ffc198d2125a775b9f01944506541d1acf56ee028951b7d0cc0e862ef2",
+    "raw_response_text_sha256": "a5dc4cff52f043380acc5c13b0f98ca444efd63851aaed36e9b74c47ad356109"
+  },
+  "api_metadata": {
+    "id": "resp_05cb7ed436495d7b006b063dc1861487d1a7cd386a6c79f3fe",
+    "model": "gpt-6-luna",
+    "created_at": 1795571137.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1595,
+      "input_tokens_details": {
+        "cache_write_tokens": 1592,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1592
+        }
+      },
+      "output_tokens": 370,
+      "output_tokens_details": {
+        "reasoning_tokens": 216
+      },
+      "total_tokens": 1965
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Testing a 5G-connected driverless car in New Zealand\",\n  \"climate_relevance\": \"The identifiable main article is about 5G and autonomous vehicles. Climate-related material appears only in separate trailing news snippets about forestry and climate targets.\",\n  \"reason\": \"The climate references are unrelated snippets rather than part of the main article’s discussion, so they do not make this 5G technology story relevant for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:45:40Z",
+  "duration_seconds": 3.055,
+  "error": null
+}

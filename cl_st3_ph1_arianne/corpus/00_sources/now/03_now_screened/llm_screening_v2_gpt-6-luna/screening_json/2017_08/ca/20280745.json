@@ -1,0 +1,77 @@
+{
+  "article_id": "20280745",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/ca/20280745.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/ca/20280745.json"
+  },
+  "manifest_row": {
+    "article_id": "20280745",
+    "group": "2017_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/ca/20280745.txt",
+    "now_field_2": "762",
+    "date_original": "17-08-30",
+    "date_iso": "2017-08-30",
+    "source_name": "The Catholic Register",
+    "url": "https://www.catholicregister.org/item/25943-church-reaches-out-to-aid-asylum-seekers",
+    "title": "Church reaches out to aid asylum seekers",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "Catholic Church support for asylum seekers entering Canada",
+    "climate_relevance": "Climate change is named as one of the causes that may drive refugees and economic migrants.",
+    "reason": "The article focuses on asylum seekers and the Church's humanitarian response. Climate change appears in a meaningful sentence about factors driving migration, but it is not otherwise developed.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f6ed9a32f9f1f7036b31570761010cf6f1eb2887a8add80e50cd8e5dd48055c4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5bf55d29debea606f2e0445ed952df5c68092d501637cfa4cef070ca32f30a2c",
+    "raw_response_text_sha256": "c708e1575591c0650ab532d5b28be615f61415c0c8f59b019614c672e1b92472"
+  },
+  "api_metadata": {
+    "id": "resp_0015ba7a2b8caf6c006b060d123aa887d295fc93e3303cd714",
+    "model": "gpt-6-luna",
+    "created_at": 1795558674.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1504,
+      "input_tokens_details": {
+        "cache_write_tokens": 1501,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1501
+        }
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 1698
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Catholic Church support for asylum seekers entering Canada\",\n  \"climate_relevance\": \"Climate change is named as one of the causes that may drive refugees and economic migrants.\",\n  \"reason\": \"The article focuses on asylum seekers and the Church's humanitarian response. Climate change appears in a meaningful sentence about factors driving migration, but it is not otherwise developed.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:56Z",
+  "duration_seconds": 1.961,
+  "error": null
+}

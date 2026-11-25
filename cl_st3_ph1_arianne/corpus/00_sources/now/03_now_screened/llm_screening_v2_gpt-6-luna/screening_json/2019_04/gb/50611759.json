@@ -1,0 +1,77 @@
+{
+  "article_id": "50611759",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/gb/50611759.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/gb/50611759.json"
+  },
+  "manifest_row": {
+    "article_id": "50611759",
+    "group": "2019_04",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/gb/50611759.txt",
+    "now_field_2": "391",
+    "date_original": "19-04-20",
+    "date_iso": "2019-04-20",
+    "source_name": "Metro",
+    "url": "https://metro.co.uk/2019/04/20/climate-change-activists-glue-chain-underneath-lorry-latest-stunt-9278814/",
+    "title": "Climate change activists glue and chain themselves underneath lorry ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "Police removal and arrests of Extinction Rebellion protesters on Waterloo Bridge",
+    "climate_relevance": "The protesters are identified as climate change activists, but the report focuses on the police operation and contains no substantive discussion of climate change, its implications, or the protesters’ climate-related aims.",
+    "reason": "Climate change provides only brief context for the protest; the available text does not contain meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b94a003ddd9be970f51844b3d18159cdae3ffd9f8a7b09dcc9cbe329bba1dd31",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "42e9bb2f79b8074eab0693bc2d14157887e1406f7ead18d8ad2cdcf24f831fef",
+    "raw_response_text_sha256": "9f195eb5814aa63e99d36886d8eaaa45c19e62af5cd4ab5b144a4652f7572167"
+  },
+  "api_metadata": {
+    "id": "resp_029f8ee6e2778aa0006b0629c2ab2487d18a2ddfb9f3643ad7",
+    "model": "gpt-6-luna",
+    "created_at": 1795566018.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 978,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 441,
+      "output_tokens_details": {
+        "reasoning_tokens": 294
+      },
+      "total_tokens": 1419
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Police removal and arrests of Extinction Rebellion protesters on Waterloo Bridge\",\n  \"climate_relevance\": \"The protesters are identified as climate change activists, but the report focuses on the police operation and contains no substantive discussion of climate change, its implications, or the protesters’ climate-related aims.\",\n  \"reason\": \"Climate change provides only brief context for the protest; the available text does not contain meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:20:22Z",
+  "duration_seconds": 3.522,
+  "error": null
+}

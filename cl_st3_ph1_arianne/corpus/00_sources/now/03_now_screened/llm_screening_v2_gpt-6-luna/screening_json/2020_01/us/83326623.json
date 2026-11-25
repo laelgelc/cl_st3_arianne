@@ -1,0 +1,77 @@
+{
+  "article_id": "83326623",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83326623.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83326623.json"
+  },
+  "manifest_row": {
+    "article_id": "83326623",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83326623.txt",
+    "now_field_2": "342",
+    "date_original": "20-01-18",
+    "date_iso": "2020-01-18",
+    "source_name": "abc7NY",
+    "url": "https://abc7ny.com/5860578/",
+    "title": "Women's marches to be held Saturday",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "Women’s March rallies and the issues represented at them",
+    "climate_relevance": "Climate change is listed as one of several issues the marches address; a separate passing remark identifies Greta Thunberg as a climate activist.",
+    "reason": "The article is about the rallies, and climate change receives no substantive discussion beyond a list of issues and a brief reference to Thunberg.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "deecc20127a1712b06ab0d836a370991408d05049392253a69fa43c79da00685",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "58f69138a987f8feba93b2ff52c97e2d33bcc732a9928dc5944186647b0cc655",
+    "raw_response_text_sha256": "5c37114927f575f6e78bd5804f1a1d45bef2da6e9b6edf50c7944d11d4bf1a8b"
+  },
+  "api_metadata": {
+    "id": "resp_0fab49642ca9d6b2006b064971687c87d1b22c8f4475043d43",
+    "model": "gpt-6-luna",
+    "created_at": 1795574129.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 937,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 340,
+      "output_tokens_details": {
+        "reasoning_tokens": 200
+      },
+      "total_tokens": 1277
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Women’s March rallies and the issues represented at them\",\n  \"climate_relevance\": \"Climate change is listed as one of several issues the marches address; a separate passing remark identifies Greta Thunberg as a climate activist.\",\n  \"reason\": \"The article is about the rallies, and climate change receives no substantive discussion beyond a list of issues and a brief reference to Thunberg.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:35:32Z",
+  "duration_seconds": 3.362,
+  "error": null
+}

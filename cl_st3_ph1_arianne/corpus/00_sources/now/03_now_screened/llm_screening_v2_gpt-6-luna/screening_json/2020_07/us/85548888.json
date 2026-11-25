@@ -1,0 +1,77 @@
+{
+  "article_id": "85548888",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/85548888.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/85548888.json"
+  },
+  "manifest_row": {
+    "article_id": "85548888",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/85548888.txt",
+    "now_field_2": "14613",
+    "date_original": "20-07-31",
+    "date_iso": "2020-07-31",
+    "source_name": "Reason",
+    "url": "https://reason.com/2020/07/31/the-extremely-online-are-less-informed-about-political-news-more-informed-about-conspiracy-theories/",
+    "title": "The Extremely Online Are Less Informed About Political News, More Informed About Conspiracy Theories",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us8.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.9,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Social media use as a source of political news and its relationship to news engagement and knowledge.",
+    "climate_relevance": "Climate change appears only in a separate excerpt about scientific expertise and evaluating claims; it is not part of the identifiable main article's discussion.",
+    "reason": "The main article reports on Pew findings about political news consumers. The climate reference occurs in an unrelated excerpt listing climate change alongside other scientific topics, so it does not make the main article relevant climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c8618c70fb8cfcf4a1821bef843f3a5555b546b2b8b742da33c34c3257a09955",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "26ded58d7f50f6a2a0f7ed54a70913ebbf9097e0f191abffece7b4235c1f1b8f",
+    "raw_response_text_sha256": "ac44da2b7855ad447ca971a59a3e3000d27686742b7304bbf12e9e5667d93d67"
+  },
+  "api_metadata": {
+    "id": "resp_049e53963d416c61006b064c5c7b7487d1b1c6bfb8fa5439a7",
+    "model": "gpt-6-luna",
+    "created_at": 1795574876.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 18876,
+      "input_tokens_details": {
+        "cache_write_tokens": 18873,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 18873
+        }
+      },
+      "output_tokens": 680,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 19556
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Social media use as a source of political news and its relationship to news engagement and knowledge.\",\n  \"climate_relevance\": \"Climate change appears only in a separate excerpt about scientific expertise and evaluating claims; it is not part of the identifiable main article's discussion.\",\n  \"reason\": \"The main article reports on Pew findings about political news consumers. The climate reference occurs in an unrelated excerpt listing climate change alongside other scientific topics, so it does not make the main article relevant climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:48:02Z",
+  "duration_seconds": 5.595,
+  "error": null
+}

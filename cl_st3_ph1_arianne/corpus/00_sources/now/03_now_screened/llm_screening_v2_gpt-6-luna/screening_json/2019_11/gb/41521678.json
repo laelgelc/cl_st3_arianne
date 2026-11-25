@@ -1,0 +1,77 @@
+{
+  "article_id": "41521678",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/gb/41521678.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/gb/41521678.json"
+  },
+  "manifest_row": {
+    "article_id": "41521678",
+    "group": "2019_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/gb/41521678.txt",
+    "now_field_2": "11967",
+    "date_original": "19-11-28",
+    "date_iso": "2019-11-28",
+    "source_name": "nme.com",
+    "url": "https://www.nme.com/category/blogs/nme-blogs/feed",
+    "title": "NME Blogs - NME Music News, Reviews, Videos, Galleries ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.89,
+    "climate_role": "passing",
+    "main_topic": "A roundup of new podcasts, followed by unrelated NME music and festival articles",
+    "climate_relevance": "Climate change is mentioned once in a brief description of a podcast about The Clash, as one of several causes the band supported. A separate Glastonbury passage refers generally to the festival's environmental impact without discussing climate change.",
+    "reason": "The available text contains multiple unrelated articles and snippets. In the identifiable podcast roundup, climate change receives only a passing mention in a list of social causes; there is no substantive discussion that would meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "403495332fb8679d3501e9543f3a19234449c78150ef2679c3a6fe40293bfc1c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2e03402e400386591f4550da8a55d7f9d95f20b6adfb127dc7655126ebb2e292",
+    "raw_response_text_sha256": "eb78ad2c9d516894b3726f27f56cc7f09480c07a058153252600f909d948a37e"
+  },
+  "api_metadata": {
+    "id": "resp_0d2206698e0775ec006b06221ba01087d295acf9eccabeded2",
+    "model": "gpt-6-luna",
+    "created_at": 1795564059.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 16932,
+      "input_tokens_details": {
+        "cache_write_tokens": 16929,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 16929
+        }
+      },
+      "output_tokens": 494,
+      "output_tokens_details": {
+        "reasoning_tokens": 315
+      },
+      "total_tokens": 17426
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.89,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A roundup of new podcasts, followed by unrelated NME music and festival articles\",\n  \"climate_relevance\": \"Climate change is mentioned once in a brief description of a podcast about The Clash, as one of several causes the band supported. A separate Glastonbury passage refers generally to the festival's environmental impact without discussing climate change.\",\n  \"reason\": \"The available text contains multiple unrelated articles and snippets. In the identifiable podcast roundup, climate change receives only a passing mention in a list of social causes; there is no substantive discussion that would meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:47:44Z",
+  "duration_seconds": 4.572,
+  "error": null
+}

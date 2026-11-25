@@ -1,0 +1,77 @@
+{
+  "article_id": "30161694",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/za/30161694.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/za/30161694.json"
+  },
+  "manifest_row": {
+    "article_id": "30161694",
+    "group": "2018_10",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/za/30161694.txt",
+    "now_field_2": "1382",
+    "date_original": "18-10-17",
+    "date_iso": "2018-10-17",
+    "source_name": "Moneyweb.co.za",
+    "url": "https://www.moneyweb.co.za/mymoney/moneyweb-tax/sars-presents-its-annual-report-to-parliament/",
+    "title": "Sars presents its annual report to Parliament",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "South African Revenue Service annual report and performance",
+    "climate_relevance": "The identifiable main article is about SARS and contains no meaningful climate discourse. An unrelated book review appended to the text includes discussion of coal policy and global warming.",
+    "reason": "The main article is unrelated to climate change. Although the appended book review contains meaningful climate discussion, it is a separate snippet and does not make the main article climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "95fcdeb83e8f383a980664b6d0a6d83635ecb8dec3ebbc1db5a83c3992588b2d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e18622064017b9e1fd6a5cd15fbe1faac344578020ad3c285f4413d4769b96de",
+    "raw_response_text_sha256": "afe7df14b9dbf5c7f34ffa3a849251bb784c1bbb4a4aa9431436b27594c1a923"
+  },
+  "api_metadata": {
+    "id": "resp_0968ed2768788b37006b0613682b0087d286ffd520ef5fe312",
+    "model": "gpt-6-luna",
+    "created_at": 1795560296.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3993,
+      "input_tokens_details": {
+        "cache_write_tokens": 3990,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3990
+        }
+      },
+      "output_tokens": 455,
+      "output_tokens_details": {
+        "reasoning_tokens": 302
+      },
+      "total_tokens": 4448
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"South African Revenue Service annual report and performance\",\n  \"climate_relevance\": \"The identifiable main article is about SARS and contains no meaningful climate discourse. An unrelated book review appended to the text includes discussion of coal policy and global warming.\",\n  \"reason\": \"The main article is unrelated to climate change. Although the appended book review contains meaningful climate discussion, it is a separate snippet and does not make the main article climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:44:59Z",
+  "duration_seconds": 3.484,
+  "error": null
+}

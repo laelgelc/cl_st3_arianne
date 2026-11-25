@@ -1,0 +1,77 @@
+{
+  "article_id": "42163831",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/gb/42163831.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/gb/42163831.json"
+  },
+  "manifest_row": {
+    "article_id": "42163831",
+    "group": "2020_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/gb/42163831.txt",
+    "now_field_2": "436",
+    "date_original": "20-08-03",
+    "date_iso": "2020-08-03",
+    "source_name": "churchtimes.co.uk",
+    "url": "https://www.churchtimes.co.uk/articles/2010/8-october/news/uk/home-news-in-brief",
+    "title": "Home news in brief",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A roundup of brief news items on church and religious affairs",
+    "climate_relevance": "Climate change appears only in the name of a government department; the item about an oil fast discusses the BP oil spill and dependence on oil but not climate change or its implications.",
+    "reason": "The available text contains no meaningful discourse about climate change. Its climate reference is incidental, and the oil-related item focuses on the spill and oil dependence.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "562e5d7c7549efd5206f26ff7d8fed48ca24d19a4d432cb0d55de52e64cde12f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2a3c1ade1dbb1bea77b3253e75fb4fb01bd323ae8ccc59ff635459c33b909073",
+    "raw_response_text_sha256": "367e0b39fbe96c3733ce881df8e83b597a05f5bac8873afd4b2767f84bce6ff5"
+  },
+  "api_metadata": {
+    "id": "resp_09d20b6e893eb231006b0624cb981c87d2aa6c2a2f05ea6a0b",
+    "model": "gpt-6-luna",
+    "created_at": 1795564747.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1080,
+      "input_tokens_details": {
+        "cache_write_tokens": 1077,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1077
+        }
+      },
+      "output_tokens": 327,
+      "output_tokens_details": {
+        "reasoning_tokens": 171
+      },
+      "total_tokens": 1407
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A roundup of brief news items on church and religious affairs\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government department; the item about an oil fast discusses the BP oil spill and dependence on oil but not climate change or its implications.\",\n  \"reason\": \"The available text contains no meaningful discourse about climate change. Its climate reference is incidental, and the oil-related item focuses on the spill and oil dependence.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:59:10Z",
+  "duration_seconds": 2.498,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "86138003",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86138003.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86138003.json"
+  },
+  "manifest_row": {
+    "article_id": "86138003",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86138003.txt",
+    "now_field_2": "1183",
+    "date_original": "20-10-13",
+    "date_iso": "2020-10-13",
+    "source_name": "PR Newswire",
+    "url": "https://www.prnewswire.com/news-releases/bloomberg-new-economy-forum-announces-new-global-co-hosts-and-preliminary-speaker-line-up-for-2020-virtual-event-301151732.html",
+    "title": "Bloomberg New Economy Forum Announces New Global Co-Hosts and Preliminary Speaker Line-up for 2020 Virtual Event",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Announcement of the 2020 Bloomberg New Economy Forum and its post-COVID economic recovery agenda",
+    "climate_relevance": "Climate change appears only in a boilerplate description of Bloomberg Media's coverage areas; the forum announcement contains no meaningful climate discourse.",
+    "reason": "The text focuses on the forum, its participants, and economic recovery. The sole explicit climate reference is unrelated corporate boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8eeffa01ca6af76975104f9f13196015db83c5c6dccef6f0cd05d87484007d78",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2e7a69b98f5fa9a6985ac7596112c8a750a9904b3c48e2117e2854a385e54ad5",
+    "raw_response_text_sha256": "a96b3d53fad13d3e3ba8f355b592e8dd15c44e5d8162fb672d70232e029d6036"
+  },
+  "api_metadata": {
+    "id": "resp_0d22769b96d39f13006b064e88df4c87d1b3b9a087c7890143",
+    "model": "gpt-6-luna",
+    "created_at": 1795575432.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2025,
+      "input_tokens_details": {
+        "cache_write_tokens": 2022,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2022
+        }
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 2226
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Announcement of the 2020 Bloomberg New Economy Forum and its post-COVID economic recovery agenda\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of Bloomberg Media's coverage areas; the forum announcement contains no meaningful climate discourse.\",\n  \"reason\": \"The text focuses on the forum, its participants, and economic recovery. The sole explicit climate reference is unrelated corporate boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:57:14Z",
+  "duration_seconds": 1.921,
+  "error": null
+}

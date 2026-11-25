@@ -1,0 +1,77 @@
+{
+  "article_id": "9495797",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_06/ca/9495797.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_06/ca/9495797.json"
+  },
+  "manifest_row": {
+    "article_id": "9495797",
+    "group": "2016_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_06/ca/9495797.txt",
+    "now_field_2": "994",
+    "date_original": "16-06-22",
+    "date_iso": "2016-06-22",
+    "source_name": "OurWindsor.ca",
+    "url": "http://www.ourwindsor.ca/news-story/6734751-wynne-vows-to-get-to-the-bottom-of-mercury-dumping-report/",
+    "title": "Wynne vows to 'get to the bottom' of mercury...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-06-uda/16-06-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Alleged mercury dumping near Grassy Narrows and its environmental and health effects",
+    "climate_relevance": "Climate change appears only in the title of a minister's portfolio; the article does not discuss climate change or its implications.",
+    "reason": "The article focuses on mercury contamination, government monitoring, and the health impacts on Grassy Narrows. The sole climate-related wording is a ministerial title and does not constitute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2d81bf112ced51eb47cf6854db53253f0bdadcb60e60cb136acf459367e7bee7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9c30cf5c3a73274ae071f51fb409f357d5c17e5b726d4558d54795f0ab394dc5",
+    "raw_response_text_sha256": "4713f3733ef08031533a3bc5855b1a8a7ff2ade0316a036c54d85683942931a3"
+  },
+  "api_metadata": {
+    "id": "resp_0b6b423cfb3f23a3006b065128832087d1a4ab83ccaab1a086",
+    "model": "gpt-6-luna",
+    "created_at": 1795576104.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1746,
+      "input_tokens_details": {
+        "cache_write_tokens": 1743,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1743
+        }
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1958
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Alleged mercury dumping near Grassy Narrows and its environmental and health effects\",\n  \"climate_relevance\": \"Climate change appears only in the title of a minister's portfolio; the article does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on mercury contamination, government monitoring, and the health impacts on Grassy Narrows. The sole climate-related wording is a ministerial title and does not constitute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:08:26Z",
+  "duration_seconds": 2.195,
+  "error": null
+}

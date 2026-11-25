@@ -1,0 +1,77 @@
+{
+  "article_id": "60755963",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/ca/60755963.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/ca/60755963.json"
+  },
+  "manifest_row": {
+    "article_id": "60755963",
+    "group": "2019_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/ca/60755963.txt",
+    "now_field_2": "1005",
+    "date_original": "19-04-19",
+    "date_iso": "2019-04-19",
+    "source_name": "The Guardian",
+    "url": "https://www.theguardian.pe.ca/news/canada/this-ontario-man-is-among-the-only-canadians-to-fly-combat-missions-in-both-wwii-korea-303722/",
+    "title": "This Ontario man is among the only Canadians to fly combat missions ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-ca.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.88,
+    "climate_role": "substantial",
+    "main_topic": "The text combines a biography of a Canadian combat pilot with a press release advocating a Global Deal for Nature to address biodiversity loss and climate change.",
+    "climate_relevance": "The conservation press release repeatedly discusses climate change, climate stabilization, the 1.5°C threshold, the Paris Agreement, and nature-based approaches to climate mitigation; climate action is presented as interlinked with biodiversity protection.",
+    "reason": "Although the first article is unrelated to climate change, the second contains substantial climate discourse and qualifies as CORE. The text appears to combine unrelated articles or snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7e77567488dcbca8ef403953c5e0e36e72a176d44a8b7e7c230195d4cf6a445b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "77be47c0dcbda1fbf4874ed7aca8ad893955936fdced646df656a760fe69e1fe",
+    "raw_response_text_sha256": "fa7e2a0aca42dda6f9cce329af012771510af4c7df9917c4ac8423bf850507d6"
+  },
+  "api_metadata": {
+    "id": "resp_0fe2aeba9bb229a5006b063441ed4c87d1be50a7de4f056c5d",
+    "model": "gpt-6-luna",
+    "created_at": 1795568706.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3340,
+      "input_tokens_details": {
+        "cache_write_tokens": 3337,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3337
+        }
+      },
+      "output_tokens": 398,
+      "output_tokens_details": {
+        "reasoning_tokens": 222
+      },
+      "total_tokens": 3738
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"The text combines a biography of a Canadian combat pilot with a press release advocating a Global Deal for Nature to address biodiversity loss and climate change.\",\n  \"climate_relevance\": \"The conservation press release repeatedly discusses climate change, climate stabilization, the 1.5°C threshold, the Paris Agreement, and nature-based approaches to climate mitigation; climate action is presented as interlinked with biodiversity protection.\",\n  \"reason\": \"Although the first article is unrelated to climate change, the second contains substantial climate discourse and qualifies as CORE. The text appears to combine unrelated articles or snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:05:09Z",
+  "duration_seconds": 3.637,
+  "error": null
+}

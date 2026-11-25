@@ -1,0 +1,77 @@
+{
+  "article_id": "85176408",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/us/85176408.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/us/85176408.json"
+  },
+  "manifest_row": {
+    "article_id": "85176408",
+    "group": "2020_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/us/85176408.txt",
+    "now_field_2": "10185",
+    "date_original": "20-06-14",
+    "date_iso": "2020-06-14",
+    "source_name": "Milwaukee Journal Sentinel",
+    "url": "https://www.jsonline.com/story/entertainment/celebrities/2020/06/14/sushant-singh-rajput-popular-bollywood-star-found-dead/3186571001/",
+    "title": "Bollywood star Sushant Singh Rajput, 34, found dead",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A roundup of notable people who died in 2020",
+    "climate_relevance": "One obituary briefly notes that actor Raphael Coleman dedicated his adult life to climate change activism and awareness.",
+    "reason": "Climate change appears only as a brief biographical detail; the text contains no substantive discussion of climate issues or activism.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ab3f25ede25405bdead7cc392b1790f5ddcbb6f60b9d496622987ba3d56a2422",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ab6dcffe1b976ac762906f1c8cdd58da9f5d6ffe66525a46762f342b4122e1f0",
+    "raw_response_text_sha256": "4c032d8dfa0d0be19e1c04b2d67b2780282acf2c205374393c764286342eb440"
+  },
+  "api_metadata": {
+    "id": "resp_0a649983954ea79e006b064b66c7ac87d1b12027835016a3a9",
+    "model": "gpt-6-luna",
+    "created_at": 1795574630.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 15452,
+      "input_tokens_details": {
+        "cache_write_tokens": 15449,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 15449
+        }
+      },
+      "output_tokens": 494,
+      "output_tokens_details": {
+        "reasoning_tokens": 366
+      },
+      "total_tokens": 15946
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A roundup of notable people who died in 2020\",\n  \"climate_relevance\": \"One obituary briefly notes that actor Raphael Coleman dedicated his adult life to climate change activism and awareness.\",\n  \"reason\": \"Climate change appears only as a brief biographical detail; the text contains no substantive discussion of climate issues or activism.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:43:55Z",
+  "duration_seconds": 4.882,
+  "error": null
+}

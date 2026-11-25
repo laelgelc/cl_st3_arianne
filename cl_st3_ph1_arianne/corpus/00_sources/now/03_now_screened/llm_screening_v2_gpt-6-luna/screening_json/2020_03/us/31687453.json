@@ -1,0 +1,77 @@
+{
+  "article_id": "31687453",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/us/31687453.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/us/31687453.json"
+  },
+  "manifest_row": {
+    "article_id": "31687453",
+    "group": "2020_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/us/31687453.txt",
+    "now_field_2": "9235",
+    "date_original": "20-03-04",
+    "date_iso": "2020-03-04",
+    "source_name": "cbsnews.com",
+    "url": "https://www.cbsnews.com/live-updates/democratic-debate-south-carolina-cbs-news-recap/",
+    "title": "Democrats try to stop Sanders' momentum in fiery debate",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "The 2020 Democratic presidential primary debate and candidates’ positions on election, policy, and campaign issues.",
+    "climate_relevance": "Climate change appears only in a list of topics voters might ask candidates about; no climate-related views, policies, or implications are discussed.",
+    "reason": "The available text is a live blog of debate coverage, and its sole climate reference is a passing mention in a list. It does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "81d57498f840d4fcce7ff912da465b22a952979b5a149cea01c0179d16c66586",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "74eeb2eb37f87f1fd0e30ea5ec0718187b68190b9a6a2dde7ea27b1267d5d8ac",
+    "raw_response_text_sha256": "d86d254b4ccb13c219a72edafaa00b4d15f5c358672c45be989b1da8ee90c03b"
+  },
+  "api_metadata": {
+    "id": "resp_001565e567e74520006b0618f56ed487d2925d3e7330a77c26",
+    "model": "gpt-6-luna",
+    "created_at": 1795561717.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 13389,
+      "input_tokens_details": {
+        "cache_write_tokens": 13386,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 13386
+        }
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 13621
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The 2020 Democratic presidential primary debate and candidates’ positions on election, policy, and campaign issues.\",\n  \"climate_relevance\": \"Climate change appears only in a list of topics voters might ask candidates about; no climate-related views, policies, or implications are discussed.\",\n  \"reason\": \"The available text is a live blog of debate coverage, and its sole climate reference is a passing mention in a list. It does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:08:42Z",
+  "duration_seconds": 5.561,
+  "error": null
+}

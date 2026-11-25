@@ -1,0 +1,77 @@
+{
+  "article_id": "60590020",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/ca/60590020.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/ca/60590020.json"
+  },
+  "manifest_row": {
+    "article_id": "60590020",
+    "group": "2019_02",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/ca/60590020.txt",
+    "now_field_2": "683",
+    "date_original": "19-02-27",
+    "date_iso": "2019-02-27",
+    "source_name": "Toronto Star",
+    "url": "https://www.thestar.com/news/world/us/2019/02/27/gay-rights-activist-accused-of-setting-own-home-on-fire.html",
+    "title": "Gay rights activist accused of setting own home on fire",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "Funding, overcrowding, and environmental pressures affecting British Columbia's parks and outdoor tourism.",
+    "climate_relevance": "The parks article briefly connects provincial funding to reducing emissions and identifies the responsible ministry as the Ministry of Environment and Climate Change Strategy.",
+    "reason": "Climate change is not the article's focus, but the reference to emissions-reduction investment provides some relevant climate-policy context. The text also includes an unrelated article about an arson case.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "05b89fe4b3f0a74ee1eb9286d9706adf97b12130eec056b071381744e1105158",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0ee741ed298201dffc6ef6ae7dcb9ee50334ecd98c6b130ba657876e0fca809f",
+    "raw_response_text_sha256": "f9fab321cc50d80b2fe2c981d64625d95ccf5b8f86fc698cf772fba0573ad696"
+  },
+  "api_metadata": {
+    "id": "resp_0d63cb70c926186a006b06334c579c87d1b877657356181900",
+    "model": "gpt-6-luna",
+    "created_at": 1795568460.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2516,
+      "input_tokens_details": {
+        "cache_write_tokens": 2513,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2513
+        }
+      },
+      "output_tokens": 379,
+      "output_tokens_details": {
+        "reasoning_tokens": 225
+      },
+      "total_tokens": 2895
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Funding, overcrowding, and environmental pressures affecting British Columbia's parks and outdoor tourism.\",\n  \"climate_relevance\": \"The parks article briefly connects provincial funding to reducing emissions and identifies the responsible ministry as the Ministry of Environment and Climate Change Strategy.\",\n  \"reason\": \"Climate change is not the article's focus, but the reference to emissions-reduction investment provides some relevant climate-policy context. The text also includes an unrelated article about an arson case.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:01:04Z",
+  "duration_seconds": 3.957,
+  "error": null
+}

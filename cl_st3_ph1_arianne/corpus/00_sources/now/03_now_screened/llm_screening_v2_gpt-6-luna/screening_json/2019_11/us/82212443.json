@@ -1,0 +1,77 @@
+{
+  "article_id": "82212443",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82212443.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82212443.json"
+  },
+  "manifest_row": {
+    "article_id": "82212443",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82212443.txt",
+    "now_field_2": "132",
+    "date_original": "19-11-18",
+    "date_iso": "2019-11-18",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191118064144-6kndf",
+    "title": "China to launch inspection on use of illegal African swine fever vaccines",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "China's investigation into illegal African swine fever vaccines",
+    "climate_relevance": "Climate change appears only in a generic description of the news organization's coverage areas.",
+    "reason": "The article is about swine fever vaccines; the sole climate reference is unrelated editorial boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7910bf3347e495bcd1288d5b850699b89f5a99cd7a44b75214d97eb1b7aa6bdb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "233eef5ea9fefd4b5d4012c2695829f6f8c93f8e634f6a99561a36af9f9748af",
+    "raw_response_text_sha256": "8312dff36b14fb99aff0f0e13a97bd7cd39a068454ea03ab10f0c9e5700e7557"
+  },
+  "api_metadata": {
+    "id": "resp_0479b1b379897cb8006b064832c14087d196f489c19fb407ac",
+    "model": "gpt-6-luna",
+    "created_at": 1795573810.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 653,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 154,
+      "output_tokens_details": {
+        "reasoning_tokens": 30
+      },
+      "total_tokens": 807
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"China's investigation into illegal African swine fever vaccines\",\n  \"climate_relevance\": \"Climate change appears only in a generic description of the news organization's coverage areas.\",\n  \"reason\": \"The article is about swine fever vaccines; the sole climate reference is unrelated editorial boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:30:12Z",
+  "duration_seconds": 1.797,
+  "error": null
+}

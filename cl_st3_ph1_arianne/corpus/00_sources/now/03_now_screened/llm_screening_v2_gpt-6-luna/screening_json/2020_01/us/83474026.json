@@ -1,0 +1,77 @@
+{
+  "article_id": "83474026",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83474026.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83474026.json"
+  },
+  "manifest_row": {
+    "article_id": "83474026",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83474026.txt",
+    "now_field_2": "390",
+    "date_original": "20-01-27",
+    "date_iso": "2020-01-27",
+    "source_name": "Hometown News Group News",
+    "url": "http://www.hngnews.com/milton_courier/community/article_57c8e1db-19b2-53dc-bc8d-cb0d98f2bbe0.html",
+    "title": "Is hindsight 20/20?",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "Announcement of the Spring 2020 Fairhaven Lecture Series",
+    "climate_relevance": "Climate change and natural disasters are listed as one lecture topic, but the text provides no substantive discussion of them.",
+    "reason": "The climate reference is only a brief item in a list of topics and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3dd1273dcab04654e93ae92ff823dd78d175239bf76bd1a9bd324a0982738c31",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8e48318ce8bf209896790cd53be8913751f3de84df40f9174dbe6577fbfb3ce2",
+    "raw_response_text_sha256": "ef0714fce064db82dffc16c2c518e406dc1435320c5ffcbdfb0bd958c2ad0c66"
+  },
+  "api_metadata": {
+    "id": "resp_0e344431e5c0b1c3006b0649a4c39887d1bf13c4b8a3333984",
+    "model": "gpt-6-luna",
+    "created_at": 1795574180.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1055,
+      "input_tokens_details": {
+        "cache_write_tokens": 1052,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1052
+        }
+      },
+      "output_tokens": 243,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 1298
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Announcement of the Spring 2020 Fairhaven Lecture Series\",\n  \"climate_relevance\": \"Climate change and natural disasters are listed as one lecture topic, but the text provides no substantive discussion of them.\",\n  \"reason\": \"The climate reference is only a brief item in a list of topics and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:36:22Z",
+  "duration_seconds": 2.016,
+  "error": null
+}

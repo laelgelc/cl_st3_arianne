@@ -1,0 +1,77 @@
+{
+  "article_id": "60052043",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/ca/60052043.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/ca/60052043.json"
+  },
+  "manifest_row": {
+    "article_id": "60052043",
+    "group": "2018_09",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/ca/60052043.txt",
+    "now_field_2": "501",
+    "date_original": "18-09-22",
+    "date_iso": "2018-09-22",
+    "source_name": "CBC.ca",
+    "url": "https://www.cbc.ca/news/canada/diana-swain-investigators-cannabis-reporters-1.4831875",
+    "title": "Journalism's budding new beat: Cannabis reporter",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Journalism coverage of cannabis and the role of cannabis reporters in Canada",
+    "climate_relevance": "Climate change appears only in a closing promotional mention of a separate segment about BBC reporting guidelines.",
+    "reason": "The identifiable main article is about cannabis journalism. The climate reference is part of an unrelated program teaser and contains no substantive climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7642bf717a63a287316203f6ecd3d6d1c04be8003e685d755e78dc8c20dea397",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d3e40630a00db1b8620dc01a22bd1656cbf5f66c45281828788e748c5728477b",
+    "raw_response_text_sha256": "9fe33f0b870bfc85825f5468d12496aa353e152cc8a646d1887fecd91bc2da70"
+  },
+  "api_metadata": {
+    "id": "resp_0633284afaf982c4006b0630d8a2f887d1be549dea351ace59",
+    "model": "gpt-6-luna",
+    "created_at": 1795567832.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1133,
+      "input_tokens_details": {
+        "cache_write_tokens": 1130,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1130
+        }
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 1388
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Journalism coverage of cannabis and the role of cannabis reporters in Canada\",\n  \"climate_relevance\": \"Climate change appears only in a closing promotional mention of a separate segment about BBC reporting guidelines.\",\n  \"reason\": \"The identifiable main article is about cannabis journalism. The climate reference is part of an unrelated program teaser and contains no substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:50:34Z",
+  "duration_seconds": 2.399,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31237203",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/us/31237203.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/us/31237203.json"
+  },
+  "manifest_row": {
+    "article_id": "31237203",
+    "group": "2019_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/us/31237203.txt",
+    "now_field_2": "410",
+    "date_original": "19-08-22",
+    "date_iso": "2019-08-22",
+    "source_name": "foxnews.com",
+    "url": "https://www.foxnews.com/world/amazon-wildfire-smoke-sao-paulo",
+    "title": "Smoke from Amazon wildfires plunges Sao Paulo into ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Amazon and regional wildfires, smoke in São Paulo, and Brazilian environmental policy",
+    "climate_relevance": "The text briefly connects drought patterns to anthropogenic climate change in discussing factors related to wildfire intensity and frequency, but climate change is not the main focus.",
+    "reason": "The article mainly reports on smoke from wildfires, rising fire numbers, and disputes over deforestation data and environmental policy. Its explicit climate-change discussion is meaningful but limited, so it is relevant as peripheral discourse rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a8b7e8c40cfbcd0d2abc04aa96046c52be360fd98b5290eeb22398aa75b72198",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "045bff2ff43ac9492ed12d156d97810ea9a8be39a2961858d36b1d6fc2e774cf",
+    "raw_response_text_sha256": "55ee7371c7b02bc4763b783ced1daee32d9a0d688c6ad21bae0105b122bab1de"
+  },
+  "api_metadata": {
+    "id": "resp_001d3cc42e263405006b06164487ac87d2af9087e2b0a4c5e7",
+    "model": "gpt-6-luna",
+    "created_at": 1795561028.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1013,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1273
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Amazon and regional wildfires, smoke in São Paulo, and Brazilian environmental policy\",\n  \"climate_relevance\": \"The text briefly connects drought patterns to anthropogenic climate change in discussing factors related to wildfire intensity and frequency, but climate change is not the main focus.\",\n  \"reason\": \"The article mainly reports on smoke from wildfires, rising fire numbers, and disputes over deforestation data and environmental policy. Its explicit climate-change discussion is meaningful but limited, so it is relevant as peripheral discourse rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:57:10Z",
+  "duration_seconds": 2.234,
+  "error": null
+}

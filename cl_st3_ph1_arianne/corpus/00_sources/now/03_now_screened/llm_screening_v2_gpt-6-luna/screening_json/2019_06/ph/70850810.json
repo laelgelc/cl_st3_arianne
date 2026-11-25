@@ -1,0 +1,77 @@
+{
+  "article_id": "70850810",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ph/70850810.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ph/70850810.json"
+  },
+  "manifest_row": {
+    "article_id": "70850810",
+    "group": "2019_06",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ph/70850810.txt",
+    "now_field_2": "547",
+    "date_original": "19-06-09",
+    "date_iso": "2019-06-09",
+    "source_name": "Manila Bulletin",
+    "url": "https://news.mb.com.ph/2019/06/09/eu-organizes-stargazing-telescope-viewing-at-sm-aura/",
+    "title": "EU organizes stargazing, telescope viewing at SM Aura",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "An EU-organized public stargazing and telescope-viewing event",
+    "climate_relevance": "Climate change appears only in a brief biographical note describing an EU official's responsibilities; the Copernicus program is mentioned in the context of Earth observation, without meaningful discussion of climate.",
+    "reason": "The article focuses on astronomy outreach and the event logistics. Its climate references are incidental and do not contribute substantially to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0840e9b5bbf728928d2b13a54cef766342776156e80b438de4470503e3bede85",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b8b4e6ae6f0dd9b03b6d974ab3ec243e3279c3bd5780ada242eae22e2e0a606f",
+    "raw_response_text_sha256": "a708538bb1f21f5422e899afd4df192f3cbccbcbcf2703cb4b60b15278a9306e"
+  },
+  "api_metadata": {
+    "id": "resp_0312193f00a3a73b006b063f896bd087d19d23bf87c7f9eac4",
+    "model": "gpt-6-luna",
+    "created_at": 1795571593.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1183,
+      "input_tokens_details": {
+        "cache_write_tokens": 1180,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1180
+        }
+      },
+      "output_tokens": 223,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1406
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"An EU-organized public stargazing and telescope-viewing event\",\n  \"climate_relevance\": \"Climate change appears only in a brief biographical note describing an EU official's responsibilities; the Copernicus program is mentioned in the context of Earth observation, without meaningful discussion of climate.\",\n  \"reason\": \"The article focuses on astronomy outreach and the event logistics. Its climate references are incidental and do not contribute substantially to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:53:15Z",
+  "duration_seconds": 2.293,
+  "error": null
+}

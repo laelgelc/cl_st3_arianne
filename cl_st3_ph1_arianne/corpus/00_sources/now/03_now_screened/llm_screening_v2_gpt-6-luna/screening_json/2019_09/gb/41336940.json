@@ -1,0 +1,77 @@
+{
+  "article_id": "41336940",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/gb/41336940.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/gb/41336940.json"
+  },
+  "manifest_row": {
+    "article_id": "41336940",
+    "group": "2019_09",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/gb/41336940.txt",
+    "now_field_2": "680",
+    "date_original": "19-09-11",
+    "date_iso": "2019-09-11",
+    "source_name": "zawya.com",
+    "url": "https://www.zawya.com/mena/en/press-releases/story/As_part_of_its_emphasis_on_sustainability_and_environmental_conservation_ATDD_goes_plasticfree-ZAWYA20190911074727/",
+    "title": "As part of its emphasis on sustainability and ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Ajman Tourism Development Department's ban on plastic utensils and its sustainability initiatives",
+    "climate_relevance": "The press release discusses environmental conservation, sustainable tourism, and reducing water and energy consumption, but does not meaningfully address climate change, its impacts, or climate policy. Climate change appears only in the name of a ministry.",
+    "reason": "The text is about plastic use and general environmental sustainability rather than climate discourse. The ministry name alone is an incidental mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c9f72029e4f4123ba6906247c114bef426728133f0cbc9633ed268091ef1e69d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "297474145933b2f18416ac0af539597427d132b1ae33140e6eeb549c083947b6",
+    "raw_response_text_sha256": "2cd6845286b6a87d9e60a8b63d9ca10a2bef3b12dcc9b1e1c5ab9ba6fc6885e2"
+  },
+  "api_metadata": {
+    "id": "resp_0fe64e8974d56acd006b0621423cfc87d29a12c73cd73fc20b",
+    "model": "gpt-6-luna",
+    "created_at": 1795563842.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1342,
+      "input_tokens_details": {
+        "cache_write_tokens": 1339,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1339
+        }
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 1614
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ajman Tourism Development Department's ban on plastic utensils and its sustainability initiatives\",\n  \"climate_relevance\": \"The press release discusses environmental conservation, sustainable tourism, and reducing water and energy consumption, but does not meaningfully address climate change, its impacts, or climate policy. Climate change appears only in the name of a ministry.\",\n  \"reason\": \"The text is about plastic use and general environmental sustainability rather than climate discourse. The ministry name alone is an incidental mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:44:04Z",
+  "duration_seconds": 2.166,
+  "error": null
+}

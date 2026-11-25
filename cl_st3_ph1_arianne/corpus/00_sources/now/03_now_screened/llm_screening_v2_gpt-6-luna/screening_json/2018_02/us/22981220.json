@@ -1,0 +1,77 @@
+{
+  "article_id": "22981220",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_02/us/22981220.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_02/us/22981220.json"
+  },
+  "manifest_row": {
+    "article_id": "22981220",
+    "group": "2018_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_02/us/22981220.txt",
+    "now_field_2": "1294",
+    "date_original": "18-02-01",
+    "date_iso": "2018-02-01",
+    "source_name": "Chicago Daily Herald",
+    "url": "http://www.dailyherald.com/news/20180201/johnny-angel-and-the-cuban-missile-crisis-100-years-of-american-history-in-a-3-hour-show",
+    "title": "'Johnny Angel' and the Cuban missile crisis: 100 years of American ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-02.txt\"]",
+    "metadata_article_files": "[\"text-18-02/text_18-02-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "passing",
+    "main_topic": "A historical presentation covering a century of American history",
+    "climate_relevance": "Climate change is named once in a list of subjects audiences may compare with current headlines, without further discussion.",
+    "reason": "The article focuses on the creator and contents of a U.S. history seminar. Its brief mention of climate change is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "96b15f0713b8cb3c927a4ee113ee82e645fdb84eb94bb23cf989f929612778b0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f93a0846eef6d48d1778d7ccdbead8d7ee8981131c40105e9195b45c9c69f909",
+    "raw_response_text_sha256": "c1576c1863b2db1d7e7aec55a793e8863fd17d08ad32d724f1785aa76c029163"
+  },
+  "api_metadata": {
+    "id": "resp_0bf99f46977c36d8006b0610bec8f487d29d304c7af0cc5043",
+    "model": "gpt-6-luna",
+    "created_at": 1795559614.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2221,
+      "input_tokens_details": {
+        "cache_write_tokens": 2218,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2218
+        }
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 2474
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A historical presentation covering a century of American history\",\n  \"climate_relevance\": \"Climate change is named once in a list of subjects audiences may compare with current headlines, without further discussion.\",\n  \"reason\": \"The article focuses on the creator and contents of a U.S. history seminar. Its brief mention of climate change is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:33:36Z",
+  "duration_seconds": 2.249,
+  "error": null
+}

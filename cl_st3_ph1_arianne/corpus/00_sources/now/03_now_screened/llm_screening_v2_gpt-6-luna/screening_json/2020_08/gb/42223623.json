@@ -1,0 +1,77 @@
+{
+  "article_id": "42223623",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/gb/42223623.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/gb/42223623.json"
+  },
+  "manifest_row": {
+    "article_id": "42223623",
+    "group": "2020_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/gb/42223623.txt",
+    "now_field_2": "1031",
+    "date_original": "20-08-24",
+    "date_iso": "2020-08-24",
+    "source_name": "pressandjournal.co.uk",
+    "url": "https://www.pressandjournal.co.uk/fp/news/aberdeen/2431222/coronavirus-restrictions-relaxed-in-aberdeen-after-hours-of-talks/",
+    "title": "Coronavirus restrictions relaxed in Aberdeen after hours ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "COVID-19 restrictions and reopening in Aberdeen",
+    "climate_relevance": "The main article contains no meaningful climate-change discourse. A separate closing snippet mentions an EU plan to price dirtier imports and says the pandemic has eclipsed climate change as a challenge for governments.",
+    "reason": "The identifiable main article concerns the relaxation of coronavirus restrictions in Aberdeen. The climate-related material appears only in a separate, unrelated closing snippet and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2ec8b0071a653658fcaddf6ee65d3bc422ebc057e026d02c35e919e617ab7cd6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "036b736a9ec0de534852a5154af8a14f652da02567fb291ad77197ced1c0db45",
+    "raw_response_text_sha256": "484eebe934afb42be25f5b7daa72fe550059ad5a13c928c0ec006d19281c56e3"
+  },
+  "api_metadata": {
+    "id": "resp_0f1d4f93ded35390006b062526dee487d2a03bfe5722db3446",
+    "model": "gpt-6-luna",
+    "created_at": 1795564838.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1833,
+      "input_tokens_details": {
+        "cache_write_tokens": 1830,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1830
+        }
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 2153
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"COVID-19 restrictions and reopening in Aberdeen\",\n  \"climate_relevance\": \"The main article contains no meaningful climate-change discourse. A separate closing snippet mentions an EU plan to price dirtier imports and says the pandemic has eclipsed climate change as a challenge for governments.\",\n  \"reason\": \"The identifiable main article concerns the relaxation of coronavirus restrictions in Aberdeen. The climate-related material appears only in a separate, unrelated closing snippet and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:00:41Z",
+  "duration_seconds": 2.907,
+  "error": null
+}

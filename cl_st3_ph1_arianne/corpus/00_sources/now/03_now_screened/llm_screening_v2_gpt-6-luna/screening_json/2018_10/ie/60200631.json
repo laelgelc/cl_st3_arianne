@@ -1,0 +1,77 @@
+{
+  "article_id": "60200631",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/ie/60200631.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/ie/60200631.json"
+  },
+  "manifest_row": {
+    "article_id": "60200631",
+    "group": "2018_10",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/ie/60200631.txt",
+    "now_field_2": "180",
+    "date_original": "18-10-27",
+    "date_iso": "2018-10-27",
+    "source_name": "Fashion.ie",
+    "url": "https://www.fashion.ie/my-fashion-look/4-best-metallic-eyeshadows/",
+    "title": "4 of the Best Metallic Eyeshadows",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-ie.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "An opinion column about Budget 2018 and young people being driven to school.",
+    "climate_relevance": "The column discusses carbon tax and climate change as part of the budget debate, and briefly considers whether higher fuel costs might encourage walking and benefit the environment.",
+    "reason": "Climate change and carbon taxation receive meaningful but limited discussion; the main focus is school transport and car use. The supplied text also includes an unrelated eyeshadow snippet before the identifiable column.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0aa167ca513b8bf6a404e5255e51e0e2e3172db70f0f09cc95de8891fa395c08",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "114f041e12bd67838c5956eee72d30105a7f2be60a2657a4e194da4a7f9f5f21",
+    "raw_response_text_sha256": "f5448cbf11faa246b9b6a28ac9c61e3ff957b7bf4fc39a0d71a27d996da86a92"
+  },
+  "api_metadata": {
+    "id": "resp_0ce65c193e1057ca006b06317c9f3c87d192dc9fabedd4cb5e",
+    "model": "gpt-6-luna",
+    "created_at": 1795567996.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1668,
+      "input_tokens_details": {
+        "cache_write_tokens": 1665,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1665
+        }
+      },
+      "output_tokens": 240,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1908
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"An opinion column about Budget 2018 and young people being driven to school.\",\n  \"climate_relevance\": \"The column discusses carbon tax and climate change as part of the budget debate, and briefly considers whether higher fuel costs might encourage walking and benefit the environment.\",\n  \"reason\": \"Climate change and carbon taxation receive meaningful but limited discussion; the main focus is school transport and car use. The supplied text also includes an unrelated eyeshadow snippet before the identifiable column.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:53:19Z",
+  "duration_seconds": 2.595,
+  "error": null
+}

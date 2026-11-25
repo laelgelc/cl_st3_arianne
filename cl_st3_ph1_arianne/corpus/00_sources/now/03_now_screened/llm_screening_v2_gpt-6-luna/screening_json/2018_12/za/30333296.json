@@ -1,0 +1,77 @@
+{
+  "article_id": "30333296",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/za/30333296.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/za/30333296.json"
+  },
+  "manifest_row": {
+    "article_id": "30333296",
+    "group": "2018_12",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/za/30333296.txt",
+    "now_field_2": "1154",
+    "date_original": "18-12-06",
+    "date_iso": "2018-12-06",
+    "source_name": "IG",
+    "url": "https://www.ig.com/za/news-and-trade-ideas/shares-news/thames-water-profits-see-60--decline-amid-climate-change-challen-181206",
+    "title": "Thames Water profits see 60% decline amid climate change challenges",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-za.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.82,
+    "climate_role": "substantial",
+    "main_topic": "Thames Water's half-year financial results and the effects of climate-related weather events on its operations",
+    "climate_relevance": "The report links climate change to increasingly frequent extreme weather and describes effects on Thames Water, including freeze-thaw damage, leakage, customer impacts, and resilience planning.",
+    "reason": "Although the article is framed around company results, climate-related weather impacts and the company's response are a substantial part of its account.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1ebfb0b6649ce003d0a455e8c2dd0a8b81812a99898435e4bf8850313de4c3f6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "007a7d2cecb9ab73c547ad34703ec68146a72ce1df6343bf0d4ceeaa5860ff25",
+    "raw_response_text_sha256": "40705cab8baa52b086a36fd8510c4735d729d64c182150c4db9cfa6107628538"
+  },
+  "api_metadata": {
+    "id": "resp_0abce2105dca0d6b006b0613edeae487d2b2c134155452a0ed",
+    "model": "gpt-6-luna",
+    "created_at": 1795560430.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1863,
+      "input_tokens_details": {
+        "cache_write_tokens": 1860,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1860
+        }
+      },
+      "output_tokens": 409,
+      "output_tokens_details": {
+        "reasoning_tokens": 258
+      },
+      "total_tokens": 2272
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.82,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Thames Water's half-year financial results and the effects of climate-related weather events on its operations\",\n  \"climate_relevance\": \"The report links climate change to increasingly frequent extreme weather and describes effects on Thames Water, including freeze-thaw damage, leakage, customer impacts, and resilience planning.\",\n  \"reason\": \"Although the article is framed around company results, climate-related weather impacts and the company's response are a substantial part of its account.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:47:12Z",
+  "duration_seconds": 3.014,
+  "error": null
+}

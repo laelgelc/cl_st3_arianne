@@ -1,0 +1,77 @@
+{
+  "article_id": "83462517",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83462517.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83462517.json"
+  },
+  "manifest_row": {
+    "article_id": "83462517",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83462517.txt",
+    "now_field_2": "318",
+    "date_original": "20-01-26",
+    "date_iso": "2020-01-26",
+    "source_name": "Kennebec Journal",
+    "url": "https://www.centralmaine.com/2020/01/26/campaign-finance-reform-a-top-issue/",
+    "title": "Campaign finance reform a top issue",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Campaign finance reform in the 2020 election",
+    "climate_relevance": "Climate change is briefly listed among important election issues, but the letter does not discuss it further.",
+    "reason": "The text is primarily an endorsement of campaign finance reform. Its sole climate reference is a passing mention, with no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b5c9da8a0081794d636a2d8baf7c8326311e6c992e94c3f75fa362b79b8ec715",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "13708278195f10d12cd7a2e6bdd444a3d5b3b270b11cb9c1f0e21a620e65ab36",
+    "raw_response_text_sha256": "17a198279985276ceaae6d1d62691626d52d972fbeb50f9559735f3a6ec8a6b4"
+  },
+  "api_metadata": {
+    "id": "resp_0d177db2e61b6b39006b06499fc6b087d18d6dd3fd3cccd2b7",
+    "model": "gpt-6-luna",
+    "created_at": 1795574175.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 890,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 209,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1099
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Campaign finance reform in the 2020 election\",\n  \"climate_relevance\": \"Climate change is briefly listed among important election issues, but the letter does not discuss it further.\",\n  \"reason\": \"The text is primarily an endorsement of campaign finance reform. Its sole climate reference is a passing mention, with no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:36:17Z",
+  "duration_seconds": 2.08,
+  "error": null
+}

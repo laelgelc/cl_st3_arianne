@@ -1,0 +1,77 @@
+{
+  "article_id": "85964026",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/85964026.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/85964026.json"
+  },
+  "manifest_row": {
+    "article_id": "85964026",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/85964026.txt",
+    "now_field_2": "1037",
+    "date_original": "20-09-18",
+    "date_iso": "2020-09-18",
+    "source_name": "Ad Age",
+    "url": "https://adage.com/article/news/restaurant-sales-buoyed-pizza-and-wings-trump-attacks-nyt-1619-project-friday-wake-call/2281641",
+    "title": "Restaurant sales buoyed by pizza and wings, Trump attacks the NYT '1619 Project': Friday Wake-Up Call",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Advertising and media industry news, including restaurant, travel, and consumer trends",
+    "climate_relevance": "Climate change appears in a brief report on Patagonia's get-out-the-vote campaign, which targets politicians who do not believe in or respond to the issue.",
+    "reason": "The text is primarily an advertising-industry roundup, not climate coverage. The Patagonia item makes a meaningful but brief connection between climate change and brand-led political advocacy, so it is relevant as peripheral discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f3d26ccb5c6cedb200b3bd1e2d67b4835f079a658be4d48ffbd3d2bc6e0412b5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f59b77f183b494dae031174c97411010c03c1e6fb7b1a4d40a89fc7f85623116",
+    "raw_response_text_sha256": "7fceb8afbcd2011c18f60aa55f2164da826771e8a10c9d5368b90444b84eccd8"
+  },
+  "api_metadata": {
+    "id": "resp_09f7bef15dd9e0c1006b064dc98b6c87d1a5c1bc035b5aaec0",
+    "model": "gpt-6-luna",
+    "created_at": 1795575241.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1860,
+      "input_tokens_details": {
+        "cache_write_tokens": 1857,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1857
+        }
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 144
+      },
+      "total_tokens": 2165
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Advertising and media industry news, including restaurant, travel, and consumer trends\",\n  \"climate_relevance\": \"Climate change appears in a brief report on Patagonia's get-out-the-vote campaign, which targets politicians who do not believe in or respond to the issue.\",\n  \"reason\": \"The text is primarily an advertising-industry roundup, not climate coverage. The Patagonia item makes a meaningful but brief connection between climate change and brand-led political advocacy, so it is relevant as peripheral discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:54:04Z",
+  "duration_seconds": 2.888,
+  "error": null
+}

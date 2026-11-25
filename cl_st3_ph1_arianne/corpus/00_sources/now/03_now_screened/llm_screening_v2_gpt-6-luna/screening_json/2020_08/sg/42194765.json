@@ -1,0 +1,77 @@
+{
+  "article_id": "42194765",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/sg/42194765.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/sg/42194765.json"
+  },
+  "manifest_row": {
+    "article_id": "42194765",
+    "group": "2020_08",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/sg/42194765.txt",
+    "now_field_2": "1493",
+    "date_original": "20-08-15",
+    "date_iso": "2020-08-15",
+    "source_name": "asianews.network",
+    "url": "https://asianews.network/2018/05/17/anwar-ibrahim-is-free-at-last/",
+    "title": "Anwar Ibrahim is free at last - ANN - Asia News Network",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.9,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Anwar Ibrahim’s pardon and political career in Malaysia",
+    "climate_relevance": "The identifiable main article does not discuss climate change. A separate inserted snippet discusses Japan’s environment minister, coal-fired power, and a U.N. climate summit.",
+    "reason": "The main article is about Malaysian politics and Anwar Ibrahim’s release. The climate discussion is substantive within a separate, unrelated snippet, so it does not make the identifiable main article climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "40252421c9852d1b770eb61fddee245a5c5584a1b2d0ccbed60418988b9b4344",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "87db5589ccc90570a199ff97b33b5d252618b47774fdfe210ee0e565ba108f92",
+    "raw_response_text_sha256": "1520a83ed592eff5b1f55693f7a421bdc56209d89aab6801a618714585388779"
+  },
+  "api_metadata": {
+    "id": "resp_00a3b2502564af68006b0624f4d5f087d295b88b32b59f63be",
+    "model": "gpt-6-luna",
+    "created_at": 1795564789.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2459,
+      "input_tokens_details": {
+        "cache_write_tokens": 2456,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2456
+        }
+      },
+      "output_tokens": 785,
+      "output_tokens_details": {
+        "reasoning_tokens": 625
+      },
+      "total_tokens": 3244
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Anwar Ibrahim’s pardon and political career in Malaysia\",\n  \"climate_relevance\": \"The identifiable main article does not discuss climate change. A separate inserted snippet discusses Japan’s environment minister, coal-fired power, and a U.N. climate summit.\",\n  \"reason\": \"The main article is about Malaysian politics and Anwar Ibrahim’s release. The climate discussion is substantive within a separate, unrelated snippet, so it does not make the identifiable main article climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:59:54Z",
+  "duration_seconds": 5.593,
+  "error": null
+}

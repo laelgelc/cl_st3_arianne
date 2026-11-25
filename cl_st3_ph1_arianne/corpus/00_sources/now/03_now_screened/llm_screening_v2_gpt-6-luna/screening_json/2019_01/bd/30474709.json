@@ -1,0 +1,77 @@
+{
+  "article_id": "30474709",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/bd/30474709.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/bd/30474709.json"
+  },
+  "manifest_row": {
+    "article_id": "30474709",
+    "group": "2019_01",
+    "country_code": "bd",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/bd/30474709.txt",
+    "now_field_2": "673",
+    "date_original": "19-01-20",
+    "date_iso": "2019-01-20",
+    "source_name": "theindependentbd.com",
+    "url": "http://www.theindependentbd.com/post/184176",
+    "title": "France nears implementation of digital tax",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-bd.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "France's proposed tax on large internet and technology companies",
+    "climate_relevance": "The identifiable main article is about digital taxation and contains no climate discourse. A separate, truncated snippet mentions climate change in connection with saltwater intrusion in Bangladesh.",
+    "reason": "The climate-related material appears only in an unrelated trailing snippet, not in the identifiable main article. The other material is also unrelated, including a lunar-eclipse report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0924e676a7023faa7708751675d752fd7ee0f05a6364b4a59bec3ba266b38a4e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "61a5a57db80c4214513f66bd6c02314d460ecd0536fa1b7d196143bad14f2dbb",
+    "raw_response_text_sha256": "c2c124c3a19517eb12913f8bb3e5087dc821c3ef3d6571e1f17ed7ea404fb273"
+  },
+  "api_metadata": {
+    "id": "resp_075170f999d1ab5a006b0614485d7487d2bedc5c577039f311",
+    "model": "gpt-6-luna",
+    "created_at": 1795560520.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2840,
+      "input_tokens_details": {
+        "cache_write_tokens": 2837,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2837
+        }
+      },
+      "output_tokens": 428,
+      "output_tokens_details": {
+        "reasoning_tokens": 274
+      },
+      "total_tokens": 3268
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"France's proposed tax on large internet and technology companies\",\n  \"climate_relevance\": \"The identifiable main article is about digital taxation and contains no climate discourse. A separate, truncated snippet mentions climate change in connection with saltwater intrusion in Bangladesh.\",\n  \"reason\": \"The climate-related material appears only in an unrelated trailing snippet, not in the identifiable main article. The other material is also unrelated, including a lunar-eclipse report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:48:43Z",
+  "duration_seconds": 3.317,
+  "error": null
+}

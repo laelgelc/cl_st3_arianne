@@ -1,0 +1,77 @@
+{
+  "article_id": "81878205",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81878205.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81878205.json"
+  },
+  "manifest_row": {
+    "article_id": "81878205",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81878205.txt",
+    "now_field_2": "594",
+    "date_original": "19-10-29",
+    "date_iso": "2019-10-29",
+    "source_name": "The Desert Sun",
+    "url": "https://www.desertsun.com/story/weather/2019/10/29/palm-springs-area-cold-nights-send-temperatures-into-40-s/2495387001/",
+    "title": "Need proof summer has ended? Evening temperatures are going to be in the 40s this week",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "Burrowing owl photo captions and a Southern California cold-weather forecast",
+    "climate_relevance": "One caption says the burrowing owl is among bird species predicted by the National Audubon Society to be threatened by climate change.",
+    "reason": "The text is largely a collection of owl captions followed by unrelated weather-forecast material. The climate-change reference is brief but gives a meaningful link between climate change and potential impacts on bird species, so the text is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d92543619a7040fa7049542f666d97672325ff657d131e2cced506bb91c1faec",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c671176e19ecdc776c51ac0d19039008c261530d131ebb6ab47786ecc2275f3b",
+    "raw_response_text_sha256": "fe54f2deae62ebba34f8ff9323159762d5b7cf8688556e92175a84ebdfd6b9d8"
+  },
+  "api_metadata": {
+    "id": "resp_08bca1d6c5bd3f5f006b0647cdcb4887d1a69fae67091d3574",
+    "model": "gpt-6-luna",
+    "created_at": 1795573709.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1293,
+      "input_tokens_details": {
+        "cache_write_tokens": 1290,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1290
+        }
+      },
+      "output_tokens": 401,
+      "output_tokens_details": {
+        "reasoning_tokens": 241
+      },
+      "total_tokens": 1694
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Burrowing owl photo captions and a Southern California cold-weather forecast\",\n  \"climate_relevance\": \"One caption says the burrowing owl is among bird species predicted by the National Audubon Society to be threatened by climate change.\",\n  \"reason\": \"The text is largely a collection of owl captions followed by unrelated weather-forecast material. The climate-change reference is brief but gives a meaningful link between climate change and potential impacts on bird species, so the text is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:28:34Z",
+  "duration_seconds": 5.051,
+  "error": null
+}

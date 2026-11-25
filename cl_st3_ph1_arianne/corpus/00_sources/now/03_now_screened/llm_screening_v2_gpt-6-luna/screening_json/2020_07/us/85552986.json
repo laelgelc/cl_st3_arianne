@@ -1,0 +1,77 @@
+{
+  "article_id": "85552986",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/85552986.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/85552986.json"
+  },
+  "manifest_row": {
+    "article_id": "85552986",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/85552986.txt",
+    "now_field_2": "371",
+    "date_original": "20-07-31",
+    "date_iso": "2020-07-31",
+    "source_name": "Mercury News",
+    "url": "https://www.mercurynews.com/2020/07/31/state-lawmaker-among-7-killed-in-alaska-midair-collision/",
+    "title": "State lawmaker among 7 killed in Alaska midair collision",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us7.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "A fatal midair plane collision in Alaska",
+    "climate_relevance": "Climate change appears only in a trailing fragment about someone opposing climate change denialism, not in the main plane-crash report.",
+    "reason": "The identifiable main article concerns an aviation accident. The brief climate reference is incidental and occurs in an apparently unrelated fragment, so it does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0c5d6cdc990ec3af4067371ad785bfc27a3067e49d7752e75f6cc9829458a126",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8bb111929c085da1dadd8a6613ac019bcc9a04e8a1f080e34163ab8fc0ae2511",
+    "raw_response_text_sha256": "1e19753f4cce6122428b6d1bb52e81be582bcca95c4778a0ae2ad1191da8e155"
+  },
+  "api_metadata": {
+    "id": "resp_0ee7db922461dca4006b064c5e703887d1b797eb41ebeb1fde",
+    "model": "gpt-6-luna",
+    "created_at": 1795574878.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 984,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 1249
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A fatal midair plane collision in Alaska\",\n  \"climate_relevance\": \"Climate change appears only in a trailing fragment about someone opposing climate change denialism, not in the main plane-crash report.\",\n  \"reason\": \"The identifiable main article concerns an aviation accident. The brief climate reference is incidental and occurs in an apparently unrelated fragment, so it does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:48:00Z",
+  "duration_seconds": 2.432,
+  "error": null
+}

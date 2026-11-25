@@ -1,0 +1,77 @@
+{
+  "article_id": "41384718",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/sg/41384718.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/sg/41384718.json"
+  },
+  "manifest_row": {
+    "article_id": "41384718",
+    "group": "2019_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/sg/41384718.txt",
+    "now_field_2": "561",
+    "date_original": "19-10-01",
+    "date_iso": "2019-10-01",
+    "source_name": "thenewsminute.com",
+    "url": "https://www.thenewsminute.com/article/vimalakka-s-bathukamma-song-celebration-and-protest-save-nallamala-109743",
+    "title": "Vimalakka's Bathukamma song is a celebration - and a ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A protest song and campaign opposing proposed uranium mining in the Nallamala forest",
+    "climate_relevance": "Climate change appears only as part of the name of the Ministry of Environment, Forests and Climate Change; the text discusses forest ecosystems and mining impacts, not climate change.",
+    "reason": "The article focuses on opposition to uranium mining and its potential effects on biodiversity, forest communities, and the river. The ministry name is an incidental reference and does not constitute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8c7a7de633f8478bcb9ea711fce3190ff2291b10bf15ffb6f8c837913018bed0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "38dc54f3128fa007ae686c7925180d4f933a27e4d640021e0c4242da05b1346d",
+    "raw_response_text_sha256": "3ce0f01d85c276cae39e85aff150b2d95545441d3909be5784d913c26942590c"
+  },
+  "api_metadata": {
+    "id": "resp_0fefdd5c72758753006b06217f96f087d294d041ff2da64541",
+    "model": "gpt-6-luna",
+    "created_at": 1795563903.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1323,
+      "input_tokens_details": {
+        "cache_write_tokens": 1320,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1320
+        }
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1564
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A protest song and campaign opposing proposed uranium mining in the Nallamala forest\",\n  \"climate_relevance\": \"Climate change appears only as part of the name of the Ministry of Environment, Forests and Climate Change; the text discusses forest ecosystems and mining impacts, not climate change.\",\n  \"reason\": \"The article focuses on opposition to uranium mining and its potential effects on biodiversity, forest communities, and the river. The ministry name is an incidental reference and does not constitute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:45:05Z",
+  "duration_seconds": 2.074,
+  "error": null
+}

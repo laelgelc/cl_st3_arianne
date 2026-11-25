@@ -1,0 +1,77 @@
+{
+  "article_id": "20220477",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/us/20220477.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/us/20220477.json"
+  },
+  "manifest_row": {
+    "article_id": "20220477",
+    "group": "2017_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/us/20220477.txt",
+    "now_field_2": "1950",
+    "date_original": "17-08-27",
+    "date_iso": "2017-08-27",
+    "source_name": "GoLocalProv",
+    "url": "http://www.golocalprov.com/politics/sunday-political-brunch-a-tale-of-two-presidents-august-27-2017",
+    "title": "Sunday Political Brunch: A Tale of Two Presidents-August 27, 2017",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Trump’s political messaging and public image",
+    "climate_relevance": "The text contains extensive statements about the Paris Agreement, climate change, its impacts, and the consequences of U.S. withdrawal, but these appear appended to the main political column and seem to come from separate material.",
+    "reason": "The identifiable main article is about Trump’s communications and political conduct, not climate change. The appended passages contain meaningful climate discourse, so the text is relevant peripherally rather than suitable as core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9856dd3756f713f52de135b039cfff81291af0e6d3fb1c32d1c2efef137acad4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3e3671e9453bd13901fe17334c68114e7d40cf9149a3f96205a952c80743fad6",
+    "raw_response_text_sha256": "e39cbb59597b301467d506f50bc9a7fe7bd33220b17bd9f4c6616616084c48cd"
+  },
+  "api_metadata": {
+    "id": "resp_0018ab17ca951532006b060cfe317087d2bbda95671691bffe",
+    "model": "gpt-6-luna",
+    "created_at": 1795558654.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2933,
+      "input_tokens_details": {
+        "cache_write_tokens": 2930,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2930
+        }
+      },
+      "output_tokens": 726,
+      "output_tokens_details": {
+        "reasoning_tokens": 560
+      },
+      "total_tokens": 3659
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Trump’s political messaging and public image\",\n  \"climate_relevance\": \"The text contains extensive statements about the Paris Agreement, climate change, its impacts, and the consequences of U.S. withdrawal, but these appear appended to the main political column and seem to come from separate material.\",\n  \"reason\": \"The identifiable main article is about Trump’s communications and political conduct, not climate change. The appended passages contain meaningful climate discourse, so the text is relevant peripherally rather than suitable as core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:40Z",
+  "duration_seconds": 5.946,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "41373478",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/my/41373478.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/my/41373478.json"
+  },
+  "manifest_row": {
+    "article_id": "41373478",
+    "group": "2019_09",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/my/41373478.txt",
+    "now_field_2": "347",
+    "date_original": "19-09-25",
+    "date_iso": "2019-09-25",
+    "source_name": "nst.com.my",
+    "url": "https://www.nst.com.my/news/nation/2019/09/524248/yeo-govt-drawing-new-cross-border-pollution-law",
+    "title": "Yeo: Govt drawing up new cross-border pollution law | New ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A proposed Malaysian law to hold companies and individuals accountable for cross-border pollution, amid discussion of the regional haze crisis.",
+    "climate_relevance": "Climate change appears only in the ministry's name; the available text discusses pollution and haze without meaningful climate-change discourse.",
+    "reason": "The article focuses on cross-border pollution legislation and the haze crisis. The mention of climate change is incidental institutional wording, not a substantive topic.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "86a2d09f9c6cb3f8a63c13317bc24745cb0861dfb66d6785ed79dd19ed8942f0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b4119f09e4e9ee5d99d6449c6bc032eea1104a4a9fbea50e6db7be858bc46b63",
+    "raw_response_text_sha256": "ec169fc58667e3b219c636af9f92ee38c07cd1f52e3981e19d8a5e11cd693427"
+  },
+  "api_metadata": {
+    "id": "resp_0207e9f17212f234006b062177070087d2b160113c536d2290",
+    "model": "gpt-6-luna",
+    "created_at": 1795563895.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 928,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 1216
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A proposed Malaysian law to hold companies and individuals accountable for cross-border pollution, amid discussion of the regional haze crisis.\",\n  \"climate_relevance\": \"Climate change appears only in the ministry's name; the available text discusses pollution and haze without meaningful climate-change discourse.\",\n  \"reason\": \"The article focuses on cross-border pollution legislation and the haze crisis. The mention of climate change is incidental institutional wording, not a substantive topic.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:44:57Z",
+  "duration_seconds": 2.647,
+  "error": null
+}

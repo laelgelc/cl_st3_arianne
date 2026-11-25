@@ -1,0 +1,77 @@
+{
+  "article_id": "50804547",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/gb/50804547.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/gb/50804547.json"
+  },
+  "manifest_row": {
+    "article_id": "50804547",
+    "group": "2019_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/gb/50804547.txt",
+    "now_field_2": "7352",
+    "date_original": "19-06-27",
+    "date_iso": "2019-06-27",
+    "source_name": "Daily Mail",
+    "url": "https://www.dailymail.co.uk/news/article-7186923/Glastonbury-revellers-inhale-hippy-crack-ahead-91F-sunshine-hottest-festival.html",
+    "title": "Full scale of Glastonbury tent city is revealed in stunning aerial photos ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Glastonbury Festival coverage, including weather, performers, and festival activities",
+    "climate_relevance": "The text includes meaningful coverage of an Extinction Rebellion march, climate-change warnings and debate, and the festival’s environmental initiatives, but climate change is not the main topic of the overall coverage.",
+    "reason": "Climate discourse is more than a passing mention: the text quotes climate activists on irreversible change and unsustainable living, describes a climate-focused march, and reports that climate change and the environment are central to festival programming. However, most of the material concerns festival entertainment, attendees, weather, and unrelated stories, so it is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e83edb25124115dbc4f30e96d55de07c0601569c2a4e795eae9cf05df942d91e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0ab33128add8d6ec5a9c8ba3c1953d2a605b15795a9c9e692f25cea43e6126ec",
+    "raw_response_text_sha256": "2dbc5afb031626db994b8cebdfc26713bfc29fa1a46427a6fe1c9105e5e4bb95"
+  },
+  "api_metadata": {
+    "id": "resp_0cd7e0b7b6fc1b3c006b062b08150887d1b0bb135fffdcb3ad",
+    "model": "gpt-6-luna",
+    "created_at": 1795566344.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10212,
+      "input_tokens_details": {
+        "cache_write_tokens": 10209,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 10209
+        }
+      },
+      "output_tokens": 427,
+      "output_tokens_details": {
+        "reasoning_tokens": 227
+      },
+      "total_tokens": 10639
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Glastonbury Festival coverage, including weather, performers, and festival activities\",\n  \"climate_relevance\": \"The text includes meaningful coverage of an Extinction Rebellion march, climate-change warnings and debate, and the festival’s environmental initiatives, but climate change is not the main topic of the overall coverage.\",\n  \"reason\": \"Climate discourse is more than a passing mention: the text quotes climate activists on irreversible change and unsustainable living, describes a climate-focused march, and reports that climate change and the environment are central to festival programming. However, most of the material concerns festival entertainment, attendees, weather, and unrelated stories, so it is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:25:48Z",
+  "duration_seconds": 4.496,
+  "error": null
+}

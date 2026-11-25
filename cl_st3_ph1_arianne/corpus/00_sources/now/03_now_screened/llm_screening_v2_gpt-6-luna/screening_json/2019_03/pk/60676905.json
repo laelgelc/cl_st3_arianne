@@ -1,0 +1,77 @@
+{
+  "article_id": "60676905",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/pk/60676905.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/pk/60676905.json"
+  },
+  "manifest_row": {
+    "article_id": "60676905",
+    "group": "2019_03",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/pk/60676905.txt",
+    "now_field_2": "381",
+    "date_original": "19-03-26",
+    "date_iso": "2019-03-26",
+    "source_name": "The News International",
+    "url": "https://www.thenews.com.pk/print/449502-death-toll-in-iran-floods-rises-to-21",
+    "title": "Death toll in Iran floods rises to 21",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-pk.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "climate_role": "passing",
+    "main_topic": "Fatal flooding and emergency response in Iran",
+    "climate_relevance": "The report attributes the disaster to climate change, connecting the floods to climate impacts, but does not develop that connection.",
+    "reason": "The article is primarily a flood and emergency-response report. Its brief attribution of the disaster to climate change is relevant to climate discourse, but not substantial enough for CORE.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "74e61c86b75f45e52b4d473bb88ec505a8672bf224db6f042802ed55c0aad199",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2262a690aa1e1596d1c59a44817dc6563844bf7d2fb270c9bc61f4bf2f2985cc",
+    "raw_response_text_sha256": "50ca465824cf18b8c04a91f172539e05ca4c3270c5678e3abf036def757998ff"
+  },
+  "api_metadata": {
+    "id": "resp_0c9b5a39dfd188c7006b0633c0177c87d1a7eb39f5bee7ebbe",
+    "model": "gpt-6-luna",
+    "created_at": 1795568576.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 983,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 343,
+      "output_tokens_details": {
+        "reasoning_tokens": 204
+      },
+      "total_tokens": 1326
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Fatal flooding and emergency response in Iran\",\n  \"climate_relevance\": \"The report attributes the disaster to climate change, connecting the floods to climate impacts, but does not develop that connection.\",\n  \"reason\": \"The article is primarily a flood and emergency-response report. Its brief attribution of the disaster to climate change is relevant to climate discourse, but not substantial enough for CORE.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:02:59Z",
+  "duration_seconds": 3.053,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40880528",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40880528.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40880528.json"
+  },
+  "manifest_row": {
+    "article_id": "40880528",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40880528.txt",
+    "now_field_2": "822",
+    "date_original": "19-04-25",
+    "date_iso": "2019-04-25",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/25/hsbc-blackrock-ceos-tell-saudis-future-is-bright-post-khashoggi-furore/",
+    "title": "HSBC, BlackRock CEOs tell Saudis future is bright post-Khashoggi ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "International banks and investment prospects in Saudi Arabia",
+    "climate_relevance": "Climate-related wording appears only in an opening, apparently separate news bullet about Malaysia exhibiting sustainable energy solutions and in a minister's portfolio title. The main article discusses Saudi Arabia's oil wealth and efforts to reduce dependence on oil as economic and financial matters, without meaningful climate discourse.",
+    "reason": "The identifiable main article is about finance and Saudi investment, not climate change. The climate references belong to an unrelated snippet and do not provide substantive climate discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d6e3f949a3996b977c187848a439c137a64541d45e26da0554d992af21c89df5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ffa56117f97b9a7744fa674bb71a28058d6ca22e151bd70647643a804fc8b8bc",
+    "raw_response_text_sha256": "a81a727a519142ab3a6e057ec6eecbd2f908c0e7df336383e20800115cf01938"
+  },
+  "api_metadata": {
+    "id": "resp_008f83f819bb68b1006b062031ebdc87d2a8ccce4a6d6b762b",
+    "model": "gpt-6-luna",
+    "created_at": 1795563570.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1570,
+      "input_tokens_details": {
+        "cache_write_tokens": 1567,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1567
+        }
+      },
+      "output_tokens": 352,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 1922
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"International banks and investment prospects in Saudi Arabia\",\n  \"climate_relevance\": \"Climate-related wording appears only in an opening, apparently separate news bullet about Malaysia exhibiting sustainable energy solutions and in a minister's portfolio title. The main article discusses Saudi Arabia's oil wealth and efforts to reduce dependence on oil as economic and financial matters, without meaningful climate discourse.\",\n  \"reason\": \"The identifiable main article is about finance and Saudi investment, not climate change. The climate references belong to an unrelated snippet and do not provide substantive climate discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:32Z",
+  "duration_seconds": 3.011,
+  "error": null
+}

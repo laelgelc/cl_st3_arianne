@@ -1,0 +1,77 @@
+{
+  "article_id": "70523463",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70523463.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70523463.json"
+  },
+  "manifest_row": {
+    "article_id": "70523463",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70523463.txt",
+    "now_field_2": "348",
+    "date_original": "19-02-17",
+    "date_iso": "2019-02-17",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PO1902/S00129/trapping-predators-is-not-provincial-growth.htm",
+    "title": "Trapping predators is not \"Provincial Growth\"",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Predator-control funding and assorted New Zealand political and news items",
+    "climate_relevance": "Climate change appears only in a separate Greenpeace teaser saying the National Party failed to address it; it is not part of the identifiable main item.",
+    "reason": "The identifiable main item concerns predator-control funding. The climate reference occurs in an unrelated snippet and does not provide enough discourse for inclusion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a601515f45fdf2566d44a195bc8f82e6c590aecff26750ec0a8277726d6ec40f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2961e89c237f0801c1d010ac3579f5372641e228d68846cf4197ce527b237d04",
+    "raw_response_text_sha256": "05e32e3e0cbf8a531fa4e20ad565a29c7a21eb07ed8054436d3b7252d8283228"
+  },
+  "api_metadata": {
+    "id": "resp_092347504c841c95006b063d3bcd2887d1a8f8ab3ad0168aae",
+    "model": "gpt-6-luna",
+    "created_at": 1795571003.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1863,
+      "input_tokens_details": {
+        "cache_write_tokens": 1860,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1860
+        }
+      },
+      "output_tokens": 467,
+      "output_tokens_details": {
+        "reasoning_tokens": 321
+      },
+      "total_tokens": 2330
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Predator-control funding and assorted New Zealand political and news items\",\n  \"climate_relevance\": \"Climate change appears only in a separate Greenpeace teaser saying the National Party failed to address it; it is not part of the identifiable main item.\",\n  \"reason\": \"The identifiable main item concerns predator-control funding. The climate reference occurs in an unrelated snippet and does not provide enough discourse for inclusion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:27Z",
+  "duration_seconds": 3.408,
+  "error": null
+}

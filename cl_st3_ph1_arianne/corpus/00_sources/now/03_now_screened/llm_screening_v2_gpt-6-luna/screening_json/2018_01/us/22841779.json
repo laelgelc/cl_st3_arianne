@@ -1,0 +1,77 @@
+{
+  "article_id": "22841779",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_01/us/22841779.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_01/us/22841779.json"
+  },
+  "manifest_row": {
+    "article_id": "22841779",
+    "group": "2018_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_01/us/22841779.txt",
+    "now_field_2": "2611",
+    "date_original": "18-01-19",
+    "date_iso": "2018-01-19",
+    "source_name": "The Guardian",
+    "url": "https://www.theguardian.com/travel/2018/jan/20/20-best-adventure-travel-challenges-for-2018-cycling-hikes-marathons",
+    "title": "20 of the best adventure travel challenges for 2018",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
+    "metadata_article_files": "[\"text-18-01/text_18-01-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Travel and outdoor activities",
+    "climate_relevance": "Climate change appears only in a brief description of the founder of a paddleboarding travel company as a climate change scientist.",
+    "reason": "The text is a collection of travel and activity listings. The climate reference identifies the founder's profession but contains no meaningful discussion of climate change, its impacts, or related policy or debate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7dcad76fb1adca41d5ebeb949810283364af5824198cf79d6b908fe41146ee74",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a119932dae757565b654f6a3831b167e02c10ce752d777c8b63405ff957e2236",
+    "raw_response_text_sha256": "a0bbaad09365d605820dcbef5801280ea94be0cebc410832374d850ffefc2e22"
+  },
+  "api_metadata": {
+    "id": "resp_0119549b69842ec7006b0610965db087d282c2fceb361b67ad",
+    "model": "gpt-6-luna",
+    "created_at": 1795559574.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4391,
+      "input_tokens_details": {
+        "cache_write_tokens": 4388,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4388
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 4619
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Travel and outdoor activities\",\n  \"climate_relevance\": \"Climate change appears only in a brief description of the founder of a paddleboarding travel company as a climate change scientist.\",\n  \"reason\": \"The text is a collection of travel and activity listings. The climate reference identifies the founder's profession but contains no meaningful discussion of climate change, its impacts, or related policy or debate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:32:56Z",
+  "duration_seconds": 2.246,
+  "error": null
+}

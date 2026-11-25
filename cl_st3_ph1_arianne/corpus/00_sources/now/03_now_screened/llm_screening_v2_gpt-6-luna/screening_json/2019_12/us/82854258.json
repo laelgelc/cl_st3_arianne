@@ -1,0 +1,77 @@
+{
+  "article_id": "82854258",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82854258.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82854258.json"
+  },
+  "manifest_row": {
+    "article_id": "82854258",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82854258.txt",
+    "now_field_2": "234",
+    "date_original": "19-12-23",
+    "date_iso": "2019-12-23",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191223092839-ho44n",
+    "title": "As busy holiday travel week begins, southeast U.S. to see heavy rain, flooding",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Holiday travel and weather forecasts in the United States",
+    "climate_relevance": "Climate change appears only in the publication's boilerplate description of its coverage.",
+    "reason": "The article reports on storms, flooding, and holiday travel, but contains no meaningful discussion of climate change; the sole mention is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "78046c168daad517123405ea864d562e13bb5e225523b38b22a3f6b9de2c69ba",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "10d7e0c5dff929f47b25163fe41817ac623d5df909c9e797396026d0ae4a65d1",
+    "raw_response_text_sha256": "2cf260602517e7c93db8dec0199c2c543192aa8468affa7b09995cc15874389a"
+  },
+  "api_metadata": {
+    "id": "resp_06b0d7b970e933ae006b0648ed4a6087d1991699261acff0a8",
+    "model": "gpt-6-luna",
+    "created_at": 1795573997.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 775,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 973
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Holiday travel and weather forecasts in the United States\",\n  \"climate_relevance\": \"Climate change appears only in the publication's boilerplate description of its coverage.\",\n  \"reason\": \"The article reports on storms, flooding, and holiday travel, but contains no meaningful discussion of climate change; the sole mention is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:33:19Z",
+  "duration_seconds": 1.887,
+  "error": null
+}

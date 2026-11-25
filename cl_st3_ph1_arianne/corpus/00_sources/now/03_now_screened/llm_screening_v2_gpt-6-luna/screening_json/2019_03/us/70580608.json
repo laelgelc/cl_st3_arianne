@@ -1,0 +1,77 @@
+{
+  "article_id": "70580608",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/us/70580608.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/us/70580608.json"
+  },
+  "manifest_row": {
+    "article_id": "70580608",
+    "group": "2019_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/us/70580608.txt",
+    "now_field_2": "490",
+    "date_original": "19-03-10",
+    "date_iso": "2019-03-10",
+    "source_name": "Markets Insider",
+    "url": "https://markets.businessinsider.com/news/stocks/u-s-conference-of-mayors-announces-winner-of-civic-i-o-mayor-s-matchup-pitch-at-sxsw-1028017396",
+    "title": "US Conference of Mayors Announces Winner of Civic I/O Mayor's ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A civic technology pitch competition and a mental-health technology company",
+    "climate_relevance": "Climate change is briefly listed among topics addressed by SXSW panels, with no further discussion.",
+    "reason": "The text is primarily a press release about a technology competition and mental-health services. Climate change appears only in a passing list of issues, which does not provide meaningful discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "29aed139d667adc5c638e9d9a88efebaba868a1626a5e11152c924f407a48f29",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "17418d05721962e8bcb5c8b462839efefcff674e924db1f76a89aca28b73bf5e",
+    "raw_response_text_sha256": "0d97b093af179faeb6ed8c69b7e044b12f2a34c54d978ecb643f177e717a2e48"
+  },
+  "api_metadata": {
+    "id": "resp_092d2f28d8d84c0f006b063db66c9887d1a46270d1025712d2",
+    "model": "gpt-6-luna",
+    "created_at": 1795571126.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1130,
+      "input_tokens_details": {
+        "cache_write_tokens": 1127,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1127
+        }
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 1381
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A civic technology pitch competition and a mental-health technology company\",\n  \"climate_relevance\": \"Climate change is briefly listed among topics addressed by SXSW panels, with no further discussion.\",\n  \"reason\": \"The text is primarily a press release about a technology competition and mental-health services. Climate change appears only in a passing list of issues, which does not provide meaningful discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:45:28Z",
+  "duration_seconds": 2.521,
+  "error": null
+}

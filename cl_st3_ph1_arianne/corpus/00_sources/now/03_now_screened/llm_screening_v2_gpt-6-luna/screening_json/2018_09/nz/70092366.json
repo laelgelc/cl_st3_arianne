@@ -1,0 +1,77 @@
+{
+  "article_id": "70092366",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/nz/70092366.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/nz/70092366.json"
+  },
+  "manifest_row": {
+    "article_id": "70092366",
+    "group": "2018_09",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/nz/70092366.txt",
+    "now_field_2": "510",
+    "date_original": "18-09-28",
+    "date_iso": "2018-09-28",
+    "source_name": "The Press",
+    "url": "https://www.stuff.co.nz/the-press/opinion/107433962/the-privilege-is-all-yours",
+    "title": "The privilege is all yours",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Satirical parody of Donald Trump’s speech and political persona",
+    "climate_relevance": "Climate change is mentioned only as the occasion for a mock speech; there is no discussion of climate issues.",
+    "reason": "The text uses a climate-change plenary session as a passing setup for political jokes, without meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cadfdd505b311e665ce83d46e2b7fc07ae86f049da4c579e0a4a429029f18053",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "121cf22c45ed14c119c2499facff5fa8b5c420940088fe36dfece25eaf74ae91",
+    "raw_response_text_sha256": "a562862ff3071b558cd65ab61ce375d262202a3dc733622532a4eec3f1231a36"
+  },
+  "api_metadata": {
+    "id": "resp_04b6865f5f1c0a88006b063ad3bc0087d1bb7334fc5567c842",
+    "model": "gpt-6-luna",
+    "created_at": 1795570387.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1146,
+      "input_tokens_details": {
+        "cache_write_tokens": 1143,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1143
+        }
+      },
+      "output_tokens": 187,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1333
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Satirical parody of Donald Trump’s speech and political persona\",\n  \"climate_relevance\": \"Climate change is mentioned only as the occasion for a mock speech; there is no discussion of climate issues.\",\n  \"reason\": \"The text uses a climate-change plenary session as a passing setup for political jokes, without meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:33:09Z",
+  "duration_seconds": 1.79,
+  "error": null
+}

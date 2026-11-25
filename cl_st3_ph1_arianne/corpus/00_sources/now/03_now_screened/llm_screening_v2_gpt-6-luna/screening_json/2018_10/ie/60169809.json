@@ -1,0 +1,77 @@
+{
+  "article_id": "60169809",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/ie/60169809.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/ie/60169809.json"
+  },
+  "manifest_row": {
+    "article_id": "60169809",
+    "group": "2018_10",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/ie/60169809.txt",
+    "now_field_2": "357",
+    "date_original": "18-10-19",
+    "date_iso": "2018-10-19",
+    "source_name": "Independent.ie",
+    "url": "https://www.independent.ie/business/farming/dairy/only-53-bvdpositive-animals-remain-in-ireland-see-where-they-are-37437027.html",
+    "title": "Only 53 BVD-positive animals remain in Ireland - see where they are",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Government project oversight and transparency, alongside an unrelated report on bovine viral diarrhoea eradication",
+    "climate_relevance": "Climate change is not substantively discussed. The only potentially related reference is the former Department of Energy and Climate Change in the name of a department associated with an energy-efficiency programme.",
+    "reason": "The identifiable main article concerns government project evaluation and accountability, and the opening material concerns livestock disease eradication. Neither contains meaningful climate discourse; the department name alone is incidental.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ac7f247aa5d73cdab81d15e2c900e041f96fbe228babf942cfcd734a40045830",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "966b66406ab50420918cd5e9df74745981b7ef3b7d681fa44211f74a59f986c6",
+    "raw_response_text_sha256": "b2950203269a71191346ccf389ee85c8d55135809cac62709a6eb0c967b104e0"
+  },
+  "api_metadata": {
+    "id": "resp_028e0447de1612bf006b063158bca487d195d53184b34e754b",
+    "model": "gpt-6-luna",
+    "created_at": 1795567960.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2050,
+      "input_tokens_details": {
+        "cache_write_tokens": 2047,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2047
+        }
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 2348
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Government project oversight and transparency, alongside an unrelated report on bovine viral diarrhoea eradication\",\n  \"climate_relevance\": \"Climate change is not substantively discussed. The only potentially related reference is the former Department of Energy and Climate Change in the name of a department associated with an energy-efficiency programme.\",\n  \"reason\": \"The identifiable main article concerns government project evaluation and accountability, and the opening material concerns livestock disease eradication. Neither contains meaningful climate discourse; the department name alone is incidental.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:52:43Z",
+  "duration_seconds": 2.562,
+  "error": null
+}

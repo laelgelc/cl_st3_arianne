@@ -1,0 +1,77 @@
+{
+  "article_id": "31423090",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/nz/31423090.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/nz/31423090.json"
+  },
+  "manifest_row": {
+    "article_id": "31423090",
+    "group": "2019_11",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/nz/31423090.txt",
+    "now_field_2": "1011",
+    "date_original": "19-11-11",
+    "date_iso": "2019-11-11",
+    "source_name": "newsroom.co.nz",
+    "url": "https://www.newsroom.co.nz/@ideasroom/2019/11/07/897755/finally-some-good-news-about-pancreatic-cancer",
+    "title": "Finally, some good news about pancreatic cancer",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Pancreatic cancer research, treatment, and awareness in New Zealand",
+    "climate_relevance": "Climate change appears only in a boilerplate description of Newsroom's coverage areas.",
+    "reason": "The article is about pancreatic cancer. Its sole climate reference is an unrelated promotional footer and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fa9d3f7191251f772f3f7a52138dc900ec5808e094a9da9c2deff6ced20b2385",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9a67dc9f97a062e037bfcd175c9626d6be3fa9af47c51c316750eddfb8e9c069",
+    "raw_response_text_sha256": "77adf986343054af1c8ce100dd9f8a4aa589bbf2e5b560f872107a5ebc6406f6"
+  },
+  "api_metadata": {
+    "id": "resp_0b5845c20d160e09006b06172b892487d2b25eec23e2050126",
+    "model": "gpt-6-luna",
+    "created_at": 1795561259.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1700,
+      "input_tokens_details": {
+        "cache_write_tokens": 1697,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1697
+        }
+      },
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 1890
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Pancreatic cancer research, treatment, and awareness in New Zealand\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of Newsroom's coverage areas.\",\n  \"reason\": \"The article is about pancreatic cancer. Its sole climate reference is an unrelated promotional footer and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:01:01Z",
+  "duration_seconds": 1.663,
+  "error": null
+}

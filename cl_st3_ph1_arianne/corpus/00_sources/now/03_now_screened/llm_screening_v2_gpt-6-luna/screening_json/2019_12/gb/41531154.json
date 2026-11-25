@@ -1,0 +1,77 @@
+{
+  "article_id": "41531154",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/gb/41531154.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/gb/41531154.json"
+  },
+  "manifest_row": {
+    "article_id": "41531154",
+    "group": "2019_12",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/gb/41531154.txt",
+    "now_field_2": "481",
+    "date_original": "19-12-03",
+    "date_iso": "2019-12-03",
+    "source_name": "express.co.uk",
+    "url": "https://www.express.co.uk/news/politics/1212711/General-election-news-latest-Labour-Diana-Abbott-son-Hackney-Stoke-Newington",
+    "title": "Diane Abbott's son accused of assaulting police officer ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "The arrest of Diane Abbott’s son and campaign issues in the 2019 UK general election",
+    "climate_relevance": "A Labour transport policy is linked to shifting commuters from cars to public transport, described as a contribution to addressing the climate change crisis.",
+    "reason": "The article is mainly about the arrest and election campaigning. Climate change appears in one meaningful but brief sentence explaining the rationale for a transport pledge, so the text is relevant as peripheral discourse rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "aa87fb1ec88a602f7e7c251cfeb01f86864de713cc12db025be67ad07c2860d3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e1462665b9ff4adee76c1099cbaa96b68a7dbcc772fd235fd66f8e8bd01f97a0",
+    "raw_response_text_sha256": "f3947285b6070716b52665ebc13d5194f1be1b52d59a27eb19053c17614fad87"
+  },
+  "api_metadata": {
+    "id": "resp_03adc2a19fde37ff006b06222a401887d284f560146610c9b0",
+    "model": "gpt-6-luna",
+    "created_at": 1795564074.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1163,
+      "input_tokens_details": {
+        "cache_write_tokens": 1160,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1160
+        }
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 1448
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The arrest of Diane Abbott’s son and campaign issues in the 2019 UK general election\",\n  \"climate_relevance\": \"A Labour transport policy is linked to shifting commuters from cars to public transport, described as a contribution to addressing the climate change crisis.\",\n  \"reason\": \"The article is mainly about the arrest and election campaigning. Climate change appears in one meaningful but brief sentence explaining the rationale for a transport pledge, so the text is relevant as peripheral discourse rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:47:57Z",
+  "duration_seconds": 2.974,
+  "error": null
+}

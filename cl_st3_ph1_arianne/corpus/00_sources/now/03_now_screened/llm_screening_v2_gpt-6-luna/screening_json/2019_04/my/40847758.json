@@ -1,0 +1,77 @@
+{
+  "article_id": "40847758",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40847758.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40847758.json"
+  },
+  "manifest_row": {
+    "article_id": "40847758",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40847758.txt",
+    "now_field_2": "766",
+    "date_original": "19-04-16",
+    "date_iso": "2019-04-16",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/17/hektar-reit-eyes-asset-purchase-enhancement-to-raise-returns/",
+    "title": "Hektar REIT eyes asset purchase, enhancement to raise returns",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Hektar REIT's planned acquisitions, mall performance, and energy-cost reductions",
+    "climate_relevance": "Climate change appears only in an unrelated news-summary item naming a minister's portfolio. The main article discusses reducing mall energy consumption as a cost-saving measure, without meaningful climate framing.",
+    "reason": "The identifiable main article is about a real estate investment trust and its malls. The climate reference is confined to a separate summary item, and the article's energy-efficiency discussion is not connected to climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fde0c90c3eb8b1c73dbc2063e9c5f93d2d91da894b62c625b02fd2df5012b583",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "972c43ace9dafddf72a89c5c4b2631706475697cf598a9bf4e65b3e35a11a82d",
+    "raw_response_text_sha256": "485a24ee05f6692b97ca6582ae4f1991fe6f0a98e259e35531df19f9263bdf69"
+  },
+  "api_metadata": {
+    "id": "resp_0ac028a80f8bc565006b062004879c87d2b7bfa43405a7e642",
+    "model": "gpt-6-luna",
+    "created_at": 1795563524.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1592,
+      "input_tokens_details": {
+        "cache_write_tokens": 1589,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1589
+        }
+      },
+      "output_tokens": 370,
+      "output_tokens_details": {
+        "reasoning_tokens": 198
+      },
+      "total_tokens": 1962
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Hektar REIT's planned acquisitions, mall performance, and energy-cost reductions\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated news-summary item naming a minister's portfolio. The main article discusses reducing mall energy consumption as a cost-saving measure, without meaningful climate framing.\",\n  \"reason\": \"The identifiable main article is about a real estate investment trust and its malls. The climate reference is confined to a separate summary item, and the article's energy-efficiency discussion is not connected to climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:47Z",
+  "duration_seconds": 3.013,
+  "error": null
+}

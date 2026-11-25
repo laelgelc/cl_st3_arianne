@@ -1,0 +1,77 @@
+{
+  "article_id": "70514661",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70514661.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70514661.json"
+  },
+  "manifest_row": {
+    "article_id": "70514661",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70514661.txt",
+    "now_field_2": "559",
+    "date_original": "19-02-14",
+    "date_iso": "2019-02-14",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00358/napier-art-deco-festival-attracts-international-attention.htm",
+    "title": "Napier Art Deco Festival attracts international attention",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The Napier Art Deco Festival and its appeal to visitors, travel buyers, and media.",
+    "climate_relevance": "Climate change appears only in a separate, unrelated snippet about Greenpeace's response to National Party environment policies; it is not part of the identifiable main article.",
+    "reason": "The main article concerns tourism and the Art Deco Festival. The climate reference belongs to an unrelated snippet and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a69ddd4f0980b5e6d9304d6ad0d23797fd954c992670734e2389a52a748198f1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7071ffd36fdc47ce983d951296a08cb2594c1a0e6429d8ccf460ad81688d2058",
+    "raw_response_text_sha256": "90719e08884d2a1d7478efd39873b57c321d32bcb224641698226301bec67b0d"
+  },
+  "api_metadata": {
+    "id": "resp_0131843081b5aa9a006b063d29f15887d18419e8f032728024",
+    "model": "gpt-6-luna",
+    "created_at": 1795570986.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1211,
+      "input_tokens_details": {
+        "cache_write_tokens": 1208,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1208
+        }
+      },
+      "output_tokens": 387,
+      "output_tokens_details": {
+        "reasoning_tokens": 229
+      },
+      "total_tokens": 1598
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The Napier Art Deco Festival and its appeal to visitors, travel buyers, and media.\",\n  \"climate_relevance\": \"Climate change appears only in a separate, unrelated snippet about Greenpeace's response to National Party environment policies; it is not part of the identifiable main article.\",\n  \"reason\": \"The main article concerns tourism and the Art Deco Festival. The climate reference belongs to an unrelated snippet and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:09Z",
+  "duration_seconds": 3.208,
+  "error": null
+}

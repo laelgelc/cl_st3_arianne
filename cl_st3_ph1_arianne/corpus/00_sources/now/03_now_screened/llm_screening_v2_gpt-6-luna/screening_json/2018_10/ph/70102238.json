@@ -1,0 +1,77 @@
+{
+  "article_id": "70102238",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/ph/70102238.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/ph/70102238.json"
+  },
+  "manifest_row": {
+    "article_id": "70102238",
+    "group": "2018_10",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/ph/70102238.txt",
+    "now_field_2": "726",
+    "date_original": "18-10-02",
+    "date_iso": "2018-10-02",
+    "source_name": "Philippine Information Agency",
+    "url": "https://pia.gov.ph/news/articles/1013322",
+    "title": "Pres. Duterte attends 3rd IBD clinical forum in Cebu",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "A forum on inflammatory bowel disease and President Duterte’s support for awareness and prevention",
+    "climate_relevance": "Climate change is briefly listed among other issues Duterte cited in his speech, with no further discussion.",
+    "reason": "The article is primarily about inflammatory bowel disease and the related medical forum. The climate change reference is a passing mention that provides no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a1f8f2ca50c6779ced00d66204cafc82e8bf07a2d1713d722db72d2904c0016e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b1ec130d550f8876401af90082d2e3b1ffae1ca0b7a26547ac8786198edbcac6",
+    "raw_response_text_sha256": "2eca9360d2f0610e2940ba1c7147a7a8cf429e1b34eaffc730a533f271f2e085"
+  },
+  "api_metadata": {
+    "id": "resp_0921d3d9173338bc006b063ae031d087d1bb14d91e25a0cd9d",
+    "model": "gpt-6-luna",
+    "created_at": 1795570400.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1487,
+      "input_tokens_details": {
+        "cache_write_tokens": 1484,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1484
+        }
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 1733
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A forum on inflammatory bowel disease and President Duterte’s support for awareness and prevention\",\n  \"climate_relevance\": \"Climate change is briefly listed among other issues Duterte cited in his speech, with no further discussion.\",\n  \"reason\": \"The article is primarily about inflammatory bowel disease and the related medical forum. The climate change reference is a passing mention that provides no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:33:22Z",
+  "duration_seconds": 2.484,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "81485806",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81485806.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81485806.json"
+  },
+  "manifest_row": {
+    "article_id": "81485806",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81485806.txt",
+    "now_field_2": "1384",
+    "date_original": "19-10-08",
+    "date_iso": "2019-10-08",
+    "source_name": "Wall Street Journal",
+    "url": "https://www.wsj.com/articles/pg-e-warns-it-may-cut-power-for-600-000-customers-due-to-wildfire-risk-11570513569?mod=newsviewer_click",
+    "title": "PG&E Warns It May Cut Power for 600,000 Customers Due to Wildfire Risk",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "PG&E’s preventive power shut-offs in California to reduce wildfire risk and their effects on residents and businesses.",
+    "climate_relevance": "The article briefly links climate change and vulnerabilities in PG&E’s infrastructure to California wildfires, but does not otherwise substantially discuss climate change.",
+    "reason": "The main focus is utility outages, wildfire prevention, and the resulting disruption. The explicit connection between climate change and wildfires is meaningful but limited, making the text relevant as background rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "00195fc0222534907d79067666516dfd3b83c0d160ea6f99e5162e6dd9cf103f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "435cc4f55d88e26502fc7f3472fed294f0b85dd3dcb3c82d0d1b17a94f6f598f",
+    "raw_response_text_sha256": "a478f92be6fb6700503051d097fcd5aafa4905251ea49669629e8d5d4d6061dd"
+  },
+  "api_metadata": {
+    "id": "resp_0445d4477183116e006b0647605f8c87d19fd547e6b7ec2c39",
+    "model": "gpt-6-luna",
+    "created_at": 1795573600.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2319,
+      "input_tokens_details": {
+        "cache_write_tokens": 2316,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2316
+        }
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 2591
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"PG&E’s preventive power shut-offs in California to reduce wildfire risk and their effects on residents and businesses.\",\n  \"climate_relevance\": \"The article briefly links climate change and vulnerabilities in PG&E’s infrastructure to California wildfires, but does not otherwise substantially discuss climate change.\",\n  \"reason\": \"The main focus is utility outages, wildfire prevention, and the resulting disruption. The explicit connection between climate change and wildfires is meaningful but limited, making the text relevant as background rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:26:42Z",
+  "duration_seconds": 2.443,
+  "error": null
+}

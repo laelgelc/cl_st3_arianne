@@ -1,0 +1,77 @@
+{
+  "article_id": "7831359",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_03/ph/7831359.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_03/ph/7831359.json"
+  },
+  "manifest_row": {
+    "article_id": "7831359",
+    "group": "2016_03",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_03/ph/7831359.txt",
+    "now_field_2": "642",
+    "date_original": "16-03-21",
+    "date_iso": "2016-03-21",
+    "source_name": "InterAksyon",
+    "url": "http://interaksyon.com/article/125500/cordillera-forests-in-peril-says-regional-group",
+    "title": "Cordillera forests in peril, says regional group",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-03-sls/16-03-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Deforestation and watershed degradation in the Cordillera region",
+    "climate_relevance": "Climate change appears only in the name of the Climate Change Commission; the text does not discuss climate change or its implications.",
+    "reason": "The article focuses on forest loss, land use, mining, and watershed impacts. The isolated institutional reference does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "caac0bdbd8d5f2547c03e1555c05bdd76e03edd07b98f61679992d04f9da12fb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7a7e654c94fd5337c1cd7fe91ae548d59d9b406f004b10327b4f5b6850e4fb50",
+    "raw_response_text_sha256": "de5db98160ce93e3841011ac25889a17bf94b981125927de2ac4ef1981fa7d82"
+  },
+  "api_metadata": {
+    "id": "resp_08024fc3a96c0b5e006b064677ec0887d1b2255207e0a3346d",
+    "model": "gpt-6-luna",
+    "created_at": 1795573368.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1375,
+      "input_tokens_details": {
+        "cache_write_tokens": 1372,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1372
+        }
+      },
+      "output_tokens": 223,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1598
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Deforestation and watershed degradation in the Cordillera region\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Climate Change Commission; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on forest loss, land use, mining, and watershed impacts. The isolated institutional reference does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:22:50Z",
+  "duration_seconds": 2.204,
+  "error": null
+}

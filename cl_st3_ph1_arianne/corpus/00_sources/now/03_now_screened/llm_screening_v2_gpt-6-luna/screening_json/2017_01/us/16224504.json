@@ -1,0 +1,77 @@
+{
+  "article_id": "16224504",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/us/16224504.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/us/16224504.json"
+  },
+  "manifest_row": {
+    "article_id": "16224504",
+    "group": "2017_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/us/16224504.txt",
+    "now_field_2": "714",
+    "date_original": "17-01-04",
+    "date_iso": "2017-01-04",
+    "source_name": "GQ Magazine",
+    "url": "http://www.gq.com/story/run-the-jewels-3-three-revolution",
+    "title": "Run The Jewels 3 Is the Soundtrack of Revolution",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "climate_role": "passing",
+    "main_topic": "A review of Run the Jewels 3 and its political themes",
+    "climate_relevance": "Climate change appears as one example in a criticism of Donald Trump's political record, specifically the phrase 'denying climate change.'",
+    "reason": "The article is principally a music review. Its brief reference to climate denial contributes a small amount of political discourse, but climate change is not developed beyond that passing mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7d1e5da9edd2f66cb43b3999c5b11cb7b45a93c91da25796286ea8c2044ae9cd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5f4f38b572ce6e64f5b728bed357fde0ef69f0023acce9d41de2c0d87211970c",
+    "raw_response_text_sha256": "919b60c6311cf9cca6945e5ebd62c2f4e50cefcd8a32fe87d59ad490040cf280"
+  },
+  "api_metadata": {
+    "id": "resp_03d22da441abe2bf006b060769385087d28772e809e83bdc42",
+    "model": "gpt-6-luna",
+    "created_at": 1795557225.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1443,
+      "input_tokens_details": {
+        "cache_write_tokens": 1440,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1440
+        }
+      },
+      "output_tokens": 364,
+      "output_tokens_details": {
+        "reasoning_tokens": 217
+      },
+      "total_tokens": 1807
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A review of Run the Jewels 3 and its political themes\",\n  \"climate_relevance\": \"Climate change appears as one example in a criticism of Donald Trump's political record, specifically the phrase 'denying climate change.'\",\n  \"reason\": \"The article is principally a music review. Its brief reference to climate denial contributes a small amount of political discourse, but climate change is not developed beyond that passing mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:53:48Z",
+  "duration_seconds": 3.237,
+  "error": null
+}

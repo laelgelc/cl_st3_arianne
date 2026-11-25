@@ -1,0 +1,77 @@
+{
+  "article_id": "82775550",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82775550.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82775550.json"
+  },
+  "manifest_row": {
+    "article_id": "82775550",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82775550.txt",
+    "now_field_2": "150",
+    "date_original": "19-12-19",
+    "date_iso": "2019-12-19",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191219090052-r18i4",
+    "title": "Ex-minister Diab on course to be designated Lebanese PM-sources",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Lebanon's selection of a new prime minister amid an economic crisis",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news organization's coverage areas.",
+    "reason": "The article is about Lebanese politics and the prime ministerial selection. The sole climate-change reference is unrelated boilerplate, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8e33fb35be6aeb84ff165ecd19e0fe9e71923b10e6b5a7b15b6f54796823e1f1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b0dc4e52d35e5b6852ca715a059a44bc8f4fc15d0ecc6b5953d052f90eec74a4",
+    "raw_response_text_sha256": "1fd0f43263f6c449f10d33bac847a96084b8c4363fdec7a6f287fb8ec0880679"
+  },
+  "api_metadata": {
+    "id": "resp_018bdd6582e94a9c006b0648d974fc87d19f9d7b7b96bbb00c",
+    "model": "gpt-6-luna",
+    "created_at": 1795573977.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 677,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 163,
+      "output_tokens_details": {
+        "reasoning_tokens": 26
+      },
+      "total_tokens": 840
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Lebanon's selection of a new prime minister amid an economic crisis\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news organization's coverage areas.\",\n  \"reason\": \"The article is about Lebanese politics and the prime ministerial selection. The sole climate-change reference is unrelated boilerplate, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:32:59Z",
+  "duration_seconds": 1.986,
+  "error": null
+}

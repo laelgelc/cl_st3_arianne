@@ -1,0 +1,77 @@
+{
+  "article_id": "24724091",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/gb/24724091.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/gb/24724091.json"
+  },
+  "manifest_row": {
+    "article_id": "24724091",
+    "group": "2018_05",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/gb/24724091.txt",
+    "now_field_2": "582",
+    "date_original": "18-05-18",
+    "date_iso": "2018-05-18",
+    "source_name": "Hampshire Chronicle",
+    "url": "http://www.hampshirechronicle.co.uk/news/16229927.PHOTOS__Hundreds_of_cyclists_line_Winchester__39_s_streets_for_Mass_Ride/",
+    "title": "Hundreds of cyclists line Winchester's streets for Mass Ride",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A local campaign to improve cycling infrastructure and promote cycling in Winchester",
+    "climate_relevance": "Climate change appears only in the name of a supporting organization; the article discusses cycling, congestion, and air quality without meaningful climate-change discourse.",
+    "reason": "The article is primarily about a local cycling event and campaign. Its climate reference is incidental and does not contribute meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7b4fa6a65226042313a168c6f674a384ec52bb0981009327e1000db959060dbb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ed5a6f20b11d4ad92fef15d9dac4c60908d064a0be9de5b4c98f8069b507ee00",
+    "raw_response_text_sha256": "a78fa5a0b5f552ac58d9076da930886d6ee0c92589d09ac06ffc0a6884923e21"
+  },
+  "api_metadata": {
+    "id": "resp_0f8eb53fcb531926006b0612ba551887d2ac9390c3efb4171f",
+    "model": "gpt-6-luna",
+    "created_at": 1795560122.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1208,
+      "input_tokens_details": {
+        "cache_write_tokens": 1205,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1205
+        }
+      },
+      "output_tokens": 283,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 1491
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A local campaign to improve cycling infrastructure and promote cycling in Winchester\",\n  \"climate_relevance\": \"Climate change appears only in the name of a supporting organization; the article discusses cycling, congestion, and air quality without meaningful climate-change discourse.\",\n  \"reason\": \"The article is primarily about a local cycling event and campaign. Its climate reference is incidental and does not contribute meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:42:04Z",
+  "duration_seconds": 2.423,
+  "error": null
+}

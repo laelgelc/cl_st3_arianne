@@ -1,0 +1,77 @@
+{
+  "article_id": "70342607",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ph/70342607.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ph/70342607.json"
+  },
+  "manifest_row": {
+    "article_id": "70342607",
+    "group": "2018_12",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ph/70342607.txt",
+    "now_field_2": "544",
+    "date_original": "18-12-17",
+    "date_iso": "2018-12-17",
+    "source_name": "Business Mirror",
+    "url": "https://businessmirror.com.ph/oil-holds-loss-as-opec-output-curbs-weighed-against-surging-us-supply/",
+    "title": "Oil holds loss as Opec output curbs weighed against surging US supply",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.86,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Oil prices, Opec+ production curbs, and US shale supply",
+    "climate_relevance": "The identifiable main article concerns oil markets and contains no meaningful climate discussion. A separate appended article discusses COP24 and climate policy, but it is unrelated to the main article.",
+    "reason": "The main article is about oil supply and prices, not climate change. The substantial climate coverage appears in a distinct, apparently concatenated article, so it does not make the identifiable main article climate-related.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "edb32b4928324a7980cea561589f7c858d5fb413996848bf1b178e87e9bb307e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e0a6497a868870ebebba199f1423da803780b1c582da997213dc778e8fcdfa18",
+    "raw_response_text_sha256": "03d0b47027cdda3be494a75b631dcd32b860cb7da504b5858c7e9348161570a5"
+  },
+  "api_metadata": {
+    "id": "resp_0024464656406c9c006b063c125f5887d1b333c987723125fb",
+    "model": "gpt-6-luna",
+    "created_at": 1795570706.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2442,
+      "input_tokens_details": {
+        "cache_write_tokens": 2439,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2439
+        }
+      },
+      "output_tokens": 577,
+      "output_tokens_details": {
+        "reasoning_tokens": 409
+      },
+      "total_tokens": 3019
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Oil prices, Opec+ production curbs, and US shale supply\",\n  \"climate_relevance\": \"The identifiable main article concerns oil markets and contains no meaningful climate discussion. A separate appended article discusses COP24 and climate policy, but it is unrelated to the main article.\",\n  \"reason\": \"The main article is about oil supply and prices, not climate change. The substantial climate coverage appears in a distinct, apparently concatenated article, so it does not make the identifiable main article climate-related.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:38:31Z",
+  "duration_seconds": 4.804,
+  "error": null
+}

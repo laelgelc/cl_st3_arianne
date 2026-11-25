@@ -1,0 +1,77 @@
+{
+  "article_id": "83949170",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/83949170.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/83949170.json"
+  },
+  "manifest_row": {
+    "article_id": "83949170",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/83949170.txt",
+    "now_field_2": "275",
+    "date_original": "20-02-29",
+    "date_iso": "2020-02-29",
+    "source_name": "WSAZ",
+    "url": "https://www.wsaz.com/content/news/Joe-Biden-wins-South-Carolina-primary-568351631.html",
+    "title": "Joe Biden wins South Carolina primary",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us6.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "Joe Biden's victory in the South Carolina Democratic presidential primary",
+    "climate_relevance": "Climate change appears only as one issue respondents identified in a brief polling statistic.",
+    "reason": "The article focuses on the primary election and gives no substantive discussion of climate change; the single mention is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b28dc459829ac397de34c765930f32ea93d69c254e78c5deb4776e50708be7dd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5ce2ac8dd5534e6d83a10311ab9b908082463862522dedbd1f7aed6155aa0929",
+    "raw_response_text_sha256": "6db3e31b412031f04e65cefa81b7af63c771fc8ed0f99d6cef7a5827755d6467"
+  },
+  "api_metadata": {
+    "id": "resp_0e65362d17e3561d006b064a2b942c87d189cbfc4994da0755",
+    "model": "gpt-6-luna",
+    "created_at": 1795574315.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 890,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 1125
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Joe Biden's victory in the South Carolina Democratic presidential primary\",\n  \"climate_relevance\": \"Climate change appears only as one issue respondents identified in a brief polling statistic.\",\n  \"reason\": \"The article focuses on the primary election and gives no substantive discussion of climate change; the single mention is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:38:37Z",
+  "duration_seconds": 2.237,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "8014473",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_04/au/8014473.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_04/au/8014473.json"
+  },
+  "manifest_row": {
+    "article_id": "8014473",
+    "group": "2016_04",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_04/au/8014473.txt",
+    "now_field_2": "367",
+    "date_original": "16-04-01",
+    "date_iso": "2016-04-01",
+    "source_name": "Sydney Morning Herald",
+    "url": "http://www.smh.com.au/federal-politics/political-news/turnbull-gets-a-lesson-in-the-complexities-of-the-federation-20160401-gnwgnw.html",
+    "title": "Turnbull gets a lesson in the complexities of the federation",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-04-ovb/16-04-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "Australian political and tax reform",
+    "climate_relevance": "Climate change appears only in a passing reference to a citizens' assembly, within a list of public policy examples.",
+    "reason": "The text focuses on Turnbull's failed income-tax proposal and broader tax reform. It provides no substantive discussion of climate change or the citizens' assembly.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "570268330396bb28aefbf1e08307efdc76a525d4e75c56fc9363a59f911d199a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dafb8d2a9cbb3e1d2aca52b36c049c3429635ff1f45d3cc2df628346bd66032d",
+    "raw_response_text_sha256": "e0762bdbfe627599da553766b72e6f0024335298d737060eea0b2860cd0f6bbc"
+  },
+  "api_metadata": {
+    "id": "resp_0828a921f52b780b006b06469a326c87d187c971d1b10016cc",
+    "model": "gpt-6-luna",
+    "created_at": 1795573402.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 940,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 1240
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Australian political and tax reform\",\n  \"climate_relevance\": \"Climate change appears only in a passing reference to a citizens' assembly, within a list of public policy examples.\",\n  \"reason\": \"The text focuses on Turnbull's failed income-tax proposal and broader tax reform. It provides no substantive discussion of climate change or the citizens' assembly.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:23:24Z",
+  "duration_seconds": 2.52,
+  "error": null
+}

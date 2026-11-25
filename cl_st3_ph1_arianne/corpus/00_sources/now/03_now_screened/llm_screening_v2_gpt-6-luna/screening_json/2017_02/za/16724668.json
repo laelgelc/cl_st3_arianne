@@ -1,0 +1,77 @@
+{
+  "article_id": "16724668",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/za/16724668.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/za/16724668.json"
+  },
+  "manifest_row": {
+    "article_id": "16724668",
+    "group": "2017_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/za/16724668.txt",
+    "now_field_2": "290",
+    "date_original": "17-02-03",
+    "date_iso": "2017-02-03",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/sport/tennis/2017/02/03/SA-take-commanding-lead-on-opening-day-of-Davis-Cup-in-Tshwane1",
+    "title": "SA take commanding lead on opening day of Davis Cup in Tshwane",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.84,
+    "climate_role": "background",
+    "main_topic": "A collection of unrelated news snippets, including politics, sports, fashion, and automotive news",
+    "climate_relevance": "A partly corrupted fragment refers to phasing out greenhouse gas emissions and uncertainty about climate policies under Donald Trump.",
+    "reason": "The text is not identifiable as one coherent article, and climate change is not its main subject. However, the fragment includes a meaningful reference to emissions reduction and climate-policy uncertainty, making it relevant as peripheral discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "26d90a275796bbe274210aeeb9ebace19176cd04b6cf9ddb0d0ca93a6861417e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "46ed54e0c16a2b34ece1bae7b6a872b461c22c066bde7389fc3a2bd5e6745d79",
+    "raw_response_text_sha256": "8eb5d624c4b364a7e866b006bcd0af3eea5ec4fb6dabd3c5e768b3f8a1689a19"
+  },
+  "api_metadata": {
+    "id": "resp_0c886243ad89eb90006b06081feda087d295c6f802809be5ef",
+    "model": "gpt-6-luna",
+    "created_at": 1795557408.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 872,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 640,
+      "output_tokens_details": {
+        "reasoning_tokens": 484
+      },
+      "total_tokens": 1512
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.84,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of unrelated news snippets, including politics, sports, fashion, and automotive news\",\n  \"climate_relevance\": \"A partly corrupted fragment refers to phasing out greenhouse gas emissions and uncertainty about climate policies under Donald Trump.\",\n  \"reason\": \"The text is not identifiable as one coherent article, and climate change is not its main subject. However, the fragment includes a meaningful reference to emissions reduction and climate-policy uncertainty, making it relevant as peripheral discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:56:52Z",
+  "duration_seconds": 4.545,
+  "error": null
+}

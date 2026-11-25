@@ -1,0 +1,77 @@
+{
+  "article_id": "32012996",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/32012996.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/32012996.json"
+  },
+  "manifest_row": {
+    "article_id": "32012996",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/32012996.txt",
+    "now_field_2": "1391",
+    "date_original": "20-08-12",
+    "date_iso": "2020-08-12",
+    "source_name": "tucson.com",
+    "url": "https://tucson.com/news/local/mount-lemmon-trails-are-minefields-of-hazards-federal-officials-say/article_c15b1cdf-3bbe-515d-9557-c5f3752b5970.html",
+    "title": "Mount Lemmon trails are minefields of hazards, federal ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Hazards and damage to hiking trails after the Bighorn Fire",
+    "climate_relevance": "Climate change appears only in the reporter's biography as one of the topics he covers; the article itself does not discuss climate change or its implications.",
+    "reason": "The main article focuses on wildfire damage, trail safety, and possible repairs. The sole climate change reference is incidental biographical text and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "85d875a03e4ce4c99a7a29c0a95d1fd713bd6ea4e7a3f61b74687156f56e374b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "71ddb45bf8de94b868804d9a96e81392ab0ff40520e352138a5731c148cfa245",
+    "raw_response_text_sha256": "e4722d437fdfd35a3f72d9dd1a1150e48e484386127c813182c14c103e232344"
+  },
+  "api_metadata": {
+    "id": "resp_057c52798402281f006b061ab8bb0887d28359fe8920cc6a6d",
+    "model": "gpt-6-luna",
+    "created_at": 1795562168.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2455,
+      "input_tokens_details": {
+        "cache_write_tokens": 2452,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2452
+        }
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 2744
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Hazards and damage to hiking trails after the Bighorn Fire\",\n  \"climate_relevance\": \"Climate change appears only in the reporter's biography as one of the topics he covers; the article itself does not discuss climate change or its implications.\",\n  \"reason\": \"The main article focuses on wildfire damage, trail safety, and possible repairs. The sole climate change reference is incidental biographical text and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:16:11Z",
+  "duration_seconds": 2.484,
+  "error": null
+}

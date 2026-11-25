@@ -1,0 +1,77 @@
+{
+  "article_id": "31942410",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/31942410.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/31942410.json"
+  },
+  "manifest_row": {
+    "article_id": "31942410",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/31942410.txt",
+    "now_field_2": "496",
+    "date_original": "20-07-07",
+    "date_iso": "2020-07-07",
+    "source_name": "dailyherald.com",
+    "url": "https://www.dailyherald.com/submitted/20200703/oakton-names-its-stem-student-of-the-year",
+    "title": "Oakton names its STEM Student of the Year",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A community college student’s academic achievements and future plans",
+    "climate_relevance": "Climate change appears only in a list of the student’s campus activities, as service on a panel addressing climate change concerns.",
+    "reason": "The article is a student profile and provides no meaningful discussion of climate change beyond this passing mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "963b3c4faf5200139360dc9b213617c4bfc36c2e091984d7f736f5b0d00f2c2a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4ade18655b58f2fc347037045209fa34985e73d3d43206404d16ea761332cafd",
+    "raw_response_text_sha256": "d95a5dbca574587029d97dbf7b68053f40d7549fcb62807f8082d6b59ae49c99"
+  },
+  "api_metadata": {
+    "id": "resp_022d8f407d2b171c006b061a49ed9c87d2a300ad69d0cc1ea1",
+    "model": "gpt-6-luna",
+    "created_at": 1795562058.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1142,
+      "input_tokens_details": {
+        "cache_write_tokens": 1139,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1139
+        }
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1362
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A community college student’s academic achievements and future plans\",\n  \"climate_relevance\": \"Climate change appears only in a list of the student’s campus activities, as service on a panel addressing climate change concerns.\",\n  \"reason\": \"The article is a student profile and provides no meaningful discussion of climate change beyond this passing mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:14:20Z",
+  "duration_seconds": 2.28,
+  "error": null
+}

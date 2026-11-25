@@ -1,0 +1,77 @@
+{
+  "article_id": "21303127",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/nz/21303127.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/nz/21303127.json"
+  },
+  "manifest_row": {
+    "article_id": "21303127",
+    "group": "2017_10",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/nz/21303127.txt",
+    "now_field_2": "396",
+    "date_original": "17-10-25",
+    "date_iso": "2017-10-25",
+    "source_name": "The Dominion Post",
+    "url": "https://www.stuff.co.nz/national/politics/98229521/editorial-major-challenges-for-a-cabinet-with-little-experience",
+    "title": "Editorial: Major challenges for a Cabinet with little experience",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "New Zealand's incoming government and ministerial portfolios",
+    "climate_relevance": "Climate change is mentioned only to identify James Shaw's portfolio; the text gives no climate-related policy, debate, impacts, or other substantive discussion.",
+    "reason": "The article is political commentary about ministerial appointments, and its brief reference to the climate change portfolio is incidental rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "16f25033c16536147e9fac88038c92fec9622716721c5780621bb268e6fd52aa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "947554e2234051142ee6c850ee7b1d42bb9015446a79d609a2e4b3eae4762377",
+    "raw_response_text_sha256": "ee2fa523885100953acb11b366d8f8216f9ead6518e6aa1ee0ab56da7469f2e8"
+  },
+  "api_metadata": {
+    "id": "resp_031611941c1db2cb006b060e949f0887d29401c884db62e962",
+    "model": "gpt-6-luna",
+    "created_at": 1795559060.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 966,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 1196
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New Zealand's incoming government and ministerial portfolios\",\n  \"climate_relevance\": \"Climate change is mentioned only to identify James Shaw's portfolio; the text gives no climate-related policy, debate, impacts, or other substantive discussion.\",\n  \"reason\": \"The article is political commentary about ministerial appointments, and its brief reference to the climate change portfolio is incidental rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:24:22Z",
+  "duration_seconds": 2.172,
+  "error": null
+}

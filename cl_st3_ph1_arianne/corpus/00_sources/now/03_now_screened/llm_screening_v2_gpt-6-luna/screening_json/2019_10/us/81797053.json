@@ -1,0 +1,77 @@
+{
+  "article_id": "81797053",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81797053.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81797053.json"
+  },
+  "manifest_row": {
+    "article_id": "81797053",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81797053.txt",
+    "now_field_2": "294",
+    "date_original": "19-10-25",
+    "date_iso": "2019-10-25",
+    "source_name": "10 News",
+    "url": "https://www.wbir.com/article/news/nation-world/fonda-and-danson-arrested-at-the-capitol/507-40c557d8-0b77-4bf1-8f3c-16e026e71423",
+    "title": "Jane Fonda and Ted Danson arrested while protesting in front of the U.S. Capitol Building",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us3.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "climate_role": "substantial",
+    "main_topic": "Jane Fonda and Ted Danson being arrested during protests calling for action on climate change",
+    "climate_relevance": "The arrests are directly tied to recurring climate protests, and Fonda explicitly describes the climate crisis as urgent and calls for it to remain in the public eye.",
+    "reason": "Although the report focuses on the arrests, climate change is the central cause of the protest and is meaningfully discussed through Fonda's remarks.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bffef4ed6b3de74e96b99590a3e8c6f48e7032e753f520795b74cfb2deebc2ad",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "734cfb1d56f55138a074a75122e126885b83260f9f723689aa66dbcdf9c60f38",
+    "raw_response_text_sha256": "ebe3f522de26a9dce47bba12c73ad3f0bdd6ae8227a9e7750e8f5c46d560b80d"
+  },
+  "api_metadata": {
+    "id": "resp_023b9de72625b019006b0647b6103087d1b9c18b1d48657982",
+    "model": "gpt-6-luna",
+    "created_at": 1795573686.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 885,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 200,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 1085
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Jane Fonda and Ted Danson being arrested during protests calling for action on climate change\",\n  \"climate_relevance\": \"The arrests are directly tied to recurring climate protests, and Fonda explicitly describes the climate crisis as urgent and calls for it to remain in the public eye.\",\n  \"reason\": \"Although the report focuses on the arrests, climate change is the central cause of the protest and is meaningfully discussed through Fonda's remarks.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:28:07Z",
+  "duration_seconds": 2.011,
+  "error": null
+}

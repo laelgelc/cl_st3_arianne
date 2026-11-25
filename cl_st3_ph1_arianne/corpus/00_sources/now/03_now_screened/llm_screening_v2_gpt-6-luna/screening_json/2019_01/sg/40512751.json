@@ -1,0 +1,77 @@
+{
+  "article_id": "40512751",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/sg/40512751.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/sg/40512751.json"
+  },
+  "manifest_row": {
+    "article_id": "40512751",
+    "group": "2019_01",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/sg/40512751.txt",
+    "now_field_2": "434",
+    "date_original": "19-01-17",
+    "date_iso": "2019-01-17",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/green-groups-big-industrys-plastic-clean-plan-172301530.html",
+    "title": "Green groups question big industry's plastic clean-up plan",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Plastic pollution and petrochemical companies’ clean-up and recycling initiative",
+    "climate_relevance": "Climate change appears in a criticism linking fossil fuel companies to destructive climate change, but the article focuses mainly on plastic waste and corporate pollution.",
+    "reason": "The text contains a meaningful climate-related accusation, but climate change is not a central or substantial subject of the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9b5c1ab25e048ecffd02b48e810ab9249eeb82a40af294b02c0287fbe7598461",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5ed94624ff179dd090eef706f4db3a018eeec4740e2544e32296c9cc625458e8",
+    "raw_response_text_sha256": "ad5d4c45691c5ec3f43b816325bfa7acad676df5273be4b4931ddf57c5f66a2e"
+  },
+  "api_metadata": {
+    "id": "resp_0c684afebc8e9740006b061f19940c87d2931fac1c564f6180",
+    "model": "gpt-6-luna",
+    "created_at": 1795563289.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1083,
+      "input_tokens_details": {
+        "cache_write_tokens": 1080,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1080
+        }
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 1300
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Plastic pollution and petrochemical companies’ clean-up and recycling initiative\",\n  \"climate_relevance\": \"Climate change appears in a criticism linking fossil fuel companies to destructive climate change, but the article focuses mainly on plastic waste and corporate pollution.\",\n  \"reason\": \"The text contains a meaningful climate-related accusation, but climate change is not a central or substantial subject of the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:34:52Z",
+  "duration_seconds": 3.075,
+  "error": null
+}

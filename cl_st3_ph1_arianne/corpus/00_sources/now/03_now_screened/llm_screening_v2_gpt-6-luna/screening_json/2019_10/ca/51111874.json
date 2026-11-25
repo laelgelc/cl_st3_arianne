@@ -1,0 +1,77 @@
+{
+  "article_id": "51111874",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/ca/51111874.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/ca/51111874.json"
+  },
+  "manifest_row": {
+    "article_id": "51111874",
+    "group": "2019_10",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/ca/51111874.txt",
+    "now_field_2": "798",
+    "date_original": "19-10-16",
+    "date_iso": "2019-10-16",
+    "source_name": "cbc.ca",
+    "url": "https://www.cbc.ca/news/canada/calgary/greta-thunberg-alberta-visit-climate-activist-teen-1.5322884",
+    "title": "Activist Greta Thunberg arrives in Alberta ahead of ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-ca.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Greta Thunberg's planned visit to Alberta and the public reaction to her climate activism",
+    "climate_relevance": "The article focuses on climate strikes, calls for action on climate change, and debate over Alberta's oil and gas industry and its role in climate solutions.",
+    "reason": "Climate change and related activism and policy debate are the central subject. An unrelated planning-day social media snippet appears embedded in the text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f512202a75c5d6bcbebe175bfdf571b61bd2d5db50f732640cfba76f257950be",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "319ccc53d6216ed227a32eec5cae54946fb677abd011e8d251ed7046ed4f15e0",
+    "raw_response_text_sha256": "c2cd21aa1e499c8bc76fa639e3d4701791bd89af70754f46237e51694c1fe9f1"
+  },
+  "api_metadata": {
+    "id": "resp_0ef825b66cc633f0006b062c1f739487d1854b26b9887190c8",
+    "model": "gpt-6-luna",
+    "created_at": 1795566623.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1565,
+      "input_tokens_details": {
+        "cache_write_tokens": 1562,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1562
+        }
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 1794
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Greta Thunberg's planned visit to Alberta and the public reaction to her climate activism\",\n  \"climate_relevance\": \"The article focuses on climate strikes, calls for action on climate change, and debate over Alberta's oil and gas industry and its role in climate solutions.\",\n  \"reason\": \"Climate change and related activism and policy debate are the central subject. An unrelated planning-day social media snippet appears embedded in the text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:30:25Z",
+  "duration_seconds": 2.177,
+  "error": null
+}

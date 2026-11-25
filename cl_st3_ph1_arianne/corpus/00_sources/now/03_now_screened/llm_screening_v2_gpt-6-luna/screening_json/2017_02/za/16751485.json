@@ -1,0 +1,77 @@
+{
+  "article_id": "16751485",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/za/16751485.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/za/16751485.json"
+  },
+  "manifest_row": {
+    "article_id": "16751485",
+    "group": "2017_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/za/16751485.txt",
+    "now_field_2": "547",
+    "date_original": "17-02-05",
+    "date_iso": "2017-02-05",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/politics/2017/02/05/DA-gets-oversight-committee-to-probe-Premiers-role-in-94-deaths",
+    "title": "DA gets oversight committee to probe Premier's role in 94 deaths",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An investigation into the deaths of mental health patients transferred to unlicensed NGOs in Gauteng, South Africa.",
+    "climate_relevance": "A fragment about emissions targets and uncertainty over U.S. climate policies appears among unrelated snippets, but climate change is not part of the identifiable main article.",
+    "reason": "The main article concerns a probe into mental health patient deaths. The isolated climate-policy fragment appears to come from a separate, truncated item and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d8bd034c137a33f76f631abba8db568ff3756da2cc631f8ec2424b1ba00fc5b1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3d216d6918cf725d95261f8b9c1bc2d4b762e7f8b9a33019e7acff30430aae1e",
+    "raw_response_text_sha256": "e2e24601cd6eb39013a41e891f2fff1c094cae12ff3237a5e48ffa3e0779e1a4"
+  },
+  "api_metadata": {
+    "id": "resp_0f51a96794c44cb1006b0608295c0487d2b99be107c165136a",
+    "model": "gpt-6-luna",
+    "created_at": 1795557417.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1193,
+      "input_tokens_details": {
+        "cache_write_tokens": 1190,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1190
+        }
+      },
+      "output_tokens": 330,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 1523
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An investigation into the deaths of mental health patients transferred to unlicensed NGOs in Gauteng, South Africa.\",\n  \"climate_relevance\": \"A fragment about emissions targets and uncertainty over U.S. climate policies appears among unrelated snippets, but climate change is not part of the identifiable main article.\",\n  \"reason\": \"The main article concerns a probe into mental health patient deaths. The isolated climate-policy fragment appears to come from a separate, truncated item and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:56:59Z",
+  "duration_seconds": 2.665,
+  "error": null
+}

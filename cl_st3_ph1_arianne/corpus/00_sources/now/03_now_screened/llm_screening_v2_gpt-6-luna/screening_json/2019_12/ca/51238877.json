@@ -1,0 +1,77 @@
+{
+  "article_id": "51238877",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/ca/51238877.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/ca/51238877.json"
+  },
+  "manifest_row": {
+    "article_id": "51238877",
+    "group": "2019_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/ca/51238877.txt",
+    "now_field_2": "1525",
+    "date_original": "19-12-03",
+    "date_iso": "2019-12-03",
+    "source_name": "nationalobserver.com",
+    "url": "https://www.nationalobserver.com/2019/11/29/news/trudeau-government-set-help-cities-fund-billions-new-projects",
+    "title": "Trudeau government set to help cities fund billions in new ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-ca2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Federal funding and municipal infrastructure priorities in Canada",
+    "climate_relevance": "The identifiable news article briefly reports that municipalities are seeking $2 billion for projects to help communities adapt to climate change.",
+    "reason": "Climate adaptation is a meaningful but secondary item in the article’s broader discussion of municipal funding. The later, extensive climate discussion appears to be a separate appended comment or snippet, so it does not make the main article core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "98fb1cdd59a8112592432f090eb3772446407471a156cfcb8b2bd19997449385",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e96bdfc8e58eb321ba760e2f49c51a503a857ff8c031b4b140cbba60a4c5f5a7",
+    "raw_response_text_sha256": "5a25fcf2785be8b175636e427e2ced29a2985b68068903a61b0ae5f486010737"
+  },
+  "api_metadata": {
+    "id": "resp_0ac85daa32828102006b062ccfd5c887d1946e1e450e8b550a",
+    "model": "gpt-6-luna",
+    "created_at": 1795566799.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2367,
+      "input_tokens_details": {
+        "cache_write_tokens": 2364,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2364
+        }
+      },
+      "output_tokens": 391,
+      "output_tokens_details": {
+        "reasoning_tokens": 238
+      },
+      "total_tokens": 2758
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Federal funding and municipal infrastructure priorities in Canada\",\n  \"climate_relevance\": \"The identifiable news article briefly reports that municipalities are seeking $2 billion for projects to help communities adapt to climate change.\",\n  \"reason\": \"Climate adaptation is a meaningful but secondary item in the article’s broader discussion of municipal funding. The later, extensive climate discussion appears to be a separate appended comment or snippet, so it does not make the main article core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:33:23Z",
+  "duration_seconds": 3.262,
+  "error": null
+}

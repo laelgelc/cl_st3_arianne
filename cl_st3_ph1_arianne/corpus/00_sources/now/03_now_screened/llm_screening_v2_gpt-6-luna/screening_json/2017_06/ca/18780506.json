@@ -1,0 +1,77 @@
+{
+  "article_id": "18780506",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/ca/18780506.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/ca/18780506.json"
+  },
+  "manifest_row": {
+    "article_id": "18780506",
+    "group": "2017_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/ca/18780506.txt",
+    "now_field_2": "960",
+    "date_original": "17-06-02",
+    "date_iso": "2017-06-02",
+    "source_name": "The Chronicle Journal",
+    "url": "http://www.chroniclejournal.com/news/national/the-friday-news-briefing-an-at-a-glance-survey-of/article_053ff1c3-1abf-52dc-946c-fddc39f707f0.html",
+    "title": "The Friday news briefing: An at-a-glance survey of some top stories",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "A roundup of unrelated Canadian and U.S. news briefs",
+    "climate_relevance": "One brief discusses U.S. greenhouse-gas emissions and the Paris climate agreement; the rest of the roundup is mainly about unrelated topics.",
+    "reason": "The emissions and Paris agreement brief contains meaningful climate discourse, but climate change is not the focus of the supplied roundup as a whole.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "84a914f756d0bd0bf64e390642157bf37c3340a50d04d32223f37398cb228e82",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a7472bc8394d70550fb24207f4019d548ab74f83acc3eb20b6f45fe0e3563690",
+    "raw_response_text_sha256": "7d0e9b5bb6f4ff2a0ec2e3443a8c35690aee1463501dc907d9aa91b62403e5c1"
+  },
+  "api_metadata": {
+    "id": "resp_0d3f3a209ded4191006b060ae7e6f487d2bf4c5d099c95af12",
+    "model": "gpt-6-luna",
+    "created_at": 1795558120.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1735,
+      "input_tokens_details": {
+        "cache_write_tokens": 1732,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1732
+        }
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 158
+      },
+      "total_tokens": 2033
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A roundup of unrelated Canadian and U.S. news briefs\",\n  \"climate_relevance\": \"One brief discusses U.S. greenhouse-gas emissions and the Paris climate agreement; the rest of the roundup is mainly about unrelated topics.\",\n  \"reason\": \"The emissions and Paris agreement brief contains meaningful climate discourse, but climate change is not the focus of the supplied roundup as a whole.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:08:42Z",
+  "duration_seconds": 2.598,
+  "error": null
+}

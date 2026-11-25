@@ -1,0 +1,77 @@
+{
+  "article_id": "18745222",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/pk/18745222.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/pk/18745222.json"
+  },
+  "manifest_row": {
+    "article_id": "18745222",
+    "group": "2017_05",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/pk/18745222.txt",
+    "now_field_2": "1001",
+    "date_original": "17-05-31",
+    "date_iso": "2017-05-31",
+    "source_name": "DAWN.com",
+    "url": "https://www.dawn.com/news/1336643/over-2000-buildings-in-banigala-malpur-built-in-prohibited-area",
+    "title": "'Over 2000 buildings in Banigala, Malpur built in prohibited area'",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-PK.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Illegal construction, land leases, and environmental management around Banigala and Rawal Lake",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Climate Change; the article discusses local pollution, deforestation, and land-use regulation without meaningful climate-change discourse.",
+    "reason": "The article focuses on construction, lease agreements, sewage pollution, and conservation measures. Its sole climate-change reference is an institutional name, so it does not contribute meaningfully to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a4bed8f1624636f534c4578a58f06d2944befeb702a957289d03ac17509854f9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b1753668538458009ed4636c9fa3b138686603b06317d2dcfb87d15d3c7aa089",
+    "raw_response_text_sha256": "c8f1e2ea70402d7ea2a5c2368964b028f8506e5df380b7cf9e15214d84562c7f"
+  },
+  "api_metadata": {
+    "id": "resp_0d937a99038a41d1006b060ab9c09c87d2ad7ded6e84e5f3ee",
+    "model": "gpt-6-luna",
+    "created_at": 1795558073.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1787,
+      "input_tokens_details": {
+        "cache_write_tokens": 1784,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1784
+        }
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 2046
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Illegal construction, land leases, and environmental management around Banigala and Rawal Lake\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Climate Change; the article discusses local pollution, deforestation, and land-use regulation without meaningful climate-change discourse.\",\n  \"reason\": \"The article focuses on construction, lease agreements, sewage pollution, and conservation measures. Its sole climate-change reference is an institutional name, so it does not contribute meaningfully to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:07:55Z",
+  "duration_seconds": 2.331,
+  "error": null
+}

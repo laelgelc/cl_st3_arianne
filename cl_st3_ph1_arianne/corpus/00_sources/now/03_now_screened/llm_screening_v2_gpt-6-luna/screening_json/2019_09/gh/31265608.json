@@ -1,0 +1,77 @@
+{
+  "article_id": "31265608",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/gh/31265608.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/gh/31265608.json"
+  },
+  "manifest_row": {
+    "article_id": "31265608",
+    "group": "2019_09",
+    "country_code": "gh",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/gh/31265608.txt",
+    "now_field_2": "527",
+    "date_original": "19-09-05",
+    "date_iso": "2019-09-05",
+    "source_name": "myjoyonline.com",
+    "url": "https://www.myjoyonline.com/news/2019/September-4th/akufo-addo-cuts-sod-for-construction-of-monument-for-kofi-annan.php",
+    "title": "Akufo-Addo cuts sod for construction of monument for Kofi ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-gh.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "A report on a student green-building design competition, preceded by an unrelated report about a Kofi Annan monument",
+    "climate_relevance": "The green-building report discusses energy-efficient design and explicitly identifies climate-change mitigation as part of the IFC's strategy, but climate change is not its central focus.",
+    "reason": "The text contains meaningful climate-related discourse through its discussion of green buildings and mitigation, while primarily covering an architectural competition and its benefits. The opening Kofi Annan report appears unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "36dcf5e279dc9b4a162162eca8cfc570ab6083d75e91bbf98d41c60aa9b6550f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f6d014d504ebf39240e0d944f205807dadf48660f2ed56c90f8723ad20d841fa",
+    "raw_response_text_sha256": "14b7d5bf4c8493502e1a82807adb3a726ea237bf20438666bd87a4560f797585"
+  },
+  "api_metadata": {
+    "id": "resp_0aef6db741dd7620006b0616778a5487d29514092f2b0196e1",
+    "model": "gpt-6-luna",
+    "created_at": 1795561079.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2220,
+      "input_tokens_details": {
+        "cache_write_tokens": 2217,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2217
+        }
+      },
+      "output_tokens": 353,
+      "output_tokens_details": {
+        "reasoning_tokens": 188
+      },
+      "total_tokens": 2573
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A report on a student green-building design competition, preceded by an unrelated report about a Kofi Annan monument\",\n  \"climate_relevance\": \"The green-building report discusses energy-efficient design and explicitly identifies climate-change mitigation as part of the IFC's strategy, but climate change is not its central focus.\",\n  \"reason\": \"The text contains meaningful climate-related discourse through its discussion of green buildings and mitigation, while primarily covering an architectural competition and its benefits. The opening Kofi Annan report appears unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:58:02Z",
+  "duration_seconds": 2.889,
+  "error": null
+}

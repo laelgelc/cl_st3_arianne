@@ -1,0 +1,77 @@
+{
+  "article_id": "86358201",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/86358201.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/86358201.json"
+  },
+  "manifest_row": {
+    "article_id": "86358201",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/86358201.txt",
+    "now_field_2": "590",
+    "date_original": "20-12-02",
+    "date_iso": "2020-12-02",
+    "source_name": "Reuters",
+    "url": "https://www.reuters.com/article/uk-burkina-security-hunger-idUKKBN28C0OQ",
+    "title": "Islamist violence escalates in Burkina Faso, making widespread hunger worse",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "Conflict-driven food insecurity and malnutrition in Burkina Faso and the Sahel",
+    "climate_relevance": "Climate change is identified as one factor affecting a region already facing food shortages, alongside poverty and the COVID-19 pandemic, but its effects are not explored further.",
+    "reason": "The article is mainly about violence, displacement, hunger, and malnutrition. Its climate-change reference contributes to the framing of the food crisis but is brief and not a central focus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ba5d748f85c420335521dd36f3dcd2179959c1d3ea3a564e3a442f177f61a828",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8831addac8fc1f34bd8abbbec8e7ede0a78e4a3180ac65f4c2a7de8b8b13536f",
+    "raw_response_text_sha256": "32d1b8045f3488ebf59428d1d4617a913fa467241bbb2d24a2093fc44c2d4114"
+  },
+  "api_metadata": {
+    "id": "resp_056bdf1f866e4277006b064fca240887d1b6e4e9ceb8152989",
+    "model": "gpt-6-luna",
+    "created_at": 1795575754.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1308,
+      "input_tokens_details": {
+        "cache_write_tokens": 1305,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1305
+        }
+      },
+      "output_tokens": 381,
+      "output_tokens_details": {
+        "reasoning_tokens": 223
+      },
+      "total_tokens": 1689
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Conflict-driven food insecurity and malnutrition in Burkina Faso and the Sahel\",\n  \"climate_relevance\": \"Climate change is identified as one factor affecting a region already facing food shortages, alongside poverty and the COVID-19 pandemic, but its effects are not explored further.\",\n  \"reason\": \"The article is mainly about violence, displacement, hunger, and malnutrition. Its climate-change reference contributes to the framing of the food crisis but is brief and not a central focus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:02:37Z",
+  "duration_seconds": 3.266,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "41731349",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/sg/41731349.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/sg/41731349.json"
+  },
+  "manifest_row": {
+    "article_id": "41731349",
+    "group": "2020_02",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/sg/41731349.txt",
+    "now_field_2": "690",
+    "date_original": "20-02-11",
+    "date_iso": "2020-02-11",
+    "source_name": "yourstory.com",
+    "url": "https://yourstory.com/2020/02/saif-partners-kickstarter-early-stage-startups",
+    "title": "SAIF Partners launches Kickstarter, a series of events to ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A venture capital firm’s fintech startup networking and support programme",
+    "climate_relevance": "Climate change is mentioned in a separate appended passage about eco-friendly consumer products, not in the identifiable main article.",
+    "reason": "The main article concerns startup support and fintech networking, with no climate discourse. The appended consumer-products passage briefly cites climate change as one concern influencing purchasing habits; it is a separate snippet rather than the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9854499c27a2879a32c9930fb5cac5c76bef3c775ee83cb9ec963fa97aaa8640",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8b2ac1891f0fe60e871d2a71f30909d0cb77d63343e3b07a83431a4ccf02c575",
+    "raw_response_text_sha256": "f2da4e7553d56046bf18480e0a5ed65e14505e3cc2772e1b79380196b2142dd5"
+  },
+  "api_metadata": {
+    "id": "resp_0a88aec875a4345d006b0622f387dc87d2b0f73bad6b284d93",
+    "model": "gpt-6-luna",
+    "created_at": 1795564275.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2230,
+      "input_tokens_details": {
+        "cache_write_tokens": 2227,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2227
+        }
+      },
+      "output_tokens": 700,
+      "output_tokens_details": {
+        "reasoning_tokens": 550
+      },
+      "total_tokens": 2930
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A venture capital firm’s fintech startup networking and support programme\",\n  \"climate_relevance\": \"Climate change is mentioned in a separate appended passage about eco-friendly consumer products, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns startup support and fintech networking, with no climate discourse. The appended consumer-products passage briefly cites climate change as one concern influencing purchasing habits; it is a separate snippet rather than the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:51:20Z",
+  "duration_seconds": 5.306,
+  "error": null
+}

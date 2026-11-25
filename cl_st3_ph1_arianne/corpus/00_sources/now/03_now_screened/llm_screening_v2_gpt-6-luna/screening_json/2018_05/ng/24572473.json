@@ -1,0 +1,77 @@
+{
+  "article_id": "24572473",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/ng/24572473.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/ng/24572473.json"
+  },
+  "manifest_row": {
+    "article_id": "24572473",
+    "group": "2018_05",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/ng/24572473.txt",
+    "now_field_2": "1577",
+    "date_original": "18-05-08",
+    "date_iso": "2018-05-08",
+    "source_name": "Daily Sun",
+    "url": "http://sunnewsonline.com/poor-performance-forced-out-kada-stars-club-secretary-says/",
+    "title": "Poor performance forced out Kada Stars, club secretary says",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A basketball club's relegation and withdrawal from a league",
+    "climate_relevance": "A separate item in the page's 'Latest' section briefly reports an ecologist urging government action to reduce climate change impacts; it is unrelated to the identifiable main article.",
+    "reason": "The main article concerns basketball performance and contains no climate discussion. The climate reference appears only in an unrelated news snippet among multiple page items.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "53843dde68450a4a2d9ea46034f3e994a3732c9b715e215f2ef88d459da63e4f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0acd95a540b3db98ca370ec62a25927d5c8e526af524f285e13f32e8122b7488",
+    "raw_response_text_sha256": "eee2ec1216ba119170ddd84d326f1a8728cf91a8f032a3b94e2e29d51e4b3aad"
+  },
+  "api_metadata": {
+    "id": "resp_0aaeed1fa053cf8b006b06129466ec87d2a0dcda8d8d19328a",
+    "model": "gpt-6-luna",
+    "created_at": 1795560084.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2615,
+      "input_tokens_details": {
+        "cache_write_tokens": 2612,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2612
+        }
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 185
+      },
+      "total_tokens": 2952
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A basketball club's relegation and withdrawal from a league\",\n  \"climate_relevance\": \"A separate item in the page's 'Latest' section briefly reports an ecologist urging government action to reduce climate change impacts; it is unrelated to the identifiable main article.\",\n  \"reason\": \"The main article concerns basketball performance and contains no climate discussion. The climate reference appears only in an unrelated news snippet among multiple page items.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:41:27Z",
+  "duration_seconds": 3.083,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "19018691",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/pk/19018691.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/pk/19018691.json"
+  },
+  "manifest_row": {
+    "article_id": "19018691",
+    "group": "2017_06",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/pk/19018691.txt",
+    "now_field_2": "499",
+    "date_original": "17-06-16",
+    "date_iso": "2017-06-16",
+    "source_name": "Pakistan Observer",
+    "url": "http://pakobserver.net/astola-island-declared-pakistans-first-marine-protected-area/",
+    "title": "Astola Island declared as Pakistan's first marine protected area",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-PK.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Declaration of Astola Island as Pakistan’s first marine protected area",
+    "climate_relevance": "Climate change appears only in the name of the ministry and ministerial title; the text discusses marine conservation and biodiversity, not climate change.",
+    "reason": "The article focuses on the creation and management of a marine protected area and its ecological significance. It contains no meaningful discourse about climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5e6224e21b711641252758ceb0d120dbf4cddb56f14e9f9f46af4c4b5086cfa5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "539ab18b37b65be3e7b482a8a995c64acc72a55b261d31e288a3a2d014e59319",
+    "raw_response_text_sha256": "70eb25b289e88077ff4bb2921dc49d6c05f0016f76608f5f1025eea4ff010a1d"
+  },
+  "api_metadata": {
+    "id": "resp_082a381f25bb5e22006b060b59d46887d29e73c6ca4f56d4c2",
+    "model": "gpt-6-luna",
+    "created_at": 1795558233.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1137,
+      "input_tokens_details": {
+        "cache_write_tokens": 1134,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1134
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 1362
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Declaration of Astola Island as Pakistan’s first marine protected area\",\n  \"climate_relevance\": \"Climate change appears only in the name of the ministry and ministerial title; the text discusses marine conservation and biodiversity, not climate change.\",\n  \"reason\": \"The article focuses on the creation and management of a marine protected area and its ecological significance. It contains no meaningful discourse about climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:10:35Z",
+  "duration_seconds": 1.946,
+  "error": null
+}

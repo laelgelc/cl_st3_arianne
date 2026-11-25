@@ -1,0 +1,77 @@
+{
+  "article_id": "40876634",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40876634.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40876634.json"
+  },
+  "manifest_row": {
+    "article_id": "40876634",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40876634.txt",
+    "now_field_2": "820",
+    "date_original": "19-04-24",
+    "date_iso": "2019-04-24",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/24/twitter-rallies-on-impressive-user-count-sales/",
+    "title": "Twitter rallies on impressive user count, sales",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Twitter's financial results, user growth, and platform changes",
+    "climate_relevance": "Climate appears only in a minister's portfolio title in an opening business-news snippet; the main article does not discuss climate change.",
+    "reason": "The identifiable main article is about Twitter. The opening snippet briefly mentions sustainable energy solutions and a minister whose portfolio includes climate change, but provides no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ed0c8a6bb913c1a8ebde9dc32fe7dea8c23a1d230001e39b0a6c113e1b4669c1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "af19d6cc704e241b2d35ac6e4f82910fca3f9a39e434e7b85df46919000a609a",
+    "raw_response_text_sha256": "91d28c81c8967d72982942bca32104dcd5bc57b3705b45fdea5081375e693be6"
+  },
+  "api_metadata": {
+    "id": "resp_016f82426844f230006b06202c157487d2b0dfea1770a84aab",
+    "model": "gpt-6-luna",
+    "created_at": 1795563564.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1612,
+      "input_tokens_details": {
+        "cache_write_tokens": 1609,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1609
+        }
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 157
+      },
+      "total_tokens": 1917
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Twitter's financial results, user growth, and platform changes\",\n  \"climate_relevance\": \"Climate appears only in a minister's portfolio title in an opening business-news snippet; the main article does not discuss climate change.\",\n  \"reason\": \"The identifiable main article is about Twitter. The opening snippet briefly mentions sustainable energy solutions and a minister whose portfolio includes climate change, but provides no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:26Z",
+  "duration_seconds": 2.52,
+  "error": null
+}

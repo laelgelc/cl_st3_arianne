@@ -1,0 +1,77 @@
+{
+  "article_id": "60881923",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/ca/60881923.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/ca/60881923.json"
+  },
+  "manifest_row": {
+    "article_id": "60881923",
+    "group": "2019_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/ca/60881923.txt",
+    "now_field_2": "1228",
+    "date_original": "19-05-31",
+    "date_iso": "2019-05-31",
+    "source_name": "Castanet.net",
+    "url": "https://www.castanet.net/edition/news-story-257599-101-.htm",
+    "title": "K-9 Major sniffs out mussels",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A compilation of local news snippets about a police incident, affordable seniors housing, and an invasive mussel prevention program",
+    "climate_relevance": "Climate change appears only in the title of a government minister's portfolio; there is no meaningful discussion of climate change or its implications.",
+    "reason": "The available text contains no substantive climate discourse. The minister's portfolio title is incidental to the invasive mussel story, which concerns preventing the spread of aquatic species.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "786d36e5cdef1d8d472584d68420de1bfb2f964b3029a882e2cf5649f199f383",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "54880121ba91c1cf1b79eb4ed886854a3b43700560a63dab0eda0d83c6783e27",
+    "raw_response_text_sha256": "54cc0f3df5a86705bfec2996369cc790ba9667a02912496b5eb1296b80d1c9ab"
+  },
+  "api_metadata": {
+    "id": "resp_0f5450b19065f76b006b063527e10487d1ac9afe3fa9054d98",
+    "model": "gpt-6-luna",
+    "created_at": 1795568935.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2165,
+      "input_tokens_details": {
+        "cache_write_tokens": 2162,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2162
+        }
+      },
+      "output_tokens": 240,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 2405
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A compilation of local news snippets about a police incident, affordable seniors housing, and an invasive mussel prevention program\",\n  \"climate_relevance\": \"Climate change appears only in the title of a government minister's portfolio; there is no meaningful discussion of climate change or its implications.\",\n  \"reason\": \"The available text contains no substantive climate discourse. The minister's portfolio title is incidental to the invasive mussel story, which concerns preventing the spread of aquatic species.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:08:58Z",
+  "duration_seconds": 2.278,
+  "error": null
+}

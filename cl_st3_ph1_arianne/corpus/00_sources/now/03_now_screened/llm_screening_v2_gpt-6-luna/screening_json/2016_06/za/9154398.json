@@ -1,0 +1,77 @@
+{
+  "article_id": "9154398",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_06/za/9154398.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_06/za/9154398.json"
+  },
+  "manifest_row": {
+    "article_id": "9154398",
+    "group": "2016_06",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_06/za/9154398.txt",
+    "now_field_2": "760",
+    "date_original": "16-06-02",
+    "date_iso": "2016-06-02",
+    "source_name": "News24",
+    "url": "http://traveller24.news24.com/News/Flights/african-airlines-traffic-climbs-9-as-eu-demand-slows-20160602",
+    "title": "African airlines' traffic climbs 9% as EU demand slows",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-06-uda/16-06-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Airline passenger traffic, capacity, and airfare trends",
+    "climate_relevance": "Climate change appears only in a brief list of topics on the agenda for an aviation industry meeting.",
+    "reason": "The text is primarily about aviation demand and fares. The agenda reference gives no meaningful discussion of climate change, its implications, or related debate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "131bf9a726b859f5a724630b43901c4784399f678bdde1b2504028eeecf0410b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "72db88a2b5bbed90c88e939f86772bd392b5f6a4f22fd0cefa0799dfcbbca439",
+    "raw_response_text_sha256": "36ca306f7a808d73e5ee94bee04b48adefbe2cf443d10688fc92a80ceb8046bf"
+  },
+  "api_metadata": {
+    "id": "resp_0b65026eb33b6986006b0650ef6c4887d1991476a4de0b840e",
+    "model": "gpt-6-luna",
+    "created_at": 1795576047.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1482,
+      "input_tokens_details": {
+        "cache_write_tokens": 1479,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1479
+        }
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 1770
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Airline passenger traffic, capacity, and airfare trends\",\n  \"climate_relevance\": \"Climate change appears only in a brief list of topics on the agenda for an aviation industry meeting.\",\n  \"reason\": \"The text is primarily about aviation demand and fares. The agenda reference gives no meaningful discussion of climate change, its implications, or related debate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:07:30Z",
+  "duration_seconds": 3.122,
+  "error": null
+}

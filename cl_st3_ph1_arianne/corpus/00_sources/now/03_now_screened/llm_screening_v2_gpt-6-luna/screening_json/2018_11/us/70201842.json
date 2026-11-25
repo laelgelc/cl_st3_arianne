@@ -1,0 +1,77 @@
+{
+  "article_id": "70201842",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/us/70201842.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/us/70201842.json"
+  },
+  "manifest_row": {
+    "article_id": "70201842",
+    "group": "2018_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/us/70201842.txt",
+    "now_field_2": "771",
+    "date_original": "18-11-01",
+    "date_iso": "2018-11-01",
+    "source_name": "Philly.com",
+    "url": "http://www.philly.com/philly/health/science/philly-owned-buildings-set-to-get-nearly-one-quarter-of-their-power-from-new-solar-farm-20181101.html",
+    "title": "Large new solar farm would supply one-quarter of the electricity for ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.97,
+    "climate_role": "substantial",
+    "main_topic": "Philadelphia's proposed long-term purchase of electricity from a large solar farm and its wider renewable-energy plans.",
+    "climate_relevance": "The article discusses renewable energy procurement as a way to reduce regional carbon emissions and meet the city's climate goals, including its pledge to obtain all municipal electricity from renewable sources.",
+    "reason": "Although focused on the details of a solar-energy deal, the article substantially covers renewable energy as climate mitigation and connects the project to emissions reductions and climate goals.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e417b2c04a73df7f7bf4b221bdeccb0389734aa434da87a4e42d180c482b0bca",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "34e8ba433ea05555d6b9bd2b2bcc0f6b90291add9bf7cb191a6cd660465689a7",
+    "raw_response_text_sha256": "fed0d921700ca68603389577fe241ee04727979fecb764aab07968b6a44fd1f9"
+  },
+  "api_metadata": {
+    "id": "resp_0730fc07321810c2006b063b4c973487d1a3ab8a676ba50a36",
+    "model": "gpt-6-luna",
+    "created_at": 1795570508.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1480,
+      "input_tokens_details": {
+        "cache_write_tokens": 1477,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1477
+        }
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 41
+      },
+      "total_tokens": 1679
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Philadelphia's proposed long-term purchase of electricity from a large solar farm and its wider renewable-energy plans.\",\n  \"climate_relevance\": \"The article discusses renewable energy procurement as a way to reduce regional carbon emissions and meet the city's climate goals, including its pledge to obtain all municipal electricity from renewable sources.\",\n  \"reason\": \"Although focused on the details of a solar-energy deal, the article substantially covers renewable energy as climate mitigation and connects the project to emissions reductions and climate goals.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:35:10Z",
+  "duration_seconds": 1.774,
+  "error": null
+}

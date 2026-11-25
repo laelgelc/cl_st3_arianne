@@ -1,0 +1,77 @@
+{
+  "article_id": "61210808",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ie/61210808.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ie/61210808.json"
+  },
+  "manifest_row": {
+    "article_id": "61210808",
+    "group": "2019_09",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ie/61210808.txt",
+    "now_field_2": "450",
+    "date_original": "19-09-08",
+    "date_iso": "2019-09-08",
+    "source_name": "civilserviceworld.com",
+    "url": "https://www.civilserviceworld.com/analysis-opinion?page=26&amp;destination=analysis-opinion%3F%253Bdestination%3Danalysis-opinion%253Fpage%253D5%26page%3D4",
+    "title": "Analysis &amp; Opinion | Civil Service World",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ie1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A civil-service inclusion event and a collection of Analysis & Opinion teasers",
+    "climate_relevance": "Climate policy appears only in a related-opinion teaser about combining carbon-reduction teams with industrial policy, not in the identifiable lead item.",
+    "reason": "The climate teaser contains meaningful climate discourse on its own, but the available text identifies the main item as an account of an inclusion event; the climate material is an unrelated snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "84c9ff88fb88775de9b5166ba92cd3690f012ae88ea4eb9651a1f04f0bf8571e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a704cddb061cf97598c120f40b801c164ec20ef9dfc2ed510b45f7f0e4fc1da8",
+    "raw_response_text_sha256": "ae381052be7ca1073999010d0ecb2ca7be6bc3e6dad8e6e393ed3f4fac55f7e7"
+  },
+  "api_metadata": {
+    "id": "resp_019863fba8ef3fae006b0636296bb487d1a8892e536dfb34bf",
+    "model": "gpt-6-luna",
+    "created_at": 1795569193.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1047,
+      "input_tokens_details": {
+        "cache_write_tokens": 1044,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1044
+        }
+      },
+      "output_tokens": 482,
+      "output_tokens_details": {
+        "reasoning_tokens": 326
+      },
+      "total_tokens": 1529
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A civil-service inclusion event and a collection of Analysis & Opinion teasers\",\n  \"climate_relevance\": \"Climate policy appears only in a related-opinion teaser about combining carbon-reduction teams with industrial policy, not in the identifiable lead item.\",\n  \"reason\": \"The climate teaser contains meaningful climate discourse on its own, but the available text identifies the main item as an account of an inclusion event; the climate material is an unrelated snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:13:17Z",
+  "duration_seconds": 4.13,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70853203",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/nz/70853203.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/nz/70853203.json"
+  },
+  "manifest_row": {
+    "article_id": "70853203",
+    "group": "2019_06",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/nz/70853203.txt",
+    "now_field_2": "517",
+    "date_original": "19-06-09",
+    "date_iso": "2019-06-09",
+    "source_name": "Otago Daily Times",
+    "url": "https://www.odt.co.nz/news/national/nz-troops-set-finish-iraq",
+    "title": "NZ troops set to finish up in Iraq",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "New Zealand military deployments to Iraq and Afghanistan, followed by an unrelated interview about cloud computing",
+    "climate_relevance": "Climate change appears only in a reader comment criticizing the prime minister; there is no substantive discussion of climate change.",
+    "reason": "The available climate reference is a passing remark in a comment and does not meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a242c4915ed754d97f187c6ce50860567298cd92f186b93b3031850070bf7f1a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "90d1e0032f28a38724c40a2941439a4558dca15e93919c7daeb1931a341af98d",
+    "raw_response_text_sha256": "963217aebce461f9f26eb492eb461096434d030934417d473b10e2769e0beecf"
+  },
+  "api_metadata": {
+    "id": "resp_06226fa0c62a7ff7006b063f8e711487d18d2034b54a086561",
+    "model": "gpt-6-luna",
+    "created_at": 1795571598.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2400,
+      "input_tokens_details": {
+        "cache_write_tokens": 2397,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2397
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 2628
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New Zealand military deployments to Iraq and Afghanistan, followed by an unrelated interview about cloud computing\",\n  \"climate_relevance\": \"Climate change appears only in a reader comment criticizing the prime minister; there is no substantive discussion of climate change.\",\n  \"reason\": \"The available climate reference is a passing remark in a comment and does not meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:53:20Z",
+  "duration_seconds": 2.383,
+  "error": null
+}

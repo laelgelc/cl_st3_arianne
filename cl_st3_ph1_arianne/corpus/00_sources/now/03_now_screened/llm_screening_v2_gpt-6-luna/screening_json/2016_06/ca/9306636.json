@@ -1,0 +1,77 @@
+{
+  "article_id": "9306636",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_06/ca/9306636.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_06/ca/9306636.json"
+  },
+  "manifest_row": {
+    "article_id": "9306636",
+    "group": "2016_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_06/ca/9306636.txt",
+    "now_field_2": "550",
+    "date_original": "16-06-11",
+    "date_iso": "2016-06-11",
+    "source_name": "Northumberland News",
+    "url": "http://www.northumberlandnews.com/news-story/6716738-port-hope-embarks-on-canada-goose-chase-to-get-pesky-waterfowl-out-of-urban-area/",
+    "title": "Port Hope embarks on Canada goose chase to get...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-06-uda/16-06-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Port Hope's efforts to manage Canada geese in urban parks",
+    "climate_relevance": "Climate change appears only as part of the name Environment and Climate Change Canada; the article discusses wildlife management, not climate issues.",
+    "reason": "The article focuses on hazing techniques and egg sterilization to address an urban Canada goose population. The agency name is an incidental mention and provides no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b72c6313513da8ed6d6c04857fecec14db193d7d5043b39ab23fcacec67ce542",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e902d19773bf947e5bde0a2fbd6238b4987dd2bdfff3844de438dd26d32a4c6c",
+    "raw_response_text_sha256": "00be86a37a91ed35ab970259d0f8ee7c69b5ea0b91e8967bfa945d8f2c0ce76f"
+  },
+  "api_metadata": {
+    "id": "resp_089803abcc9cdfac006b065105670887d1b2b58706cda12086",
+    "model": "gpt-6-luna",
+    "created_at": 1795576069.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1294,
+      "input_tokens_details": {
+        "cache_write_tokens": 1291,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1291
+        }
+      },
+      "output_tokens": 211,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1505
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Port Hope's efforts to manage Canada geese in urban parks\",\n  \"climate_relevance\": \"Climate change appears only as part of the name Environment and Climate Change Canada; the article discusses wildlife management, not climate issues.\",\n  \"reason\": \"The article focuses on hazing techniques and egg sterilization to address an urban Canada goose population. The agency name is an incidental mention and provides no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:07:51Z",
+  "duration_seconds": 2.125,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70847291",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/us/70847291.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/us/70847291.json"
+  },
+  "manifest_row": {
+    "article_id": "70847291",
+    "group": "2019_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/us/70847291.txt",
+    "now_field_2": "685",
+    "date_original": "19-06-07",
+    "date_iso": "2019-06-07",
+    "source_name": "Columbia Missourian",
+    "url": "https://www.columbiamissourian.com/news/local/safety-at-the-forefront-of-boone-county-s-wind-energy/article_cd63e628-8879-11e9-bb70-ebe9e07c6cc4.html",
+    "title": "Safety at the forefront of Boone County's wind-energy regulations ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.78,
+    "climate_role": "background",
+    "main_topic": "County regulation and local concerns about a proposed wind farm",
+    "climate_relevance": "The main article discusses wind energy as an alternative and renewable energy source, making it relevant to mitigation-related energy discourse, but it does not substantially frame the issue around climate change.",
+    "reason": "The focus is on safety, land use, property rights, and local regulation rather than climate change. Renewable energy is meaningfully discussed, so the article has peripheral research relevance. The text also includes unrelated community-solar material and other appended snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2afb5f52c8aece06575bcb1b936ccb047bbee4f619e330b2963fd879e1b2978e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a479074e5a61d9874870d3291aecda9c0d8609428dae7cc57ed5e2c2b39244e1",
+    "raw_response_text_sha256": "b36813f106a9b2e5da03cba21208dd37f116223f42753f59e845d7b80a460361"
+  },
+  "api_metadata": {
+    "id": "resp_0f0154f2f8bf9401006b063f82c83487d19b2bbd14c6e90350",
+    "model": "gpt-6-luna",
+    "created_at": 1795571586.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2248,
+      "input_tokens_details": {
+        "cache_write_tokens": 2245,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2245
+        }
+      },
+      "output_tokens": 617,
+      "output_tokens_details": {
+        "reasoning_tokens": 447
+      },
+      "total_tokens": 2865
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.78,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"County regulation and local concerns about a proposed wind farm\",\n  \"climate_relevance\": \"The main article discusses wind energy as an alternative and renewable energy source, making it relevant to mitigation-related energy discourse, but it does not substantially frame the issue around climate change.\",\n  \"reason\": \"The focus is on safety, land use, property rights, and local regulation rather than climate change. Renewable energy is meaningfully discussed, so the article has peripheral research relevance. The text also includes unrelated community-solar material and other appended snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:53:11Z",
+  "duration_seconds": 4.686,
+  "error": null
+}

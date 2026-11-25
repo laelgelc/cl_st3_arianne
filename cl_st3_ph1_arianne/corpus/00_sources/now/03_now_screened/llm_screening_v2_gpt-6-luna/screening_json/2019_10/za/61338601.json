@@ -1,0 +1,77 @@
+{
+  "article_id": "61338601",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/za/61338601.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/za/61338601.json"
+  },
+  "manifest_row": {
+    "article_id": "61338601",
+    "group": "2019_10",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/za/61338601.txt",
+    "now_field_2": "23513",
+    "date_original": "19-10-30",
+    "date_iso": "2019-10-30",
+    "source_name": "thesouthafrican.com",
+    "url": "https://www.thesouthafrican.com/news/namibia/feed/",
+    "title": "Namibia News - The South African",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Rugby World Cup statistics",
+    "climate_relevance": "Climate change appears only in a separate appended snippet about elephant sales, not in the identifiable main rugby article.",
+    "reason": "The main article is a list of Rugby World Cup statistics and contains no meaningful climate discourse. An unrelated snippet says climate change has depleted elephant habitat, but this does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a35256ef6e1a9225cc54b62c239f6d9f049841c323ea84187e9ed85aef023e62",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4371180f9fd4f8bf2f9de945fe5297e1eb6b370fe5e94475031346948745a860",
+    "raw_response_text_sha256": "fd80e94b2a733c1019061a8c078335e50edb8ba11067ce8d1f1fab7b2732d87d"
+  },
+  "api_metadata": {
+    "id": "resp_00f70145566063ee006b0636b8b61887d1a59f72010cabe525",
+    "model": "gpt-6-luna",
+    "created_at": 1795569336.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 34981,
+      "input_tokens_details": {
+        "cache_write_tokens": 34978,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 34978
+        }
+      },
+      "output_tokens": 383,
+      "output_tokens_details": {
+        "reasoning_tokens": 234
+      },
+      "total_tokens": 35364
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Rugby World Cup statistics\",\n  \"climate_relevance\": \"Climate change appears only in a separate appended snippet about elephant sales, not in the identifiable main rugby article.\",\n  \"reason\": \"The main article is a list of Rugby World Cup statistics and contains no meaningful climate discourse. An unrelated snippet says climate change has depleted elephant habitat, but this does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:15:40Z",
+  "duration_seconds": 3.609,
+  "error": null
+}

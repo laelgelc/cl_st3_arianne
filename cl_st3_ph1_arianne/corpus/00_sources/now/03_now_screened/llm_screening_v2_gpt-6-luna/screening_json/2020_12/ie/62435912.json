@@ -1,0 +1,77 @@
+{
+  "article_id": "62435912",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/ie/62435912.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/ie/62435912.json"
+  },
+  "manifest_row": {
+    "article_id": "62435912",
+    "group": "2020_12",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/ie/62435912.txt",
+    "now_field_2": "5177",
+    "date_original": "20-12-02",
+    "date_iso": "2020-12-02",
+    "source_name": "afloat.ie",
+    "url": "https://afloat.ie/resources/classes-and-associations/irish-shipman-association/itemlist/tag/Cork%20Harbour?start=90",
+    "title": "Displaying items by tag: Cork Harbour - <strong>afloat.ie</strong>",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Irish sailing events, yacht-club history, and the 2020 sailing season",
+    "climate_relevance": "The main sailing article briefly mentions prehistoric climate change without discussing its causes, impacts, or significance. A separate port-technology snippet refers to emissions reduction and a zero-carbon target, but it is unrelated to the identifiable main article.",
+    "reason": "The main article is not meaningfully about climate change; its sole climate reference is incidental. The appended port-technology material is a distinct snippet and does not change the classification of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "673c7f62664eafc289d3bc956f15bb0fdb1f720387a088c4820b0c7d602717ee",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e9316d3f5c2fa71a777d05e99417e84319c69ba53e207898e3a4e9a1adea81db",
+    "raw_response_text_sha256": "c435fae0c05cf5d5ff96a1b55893115698d75647119ca93ae8a4dbe148fc71da"
+  },
+  "api_metadata": {
+    "id": "resp_0de3147118756764006b063a34558c87d1ae40a574918bf042",
+    "model": "gpt-6-luna",
+    "created_at": 1795570228.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7336,
+      "input_tokens_details": {
+        "cache_write_tokens": 7333,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 7333
+        }
+      },
+      "output_tokens": 588,
+      "output_tokens_details": {
+        "reasoning_tokens": 413
+      },
+      "total_tokens": 7924
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Irish sailing events, yacht-club history, and the 2020 sailing season\",\n  \"climate_relevance\": \"The main sailing article briefly mentions prehistoric climate change without discussing its causes, impacts, or significance. A separate port-technology snippet refers to emissions reduction and a zero-carbon target, but it is unrelated to the identifiable main article.\",\n  \"reason\": \"The main article is not meaningfully about climate change; its sole climate reference is incidental. The appended port-technology material is a distinct snippet and does not change the classification of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:30:33Z",
+  "duration_seconds": 5.241,
+  "error": null
+}

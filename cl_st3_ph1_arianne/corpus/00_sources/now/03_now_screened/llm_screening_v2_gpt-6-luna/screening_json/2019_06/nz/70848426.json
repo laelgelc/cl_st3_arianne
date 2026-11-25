@@ -1,0 +1,77 @@
+{
+  "article_id": "70848426",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/nz/70848426.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/nz/70848426.json"
+  },
+  "manifest_row": {
+    "article_id": "70848426",
+    "group": "2019_06",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/nz/70848426.txt",
+    "now_field_2": "846",
+    "date_original": "19-06-07",
+    "date_iso": "2019-06-07",
+    "source_name": "Newsroom",
+    "url": "https://www.newsroom.co.nz/2019/06/08/625315/book-of-the-week-a-dream-of-postcards",
+    "title": "Book of the Week: A dream of postcards",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A review of a book of postcard images and poetry",
+    "climate_relevance": "Climate change appears once in a metaphor imagining a postcard as a view of Earth after climate change has destroyed all life.",
+    "reason": "The identifiable main article is about postcards, and the climate reference is a passing, figurative comparison rather than meaningful climate discourse. A separate article about a veteran's World War II service is also included and does not change the classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a1b1860e44e5276e70d21a28c95544d1d040f543a44459cad7aa4a36bbdaa206",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7f4098e475e582738187a50277b0fc207552c80da50f2f8e85e279325f7aa185",
+    "raw_response_text_sha256": "b4eb235c3b04229a425b9a91f5f8ead6d9b17736b04e1b017e178ca2cc873f7b"
+  },
+  "api_metadata": {
+    "id": "resp_0b906705ff130bf1006b063f85d42487d18d74b36680bd30a7",
+    "model": "gpt-6-luna",
+    "created_at": 1795571589.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3704,
+      "input_tokens_details": {
+        "cache_write_tokens": 3701,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3701
+        }
+      },
+      "output_tokens": 426,
+      "output_tokens_details": {
+        "reasoning_tokens": 272
+      },
+      "total_tokens": 4130
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A review of a book of postcard images and poetry\",\n  \"climate_relevance\": \"Climate change appears once in a metaphor imagining a postcard as a view of Earth after climate change has destroyed all life.\",\n  \"reason\": \"The identifiable main article is about postcards, and the climate reference is a passing, figurative comparison rather than meaningful climate discourse. A separate article about a veteran's World War II service is also included and does not change the classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:53:13Z",
+  "duration_seconds": 3.364,
+  "error": null
+}

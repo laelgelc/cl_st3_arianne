@@ -1,0 +1,77 @@
+{
+  "article_id": "70398376",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/nz/70398376.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/nz/70398376.json"
+  },
+  "manifest_row": {
+    "article_id": "70398376",
+    "group": "2019_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/nz/70398376.txt",
+    "now_field_2": "327",
+    "date_original": "19-01-08",
+    "date_iso": "2019-01-08",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/WO1901/S00022/venezuela-initiates-wto-complaint-against-us-measures.htm",
+    "title": "Venezuela initiates WTO complaint against US measures",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Venezuela's WTO complaint against US measures affecting Venezuelan goods and services.",
+    "climate_relevance": "The main article contains no meaningful climate-change discussion. A separate 'ALSO' teaser mentions climate disasters and the UN Climate Change Conference, but it is unrelated to the identifiable main article.",
+    "reason": "The identifiable main article concerns a WTO trade dispute. Climate appears only in a separate related-content snippet, not as part of the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cb20ed55e55e9336e754e5ac7bd94e22dc3f0e0db732fc217c08b5ce6ee92ce6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5f47f43314d2942558b30082ab92f907c8cb741277a613b5e88f4d0ef6441edb",
+    "raw_response_text_sha256": "8a55a057f6e3f5fa178425cacf43ec828a3f039b8ae813f008a7a82896de825a"
+  },
+  "api_metadata": {
+    "id": "resp_0c5360f7e2726f6d006b063c55c75087d18cfcd3df230ffd02",
+    "model": "gpt-6-luna",
+    "created_at": 1795570773.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 911,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 1224
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Venezuela's WTO complaint against US measures affecting Venezuelan goods and services.\",\n  \"climate_relevance\": \"The main article contains no meaningful climate-change discussion. A separate 'ALSO' teaser mentions climate disasters and the UN Climate Change Conference, but it is unrelated to the identifiable main article.\",\n  \"reason\": \"The identifiable main article concerns a WTO trade dispute. Climate appears only in a separate related-content snippet, not as part of the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:39:36Z",
+  "duration_seconds": 2.807,
+  "error": null
+}

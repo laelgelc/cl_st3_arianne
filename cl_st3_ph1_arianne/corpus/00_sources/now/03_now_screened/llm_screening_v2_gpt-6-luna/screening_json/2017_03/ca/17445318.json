@@ -1,0 +1,77 @@
+{
+  "article_id": "17445318",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_03/ca/17445318.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_03/ca/17445318.json"
+  },
+  "manifest_row": {
+    "article_id": "17445318",
+    "group": "2017_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_03/ca/17445318.txt",
+    "now_field_2": "477",
+    "date_original": "17-03-16",
+    "date_iso": "2017-03-16",
+    "source_name": "CBC.ca",
+    "url": "http://www.cbc.ca/news/canada/north/indigenous-guardians-network-budget-hopes-1.4027217",
+    "title": "Group hopes federal budget will launch Indigenous guardians ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-03.txt\"]",
+    "metadata_article_files": "[\"text-17-03/text_17-03-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Funding a national network of Indigenous guardians to monitor and protect traditional lands",
+    "climate_relevance": "The proposed guardians’ work includes reducing the impacts of climate change, but climate change is one aspect of a broader land-protection and Indigenous stewardship story.",
+    "reason": "The article is mainly about funding and the role of Indigenous guardians. Climate change is meaningfully mentioned as one of the impacts the proposed network would address, so the text has peripheral research relevance rather than being core climate coverage. The supplied text also includes unrelated CBC comment-policy boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0455e3c9d42cc0f08f8d5470a82ac57b13685d2bb8a5523160b58073a12a49ba",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "59ef9d44600ee1ba50680fb6bd54fdb75f8ef42b713b3661080af615b1935475",
+    "raw_response_text_sha256": "5eb02d75e381cc5604314af73099929402ed32ce6297636eea492e308546671a"
+  },
+  "api_metadata": {
+    "id": "resp_0527a0acc50d587c006b0608e7b6f887d29ea84ba82a0218a3",
+    "model": "gpt-6-luna",
+    "created_at": 1795557607.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1111,
+      "input_tokens_details": {
+        "cache_write_tokens": 1108,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1108
+        }
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 1381
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Funding a national network of Indigenous guardians to monitor and protect traditional lands\",\n  \"climate_relevance\": \"The proposed guardians’ work includes reducing the impacts of climate change, but climate change is one aspect of a broader land-protection and Indigenous stewardship story.\",\n  \"reason\": \"The article is mainly about funding and the role of Indigenous guardians. Climate change is meaningfully mentioned as one of the impacts the proposed network would address, so the text has peripheral research relevance rather than being core climate coverage. The supplied text also includes unrelated CBC comment-policy boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:00:11Z",
+  "duration_seconds": 4.151,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "22353222",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_12/za/22353222.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_12/za/22353222.json"
+  },
+  "manifest_row": {
+    "article_id": "22353222",
+    "group": "2017_12",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_12/za/22353222.txt",
+    "now_field_2": "461",
+    "date_original": "17-12-21",
+    "date_iso": "2017-12-21",
+    "source_name": "News24",
+    "url": "https://www.news24.com/Green/News/environmental-groups-criticize-liberias-new-logging-law-20171221",
+    "title": "Environmental groups criticize Liberia's new logging law",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-12.txt\"]",
+    "metadata_article_files": "[\"text-17-12/text_17-12-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Liberia's law granting tax relief to logging companies and its effects on public revenue and the timber industry",
+    "climate_relevance": "The article reports that the law undermines Liberia's efforts to mitigate climate change by preserving forests.",
+    "reason": "The main focus is the logging law and its economic and political consequences. Climate mitigation through forest preservation is a meaningful but secondary point. The supplied text also includes unrelated website settings and sign-in material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "661eaa127a2b653bdf8ccd296e56f83533d3b8eb8299767fc1ae5aa5085e4e9d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f31b1774e7703349fb1ac95bc91c62a3864941a5d1ff1fae870938dceca2a147",
+    "raw_response_text_sha256": "29624b5707363e829cf0701b29545d22efcd54eb9a385f5638d6c6b279a860ac"
+  },
+  "api_metadata": {
+    "id": "resp_07c72e0225ff40d5006b061010837087d294d12ed9310aa3d8",
+    "model": "gpt-6-luna",
+    "created_at": 1795559440.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1102,
+      "input_tokens_details": {
+        "cache_write_tokens": 1099,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1099
+        }
+      },
+      "output_tokens": 223,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1325
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Liberia's law granting tax relief to logging companies and its effects on public revenue and the timber industry\",\n  \"climate_relevance\": \"The article reports that the law undermines Liberia's efforts to mitigate climate change by preserving forests.\",\n  \"reason\": \"The main focus is the logging law and its economic and political consequences. Climate mitigation through forest preservation is a meaningful but secondary point. The supplied text also includes unrelated website settings and sign-in material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:30:42Z",
+  "duration_seconds": 2.13,
+  "error": null
+}

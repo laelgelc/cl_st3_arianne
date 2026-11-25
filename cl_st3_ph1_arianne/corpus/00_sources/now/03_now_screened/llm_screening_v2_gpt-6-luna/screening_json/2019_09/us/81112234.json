@@ -1,0 +1,77 @@
+{
+  "article_id": "81112234",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/81112234.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/81112234.json"
+  },
+  "manifest_row": {
+    "article_id": "81112234",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/81112234.txt",
+    "now_field_2": "1165",
+    "date_original": "19-09-16",
+    "date_iso": "2019-09-16",
+    "source_name": "PR Newswire",
+    "url": "https://www.prnewswire.com/news-releases/transalta-announces-transformative-2-billion-clean-energy-investment-plan-and-dividend-policy-300918378.html",
+    "title": "TransAlta Announces Transformative $2 Billion Clean Energy Investment Plan and Dividend Policy",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us2.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.82,
+    "climate_role": "substantial",
+    "main_topic": "TransAlta’s clean-energy investment plan, including converting coal-fired units to natural gas and expanding renewable energy projects.",
+    "climate_relevance": "The announcement centers on changes to the company’s electricity-generation portfolio, including moving away from coal, investing in renewables, and reducing air emissions—issues directly relevant to climate mitigation and energy transition.",
+    "reason": "Although the release also emphasizes costs, financing, and shareholder returns, its main subject is an energy investment plan involving coal-to-gas conversions and renewable generation. The climate-change reference in the corporate background is incidental, but the plan itself is substantially relevant to climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9c42e60103c43c2d0bd7274178911c1c1aefe21b69d8ec02c5873b641b4934af",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8a413b034f63dfd1e4d9f9cf19228e4d124159ca9c149e7e198bc022d4d4494e",
+    "raw_response_text_sha256": "9fc28807304116b0020027473d5cb7455ed1be0cbc8ee38a94d22b523c5a5085"
+  },
+  "api_metadata": {
+    "id": "resp_01e97a437abbadec006b0646e7712887d193e9a93a6ebe1ec1",
+    "model": "gpt-6-luna",
+    "created_at": 1795573479.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2007,
+      "input_tokens_details": {
+        "cache_write_tokens": 2004,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2004
+        }
+      },
+      "output_tokens": 455,
+      "output_tokens_details": {
+        "reasoning_tokens": 267
+      },
+      "total_tokens": 2462
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.82,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"TransAlta’s clean-energy investment plan, including converting coal-fired units to natural gas and expanding renewable energy projects.\",\n  \"climate_relevance\": \"The announcement centers on changes to the company’s electricity-generation portfolio, including moving away from coal, investing in renewables, and reducing air emissions—issues directly relevant to climate mitigation and energy transition.\",\n  \"reason\": \"Although the release also emphasizes costs, financing, and shareholder returns, its main subject is an energy investment plan involving coal-to-gas conversions and renewable generation. The climate-change reference in the corporate background is incidental, but the plan itself is substantially relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:24:42Z",
+  "duration_seconds": 3.414,
+  "error": null
+}

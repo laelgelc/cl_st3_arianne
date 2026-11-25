@@ -1,0 +1,77 @@
+{
+  "article_id": "61433167",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/ie/61433167.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/ie/61433167.json"
+  },
+  "manifest_row": {
+    "article_id": "61433167",
+    "group": "2019_12",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/ie/61433167.txt",
+    "now_field_2": "419",
+    "date_original": "19-12-07",
+    "date_iso": "2019-12-07",
+    "source_name": "gasworld.com",
+    "url": "https://www.gasworld.com/also-in-the-news/4983.more?page=4",
+    "title": "Also in the news - Page 4 | gasworld",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-ie.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "A page of industrial-gas industry news and company updates",
+    "climate_relevance": "One item reports that carbon capture and storage deployment and its project pipeline are growing, citing a report launched at the COP25 climate conference.",
+    "reason": "The available text is a collection of industry-news blurbs rather than coverage centered on climate change. The CCS item contains meaningful climate-related discourse, making the page peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e15e8185cd1017540ffd7221bd151c78cca73edcdca35e6f7f67ef9ede250722",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "09312530b766683d683353cffc5a0596a1986d4384a3dab6cc0bd746df1aed41",
+    "raw_response_text_sha256": "9520dc4ea05d9b7368598742ec48511bbb6fc7c9c36715b0d729ab650514bda9"
+  },
+  "api_metadata": {
+    "id": "resp_0bfaa031de5e7eb5006b063719b19887d1bcd44053f149d796",
+    "model": "gpt-6-luna",
+    "created_at": 1795569433.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1048,
+      "input_tokens_details": {
+        "cache_write_tokens": 1045,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1045
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1298
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A page of industrial-gas industry news and company updates\",\n  \"climate_relevance\": \"One item reports that carbon capture and storage deployment and its project pipeline are growing, citing a report launched at the COP25 climate conference.\",\n  \"reason\": \"The available text is a collection of industry-news blurbs rather than coverage centered on climate change. The CCS item contains meaningful climate-related discourse, making the page peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:17:15Z",
+  "duration_seconds": 2.311,
+  "error": null
+}

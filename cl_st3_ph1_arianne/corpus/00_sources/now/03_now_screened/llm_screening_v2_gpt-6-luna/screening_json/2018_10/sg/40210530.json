@@ -1,0 +1,77 @@
+{
+  "article_id": "40210530",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/sg/40210530.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/sg/40210530.json"
+  },
+  "manifest_row": {
+    "article_id": "40210530",
+    "group": "2018_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/sg/40210530.txt",
+    "now_field_2": "728",
+    "date_original": "18-10-29",
+    "date_iso": "2018-10-29",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/manchester-city-survive-tottenham-scare-go-top-215616113.html",
+    "title": "Manchester City survive Tottenham scare to go top again",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "background",
+    "main_topic": "Expansion of rooftop solar power in New York City and the practical, regulatory, and financial barriers to installing it.",
+    "climate_relevance": "The solar article describes clean energy adoption and notes that residents are motivated by climate change, making it relevant to climate mitigation discourse, though climate change is not its primary focus.",
+    "reason": "The available text contains several unrelated articles. The identifiable solar article has meaningful climate relevance but focuses mainly on urban solar installations rather than climate change itself; the football and property snippets are unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c169b0ac75a518b7ba59269e8d97b6be3b50f5ab2323f04b12d3e6117d1dbeff",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3ba48833d26447992463ba99a3a886859f483594b684c00762bbc222d5d6a1cd",
+    "raw_response_text_sha256": "5a9ac04f8f8eef2295524eff40ab1b5a69ab4f2ddea6a4ad003476f08abb8ff5"
+  },
+  "api_metadata": {
+    "id": "resp_0bd839052f4fe2b7006b061e80e2ec87d2934da3b8e57409bf",
+    "model": "gpt-6-luna",
+    "created_at": 1795563137.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2574,
+      "input_tokens_details": {
+        "cache_write_tokens": 2571,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2571
+        }
+      },
+      "output_tokens": 621,
+      "output_tokens_details": {
+        "reasoning_tokens": 453
+      },
+      "total_tokens": 3195
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Expansion of rooftop solar power in New York City and the practical, regulatory, and financial barriers to installing it.\",\n  \"climate_relevance\": \"The solar article describes clean energy adoption and notes that residents are motivated by climate change, making it relevant to climate mitigation discourse, though climate change is not its primary focus.\",\n  \"reason\": \"The available text contains several unrelated articles. The identifiable solar article has meaningful climate relevance but focuses mainly on urban solar installations rather than climate change itself; the football and property snippets are unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:32:22Z",
+  "duration_seconds": 5.352,
+  "error": null
+}

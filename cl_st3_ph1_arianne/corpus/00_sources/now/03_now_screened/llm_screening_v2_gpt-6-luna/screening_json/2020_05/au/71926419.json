@@ -1,0 +1,77 @@
+{
+  "article_id": "71926419",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/au/71926419.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/au/71926419.json"
+  },
+  "manifest_row": {
+    "article_id": "71926419",
+    "group": "2020_05",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/au/71926419.txt",
+    "now_field_2": "7287",
+    "date_original": "20-05-09",
+    "date_iso": "2020-05-09",
+    "source_name": "pursuit.unimelb.edu.au",
+    "url": "https://pursuit.unimelb.edu.au/live/federal-budget-2016",
+    "title": "Federal Budget 2016 | Pursuit by The University  of  Melbourne",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Expert commentary on Australia's 2016 Federal Budget across multiple policy areas",
+    "climate_relevance": "A foreign affairs budget section notes a five-year $1 billion commitment to addressing climate change, including $200 million in the budget. Climate policy is not otherwise meaningfully discussed.",
+    "reason": "The text is primarily a broad budget roundup. Its climate reference is a meaningful but brief detail within commentary on foreign aid, rather than a substantial focus of the available text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "edd117d4cb7135114e7e45a848c861fcaa5413f8835b81270183f311c1fe3b54",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "52f93cceb48ea67f018f56576b2e50234df550374188d67d37e74df81878621c",
+    "raw_response_text_sha256": "155f10e4381833e7ff6a52dfb9998b5435a514b99d26deae0bd665a6dd78b758"
+  },
+  "api_metadata": {
+    "id": "resp_083cea73631cba19006b06433f8a7887d1a90bc0277776e1ea",
+    "model": "gpt-6-luna",
+    "created_at": 1795572543.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10078,
+      "input_tokens_details": {
+        "cache_write_tokens": 10075,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 10075
+        }
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 10350
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Expert commentary on Australia's 2016 Federal Budget across multiple policy areas\",\n  \"climate_relevance\": \"A foreign affairs budget section notes a five-year $1 billion commitment to addressing climate change, including $200 million in the budget. Climate policy is not otherwise meaningfully discussed.\",\n  \"reason\": \"The text is primarily a broad budget roundup. Its climate reference is a meaningful but brief detail within commentary on foreign aid, rather than a substantial focus of the available text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:09:06Z",
+  "duration_seconds": 2.868,
+  "error": null
+}

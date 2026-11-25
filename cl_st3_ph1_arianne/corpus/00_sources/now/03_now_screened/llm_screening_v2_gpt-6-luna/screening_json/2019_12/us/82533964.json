@@ -1,0 +1,77 @@
+{
+  "article_id": "82533964",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82533964.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82533964.json"
+  },
+  "manifest_row": {
+    "article_id": "82533964",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82533964.txt",
+    "now_field_2": "352",
+    "date_original": "19-12-06",
+    "date_iso": "2019-12-06",
+    "source_name": "6abc News",
+    "url": "https://6abc.com/politics/students-hold-climate-strike-protest-in-philly/5737084/",
+    "title": "Students hold 'Climate Strike' protest in Philly",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us6.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Students rallying in Philadelphia to demand action on climate change",
+    "climate_relevance": "The report focuses on a climate protest and includes students’ views on climate impacts, scientific evidence, public opposition, and the need for political action.",
+    "reason": "Climate change is the central subject of the report, not a passing mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a77e4051cd300f580da0072f6d4709ddd6368f09340b281402dd190c5b6e805c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b3e1fd60acde5bada18db873890982321305f57575af9634cb2240d2335f2c8f",
+    "raw_response_text_sha256": "b183af0e30dcb858f0a9de803da289b3177df9fd37fe3c63a629cd33e22b324b"
+  },
+  "api_metadata": {
+    "id": "resp_0e39d522ed246b20006b064891685487d196b266345a897593",
+    "model": "gpt-6-luna",
+    "created_at": 1795573905.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 919,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 159,
+      "output_tokens_details": {
+        "reasoning_tokens": 30
+      },
+      "total_tokens": 1078
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Students rallying in Philadelphia to demand action on climate change\",\n  \"climate_relevance\": \"The report focuses on a climate protest and includes students’ views on climate impacts, scientific evidence, public opposition, and the need for political action.\",\n  \"reason\": \"Climate change is the central subject of the report, not a passing mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:31:46Z",
+  "duration_seconds": 1.47,
+  "error": null
+}

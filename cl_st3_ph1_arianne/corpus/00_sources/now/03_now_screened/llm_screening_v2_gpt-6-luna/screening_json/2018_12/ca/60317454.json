@@ -1,0 +1,77 @@
+{
+  "article_id": "60317454",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ca/60317454.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ca/60317454.json"
+  },
+  "manifest_row": {
+    "article_id": "60317454",
+    "group": "2018_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ca/60317454.txt",
+    "now_field_2": "470",
+    "date_original": "18-12-03",
+    "date_iso": "2018-12-03",
+    "source_name": "Canada NewsWir",
+    "url": "https://www.newswire.ca/news-releases/government-of-canada-puts-175-million-toward-projects-that-protect-nature-701823711.html",
+    "title": "Government of Canada puts $175 million toward projects that protect ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Canada's biodiversity conservation and protected nature funding",
+    "climate_relevance": "Climate change appears only in the name of Environment and Climate Change Canada; the text does not discuss climate change or its implications.",
+    "reason": "The announcement focuses on biodiversity targets, protected areas, and conservation funding. The department name is not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "dc68b65de090f89595d94d7238977a908c94e9d8ef0a053676b16e9387040277",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "da9001277a0254a49fbe1f1d8ae9b5febe6b9aa7f949531d192fea4abce55730",
+    "raw_response_text_sha256": "ad3fde03cbeb5bbd10bd5288c3a9347b858fef838d887cb8663faf7098b0dbe0"
+  },
+  "api_metadata": {
+    "id": "resp_0f2b45386cbbe401006b06320f6f8087d180a3a0d55bd9e32a",
+    "model": "gpt-6-luna",
+    "created_at": 1795568143.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1105,
+      "input_tokens_details": {
+        "cache_write_tokens": 1102,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1102
+        }
+      },
+      "output_tokens": 175,
+      "output_tokens_details": {
+        "reasoning_tokens": 39
+      },
+      "total_tokens": 1280
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Canada's biodiversity conservation and protected nature funding\",\n  \"climate_relevance\": \"Climate change appears only in the name of Environment and Climate Change Canada; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The announcement focuses on biodiversity targets, protected areas, and conservation funding. The department name is not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:55:45Z",
+  "duration_seconds": 2.149,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "32042238",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/32042238.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/32042238.json"
+  },
+  "manifest_row": {
+    "article_id": "32042238",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/32042238.txt",
+    "now_field_2": "1636",
+    "date_original": "20-08-27",
+    "date_iso": "2020-08-27",
+    "source_name": "politico.com",
+    "url": "https://www.politico.com/newsletters/illinois-playbook/2020/08/27/the-politics-of-kenosha-cps-votes-to-keep-cops-in-schools-mayors-bodyguard-out-490203",
+    "title": "THE POLITICS of KENOSHA - CPS VOTES TO KEEP COPS IN ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Illinois political news roundup",
+    "climate_relevance": "A brief item discusses the Clean Energy Jobs Act and explicitly describes the climate crisis as a longer-term issue with social-equity parallels to Covid-19, while noting that the pandemic has pushed climate down the agenda.",
+    "reason": "The newsletter is mainly about Illinois politics and other current affairs. Its climate item contains meaningful discourse, but climate change is not a central or substantial focus of the supplied text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "17f0843715505f9676a3d2b4672a5ff62b3de3623bd43a4a5ed68117b3a00ac4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c10964f449f50e248e7ae95acf077f26519a921d31df6be496662c4a38798485",
+    "raw_response_text_sha256": "f3c6ad7232f89df54917b1720228716560e80963e96c6c52722a5d32dabf8197"
+  },
+  "api_metadata": {
+    "id": "resp_00f90ea6c8a5e60a006b061ae777f487d29337f52b0fbafde1",
+    "model": "gpt-6-luna",
+    "created_at": 1795562215.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2736,
+      "input_tokens_details": {
+        "cache_write_tokens": 2733,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2733
+        }
+      },
+      "output_tokens": 311,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 3047
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Illinois political news roundup\",\n  \"climate_relevance\": \"A brief item discusses the Clean Energy Jobs Act and explicitly describes the climate crisis as a longer-term issue with social-equity parallels to Covid-19, while noting that the pandemic has pushed climate down the agenda.\",\n  \"reason\": \"The newsletter is mainly about Illinois politics and other current affairs. Its climate item contains meaningful discourse, but climate change is not a central or substantial focus of the supplied text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:16:58Z",
+  "duration_seconds": 2.645,
+  "error": null
+}

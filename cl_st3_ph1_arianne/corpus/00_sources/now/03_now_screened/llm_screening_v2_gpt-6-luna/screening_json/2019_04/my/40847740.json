@@ -1,0 +1,77 @@
+{
+  "article_id": "40847740",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40847740.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40847740.json"
+  },
+  "manifest_row": {
+    "article_id": "40847740",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40847740.txt",
+    "now_field_2": "316",
+    "date_original": "19-04-16",
+    "date_iso": "2019-04-16",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/17/starbucks-malaysia-launches-new-seasonal-frappucinos/",
+    "title": "Starbucks Malaysia launches new seasonal Frappucinos",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Starbucks Malaysia's launch of seasonal Frappuccino beverages and merchandise",
+    "climate_relevance": "An unrelated introductory bullet mentions sustainable energy solutions and names a minister whose portfolio includes climate change, but the main article contains no climate discourse.",
+    "reason": "The identifiable main article is about Starbucks products. The climate-related terms occur only in a separate, brief news item and ministerial title, without meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3bc3b785977c812d83f9ddfeac7a23fdfdf9c082dcf8c586b54152e715a2851d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2f3121ef2ca7a39e2fc764d68bace24ff5aa8d34a84810cedbb1c5e470329056",
+    "raw_response_text_sha256": "4eec3d03dc2b09d0b17c36dcade65c47f1b7c65df84f530ebf8b657e46682090"
+  },
+  "api_metadata": {
+    "id": "resp_07d9317093be8d18006b0620043e6487d2b8c8fa1c6831c5d0",
+    "model": "gpt-6-luna",
+    "created_at": 1795563524.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 918,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 334,
+      "output_tokens_details": {
+        "reasoning_tokens": 180
+      },
+      "total_tokens": 1252
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Starbucks Malaysia's launch of seasonal Frappuccino beverages and merchandise\",\n  \"climate_relevance\": \"An unrelated introductory bullet mentions sustainable energy solutions and names a minister whose portfolio includes climate change, but the main article contains no climate discourse.\",\n  \"reason\": \"The identifiable main article is about Starbucks products. The climate-related terms occur only in a separate, brief news item and ministerial title, without meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:47Z",
+  "duration_seconds": 3.486,
+  "error": null
+}

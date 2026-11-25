@@ -1,0 +1,77 @@
+{
+  "article_id": "71287188",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/in/71287188.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/in/71287188.json"
+  },
+  "manifest_row": {
+    "article_id": "71287188",
+    "group": "2019_10",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/in/71287188.txt",
+    "now_field_2": "3087",
+    "date_original": "19-10-12",
+    "date_iso": "2019-10-12",
+    "source_name": "moneylife.in",
+    "url": "https://www.moneylife.in/article/32-crore-rti-applications-filed-since-the-law-was-born-maharashtra-leads-with-highest-rti-applications-after-cic/58392.html",
+    "title": "3.2 Crore RTI applications filed since the law was born ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-in.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A report on the implementation of India's Right to Information Act",
+    "climate_relevance": "Climate change is discussed in a separate, appended passage about flooding in Pune, not in the identifiable main report.",
+    "reason": "The main article concerns RTI applications, appeals, and transparency. Although the appended Pune flooding passage contains meaningful discussion linking intense rainfall and flood risk to climate change, it appears to be an unrelated snippet rather than the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "794d5e8239e3babd92f492a8f091dadcb1da82b91a668bbb670b68db7987b8ec",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9959635478aff964ca974e2226259db6edd347111aba9eccc27577cd86c223ce",
+    "raw_response_text_sha256": "594fdfd258db603da5155fed4956f7481eda11d941d855ef1a09400264594630"
+  },
+  "api_metadata": {
+    "id": "resp_0615faee48a1fdc1006b0640bedee887d1aa204524b950c283",
+    "model": "gpt-6-luna",
+    "created_at": 1795571902.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4753,
+      "input_tokens_details": {
+        "cache_write_tokens": 4750,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4750
+        }
+      },
+      "output_tokens": 805,
+      "output_tokens_details": {
+        "reasoning_tokens": 647
+      },
+      "total_tokens": 5558
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A report on the implementation of India's Right to Information Act\",\n  \"climate_relevance\": \"Climate change is discussed in a separate, appended passage about flooding in Pune, not in the identifiable main report.\",\n  \"reason\": \"The main article concerns RTI applications, appeals, and transparency. Although the appended Pune flooding passage contains meaningful discussion linking intense rainfall and flood risk to climate change, it appears to be an unrelated snippet rather than the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:58:29Z",
+  "duration_seconds": 6.265,
+  "error": null
+}

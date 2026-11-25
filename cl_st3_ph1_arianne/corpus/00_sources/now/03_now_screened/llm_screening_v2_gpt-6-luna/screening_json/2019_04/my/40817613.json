@@ -1,0 +1,77 @@
+{
+  "article_id": "40817613",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40817613.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40817613.json"
+  },
+  "manifest_row": {
+    "article_id": "40817613",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40817613.txt",
+    "now_field_2": "1007",
+    "date_original": "19-04-09",
+    "date_iso": "2019-04-09",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/09/memorable-crossover/",
+    "title": "Memorable Crossover",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A review of the Range Rover Sport plug-in hybrid",
+    "climate_relevance": "Climate change appears only in an unrelated headline-style item and a ministerial title; the vehicle discussion focuses on performance and features, without meaningful climate discourse.",
+    "reason": "The identifiable main article is an automobile review. Its references to hybrid and electric technology concern vehicle performance and fuel efficiency, not climate change or its implications.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6cfd77941ec49d331a60630116a4568f783191ae4a43ab6a2edc0dbf117e732c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9933e72e66ee9efaf10cf1e16e4e233f80ff46aa0a2d06c734adfde3d66e4dc6",
+    "raw_response_text_sha256": "2019f9e5890da8a2d5a7b1783775865973e0ea401a61467c54ffbd7d86874a54"
+  },
+  "api_metadata": {
+    "id": "resp_06ad84ec7a86aae7006b061fd88af087d2b79bb79c7b1d0592",
+    "model": "gpt-6-luna",
+    "created_at": 1795563480.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1845,
+      "input_tokens_details": {
+        "cache_write_tokens": 1842,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1842
+        }
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 166
+      },
+      "total_tokens": 2161
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A review of the Range Rover Sport plug-in hybrid\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated headline-style item and a ministerial title; the vehicle discussion focuses on performance and features, without meaningful climate discourse.\",\n  \"reason\": \"The identifiable main article is an automobile review. Its references to hybrid and electric technology concern vehicle performance and fuel efficiency, not climate change or its implications.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:02Z",
+  "duration_seconds": 2.324,
+  "error": null
+}

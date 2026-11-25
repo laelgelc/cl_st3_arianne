@@ -1,0 +1,77 @@
+{
+  "article_id": "40913110",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/my/40913110.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/my/40913110.json"
+  },
+  "manifest_row": {
+    "article_id": "40913110",
+    "group": "2019_05",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/my/40913110.txt",
+    "now_field_2": "172",
+    "date_original": "19-05-03",
+    "date_iso": "2019-05-03",
+    "source_name": "Goal.com",
+    "url": "https://www.goal.com/en-my/news/tagliafico-frustrates-arsenal-atletico-by-agreeing-to/1nkw2oep556db1pb4r8lp4dy7p",
+    "title": "Tagliafico frustrates Arsenal &amp; Atletico by agreeing to another year at ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Ajax footballer Nico Tagliafico's contract renewal",
+    "climate_relevance": "Climate change appears only in a sentence within a separate election-results item, not in the identifiable main article.",
+    "reason": "The main article concerns football. The text then includes unrelated trending and election coverage; a brief reference to dissatisfaction with action on climate change occurs only in that separate material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a7705a3856528b7f9f10d947d4b77a4777fe1723b374b225a884ea8139aee0a6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8541b08add496350bd6a8e1afda53be083bf8b7ee56bcc90fcf130885d1b88d6",
+    "raw_response_text_sha256": "8b814aa76b0047d450152f7ba69e5a859dbc2ac416bd9bc86d22a5c1f9dd7be3"
+  },
+  "api_metadata": {
+    "id": "resp_0f5538a3f535ddf0006b062052865887d2a425c47274a6fa8c",
+    "model": "gpt-6-luna",
+    "created_at": 1795563602.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3292,
+      "input_tokens_details": {
+        "cache_write_tokens": 3289,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3289
+        }
+      },
+      "output_tokens": 466,
+      "output_tokens_details": {
+        "reasoning_tokens": 322
+      },
+      "total_tokens": 3758
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ajax footballer Nico Tagliafico's contract renewal\",\n  \"climate_relevance\": \"Climate change appears only in a sentence within a separate election-results item, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns football. The text then includes unrelated trending and election coverage; a brief reference to dissatisfaction with action on climate change occurs only in that separate material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:40:05Z",
+  "duration_seconds": 3.111,
+  "error": null
+}

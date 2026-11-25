@@ -1,0 +1,77 @@
+{
+  "article_id": "9684403",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_07/us/9684403.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_07/us/9684403.json"
+  },
+  "manifest_row": {
+    "article_id": "9684403",
+    "group": "2016_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_07/us/9684403.txt",
+    "now_field_2": "300",
+    "date_original": "16-07-03",
+    "date_iso": "2016-07-03",
+    "source_name": "Your Houston News",
+    "url": "http://www.yourhoustonnews.com/west_university/news/texas-attorney-general-dismisses-lawsuit-against-virgin-islands-ag-in/article_29da7d82-40d3-11e6-8090-4b136b07f62b.html",
+    "title": "Texas Attorney General",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-07-qxx/16-07-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Dismissal of a lawsuit over the Virgin Islands attorney general’s subpoena of ExxonMobil, framed as a free-speech issue.",
+    "climate_relevance": "The article connects the dispute to the right to express opinions about climate change, but does not discuss climate science, impacts, or policy in depth.",
+    "reason": "Climate change is meaningfully present as context for the subpoena dispute, while the article’s main focus is the legal conflict and free-speech claims.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a6405817a7c3ec02e693af0c3ba9e523410684af7be6109cfcdf2cef8c973689",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "232368ab9a2ec2d1d4ef123d969585dd36e3e9aa01ee0631045f0463f06264ed",
+    "raw_response_text_sha256": "7a62a14570f95bce04730cca07c2a400c81b3da71f7ad3bfebb001138aa57541"
+  },
+  "api_metadata": {
+    "id": "resp_07c09ab03e8e0051006b06514ace8087d19022233350bedfb2",
+    "model": "gpt-6-luna",
+    "created_at": 1795576138.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 851,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 375,
+      "output_tokens_details": {
+        "reasoning_tokens": 217
+      },
+      "total_tokens": 1226
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Dismissal of a lawsuit over the Virgin Islands attorney general’s subpoena of ExxonMobil, framed as a free-speech issue.\",\n  \"climate_relevance\": \"The article connects the dispute to the right to express opinions about climate change, but does not discuss climate science, impacts, or policy in depth.\",\n  \"reason\": \"Climate change is meaningfully present as context for the subpoena dispute, while the article’s main focus is the legal conflict and free-speech claims.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:09:02Z",
+  "duration_seconds": 3.385,
+  "error": null
+}

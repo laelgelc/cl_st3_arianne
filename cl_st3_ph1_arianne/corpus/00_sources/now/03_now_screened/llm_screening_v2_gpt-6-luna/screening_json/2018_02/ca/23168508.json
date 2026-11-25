@@ -1,0 +1,77 @@
+{
+  "article_id": "23168508",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_02/ca/23168508.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_02/ca/23168508.json"
+  },
+  "manifest_row": {
+    "article_id": "23168508",
+    "group": "2018_02",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_02/ca/23168508.txt",
+    "now_field_2": "1024",
+    "date_original": "18-02-12",
+    "date_iso": "2018-02-12",
+    "source_name": "CBC.ca",
+    "url": "http://www.cbc.ca/news/politics/g7-security-spending-cannabis-1.4532493",
+    "title": "G7 summit cost tops $200 million in budget estimates",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-02.txt\"]",
+    "metadata_article_files": "[\"text-18-02/text_18-02-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Estimated costs and departmental spending for hosting the G7 summit in Canada",
+    "climate_relevance": "Climate change is named once as one of several themes announced for the summit, with no further discussion.",
+    "reason": "The article focuses on summit expenses and government budget allocations. Its brief mention of climate change is incidental and does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "60b713ff2fe24cf45280bbf007e51278cd3573ac3b66161eaf9cd4c35657adef",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "719ab5d3be2a76211d87d2b6f927b8b84ad4d81cf9f4e58b7432fc1685a09a2a",
+    "raw_response_text_sha256": "2ef59b544a24446657eedf9c4258156d964bdbd06deddd378d6fea10da60f684"
+  },
+  "api_metadata": {
+    "id": "resp_0c1e6e171ac85241006b0610f1e7c487d2aaf670666b18596f",
+    "model": "gpt-6-luna",
+    "created_at": 1795559666.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1869,
+      "input_tokens_details": {
+        "cache_write_tokens": 1866,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1866
+        }
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 2161
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Estimated costs and departmental spending for hosting the G7 summit in Canada\",\n  \"climate_relevance\": \"Climate change is named once as one of several themes announced for the summit, with no further discussion.\",\n  \"reason\": \"The article focuses on summit expenses and government budget allocations. Its brief mention of climate change is incidental and does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:34:28Z",
+  "duration_seconds": 2.44,
+  "error": null
+}

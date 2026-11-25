@@ -1,0 +1,77 @@
+{
+  "article_id": "60742901",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/ca/60742901.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/ca/60742901.json"
+  },
+  "manifest_row": {
+    "article_id": "60742901",
+    "group": "2019_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/ca/60742901.txt",
+    "now_field_2": "488",
+    "date_original": "19-04-15",
+    "date_iso": "2019-04-15",
+    "source_name": "Prince George Citizen",
+    "url": "https://www.princegeorgecitizen.com/news/local-news/new-gold-blackwater-mine-gets-federal-ok-1.23792469",
+    "title": "New Gold-Blackwater mine gets federal OK",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Federal environmental assessment and approval of a proposed gold and silver mine",
+    "climate_relevance": "Climate change appears only in the Environment and Climate Change minister’s title; the text does not discuss climate issues.",
+    "reason": "The article focuses on the mine’s environmental assessment, mitigation conditions, and economic benefits. The climate reference is incidental to a minister’s official title.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "059c7ac85962d83fe01997efc73ab1ec0da63f375649ec221ab4a05209b63e5f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7d7c0e9ccce10aaa4f3b132dc5e4a72d91ca0b65c3808930a996024a0d1d1180",
+    "raw_response_text_sha256": "0234472b828d29f7212540d173d7ec5e0ca93c8a089cde12e46cb200fd7a55f4"
+  },
+  "api_metadata": {
+    "id": "resp_0f66492f78696f92006b0634253a5c87d1ba805137a6a4a8df",
+    "model": "gpt-6-luna",
+    "created_at": 1795568677.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1102,
+      "input_tokens_details": {
+        "cache_write_tokens": 1099,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1099
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 1352
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Federal environmental assessment and approval of a proposed gold and silver mine\",\n  \"climate_relevance\": \"Climate change appears only in the Environment and Climate Change minister’s title; the text does not discuss climate issues.\",\n  \"reason\": \"The article focuses on the mine’s environmental assessment, mitigation conditions, and economic benefits. The climate reference is incidental to a minister’s official title.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:04:39Z",
+  "duration_seconds": 2.063,
+  "error": null
+}

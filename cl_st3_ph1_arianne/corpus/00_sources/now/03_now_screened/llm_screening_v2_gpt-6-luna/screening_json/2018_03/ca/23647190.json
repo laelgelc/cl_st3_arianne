@@ -1,0 +1,77 @@
+{
+  "article_id": "23647190",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_03/ca/23647190.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_03/ca/23647190.json"
+  },
+  "manifest_row": {
+    "article_id": "23647190",
+    "group": "2018_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_03/ca/23647190.txt",
+    "now_field_2": "235",
+    "date_original": "18-03-13",
+    "date_iso": "2018-03-13",
+    "source_name": "Bayshore Broadcasting News Centre",
+    "url": "http://www.bayshorebroadcasting.ca/news_item.php?NewsID=100236",
+    "title": "Huron-Bruce Tory MPP Says Party Unified Behind Ford",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-03.txt\"]",
+    "metadata_article_files": "[\"text-18-03/text_18-03-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Ontario Progressive Conservative leadership and election prospects",
+    "climate_relevance": "Climate change appears only in a list of portfolios for which Lisa Thompson has served as critic.",
+    "reason": "The article focuses on party leadership and electoral politics; it contains no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "08e76f26275a62ff21712ad880fb34da7bed98ed0e6dc46c2e54e00e179e4f0d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e71f7815a1fbc43836306692e9d045ffce28c1ca2993967f15b14cd1fda71755",
+    "raw_response_text_sha256": "c7342d68f36e8d29fede644ad69b94445f24b6452c5c261a30c9128514689b5a"
+  },
+  "api_metadata": {
+    "id": "resp_01e52b2bf3780bad006b06117be33887d2807a8237df54aa2d",
+    "model": "gpt-6-luna",
+    "created_at": 1795559804.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 783,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 159,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "total_tokens": 942
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Ontario Progressive Conservative leadership and election prospects\",\n  \"climate_relevance\": \"Climate change appears only in a list of portfolios for which Lisa Thompson has served as critic.\",\n  \"reason\": \"The article focuses on party leadership and electoral politics; it contains no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:36:45Z",
+  "duration_seconds": 1.863,
+  "error": null
+}

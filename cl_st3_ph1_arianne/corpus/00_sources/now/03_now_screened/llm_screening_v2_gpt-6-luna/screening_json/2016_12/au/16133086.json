@@ -1,0 +1,77 @@
+{
+  "article_id": "16133086",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_12/au/16133086.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_12/au/16133086.json"
+  },
+  "manifest_row": {
+    "article_id": "16133086",
+    "group": "2016_12",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_12/au/16133086.txt",
+    "now_field_2": "281",
+    "date_original": "16-12-28",
+    "date_iso": "2016-12-28",
+    "source_name": "Dynamic Export - News Headlines",
+    "url": "http://www.dynamicexport.com.au/article/news/Key-new-appointment-for-Andrew-Robb",
+    "title": "Key new appointment for Andrew Robb",
+    "source_files": "[\"now-sources-2016.txt\", \"sources-16-12.txt\"]",
+    "metadata_article_files": "[\"text-16-12/text_16-12-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Andrew Robb's appointment as Chairman of Asialink and Asialink Business",
+    "climate_relevance": "Climate change appears only in a list of Robb's former political roles, as Shadow Minister for Infrastructure and Climate Change.",
+    "reason": "The article is about an organizational appointment and contains no meaningful discussion of climate change beyond the passing mention in a job title.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a80cbb2fb1bec4d7c9c522ebc11b454d47de190447ac18069575c62ba63cbe55",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "db72a5d5c023f4ba79ab11b5d84e9400cfee3e6c1f6ca48491f1f5bbbcaee41f",
+    "raw_response_text_sha256": "0c09bab4c70de9d647be56da0478313557b8c8a076ce9283b993a37c3bca353b"
+  },
+  "api_metadata": {
+    "id": "resp_00c49149a8f8de9c006b0607587a2887d2a3b000cc6b3cbf31",
+    "model": "gpt-6-luna",
+    "created_at": 1795557208.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 853,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1051
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Andrew Robb's appointment as Chairman of Asialink and Asialink Business\",\n  \"climate_relevance\": \"Climate change appears only in a list of Robb's former political roles, as Shadow Minister for Infrastructure and Climate Change.\",\n  \"reason\": \"The article is about an organizational appointment and contains no meaningful discussion of climate change beyond the passing mention in a job title.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:53:30Z",
+  "duration_seconds": 1.83,
+  "error": null
+}

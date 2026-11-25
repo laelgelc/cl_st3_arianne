@@ -1,0 +1,77 @@
+{
+  "article_id": "70505825",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70505825.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70505825.json"
+  },
+  "manifest_row": {
+    "article_id": "70505825",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70505825.txt",
+    "now_field_2": "1735",
+    "date_original": "19-02-12",
+    "date_iso": "2019-02-12",
+    "source_name": "Stuff.co.nz",
+    "url": "https://www.stuff.co.nz/world/americas/donald-trumps-america/110551559/fact-check-donald-trump-on-the-wall-and-a-ban-on-cows",
+    "title": "Fact check: Donald Trump on the wall, and a ban on cows?",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Fact-checking Donald Trump's claims about a border wall, immigration, and the Green New Deal.",
+    "climate_relevance": "The article discusses the Green New Deal as a plan to combat climate change and reduce emissions, including methane from cows and emissions from air travel. This is meaningful climate discourse, but it occupies only a small part of an article mainly focused on border security and immigration.",
+    "reason": "Climate change and emissions are addressed in the article's discussion of Trump's characterization of the Green New Deal, but they are not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8f05930553b1294abb6d9f62fdf3dac6c84ab2bc95c3623e41d330dfee610e78",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a62fd527333ed64008e536b2d078fdaa89acfb73195ab2763f2cbdc23b635818",
+    "raw_response_text_sha256": "5e5ba6d07ce9541454ad9ebe6b0b4c1770b4ee108acfe01c6ecff278ebac1926"
+  },
+  "api_metadata": {
+    "id": "resp_025afcce1c0047c9006b063d0f80a087d1afa2389a8453e375",
+    "model": "gpt-6-luna",
+    "created_at": 1795570959.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2718,
+      "input_tokens_details": {
+        "cache_write_tokens": 2715,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2715
+        }
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 3010
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Fact-checking Donald Trump's claims about a border wall, immigration, and the Green New Deal.\",\n  \"climate_relevance\": \"The article discusses the Green New Deal as a plan to combat climate change and reduce emissions, including methane from cows and emissions from air travel. This is meaningful climate discourse, but it occupies only a small part of an article mainly focused on border security and immigration.\",\n  \"reason\": \"Climate change and emissions are addressed in the article's discussion of Trump's characterization of the Green New Deal, but they are not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:42Z",
+  "duration_seconds": 2.715,
+  "error": null
+}

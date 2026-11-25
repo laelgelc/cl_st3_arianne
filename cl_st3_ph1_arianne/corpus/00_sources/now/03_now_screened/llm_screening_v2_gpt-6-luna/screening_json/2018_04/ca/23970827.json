@@ -1,0 +1,77 @@
+{
+  "article_id": "23970827",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_04/ca/23970827.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_04/ca/23970827.json"
+  },
+  "manifest_row": {
+    "article_id": "23970827",
+    "group": "2018_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_04/ca/23970827.txt",
+    "now_field_2": "1117",
+    "date_original": "18-04-02",
+    "date_iso": "2018-04-02",
+    "source_name": "CBC.ca",
+    "url": "http://www.cbc.ca/news/thenational/the-national-today-newsletter-climate-change-homicide-rate-syria-rebels-1.4592951",
+    "title": "Paris goal too little to avoid worst effects of climate change, scientists ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-04.txt\"]",
+    "metadata_article_files": "[\"text-18-04/18-04-ca.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Scientific studies on the severe impacts of climate change even if global warming is limited to 2°C",
+    "climate_relevance": "The newsletter’s lead story discusses climate research, projected impacts on oceans, food security, economies, drought, and biodiversity, and the adequacy of the Paris Agreement’s temperature goals.",
+    "reason": "Climate change is the focus of a substantial, dedicated lead section, making the text relevant as core climate coverage. Other unrelated news items also appear in the newsletter.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d3564b6c6650c8cc090eeb05fe22ddb0e36d1a478c0b8db9719238ad50323888",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4d4aebc84090822e1407b2a3899622e19fda354316699f2f756ffd613e3b4b2d",
+    "raw_response_text_sha256": "f873e81e8438b51776be4ac85d2aa941f3b21672588c9f0edc237c5c0ab8a2c5"
+  },
+  "api_metadata": {
+    "id": "resp_0c1d25cca7fc0fe9006b0611e5f84487d29032450365d8fa60",
+    "model": "gpt-6-luna",
+    "created_at": 1795559910.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2075,
+      "input_tokens_details": {
+        "cache_write_tokens": 2072,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2072
+        }
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 2334
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Scientific studies on the severe impacts of climate change even if global warming is limited to 2°C\",\n  \"climate_relevance\": \"The newsletter’s lead story discusses climate research, projected impacts on oceans, food security, economies, drought, and biodiversity, and the adequacy of the Paris Agreement’s temperature goals.\",\n  \"reason\": \"Climate change is the focus of a substantial, dedicated lead section, making the text relevant as core climate coverage. Other unrelated news items also appear in the newsletter.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:38:32Z",
+  "duration_seconds": 2.177,
+  "error": null
+}

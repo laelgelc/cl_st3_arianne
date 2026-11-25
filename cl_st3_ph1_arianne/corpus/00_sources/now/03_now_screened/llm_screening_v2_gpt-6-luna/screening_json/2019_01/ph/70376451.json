@@ -1,0 +1,77 @@
+{
+  "article_id": "70376451",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/ph/70376451.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/ph/70376451.json"
+  },
+  "manifest_row": {
+    "article_id": "70376451",
+    "group": "2019_01",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/ph/70376451.txt",
+    "now_field_2": "629",
+    "date_original": "19-01-01",
+    "date_iso": "2019-01-01",
+    "source_name": "Tempo",
+    "url": "http://tempo.com.ph/2019/01/01/heaps-of-trash-left-by-new-year-revelers-denounced/",
+    "title": "Heaps of trash left by New Year revelers denounced",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Post-New Year litter and solid-waste management in Metro Manila",
+    "climate_relevance": "Climate change is briefly invoked as a general environmental concern, without discussion of its causes, impacts, or connection to the reported waste.",
+    "reason": "The article focuses on litter, consumer behavior, and waste-management practices. Its single vague reference to climate change is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "07aa5b3b6ea0e0e4aa5bdecf4e8bd93746a2affcd9af3c52ff8c6c1d97aab3f1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "22e88cab5bea975cc51e646ba3108a2b40811e0a07f4fb1caa91e893ec1336a3",
+    "raw_response_text_sha256": "a16c6938f32537b748690182d063564be51e1bb6be77a656b3d449952ee90f07"
+  },
+  "api_metadata": {
+    "id": "resp_07a56ce0c228fd01006b063c3d123087d1bbd60d41fc888910",
+    "model": "gpt-6-luna",
+    "created_at": 1795570749.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1324,
+      "input_tokens_details": {
+        "cache_write_tokens": 1321,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1321
+        }
+      },
+      "output_tokens": 281,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 1605
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Post-New Year litter and solid-waste management in Metro Manila\",\n  \"climate_relevance\": \"Climate change is briefly invoked as a general environmental concern, without discussion of its causes, impacts, or connection to the reported waste.\",\n  \"reason\": \"The article focuses on litter, consumer behavior, and waste-management practices. Its single vague reference to climate change is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:39:11Z",
+  "duration_seconds": 2.625,
+  "error": null
+}

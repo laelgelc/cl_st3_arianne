@@ -1,0 +1,77 @@
+{
+  "article_id": "41375409",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/gb/41375409.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/gb/41375409.json"
+  },
+  "manifest_row": {
+    "article_id": "41375409",
+    "group": "2019_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/gb/41375409.txt",
+    "now_field_2": "669",
+    "date_original": "19-10-01",
+    "date_iso": "2019-10-01",
+    "source_name": "zawya.com",
+    "url": "https://www.zawya.com/mena/en/press-releases/story/Chief_Executive_Officer_of_UAEs_Crescent_Enterprises_appointed_to_UNESCO_Commission-ZAWYA20190930110533/",
+    "title": "Chief Executive Officer of UAE's Crescent Enterprises ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "background",
+    "main_topic": "A business executive's appointment to a UNESCO commission on the future of education",
+    "climate_relevance": "Climate change is named as one of several developments the commission will consider when reimagining education, alongside environmental degradation and changing patterns of human mobility.",
+    "reason": "The main press release is about education, not climate change, and gives climate issues no detailed treatment. However, it frames climate change as a relevant context for education's future, making it more than an unrelated or boilerplate mention. A separate press release about Emiratisation appears later and is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "29a99ea4e233efb2e4889755f96ae9cd415300d470dce77fee426f82c373cb0e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "eb8ab549646893cc0109d93feb4ebd9235c52bb94d274883bdcfdab654a8db82",
+    "raw_response_text_sha256": "00bca74ede4952cce50fea66a059dde7a103295cfe7a94ab1ab4ba25a8ee2f66"
+  },
+  "api_metadata": {
+    "id": "resp_03bfae4d90a6a0cb006b06217a40a087d28f96a63c0ecc3aab",
+    "model": "gpt-6-luna",
+    "created_at": 1795563898.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2115,
+      "input_tokens_details": {
+        "cache_write_tokens": 2112,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2112
+        }
+      },
+      "output_tokens": 415,
+      "output_tokens_details": {
+        "reasoning_tokens": 237
+      },
+      "total_tokens": 2530
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A business executive's appointment to a UNESCO commission on the future of education\",\n  \"climate_relevance\": \"Climate change is named as one of several developments the commission will consider when reimagining education, alongside environmental degradation and changing patterns of human mobility.\",\n  \"reason\": \"The main press release is about education, not climate change, and gives climate issues no detailed treatment. However, it frames climate change as a relevant context for education's future, making it more than an unrelated or boilerplate mention. A separate press release about Emiratisation appears later and is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:45:01Z",
+  "duration_seconds": 3.433,
+  "error": null
+}

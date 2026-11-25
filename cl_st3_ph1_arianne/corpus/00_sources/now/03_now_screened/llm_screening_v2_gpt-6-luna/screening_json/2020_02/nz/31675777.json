@@ -1,0 +1,77 @@
+{
+  "article_id": "31675777",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/nz/31675777.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/nz/31675777.json"
+  },
+  "manifest_row": {
+    "article_id": "31675777",
+    "group": "2020_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/nz/31675777.txt",
+    "now_field_2": "1046",
+    "date_original": "20-02-28",
+    "date_iso": "2020-02-28",
+    "source_name": "newsroom.co.nz",
+    "url": "https://www.newsroom.co.nz/2020/02/25/1048942/run-to-failure-on-infrastructure-nears-finish-line",
+    "title": "How `run to failure' failed in Wellington - <strong>newsroom.co.nz</strong>",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Wellington’s water infrastructure failures and the underinvestment in pipe renewals.",
+    "climate_relevance": "Climate change appears only in a promotional statement about Newsroom’s coverage, not in the article’s discussion.",
+    "reason": "The article focuses on local water infrastructure, council budgets, and aging pipes. Its sole climate change reference is boilerplate in a journalism-support appeal and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a2b7b172744869d405d29ba163085775f7e790e8609a3824ce4e9a061885add4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "12eca4659499d287f7ddc4352a9b6b1b3881698cc64bd02460139c8752dea13d",
+    "raw_response_text_sha256": "0982cd7fa33600a1dd9eb7f25f87ca648528c6e0ad73d74fac2224741d5e2b72"
+  },
+  "api_metadata": {
+    "id": "resp_0fb322e022e1531f006b0618e48f2c87d29438196fc5334b27",
+    "model": "gpt-6-luna",
+    "created_at": 1795561700.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1883,
+      "input_tokens_details": {
+        "cache_write_tokens": 1880,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1880
+        }
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 2112
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Wellington’s water infrastructure failures and the underinvestment in pipe renewals.\",\n  \"climate_relevance\": \"Climate change appears only in a promotional statement about Newsroom’s coverage, not in the article’s discussion.\",\n  \"reason\": \"The article focuses on local water infrastructure, council budgets, and aging pipes. Its sole climate change reference is boilerplate in a journalism-support appeal and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:08:22Z",
+  "duration_seconds": 2.297,
+  "error": null
+}

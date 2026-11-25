@@ -1,0 +1,77 @@
+{
+  "article_id": "62048532",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/tz/62048532.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/tz/62048532.json"
+  },
+  "manifest_row": {
+    "article_id": "62048532",
+    "group": "2020_08",
+    "country_code": "tz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/tz/62048532.txt",
+    "now_field_2": "282",
+    "date_original": "20-08-11",
+    "date_iso": "2020-08-11",
+    "source_name": "ippmedia.com",
+    "url": "https://www.ippmedia.com/en/news/govt-reaffirms-commitment-end-use-charcoal-hai",
+    "title": "Govt reaffirms commitment to end use of charcoal in Hai",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-tz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A government campaign in Hai District to replace charcoal and firewood with alternative energy sources.",
+    "climate_relevance": "The main article discusses environmental degradation and energy alternatives but does not meaningfully address climate change. The only climate-change reference appears in an unrelated “Most Popular” item.",
+    "reason": "The identifiable main article is about reducing charcoal use and environmental conservation, while the climate-change mention is an unrelated sidebar snippet rather than substantive discourse in the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0eb1208c72440e9665158aa9a7b14de423a7aa7f10840a97be355d63ba502258",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c16f59ec86a053ea30f8d2b3351e8b82119e94aac0088578ed43b3aa021d7bc7",
+    "raw_response_text_sha256": "eb8dbbf697e054cf649fc50e272db5392db593dcc2692cac1ce8eed9c50bc0c9"
+  },
+  "api_metadata": {
+    "id": "resp_0a34768f47fd4395006b0639403f1c87d1b739f128a43e43c3",
+    "model": "gpt-6-luna",
+    "created_at": 1795569984.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 849,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 1113
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A government campaign in Hai District to replace charcoal and firewood with alternative energy sources.\",\n  \"climate_relevance\": \"The main article discusses environmental degradation and energy alternatives but does not meaningfully address climate change. The only climate-change reference appears in an unrelated “Most Popular” item.\",\n  \"reason\": \"The identifiable main article is about reducing charcoal use and environmental conservation, while the climate-change mention is an unrelated sidebar snippet rather than substantive discourse in the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:26:26Z",
+  "duration_seconds": 2.289,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "21159031",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/in/21159031.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/in/21159031.json"
+  },
+  "manifest_row": {
+    "article_id": "21159031",
+    "group": "2017_10",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/in/21159031.txt",
+    "now_field_2": "613",
+    "date_original": "17-10-17",
+    "date_iso": "2017-10-17",
+    "source_name": "Times of India",
+    "url": "https://timesofindia.indiatimes.com/city/goa/tenants-slam-tiracol-projects-green-nod/articleshow/61124564.cms",
+    "title": "Tenants slam Tiracol project's green nod",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-IN.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A dispute over tenancy rights and environmental clearance for a golf course and ecotourism resort in Tiracol.",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Environment, Forest and Climate Change; the text contains no meaningful discussion of climate change.",
+    "reason": "The article focuses on land-tenancy litigation and project approvals. Its environmental references concern clearance procedures and tree planting, not climate change discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "095ec1a0044ffbb9a67c1fc31472bbef622480761e67c58f6dbebc7ea79ef47e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5b13a78cd5fcb1fc2af56666359d893736d4b0dca235c819f2f58d31267441c2",
+    "raw_response_text_sha256": "d401e5d8436b6ef5cd6944eff8e7203232f044c3b361a38a4e0b9f3cf0a84b75"
+  },
+  "api_metadata": {
+    "id": "resp_02fce7cf75e98eb8006b060e575e5487d284c14091ec240e4b",
+    "model": "gpt-6-luna",
+    "created_at": 1795558999.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1328,
+      "input_tokens_details": {
+        "cache_write_tokens": 1325,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1325
+        }
+      },
+      "output_tokens": 262,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 1590
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A dispute over tenancy rights and environmental clearance for a golf course and ecotourism resort in Tiracol.\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Environment, Forest and Climate Change; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on land-tenancy litigation and project approvals. Its environmental references concern clearance procedures and tree planting, not climate change discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:23:21Z",
+  "duration_seconds": 2.043,
+  "error": null
+}

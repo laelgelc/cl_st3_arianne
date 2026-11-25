@@ -1,0 +1,77 @@
+{
+  "article_id": "32371547",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/ca/32371547.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/ca/32371547.json"
+  },
+  "manifest_row": {
+    "article_id": "32371547",
+    "group": "2020_11",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/ca/32371547.txt",
+    "now_field_2": "480",
+    "date_original": "20-11-25",
+    "date_iso": "2020-11-25",
+    "source_name": "theprovince.com",
+    "url": "https://theprovince.com/news/vancouver-weather-cloudy-with-a-chance-of-showers-then-rain",
+    "title": "Vancouver Weather: Cloudy, with a chance of showers, then ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Vancouver weather forecast",
+    "climate_relevance": "Climate change appears only in the name of Environment and Climate Change Canada; the text discusses short-term weather, not climate change.",
+    "reason": "The article is a local weather forecast. Its sole climate-related reference is an agency name, which does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "64a332a4ca2901fda35438660c379696f205a9408ac2e73c0d6e873b08b14133",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cacd60b204cac9e2d2eb684b362e63ad10bff0c72671482a4fafe89b7740f259",
+    "raw_response_text_sha256": "f4795c3b51bc3441d35a4ea2aa67449885dbf919deb15766d99db8a5ffe33c23"
+  },
+  "api_metadata": {
+    "id": "resp_017ca857ea6c59ef006b061c6395d487d2bc67d2c2cdddaa6e",
+    "model": "gpt-6-luna",
+    "created_at": 1795562595.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1124,
+      "input_tokens_details": {
+        "cache_write_tokens": 1121,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1121
+        }
+      },
+      "output_tokens": 203,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 1327
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Vancouver weather forecast\",\n  \"climate_relevance\": \"Climate change appears only in the name of Environment and Climate Change Canada; the text discusses short-term weather, not climate change.\",\n  \"reason\": \"The article is a local weather forecast. Its sole climate-related reference is an agency name, which does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:23:17Z",
+  "duration_seconds": 2.061,
+  "error": null
+}

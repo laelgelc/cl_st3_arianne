@@ -1,0 +1,77 @@
+{
+  "article_id": "40905709",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/my/40905709.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/my/40905709.json"
+  },
+  "manifest_row": {
+    "article_id": "40905709",
+    "group": "2019_05",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/my/40905709.txt",
+    "now_field_2": "447",
+    "date_original": "19-05-01",
+    "date_iso": "2019-05-01",
+    "source_name": "The Star Online",
+    "url": "https://www.thestar.com.my/news/nation/2019/05/02/pulling-out-the-big-guns/",
+    "title": "Pulling out the big guns",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Malaysian by-election campaign in Sandakan",
+    "climate_relevance": "Climate change appears only in the formal title of a minister; no climate-related discourse is presented.",
+    "reason": "The article focuses on candidates, campaigning, and voter turnout. The climate reference is part of a minister's portfolio title and is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a4551cbecd02d86cdc40d0a115552f8fcf2bfdd7607ef7b0f0097dc079bf11b5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c6fe97a31fa652a2878c1487f63a7844795111c3362bbc1d9b5a93576a7241ff",
+    "raw_response_text_sha256": "e85d2506edb59d46810cb06d91ef5e4ccbdef049a37f4c179e004767775bc84f"
+  },
+  "api_metadata": {
+    "id": "resp_0c36d3d2b0a828e0006b06204e118887d29181cae52c57a611",
+    "model": "gpt-6-luna",
+    "created_at": 1795563598.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1088,
+      "input_tokens_details": {
+        "cache_write_tokens": 1085,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1085
+        }
+      },
+      "output_tokens": 185,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 1273
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Malaysian by-election campaign in Sandakan\",\n  \"climate_relevance\": \"Climate change appears only in the formal title of a minister; no climate-related discourse is presented.\",\n  \"reason\": \"The article focuses on candidates, campaigning, and voter turnout. The climate reference is part of a minister's portfolio title and is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:59Z",
+  "duration_seconds": 1.894,
+  "error": null
+}

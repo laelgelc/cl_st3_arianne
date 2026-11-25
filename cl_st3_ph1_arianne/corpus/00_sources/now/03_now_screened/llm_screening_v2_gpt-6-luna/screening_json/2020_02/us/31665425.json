@@ -1,0 +1,77 @@
+{
+  "article_id": "31665425",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/31665425.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/31665425.json"
+  },
+  "manifest_row": {
+    "article_id": "31665425",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/31665425.txt",
+    "now_field_2": "1225",
+    "date_original": "20-02-23",
+    "date_iso": "2020-02-23",
+    "source_name": "pbs.org",
+    "url": "https://www.pbs.org/newshour/show/can-beer-help-save-an-arizona-river",
+    "title": "Can beer help save an Arizona river? | PBS NewsHour Weekend",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Agricultural water conservation and crop conversion in Arizona's Verde River region",
+    "climate_relevance": "The report identifies climate change, alongside long-term drought and development, as a threat to the Verde River and describes water-saving farming practices intended to help sustain river flows.",
+    "reason": "The main focus is a local barley-growing and malting project designed to conserve water, rather than climate change itself. Climate change is explicitly linked to drought and pressure on the river, making it meaningful background discourse but not central coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "65abdc9abae65cbc0910bf0e2842e2a87de29ab1d9bf47fe88ebe8b007162b86",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5fff0c6682c08940f3d45af298bead7afe09b960fe907c7b5da3cdc085b59ec4",
+    "raw_response_text_sha256": "3abb5defcf9dc882ae3a86dd6f83bf0f7937e1db6dc1c885815ae9023912eb16"
+  },
+  "api_metadata": {
+    "id": "resp_01d2dcbafe61f1ad006b0618c894d887d296afc46c19273177",
+    "model": "gpt-6-luna",
+    "created_at": 1795561672.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2146,
+      "input_tokens_details": {
+        "cache_write_tokens": 2143,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2143
+        }
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 2417
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Agricultural water conservation and crop conversion in Arizona's Verde River region\",\n  \"climate_relevance\": \"The report identifies climate change, alongside long-term drought and development, as a threat to the Verde River and describes water-saving farming practices intended to help sustain river flows.\",\n  \"reason\": \"The main focus is a local barley-growing and malting project designed to conserve water, rather than climate change itself. Climate change is explicitly linked to drought and pressure on the river, making it meaningful background discourse but not central coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:07:54Z",
+  "duration_seconds": 2.361,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "84958027",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/nz/84958027.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/nz/84958027.json"
+  },
+  "manifest_row": {
+    "article_id": "84958027",
+    "group": "2020_05",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/nz/84958027.txt",
+    "now_field_2": "356",
+    "date_original": "20-05-18",
+    "date_iso": "2020-05-18",
+    "source_name": "rnz",
+    "url": "https://www.rnz.co.nz/news/national/417009/auckland-house-waste-during-covid-19-lockdown-increases-12-percent",
+    "title": "Auckland house waste during Covid-19 lockdown increases 12 percent",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Auckland household waste and recycling changes during the Covid-19 lockdown",
+    "climate_relevance": "Climate change appears only in the name of a council committee; the article does not discuss climate change or its implications.",
+    "reason": "The article focuses on waste and recycling during lockdown, with no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e423fe2d227902024c06b6a0fbddbd134bc699375af5e8bbadb5366084e70f1c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a838e325b6cf8b31f217d1c7905921e6d0a673d6efc1698832f7fa98e767d7e1",
+    "raw_response_text_sha256": "2f235a7979ee1f10a9216466d6be6f4ab225bd43be46d3d52d40aaba99c89b97"
+  },
+  "api_metadata": {
+    "id": "resp_0960e8a5432d5d2f006b064aec33f087d189074772e74ae6ff",
+    "model": "gpt-6-luna",
+    "created_at": 1795574508.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 952,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 181,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1133
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Auckland household waste and recycling changes during the Covid-19 lockdown\",\n  \"climate_relevance\": \"Climate change appears only in the name of a council committee; the article does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on waste and recycling during lockdown, with no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:41:49Z",
+  "duration_seconds": 1.771,
+  "error": null
+}

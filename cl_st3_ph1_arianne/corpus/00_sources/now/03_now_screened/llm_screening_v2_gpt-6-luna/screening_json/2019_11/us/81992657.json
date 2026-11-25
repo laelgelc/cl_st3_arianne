@@ -1,0 +1,77 @@
+{
+  "article_id": "81992657",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/81992657.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/81992657.json"
+  },
+  "manifest_row": {
+    "article_id": "81992657",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/81992657.txt",
+    "now_field_2": "996",
+    "date_original": "19-11-04",
+    "date_iso": "2019-11-04",
+    "source_name": "Sioux City Journal",
+    "url": "https://siouxcityjournal.com/news/state-and-regional/govt-and-politics/iowa-lawmakers-propose-college-athletes-be-paid/article_aaad9c32-6b27-5f5d-80ce-b8bab0476c5b.html",
+    "title": "Iowa lawmakers propose college athletes be paid",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Proposed legislation to allow college athletes to receive financial compensation",
+    "climate_relevance": "The main article is about college athlete compensation and contains no climate-change discourse. A separate, unrelated snippet briefly mentions the Green New Deal, combatting climate change, and transforming the energy system.",
+    "reason": "The identifiable main article is unrelated to climate change; the climate reference occurs only in a separate snippet and does not make the main article useful for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "78f428ce0953328654ef270dc6716e31ac52dac3710c4271185656daf961b9a5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0267d5b047499142381e06a154c1c904d6ce400f619e1842c7b8c2106ad8e4c7",
+    "raw_response_text_sha256": "3fc9fdf2a302320273bae3fb1a95e8c28835112f79b8b2d5693bea26f351a50b"
+  },
+  "api_metadata": {
+    "id": "resp_018d4f042749f782006b0647ec44b487d1bf1fc4ede2500c53",
+    "model": "gpt-6-luna",
+    "created_at": 1795573740.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2306,
+      "input_tokens_details": {
+        "cache_write_tokens": 2303,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2303
+        }
+      },
+      "output_tokens": 335,
+      "output_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "total_tokens": 2641
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Proposed legislation to allow college athletes to receive financial compensation\",\n  \"climate_relevance\": \"The main article is about college athlete compensation and contains no climate-change discourse. A separate, unrelated snippet briefly mentions the Green New Deal, combatting climate change, and transforming the energy system.\",\n  \"reason\": \"The identifiable main article is unrelated to climate change; the climate reference occurs only in a separate snippet and does not make the main article useful for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:29:02Z",
+  "duration_seconds": 2.619,
+  "error": null
+}

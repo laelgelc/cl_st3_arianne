@@ -1,0 +1,77 @@
+{
+  "article_id": "51322638",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/ca/51322638.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/ca/51322638.json"
+  },
+  "manifest_row": {
+    "article_id": "51322638",
+    "group": "2020_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/ca/51322638.txt",
+    "now_field_2": "477",
+    "date_original": "20-01-01",
+    "date_iso": "2020-01-01",
+    "source_name": "ctvnews.ca",
+    "url": "https://www.ctvnews.ca/world/australia-orders-mass-evacuation-of-fire-ravaged-towns-before-heat-wave-1.4749842",
+    "title": "Australia orders mass evacuation of fire-ravaged towns ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-ca1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "Evacuations and emergency response during Australia’s severe bushfire crisis",
+    "climate_relevance": "The text connects the fires to climate change through protests urging government action and a statement that scientists say climate change is lengthening and intensifying the bushfire season. It also mentions pressure on the prime minister over his climate-related actions.",
+    "reason": "The main focus is the immediate bushfire emergency, evacuations, and relief efforts. Climate change is meaningfully discussed as context and in relation to political debate, but it is not the article’s central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e9be2b74c75f4d2606875d7ef5d57bb1d87c4b0573c8848b9e09a5c890b7cdde",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7a65c40bad3df1df735770a991915f446bff03b766b17fcc3ef36040ab1c501d",
+    "raw_response_text_sha256": "646893a4f37b2a8f9123c07598094a5bf9b0374d95d501b636d3670f3ad7c7bb"
+  },
+  "api_metadata": {
+    "id": "resp_0cac0027ddff1f7e006b062d284d7087d198d5cce07d4a0fa0",
+    "model": "gpt-6-luna",
+    "created_at": 1795566888.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1113,
+      "input_tokens_details": {
+        "cache_write_tokens": 1110,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1110
+        }
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1367
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Evacuations and emergency response during Australia’s severe bushfire crisis\",\n  \"climate_relevance\": \"The text connects the fires to climate change through protests urging government action and a statement that scientists say climate change is lengthening and intensifying the bushfire season. It also mentions pressure on the prime minister over his climate-related actions.\",\n  \"reason\": \"The main focus is the immediate bushfire emergency, evacuations, and relief efforts. Climate change is meaningfully discussed as context and in relation to political debate, but it is not the article’s central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:34:50Z",
+  "duration_seconds": 2.577,
+  "error": null
+}

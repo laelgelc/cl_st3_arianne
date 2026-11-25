@@ -1,0 +1,77 @@
+{
+  "article_id": "70579039",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/us/70579039.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/us/70579039.json"
+  },
+  "manifest_row": {
+    "article_id": "70579039",
+    "group": "2019_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/us/70579039.txt",
+    "now_field_2": "1574",
+    "date_original": "19-03-09",
+    "date_iso": "2019-03-09",
+    "source_name": "The Atlantic",
+    "url": "https://www.theatlantic.com/science/archive/2019/03/indoor-plants-clean-air-best-none-them/584509/",
+    "title": "Houseplants Don't Actually Clean the Air",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Whether houseplants meaningfully clean indoor air",
+    "climate_relevance": "Climate change appears only in the author's biographical note; the article focuses on indoor air pollution and houseplants, not climate discourse.",
+    "reason": "The article's discussion of air pollutants and environmental concerns is not meaningfully about climate change. The only explicit climate reference is boilerplate author metadata.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "88e5bc438fe36da4ff3b1ab644e6287e69c50b5c6702b1810e00c5c02bd831d5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "338ed2f43f668042bca7d67bfe1c438bfa58266a1f8f1e9f20ffecf31bbe3e22",
+    "raw_response_text_sha256": "6103fa9a6a789928c1a7ef11e98eb6e0c9bc39a069318b92d558ecb39bcd1065"
+  },
+  "api_metadata": {
+    "id": "resp_0f8da1abef030973006b063db3e6f887d19a1173ef5dbfc483",
+    "model": "gpt-6-luna",
+    "created_at": 1795571124.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2576,
+      "input_tokens_details": {
+        "cache_write_tokens": 2573,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2573
+        }
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 2791
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Whether houseplants meaningfully clean indoor air\",\n  \"climate_relevance\": \"Climate change appears only in the author's biographical note; the article focuses on indoor air pollution and houseplants, not climate discourse.\",\n  \"reason\": \"The article's discussion of air pollutants and environmental concerns is not meaningfully about climate change. The only explicit climate reference is boilerplate author metadata.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:45:26Z",
+  "duration_seconds": 2.31,
+  "error": null
+}

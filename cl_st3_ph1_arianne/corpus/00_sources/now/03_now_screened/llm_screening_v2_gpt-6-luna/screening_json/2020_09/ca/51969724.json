@@ -1,0 +1,77 @@
+{
+  "article_id": "51969724",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/ca/51969724.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/ca/51969724.json"
+  },
+  "manifest_row": {
+    "article_id": "51969724",
+    "group": "2020_09",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/ca/51969724.txt",
+    "now_field_2": "599",
+    "date_original": "20-09-21",
+    "date_iso": "2020-09-21",
+    "source_name": "newswire.ca",
+    "url": "https://www.newswire.ca/news-releases/opg-s-centre-for-canadian-nuclear-sustainability-announces-new-innovative-collaboration-between-laurentis-energy-partners-and-bwxt-807129337.html",
+    "title": "OPG's Centre for Canadian Nuclear Sustainability Announces ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A collaboration to develop technology for recycling heavy water used in nuclear facilities.",
+    "climate_relevance": "Climate change is mentioned only in a brief corporate description of OPG as a climate change leader; the announcement itself focuses on nuclear technology and heavy-water recycling.",
+    "reason": "The climate reference is boilerplate and provides no meaningful discussion of climate change, its impacts, or related policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "af6c015fc7d08349221a3ad852556abae2097f358858cb138741cb09057e88ca",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d87dbf1f2cc1d6fa14ebe6ef69872b2d94712e9e201b6321073e068b7c563897",
+    "raw_response_text_sha256": "c9fbed3c69cf702b3d46dcc0c03bd758ec1cb8e531bf862ef4c0c0efc29b6721"
+  },
+  "api_metadata": {
+    "id": "resp_001fee0290b83354006b062f81162487d1b3bfb14e45d9a3b0",
+    "model": "gpt-6-luna",
+    "created_at": 1795567489.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1350,
+      "input_tokens_details": {
+        "cache_write_tokens": 1347,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1347
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 1600
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A collaboration to develop technology for recycling heavy water used in nuclear facilities.\",\n  \"climate_relevance\": \"Climate change is mentioned only in a brief corporate description of OPG as a climate change leader; the announcement itself focuses on nuclear technology and heavy-water recycling.\",\n  \"reason\": \"The climate reference is boilerplate and provides no meaningful discussion of climate change, its impacts, or related policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:44:51Z",
+  "duration_seconds": 2.142,
+  "error": null
+}

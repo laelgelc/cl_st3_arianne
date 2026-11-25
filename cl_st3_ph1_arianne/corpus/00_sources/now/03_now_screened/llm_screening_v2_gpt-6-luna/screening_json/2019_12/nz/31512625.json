@@ -1,0 +1,77 @@
+{
+  "article_id": "31512625",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/nz/31512625.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/nz/31512625.json"
+  },
+  "manifest_row": {
+    "article_id": "31512625",
+    "group": "2019_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/nz/31512625.txt",
+    "now_field_2": "1250",
+    "date_original": "19-12-17",
+    "date_iso": "2019-12-17",
+    "source_name": "newsroom.co.nz",
+    "url": "https://www.newsroom.co.nz/@ideasroom/2019/12/17/926073/when-facial-recognition-goes-wrong",
+    "title": "When facial recognition goes wrong",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Facial recognition technology, surveillance, privacy, and regulation",
+    "climate_relevance": "Climate change appears only in a promotional sentence listing topics covered by the news outlet.",
+    "reason": "The article is about facial recognition and its legal and social implications; the climate reference is boilerplate and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9b71bee2bc5196a0cf59f2861b63dea7319cf75ed5852fb056ecd555ed4fd2c7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a83b75a308c9780291ef45b5ac73ce940117aa1872793b9dad557f36ae55b579",
+    "raw_response_text_sha256": "3b1034c42319204b5b933cfc4d264bea6ed51fff5b11d7973b383c885ae6b148"
+  },
+  "api_metadata": {
+    "id": "resp_0d57d17fe021b1ea006b0617b6f61487d290e02a1c1f767877",
+    "model": "gpt-6-luna",
+    "created_at": 1795561399.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2063,
+      "input_tokens_details": {
+        "cache_write_tokens": 2060,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2060
+        }
+      },
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 2271
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Facial recognition technology, surveillance, privacy, and regulation\",\n  \"climate_relevance\": \"Climate change appears only in a promotional sentence listing topics covered by the news outlet.\",\n  \"reason\": \"The article is about facial recognition and its legal and social implications; the climate reference is boilerplate and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:03:20Z",
+  "duration_seconds": 1.966,
+  "error": null
+}

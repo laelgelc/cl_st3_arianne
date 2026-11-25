@@ -1,0 +1,77 @@
+{
+  "article_id": "83260713",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83260713.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83260713.json"
+  },
+  "manifest_row": {
+    "article_id": "83260713",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83260713.txt",
+    "now_field_2": "201",
+    "date_original": "20-01-15",
+    "date_iso": "2020-01-15",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20200115010733-uhg94",
+    "title": "Badminton-World No.1 Momota leaves Malaysia hospital, on way home",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Badminton player Kento Momota's injuries in a vehicle collision",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the outlet's coverage areas.",
+    "reason": "The report is about a vehicle collision and Momota's recovery; the sole climate reference is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "64043d1ceb69602313fd9437ec68ff897cde7fcf0799ca25aa65871ffa95d3fd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b48d90dc26f79412b32b238c458d389caa1ee19206faa36be14f5fb42f3b9624",
+    "raw_response_text_sha256": "4dd473ce8d258b4f53e0259c9ffd750f0a5deaa031b9e8def23bbc8c03a2add8"
+  },
+  "api_metadata": {
+    "id": "resp_09c6471367db85f4006b06495bd3a887d18dfca0713b099cef",
+    "model": "gpt-6-luna",
+    "created_at": 1795574107.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 749,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 948
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Badminton player Kento Momota's injuries in a vehicle collision\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the outlet's coverage areas.\",\n  \"reason\": \"The report is about a vehicle collision and Momota's recovery; the sole climate reference is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:35:09Z",
+  "duration_seconds": 1.841,
+  "error": null
+}

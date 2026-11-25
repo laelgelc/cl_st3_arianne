@@ -1,0 +1,77 @@
+{
+  "article_id": "21469521",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/ca/21469521.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/ca/21469521.json"
+  },
+  "manifest_row": {
+    "article_id": "21469521",
+    "group": "2017_11",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/ca/21469521.txt",
+    "now_field_2": "1036",
+    "date_original": "17-11-03",
+    "date_iso": "2017-11-03",
+    "source_name": "Financial Post",
+    "url": "http://business.financialpost.com/commodities/end-of-oil-narratives-are-misleading-global-oil-demand-will-remain-at-90-million-bpd-till-at-least-2040",
+    "title": "'End of oil' narratives are misleading - global oil demand will ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Projected oil consumption and the effect of electric vehicles on oil demand",
+    "climate_relevance": "The column connects continued oil use to climate change and discusses reducing global carbon dioxide emissions, but climate is not its main focus.",
+    "reason": "The article is primarily about oil-demand projections, electric vehicles, and the persistence of oil consumption. Climate implications are meaningful but secondary. A Postmedia account and privacy notice appears after the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b4b621cd806cf8a8faed5f77c1afc6b9d8a08e69d0449688c008a927dedd8aa6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f767661d10fb86600ffea36d8e8bfe2846da7e83a3b11d67139436efb0119130",
+    "raw_response_text_sha256": "56a64ae357ef3aaa6ab77fc345fff1b89b3d933c29340c2b3bf3b5d7014f6fe9"
+  },
+  "api_metadata": {
+    "id": "resp_0ce0becec81ad6b1006b060edbea3087d2a351bd392f3911e4",
+    "model": "gpt-6-luna",
+    "created_at": 1795559132.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1807,
+      "input_tokens_details": {
+        "cache_write_tokens": 1804,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1804
+        }
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 2096
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Projected oil consumption and the effect of electric vehicles on oil demand\",\n  \"climate_relevance\": \"The column connects continued oil use to climate change and discusses reducing global carbon dioxide emissions, but climate is not its main focus.\",\n  \"reason\": \"The article is primarily about oil-demand projections, electric vehicles, and the persistence of oil consumption. Climate implications are meaningful but secondary. A Postmedia account and privacy notice appears after the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:25:34Z",
+  "duration_seconds": 2.474,
+  "error": null
+}

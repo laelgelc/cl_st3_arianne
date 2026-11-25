@@ -1,0 +1,77 @@
+{
+  "article_id": "70222372",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/us/70222372.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/us/70222372.json"
+  },
+  "manifest_row": {
+    "article_id": "70222372",
+    "group": "2018_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/us/70222372.txt",
+    "now_field_2": "6013",
+    "date_original": "18-11-07",
+    "date_iso": "2018-11-07",
+    "source_name": "New York Magazine",
+    "url": "http://nymag.com/intelligencer/2018/11/beto-orourke-and-the-limits-of-charisma.html",
+    "title": "Beto O'Rourke and the Limits of Charisma",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Beto O'Rourke's 2018 Senate campaign, political charisma, and its aftermath",
+    "climate_relevance": "The identifiable main article mentions climate change only as one issue in O'Rourke's campaign speech. A separate excerpt later in the text discusses a federal report on climate-change impacts, but it appears among numerous unrelated snippets.",
+    "reason": "The main article is a political profile, not climate coverage, and its climate reference is passing. Following the instruction to assess the identifiable main article, the separate climate-report excerpt does not make the main article suitable for the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2d89bb8ba46c58f70b074fb919575cab66922cd0d9f21189a546716b74568aee",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6910c89f0d6f533a4b4144caae8d6d0845a003afdeffa6a6916ab58f2e4406c6",
+    "raw_response_text_sha256": "3a47e414039e156125b2d57636049612ba64bedb525b2ebb9f36837bb52da8fa"
+  },
+  "api_metadata": {
+    "id": "resp_074c9bd5832ab66b006b063b677ba887d19ae7ddf021ac428f",
+    "model": "gpt-6-luna",
+    "created_at": 1795570535.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8510,
+      "input_tokens_details": {
+        "cache_write_tokens": 8507,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 8507
+        }
+      },
+      "output_tokens": 493,
+      "output_tokens_details": {
+        "reasoning_tokens": 307
+      },
+      "total_tokens": 9003
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Beto O'Rourke's 2018 Senate campaign, political charisma, and its aftermath\",\n  \"climate_relevance\": \"The identifiable main article mentions climate change only as one issue in O'Rourke's campaign speech. A separate excerpt later in the text discusses a federal report on climate-change impacts, but it appears among numerous unrelated snippets.\",\n  \"reason\": \"The main article is a political profile, not climate coverage, and its climate reference is passing. Following the instruction to assess the identifiable main article, the separate climate-report excerpt does not make the main article suitable for the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:35:39Z",
+  "duration_seconds": 4.443,
+  "error": null
+}

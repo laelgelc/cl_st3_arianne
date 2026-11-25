@@ -1,0 +1,77 @@
+{
+  "article_id": "32166315",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/nz/32166315.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/nz/32166315.json"
+  },
+  "manifest_row": {
+    "article_id": "32166315",
+    "group": "2020_10",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/nz/32166315.txt",
+    "now_field_2": "652",
+    "date_original": "20-10-22",
+    "date_iso": "2020-10-22",
+    "source_name": "scoop.co.nz",
+    "url": "https://www.scoop.co.nz/stories/BU2010/S00356/2degrees-appoints-new-chief-of-strategy.htm",
+    "title": "2degrees Appoints New Chief of Strategy | Scoop News",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "A telecommunications company appoints a new chief of strategy.",
+    "climate_relevance": "An unrelated Fonterra snippet describes a sustainability tool as intended to help address climate change. A separate glacier-study snippet discusses glacial retreat but does not explicitly connect it to climate change.",
+    "reason": "The identifiable main article is about a telecommunications appointment, while the climate content appears in appended snippets. The Fonterra snippet contains brief but meaningful climate discourse, so the text is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "26f904fab451fe4e72dc485821fdf22da0dab734242442e7604b8a69a5b0b0ca",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "22ad05d3c8b555867e9d893aeadae3002d188ad0b81f630b5d1261ebe9d1e0cd",
+    "raw_response_text_sha256": "a28d21b1c2f82ad930de2daaafd67647c10ef33951fa5d7e3ec950b3af356a1e"
+  },
+  "api_metadata": {
+    "id": "resp_0398e5547eec9a8a006b061bc0521c87d29a5400387ac4f361",
+    "model": "gpt-6-luna",
+    "created_at": 1795562432.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1373,
+      "input_tokens_details": {
+        "cache_write_tokens": 1370,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1370
+        }
+      },
+      "output_tokens": 512,
+      "output_tokens_details": {
+        "reasoning_tokens": 349
+      },
+      "total_tokens": 1885
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A telecommunications company appoints a new chief of strategy.\",\n  \"climate_relevance\": \"An unrelated Fonterra snippet describes a sustainability tool as intended to help address climate change. A separate glacier-study snippet discusses glacial retreat but does not explicitly connect it to climate change.\",\n  \"reason\": \"The identifiable main article is about a telecommunications appointment, while the climate content appears in appended snippets. The Fonterra snippet contains brief but meaningful climate discourse, so the text is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:20:36Z",
+  "duration_seconds": 4.192,
+  "error": null
+}

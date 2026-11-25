@@ -1,0 +1,77 @@
+{
+  "article_id": "84684834",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_04/us/84684834.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_04/us/84684834.json"
+  },
+  "manifest_row": {
+    "article_id": "84684834",
+    "group": "2020_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_04/us/84684834.txt",
+    "now_field_2": "217",
+    "date_original": "20-04-22",
+    "date_iso": "2020-04-22",
+    "source_name": "NPR",
+    "url": "https://www.npr.org/people/841307178/teri-schultz",
+    "title": "Teri Schultz",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-04.txt\"]",
+    "metadata_article_files": "[\"text-20-04/20-04-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A collection of unrelated archived news items and captions",
+    "climate_relevance": "Climate change appears only in an archive headline about Belgian students protesting for climate action; no substantive climate-related article text is provided.",
+    "reason": "The climate reference is a headline within a mixed archive-style snippet, with no meaningful climate discourse in the available text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c0000b8ccad44a204b4e588b0418a9ddb6b718716d15e06bcf82354901c6d7e3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cd35a3af3f3a5afbbc49b00fe3a68a8faa30786c4dd2fdbb4fcb5c7b92b19e30",
+    "raw_response_text_sha256": "4b351f4d015fdaaeeada0c6f1d1e66a306f98023f483acd25612bf3f4cb841af"
+  },
+  "api_metadata": {
+    "id": "resp_0df9a090878c6bb0006b064abcac1887d1a5c071116530c6a9",
+    "model": "gpt-6-luna",
+    "created_at": 1795574460.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 788,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 204,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 992
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A collection of unrelated archived news items and captions\",\n  \"climate_relevance\": \"Climate change appears only in an archive headline about Belgian students protesting for climate action; no substantive climate-related article text is provided.\",\n  \"reason\": \"The climate reference is a headline within a mixed archive-style snippet, with no meaningful climate discourse in the available text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:41:02Z",
+  "duration_seconds": 2.189,
+  "error": null
+}

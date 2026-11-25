@@ -1,0 +1,77 @@
+{
+  "article_id": "20009233",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/gb/20009233.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/gb/20009233.json"
+  },
+  "manifest_row": {
+    "article_id": "20009233",
+    "group": "2017_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/gb/20009233.txt",
+    "now_field_2": "873",
+    "date_original": "17-08-14",
+    "date_iso": "2017-08-14",
+    "source_name": "The Independent",
+    "url": "http://www.independent.co.uk/news/world/americas/joe-arpaio-donald-trump-pardon-arizona-sheriff-illegal-immigration-fox-news-a7893476.html",
+    "title": "Donald Trump considers pardoning Joe Arpaio, sheriff who violated ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-GB.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "background",
+    "main_topic": "Donald Trump’s possible pardon of former Arizona sheriff Joe Arpaio",
+    "climate_relevance": "An embedded gallery caption briefly describes Trump’s effort to reverse climate policies and reassess the Clean Power Plan.",
+    "reason": "The article is mainly about Arpaio’s conviction and a possible pardon. Climate policy appears only in a separate item in an embedded gallery, but that item contains specific policy information, making it relevant as background discourse rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0d973fa2fda9037349d972fb0a0be5ed3cd9f6b9f73d93cc5306fa6382b3bab7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "363dfc6e8c7d052c3613f2d607a584ae1bd51118ab47d589807eaa0f9ce927ee",
+    "raw_response_text_sha256": "1ab3236c14d10d1de2da402465bf82a9406450513ba79a3c2936f795ab0511bc"
+  },
+  "api_metadata": {
+    "id": "resp_074e0b997127dd4b006b060cc1acd087d2ab24bf9a46524cca",
+    "model": "gpt-6-luna",
+    "created_at": 1795558593.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1658,
+      "input_tokens_details": {
+        "cache_write_tokens": 1655,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1655
+        }
+      },
+      "output_tokens": 640,
+      "output_tokens_details": {
+        "reasoning_tokens": 482
+      },
+      "total_tokens": 2298
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Donald Trump’s possible pardon of former Arizona sheriff Joe Arpaio\",\n  \"climate_relevance\": \"An embedded gallery caption briefly describes Trump’s effort to reverse climate policies and reassess the Clean Power Plan.\",\n  \"reason\": \"The article is mainly about Arpaio’s conviction and a possible pardon. Climate policy appears only in a separate item in an embedded gallery, but that item contains specific policy information, making it relevant as background discourse rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:16:37Z",
+  "duration_seconds": 4.049,
+  "error": null
+}

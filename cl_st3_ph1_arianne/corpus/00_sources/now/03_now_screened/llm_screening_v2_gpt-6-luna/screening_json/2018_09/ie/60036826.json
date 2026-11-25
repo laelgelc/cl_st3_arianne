@@ -1,0 +1,77 @@
+{
+  "article_id": "60036826",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/ie/60036826.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/ie/60036826.json"
+  },
+  "manifest_row": {
+    "article_id": "60036826",
+    "group": "2018_09",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/ie/60036826.txt",
+    "now_field_2": "530",
+    "date_original": "18-09-18",
+    "date_iso": "2018-09-18",
+    "source_name": "RTE.ie",
+    "url": "https://www.rte.ie/news/business/2018/0918/994473-central-bank-on-farming/",
+    "title": "Brexit and CAP reform among challenges facing farming industry",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Economic challenges facing the Irish farming and agri-food industry",
+    "climate_relevance": "Climate change is named in a list of challenges facing agriculture, but the text does not explain or discuss its implications.",
+    "reason": "The article focuses on farming output, trade, Brexit, and agricultural policy. Climate change receives only a passing mention and does not provide meaningful material for climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7d381807cc5b66996ac5f77c477efbeb7d87c151c7d8e596e6d482165edce378",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "aca46b04fdcd57e20278990f6c57d7bf29cfecc4d8bca6e8857a588c2a525035",
+    "raw_response_text_sha256": "c326c0ade96ca1feb47e265d47ba6ebf04d029d25cafdfcef662b6d204a634b6"
+  },
+  "api_metadata": {
+    "id": "resp_0b3e7bafae88e3b3006b0630c8877c87d1b6754f6d472b3674",
+    "model": "gpt-6-luna",
+    "created_at": 1795567816.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1246,
+      "input_tokens_details": {
+        "cache_write_tokens": 1243,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1243
+        }
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 1493
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Economic challenges facing the Irish farming and agri-food industry\",\n  \"climate_relevance\": \"Climate change is named in a list of challenges facing agriculture, but the text does not explain or discuss its implications.\",\n  \"reason\": \"The article focuses on farming output, trade, Brexit, and agricultural policy. Climate change receives only a passing mention and does not provide meaningful material for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:50:18Z",
+  "duration_seconds": 2.17,
+  "error": null
+}

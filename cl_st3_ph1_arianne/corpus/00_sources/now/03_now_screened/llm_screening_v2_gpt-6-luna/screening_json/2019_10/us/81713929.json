@@ -1,0 +1,77 @@
+{
+  "article_id": "81713929",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81713929.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81713929.json"
+  },
+  "manifest_row": {
+    "article_id": "81713929",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81713929.txt",
+    "now_field_2": "626",
+    "date_original": "19-10-20",
+    "date_iso": "2019-10-20",
+    "source_name": "SFGate",
+    "url": "https://www.sfgate.com/news/bayarea/article/National-Weather-Service-Warns-Of-More-Fire-14548545.php",
+    "title": "National Weather Service warns of more fire danger this week",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Wildfire danger, weather forecasts, and PG&E power shutoffs in the Bay Area",
+    "climate_relevance": "The article links climate change to increased wildfire risk in PG&E's service areas, but does not develop the climate issue further.",
+    "reason": "The main focus is an imminent fire-weather forecast and the utility's safety shutoffs and preparedness. Climate change appears in a meaningful connection to wildfire risk, making the text relevant as peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b9a9059d1ef964a8ce4c1b63169d3dcf15615dcd21bb2e654932c04ebc609187",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "158bd839deee91b566af5749205cce82df0e82b2772669a5fcc788fc23a44901",
+    "raw_response_text_sha256": "aea406eb27d136cdc0da3744e0ead29a09a28c3c8145ea6604587c85e0b5f9df"
+  },
+  "api_metadata": {
+    "id": "resp_0d327a7ef392e2e0006b06479f86bc87d1b4a2f8d8c0439b9d",
+    "model": "gpt-6-luna",
+    "created_at": 1795573663.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1367,
+      "input_tokens_details": {
+        "cache_write_tokens": 1364,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1364
+        }
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 1622
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Wildfire danger, weather forecasts, and PG&E power shutoffs in the Bay Area\",\n  \"climate_relevance\": \"The article links climate change to increased wildfire risk in PG&E's service areas, but does not develop the climate issue further.\",\n  \"reason\": \"The main focus is an imminent fire-weather forecast and the utility's safety shutoffs and preparedness. Climate change appears in a meaningful connection to wildfire risk, making the text relevant as peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:27:46Z",
+  "duration_seconds": 2.568,
+  "error": null
+}

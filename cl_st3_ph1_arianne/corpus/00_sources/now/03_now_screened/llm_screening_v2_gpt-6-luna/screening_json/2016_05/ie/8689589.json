@@ -1,0 +1,77 @@
+{
+  "article_id": "8689589",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_05/ie/8689589.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_05/ie/8689589.json"
+  },
+  "manifest_row": {
+    "article_id": "8689589",
+    "group": "2016_05",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_05/ie/8689589.txt",
+    "now_field_2": "564",
+    "date_original": "16-05-06",
+    "date_iso": "2016-05-06",
+    "source_name": "Irish Examiner",
+    "url": "http://www.irishexaminer.com/ireland/leo-varadkar-shafted-by-enda-kenny-as-chaos-marks-government-formation-398118.html",
+    "title": "Leo Varadkar 'shafted' by Enda Kenny as chaos marks government ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-05-bvk/16-05-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Irish government formation and cabinet appointments",
+    "climate_relevance": "Climate change appears only in the title of a newly appointed minister; the text contains no substantive climate-related discussion.",
+    "reason": "The article focuses on political negotiations and cabinet appointments. Its sole climate reference is incidental and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3c983b92bd817f62cc6e22cd1aec7676aad805671bed8e75f997be5ae3a136c1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "439d5fe39c8feac8a0d71c54712e4db5596690acb8ecb43c6a060bf353fdc89f",
+    "raw_response_text_sha256": "af5ff17c02fbfed339e45141464e1294e38cced043b676a2e34aadffb5976413"
+  },
+  "api_metadata": {
+    "id": "resp_013d7b8e1781a2f9006b06508ffd9487d19cba7e279befb84a",
+    "model": "gpt-6-luna",
+    "created_at": 1795575952.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1235,
+      "input_tokens_details": {
+        "cache_write_tokens": 1232,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1232
+        }
+      },
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1443
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Irish government formation and cabinet appointments\",\n  \"climate_relevance\": \"Climate change appears only in the title of a newly appointed minister; the text contains no substantive climate-related discussion.\",\n  \"reason\": \"The article focuses on political negotiations and cabinet appointments. Its sole climate reference is incidental and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:05:54Z",
+  "duration_seconds": 2.585,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "60822864",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/ie/60822864.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/ie/60822864.json"
+  },
+  "manifest_row": {
+    "article_id": "60822864",
+    "group": "2019_05",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/ie/60822864.txt",
+    "now_field_2": "347",
+    "date_original": "19-05-13",
+    "date_iso": "2019-05-13",
+    "source_name": "Independent.ie",
+    "url": "https://www.independent.ie/business/irish/union-leader-accuses-hotel-and-retail-bosses-of-continuously-opposing-minimum-wage-hikes-38105813.html",
+    "title": "Union leader accuses hotel and retail bosses of continuously ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-ie.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Trade union concerns about low pay, minimum-wage policy, and Brexit",
+    "climate_relevance": "A union leader identifies climate change as an unprecedented existential threat, but the text does not develop the issue.",
+    "reason": "The first article is mainly about wages and trade union issues, with one meaningful statement about climate change. A separate sports article follows and is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ef4cc2622ec37973764f5eccf02496c893d4f1e47370483972b7e6cd8c001fe3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3f87569c502bda5ef72f3ff9f48192f6c6c29eb5987e4e6edb44f3f2ce5b20cc",
+    "raw_response_text_sha256": "bc3d7e42d1ab5c58a2a084c7f9c214ebf858cf6c32106dd0ef419b127e938c25"
+  },
+  "api_metadata": {
+    "id": "resp_036d1997780ebb59006b0634b9916887d19612406d81fa9e43",
+    "model": "gpt-6-luna",
+    "created_at": 1795568825.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1630,
+      "input_tokens_details": {
+        "cache_write_tokens": 1627,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1627
+        }
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 1908
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Trade union concerns about low pay, minimum-wage policy, and Brexit\",\n  \"climate_relevance\": \"A union leader identifies climate change as an unprecedented existential threat, but the text does not develop the issue.\",\n  \"reason\": \"The first article is mainly about wages and trade union issues, with one meaningful statement about climate change. A separate sports article follows and is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:07:08Z",
+  "duration_seconds": 3.08,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "19273346",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/us/19273346.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/us/19273346.json"
+  },
+  "manifest_row": {
+    "article_id": "19273346",
+    "group": "2017_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/us/19273346.txt",
+    "now_field_2": "753",
+    "date_original": "17-07-02",
+    "date_iso": "2017-07-02",
+    "source_name": "Billings Gazette",
+    "url": "http://billingsgazette.com/news/government-and-politics/montana-farm-groups-attorney-general-praise-repeal-of-obama-era/article_0584c685-388d-57d9-a49e-55ea0151ebcc.html",
+    "title": "Montana farm groups, attorney general praise repeal of Obama-era ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.9,
+    "climate_role": "passing",
+    "main_topic": "The repeal of the Waters of the United States rule and its effects on water regulation in Montana",
+    "climate_relevance": "Climate change appears only in a brief reference to Obama-era regulation of greenhouse gases; the article does not develop climate-related policy or impacts.",
+    "reason": "The article focuses on federal control of waterways, water rights, and the concerns of ranchers, farmers, and counties. Its single climate reference is incidental to that discussion.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "88249e9a40db9ac34ba15ee28c0704cbc92b72fe5439fa393004a4b9f49db8ce",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "513c377d01ea3a82bee36adbbb1dcfa3b0534f34424141c5bfe4d05f5e0c2392",
+    "raw_response_text_sha256": "bdebf86a08a6e30f33d0adfc6654d6d96621e8982406d42706829054ebfb4136"
+  },
+  "api_metadata": {
+    "id": "resp_0767b56b10ea5fde006b060bb3995c87d2a4c63b287a13722c",
+    "model": "gpt-6-luna",
+    "created_at": 1795558323.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1423,
+      "input_tokens_details": {
+        "cache_write_tokens": 1420,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1420
+        }
+      },
+      "output_tokens": 333,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 1756
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The repeal of the Waters of the United States rule and its effects on water regulation in Montana\",\n  \"climate_relevance\": \"Climate change appears only in a brief reference to Obama-era regulation of greenhouse gases; the article does not develop climate-related policy or impacts.\",\n  \"reason\": \"The article focuses on federal control of waterways, water rights, and the concerns of ranchers, farmers, and counties. Its single climate reference is incidental to that discussion.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:12:06Z",
+  "duration_seconds": 2.671,
+  "error": null
+}

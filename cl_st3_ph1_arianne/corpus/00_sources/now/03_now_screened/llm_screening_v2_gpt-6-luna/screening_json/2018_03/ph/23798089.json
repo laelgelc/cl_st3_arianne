@@ -1,0 +1,77 @@
+{
+  "article_id": "23798089",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_03/ph/23798089.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_03/ph/23798089.json"
+  },
+  "manifest_row": {
+    "article_id": "23798089",
+    "group": "2018_03",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_03/ph/23798089.txt",
+    "now_field_2": "556",
+    "date_original": "18-03-22",
+    "date_iso": "2018-03-22",
+    "source_name": "Philippine Star",
+    "url": "https://www.philstar.com/headlines/2018/03/23/1799512/duterte-accepts-backers-poll-rivals-allies",
+    "title": "Duterte accepts backers of poll rivals as allies",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-03.txt\"]",
+    "metadata_article_files": "[\"text-18-03/text_18-03-PH.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Duterte's political outreach, anti-drug campaign, and federalism",
+    "climate_relevance": "Climate change appears only in the name of a commission whose representative is briefly mentioned alongside a general reference to environmental conservation.",
+    "reason": "The article is about Philippine politics and local government. It contains no substantive discussion of climate change, its impacts, or climate policy; the brief commission and conservation reference is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5f5c47c6d68b746ce4044294035556209c9f9604bdc71f5b59a1718f88c2b0c2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a842bc3e73f601b21043732045e42a2de39e709dc45ef7382f8638160be7e770",
+    "raw_response_text_sha256": "bc998eaa49cdb8c1a58323a3821abccdc405890d7f835d7176747d24b8d63cd3"
+  },
+  "api_metadata": {
+    "id": "resp_04bc1a5c4a44577e006b0611b4521087d2b56b20f22e17fbfe",
+    "model": "gpt-6-luna",
+    "created_at": 1795559860.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1231,
+      "input_tokens_details": {
+        "cache_write_tokens": 1228,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1228
+        }
+      },
+      "output_tokens": 412,
+      "output_tokens_details": {
+        "reasoning_tokens": 264
+      },
+      "total_tokens": 1643
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Duterte's political outreach, anti-drug campaign, and federalism\",\n  \"climate_relevance\": \"Climate change appears only in the name of a commission whose representative is briefly mentioned alongside a general reference to environmental conservation.\",\n  \"reason\": \"The article is about Philippine politics and local government. It contains no substantive discussion of climate change, its impacts, or climate policy; the brief commission and conservation reference is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:37:43Z",
+  "duration_seconds": 2.877,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "17131113",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/au/17131113.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/au/17131113.json"
+  },
+  "manifest_row": {
+    "article_id": "17131113",
+    "group": "2017_02",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/au/17131113.txt",
+    "now_field_2": "294",
+    "date_original": "17-02-26",
+    "date_iso": "2017-02-26",
+    "source_name": "Mornington Peninsula News",
+    "url": "http://mpnews.com.au/2017/02/27/citizen-science-study-of-two-estuaries/",
+    "title": "'Citizen science' study of two estuaries",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-AU.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "passing",
+    "main_topic": "Citizen-science monitoring of two estuaries",
+    "climate_relevance": "A separate Council Watch snippet reports public views that human-caused climate change is real and will affect life on the Mornington Peninsula.",
+    "reason": "The identifiable main article concerns estuary monitoring and does not discuss climate change. However, the separate snippet contains a meaningful statement about climate-change beliefs and local impacts, making the supplied text peripherally relevant.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9863529db14ed148edcca00cfe75f6058f1181c53ec43cd93027fa1ab1be6f13",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8a925cd8bf99dad3f6203f535a421197c2c17f428bbf9f9609bceba4981cb177",
+    "raw_response_text_sha256": "9ffaf4c218d45366dc19b89858205b953f6e06e07a6d1edfad3eaf8407698981"
+  },
+  "api_metadata": {
+    "id": "resp_0459a9ebbb9be357006b06089431b087d2a73add17ffe6f056",
+    "model": "gpt-6-luna",
+    "created_at": 1795557524.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 916,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 415,
+      "output_tokens_details": {
+        "reasoning_tokens": 263
+      },
+      "total_tokens": 1331
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Citizen-science monitoring of two estuaries\",\n  \"climate_relevance\": \"A separate Council Watch snippet reports public views that human-caused climate change is real and will affect life on the Mornington Peninsula.\",\n  \"reason\": \"The identifiable main article concerns estuary monitoring and does not discuss climate change. However, the separate snippet contains a meaningful statement about climate-change beliefs and local impacts, making the supplied text peripherally relevant.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:58:47Z",
+  "duration_seconds": 3.385,
+  "error": null
+}

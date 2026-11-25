@@ -1,0 +1,77 @@
+{
+  "article_id": "71222900",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/in/71222900.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/in/71222900.json"
+  },
+  "manifest_row": {
+    "article_id": "71222900",
+    "group": "2019_09",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/in/71222900.txt",
+    "now_field_2": "492",
+    "date_original": "19-09-18",
+    "date_iso": "2019-09-18",
+    "source_name": "dailyo.in",
+    "url": "https://www.dailyo.in/arts/jabariya-jodi-3-reasons-why-sidharth-malhotra-s-career-is-yet-to-take-off-bollywood-karan-johar/story/1/31827.html",
+    "title": "The Adonis Struggler: Three reasons why Sidharth Malhotra ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-in2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "US gun violence, mass shootings, and gun control",
+    "climate_relevance": "Climate change is mentioned only in passing, as a comparison to President Trump's positions on other issues; it is not discussed substantively.",
+    "reason": "The supplied text contains an unrelated entertainment article followed by a gun-control article. In the identifiable main article, climate change and global warming appear only as brief rhetorical references and do not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8bc177ff4d68a2ef4429faf46549a7b2f1aa29042d3faeb8cff435774d82182a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "10aa6164e0a08f5395b580d937b2992e2e6db1f67c427bf3cfd1a8949d1a2411",
+    "raw_response_text_sha256": "7705e05d8ff86455fe5c19d412299a8cd7529d92fe6c2b8b4ba45e2c1fcd4c60"
+  },
+  "api_metadata": {
+    "id": "resp_04974a02a81e4c79006b0640722fc087d1a27b32e42cd79358",
+    "model": "gpt-6-luna",
+    "created_at": 1795571826.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2452,
+      "input_tokens_details": {
+        "cache_write_tokens": 2449,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2449
+        }
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 2704
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"US gun violence, mass shootings, and gun control\",\n  \"climate_relevance\": \"Climate change is mentioned only in passing, as a comparison to President Trump's positions on other issues; it is not discussed substantively.\",\n  \"reason\": \"The supplied text contains an unrelated entertainment article followed by a gun-control article. In the identifiable main article, climate change and global warming appear only as brief rhetorical references and do not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:57:08Z",
+  "duration_seconds": 2.524,
+  "error": null
+}

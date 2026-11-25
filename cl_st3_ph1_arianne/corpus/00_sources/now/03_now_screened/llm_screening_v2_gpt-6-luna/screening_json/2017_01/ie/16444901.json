@@ -1,0 +1,77 @@
+{
+  "article_id": "16444901",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/ie/16444901.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/ie/16444901.json"
+  },
+  "manifest_row": {
+    "article_id": "16444901",
+    "group": "2017_01",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/ie/16444901.txt",
+    "now_field_2": "501",
+    "date_original": "17-01-17",
+    "date_iso": "2017-01-17",
+    "source_name": "thejournal.ie",
+    "url": "http://www.thejournal.ie/ivanka-trump-wrong-tweet-3191090-Jan2017/",
+    "title": "Donald Trump ruined an Englishwoman's morning by mistakenly ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-IE.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Donald Trump mistakenly mentioning a Brighton woman's Twitter handle",
+    "climate_relevance": "Climate change is mentioned only as part of the woman's suggested response to Trump; no climate-related issue or debate is discussed.",
+    "reason": "The article focuses on the mistaken tweet and its aftermath. The brief reference to learning more about climate change is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9a80648891dad39515efb0eee4d4f37c33586e7feddd9c1971623954a4ec37eb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e9b3115384386d996a55626d8580b08be7a30658d7221cd1114c1ebaea6ca449",
+    "raw_response_text_sha256": "905122ef9b864de6d16fe3528c64812955757a715e4a6081dba18e2cca63fe92"
+  },
+  "api_metadata": {
+    "id": "resp_0dda7f11d5ad5268006b0607a390a087d2b1786d48be809de0",
+    "model": "gpt-6-luna",
+    "created_at": 1795557283.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1132,
+      "input_tokens_details": {
+        "cache_write_tokens": 1129,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1129
+        }
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 1351
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Donald Trump mistakenly mentioning a Brighton woman's Twitter handle\",\n  \"climate_relevance\": \"Climate change is mentioned only as part of the woman's suggested response to Trump; no climate-related issue or debate is discussed.\",\n  \"reason\": \"The article focuses on the mistaken tweet and its aftermath. The brief reference to learning more about climate change is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:54:45Z",
+  "duration_seconds": 1.87,
+  "error": null
+}

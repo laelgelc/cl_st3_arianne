@@ -1,0 +1,77 @@
+{
+  "article_id": "23141470",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_02/us/23141470.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_02/us/23141470.json"
+  },
+  "manifest_row": {
+    "article_id": "23141470",
+    "group": "2018_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_02/us/23141470.txt",
+    "now_field_2": "328",
+    "date_original": "18-02-11",
+    "date_iso": "2018-02-11",
+    "source_name": "New York Daily News",
+    "url": "http://www.nydailynews.com/new-york/caribbeat-gala-benefit-university-article-1.3813087",
+    "title": "CARIBBEAT: Black-tie Manhattan gala - and inaugural after-party ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-02.txt\"]",
+    "metadata_article_files": "[\"text-18-02/text_18-02-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Caribbean cultural and philanthropic events, including a university benefit and Clinton Foundation initiatives",
+    "climate_relevance": "The text mentions a climate initiative to help Dominica become climate-resilient and cope with climate change, linking it to post-disaster recovery after hurricanes.",
+    "reason": "Most of the text concerns a university gala and fashion, but the climate-resilience initiative is meaningful context rather than a central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7cf0ca46325f304fa623e9b10480d18b8c803a8da19cf40b125b90d989ac671f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "10192253b8b929904be7751811eb759c345f2e92d80ec9299006b8591d20ef3b",
+    "raw_response_text_sha256": "d1fc3a6b26e777d32d43b88c9c98a31b103446f0b5d27ea962cea271a3edcaa5"
+  },
+  "api_metadata": {
+    "id": "resp_0bbd45da21c1bfb5006b0610ebace487d2b5f3a3896d8d896c",
+    "model": "gpt-6-luna",
+    "created_at": 1795559659.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 942,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 323,
+      "output_tokens_details": {
+        "reasoning_tokens": 175
+      },
+      "total_tokens": 1265
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Caribbean cultural and philanthropic events, including a university benefit and Clinton Foundation initiatives\",\n  \"climate_relevance\": \"The text mentions a climate initiative to help Dominica become climate-resilient and cope with climate change, linking it to post-disaster recovery after hurricanes.\",\n  \"reason\": \"Most of the text concerns a university gala and fashion, but the climate-resilience initiative is meaningful context rather than a central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:34:22Z",
+  "duration_seconds": 2.769,
+  "error": null
+}

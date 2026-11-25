@@ -1,0 +1,77 @@
+{
+  "article_id": "61624299",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/za/61624299.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/za/61624299.json"
+  },
+  "manifest_row": {
+    "article_id": "61624299",
+    "group": "2020_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/za/61624299.txt",
+    "now_field_2": "1841",
+    "date_original": "20-02-18",
+    "date_iso": "2020-02-18",
+    "source_name": "miningweekly.com",
+    "url": "https://www.miningweekly.com/page/coal//page:4",
+    "title": "<strong>MiningWeekly.com</strong> | Mining Sector News | Mining Industry | Coal",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-za.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Coal and mining industry news, including company, energy-supply, and regulatory developments",
+    "climate_relevance": "One item reports that an asset manager is pressing mining companies to disclose their emissions as part of pressure on the resources sector to tackle climate change.",
+    "reason": "The text is a collection of mining-news snippets, not centrally about climate change. The emissions-disclosure item provides meaningful climate-related discourse, so the text is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "490bd443136bd3067b275c8765503caec4d73bf3a193ddd32533d7fbf9f50f6f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fdaf62503d652637aade1e8e321d6d790bf613227aed814831f34ec157029b6e",
+    "raw_response_text_sha256": "e9bd4a5c20b58c2589e661055400ddc8a86a3594872eb218b8969abcdba60ed2"
+  },
+  "api_metadata": {
+    "id": "resp_0fbbdbe0a5af0817006b0637e0a83487d1b273fa952d515b38",
+    "model": "gpt-6-luna",
+    "created_at": 1795569632.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3108,
+      "input_tokens_details": {
+        "cache_write_tokens": 3105,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3105
+        }
+      },
+      "output_tokens": 302,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 3410
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Coal and mining industry news, including company, energy-supply, and regulatory developments\",\n  \"climate_relevance\": \"One item reports that an asset manager is pressing mining companies to disclose their emissions as part of pressure on the resources sector to tackle climate change.\",\n  \"reason\": \"The text is a collection of mining-news snippets, not centrally about climate change. The emissions-disclosure item provides meaningful climate-related discourse, so the text is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:20:35Z",
+  "duration_seconds": 2.737,
+  "error": null
+}

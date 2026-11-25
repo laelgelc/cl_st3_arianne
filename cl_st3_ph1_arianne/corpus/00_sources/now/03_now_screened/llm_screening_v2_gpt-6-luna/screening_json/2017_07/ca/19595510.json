@@ -1,0 +1,77 @@
+{
+  "article_id": "19595510",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/ca/19595510.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/ca/19595510.json"
+  },
+  "manifest_row": {
+    "article_id": "19595510",
+    "group": "2017_07",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/ca/19595510.txt",
+    "now_field_2": "262",
+    "date_original": "17-07-20",
+    "date_iso": "2017-07-20",
+    "source_name": "Sudbury.com",
+    "url": "https://www.sudbury.com/local-news/dust-pollution-charge-catches-up-with-the-bankrupt-sudbury-garnet-operation-676351",
+    "title": "Dust pollution charge catches up with the bankrupt Sudbury garnet ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A mining company's dust pollution and resulting environmental prosecution",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Environment and Climate Change; the text contains no meaningful climate-related discourse.",
+    "reason": "The article concerns dust emissions, residents' complaints, and a fine under environmental law, not climate change or its implications.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e0534374d5401b2e5521a8ad1c16cee083bc74fe79bdc5231b5f71976d92728f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8765373b8351115906fef4ca0b62de30ab13a339634fbbe82158a92b1708db63",
+    "raw_response_text_sha256": "2291c082dab47e60c3b4cc63852f798cec75d3034d319d3d9509840d0f88579c"
+  },
+  "api_metadata": {
+    "id": "resp_0f7ef7279598a975006b060c3b808c87d2a00df28ae77c8ee1",
+    "model": "gpt-6-luna",
+    "created_at": 1795558459.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 842,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1041
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A mining company's dust pollution and resulting environmental prosecution\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Environment and Climate Change; the text contains no meaningful climate-related discourse.\",\n  \"reason\": \"The article concerns dust emissions, residents' complaints, and a fine under environmental law, not climate change or its implications.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:14:21Z",
+  "duration_seconds": 1.91,
+  "error": null
+}

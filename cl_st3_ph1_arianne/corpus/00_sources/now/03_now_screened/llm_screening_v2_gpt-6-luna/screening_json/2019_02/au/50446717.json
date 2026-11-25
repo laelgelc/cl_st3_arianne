@@ -1,0 +1,77 @@
+{
+  "article_id": "50446717",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/au/50446717.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/au/50446717.json"
+  },
+  "manifest_row": {
+    "article_id": "50446717",
+    "group": "2019_02",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/au/50446717.txt",
+    "now_field_2": "2433",
+    "date_original": "19-02-17",
+    "date_iso": "2019-02-17",
+    "source_name": "The Canberra Times",
+    "url": "https://www.canberratimes.com.au/national/act/leigh-s-emotive-language-masks-irrational-tax-policies-20190217-p50yev.html",
+    "title": "Leigh's emotive language masks irrational tax policies",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "A collection of letters to the editor on Australian politics, taxation, and other public issues",
+    "climate_relevance": "One brief letter disputes that climate change is humanity’s biggest problem, placing it alongside other environmental concerns and arguing instead that human greed is the central problem.",
+    "reason": "The available text is a multi-topic letters page, not climate coverage. However, the climate reference expresses a meaningful position about climate change’s relative importance, so it is relevant as peripheral discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "82d9f03925e22500c5f8e6241a40df7ede95290e34c8aa0a5c76262c59eb847a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f21c91d5c8c0d75b5c593c06ba44d697663671f58e92100615db8cb6c8e37d07",
+    "raw_response_text_sha256": "f6f9568cd6624e44ee8c045eaefb60d79230dfa5d5def0b90f7813b2d8240996"
+  },
+  "api_metadata": {
+    "id": "resp_02e16e259eff4864006b0628fad01087d1afb080d7ce4f9f0b",
+    "model": "gpt-6-luna",
+    "created_at": 1795565818.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3940,
+      "input_tokens_details": {
+        "cache_write_tokens": 3937,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3937
+        }
+      },
+      "output_tokens": 390,
+      "output_tokens_details": {
+        "reasoning_tokens": 229
+      },
+      "total_tokens": 4330
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of letters to the editor on Australian politics, taxation, and other public issues\",\n  \"climate_relevance\": \"One brief letter disputes that climate change is humanity’s biggest problem, placing it alongside other environmental concerns and arguing instead that human greed is the central problem.\",\n  \"reason\": \"The available text is a multi-topic letters page, not climate coverage. However, the climate reference expresses a meaningful position about climate change’s relative importance, so it is relevant as peripheral discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:17:01Z",
+  "duration_seconds": 3.117,
+  "error": null
+}

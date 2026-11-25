@@ -1,0 +1,77 @@
+{
+  "article_id": "50785576",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/gb/50785576.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/gb/50785576.json"
+  },
+  "manifest_row": {
+    "article_id": "50785576",
+    "group": "2019_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/gb/50785576.txt",
+    "now_field_2": "851",
+    "date_original": "19-06-21",
+    "date_iso": "2019-06-21",
+    "source_name": "The Independent",
+    "url": "https://www.independent.co.uk/news/uk/politics/brexit-news-latest-theresa-may-no-deal-eu-exit-a8968756.html",
+    "title": "EU leaders 'unanimous' there will be no renegotiation of Brexit deal ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "EU leaders' position on renegotiating the Brexit withdrawal agreement",
+    "climate_relevance": "Climate change appears only in a brief statement that the EU meeting also considered climate policy; no climate-related discussion or detail is provided.",
+    "reason": "The identifiable main article is about Brexit negotiations, and its sole climate reference is passing rather than meaningful discourse. The supplied text also includes an unrelated article about Andrea McLean.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d558647fabd4cfee2c29c99e3a62b9e557562b97e6093e29d00dab6e6caa8eb3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "051a03211a5142259810c2fab0201b7178baf972fb9cd3a06900345827a489d6",
+    "raw_response_text_sha256": "0fb1f3a223dc737dd95e21b4782a6bbbd6c1ffd7e58bd7b2b79c10d8dbd07a29"
+  },
+  "api_metadata": {
+    "id": "resp_022b9ccb57ba5562006b062aeb496087d19253e85392994290",
+    "model": "gpt-6-luna",
+    "created_at": 1795566315.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2420,
+      "input_tokens_details": {
+        "cache_write_tokens": 2417,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2417
+        }
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 2687
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"EU leaders' position on renegotiating the Brexit withdrawal agreement\",\n  \"climate_relevance\": \"Climate change appears only in a brief statement that the EU meeting also considered climate policy; no climate-related discussion or detail is provided.\",\n  \"reason\": \"The identifiable main article is about Brexit negotiations, and its sole climate reference is passing rather than meaningful discourse. The supplied text also includes an unrelated article about Andrea McLean.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:25:18Z",
+  "duration_seconds": 2.809,
+  "error": null
+}

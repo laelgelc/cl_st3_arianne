@@ -1,0 +1,77 @@
+{
+  "article_id": "40028883",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/sg/40028883.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/sg/40028883.json"
+  },
+  "manifest_row": {
+    "article_id": "40028883",
+    "group": "2018_09",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/sg/40028883.txt",
+    "now_field_2": "956",
+    "date_original": "18-09-12",
+    "date_iso": "2018-09-12",
+    "source_name": "Eco-Business",
+    "url": "https://www.eco-business.com/news/turning-waste-into-bioplastics-mexico-strikes-green-gold/",
+    "title": "Turning waste into bioplastics, Mexico strikes green gold",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Bioplastics made from agricultural and other waste as alternatives to conventional plastics",
+    "climate_relevance": "Climate change appears only in the syndication boilerplate describing the Thomson Reuters Foundation's coverage areas; the article itself focuses on plastic pollution and bioplastics.",
+    "reason": "The text contains no meaningful discussion of climate change, its causes, impacts, or responses. Its climate reference is incidental boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a7aada1811cf61c6210e2c15dfd44910282f7a4491fce49d5314be4a526a75a9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4980d893ab8f420fb396abb506b90e795e266e8f4ba0700ef3b3a8d2b2969d36",
+    "raw_response_text_sha256": "3c25e7114b6dffb6a62572a1d048c6dd470aae1d1c0d4db7c8a4628c29fe2b88"
+  },
+  "api_metadata": {
+    "id": "resp_01d2bbc6dce3691e006b061dff6ad487d289314a41511be4cc",
+    "model": "gpt-6-luna",
+    "created_at": 1795563007.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1788,
+      "input_tokens_details": {
+        "cache_write_tokens": 1785,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1785
+        }
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 2007
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Bioplastics made from agricultural and other waste as alternatives to conventional plastics\",\n  \"climate_relevance\": \"Climate change appears only in the syndication boilerplate describing the Thomson Reuters Foundation's coverage areas; the article itself focuses on plastic pollution and bioplastics.\",\n  \"reason\": \"The text contains no meaningful discussion of climate change, its causes, impacts, or responses. Its climate reference is incidental boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:30:09Z",
+  "duration_seconds": 2.108,
+  "error": null
+}

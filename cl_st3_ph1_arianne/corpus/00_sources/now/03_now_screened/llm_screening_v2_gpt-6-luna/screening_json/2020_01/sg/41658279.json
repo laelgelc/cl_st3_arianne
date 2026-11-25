@@ -1,0 +1,77 @@
+{
+  "article_id": "41658279",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/sg/41658279.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/sg/41658279.json"
+  },
+  "manifest_row": {
+    "article_id": "41658279",
+    "group": "2020_01",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/sg/41658279.txt",
+    "now_field_2": "239",
+    "date_original": "20-01-17",
+    "date_iso": "2020-01-17",
+    "source_name": "tnp.sg",
+    "url": "https://www.tnp.sg/news/world/downpours-bring-relief-fire-ravaged-australia",
+    "title": "Downpours bring relief to fire-ravaged Australia, Latest ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Rainfall bringing relief to fire-ravaged eastern Australia and the effects of the bushfire crisis",
+    "climate_relevance": "The report describes the fires as fuelled by climate change, but does not otherwise discuss climate science, policy, or wider climate impacts.",
+    "reason": "The main focus is immediate bushfire conditions, rainfall, and tourism costs. The explicit climate-change link is meaningful but limited, so the text is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6ff85e28f78419a4e4fb198b3eac251c4c7192d10a11b4306b0f5be696d68a89",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d51b3ba72bb8dabd8f9fbcce075385c2512e27f08d2a0ad1caf68b859351c1e8",
+    "raw_response_text_sha256": "6f2ec975dd5c762e98cec9a6d9474deb01ddc391be6a888d0bf081c6b5bae8a5"
+  },
+  "api_metadata": {
+    "id": "resp_085acdc4a901c9ed006b0622a65eac87d2a079f6642a2fee34",
+    "model": "gpt-6-luna",
+    "created_at": 1795564198.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 797,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 1063
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Rainfall bringing relief to fire-ravaged eastern Australia and the effects of the bushfire crisis\",\n  \"climate_relevance\": \"The report describes the fires as fuelled by climate change, but does not otherwise discuss climate science, policy, or wider climate impacts.\",\n  \"reason\": \"The main focus is immediate bushfire conditions, rainfall, and tourism costs. The explicit climate-change link is meaningful but limited, so the text is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:50:00Z",
+  "duration_seconds": 2.131,
+  "error": null
+}

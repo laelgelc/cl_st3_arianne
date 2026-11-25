@@ -1,0 +1,77 @@
+{
+  "article_id": "81770106",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81770106.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81770106.json"
+  },
+  "manifest_row": {
+    "article_id": "81770106",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81770106.txt",
+    "now_field_2": "161",
+    "date_original": "19-10-23",
+    "date_iso": "2019-10-23",
+    "source_name": "KVOA 4",
+    "url": "https://kvoa.com/ap-national-news/2019/10/23/trump-seeks-to-block-california-as-global-climate-leader/",
+    "title": "Trump seeks to block California as global climate leader",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "The Trump administration’s lawsuit challenging California’s authority to pursue climate policy through an agreement with Quebec.",
+    "climate_relevance": "The main article directly concerns efforts to limit fossil-fuel emissions and the legal and political dispute over climate leadership and policy.",
+    "reason": "Climate change and emissions policy are central to the identifiable news article. The supplied text also contains unrelated station boilerplate and a Skechers earnings snippet, which do not alter the classification of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d3849e5159a407225f66f9bc920d3dc175e1926d6f2038f5992302a60c4cc480",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9d4dab0464eb024c2930fc7ffd09ef9fc74e70ff0482db2b4837f91f2440116a",
+    "raw_response_text_sha256": "a3cc3c89505da06b3990c354b9e18d4b7c625f3a53b15111938d9a3ed7037f54"
+  },
+  "api_metadata": {
+    "id": "resp_0ba97b5c0e047fb6006b0647ae37d087d1ba841bfc85b662e1",
+    "model": "gpt-6-luna",
+    "created_at": 1795573678.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 993,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1201
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"The Trump administration’s lawsuit challenging California’s authority to pursue climate policy through an agreement with Quebec.\",\n  \"climate_relevance\": \"The main article directly concerns efforts to limit fossil-fuel emissions and the legal and political dispute over climate leadership and policy.\",\n  \"reason\": \"Climate change and emissions policy are central to the identifiable news article. The supplied text also contains unrelated station boilerplate and a Skechers earnings snippet, which do not alter the classification of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:28:00Z",
+  "duration_seconds": 2.252,
+  "error": null
+}

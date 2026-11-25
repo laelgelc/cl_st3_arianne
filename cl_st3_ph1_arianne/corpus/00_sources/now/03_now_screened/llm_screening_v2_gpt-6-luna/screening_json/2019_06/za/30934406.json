@@ -1,0 +1,77 @@
+{
+  "article_id": "30934406",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/za/30934406.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/za/30934406.json"
+  },
+  "manifest_row": {
+    "article_id": "30934406",
+    "group": "2019_06",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/za/30934406.txt",
+    "now_field_2": "968",
+    "date_original": "19-06-02",
+    "date_iso": "2019-06-02",
+    "source_name": "Independent Online",
+    "url": "https://www.iol.co.za/travel/travel-news/unlocking-africas-tourism-potential-24778704",
+    "title": "Unlocking Africa's tourism potential",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "African tourism development and UNWTO initiatives",
+    "climate_relevance": "Climate change appears only as the name of the conference where a sustainable-tourism charter was launched.",
+    "reason": "The text is primarily about tourism policy, investment, and development in Africa. It contains no meaningful discussion of climate change, its impacts, or climate policy beyond a passing reference to COP 22.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "230d08326a519e8201108e8c3081cb543013833b35783df17d8962fdf9e782b4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a0994e7172b7592149cdb80f4a54f9724e446c59a2f9c6bd916a17c4f0918062",
+    "raw_response_text_sha256": "553e6464be8cc8a4af4b9103319be24c5bd1a1c947cf5ca3cc3e23221e2b8a82"
+  },
+  "api_metadata": {
+    "id": "resp_00d28e23a783e699006b0615b731f087d290fd537cdd9c59be",
+    "model": "gpt-6-luna",
+    "created_at": 1795560887.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1665,
+      "input_tokens_details": {
+        "cache_write_tokens": 1662,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1662
+        }
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 1909
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"African tourism development and UNWTO initiatives\",\n  \"climate_relevance\": \"Climate change appears only as the name of the conference where a sustainable-tourism charter was launched.\",\n  \"reason\": \"The text is primarily about tourism policy, investment, and development in Africa. It contains no meaningful discussion of climate change, its impacts, or climate policy beyond a passing reference to COP 22.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:54:49Z",
+  "duration_seconds": 2.291,
+  "error": null
+}

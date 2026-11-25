@@ -1,0 +1,77 @@
+{
+  "article_id": "70132724",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/us/70132724.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/us/70132724.json"
+  },
+  "manifest_row": {
+    "article_id": "70132724",
+    "group": "2018_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/us/70132724.txt",
+    "now_field_2": "1131",
+    "date_original": "18-10-11",
+    "date_iso": "2018-10-11",
+    "source_name": "Washington Examiner",
+    "url": "https://www.washingtonexaminer.com/news/fbi-delays-release-of-andrew-mccabes-anti-trump-book",
+    "title": "FBI delays release of Andrew McCabe's anti-Trump book",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-us-1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "FBI review and delayed publication of Andrew McCabe's book, amid disputes involving the Trump administration",
+    "climate_relevance": "Climate change appears only in a separate one-sentence snippet about a climate lawsuit brought by children against the U.S. government.",
+    "reason": "The identifiable main article concerns Andrew McCabe and the FBI, not climate change. The climate lawsuit reference is an unrelated snippet and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d619378d7d5cdded0ea06676fe58f7b19e4bffde6e5423f3a91cc9a4e8259ecd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c38172b7d5ad696452a5f25ed589951fd5b53c62e95a39ef0b91c56582ca2ab5",
+    "raw_response_text_sha256": "bc2cf1f53c4036657a08b62c67f61a5f97d63d0b4b7c3662fe96310a1b87b55f"
+  },
+  "api_metadata": {
+    "id": "resp_09f26d196d7536fc006b063b05055087d195e3bd4c6c705c3d",
+    "model": "gpt-6-luna",
+    "created_at": 1795570437.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1944,
+      "input_tokens_details": {
+        "cache_write_tokens": 1941,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1941
+        }
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 2214
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"FBI review and delayed publication of Andrew McCabe's book, amid disputes involving the Trump administration\",\n  \"climate_relevance\": \"Climate change appears only in a separate one-sentence snippet about a climate lawsuit brought by children against the U.S. government.\",\n  \"reason\": \"The identifiable main article concerns Andrew McCabe and the FBI, not climate change. The climate lawsuit reference is an unrelated snippet and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:33:59Z",
+  "duration_seconds": 2.417,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40795049",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40795049.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40795049.json"
+  },
+  "manifest_row": {
+    "article_id": "40795049",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40795049.txt",
+    "now_field_2": "388",
+    "date_original": "19-04-02",
+    "date_iso": "2019-04-02",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/03/418-civil-servants-arrested-for-corruption-last-year/",
+    "title": "418 civil servants arrested for corruption last year",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Corruption allegations and arrests involving Malaysian civil servants",
+    "climate_relevance": "Climate change appears only in an unrelated introductory news bullet naming a minister and mentioning sustainable energy solutions; the identifiable main article is about corruption.",
+    "reason": "The climate-related material is a brief, separate snippet and does not meaningfully develop climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "859f3957adc59cc494c4132b518e7bca12617b2f579145d12101f9859fedd36e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1605058469dfd9118cfe18693aa6cd5c5d2660075e0695054af295d43a24be17",
+    "raw_response_text_sha256": "e973bfa6b12423c1d53d86f9c12e81fe831273835ab87e01745401d724e7dcc4"
+  },
+  "api_metadata": {
+    "id": "resp_005f865a2da2278b006b061fb790cc87d28edfe83eb27aa2e4",
+    "model": "gpt-6-luna",
+    "created_at": 1795563447.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1032,
+      "input_tokens_details": {
+        "cache_write_tokens": 1029,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1029
+        }
+      },
+      "output_tokens": 243,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 1275
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Corruption allegations and arrests involving Malaysian civil servants\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated introductory news bullet naming a minister and mentioning sustainable energy solutions; the identifiable main article is about corruption.\",\n  \"reason\": \"The climate-related material is a brief, separate snippet and does not meaningfully develop climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:29Z",
+  "duration_seconds": 2.441,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70776937",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/ph/70776937.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/ph/70776937.json"
+  },
+  "manifest_row": {
+    "article_id": "70776937",
+    "group": "2019_05",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/ph/70776937.txt",
+    "now_field_2": "270",
+    "date_original": "19-05-15",
+    "date_iso": "2019-05-15",
+    "source_name": "Manila Bulletin",
+    "url": "https://entertainment.mb.com.ph/?p=84344",
+    "title": "Singer Selena Gomez laments dangers of social media at Cannes",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Selena Gomez's concerns about social media and its effects on young people",
+    "climate_relevance": "The article briefly says the film satirizes climate change deniers, without discussing climate change or denial in any detail.",
+    "reason": "Climate change appears only as a passing reference in the film description; the article's substantive focus is social media.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e2aee859fbf7233c9267e08dbcbc571e87e60cf6ca84747f57bd9a1dd757046d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "48e3eeb2cc6a385965f8d2154730aefa280fe37ac5aa3321402a7d27afadc274",
+    "raw_response_text_sha256": "3525d499570392809a761acb381d0f8d6b1a438bd5be0ebe9d7c41526b2fd823"
+  },
+  "api_metadata": {
+    "id": "resp_08ed0e5dbe25b6fd006b063f1296ac87d180568e4ae17afa41",
+    "model": "gpt-6-luna",
+    "created_at": 1795571474.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 833,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 1147
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Selena Gomez's concerns about social media and its effects on young people\",\n  \"climate_relevance\": \"The article briefly says the film satirizes climate change deniers, without discussing climate change or denial in any detail.\",\n  \"reason\": \"Climate change appears only as a passing reference in the film description; the article's substantive focus is social media.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:51:17Z",
+  "duration_seconds": 2.557,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "32411120",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/32411120.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/32411120.json"
+  },
+  "manifest_row": {
+    "article_id": "32411120",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/32411120.txt",
+    "now_field_2": "488",
+    "date_original": "20-12-10",
+    "date_iso": "2020-12-10",
+    "source_name": "vancouversun.com",
+    "url": "https://vancouversun.com/news/vancouver-weather-mainly-cloudy-22",
+    "title": "Vancouver Weather: Mainly cloudy | Vancouver Sun",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Vancouver weather forecast",
+    "climate_relevance": "The text reports short-term weather conditions; the only climate-related wording is part of the name Environment and Climate Change Canada.",
+    "reason": "This is a routine local weather forecast, not meaningful discourse about climate change. The agency name is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "64e633996aca6d5f46d460c1033bab40a926a204df0b8b780f1d5d2a64d4c67c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8f6a4618e2361b6113566eb4e6dd5c7d052e572b3db7780ae39fd25ecef9450f",
+    "raw_response_text_sha256": "bdba8e6a4740376979c42d655bcc82428f0a8d267773323519d403907a0af445"
+  },
+  "api_metadata": {
+    "id": "resp_09b40398b66756cd006b061c8bed8887d28a0787eb9f52d82c",
+    "model": "gpt-6-luna",
+    "created_at": 1795562636.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1143,
+      "input_tokens_details": {
+        "cache_write_tokens": 1140,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1140
+        }
+      },
+      "output_tokens": 180,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 1323
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Vancouver weather forecast\",\n  \"climate_relevance\": \"The text reports short-term weather conditions; the only climate-related wording is part of the name Environment and Climate Change Canada.\",\n  \"reason\": \"This is a routine local weather forecast, not meaningful discourse about climate change. The agency name is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:23:57Z",
+  "duration_seconds": 1.972,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "24185227",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_04/nz/24185227.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_04/nz/24185227.json"
+  },
+  "manifest_row": {
+    "article_id": "24185227",
+    "group": "2018_04",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_04/nz/24185227.txt",
+    "now_field_2": "1888",
+    "date_original": "18-04-16",
+    "date_iso": "2018-04-16",
+    "source_name": "New Zealand Herald",
+    "url": "http://www.nzherald.co.nz/wanganui-chronicle/opinion/news/article.cfm?c_id=1503423&amp;objectid=12033755",
+    "title": "Your letters: Let Middleton stay in NZ",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-04.txt\"]",
+    "metadata_article_files": "[\"text-18-04/18-04-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Unidentifiable; the text is heavily corrupted and appears to contain unrelated fragments.",
+    "climate_relevance": "The phrase “Climate change” appears once, but the surrounding text is too fragmented to establish meaningful climate-related discourse.",
+    "reason": "The available text does not contain an interpretable sentence or substantive discussion of climate change. Other fragments appear unrelated, so the climate phrase is insufficient for research use.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "aea733f1777925ad64457e3290c49fe2a24884b449fb43066d6178df7e7dff00",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1856a5755be71812737b295c0e811bd278de570efe3d0f7c015e49acb5eaeea2",
+    "raw_response_text_sha256": "c35d9e32167a835552ce66c9453702d2ab3ebf6df3298c13fdb57c2a8ef46240"
+  },
+  "api_metadata": {
+    "id": "resp_06869d5e4d34aa43006b06122566ac87d2a9147848683ea365",
+    "model": "gpt-6-luna",
+    "created_at": 1795559973.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2254,
+      "input_tokens_details": {
+        "cache_write_tokens": 2251,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2251
+        }
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 2554
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Unidentifiable; the text is heavily corrupted and appears to contain unrelated fragments.\",\n  \"climate_relevance\": \"The phrase “Climate change” appears once, but the surrounding text is too fragmented to establish meaningful climate-related discourse.\",\n  \"reason\": \"The available text does not contain an interpretable sentence or substantive discussion of climate change. Other fragments appear unrelated, so the climate phrase is insufficient for research use.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:39:35Z",
+  "duration_seconds": 2.489,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40051017",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/sg/40051017.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/sg/40051017.json"
+  },
+  "manifest_row": {
+    "article_id": "40051017",
+    "group": "2018_09",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/sg/40051017.txt",
+    "now_field_2": "716",
+    "date_original": "18-09-19",
+    "date_iso": "2018-09-19",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/florence-portends-more-massive-hurricanes-age-global-warming-032925025.html",
+    "title": "Florence portends more massive hurricanes in age of global warming",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-sg.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "The relationship between global warming and Hurricane Florence’s rainfall, size, speed, and flooding impacts.",
+    "climate_relevance": "The report discusses research linking human-induced climate change to heavier rainfall, larger and slower storms, and increased flood risk, as well as implications for preparedness and infrastructure.",
+    "reason": "Climate change is the central subject: the article presents expert views and studies on how global warming may affect hurricanes and their impacts, while also noting ongoing scientific debate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b5ef2bd8763687e7d205f7dd39f77d9ed17bae6d179e19040064048df9958fbf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "358c562f85a6ed1466f2973a26195f2dcfc1778628700300537a64b5f5e36dd0",
+    "raw_response_text_sha256": "6adabe4df9a2ea1c08f05378157805276288756e7b4dc2d40870ab765e2f37cc"
+  },
+  "api_metadata": {
+    "id": "resp_049eb86bbbea7236006b061e1151e487d28a9b8720fb055e0f",
+    "model": "gpt-6-luna",
+    "created_at": 1795563025.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1435,
+      "input_tokens_details": {
+        "cache_write_tokens": 1432,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1432
+        }
+      },
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1643
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"The relationship between global warming and Hurricane Florence’s rainfall, size, speed, and flooding impacts.\",\n  \"climate_relevance\": \"The report discusses research linking human-induced climate change to heavier rainfall, larger and slower storms, and increased flood risk, as well as implications for preparedness and infrastructure.\",\n  \"reason\": \"Climate change is the central subject: the article presents expert views and studies on how global warming may affect hurricanes and their impacts, while also noting ongoing scientific debate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:30:27Z",
+  "duration_seconds": 2.123,
+  "error": null
+}

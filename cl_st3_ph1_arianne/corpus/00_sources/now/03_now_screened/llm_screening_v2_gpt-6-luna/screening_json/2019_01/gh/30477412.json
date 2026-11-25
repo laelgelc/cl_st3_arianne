@@ -1,0 +1,77 @@
+{
+  "article_id": "30477412",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/gh/30477412.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/gh/30477412.json"
+  },
+  "manifest_row": {
+    "article_id": "30477412",
+    "group": "2019_01",
+    "country_code": "gh",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/gh/30477412.txt",
+    "now_field_2": "358",
+    "date_original": "19-01-21",
+    "date_iso": "2019-01-21",
+    "source_name": "Pulse.com.gh",
+    "url": "https://www.pulse.com.gh/news/world/un-warns-trade-disputes-climate-could-disrupt-growth/1c913qr",
+    "title": "UN warns trade disputes, climate could disrupt growth",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-gh.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "UN outlook for global economic growth and risks to the economy",
+    "climate_relevance": "The article discusses climate change as a short-term economic risk, citing extreme weather and environmental disasters, and notes that the transition to sustainable economies is not happening fast enough.",
+    "reason": "Climate change receives meaningful discussion but is one of several risks in an article mainly about the global economic outlook. The later banking-sector text is an unrelated snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6bda894865060a10eda53d92d112100e995302c15bb6fe1fea268399dc36a14d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5f5c21755dbc7e6b7913a9426580eac466384b66a79a78627d512dba798d6bde",
+    "raw_response_text_sha256": "412ffbd5134f5fbd7615fdfd902661d806f86b159649604ab977e0f594c0b03f"
+  },
+  "api_metadata": {
+    "id": "resp_07a5ca7d64641640006b061449ba0887d283e7c39b21aff053",
+    "model": "gpt-6-luna",
+    "created_at": 1795560521.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1744,
+      "input_tokens_details": {
+        "cache_write_tokens": 1741,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1741
+        }
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 1970
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"UN outlook for global economic growth and risks to the economy\",\n  \"climate_relevance\": \"The article discusses climate change as a short-term economic risk, citing extreme weather and environmental disasters, and notes that the transition to sustainable economies is not happening fast enough.\",\n  \"reason\": \"Climate change receives meaningful discussion but is one of several risks in an article mainly about the global economic outlook. The later banking-sector text is an unrelated snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:48:43Z",
+  "duration_seconds": 1.764,
+  "error": null
+}

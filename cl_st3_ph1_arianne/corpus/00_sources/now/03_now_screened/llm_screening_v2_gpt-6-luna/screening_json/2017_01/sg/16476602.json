@@ -1,0 +1,77 @@
+{
+  "article_id": "16476602",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/sg/16476602.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/sg/16476602.json"
+  },
+  "manifest_row": {
+    "article_id": "16476602",
+    "group": "2017_01",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/sg/16476602.txt",
+    "now_field_2": "545",
+    "date_original": "17-01-19",
+    "date_iso": "2017-01-19",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/china-notes-progress-ties-under-us-president-obama-095515347.html",
+    "title": "China notes progress in ties under US President Obama",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-SG.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "U.S.–China relations under President Obama",
+    "climate_relevance": "Climate change appears only in a list of areas where the countries cooperated, with no further discussion.",
+    "reason": "The article focuses on diplomatic relations and disputes; its single brief reference to climate cooperation does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c2c944fff7008cf59d0b0218b7960df0509a240c139e95e796c5b8f2ffa41360",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dbba02d26a4490ba4b35d811f1bee1bdb333aa546461ce059e1e93dc141adf5e",
+    "raw_response_text_sha256": "20ebc6c5895c05a6389d83b869d8742ea262e00a89b3844ff99e6a3645b822fc"
+  },
+  "api_metadata": {
+    "id": "resp_0d8561d8cbdffe55006b0607b0a41087d285dbe7456254dbde",
+    "model": "gpt-6-luna",
+    "created_at": 1795557296.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1185,
+      "input_tokens_details": {
+        "cache_write_tokens": 1182,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1182
+        }
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 1438
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"U.S.–China relations under President Obama\",\n  \"climate_relevance\": \"Climate change appears only in a list of areas where the countries cooperated, with no further discussion.\",\n  \"reason\": \"The article focuses on diplomatic relations and disputes; its single brief reference to climate cooperation does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:54:58Z",
+  "duration_seconds": 2.24,
+  "error": null
+}

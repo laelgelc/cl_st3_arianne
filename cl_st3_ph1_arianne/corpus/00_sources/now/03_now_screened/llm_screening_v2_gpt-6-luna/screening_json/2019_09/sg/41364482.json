@@ -1,0 +1,77 @@
+{
+  "article_id": "41364482",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/sg/41364482.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/sg/41364482.json"
+  },
+  "manifest_row": {
+    "article_id": "41364482",
+    "group": "2019_09",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/sg/41364482.txt",
+    "now_field_2": "1321",
+    "date_original": "19-09-22",
+    "date_iso": "2019-09-22",
+    "source_name": "asianews.network",
+    "url": "https://asianews.network/2018/10/05/bangladesh-moving-close-to-self-sufficiency/",
+    "title": "Bangladesh moving close to self-sufficiency - ANN",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Bangladesh's government development activities and National Development Fair",
+    "climate_relevance": "The identifiable main article contains no meaningful climate discourse. A separate embedded snippet discusses Singapore's commitments and vulnerability at the UN Climate Action Summit, but it is unrelated to the main article.",
+    "reason": "The main article focuses on Bangladesh's development initiatives, education, infrastructure, and political achievements. Climate change appears only in a distinct, unrelated article snippet within the supplied text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9b99027faef6b773b587fc290b777821a120c9c2f4f2b9050955869e1339a937",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "363005ea0f5b92d6bf25b0babc7d4343a8b01e2fa8de7a231c044bbb59f05956",
+    "raw_response_text_sha256": "49547e32f78bd341aa2c05b3f22800be8b56c1d76ddc389517df507b2714539d"
+  },
+  "api_metadata": {
+    "id": "resp_0fd6d7b281805475006b0621694e7087d2aec1816c02f35599",
+    "model": "gpt-6-luna",
+    "created_at": 1795563881.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2177,
+      "input_tokens_details": {
+        "cache_write_tokens": 2174,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2174
+        }
+      },
+      "output_tokens": 388,
+      "output_tokens_details": {
+        "reasoning_tokens": 228
+      },
+      "total_tokens": 2565
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Bangladesh's government development activities and National Development Fair\",\n  \"climate_relevance\": \"The identifiable main article contains no meaningful climate discourse. A separate embedded snippet discusses Singapore's commitments and vulnerability at the UN Climate Action Summit, but it is unrelated to the main article.\",\n  \"reason\": \"The main article focuses on Bangladesh's development initiatives, education, infrastructure, and political achievements. Climate change appears only in a distinct, unrelated article snippet within the supplied text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:44:44Z",
+  "duration_seconds": 3.16,
+  "error": null
+}

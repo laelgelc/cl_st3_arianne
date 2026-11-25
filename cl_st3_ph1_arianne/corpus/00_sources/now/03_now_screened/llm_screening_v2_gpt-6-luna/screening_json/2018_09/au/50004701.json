@@ -1,0 +1,77 @@
+{
+  "article_id": "50004701",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/au/50004701.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/au/50004701.json"
+  },
+  "manifest_row": {
+    "article_id": "50004701",
+    "group": "2018_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/au/50004701.txt",
+    "now_field_2": "301",
+    "date_original": "18-09-06",
+    "date_iso": "2018-09-06",
+    "source_name": "97.3 Coast FM",
+    "url": "https://www.coastlive.com.au/news/local-news/mandurah-teens-return-from-trip-of-a-lifetime/",
+    "title": "Mandurah teens return from trip of a lifetime",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.78,
+    "climate_role": "passing",
+    "main_topic": "Students' environmental education trip to U.S. national parks",
+    "climate_relevance": "The text reports that students discussed climate change during the trip, but gives no detail about the discussion; most of the article concerns environmental issues, conservation, and students' experiences.",
+    "reason": "Climate change is mentioned as part of the educational trip, while the article's main focus is the trip and broader environmental learning rather than climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f4af734680204f8d7b282a68bf2a3c715e21aa828bf6207b591cb01ee3683b98",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "48d5ff67bd428a10d6bfc384034df4b7ea8f9fd5fc85f0fe2d68981ad9728f01",
+    "raw_response_text_sha256": "a9963894835d9af51f5e35278be0b4cb8422fc55727a8b981679cb7861ea30f1"
+  },
+  "api_metadata": {
+    "id": "resp_0d95d7f8750deb44006b06275a1e2087d1bf4d0d422b9908b2",
+    "model": "gpt-6-luna",
+    "created_at": 1795565402.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 859,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 318,
+      "output_tokens_details": {
+        "reasoning_tokens": 167
+      },
+      "total_tokens": 1177
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.78,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Students' environmental education trip to U.S. national parks\",\n  \"climate_relevance\": \"The text reports that students discussed climate change during the trip, but gives no detail about the discussion; most of the article concerns environmental issues, conservation, and students' experiences.\",\n  \"reason\": \"Climate change is mentioned as part of the educational trip, while the article's main focus is the trip and broader environmental learning rather than climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:10:04Z",
+  "duration_seconds": 2.594,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "41070556",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/my/41070556.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/my/41070556.json"
+  },
+  "manifest_row": {
+    "article_id": "41070556",
+    "group": "2019_06",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/my/41070556.txt",
+    "now_field_2": "350",
+    "date_original": "19-06-17",
+    "date_iso": "2019-06-17",
+    "source_name": "The Sun Daily",
+    "url": "https://www.thesundaily.my/business/foreign-outflows-resume-on-bursa-DB982511",
+    "title": "Foreign outflows resume on Bursa",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Foreign investment flows on Bursa Malaysia and a clarification about Canadian plastic waste in Malaysia",
+    "climate_relevance": "Climate change appears only as part of the agency name Environment and Climate Change Canada; the text discusses financial markets and plastic waste, not climate change.",
+    "reason": "Neither snippet contains meaningful discourse about climate change. The agency-name reference is incidental, and the plastic-waste discussion concerns waste shipments rather than climate implications.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "de0ed9b3d155af668ea86b48037fc672b7035584fd9be2850e43f17cc83e712a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7cf122765d2265c064e3f7a813c1271046d93c30a7539f8888a0fc77a6c77a3a",
+    "raw_response_text_sha256": "a65b56467b2d6e80a893d6f07f65ec3d38c997d9e9fd0ba848c38492a3f147a5"
+  },
+  "api_metadata": {
+    "id": "resp_09f52c7ab139ea4b006b0620cbf97887d28fb4932aa1424bc6",
+    "model": "gpt-6-luna",
+    "created_at": 1795563724.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1375,
+      "input_tokens_details": {
+        "cache_write_tokens": 1372,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1372
+        }
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 1610
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Foreign investment flows on Bursa Malaysia and a clarification about Canadian plastic waste in Malaysia\",\n  \"climate_relevance\": \"Climate change appears only as part of the agency name Environment and Climate Change Canada; the text discusses financial markets and plastic waste, not climate change.\",\n  \"reason\": \"Neither snippet contains meaningful discourse about climate change. The agency-name reference is incidental, and the plastic-waste discussion concerns waste shipments rather than climate implications.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:42:06Z",
+  "duration_seconds": 2.229,
+  "error": null
+}

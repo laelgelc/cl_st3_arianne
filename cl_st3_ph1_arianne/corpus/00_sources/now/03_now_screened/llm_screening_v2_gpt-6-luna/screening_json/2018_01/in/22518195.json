@@ -1,0 +1,77 @@
+{
+  "article_id": "22518195",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_01/in/22518195.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_01/in/22518195.json"
+  },
+  "manifest_row": {
+    "article_id": "22518195",
+    "group": "2018_01",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_01/in/22518195.txt",
+    "now_field_2": "364",
+    "date_original": "18-01-01",
+    "date_iso": "2018-01-01",
+    "source_name": "Hindustan Times",
+    "url": "http://www.hindustantimes.com/mumbai-news/maharashtra-lost-6-346-hectares-of-forest-land-in-just-3-years/story-9QQmv5LkBh6sTxKC0ZMjzH.html",
+    "title": "Maharashtra lost 63sqkm of forest land in 3 years",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
+    "metadata_article_files": "[\"text-18-01/text_18-01-IN.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Forest land diversion in Maharashtra for non-forestry uses, including mining and infrastructure",
+    "climate_relevance": "Climate change appears only as part of the environment ministry's name; the article discusses deforestation and ecological impacts without meaningful climate discourse.",
+    "reason": "The article focuses on forest land loss and clearances. Its environmental discussion concerns soil erosion, water pollution, wildlife, and forest ecosystems, not climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ed234f117ee66ae53575ac65756e1a4aa776f7b1b10f9d37d1b33bca952bb625",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5498b44a17f04c7ee440d9e3116509c3503992de9247898c420ca054af3187fd",
+    "raw_response_text_sha256": "f6c7036cae27ae9d55c93d93b03ec09f1efc242fa47731a8cb6f20922dd9bd15"
+  },
+  "api_metadata": {
+    "id": "resp_02549d5a606c10fd006b06103db5e087d286808c1161ca2cf1",
+    "model": "gpt-6-luna",
+    "created_at": 1795559485.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 989,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1241
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Forest land diversion in Maharashtra for non-forestry uses, including mining and infrastructure\",\n  \"climate_relevance\": \"Climate change appears only as part of the environment ministry's name; the article discusses deforestation and ecological impacts without meaningful climate discourse.\",\n  \"reason\": \"The article focuses on forest land loss and clearances. Its environmental discussion concerns soil erosion, water pollution, wildlife, and forest ecosystems, not climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:31:27Z",
+  "duration_seconds": 2.212,
+  "error": null
+}

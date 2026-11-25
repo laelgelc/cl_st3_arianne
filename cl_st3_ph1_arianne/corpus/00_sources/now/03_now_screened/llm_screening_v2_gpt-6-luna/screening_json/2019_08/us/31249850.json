@@ -1,0 +1,77 @@
+{
+  "article_id": "31249850",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/us/31249850.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/us/31249850.json"
+  },
+  "manifest_row": {
+    "article_id": "31249850",
+    "group": "2019_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/us/31249850.txt",
+    "now_field_2": "1171",
+    "date_original": "19-08-27",
+    "date_iso": "2019-08-27",
+    "source_name": "wvnews.com",
+    "url": "https://www.wvnews.com/statejournal/eqtstudentsofexcellence/focused-on-excellence-shady-spring-senior-has-his-sights-set/article_c718c532-4688-55a8-a37b-de4274a59802.html",
+    "title": "Focused on Excellence: Shady Spring senior has his sights ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A high-school student's scholarship, academic achievements, and plans to study petroleum engineering.",
+    "climate_relevance": "The main article does not meaningfully discuss climate change. A separate, unrelated opinion column in the supplied text discusses climate policy and Bernie Sanders's proposals.",
+    "reason": "The identifiable main article is a student profile; its references to petroleum engineering and the oil industry do not develop climate discourse. The climate discussion belongs to a separate snippet, not the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "902707c8565002692ef1fd8f2b86850540518137ae61cbb72aa30b377a6c7dda",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f2a92d9dfcbc5bed3ea8238b98ca57108cf323044272cd217040a3473c3f16f6",
+    "raw_response_text_sha256": "ced612815469fbe068ae0e6b0c93d18601bd97dd442f57a32b89d20beaf95cc1"
+  },
+  "api_metadata": {
+    "id": "resp_002263ce9a0ebf91006b06165e77d887d2873abb104418f5d0",
+    "model": "gpt-6-luna",
+    "created_at": 1795561054.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5887,
+      "input_tokens_details": {
+        "cache_write_tokens": 5884,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5884
+        }
+      },
+      "output_tokens": 415,
+      "output_tokens_details": {
+        "reasoning_tokens": 252
+      },
+      "total_tokens": 6302
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A high-school student's scholarship, academic achievements, and plans to study petroleum engineering.\",\n  \"climate_relevance\": \"The main article does not meaningfully discuss climate change. A separate, unrelated opinion column in the supplied text discusses climate policy and Bernie Sanders's proposals.\",\n  \"reason\": \"The identifiable main article is a student profile; its references to petroleum engineering and the oil industry do not develop climate discourse. The climate discussion belongs to a separate snippet, not the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:57:38Z",
+  "duration_seconds": 3.645,
+  "error": null
+}

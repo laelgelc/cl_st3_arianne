@@ -1,0 +1,77 @@
+{
+  "article_id": "18239518",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/us/18239518.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/us/18239518.json"
+  },
+  "manifest_row": {
+    "article_id": "18239518",
+    "group": "2017_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/us/18239518.txt",
+    "now_field_2": "930",
+    "date_original": "17-05-02",
+    "date_iso": "2017-05-02",
+    "source_name": "Waterloo Cedar Falls Courier",
+    "url": "http://wcfcourier.com/news/opinion/editorial/implications-of-france-s-election/article_f071688b-d709-5e72-b636-a15f54413359.html",
+    "title": "Implications of France's election",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "France's presidential election and the candidates' political positions",
+    "climate_relevance": "Climate change appears only in a brief sentence attributed to Macron, linking it to international cooperation without further discussion.",
+    "reason": "The article is primarily election commentary. Its single climate reference is a passing element in a broader statement and does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1f2542dd05baf15955765d24e5d628094606e3afcd4c33c7fb0d61a199c94aff",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "803ec3bf6ae653345fbf49b45ebcab41e9ff1ffd18bf30d839ec0ec8d8c72f2c",
+    "raw_response_text_sha256": "c556bb7991e6d98b1b50b792f3912c982e6251b1acf5593c7b445353b3f72c1e"
+  },
+  "api_metadata": {
+    "id": "resp_0b35ac5c6098c18f006b0609feb7fc87d2bd59564540f77d0a",
+    "model": "gpt-6-luna",
+    "created_at": 1795557886.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1753,
+      "input_tokens_details": {
+        "cache_write_tokens": 1750,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1750
+        }
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 157
+      },
+      "total_tokens": 2045
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"France's presidential election and the candidates' political positions\",\n  \"climate_relevance\": \"Climate change appears only in a brief sentence attributed to Macron, linking it to international cooperation without further discussion.\",\n  \"reason\": \"The article is primarily election commentary. Its single climate reference is a passing element in a broader statement and does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:04:49Z",
+  "duration_seconds": 2.418,
+  "error": null
+}

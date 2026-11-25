@@ -1,0 +1,77 @@
+{
+  "article_id": "20061077",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/nz/20061077.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/nz/20061077.json"
+  },
+  "manifest_row": {
+    "article_id": "20061077",
+    "group": "2017_08",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/nz/20061077.txt",
+    "now_field_2": "525",
+    "date_original": "17-08-17",
+    "date_iso": "2017-08-17",
+    "source_name": "Newshub",
+    "url": "http://www.newshub.co.nz/home/election/2017/08/move-over-greens-paula-bennett-says-it-s-time-for-national-to-own-the-conversation-on-environmental-issues.html",
+    "title": "Move over, Greens: Paula Bennett says it's time for National to 'own ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "passing",
+    "main_topic": "New Zealand election polling and party positioning",
+    "climate_relevance": "Climate change appears only as the title of the Deputy Prime Minister’s ministerial portfolio; the discussion of environmental issues does not develop into climate-related discourse.",
+    "reason": "The text focuses on party support, election strategy, and coalition prospects. Its brief reference to the Climate Change Minister is incidental rather than meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7e03b9b0d8824dd1c8cddaefa2d52add5f1fdabddbb6e0421002e7c2974cf257",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ea4516efa3e1b26d6612842179f43b4e2cdd2c78965399db4c7f536dc64adaa9",
+    "raw_response_text_sha256": "24b3da009e2d2043285c9e95a7870529ebf785004249b62e2cf23403274c6f9b"
+  },
+  "api_metadata": {
+    "id": "resp_01ad1f0cc74992e3006b060cd3841487d2aac376e99f77d724",
+    "model": "gpt-6-luna",
+    "created_at": 1795558611.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1156,
+      "input_tokens_details": {
+        "cache_write_tokens": 1153,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1153
+        }
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 1462
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New Zealand election polling and party positioning\",\n  \"climate_relevance\": \"Climate change appears only as the title of the Deputy Prime Minister’s ministerial portfolio; the discussion of environmental issues does not develop into climate-related discourse.\",\n  \"reason\": \"The text focuses on party support, election strategy, and coalition prospects. Its brief reference to the Climate Change Minister is incidental rather than meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:16:54Z",
+  "duration_seconds": 2.714,
+  "error": null
+}

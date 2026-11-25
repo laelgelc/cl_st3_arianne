@@ -1,0 +1,77 @@
+{
+  "article_id": "41495459",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/hk/41495459.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/hk/41495459.json"
+  },
+  "manifest_row": {
+    "article_id": "41495459",
+    "group": "2019_11",
+    "country_code": "hk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/hk/41495459.txt",
+    "now_field_2": "9754",
+    "date_original": "19-11-19",
+    "date_iso": "2019-11-19",
+    "source_name": "ejinsight.com",
+    "url": "http://www.ejinsight.com/category/world/international/feed/",
+    "title": "EJ Insight _ International",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-hk.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "background",
+    "main_topic": "A collection of unrelated news reports, including one on Australian bushfires and the government's climate policies",
+    "climate_relevance": "The bushfire report discusses pressure on the government over climate policy, Australia's emissions, and a newly approved coal mine; the other identifiable reports are unrelated to climate change.",
+    "reason": "Climate discourse is meaningful in the Australian bushfire report, but climate change is not the main focus of that report, and the supplied text is a concatenation of many unrelated articles rather than a single climate-focused article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "14fca6476c10387c527523a397c4e136aeffa24159b87cdd3f9eb3e7036b5476",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ba93c55ec51f973a925489409b0aeec0bb0b493c57d5597ce8ceb167a0fd8ef3",
+    "raw_response_text_sha256": "50c930f2e6ead44165b4eb5b2e4b106f0e25d250d6c2ed6eeaa1de65142d4879"
+  },
+  "api_metadata": {
+    "id": "resp_0e93493b112304f3006b0621fe379087d2af942fe4a62589e3",
+    "model": "gpt-6-luna",
+    "created_at": 1795564030.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 14434,
+      "input_tokens_details": {
+        "cache_write_tokens": 14431,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 14431
+        }
+      },
+      "output_tokens": 588,
+      "output_tokens_details": {
+        "reasoning_tokens": 418
+      },
+      "total_tokens": 15022
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of unrelated news reports, including one on Australian bushfires and the government's climate policies\",\n  \"climate_relevance\": \"The bushfire report discusses pressure on the government over climate policy, Australia's emissions, and a newly approved coal mine; the other identifiable reports are unrelated to climate change.\",\n  \"reason\": \"Climate discourse is meaningful in the Australian bushfire report, but climate change is not the main focus of that report, and the supplied text is a concatenation of many unrelated articles rather than a single climate-focused article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:47:14Z",
+  "duration_seconds": 4.565,
+  "error": null
+}

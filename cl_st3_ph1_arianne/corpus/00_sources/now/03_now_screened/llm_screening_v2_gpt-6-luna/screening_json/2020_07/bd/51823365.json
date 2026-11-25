@@ -1,0 +1,77 @@
+{
+  "article_id": "51823365",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/bd/51823365.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/bd/51823365.json"
+  },
+  "manifest_row": {
+    "article_id": "51823365",
+    "group": "2020_07",
+    "country_code": "bd",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/bd/51823365.txt",
+    "now_field_2": "3412",
+    "date_original": "20-07-16",
+    "date_iso": "2020-07-16",
+    "source_name": "unb.com.bd",
+    "url": "https://unb.com.bd/category/23/special%20target=?page=1",
+    "title": "Special | United News Bangladesh | Latest online ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-bd.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "Coronavirus testing and transmission in Bangladesh",
+    "climate_relevance": "The identifiable lead article does not discuss climate change. A separate poverty-related snippet briefly names climate change as one of several sources of vulnerability.",
+    "reason": "The main article is about COVID-19 testing and transmission, not climate change. The climate reference occurs in a separate, unrelated snippet and is not substantial coverage in the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ef0f18cf40959e78adcb0709bb1a6563fc371533447e9b78e0563550b3dc870e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "db3b21e4c45431e57758545873ba4fff1724f80ddd241b921ed1256952ceb150",
+    "raw_response_text_sha256": "e8c123a03b3c7f47d777ff20c2a31f092456f8ea2bbc2f11e283dc32ed6c79bd"
+  },
+  "api_metadata": {
+    "id": "resp_0cbd804d40559531006b062ed8a45487d19bdbd1f782751275",
+    "model": "gpt-6-luna",
+    "created_at": 1795567320.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5078,
+      "input_tokens_details": {
+        "cache_write_tokens": 5075,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5075
+        }
+      },
+      "output_tokens": 635,
+      "output_tokens_details": {
+        "reasoning_tokens": 490
+      },
+      "total_tokens": 5713
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Coronavirus testing and transmission in Bangladesh\",\n  \"climate_relevance\": \"The identifiable lead article does not discuss climate change. A separate poverty-related snippet briefly names climate change as one of several sources of vulnerability.\",\n  \"reason\": \"The main article is about COVID-19 testing and transmission, not climate change. The climate reference occurs in a separate, unrelated snippet and is not substantial coverage in the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:42:06Z",
+  "duration_seconds": 5.939,
+  "error": null
+}

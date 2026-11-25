@@ -1,0 +1,77 @@
+{
+  "article_id": "20555126",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_09/nz/20555126.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_09/nz/20555126.json"
+  },
+  "manifest_row": {
+    "article_id": "20555126",
+    "group": "2017_09",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_09/nz/20555126.txt",
+    "now_field_2": "1378",
+    "date_original": "17-09-14",
+    "date_iso": "2017-09-14",
+    "source_name": "Newsroom",
+    "url": "https://www.newsroom.co.nz/2017/09/14/48063/election2017live-7days",
+    "title": "Election 2017 Live: Divergent poll results add to the confusion",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-09.txt\"]",
+    "metadata_article_files": "[\"text-17-09/text_17-09-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "New Zealand election campaign news and party policies",
+    "climate_relevance": "Climate change appears only in a brief note about Jacinda Ardern's upcoming campaign events; no climate-related issue or policy is discussed.",
+    "reason": "The roundup covers polling, campaign controversies, transport, crime, and other election topics. Its sole climate reference is an agenda-style passing mention, which does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1271929491ce7b58d5949fa968c50a11825ea99ac55b790087ee51d34a75ada6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cd431c4a827e69ffda3324a25012bd2b5736f7bebabc0568995482f677875428",
+    "raw_response_text_sha256": "2136370a3fb9c34feb1d7be06cfabfb1737f9dcfef4af37ec2403c11f00f0f4b"
+  },
+  "api_metadata": {
+    "id": "resp_0833fa5d0627148e006b060d71a45887d28dc319c212c68599",
+    "model": "gpt-6-luna",
+    "created_at": 1795558769.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2310,
+      "input_tokens_details": {
+        "cache_write_tokens": 2307,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2307
+        }
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 2573
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New Zealand election campaign news and party policies\",\n  \"climate_relevance\": \"Climate change appears only in a brief note about Jacinda Ardern's upcoming campaign events; no climate-related issue or policy is discussed.\",\n  \"reason\": \"The roundup covers polling, campaign controversies, transport, crime, and other election topics. Its sole climate reference is an agenda-style passing mention, which does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:19:32Z",
+  "duration_seconds": 2.44,
+  "error": null
+}

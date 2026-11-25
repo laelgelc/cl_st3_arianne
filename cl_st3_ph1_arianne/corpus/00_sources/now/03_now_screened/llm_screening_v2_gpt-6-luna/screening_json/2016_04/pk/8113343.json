@@ -1,0 +1,77 @@
+{
+  "article_id": "8113343",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_04/pk/8113343.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_04/pk/8113343.json"
+  },
+  "manifest_row": {
+    "article_id": "8113343",
+    "group": "2016_04",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_04/pk/8113343.txt",
+    "now_field_2": "632",
+    "date_original": "16-04-06",
+    "date_iso": "2016-04-06",
+    "source_name": "Pak1stanFirst",
+    "url": "http://pak1stanfirst.com/negocios/tata-steel-to-begin-sale-process-by-monday/56004",
+    "title": "Tata Steel to begin sale process by Monday",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-04-ovb/16-04-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The proposed sale of Tata Steel's UK operations",
+    "climate_relevance": "The main article briefly mentions a proposed tidal lagoon as a possible energy source. More substantive climate-change lines appear to belong to an unrelated inserted news snippet.",
+    "reason": "The identifiable main article concerns Tata Steel's sale and the steel industry, not climate change. Although the inserted climate report discusses health risks and extreme weather, it is unrelated to the main article and should not make this item core or peripheral climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9baafd721f3151445c482693fd1687e4de7ec2d1171d0f4c8ed1778f1a1a880a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "608ce7b791053f11c316d4bf0320271cc89b2775f494635cfb7d045da4f0325b",
+    "raw_response_text_sha256": "8dc2074afa44baa1940f95291436087eb5464e432a4324caa89719fddf6dbf30"
+  },
+  "api_metadata": {
+    "id": "resp_0ad2c4f9b9e07b42006b0646ed98c887d1947591129e00453e",
+    "model": "gpt-6-luna",
+    "created_at": 1795573485.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1265,
+      "input_tokens_details": {
+        "cache_write_tokens": 1262,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1262
+        }
+      },
+      "output_tokens": 411,
+      "output_tokens_details": {
+        "reasoning_tokens": 243
+      },
+      "total_tokens": 1676
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The proposed sale of Tata Steel's UK operations\",\n  \"climate_relevance\": \"The main article briefly mentions a proposed tidal lagoon as a possible energy source. More substantive climate-change lines appear to belong to an unrelated inserted news snippet.\",\n  \"reason\": \"The identifiable main article concerns Tata Steel's sale and the steel industry, not climate change. Although the inserted climate report discusses health risks and extreme weather, it is unrelated to the main article and should not make this item core or peripheral climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:24:48Z",
+  "duration_seconds": 3.444,
+  "error": null
+}

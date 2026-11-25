@@ -1,0 +1,77 @@
+{
+  "article_id": "23369247",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_02/ca/23369247.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_02/ca/23369247.json"
+  },
+  "manifest_row": {
+    "article_id": "23369247",
+    "group": "2018_02",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_02/ca/23369247.txt",
+    "now_field_2": "162",
+    "date_original": "18-02-24",
+    "date_iso": "2018-02-24",
+    "source_name": "Jamaica Gleaner",
+    "url": "http://jamaica-gleaner.com/article/news/20180224/former-port-authority-head-noel-hylton-dies",
+    "title": "Former Port Authority head Noel Hylton dies",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-02.txt\"]",
+    "metadata_article_files": "[\"text-18-02/text_18-02-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A farewell tribute to a Jamaican shipping-industry figure and the development of the country's port infrastructure.",
+    "climate_relevance": "Climate change appears only in the listed former minister's portfolio; the text contains no meaningful climate-related discussion.",
+    "reason": "The article is about shipping and a farewell function. The brief mention of 'environment and climate change' is part of a person's official title, not climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0e44379d63460154982a0a233c7718c36dbe3a8f88b62ec3c33ce248de8b5826",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "059bc3a18c5bdad19f77b72ceb3db300909630784036615f262b5b2f11cf7cb4",
+    "raw_response_text_sha256": "3553f3e36d74cf6c56ea963ead513b7a39e419934a67d93feb5b1c3f690400b6"
+  },
+  "api_metadata": {
+    "id": "resp_02d56622209af295006b061126b13087d2aa246974cbf5ee84",
+    "model": "gpt-6-luna",
+    "created_at": 1795559718.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 699,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 195,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 894
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A farewell tribute to a Jamaican shipping-industry figure and the development of the country's port infrastructure.\",\n  \"climate_relevance\": \"Climate change appears only in the listed former minister's portfolio; the text contains no meaningful climate-related discussion.\",\n  \"reason\": \"The article is about shipping and a farewell function. The brief mention of 'environment and climate change' is part of a person's official title, not climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:35:20Z",
+  "duration_seconds": 1.886,
+  "error": null
+}

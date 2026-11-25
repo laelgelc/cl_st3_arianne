@@ -1,0 +1,77 @@
+{
+  "article_id": "3817204",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_11/us/3817204.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_11/us/3817204.json"
+  },
+  "manifest_row": {
+    "article_id": "3817204",
+    "group": "2015_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_11/us/3817204.txt",
+    "now_field_2": "789",
+    "date_original": "15-11-23",
+    "date_iso": "2015-11-23",
+    "source_name": "Phys.Org",
+    "url": "http://phys.org/news/2015-11-solutions-effect-power-digital.html",
+    "title": "Solutions to reduce the effect of wind power on digital communications",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-11-xje/15-11-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Reducing wind turbines’ interference with digital communications",
+    "climate_relevance": "The main article discusses wind power and renewable-energy development, but does not meaningfully address climate change. A related-story snippet mentions wind power’s role in climate-change mitigation.",
+    "reason": "The identifiable main article focuses on communications interference and wind-farm planning, not climate discourse. The only explicit climate-change reference is in an unrelated related-story snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7305491a315f109ea8d7da3e77ead2fee862d543f867d72d0a10bbd55bcc32c4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1c28f001c01bbcfdd9166ee6b30971195dd7c483d4e1f63bba09eb325c0cc0fd",
+    "raw_response_text_sha256": "fc073038b1a795333451ce5689f554714860ce76b490efcf4c72ca11db020aad"
+  },
+  "api_metadata": {
+    "id": "resp_07a3007374703bc0006b061d1e63e487d28ccab72f2172cd64",
+    "model": "gpt-6-luna",
+    "created_at": 1795562782.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1460,
+      "input_tokens_details": {
+        "cache_write_tokens": 1457,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1457
+        }
+      },
+      "output_tokens": 354,
+      "output_tokens_details": {
+        "reasoning_tokens": 199
+      },
+      "total_tokens": 1814
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Reducing wind turbines’ interference with digital communications\",\n  \"climate_relevance\": \"The main article discusses wind power and renewable-energy development, but does not meaningfully address climate change. A related-story snippet mentions wind power’s role in climate-change mitigation.\",\n  \"reason\": \"The identifiable main article focuses on communications interference and wind-farm planning, not climate discourse. The only explicit climate-change reference is in an unrelated related-story snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:26:25Z",
+  "duration_seconds": 2.751,
+  "error": null
+}

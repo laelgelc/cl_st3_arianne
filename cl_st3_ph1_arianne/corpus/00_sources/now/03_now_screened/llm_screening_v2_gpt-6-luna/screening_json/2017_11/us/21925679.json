@@ -1,0 +1,77 @@
+{
+  "article_id": "21925679",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/us/21925679.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/us/21925679.json"
+  },
+  "manifest_row": {
+    "article_id": "21925679",
+    "group": "2017_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/us/21925679.txt",
+    "now_field_2": "852",
+    "date_original": "17-11-27",
+    "date_iso": "2017-11-27",
+    "source_name": "Daily Nebraskan",
+    "url": "http://www.dailynebraskan.com/arts_and_entertainment/review-bj-rk-s-utopia-is-full-of-yearning-for/article_3a4206f2-d3fa-11e7-a84a-c345b771a1cb.html",
+    "title": "REVIEW: Bj�rk's 'Utopia' is full of yearning for peace and love",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Review of Björk's album Utopia",
+    "climate_relevance": "The review briefly connects a lyric about a toxic tumor beneath the ground to Björk's views on climate change.",
+    "reason": "The text is mainly an album review, and climate change is discussed in only one sentence as part of interpreting a song lyric. This is a meaningful but passing reference, not central climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "96af29bb4c122e7fa4f3fbf14801c49d1acbf6aa50ccfddc2eca4043b98cb8be",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "16fd344407f4bac70014697bf03000c8369268d9861a6ca367095df0bc4f569d",
+    "raw_response_text_sha256": "549895d908a7a5d0503099abd6eb572459b92cc65ca11856ac006e3d5750f1e3"
+  },
+  "api_metadata": {
+    "id": "resp_0a8573e1f98df3ec006b060f947ae087d2b6e75ebc28cd58f1",
+    "model": "gpt-6-luna",
+    "created_at": 1795559316.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1686,
+      "input_tokens_details": {
+        "cache_write_tokens": 1683,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1683
+        }
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 1937
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Review of Björk's album Utopia\",\n  \"climate_relevance\": \"The review briefly connects a lyric about a toxic tumor beneath the ground to Björk's views on climate change.\",\n  \"reason\": \"The text is mainly an album review, and climate change is discussed in only one sentence as part of interpreting a song lyric. This is a meaningful but passing reference, not central climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:28:38Z",
+  "duration_seconds": 2.231,
+  "error": null
+}

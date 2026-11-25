@@ -1,0 +1,77 @@
+{
+  "article_id": "85669486",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85669486.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85669486.json"
+  },
+  "manifest_row": {
+    "article_id": "85669486",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85669486.txt",
+    "now_field_2": "557",
+    "date_original": "20-08-13",
+    "date_iso": "2020-08-13",
+    "source_name": "Forbes",
+    "url": "https://www.forbes.com/sites/anuradhavaranasi/2020/08/13/multiple-sclerosis-drug-shows-promise-for-hiv-prevention-and-treatment/",
+    "title": "Multiple Sclerosis Drug Shows Promise For HIV Prevention And Treatment",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A study of fingolimod as a potential treatment for HIV",
+    "climate_relevance": "Climate change appears only in the author's biography, which says she writes about climate change.",
+    "reason": "The article is about HIV research and contains no meaningful climate discourse; the only climate reference is biographical boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6db18e295158d0e9588a2293402982be275e7b3f45e0b3e491a4c42b55be0642",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2fe38827751fa7cd0dd2a87d0eac0981b6e69f1a359b5e848ea16aa4f514f71d",
+    "raw_response_text_sha256": "b83c588333eef09ed303770051707182155765fa37cf5209146ea45bf11fbbac"
+  },
+  "api_metadata": {
+    "id": "resp_055cbcdfa008e253006b064caa69c087d1817de7fe608ed66f",
+    "model": "gpt-6-luna",
+    "created_at": 1795574954.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1223,
+      "input_tokens_details": {
+        "cache_write_tokens": 1220,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1220
+        }
+      },
+      "output_tokens": 203,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 1426
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A study of fingolimod as a potential treatment for HIV\",\n  \"climate_relevance\": \"Climate change appears only in the author's biography, which says she writes about climate change.\",\n  \"reason\": \"The article is about HIV research and contains no meaningful climate discourse; the only climate reference is biographical boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:49:16Z",
+  "duration_seconds": 2.089,
+  "error": null
+}

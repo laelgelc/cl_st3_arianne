@@ -1,0 +1,77 @@
+{
+  "article_id": "31341068",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/31341068.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/31341068.json"
+  },
+  "manifest_row": {
+    "article_id": "31341068",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/31341068.txt",
+    "now_field_2": "1192",
+    "date_original": "19-10-11",
+    "date_iso": "2019-10-11",
+    "source_name": "reviewjournal.com",
+    "url": "https://www.reviewjournal.com/news/politics-and-government/las-vegas/city-of-las-vegas-seeks-to-jumpstart-badlands-negotiations-1868872/",
+    "title": "City of Las Vegas seeks to jumpstart Badlands negotiations ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Las Vegas city involvement in a legal dispute over proposed development at the former Badlands golf course",
+    "climate_relevance": "Climate change appears only in an unrelated video caption about Joe Biden discussing campaign topics.",
+    "reason": "The main article concerns land-use litigation and negotiations over a condominium project. The sole climate reference is in an appended, unrelated snippet and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4b536c2fa38db0fbbc8cc5a5fc1fba5bf8f92dc41237611f6c9aa90b90f6937d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b87ad208ac4242b9edd512104d5d97c2557666ecf39b7c284bbbab4ec80acf7c",
+    "raw_response_text_sha256": "0b7b3c7d78781c6e8ceb9296fa18b3d55f043cdbd03fce2768d8b84ebbaf6238"
+  },
+  "api_metadata": {
+    "id": "resp_089dbb7ffd0bcf09006b0616e0b65c87d2b471c43f31b15cc1",
+    "model": "gpt-6-luna",
+    "created_at": 1795561184.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2086,
+      "input_tokens_details": {
+        "cache_write_tokens": 2083,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2083
+        }
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 2312
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Las Vegas city involvement in a legal dispute over proposed development at the former Badlands golf course\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated video caption about Joe Biden discussing campaign topics.\",\n  \"reason\": \"The main article concerns land-use litigation and negotiations over a condominium project. The sole climate reference is in an appended, unrelated snippet and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:59:46Z",
+  "duration_seconds": 1.903,
+  "error": null
+}

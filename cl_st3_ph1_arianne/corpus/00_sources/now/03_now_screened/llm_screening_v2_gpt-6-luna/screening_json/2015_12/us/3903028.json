@@ -1,0 +1,77 @@
+{
+  "article_id": "3903028",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/us/3903028.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/us/3903028.json"
+  },
+  "manifest_row": {
+    "article_id": "3903028",
+    "group": "2015_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/us/3903028.txt",
+    "now_field_2": "5016",
+    "date_original": "15-12-15",
+    "date_iso": "2015-12-15",
+    "source_name": "The Atlantic",
+    "url": "http://www.theatlantic.com/health/archive/2015/12/sexual-abuse-victims-obesity/420186/",
+    "title": "The Second Assault",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Childhood sexual abuse and trauma as factors in disordered eating and adult obesity",
+    "climate_relevance": "The identifiable main article does not discuss climate change. A separate climate-related item appears among the appended 'Most Popular' snippets.",
+    "reason": "The main article concerns childhood trauma, eating disorders, and obesity. Although an appended, unrelated snippet contains meaningful discussion of climate change, it is not part of the main article being assessed.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5527aab4bf8cdde27a58028629298713fdbdc26bc1df73ba0975bcd8a547dfc8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "842ec81bf83a778165c0449a947809ace95f92eee185b7267a7ba7f8cfd5f804",
+    "raw_response_text_sha256": "3b36828a777bdb8a11bc207ffb2acfe2f1ce2cc74f79371c073b9550bb8417cf"
+  },
+  "api_metadata": {
+    "id": "resp_001889fada02cdfd006b061dc8c7d887d28c3a2da3f0e0e3a6",
+    "model": "gpt-6-luna",
+    "created_at": 1795562952.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7077,
+      "input_tokens_details": {
+        "cache_write_tokens": 7074,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 7074
+        }
+      },
+      "output_tokens": 423,
+      "output_tokens_details": {
+        "reasoning_tokens": 266
+      },
+      "total_tokens": 7500
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Childhood sexual abuse and trauma as factors in disordered eating and adult obesity\",\n  \"climate_relevance\": \"The identifiable main article does not discuss climate change. A separate climate-related item appears among the appended 'Most Popular' snippets.\",\n  \"reason\": \"The main article concerns childhood trauma, eating disorders, and obesity. Although an appended, unrelated snippet contains meaningful discussion of climate change, it is not part of the main article being assessed.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:29:16Z",
+  "duration_seconds": 3.413,
+  "error": null
+}

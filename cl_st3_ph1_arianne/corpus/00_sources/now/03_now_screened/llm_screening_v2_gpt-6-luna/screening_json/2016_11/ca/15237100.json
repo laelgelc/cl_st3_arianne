@@ -1,0 +1,77 @@
+{
+  "article_id": "15237100",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_11/ca/15237100.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_11/ca/15237100.json"
+  },
+  "manifest_row": {
+    "article_id": "15237100",
+    "group": "2016_11",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_11/ca/15237100.txt",
+    "now_field_2": "1713",
+    "date_original": "16-11-05",
+    "date_iso": "2016-11-05",
+    "source_name": "Toronto Star",
+    "url": "https://www.thestar.com/news/world/2016/11/05/ericq-pierre-had-a-dream-to-reforest-haiti-then-hurricane-matthew-hit.html",
+    "title": "Ericq Pierre had a dream to reforest Haiti, then Hurricane Matthew hit",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-11.txt\"]",
+    "metadata_article_files": "[\"text-16-11/text_16-11-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Hurricane Matthew's destruction of a Haitian farmer's forest, livelihood, and development plans",
+    "climate_relevance": "The article reports Pierre's belief that recent hurricanes are linked to climate change and may become more frequent, alongside discussion of deforestation, erosion, and landslides.",
+    "reason": "The main focus is the hurricane's effects on Pierre and the Grand'Anse region, not climate change. However, the explicit climate-change link and related environmental consequences provide meaningful context for broader climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9623758c29b228fb3552dacd4ef59467af6c75a6c7af48d54f3c65c08e308668",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e8e819c72ab34b0c250b724d6e08418703205342948cc583f79453b9170346e6",
+    "raw_response_text_sha256": "3162a46df2b8d780c8902fa3fcc2ec536ec51e2fe1417f63c0a70ae69a2ef625"
+  },
+  "api_metadata": {
+    "id": "resp_0f1b8fd104f3c655006b060665b28c87d28c513e4179b3f4a3",
+    "model": "gpt-6-luna",
+    "created_at": 1795556965.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2875,
+      "input_tokens_details": {
+        "cache_write_tokens": 2872,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2872
+        }
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 3192
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Hurricane Matthew's destruction of a Haitian farmer's forest, livelihood, and development plans\",\n  \"climate_relevance\": \"The article reports Pierre's belief that recent hurricanes are linked to climate change and may become more frequent, alongside discussion of deforestation, erosion, and landslides.\",\n  \"reason\": \"The main focus is the hurricane's effects on Pierre and the Grand'Anse region, not climate change. However, the explicit climate-change link and related environmental consequences provide meaningful context for broader climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:49:28Z",
+  "duration_seconds": 2.549,
+  "error": null
+}

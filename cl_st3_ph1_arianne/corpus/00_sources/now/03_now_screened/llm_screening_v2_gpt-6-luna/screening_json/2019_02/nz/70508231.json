@@ -1,0 +1,77 @@
+{
+  "article_id": "70508231",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70508231.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70508231.json"
+  },
+  "manifest_row": {
+    "article_id": "70508231",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70508231.txt",
+    "now_field_2": "891",
+    "date_original": "19-02-12",
+    "date_iso": "2019-02-12",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/ED1902/S00033/bold-proposal-puts-people-at-heart-of-vocational-education.htm",
+    "title": "Bold proposal puts people at heart of vocational education",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "New Zealand vocational education reform",
+    "climate_relevance": "Climate change appears only in an unrelated Greenpeace snippet about a political party's environment policy.",
+    "reason": "The identifiable main article concerns vocational education and contains no climate discourse. The only climate reference is in a separate, brief snippet, so it is not part of the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cc808a4b78a553c6ee278abc336923c18aae12a73ac713b4e2c080b36f45a828",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1ef65fe522f4333394bc3a44020bc4e19dfd43f288bd0056326f069851e3b0e0",
+    "raw_response_text_sha256": "cba1301dcedc7fe25bef2ae0bb71dff24c655b5b6fd173dac59cb639102a4d8b"
+  },
+  "api_metadata": {
+    "id": "resp_02addbd39deb6e58006b063d15d4f887d1a338aa5b93d30352",
+    "model": "gpt-6-luna",
+    "created_at": 1795570965.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2535,
+      "input_tokens_details": {
+        "cache_write_tokens": 2532,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2532
+        }
+      },
+      "output_tokens": 413,
+      "output_tokens_details": {
+        "reasoning_tokens": 274
+      },
+      "total_tokens": 2948
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"New Zealand vocational education reform\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated Greenpeace snippet about a political party's environment policy.\",\n  \"reason\": \"The identifiable main article concerns vocational education and contains no climate discourse. The only climate reference is in a separate, brief snippet, so it is not part of the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:49Z",
+  "duration_seconds": 3.37,
+  "error": null
+}

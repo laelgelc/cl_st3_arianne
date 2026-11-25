@@ -1,0 +1,77 @@
+{
+  "article_id": "40200913",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/my/40200913.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/my/40200913.json"
+  },
+  "manifest_row": {
+    "article_id": "40200913",
+    "group": "2018_10",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/my/40200913.txt",
+    "now_field_2": "267",
+    "date_original": "18-10-26",
+    "date_iso": "2018-10-26",
+    "source_name": "EdgeProp.my",
+    "url": "https://www.edgeprop.my/content/1438641/zuraida-no-more-aps-plastic-wastes-be-issued",
+    "title": "Zuraida: No more APs for plastic wastes to be issued",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Restrictions on plastic imports and plastic-waste pollution in Malaysia",
+    "climate_relevance": "Climate change appears only in the name of a government ministry; the text contains no substantive climate-related discussion.",
+    "reason": "The article focuses on plastic-industry policy and pollution, while the climate reference is incidental. Property-website promotional text is appended and unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5c2436c44519c6ecac40e52c7c9ffec99efc36bbd288f0eb12d8cd32e901dbf4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "223f1b645f99b2d2013da3056bb9bc98989ea56cc58355ccd37b7371277cb769",
+    "raw_response_text_sha256": "8c9833abe23c478183575d8324f9c8db5a0014c99a3c8d134f165bcfb35134f3"
+  },
+  "api_metadata": {
+    "id": "resp_0100b8fb46942b5c006b061e7c099c87d2ab1e0f49e23888e3",
+    "model": "gpt-6-luna",
+    "created_at": 1795563132.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 824,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1051
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Restrictions on plastic imports and plastic-waste pollution in Malaysia\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government ministry; the text contains no substantive climate-related discussion.\",\n  \"reason\": \"The article focuses on plastic-industry policy and pollution, while the climate reference is incidental. Property-website promotional text is appended and unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:32:14Z",
+  "duration_seconds": 2.076,
+  "error": null
+}

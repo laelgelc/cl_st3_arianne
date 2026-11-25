@@ -1,0 +1,77 @@
+{
+  "article_id": "24859339",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/us/24859339.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/us/24859339.json"
+  },
+  "manifest_row": {
+    "article_id": "24859339",
+    "group": "2018_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/us/24859339.txt",
+    "now_field_2": "835",
+    "date_original": "18-05-27",
+    "date_iso": "2018-05-27",
+    "source_name": "New York Daily News",
+    "url": "http://www.nydailynews.com/opinion/woman-journey-agony-delays-daughter-death-article-1.4011916",
+    "title": "Bronx woman's long journey of agony and delays after her daughter's ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "A mother's grief and efforts to retrieve her deceased daughter's belongings",
+    "climate_relevance": "Climate change appears only in a speculative reference to possible photographs of the daughter protesting the White House's stance.",
+    "reason": "The article is about bereavement and the handling of personal effects; the brief climate reference does not develop climate-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0a4d1940111df230512a3111af93a7e71e538dd855ca0ad9a9061e437b86bd51",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6c3ae2a805b9a56c2741cbdd020835276c6c3099786a4c29393b668b26909315",
+    "raw_response_text_sha256": "2ddf4ccfce5ede250f3f9e2aac5235075579552fb59a295c68607fcb0c14c16b"
+  },
+  "api_metadata": {
+    "id": "resp_0a2e64053221c4db006b0612db824887d2b727303abbb5ce75",
+    "model": "gpt-6-luna",
+    "created_at": 1795560155.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1536,
+      "input_tokens_details": {
+        "cache_write_tokens": 1533,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1533
+        }
+      },
+      "output_tokens": 191,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1727
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A mother's grief and efforts to retrieve her deceased daughter's belongings\",\n  \"climate_relevance\": \"Climate change appears only in a speculative reference to possible photographs of the daughter protesting the White House's stance.\",\n  \"reason\": \"The article is about bereavement and the handling of personal effects; the brief climate reference does not develop climate-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:42:37Z",
+  "duration_seconds": 1.694,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "7050662",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/ca/7050662.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ca/7050662.json"
+  },
+  "manifest_row": {
+    "article_id": "7050662",
+    "group": "2016_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/ca/7050662.txt",
+    "now_field_2": "2148",
+    "date_original": "16-01-11",
+    "date_iso": "2016-01-11",
+    "source_name": "The Globe and Mail",
+    "url": "http://www.theglobeandmail.com/report-on-business/industry-news/property-report/pushing-the-envelope-to-make-buildings-greener/article28107980/",
+    "title": "Pushing the envelope to make buildings greener",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-ca.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.97,
+    "climate_role": "substantial",
+    "main_topic": "Building-envelope testing and retrofits to reduce energy loss in commercial buildings",
+    "climate_relevance": "The article connects building energy efficiency to climate mitigation, citing buildings’ greenhouse-gas emissions and presenting reduced energy demand as one way to address climate change.",
+    "reason": "Climate change is a meaningful part of the building-efficiency article’s rationale, with explicit discussion of emissions and mitigation. The text also contains a separate, unrelated sports report; the identifiable main article is the building-efficiency report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "69219caf6c7960d6df3660fbdc405c1404f797e623f248e732b3d80528faa39c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ffec8fdf7dd241260647b4b2f721457858a47e427315b1ea58d603e1120657e8",
+    "raw_response_text_sha256": "3b8ec6728b577713c02e67c9930f6fe7b98abbafec32ad99adb4bc650e933a02"
+  },
+  "api_metadata": {
+    "id": "resp_089a2ab951b30c2e006b063d1001ac87d1866a04ff0f766add",
+    "model": "gpt-6-luna",
+    "created_at": 1795570960.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3417,
+      "input_tokens_details": {
+        "cache_write_tokens": 3414,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3414
+        }
+      },
+      "output_tokens": 269,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 3686
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Building-envelope testing and retrofits to reduce energy loss in commercial buildings\",\n  \"climate_relevance\": \"The article connects building energy efficiency to climate mitigation, citing buildings’ greenhouse-gas emissions and presenting reduced energy demand as one way to address climate change.\",\n  \"reason\": \"Climate change is a meaningful part of the building-efficiency article’s rationale, with explicit discussion of emissions and mitigation. The text also contains a separate, unrelated sports report; the identifiable main article is the building-efficiency report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:42Z",
+  "duration_seconds": 2.337,
+  "error": null
+}

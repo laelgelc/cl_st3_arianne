@@ -1,0 +1,77 @@
+{
+  "article_id": "41480075",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/sg/41480075.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/sg/41480075.json"
+  },
+  "manifest_row": {
+    "article_id": "41480075",
+    "group": "2019_11",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/sg/41480075.txt",
+    "now_field_2": "333",
+    "date_original": "19-11-12",
+    "date_iso": "2019-11-12",
+    "source_name": "tnp.sg",
+    "url": "https://www.tnp.sg/news/world/catastrophic-fires-continue-rage-australia",
+    "title": "`Catastrophic' fires continue to rage in Australia, Latest ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Bush fires in eastern Australia and their impacts",
+    "climate_relevance": "The report links drought conditions preceding the fires to climate change, but climate change is not its main subject.",
+    "reason": "The article focuses on the fires, emergency response, and damage. Its explicit claim that climate change has exacerbated drought provides meaningful but background climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "27e8ccb9711eba8f4cb10d23f6af83f1d2772b162bf18b899b1c552abbc57908",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ff22f7b6430a6e9c5130a8781861f604f5d4650927ec16052f9a74ca05ade913",
+    "raw_response_text_sha256": "c0b7fd7a8514ff5fb2d24f9df0c8c720dadaaff18acb72ae4f58db6854f36d9d"
+  },
+  "api_metadata": {
+    "id": "resp_07a075e41fa5ee57006b0621ed1b7887d2bfc7a514f5110105",
+    "model": "gpt-6-luna",
+    "created_at": 1795564013.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 917,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 1123
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Bush fires in eastern Australia and their impacts\",\n  \"climate_relevance\": \"The report links drought conditions preceding the fires to climate change, but climate change is not its main subject.\",\n  \"reason\": \"The article focuses on the fires, emergency response, and damage. Its explicit claim that climate change has exacerbated drought provides meaningful but background climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:46:54Z",
+  "duration_seconds": 1.871,
+  "error": null
+}

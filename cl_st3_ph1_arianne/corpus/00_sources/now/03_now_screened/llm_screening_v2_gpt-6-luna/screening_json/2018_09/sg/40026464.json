@@ -1,0 +1,77 @@
+{
+  "article_id": "40026464",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/sg/40026464.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/sg/40026464.json"
+  },
+  "manifest_row": {
+    "article_id": "40026464",
+    "group": "2018_09",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/sg/40026464.txt",
+    "now_field_2": "1320",
+    "date_original": "18-09-12",
+    "date_iso": "2018-09-12",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/catholic-church-losing-most-devoted-094500355.html",
+    "title": "The Catholic Church Is Losing Its Most Devoted Followers",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Indigenous and Latino Catholics’ experiences of the Catholic Church, including its history, sexual-abuse scandals, and prospects for reform.",
+    "climate_relevance": "Climate change appears only in a passing reference to Pope Francis’s support for the Paris Agreement.",
+    "reason": "The text does not discuss climate change or the agreement beyond listing it among the Pope’s positions; this is not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "33511521f3db52f8ae7ec2737bd6d80eb71a423fe8e9253d47abbf88ee3ccdd9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "242a4ce935477fa7317e02315be99eaf214d1c726f94cc2ab80c6e5f1d888207",
+    "raw_response_text_sha256": "0c2ccb45b431387b515735747daa46f0bb9b204f71e8279425006c1dccba7c1d"
+  },
+  "api_metadata": {
+    "id": "resp_01e4c655f0b22dfc006b061dfd456487d2a77627a829546d80",
+    "model": "gpt-6-luna",
+    "created_at": 1795563005.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2103,
+      "input_tokens_details": {
+        "cache_write_tokens": 2100,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2100
+        }
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 2370
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Indigenous and Latino Catholics’ experiences of the Catholic Church, including its history, sexual-abuse scandals, and prospects for reform.\",\n  \"climate_relevance\": \"Climate change appears only in a passing reference to Pope Francis’s support for the Paris Agreement.\",\n  \"reason\": \"The text does not discuss climate change or the agreement beyond listing it among the Pope’s positions; this is not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:30:07Z",
+  "duration_seconds": 2.751,
+  "error": null
+}

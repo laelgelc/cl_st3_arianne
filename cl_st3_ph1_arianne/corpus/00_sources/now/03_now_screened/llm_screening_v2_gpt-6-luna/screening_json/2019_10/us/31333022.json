@@ -1,0 +1,77 @@
+{
+  "article_id": "31333022",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/31333022.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/31333022.json"
+  },
+  "manifest_row": {
+    "article_id": "31333022",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/31333022.txt",
+    "now_field_2": "516",
+    "date_original": "19-10-08",
+    "date_iso": "2019-10-08",
+    "source_name": "reviewjournal.com",
+    "url": "https://www.reviewjournal.com/news/education/regents-ok-3-2m-to-bring-unr-stadium-up-to-ada-standards-1842455/",
+    "title": "Regents OK $3.2M to bring UNR stadium up to ADA standards ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Accessibility compliance and renovation work at the University of Nevada, Reno football stadium",
+    "climate_relevance": "Climate change appears only in a caption listing topics discussed at a political rally in an unrelated snippet.",
+    "reason": "The identifiable main article concerns stadium accessibility and contains no climate discourse. The only climate reference is a passing mention in a separate caption, without meaningful discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b1bf0fba6a967e14ec4c8075633023ca1c17de9f63055426b418317c27655a82",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "31cb14167275cad5017691e99cd5a56a25f965592d680a65da8d9539c85f5f7a",
+    "raw_response_text_sha256": "f3124b73b5c5fc39a00bc9eaa9f036b8accde1a2a84fb893687d554623ff14c8"
+  },
+  "api_metadata": {
+    "id": "resp_06d0fe89251a733d006b0616cf8f2487d28654bc322d4cf96e",
+    "model": "gpt-6-luna",
+    "created_at": 1795561167.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1184,
+      "input_tokens_details": {
+        "cache_write_tokens": 1181,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1181
+        }
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 1435
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Accessibility compliance and renovation work at the University of Nevada, Reno football stadium\",\n  \"climate_relevance\": \"Climate change appears only in a caption listing topics discussed at a political rally in an unrelated snippet.\",\n  \"reason\": \"The identifiable main article concerns stadium accessibility and contains no climate discourse. The only climate reference is a passing mention in a separate caption, without meaningful discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:59:29Z",
+  "duration_seconds": 2.274,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50199835",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/ke/50199835.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/ke/50199835.json"
+  },
+  "manifest_row": {
+    "article_id": "50199835",
+    "group": "2018_11",
+    "country_code": "ke",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/ke/50199835.txt",
+    "now_field_2": "855",
+    "date_original": "18-11-10",
+    "date_iso": "2018-11-10",
+    "source_name": "Daily Nation",
+    "url": "https://www.nation.co.ke/oped/opinion/Rains-may-have-already-failed/440808-4844840-hi0s72/index.html",
+    "title": "Rains may have already failed; the weatherman is not to blame",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-ke.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "climate_role": "central",
+    "main_topic": "Unreliable rainfall forecasts and the effects of changing weather patterns on Kenyan farmers",
+    "climate_relevance": "The main section explicitly discusses climate change and global warming, links them to shifting rainfall patterns, droughts, floods, and farming risks, and refers to climate-change sceptics.",
+    "reason": "Climate change and its implications for weather, agriculture, and disaster risk are the main focus of the first section. A separate passage about teenage pregnancies is unrelated and appears after a divider.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7d2b510839c6a55604614f9556d921cf6d6bbc9cbe5aab2cb37cbfe068f5a6b1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d073712fa506b7092ce9b9c2544b1c691f965bcbc2f9bdd4ab09db974b2b0c4a",
+    "raw_response_text_sha256": "ba5b0cf8d6e273ad88651082c1d63fb283bece430173dceb309babe40a224ad9"
+  },
+  "api_metadata": {
+    "id": "resp_09a2e2ec795c61ca006b0627f9482487d18b708e84670506fe",
+    "model": "gpt-6-luna",
+    "created_at": 1795565561.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1584,
+      "input_tokens_details": {
+        "cache_write_tokens": 1581,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1581
+        }
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 1857
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Unreliable rainfall forecasts and the effects of changing weather patterns on Kenyan farmers\",\n  \"climate_relevance\": \"The main section explicitly discusses climate change and global warming, links them to shifting rainfall patterns, droughts, floods, and farming risks, and refers to climate-change sceptics.\",\n  \"reason\": \"Climate change and its implications for weather, agriculture, and disaster risk are the main focus of the first section. A separate passage about teenage pregnancies is unrelated and appears after a divider.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:12:43Z",
+  "duration_seconds": 2.529,
+  "error": null
+}

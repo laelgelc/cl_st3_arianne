@@ -1,0 +1,77 @@
+{
+  "article_id": "70863937",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/us/70863937.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/us/70863937.json"
+  },
+  "manifest_row": {
+    "article_id": "70863937",
+    "group": "2019_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/us/70863937.txt",
+    "now_field_2": "917",
+    "date_original": "19-06-12",
+    "date_iso": "2019-06-12",
+    "source_name": "MarylandReporter.com",
+    "url": "https://marylandreporter.com/2019/06/12/bitter-cold-part-4-keeping-drafts-out-of-old-rowhouse/",
+    "title": "Bitter Cold Part 4: Keeping drafts out of old rowhouse",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "climate_role": "background",
+    "main_topic": "Cold, drafty housing, health, and home energy-efficiency improvements in Baltimore",
+    "climate_relevance": "The article is identified as part of a series examining climate change and public health in Baltimore, but the available main text focuses on one resident's cold home, health, and insulation rather than developing the climate connection.",
+    "reason": "Climate change provides the series framing, while the article itself is mainly about housing conditions and energy costs. A separate nuclear-power item appears after the “Read Next” heading and is not part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "765d69bdee08aa77a40c8704397bf8a3109d5acae8f37bc129200d4bcedfbe03",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bdcf54e9389c22d406e66c2994b20038168c53ea4f686a209dc6f42d1fd837cb",
+    "raw_response_text_sha256": "7424f3af7e1cb0602293a6bf2848018836095b3aab1fa9ca7be66dd275882bb6"
+  },
+  "api_metadata": {
+    "id": "resp_089284da95874f53006b063f9f789087d1a6f7132c3e415670",
+    "model": "gpt-6-luna",
+    "created_at": 1795571615.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1721,
+      "input_tokens_details": {
+        "cache_write_tokens": 1718,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1718
+        }
+      },
+      "output_tokens": 395,
+      "output_tokens_details": {
+        "reasoning_tokens": 219
+      },
+      "total_tokens": 2116
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Cold, drafty housing, health, and home energy-efficiency improvements in Baltimore\",\n  \"climate_relevance\": \"The article is identified as part of a series examining climate change and public health in Baltimore, but the available main text focuses on one resident's cold home, health, and insulation rather than developing the climate connection.\",\n  \"reason\": \"Climate change provides the series framing, while the article itself is mainly about housing conditions and energy costs. A separate nuclear-power item appears after the “Read Next” heading and is not part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:53:38Z",
+  "duration_seconds": 3.411,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40829648",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40829648.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40829648.json"
+  },
+  "manifest_row": {
+    "article_id": "40829648",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40829648.txt",
+    "now_field_2": "606",
+    "date_original": "19-04-11",
+    "date_iso": "2019-04-11",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/12/maybank-to-disburse-rm85b-in-housing-sme-loans/",
+    "title": "Maybank to disburse RM85b in housing, SME loans",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Maybank's lending plans, mortgage and SME financing, and banking regulation",
+    "climate_relevance": "Climate-related wording appears only in an opening headline-style snippet about Malaysia exhibiting sustainable energy solutions; it is unrelated to the identifiable Maybank article.",
+    "reason": "The main article concerns banking and contains no meaningful climate discourse. The climate-related reference is part of an unrelated snippet rather than the article's discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d6a61f13a95b656de0efca8ff0fba6cc4951057e3ab0b91c8d98b5a9c1ac12a2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "49f8ef26dfc1301c9f7066859fbfc5c17e4158a73bb41ea72158c47a652e0070",
+    "raw_response_text_sha256": "f42a7bd5f1b8154c59dee9094aedf347d1be0818e0ef710a25721d8f648bc373"
+  },
+  "api_metadata": {
+    "id": "resp_0a26fa5b8a9c249d006b061feb2e7c87d2849dd01377f3e60c",
+    "model": "gpt-6-luna",
+    "created_at": 1795563499.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1361,
+      "input_tokens_details": {
+        "cache_write_tokens": 1358,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1358
+        }
+      },
+      "output_tokens": 410,
+      "output_tokens_details": {
+        "reasoning_tokens": 259
+      },
+      "total_tokens": 1771
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Maybank's lending plans, mortgage and SME financing, and banking regulation\",\n  \"climate_relevance\": \"Climate-related wording appears only in an opening headline-style snippet about Malaysia exhibiting sustainable energy solutions; it is unrelated to the identifiable Maybank article.\",\n  \"reason\": \"The main article concerns banking and contains no meaningful climate discourse. The climate-related reference is part of an unrelated snippet rather than the article's discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:22Z",
+  "duration_seconds": 3.079,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "22397706",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_12/us/22397706.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_12/us/22397706.json"
+  },
+  "manifest_row": {
+    "article_id": "22397706",
+    "group": "2017_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_12/us/22397706.txt",
+    "now_field_2": "214",
+    "date_original": "17-12-24",
+    "date_iso": "2017-12-24",
+    "source_name": "Charleston Post Courier",
+    "url": "https://www.postandcourier.com/news/newsmaker-tropical-storm-irma-gave-charleston-another-reminder-of-sea/article_d3e7f6b6-e4d7-11e7-8579-7fc9648efc7c.html",
+    "title": "Newsmaker: Tropical Storm Irma gave Charleston another reminder ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-12.txt\"]",
+    "metadata_article_files": "[\"text-17-12/text_17-12-US.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.97,
+    "climate_role": "substantial",
+    "main_topic": "Charleston's exposure to flooding and sea-level rise, and the city's response",
+    "climate_relevance": "The text explicitly connects extreme weather and rising seas with climate change, discusses projected sea-level rise, and describes local adaptation efforts.",
+    "reason": "Climate change impacts and the response to them are central to the available article, despite a corrupted passage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9980acfef31efaa8fbbca5b193de5c8e506a37379304fc8aa4a541ef58b298b1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c6f6a0dc8b42e6d2fd7ab176affb0f73dea099bac08bf4af8e0f3de320c3b169",
+    "raw_response_text_sha256": "890acf5c3af7d3234e9403e277ae205c78093e30a6c212ea59b65dee316fa6bd"
+  },
+  "api_metadata": {
+    "id": "resp_004a9aff8b913c7c006b06101b19f087d29f19bdb631c5d8d0",
+    "model": "gpt-6-luna",
+    "created_at": 1795559451.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 764,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 181,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 945
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Charleston's exposure to flooding and sea-level rise, and the city's response\",\n  \"climate_relevance\": \"The text explicitly connects extreme weather and rising seas with climate change, discusses projected sea-level rise, and describes local adaptation efforts.\",\n  \"reason\": \"Climate change impacts and the response to them are central to the available article, despite a corrupted passage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:30:52Z",
+  "duration_seconds": 1.896,
+  "error": null
+}

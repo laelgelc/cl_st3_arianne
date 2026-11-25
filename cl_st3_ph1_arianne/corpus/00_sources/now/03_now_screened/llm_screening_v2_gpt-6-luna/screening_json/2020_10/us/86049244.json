@@ -1,0 +1,77 @@
+{
+  "article_id": "86049244",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86049244.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86049244.json"
+  },
+  "manifest_row": {
+    "article_id": "86049244",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86049244.txt",
+    "now_field_2": "1094",
+    "date_original": "20-10-01",
+    "date_iso": "2020-10-01",
+    "source_name": "Chicago Tribune",
+    "url": "https://www.chicagotribune.com/suburbs/daily-southtown/ct-sta-community-news-st-1002-20201001-hipnrspke5guthk4wyyohom2jm-story.html",
+    "title": "Community news: McAuley lauds faculty member, student with annual award, more",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "Local community news briefs, including school awards, a fundraiser, a Sierra Club meeting, road repairs, and local events",
+    "climate_relevance": "One brief reports on a Sierra Club meeting about a citizen action group aiming to implement climate change solutions inspired by Paul Hawken's book Drawdown.",
+    "reason": "The text is a compilation of unrelated local-news items, and climate change appears meaningfully in only the brief about the Sierra Club meeting. That mention is relevant to climate discourse but is not the focus of the overall text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4fbb05957426913c91d1df716efddb2e01ae5b9f4132db76b3c8c1a5c8692016",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8c4a5554a1a4884880b05bd0d918cab03e340df30e95566f8ba128b221210161",
+    "raw_response_text_sha256": "a2a1b332a7088f995476a3895550f896e8d6855e6192b685426149cf7de41fa8"
+  },
+  "api_metadata": {
+    "id": "resp_0bd05713f8bc19b4006b064e38fe9487d195f8f1f03f590331",
+    "model": "gpt-6-luna",
+    "created_at": 1795575353.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2046,
+      "input_tokens_details": {
+        "cache_write_tokens": 2043,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2043
+        }
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 2304
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Local community news briefs, including school awards, a fundraiser, a Sierra Club meeting, road repairs, and local events\",\n  \"climate_relevance\": \"One brief reports on a Sierra Club meeting about a citizen action group aiming to implement climate change solutions inspired by Paul Hawken's book Drawdown.\",\n  \"reason\": \"The text is a compilation of unrelated local-news items, and climate change appears meaningfully in only the brief about the Sierra Club meeting. That mention is relevant to climate discourse but is not the focus of the overall text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:55:55Z",
+  "duration_seconds": 2.367,
+  "error": null
+}

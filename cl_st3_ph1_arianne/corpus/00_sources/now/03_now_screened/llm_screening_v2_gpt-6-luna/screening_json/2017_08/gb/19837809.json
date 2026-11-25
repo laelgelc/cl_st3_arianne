@@ -1,0 +1,77 @@
+{
+  "article_id": "19837809",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/gb/19837809.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/gb/19837809.json"
+  },
+  "manifest_row": {
+    "article_id": "19837809",
+    "group": "2017_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/gb/19837809.txt",
+    "now_field_2": "3858",
+    "date_original": "17-08-03",
+    "date_iso": "2017-08-03",
+    "source_name": "Telegraph.co.uk",
+    "url": "http://www.telegraph.co.uk/news/2017/08/04/important-least-try-can-23-year-old-clear-oceans-plastic-waste/",
+    "title": "'It's important to at least try': Can this 23-year-old clear the oceans of ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-GB.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Boyan Slat and The Ocean Cleanup project addressing plastic pollution in the oceans",
+    "climate_relevance": "Climate change is briefly invoked as a larger problem when Slat argues that attention can be divided among environmental challenges.",
+    "reason": "The article is substantially about ocean plastic pollution and cleanup technology, not climate change. Its brief comparison of climate change with plastic pollution offers some meaningful discourse about competing environmental priorities, so it is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e90c14491b1d624fbdbb18d2e316b810c30ba543a30dba36f79cc26f9ef1b7c6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6244974af01ddadd00a8bd6f56b49b970841b891047ed948e00116cd84c48eda",
+    "raw_response_text_sha256": "2b2b7fe9f80f938bb067ca7c75744fec072b2b74182ea6d8daf8aad87797423e"
+  },
+  "api_metadata": {
+    "id": "resp_0a6916b022995d88006b060c83da4487d293685a5e4c84276d",
+    "model": "gpt-6-luna",
+    "created_at": 1795558532.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5401,
+      "input_tokens_details": {
+        "cache_write_tokens": 5398,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5398
+        }
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 5721
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Boyan Slat and The Ocean Cleanup project addressing plastic pollution in the oceans\",\n  \"climate_relevance\": \"Climate change is briefly invoked as a larger problem when Slat argues that attention can be divided among environmental challenges.\",\n  \"reason\": \"The article is substantially about ocean plastic pollution and cleanup technology, not climate change. Its brief comparison of climate change with plastic pollution offers some meaningful discourse about competing environmental priorities, so it is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:15:34Z",
+  "duration_seconds": 2.697,
+  "error": null
+}

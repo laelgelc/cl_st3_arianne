@@ -1,0 +1,77 @@
+{
+  "article_id": "16762781",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/za/16762781.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/za/16762781.json"
+  },
+  "manifest_row": {
+    "article_id": "16762781",
+    "group": "2017_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/za/16762781.txt",
+    "now_field_2": "529",
+    "date_original": "17-02-05",
+    "date_iso": "2017-02-05",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/thetimes/2017/02/06/A-final-good-night-from-Black-Sabbath1",
+    "title": "A final good night from Black Sabbath",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Black Sabbath's farewell concert, alongside several unrelated news and lifestyle snippets",
+    "climate_relevance": "A separate snippet reports Sweden's goal to phase out greenhouse gas emissions by 2045 and mentions uncertainty about climate policy under Donald Trump.",
+    "reason": "The text is a collection of unrelated snippets. The identifiable main article concerns Black Sabbath and contains no meaningful climate discourse; the climate-related sentence belongs to a separate brief snippet rather than the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a9511091a064e106edb202ffe3b1b9d62da8a793b93f545fbf9cc0f96a03b094",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5163e98233449b375df9087fd9f0597e3cb2b089e57b832ac6ffb519e24c1e56",
+    "raw_response_text_sha256": "bc319f8a25bb424038c0e7faa3905c988ffbbd7bdc615cab3a92e65e1b601f9f"
+  },
+  "api_metadata": {
+    "id": "resp_0870eea1825e6c4d006b06082de9c487d287a186378df717b7",
+    "model": "gpt-6-luna",
+    "created_at": 1795557422.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1219,
+      "input_tokens_details": {
+        "cache_write_tokens": 1216,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1216
+        }
+      },
+      "output_tokens": 338,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 1557
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Black Sabbath's farewell concert, alongside several unrelated news and lifestyle snippets\",\n  \"climate_relevance\": \"A separate snippet reports Sweden's goal to phase out greenhouse gas emissions by 2045 and mentions uncertainty about climate policy under Donald Trump.\",\n  \"reason\": \"The text is a collection of unrelated snippets. The identifiable main article concerns Black Sabbath and contains no meaningful climate discourse; the climate-related sentence belongs to a separate brief snippet rather than the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:57:04Z",
+  "duration_seconds": 2.823,
+  "error": null
+}

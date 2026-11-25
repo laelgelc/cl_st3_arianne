@@ -1,0 +1,77 @@
+{
+  "article_id": "83599823",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/83599823.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/83599823.json"
+  },
+  "manifest_row": {
+    "article_id": "83599823",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/83599823.txt",
+    "now_field_2": "487",
+    "date_original": "20-02-02",
+    "date_iso": "2020-02-02",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20200202212520-3lnz0",
+    "title": "Days after Brexit, Macron visits Poland amid frosty ties",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "French-Polish relations and Emmanuel Macron's visit to Poland",
+    "climate_relevance": "Climate policy is mentioned as one area of disagreement: France is pushing for more climate action, while Poland has rejected EU policies on the issue.",
+    "reason": "The article is mainly about diplomatic relations and European politics, but its description of a climate-policy disagreement provides meaningful, though limited, climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "646e4b7c83f4ad6759e9392cc3345ab84615829d0d41dd088db7e5110edf2294",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4a34412ab6e8f1775f9f70aa9e922f018047369bdb2038345c1fb1d2e9fcf0dd",
+    "raw_response_text_sha256": "8bb414fa2d0e655820419cd25872bf0696436796944ea0ae666e4bdd58ae2892"
+  },
+  "api_metadata": {
+    "id": "resp_0b54abac3752bd8a006b0649c9cedc87d18379409c9eb408a4",
+    "model": "gpt-6-luna",
+    "created_at": 1795574217.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1125,
+      "input_tokens_details": {
+        "cache_write_tokens": 1122,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1122
+        }
+      },
+      "output_tokens": 310,
+      "output_tokens_details": {
+        "reasoning_tokens": 166
+      },
+      "total_tokens": 1435
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"French-Polish relations and Emmanuel Macron's visit to Poland\",\n  \"climate_relevance\": \"Climate policy is mentioned as one area of disagreement: France is pushing for more climate action, while Poland has rejected EU policies on the issue.\",\n  \"reason\": \"The article is mainly about diplomatic relations and European politics, but its description of a climate-policy disagreement provides meaningful, though limited, climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:37:00Z",
+  "duration_seconds": 2.729,
+  "error": null
+}

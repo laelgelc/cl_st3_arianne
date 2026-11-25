@@ -1,0 +1,77 @@
+{
+  "article_id": "42246823",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/gb/42246823.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/gb/42246823.json"
+  },
+  "manifest_row": {
+    "article_id": "42246823",
+    "group": "2020_09",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/gb/42246823.txt",
+    "now_field_2": "505",
+    "date_original": "20-09-04",
+    "date_iso": "2020-09-04",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/labour-richard-leonard-should-go-says-peer-1-6822036",
+    "title": "New Scottish Labour leader would change `Labour's fortunes ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Scottish Labour leadership and party politics",
+    "climate_relevance": "Climate change appears only in repeated promotional copy describing the publication's coverage; the article itself does not discuss it.",
+    "reason": "The climate reference is boilerplate unrelated to the main article, which concerns calls for Richard Leonard to step down as Scottish Labour leader.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5fee9dfa9fd482e6e9f907787ca0de440bed1cf86b7ded4b534d06d1fce61d7b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "de95d5f911edc64dab2b0b6e7957688f7825ab01563643c0be74695b6f116978",
+    "raw_response_text_sha256": "d1cd893cf8a157e13eebd10596741535f94a835b6d1c13be635055c49aa61376"
+  },
+  "api_metadata": {
+    "id": "resp_0e4d62d66f03f59a006b062547f5d087d2b8562d8d2676c757",
+    "model": "gpt-6-luna",
+    "created_at": 1795564872.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1104,
+      "input_tokens_details": {
+        "cache_write_tokens": 1101,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1101
+        }
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 1372
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Scottish Labour leadership and party politics\",\n  \"climate_relevance\": \"Climate change appears only in repeated promotional copy describing the publication's coverage; the article itself does not discuss it.\",\n  \"reason\": \"The climate reference is boilerplate unrelated to the main article, which concerns calls for Richard Leonard to step down as Scottish Labour leader.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:01:14Z",
+  "duration_seconds": 2.407,
+  "error": null
+}

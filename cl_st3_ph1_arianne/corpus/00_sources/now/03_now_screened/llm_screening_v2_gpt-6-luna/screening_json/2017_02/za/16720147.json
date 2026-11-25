@@ -1,0 +1,77 @@
+{
+  "article_id": "16720147",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/za/16720147.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/za/16720147.json"
+  },
+  "manifest_row": {
+    "article_id": "16720147",
+    "group": "2017_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/za/16720147.txt",
+    "now_field_2": "1296",
+    "date_original": "17-02-03",
+    "date_iso": "2017-02-03",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/opinion/2017/02/03/OPINION-How-fake-news-is-driving-SAs-political-agendas",
+    "title": "OPINION: How fake news is driving SA's political agendas",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Coordinated fake Twitter accounts and political discourse in South Africa",
+    "climate_relevance": "A fragment about phasing out greenhouse gas emissions and uncertainty over U.S. climate policy appears among unrelated snippets, but climate change is not discussed in the identifiable main article.",
+    "reason": "The main article analyzes fake news accounts and political manipulation. The climate-related fragment appears to belong to a separate, unrelated item and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fa65061e56d8bae8e00867e9efacd7af26d1ebaac24ffa2302107fbaa5e82696",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7b8fea02527f9426adfbe51e0a8bdfd6fec8bc85e72ceb20f5972b8d40696ebc",
+    "raw_response_text_sha256": "97affa6c99684b936468f79d82889392baa3a8cee93b9aa826c5dc04692ab1eb"
+  },
+  "api_metadata": {
+    "id": "resp_0e5e8cb425596c56006b06081aee5887d2933d79547c9e7fe5",
+    "model": "gpt-6-luna",
+    "created_at": 1795557403.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2221,
+      "input_tokens_details": {
+        "cache_write_tokens": 2218,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2218
+        }
+      },
+      "output_tokens": 428,
+      "output_tokens_details": {
+        "reasoning_tokens": 266
+      },
+      "total_tokens": 2649
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Coordinated fake Twitter accounts and political discourse in South Africa\",\n  \"climate_relevance\": \"A fragment about phasing out greenhouse gas emissions and uncertainty over U.S. climate policy appears among unrelated snippets, but climate change is not discussed in the identifiable main article.\",\n  \"reason\": \"The main article analyzes fake news accounts and political manipulation. The climate-related fragment appears to belong to a separate, unrelated item and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:56:46Z",
+  "duration_seconds": 3.228,
+  "error": null
+}

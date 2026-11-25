@@ -1,0 +1,77 @@
+{
+  "article_id": "83070931",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83070931.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83070931.json"
+  },
+  "manifest_row": {
+    "article_id": "83070931",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83070931.txt",
+    "now_field_2": "144",
+    "date_original": "20-01-04",
+    "date_iso": "2020-01-04",
+    "source_name": "CBSSports.com",
+    "url": "https://www.cbssports.com/fantasy/hockey/news/sabres-marcus-johansson-two-helpers-in-win/",
+    "title": "Sabres' Marcus Johansson: Two helpers in win",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A hockey player’s performance and a fatal building collapse in Cambodia appear as separate snippets.",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the publisher’s coverage areas.",
+    "reason": "Neither identifiable story meaningfully discusses climate change; the only reference is a passing item in an editorial boilerplate list.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "de8ae4af5e42296f95cc71a5d7670c6c934b72aae67c26ca90a8106e89f44dba",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "23680c0f687083ba776dc398bd16fd87391aeb789115fedd5116ca54ec8e2bac",
+    "raw_response_text_sha256": "a13667a77bd38a013a05849141edd2b4eb9a5e3341c0cb5165130dda139dc409"
+  },
+  "api_metadata": {
+    "id": "resp_0e6fe5e7b30c806a006b06491904d087d1a3aa9f6c2d83ef9d",
+    "model": "gpt-6-luna",
+    "created_at": 1795574041.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1041,
+      "input_tokens_details": {
+        "cache_write_tokens": 1038,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1038
+        }
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1274
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A hockey player’s performance and a fatal building collapse in Cambodia appear as separate snippets.\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the publisher’s coverage areas.\",\n  \"reason\": \"Neither identifiable story meaningfully discusses climate change; the only reference is a passing item in an editorial boilerplate list.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:34:03Z",
+  "duration_seconds": 2.135,
+  "error": null
+}

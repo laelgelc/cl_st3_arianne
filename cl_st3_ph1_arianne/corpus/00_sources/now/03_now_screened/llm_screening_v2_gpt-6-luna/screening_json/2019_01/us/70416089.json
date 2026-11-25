@@ -1,0 +1,77 @@
+{
+  "article_id": "70416089",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/us/70416089.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/us/70416089.json"
+  },
+  "manifest_row": {
+    "article_id": "70416089",
+    "group": "2019_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/us/70416089.txt",
+    "now_field_2": "7396",
+    "date_original": "19-01-14",
+    "date_iso": "2019-01-14",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/news/powerpost/paloma/daily-202/2019/01/14/daily-202-anxiety-about-the-pace-of-change-animates-populist-movements-on-the-right-and-left/5c3c0b941b326b66fc5a1c38/",
+    "title": "The Daily 202: Anxiety about the pace of change animates populist ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Political volatility and the competing anxieties animating populist movements on the right and left",
+    "climate_relevance": "The lead analysis identifies failure to address accelerating climate change as one concern motivating the 'Too Slow' coalition, but does not develop the climate issue.",
+    "reason": "Climate change appears in a meaningful sentence linking it to political dissatisfaction, while the article is mainly about populist movements and broader political change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1c29c8fb4f91f0e3027dd31a08a24a7dac08fccc7ae2b1bc20d6e41667320d98",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "020de3f646510763a23a601f8b2e76e6b6e580da0414a9b73685e951eb4620f0",
+    "raw_response_text_sha256": "db38bc72d4e9fe0fa27709c074ef9b98d4b695c07ee595c944e54604278f418d"
+  },
+  "api_metadata": {
+    "id": "resp_067fd1f1ab3d7772006b063c6d8b3087d1b89844d2201e28dc",
+    "model": "gpt-6-luna",
+    "created_at": 1795570797.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10122,
+      "input_tokens_details": {
+        "cache_write_tokens": 10119,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 10119
+        }
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 171
+      },
+      "total_tokens": 10442
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Political volatility and the competing anxieties animating populist movements on the right and left\",\n  \"climate_relevance\": \"The lead analysis identifies failure to address accelerating climate change as one concern motivating the 'Too Slow' coalition, but does not develop the climate issue.\",\n  \"reason\": \"Climate change appears in a meaningful sentence linking it to political dissatisfaction, while the article is mainly about populist movements and broader political change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:00Z",
+  "duration_seconds": 3.158,
+  "error": null
+}

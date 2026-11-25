@@ -1,0 +1,77 @@
+{
+  "article_id": "71441354",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/in/71441354.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/in/71441354.json"
+  },
+  "manifest_row": {
+    "article_id": "71441354",
+    "group": "2019_12",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/in/71441354.txt",
+    "now_field_2": "405",
+    "date_original": "19-12-03",
+    "date_iso": "2019-12-03",
+    "source_name": "ahmedabadmirror.indiatimes.com",
+    "url": "https://ahmedabadmirror.indiatimes.com/news/india/countrys-tiger-population-up-by-750-in-4-years-javadekar/articleshow/72337891.cms",
+    "title": "Country's tiger population up by 750 in 4 years: Javadekar",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-in2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Tiger population and forest-cover statistics in India",
+    "climate_relevance": "Climate change appears only as part of the minister's official title; the report does not discuss climate change or its implications.",
+    "reason": "The article focuses on wildlife numbers and forest cover. Neither is framed as climate discourse in the available text, so the title reference is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d7f5a1d88a3e48cda6622ff2035c75ff70e74065d170217d99786c42a3aa5b26",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ed08aa281beb0d9fd50980bc17e2fc5f8e740692863e6de79c061163969f0c32",
+    "raw_response_text_sha256": "74e73316ff1a570d0243f0480d7ebdb0ea099cab0a019a8883b8829359eaaf4b"
+  },
+  "api_metadata": {
+    "id": "resp_08d7b3a43e2a3354006b06416b1f9087d1b84aec4e0f984f2b",
+    "model": "gpt-6-luna",
+    "created_at": 1795572075.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1062,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1059,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 1312
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Tiger population and forest-cover statistics in India\",\n  \"climate_relevance\": \"Climate change appears only as part of the minister's official title; the report does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on wildlife numbers and forest cover. Neither is framed as climate discourse in the available text, so the title reference is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:01:17Z",
+  "duration_seconds": 2.461,
+  "error": null
+}

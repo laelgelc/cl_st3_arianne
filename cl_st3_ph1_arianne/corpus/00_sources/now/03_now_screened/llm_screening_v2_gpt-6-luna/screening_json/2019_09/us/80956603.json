@@ -1,0 +1,77 @@
+{
+  "article_id": "80956603",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/80956603.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/80956603.json"
+  },
+  "manifest_row": {
+    "article_id": "80956603",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/80956603.txt",
+    "now_field_2": "509",
+    "date_original": "19-09-07",
+    "date_iso": "2019-09-07",
+    "source_name": "Fort Bend Herald",
+    "url": "https://www.fbherald.com/community/fort-bend-county-law-library-demonstrates-westlaw-resource-for-legal/article_7970a27c-1147-5a85-ba37-c9990a0bef9a.html",
+    "title": "FORT BEND COUNTY LAW LIBRARY DEMONSTRATES WESTLAW RESOURCE FOR LEGAL PROFESSIONALS",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Fort Bend County Law Library demonstration of the Westlaw legal research database",
+    "climate_relevance": "The identifiable main article has no climate content. A separate, fragmentary AP snippet mentions climate change in connection with a Paris Fashion Week show, but provides no substantive discussion.",
+    "reason": "The main article is an unrelated library event announcement. Climate change appears only in a fragment from an unrelated news item, so it does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "212fb140be0c27564c631a41bc4326355e0ab590740d71a6c37da92d24958797",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2a9b4ac59eb694ab03b1fe7b433b1562d18affb6c28018d99d58c3abc31d3f78",
+    "raw_response_text_sha256": "a224e212b49b9091450671eb5f1e9960f0bb65ad8536455ddd0a8b18f543e6e5"
+  },
+  "api_metadata": {
+    "id": "resp_02a281be1d3290fd006b0646c11a2487d1a2cd52461fb20acd",
+    "model": "gpt-6-luna",
+    "created_at": 1795573441.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1211,
+      "input_tokens_details": {
+        "cache_write_tokens": 1208,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1208
+        }
+      },
+      "output_tokens": 382,
+      "output_tokens_details": {
+        "reasoning_tokens": 220
+      },
+      "total_tokens": 1593
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Fort Bend County Law Library demonstration of the Westlaw legal research database\",\n  \"climate_relevance\": \"The identifiable main article has no climate content. A separate, fragmentary AP snippet mentions climate change in connection with a Paris Fashion Week show, but provides no substantive discussion.\",\n  \"reason\": \"The main article is an unrelated library event announcement. Climate change appears only in a fragment from an unrelated news item, so it does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:24:04Z",
+  "duration_seconds": 3.195,
+  "error": null
+}

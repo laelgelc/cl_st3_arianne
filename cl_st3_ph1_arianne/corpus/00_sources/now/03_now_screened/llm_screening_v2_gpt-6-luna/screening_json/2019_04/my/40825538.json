@@ -1,0 +1,77 @@
+{
+  "article_id": "40825538",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40825538.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40825538.json"
+  },
+  "manifest_row": {
+    "article_id": "40825538",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40825538.txt",
+    "now_field_2": "708",
+    "date_original": "19-04-10",
+    "date_iso": "2019-04-10",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/11/govt-to-the-rescue-again-for-crimes-at-felda/",
+    "title": "Govt to the rescue again, for 'crimes' at Felda",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Government financial rescue and restructuring of the Federal Land Development Authority (Felda)",
+    "climate_relevance": "Climate change appears only in an unrelated opening news item identifying a minister and mentioning Malaysia's planned exhibition of sustainable energy solutions. The main article contains no meaningful climate discourse.",
+    "reason": "The identifiable main article concerns Felda's financial troubles and government support. The climate-related reference is a brief, separate headline-style item and does not contribute meaningful climate discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "346f86d0a851c316644224f4eda8d4e205b5804f42f95d79fc7b5641b0285a8d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "368bfc895e6eb5ae44826fb6ccbc3ecb778ee5586f9c2cdb4d92f80a8301feb8",
+    "raw_response_text_sha256": "f46506020ad5a8c93297546b21f86c4fd72099f799efde7527e8430a91d91403"
+  },
+  "api_metadata": {
+    "id": "resp_034a973bbbc1a89d006b061fe6243487d29cb1b346497a715f",
+    "model": "gpt-6-luna",
+    "created_at": 1795563494.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1511,
+      "input_tokens_details": {
+        "cache_write_tokens": 1508,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1508
+        }
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 1784
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Government financial rescue and restructuring of the Federal Land Development Authority (Felda)\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated opening news item identifying a minister and mentioning Malaysia's planned exhibition of sustainable energy solutions. The main article contains no meaningful climate discourse.\",\n  \"reason\": \"The identifiable main article concerns Felda's financial troubles and government support. The climate-related reference is a brief, separate headline-style item and does not contribute meaningful climate discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:16Z",
+  "duration_seconds": 2.329,
+  "error": null
+}

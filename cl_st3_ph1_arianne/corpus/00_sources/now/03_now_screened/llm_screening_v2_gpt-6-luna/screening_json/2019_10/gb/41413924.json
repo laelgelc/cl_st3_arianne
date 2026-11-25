@@ -1,0 +1,77 @@
+{
+  "article_id": "41413924",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/gb/41413924.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/gb/41413924.json"
+  },
+  "manifest_row": {
+    "article_id": "41413924",
+    "group": "2019_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/gb/41413924.txt",
+    "now_field_2": "439",
+    "date_original": "19-10-15",
+    "date_iso": "2019-10-15",
+    "source_name": "zawya.com",
+    "url": "https://www.zawya.com/uae/en/life/story/Prince_William_and_wife_Kate_meet_Imran_Khan_Pakistans_PM_and_friend_of_Diana-TR20191015nL3N2702FZX1/",
+    "title": "Prince William and wife Kate meet Imran Khan, Pakistan's ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "climate_role": "passing",
+    "main_topic": "The royal couple's visit to Pakistan",
+    "climate_relevance": "The visit is described as focusing partly on climate change, but the article provides no further discussion of climate issues.",
+    "reason": "Climate change is mentioned as one of the trip's focuses, but the report is mainly about the royal visit, education, diplomacy, and fashion. The stock-market material and disclaimer are unrelated boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a39bb3eaeb46dba7d5d43ca1d06fcef8e0eefe2e85d188b3c4affb863ae19f90",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "51e989717992b9843c350645a575261b14430245352494a9bbd45e448ea7a129",
+    "raw_response_text_sha256": "2674b40a2188f5651662b78e3683f9a77e283bc1bfd8233f8a42098d5d52414e"
+  },
+  "api_metadata": {
+    "id": "resp_06b199347dfaa33d006b0621a9ae1887d2b22bd9a2755678bf",
+    "model": "gpt-6-luna",
+    "created_at": 1795563945.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1044,
+      "input_tokens_details": {
+        "cache_write_tokens": 1041,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1041
+        }
+      },
+      "output_tokens": 343,
+      "output_tokens_details": {
+        "reasoning_tokens": 198
+      },
+      "total_tokens": 1387
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The royal couple's visit to Pakistan\",\n  \"climate_relevance\": \"The visit is described as focusing partly on climate change, but the article provides no further discussion of climate issues.\",\n  \"reason\": \"Climate change is mentioned as one of the trip's focuses, but the report is mainly about the royal visit, education, diplomacy, and fashion. The stock-market material and disclaimer are unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:45:48Z",
+  "duration_seconds": 2.665,
+  "error": null
+}

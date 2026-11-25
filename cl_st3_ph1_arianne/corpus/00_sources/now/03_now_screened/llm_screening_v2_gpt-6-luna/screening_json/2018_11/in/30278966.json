@@ -1,0 +1,77 @@
+{
+  "article_id": "30278966",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/in/30278966.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/in/30278966.json"
+  },
+  "manifest_row": {
+    "article_id": "30278966",
+    "group": "2018_11",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/in/30278966.txt",
+    "now_field_2": "734",
+    "date_original": "18-11-21",
+    "date_iso": "2018-11-21",
+    "source_name": "Livemint",
+    "url": "https://www.livemint.com/Politics/BOP1HVUNrL0QkKkOtOQvLI/Gujarat-Centre-step-up-efforts-for-lion-conservation.html",
+    "title": "Gujarat, Centre step up efforts for lion conservation",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-in2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Conservation of Asiatic lions in Gujarat",
+    "climate_relevance": "Climate change appears only in the formal name of the Ministry of Environment, Forest and Climate Change; the text contains no meaningful discussion of climate change.",
+    "reason": "The article focuses on lion deaths, disease prevention, habitat monitoring, translocation, and conservation funding. The ministry name is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c81ed94a97abbc8ca10607c1a1be40d7e8e757046845fd70f964f7084d55707f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a2b89a8ecf2159000de75d3be0db3875501f4eb3ac57306a2d9e99f4aaecdc56",
+    "raw_response_text_sha256": "59edf47fab4202c7f309db108af219c9719dbdc98cf59bc240085ff670b326ae"
+  },
+  "api_metadata": {
+    "id": "resp_09ab11bc0a22e0fd006b0613b6710487d2bd93295105d7b4b7",
+    "model": "gpt-6-luna",
+    "created_at": 1795560374.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1397,
+      "input_tokens_details": {
+        "cache_write_tokens": 1394,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1394
+        }
+      },
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1605
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Conservation of Asiatic lions in Gujarat\",\n  \"climate_relevance\": \"Climate change appears only in the formal name of the Ministry of Environment, Forest and Climate Change; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on lion deaths, disease prevention, habitat monitoring, translocation, and conservation funding. The ministry name is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:46:16Z",
+  "duration_seconds": 1.87,
+  "error": null
+}

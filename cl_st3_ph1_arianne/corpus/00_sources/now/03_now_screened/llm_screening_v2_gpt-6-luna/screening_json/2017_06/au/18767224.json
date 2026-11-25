@@ -1,0 +1,77 @@
+{
+  "article_id": "18767224",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/au/18767224.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/au/18767224.json"
+  },
+  "manifest_row": {
+    "article_id": "18767224",
+    "group": "2017_06",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/au/18767224.txt",
+    "now_field_2": "455",
+    "date_original": "17-06-01",
+    "date_iso": "2017-06-01",
+    "source_name": "Gizmodo Australia",
+    "url": "https://www.gizmodo.com.au/2017/06/heres-what-that-faceless-fish-actually-is/",
+    "title": "Here's What That 'Faceless Fish' Actually Is",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The identification and characteristics of a rarely observed deep-sea fish nicknamed the faceless fish.",
+    "climate_relevance": "Climate change appears only in an unrelated trending-stories snippet about the US and the Paris Agreement.",
+    "reason": "The identifiable main article is about a deep-sea fish and contains no meaningful climate discourse. The climate-related text belongs to a separate, unrelated snippet and does not make the main article relevant to the corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2be92a272d2b2e9c5f9578df7420705adfcd101315d9b8ca8e584c30fdb93a31",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "55ab34d448c27c1c18696d3cd1d69cea8a4760e9d036dc43965e5d14c32cc9ad",
+    "raw_response_text_sha256": "3ccb7bd88e1a085032f9df2cdd22617d29aca4844cc92a4c324502d1c2586353"
+  },
+  "api_metadata": {
+    "id": "resp_04b78c4284403e90006b060ad64e0887d2ac2d6217656c5720",
+    "model": "gpt-6-luna",
+    "created_at": 1795558102.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1083,
+      "input_tokens_details": {
+        "cache_write_tokens": 1080,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1080
+        }
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 1370
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The identification and characteristics of a rarely observed deep-sea fish nicknamed the faceless fish.\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated trending-stories snippet about the US and the Paris Agreement.\",\n  \"reason\": \"The identifiable main article is about a deep-sea fish and contains no meaningful climate discourse. The climate-related text belongs to a separate, unrelated snippet and does not make the main article relevant to the corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:08:24Z",
+  "duration_seconds": 2.254,
+  "error": null
+}

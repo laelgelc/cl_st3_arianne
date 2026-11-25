@@ -1,0 +1,77 @@
+{
+  "article_id": "71415208",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/au/71415208.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/au/71415208.json"
+  },
+  "manifest_row": {
+    "article_id": "71415208",
+    "group": "2019_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/au/71415208.txt",
+    "now_field_2": "200",
+    "date_original": "19-11-25",
+    "date_iso": "2019-11-25",
+    "source_name": "sbs.com.au",
+    "url": "https://www.sbs.com.au/news/more-than-60-fires-still-burn-across-nsw-as-victoria-enters-fire-danger-period",
+    "title": "More than 60 fires still burn across NSW as Victoria ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "passing",
+    "main_topic": "New South Wales bushfires and community recovery",
+    "climate_relevance": "The opening sentence links the bushfires to calls for climate action, but the available text mainly reports fire conditions and recovery assistance.",
+    "reason": "Climate change is explicitly mentioned in a meaningful context, but it is not developed beyond the opening reference in the supplied text.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3d4fc5bc9f932574a642a2f1938890bb44a6305c0db2a58be55af04646868c33",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "019ae8fcba0e251c2a00ee171c6edbf86f3b759513ff6d9b122f19926d008cb9",
+    "raw_response_text_sha256": "007eb26a195084adc63c6064d462fdd106bcd1b19d4b3910a6029d1c047f090e"
+  },
+  "api_metadata": {
+    "id": "resp_0f5629d58faefc83006b06414826e887d1aa2fc45de530a5af",
+    "model": "gpt-6-luna",
+    "created_at": 1795572040.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 775,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 437,
+      "output_tokens_details": {
+        "reasoning_tokens": 304
+      },
+      "total_tokens": 1212
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New South Wales bushfires and community recovery\",\n  \"climate_relevance\": \"The opening sentence links the bushfires to calls for climate action, but the available text mainly reports fire conditions and recovery assistance.\",\n  \"reason\": \"Climate change is explicitly mentioned in a meaningful context, but it is not developed beyond the opening reference in the supplied text.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:00:43Z",
+  "duration_seconds": 3.448,
+  "error": null
+}

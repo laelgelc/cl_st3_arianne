@@ -1,0 +1,77 @@
+{
+  "article_id": "41316734",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/sg/41316734.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/sg/41316734.json"
+  },
+  "manifest_row": {
+    "article_id": "41316734",
+    "group": "2019_09",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/sg/41316734.txt",
+    "now_field_2": "846",
+    "date_original": "19-09-01",
+    "date_iso": "2019-09-01",
+    "source_name": "eco-business.com",
+    "url": "https://www.eco-business.com/opinion/how-to-solve-the-water-crisis-the-real-answer-is-local/",
+    "title": "How to solve the water crisis? The real answer is local ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Water scarcity and community-owned water, sanitation, and hygiene services",
+    "climate_relevance": "Climate change appears only in the author's job title and in a description of the publisher's coverage; the article does not discuss climate change or connect it to water scarcity.",
+    "reason": "The article focuses on water access, financing, and community-led services. Its climate references are incidental metadata rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7687da96f64d931b3e10124c58d1cef73e5ddb47b051c7635ab1307c873f41c8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6714c7f0bc8d3cdfc51be248590139c7ccd2faead5f97a6d21c17d4aca1a4be6",
+    "raw_response_text_sha256": "744181a3b1e0e33d669c632fd062fadd0f216aa8cdff3262db2da9111b8aba43"
+  },
+  "api_metadata": {
+    "id": "resp_0b9cc50f8d56d13a006b06212b9bf487d2ba9b145e07abf1f8",
+    "model": "gpt-6-luna",
+    "created_at": 1795563819.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cache_write_tokens": 1559,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1559
+        }
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 1820
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Water scarcity and community-owned water, sanitation, and hygiene services\",\n  \"climate_relevance\": \"Climate change appears only in the author's job title and in a description of the publisher's coverage; the article does not discuss climate change or connect it to water scarcity.\",\n  \"reason\": \"The article focuses on water access, financing, and community-led services. Its climate references are incidental metadata rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:43:41Z",
+  "duration_seconds": 2.431,
+  "error": null
+}

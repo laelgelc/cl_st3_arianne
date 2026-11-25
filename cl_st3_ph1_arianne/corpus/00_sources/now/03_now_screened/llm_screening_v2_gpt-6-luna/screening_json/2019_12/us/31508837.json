@@ -1,0 +1,77 @@
+{
+  "article_id": "31508837",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/31508837.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/31508837.json"
+  },
+  "manifest_row": {
+    "article_id": "31508837",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/31508837.txt",
+    "now_field_2": "1499",
+    "date_original": "19-12-16",
+    "date_iso": "2019-12-16",
+    "source_name": "tucson.com",
+    "url": "https://tucson.com/news/local/colorado-river-drought-plan-gets-cap-support-heading-to-arizona/article_6a626889-9365-5c46-ab84-422ca79fdc5c.html",
+    "title": "Colorado River drought plan gets CAP support; heading to ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Arizona's drought-contingency plan for Lake Mead and the allocation of Central Arizona Project water",
+    "climate_relevance": "The article discusses drought and water management but does not meaningfully connect them to climate change, global warming, or climate policy. The reference to climate change appears only in the reporter's biography.",
+    "reason": "The main article is about water allocations, drought planning, and funding for farmers, tribes, and cities. Its drought discussion is not framed in climate terms; the only climate-change reference is unrelated biographical text.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6def95890bbba354502c8b9949c946ffa8bfc8dea8907b1e0cebd3f1801081b2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "be099e297332b73fdda32ff3eac471c58a057e0111d96b99f5127045490314fc",
+    "raw_response_text_sha256": "b9756e85026040cbfd92e0dc68d5951ca6ed731403c9919d030204d34fc3b67c"
+  },
+  "api_metadata": {
+    "id": "resp_04de2e1440985648006b0617ad222487d2b5309d3c9d6b9b91",
+    "model": "gpt-6-luna",
+    "created_at": 1795561389.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2481,
+      "input_tokens_details": {
+        "cache_write_tokens": 2478,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2478
+        }
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 2800
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Arizona's drought-contingency plan for Lake Mead and the allocation of Central Arizona Project water\",\n  \"climate_relevance\": \"The article discusses drought and water management but does not meaningfully connect them to climate change, global warming, or climate policy. The reference to climate change appears only in the reporter's biography.\",\n  \"reason\": \"The main article is about water allocations, drought planning, and funding for farmers, tribes, and cities. Its drought discussion is not framed in climate terms; the only climate-change reference is unrelated biographical text.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:03:12Z",
+  "duration_seconds": 3.148,
+  "error": null
+}

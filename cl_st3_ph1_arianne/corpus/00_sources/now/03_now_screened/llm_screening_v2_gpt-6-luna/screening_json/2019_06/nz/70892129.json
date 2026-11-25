@@ -1,0 +1,77 @@
+{
+  "article_id": "70892129",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/nz/70892129.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/nz/70892129.json"
+  },
+  "manifest_row": {
+    "article_id": "70892129",
+    "group": "2019_06",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/nz/70892129.txt",
+    "now_field_2": "1407",
+    "date_original": "19-06-20",
+    "date_iso": "2019-06-20",
+    "source_name": "Gisborne Herald",
+    "url": "http://gisborneherald.co.nz/localsport/4154109-135/rotorua-too-good-for-gbhs",
+    "title": "Rotorua too good for GBHS",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A high-school rugby match between Rotorua Boys' High School and Gisborne Boys' High School",
+    "climate_relevance": "A separate 'Our Work' snippet discusses climate action, emissions reduction, climate-proofing workplaces, and a just transition, but it is unrelated to the identifiable rugby report.",
+    "reason": "The main article is about rugby and contains no climate discourse. The meaningful climate discussion appears in a separate, unrelated snippet, so it does not make the main article relevant for the corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ae8dd281106d3f97cb648dc701401fba615b6505d3cdc2c0404ba683888dab98",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b57c7d5bef43a15eb1a706c384bb57cbdbcdaf4ac8b1d9a3ef717a3612c21e5b",
+    "raw_response_text_sha256": "239691c61a5e3b4ee37e61e43d41df1fe0792c069aaa27a41d2df2510572e55c"
+  },
+  "api_metadata": {
+    "id": "resp_05190295b5dc7484006b063fc55ac487d1aede10699dd8c5e0",
+    "model": "gpt-6-luna",
+    "created_at": 1795571653.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3042,
+      "input_tokens_details": {
+        "cache_write_tokens": 3039,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3039
+        }
+      },
+      "output_tokens": 349,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 3391
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A high-school rugby match between Rotorua Boys' High School and Gisborne Boys' High School\",\n  \"climate_relevance\": \"A separate 'Our Work' snippet discusses climate action, emissions reduction, climate-proofing workplaces, and a just transition, but it is unrelated to the identifiable rugby report.\",\n  \"reason\": \"The main article is about rugby and contains no climate discourse. The meaningful climate discussion appears in a separate, unrelated snippet, so it does not make the main article relevant for the corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:54:16Z",
+  "duration_seconds": 2.733,
+  "error": null
+}

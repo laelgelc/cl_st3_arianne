@@ -1,0 +1,77 @@
+{
+  "article_id": "42197291",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/gb/42197291.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/gb/42197291.json"
+  },
+  "manifest_row": {
+    "article_id": "42197291",
+    "group": "2020_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/gb/42197291.txt",
+    "now_field_2": "669",
+    "date_original": "20-08-17",
+    "date_iso": "2020-08-17",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/plans-to-scrap-phe-slammed-by-tory-peer-on-lbc-radio-1-6795696",
+    "title": "Former Tory minister accuses Matt Hancock of blaming PHE ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Political accountability and Public Health England's role in the coronavirus response",
+    "climate_relevance": "Climate change appears only in repeated publication promotional text, not in the article's substantive discussion.",
+    "reason": "The article focuses on the coronavirus response and proposed changes to Public Health England. Its climate-change mentions are boilerplate descriptions of the publication's coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "835adfd396ec54e509c5c0ecfe5013da261ec741c15b1d23f048bf3605031723",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9801a0674165207fb0360d4e4310984838656d468f7be3cad33f73f1f2a2a131",
+    "raw_response_text_sha256": "9575d3a381038a771b05b6648751cde6cec5d855602c6e663f2eefc4f36cffb8"
+  },
+  "api_metadata": {
+    "id": "resp_0609e669faa4e58f006b0624f8dd7087d2abcca8def1aecd8c",
+    "model": "gpt-6-luna",
+    "created_at": 1795564792.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1311,
+      "input_tokens_details": {
+        "cache_write_tokens": 1308,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1308
+        }
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1527
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Political accountability and Public Health England's role in the coronavirus response\",\n  \"climate_relevance\": \"Climate change appears only in repeated publication promotional text, not in the article's substantive discussion.\",\n  \"reason\": \"The article focuses on the coronavirus response and proposed changes to Public Health England. Its climate-change mentions are boilerplate descriptions of the publication's coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:59:54Z",
+  "duration_seconds": 1.997,
+  "error": null
+}

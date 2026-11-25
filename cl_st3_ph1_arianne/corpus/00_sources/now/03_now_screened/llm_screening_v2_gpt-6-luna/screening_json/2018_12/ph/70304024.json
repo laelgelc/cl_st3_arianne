@@ -1,0 +1,77 @@
+{
+  "article_id": "70304024",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ph/70304024.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ph/70304024.json"
+  },
+  "manifest_row": {
+    "article_id": "70304024",
+    "group": "2018_12",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ph/70304024.txt",
+    "now_field_2": "300",
+    "date_original": "18-12-03",
+    "date_iso": "2018-12-03",
+    "source_name": "Manila Bulletin",
+    "url": "https://news.mb.com.ph/2018/12/04/gabon-president-appears-in-video-after-long-medical-absence/",
+    "title": "Gabon president appears in video after long medical absence",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Gabon President Ali Bongo's health and absence from public life",
+    "climate_relevance": "Climate change appears only in a file-photo caption describing an earlier meeting.",
+    "reason": "The article is about Bongo's medical absence and political circumstances; the climate reference is incidental image-caption material and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c0e0d81ad8d4b511808c9e2351ecb0147f7a46d1197b7ee95ba1439aded3332f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "df084ca92b8dfdb7caedcc604c7fba4b8da10b0d5ca896981d6e93b0a53186df",
+    "raw_response_text_sha256": "a67ae2f9da086c7aea2ebaacafe4ef3146559a8f273065d63a50ac3d27e53cc3"
+  },
+  "api_metadata": {
+    "id": "resp_07df8e540e71336d006b063bd421bc87d1a25cfed63417a566",
+    "model": "gpt-6-luna",
+    "created_at": 1795570644.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 895,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1101
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Gabon President Ali Bongo's health and absence from public life\",\n  \"climate_relevance\": \"Climate change appears only in a file-photo caption describing an earlier meeting.\",\n  \"reason\": \"The article is about Bongo's medical absence and political circumstances; the climate reference is incidental image-caption material and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:37:26Z",
+  "duration_seconds": 2.063,
+  "error": null
+}

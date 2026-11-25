@@ -1,0 +1,77 @@
+{
+  "article_id": "41405548",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/gb/41405548.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/gb/41405548.json"
+  },
+  "manifest_row": {
+    "article_id": "41405548",
+    "group": "2019_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/gb/41405548.txt",
+    "now_field_2": "345",
+    "date_original": "19-10-11",
+    "date_iso": "2019-10-11",
+    "source_name": "uk.news.yahoo.com",
+    "url": "https://uk.news.yahoo.com/more-than-1100-protesters-arrested-during-first-days-of-climate-change-demonstrations-160517775.html",
+    "title": "More than 1,100 protesters arrested during first days of ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "substantial",
+    "main_topic": "Arrests during Extinction Rebellion demonstrations in London",
+    "climate_relevance": "The protests are explicitly identified as climate and ecological emergency demonstrations, and the article reports activists’ concerns about climate-change-driven extreme weather and its consequences.",
+    "reason": "Climate change is a central motivation for the demonstrations covered, even though much of the report focuses on arrests and protest events.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4e43e0b460c08af015afe4217c1233431adc19df92fe324a2c1553cb369c925f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8f8c845f2ae4457e0a3940796d80affa7bf348116027199aa8e1e9fc7e7eef7c",
+    "raw_response_text_sha256": "733bfd9ef0d2135962018c5ec4c3bb2e152b3d302a2d928d79f788eee83abd72"
+  },
+  "api_metadata": {
+    "id": "resp_072ca9e02fb3f6ff006b06219be85c87d2b828b22a092c7731",
+    "model": "gpt-6-luna",
+    "created_at": 1795563932.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 981,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 203,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1184
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Arrests during Extinction Rebellion demonstrations in London\",\n  \"climate_relevance\": \"The protests are explicitly identified as climate and ecological emergency demonstrations, and the article reports activists’ concerns about climate-change-driven extreme weather and its consequences.\",\n  \"reason\": \"Climate change is a central motivation for the demonstrations covered, even though much of the report focuses on arrests and protest events.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:45:33Z",
+  "duration_seconds": 1.67,
+  "error": null
+}

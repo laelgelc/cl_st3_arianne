@@ -1,0 +1,77 @@
+{
+  "article_id": "31858396",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/us/31858396.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/us/31858396.json"
+  },
+  "manifest_row": {
+    "article_id": "31858396",
+    "group": "2020_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/us/31858396.txt",
+    "now_field_2": "6966",
+    "date_original": "20-05-26",
+    "date_iso": "2020-05-26",
+    "source_name": "buzzfeednews.com",
+    "url": "https://www.buzzfeednews.com/article/tomwarren/wwf-world-wide-fund-nature-parks-torture-death",
+    "title": "WWF Funds Guards Who Have Tortured And Killed People",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Alleged human rights abuses linked to WWF-supported anti-poaching operations and conservation enforcement",
+    "climate_relevance": "Climate change appears only in an image caption referring to a UN Climate Change conference; the article contains no meaningful discussion of climate change.",
+    "reason": "The article is centrally about conservation, anti-poaching, and alleged abuses against Indigenous communities. The sole climate reference is incidental and does not contribute meaningfully to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c09a264421b38a94287c23301462daea187b1fbcd6862414d0339a716e3ebf19",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fb732cb198eb35d20ff6a28aa2140ade8c05ee7cd053e9d2d9496dc99d87e282",
+    "raw_response_text_sha256": "872245011d186ac251de1f681b7e2673c4b0e6aba225e8f447550dca009ae271"
+  },
+  "api_metadata": {
+    "id": "resp_0505ba1f8689b081006b0619cfcb9487d2acae60418745d750",
+    "model": "gpt-6-luna",
+    "created_at": 1795561935.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10032,
+      "input_tokens_details": {
+        "cache_write_tokens": 10029,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 10029
+        }
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 10304
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Alleged human rights abuses linked to WWF-supported anti-poaching operations and conservation enforcement\",\n  \"climate_relevance\": \"Climate change appears only in an image caption referring to a UN Climate Change conference; the article contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article is centrally about conservation, anti-poaching, and alleged abuses against Indigenous communities. The sole climate reference is incidental and does not contribute meaningfully to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:12:18Z",
+  "duration_seconds": 2.307,
+  "error": null
+}

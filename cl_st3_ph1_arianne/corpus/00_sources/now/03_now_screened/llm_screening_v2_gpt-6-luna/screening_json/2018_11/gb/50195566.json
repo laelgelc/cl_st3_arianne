@@ -1,0 +1,77 @@
+{
+  "article_id": "50195566",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/gb/50195566.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/gb/50195566.json"
+  },
+  "manifest_row": {
+    "article_id": "50195566",
+    "group": "2018_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/gb/50195566.txt",
+    "now_field_2": "204",
+    "date_original": "18-11-08",
+    "date_iso": "2018-11-08",
+    "source_name": "Oxford City Council New",
+    "url": "https://www.oxford.gov.uk/news/article/907/covered_market_ice_cream_vendor_featured_in_new_series_of_videos_celebrating_traders",
+    "title": "Covered Market ice cream vendor featured in new series of videos ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Michel Barnier's defence of the European Union and its political future",
+    "climate_relevance": "The article briefly includes climate action among EU priorities, calling for emissions to be reduced to zero by 2050.",
+    "reason": "Climate change appears in a substantive policy statement but is only one item in a list within an article mainly about the EU and Brexit. The supplied text also includes an unrelated ice-cream business article and editorial-standards boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "13727695097ae4e37c29098bdd58a702f1251d8c1cf38851ae5a115429c3d561",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "696d343948e1fdd7c24e4886550b4d3f64a12283650bdb42248347d5d4a3d5c4",
+    "raw_response_text_sha256": "21c483b8a16fd545344acd8f254e44db61b25854900b1ba4ca57f419b4d8aed2"
+  },
+  "api_metadata": {
+    "id": "resp_07157495ae11a0be006b0627f5401c87d19709ad57b74c3ad8",
+    "model": "gpt-6-luna",
+    "created_at": 1795565557.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1506,
+      "input_tokens_details": {
+        "cache_write_tokens": 1503,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1503
+        }
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 1764
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Michel Barnier's defence of the European Union and its political future\",\n  \"climate_relevance\": \"The article briefly includes climate action among EU priorities, calling for emissions to be reduced to zero by 2050.\",\n  \"reason\": \"Climate change appears in a substantive policy statement but is only one item in a list within an article mainly about the EU and Brexit. The supplied text also includes an unrelated ice-cream business article and editorial-standards boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:12:40Z",
+  "duration_seconds": 2.915,
+  "error": null
+}

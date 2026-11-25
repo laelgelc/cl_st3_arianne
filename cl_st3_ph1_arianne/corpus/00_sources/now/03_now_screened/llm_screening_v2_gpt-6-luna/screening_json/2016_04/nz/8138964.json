@@ -1,0 +1,77 @@
+{
+  "article_id": "8138964",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_04/nz/8138964.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_04/nz/8138964.json"
+  },
+  "manifest_row": {
+    "article_id": "8138964",
+    "group": "2016_04",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_04/nz/8138964.txt",
+    "now_field_2": "866",
+    "date_original": "16-04-07",
+    "date_iso": "2016-04-07",
+    "source_name": "Stuff.co.nz",
+    "url": "http://www.stuff.co.nz/world/europe/78709340/scotland-moves-against-wealthy-gentry-dominating-land",
+    "title": "Scotland moves against wealthy gentry dominating land",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-04-ovb/16-04-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Land ownership reform and community land rights in Scotland",
+    "climate_relevance": "Climate change appears only in the minister's portfolio title; the text does not discuss climate change or its implications.",
+    "reason": "The article focuses on land inequality, ownership, and community rights. The climate reference is incidental identification rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9c81d40b575d0995727a7602b00242b463c5e26d98b8d81bd4830202ba9e54fb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2932a182d3c2684f2dd01e5333f62050e4ae847448a958ee61f85c67919a25a4",
+    "raw_response_text_sha256": "30e09401ffadd2fdac7e6cb2d29847b644c0950b5689e17c820df392a163bb4a"
+  },
+  "api_metadata": {
+    "id": "resp_0f354ad4b81c953f006b0647481ae087d199f889db5d0ec9f7",
+    "model": "gpt-6-luna",
+    "created_at": 1795573576.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1583,
+      "input_tokens_details": {
+        "cache_write_tokens": 1580,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1580
+        }
+      },
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 1805
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Land ownership reform and community land rights in Scotland\",\n  \"climate_relevance\": \"Climate change appears only in the minister's portfolio title; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on land inequality, ownership, and community rights. The climate reference is incidental identification rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:26:18Z",
+  "duration_seconds": 2.101,
+  "error": null
+}

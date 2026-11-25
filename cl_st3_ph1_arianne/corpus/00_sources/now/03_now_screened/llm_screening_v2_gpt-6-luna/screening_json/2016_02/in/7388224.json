@@ -1,0 +1,77 @@
+{
+  "article_id": "7388224",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_02/in/7388224.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_02/in/7388224.json"
+  },
+  "manifest_row": {
+    "article_id": "7388224",
+    "group": "2016_02",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_02/in/7388224.txt",
+    "now_field_2": "212",
+    "date_original": "16-02-14",
+    "date_iso": "2016-02-14",
+    "source_name": "Oneindia",
+    "url": "http://www.oneindia.com/india/rk-pachauri-guilty-of-sexual-harassment-dp-chargesheet-2013080.html",
+    "title": "RK Pachauri guilty of sexual harassment: DP Chargesheet",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-02-iuq/16-02-in.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Sexual harassment charges and institutional response involving RK Pachauri",
+    "climate_relevance": "Climate change appears only as part of Pachauri's professional description; the text does not discuss climate issues.",
+    "reason": "The article focuses on the criminal case and TERI's response. Its sole climate-related reference is an incidental identifier.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "deca704ebcc2c592c2d7754ad78457fe66ad0871599d3719db116d1d341029a0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ccb37b20f2b197f34ef48e9d4df7b88b74fb874bca0b547d032d7810747e8746",
+    "raw_response_text_sha256": "0307f0ccbcb81126e9c72795427a3259fa3f73e40695fd54d1de1be06afaab77"
+  },
+  "api_metadata": {
+    "id": "resp_0f76dd6f1d99cc30006b06460f9d0887d1852e809848f61c92",
+    "model": "gpt-6-luna",
+    "created_at": 1795573263.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 763,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 962
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Sexual harassment charges and institutional response involving RK Pachauri\",\n  \"climate_relevance\": \"Climate change appears only as part of Pachauri's professional description; the text does not discuss climate issues.\",\n  \"reason\": \"The article focuses on the criminal case and TERI's response. Its sole climate-related reference is an incidental identifier.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:21:05Z",
+  "duration_seconds": 2.287,
+  "error": null
+}

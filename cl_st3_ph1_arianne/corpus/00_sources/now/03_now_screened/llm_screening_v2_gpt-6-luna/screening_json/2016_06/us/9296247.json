@@ -1,0 +1,77 @@
+{
+  "article_id": "9296247",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_06/us/9296247.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_06/us/9296247.json"
+  },
+  "manifest_row": {
+    "article_id": "9296247",
+    "group": "2016_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_06/us/9296247.txt",
+    "now_field_2": "864",
+    "date_original": "16-06-10",
+    "date_iso": "2016-06-10",
+    "source_name": "U.S. News &amp; World Report",
+    "url": "http://www.usnews.com/opinion/articles/2016-06-10/bernie-sanders-dc-rally-began-the-end-of-his-2016-revolution",
+    "title": "Bernie Sanders' D.C. Rally Began the End of His 2016 Revolution",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-06-uda/16-06-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Bernie Sanders's 2016 presidential campaign and Democratic Party unity",
+    "climate_relevance": "Climate change is mentioned only in passing as a subject on which Sanders criticized Donald Trump.",
+    "reason": "The article focuses on the Democratic primary campaign and contains no meaningful discussion of climate change beyond a brief passing reference.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f6ed26ce748ab42585330155e880ac17de4f40423b2a6d710c6851c28bb40053",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "291a2e550af04cff0a601699a4c12f6a3ca83e010d229dd10e56bc1b7e4e5622",
+    "raw_response_text_sha256": "6e72840542cd33b3679c4e1eeabed4b4d3c3ef30b9cf12da3599ccdfb2b33f57"
+  },
+  "api_metadata": {
+    "id": "resp_0e9efaaf7238fc87006b065104b7d087d1a49708c2ac1f00d0",
+    "model": "gpt-6-luna",
+    "created_at": 1795576068.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1582,
+      "input_tokens_details": {
+        "cache_write_tokens": 1579,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1579
+        }
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1783
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Bernie Sanders's 2016 presidential campaign and Democratic Party unity\",\n  \"climate_relevance\": \"Climate change is mentioned only in passing as a subject on which Sanders criticized Donald Trump.\",\n  \"reason\": \"The article focuses on the Democratic primary campaign and contains no meaningful discussion of climate change beyond a brief passing reference.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:07:50Z",
+  "duration_seconds": 1.985,
+  "error": null
+}

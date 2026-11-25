@@ -1,0 +1,77 @@
+{
+  "article_id": "70661176",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/us/70661176.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/us/70661176.json"
+  },
+  "manifest_row": {
+    "article_id": "70661176",
+    "group": "2019_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/us/70661176.txt",
+    "now_field_2": "275",
+    "date_original": "19-04-06",
+    "date_iso": "2019-04-06",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/five-of-the-wild-s-worst-losses-of-the-season/508220952/",
+    "title": "Five of the Wild's worst losses of the season",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "Minnesota Wild hockey losses",
+    "climate_relevance": "A final sentence describes climate change altering wildfire management, agriculture, flood response, forestry, and lakefront development in Minnesota.",
+    "reason": "The main text is a hockey recap, but the climate sentence contains meaningful discussion of climate-related impacts and responses. It appears unrelated to the sports article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e25be6cd57da455443bb934176ae7a38d9b91cfb58c0867054440f04b5275c60",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "17cf66f987755064893aaa9f4be63ceb1df1fbe7bab3ea2d9766e2e0ba57adb2",
+    "raw_response_text_sha256": "816a0e440f28cc16eef8f0aa8d833cd31d0c5cd2d506396cd44d7a91ea27fcc5"
+  },
+  "api_metadata": {
+    "id": "resp_06325f00346d16aa006b063e51482c87d1a71d6e5b182fbbf2",
+    "model": "gpt-6-luna",
+    "created_at": 1795571281.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 880,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 449,
+      "output_tokens_details": {
+        "reasoning_tokens": 314
+      },
+      "total_tokens": 1329
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Minnesota Wild hockey losses\",\n  \"climate_relevance\": \"A final sentence describes climate change altering wildfire management, agriculture, flood response, forestry, and lakefront development in Minnesota.\",\n  \"reason\": \"The main text is a hockey recap, but the climate sentence contains meaningful discussion of climate-related impacts and responses. It appears unrelated to the sports article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:48:04Z",
+  "duration_seconds": 3.201,
+  "error": null
+}

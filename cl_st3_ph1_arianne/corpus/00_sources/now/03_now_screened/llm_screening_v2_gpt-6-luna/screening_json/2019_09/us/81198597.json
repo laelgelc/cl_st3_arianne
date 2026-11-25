@@ -1,0 +1,77 @@
+{
+  "article_id": "81198597",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/81198597.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/81198597.json"
+  },
+  "manifest_row": {
+    "article_id": "81198597",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/81198597.txt",
+    "now_field_2": "4853",
+    "date_original": "19-09-21",
+    "date_iso": "2019-09-21",
+    "source_name": "Shelf Awareness",
+    "url": "https://shelf-awareness.com/theshelf/2019-09-20/amazon_co-founds_the_climate_pledge_.html",
+    "title": "Amazon Co-founds 'The Climate Pledge'",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us5.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A bookselling and publishing industry news roundup",
+    "climate_relevance": "An embedded news item covers Amazon and Global Optimism launching the Climate Pledge, including its net-zero carbon target, Amazon's planned electric delivery fleet and reforestation donation, and an employee climate-strike protest. Another brief item discusses a bookstore's support for the Global Climate Strike.",
+    "reason": "The supplied text is a collection of largely unrelated bookstore and publishing news items, not centrally climate-focused. However, the Climate Pledge item contains meaningful climate discourse, making the text relevant as peripheral material rather than suitable for the core climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c328841cbc118e2e1c6614e806c0803f7a43f75a080aee88fd21a6d755ee5974",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8139bcbb2190b516c20ae6c05f275c71e75ec46819246b67414d3edf060343ad",
+    "raw_response_text_sha256": "e45357020e8587d0b5dd32bb6251944e84f8cdce0c68e5d0fc4db2064c13f5ae"
+  },
+  "api_metadata": {
+    "id": "resp_0c26d5a59f14ad4b006b06470af41487d1b7d1c0051fc3765f",
+    "model": "gpt-6-luna",
+    "created_at": 1795573515.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7072,
+      "input_tokens_details": {
+        "cache_write_tokens": 7069,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 7069
+        }
+      },
+      "output_tokens": 404,
+      "output_tokens_details": {
+        "reasoning_tokens": 215
+      },
+      "total_tokens": 7476
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A bookselling and publishing industry news roundup\",\n  \"climate_relevance\": \"An embedded news item covers Amazon and Global Optimism launching the Climate Pledge, including its net-zero carbon target, Amazon's planned electric delivery fleet and reforestation donation, and an employee climate-strike protest. Another brief item discusses a bookstore's support for the Global Climate Strike.\",\n  \"reason\": \"The supplied text is a collection of largely unrelated bookstore and publishing news items, not centrally climate-focused. However, the Climate Pledge item contains meaningful climate discourse, making the text relevant as peripheral material rather than suitable for the core climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:25:18Z",
+  "duration_seconds": 3.865,
+  "error": null
+}

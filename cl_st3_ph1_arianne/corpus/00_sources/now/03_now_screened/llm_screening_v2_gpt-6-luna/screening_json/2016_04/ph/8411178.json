@@ -1,0 +1,77 @@
+{
+  "article_id": "8411178",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_04/ph/8411178.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_04/ph/8411178.json"
+  },
+  "manifest_row": {
+    "article_id": "8411178",
+    "group": "2016_04",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_04/ph/8411178.txt",
+    "now_field_2": "529",
+    "date_original": "16-04-22",
+    "date_iso": "2016-04-22",
+    "source_name": "Philippine Information Agency",
+    "url": "http://news.pia.gov.ph/article/view/1461461314720/traders-urged-to-comply-with-suggested-retail-price-of-goods",
+    "title": "Traders urged to comply with suggested retail price of goods",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-04-ovb/16-04-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Suggested retail prices and monitoring prices of basic goods in Cagayan de Oro",
+    "climate_relevance": "The identifiable main article is about retail prices and contains no climate discourse. A separate, apparently unrelated news snippet mentions the signing of the Paris climate agreement.",
+    "reason": "The main article is unrelated to climate change; the climate-related material appears only in a separate snippet among unrelated news items.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "eaad66a6675e5a17de4c8c0212649b5b59c1bea71dcca61845c5ea7a7af0ad16",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3f7aa697da35998d064a4e8e9abadad4a2c11a79df6878b065a396a05f53422b",
+    "raw_response_text_sha256": "bf0aa2b89cc3df84f19b2e1cc84b46208a34bc32a6585f7ddf6c29764993e8c5"
+  },
+  "api_metadata": {
+    "id": "resp_00cc8f3628a08687006b064a53e50487d1ae07f6998d9c4b81",
+    "model": "gpt-6-luna",
+    "created_at": 1795574355.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1182,
+      "input_tokens_details": {
+        "cache_write_tokens": 1179,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1179
+        }
+      },
+      "output_tokens": 404,
+      "output_tokens_details": {
+        "reasoning_tokens": 255
+      },
+      "total_tokens": 1586
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Suggested retail prices and monitoring prices of basic goods in Cagayan de Oro\",\n  \"climate_relevance\": \"The identifiable main article is about retail prices and contains no climate discourse. A separate, apparently unrelated news snippet mentions the signing of the Paris climate agreement.\",\n  \"reason\": \"The main article is unrelated to climate change; the climate-related material appears only in a separate snippet among unrelated news items.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:39:18Z",
+  "duration_seconds": 2.819,
+  "error": null
+}

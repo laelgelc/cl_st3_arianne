@@ -1,0 +1,77 @@
+{
+  "article_id": "8894287",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_05/us/8894287.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_05/us/8894287.json"
+  },
+  "manifest_row": {
+    "article_id": "8894287",
+    "group": "2016_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_05/us/8894287.txt",
+    "now_field_2": "526",
+    "date_original": "16-05-18",
+    "date_iso": "2016-05-18",
+    "source_name": "North Bay Bohemian",
+    "url": "http://www.bohemian.com/northbay/oh-whale/Content?oid=2960020",
+    "title": "Whale of a Debriefer!",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-05-bvk/16-05-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A collection of local news briefs about ocean noise, policing, lethal injection, and flood planning",
+    "climate_relevance": "Climate change is mentioned once as one of several problems facing ocean life, without further discussion. The flood-planning brief does not explicitly connect flooding to climate change.",
+    "reason": "The available text contains only a passing climate reference and does not develop climate change discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "71883b265029fa3df95fc44646fbe3b98f6e2f9f7479623e7904f9369f107eae",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8811aa955008c75ba79498c7ce0c6e68f47d938d845dec934a51ee94f5df6227",
+    "raw_response_text_sha256": "a6916f5213f7e807c973ebc78cbca28704a75e09f1d889bd7b80149c3e202231"
+  },
+  "api_metadata": {
+    "id": "resp_0cfe06d347d1a156006b0650b5f6d887d19d03a2ceb2616c7e",
+    "model": "gpt-6-luna",
+    "created_at": 1795575990.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1168,
+      "input_tokens_details": {
+        "cache_write_tokens": 1165,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1165
+        }
+      },
+      "output_tokens": 323,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 1491
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of local news briefs about ocean noise, policing, lethal injection, and flood planning\",\n  \"climate_relevance\": \"Climate change is mentioned once as one of several problems facing ocean life, without further discussion. The flood-planning brief does not explicitly connect flooding to climate change.\",\n  \"reason\": \"The available text contains only a passing climate reference and does not develop climate change discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:06:33Z",
+  "duration_seconds": 3.417,
+  "error": null
+}

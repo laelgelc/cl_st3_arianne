@@ -1,0 +1,77 @@
+{
+  "article_id": "14853226",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_10/za/14853226.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_10/za/14853226.json"
+  },
+  "manifest_row": {
+    "article_id": "14853226",
+    "group": "2016_10",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_10/za/14853226.txt",
+    "now_field_2": "376",
+    "date_original": "16-10-14",
+    "date_iso": "2016-10-14",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/africa/2016/10/14/Amnesty-urges-halt-to-forced-evictions-in-Lagos",
+    "title": "Amnesty urges halt to forced evictions in Lagos",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-10-ykw/16-10-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Amnesty International's call to halt planned forced evictions in Lagos",
+    "climate_relevance": "A separate sentence mentions negotiations for a greenhouse-gas pact involving refrigerants and air conditioners, but it is unrelated to the identifiable main article about evictions.",
+    "reason": "The main article concerns housing rights and planned demolitions in Lagos. The climate-related sentence appears to be a separate news snippet rather than meaningful climate discourse within that article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fa7757784a68e4ccd02a3638d96c43488128846144365c1d1e2889587cb748f6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6551728c86f351cd797390bf41e3c3578e25f9801b1dc87f8e6b5e3016b32f33",
+    "raw_response_text_sha256": "0131d20a2682421feb4b645b3e0710506ac77c317c5fed675b2d608d04f748d6"
+  },
+  "api_metadata": {
+    "id": "resp_0c78e87f99119978006b060611996887d2b6a660d71095a141",
+    "model": "gpt-6-luna",
+    "created_at": 1795556881.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 997,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 184
+      },
+      "total_tokens": 1338
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Amnesty International's call to halt planned forced evictions in Lagos\",\n  \"climate_relevance\": \"A separate sentence mentions negotiations for a greenhouse-gas pact involving refrigerants and air conditioners, but it is unrelated to the identifiable main article about evictions.\",\n  \"reason\": \"The main article concerns housing rights and planned demolitions in Lagos. The climate-related sentence appears to be a separate news snippet rather than meaningful climate discourse within that article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:48:04Z",
+  "duration_seconds": 3.037,
+  "error": null
+}

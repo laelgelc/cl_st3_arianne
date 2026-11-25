@@ -1,0 +1,77 @@
+{
+  "article_id": "19169156",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/gb/19169156.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/gb/19169156.json"
+  },
+  "manifest_row": {
+    "article_id": "19169156",
+    "group": "2017_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/gb/19169156.txt",
+    "now_field_2": "3310",
+    "date_original": "17-06-26",
+    "date_iso": "2017-06-26",
+    "source_name": "The Independent",
+    "url": "http://www.independent.co.uk/news/business/news/italy-bank-bail-out-banks-banca-popolare-di-vicenza-spa-veneto-banca-rescue-plan-economy-lenders-a7807971.html",
+    "title": "Italy agrees to _17bn bailout of two more banks in biggest ever ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-GB.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "Italian government rescue and wind-down of two troubled banks",
+    "climate_relevance": "A separate news snippet links climate change and warming ocean temperatures to shifts in marine fisheries and valuable species.",
+    "reason": "The identifiable main article concerns a bank rescue, not climate change. However, the fisheries snippet contains meaningful discourse about climate impacts, so the text is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7f8e3b7366a94de433c4871f0220e90af26a17765ed552d7109d90a8aef15c59",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2ddc19e44455dde219d0695534171b2f58f3dab032c0c4a4aaa4ad2ecd5c69cd",
+    "raw_response_text_sha256": "f0cc15c74b6947e7452941b6ac6b97f645e8fbed77d8809a791dbfc012767352"
+  },
+  "api_metadata": {
+    "id": "resp_0d7f8ca3c11de5e0006b060b8dcfa887d29642ded47c51bb3b",
+    "model": "gpt-6-luna",
+    "created_at": 1795558285.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4916,
+      "input_tokens_details": {
+        "cache_write_tokens": 4913,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4913
+        }
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 5198
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Italian government rescue and wind-down of two troubled banks\",\n  \"climate_relevance\": \"A separate news snippet links climate change and warming ocean temperatures to shifts in marine fisheries and valuable species.\",\n  \"reason\": \"The identifiable main article concerns a bank rescue, not climate change. However, the fisheries snippet contains meaningful discourse about climate impacts, so the text is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:11:28Z",
+  "duration_seconds": 2.657,
+  "error": null
+}

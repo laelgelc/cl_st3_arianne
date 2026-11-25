@@ -1,0 +1,77 @@
+{
+  "article_id": "50483504",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/au/50483504.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/au/50483504.json"
+  },
+  "manifest_row": {
+    "article_id": "50483504",
+    "group": "2019_03",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/au/50483504.txt",
+    "now_field_2": "688",
+    "date_original": "19-03-02",
+    "date_iso": "2019-03-02",
+    "source_name": "The Sydney Morning Herald",
+    "url": "https://www.smh.com.au/environment/climate-change/teen-activists-back-steggall-in-logical-next-step-to-climate-strike-20190228-p510su.html",
+    "title": "Teen activists back Steggall in 'logical next step' to climate strike",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-au.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Young climate activists endorse independent candidate Zali Steggall and promote climate-focused political action ahead of the Australian federal election.",
+    "climate_relevance": "The main article focuses on climate change as a political and public issue, discussing climate strikes, candidates’ climate commitments, coal and new mines, emissions reductions, renewable energy, and the 1.5-degree target.",
+    "reason": "Climate change and efforts to secure political action on it are the article’s central subject. A separate, unrelated Clean Up Australia Day snippet appears after the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "feda563d7380a3d865ed5bfcdf184fce86f13ca59286a3a12e1ce0d245c77199",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2f57295b8490be04703a4da075723df2c66739743a956eacecb84755d714fc64",
+    "raw_response_text_sha256": "e505e66fa06eebc00906aaf33f8173c9d98dfde8eb652684273f02f4d3ce98e4"
+  },
+  "api_metadata": {
+    "id": "resp_0d34830a7f573e61006b06291f1d3087d1846770c6660d33fe",
+    "model": "gpt-6-luna",
+    "created_at": 1795565855.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1392,
+      "input_tokens_details": {
+        "cache_write_tokens": 1389,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1389
+        }
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1623
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Young climate activists endorse independent candidate Zali Steggall and promote climate-focused political action ahead of the Australian federal election.\",\n  \"climate_relevance\": \"The main article focuses on climate change as a political and public issue, discussing climate strikes, candidates’ climate commitments, coal and new mines, emissions reductions, renewable energy, and the 1.5-degree target.\",\n  \"reason\": \"Climate change and efforts to secure political action on it are the article’s central subject. A separate, unrelated Clean Up Australia Day snippet appears after the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:17:37Z",
+  "duration_seconds": 2.299,
+  "error": null
+}

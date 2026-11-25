@@ -1,0 +1,77 @@
+{
+  "article_id": "31337594",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/31337594.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/31337594.json"
+  },
+  "manifest_row": {
+    "article_id": "31337594",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/31337594.txt",
+    "now_field_2": "676",
+    "date_original": "19-10-10",
+    "date_iso": "2019-10-10",
+    "source_name": "startribune.com",
+    "url": "http://www.startribune.com/eyes-on-empty-skies-minnesota-bird-watchers-unsurprised-by-news-of-3-billion-bird-decline/562289422/",
+    "title": "Eyes on empty skies: Minnesota bird watchers unsurprised ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us5.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "Bird population declines and conservation in Minnesota",
+    "climate_relevance": "Climate change is identified as one factor contributing to meadowlark decline, and the article notes projected climate-related losses to common loons’ winter range. The discussion is meaningful but secondary to broader bird conservation concerns.",
+    "reason": "The identifiable main article focuses on declining bird populations, habitat loss, and conservation measures; climate change is discussed as a relevant pressure but is not the central subject. The supplied text also includes unrelated reports about a Trump rally and a prison altercation.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8329dac807f42deb1c48ef5059f174dbf0f03f468ee016d2a9730f4bb0158eff",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a71ccc647b1da03ffeba93ad9cf5a0716dcbdf22f7edc1dabcf8d21f37b5c33c",
+    "raw_response_text_sha256": "0b2aa6c35321681a0e991a2fe233fcba852c218ff14d60045cd7f8a4c75a4e05"
+  },
+  "api_metadata": {
+    "id": "resp_04ddb27816a2d441006b0616d8493c87d2b3b0111291c7989e",
+    "model": "gpt-6-luna",
+    "created_at": 1795561176.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3122,
+      "input_tokens_details": {
+        "cache_write_tokens": 3119,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3119
+        }
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 3415
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Bird population declines and conservation in Minnesota\",\n  \"climate_relevance\": \"Climate change is identified as one factor contributing to meadowlark decline, and the article notes projected climate-related losses to common loons’ winter range. The discussion is meaningful but secondary to broader bird conservation concerns.\",\n  \"reason\": \"The identifiable main article focuses on declining bird populations, habitat loss, and conservation measures; climate change is discussed as a relevant pressure but is not the central subject. The supplied text also includes unrelated reports about a Trump rally and a prison altercation.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:59:38Z",
+  "duration_seconds": 2.729,
+  "error": null
+}

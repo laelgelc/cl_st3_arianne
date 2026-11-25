@@ -1,0 +1,77 @@
+{
+  "article_id": "82492103",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82492103.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82492103.json"
+  },
+  "manifest_row": {
+    "article_id": "82492103",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82492103.txt",
+    "now_field_2": "132",
+    "date_original": "19-12-03",
+    "date_iso": "2019-12-03",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191203140453-2l6yf",
+    "title": "EU says U.S. has failed to engage on aircraft settlement offer",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "EU-US negotiations over aircraft subsidies",
+    "climate_relevance": "Climate change appears only in a Reuters boilerplate description of the news agency's coverage.",
+    "reason": "The article concerns an aircraft-subsidy dispute and contains no meaningful climate discourse; the climate reference is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b8bf58a281f634d82ca17108c9352c3cbb19df2d6080db6c2cc09e4f9a7a0a74",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f2b777a20a36a43ff635ef6bff4d189e11563b4a8b5e372ebdf0f33f801a411f",
+    "raw_response_text_sha256": "4aa9e46be607b3f79ed8b0afa87659bdbe2165e9e39e0f279b782dfc72614427"
+  },
+  "api_metadata": {
+    "id": "resp_0621389b6ebd0aec006b064887db6c87d1aca27ba2df98c272",
+    "model": "gpt-6-luna",
+    "created_at": 1795573895.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 659,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 887
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"EU-US negotiations over aircraft subsidies\",\n  \"climate_relevance\": \"Climate change appears only in a Reuters boilerplate description of the news agency's coverage.\",\n  \"reason\": \"The article concerns an aircraft-subsidy dispute and contains no meaningful climate discourse; the climate reference is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:31:38Z",
+  "duration_seconds": 2.621,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "16581449",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/za/16581449.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/za/16581449.json"
+  },
+  "manifest_row": {
+    "article_id": "16581449",
+    "group": "2017_01",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/za/16581449.txt",
+    "now_field_2": "329",
+    "date_original": "17-01-25",
+    "date_iso": "2017-01-25",
+    "source_name": "News24",
+    "url": "http://www.news24.com/SouthAfrica/News/moths-threatening-limpopo-tomato-crops-20170125",
+    "title": "Moths threatening Limpopo tomato crops",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Moth damage and other threats to tomato farming in Limpopo",
+    "climate_relevance": "Ongoing climate change and drought are briefly listed as factors hampering tomato production.",
+    "reason": "The identifiable news item focuses on crop pests and agricultural damage, not climate change. Its explicit link between climate change, drought, and production is meaningful but brief, making it peripheral. The supplied text also contains unrelated profile and website-interface material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "33a0dc986b0982477b69d292eb1ba7660ccdd6917e0d508b783b880e6c87847a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dd1035127d80188ae66f8835bc6bf43fbfae9a8a1373e5264546f68339265040",
+    "raw_response_text_sha256": "ad75650509076616cbbd917b9bb89ecc7744b078084308b3a10d7ae729700523"
+  },
+  "api_metadata": {
+    "id": "resp_05dfa83099dc21fe006b0607e1e5d487d2a12241937a356b3e",
+    "model": "gpt-6-luna",
+    "created_at": 1795557346.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 919,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 1187
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Moth damage and other threats to tomato farming in Limpopo\",\n  \"climate_relevance\": \"Ongoing climate change and drought are briefly listed as factors hampering tomato production.\",\n  \"reason\": \"The identifiable news item focuses on crop pests and agricultural damage, not climate change. Its explicit link between climate change, drought, and production is meaningful but brief, making it peripheral. The supplied text also contains unrelated profile and website-interface material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:55:48Z",
+  "duration_seconds": 2.501,
+  "error": null
+}

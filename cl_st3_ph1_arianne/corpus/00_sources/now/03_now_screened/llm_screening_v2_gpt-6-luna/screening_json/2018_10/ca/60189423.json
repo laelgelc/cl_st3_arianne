@@ -1,0 +1,77 @@
+{
+  "article_id": "60189423",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/ca/60189423.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/ca/60189423.json"
+  },
+  "manifest_row": {
+    "article_id": "60189423",
+    "group": "2018_10",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/ca/60189423.txt",
+    "now_field_2": "536",
+    "date_original": "18-10-24",
+    "date_iso": "2018-10-24",
+    "source_name": "paNOW",
+    "url": "https://www.panow.com/article/796185/pa-mlas-weigh-throne-speech",
+    "title": "PA MLAs weigh in on Throne Speech",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Prince Albert MLAs' reactions to the Saskatchewan Throne Speech",
+    "climate_relevance": "The Prairie Resilience Climate Change Strategy is mentioned once in a list of government measures, with no further discussion.",
+    "reason": "Climate change appears only as a passing reference in a list; the article focuses on local political reactions and other policy issues.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0506833b5039c2546c2c18881b7568c588b4425220b73d21284549e477db0432",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0a867491c33c9e90fa66e40a03db9b44dfa183698133f44a84dc490d5c1ed813",
+    "raw_response_text_sha256": "9064a771a501dc748529a16bc480ea0911e77654686d9bc4ece8a3d1bd751bc2"
+  },
+  "api_metadata": {
+    "id": "resp_04be0a4c8b58c95a006b063170bd1c87d1ad0c2fc7ffb4b7da",
+    "model": "gpt-6-luna",
+    "created_at": 1795567984.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1207,
+      "input_tokens_details": {
+        "cache_write_tokens": 1204,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1204
+        }
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 1454
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Prince Albert MLAs' reactions to the Saskatchewan Throne Speech\",\n  \"climate_relevance\": \"The Prairie Resilience Climate Change Strategy is mentioned once in a list of government measures, with no further discussion.\",\n  \"reason\": \"Climate change appears only as a passing reference in a list; the article focuses on local political reactions and other policy issues.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:53:06Z",
+  "duration_seconds": 2.214,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "16554443",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/us/16554443.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/us/16554443.json"
+  },
+  "manifest_row": {
+    "article_id": "16554443",
+    "group": "2017_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/us/16554443.txt",
+    "now_field_2": "637",
+    "date_original": "17-01-23",
+    "date_iso": "2017-01-23",
+    "source_name": "CNNMoney",
+    "url": "http://money.cnn.com/2017/01/23/media/white-house-press-briefing-sean-spicer/",
+    "title": "Sean Spicer's marathon first White House briefing: Lots of questions ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Sean Spicer's first White House press briefing and the administration's media relations",
+    "climate_relevance": "Climate change is mentioned only to note that one reporter asked a question about it; no climate-related discussion is provided.",
+    "reason": "The available text focuses on the briefing, press access, and disputes over media coverage. Its sole climate reference is a passing mention without substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c3c4ffbe46f1c4361220de6015d376e1fd42956e6545b35e9b42ed09392d6ca2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "959008ae83d375bd34fe3f04c0b1e2f8a51c7cda8eef482dced315bb58faffdc",
+    "raw_response_text_sha256": "4fbf41d68b3a052d50e8e732ece37870639c79b538a949839f70f0b3f1fcfbde"
+  },
+  "api_metadata": {
+    "id": "resp_08d5800eba165bf2006b0607d49b6487d2848d640e9773d566",
+    "model": "gpt-6-luna",
+    "created_at": 1795557332.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1315,
+      "input_tokens_details": {
+        "cache_write_tokens": 1312,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1312
+        }
+      },
+      "output_tokens": 204,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1519
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Sean Spicer's first White House press briefing and the administration's media relations\",\n  \"climate_relevance\": \"Climate change is mentioned only to note that one reporter asked a question about it; no climate-related discussion is provided.\",\n  \"reason\": \"The available text focuses on the briefing, press access, and disputes over media coverage. Its sole climate reference is a passing mention without substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:55:34Z",
+  "duration_seconds": 1.902,
+  "error": null
+}

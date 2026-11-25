@@ -1,0 +1,77 @@
+{
+  "article_id": "16292774",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/au/16292774.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/au/16292774.json"
+  },
+  "manifest_row": {
+    "article_id": "16292774",
+    "group": "2017_01",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/au/16292774.txt",
+    "now_field_2": "125",
+    "date_original": "17-01-08",
+    "date_iso": "2017-01-08",
+    "source_name": "Community Newspaper Group",
+    "url": "http://www.communitynews.com.au/cockburn-gazette/news/city-of-cockburn-wins-awards-for-its-work-with-children/",
+    "title": "City of Cockburn wins awards for its work with children",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "City of Cockburn awards for work creating a healthy and safe environment for children",
+    "climate_relevance": "Climate change is mentioned only as the name of an award category; the text provides no climate-related discussion.",
+    "reason": "The article is about children's environments and local-government awards. Its brief reference to the Climate Change category is incidental and does not meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a96623f3b814e0f902e157be5c13adf2a7a874acee504d2a3525f982074a522b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3e6bfab5b167d1adc39bc065f1ad837bdc6a06dfe20b6f525e124a8a81dab517",
+    "raw_response_text_sha256": "377ac1fbb90bb0893e568e571cdcc37ae71ea5e8f2d499bb29c437489ccf31f6"
+  },
+  "api_metadata": {
+    "id": "resp_0bd11cf886e2fab3006b060775203c87d28d1be334d2b8789a",
+    "model": "gpt-6-luna",
+    "created_at": 1795557237.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 642,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 180,
+      "output_tokens_details": {
+        "reasoning_tokens": 37
+      },
+      "total_tokens": 822
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"City of Cockburn awards for work creating a healthy and safe environment for children\",\n  \"climate_relevance\": \"Climate change is mentioned only as the name of an award category; the text provides no climate-related discussion.\",\n  \"reason\": \"The article is about children's environments and local-government awards. Its brief reference to the Climate Change category is incidental and does not meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:53:58Z",
+  "duration_seconds": 1.686,
+  "error": null
+}

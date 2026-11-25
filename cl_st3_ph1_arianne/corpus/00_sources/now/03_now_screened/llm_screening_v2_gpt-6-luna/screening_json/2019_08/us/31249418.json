@@ -1,0 +1,77 @@
+{
+  "article_id": "31249418",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/us/31249418.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/us/31249418.json"
+  },
+  "manifest_row": {
+    "article_id": "31249418",
+    "group": "2019_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/us/31249418.txt",
+    "now_field_2": "855",
+    "date_original": "19-08-27",
+    "date_iso": "2019-08-27",
+    "source_name": "postandcourier.com",
+    "url": "https://www.postandcourier.com/news/why-james-island-residents-found-surprise-ditches-dug-in-their/article_415322a4-c80a-11e9-af99-837f0750dd0f.html",
+    "title": "Why James Island residents found surprise ditches dug in ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Charleston residents’ concerns about city-installed drainage ditches and stormwater management",
+    "climate_relevance": "Climate change appears only in the reporter’s biographical description; the article discusses drainage and flooding without connecting them to climate change.",
+    "reason": "The only explicit climate-change reference is boilerplate author-bio text, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0b039f828df07493a01a75bfc1d79206880bae67aeb024da04b240ecfdcaeee9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b606876141bee94bedbe8ae7d1f3ccd6059f13090355a1529a7436bc2e105eea",
+    "raw_response_text_sha256": "f4e0e6e289f7024d140e7d52ca1dbb12d391f007f314c361af033657f5d1a7d7"
+  },
+  "api_metadata": {
+    "id": "resp_04271f9b31870c11006b06165d45b087d2853b8909807d6d14",
+    "model": "gpt-6-luna",
+    "created_at": 1795561053.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1621,
+      "input_tokens_details": {
+        "cache_write_tokens": 1618,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1618
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 1846
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Charleston residents’ concerns about city-installed drainage ditches and stormwater management\",\n  \"climate_relevance\": \"Climate change appears only in the reporter’s biographical description; the article discusses drainage and flooding without connecting them to climate change.\",\n  \"reason\": \"The only explicit climate-change reference is boilerplate author-bio text, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:57:35Z",
+  "duration_seconds": 2.028,
+  "error": null
+}

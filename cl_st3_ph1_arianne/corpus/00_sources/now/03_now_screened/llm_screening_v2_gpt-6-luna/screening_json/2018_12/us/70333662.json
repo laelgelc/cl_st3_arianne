@@ -1,0 +1,77 @@
+{
+  "article_id": "70333662",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/us/70333662.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/us/70333662.json"
+  },
+  "manifest_row": {
+    "article_id": "70333662",
+    "group": "2018_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/us/70333662.txt",
+    "now_field_2": "1403",
+    "date_original": "18-12-14",
+    "date_iso": "2018-12-14",
+    "source_name": "The Mercury News",
+    "url": "https://www.mercurynews.com/2018/12/14/sheriff-releases-log-of-emergency-calls-received-on-day-camp-fire-started/",
+    "title": "Butte County Sheriff releases log of emergency calls received on day ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Investigation of the Camp Fire’s origins, emergency calls, and utility power-line policies",
+    "climate_relevance": "The article includes a substantive statement from the California Public Utilities Commission that wildfires are increasing due in part to climate change, but climate change is not the main focus.",
+    "reason": "The identifiable main article concerns the Camp Fire investigation and related public-safety and utility issues. Climate change appears meaningfully as one factor in increasing wildfire events, making the text relevant to broader climate discourse but not core climate coverage. An unrelated police-related snippet appears at the end.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "decb8111a606d53cf629c787788976ca652b0346d8273bb567b996d4526cb633",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bb9eeaa8fada9a6ebe553d97045b39aefee841d2fbd45b86b9beb4f9826fbc6e",
+    "raw_response_text_sha256": "aed19963af252e88dfb8205222914c951c957764ae12c158ad8d5705f202ab51"
+  },
+  "api_metadata": {
+    "id": "resp_003013c13e5bfa7d006b063c067fec87d18c6460185553f26d",
+    "model": "gpt-6-luna",
+    "created_at": 1795570694.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2461,
+      "input_tokens_details": {
+        "cache_write_tokens": 2458,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2458
+        }
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 2745
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Investigation of the Camp Fire’s origins, emergency calls, and utility power-line policies\",\n  \"climate_relevance\": \"The article includes a substantive statement from the California Public Utilities Commission that wildfires are increasing due in part to climate change, but climate change is not the main focus.\",\n  \"reason\": \"The identifiable main article concerns the Camp Fire investigation and related public-safety and utility issues. Climate change appears meaningfully as one factor in increasing wildfire events, making the text relevant to broader climate discourse but not core climate coverage. An unrelated police-related snippet appears at the end.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:38:16Z",
+  "duration_seconds": 2.398,
+  "error": null
+}

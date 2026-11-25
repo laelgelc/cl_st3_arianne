@@ -1,0 +1,77 @@
+{
+  "article_id": "60136325",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/pk/60136325.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/pk/60136325.json"
+  },
+  "manifest_row": {
+    "article_id": "60136325",
+    "group": "2018_10",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/pk/60136325.txt",
+    "now_field_2": "185",
+    "date_original": "18-10-09",
+    "date_iso": "2018-10-09",
+    "source_name": "Daily Times",
+    "url": "https://dailytimes.com.pk/308402/psx-index-recoups-losses-on-imf-programme-excitement/",
+    "title": "PSX Index recoups losses on IMF programme excitement",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-pk.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "Water scarcity in Pakistan, including dams, irrigation, and water-management policies",
+    "climate_relevance": "The water-scarcity article identifies climate change as a contributing factor, links temperature change to reduced river water, and calls for regulating greenhouse-gas emissions.",
+    "reason": "The identifiable article is mainly about Pakistan’s water crisis and proposed water-management measures, not climate change. However, climate change receives meaningful discussion as a cause and policy concern, making the text relevant peripherally. The opening stock-market report is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e248cddfe7cfc30751f45c5d3853d65aa7bac7133508c54a493a7efa6ac241c5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ec2d0fa70829743343768d59cce062e750df6c470795b9df43135ee2235d17e5",
+    "raw_response_text_sha256": "bec0e4165d71a8019d4a1f60713ee6ddc680446b8d067464dd90936650b89e5e"
+  },
+  "api_metadata": {
+    "id": "resp_052f5302aed17026006b06312b51d087d19d2ffaf8076211b2",
+    "model": "gpt-6-luna",
+    "created_at": 1795567915.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1770,
+      "input_tokens_details": {
+        "cache_write_tokens": 1767,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1767
+        }
+      },
+      "output_tokens": 343,
+      "output_tokens_details": {
+        "reasoning_tokens": 172
+      },
+      "total_tokens": 2113
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Water scarcity in Pakistan, including dams, irrigation, and water-management policies\",\n  \"climate_relevance\": \"The water-scarcity article identifies climate change as a contributing factor, links temperature change to reduced river water, and calls for regulating greenhouse-gas emissions.\",\n  \"reason\": \"The identifiable article is mainly about Pakistan’s water crisis and proposed water-management measures, not climate change. However, climate change receives meaningful discussion as a cause and policy concern, making the text relevant peripherally. The opening stock-market report is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:51:57Z",
+  "duration_seconds": 2.649,
+  "error": null
+}

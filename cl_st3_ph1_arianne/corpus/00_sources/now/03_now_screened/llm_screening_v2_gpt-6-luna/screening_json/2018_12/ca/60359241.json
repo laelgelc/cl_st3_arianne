@@ -1,0 +1,77 @@
+{
+  "article_id": "60359241",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ca/60359241.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ca/60359241.json"
+  },
+  "manifest_row": {
+    "article_id": "60359241",
+    "group": "2018_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ca/60359241.txt",
+    "now_field_2": "527",
+    "date_original": "18-12-17",
+    "date_iso": "2018-12-17",
+    "source_name": "The Daily Courier",
+    "url": "http://www.kelownadailycourier.ca/entertainment/article_1016d04a-022c-11e9-a169-53730ca0422e.html",
+    "title": "The dangers of Fallout 76 for gamers",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Problems with the video game Fallout 76 and game-development practices",
+    "climate_relevance": "Climate change appears only in a separate, appended timber-industry snippet about wildfires and infestations affecting forests.",
+    "reason": "The identifiable main article concerns video games and contains no climate discourse. The final sentence makes a meaningful climate-related claim, but it belongs to an unrelated snippet rather than the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "46c07c4ff0e837c4cc3de6c556d66a8ced0e93dc2ccf6593ac4cbfcc2e55d2a4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "82f8233c403c464901c8c14d5b96c1af8b5877cc94d18af5abdfc685b5773876",
+    "raw_response_text_sha256": "71fee9aca2c352f0536b4c1787b63a53e8678cec477267612eaffebd736c8fcd"
+  },
+  "api_metadata": {
+    "id": "resp_061f1ae59a7508df006b06324814c487d183c02a3538fb4115",
+    "model": "gpt-6-luna",
+    "created_at": 1795568200.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1137,
+      "input_tokens_details": {
+        "cache_write_tokens": 1134,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1134
+        }
+      },
+      "output_tokens": 394,
+      "output_tokens_details": {
+        "reasoning_tokens": 244
+      },
+      "total_tokens": 1531
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Problems with the video game Fallout 76 and game-development practices\",\n  \"climate_relevance\": \"Climate change appears only in a separate, appended timber-industry snippet about wildfires and infestations affecting forests.\",\n  \"reason\": \"The identifiable main article concerns video games and contains no climate discourse. The final sentence makes a meaningful climate-related claim, but it belongs to an unrelated snippet rather than the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:56:43Z",
+  "duration_seconds": 3.064,
+  "error": null
+}

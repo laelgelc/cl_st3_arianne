@@ -1,0 +1,77 @@
+{
+  "article_id": "85643000",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85643000.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85643000.json"
+  },
+  "manifest_row": {
+    "article_id": "85643000",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85643000.txt",
+    "now_field_2": "828",
+    "date_original": "20-08-11",
+    "date_iso": "2020-08-11",
+    "source_name": "Chicago Tribune",
+    "url": "https://www.chicagotribune.com/suburbs/lake-county-news-sun/ct-lns-endangered-bumble-bee-st-0812-20200811-cknd6axvzjcazhctwm63tjx7fu-story.html",
+    "title": "Lake County buzzing about endangered bee discovery",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "The discovery, decline, and conservation of the endangered rusty patched bumble bee.",
+    "climate_relevance": "Climate change is named as one factor contributing to bumble bee declines, and the article describes regional flooding destroying underground nests as a specific impact.",
+    "reason": "The article is mainly about documenting and protecting an endangered bee species. Climate change receives meaningful but limited discussion as one of several threats, so the text is relevant to broader climate discourse but is not core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "30cf3945d0596b38e45d96022d0a721449d43f265fcb463ff793549595f9e352",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1a77689b827febb020ccc97650a9e9c5ed36a7c2738ec70fa5a08d11356a7473",
+    "raw_response_text_sha256": "2eb8bab91f5cfa279999509472cb9a4b06e97f9bf9e011c73789e3d7d954c750"
+  },
+  "api_metadata": {
+    "id": "resp_004e8263edd9ff21006b064c97645487d1a4bd100a4d316bb1",
+    "model": "gpt-6-luna",
+    "created_at": 1795574935.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1610,
+      "input_tokens_details": {
+        "cache_write_tokens": 1607,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1607
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1860
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The discovery, decline, and conservation of the endangered rusty patched bumble bee.\",\n  \"climate_relevance\": \"Climate change is named as one factor contributing to bumble bee declines, and the article describes regional flooding destroying underground nests as a specific impact.\",\n  \"reason\": \"The article is mainly about documenting and protecting an endangered bee species. Climate change receives meaningful but limited discussion as one of several threats, so the text is relevant to broader climate discourse but is not core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:48:57Z",
+  "duration_seconds": 2.582,
+  "error": null
+}

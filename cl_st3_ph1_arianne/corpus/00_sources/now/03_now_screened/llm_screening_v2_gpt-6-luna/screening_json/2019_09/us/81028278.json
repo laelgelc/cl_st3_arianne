@@ -1,0 +1,77 @@
+{
+  "article_id": "81028278",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/81028278.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/81028278.json"
+  },
+  "manifest_row": {
+    "article_id": "81028278",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/81028278.txt",
+    "now_field_2": "760",
+    "date_original": "19-09-11",
+    "date_iso": "2019-09-11",
+    "source_name": "The Raw Story",
+    "url": "https://www.rawstory.com/2019/09/his-frontal-lobe-is-melting-donald-trump-labeled-lousy-dad-after-he-says-melania-has-a-son/",
+    "title": "`His frontal lobe is melting': Donald Trump labeled `lousy dad' after he says Melania `has a son'",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Trump-related political and personal commentary across several unrelated snippets",
+    "climate_relevance": "One sentence links pollution, climate change, and renewable energy to the goal of providing an inhabitable planet for a child.",
+    "reason": "Climate change is mentioned in a brief but meaningful environmental appeal; it is not a central or sustained topic in the supplied text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c2b2eda969aeee124a05af96cfdeaf123c05ced91848b7a88456db85ee5d2c5c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0b33503da7b0e4cd8e3c98d3917d04c0672d53782cf1992ae3a956e63e656d41",
+    "raw_response_text_sha256": "553559942f1c6a2ab82ced6b440e53222c9864daf88875ac51692006bcaa5596"
+  },
+  "api_metadata": {
+    "id": "resp_070b266103412b23006b0646d4609087d1a476987dae83fe19",
+    "model": "gpt-6-luna",
+    "created_at": 1795573460.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1468,
+      "input_tokens_details": {
+        "cache_write_tokens": 1465,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1465
+        }
+      },
+      "output_tokens": 389,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 1857
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Trump-related political and personal commentary across several unrelated snippets\",\n  \"climate_relevance\": \"One sentence links pollution, climate change, and renewable energy to the goal of providing an inhabitable planet for a child.\",\n  \"reason\": \"Climate change is mentioned in a brief but meaningful environmental appeal; it is not a central or sustained topic in the supplied text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:24:23Z",
+  "duration_seconds": 3.483,
+  "error": null
+}

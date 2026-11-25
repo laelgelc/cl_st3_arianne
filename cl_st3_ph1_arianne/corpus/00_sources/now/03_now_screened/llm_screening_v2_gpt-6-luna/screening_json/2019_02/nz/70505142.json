@@ -1,0 +1,77 @@
+{
+  "article_id": "70505142",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70505142.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70505142.json"
+  },
+  "manifest_row": {
+    "article_id": "70505142",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70505142.txt",
+    "now_field_2": "171",
+    "date_original": "19-02-11",
+    "date_iso": "2019-02-11",
+    "source_name": "Timaru Herald",
+    "url": "https://www.stuff.co.nz/timaru-herald/news/110498823/south-canterbury-cancer-rehabilitation-charity-getting-boost-from-survivor",
+    "title": "South Canterbury cancer rehabilitation charity getting boost from ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A cancer survivor taking part in a paddle-board fundraiser for a cancer rehabilitation charity",
+    "climate_relevance": "The identifiable main article is unrelated to climate change. A separate 'ALSO' snippet briefly discusses how climate change could increase drought and fire risk in New Zealand.",
+    "reason": "The climate discussion appears only in an unrelated snippet, not in the main article, so it does not make the identifiable article relevant for the corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "754c510f544db44f7741b0c146d01b89a1b43790a077bbf263df52f698c96c1f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2a84231e3eee8d70ba43a1c07b696aaf6542f7c27fe0fdbbb8eed1a737fc5057",
+    "raw_response_text_sha256": "29eff65d263f5927f897c2290bdb1c2ae6342c592b497184a4bca103fe3e983f"
+  },
+  "api_metadata": {
+    "id": "resp_0b261d162980d95a006b063d0d222487d1a68f63c3c1fe674d",
+    "model": "gpt-6-luna",
+    "created_at": 1795570957.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1069,
+      "input_tokens_details": {
+        "cache_write_tokens": 1066,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1066
+        }
+      },
+      "output_tokens": 376,
+      "output_tokens_details": {
+        "reasoning_tokens": 220
+      },
+      "total_tokens": 1445
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A cancer survivor taking part in a paddle-board fundraiser for a cancer rehabilitation charity\",\n  \"climate_relevance\": \"The identifiable main article is unrelated to climate change. A separate 'ALSO' snippet briefly discusses how climate change could increase drought and fire risk in New Zealand.\",\n  \"reason\": \"The climate discussion appears only in an unrelated snippet, not in the main article, so it does not make the identifiable article relevant for the corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:40Z",
+  "duration_seconds": 3.014,
+  "error": null
+}

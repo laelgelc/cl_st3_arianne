@@ -1,0 +1,77 @@
+{
+  "article_id": "85800221",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85800221.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85800221.json"
+  },
+  "manifest_row": {
+    "article_id": "85800221",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85800221.txt",
+    "now_field_2": "1835",
+    "date_original": "20-08-30",
+    "date_iso": "2020-08-30",
+    "source_name": "Women's Wear Daily",
+    "url": "https://wwd.com/business-news/other/indias-reliance-retail-acquires-future-retail-1234570942/",
+    "title": "India's Reliance Retail Acquires Future Retail",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Reliance Retail's acquisition of Future Group's retail businesses in India",
+    "climate_relevance": "The main article concerns retail consolidation and does not discuss climate change. A separate fashion-industry social-media snippet mentions emissions and climate goals, but it is unrelated to the identifiable main article.",
+    "reason": "Climate discourse appears only in an appended, unrelated snippet rather than in the main article, so the text is not useful as climate coverage of the article's topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "572dff3e315867569ae56abccdd13044fb17384640dc5694b172a027d531fef9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b0e121edd72d9e64623cbc3c0e10e43da035da31d6d9cabf38e6bc9d4bfe61e5",
+    "raw_response_text_sha256": "b178ff6fe57de49876db1b7d388f1f07c711ba773c3b9a344634fc5fb79b30e2"
+  },
+  "api_metadata": {
+    "id": "resp_004f71a807c90877006b064d25a55087d1b2ffd6420382ceb7",
+    "model": "gpt-6-luna",
+    "created_at": 1795575077.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3009,
+      "input_tokens_details": {
+        "cache_write_tokens": 3006,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3006
+        }
+      },
+      "output_tokens": 382,
+      "output_tokens_details": {
+        "reasoning_tokens": 220
+      },
+      "total_tokens": 3391
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Reliance Retail's acquisition of Future Group's retail businesses in India\",\n  \"climate_relevance\": \"The main article concerns retail consolidation and does not discuss climate change. A separate fashion-industry social-media snippet mentions emissions and climate goals, but it is unrelated to the identifiable main article.\",\n  \"reason\": \"Climate discourse appears only in an appended, unrelated snippet rather than in the main article, so the text is not useful as climate coverage of the article's topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:51:20Z",
+  "duration_seconds": 2.987,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "84235303",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/us/84235303.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/us/84235303.json"
+  },
+  "manifest_row": {
+    "article_id": "84235303",
+    "group": "2020_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/us/84235303.txt",
+    "now_field_2": "163",
+    "date_original": "20-03-16",
+    "date_iso": "2020-03-16",
+    "source_name": "WRAL",
+    "url": "https://www.wral.com/fact-checking-the-sanders-v-biden-democratic-debate/19013226/",
+    "title": "Fact-checking the Sanders v. Biden Democratic debate",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "Fact-checking a Democratic presidential debate",
+    "climate_relevance": "Climate change is mentioned only as one item in a list of questions Sanders may ask Biden.",
+    "reason": "The text contains no substantive discussion of climate change, its impacts, or related policy beyond this passing mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2ce5e568873133276810c6ef64ccc3752202b38afcccb42aad26c42e21f6a332",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9ba8b11412ffdc1bef4220947b858cbb1d58f8ce2c4c20170ad879a24c3d4454",
+    "raw_response_text_sha256": "b2c1e99c67fd97168b8e6ecd4f3b0e471fd0dd2db9a06d00383a27947b276231"
+  },
+  "api_metadata": {
+    "id": "resp_0310d807a7d47ab1006b064a6d8a6887d18ec6c5a2b38d93bc",
+    "model": "gpt-6-luna",
+    "created_at": 1795574381.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 705,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 910
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Fact-checking a Democratic presidential debate\",\n  \"climate_relevance\": \"Climate change is mentioned only as one item in a list of questions Sanders may ask Biden.\",\n  \"reason\": \"The text contains no substantive discussion of climate change, its impacts, or related policy beyond this passing mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:39:43Z",
+  "duration_seconds": 2.257,
+  "error": null
+}

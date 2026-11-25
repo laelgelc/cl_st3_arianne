@@ -1,0 +1,77 @@
+{
+  "article_id": "31622898",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/31622898.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/31622898.json"
+  },
+  "manifest_row": {
+    "article_id": "31622898",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/31622898.txt",
+    "now_field_2": "1487",
+    "date_original": "20-02-05",
+    "date_iso": "2020-02-05",
+    "source_name": "politico.com",
+    "url": "https://www.politico.com/newsletters/morning-tax/2020/02/05/another-state-of-the-union-785064",
+    "title": "Another State of the Union - POLITICO",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us8.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "U.S. tax policy and related political news",
+    "climate_relevance": "Climate change appears only in a promotional description of a separate international newsletter.",
+    "reason": "The available text is primarily a tax-policy newsletter. Its sole climate reference is an incidental mention in subscription promotion, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "90102a61c2bf95a45acf0044befbf13182b04ca04e45016811637073ba1fe383",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5fcc57521c395308a50461a0ea83351348f511305ddafe4e63af4e2d7311f98f",
+    "raw_response_text_sha256": "5dec0611e8cb3490300360012a70051aa2234ad567b732b0073e97d0291e4336"
+  },
+  "api_metadata": {
+    "id": "resp_0aaac4a8f5b419ac006b061880a9b887d294299ef92911e0f6",
+    "model": "gpt-6-luna",
+    "created_at": 1795561600.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2406,
+      "input_tokens_details": {
+        "cache_write_tokens": 2403,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2403
+        }
+      },
+      "output_tokens": 173,
+      "output_tokens_details": {
+        "reasoning_tokens": 43
+      },
+      "total_tokens": 2579
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"U.S. tax policy and related political news\",\n  \"climate_relevance\": \"Climate change appears only in a promotional description of a separate international newsletter.\",\n  \"reason\": \"The available text is primarily a tax-policy newsletter. Its sole climate reference is an incidental mention in subscription promotion, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:06:42Z",
+  "duration_seconds": 1.862,
+  "error": null
+}

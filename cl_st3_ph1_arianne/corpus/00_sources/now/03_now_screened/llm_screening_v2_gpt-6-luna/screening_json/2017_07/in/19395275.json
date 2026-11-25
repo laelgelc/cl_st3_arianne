@@ -1,0 +1,77 @@
+{
+  "article_id": "19395275",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/in/19395275.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/in/19395275.json"
+  },
+  "manifest_row": {
+    "article_id": "19395275",
+    "group": "2017_07",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/in/19395275.txt",
+    "now_field_2": "382",
+    "date_original": "17-07-09",
+    "date_iso": "2017-07-09",
+    "source_name": "Times of India",
+    "url": "http://timesofindia.indiatimes.com/city/lucknow/denied-ambulance-family-carries-body-on-rickshaw/articleshow/59513816.cms",
+    "title": "Denied ambulance, family carries body on rickshaw",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-IN.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A family being forced to transport a deceased relative by rickshaw after an ambulance was allegedly unavailable",
+    "climate_relevance": "The climate reference appears only in a seemingly unrelated sentence appended after the article's comments section.",
+    "reason": "The identifiable main article concerns access to ambulance services and contains no climate discourse. The Paris Agreement sentence appears to be an unrelated snippet rather than part of the article's discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1bb8f43b0337f59912e200765c28f67e94148f3b52938157f8f701cd6683c652",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a8992063d319ff687186b21378ba854d18d7f2b9d59a2be8790e094cd296684a",
+    "raw_response_text_sha256": "f0f15bc23fb67035b8062bb64c495ba73a9d09ad2db3f39f8df4709c2daa5c2e"
+  },
+  "api_metadata": {
+    "id": "resp_02cb8bd327756167006b060be7946087d2a328eb264880dc1e",
+    "model": "gpt-6-luna",
+    "created_at": 1795558375.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1032,
+      "input_tokens_details": {
+        "cache_write_tokens": 1029,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1029
+        }
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 1276
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A family being forced to transport a deceased relative by rickshaw after an ambulance was allegedly unavailable\",\n  \"climate_relevance\": \"The climate reference appears only in a seemingly unrelated sentence appended after the article's comments section.\",\n  \"reason\": \"The identifiable main article concerns access to ambulance services and contains no climate discourse. The Paris Agreement sentence appears to be an unrelated snippet rather than part of the article's discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:12:58Z",
+  "duration_seconds": 2.645,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31454108",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/nz/31454108.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/nz/31454108.json"
+  },
+  "manifest_row": {
+    "article_id": "31454108",
+    "group": "2019_11",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/nz/31454108.txt",
+    "now_field_2": "453",
+    "date_original": "19-11-23",
+    "date_iso": "2019-11-23",
+    "source_name": "scoop.co.nz",
+    "url": "https://www.scoop.co.nz/stories/BU1911/S00476/a-potential-point-of-sale-method-to-check-fish-oil-capsules.htm",
+    "title": "A potential point-of-sale method to check fish oil ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A handheld Raman spectroscopy device for checking omega-3 levels in fish oil capsules",
+    "climate_relevance": "Climate change appears only in an unrelated trailing snippet about an environmental law decision.",
+    "reason": "The identifiable main article concerns fish oil quality testing and contains no meaningful climate discourse. The climate reference is part of an unrelated snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e5a73bf08478bc809ce27dcb5c2c755e62bdd2ba55849bf3b159ede787ec9993",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c741c108ad54eeaf1844ff32d45cb3ed4d571474e53c4f213a848b0254e5e5ff",
+    "raw_response_text_sha256": "43d78de9a9ebc4d8bc260cc3f7fb592468b422d610d19841bd9656f8f69411e5"
+  },
+  "api_metadata": {
+    "id": "resp_0e5630d8caf5d6d3006b06176764ec87d29de77cca80cc7cc6",
+    "model": "gpt-6-luna",
+    "created_at": 1795561319.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1072,
+      "input_tokens_details": {
+        "cache_write_tokens": 1069,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1069
+        }
+      },
+      "output_tokens": 204,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 1276
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A handheld Raman spectroscopy device for checking omega-3 levels in fish oil capsules\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated trailing snippet about an environmental law decision.\",\n  \"reason\": \"The identifiable main article concerns fish oil quality testing and contains no meaningful climate discourse. The climate reference is part of an unrelated snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:02:01Z",
+  "duration_seconds": 2.001,
+  "error": null
+}

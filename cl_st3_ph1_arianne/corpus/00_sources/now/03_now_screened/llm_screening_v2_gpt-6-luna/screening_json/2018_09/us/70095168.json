@@ -1,0 +1,77 @@
+{
+  "article_id": "70095168",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/us/70095168.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/us/70095168.json"
+  },
+  "manifest_row": {
+    "article_id": "70095168",
+    "group": "2018_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/us/70095168.txt",
+    "now_field_2": "891",
+    "date_original": "18-09-29",
+    "date_iso": "2018-09-29",
+    "source_name": "Concord Monitor",
+    "url": "https://www.concordmonitor.com/The-rise-of-Republican-rage-20512868",
+    "title": "Post op-ed: For Republicans, a full embrace of hatred",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Political commentary on Brett Kavanaugh's Supreme Court nomination and the Republican response to sexual assault allegations",
+    "climate_relevance": "Climate change is briefly mentioned as one example of an issue Republicans allegedly disregard; the text does not discuss climate science, policy, impacts, or debate.",
+    "reason": "The article is about the Kavanaugh hearings. Its single passing reference to climate change does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "51a6f47441ffccb3fdb49a034171642f89498575b4716e9efd787a65e5853e53",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "caaf614cfa4da546a5068b1169d4c36f5f43d327fad8a6aab79973420a8d337c",
+    "raw_response_text_sha256": "5d805d86b4cc5655d0e5ca6489b78d0e3d8314cca9eda7a668e166f735151cc9"
+  },
+  "api_metadata": {
+    "id": "resp_0fcea07cbf9f59eb006b063ad6ba2087d19412fcb44d504746",
+    "model": "gpt-6-luna",
+    "created_at": 1795570390.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1672,
+      "input_tokens_details": {
+        "cache_write_tokens": 1669,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1669
+        }
+      },
+      "output_tokens": 249,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 1921
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Political commentary on Brett Kavanaugh's Supreme Court nomination and the Republican response to sexual assault allegations\",\n  \"climate_relevance\": \"Climate change is briefly mentioned as one example of an issue Republicans allegedly disregard; the text does not discuss climate science, policy, impacts, or debate.\",\n  \"reason\": \"The article is about the Kavanaugh hearings. Its single passing reference to climate change does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:33:15Z",
+  "duration_seconds": 5.277,
+  "error": null
+}

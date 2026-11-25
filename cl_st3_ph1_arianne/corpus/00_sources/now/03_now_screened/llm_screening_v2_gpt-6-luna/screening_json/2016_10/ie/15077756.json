@@ -1,0 +1,77 @@
+{
+  "article_id": "15077756",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_10/ie/15077756.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_10/ie/15077756.json"
+  },
+  "manifest_row": {
+    "article_id": "15077756",
+    "group": "2016_10",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_10/ie/15077756.txt",
+    "now_field_2": "343",
+    "date_original": "16-10-27",
+    "date_iso": "2016-10-27",
+    "source_name": "Leitrim Observer",
+    "url": "http://www.leitrimobserver.ie/news/home/221666/leitrim-td-brings-anti-fracking-legislation-to-the-dail.html",
+    "title": "Leitrim TD brings anti-fracking legislation to the D�il",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-10-ykw/16-10-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A proposed Irish bill to prohibit onshore petroleum exploration and extraction, including fracking.",
+    "climate_relevance": "Climate change appears only in the name of the committee that will scrutinize the bill; the text gives no meaningful climate-related rationale or discussion.",
+    "reason": "The article focuses on anti-fracking legislation and its potential environmental harms, but the sole climate reference is incidental procedural context rather than substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1d828c7c88b2d314ebeadef5a165e797d8c8168d0733aac62c478ba2b8248da1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "188e7a40b4d47b639098340a4c54ecf19011d86b46bb67f0cd19a906d643ded9",
+    "raw_response_text_sha256": "0220485d408589b8b60130b43a026b275abe49915d07b988eaa2d431b48482fc"
+  },
+  "api_metadata": {
+    "id": "resp_0df1820ab68cccb3006b060645b09c87d2a2c66d68bd81f1a4",
+    "model": "gpt-6-luna",
+    "created_at": 1795556933.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 930,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 1246
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A proposed Irish bill to prohibit onshore petroleum exploration and extraction, including fracking.\",\n  \"climate_relevance\": \"Climate change appears only in the name of the committee that will scrutinize the bill; the text gives no meaningful climate-related rationale or discussion.\",\n  \"reason\": \"The article focuses on anti-fracking legislation and its potential environmental harms, but the sole climate reference is incidental procedural context rather than substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:48:56Z",
+  "duration_seconds": 2.557,
+  "error": null
+}

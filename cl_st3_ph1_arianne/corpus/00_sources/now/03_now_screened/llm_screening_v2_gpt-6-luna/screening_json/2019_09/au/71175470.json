@@ -1,0 +1,77 @@
+{
+  "article_id": "71175470",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/au/71175470.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/au/71175470.json"
+  },
+  "manifest_row": {
+    "article_id": "71175470",
+    "group": "2019_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/au/71175470.txt",
+    "now_field_2": "262",
+    "date_original": "19-09-03",
+    "date_iso": "2019-09-03",
+    "source_name": "abc.net.au",
+    "url": "https://www.abc.net.au/news/2019-09-01/call-to-arms-for-governments-over-country-mental-health/11454224",
+    "title": "Thousands of mental health patient transfers show need for ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Mental health services and access to care in remote Australian communities",
+    "climate_relevance": "Climate change appears only in a separate, unrelated fact-check teaser at the end.",
+    "reason": "The identifiable main article concerns regional mental health care; the brief climate reference belongs to an unrelated snippet and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d61af4aba3e11d1dbd62b1302d852d4aac9065a28283af89f714bc7095839908",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b4e485d46cb6b1ff74a08d3dc3b05f175b6fae22c5b26c7a9a503c72ed07e53f",
+    "raw_response_text_sha256": "d6f33a04f3251b56c0a1e177fb6f4e50211d527130a3c0ba82873996ea68a37c"
+  },
+  "api_metadata": {
+    "id": "resp_0ab59073d6f31afb006b064039bdac87d1b297a337de95f1c2",
+    "model": "gpt-6-luna",
+    "created_at": 1795571769.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 831,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 1120
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Mental health services and access to care in remote Australian communities\",\n  \"climate_relevance\": \"Climate change appears only in a separate, unrelated fact-check teaser at the end.\",\n  \"reason\": \"The identifiable main article concerns regional mental health care; the brief climate reference belongs to an unrelated snippet and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:56:12Z",
+  "duration_seconds": 2.594,
+  "error": null
+}

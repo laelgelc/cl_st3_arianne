@@ -1,0 +1,77 @@
+{
+  "article_id": "70913334",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/nz/70913334.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/nz/70913334.json"
+  },
+  "manifest_row": {
+    "article_id": "70913334",
+    "group": "2019_06",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/nz/70913334.txt",
+    "now_field_2": "577",
+    "date_original": "19-06-26",
+    "date_iso": "2019-06-26",
+    "source_name": "Yahoo News",
+    "url": "https://nz.finance.yahoo.com/news/democrats-debate-who-is-this-economy-really-working-for-034821129.html",
+    "title": "Democrats debate 'who is this economy really working for?'",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Democratic presidential candidates’ debate positions on the economy and income inequality",
+    "climate_relevance": "One candidate advocates green-energy jobs and says climate change would be his top priority.",
+    "reason": "The article is mainly about economic inequality and other debate topics. Climate change receives a brief but meaningful mention, so the text is relevant as peripheral discourse rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "814c2e678e8a9993c266c00fa0b372f7eb4dba953e86f8c9a6c5a8b4ff014525",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "024e3f5ed2f9f4acbccceaa7c7d740147563771d587573d97177c54f06a1f1d0",
+    "raw_response_text_sha256": "2b572c1d36c31f863158f967848904d3ed0846d9033328b0420f05a68b84ddee"
+  },
+  "api_metadata": {
+    "id": "resp_0326f38d63af7ce3006b063fea65e887d1b72fe4742c58c74e",
+    "model": "gpt-6-luna",
+    "created_at": 1795571690.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1249,
+      "input_tokens_details": {
+        "cache_write_tokens": 1246,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1246
+        }
+      },
+      "output_tokens": 209,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1458
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Democratic presidential candidates’ debate positions on the economy and income inequality\",\n  \"climate_relevance\": \"One candidate advocates green-energy jobs and says climate change would be his top priority.\",\n  \"reason\": \"The article is mainly about economic inequality and other debate topics. Climate change receives a brief but meaningful mention, so the text is relevant as peripheral discourse rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:54:52Z",
+  "duration_seconds": 2.125,
+  "error": null
+}

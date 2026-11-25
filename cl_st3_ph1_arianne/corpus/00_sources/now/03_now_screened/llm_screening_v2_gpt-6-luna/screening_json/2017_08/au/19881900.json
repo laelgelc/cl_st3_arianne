@@ -1,0 +1,77 @@
+{
+  "article_id": "19881900",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/au/19881900.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/au/19881900.json"
+  },
+  "manifest_row": {
+    "article_id": "19881900",
+    "group": "2017_08",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/au/19881900.txt",
+    "now_field_2": "691",
+    "date_original": "17-08-06",
+    "date_iso": "2017-08-06",
+    "source_name": "Pedestrian TV",
+    "url": "https://www.pedestrian.tv/news/piss-off-tony-abbott/",
+    "title": "Piss Off, Tony Abbott",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Tony Abbott's position on same-sex marriage and the proposed plebiscite",
+    "climate_relevance": "Climate change is mentioned only in passing as one of several issues over which Abbott has caused party divisions.",
+    "reason": "The article is primarily political commentary about marriage equality; its brief climate reference contains no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "675cc3f8d850f6c30549c14da69d7d397e916517316e8aecf29f605afe999fbb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a00a04d7da3596a1ef5d0cbd524bb0fa60ae85c03732d3477bed779531be638f",
+    "raw_response_text_sha256": "c99d52b19b1d3b46e39d585f73f514ae7ff8d3aa7d072b4f2da20c5ed9a57b06"
+  },
+  "api_metadata": {
+    "id": "resp_07a0b4a70e4816b4006b060c947eb887d2907cdfc88606083c",
+    "model": "gpt-6-luna",
+    "created_at": 1795558548.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1365,
+      "input_tokens_details": {
+        "cache_write_tokens": 1362,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1362
+        }
+      },
+      "output_tokens": 182,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1547
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Tony Abbott's position on same-sex marriage and the proposed plebiscite\",\n  \"climate_relevance\": \"Climate change is mentioned only in passing as one of several issues over which Abbott has caused party divisions.\",\n  \"reason\": \"The article is primarily political commentary about marriage equality; its brief climate reference contains no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:15:50Z",
+  "duration_seconds": 1.673,
+  "error": null
+}

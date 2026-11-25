@@ -1,0 +1,77 @@
+{
+  "article_id": "85820621",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/85820621.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/85820621.json"
+  },
+  "manifest_row": {
+    "article_id": "85820621",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/85820621.txt",
+    "now_field_2": "4337",
+    "date_original": "20-09-01",
+    "date_iso": "2020-09-01",
+    "source_name": "StarTribune",
+    "url": "https://www.startribune.com/lukewarm-into-sunday-but-sweatshirts-and-frost-up-north-next-week/572291682/",
+    "title": "Lukewarm Into Sunday, But Sweatshirts and Frost (up north) Next Week",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "Minnesota weather forecast and a roundup of weather and climate-related news",
+    "climate_relevance": "The text includes substantial climate discussion in excerpts about extreme heat, wildfires, hurricanes, sea-level rise, insurance costs, and climate science, but its main framing is a weather forecast and roundup.",
+    "reason": "Climate change and its impacts receive meaningful, repeated attention, but the identifiable main post is primarily about short-term weather and includes excerpts from several other reports rather than focusing centrally on climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "459fd61df5f5f3294107a284476bec92277de1f4caf2a2d713335acaabea6fea",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5768a2b11fce94fe23240696bda089d4e7484a4666e979e3a35f2f952e626530",
+    "raw_response_text_sha256": "e0fc104f78c4f5064055c7c6b5356c652bc240a5c6a6e418d9b8a39efe9d8aa2"
+  },
+  "api_metadata": {
+    "id": "resp_02f17b3175cb47fe006b064d37461887d1878dfb6e7b38e721",
+    "model": "gpt-6-luna",
+    "created_at": 1795575095.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6225,
+      "input_tokens_details": {
+        "cache_write_tokens": 6222,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6222
+        }
+      },
+      "output_tokens": 470,
+      "output_tokens_details": {
+        "reasoning_tokens": 305
+      },
+      "total_tokens": 6695
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Minnesota weather forecast and a roundup of weather and climate-related news\",\n  \"climate_relevance\": \"The text includes substantial climate discussion in excerpts about extreme heat, wildfires, hurricanes, sea-level rise, insurance costs, and climate science, but its main framing is a weather forecast and roundup.\",\n  \"reason\": \"Climate change and its impacts receive meaningful, repeated attention, but the identifiable main post is primarily about short-term weather and includes excerpts from several other reports rather than focusing centrally on climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:51:39Z",
+  "duration_seconds": 4.365,
+  "error": null
+}

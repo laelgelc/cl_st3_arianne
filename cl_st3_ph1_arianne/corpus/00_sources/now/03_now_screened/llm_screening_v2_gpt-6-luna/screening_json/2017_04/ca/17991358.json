@@ -1,0 +1,77 @@
+{
+  "article_id": "17991358",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/ca/17991358.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/ca/17991358.json"
+  },
+  "manifest_row": {
+    "article_id": "17991358",
+    "group": "2017_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/ca/17991358.txt",
+    "now_field_2": "831",
+    "date_original": "17-04-17",
+    "date_iso": "2017-04-17",
+    "source_name": "ETCanada.com",
+    "url": "http://etcanada.com/photos/217959/this-week-on-tv-apr-17-23/",
+    "title": "This Week On TV: Apr. 17-23",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "Weekly television programming listings",
+    "climate_relevance": "Climate change appears only in a brief description of a Bill Nye series that addresses climate change deniers.",
+    "reason": "The text is a TV listings roundup, and the climate reference is a passing example in one program blurb rather than substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9c9bed2fafc7cfdb651306c662a8a41970dcaf8f976f6df6dd1d97196fabc8d0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "02b3f39c980b0094e2cd9f50212cec26018a9d9977e6241dda986363f85a78e0",
+    "raw_response_text_sha256": "8c702cd2ec2224d9c15950d76cb0fbbdb8c300bf71e7c162a0b4b26a62f854a4"
+  },
+  "api_metadata": {
+    "id": "resp_0c911677a1beeec1006b0609a2b75087d2b22865487a731a9c",
+    "model": "gpt-6-luna",
+    "created_at": 1795557794.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1652,
+      "input_tokens_details": {
+        "cache_write_tokens": 1649,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1649
+        }
+      },
+      "output_tokens": 291,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 1943
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Weekly television programming listings\",\n  \"climate_relevance\": \"Climate change appears only in a brief description of a Bill Nye series that addresses climate change deniers.\",\n  \"reason\": \"The text is a TV listings roundup, and the climate reference is a passing example in one program blurb rather than substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:03:17Z",
+  "duration_seconds": 2.458,
+  "error": null
+}

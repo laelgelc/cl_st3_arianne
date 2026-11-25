@@ -1,0 +1,77 @@
+{
+  "article_id": "40803267",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40803267.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40803267.json"
+  },
+  "manifest_row": {
+    "article_id": "40803267",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40803267.txt",
+    "now_field_2": "696",
+    "date_original": "19-04-04",
+    "date_iso": "2019-04-04",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/05/ringgit-to-rally-on-domestic-impetus-central-bank-rhetoric/",
+    "title": "Ringgit to rally on domestic impetus, central bank rhetoric",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Currency-market outlook for the Malaysian ringgit",
+    "climate_relevance": "A brief roundup item mentions sustainable energy solutions and identifies Malaysia’s minister for climate change and the environment, but the main article does not discuss climate change.",
+    "reason": "The available main article concerns foreign-exchange markets. The climate-related wording appears only in a brief, separate item and provides no substantive climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7e9d11f2ab390afdd06a67802b8b50493d06603b56cf401ffe554e7355ea28d6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f2e8d4eaf12949b0d101ffeb2f7a65cff110a58895c62f3c09fc5fd536a1e42e",
+    "raw_response_text_sha256": "f848855aecd3c11a9b59724e20ab890ae882758472ddbe9102eb6d4008356157"
+  },
+  "api_metadata": {
+    "id": "resp_01021ecc72037e19006b061fc2d8d487d2bee92863b2345df8",
+    "model": "gpt-6-luna",
+    "created_at": 1795563458.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1733,
+      "input_tokens_details": {
+        "cache_write_tokens": 1730,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1730
+        }
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 194
+      },
+      "total_tokens": 2074
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Currency-market outlook for the Malaysian ringgit\",\n  \"climate_relevance\": \"A brief roundup item mentions sustainable energy solutions and identifies Malaysia’s minister for climate change and the environment, but the main article does not discuss climate change.\",\n  \"reason\": \"The available main article concerns foreign-exchange markets. The climate-related wording appears only in a brief, separate item and provides no substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:41Z",
+  "duration_seconds": 2.719,
+  "error": null
+}

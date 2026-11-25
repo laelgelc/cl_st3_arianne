@@ -1,0 +1,77 @@
+{
+  "article_id": "70297435",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/nz/70297435.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/nz/70297435.json"
+  },
+  "manifest_row": {
+    "article_id": "70297435",
+    "group": "2018_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/nz/70297435.txt",
+    "now_field_2": "991",
+    "date_original": "18-12-01",
+    "date_iso": "2018-12-01",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/WO1812/S00007/30-articles-of-the-udhr-22-right-to-social-security.htm",
+    "title": "30 Articles of the UDHR - 22: Right to Social Security",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The Universal Declaration of Human Rights and the right to social security",
+    "climate_relevance": "A separate news teaser mentions climate disasters and the opening of the annual UN Climate Change Conference, but the main article does not discuss climate change.",
+    "reason": "The identifiable main article focuses on social security and human rights. The climate-related text appears only as an unrelated teaser, not as meaningful climate discourse in the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "05fb9c65be6f2f508c41cccef1236630f6a27faad78091442c7b19645cc42f9c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f3958359e696ccc66d586d3130ea847e2a0c766bd7750a991d0e77924638b480",
+    "raw_response_text_sha256": "f2078a64e35da3e3ab481e1928248996a7329fad01dbea9f3fe297dff160dd29"
+  },
+  "api_metadata": {
+    "id": "resp_0c4b8fc7fc304850006b063bc7d6cc87d19f77e1b018f5f250",
+    "model": "gpt-6-luna",
+    "created_at": 1795570631.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1770,
+      "input_tokens_details": {
+        "cache_write_tokens": 1767,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1767
+        }
+      },
+      "output_tokens": 296,
+      "output_tokens_details": {
+        "reasoning_tokens": 144
+      },
+      "total_tokens": 2066
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The Universal Declaration of Human Rights and the right to social security\",\n  \"climate_relevance\": \"A separate news teaser mentions climate disasters and the opening of the annual UN Climate Change Conference, but the main article does not discuss climate change.\",\n  \"reason\": \"The identifiable main article focuses on social security and human rights. The climate-related text appears only as an unrelated teaser, not as meaningful climate discourse in the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:37:14Z",
+  "duration_seconds": 2.735,
+  "error": null
+}

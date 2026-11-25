@@ -1,0 +1,77 @@
+{
+  "article_id": "51694688",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/ca/51694688.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/ca/51694688.json"
+  },
+  "manifest_row": {
+    "article_id": "51694688",
+    "group": "2020_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/ca/51694688.txt",
+    "now_field_2": "2549",
+    "date_original": "20-05-18",
+    "date_iso": "2020-05-18",
+    "source_name": "digitaljournal.com",
+    "url": "http://www.digitaljournal.com/pr/4684442",
+    "title": "CanWel Announces Meeting Results for Election of Directors ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "CanWel's annual shareholder meeting results and election of directors",
+    "climate_relevance": "Climate change appears only in a generic list of business risks in the forward-looking-statements disclaimer.",
+    "reason": "The press release concerns director election results. Its climate-change reference is boilerplate risk disclosure and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c8306be06f1a07bc251cc98203ed5e3227b764fd362856682937ab3562d6ff86",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d7b9cca8741be61caec929733d84d2376cd13f0e099f703814556cbd3bd5cfb6",
+    "raw_response_text_sha256": "68abcb210cb4c676d38a7dcbcbe79f9814dc7644e0bd7be912c1c0b5f3eecc58"
+  },
+  "api_metadata": {
+    "id": "resp_078e3b2088e41190006b062e5bd67487d1b82a2dd51c2ea377",
+    "model": "gpt-6-luna",
+    "created_at": 1795567195.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3903,
+      "input_tokens_details": {
+        "cache_write_tokens": 3900,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3900
+        }
+      },
+      "output_tokens": 189,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 4092
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"CanWel's annual shareholder meeting results and election of directors\",\n  \"climate_relevance\": \"Climate change appears only in a generic list of business risks in the forward-looking-statements disclaimer.\",\n  \"reason\": \"The press release concerns director election results. Its climate-change reference is boilerplate risk disclosure and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:39:57Z",
+  "duration_seconds": 1.821,
+  "error": null
+}

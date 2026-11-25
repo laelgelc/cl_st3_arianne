@@ -1,0 +1,77 @@
+{
+  "article_id": "31281471",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/31281471.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/31281471.json"
+  },
+  "manifest_row": {
+    "article_id": "31281471",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/31281471.txt",
+    "now_field_2": "1690",
+    "date_original": "19-09-11",
+    "date_iso": "2019-09-11",
+    "source_name": "tucson.com",
+    "url": "https://tucson.com/news/local/is-it-safe-to-wade-in-or-drink-the-water/article_9f54b511-82c8-53ce-bcc4-23f3dc9c9f3b.html",
+    "title": "Is it safe to wade in or drink the water now in the Santa ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Safety and environmental effects of releasing reclaimed wastewater into the Santa Cruz River",
+    "climate_relevance": "Climate change appears only in the author's biographical description of topics he has covered; the article itself contains no meaningful climate discourse.",
+    "reason": "The article focuses on water quality, contaminants, and whether reclaimed water is safe for contact or consumption. Its sole climate change reference is incidental metadata in the closing biography.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b369b2af39e64e31373b2d39f131c55b75755baf0aee5169e527554bc373ec15",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ddafdff127af06115ecac7b7c3fc902a43f3d992cd5d2c769a2d3d24fa4a0b62",
+    "raw_response_text_sha256": "87730df754b9aa8dad7a643799e2a275e294d9ef83a656442dd686809b893468"
+  },
+  "api_metadata": {
+    "id": "resp_03ff320e08fdbcc6006b06168bbec487d2a7bb241f7b8ac623",
+    "model": "gpt-6-luna",
+    "created_at": 1795561099.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2649,
+      "input_tokens_details": {
+        "cache_write_tokens": 2646,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2646
+        }
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 2907
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Safety and environmental effects of releasing reclaimed wastewater into the Santa Cruz River\",\n  \"climate_relevance\": \"Climate change appears only in the author's biographical description of topics he has covered; the article itself contains no meaningful climate discourse.\",\n  \"reason\": \"The article focuses on water quality, contaminants, and whether reclaimed water is safe for contact or consumption. Its sole climate change reference is incidental metadata in the closing biography.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:58:22Z",
+  "duration_seconds": 2.451,
+  "error": null
+}

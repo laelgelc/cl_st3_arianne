@@ -1,0 +1,77 @@
+{
+  "article_id": "50546209",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/gb/50546209.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/gb/50546209.json"
+  },
+  "manifest_row": {
+    "article_id": "50546209",
+    "group": "2019_03",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/gb/50546209.txt",
+    "now_field_2": "5593",
+    "date_original": "19-03-27",
+    "date_iso": "2019-03-27",
+    "source_name": "Yahoo News UK",
+    "url": "https://uk.news.yahoo.com/live-mps-vote-alternative-brexit-153252623.html",
+    "title": "Brexit Live: All eight options defeated in 'indicative votes' process",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "UK parliamentary debate over Brexit alternatives and indicative votes",
+    "climate_relevance": "A quoted MP warns that a future government could make climate change denial a cornerstone of policy.",
+    "reason": "The live report is overwhelmingly about Brexit. Its explicit climate reference appears in a political warning about the consequences of a possible Brexit deal, making it relevant as a passing element of broader political discourse but not core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4bc781c1872010ec47fb6b01c34b2bc9b7e612a1d7ac372724ddd7d8baf31da3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a4252db029e613c3c1bd6662b8352e68c50c34f1ab06f6af28dd6a5eb24e288f",
+    "raw_response_text_sha256": "c00259dd0d5a8766edabf5a052a68adc54ed1f5ec1fa85dfe3a3f623c9d59675"
+  },
+  "api_metadata": {
+    "id": "resp_0eae588386a34f2e006b06296cef2087d1a3cbedd480feb471",
+    "model": "gpt-6-luna",
+    "created_at": 1795565933.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8063,
+      "input_tokens_details": {
+        "cache_write_tokens": 8060,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 8060
+        }
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 8323
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"UK parliamentary debate over Brexit alternatives and indicative votes\",\n  \"climate_relevance\": \"A quoted MP warns that a future government could make climate change denial a cornerstone of policy.\",\n  \"reason\": \"The live report is overwhelmingly about Brexit. Its explicit climate reference appears in a political warning about the consequences of a possible Brexit deal, making it relevant as a passing element of broader political discourse but not core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:18:55Z",
+  "duration_seconds": 2.434,
+  "error": null
+}

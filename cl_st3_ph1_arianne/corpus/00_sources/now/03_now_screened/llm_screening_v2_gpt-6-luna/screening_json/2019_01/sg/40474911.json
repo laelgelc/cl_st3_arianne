@@ -1,0 +1,77 @@
+{
+  "article_id": "40474911",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/sg/40474911.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/sg/40474911.json"
+  },
+  "manifest_row": {
+    "article_id": "40474911",
+    "group": "2019_01",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/sg/40474911.txt",
+    "now_field_2": "981",
+    "date_original": "19-01-08",
+    "date_iso": "2019-01-08",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/global-weather-forecasts-could-soon-151100170.html",
+    "title": "Global Weather Forecasts Could Soon Get Much Better, According to ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A global weather-forecasting system developed by IBM and The Weather Company",
+    "climate_relevance": "Climate change appears only in a related-link headline; the article itself discusses weather forecasting technology and storm prediction.",
+    "reason": "The article contains no meaningful discourse about climate change. The climate-related reference is a navigation-style link, while the main article concerns global weather forecasting.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5e0c1cdcdfd9deccd86a7a77dc8867c1f07ebef56b3c118c9d51693f419b44da",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "452ed7c97e0229b4b240b42bd2f7091b60aa892dc89f7908a1255f64ba036e27",
+    "raw_response_text_sha256": "f2add34b02b3c96a59842c7926dbf319769218c443f8eb7f49aaf12d7f176afa"
+  },
+  "api_metadata": {
+    "id": "resp_099574313c0ae4b5006b061f0626d487d29d7baa3be211634f",
+    "model": "gpt-6-luna",
+    "created_at": 1795563270.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1733,
+      "input_tokens_details": {
+        "cache_write_tokens": 1730,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1730
+        }
+      },
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 1940
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A global weather-forecasting system developed by IBM and The Weather Company\",\n  \"climate_relevance\": \"Climate change appears only in a related-link headline; the article itself discusses weather forecasting technology and storm prediction.\",\n  \"reason\": \"The article contains no meaningful discourse about climate change. The climate-related reference is a navigation-style link, while the main article concerns global weather forecasting.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:34:32Z",
+  "duration_seconds": 2.169,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50249703",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/gb/50249703.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/gb/50249703.json"
+  },
+  "manifest_row": {
+    "article_id": "50249703",
+    "group": "2018_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/gb/50249703.txt",
+    "now_field_2": "833",
+    "date_original": "18-11-29",
+    "date_iso": "2018-11-29",
+    "source_name": "GOV.UK",
+    "url": "https://www.gov.uk/government/news/young-people-most-at-risk-in-a-flood-warns-environment-agency-british-red-cross",
+    "title": "Young people most at risk in a flood, warns Environment Agency ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Flood preparedness and community response, particularly for young people",
+    "climate_relevance": "The text links flood preparedness to government climate change projections of rising sea levels and more frequent extreme weather.",
+    "reason": "The article is primarily about flood risks, safety advice, and volunteering. Climate change provides meaningful context for the urgency of preparing for floods but is not the central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d7c9d7e9bc4b0d0108d4acf8d86b33716549ce09837e894fbf006ca7a89ff28d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1ae4bc94279921663a1880a5de880b33d3f7c834cbc74eec0c827910128b8121",
+    "raw_response_text_sha256": "fb5e6707e89b17c8b977585ee4408585da3410668e04e3fa26e5c7f33726560f"
+  },
+  "api_metadata": {
+    "id": "resp_0c29d8c4ff601893006b0628303a3c87d1b4188dbd9f2f0aca",
+    "model": "gpt-6-luna",
+    "created_at": 1795565616.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1491,
+      "input_tokens_details": {
+        "cache_write_tokens": 1488,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1488
+        }
+      },
+      "output_tokens": 192,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 1683
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Flood preparedness and community response, particularly for young people\",\n  \"climate_relevance\": \"The text links flood preparedness to government climate change projections of rising sea levels and more frequent extreme weather.\",\n  \"reason\": \"The article is primarily about flood risks, safety advice, and volunteering. Climate change provides meaningful context for the urgency of preparing for floods but is not the central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:13:38Z",
+  "duration_seconds": 2.125,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31557377",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/nz/31557377.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/nz/31557377.json"
+  },
+  "manifest_row": {
+    "article_id": "31557377",
+    "group": "2020_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/nz/31557377.txt",
+    "now_field_2": "1176",
+    "date_original": "20-01-06",
+    "date_iso": "2020-01-06",
+    "source_name": "newsroom.co.nz",
+    "url": "https://www.newsroom.co.nz/@ideasroom/2019/12/18/953227?slug=epidemics-expose-public-health-failures",
+    "title": "Epidemics expose public health failures",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Public health system failures and the measles epidemic in New Zealand",
+    "climate_relevance": "Climate change appears only in a promotional line about the publication's journalism platform, not in the article's discussion.",
+    "reason": "The article focuses on public health capacity, policy, and infectious disease control. The sole climate reference is boilerplate unrelated to the article's subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "74146d722c24cee05234c8469d9c52bc02ee0215a48d4add7489ffd70f6ed641",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "21fe0b2c267d395255dc035b0ed0be02656d77238fb19aa7a5bfca759cd4a1a7",
+    "raw_response_text_sha256": "56b8dcf4a9cc586adce610921ac9137b034b4ea56399cda06a215756b3213693"
+  },
+  "api_metadata": {
+    "id": "resp_00ed8b20325c22c1006b061808098c87d293e8795a0198661f",
+    "model": "gpt-6-luna",
+    "created_at": 1795561480.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1922,
+      "input_tokens_details": {
+        "cache_write_tokens": 1919,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1919
+        }
+      },
+      "output_tokens": 303,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 2225
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Public health system failures and the measles epidemic in New Zealand\",\n  \"climate_relevance\": \"Climate change appears only in a promotional line about the publication's journalism platform, not in the article's discussion.\",\n  \"reason\": \"The article focuses on public health capacity, policy, and infectious disease control. The sole climate reference is boilerplate unrelated to the article's subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:04:42Z",
+  "duration_seconds": 2.367,
+  "error": null
+}

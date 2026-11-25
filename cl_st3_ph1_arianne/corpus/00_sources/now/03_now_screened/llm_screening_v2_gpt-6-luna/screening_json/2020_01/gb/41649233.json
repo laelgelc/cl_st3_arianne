@@ -1,0 +1,77 @@
+{
+  "article_id": "41649233",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/gb/41649233.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/gb/41649233.json"
+  },
+  "manifest_row": {
+    "article_id": "41649233",
+    "group": "2020_01",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/gb/41649233.txt",
+    "now_field_2": "1869",
+    "date_original": "20-01-14",
+    "date_iso": "2020-01-14",
+    "source_name": "theguardian.com",
+    "url": "https://www.theguardian.com/discussion/p/d4zjd",
+    "title": "The Guardian view on Boris Johnson's policy: divide and ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "UK politics, Brexit, and the Boris Johnson government",
+    "climate_relevance": "Climate change appears once in a list of issues criticized by a commenter, without further discussion or meaningful climate-related context.",
+    "reason": "The available text is primarily political commentary. Its sole climate reference is incidental and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6ae3ecc031c265af96c9f142695c3e260108f61653b5b46088732fe714f82234",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "87e537bfef19435c968f82056daa1b7c0da02adb828fdc3b992306f901942d24",
+    "raw_response_text_sha256": "5f8fda6b75afc4ca8147fb91dc9c381ecd85833b3809d5765539bdffe2a24462"
+  },
+  "api_metadata": {
+    "id": "resp_0e22b193eece7145006b06229a5e8887d28ff4a7cb61a8962b",
+    "model": "gpt-6-luna",
+    "created_at": 1795564186.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2824,
+      "input_tokens_details": {
+        "cache_write_tokens": 2821,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2821
+        }
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 3065
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"UK politics, Brexit, and the Boris Johnson government\",\n  \"climate_relevance\": \"Climate change appears once in a list of issues criticized by a commenter, without further discussion or meaningful climate-related context.\",\n  \"reason\": \"The available text is primarily political commentary. Its sole climate reference is incidental and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:49:48Z",
+  "duration_seconds": 2.285,
+  "error": null
+}

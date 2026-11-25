@@ -1,0 +1,77 @@
+{
+  "article_id": "40900333",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40900333.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40900333.json"
+  },
+  "manifest_row": {
+    "article_id": "40900333",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40900333.txt",
+    "now_field_2": "809",
+    "date_original": "19-04-30",
+    "date_iso": "2019-04-30",
+    "source_name": "Malaysiakini",
+    "url": "https://www.malaysiakini.com/letters/474394",
+    "title": "Putting the 'radioactivity' of Lynas waste in perspective",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A letter defending the safety of radioactive waste from the Lynas plant",
+    "climate_relevance": "Climate change appears only in the name of a ministerial portfolio; the text does not discuss climate change or its implications.",
+    "reason": "The article focuses on radioactivity, Lynas waste, and disputes over the plant's safety. The climate reference is incidental to a minister's title.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "53a4bb942a0c00be34996dd988ceccd01404548283296c36124158b7e0f8df29",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "eeea222226c3fb5c21ca9048b9b0a985fb14abcda18963db773e1438e24a866b",
+    "raw_response_text_sha256": "faf8e8420345aa9e8773d2b3e68c23d51e943a77ce413c7feab8e0f33ba063ad"
+  },
+  "api_metadata": {
+    "id": "resp_0769cb75f56c2903006b06204a4f5087d29825f927d73f7694",
+    "model": "gpt-6-luna",
+    "created_at": 1795563594.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1579,
+      "input_tokens_details": {
+        "cache_write_tokens": 1576,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1576
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 1804
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A letter defending the safety of radioactive waste from the Lynas plant\",\n  \"climate_relevance\": \"Climate change appears only in the name of a ministerial portfolio; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on radioactivity, Lynas waste, and disputes over the plant's safety. The climate reference is incidental to a minister's title.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:56Z",
+  "duration_seconds": 2.288,
+  "error": null
+}

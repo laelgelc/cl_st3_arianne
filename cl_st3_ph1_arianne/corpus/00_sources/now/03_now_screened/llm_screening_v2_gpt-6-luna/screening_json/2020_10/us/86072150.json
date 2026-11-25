@@ -1,0 +1,77 @@
+{
+  "article_id": "86072150",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86072150.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86072150.json"
+  },
+  "manifest_row": {
+    "article_id": "86072150",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86072150.txt",
+    "now_field_2": "482",
+    "date_original": "20-10-05",
+    "date_iso": "2020-10-05",
+    "source_name": "Houston Chronicle",
+    "url": "https://www.houstonchronicle.com/lifestyle/renew-houston/fitness/article/Chevron-Houston-Marathon-and-weekend-events-will-15622047.php",
+    "title": "Chevron Houston Marathon and weekend events will be held virtually in 2021",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The 2021 Houston Marathon and half marathon being held virtually because of COVID-19 concerns",
+    "climate_relevance": "Climate change appears only in the author's biography, which mentions an interest in exploring environmental journalism and climate change.",
+    "reason": "The article is about the marathon's virtual format and contains no meaningful climate-change discourse; the sole mention is incidental biographical text.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1a1d840a6cae01b4953b600fe89d9e38e5faff546e3d4e88329fb4a358ffa8ef",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "49ff9d24b2d2a47098b87f0d75cc9738e6446804e1d6b7129759a51d9d906e09",
+    "raw_response_text_sha256": "dbc7a26a0f0edf84e88a9f8bd491857ba27361d4af6c5ab072a33d7d964a6e25"
+  },
+  "api_metadata": {
+    "id": "resp_09be6e772eefb91b006b064e4a801c87d19325967d35b58b6f",
+    "model": "gpt-6-luna",
+    "created_at": 1795575370.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1121,
+      "input_tokens_details": {
+        "cache_write_tokens": 1118,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1118
+        }
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1331
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The 2021 Houston Marathon and half marathon being held virtually because of COVID-19 concerns\",\n  \"climate_relevance\": \"Climate change appears only in the author's biography, which mentions an interest in exploring environmental journalism and climate change.\",\n  \"reason\": \"The article is about the marathon's virtual format and contains no meaningful climate-change discourse; the sole mention is incidental biographical text.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:56:12Z",
+  "duration_seconds": 2.027,
+  "error": null
+}

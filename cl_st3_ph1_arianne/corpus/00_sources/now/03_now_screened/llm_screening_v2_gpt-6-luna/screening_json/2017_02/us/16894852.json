@@ -1,0 +1,77 @@
+{
+  "article_id": "16894852",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/us/16894852.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/us/16894852.json"
+  },
+  "manifest_row": {
+    "article_id": "16894852",
+    "group": "2017_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/us/16894852.txt",
+    "now_field_2": "393",
+    "date_original": "17-02-13",
+    "date_iso": "2017-02-13",
+    "source_name": "East Bay Times",
+    "url": "http://www.eastbaytimes.com/2017/02/13/peterson-early-missteps-spell-trouble-for-new-secretary-of-education-head-devos/",
+    "title": "Peterson: Early missteps spell trouble for new Secretary of ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Concerns about Betsy DeVos and the U.S. Department of Education",
+    "climate_relevance": "Climate change appears only as one example of government webpages that had gone missing; the text does not discuss climate issues.",
+    "reason": "The main article concerns education policy and DeVos. Its brief reference to climate change is incidental, and an unrelated Santa Cruz crime snippet also appears at the end.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "221105bc4d15122ec5452d05dacb06e32c01ccdc30a5c35bc3d4b16ed8c59a79",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ab3e9596ede2e80163d3c06ca873b465dbb1351466e5b3d84fba6ec5213b4ee5",
+    "raw_response_text_sha256": "4a0972246581a801608c17f03333f1ccff3f8aaa935cdd3664ad017bd35101cf"
+  },
+  "api_metadata": {
+    "id": "resp_0933c6cba067f203006b0608597b8087d28d0b2e0fc099b0c0",
+    "model": "gpt-6-luna",
+    "created_at": 1795557465.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 995,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 1265
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Concerns about Betsy DeVos and the U.S. Department of Education\",\n  \"climate_relevance\": \"Climate change appears only as one example of government webpages that had gone missing; the text does not discuss climate issues.\",\n  \"reason\": \"The main article concerns education policy and DeVos. Its brief reference to climate change is incidental, and an unrelated Santa Cruz crime snippet also appears at the end.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:57:47Z",
+  "duration_seconds": 2.525,
+  "error": null
+}

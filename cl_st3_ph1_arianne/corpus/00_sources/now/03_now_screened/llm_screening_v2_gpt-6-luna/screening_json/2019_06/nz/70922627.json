@@ -1,0 +1,77 @@
+{
+  "article_id": "70922627",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/nz/70922627.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/nz/70922627.json"
+  },
+  "manifest_row": {
+    "article_id": "70922627",
+    "group": "2019_06",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/nz/70922627.txt",
+    "now_field_2": "339",
+    "date_original": "19-06-29",
+    "date_iso": "2019-06-29",
+    "source_name": "Stuff.co.nz",
+    "url": "https://www.stuff.co.nz/taranaki-daily-news/news/113857520/giant-plastic-bottle-whale-takes-shape-in-new-plymouth-for-plastic-free-july",
+    "title": "Giant plastic bottle whale takes shape in New Plymouth for Plastic ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A plastic-bottle whale installation and a separate report about possible 5G interference with weather satellite data",
+    "climate_relevance": "The 5G report notes that storms are becoming more intense and frequent as a result of climate change, framing the importance of reliable weather data. Climate change is not the focus of either identifiable article.",
+    "reason": "The text contains two unrelated article snippets. The first concerns plastic waste; the second concerns 5G interference with weather satellite measurements. The climate-change statement in the second snippet is relevant context but is too limited to make the coverage core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8b192e95b8eb5050792b4ee0e9d2950af1aa5bcfa82496ad63dbcd8622c93d3b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bf3be79a92bf3eb49aeb017c8fe22a6363ce1ee45ff589465495d412a153bdc8",
+    "raw_response_text_sha256": "3eeedffa3cef253e3e1e3f4da9da2428321a1383bd1d4be126a0a0f13f636e3a"
+  },
+  "api_metadata": {
+    "id": "resp_05257532b5327129006b063ffafac087d1a5f73377987202ff",
+    "model": "gpt-6-luna",
+    "created_at": 1795571707.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1808,
+      "input_tokens_details": {
+        "cache_write_tokens": 1805,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1805
+        }
+      },
+      "output_tokens": 333,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 2141
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A plastic-bottle whale installation and a separate report about possible 5G interference with weather satellite data\",\n  \"climate_relevance\": \"The 5G report notes that storms are becoming more intense and frequent as a result of climate change, framing the importance of reliable weather data. Climate change is not the focus of either identifiable article.\",\n  \"reason\": \"The text contains two unrelated article snippets. The first concerns plastic waste; the second concerns 5G interference with weather satellite measurements. The climate-change statement in the second snippet is relevant context but is too limited to make the coverage core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:55:10Z",
+  "duration_seconds": 3.262,
+  "error": null
+}

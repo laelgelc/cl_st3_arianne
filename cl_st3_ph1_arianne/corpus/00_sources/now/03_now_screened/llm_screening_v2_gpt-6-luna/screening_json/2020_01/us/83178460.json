@@ -1,0 +1,77 @@
+{
+  "article_id": "83178460",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83178460.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83178460.json"
+  },
+  "manifest_row": {
+    "article_id": "83178460",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83178460.txt",
+    "now_field_2": "290",
+    "date_original": "20-01-10",
+    "date_iso": "2020-01-10",
+    "source_name": "USA Today",
+    "url": "https://mmajunkie.usatoday.com/2020/01/ufc-endeavor-pledge-250000-australia-wildfire-disaster-relief-bushfire-red-cross",
+    "title": "UFC, parent company Endeavor pledge $250,000 for Australia wildfire disaster relief",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us5.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "UFC and Endeavor donations to Australian bushfire recovery",
+    "climate_relevance": "The report notes that experts attribute the fires’ increased severity to climate change, but climate change is not the main subject.",
+    "reason": "The article primarily covers disaster relief donations and the scale of the Australian bushfires. Its brief climate-change attribution provides meaningful context, making it relevant as peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c3b11e21d1d0c4ff106b9d69dfaa8b3a88ed632a6bdaef78e19afcf0f37be5cf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "34140c155f17e77d85d269219363f926c4db6a0c4702ef4e4166e5004f0e8142",
+    "raw_response_text_sha256": "ce314004725d91412ef18db8ff0ba28bffd831a4c780642d91963f60fcc488bb"
+  },
+  "api_metadata": {
+    "id": "resp_0a90bd628ea997ea006b0649409c4c87d1b6318db81b93416b",
+    "model": "gpt-6-luna",
+    "created_at": 1795574080.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 854,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1081
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"UFC and Endeavor donations to Australian bushfire recovery\",\n  \"climate_relevance\": \"The report notes that experts attribute the fires’ increased severity to climate change, but climate change is not the main subject.\",\n  \"reason\": \"The article primarily covers disaster relief donations and the scale of the Australian bushfires. Its brief climate-change attribution provides meaningful context, making it relevant as peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:34:42Z",
+  "duration_seconds": 2.373,
+  "error": null
+}

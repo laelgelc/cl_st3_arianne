@@ -1,0 +1,77 @@
+{
+  "article_id": "70115213",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/us/70115213.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/us/70115213.json"
+  },
+  "manifest_row": {
+    "article_id": "70115213",
+    "group": "2018_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/us/70115213.txt",
+    "now_field_2": "674",
+    "date_original": "18-10-05",
+    "date_iso": "2018-10-05",
+    "source_name": "Washington Examiner",
+    "url": "https://www.washingtonexaminer.com/news/jury-convicts-chicago-cop-in-murder-of-unarmed-black-teen",
+    "title": "Jury convicts Chicago cop in murder of unarmed black teen",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-us-1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "The conviction of Chicago police officer Jason Van Dyke for the murder of Laquan McDonald",
+    "climate_relevance": "A separate related-news snippet reports that the Supreme Court temporarily halted a climate change lawsuit brought by children against the U.S. government.",
+    "reason": "The identifiable main article concerns a police murder conviction, not climate change. A separate snippet contains a meaningful but brief climate-related reference, so the text has peripheral relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "14d63f8561b873ccdd85b195b4d0783c2fc897167125eced1d959b46068c3986",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8bfb87d9dfc715e53c1c9bcea83891bdab6dd0f49add6be9d9923c7c134f8f73",
+    "raw_response_text_sha256": "7339ab0b8779884d763c3cd1bb0f83f97506be030a3cd281d292392d21660c8d"
+  },
+  "api_metadata": {
+    "id": "resp_00e26b69cbe82d53006b063aea732087d1b0672d05de07139f",
+    "model": "gpt-6-luna",
+    "created_at": 1795570410.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1348,
+      "input_tokens_details": {
+        "cache_write_tokens": 1345,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1345
+        }
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 1661
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The conviction of Chicago police officer Jason Van Dyke for the murder of Laquan McDonald\",\n  \"climate_relevance\": \"A separate related-news snippet reports that the Supreme Court temporarily halted a climate change lawsuit brought by children against the U.S. government.\",\n  \"reason\": \"The identifiable main article concerns a police murder conviction, not climate change. A separate snippet contains a meaningful but brief climate-related reference, so the text has peripheral relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:33:33Z",
+  "duration_seconds": 2.874,
+  "error": null
+}

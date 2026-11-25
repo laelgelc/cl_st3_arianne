@@ -1,0 +1,77 @@
+{
+  "article_id": "18768743",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/us/18768743.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/us/18768743.json"
+  },
+  "manifest_row": {
+    "article_id": "18768743",
+    "group": "2017_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/us/18768743.txt",
+    "now_field_2": "812",
+    "date_original": "17-06-02",
+    "date_iso": "2017-06-02",
+    "source_name": "Herald and News",
+    "url": "http://www.heraldandnews.com/news/attacker-of-teen-gets-probation-in-plea-dea/article_f4566173-c5da-5501-bce7-b11c9448c528.html",
+    "title": "Attacker of teen gets probation in plea dea",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Local crime and court reports, with other local news items",
+    "climate_relevance": "Climate change appears only in a separate survey prompt about the U.S. decision to leave the climate change pact.",
+    "reason": "The identifiable main content concerns unrelated local cases and incidents. The climate reference is confined to a standalone survey prompt and does not provide meaningful climate discourse within the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f8041b2ac34dafd4c426572adc09bd852f93b225f2cf185f0180f2e771147d52",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f9a702ede9208245de258d2b06bb5780accb678cf282a719dbe5ac01917bcf4e",
+    "raw_response_text_sha256": "682906a8a88052593ebc745440e7561bdb00be467e3173bd5421f62afadba6d1"
+  },
+  "api_metadata": {
+    "id": "resp_03e25ef1ada8865c006b060ad8907c87d2ab2b5fd6f0e63794",
+    "model": "gpt-6-luna",
+    "created_at": 1795558104.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1583,
+      "input_tokens_details": {
+        "cache_write_tokens": 1580,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1580
+        }
+      },
+      "output_tokens": 310,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 1893
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Local crime and court reports, with other local news items\",\n  \"climate_relevance\": \"Climate change appears only in a separate survey prompt about the U.S. decision to leave the climate change pact.\",\n  \"reason\": \"The identifiable main content concerns unrelated local cases and incidents. The climate reference is confined to a standalone survey prompt and does not provide meaningful climate discourse within the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:08:27Z",
+  "duration_seconds": 2.789,
+  "error": null
+}

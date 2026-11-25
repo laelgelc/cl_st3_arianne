@@ -1,0 +1,77 @@
+{
+  "article_id": "22666436",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_01/ie/22666436.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_01/ie/22666436.json"
+  },
+  "manifest_row": {
+    "article_id": "22666436",
+    "group": "2018_01",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_01/ie/22666436.txt",
+    "now_field_2": "651",
+    "date_original": "18-01-09",
+    "date_iso": "2018-01-09",
+    "source_name": "thejournal.ie",
+    "url": "http://www.thejournal.ie/air-monitoring-stations-3788967-Jan2018/",
+    "title": "Number of air quality monitoring stations to double around the country",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
+    "metadata_article_files": "[\"text-18-01/text_18-01-IE.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Air quality monitoring, respiratory health, and a home-warmth scheme in Ireland",
+    "climate_relevance": "Climate change appears only as the setting of a conference where a minister discussed deaths from poor air quality; the text does not meaningfully discuss climate change itself.",
+    "reason": "The article focuses on air quality and public health. Its single climate-change reference is incidental context rather than substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3782d1e4f8051ef53a31f3e316d27def0941b11fa828c3e358b9246491107790",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "74cdb6095558955895f9438d7ca2126497a3813166b5de4404bb45572395c951",
+    "raw_response_text_sha256": "9c82f56b46f383fb5af4d3dc76226a13843dd7133f993443135dbfbd4df65d74"
+  },
+  "api_metadata": {
+    "id": "resp_022497d98fa414ee006b06106402a487d28979dd7f5af8fbb2",
+    "model": "gpt-6-luna",
+    "created_at": 1795559524.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1291,
+      "input_tokens_details": {
+        "cache_write_tokens": 1288,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1288
+        }
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 1532
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Air quality monitoring, respiratory health, and a home-warmth scheme in Ireland\",\n  \"climate_relevance\": \"Climate change appears only as the setting of a conference where a minister discussed deaths from poor air quality; the text does not meaningfully discuss climate change itself.\",\n  \"reason\": \"The article focuses on air quality and public health. Its single climate-change reference is incidental context rather than substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:32:06Z",
+  "duration_seconds": 2.22,
+  "error": null
+}

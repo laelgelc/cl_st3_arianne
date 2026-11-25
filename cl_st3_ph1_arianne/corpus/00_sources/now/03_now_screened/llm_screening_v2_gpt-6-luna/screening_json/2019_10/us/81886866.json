@@ -1,0 +1,77 @@
+{
+  "article_id": "81886866",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81886866.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81886866.json"
+  },
+  "manifest_row": {
+    "article_id": "81886866",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81886866.txt",
+    "now_field_2": "153",
+    "date_original": "19-10-30",
+    "date_iso": "2019-10-30",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191030195634-ytdw7/",
+    "title": "Twelve Niger soldiers killed in probable Boko Haram attack -ministry",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An attack on soldiers in southeastern Niger by suspected Boko Haram militants",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news organization's coverage areas.",
+    "reason": "The report concerns a militant attack and contains no meaningful climate discourse; the sole climate reference is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fe03177751647e460a221c42b24c9d481986409adf392061bcd517cf1623806e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5ddf3a006c3d6a8ee9b59380b2f4c1fbc912e33319ff1100048785dbf0943948",
+    "raw_response_text_sha256": "9a8dbbb3ed2a5f8adc43f90f82fb5876dd2ec519ac4e191bf4f4c97cfab9c5b0"
+  },
+  "api_metadata": {
+    "id": "resp_089880c0e5d9c45f006b0647d06f9087d1b9762200ccb33fb3",
+    "model": "gpt-6-luna",
+    "created_at": 1795573712.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 693,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 153,
+      "output_tokens_details": {
+        "reasoning_tokens": 23
+      },
+      "total_tokens": 846
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An attack on soldiers in southeastern Niger by suspected Boko Haram militants\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news organization's coverage areas.\",\n  \"reason\": \"The report concerns a militant attack and contains no meaningful climate discourse; the sole climate reference is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:28:34Z",
+  "duration_seconds": 2.006,
+  "error": null
+}

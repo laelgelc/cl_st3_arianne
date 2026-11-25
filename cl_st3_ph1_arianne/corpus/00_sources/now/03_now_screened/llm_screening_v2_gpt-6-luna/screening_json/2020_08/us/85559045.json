@@ -1,0 +1,77 @@
+{
+  "article_id": "85559045",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85559045.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85559045.json"
+  },
+  "manifest_row": {
+    "article_id": "85559045",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85559045.txt",
+    "now_field_2": "483",
+    "date_original": "20-08-01",
+    "date_iso": "2020-08-01",
+    "source_name": "Allure on MSN.com",
+    "url": "https://www.msn.com/en-us/lifestyle/beauty/i-need-every-single-one-of-these-snack-inspired-bracelets/ar-BB17svaI",
+    "title": "I Need Every Single One of These Snack-Inspired Bracelets",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A food-inspired jewelry brand and its snack-themed accessories",
+    "climate_relevance": "Climate change is mentioned only in a brief description of the Sunrise Movement, which receives a donation for each item sold.",
+    "reason": "The article is about accessories and their creator. Its single climate reference is incidental context about a charitable recipient and does not meaningfully discuss climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fa26c851b1b74985d57c523efd847b10690bb3fe1a2bae2753703d580e417165",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "43e95dcc75899ceca83157c3e11fe75bf3e5ca2a5556a8a4342fe97e5c8b9556",
+    "raw_response_text_sha256": "1775e1fb3120eab49f9c73bee3e66b0284bf26f2375ac26d787de0355acc6eb7"
+  },
+  "api_metadata": {
+    "id": "resp_05a3d33ccbfd0d6e006b064c632a7087d19dd2d7a81836dff4",
+    "model": "gpt-6-luna",
+    "created_at": 1795574883.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1098,
+      "input_tokens_details": {
+        "cache_write_tokens": 1095,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1095
+        }
+      },
+      "output_tokens": 318,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 1416
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A food-inspired jewelry brand and its snack-themed accessories\",\n  \"climate_relevance\": \"Climate change is mentioned only in a brief description of the Sunrise Movement, which receives a donation for each item sold.\",\n  \"reason\": \"The article is about accessories and their creator. Its single climate reference is incidental context about a charitable recipient and does not meaningfully discuss climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:48:06Z",
+  "duration_seconds": 3.225,
+  "error": null
+}

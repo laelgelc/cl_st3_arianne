@@ -1,0 +1,77 @@
+{
+  "article_id": "40361575",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ng/40361575.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ng/40361575.json"
+  },
+  "manifest_row": {
+    "article_id": "40361575",
+    "group": "2018_12",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ng/40361575.txt",
+    "now_field_2": "551",
+    "date_original": "18-12-07",
+    "date_iso": "2018-12-07",
+    "source_name": "NIGERIAN TRIBUN",
+    "url": "https://www.tribuneonlineng.com/177417/",
+    "title": "Senate asks FG to collapse N-Power programme with NDE",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Senate proposals to place the N-Power employment programme under the National Directorate of Employment",
+    "climate_relevance": "Climate change appears only in the title of a committee mentioned in passing; it is not discussed. A promotional comment mentions renewable power, but without meaningful climate discourse.",
+    "reason": "The article focuses on employment programmes and agency funding. Neither the committee-title reference nor the appended promotional material contributes meaningful climate-related content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c7436865c2aaf9da9bc913e75adfcf59c91b6fce83eebd446d198d6d5156ce20",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9046d88cdecfcd82343e7fdd22428909044d5aec0f5da6cf0beb2ea2bc6c60fc",
+    "raw_response_text_sha256": "39d2a3b267687b0d6db226906c1299019dcd3fb7c3df42833bc752724848af36"
+  },
+  "api_metadata": {
+    "id": "resp_0ce32aacf3d08341006b061ed27ccc87d2ae432b817e30f831",
+    "model": "gpt-6-luna",
+    "created_at": 1795563218.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1222,
+      "input_tokens_details": {
+        "cache_write_tokens": 1219,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1219
+        }
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1441
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Senate proposals to place the N-Power employment programme under the National Directorate of Employment\",\n  \"climate_relevance\": \"Climate change appears only in the title of a committee mentioned in passing; it is not discussed. A promotional comment mentions renewable power, but without meaningful climate discourse.\",\n  \"reason\": \"The article focuses on employment programmes and agency funding. Neither the committee-title reference nor the appended promotional material contributes meaningful climate-related content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:33:40Z",
+  "duration_seconds": 2.148,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "61306963",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/tz/61306963.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/tz/61306963.json"
+  },
+  "manifest_row": {
+    "article_id": "61306963",
+    "group": "2019_10",
+    "country_code": "tz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/tz/61306963.txt",
+    "now_field_2": "513",
+    "date_original": "19-10-18",
+    "date_iso": "2019-10-18",
+    "source_name": "thecitizen.co.tz",
+    "url": "https://www.thecitizen.co.tz/news/1840340-5311630-format-xhtml-sc4w11z/index.html",
+    "title": "Price factor could delay LNG project in Tanzania - The Citizen",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-tz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.82,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Tanzania LNG project investment, pricing, and regulatory negotiations",
+    "climate_relevance": "The identifiable main article discusses an LNG project without addressing climate change or its implications. A separate political commentary snippet briefly says climate change has influenced West African politics.",
+    "reason": "The main article contains no meaningful climate discourse. The climate reference occurs in an apparently unrelated snippet, so it does not make the main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4537f2d7312c1f51ed7236d7c5ac9b4d6f34fae86863f8789f4f16bf86a75a1d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "25c142f7388c1894c70b5e0a16cf0cd49e3c9ec4fc10814f88b942388a3eaa92",
+    "raw_response_text_sha256": "8ce6159497c693c79174ee5775df946c6bd3a6d6a7642e8ebd40eca5fdc16b36"
+  },
+  "api_metadata": {
+    "id": "resp_0bff9958c52cc645006b06369b0a3087d1b73906aee5f09e64",
+    "model": "gpt-6-luna",
+    "created_at": 1795569307.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3209,
+      "input_tokens_details": {
+        "cache_write_tokens": 3206,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3206
+        }
+      },
+      "output_tokens": 615,
+      "output_tokens_details": {
+        "reasoning_tokens": 460
+      },
+      "total_tokens": 3824
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.82,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Tanzania LNG project investment, pricing, and regulatory negotiations\",\n  \"climate_relevance\": \"The identifiable main article discusses an LNG project without addressing climate change or its implications. A separate political commentary snippet briefly says climate change has influenced West African politics.\",\n  \"reason\": \"The main article contains no meaningful climate discourse. The climate reference occurs in an apparently unrelated snippet, so it does not make the main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:15:12Z",
+  "duration_seconds": 5.056,
+  "error": null
+}

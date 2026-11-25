@@ -1,0 +1,77 @@
+{
+  "article_id": "17655503",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_03/ke/17655503.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_03/ke/17655503.json"
+  },
+  "manifest_row": {
+    "article_id": "17655503",
+    "group": "2017_03",
+    "country_code": "ke",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_03/ke/17655503.txt",
+    "now_field_2": "766",
+    "date_original": "17-03-28",
+    "date_iso": "2017-03-28",
+    "source_name": "Coastweek",
+    "url": "http://www.coastweek.com/4012-South-African-ANC-urges-promulgation-of-bill-against-racism.htm",
+    "title": "South African ANC urges promulgation of bill against racism",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-03.txt\"]",
+    "metadata_article_files": "[\"text-17-03/text_17-03-KE.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "South Africa's proposed hate-crime bill and reports of racism",
+    "climate_relevance": "Climate change is discussed in a separate Earth Hour report appended to the main article, which describes energy savings and public climate-awareness efforts.",
+    "reason": "The identifiable main article concerns racism and hate-crime legislation, with no meaningful climate discussion. The climate-related Earth Hour material is a distinct, unrelated snippet rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9fdfbeb86e636261bc86e00bb551b02476c133a229725eaaec460bce5a8cc185",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7bd5ff2a7c9b85546956de837362bcf66023f9f657eeae3bef9456971941db48",
+    "raw_response_text_sha256": "06e4b5c867a15ac51b61e9624a0f11ff85cdf2c41d510d93ab3ad1fd854df35f"
+  },
+  "api_metadata": {
+    "id": "resp_041edd0d0df02c36006b060938cdfc87d284507cbf7b0622a0",
+    "model": "gpt-6-luna",
+    "created_at": 1795557689.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1561,
+      "input_tokens_details": {
+        "cache_write_tokens": 1558,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1558
+        }
+      },
+      "output_tokens": 389,
+      "output_tokens_details": {
+        "reasoning_tokens": 233
+      },
+      "total_tokens": 1950
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"South Africa's proposed hate-crime bill and reports of racism\",\n  \"climate_relevance\": \"Climate change is discussed in a separate Earth Hour report appended to the main article, which describes energy savings and public climate-awareness efforts.\",\n  \"reason\": \"The identifiable main article concerns racism and hate-crime legislation, with no meaningful climate discussion. The climate-related Earth Hour material is a distinct, unrelated snippet rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:01:32Z",
+  "duration_seconds": 3.383,
+  "error": null
+}

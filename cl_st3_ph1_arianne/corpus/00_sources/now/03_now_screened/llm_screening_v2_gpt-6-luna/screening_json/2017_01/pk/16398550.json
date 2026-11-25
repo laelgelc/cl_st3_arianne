@@ -1,0 +1,77 @@
+{
+  "article_id": "16398550",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/pk/16398550.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/pk/16398550.json"
+  },
+  "manifest_row": {
+    "article_id": "16398550",
+    "group": "2017_01",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/pk/16398550.txt",
+    "now_field_2": "153",
+    "date_original": "17-01-14",
+    "date_iso": "2017-01-14",
+    "source_name": "Daily Times",
+    "url": "http://dailytimes.com.pk/business/15-Jan-17/55-companies-to-receive-csr-awards",
+    "title": "55 companies to receive CSR awards",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-PK.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Corporate social responsibility awards",
+    "climate_relevance": "Climate change appears only in the name of a government ministry; the text contains no meaningful discussion of climate change.",
+    "reason": "The article reports on CSR awards and mentions the Ministry of Climate Change only as an institutional detail. Its references to environmental projects are broad and do not discuss climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fd6e45a86173efa04cdedcda2fab30de1dae4552c4c0740a19b0578b4fd24cec",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a7699365a4a44ad167ff776ce9990486d0b2ba8f8f363998d01fa1d7878e0fd0",
+    "raw_response_text_sha256": "ac88c04a4dee0b5d11297b1602272b2d7b130bdc91a3ef71de43703505ae1561"
+  },
+  "api_metadata": {
+    "id": "resp_02327577b71a78a0006b060794c11c87d2b8331630701618a7",
+    "model": "gpt-6-luna",
+    "created_at": 1795557268.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 693,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 174,
+      "output_tokens_details": {
+        "reasoning_tokens": 35
+      },
+      "total_tokens": 867
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Corporate social responsibility awards\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government ministry; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article reports on CSR awards and mentions the Ministry of Climate Change only as an institutional detail. Its references to environmental projects are broad and do not discuss climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:54:30Z",
+  "duration_seconds": 1.567,
+  "error": null
+}

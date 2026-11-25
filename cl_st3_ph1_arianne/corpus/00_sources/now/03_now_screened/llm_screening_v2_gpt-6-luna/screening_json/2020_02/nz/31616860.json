@@ -1,0 +1,77 @@
+{
+  "article_id": "31616860",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/nz/31616860.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/nz/31616860.json"
+  },
+  "manifest_row": {
+    "article_id": "31616860",
+    "group": "2020_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/nz/31616860.txt",
+    "now_field_2": "1725",
+    "date_original": "20-02-01",
+    "date_iso": "2020-02-01",
+    "source_name": "newsroom.co.nz",
+    "url": "https://www.newsroom.co.nz/2020/02/01/939507/short-story-love-hotel-by-colleen-maria-lenihan",
+    "title": "Short story: Love Hotel, by Colleen Maria Lenihan",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A fictional story set in a Tokyo love hotel",
+    "climate_relevance": "Climate change appears only in a promotional footer listing topics covered by the publisher.",
+    "reason": "The text is primarily a short story, and the sole climate reference is generic fundraising boilerplate rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "09d77cba37d2156be63d40d1037946bfc544fcb71666957aa158bb5f1c1bb026",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f818ddf52c9aae64b5fbfa3ddd9187270c08a32e4a676979bb48060d11bdb8fc",
+    "raw_response_text_sha256": "8a849cec3a517d4c9bf0df28edcc2bbc3d81edd37cf3dc7827fd6525cd04c70f"
+  },
+  "api_metadata": {
+    "id": "resp_098508c629937e82006b0618730b4087d2bdbcc0dde102e181",
+    "model": "gpt-6-luna",
+    "created_at": 1795561587.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2977,
+      "input_tokens_details": {
+        "cache_write_tokens": 2974,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2974
+        }
+      },
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 3184
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A fictional story set in a Tokyo love hotel\",\n  \"climate_relevance\": \"Climate change appears only in a promotional footer listing topics covered by the publisher.\",\n  \"reason\": \"The text is primarily a short story, and the sole climate reference is generic fundraising boilerplate rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:06:28Z",
+  "duration_seconds": 1.838,
+  "error": null
+}

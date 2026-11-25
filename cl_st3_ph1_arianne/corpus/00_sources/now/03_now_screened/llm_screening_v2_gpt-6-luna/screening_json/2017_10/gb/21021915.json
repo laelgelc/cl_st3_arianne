@@ -1,0 +1,77 @@
+{
+  "article_id": "21021915",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/gb/21021915.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/gb/21021915.json"
+  },
+  "manifest_row": {
+    "article_id": "21021915",
+    "group": "2017_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/gb/21021915.txt",
+    "now_field_2": "984",
+    "date_original": "17-10-10",
+    "date_iso": "2017-10-10",
+    "source_name": "BBC News",
+    "url": "http://www.bbc.co.uk/news/uk-scotland-scotland-politics-41560397",
+    "title": "Nicola Sturgeon announces Scottish energy firm",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-GB.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Nicola Sturgeon’s SNP conference speech and Scottish policy proposals, particularly a publicly owned energy company.",
+    "climate_relevance": "The text refers to renewable energy, investment in renewables, energy efficiency, and climate change initiatives, but these are secondary to the political and consumer-price discussion.",
+    "reason": "Climate-related energy policy appears meaningfully but briefly; the article is mainly about Scottish politics and the proposed energy company rather than climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e220b23ca64a691193f4295fb29ea21fb2cd4358a966e2f06a60878992abd291",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0bed2e2f3769cc4ad7af245ad23329530cd8c2245c8cb4fab0edd548692611cd",
+    "raw_response_text_sha256": "1b460fc1012abfcda4f36ea8c3ee5cd2702331510de868d8625d7e82043fb08b"
+  },
+  "api_metadata": {
+    "id": "resp_01c3dcd38b3517e3006b060e217ce087d29585dfeac4b10213",
+    "model": "gpt-6-luna",
+    "created_at": 1795558945.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1807,
+      "input_tokens_details": {
+        "cache_write_tokens": 1804,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1804
+        }
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 2091
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Nicola Sturgeon’s SNP conference speech and Scottish policy proposals, particularly a publicly owned energy company.\",\n  \"climate_relevance\": \"The text refers to renewable energy, investment in renewables, energy efficiency, and climate change initiatives, but these are secondary to the political and consumer-price discussion.\",\n  \"reason\": \"Climate-related energy policy appears meaningfully but briefly; the article is mainly about Scottish politics and the proposed energy company rather than climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:22:28Z",
+  "duration_seconds": 2.654,
+  "error": null
+}

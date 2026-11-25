@@ -1,0 +1,77 @@
+{
+  "article_id": "19080924",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/ie/19080924.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/ie/19080924.json"
+  },
+  "manifest_row": {
+    "article_id": "19080924",
+    "group": "2017_06",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/ie/19080924.txt",
+    "now_field_2": "355",
+    "date_original": "17-06-20",
+    "date_iso": "2017-06-20",
+    "source_name": "Herald.ie",
+    "url": "http://www.herald.ie/news/traffic-jams-in-the-capital-could-cost-us-2bn-a-year-say-experts-35849098.html",
+    "title": "Traffic jams in the capital could cost us _2bn a year, say experts",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-IE.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Traffic congestion and transport planning in Dublin",
+    "climate_relevance": "Climate change appears only in the title of a government unit; the article discusses car-sharing and general environmental impacts without meaningful discussion of climate change.",
+    "reason": "The article focuses on congestion, transport infrastructure, and car-sharing. The passing reference to the Department of Transport's climate change unit does not develop climate-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "27c220fc77aee9d86ae4435c65e8d056bb452a74dd31301bfe340076279ae750",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e1d8a3057b1a34dc524b4ccbb4a195bdbb5157c9a73ed42893d3ab0f1f8e3417",
+    "raw_response_text_sha256": "98c12bdb92aa4109015683a3a4d8017b00a637695e24a214286139a3b82181c7"
+  },
+  "api_metadata": {
+    "id": "resp_029465e1296520b9006b060b7069d887d2989c59e0e3191a8f",
+    "model": "gpt-6-luna",
+    "created_at": 1795558256.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 974,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 167
+      },
+      "total_tokens": 1288
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Traffic congestion and transport planning in Dublin\",\n  \"climate_relevance\": \"Climate change appears only in the title of a government unit; the article discusses car-sharing and general environmental impacts without meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on congestion, transport infrastructure, and car-sharing. The passing reference to the Department of Transport's climate change unit does not develop climate-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:10:58Z",
+  "duration_seconds": 2.648,
+  "error": null
+}

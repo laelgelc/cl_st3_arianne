@@ -1,0 +1,77 @@
+{
+  "article_id": "32168465",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/32168465.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/32168465.json"
+  },
+  "manifest_row": {
+    "article_id": "32168465",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/32168465.txt",
+    "now_field_2": "3412",
+    "date_original": "20-10-22",
+    "date_iso": "2020-10-22",
+    "source_name": "pbs.org",
+    "url": "https://www.pbs.org/wnet/amanpour-and-company/video/september-25-2020-xnk7km/",
+    "title": "September 25, 2020 | Video | Amanpour &amp; Company | PBS",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Education, technology, and inequality, followed by interviews about photography and other subjects",
+    "climate_relevance": "Climate change is mentioned only as an example of a problem students might choose to solve.",
+    "reason": "The mention is hypothetical and incidental, with no meaningful discussion of climate change or its implications.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b431238bff68f24273a345fb75c363329245acf4416e1f0229e077657afaa777",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4c269eec34c284060d4774ab97a9b03033fae048aba8f5d39e1c6d3e7dc7f592",
+    "raw_response_text_sha256": "b4861ed4dc3b320d4c01b12a6131bb14f9831240c003baf1f8fd8217ee352a24"
+  },
+  "api_metadata": {
+    "id": "resp_08a488080a84f25c006b061bc7711c87d2a6a397844d1dd6c0",
+    "model": "gpt-6-luna",
+    "created_at": 1795562439.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5306,
+      "input_tokens_details": {
+        "cache_write_tokens": 5303,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5303
+        }
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 5591
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Education, technology, and inequality, followed by interviews about photography and other subjects\",\n  \"climate_relevance\": \"Climate change is mentioned only as an example of a problem students might choose to solve.\",\n  \"reason\": \"The mention is hypothetical and incidental, with no meaningful discussion of climate change or its implications.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:20:42Z",
+  "duration_seconds": 2.836,
+  "error": null
+}

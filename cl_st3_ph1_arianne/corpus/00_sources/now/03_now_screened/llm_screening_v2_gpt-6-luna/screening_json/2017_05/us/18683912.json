@@ -1,0 +1,77 @@
+{
+  "article_id": "18683912",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/us/18683912.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/us/18683912.json"
+  },
+  "manifest_row": {
+    "article_id": "18683912",
+    "group": "2017_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/us/18683912.txt",
+    "now_field_2": "862",
+    "date_original": "17-05-28",
+    "date_iso": "2017-05-28",
+    "source_name": "NBCNews.com",
+    "url": "http://www.nbcnews.com/storyline/meet-the-press-70-years/data-trump-riding-effects-widespread-party-reorganization-n765556",
+    "title": "Data: Trump Riding Effects of Widespread Party Reorganization",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Changes in the demographics and political coalitions of the U.S. Republican and Democratic parties",
+    "climate_relevance": "Climate change is briefly listed as one issue on which attitudes are shifting, without further discussion.",
+    "reason": "The article focuses on party demographics and political realignment; its single passing reference to climate change does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "075c22da639cbfdeffaa51117e2702f39cdab89a3a5e7527f0d894cf549535ac",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1be6c9b9faf14d85e446a14dfe22ca98ddb94a3ddafaf4bfcbc8d25b4b4fad1e",
+    "raw_response_text_sha256": "ec1e1bd4cda991d01ac25abe133658746bf312353636d6fc4608fb0a6d3dc59f"
+  },
+  "api_metadata": {
+    "id": "resp_0a5567d0d7db4e23006b060a972da487d29be56e78e7ba44bd",
+    "model": "gpt-6-luna",
+    "created_at": 1795558039.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1601,
+      "input_tokens_details": {
+        "cache_write_tokens": 1598,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1598
+        }
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1836
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Changes in the demographics and political coalitions of the U.S. Republican and Democratic parties\",\n  \"climate_relevance\": \"Climate change is briefly listed as one issue on which attitudes are shifting, without further discussion.\",\n  \"reason\": \"The article focuses on party demographics and political realignment; its single passing reference to climate change does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:07:21Z",
+  "duration_seconds": 2.27,
+  "error": null
+}

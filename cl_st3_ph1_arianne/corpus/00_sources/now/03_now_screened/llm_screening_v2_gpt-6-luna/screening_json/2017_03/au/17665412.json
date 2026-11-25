@@ -1,0 +1,77 @@
+{
+  "article_id": "17665412",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_03/au/17665412.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_03/au/17665412.json"
+  },
+  "manifest_row": {
+    "article_id": "17665412",
+    "group": "2017_03",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_03/au/17665412.txt",
+    "now_field_2": "5873",
+    "date_original": "17-03-28",
+    "date_iso": "2017-03-28",
+    "source_name": "The Sydney Morning Herald",
+    "url": "http://www.smh.com.au/business/markets-live/markets-live-asx-souffle-to-rise-again-20170328-gv8mza.html",
+    "title": "Markets Live: Lew confirms Myer raid",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-03.txt\"]",
+    "metadata_article_files": "[\"text-17-03/text_17-03-AU.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "Australian financial markets and business news in a live market blog",
+    "climate_relevance": "Climate change is briefly framed as one of the global threats relevant to the UK's position in Europe.",
+    "reason": "The text is primarily a collection of financial and business updates. A Brexit commentary includes climate change in a sentence about global threats, giving it some broader political context, but the topic is not developed.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "023b4beed300fabe8e3471618feaff0c4c7941b9f5a37a9c2b4b278ba25c2ab6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "250347b63fcb4a8d6e863c7f072db643b847083ac4a84cdda9c07ffd1c596f1c",
+    "raw_response_text_sha256": "2eb117930e616f0cf245fa5642fb3fbb89f3e1352a94d0729165cea3ef84010f"
+  },
+  "api_metadata": {
+    "id": "resp_06272cc634745283006b06093df4dc87d28ce9ff8e4261dfe3",
+    "model": "gpt-6-luna",
+    "created_at": 1795557694.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8418,
+      "input_tokens_details": {
+        "cache_write_tokens": 8415,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 8415
+        }
+      },
+      "output_tokens": 461,
+      "output_tokens_details": {
+        "reasoning_tokens": 316
+      },
+      "total_tokens": 8879
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Australian financial markets and business news in a live market blog\",\n  \"climate_relevance\": \"Climate change is briefly framed as one of the global threats relevant to the UK's position in Europe.\",\n  \"reason\": \"The text is primarily a collection of financial and business updates. A Brexit commentary includes climate change in a sentence about global threats, giving it some broader political context, but the topic is not developed.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:01:38Z",
+  "duration_seconds": 4.301,
+  "error": null
+}

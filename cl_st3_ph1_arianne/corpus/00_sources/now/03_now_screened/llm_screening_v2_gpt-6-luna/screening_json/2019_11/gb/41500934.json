@@ -1,0 +1,77 @@
+{
+  "article_id": "41500934",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/gb/41500934.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/gb/41500934.json"
+  },
+  "manifest_row": {
+    "article_id": "41500934",
+    "group": "2019_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/gb/41500934.txt",
+    "now_field_2": "793",
+    "date_original": "19-11-20",
+    "date_iso": "2019-11-20",
+    "source_name": "spectator.co.uk",
+    "url": "https://www.spectator.co.uk/2019/11/rock-star/",
+    "title": "Rock star | The Spectator",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "A political testimonial for Tony Abbott and a separate polemic blaming bushfires on environmentalists and land-management failures",
+    "climate_relevance": "The first piece mentions scrapping carbon taxes only as one of Abbott’s political achievements. The second explicitly rejects climate change as an explanation for bushfires, making it relevant as contrarian climate discourse, though its main focus is bushfire responsibility and land management.",
+    "reason": "The text contains two distinct pieces. Climate change is only incidental in the Abbott testimonial, but the separate bushfire piece directly disputes climate change as a cause, which is meaningful climate discourse but not the central subject of the text overall.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7af1bcfb700984edc6446224b33517c2062260ec29947abe3292ef7a411d02eb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7a7f403e71ee6f91f0b1e4166f80659ebb03f27faf5241dffd5326c9ecfdfaa9",
+    "raw_response_text_sha256": "998c6bf758e6ca601158da53d10cb8349008a485dd71b87cfd3df3223397a20a"
+  },
+  "api_metadata": {
+    "id": "resp_0019c19f9ef294f1006b062204762087d2bc96c103bf2a7ad2",
+    "model": "gpt-6-luna",
+    "created_at": 1795564036.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1517,
+      "input_tokens_details": {
+        "cache_write_tokens": 1514,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1514
+        }
+      },
+      "output_tokens": 383,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 1900
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A political testimonial for Tony Abbott and a separate polemic blaming bushfires on environmentalists and land-management failures\",\n  \"climate_relevance\": \"The first piece mentions scrapping carbon taxes only as one of Abbott’s political achievements. The second explicitly rejects climate change as an explanation for bushfires, making it relevant as contrarian climate discourse, though its main focus is bushfire responsibility and land management.\",\n  \"reason\": \"The text contains two distinct pieces. Climate change is only incidental in the Abbott testimonial, but the separate bushfire piece directly disputes climate change as a cause, which is meaningful climate discourse but not the central subject of the text overall.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:47:19Z",
+  "duration_seconds": 2.94,
+  "error": null
+}

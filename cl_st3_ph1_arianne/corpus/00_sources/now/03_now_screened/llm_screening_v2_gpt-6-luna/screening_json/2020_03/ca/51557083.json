@@ -1,0 +1,77 @@
+{
+  "article_id": "51557083",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/ca/51557083.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/ca/51557083.json"
+  },
+  "manifest_row": {
+    "article_id": "51557083",
+    "group": "2020_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/ca/51557083.txt",
+    "now_field_2": "2823",
+    "date_original": "20-03-20",
+    "date_iso": "2020-03-20",
+    "source_name": "thetyee.ca",
+    "url": "https://thetyee.ca/News/2020/03/20/Stanley-Park-Herons-Came-Back-Rackety-Presence-Comforting/",
+    "title": "Well, at Least the Herons of Stanley Park Came Back | The Tyee",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-ca2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The great blue heron colony in Vancouver's Stanley Park, including its nesting behavior, predators, and relationship with nearby residents.",
+    "climate_relevance": "Climate change appears only in the name of Environment and Climate Change Canada; the article does not discuss climate change or its implications.",
+    "reason": "The main article is about urban wildlife and heron ecology, with no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "17cd9f73862d54410779e754fe0a05e67779b0bdac7aec2570409062d3659d1a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b70e0848c0cf61c222c769db57cd179233fe86991c88f9a3dbc7b3d67df29ade",
+    "raw_response_text_sha256": "01b8318fbe0045db1825c117e14349e4012e61a51a0abdcd0714f44db380947e"
+  },
+  "api_metadata": {
+    "id": "resp_0d6a788ecb904078006b062dfe959487d18ea5e1b6bd70db39",
+    "model": "gpt-6-luna",
+    "created_at": 1795567102.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4158,
+      "input_tokens_details": {
+        "cache_write_tokens": 4155,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4155
+        }
+      },
+      "output_tokens": 223,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 4381
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The great blue heron colony in Vancouver's Stanley Park, including its nesting behavior, predators, and relationship with nearby residents.\",\n  \"climate_relevance\": \"Climate change appears only in the name of Environment and Climate Change Canada; the article does not discuss climate change or its implications.\",\n  \"reason\": \"The main article is about urban wildlife and heron ecology, with no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:38:24Z",
+  "duration_seconds": 2.255,
+  "error": null
+}

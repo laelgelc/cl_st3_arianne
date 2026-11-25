@@ -1,0 +1,77 @@
+{
+  "article_id": "32001209",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/nz/32001209.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/nz/32001209.json"
+  },
+  "manifest_row": {
+    "article_id": "32001209",
+    "group": "2020_08",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/nz/32001209.txt",
+    "now_field_2": "963",
+    "date_original": "20-08-06",
+    "date_iso": "2020-08-06",
+    "source_name": "scoop.co.nz",
+    "url": "https://www.scoop.co.nz/stories/PO2008/S00071/a-tale-of-two-politicians.htm",
+    "title": "A Tale Of Two Politicians | Scoop News",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A comparison of former Labour MPs Ruth Dyson and Clare Curran, focusing on their parliamentary careers and valedictory speeches.",
+    "climate_relevance": "Climate change appears only in a biographical reference to Curran's media advice on language about climate change policy; the text does not discuss climate policy or related issues.",
+    "reason": "The identifiable main article is about the politicians' careers and conduct. Its sole climate reference is incidental, while the additional material consists of unrelated snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5df4aa0caa8a8eb1aa9ff3c1f744e96f913d68464533c9d19c7036e589167f8a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1f1fdc369fc0e309d1d467f6780ee9e516b1d3b7ea27e7f41b3dc783fc1f94da",
+    "raw_response_text_sha256": "e88f0d731e9528a1e81bc734713d34e0ecdc934d9321c255db46299edd2773eb"
+  },
+  "api_metadata": {
+    "id": "resp_0a78ca274c0515c1006b061aa6a2f487d28864866265077949",
+    "model": "gpt-6-luna",
+    "created_at": 1795562150.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1707,
+      "input_tokens_details": {
+        "cache_write_tokens": 1704,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1704
+        }
+      },
+      "output_tokens": 274,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 1981
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A comparison of former Labour MPs Ruth Dyson and Clare Curran, focusing on their parliamentary careers and valedictory speeches.\",\n  \"climate_relevance\": \"Climate change appears only in a biographical reference to Curran's media advice on language about climate change policy; the text does not discuss climate policy or related issues.\",\n  \"reason\": \"The identifiable main article is about the politicians' careers and conduct. Its sole climate reference is incidental, while the additional material consists of unrelated snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:15:53Z",
+  "duration_seconds": 2.453,
+  "error": null
+}

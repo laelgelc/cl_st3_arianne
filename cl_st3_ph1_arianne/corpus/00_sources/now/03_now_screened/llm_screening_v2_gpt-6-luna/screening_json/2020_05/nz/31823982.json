@@ -1,0 +1,77 @@
+{
+  "article_id": "31823982",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/nz/31823982.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/nz/31823982.json"
+  },
+  "manifest_row": {
+    "article_id": "31823982",
+    "group": "2020_05",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/nz/31823982.txt",
+    "now_field_2": "848",
+    "date_original": "20-05-07",
+    "date_iso": "2020-05-07",
+    "source_name": "scoop.co.nz",
+    "url": "https://www.scoop.co.nz/stories/BU2005/S00155/nzalpa-jet-pilots-ratify-negotiated-deal-with-air-new-zealand-in-wake-of-pandemic.htm",
+    "title": "NZALPA Jet Pilots Ratify Negotiated Deal With Air New ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Air New Zealand pilots’ jobs, pay, and furlough arrangements during the COVID-19 pandemic",
+    "climate_relevance": "Climate change appears only in a separate snippet about snow on South Island glaciers, not in the identifiable main article.",
+    "reason": "The main article concerns airline employment negotiations during the pandemic. The climate-related text is an unrelated teaser and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4d2fdd5e22ffbbe8428a5218f4a98bdec7cfab0751f20a75058ea0c3536f4016",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4701b34bf05d21763e60468474b6b0c5322406b34f09c3c462d56c49fc9890bf",
+    "raw_response_text_sha256": "b623a5b851788e83e211b04921971721d1cc86e19dea4e4566e466f96da30a4b"
+  },
+  "api_metadata": {
+    "id": "resp_07cc1aab1b0eaa4b006b061997470c87d29a74f62eee79af57",
+    "model": "gpt-6-luna",
+    "created_at": 1795561879.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1558,
+      "input_tokens_details": {
+        "cache_write_tokens": 1555,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1555
+        }
+      },
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1792
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Air New Zealand pilots’ jobs, pay, and furlough arrangements during the COVID-19 pandemic\",\n  \"climate_relevance\": \"Climate change appears only in a separate snippet about snow on South Island glaciers, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns airline employment negotiations during the pandemic. The climate-related text is an unrelated teaser and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:11:23Z",
+  "duration_seconds": 3.937,
+  "error": null
+}

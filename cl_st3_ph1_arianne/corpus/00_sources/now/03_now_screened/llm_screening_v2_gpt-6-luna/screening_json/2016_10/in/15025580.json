@@ -1,0 +1,77 @@
+{
+  "article_id": "15025580",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_10/in/15025580.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_10/in/15025580.json"
+  },
+  "manifest_row": {
+    "article_id": "15025580",
+    "group": "2016_10",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_10/in/15025580.txt",
+    "now_field_2": "498",
+    "date_original": "16-10-24",
+    "date_iso": "2016-10-24",
+    "source_name": "Times of India",
+    "url": "http://timesofindia.indiatimes.com/city/bengaluru/Forests-nearly-thrice-Bengaluruaposs-size-encroached-in-Karnataka/articleshow/55038571.cms",
+    "title": "Forests nearly thrice Bengaluru's size encroached in Karnataka",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-10-ykw/16-10-in.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Forest land encroachment in Karnataka",
+    "climate_relevance": "Climate change appears only in the formal name of the Ministry of Environment, Forests and Climate Change; the article does not discuss climate issues.",
+    "reason": "The main article focuses on forest encroachment and enforcement in Karnataka. Climate change is mentioned only as part of a ministry name, while the material at the end consists of unrelated snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d8c3b47b652124b4bafa60f3c1e696ccfca57a628fe012db846138e6c72ad8de",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3715d67aec6d175baadfeccee58b66c2226db99c617766c27a5ffccc4a80edf6",
+    "raw_response_text_sha256": "43c7c9b6ad2b7e3d9f6bda7843b662dcc3de4fcdee85480d375ed9fe1c550be3"
+  },
+  "api_metadata": {
+    "id": "resp_06cc0de70296440c006b06063ac4b087d2bbb96d05af49a2b5",
+    "model": "gpt-6-luna",
+    "created_at": 1795556922.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1223,
+      "input_tokens_details": {
+        "cache_write_tokens": 1220,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1220
+        }
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 1468
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Forest land encroachment in Karnataka\",\n  \"climate_relevance\": \"Climate change appears only in the formal name of the Ministry of Environment, Forests and Climate Change; the article does not discuss climate issues.\",\n  \"reason\": \"The main article focuses on forest encroachment and enforcement in Karnataka. Climate change is mentioned only as part of a ministry name, while the material at the end consists of unrelated snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:48:44Z",
+  "duration_seconds": 1.975,
+  "error": null
+}

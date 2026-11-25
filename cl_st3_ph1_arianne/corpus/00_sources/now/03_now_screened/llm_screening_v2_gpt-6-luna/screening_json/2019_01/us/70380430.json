@@ -1,0 +1,77 @@
+{
+  "article_id": "70380430",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/us/70380430.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/us/70380430.json"
+  },
+  "manifest_row": {
+    "article_id": "70380430",
+    "group": "2019_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/us/70380430.txt",
+    "now_field_2": "687",
+    "date_original": "19-01-02",
+    "date_iso": "2019-01-02",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/local/md-politics/hogan-votes-against-potomac-pipeline-following-years-of-opposition-from-activists/2019/01/02/2fb14566-0e02-11e9-84fc-d58c33d6c8c7_story.html",
+    "title": "Hogan votes against 'Potomac Pipeline' following years of opposition ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "climate_role": "background",
+    "main_topic": "Maryland officials' decision to block a natural gas pipeline easement and opposition to related gas pipeline projects.",
+    "climate_relevance": "The article connects opposition to the pipeline with efforts to combat climate change and discusses fracked-gas infrastructure, but its main focus is the regulatory decision and pipeline activism.",
+    "reason": "Climate change is a meaningful part of the stated case against the project, though it is not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6e5f815032e806171888f05864f4f5ce8e1792a5aab98f30838a00020a77eb13",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "480ba22333290394ec76da3dbfbdb2e660f909debbbb8f1b2d8647d8ef6309c5",
+    "raw_response_text_sha256": "89d08dafd7ddd2c640c14e339ebee6b2856fd5b55ad301c87d5320b1e5ab1866"
+  },
+  "api_metadata": {
+    "id": "resp_0945918b7bac69f1006b063c4244b887d199f663f659d54e90",
+    "model": "gpt-6-luna",
+    "created_at": 1795570754.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1369,
+      "input_tokens_details": {
+        "cache_write_tokens": 1366,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1366
+        }
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "total_tokens": 1683
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Maryland officials' decision to block a natural gas pipeline easement and opposition to related gas pipeline projects.\",\n  \"climate_relevance\": \"The article connects opposition to the pipeline with efforts to combat climate change and discusses fracked-gas infrastructure, but its main focus is the regulatory decision and pipeline activism.\",\n  \"reason\": \"Climate change is a meaningful part of the stated case against the project, though it is not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:39:17Z",
+  "duration_seconds": 2.9,
+  "error": null
+}

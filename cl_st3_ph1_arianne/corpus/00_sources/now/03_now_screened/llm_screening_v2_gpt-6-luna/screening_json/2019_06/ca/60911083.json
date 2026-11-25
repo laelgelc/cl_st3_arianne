@@ -1,0 +1,77 @@
+{
+  "article_id": "60911083",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ca/60911083.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ca/60911083.json"
+  },
+  "manifest_row": {
+    "article_id": "60911083",
+    "group": "2019_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ca/60911083.txt",
+    "now_field_2": "1294",
+    "date_original": "19-06-11",
+    "date_iso": "2019-06-11",
+    "source_name": "APTN News",
+    "url": "https://aptnnews.ca/2019/06/11/residents-of-hydro-impacted-communities-bring-message-to-ottawa/",
+    "title": "Residents of hydro-impacted communities bring message to Ottawa",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Indigenous communities’ concerns about the health, environmental, and social impacts of large hydroelectric dams, especially Muskrat Falls.",
+    "climate_relevance": "The text discusses hydroelectric development and mercury risks but does not meaningfully connect them to climate change, its impacts, or climate policy. “Environment and Climate Change Minister” appears only as a ministerial title.",
+    "reason": "The article’s substantive focus is dam-related mercury exposure, Indigenous rights, and community impacts; climate change is not part of its discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a4050f5bead0d1e43fcd51a3b2521caf3f2789e497acb7bbd3de99c2397e1252",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4fd12cc327dc456443de4b7b8dcc435c78f3ad86b518d3826d8bb203a76894d0",
+    "raw_response_text_sha256": "4c46feaf89f361a93ab63bfb7c166ab49ba31e21bb6fc446240e2b22c31f7bad"
+  },
+  "api_metadata": {
+    "id": "resp_04c65a034087486a006b063565b12887d19cb614fa9dc01bca",
+    "model": "gpt-6-luna",
+    "created_at": 1795568997.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2208,
+      "input_tokens_details": {
+        "cache_write_tokens": 2205,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2205
+        }
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 2506
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Indigenous communities’ concerns about the health, environmental, and social impacts of large hydroelectric dams, especially Muskrat Falls.\",\n  \"climate_relevance\": \"The text discusses hydroelectric development and mercury risks but does not meaningfully connect them to climate change, its impacts, or climate policy. “Environment and Climate Change Minister” appears only as a ministerial title.\",\n  \"reason\": \"The article’s substantive focus is dam-related mercury exposure, Indigenous rights, and community impacts; climate change is not part of its discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:10:00Z",
+  "duration_seconds": 2.43,
+  "error": null
+}

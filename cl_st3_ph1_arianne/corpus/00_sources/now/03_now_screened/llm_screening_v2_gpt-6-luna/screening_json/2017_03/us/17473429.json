@@ -1,0 +1,77 @@
+{
+  "article_id": "17473429",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_03/us/17473429.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_03/us/17473429.json"
+  },
+  "manifest_row": {
+    "article_id": "17473429",
+    "group": "2017_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_03/us/17473429.txt",
+    "now_field_2": "135",
+    "date_original": "17-03-17",
+    "date_iso": "2017-03-17",
+    "source_name": "KSBY San Luis Obispo News",
+    "url": "http://www.ksby.com/story/34942844/morro-bay-national-estuary-program-releases-state-of-the-bay-report",
+    "title": "Morro Bay National Estuary Program releases State of the Bay rep ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-03.txt\"]",
+    "metadata_article_files": "[\"text-17-03/text_17-03-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "A report on the condition and health of the Morro Bay National Estuary.",
+    "climate_relevance": "Climate change is identified as one factor the program studies for its effects on the estuary, but the article provides no further discussion.",
+    "reason": "The article is mainly about the State of the Bay report and its findings on water quality and wildlife. Climate change is a meaningful part of the report's scope, but is not developed enough to make this core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "13efa1d222223734777a8f5420d366e5e0e81d8647284c9887f1fbf08200623b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3bf065257a9759da994b793016a6fd9178067339c41d9b537875696878e2c68f",
+    "raw_response_text_sha256": "182cba5a9717dcfab5f7b1b0af26ecba14419473f378724b33fc42a0060ed5b8"
+  },
+  "api_metadata": {
+    "id": "resp_0b99b32a218408f8006b0608f1fe8c87d2a70268924b91876e",
+    "model": "gpt-6-luna",
+    "created_at": 1795557618.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 650,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 896
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A report on the condition and health of the Morro Bay National Estuary.\",\n  \"climate_relevance\": \"Climate change is identified as one factor the program studies for its effects on the estuary, but the article provides no further discussion.\",\n  \"reason\": \"The article is mainly about the State of the Bay report and its findings on water quality and wildlife. Climate change is a meaningful part of the report's scope, but is not developed enough to make this core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:00:20Z",
+  "duration_seconds": 2.213,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40691638",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/sg/40691638.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/sg/40691638.json"
+  },
+  "manifest_row": {
+    "article_id": "40691638",
+    "group": "2019_03",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/sg/40691638.txt",
+    "now_field_2": "659",
+    "date_original": "19-03-06",
+    "date_iso": "2019-03-06",
+    "source_name": "Eco-Business",
+    "url": "https://www.eco-business.com/news/community-refrigerators-aim-to-freeze-out-food-waste/",
+    "title": "'Community' refrigerators aim to freeze out food waste",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Community refrigerators that redistribute surplus food and reduce food waste",
+    "climate_relevance": "Climate change appears only in boilerplate describing the Thomson Reuters Foundation's coverage areas; the article itself contains no meaningful climate discourse.",
+    "reason": "The article focuses on food waste, food access, and community fridges. Its only climate reference is an unrelated boilerplate description of the foundation.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e41abdadb02583e28d683aaec6390352157bf6dbf0f840538a09862579405cb2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "657f1ae57fc35a4a6b0c790bf1e43eeda98098bbc7729c8d0caa9c8668028415",
+    "raw_response_text_sha256": "1e5c906ffbd5da7f79e8e65b04cf5a99e70a146b61e97053e68044da143241cf"
+  },
+  "api_metadata": {
+    "id": "resp_080e3ffa7c9efdc6006b061f764e4487d292cf77b9c5954a1d",
+    "model": "gpt-6-luna",
+    "created_at": 1795563382.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1377,
+      "input_tokens_details": {
+        "cache_write_tokens": 1374,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1374
+        }
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 1596
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Community refrigerators that redistribute surplus food and reduce food waste\",\n  \"climate_relevance\": \"Climate change appears only in boilerplate describing the Thomson Reuters Foundation's coverage areas; the article itself contains no meaningful climate discourse.\",\n  \"reason\": \"The article focuses on food waste, food access, and community fridges. Its only climate reference is an unrelated boilerplate description of the foundation.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:36:24Z",
+  "duration_seconds": 1.966,
+  "error": null
+}

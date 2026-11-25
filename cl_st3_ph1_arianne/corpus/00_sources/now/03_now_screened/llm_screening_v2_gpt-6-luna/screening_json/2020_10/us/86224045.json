@@ -1,0 +1,77 @@
+{
+  "article_id": "86224045",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86224045.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86224045.json"
+  },
+  "manifest_row": {
+    "article_id": "86224045",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86224045.txt",
+    "now_field_2": "7910",
+    "date_original": "20-10-28",
+    "date_iso": "2020-10-28",
+    "source_name": "YAHOO!",
+    "url": "https://finance.yahoo.com/news/peapack-gladstone-financial-corporation-reports-130000646.html",
+    "title": "Peapack-Gladstone Financial Corporation Reports Third Quarter Results",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A bank's third-quarter 2020 earnings and financial condition, including the effects of the COVID-19 pandemic.",
+    "climate_relevance": "The identifiable main article contains no meaningful climate-change discourse. A separate electric-vehicle snippet briefly mentions climate concerns as a factor in market readiness, but it is unrelated to the main article.",
+    "reason": "The main article is a financial earnings release focused on banking results and pandemic-related economic effects. The climate reference occurs only in an unrelated appended snippet, not in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d651337853565d60f77e1b912bbfd42689262b3726c2e695f8a4e1ffef7a7d85",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "494fcebf64dbfc20baabc6b93132977c3f8c55279b4ff40c7195873bb4a8b0e0",
+    "raw_response_text_sha256": "711ff41f74a9a560863e1650ea95dc340e2b656a5e96ad86504c892624adb8bc"
+  },
+  "api_metadata": {
+    "id": "resp_075e1f02af5d714b006b064ed7e12087d1a1cd4711a3ed0ee2",
+    "model": "gpt-6-luna",
+    "created_at": 1795575511.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 13108,
+      "input_tokens_details": {
+        "cache_write_tokens": 13105,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 13105
+        }
+      },
+      "output_tokens": 363,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 13471
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A bank's third-quarter 2020 earnings and financial condition, including the effects of the COVID-19 pandemic.\",\n  \"climate_relevance\": \"The identifiable main article contains no meaningful climate-change discourse. A separate electric-vehicle snippet briefly mentions climate concerns as a factor in market readiness, but it is unrelated to the main article.\",\n  \"reason\": \"The main article is a financial earnings release focused on banking results and pandemic-related economic effects. The climate reference occurs only in an unrelated appended snippet, not in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:58:35Z",
+  "duration_seconds": 3.317,
+  "error": null
+}

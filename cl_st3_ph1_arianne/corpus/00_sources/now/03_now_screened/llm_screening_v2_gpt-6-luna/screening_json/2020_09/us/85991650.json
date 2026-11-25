@@ -1,0 +1,77 @@
+{
+  "article_id": "85991650",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/85991650.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/85991650.json"
+  },
+  "manifest_row": {
+    "article_id": "85991650",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/85991650.txt",
+    "now_field_2": "491",
+    "date_original": "20-09-21",
+    "date_iso": "2020-09-21",
+    "source_name": "Reuters",
+    "url": "https://www.reuters.com/article/us-storm-beta-idUSKCN26C2IJ",
+    "title": "Tropical Storm Beta set to deluge Texas and Louisiana",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Tropical Storm Beta and its expected impacts on the Texas and Louisiana coasts",
+    "climate_relevance": "The report links the increasing regularity of slow-moving coastal deluge storms to climate change.",
+    "reason": "The article is primarily a storm and emergency-impacts report, but it includes a meaningful statement connecting storm patterns to climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0248639656293dd6bbcc8f84db79d429aee404d9567101c725f52ea04a35eca2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "776051868e42f4bd402e2da6aaa061c8b380ea1d8d475b61db8fdb9ce326d8b5",
+    "raw_response_text_sha256": "0bfddbce0ab5e976ea2b19d7513ebae49bbb9390e199722363ed7aa251ffe695"
+  },
+  "api_metadata": {
+    "id": "resp_08bbe8208f177407006b064de753bc87d1bfc66fe02d0d490d",
+    "model": "gpt-6-luna",
+    "created_at": 1795575271.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1132,
+      "input_tokens_details": {
+        "cache_write_tokens": 1129,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1129
+        }
+      },
+      "output_tokens": 184,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 1316
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Tropical Storm Beta and its expected impacts on the Texas and Louisiana coasts\",\n  \"climate_relevance\": \"The report links the increasing regularity of slow-moving coastal deluge storms to climate change.\",\n  \"reason\": \"The article is primarily a storm and emergency-impacts report, but it includes a meaningful statement connecting storm patterns to climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:54:33Z",
+  "duration_seconds": 2.295,
+  "error": null
+}

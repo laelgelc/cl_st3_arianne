@@ -1,0 +1,77 @@
+{
+  "article_id": "21316559",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/ke/21316559.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/ke/21316559.json"
+  },
+  "manifest_row": {
+    "article_id": "21316559",
+    "group": "2017_10",
+    "country_code": "ke",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/ke/21316559.txt",
+    "now_field_2": "2534",
+    "date_original": "17-10-26",
+    "date_iso": "2017-10-26",
+    "source_name": "Coastweek",
+    "url": "http://www.coastweek.com/4042-South-Africa-faces-another-credit-downgrade-economists-warn.htm",
+    "title": "Neptune Palm Beach Boutique Resort &amp; Spa",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-KE.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "South Africa’s medium-term budget, economic outlook, and risk of a credit-rating downgrade",
+    "climate_relevance": "The identifiable lead article contains no meaningful climate discourse. A separate, unrelated Africa Oil Week snippet discusses South Africa’s energy mix and climate commitments.",
+    "reason": "The main article is about fiscal policy and credit ratings, not climate change. Although an embedded, unrelated energy-policy snippet contains meaningful climate-related discussion, it is not the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f45e6ce50b1868aacbad5d6b0bab3b68b1120ee7e3672a5418ee1393afe6b732",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "84138f77cb3f8d128861bc2f93afbb5dfe73e7f72efe2c408c056bfad93f1f20",
+    "raw_response_text_sha256": "b00f9ea95f985ca653e77ea40c3e740cfaeba2cf00efc6c885bad6d96e16a87f"
+  },
+  "api_metadata": {
+    "id": "resp_00e1887f3f607b90006b060e9bebe487d282d3525e51c91660",
+    "model": "gpt-6-luna",
+    "created_at": 1795559068.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4037,
+      "input_tokens_details": {
+        "cache_write_tokens": 4034,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4034
+        }
+      },
+      "output_tokens": 466,
+      "output_tokens_details": {
+        "reasoning_tokens": 304
+      },
+      "total_tokens": 4503
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"South Africa’s medium-term budget, economic outlook, and risk of a credit-rating downgrade\",\n  \"climate_relevance\": \"The identifiable lead article contains no meaningful climate discourse. A separate, unrelated Africa Oil Week snippet discusses South Africa’s energy mix and climate commitments.\",\n  \"reason\": \"The main article is about fiscal policy and credit ratings, not climate change. Although an embedded, unrelated energy-policy snippet contains meaningful climate-related discussion, it is not the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:24:31Z",
+  "duration_seconds": 4.003,
+  "error": null
+}

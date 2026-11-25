@@ -1,0 +1,77 @@
+{
+  "article_id": "4900112",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/za/4900112.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/za/4900112.json"
+  },
+  "manifest_row": {
+    "article_id": "4900112",
+    "group": "2015_12",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/za/4900112.txt",
+    "now_field_2": "344",
+    "date_original": "15-12-09",
+    "date_iso": "2015-12-09",
+    "source_name": "News24",
+    "url": "http://www.news24.com/Africa/News/31-dead-20-000-families-homeless-in-torrential-rain-in-kinshasa-20151209",
+    "title": "31 dead, 20 000 families homeless in torrential rain in Kinshasa",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-za.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Fatal flooding and displacement in Kinshasa",
+    "climate_relevance": "A city official says the unusual rainfall is connected to climate change, while a resident points to recurring floods and authorities’ inaction.",
+    "reason": "The report is mainly about the immediate flooding, deaths, and damage. Its explicit climate-change claim is meaningful but brief, so the text is relevant as peripheral climate discourse rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "10d1d80f7b328aff00d25123837ab70a60516576c61466da8652c536fdf673b1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ccbdded995c0c7ff59c344ac0f9379cf77b1be73eccd1707d0b0f41b3ff6820d",
+    "raw_response_text_sha256": "35ac7feec7df2de57fee4296a94377a730df63788dff85c4c72dcc5262afe9d3"
+  },
+  "api_metadata": {
+    "id": "resp_0cffa37e39df169a006b06272573e487d190e3be4ad94ce246",
+    "model": "gpt-6-luna",
+    "created_at": 1795565349.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 978,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 1248
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Fatal flooding and displacement in Kinshasa\",\n  \"climate_relevance\": \"A city official says the unusual rainfall is connected to climate change, while a resident points to recurring floods and authorities’ inaction.\",\n  \"reason\": \"The report is mainly about the immediate flooding, deaths, and damage. Its explicit climate-change claim is meaningful but brief, so the text is relevant as peripheral climate discourse rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:09:11Z",
+  "duration_seconds": 2.634,
+  "error": null
+}

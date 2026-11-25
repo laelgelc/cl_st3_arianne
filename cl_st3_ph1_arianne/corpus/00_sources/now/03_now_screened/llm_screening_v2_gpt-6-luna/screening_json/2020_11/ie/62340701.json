@@ -1,0 +1,77 @@
+{
+  "article_id": "62340701",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/ie/62340701.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/ie/62340701.json"
+  },
+  "manifest_row": {
+    "article_id": "62340701",
+    "group": "2020_11",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/ie/62340701.txt",
+    "now_field_2": "586",
+    "date_original": "20-11-02",
+    "date_iso": "2020-11-02",
+    "source_name": "tradearabia.com",
+    "url": "http://www.tradearabia.com/news/OGN_374604.html",
+    "title": "Adipec Awards 2020 goes virtual",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "The 2020 Adipec Awards, their categories, sponsors, and virtual event format",
+    "climate_relevance": "Climate change appears only in the name of an award category; the text does not discuss climate issues or the category’s substance.",
+    "reason": "The article is an event announcement about oil and gas industry awards. Its brief reference to a climate-change award category does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "35f75402a077fd1da71c7a3880a6b81ade99809c03cfe5346b2a4a9ca77ad611",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d66e886a34004e9181dfabf11939f09dca32b14e4756970934e121359cf70920",
+    "raw_response_text_sha256": "ab2b017d1f43209a26a4abf88099ba9a4308f298404181028b5f63043d8dab3f"
+  },
+  "api_metadata": {
+    "id": "resp_05c50918a6d052a6006b0639e7231487d18c0255ee0f5b797f",
+    "model": "gpt-6-luna",
+    "created_at": 1795570151.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1260,
+      "input_tokens_details": {
+        "cache_write_tokens": 1257,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1257
+        }
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 1478
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The 2020 Adipec Awards, their categories, sponsors, and virtual event format\",\n  \"climate_relevance\": \"Climate change appears only in the name of an award category; the text does not discuss climate issues or the category’s substance.\",\n  \"reason\": \"The article is an event announcement about oil and gas industry awards. Its brief reference to a climate-change award category does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:29:13Z",
+  "duration_seconds": 2.099,
+  "error": null
+}

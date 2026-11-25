@@ -1,0 +1,77 @@
+{
+  "article_id": "50112115",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/au/50112115.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/au/50112115.json"
+  },
+  "manifest_row": {
+    "article_id": "50112115",
+    "group": "2018_10",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/au/50112115.txt",
+    "now_field_2": "1035",
+    "date_original": "18-10-09",
+    "date_iso": "2018-10-09",
+    "source_name": "The Sydney Morning Herald",
+    "url": "https://www.smh.com.au/national/voters-of-wentworth-can-send-a-message-to-morrison-on-climate-20181010-p508uk.html",
+    "title": "Voters of Wentworth can send a message to Morrison on climate",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-au.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Climate governance and political action in the Wentworth byelection",
+    "climate_relevance": "The main article directly urges voters and political parties to support effective climate policy, emissions reductions, a transition to a low-carbon society, and renewable energy, while discussing the IPCC report and climate risks.",
+    "reason": "Climate change is the central subject of the identifiable main article, an opinion piece about using the byelection to press for stronger climate governance. A separate, unrelated death-penalty article appears after it.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "621928e52f0334407b4a0783012278ab272980e696538bb53792540296f18664",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "74885bf69da96d3f3bccd424ad32e6be11195067376aa417ce4d67c388f04117",
+    "raw_response_text_sha256": "cf889cd5cee1c23e0b36b7ebad937726d38a35b9784ea3e2527f25444563a5f4"
+  },
+  "api_metadata": {
+    "id": "resp_07f8b30cdeeef471006b0627a0d8ec87d1ad160bdd49e557e0",
+    "model": "gpt-6-luna",
+    "created_at": 1795565472.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2163,
+      "input_tokens_details": {
+        "cache_write_tokens": 2160,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2160
+        }
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 2390
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Climate governance and political action in the Wentworth byelection\",\n  \"climate_relevance\": \"The main article directly urges voters and political parties to support effective climate policy, emissions reductions, a transition to a low-carbon society, and renewable energy, while discussing the IPCC report and climate risks.\",\n  \"reason\": \"Climate change is the central subject of the identifiable main article, an opinion piece about using the byelection to press for stronger climate governance. A separate, unrelated death-penalty article appears after it.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:11:15Z",
+  "duration_seconds": 3.149,
+  "error": null
+}

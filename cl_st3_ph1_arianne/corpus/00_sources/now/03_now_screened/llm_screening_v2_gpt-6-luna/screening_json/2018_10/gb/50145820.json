@@ -1,0 +1,77 @@
+{
+  "article_id": "50145820",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/gb/50145820.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/gb/50145820.json"
+  },
+  "manifest_row": {
+    "article_id": "50145820",
+    "group": "2018_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/gb/50145820.txt",
+    "now_field_2": "369",
+    "date_original": "18-10-21",
+    "date_iso": "2018-10-21",
+    "source_name": "The Wiltshire Gazette and Herald",
+    "url": "https://www.gazetteandherald.co.uk/sport/national/16997998.new-england-patriots-hold-on-for-battling-win-over-chicago-bears/",
+    "title": "New England Patriots hold on for battling win over Chicago Bears",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "NFL game results, followed by unrelated editorial snippets",
+    "climate_relevance": "One editorial sentence refers to the climate change treaty as a target of Trump's actions, placing climate policy in a broader political critique.",
+    "reason": "The identifiable main article is about football, but the separate editorial fragment contains a meaningful, if brief, reference to climate policy. This is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5b100ef85205624d275055f5e13d653ffd11429f3fc98179e98339eeb5174512",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fcae55805730157ceb0b7052f3450ffc55390b89f5205088e9bc26d6620a44bf",
+    "raw_response_text_sha256": "301c998f32fc9d53d5cd52108d25574c5a72f7454e4dbf3647d018b0245ca254"
+  },
+  "api_metadata": {
+    "id": "resp_04e3f1ce629d6093006b0627c5b15887d1bcd24aa9176cccf7",
+    "model": "gpt-6-luna",
+    "created_at": 1795565509.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1196,
+      "input_tokens_details": {
+        "cache_write_tokens": 1193,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1193
+        }
+      },
+      "output_tokens": 364,
+      "output_tokens_details": {
+        "reasoning_tokens": 220
+      },
+      "total_tokens": 1560
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"NFL game results, followed by unrelated editorial snippets\",\n  \"climate_relevance\": \"One editorial sentence refers to the climate change treaty as a target of Trump's actions, placing climate policy in a broader political critique.\",\n  \"reason\": \"The identifiable main article is about football, but the separate editorial fragment contains a meaningful, if brief, reference to climate policy. This is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:11:52Z",
+  "duration_seconds": 3.342,
+  "error": null
+}

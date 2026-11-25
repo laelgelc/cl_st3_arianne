@@ -1,0 +1,77 @@
+{
+  "article_id": "81779711",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81779711.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81779711.json"
+  },
+  "manifest_row": {
+    "article_id": "81779711",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81779711.txt",
+    "now_field_2": "960",
+    "date_original": "19-10-24",
+    "date_iso": "2019-10-24",
+    "source_name": "KTLA",
+    "url": "https://ktla.com/2019/10/24/kincade-fire-forces-evacuations-north-of-san-francisco-in-sonoma-county/",
+    "title": "Kincade Fire Forces Evacuations North of San Francisco in Sonoma County",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.84,
+    "climate_role": "passing",
+    "main_topic": "California wildfires, evacuations, and power shutoffs",
+    "climate_relevance": "A brief passage connects the fires to the climate-change work of a conference founder, but the article does not otherwise discuss climate change or its role in the fires.",
+    "reason": "The article is primarily a report about wildfires and utility outages. Its single climate-related passage makes a limited connection between the fires and climate-change work, so it has some relevance to broader climate discourse but is not core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c88064b735c7cbdcddb75a157e0775ab1572056bbc3c4f937ea36f3a61873e15",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a272edc0d89761b0608a42c7fce2323919cc4d79a9b19d4213196d4288f3c2a8",
+    "raw_response_text_sha256": "93cf92f6660836e2e9bf53e1778a61d460e0d341396b9bd45bed40860093914f"
+  },
+  "api_metadata": {
+    "id": "resp_0176c92a4506901b006b0647b1f62887d185b617580f0fe31d",
+    "model": "gpt-6-luna",
+    "created_at": 1795573682.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1750,
+      "input_tokens_details": {
+        "cache_write_tokens": 1747,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1747
+        }
+      },
+      "output_tokens": 381,
+      "output_tokens_details": {
+        "reasoning_tokens": 216
+      },
+      "total_tokens": 2131
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.84,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"California wildfires, evacuations, and power shutoffs\",\n  \"climate_relevance\": \"A brief passage connects the fires to the climate-change work of a conference founder, but the article does not otherwise discuss climate change or its role in the fires.\",\n  \"reason\": \"The article is primarily a report about wildfires and utility outages. Its single climate-related passage makes a limited connection between the fires and climate-change work, so it has some relevance to broader climate discourse but is not core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:28:05Z",
+  "duration_seconds": 3.342,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "8420648",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_04/in/8420648.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_04/in/8420648.json"
+  },
+  "manifest_row": {
+    "article_id": "8420648",
+    "group": "2016_04",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_04/in/8420648.txt",
+    "now_field_2": "752",
+    "date_original": "16-04-22",
+    "date_iso": "2016-04-22",
+    "source_name": "Times of India",
+    "url": "http://timesofindia.indiatimes.com/City/Lucknow/70-customers-duped-in-cyber-hacking-of-bank/articleshow/51950212.cms",
+    "title": "70 customers duped in cyber hacking of bank",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-04-ovb/16-04-in.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Cyber fraud involving Bank of Baroda customers",
+    "climate_relevance": "Climate change appears only in a separate related-content snippet about countries signing the Paris Agreement, not in the main article.",
+    "reason": "The main article reports on a bank cyber heist. The brief Paris Agreement reference is an unrelated snippet and does not provide meaningful climate discourse in the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4fd2d3191dc6073debcb367e70ef1b1a5cfb253c992031627f6852bea0de37bc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f2d0a0a30bd37a1bdde2e64e513309995068125da4011a4ba84135bd259b12be",
+    "raw_response_text_sha256": "50a4a8227d0699f0599f2e306d6fbbbc3ebf658474c826e0a4ae19ddb2b222be"
+  },
+  "api_metadata": {
+    "id": "resp_0007f69bb8da8e2e006b064a67543887d1a4f22dd54a97524a",
+    "model": "gpt-6-luna",
+    "created_at": 1795574375.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1498,
+      "input_tokens_details": {
+        "cache_write_tokens": 1495,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1495
+        }
+      },
+      "output_tokens": 209,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1707
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Cyber fraud involving Bank of Baroda customers\",\n  \"climate_relevance\": \"Climate change appears only in a separate related-content snippet about countries signing the Paris Agreement, not in the main article.\",\n  \"reason\": \"The main article reports on a bank cyber heist. The brief Paris Agreement reference is an unrelated snippet and does not provide meaningful climate discourse in the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:39:37Z",
+  "duration_seconds": 1.853,
+  "error": null
+}

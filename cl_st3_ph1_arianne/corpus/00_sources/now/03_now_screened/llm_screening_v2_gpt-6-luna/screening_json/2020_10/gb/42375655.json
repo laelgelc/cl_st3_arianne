@@ -1,0 +1,77 @@
+{
+  "article_id": "42375655",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/gb/42375655.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/gb/42375655.json"
+  },
+  "manifest_row": {
+    "article_id": "42375655",
+    "group": "2020_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/gb/42375655.txt",
+    "now_field_2": "576",
+    "date_original": "20-10-30",
+    "date_iso": "2020-10-30",
+    "source_name": "thecourier.co.uk",
+    "url": "https://www.thecourier.co.uk/fp/lifestyle/entertainment/1689577/the-list-amy-macdonald-frankie-boyle-and-host-of-halloween-events-online-this-week/",
+    "title": "THE LIST: Amy Macdonald, Frankie Boyle and host of ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "A collection of event listings covering music, arts, workshops, festivals, and science",
+    "climate_relevance": "One listing describes a discussion of the threat climate change poses and actions to protect the Earth; another mentions climate change among a science festival’s topics.",
+    "reason": "The text contains meaningful climate-related event descriptions, but the collection as a whole is mainly about unrelated cultural and educational events rather than climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c87697f8778b159ae867ce7b23e7ee734bfee28b649f5e32c1eb7cda3042406f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "84978884b3f1589ab3c3c89cbb06ac14fc17b7aff9b4e35e712eef316010ad48",
+    "raw_response_text_sha256": "bcb2094c6e54f661fe3e60b43e016d09433afb33f69c2cba1a9e1a73a9914155"
+  },
+  "api_metadata": {
+    "id": "resp_0a5511ed374ed204006b0625f9bcf487d29c6e710ccb8c81e3",
+    "model": "gpt-6-luna",
+    "created_at": 1795565049.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1238,
+      "input_tokens_details": {
+        "cache_write_tokens": 1235,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1235
+        }
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 1493
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of event listings covering music, arts, workshops, festivals, and science\",\n  \"climate_relevance\": \"One listing describes a discussion of the threat climate change poses and actions to protect the Earth; another mentions climate change among a science festival’s topics.\",\n  \"reason\": \"The text contains meaningful climate-related event descriptions, but the collection as a whole is mainly about unrelated cultural and educational events rather than climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:04:12Z",
+  "duration_seconds": 3.183,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "19565216",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/au/19565216.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/au/19565216.json"
+  },
+  "manifest_row": {
+    "article_id": "19565216",
+    "group": "2017_07",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/au/19565216.txt",
+    "now_field_2": "371",
+    "date_original": "17-07-19",
+    "date_iso": "2017-07-19",
+    "source_name": "Yahoo7 News",
+    "url": "https://au.news.yahoo.com/world/a/36433725/irans-president-threatens-response-to-new-us-sanctions/",
+    "title": "Iran's president threatens response to new US sanctions",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Iran-US sanctions, the nuclear deal, and diplomatic tensions",
+    "climate_relevance": "Climate change is mentioned only in passing as one of several international agreements Rouhani accused Trump of breaking.",
+    "reason": "The article focuses on Iran-US relations, sanctions, and the nuclear deal; it contains no substantive discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "539ea28361be1b58abd335106a1be4ea66237127ce1305b3e3ba9c4e6fa1e9f0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "243afa314a38b0648142bc09286215ccc157fe0dc57f2896d0a5fe346f7ccd90",
+    "raw_response_text_sha256": "540710eb952322a2f0181cce395ee89c9b3f5855d9ce98202c13e1c6e6a35429"
+  },
+  "api_metadata": {
+    "id": "resp_06fffb49fdbc22fc006b060c2edf8887d2b0f66cadacac2419",
+    "model": "gpt-6-luna",
+    "created_at": 1795558447.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 983,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 1219
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Iran-US sanctions, the nuclear deal, and diplomatic tensions\",\n  \"climate_relevance\": \"Climate change is mentioned only in passing as one of several international agreements Rouhani accused Trump of breaking.\",\n  \"reason\": \"The article focuses on Iran-US relations, sanctions, and the nuclear deal; it contains no substantive discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:14:09Z",
+  "duration_seconds": 2.317,
+  "error": null
+}

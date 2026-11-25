@@ -1,0 +1,77 @@
+{
+  "article_id": "42355627",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/gb/42355627.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/gb/42355627.json"
+  },
+  "manifest_row": {
+    "article_id": "42355627",
+    "group": "2020_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/gb/42355627.txt",
+    "now_field_2": "2746",
+    "date_original": "20-10-20",
+    "date_iso": "2020-10-20",
+    "source_name": "uk.finance.yahoo.com",
+    "url": "https://uk.finance.yahoo.com/news/i-tried-the-fenty-skin-by-rihanna-products-heres-why-im-obsessed-170030202.html",
+    "title": "I tried the entire line of Fenty Skin by Rihanna: Here's ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A review of Rihanna’s Fenty Skin products",
+    "climate_relevance": "The identifiable main article is about skincare and contains no meaningful climate discourse. Later, unrelated material includes a product carbon-footprint claim and a boilerplate commitment to mitigate climate change.",
+    "reason": "The text combines multiple unrelated articles and press releases. The main article is a beauty review, and the climate-related material appears only in separate corporate snippets rather than in that article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "17658addaafebec51ea99071631bc133cd1af67bea97a10bd0adb279db5a4536",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0806eb034ecaf133280f34145468581d6466536469d3c8f2aaacbdb39314f611",
+    "raw_response_text_sha256": "bafa6c200c4b8b3286fa50bd8d78692f697cc5c7e718040a9d013e60b39090e7"
+  },
+  "api_metadata": {
+    "id": "resp_066c6f3a43dae5d6006b0625e3652887d2bffafecb045d3d96",
+    "model": "gpt-6-luna",
+    "created_at": 1795565027.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4253,
+      "input_tokens_details": {
+        "cache_write_tokens": 4250,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4250
+        }
+      },
+      "output_tokens": 498,
+      "output_tokens_details": {
+        "reasoning_tokens": 339
+      },
+      "total_tokens": 4751
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A review of Rihanna’s Fenty Skin products\",\n  \"climate_relevance\": \"The identifiable main article is about skincare and contains no meaningful climate discourse. Later, unrelated material includes a product carbon-footprint claim and a boilerplate commitment to mitigate climate change.\",\n  \"reason\": \"The text combines multiple unrelated articles and press releases. The main article is a beauty review, and the climate-related material appears only in separate corporate snippets rather than in that article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:03:51Z",
+  "duration_seconds": 4.421,
+  "error": null
+}

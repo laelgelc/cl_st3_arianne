@@ -1,0 +1,77 @@
+{
+  "article_id": "70315715",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/us/70315715.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/us/70315715.json"
+  },
+  "manifest_row": {
+    "article_id": "70315715",
+    "group": "2018_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/us/70315715.txt",
+    "now_field_2": "2242",
+    "date_original": "18-12-07",
+    "date_iso": "2018-12-07",
+    "source_name": "Garden Center Magazine",
+    "url": "http://www.gardencentermag.com/pantone-2019-living-coral.aspx",
+    "title": "Living Coral named 2019 Pantone Color of the Year",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.82,
+    "climate_role": "passing",
+    "main_topic": "A collection of horticulture and gardening announcements, including color trends, courses, flower varieties, youth education, and scholarships.",
+    "climate_relevance": "A quote in the BLOOM! program item presents plants and horticulture as helping address major challenges, listing climate change alongside pollution, clean water, and drought.",
+    "reason": "The text is not principally about climate change, but the horticulture initiative explicitly links plants to addressing it. This is brief, promotional framing rather than developed climate discourse, so the text is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "413c7866564508e512096922b95172d7249073cbb775b961a3682f196c2a537c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "151931103643ab51fb8c930eee7fb78bfdb671677296ca86692b008936e87d34",
+    "raw_response_text_sha256": "fb589bd1c9eb3a3117d708d29d8376020d47e423f99765283a2ee913e349f658"
+  },
+  "api_metadata": {
+    "id": "resp_0912323f4e0ce16a006b063be8cc8c87d1ac755d3439f20c4e",
+    "model": "gpt-6-luna",
+    "created_at": 1795570664.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3432,
+      "input_tokens_details": {
+        "cache_write_tokens": 3429,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3429
+        }
+      },
+      "output_tokens": 673,
+      "output_tokens_details": {
+        "reasoning_tokens": 500
+      },
+      "total_tokens": 4105
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.82,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of horticulture and gardening announcements, including color trends, courses, flower varieties, youth education, and scholarships.\",\n  \"climate_relevance\": \"A quote in the BLOOM! program item presents plants and horticulture as helping address major challenges, listing climate change alongside pollution, clean water, and drought.\",\n  \"reason\": \"The text is not principally about climate change, but the horticulture initiative explicitly links plants to addressing it. This is brief, promotional framing rather than developed climate discourse, so the text is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:37:49Z",
+  "duration_seconds": 4.805,
+  "error": null
+}

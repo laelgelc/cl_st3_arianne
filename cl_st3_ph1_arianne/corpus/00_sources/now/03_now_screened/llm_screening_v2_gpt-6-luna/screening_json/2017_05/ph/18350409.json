@@ -1,0 +1,77 @@
+{
+  "article_id": "18350409",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/ph/18350409.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/ph/18350409.json"
+  },
+  "manifest_row": {
+    "article_id": "18350409",
+    "group": "2017_05",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/ph/18350409.txt",
+    "now_field_2": "800",
+    "date_original": "17-05-09",
+    "date_iso": "2017-05-09",
+    "source_name": "Manila Bulletin",
+    "url": "http://news.mb.com.ph/2017/05/09/filipino-women-in-the-spotlight/",
+    "title": "Filipino women in the spotlight",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-PH.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "A column highlighting Filipino women and other political and social news",
+    "climate_relevance": "Climate change is briefly discussed in relation to Gina Lopez's environmental leadership and the consequences of neglecting natural resources.",
+    "reason": "The column is not centrally about climate change, but it includes a meaningful statement connecting climate change, environmental neglect, and impacts on future generations.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c839e44f31530ce91ee9cab563446a043f58999b81df393cf529e5d29d2c7a01",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7d685d0489ad402f41972f05a7b47a02aedfbd33a32987b098a279a9b4449d4a",
+    "raw_response_text_sha256": "98574596d13f09feea53da9b1c19286a3dfeb66f994269d6504be1c9482fd324"
+  },
+  "api_metadata": {
+    "id": "resp_0b35d53b22067091006b060a23c08c87d28f9e7a30c83fd461",
+    "model": "gpt-6-luna",
+    "created_at": 1795557923.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1469,
+      "input_tokens_details": {
+        "cache_write_tokens": 1466,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1466
+        }
+      },
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 1776
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A column highlighting Filipino women and other political and social news\",\n  \"climate_relevance\": \"Climate change is briefly discussed in relation to Gina Lopez's environmental leadership and the consequences of neglecting natural resources.\",\n  \"reason\": \"The column is not centrally about climate change, but it includes a meaningful statement connecting climate change, environmental neglect, and impacts on future generations.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:05:26Z",
+  "duration_seconds": 2.61,
+  "error": null
+}

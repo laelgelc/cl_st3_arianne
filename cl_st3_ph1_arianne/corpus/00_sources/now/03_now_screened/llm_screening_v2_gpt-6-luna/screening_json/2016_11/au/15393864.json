@@ -1,0 +1,77 @@
+{
+  "article_id": "15393864",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_11/au/15393864.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_11/au/15393864.json"
+  },
+  "manifest_row": {
+    "article_id": "15393864",
+    "group": "2016_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_11/au/15393864.txt",
+    "now_field_2": "686",
+    "date_original": "16-11-14",
+    "date_iso": "2016-11-14",
+    "source_name": "Gizmodo Australia",
+    "url": "http://www.gizmodo.com.au/2016/11/global-carbon-emissions-are-stable-for-third-year-in-a-row-report/",
+    "title": "Global Carbon Emissions Are Stable For Third Year In A Row: Report",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-11.txt\"]",
+    "metadata_article_files": "[\"text-16-11/text_16-11-AU.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Global carbon emissions trends and their implications for climate change mitigation",
+    "climate_relevance": "The main article discusses emissions data, the shift away from coal, the carbon budget for limiting warming, and climate policy, including the Paris accord.",
+    "reason": "Climate change and emissions reduction are the central focus of the identifiable main article. Unrelated trending-story snippets appear after it.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "63b1d11f48944189af2d4fd362486beb9a5f26e086b7bd8bb0c99b3e43828cdc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "65c69741f6e99161bc0f6921a3284fbf19a826bc1580af2606da2b4abef74158",
+    "raw_response_text_sha256": "c8d455c9d10eb01b187a6fa2c87a49b9387661b3ada3874e78fcba761a7a60bd"
+  },
+  "api_metadata": {
+    "id": "resp_033a121cba06db35006b06069e64a887d287f9bff8c305a75d",
+    "model": "gpt-6-luna",
+    "created_at": 1795557022.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1348,
+      "input_tokens_details": {
+        "cache_write_tokens": 1345,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1345
+        }
+      },
+      "output_tokens": 193,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 1541
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Global carbon emissions trends and their implications for climate change mitigation\",\n  \"climate_relevance\": \"The main article discusses emissions data, the shift away from coal, the carbon budget for limiting warming, and climate policy, including the Paris accord.\",\n  \"reason\": \"Climate change and emissions reduction are the central focus of the identifiable main article. Unrelated trending-story snippets appear after it.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:50:24Z",
+  "duration_seconds": 1.836,
+  "error": null
+}

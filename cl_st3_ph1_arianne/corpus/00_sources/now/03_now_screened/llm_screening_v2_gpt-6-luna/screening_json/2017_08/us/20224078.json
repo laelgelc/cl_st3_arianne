@@ -1,0 +1,77 @@
+{
+  "article_id": "20224078",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/us/20224078.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/us/20224078.json"
+  },
+  "manifest_row": {
+    "article_id": "20224078",
+    "group": "2017_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/us/20224078.txt",
+    "now_field_2": "1255",
+    "date_original": "17-08-27",
+    "date_iso": "2017-08-27",
+    "source_name": "NPR",
+    "url": "http://www.npr.org/2017/08/27/546497351/the-consequences-of-anti-vaccination-in-keep-you-safe",
+    "title": "The Consequences Of Anti-Vaccination In 'Keep You Safe'",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Vaccination decisions and the novel Keep You Safe",
+    "climate_relevance": "Climate change appears only in a brief analogy comparing vaccine denial with denying climate change.",
+    "reason": "The article focuses on childhood vaccination and parenting. Its single reference to climate change is incidental and does not develop climate-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e0654161b4444095b92bc2acee2b262f3f565294c63af343c09fff235447c373",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4d332b2eb9704a14611f5193a005e5ff80a4cbf99e5582333466c6f35f271428",
+    "raw_response_text_sha256": "fbefd217f1c0b16eba986873c10cceb54d3817b8d312fafcee94427fa30f72bb"
+  },
+  "api_metadata": {
+    "id": "resp_0895d6ef391e5231006b060cff6b1487d2a19e68e052ea84be",
+    "model": "gpt-6-luna",
+    "created_at": 1795558655.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2120,
+      "input_tokens_details": {
+        "cache_write_tokens": 2117,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2117
+        }
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 2374
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Vaccination decisions and the novel Keep You Safe\",\n  \"climate_relevance\": \"Climate change appears only in a brief analogy comparing vaccine denial with denying climate change.\",\n  \"reason\": \"The article focuses on childhood vaccination and parenting. Its single reference to climate change is incidental and does not develop climate-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:37Z",
+  "duration_seconds": 2.116,
+  "error": null
+}

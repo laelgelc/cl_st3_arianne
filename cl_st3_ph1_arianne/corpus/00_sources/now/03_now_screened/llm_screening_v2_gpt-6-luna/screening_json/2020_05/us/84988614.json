@@ -1,0 +1,77 @@
+{
+  "article_id": "84988614",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/us/84988614.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/us/84988614.json"
+  },
+  "manifest_row": {
+    "article_id": "84988614",
+    "group": "2020_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/us/84988614.txt",
+    "now_field_2": "605",
+    "date_original": "20-05-21",
+    "date_iso": "2020-05-21",
+    "source_name": "CBS News",
+    "url": "https://www.cbsnews.com/news/green-snow-algae-antarctica-spreading-climate-change/",
+    "title": "Climate change is causing Antarctica's snow to turn green, study says",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Climate change and the spread of green snow algae in Antarctica",
+    "climate_relevance": "The report explains how warming is increasing the spread of Antarctic snow algae, discusses contributing ecological factors, and considers possible effects on carbon uptake and heat absorption.",
+    "reason": "Climate change is the central frame of the article: it links rising temperatures and melting snow to the expansion of green algae and reports researchers’ projections of how that pattern may change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7869c55044c89ca52a9118c874ac28ae0b9529afcbe988faf2a0b4ca8290b29d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "037f14d1529838df0c1e1664ee069c51ad09a27e6e9e3e0953082b69b58fa1e1",
+    "raw_response_text_sha256": "072ec015db5c52b2543eee7edec3db3b0cc11bb183ea94d04e356f24c128f17c"
+  },
+  "api_metadata": {
+    "id": "resp_087d7827e3690323006b064af92f7487d1a556fd267e7864a5",
+    "model": "gpt-6-luna",
+    "created_at": 1795574521.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1260,
+      "input_tokens_details": {
+        "cache_write_tokens": 1257,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1257
+        }
+      },
+      "output_tokens": 191,
+      "output_tokens_details": {
+        "reasoning_tokens": 41
+      },
+      "total_tokens": 1451
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Climate change and the spread of green snow algae in Antarctica\",\n  \"climate_relevance\": \"The report explains how warming is increasing the spread of Antarctic snow algae, discusses contributing ecological factors, and considers possible effects on carbon uptake and heat absorption.\",\n  \"reason\": \"Climate change is the central frame of the article: it links rising temperatures and melting snow to the expansion of green algae and reports researchers’ projections of how that pattern may change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:42:03Z",
+  "duration_seconds": 2.026,
+  "error": null
+}

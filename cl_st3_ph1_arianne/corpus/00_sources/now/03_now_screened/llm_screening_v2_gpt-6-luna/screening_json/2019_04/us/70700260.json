@@ -1,0 +1,77 @@
+{
+  "article_id": "70700260",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/us/70700260.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/us/70700260.json"
+  },
+  "manifest_row": {
+    "article_id": "70700260",
+    "group": "2019_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/us/70700260.txt",
+    "now_field_2": "972",
+    "date_original": "19-04-19",
+    "date_iso": "2019-04-19",
+    "source_name": "Greentech Media",
+    "url": "https://www.greentechmedia.com/articles/read/how-invenergy-quietly-became-one-of-the-biggest-developers-of-grid-storage",
+    "title": "How Invenergy Quietly Became One of the Biggest Players in Grid ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Invenergy’s energy storage projects and the role of batteries in supporting solar and other energy businesses",
+    "climate_relevance": "Climate change appears only in the writer’s biography; the article itself discusses energy storage and renewables without meaningful climate framing.",
+    "reason": "The main article is about the company’s storage-market activity, projects, and business strategy. The brief references to the writer’s climate adaptation and climate change reporting experience are biographical, not part of the article’s discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "96b3d20603fb2ae8daac1b3203ad9fc6ccd517f973bc29ecf004cf04031a451f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "26dc42400a620beb56218a82daa853688afb570d9b2df13cef825f31b07f7972",
+    "raw_response_text_sha256": "845bbdcea7fac3c9398c0e8bc385897f5ea43233de8185bfb5982aafe6b5c4c6"
+  },
+  "api_metadata": {
+    "id": "resp_09a8f5ebb72cc7e6006b063e96574487d1bca8590fe088fb6c",
+    "model": "gpt-6-luna",
+    "created_at": 1795571350.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cache_write_tokens": 1831,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1831
+        }
+      },
+      "output_tokens": 417,
+      "output_tokens_details": {
+        "reasoning_tokens": 251
+      },
+      "total_tokens": 2251
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Invenergy’s energy storage projects and the role of batteries in supporting solar and other energy businesses\",\n  \"climate_relevance\": \"Climate change appears only in the writer’s biography; the article itself discusses energy storage and renewables without meaningful climate framing.\",\n  \"reason\": \"The main article is about the company’s storage-market activity, projects, and business strategy. The brief references to the writer’s climate adaptation and climate change reporting experience are biographical, not part of the article’s discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:49:13Z",
+  "duration_seconds": 3.46,
+  "error": null
+}

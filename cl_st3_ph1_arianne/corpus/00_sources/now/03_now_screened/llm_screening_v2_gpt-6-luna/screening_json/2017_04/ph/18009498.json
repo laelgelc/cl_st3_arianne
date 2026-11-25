@@ -1,0 +1,77 @@
+{
+  "article_id": "18009498",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/ph/18009498.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/ph/18009498.json"
+  },
+  "manifest_row": {
+    "article_id": "18009498",
+    "group": "2017_04",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/ph/18009498.txt",
+    "now_field_2": "351",
+    "date_original": "17-04-18",
+    "date_iso": "2017-04-18",
+    "source_name": "Manila Bulletin",
+    "url": "http://news.mb.com.ph/2017/04/18/we-will-build-a-paradise-in-this-town-lopez/",
+    "title": "We will build a paradise in this town - Lopez",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-PH.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Mining company environmental and community-development initiatives, including reforestation, bamboo planting, and ecotourism.",
+    "climate_relevance": "Climate change is explicitly mentioned as an effect the company's reforestation projects and other environmental efforts help mitigate, but it is not the article's main subject.",
+    "reason": "The article primarily reports on environmental programs and development plans associated with a mining company. A meaningful statement connects those efforts to mitigating climate change, making the text relevant as peripheral climate discourse rather than core coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b356b4a80291636f62a4e2198a774c7d33929d3e09e26bdd46daa06135da5001",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a0c9d7fea694832db0036fb7b4eec615fd8511020dfe11231ba1d45e16f57be5",
+    "raw_response_text_sha256": "4dc0abecee237fe26b3a955f7b4188d0315d6a52c0f4a7f486504d6f603cfe54"
+  },
+  "api_metadata": {
+    "id": "resp_0e23cb45631d5177006b0609a652d087d291601b2e55ded0e5",
+    "model": "gpt-6-luna",
+    "created_at": 1795557798.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 972,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1209
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Mining company environmental and community-development initiatives, including reforestation, bamboo planting, and ecotourism.\",\n  \"climate_relevance\": \"Climate change is explicitly mentioned as an effect the company's reforestation projects and other environmental efforts help mitigate, but it is not the article's main subject.\",\n  \"reason\": \"The article primarily reports on environmental programs and development plans associated with a mining company. A meaningful statement connects those efforts to mitigating climate change, making the text relevant as peripheral climate discourse rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:03:20Z",
+  "duration_seconds": 2.425,
+  "error": null
+}

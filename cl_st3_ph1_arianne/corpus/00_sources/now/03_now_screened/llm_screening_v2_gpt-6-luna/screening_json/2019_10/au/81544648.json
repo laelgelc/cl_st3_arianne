@@ -1,0 +1,77 @@
+{
+  "article_id": "81544648",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/au/81544648.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/au/81544648.json"
+  },
+  "manifest_row": {
+    "article_id": "81544648",
+    "group": "2019_10",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/au/81544648.txt",
+    "now_field_2": "344",
+    "date_original": "19-10-11",
+    "date_iso": "2019-10-11",
+    "source_name": "Observer",
+    "url": "https://observer.com/2019/10/kurt-cobains-mtv-unplugged-cardigan-will-go-up-for-auction/",
+    "title": "Kurt Cobain's MTV `Unplugged' Cardigan Will Go Up for Auction",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Auction of Kurt Cobain's MTV Unplugged cardigan and other music memorabilia",
+    "climate_relevance": "The climate-change discussion is extensive, but it appears in a separate, unrelated article about blockchain and Australia's carbon market, appended after the auction article.",
+    "reason": "The identifiable main article concerns music memorabilia and does not meaningfully discuss climate change. The substantial climate material belongs to an unrelated second article, so it is not relevant to classifying the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "95c24c580467460710d2a18966f8afd26f6ac4788b4a3d1538c696ad838819b0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "936455b0cf662d41beae888d4a11a7be691399a25e89eb3b00c88e04c71b4591",
+    "raw_response_text_sha256": "83190bf174b980b832b276c0fde13a9b38c25035475c92be85ef0236a1bc8d1c"
+  },
+  "api_metadata": {
+    "id": "resp_05f874edf7861fec006b06476c78a887d1baacc22de6385da6",
+    "model": "gpt-6-luna",
+    "created_at": 1795573612.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2101,
+      "input_tokens_details": {
+        "cache_write_tokens": 2098,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2098
+        }
+      },
+      "output_tokens": 422,
+      "output_tokens_details": {
+        "reasoning_tokens": 259
+      },
+      "total_tokens": 2523
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Auction of Kurt Cobain's MTV Unplugged cardigan and other music memorabilia\",\n  \"climate_relevance\": \"The climate-change discussion is extensive, but it appears in a separate, unrelated article about blockchain and Australia's carbon market, appended after the auction article.\",\n  \"reason\": \"The identifiable main article concerns music memorabilia and does not meaningfully discuss climate change. The substantial climate material belongs to an unrelated second article, so it is not relevant to classifying the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:26:55Z",
+  "duration_seconds": 3.592,
+  "error": null
+}

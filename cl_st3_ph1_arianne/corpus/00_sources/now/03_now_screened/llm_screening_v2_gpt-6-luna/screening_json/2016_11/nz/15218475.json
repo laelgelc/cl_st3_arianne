@@ -1,0 +1,77 @@
+{
+  "article_id": "15218475",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_11/nz/15218475.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_11/nz/15218475.json"
+  },
+  "manifest_row": {
+    "article_id": "15218475",
+    "group": "2016_11",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_11/nz/15218475.txt",
+    "now_field_2": "624",
+    "date_original": "16-11-04",
+    "date_iso": "2016-11-04",
+    "source_name": "Otago Daily Times",
+    "url": "https://www.odt.co.nz/news/dunedin/health/everyone-feeling-pressure",
+    "title": "Everyone 'is feeling the pressure'",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-11.txt\"]",
+    "metadata_article_files": "[\"text-16-11/text_16-11-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "New Zealand mental health services, funding, and suicide prevention",
+    "climate_relevance": "Climate change is mentioned only as an example of a local issue to focus on, contrasted with concern about coal-fired factories in China.",
+    "reason": "The article is about mental health services, and its brief climate reference is illustrative rather than developed enough to contribute meaningfully to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "af004c474d10a6df2be8be7a7bdea6e26290ec7526a18c81777d1a3d625403df",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "819c8cfbac8cc6e6ab99199318e4b2e63604f04eda88ef74d3dc4cabb5168765",
+    "raw_response_text_sha256": "4a9f2cfa46fdf3808baa4ce725ad14cd81d79d3d9f3ceb098cf9f94ff551a208"
+  },
+  "api_metadata": {
+    "id": "resp_059a4cfc7550b780006b060661bd1c87d2906402a320efe7ec",
+    "model": "gpt-6-luna",
+    "created_at": 1795556961.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1312,
+      "input_tokens_details": {
+        "cache_write_tokens": 1309,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1309
+        }
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 177
+      },
+      "total_tokens": 1629
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New Zealand mental health services, funding, and suicide prevention\",\n  \"climate_relevance\": \"Climate change is mentioned only as an example of a local issue to focus on, contrasted with concern about coal-fired factories in China.\",\n  \"reason\": \"The article is about mental health services, and its brief climate reference is illustrative rather than developed enough to contribute meaningfully to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:49:24Z",
+  "duration_seconds": 2.897,
+  "error": null
+}

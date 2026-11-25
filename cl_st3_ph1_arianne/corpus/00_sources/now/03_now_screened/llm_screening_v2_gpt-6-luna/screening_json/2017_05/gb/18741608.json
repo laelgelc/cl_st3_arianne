@@ -1,0 +1,77 @@
+{
+  "article_id": "18741608",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/gb/18741608.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/gb/18741608.json"
+  },
+  "manifest_row": {
+    "article_id": "18741608",
+    "group": "2017_05",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/gb/18741608.txt",
+    "now_field_2": "567",
+    "date_original": "17-05-31",
+    "date_iso": "2017-05-31",
+    "source_name": "BBC News",
+    "url": "http://www.bbc.co.uk/news/science-environment-40106281",
+    "title": "Paris climate deal: EU and China rebuff Trump",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-GB.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "EU-China cooperation on implementing the Paris climate agreement amid the prospect of US withdrawal",
+    "climate_relevance": "The text focuses throughout on climate policy, emissions cuts, clean-energy transition, carbon markets, and international responses to the Paris Agreement.",
+    "reason": "Climate change and the Paris Agreement are the central subject of the report, including their political significance and planned policy cooperation.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bf5d00c8518c1b1bd1b299be6029cc19f003e6b805f93efb274d6f8297e4eafd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "db01ed6fb2b10ed3e9b399cc5182e8407540cc16c2a541ce8a7845a27ba92097",
+    "raw_response_text_sha256": "7344368766d42067bff7d57f816e4099ef8de9b3b31a913d1128f066e0abe4dd"
+  },
+  "api_metadata": {
+    "id": "resp_0ebfbf920d7ac093006b060ab6550087d29461a2fa2bc6d416",
+    "model": "gpt-6-luna",
+    "created_at": 1795558070.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1211,
+      "input_tokens_details": {
+        "cache_write_tokens": 1208,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1208
+        }
+      },
+      "output_tokens": 186,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 1397
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"EU-China cooperation on implementing the Paris climate agreement amid the prospect of US withdrawal\",\n  \"climate_relevance\": \"The text focuses throughout on climate policy, emissions cuts, clean-energy transition, carbon markets, and international responses to the Paris Agreement.\",\n  \"reason\": \"Climate change and the Paris Agreement are the central subject of the report, including their political significance and planned policy cooperation.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:07:52Z",
+  "duration_seconds": 2.066,
+  "error": null
+}

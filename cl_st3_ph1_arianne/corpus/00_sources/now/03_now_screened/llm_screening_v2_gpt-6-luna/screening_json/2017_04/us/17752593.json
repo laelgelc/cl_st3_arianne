@@ -1,0 +1,77 @@
+{
+  "article_id": "17752593",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/us/17752593.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/us/17752593.json"
+  },
+  "manifest_row": {
+    "article_id": "17752593",
+    "group": "2017_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/us/17752593.txt",
+    "now_field_2": "3142",
+    "date_original": "17-04-03",
+    "date_iso": "2017-04-03",
+    "source_name": "FiveThirtyEight",
+    "url": "https://fivethirtyeight.com/features/the-trump-opposition-meter/",
+    "title": "Six Degrees of Trump Opposition",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Political opposition to Donald Trump and the groups challenging his administration",
+    "climate_relevance": "Climate change appears briefly in a list of Obama-era policies blocked by courts; it is not discussed in any depth.",
+    "reason": "The article is primarily about Trump-era political opposition. Its sole explicit climate reference is incidental, and the mention of EPA nominee Scott Pruitt does not develop climate-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3e93674e133cb0be562cdf92d7198ee7b4a0dabeb225b2f773d7ea09ac06a7f6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2ae911562ed92f26bbbe1fa0a14b41ede7561f008947b4bac5c7940b190a6641",
+    "raw_response_text_sha256": "0e02a6e2a4c0ca2eb08ac030c53aa8e41ecf24fda0d897c8922597af9a6cc322"
+  },
+  "api_metadata": {
+    "id": "resp_0b6e3a818fbce086006b06096014f887d2a05438e1f0c29a9d",
+    "model": "gpt-6-luna",
+    "created_at": 1795557728.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4541,
+      "input_tokens_details": {
+        "cache_write_tokens": 4538,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4538
+        }
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 4847
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Political opposition to Donald Trump and the groups challenging his administration\",\n  \"climate_relevance\": \"Climate change appears briefly in a list of Obama-era policies blocked by courts; it is not discussed in any depth.\",\n  \"reason\": \"The article is primarily about Trump-era political opposition. Its sole explicit climate reference is incidental, and the mention of EPA nominee Scott Pruitt does not develop climate-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:02:11Z",
+  "duration_seconds": 3.07,
+  "error": null
+}

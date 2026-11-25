@@ -1,0 +1,77 @@
+{
+  "article_id": "82571227",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82571227.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82571227.json"
+  },
+  "manifest_row": {
+    "article_id": "82571227",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82571227.txt",
+    "now_field_2": "244",
+    "date_original": "19-12-08",
+    "date_iso": "2019-12-08",
+    "source_name": "The Day",
+    "url": "https://www.theday.com/article/20191209/OP02/191209555",
+    "title": "Campaign spending excessive",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Campaign spending and the influence of money on elected officials",
+    "climate_relevance": "The letter argues that donations from coal and oil interests shape candidates’ votes on climate change issues.",
+    "reason": "Climate change is mentioned in a meaningful claim about fossil-fuel industry influence on policy, but the letter is primarily about campaign finance.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ee151c252740ed334aaf6d6b3f3ad083456b5f27598e5f51a793fe9747c8cfce",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "860a7c01aab9cc1822c8237b81fb309400c0ab27125e401e5c9ae20edff39719",
+    "raw_response_text_sha256": "9c559843f1a2deb262b37164ddd18c94ca6e51d19cf63da2c8c470ed82e73947"
+  },
+  "api_metadata": {
+    "id": "resp_0cdc09f993e68361006b064899783087d1aa33e96b2a5bf8f0",
+    "model": "gpt-6-luna",
+    "created_at": 1795573913.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 817,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1018
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Campaign spending and the influence of money on elected officials\",\n  \"climate_relevance\": \"The letter argues that donations from coal and oil interests shape candidates’ votes on climate change issues.\",\n  \"reason\": \"Climate change is mentioned in a meaningful claim about fossil-fuel industry influence on policy, but the letter is primarily about campaign finance.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:31:55Z",
+  "duration_seconds": 1.954,
+  "error": null
+}

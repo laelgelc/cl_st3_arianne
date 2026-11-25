@@ -1,0 +1,77 @@
+{
+  "article_id": "85381854",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/85381854.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/85381854.json"
+  },
+  "manifest_row": {
+    "article_id": "85381854",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/85381854.txt",
+    "now_field_2": "975",
+    "date_original": "20-07-10",
+    "date_iso": "2020-07-10",
+    "source_name": "Houston Chronicle",
+    "url": "https://www.chron.com/news/article/Polish-populists-face-virus-economic-challenges-15398911.php",
+    "title": "Polish populists face virus, economic challenges in election",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Poland's presidential election, populism, and the political effects of the coronavirus pandemic",
+    "climate_relevance": "Climate change appears only in a brief list of issues behind tensions between Poland's government and Brussels.",
+    "reason": "The article focuses on the election and pandemic; it provides no meaningful discussion of climate change beyond a passing mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3b20f7d4cb540ff7db510c3f8e4fc993a5709ee0eadf838a754cd23dade87e81",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c7b9d4129d112e400c2336e0f96309ece6b5bff9d4f7b8aea1422dc6b167be2c",
+    "raw_response_text_sha256": "6ba22357fd3a4e65e082798d8b14f8c2ac8af1c9ec85f4281e80b6be0cc02dae"
+  },
+  "api_metadata": {
+    "id": "resp_0c9c1c59fb30fd3e006b064bf53efc87d1972a9bb9af000efa",
+    "model": "gpt-6-luna",
+    "created_at": 1795574773.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1833,
+      "input_tokens_details": {
+        "cache_write_tokens": 1830,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1830
+        }
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 2051
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Poland's presidential election, populism, and the political effects of the coronavirus pandemic\",\n  \"climate_relevance\": \"Climate change appears only in a brief list of issues behind tensions between Poland's government and Brussels.\",\n  \"reason\": \"The article focuses on the election and pandemic; it provides no meaningful discussion of climate change beyond a passing mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:46:15Z",
+  "duration_seconds": 2.13,
+  "error": null
+}

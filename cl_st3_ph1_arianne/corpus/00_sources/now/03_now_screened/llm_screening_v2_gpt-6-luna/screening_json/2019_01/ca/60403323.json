@@ -1,0 +1,77 @@
+{
+  "article_id": "60403323",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/ca/60403323.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/ca/60403323.json"
+  },
+  "manifest_row": {
+    "article_id": "60403323",
+    "group": "2019_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/ca/60403323.txt",
+    "now_field_2": "328",
+    "date_original": "19-01-03",
+    "date_iso": "2019-01-03",
+    "source_name": "CBC.ca",
+    "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/blizzard-warnings-end-st-johns-gander-1.4964331",
+    "title": "Blizzard warnings come to an end in NL, but another storm is brewing",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Canadian federal and provincial politics, including election prospects and the Trudeau government's political challenges",
+    "climate_relevance": "The political commentary discusses the federal plan to reduce carbon emissions and the carbon price, including opposition from several premiers and debate over its effectiveness.",
+    "reason": "Climate policy is meaningfully discussed as one issue in a broader analysis of Canadian politics, but it is not the article's central subject. The supplied text also combines unrelated material, including a blizzard report and a North Korea news brief.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d5b23d707542d394636110c2dc4484cd2ceaf69ee02c12a270de7a61e994e803",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b3f916d7d0b09640461bad703b01cf7cfa6e4460b237e1c4e36ee32d5aabaa5a",
+    "raw_response_text_sha256": "4a8817deb4cf38f99de7a66dab2cc543b00d78e051584e089e98182669301fad"
+  },
+  "api_metadata": {
+    "id": "resp_0ad1488281a4a287006b06327fe3bc87d1996d2d7991e48764",
+    "model": "gpt-6-luna",
+    "created_at": 1795568256.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2496,
+      "input_tokens_details": {
+        "cache_write_tokens": 2493,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2493
+        }
+      },
+      "output_tokens": 311,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 2807
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Canadian federal and provincial politics, including election prospects and the Trudeau government's political challenges\",\n  \"climate_relevance\": \"The political commentary discusses the federal plan to reduce carbon emissions and the carbon price, including opposition from several premiers and debate over its effectiveness.\",\n  \"reason\": \"Climate policy is meaningfully discussed as one issue in a broader analysis of Canadian politics, but it is not the article's central subject. The supplied text also combines unrelated material, including a blizzard report and a North Korea news brief.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:57:38Z",
+  "duration_seconds": 2.821,
+  "error": null
+}

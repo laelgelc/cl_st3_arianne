@@ -1,0 +1,77 @@
+{
+  "article_id": "31632427",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/nz/31632427.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/nz/31632427.json"
+  },
+  "manifest_row": {
+    "article_id": "31632427",
+    "group": "2020_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/nz/31632427.txt",
+    "now_field_2": "1430",
+    "date_original": "20-02-09",
+    "date_iso": "2020-02-09",
+    "source_name": "newsroom.co.nz",
+    "url": "https://www.newsroom.co.nz/2020/02/10/1024284/at-home-in-our-vanishing-wetlands",
+    "title": "At home in our vanishing wetlands",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "New Zealand wetlands, biodiversity, and species conservation",
+    "climate_relevance": "Climate change appears only in a promotional statement describing Newsroom's coverage areas; the article itself discusses wetland loss and wildlife without connecting them to climate change.",
+    "reason": "The climate reference is incidental boilerplate, not meaningful climate discourse. The article focuses on wetlands and their species.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "73825eae48ddc9607316aa970591beb324cc1aca484ce549c0cefff46f88c6f2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e07eaea1518975bcff215f3e0304cc8d810e94aecb01d4e1f5ece4643219280b",
+    "raw_response_text_sha256": "9c2188f2813083f4b16effa50a2bbf592e0b23ad27d6da10685b35f54fb0986b"
+  },
+  "api_metadata": {
+    "id": "resp_06f4532c857e16e5006b061890217c87d2a2faacbe625d8573",
+    "model": "gpt-6-luna",
+    "created_at": 1795561616.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2392,
+      "input_tokens_details": {
+        "cache_write_tokens": 2389,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2389
+        }
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 2618
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"New Zealand wetlands, biodiversity, and species conservation\",\n  \"climate_relevance\": \"Climate change appears only in a promotional statement describing Newsroom's coverage areas; the article itself discusses wetland loss and wildlife without connecting them to climate change.\",\n  \"reason\": \"The climate reference is incidental boilerplate, not meaningful climate discourse. The article focuses on wetlands and their species.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:06:58Z",
+  "duration_seconds": 2.094,
+  "error": null
+}

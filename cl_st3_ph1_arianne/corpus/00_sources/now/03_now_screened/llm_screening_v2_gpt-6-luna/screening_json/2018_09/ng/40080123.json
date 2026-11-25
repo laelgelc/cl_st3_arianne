@@ -1,0 +1,77 @@
+{
+  "article_id": "40080123",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/ng/40080123.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/ng/40080123.json"
+  },
+  "manifest_row": {
+    "article_id": "40080123",
+    "group": "2018_09",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/ng/40080123.txt",
+    "now_field_2": "751",
+    "date_original": "18-09-26",
+    "date_iso": "2018-09-26",
+    "source_name": "NTA News",
+    "url": "http://www.nta.ng/news/finance/20180926-one-billion-people-in-hunger-afdb/",
+    "title": "One billion people in hunger � AfDB",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-ng.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "African agricultural development and efforts to reduce hunger",
+    "climate_relevance": "Climate change is identified as a source of urgent pressure on food security in Sub-Saharan Africa, with projected increases in hunger linked to its effects.",
+    "reason": "The article focuses primarily on agricultural investment, technology, and hunger reduction. Climate change appears as a meaningful factor in the discussion of food insecurity, but it is not a central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d9ea5b5b8825dadb93c68ea55ce4518f0de26505fc32c13a98477f9524beb83e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1b73019cb0eedbb96ef6f2e85bd574349b707a4c17a89ffc32a41cbd8518e512",
+    "raw_response_text_sha256": "f0a673ba41863d5b5e12ed43e7ffcd101b6916c20639cf26d9dfdffd3622d0b7"
+  },
+  "api_metadata": {
+    "id": "resp_08903f28539b21ee006b061e25442487d2b0ac94fa95deb9c3",
+    "model": "gpt-6-luna",
+    "created_at": 1795563045.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1471,
+      "input_tokens_details": {
+        "cache_write_tokens": 1468,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1468
+        }
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 1704
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"African agricultural development and efforts to reduce hunger\",\n  \"climate_relevance\": \"Climate change is identified as a source of urgent pressure on food security in Sub-Saharan Africa, with projected increases in hunger linked to its effects.\",\n  \"reason\": \"The article focuses primarily on agricultural investment, technology, and hunger reduction. Climate change appears as a meaningful factor in the discussion of food insecurity, but it is not a central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:30:47Z",
+  "duration_seconds": 2.156,
+  "error": null
+}

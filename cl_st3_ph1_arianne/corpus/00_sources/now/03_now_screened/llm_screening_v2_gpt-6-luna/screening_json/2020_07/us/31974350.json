@@ -1,0 +1,77 @@
+{
+  "article_id": "31974350",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/31974350.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/31974350.json"
+  },
+  "manifest_row": {
+    "article_id": "31974350",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/31974350.txt",
+    "now_field_2": "1934",
+    "date_original": "20-07-24",
+    "date_iso": "2020-07-24",
+    "source_name": "journalstar.com",
+    "url": "https://journalstar.com/eedition/page-a5/page_3fbe66a3-49e0-5246-a010-5832e3384dbd.html",
+    "title": "Page A5 | Lincoln Journal Star e-Edition, a digital ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "COVID-19 transmission risks and school reopening plans in Nebraska",
+    "climate_relevance": "The identifiable main article concerns pandemic-era school reopening and contains no meaningful climate discourse. A separate embedded snippet discusses a legislative proposal about extreme weather and climate change.",
+    "reason": "The main article is about COVID-19 and school reopening, so the climate discussion belongs to a distinct, unrelated snippet rather than the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c5d3e18d243edee08425e66e262f5b91bf78f572b1ec8bbba900f642d9b4d61e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e7098dafbcb4baadccce5fed82afab5209e5456d47babd34ab527aa8a04d0e60",
+    "raw_response_text_sha256": "065ca517a42441bd1164a0b3325ef08ffff87990e9e199d3d18f391262db9aaf"
+  },
+  "api_metadata": {
+    "id": "resp_099c2c799290835c006b061a79336087d29d064709acf51eda",
+    "model": "gpt-6-luna",
+    "created_at": 1795562105.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2981,
+      "input_tokens_details": {
+        "cache_write_tokens": 2978,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2978
+        }
+      },
+      "output_tokens": 517,
+      "output_tokens_details": {
+        "reasoning_tokens": 366
+      },
+      "total_tokens": 3498
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"COVID-19 transmission risks and school reopening plans in Nebraska\",\n  \"climate_relevance\": \"The identifiable main article concerns pandemic-era school reopening and contains no meaningful climate discourse. A separate embedded snippet discusses a legislative proposal about extreme weather and climate change.\",\n  \"reason\": \"The main article is about COVID-19 and school reopening, so the climate discussion belongs to a distinct, unrelated snippet rather than the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:15:08Z",
+  "duration_seconds": 3.718,
+  "error": null
+}

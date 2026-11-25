@@ -1,0 +1,77 @@
+{
+  "article_id": "41111703",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/sg/41111703.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/sg/41111703.json"
+  },
+  "manifest_row": {
+    "article_id": "41111703",
+    "group": "2019_06",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/sg/41111703.txt",
+    "now_field_2": "511",
+    "date_original": "19-06-27",
+    "date_iso": "2019-06-27",
+    "source_name": "The Straits Times",
+    "url": "https://www.straitstimes.com/asia/se-asia/eight-detection-teams-sent-to-johors-pasir-gudang-to-identify-source-of-contamination",
+    "title": "Eight detection teams sent to Johor's Pasir Gudang to identify source ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Toxic gas pollution and school closures in Pasir Gudang, Malaysia",
+    "climate_relevance": "Climate change appears only in the name of the ministerial portfolio; the article discusses a chemical air pollution incident, not climate change.",
+    "reason": "The identifiable main article concerns toxic gases, health effects, and enforcement against chemical factories. A separate article about Singapore's Internal Security Act follows, but neither contains meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "49b65ea6afac4f73e09c6a240f5af6b35dd0d7d48e09152fa334938bc3e15de1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d593a4b39c890b0d2433298e75fc37a21729d4618596c8088af693269bda3e45",
+    "raw_response_text_sha256": "d8ce7e2fab6ee1c0ea42945e32e0b8f083ba499d4cda0d310732f9ddfbfc311a"
+  },
+  "api_metadata": {
+    "id": "resp_0b58e49caa2a0e4b006b0620f058d487d2b85eda7ac0cb990c",
+    "model": "gpt-6-luna",
+    "created_at": 1795563760.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2234,
+      "input_tokens_details": {
+        "cache_write_tokens": 2231,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2231
+        }
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 2476
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Toxic gas pollution and school closures in Pasir Gudang, Malaysia\",\n  \"climate_relevance\": \"Climate change appears only in the name of the ministerial portfolio; the article discusses a chemical air pollution incident, not climate change.\",\n  \"reason\": \"The identifiable main article concerns toxic gases, health effects, and enforcement against chemical factories. A separate article about Singapore's Internal Security Act follows, but neither contains meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:42:42Z",
+  "duration_seconds": 2.005,
+  "error": null
+}

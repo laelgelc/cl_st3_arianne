@@ -1,0 +1,77 @@
+{
+  "article_id": "41493020",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/sg/41493020.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/sg/41493020.json"
+  },
+  "manifest_row": {
+    "article_id": "41493020",
+    "group": "2019_11",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/sg/41493020.txt",
+    "now_field_2": "1421",
+    "date_original": "19-11-17",
+    "date_iso": "2019-11-17",
+    "source_name": "asianews.network",
+    "url": "https://asianews.network/2018/04/03/profile-leila-de-lima/",
+    "title": "Profile: Leila de Lima - ANN",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Senator Leila de Lima's human-rights work and legal case in the Philippines",
+    "climate_relevance": "The identifiable main article contains no meaningful climate discourse. A separate snippet discusses Japan's environment minister and climate policy, but it is unrelated to the main article.",
+    "reason": "The main article is about Philippine politics and Senator de Lima. The climate-related passage is an unrelated article snippet, not part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "34f8dc8f2206fdfeeacdf01defb690ad34311f07250cfbfa7fa65bb0988c2a77",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7d55b2d569a6b1231454cddce2d8522890133c50bdd52d01794ed97d5c93a958",
+    "raw_response_text_sha256": "dbfd15523409e7f2b500a3463c5b308f68b66275ed3e1201f58b0b18ad1e56ec"
+  },
+  "api_metadata": {
+    "id": "resp_0db4fd7930124018006b0621fb173887d2885c373cdf48efce",
+    "model": "gpt-6-luna",
+    "created_at": 1795564027.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2307,
+      "input_tokens_details": {
+        "cache_write_tokens": 2304,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2304
+        }
+      },
+      "output_tokens": 384,
+      "output_tokens_details": {
+        "reasoning_tokens": 227
+      },
+      "total_tokens": 2691
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Senator Leila de Lima's human-rights work and legal case in the Philippines\",\n  \"climate_relevance\": \"The identifiable main article contains no meaningful climate discourse. A separate snippet discusses Japan's environment minister and climate policy, but it is unrelated to the main article.\",\n  \"reason\": \"The main article is about Philippine politics and Senator de Lima. The climate-related passage is an unrelated article snippet, not part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:47:10Z",
+  "duration_seconds": 3.15,
+  "error": null
+}

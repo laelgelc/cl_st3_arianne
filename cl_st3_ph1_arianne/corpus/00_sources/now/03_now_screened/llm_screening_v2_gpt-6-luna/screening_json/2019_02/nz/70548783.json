@@ -1,0 +1,77 @@
+{
+  "article_id": "70548783",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70548783.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70548783.json"
+  },
+  "manifest_row": {
+    "article_id": "70548783",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70548783.txt",
+    "now_field_2": "767",
+    "date_original": "19-02-25",
+    "date_iso": "2019-02-25",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/WO1902/S00139/un-human-rights-chief-calls-for-courage-and-vision.htm",
+    "title": "UN Human Rights Chief calls for courage and vision",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "A UN Human Rights Chief's speech about human rights-based policy and leadership",
+    "climate_relevance": "Climate change is mentioned once as an example of an issue on which some states are slow to act, without further discussion.",
+    "reason": "The main article focuses on human rights and includes only a passing reference to climate change, which does not provide meaningful climate discourse for analysis. The text also contains unrelated snippets after the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d401e71f2f713a6b910cc8c8244235d121f5c5a7d15b5d37875dd08a5804cb09",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3b6c8d3d45529df8c575e3ec6a2a964dc2af7d6713572de8adb32202e2bab0cd",
+    "raw_response_text_sha256": "baafcb83c60724e219d5e1c1498d8af187c89e31ccee6843167812eddc3debcf"
+  },
+  "api_metadata": {
+    "id": "resp_0171ff48a7e6ecd5006b063d7b093887d1b8c815cb8bd1bc6f",
+    "model": "gpt-6-luna",
+    "created_at": 1795571067.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1492,
+      "input_tokens_details": {
+        "cache_write_tokens": 1489,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1489
+        }
+      },
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 1793
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A UN Human Rights Chief's speech about human rights-based policy and leadership\",\n  \"climate_relevance\": \"Climate change is mentioned once as an example of an issue on which some states are slow to act, without further discussion.\",\n  \"reason\": \"The main article focuses on human rights and includes only a passing reference to climate change, which does not provide meaningful climate discourse for analysis. The text also contains unrelated snippets after the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:44:29Z",
+  "duration_seconds": 2.534,
+  "error": null
+}

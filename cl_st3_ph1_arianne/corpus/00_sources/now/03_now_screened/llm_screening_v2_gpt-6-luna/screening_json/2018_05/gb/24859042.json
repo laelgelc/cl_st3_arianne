@@ -1,0 +1,77 @@
+{
+  "article_id": "24859042",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/gb/24859042.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/gb/24859042.json"
+  },
+  "manifest_row": {
+    "article_id": "24859042",
+    "group": "2018_05",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/gb/24859042.txt",
+    "now_field_2": "854",
+    "date_original": "18-05-27",
+    "date_iso": "2018-05-27",
+    "source_name": "ZAWYA",
+    "url": "https://www.zawya.com/mena/en/story/The_Sustainable_City_partners_with_Apiculture_and_Nature_for_the_Betterment_of_Health_and_Beauty-ZAWYA20180527071359/",
+    "title": "The Sustainable City partners with 'Apiculture and Nature for the ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A beehive and honey programme in Dubai’s Sustainable City",
+    "climate_relevance": "The text discusses beekeeping, pollination, biodiversity, food security, and sustainability, but does not meaningfully address climate change or its implications. Climate change appears only in the title of a government minister.",
+    "reason": "The article’s environmental themes are not connected to climate change discourse, so the minister’s title alone is insufficient for inclusion.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "168c8af908c99ed000d8ce011d533f0be62e903003ad208f6402d84a51a7a328",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b0b3d7a5b99d069cda93e1847728d1f9b6d572ac2ca5515efa2017bbcaedc36c",
+    "raw_response_text_sha256": "35348deba776e448ff6344cf387333000418a565b24d0b986b24c76a6898cac9"
+  },
+  "api_metadata": {
+    "id": "resp_0c6a0f02e05f9dc8006b0612db4c7087d2b11f28dbed971364",
+    "model": "gpt-6-luna",
+    "created_at": 1795560155.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1598,
+      "input_tokens_details": {
+        "cache_write_tokens": 1595,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1595
+        }
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 1887
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A beehive and honey programme in Dubai’s Sustainable City\",\n  \"climate_relevance\": \"The text discusses beekeeping, pollination, biodiversity, food security, and sustainability, but does not meaningfully address climate change or its implications. Climate change appears only in the title of a government minister.\",\n  \"reason\": \"The article’s environmental themes are not connected to climate change discourse, so the minister’s title alone is insufficient for inclusion.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:42:38Z",
+  "duration_seconds": 3.207,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31549551",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/31549551.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/31549551.json"
+  },
+  "manifest_row": {
+    "article_id": "31549551",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/31549551.txt",
+    "now_field_2": "1799",
+    "date_original": "20-01-03",
+    "date_iso": "2020-01-03",
+    "source_name": "stltoday.com",
+    "url": "https://www.stltoday.com/news/local/govt-and-politics/with-emphasis-on-rural-protection-parson-appointed-flood-group-issues/article_663eefd3-b0e7-5dc2-bad9-64c83347a519.html",
+    "title": "With emphasis on rural protection, Parson-appointed flood ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us5.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.82,
+    "climate_role": "background",
+    "main_topic": "Missouri flood policy and responses to the 2019 flooding",
+    "climate_relevance": "The article explicitly notes that climate change was not mentioned in the flood policy report, but does not otherwise discuss climate change or connect it to the flooding.",
+    "reason": "The main article is about flood-control recommendations and criticism of levees, not climate change. Its explicit observation about climate change's absence gives the omission some relevance to broader climate-policy discourse, but the available text does not support treating it as core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "697dad14925b171643934b08de4c72eaf307bf8fa3d7b40e112d2374b792f8b8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "88db5985c9fb06767314ec1a708d8e9f06c115b43987c842118ec7d4df749d83",
+    "raw_response_text_sha256": "14ca6f2a7e5a6b197cb4d2dc6070ba47149a702d565453d188b980e26eea6760"
+  },
+  "api_metadata": {
+    "id": "resp_0f7608d1a11789a5006b0617fa93dc87d2b55afaccf828a37f",
+    "model": "gpt-6-luna",
+    "created_at": 1795561466.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3293,
+      "input_tokens_details": {
+        "cache_write_tokens": 3290,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3290
+        }
+      },
+      "output_tokens": 571,
+      "output_tokens_details": {
+        "reasoning_tokens": 402
+      },
+      "total_tokens": 3864
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.82,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Missouri flood policy and responses to the 2019 flooding\",\n  \"climate_relevance\": \"The article explicitly notes that climate change was not mentioned in the flood policy report, but does not otherwise discuss climate change or connect it to the flooding.\",\n  \"reason\": \"The main article is about flood-control recommendations and criticism of levees, not climate change. Its explicit observation about climate change's absence gives the omission some relevance to broader climate-policy discourse, but the available text does not support treating it as core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:04:30Z",
+  "duration_seconds": 4.19,
+  "error": null
+}

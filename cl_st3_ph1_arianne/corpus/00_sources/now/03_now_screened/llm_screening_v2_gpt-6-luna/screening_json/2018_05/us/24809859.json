@@ -1,0 +1,77 @@
+{
+  "article_id": "24809859",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/us/24809859.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/us/24809859.json"
+  },
+  "manifest_row": {
+    "article_id": "24809859",
+    "group": "2018_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/us/24809859.txt",
+    "now_field_2": "1113",
+    "date_original": "18-05-24",
+    "date_iso": "2018-05-24",
+    "source_name": "The Guardian",
+    "url": "https://www.theguardian.com/world/2018/may/24/canada-polar-bears-labrador-rigolet-seal-hunt",
+    "title": "'They're everywhere': has the decline of the seal hunt saved the polar ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "Polar bear abundance and Inuit hunting and conservation practices in Labrador",
+    "climate_relevance": "The article discusses vanishing sea ice and milder, less predictable winters as climate pressures on polar bears, while reporting that the Labrador population is thriving and adapting.",
+    "reason": "The main focus is the polar bear population, Inuit hunting, and community-led conservation. Climate change is meaningfully discussed as context for the bears’ changing habitat and adaptation, but it is not the article’s central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9d8cff3325bb4556c78181fe0b980dba17eb12236584f8e0487a8588ade68d77",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4668c31c121f97b09fcf342e8589f8b575152f42ab0eafb1550e3ecc81f36ea8",
+    "raw_response_text_sha256": "81f86fe9193482f9284e5403154df7535052f4a3a958904dff9121615bb40c85"
+  },
+  "api_metadata": {
+    "id": "resp_041795faf8725255006b0612c822ac87d2998864cea27f701b",
+    "model": "gpt-6-luna",
+    "created_at": 1795560136.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1948,
+      "input_tokens_details": {
+        "cache_write_tokens": 1945,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1945
+        }
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 2232
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Polar bear abundance and Inuit hunting and conservation practices in Labrador\",\n  \"climate_relevance\": \"The article discusses vanishing sea ice and milder, less predictable winters as climate pressures on polar bears, while reporting that the Labrador population is thriving and adapting.\",\n  \"reason\": \"The main focus is the polar bear population, Inuit hunting, and community-led conservation. Climate change is meaningfully discussed as context for the bears’ changing habitat and adaptation, but it is not the article’s central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:42:18Z",
+  "duration_seconds": 2.686,
+  "error": null
+}

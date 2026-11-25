@@ -1,0 +1,77 @@
+{
+  "article_id": "60120695",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/pk/60120695.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/pk/60120695.json"
+  },
+  "manifest_row": {
+    "article_id": "60120695",
+    "group": "2018_10",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/pk/60120695.txt",
+    "now_field_2": "204",
+    "date_original": "18-10-05",
+    "date_iso": "2018-10-05",
+    "source_name": "The Nation",
+    "url": "https://nation.com.pk/05-Oct-2018/govt-committed-to-make-green-pollution-free-country-amin-aslam",
+    "title": "Govt committed to make green, pollution free country: Amin Aslam",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.83,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Pakistan’s ten-billion-tree plantation project and its post-planting care",
+    "climate_relevance": "Climate change appears only in the official’s job title; the text discusses tree planting and pollution without connecting them meaningfully to climate change.",
+    "reason": "The article focuses on a tree-planting initiative and its implementation. It does not discuss climate change, its impacts, or climate policy beyond identifying the speaker as an adviser on climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f52e70696706b4ef0a1696ac5f9f239958014903f222ae033adb6d2c6d6c3121",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0dd3b1eb4773c7b73dfb9abc4290dc7aa521403f545d55fe08af897d826630c3",
+    "raw_response_text_sha256": "98ff99e047666b298a020fb209759deb2f5edfb0595db754da0d3304d6069ea5"
+  },
+  "api_metadata": {
+    "id": "resp_0cf9b6a43cf58839006b063116238487d1b53f4f3deb0360ce",
+    "model": "gpt-6-luna",
+    "created_at": 1795567894.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 717,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 503,
+      "output_tokens_details": {
+        "reasoning_tokens": 344
+      },
+      "total_tokens": 1220
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.83,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Pakistan’s ten-billion-tree plantation project and its post-planting care\",\n  \"climate_relevance\": \"Climate change appears only in the official’s job title; the text discusses tree planting and pollution without connecting them meaningfully to climate change.\",\n  \"reason\": \"The article focuses on a tree-planting initiative and its implementation. It does not discuss climate change, its impacts, or climate policy beyond identifying the speaker as an adviser on climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:51:39Z",
+  "duration_seconds": 5.119,
+  "error": null
+}

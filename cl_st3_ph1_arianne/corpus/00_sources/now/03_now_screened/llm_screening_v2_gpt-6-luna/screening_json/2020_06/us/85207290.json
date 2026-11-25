@@ -1,0 +1,77 @@
+{
+  "article_id": "85207290",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/us/85207290.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/us/85207290.json"
+  },
+  "manifest_row": {
+    "article_id": "85207290",
+    "group": "2020_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/us/85207290.txt",
+    "now_field_2": "590",
+    "date_original": "20-06-18",
+    "date_iso": "2020-06-18",
+    "source_name": "Washington Examiner",
+    "url": "https://www.washingtonexaminer.com/news/man-charged-for-allegedly-posting-racist-youtube-video-threatening-to-kill-black-lives-matter-supporters",
+    "title": "Man charged for allegedly posting racist YouTube video threatening to kill Black Lives Matter supporters",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-us8.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Federal charges against a Texas man accused of threatening Black Lives Matter protesters",
+    "climate_relevance": "A separate related-content snippet discusses Biden using financial safeguards to restrict fossil fuel industry access to capital as part of the fight against climate change; it is not part of the identifiable main article.",
+    "reason": "The main article concerns alleged threats against protesters and contains no climate discourse. The climate-related sentence appears in an unrelated additional snippet, so it does not make the main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fe0eff69c820a52b19a9bbf8af14455d931b5dea27982d2653c6e72d769eb61e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e3c1e42d59054870f4b7d2f36eb103886ce4484d0058a21085e0b652fcd95204",
+    "raw_response_text_sha256": "68e0b8d2fdc33c4fb9c0a987ae36b74f9098cdcddb198b815ca639579973b3c5"
+  },
+  "api_metadata": {
+    "id": "resp_0930d14fbfb6bde6006b064b7a886c87d1837ae3bab14c6ec4",
+    "model": "gpt-6-luna",
+    "created_at": 1795574650.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1226,
+      "input_tokens_details": {
+        "cache_write_tokens": 1223,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1223
+        }
+      },
+      "output_tokens": 477,
+      "output_tokens_details": {
+        "reasoning_tokens": 308
+      },
+      "total_tokens": 1703
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Federal charges against a Texas man accused of threatening Black Lives Matter protesters\",\n  \"climate_relevance\": \"A separate related-content snippet discusses Biden using financial safeguards to restrict fossil fuel industry access to capital as part of the fight against climate change; it is not part of the identifiable main article.\",\n  \"reason\": \"The main article concerns alleged threats against protesters and contains no climate discourse. The climate-related sentence appears in an unrelated additional snippet, so it does not make the main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:44:14Z",
+  "duration_seconds": 3.812,
+  "error": null
+}

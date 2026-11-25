@@ -1,0 +1,77 @@
+{
+  "article_id": "9603352",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_06/pk/9603352.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_06/pk/9603352.json"
+  },
+  "manifest_row": {
+    "article_id": "9603352",
+    "group": "2016_06",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_06/pk/9603352.txt",
+    "now_field_2": "615",
+    "date_original": "16-06-28",
+    "date_iso": "2016-06-28",
+    "source_name": "Daily Times",
+    "url": "http://dailytimes.com.pk/pakistan/28-Jun-16/regulations-on-mercury-use-in-dental-amalgam-under-consideration",
+    "title": "Regulations on mercury use in dental amalgam under consideration",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-06-uda/16-06-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Regulating mercury use in dental amalgam and implementing the Minamata Convention in Pakistan",
+    "climate_relevance": "The text discusses mercury pollution, health risks, and environmental regulation, but does not meaningfully discuss climate change or its implications. The Ministry of Climate Change is mentioned only as the institution handling the issue.",
+    "reason": "The article is about mercury management and dental amalgam, not climate change discourse; the ministry name alone does not make it relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a62ff2242b0ea4002ce0c8b49b9e0a90ffdc88f65b52ca54f3ee7f4a904522f2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5510d04d03425b432767f6e8095de4cb12b20a37289476aa266c32e605e2a124",
+    "raw_response_text_sha256": "c3374bc4e62ccd8d401b4b42e5c6628be5960f49acaa85acedab566a281e2dec"
+  },
+  "api_metadata": {
+    "id": "resp_03be54a7cb26a071006b06513cc19487d197cd8ed3694a8e2c",
+    "model": "gpt-6-luna",
+    "created_at": 1795576124.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1244,
+      "input_tokens_details": {
+        "cache_write_tokens": 1241,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1241
+        }
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 1510
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Regulating mercury use in dental amalgam and implementing the Minamata Convention in Pakistan\",\n  \"climate_relevance\": \"The text discusses mercury pollution, health risks, and environmental regulation, but does not meaningfully discuss climate change or its implications. The Ministry of Climate Change is mentioned only as the institution handling the issue.\",\n  \"reason\": \"The article is about mercury management and dental amalgam, not climate change discourse; the ministry name alone does not make it relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:08:47Z",
+  "duration_seconds": 2.476,
+  "error": null
+}

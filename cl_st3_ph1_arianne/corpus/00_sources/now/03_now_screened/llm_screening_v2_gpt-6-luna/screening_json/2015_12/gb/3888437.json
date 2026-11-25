@@ -1,0 +1,77 @@
+{
+  "article_id": "3888437",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/gb/3888437.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/gb/3888437.json"
+  },
+  "manifest_row": {
+    "article_id": "3888437",
+    "group": "2015_12",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/gb/3888437.txt",
+    "now_field_2": "575",
+    "date_original": "15-12-11",
+    "date_iso": "2015-12-11",
+    "source_name": "The Independent",
+    "url": "http://www.independent.co.uk/money/your-money/back-from-the-us-of-a-where-the-price-of-gas-really-made-my-day-a6769391.html",
+    "title": "Back from the US of A, where the price of gas really made my day",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "A travel column about a US holiday, fuel prices, and roaming charges",
+    "climate_relevance": "Climate change is mentioned only in an image caption describing notices on fuel pumps; the article does not discuss climate issues.",
+    "reason": "The main article concerns travel and expenses. The isolated caption’s reference to helping climate change is too brief to contribute meaningfully to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8e2cd09f716cda17c72a704da5e1db4c66689c003cfe3728d05a92aade869bf2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "11cb7d08023a15d95e287a4b25ce73972d3a0562660d5e1d5cd87056419c6f5c",
+    "raw_response_text_sha256": "87869480241bf918042eab31606d208139f45d1c932b84419909b71b617d243d"
+  },
+  "api_metadata": {
+    "id": "resp_03e58fc7d6345e16006b061db0b88487d2850ecb7a086225f6",
+    "model": "gpt-6-luna",
+    "created_at": 1795562928.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1197,
+      "input_tokens_details": {
+        "cache_write_tokens": 1194,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1194
+        }
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 196
+      },
+      "total_tokens": 1534
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A travel column about a US holiday, fuel prices, and roaming charges\",\n  \"climate_relevance\": \"Climate change is mentioned only in an image caption describing notices on fuel pumps; the article does not discuss climate issues.\",\n  \"reason\": \"The main article concerns travel and expenses. The isolated caption’s reference to helping climate change is too brief to contribute meaningfully to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:28:51Z",
+  "duration_seconds": 2.652,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70538431",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70538431.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70538431.json"
+  },
+  "manifest_row": {
+    "article_id": "70538431",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70538431.txt",
+    "now_field_2": "540",
+    "date_original": "19-02-21",
+    "date_iso": "2019-02-21",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00564/giesen-family-celebrates-sons-record-setting-journey.htm",
+    "title": "Giesen Family Celebrates Son's Record-Setting Journey",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "A New Zealand rower’s Atlantic crossing and fundraising for mental health charities",
+    "climate_relevance": "A separate snippet says Greenpeace criticised a National Party environment policy for failing to address climate change and agriculture.",
+    "reason": "The identifiable main article is about a rowing achievement and mental-health fundraising. A separate, brief but meaningful climate-policy reference makes the supplied text peripheral rather than wholly unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1404a8dfe4c19a72747f87d49b0b29e0b99f34c61011e73afdfeef553f537acb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2366c693132387fe0b2b3f71075b4ba94f5ce58082b22be12f9a01fb7641443d",
+    "raw_response_text_sha256": "d03974442c76d1117c64960fb8a07699c4e0a3aef0f1d38e07a4152735947b52"
+  },
+  "api_metadata": {
+    "id": "resp_0b549ecf55aa585a006b063d6678a887d1b658404a35991a46",
+    "model": "gpt-6-luna",
+    "created_at": 1795571046.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1218,
+      "input_tokens_details": {
+        "cache_write_tokens": 1215,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1215
+        }
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 149
+      },
+      "total_tokens": 1510
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A New Zealand rower’s Atlantic crossing and fundraising for mental health charities\",\n  \"climate_relevance\": \"A separate snippet says Greenpeace criticised a National Party environment policy for failing to address climate change and agriculture.\",\n  \"reason\": \"The identifiable main article is about a rowing achievement and mental-health fundraising. A separate, brief but meaningful climate-policy reference makes the supplied text peripheral rather than wholly unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:44:09Z",
+  "duration_seconds": 3.06,
+  "error": null
+}

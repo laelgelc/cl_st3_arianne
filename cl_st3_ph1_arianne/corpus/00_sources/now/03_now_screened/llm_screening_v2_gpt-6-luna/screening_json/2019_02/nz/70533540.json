@@ -1,0 +1,77 @@
+{
+  "article_id": "70533540",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70533540.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70533540.json"
+  },
+  "manifest_row": {
+    "article_id": "70533540",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70533540.txt",
+    "now_field_2": "367",
+    "date_original": "19-02-20",
+    "date_iso": "2019-02-20",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PO1902/S00185/job-advertisements-rise-again-in-january-2019.htm",
+    "title": "Job advertisements rise again in January 2019",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "January 2019 online job advertisement trends",
+    "climate_relevance": "Climate change appears only in a separate Greenpeace policy snippet, not in the identifiable main item about job advertisements.",
+    "reason": "The main article concerns employment data. The brief climate-policy reference is embedded in an unrelated snippet and does not make the article meaningful climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e6446784a505e8347b7d04d102db4fc2d3d44daa8c0cdfeb9d7e886a47501dc2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f299959401a7a3353af42e21a3773c2dc06e820e7ed350cf891a0943b82b3e36",
+    "raw_response_text_sha256": "e01e8a65fde9a65c1b8bf417783e9cebb93bf245f15f8f38c59b2d00eddb8cd8"
+  },
+  "api_metadata": {
+    "id": "resp_07b6ac213f933eaa006b063d56c7bc87d190f38762debe2065",
+    "model": "gpt-6-luna",
+    "created_at": 1795571030.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 968,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 388,
+      "output_tokens_details": {
+        "reasoning_tokens": 251
+      },
+      "total_tokens": 1356
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"January 2019 online job advertisement trends\",\n  \"climate_relevance\": \"Climate change appears only in a separate Greenpeace policy snippet, not in the identifiable main item about job advertisements.\",\n  \"reason\": \"The main article concerns employment data. The brief climate-policy reference is embedded in an unrelated snippet and does not make the article meaningful climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:54Z",
+  "duration_seconds": 3.697,
+  "error": null
+}

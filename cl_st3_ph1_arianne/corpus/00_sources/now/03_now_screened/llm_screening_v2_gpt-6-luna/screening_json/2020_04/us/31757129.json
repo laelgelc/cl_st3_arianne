@@ -1,0 +1,77 @@
+{
+  "article_id": "31757129",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_04/us/31757129.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_04/us/31757129.json"
+  },
+  "manifest_row": {
+    "article_id": "31757129",
+    "group": "2020_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_04/us/31757129.txt",
+    "now_field_2": "915",
+    "date_original": "20-04-02",
+    "date_iso": "2020-04-02",
+    "source_name": "euronews.com",
+    "url": "https://www.euronews.com/2020/04/01/coronavirus-pandemic-is-biggest-crisis-for-world-since-ww2-says-un",
+    "title": "More than 900,000 coronavirus cases confirmed worldwide ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-04.txt\"]",
+    "metadata_article_files": "[\"text-20-04/20-04-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "The COVID-19 pandemic and its effects across Europe and the United States",
+    "climate_relevance": "The text briefly notes that the COP26 climate conference was postponed because of COVID-19, without discussing climate change or the conference's substance.",
+    "reason": "Climate change appears only in a passing reference to the postponement of COP26; the article's meaningful discourse is about the coronavirus pandemic.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9371f67b7f2fd4bd7bd2919904a3fefaf14bbe670a9c44a4942de9c67361d692",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "46bdf41b997ab3c99d14987d637e93fe4fb67754984fe404246ce82b8aa76192",
+    "raw_response_text_sha256": "75a59191993627fbdbb989add992595f98461ca4e8e09101a6c22b6e70b7c9a3"
+  },
+  "api_metadata": {
+    "id": "resp_0c947f84964999d0006b0619440e5887d2bf0c75363158648e",
+    "model": "gpt-6-luna",
+    "created_at": 1795561796.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1710,
+      "input_tokens_details": {
+        "cache_write_tokens": 1707,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1707
+        }
+      },
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "reasoning_tokens": 157
+      },
+      "total_tokens": 2011
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The COVID-19 pandemic and its effects across Europe and the United States\",\n  \"climate_relevance\": \"The text briefly notes that the COP26 climate conference was postponed because of COVID-19, without discussing climate change or the conference's substance.\",\n  \"reason\": \"Climate change appears only in a passing reference to the postponement of COP26; the article's meaningful discourse is about the coronavirus pandemic.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:09:58Z",
+  "duration_seconds": 2.255,
+  "error": null
+}

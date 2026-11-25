@@ -1,0 +1,77 @@
+{
+  "article_id": "61964297",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/ie/61964297.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/ie/61964297.json"
+  },
+  "manifest_row": {
+    "article_id": "61964297",
+    "group": "2020_06",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/ie/61964297.txt",
+    "now_field_2": "448",
+    "date_original": "20-06-30",
+    "date_iso": "2020-06-30",
+    "source_name": "mining-journal.com",
+    "url": "https://www.mining-journal.com/bulks/news/1389984/teck-signs-on-for-new-ususd1b-revolver",
+    "title": "Teck signs on for new US$1B revolver - Mining Journal",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Teck's financing and opposition to its Castle Mountain metallurgical coal mine expansion",
+    "climate_relevance": "Climate change appears only in the title of the federal minister; the available text discusses mine financing, environmental assessment, and wildlife impacts without meaningful climate discourse.",
+    "reason": "The article's environmental concerns focus on local ecological impacts and regulatory review. It does not discuss climate change, emissions, or climate policy beyond the minister's portfolio title.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cb5b3b205ee6f55fd26fa61499e3b58e2b72abe134debfc1fe83bb1229dc347e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "79f7b49f46936612178819be10329e7f020ed3f407f1864901f575e1bdcb6ac3",
+    "raw_response_text_sha256": "b615152c4d45b0cb50ce8bfaa6e2770774f545253a50a60d1d03fcc838d5d8f6"
+  },
+  "api_metadata": {
+    "id": "resp_0bcba2081587ac9b006b0638f221c487d1ab397852064c82ab",
+    "model": "gpt-6-luna",
+    "created_at": 1795569906.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1138,
+      "input_tokens_details": {
+        "cache_write_tokens": 1135,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1135
+        }
+      },
+      "output_tokens": 297,
+      "output_tokens_details": {
+        "reasoning_tokens": 139
+      },
+      "total_tokens": 1435
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Teck's financing and opposition to its Castle Mountain metallurgical coal mine expansion\",\n  \"climate_relevance\": \"Climate change appears only in the title of the federal minister; the available text discusses mine financing, environmental assessment, and wildlife impacts without meaningful climate discourse.\",\n  \"reason\": \"The article's environmental concerns focus on local ecological impacts and regulatory review. It does not discuss climate change, emissions, or climate policy beyond the minister's portfolio title.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:25:09Z",
+  "duration_seconds": 3.461,
+  "error": null
+}

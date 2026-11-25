@@ -1,0 +1,77 @@
+{
+  "article_id": "82243349",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82243349.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82243349.json"
+  },
+  "manifest_row": {
+    "article_id": "82243349",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82243349.txt",
+    "now_field_2": "225",
+    "date_original": "19-11-20",
+    "date_iso": "2019-11-20",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191120140621-e7pep/",
+    "title": "Swiss drop multi-year Kazakh money laundering investigation",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Swiss prosecutors dropping a money-laundering investigation involving a former Kazakh mayor",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news organization's coverage.",
+    "reason": "The article concerns a legal case in Switzerland and Kazakhstan; its only climate reference is unrelated editorial boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "17f57cec889709d79a562e9ec4a7e6c318e9adcc5f3911ac40411d4aa8e503e8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "98a3200f52df3e0a54161d757877341e55f878e155f3318b381634e6d8be3784",
+    "raw_response_text_sha256": "511af9ccfc0a3fa9ed3e1e2b3206a76aeb137d7c3b1463e59d5ddb339f96cc07"
+  },
+  "api_metadata": {
+    "id": "resp_0fa47a6ebbf32181006b06483e4c9487d19e81a7e897f0e691",
+    "model": "gpt-6-luna",
+    "created_at": 1795573822.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 801,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 1052
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Swiss prosecutors dropping a money-laundering investigation involving a former Kazakh mayor\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news organization's coverage.\",\n  \"reason\": \"The article concerns a legal case in Switzerland and Kazakhstan; its only climate reference is unrelated editorial boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:30:24Z",
+  "duration_seconds": 2.331,
+  "error": null
+}

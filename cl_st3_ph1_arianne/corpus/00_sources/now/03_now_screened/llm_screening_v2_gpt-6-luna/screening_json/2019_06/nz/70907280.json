@@ -1,0 +1,77 @@
+{
+  "article_id": "70907280",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/nz/70907280.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/nz/70907280.json"
+  },
+  "manifest_row": {
+    "article_id": "70907280",
+    "group": "2019_06",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/nz/70907280.txt",
+    "now_field_2": "702",
+    "date_original": "19-06-25",
+    "date_iso": "2019-06-25",
+    "source_name": "Stuff.co.nz",
+    "url": "https://www.stuff.co.nz/national/politics/113759604/seymour-confident-ahead-of-euthanasia-vote-tonight-but-many-hurdles-remain",
+    "title": "Seymour confident ahead of euthanasia vote tonight, but many ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "New Zealand’s End of Life Choice Bill and the parliamentary vote on assisted dying",
+    "climate_relevance": "A separate passage discusses New Zealand energy policy, emissions, and the Interim Climate Change Committee, but it appears unrelated to the main article.",
+    "reason": "The identifiable main article concerns assisted-dying legislation. The substantive climate discussion appears to be an unrelated appended snippet, so it does not make the main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "35c00981af628b1da86aa4303aed82db156d5fc7075f37e6e0ec6282f0933887",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "66b7fc79cf4f8fd5a6710157453b9930c7f5d8f25c38717955bc4cac201aa6df",
+    "raw_response_text_sha256": "7ce1163c867260cfbac25b71f78a4bf0ac0a2be1a95aeecf34fadf11a1341b15"
+  },
+  "api_metadata": {
+    "id": "resp_07b2784d99c928a5006b063fdd981487d1ab976de0b3a77399",
+    "model": "gpt-6-luna",
+    "created_at": 1795571677.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1943,
+      "input_tokens_details": {
+        "cache_write_tokens": 1940,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1940
+        }
+      },
+      "output_tokens": 505,
+      "output_tokens_details": {
+        "reasoning_tokens": 347
+      },
+      "total_tokens": 2448
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"New Zealand’s End of Life Choice Bill and the parliamentary vote on assisted dying\",\n  \"climate_relevance\": \"A separate passage discusses New Zealand energy policy, emissions, and the Interim Climate Change Committee, but it appears unrelated to the main article.\",\n  \"reason\": \"The identifiable main article concerns assisted-dying legislation. The substantive climate discussion appears to be an unrelated appended snippet, so it does not make the main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:54:41Z",
+  "duration_seconds": 3.512,
+  "error": null
+}

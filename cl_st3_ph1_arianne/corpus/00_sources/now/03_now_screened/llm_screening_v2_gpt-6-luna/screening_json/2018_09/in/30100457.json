@@ -1,0 +1,77 @@
+{
+  "article_id": "30100457",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/in/30100457.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/in/30100457.json"
+  },
+  "manifest_row": {
+    "article_id": "30100457",
+    "group": "2018_09",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/in/30100457.txt",
+    "now_field_2": "593",
+    "date_original": "18-09-30",
+    "date_iso": "2018-09-30",
+    "source_name": "The Hindu BusinessLine",
+    "url": "https://www.thehindubusinessline.com/news/social-commitment-levy-will-hurt-viability-of-new-refinery-at-barmer-submits-hpcl/article25089544.ece",
+    "title": "Social commitment levy will hurt viability of new refinery at Barmer ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-in2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The proposed Barmer refinery’s enterprise social commitment levy and its effect on project viability.",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Environment and Forest and Climate Change; the article does not discuss climate issues.",
+    "reason": "The main article concerns refinery project costs and environmental-clearance requirements, not climate change. The accompanying caption mentions refinery fuel spills during Hurricane Harvey but makes no meaningful connection to climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6dd5bb9c6f08370f6b0923e50b2ee2d6c17e1bec83e8ffe67f99c9802101f921",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3327cae95bb17ebb9e089f654336dfec6d35239c27a488e3dbf3f7342571f234",
+    "raw_response_text_sha256": "6a4469d4ffd3da11a5ed2a52654fd6b7f90e53ef9545265482d04c8217d03867"
+  },
+  "api_metadata": {
+    "id": "resp_0143b5577ba10c0b006b0613363d7087d2855a63e6e24e3404",
+    "model": "gpt-6-luna",
+    "created_at": 1795560246.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1306,
+      "input_tokens_details": {
+        "cache_write_tokens": 1303,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1303
+        }
+      },
+      "output_tokens": 335,
+      "output_tokens_details": {
+        "reasoning_tokens": 177
+      },
+      "total_tokens": 1641
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The proposed Barmer refinery’s enterprise social commitment levy and its effect on project viability.\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Environment and Forest and Climate Change; the article does not discuss climate issues.\",\n  \"reason\": \"The main article concerns refinery project costs and environmental-clearance requirements, not climate change. The accompanying caption mentions refinery fuel spills during Hurricane Harvey but makes no meaningful connection to climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:44:09Z",
+  "duration_seconds": 3.477,
+  "error": null
+}

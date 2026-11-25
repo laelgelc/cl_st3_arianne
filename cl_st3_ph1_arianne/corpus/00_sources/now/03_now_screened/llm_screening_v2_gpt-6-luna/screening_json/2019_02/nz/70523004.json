@@ -1,0 +1,77 @@
+{
+  "article_id": "70523004",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70523004.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70523004.json"
+  },
+  "manifest_row": {
+    "article_id": "70523004",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70523004.txt",
+    "now_field_2": "253",
+    "date_original": "19-02-17",
+    "date_iso": "2019-02-17",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/HL1902/S00073/vanuatu-red-cross-to-check-cyclone-damage.htm",
+    "title": "Vanuatu Red Cross to check cyclone damage",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Radio New Zealand profile and unrelated news or commentary snippets",
+    "climate_relevance": "One snippet links climate change to reduced rainfall, drought-like conditions, increased fire danger, and firefighting costs in New Zealand.",
+    "reason": "The text is largely institutional boilerplate and includes several unrelated snippets. The climate-related passage makes a meaningful claim about climate impacts, but climate change is not the main subject of the available text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3759464c6a9e375edfb82f36658e9ac9c8dce4d2beb70f5a6d1bed7b98502528",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "33920a604fe1a83354989902ffa602197c6d91f8ef2c8b1b4471ee04a9bc99fe",
+    "raw_response_text_sha256": "ceb95a472710f7488fc26bce085ba6ce909e4c4e904e79a3bcd8cc214d017e02"
+  },
+  "api_metadata": {
+    "id": "resp_00e26c1d03d86d5e006b063d3a65e087d18fd85b8d39d61c5e",
+    "model": "gpt-6-luna",
+    "created_at": 1795571002.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 820,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 1070
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Radio New Zealand profile and unrelated news or commentary snippets\",\n  \"climate_relevance\": \"One snippet links climate change to reduced rainfall, drought-like conditions, increased fire danger, and firefighting costs in New Zealand.\",\n  \"reason\": \"The text is largely institutional boilerplate and includes several unrelated snippets. The climate-related passage makes a meaningful claim about climate impacts, but climate change is not the main subject of the available text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:24Z",
+  "duration_seconds": 2.173,
+  "error": null
+}

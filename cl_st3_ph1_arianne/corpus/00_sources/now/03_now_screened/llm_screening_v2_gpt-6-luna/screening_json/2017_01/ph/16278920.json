@@ -1,0 +1,77 @@
+{
+  "article_id": "16278920",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/ph/16278920.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/ph/16278920.json"
+  },
+  "manifest_row": {
+    "article_id": "16278920",
+    "group": "2017_01",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/ph/16278920.txt",
+    "now_field_2": "459",
+    "date_original": "17-01-07",
+    "date_iso": "2017-01-07",
+    "source_name": "Sun.Star",
+    "url": "http://www.sunstar.com.ph/cebu/local-news/2017/01/07/more-200-volunteers-collect-tons-garbage-518932",
+    "title": "More than 200 volunteers collect tons of garbage",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-PH.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A volunteer cleanup of river and coastal areas and the collection of garbage",
+    "climate_relevance": "The article briefly states that ocean trash has impacts including contributing to climate change.",
+    "reason": "Climate change is mentioned in a meaningful sentence about the impacts of trash, but the article is primarily about a local cleanup effort and does not otherwise discuss climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "66e6eceb7d911cfcd7f27bb324b7e51b77a71ac1067b2a3ff42e6b620b920ab4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fd72f4936ee4bae97e7d484ddba74e55067c1dceaac5e214ff09c1dadde0e344",
+    "raw_response_text_sha256": "754d2df635000cf207b94113cb0393b35844c8beed984420b48501dfb6b712e8"
+  },
+  "api_metadata": {
+    "id": "resp_0fe1b883fac3e539006b060772dabc87d28594661b0bb23add",
+    "model": "gpt-6-luna",
+    "created_at": 1795557234.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1132,
+      "input_tokens_details": {
+        "cache_write_tokens": 1129,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1129
+        }
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 1370
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A volunteer cleanup of river and coastal areas and the collection of garbage\",\n  \"climate_relevance\": \"The article briefly states that ocean trash has impacts including contributing to climate change.\",\n  \"reason\": \"Climate change is mentioned in a meaningful sentence about the impacts of trash, but the article is primarily about a local cleanup effort and does not otherwise discuss climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:53:57Z",
+  "duration_seconds": 2.285,
+  "error": null
+}

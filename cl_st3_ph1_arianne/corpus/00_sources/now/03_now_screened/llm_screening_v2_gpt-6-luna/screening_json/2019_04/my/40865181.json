@@ -1,0 +1,77 @@
+{
+  "article_id": "40865181",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40865181.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40865181.json"
+  },
+  "manifest_row": {
+    "article_id": "40865181",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40865181.txt",
+    "now_field_2": "383",
+    "date_original": "19-04-21",
+    "date_iso": "2019-04-21",
+    "source_name": "The Star Online",
+    "url": "https://www.thestar.com.my/news/nation/2019/04/22/dr-m-to-call-for-transparency-at-beijing-summit/",
+    "title": "Dr M to call for transparency at Beijing summit",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Transparency and Malaysia's participation in China's Belt and Road Initiative",
+    "climate_relevance": "Climate change appears only in the title of a government minister; the article does not discuss climate issues.",
+    "reason": "The article focuses on transparency, infrastructure projects, and trade relations. The climate reference is incidental to a minister's portfolio title and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7bc03b34a868174759888d5231fd33d9aa76f0f212697e6af47c778e325a224e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5ecad1388e63dd8ace160ca2c9b9f78ac39052d0a98d6bff20f318494092767e",
+    "raw_response_text_sha256": "16c64501bf28ae1c5332f8b94e2893449279957083e20ffdc4b839cd75d6dee4"
+  },
+  "api_metadata": {
+    "id": "resp_09cc8655ee8b08d5006b0620196ddc87d28cb2de1bbb49620e",
+    "model": "gpt-6-luna",
+    "created_at": 1795563545.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 993,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1210
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Transparency and Malaysia's participation in China's Belt and Road Initiative\",\n  \"climate_relevance\": \"Climate change appears only in the title of a government minister; the article does not discuss climate issues.\",\n  \"reason\": \"The article focuses on transparency, infrastructure projects, and trade relations. The climate reference is incidental to a minister's portfolio title and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:07Z",
+  "duration_seconds": 1.982,
+  "error": null
+}

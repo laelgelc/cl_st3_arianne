@@ -1,0 +1,77 @@
+{
+  "article_id": "84607735",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_04/us/84607735.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_04/us/84607735.json"
+  },
+  "manifest_row": {
+    "article_id": "84607735",
+    "group": "2020_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_04/us/84607735.txt",
+    "now_field_2": "322",
+    "date_original": "20-04-15",
+    "date_iso": "2020-04-15",
+    "source_name": "PRI",
+    "url": "https://www.pri.org/file/2020-04-15/doling-out-money-midst-coronavirus",
+    "title": "Doling out money in midst of the coronavirus",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-04.txt\"]",
+    "metadata_article_files": "[\"text-20-04/20-04-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The IMF's response to the coronavirus crisis",
+    "climate_relevance": "Climate change appears only in generic fundraising copy listing topics covered by the newsroom.",
+    "reason": "The identifiable article concerns the IMF and the coronavirus crisis. The climate reference is promotional boilerplate, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ba0f40ee24c242ca366747978df8eb19b751230839c6d551a1d13cab24054325",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1d47793f0c3f427a0b82a99bbf57491080fce57de20b26455424657b63e7542a",
+    "raw_response_text_sha256": "4047379fd84aa6093cb2f3c7de9ceb06860d66892db0102290a2595149d2aa82"
+  },
+  "api_metadata": {
+    "id": "resp_03bc11da54cf7477006b064aaa445487d1a12a528c30c88a5b",
+    "model": "gpt-6-luna",
+    "created_at": 1795574442.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 904,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 1131
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The IMF's response to the coronavirus crisis\",\n  \"climate_relevance\": \"Climate change appears only in generic fundraising copy listing topics covered by the newsroom.\",\n  \"reason\": \"The identifiable article concerns the IMF and the coronavirus crisis. The climate reference is promotional boilerplate, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:40:44Z",
+  "duration_seconds": 2.36,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "10088867",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/my/10088867.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10088867.json"
+  },
+  "manifest_row": {
+    "article_id": "10088867",
+    "group": "2016_01",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/my/10088867.txt",
+    "now_field_2": "270",
+    "date_original": "16-01-16",
+    "date_iso": "2016-01-16",
+    "source_name": "Daily Express",
+    "url": "http://dailyexpress.com.my/news.cfm?NewsID=105942",
+    "title": "AirAsia invites public participation in #GREEN24 initiative",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-my.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.95,
+    "climate_role": "central",
+    "main_topic": "AirAsia's climate change awareness and action campaign",
+    "climate_relevance": "The report focuses on the airline's public climate-awareness initiative and includes discussion of climate impacts and the need for climate action.",
+    "reason": "Climate change is the central subject of the campaign being reported, rather than a passing reference.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "16ceda4de750eec6a7c2335087baa1e418e5349271a2f4e20d08fbcb71fe79c2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8ddfc4e650529b6e7518b9973cc3a426d381bcb63debde63eff241fd9ac71eeb",
+    "raw_response_text_sha256": "aca8d7fbab53a20d2a1b15a8fbcef89c112a0f267659dafa42e9ce8515c8988c"
+  },
+  "api_metadata": {
+    "id": "resp_01ff3bf814b28f72006b0604e5b96087d2b2e1d4237da5d985",
+    "model": "gpt-6-luna",
+    "created_at": 1795556581.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 822,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 1059
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"AirAsia's climate change awareness and action campaign\",\n  \"climate_relevance\": \"The report focuses on the airline's public climate-awareness initiative and includes discussion of climate impacts and the need for climate action.\",\n  \"reason\": \"Climate change is the central subject of the campaign being reported, rather than a passing reference.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:43:04Z",
+  "duration_seconds": 2.481,
+  "error": null
+}

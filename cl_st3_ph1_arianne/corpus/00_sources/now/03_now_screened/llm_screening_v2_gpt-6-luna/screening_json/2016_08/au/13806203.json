@@ -1,0 +1,77 @@
+{
+  "article_id": "13806203",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_08/au/13806203.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_08/au/13806203.json"
+  },
+  "manifest_row": {
+    "article_id": "13806203",
+    "group": "2016_08",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_08/au/13806203.txt",
+    "now_field_2": "307",
+    "date_original": "16-08-12",
+    "date_iso": "2016-08-12",
+    "source_name": "Gizmodo Australia",
+    "url": "http://www.gizmodo.com.au/2016/08/this-sushi-making-robot-is-the-future-we-deserve/",
+    "title": "This Sushi-Making Robot Is The Future We Deserve",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-08-pcg/16-08-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A sushi-making robot and its potential use in food preparation",
+    "climate_relevance": "Climate change appears only in a separate trending-story snippet about the future feasibility of hosting the Summer Olympics.",
+    "reason": "The identifiable main article is about sushi-making robots. The climate-related text belongs to an unrelated trending-story snippet and is not part of the article’s subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5d7bf466986c2d9b7b398428808488c5320cf880d0024bc47694b6f8f4ab7004",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "07aede01c7a77f58add3d0500b56ec141ba9197275aba0d36e06510728031c8e",
+    "raw_response_text_sha256": "4bc8bf08eb45d786fae5bababa2a8f48d2bb72e28bd3675491d45f42a1514ef8"
+  },
+  "api_metadata": {
+    "id": "resp_02a3e33a8295793a006b060547d24c87d2ab02283bdb683625",
+    "model": "gpt-6-luna",
+    "created_at": 1795556679.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 853,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 303,
+      "output_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "total_tokens": 1156
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A sushi-making robot and its potential use in food preparation\",\n  \"climate_relevance\": \"Climate change appears only in a separate trending-story snippet about the future feasibility of hosting the Summer Olympics.\",\n  \"reason\": \"The identifiable main article is about sushi-making robots. The climate-related text belongs to an unrelated trending-story snippet and is not part of the article’s subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:44:42Z",
+  "duration_seconds": 2.503,
+  "error": null
+}

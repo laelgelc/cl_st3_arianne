@@ -1,0 +1,77 @@
+{
+  "article_id": "60916294",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ca/60916294.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ca/60916294.json"
+  },
+  "manifest_row": {
+    "article_id": "60916294",
+    "group": "2019_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ca/60916294.txt",
+    "now_field_2": "509",
+    "date_original": "19-06-12",
+    "date_iso": "2019-06-12",
+    "source_name": "CFJC Today Kamloops",
+    "url": "https://cfjctoday.com/2019/06/12/college-of-physical-therapists-of-b-c-taking-action-on-vernon-physiotherapist-charged-with-sex-assault/",
+    "title": "College of Physical Therapists of BC 'taking action' on Vernon ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A physiotherapist facing sexual assault charges and related regulatory and police action",
+    "climate_relevance": "The identifiable main article does not discuss climate change. A separate business-profile snippet says an earlier company aimed to reduce climate change impacts, but offers no further climate discourse.",
+    "reason": "The text contains several unrelated snippets. The main article is identifiable and is unrelated to climate change; the lone climate reference appears in a separate snippet and is not developed.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "734a8a553f309f67b113829e96bb6dc8eb4da04a17da409eb148df5c444b0d27",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4d48a17cc01741dc8099162df176e0928099d305084ef5edf6606403632b0092",
+    "raw_response_text_sha256": "66eddee79e4270a469f4d5e8c9d8826c7fe85da617d415c481dfbae0b1ba1bbc"
+  },
+  "api_metadata": {
+    "id": "resp_0b272045a6d1db59006b06356f6f4c87d1bf7855966f4a316a",
+    "model": "gpt-6-luna",
+    "created_at": 1795569007.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2152,
+      "input_tokens_details": {
+        "cache_write_tokens": 2149,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2149
+        }
+      },
+      "output_tokens": 413,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 2565
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A physiotherapist facing sexual assault charges and related regulatory and police action\",\n  \"climate_relevance\": \"The identifiable main article does not discuss climate change. A separate business-profile snippet says an earlier company aimed to reduce climate change impacts, but offers no further climate discourse.\",\n  \"reason\": \"The text contains several unrelated snippets. The main article is identifiable and is unrelated to climate change; the lone climate reference appears in a separate snippet and is not developed.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:10:11Z",
+  "duration_seconds": 4.541,
+  "error": null
+}

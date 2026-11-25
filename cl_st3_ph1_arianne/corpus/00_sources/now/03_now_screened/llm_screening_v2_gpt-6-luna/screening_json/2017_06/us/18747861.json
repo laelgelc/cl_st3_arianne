@@ -1,0 +1,77 @@
+{
+  "article_id": "18747861",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/us/18747861.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/us/18747861.json"
+  },
+  "manifest_row": {
+    "article_id": "18747861",
+    "group": "2017_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/us/18747861.txt",
+    "now_field_2": "720",
+    "date_original": "17-06-01",
+    "date_iso": "2017-06-01",
+    "source_name": "The Register-Guard",
+    "url": "http://registerguard.com/rg/business/35633246-63/investors-press-exxon-on-disclosure-of-climate-change-impact.html.csp",
+    "title": "Investors press Exxon on disclosure of climate change impact",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-US.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Exxon Mobil shareholders’ vote calling for disclosure of climate-policy risks to the company’s business.",
+    "climate_relevance": "The main article substantially discusses climate change, policies to limit warming, the Paris agreement, carbon emissions, and the financial and business risks these pose for Exxon.",
+    "reason": "Climate-related risks and shareholder debate over Exxon’s response are the article’s central subject. The text also contains an apparently unrelated fragment about Oregon’s transportation bill at the end.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fe2a35f2cb2884306257be556e4bc8ddfa42a5cf3a648b0d0dfcd595ae07704f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9630516ea017a00c603fe070cefff44df97f53593ba4cf0b7631608ebceab654",
+    "raw_response_text_sha256": "0365777936533d132f1bc31c583c0b21f9f6de3651136bd1fb8102aeef213508"
+  },
+  "api_metadata": {
+    "id": "resp_0331bee0a4c0130e006b060aba855c87d2873d91f1e14a2b14",
+    "model": "gpt-6-luna",
+    "created_at": 1795558074.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1414,
+      "input_tokens_details": {
+        "cache_write_tokens": 1411,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1411
+        }
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1640
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Exxon Mobil shareholders’ vote calling for disclosure of climate-policy risks to the company’s business.\",\n  \"climate_relevance\": \"The main article substantially discusses climate change, policies to limit warming, the Paris agreement, carbon emissions, and the financial and business risks these pose for Exxon.\",\n  \"reason\": \"Climate-related risks and shareholder debate over Exxon’s response are the article’s central subject. The text also contains an apparently unrelated fragment about Oregon’s transportation bill at the end.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:07:56Z",
+  "duration_seconds": 2.184,
+  "error": null
+}

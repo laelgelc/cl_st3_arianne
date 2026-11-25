@@ -1,0 +1,77 @@
+{
+  "article_id": "7660770",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_03/us/7660770.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_03/us/7660770.json"
+  },
+  "manifest_row": {
+    "article_id": "7660770",
+    "group": "2016_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_03/us/7660770.txt",
+    "now_field_2": "2584",
+    "date_original": "16-03-12",
+    "date_iso": "2016-03-12",
+    "source_name": "Salon",
+    "url": "http://www.salon.com/2016/03/12/mr_spock_at_the_sht_show_barack_obama_the_rise_of_trump_and_a_world_gone_crazy/",
+    "title": "Mr. Spock at the \"sh*t show\": Barack Obama, the rise of Trump and a ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-03-sls/16-03-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Obama’s foreign policy, political style, and relationship to Donald Trump’s rise",
+    "climate_relevance": "Climate change appears only in a list of summit topics the press corps did not ask Obama about; the text does not discuss it further.",
+    "reason": "The identifiable main article is political commentary, and its sole climate reference is incidental rather than meaningful climate discourse. Unrelated promotional material about the Bosch series follows the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e409369a6f9faabca9b2b49bad471882774bc9d7d8372b4e50a31d7130874e91",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "40dfaf00dd51627a28104c802d47649c4db841477d9076c17ed74507aa52d330",
+    "raw_response_text_sha256": "5ec588368942baee779034ce906b76cd04899113db35d2fb9acb1795f847c3c5"
+  },
+  "api_metadata": {
+    "id": "resp_0a98d28fdbb55450006b06464bf43c87d1937cc04ed080affb",
+    "model": "gpt-6-luna",
+    "created_at": 1795573324.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3851,
+      "input_tokens_details": {
+        "cache_write_tokens": 3848,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3848
+        }
+      },
+      "output_tokens": 281,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 4132
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Obama’s foreign policy, political style, and relationship to Donald Trump’s rise\",\n  \"climate_relevance\": \"Climate change appears only in a list of summit topics the press corps did not ask Obama about; the text does not discuss it further.\",\n  \"reason\": \"The identifiable main article is political commentary, and its sole climate reference is incidental rather than meaningful climate discourse. Unrelated promotional material about the Bosch series follows the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:22:06Z",
+  "duration_seconds": 2.703,
+  "error": null
+}

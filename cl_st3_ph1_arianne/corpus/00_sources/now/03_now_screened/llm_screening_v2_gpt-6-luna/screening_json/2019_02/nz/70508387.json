@@ -1,0 +1,77 @@
+{
+  "article_id": "70508387",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70508387.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70508387.json"
+  },
+  "manifest_row": {
+    "article_id": "70508387",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70508387.txt",
+    "now_field_2": "946",
+    "date_original": "19-02-12",
+    "date_iso": "2019-02-12",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00301/niwas-hotspot-watch.htm",
+    "title": "NIWA's Hotspot Watch",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "NIWA's weekly soil-moisture, hotspot, and rainfall outlook",
+    "climate_relevance": "The identifiable main item reports current soil moisture and near-term weather conditions without discussing climate change. A separate snippet briefly mentions climate change in relation to a political party's environment policy.",
+    "reason": "The climate reference appears only in an unrelated snippet, while the main report concerns short-term weather and drought monitoring. The snippet does not make the main item meaningful climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c26f79b650395fc2d114d177d4b91761db97971b9720477cdb80da89689649d0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7083ae3283f01f73228b217d243f3647e4ba8a99a7c0e7086c8974874d6571c9",
+    "raw_response_text_sha256": "895d6773b101afc8110bce172b2cc284eefb03e091611ee930d757707ce8a056"
+  },
+  "api_metadata": {
+    "id": "resp_0cc33bd5dec265b9006b063d17aaf487d1a4a4fa5d444ad84d",
+    "model": "gpt-6-luna",
+    "created_at": 1795570967.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1709,
+      "input_tokens_details": {
+        "cache_write_tokens": 1706,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1706
+        }
+      },
+      "output_tokens": 332,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 2041
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"NIWA's weekly soil-moisture, hotspot, and rainfall outlook\",\n  \"climate_relevance\": \"The identifiable main item reports current soil moisture and near-term weather conditions without discussing climate change. A separate snippet briefly mentions climate change in relation to a political party's environment policy.\",\n  \"reason\": \"The climate reference appears only in an unrelated snippet, while the main report concerns short-term weather and drought monitoring. The snippet does not make the main item meaningful climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:50Z",
+  "duration_seconds": 2.581,
+  "error": null
+}

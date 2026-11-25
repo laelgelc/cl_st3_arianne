@@ -1,0 +1,77 @@
+{
+  "article_id": "18588057",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/ng/18588057.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/ng/18588057.json"
+  },
+  "manifest_row": {
+    "article_id": "18588057",
+    "group": "2017_05",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/ng/18588057.txt",
+    "now_field_2": "1059",
+    "date_original": "17-05-22",
+    "date_iso": "2017-05-22",
+    "source_name": "Pulse Nigeria",
+    "url": "http://pulse.ng/local/atiku-abubakar-ex-vp-urges-fg-to-scrap-36-state-structure-id6720972.html",
+    "title": "Atiku Abubakar Ex-VP urges FG to scrap 36 state structure",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-NG.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Atiku Abubakar's proposal to restructure Nigeria's federating units",
+    "climate_relevance": "Climate change appears only in a photo caption identifying the presentation of an instrument at the UN; a separate caption describes flooding after rainfall. Neither provides meaningful climate discourse.",
+    "reason": "The main article concerns Nigeria's political and administrative structure. The climate-related material consists of brief, unrelated captions rather than substantive discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4b888a2e1ba9270f9c6dfee7aea1a50bdd730ee0229c3552a3e9556aefb38942",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b7d327dcd2ac4615861a73fcf152a5028d1c2393005b2266a5f2bb70a363cbb1",
+    "raw_response_text_sha256": "28e7aa98f2e3db224647269d08e4fde1a9736b9095ba6554f193a8af42263030"
+  },
+  "api_metadata": {
+    "id": "resp_09f84aba46a9f044006b060a6e020487d2834ff85ccc6c00c3",
+    "model": "gpt-6-luna",
+    "created_at": 1795557998.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2389,
+      "input_tokens_details": {
+        "cache_write_tokens": 2386,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2386
+        }
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 2679
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Atiku Abubakar's proposal to restructure Nigeria's federating units\",\n  \"climate_relevance\": \"Climate change appears only in a photo caption identifying the presentation of an instrument at the UN; a separate caption describes flooding after rainfall. Neither provides meaningful climate discourse.\",\n  \"reason\": \"The main article concerns Nigeria's political and administrative structure. The climate-related material consists of brief, unrelated captions rather than substantive discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:06:40Z",
+  "duration_seconds": 2.216,
+  "error": null
+}

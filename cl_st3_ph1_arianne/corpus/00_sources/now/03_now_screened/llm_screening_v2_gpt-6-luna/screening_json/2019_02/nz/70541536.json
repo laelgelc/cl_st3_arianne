@@ -1,0 +1,77 @@
+{
+  "article_id": "70541536",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70541536.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70541536.json"
+  },
+  "manifest_row": {
+    "article_id": "70541536",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70541536.txt",
+    "now_field_2": "623",
+    "date_original": "19-02-23",
+    "date_iso": "2019-02-23",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00574/sh6-between-hari-hari-and-whataroa-opening-tonight.htm",
+    "title": "SH6 between Hari Hari and Whataroa opening tonight",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Reopening State Highway 6 after heavy rain caused a debris flow.",
+    "climate_relevance": "Climate change appears only in an unrelated Greenpeace snippet criticizing a political party's environmental proposals.",
+    "reason": "The identifiable main article concerns road repairs and traffic arrangements. The brief climate reference belongs to a separate snippet and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3f7ddc154d5eaa719591ab5d066f7a189982abc9475c616f126bf173ca79f4a2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c365429effeb495bd638275791d50bd3dffcf49aea1a849540f63316b9185f12",
+    "raw_response_text_sha256": "720cdc2f994f43e40fabc1d75f8df4ca8b3a217e8bb07acf0a47114fa7433d79"
+  },
+  "api_metadata": {
+    "id": "resp_000fa1a589720bb0006b063d6ad71c87d1bf8f1808b14deb54",
+    "model": "gpt-6-luna",
+    "created_at": 1795571051.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1284,
+      "input_tokens_details": {
+        "cache_write_tokens": 1281,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1281
+        }
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 1612
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Reopening State Highway 6 after heavy rain caused a debris flow.\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated Greenpeace snippet criticizing a political party's environmental proposals.\",\n  \"reason\": \"The identifiable main article concerns road repairs and traffic arrangements. The brief climate reference belongs to a separate snippet and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:44:13Z",
+  "duration_seconds": 3.178,
+  "error": null
+}

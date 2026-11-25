@@ -1,0 +1,77 @@
+{
+  "article_id": "70636939",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70636939.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70636939.json"
+  },
+  "manifest_row": {
+    "article_id": "70636939",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70636939.txt",
+    "now_field_2": "430",
+    "date_original": "19-03-28",
+    "date_iso": "2019-03-28",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/BU1903/S00754/skycitys-a188m-sale-of-darwin-casino-goes-unconditional.htm",
+    "title": "SkyCity's A$188M sale of Darwin casino goes unconditional",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "SkyCity's sale of its Darwin casino",
+    "climate_relevance": "The main article is about a casino sale. Climate-related material appears only in apparently unrelated appended snippets about forestry and emissions trading, and a report on climate targets and policies.",
+    "reason": "The identifiable main article contains no meaningful climate discussion; the climate references appear to belong to separate snippets rather than the casino-sale article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5345d31dc647b1b28d6df773b84d901e5ab3ad81ef02321d7916ce5367dc6656",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "295c94a2a122b17d6bc192a0a43b3be8a867abe21016794ba7181f78518c32a3",
+    "raw_response_text_sha256": "8b343ad0ecfd9b8c8ecee0a54744ac87db501a125d0eff87893ba6e6e913b84f"
+  },
+  "api_metadata": {
+    "id": "resp_033df33becd2bef0006b063e29f6f087d1b5d69ae031757fb9",
+    "model": "gpt-6-luna",
+    "created_at": 1795571242.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1041,
+      "input_tokens_details": {
+        "cache_write_tokens": 1038,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1038
+        }
+      },
+      "output_tokens": 422,
+      "output_tokens_details": {
+        "reasoning_tokens": 274
+      },
+      "total_tokens": 1463
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"SkyCity's sale of its Darwin casino\",\n  \"climate_relevance\": \"The main article is about a casino sale. Climate-related material appears only in apparently unrelated appended snippets about forestry and emissions trading, and a report on climate targets and policies.\",\n  \"reason\": \"The identifiable main article contains no meaningful climate discussion; the climate references appear to belong to separate snippets rather than the casino-sale article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:47:25Z",
+  "duration_seconds": 3.86,
+  "error": null
+}

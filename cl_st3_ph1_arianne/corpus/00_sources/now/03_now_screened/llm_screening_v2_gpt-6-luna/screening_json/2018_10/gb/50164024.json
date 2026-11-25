@@ -1,0 +1,77 @@
+{
+  "article_id": "50164024",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/gb/50164024.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/gb/50164024.json"
+  },
+  "manifest_row": {
+    "article_id": "50164024",
+    "group": "2018_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/gb/50164024.txt",
+    "now_field_2": "2009",
+    "date_original": "18-10-27",
+    "date_iso": "2018-10-27",
+    "source_name": "The National",
+    "url": "http://www.thenational.scot/news/17101848.migrant-caravans-are-nothing-new-but-now-its-being-exploited/",
+    "title": "'Migrant caravans' are nothing new - but now it's being exploited",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Migration, migrant caravans, and political responses to immigration",
+    "climate_relevance": "Climate change is briefly identified as one of the causes of global migration.",
+    "reason": "The article focuses on migration and its political context, but explicitly includes the effects of climate change among the reasons people migrate. This is meaningful but limited climate discourse, so the text is peripheral rather than core.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c28705987d2e225a3ec17a3206ce0ff46ce4301fdfb2b5561d77104332d55031",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3e888dbb9a87db52f33805509e87b8be88e6aabb3876be510cbaf8d9c2a38471",
+    "raw_response_text_sha256": "b2d8227fc8e27ccf03d922ebf7566bec495e0ef4abda41ed3fb5c47d8eaf883c"
+  },
+  "api_metadata": {
+    "id": "resp_06e3c005564f5599006b0627dafa9487d19357cac7e0d897ca",
+    "model": "gpt-6-luna",
+    "created_at": 1795565531.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3091,
+      "input_tokens_details": {
+        "cache_write_tokens": 3088,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3088
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 3341
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Migration, migrant caravans, and political responses to immigration\",\n  \"climate_relevance\": \"Climate change is briefly identified as one of the causes of global migration.\",\n  \"reason\": \"The article focuses on migration and its political context, but explicitly includes the effects of climate change among the reasons people migrate. This is meaningful but limited climate discourse, so the text is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:12:13Z",
+  "duration_seconds": 2.575,
+  "error": null
+}

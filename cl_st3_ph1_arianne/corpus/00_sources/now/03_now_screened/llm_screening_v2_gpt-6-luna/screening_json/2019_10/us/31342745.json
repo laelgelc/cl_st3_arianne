@@ -1,0 +1,77 @@
+{
+  "article_id": "31342745",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/31342745.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/31342745.json"
+  },
+  "manifest_row": {
+    "article_id": "31342745",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/31342745.txt",
+    "now_field_2": "978",
+    "date_original": "19-10-13",
+    "date_iso": "2019-10-13",
+    "source_name": "bostonglobe.com",
+    "url": "https://www.bostonglobe.com/arts/music/2019/10/10/from-today-punk-bands-sound-solidarity-and-outrage/B4jxzQm5YX5NPH5aM6lOCI/story.html",
+    "title": "From today's punk bands, the sound of solidarity and ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "UK punk and post-punk bands, their social messages, and the appeal of politically engaged music",
+    "climate_relevance": "The article notes that Fontaines D.C. rails against apathy over climate change in one of its songs, but does not otherwise discuss climate change.",
+    "reason": "The identifiable main feature is about music and social commentary; climate change appears in one meaningful but passing reference. The supplied text also includes unrelated NBA coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1a7b7f1b37a85b8bfcfcbb56c47cd66b6361b70b2cea54e1b7def4e33b161cd1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7c0e26baca79f3badf89d480437cb1149d80c212fb95f50a6a62efbe23c7ae12",
+    "raw_response_text_sha256": "b8975896375b8ece6036a95f85db6e7fcfb8e814e10252e159ea75c1156f0af4"
+  },
+  "api_metadata": {
+    "id": "resp_07462ad47090b79d006b0616e401c487d2ad4554a8dd34d5d7",
+    "model": "gpt-6-luna",
+    "created_at": 1795561188.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5392,
+      "input_tokens_details": {
+        "cache_write_tokens": 5389,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5389
+        }
+      },
+      "output_tokens": 240,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 5632
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"UK punk and post-punk bands, their social messages, and the appeal of politically engaged music\",\n  \"climate_relevance\": \"The article notes that Fontaines D.C. rails against apathy over climate change in one of its songs, but does not otherwise discuss climate change.\",\n  \"reason\": \"The identifiable main feature is about music and social commentary; climate change appears in one meaningful but passing reference. The supplied text also includes unrelated NBA coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:59:50Z",
+  "duration_seconds": 2.14,
+  "error": null
+}

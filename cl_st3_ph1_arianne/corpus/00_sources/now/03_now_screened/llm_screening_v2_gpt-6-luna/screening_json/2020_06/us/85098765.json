@@ -1,0 +1,77 @@
+{
+  "article_id": "85098765",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/us/85098765.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/us/85098765.json"
+  },
+  "manifest_row": {
+    "article_id": "85098765",
+    "group": "2020_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/us/85098765.txt",
+    "now_field_2": "632",
+    "date_original": "20-06-04",
+    "date_iso": "2020-06-04",
+    "source_name": "International Business Times",
+    "url": "https://www.ibtimes.com/russia-struggles-clean-arctic-river-fuel-spill-2988006",
+    "title": "Russia Struggles To Clean Up Arctic River Fuel Spill",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-us6.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Cleanup and investigation of a major diesel fuel spill in an Arctic river",
+    "climate_relevance": "The article reports the company's suggestion that climate-change-driven permafrost thaw may have contributed to the reservoir collapse, alongside a WWF expert's comments on climate change and permafrost.",
+    "reason": "The main focus is the spill, its environmental damage, and the cleanup response. Climate change appears as a meaningful but secondary part of the discussion about the accident's possible cause.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "db3387479967fd28c9d8327badbe0153f87e7a111779b7ac86acb88135117e89",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0abf21400b0e4ad776a03259d1f7c4d264b3f77ebe8a2b1eb0b38ac35e11a6f2",
+    "raw_response_text_sha256": "0faf3c81717ab807444c62859b29f0d1385a9ada7c2f9ecd26461be3afcc7710"
+  },
+  "api_metadata": {
+    "id": "resp_0892ef9db13c8235006b064b39f76487d1af2fd0c651932ba9",
+    "model": "gpt-6-luna",
+    "created_at": 1795574586.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1318,
+      "input_tokens_details": {
+        "cache_write_tokens": 1315,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1315
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 1546
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Cleanup and investigation of a major diesel fuel spill in an Arctic river\",\n  \"climate_relevance\": \"The article reports the company's suggestion that climate-change-driven permafrost thaw may have contributed to the reservoir collapse, alongside a WWF expert's comments on climate change and permafrost.\",\n  \"reason\": \"The main focus is the spill, its environmental damage, and the cleanup response. Climate change appears as a meaningful but secondary part of the discussion about the accident's possible cause.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:43:08Z",
+  "duration_seconds": 2.305,
+  "error": null
+}

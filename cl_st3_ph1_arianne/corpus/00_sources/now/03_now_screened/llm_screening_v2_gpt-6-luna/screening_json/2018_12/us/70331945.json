@@ -1,0 +1,77 @@
+{
+  "article_id": "70331945",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/us/70331945.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/us/70331945.json"
+  },
+  "manifest_row": {
+    "article_id": "70331945",
+    "group": "2018_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/us/70331945.txt",
+    "now_field_2": "593",
+    "date_original": "18-12-12",
+    "date_iso": "2018-12-12",
+    "source_name": "WPLG Local 10",
+    "url": "https://www.local10.com/weather/wwf-announces-discovery-of-157-new-species-in-southeast-asia",
+    "title": "WWF announces discovery of 157 new species in Southeast Asia",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Discovery of new species in the Greater Mekong region and threats to wildlife",
+    "climate_relevance": "Climate change is briefly listed alongside deforestation, poaching, and illegal wildlife trade as a threat to undiscovered species, without further discussion.",
+    "reason": "The article focuses on new species discoveries and wildlife conservation. Climate change is only a passing mention and does not provide substantial material for climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b2d5deb8b8f5f96a9b9f940af8e6acd72c4523d35b510a7e043e79f30aeb2482",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4af2b64426cd9a3a3ebb9d41d3061542316426bf6598e67f5aeaeb3af75ed1ae",
+    "raw_response_text_sha256": "c5dbb9f336b0adee259f359c35651b731b52592447b10d11a64488088df37946"
+  },
+  "api_metadata": {
+    "id": "resp_0c24239723f7a243006b063c03206887d18e7e699e100aecc3",
+    "model": "gpt-6-luna",
+    "created_at": 1795570691.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1282,
+      "input_tokens_details": {
+        "cache_write_tokens": 1279,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1279
+        }
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 1564
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Discovery of new species in the Greater Mekong region and threats to wildlife\",\n  \"climate_relevance\": \"Climate change is briefly listed alongside deforestation, poaching, and illegal wildlife trade as a threat to undiscovered species, without further discussion.\",\n  \"reason\": \"The article focuses on new species discoveries and wildlife conservation. Climate change is only a passing mention and does not provide substantial material for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:38:13Z",
+  "duration_seconds": 2.657,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50647943",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/gb/50647943.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/gb/50647943.json"
+  },
+  "manifest_row": {
+    "article_id": "50647943",
+    "group": "2019_05",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/gb/50647943.txt",
+    "now_field_2": "17387",
+    "date_original": "19-05-03",
+    "date_iso": "2019-05-03",
+    "source_name": "The Independent",
+    "url": "https://www.independent.co.uk/travel/news-and-advice/lion-air-indonesia-budget-airline-pilot-attacked-clerk-a8897991.html",
+    "title": "Lion Air grounds pilot who attacked hotel staff member over quality of ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Lion Air pilot was suspended after assaulting a hotel staff member.",
+    "climate_relevance": "Climate change is discussed in the embedded travel-destination entries, but those passages are unrelated to the identifiable main report about the assault.",
+    "reason": "The main article concerns a pilot's assault and suspension and contains no meaningful climate discourse. Climate-related material appears in a lengthy, apparently separate travel feature embedded in the text, so it does not make the main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b9f8f7f33647f9a6fe2d7cd5f0ad6ba3703145d532fa64caaa8c7b06ce74b5e4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "061e74cda4bb001fbc7130e35e9e113dec84678769efc49d678657668c039eda",
+    "raw_response_text_sha256": "e2cd50c0cd07ab794df2c4092dfc4023dbfec5424c5c5ebf58181d9512ef4880"
+  },
+  "api_metadata": {
+    "id": "resp_0a4d6bf873ea4d88006b062a00d82887d1bd52c69922e7197b",
+    "model": "gpt-6-luna",
+    "created_at": 1795566081.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 24290,
+      "input_tokens_details": {
+        "cache_write_tokens": 24287,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 24287
+        }
+      },
+      "output_tokens": 514,
+      "output_tokens_details": {
+        "reasoning_tokens": 347
+      },
+      "total_tokens": 24804
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Lion Air pilot was suspended after assaulting a hotel staff member.\",\n  \"climate_relevance\": \"Climate change is discussed in the embedded travel-destination entries, but those passages are unrelated to the identifiable main report about the assault.\",\n  \"reason\": \"The main article concerns a pilot's assault and suspension and contains no meaningful climate discourse. Climate-related material appears in a lengthy, apparently separate travel feature embedded in the text, so it does not make the main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:21:25Z",
+  "duration_seconds": 4.766,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "15900687",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_12/ca/15900687.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_12/ca/15900687.json"
+  },
+  "manifest_row": {
+    "article_id": "15900687",
+    "group": "2016_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_12/ca/15900687.txt",
+    "now_field_2": "224",
+    "date_original": "16-12-14",
+    "date_iso": "2016-12-14",
+    "source_name": "Digital Journal",
+    "url": "http://www.digitaljournal.com/pr/3174871",
+    "title": "Global IT Spending in Energy Sector 2016-2020 - Driven by the ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-12.txt\"]",
+    "metadata_article_files": "[\"text-16-12/text_16-12-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Forecast of IT spending in the energy sector",
+    "climate_relevance": "Climate change is not discussed; it appears only in the name of the UK Department of Energy and Climate Change.",
+    "reason": "The text focuses on IT market spending and regulatory compliance in the energy industry. The department name is a passing institutional reference, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e9028481ac7cd4f1867807cb3d71af4c7db976f5da9ad0765cd28e02d902daf4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a4afa7fbae07bb77920cbc21d8203014e59841e3d6f9a9e752c568b3ff1e9ec3",
+    "raw_response_text_sha256": "aa9485c65a2616380dbbfb2b7bcb80471b020ccd7f461bc9a9413005cb99009a"
+  },
+  "api_metadata": {
+    "id": "resp_0245e3176a8c4669006b0607281e6887d2886e77ff1a29a721",
+    "model": "gpt-6-luna",
+    "created_at": 1795557160.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 758,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 179,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "total_tokens": 937
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Forecast of IT spending in the energy sector\",\n  \"climate_relevance\": \"Climate change is not discussed; it appears only in the name of the UK Department of Energy and Climate Change.\",\n  \"reason\": \"The text focuses on IT market spending and regulatory compliance in the energy industry. The department name is a passing institutional reference, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:52:41Z",
+  "duration_seconds": 1.756,
+  "error": null
+}

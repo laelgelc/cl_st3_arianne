@@ -1,0 +1,77 @@
+{
+  "article_id": "86117371",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86117371.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86117371.json"
+  },
+  "manifest_row": {
+    "article_id": "86117371",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86117371.txt",
+    "now_field_2": "618",
+    "date_original": "20-10-11",
+    "date_iso": "2020-10-11",
+    "source_name": "The Arizona Republic",
+    "url": "https://www.azcentral.com/story/entertainment/celebrities/2020/10/11/duchess-meghan-prince-harry-malala-talk-challenges-coronavirus-mental-health-education/5960389002/",
+    "title": "Duchess Meghan says internet trolls' comments about her were 'almost unsurvivable'",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "Meghan and Prince Harry discuss mental health and girls' education",
+    "climate_relevance": "The text links girls' education with helping the world combat climate change, but does not develop the climate topic further.",
+    "reason": "The article is primarily about mental health and girls' education. Its brief connection between girls' education and combating climate change is meaningful but peripheral to the main discussion.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e422e9130fae012247c8cc6ea0645a7bed0342301d5da723ff04de618c39b320",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3ead97ec4852a0d3ceb432c1ee004910c297fce5531cd948f243c7b3b33f05f5",
+    "raw_response_text_sha256": "3de6d2e93c33eaa7bfe42024f30345edc4f1483b98eb73d61b9836b15e6eef80"
+  },
+  "api_metadata": {
+    "id": "resp_090e5873c5187e97006b064e7780b087d18abbd9ba899872b2",
+    "model": "gpt-6-luna",
+    "created_at": 1795575415.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1252,
+      "input_tokens_details": {
+        "cache_write_tokens": 1249,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1249
+        }
+      },
+      "output_tokens": 369,
+      "output_tokens_details": {
+        "reasoning_tokens": 226
+      },
+      "total_tokens": 1621
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Meghan and Prince Harry discuss mental health and girls' education\",\n  \"climate_relevance\": \"The text links girls' education with helping the world combat climate change, but does not develop the climate topic further.\",\n  \"reason\": \"The article is primarily about mental health and girls' education. Its brief connection between girls' education and combating climate change is meaningful but peripheral to the main discussion.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:56:58Z",
+  "duration_seconds": 3.348,
+  "error": null
+}

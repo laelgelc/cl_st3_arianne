@@ -1,0 +1,77 @@
+{
+  "article_id": "51458453",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/ca/51458453.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/ca/51458453.json"
+  },
+  "manifest_row": {
+    "article_id": "51458453",
+    "group": "2020_02",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/ca/51458453.txt",
+    "now_field_2": "890",
+    "date_original": "20-02-18",
+    "date_iso": "2020-02-18",
+    "source_name": "huffingtonpost.ca",
+    "url": "https://www.huffingtonpost.ca/entry/canada-plastic-garbage-export_ca_5e3a40bcc5b6b5fb4389d85c",
+    "title": "Tory MP Wants To Stop Canada From Sending Its Plastic ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-ca2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Canadian plastic waste exports, pollution, and proposed waste-disposal regulations",
+    "climate_relevance": "Climate change appears only as part of the name Environment and Climate Change Canada; the article does not discuss climate change or its implications.",
+    "reason": "The article focuses on plastic waste exports, recycling, and pollution. The department-name reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7014fa9a118cae090f49b615dd0bcabd7fac1de4dbfffef2977b52ec588024f0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e198d5c34411dc116a081cd099b096753c1b2ae28be89c13a322425a961b812e",
+    "raw_response_text_sha256": "3d69e2544b2562404de438e1f94397b65cb0ceb1344f5323107c60785407514b"
+  },
+  "api_metadata": {
+    "id": "resp_0dcb5ad16ab6093c006b062db6708087d1be00b0732998c22e",
+    "model": "gpt-6-luna",
+    "created_at": 1795567030.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1630,
+      "input_tokens_details": {
+        "cache_write_tokens": 1627,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1627
+        }
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 1869
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Canadian plastic waste exports, pollution, and proposed waste-disposal regulations\",\n  \"climate_relevance\": \"Climate change appears only as part of the name Environment and Climate Change Canada; the article does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on plastic waste exports, recycling, and pollution. The department-name reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:37:12Z",
+  "duration_seconds": 2.133,
+  "error": null
+}

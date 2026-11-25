@@ -1,0 +1,77 @@
+{
+  "article_id": "31434445",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/nz/31434445.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/nz/31434445.json"
+  },
+  "manifest_row": {
+    "article_id": "31434445",
+    "group": "2019_11",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/nz/31434445.txt",
+    "now_field_2": "1457",
+    "date_original": "19-11-15",
+    "date_iso": "2019-11-15",
+    "source_name": "newsroom.co.nz",
+    "url": "https://www.newsroom.co.nz/2019/11/16/904574/saturday-short-story-giving-the-finger-by-owen-marshall",
+    "title": "Saturday short story: Giving the finger, by Owen Marshall",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A fictional short story about a man who cuts off his finger after recurring dreams.",
+    "climate_relevance": "Climate change appears only in a generic Newsroom support statement listing topics covered by the outlet.",
+    "reason": "The main text is a short story unrelated to climate change; the only climate reference is boilerplate promotional copy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ff4479eee20b73f39bf571b573583919350a5095aa35bb6e2b32b28c822b2e07",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0a95cbfd2aa96fd8f9103170951c9c6c1b0cc346b7560f86940f9661fd43a909",
+    "raw_response_text_sha256": "2ea1c807e3bd2e19b7c23bbb997cb58dad7bc25fef3e66609b70c5f462acef58"
+  },
+  "api_metadata": {
+    "id": "resp_0961320646ab7f2c006b061741c70087d29819ab03bfa8a2b0",
+    "model": "gpt-6-luna",
+    "created_at": 1795561281.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2285,
+      "input_tokens_details": {
+        "cache_write_tokens": 2282,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2282
+        }
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 2517
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A fictional short story about a man who cuts off his finger after recurring dreams.\",\n  \"climate_relevance\": \"Climate change appears only in a generic Newsroom support statement listing topics covered by the outlet.\",\n  \"reason\": \"The main text is a short story unrelated to climate change; the only climate reference is boilerplate promotional copy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:01:23Z",
+  "duration_seconds": 2.28,
+  "error": null
+}

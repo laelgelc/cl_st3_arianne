@@ -1,0 +1,77 @@
+{
+  "article_id": "50678371",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/au/50678371.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/au/50678371.json"
+  },
+  "manifest_row": {
+    "article_id": "50678371",
+    "group": "2019_05",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/au/50678371.txt",
+    "now_field_2": "1149",
+    "date_original": "19-05-16",
+    "date_iso": "2019-05-16",
+    "source_name": "The Australian Financial Review",
+    "url": "https://www.afr.com/news/politics/national/labor-headed-for-narrow-victory-20190515-p51nrq",
+    "title": "Labor headed for narrow victory",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Australian federal election polling and campaign messaging",
+    "climate_relevance": "Climate change appears as a campaign issue: the article quotes criticism of denial and delay and Labor's pledge to tackle climate change.",
+    "reason": "The article is primarily about election polling and political campaigning, but its climate-related statements provide meaningful context about climate change as an electoral issue. A final paragraph about US Federal Reserve policy appears unrelated to the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "13996817d83773dc08a0aad6d7043a967af738f39aa05cef34da86878cd353ff",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "60a94ca9c263edc36dcb7d79736973be8f6b52e64dbfdeb8e44b53375767f869",
+    "raw_response_text_sha256": "945d8fcfe75ca50429123f125e8e39f3c8661e5b5ddc90cc1a243342c56e1873"
+  },
+  "api_metadata": {
+    "id": "resp_0acc8723caa58936006b062a3a99b887d1ad3bbeda81d90370",
+    "model": "gpt-6-luna",
+    "created_at": 1795566138.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2013,
+      "input_tokens_details": {
+        "cache_write_tokens": 2010,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2010
+        }
+      },
+      "output_tokens": 214,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 2227
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Australian federal election polling and campaign messaging\",\n  \"climate_relevance\": \"Climate change appears as a campaign issue: the article quotes criticism of denial and delay and Labor's pledge to tackle climate change.\",\n  \"reason\": \"The article is primarily about election polling and political campaigning, but its climate-related statements provide meaningful context about climate change as an electoral issue. A final paragraph about US Federal Reserve policy appears unrelated to the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:22:20Z",
+  "duration_seconds": 2.285,
+  "error": null
+}

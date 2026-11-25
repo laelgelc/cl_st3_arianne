@@ -1,0 +1,77 @@
+{
+  "article_id": "41455205",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/my/41455205.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/my/41455205.json"
+  },
+  "manifest_row": {
+    "article_id": "41455205",
+    "group": "2019_11",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/my/41455205.txt",
+    "now_field_2": "328",
+    "date_original": "19-11-01",
+    "date_iso": "2019-11-01",
+    "source_name": "edgeprop.my",
+    "url": "https://www.edgeprop.my/content/1605035/govt-mulling-special-research-centres-near-industrial-areas?wref=edgemarkets",
+    "title": "Govt mulling special research centres near industrial ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Proposed research centres to monitor pollution near industrial areas in Malaysia",
+    "climate_relevance": "Climate change appears only in the name of the ministry; the article discusses air and river pollution, not climate change.",
+    "reason": "The main report concerns local pollution monitoring and enforcement. The ministry name is not meaningful climate discourse, and the later property website text is unrelated promotional material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b01c46115d5d9a5fde6c25d11d7fcbaee4ed3c72fef79c7fb9b576b5b7ba4d30",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "56bd9a048bf20619cf1f7d2146557018b76158369cc448d32c9b59f80abc2742",
+    "raw_response_text_sha256": "a905e1c7a3eeed7eb16ac99962fd84a94405f59641f220f3b0cee573809c957d"
+  },
+  "api_metadata": {
+    "id": "resp_04baf5a7a5b8eb1b006b0621d0e9a887d29ef41665db1d3181",
+    "model": "gpt-6-luna",
+    "created_at": 1795563985.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 924,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 1150
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Proposed research centres to monitor pollution near industrial areas in Malaysia\",\n  \"climate_relevance\": \"Climate change appears only in the name of the ministry; the article discusses air and river pollution, not climate change.\",\n  \"reason\": \"The main report concerns local pollution monitoring and enforcement. The ministry name is not meaningful climate discourse, and the later property website text is unrelated promotional material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:46:27Z",
+  "duration_seconds": 2.365,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70823366",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/us/70823366.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/us/70823366.json"
+  },
+  "manifest_row": {
+    "article_id": "70823366",
+    "group": "2019_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/us/70823366.txt",
+    "now_field_2": "1104",
+    "date_original": "19-05-30",
+    "date_iso": "2019-05-30",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/trump-hitting-mexico-with-5-tariff-in-response-to-migrants/510642832/",
+    "title": "Trump announces new Mexican tariffs in response to migrants",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "U.S. tariffs on Mexican imports as pressure over migration and their implications for trade relations",
+    "climate_relevance": "Climate change appears only in a duplicated sentence about a separate youth lawsuit appended to the article; it is unrelated to the main report.",
+    "reason": "The identifiable main article concerns immigration, tariffs, and the USMCA. The brief climate reference belongs to an unrelated snippet and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cbd6ff907cfd5e9a48f15c2c3eaa4fbef0539f3aab3295aa2e3ae6911c6ff511",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "80071bc34c868975194fbb8f755fa46dfba28f943ca77e4cf72d1546fb33fb01",
+    "raw_response_text_sha256": "70de016edec55d05f755e7b9769949c163d773abac5c9923678024c102c7023f"
+  },
+  "api_metadata": {
+    "id": "resp_0243539ffb5439ee006b063f58c1f887d1a2d0d32a793371d8",
+    "model": "gpt-6-luna",
+    "created_at": 1795571544.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1897,
+      "input_tokens_details": {
+        "cache_write_tokens": 1894,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1894
+        }
+      },
+      "output_tokens": 294,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 2191
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"U.S. tariffs on Mexican imports as pressure over migration and their implications for trade relations\",\n  \"climate_relevance\": \"Climate change appears only in a duplicated sentence about a separate youth lawsuit appended to the article; it is unrelated to the main report.\",\n  \"reason\": \"The identifiable main article concerns immigration, tariffs, and the USMCA. The brief climate reference belongs to an unrelated snippet and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:52:27Z",
+  "duration_seconds": 2.527,
+  "error": null
+}

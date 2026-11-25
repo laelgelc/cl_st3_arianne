@@ -1,0 +1,77 @@
+{
+  "article_id": "31919045",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/us/31919045.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/us/31919045.json"
+  },
+  "manifest_row": {
+    "article_id": "31919045",
+    "group": "2020_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/us/31919045.txt",
+    "now_field_2": "2231",
+    "date_original": "20-06-25",
+    "date_iso": "2020-06-25",
+    "source_name": "politico.com",
+    "url": "https://www.politico.com/newsletters/huddle/2020/06/25/when-a-house-chairman-is-on-the-brink-of-defeat-489639",
+    "title": "When a House chairman is on the brink of defeat - POLITICO",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Capitol Hill politics and congressional news",
+    "climate_relevance": "Climate change appears only in a promotional sustainability-newsletter list of topics, without substantive discussion.",
+    "reason": "The text is a political newsletter covering congressional races, committee leadership, policing, and other issues. Its brief mention of climate change is part of an advertisement and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "08806a338121784ee0d398cea344d601cb221aff39b75c00bfc1d02aa14d3067",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7e0ed3ecc2990fb86e7d69724b80d433149301b5934f7b41adeef99e0137a97b",
+    "raw_response_text_sha256": "9a61d53fbc7ab76db14d23e7a649d01e2d8375c3b65f20375c26ac930193a224"
+  },
+  "api_metadata": {
+    "id": "resp_00a0a4f8517a2a23006b061a25446c87d28fc12620795e96e0",
+    "model": "gpt-6-luna",
+    "created_at": 1795562021.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3536,
+      "input_tokens_details": {
+        "cache_write_tokens": 3533,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3533
+        }
+      },
+      "output_tokens": 332,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 3868
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Capitol Hill politics and congressional news\",\n  \"climate_relevance\": \"Climate change appears only in a promotional sustainability-newsletter list of topics, without substantive discussion.\",\n  \"reason\": \"The text is a political newsletter covering congressional races, committee leadership, policing, and other issues. Its brief mention of climate change is part of an advertisement and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:13:43Z",
+  "duration_seconds": 2.598,
+  "error": null
+}

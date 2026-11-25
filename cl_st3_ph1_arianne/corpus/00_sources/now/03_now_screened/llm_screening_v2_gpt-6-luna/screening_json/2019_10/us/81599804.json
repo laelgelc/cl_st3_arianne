@@ -1,0 +1,77 @@
+{
+  "article_id": "81599804",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81599804.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81599804.json"
+  },
+  "manifest_row": {
+    "article_id": "81599804",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81599804.txt",
+    "now_field_2": "139",
+    "date_original": "19-10-14",
+    "date_iso": "2019-10-14",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191014215008-uqonz",
+    "title": "Pence says Trump spoke to Erdogan and asked for immediate ceasefire",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "U.S. diplomacy and economic measures in response to Turkey's military operations in Syria",
+    "climate_relevance": "Climate change appears only in a boilerplate description of Reuters' coverage areas.",
+    "reason": "The article is about Syria and U.S. policy. Its only climate reference is unrelated boilerplate and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "55a937a4c0d02243bf588514c8b7049e5d87d4a1e7fb96c777e44d7a0dd24085",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e51857a2da23dfabaa178f502710b0d0c6de6354cb7eb7737c033b5dd06ad9b3",
+    "raw_response_text_sha256": "857a9ef3816263299b5529492ea744d7bb517be73bbeb9f4b3fc303cf3d10335"
+  },
+  "api_metadata": {
+    "id": "resp_0bbeca7f61638f6c006b06477e8b9487d196d933d05ce7df3d",
+    "model": "gpt-6-luna",
+    "created_at": 1795573630.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 666,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 891
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"U.S. diplomacy and economic measures in response to Turkey's military operations in Syria\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of Reuters' coverage areas.\",\n  \"reason\": \"The article is about Syria and U.S. policy. Its only climate reference is unrelated boilerplate and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:27:12Z",
+  "duration_seconds": 2.283,
+  "error": null
+}

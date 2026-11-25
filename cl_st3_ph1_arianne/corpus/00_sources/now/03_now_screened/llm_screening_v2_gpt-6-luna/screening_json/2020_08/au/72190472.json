@@ -1,0 +1,77 @@
+{
+  "article_id": "72190472",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/au/72190472.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/au/72190472.json"
+  },
+  "manifest_row": {
+    "article_id": "72190472",
+    "group": "2020_08",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/au/72190472.txt",
+    "now_field_2": "560",
+    "date_original": "20-08-25",
+    "date_iso": "2020-08-25",
+    "source_name": "thenewdaily.com.au",
+    "url": "https://thenewdaily.com.au/news/2020/08/25/bushfire-inquiry-nsw-government/",
+    "title": "`Military-style' water-bombing forms part of bushfire ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "NSW government response to recommendations from an inquiry into bushfire preparedness and response",
+    "climate_relevance": "The article reports that the NSW premier acknowledged climate change had played a major role in the fires, but climate change is not the main focus.",
+    "reason": "The substantial coverage concerns bushfire inquiry recommendations, firefighting, and recovery. The climate-change reference is meaningful but brief, so the article is peripheral rather than core. An unrelated real-estate search advertisement appears at the end.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6a89517b5ef56f193b8396a6a529514c9d9e9eae46869e6e3f5dcdfe2c6767f9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "71f97cf79139d85a8aa8b2cd96cd1d223d834fe4a19ef09cf6a3abb9dee5028f",
+    "raw_response_text_sha256": "c560e04727667a812d574d30039f35fab527f1a087c72ae3554ea0fddf24dfc2"
+  },
+  "api_metadata": {
+    "id": "resp_02e467702066c3ca006b064470ac1087d19ed56a3d6179e15d",
+    "model": "gpt-6-luna",
+    "created_at": 1795572848.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1218,
+      "input_tokens_details": {
+        "cache_write_tokens": 1215,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1215
+        }
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1471
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"NSW government response to recommendations from an inquiry into bushfire preparedness and response\",\n  \"climate_relevance\": \"The article reports that the NSW premier acknowledged climate change had played a major role in the fires, but climate change is not the main focus.\",\n  \"reason\": \"The substantial coverage concerns bushfire inquiry recommendations, firefighting, and recovery. The climate-change reference is meaningful but brief, so the article is peripheral rather than core. An unrelated real-estate search advertisement appears at the end.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:14:10Z",
+  "duration_seconds": 2.377,
+  "error": null
+}

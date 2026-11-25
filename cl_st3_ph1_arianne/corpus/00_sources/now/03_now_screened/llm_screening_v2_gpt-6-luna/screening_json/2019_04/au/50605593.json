@@ -1,0 +1,77 @@
+{
+  "article_id": "50605593",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/au/50605593.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/au/50605593.json"
+  },
+  "manifest_row": {
+    "article_id": "50605593",
+    "group": "2019_04",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/au/50605593.txt",
+    "now_field_2": "296",
+    "date_original": "19-04-18",
+    "date_iso": "2019-04-18",
+    "source_name": "NEWS.com.au",
+    "url": "https://www.news.com.au/national/federal-election/intelligence-agencies-monitoring-for-cyber-security-issues-in-federal-election/news-story/33d88c5b238a4d0571463587b4fb9478",
+    "title": "Intelligence agencies monitoring for 'cyber security' issues in federal ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Australian federal election administration and security against foreign interference",
+    "climate_relevance": "Climate change appears only in an unrelated headline and teaser asking about the parties’ plans; the text provides no substantive climate discussion.",
+    "reason": "The identifiable main article concerns election costs, voting logistics, and security. The climate-related line is a separate teaser rather than meaningful coverage in the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c30901c2d52f2d2ae82d2d6730052128fbd9419092a26c85b49850da9113d749",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4c0d6fcbe4580517940678505d4d8bbbd5ea3c2a50bce847cbc54c8c106424a2",
+    "raw_response_text_sha256": "01eb645fcc67b31bd10e43db134712af20aee5036b1b9c38bc85679ad658284e"
+  },
+  "api_metadata": {
+    "id": "resp_076644fa9069c678006b0629b858f087d193cd14f5e28a5f61",
+    "model": "gpt-6-luna",
+    "created_at": 1795566008.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 877,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 240,
+      "output_tokens_details": {
+        "reasoning_tokens": 96
+      },
+      "total_tokens": 1117
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Australian federal election administration and security against foreign interference\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated headline and teaser asking about the parties’ plans; the text provides no substantive climate discussion.\",\n  \"reason\": \"The identifiable main article concerns election costs, voting logistics, and security. The climate-related line is a separate teaser rather than meaningful coverage in the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:20:10Z",
+  "duration_seconds": 2.251,
+  "error": null
+}

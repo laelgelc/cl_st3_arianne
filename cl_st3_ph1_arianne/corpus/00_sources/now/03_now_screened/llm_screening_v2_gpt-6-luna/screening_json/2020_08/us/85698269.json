@@ -1,0 +1,77 @@
+{
+  "article_id": "85698269",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85698269.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85698269.json"
+  },
+  "manifest_row": {
+    "article_id": "85698269",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85698269.txt",
+    "now_field_2": "1666",
+    "date_original": "20-08-17",
+    "date_iso": "2020-08-17",
+    "source_name": "New York Times",
+    "url": "https://www.nytimes.com/2020/08/17/climate/alaska-oil-drilling-anwr.html",
+    "title": "Interior Dept. Finalizes Plan to Open Arctic Refuge to Oil and Gas Companies",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "climate_role": "background",
+    "main_topic": "The Trump administration’s plan to open part of the Arctic National Wildlife Refuge to oil and gas drilling, and the resulting legal, economic, and environmental dispute.",
+    "climate_relevance": "The article reports opponents’ claims that drilling would worsen global warming, harm wildlife already affected by climate change, and that the administration’s review understated greenhouse-gas impacts. It also describes the agency’s argument that emissions would be limited because the oil would displace production elsewhere.",
+    "reason": "Climate change is a meaningful part of the debate over drilling, but the article is mainly about the refuge lease plan and its broader environmental, legal, and economic consequences rather than climate change itself.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "86677324cad09a8f2837ce83469b6a9b486a43d20eec6bad8c1a01445e75f234",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3fa30436f709da63b24a666c5f84bc4596a972d2ba2f5a345929eaf4fcf7aa64",
+    "raw_response_text_sha256": "dc44dbaf2f75a32c950cb74cdd94c594b7cae98100b27a992b3ef1e45556446e"
+  },
+  "api_metadata": {
+    "id": "resp_0caea0ce5e737bcf006b064cbd9af087d1be84187269f49462",
+    "model": "gpt-6-luna",
+    "created_at": 1795574973.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2537,
+      "input_tokens_details": {
+        "cache_write_tokens": 2534,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2534
+        }
+      },
+      "output_tokens": 500,
+      "output_tokens_details": {
+        "reasoning_tokens": 302
+      },
+      "total_tokens": 3037
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The Trump administration’s plan to open part of the Arctic National Wildlife Refuge to oil and gas drilling, and the resulting legal, economic, and environmental dispute.\",\n  \"climate_relevance\": \"The article reports opponents’ claims that drilling would worsen global warming, harm wildlife already affected by climate change, and that the administration’s review understated greenhouse-gas impacts. It also describes the agency’s argument that emissions would be limited because the oil would displace production elsewhere.\",\n  \"reason\": \"Climate change is a meaningful part of the debate over drilling, but the article is mainly about the refuge lease plan and its broader environmental, legal, and economic consequences rather than climate change itself.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:49:37Z",
+  "duration_seconds": 4.136,
+  "error": null
+}

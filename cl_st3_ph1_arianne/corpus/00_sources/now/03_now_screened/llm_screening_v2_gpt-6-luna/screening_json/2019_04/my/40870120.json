@@ -1,0 +1,77 @@
+{
+  "article_id": "40870120",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40870120.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40870120.json"
+  },
+  "manifest_row": {
+    "article_id": "40870120",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40870120.txt",
+    "now_field_2": "384",
+    "date_original": "19-04-22",
+    "date_iso": "2019-04-22",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/23/construction-stocks-in-the-green-over-bandar-msia/",
+    "title": "Construction stocks in the green over Bandar M'sia",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Malaysian construction-sector stocks and infrastructure projects",
+    "climate_relevance": "Climate change appears only in a separate headline-style item about Malaysia exhibiting sustainable energy solutions; the main article does not discuss climate.",
+    "reason": "The identifiable main article concerns construction stocks and development projects. The climate-related phrase is an unrelated roundup snippet with no substantive climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "19f1e67e87dd279b3e774868479049125e6fc57591845085708e28d86cd158e8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a574897347e91ee3866282d7acbe9753ae8b438a836484db805c6880dce55d63",
+    "raw_response_text_sha256": "f0c4bdd17979c97f8a320acd0c787f80c680b3b02e478111fd5c5d72d8f90fac"
+  },
+  "api_metadata": {
+    "id": "resp_08ee79145ad8ce8d006b062020aa7887d2b73bd9a6235272ab",
+    "model": "gpt-6-luna",
+    "created_at": 1795563552.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1016,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 1274
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Malaysian construction-sector stocks and infrastructure projects\",\n  \"climate_relevance\": \"Climate change appears only in a separate headline-style item about Malaysia exhibiting sustainable energy solutions; the main article does not discuss climate.\",\n  \"reason\": \"The identifiable main article concerns construction stocks and development projects. The climate-related phrase is an unrelated roundup snippet with no substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:15Z",
+  "duration_seconds": 2.414,
+  "error": null
+}

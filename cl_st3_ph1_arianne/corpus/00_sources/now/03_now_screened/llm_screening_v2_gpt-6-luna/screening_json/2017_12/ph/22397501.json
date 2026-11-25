@@ -1,0 +1,77 @@
+{
+  "article_id": "22397501",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_12/ph/22397501.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_12/ph/22397501.json"
+  },
+  "manifest_row": {
+    "article_id": "22397501",
+    "group": "2017_12",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_12/ph/22397501.txt",
+    "now_field_2": "794",
+    "date_original": "17-12-24",
+    "date_iso": "2017-12-24",
+    "source_name": "Minda News",
+    "url": "http://www.mindanews.com/mindaviews/2017/12/pantaw-a-mareg-vinta-and-doing-one-step-at-a-time/",
+    "title": "PANTAW A MAREG: Vinta and doing one step at a time",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-12.txt\"]",
+    "metadata_article_files": "[\"text-17-12/text_17-12-PH.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "Local flooding after tropical cyclone Vinta and environmental actions such as protecting forests and reducing waste",
+    "climate_relevance": "Climate change is mentioned only briefly in a parenthetical aside and is not discussed or connected to the article's analysis or recommendations.",
+    "reason": "The article focuses on flooding, deforestation, waste, and local environmental practices. Its sole climate-change reference is a passing assertion that climate change is real, which does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "25e999b6fb02259f3809eecdebb26ca11d345bad780bdb61d0092b167ba4340f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cd3793d188e1a356941985ea7fd90b3606cfdc71370d80c0c2063463cc9493de",
+    "raw_response_text_sha256": "46a6aa9494d317e3dcb1f7d97da0955b878d0ac37d3b54c0478ff52b4c16fed0"
+  },
+  "api_metadata": {
+    "id": "resp_0304adce6dd2465e006b06101b128487d2be9962b8deb37419",
+    "model": "gpt-6-luna",
+    "created_at": 1795559451.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1519,
+      "input_tokens_details": {
+        "cache_write_tokens": 1516,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1516
+        }
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 1792
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Local flooding after tropical cyclone Vinta and environmental actions such as protecting forests and reducing waste\",\n  \"climate_relevance\": \"Climate change is mentioned only briefly in a parenthetical aside and is not discussed or connected to the article's analysis or recommendations.\",\n  \"reason\": \"The article focuses on flooding, deforestation, waste, and local environmental practices. Its sole climate-change reference is a passing assertion that climate change is real, which does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:30:53Z",
+  "duration_seconds": 2.183,
+  "error": null
+}

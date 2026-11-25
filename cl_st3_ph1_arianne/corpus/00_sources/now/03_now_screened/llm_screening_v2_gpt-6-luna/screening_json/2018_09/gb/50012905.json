@@ -1,0 +1,77 @@
+{
+  "article_id": "50012905",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/gb/50012905.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/gb/50012905.json"
+  },
+  "manifest_row": {
+    "article_id": "50012905",
+    "group": "2018_09",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/gb/50012905.txt",
+    "now_field_2": "1166",
+    "date_original": "18-09-09",
+    "date_iso": "2018-09-09",
+    "source_name": "Yahoo News UK",
+    "url": "https://uk.news.yahoo.com/top-asian-news-4-24-m-gmt-042436327.html",
+    "title": "Top Asian News 6:03 am GMT",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A roundup of unrelated international news briefs, including North Korea, environmental cleanup, sports, politics, and disasters.",
+    "climate_relevance": "The final brief meaningfully discusses international negotiations to implement the Paris climate agreement, reduce carbon emissions, and limit global temperature rise.",
+    "reason": "Climate change is covered in a substantive but discrete item within a roundup whose overall subject is broader international news, so the text is relevant but not core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9687cc5f73f89182ca86827851fa35f286aed6748eadd1819691b57547ae03ef",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8db9f55cf1f602031819a40a3bb99b2e095ddddf5512236db5c04a684d58691f",
+    "raw_response_text_sha256": "c4df72805f55657608f2b0a938bc40a3948efb48b6399523d86a5a783fa35068"
+  },
+  "api_metadata": {
+    "id": "resp_0c8706476e5cc174006b06275f132887d1aca79f4c24256c16",
+    "model": "gpt-6-luna",
+    "created_at": 1795565407.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2008,
+      "input_tokens_details": {
+        "cache_write_tokens": 2005,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2005
+        }
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 2327
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A roundup of unrelated international news briefs, including North Korea, environmental cleanup, sports, politics, and disasters.\",\n  \"climate_relevance\": \"The final brief meaningfully discusses international negotiations to implement the Paris climate agreement, reduce carbon emissions, and limit global temperature rise.\",\n  \"reason\": \"Climate change is covered in a substantive but discrete item within a roundup whose overall subject is broader international news, so the text is relevant but not core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:10:10Z",
+  "duration_seconds": 3.108,
+  "error": null
+}

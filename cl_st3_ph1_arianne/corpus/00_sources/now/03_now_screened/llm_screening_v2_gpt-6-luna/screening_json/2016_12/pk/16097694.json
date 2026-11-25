@@ -1,0 +1,77 @@
+{
+  "article_id": "16097694",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_12/pk/16097694.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_12/pk/16097694.json"
+  },
+  "manifest_row": {
+    "article_id": "16097694",
+    "group": "2016_12",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_12/pk/16097694.txt",
+    "now_field_2": "374",
+    "date_original": "16-12-26",
+    "date_iso": "2016-12-26",
+    "source_name": "The Express Tribune",
+    "url": "http://tribune.com.pk/story/1275693/low-priority-perennially-vacant-slots-weaken-pak-epa/",
+    "title": "Low priority: Perennially vacant slots weaken Pak-EPA",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-12.txt\"]",
+    "metadata_article_files": "[\"text-16-12/text_16-12-PK.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Staff shortages at Pakistan’s Environmental Protection Agency and their effects on environmental enforcement",
+    "climate_relevance": "Climate change appears only in the title of a government official; the article discusses agency staffing, pollution, and environmental regulation without meaningful climate discourse.",
+    "reason": "The article is about staffing and enforcement problems at Pak-EPA. The passing reference to the Climate Change Secretary is incidental and does not contribute meaningfully to climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d07d06ae43933e9d45bc6ef8f06a358b5c64ff94c92d62eec134e211e07126c3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b51ba620595376f8e710725afdea61b60d0475ad6c2464a24733e8505ec0cb85",
+    "raw_response_text_sha256": "c6264f6619f36395d147a1de5a2370868cef6f3af84756ce1cf456864b899e3d"
+  },
+  "api_metadata": {
+    "id": "resp_08e6fbf4e7b93df1006b06074ff3c487d2a33f86aac42888ed",
+    "model": "gpt-6-luna",
+    "created_at": 1795557200.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 982,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1202
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Staff shortages at Pakistan’s Environmental Protection Agency and their effects on environmental enforcement\",\n  \"climate_relevance\": \"Climate change appears only in the title of a government official; the article discusses agency staffing, pollution, and environmental regulation without meaningful climate discourse.\",\n  \"reason\": \"The article is about staffing and enforcement problems at Pak-EPA. The passing reference to the Climate Change Secretary is incidental and does not contribute meaningfully to climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:53:22Z",
+  "duration_seconds": 2.125,
+  "error": null
+}

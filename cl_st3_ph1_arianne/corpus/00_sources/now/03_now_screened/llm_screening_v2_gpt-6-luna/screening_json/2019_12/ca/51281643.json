@@ -1,0 +1,77 @@
+{
+  "article_id": "51281643",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/ca/51281643.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/ca/51281643.json"
+  },
+  "manifest_row": {
+    "article_id": "51281643",
+    "group": "2019_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/ca/51281643.txt",
+    "now_field_2": "233",
+    "date_original": "19-12-17",
+    "date_iso": "2019-12-17",
+    "source_name": "pembinavalleyonline.com",
+    "url": "https://pembinavalleyonline.com/local/province-issues-2019-fall-conditions-report",
+    "title": "Province Issues 2019 Fall Conditions Report ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-ca1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Seasonal precipitation, river flows, and spring flooding risk in Manitoba",
+    "climate_relevance": "Climate change appears only in the name of Environment and Climate Change Canada; the text discusses weather forecasts and flood risk without meaningful climate-change discourse.",
+    "reason": "The article focuses on seasonal hydrological conditions and possible spring flooding. Its climate-change reference is only part of an agency name.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c4aef1dd67677bf54fa9f52aa130a19753a4b845a520b681654f1c0e9c1eb8f3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b76c4c1eb902924522872fabf15ebf008cb06f1b0b64a3aaedd61d9d5ee37479",
+    "raw_response_text_sha256": "80c0a93dff852adf8b9eadc7c756d34f6bf9e1f3f595241a2d81dfc78e40287c"
+  },
+  "api_metadata": {
+    "id": "resp_056f99fca60b06f0006b062cfe458487d1ad511a4db2edd459",
+    "model": "gpt-6-luna",
+    "created_at": 1795566846.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 790,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1023
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Seasonal precipitation, river flows, and spring flooding risk in Manitoba\",\n  \"climate_relevance\": \"Climate change appears only in the name of Environment and Climate Change Canada; the text discusses weather forecasts and flood risk without meaningful climate-change discourse.\",\n  \"reason\": \"The article focuses on seasonal hydrological conditions and possible spring flooding. Its climate-change reference is only part of an agency name.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:34:08Z",
+  "duration_seconds": 2.056,
+  "error": null
+}

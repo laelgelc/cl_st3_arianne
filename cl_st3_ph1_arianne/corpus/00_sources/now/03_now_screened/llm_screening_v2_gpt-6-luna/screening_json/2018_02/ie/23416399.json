@@ -1,0 +1,77 @@
+{
+  "article_id": "23416399",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_02/ie/23416399.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_02/ie/23416399.json"
+  },
+  "manifest_row": {
+    "article_id": "23416399",
+    "group": "2018_02",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_02/ie/23416399.txt",
+    "now_field_2": "706",
+    "date_original": "18-02-27",
+    "date_iso": "2018-02-27",
+    "source_name": "Irish Times",
+    "url": "https://www.irishtimes.com/news/ireland/irish-news/iberia-meets-siberia-what-s-the-latest-on-this-week-s-weather-1.3407876",
+    "title": "Iberia meets Siberia: What's the latest on this week's weather?",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-02.txt\"]",
+    "metadata_article_files": "[\"text-18-02/text_18-02-IE.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "climate_role": "background",
+    "main_topic": "Forecasts and expected impacts of Storm Emma and freezing weather in Ireland and the UK",
+    "climate_relevance": "Climate change is invoked as a factor affecting how severe or long-lasting this cold-weather event may be compared with historical winters.",
+    "reason": "The article is mainly a weather Q&A about an approaching storm, snow forecasts, and preparedness. Its brief reference to the impacts of climate change provides meaningful context but is not developed enough to make climate change a central or substantial topic.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "761176e63540e6fa6e6cff0843879e12886f8651077e9a760d41d2878ede45a2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "10a199150664a288206e84dcc55afc24395e9f52bd41defd3c1633293d553197",
+    "raw_response_text_sha256": "78b22028ee352e1ced421f986348376e056aa3d972c524bb9db5cba497f9a296"
+  },
+  "api_metadata": {
+    "id": "resp_03ad5802dd388c8d006b061134cda087d2acdfae1b2d26e41e",
+    "model": "gpt-6-luna",
+    "created_at": 1795559732.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1370,
+      "input_tokens_details": {
+        "cache_write_tokens": 1367,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1367
+        }
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 1638
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Forecasts and expected impacts of Storm Emma and freezing weather in Ireland and the UK\",\n  \"climate_relevance\": \"Climate change is invoked as a factor affecting how severe or long-lasting this cold-weather event may be compared with historical winters.\",\n  \"reason\": \"The article is mainly a weather Q&A about an approaching storm, snow forecasts, and preparedness. Its brief reference to the impacts of climate change provides meaningful context but is not developed enough to make climate change a central or substantial topic.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:35:35Z",
+  "duration_seconds": 2.363,
+  "error": null
+}

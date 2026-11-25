@@ -1,0 +1,77 @@
+{
+  "article_id": "82287363",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82287363.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82287363.json"
+  },
+  "manifest_row": {
+    "article_id": "82287363",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82287363.txt",
+    "now_field_2": "187",
+    "date_original": "19-11-22",
+    "date_iso": "2019-11-22",
+    "source_name": "StarTribune",
+    "url": "http://www.startribune.com/surly-will-roll-out-new-packaging-for-its-signature-beers-in-2020/565328232/",
+    "title": "Surly will roll out new packaging for its signature beers in 2020",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us6.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Surly beer packaging redesign",
+    "climate_relevance": "Climate change appears only in a separate, apparently unrelated fragment about a Times Square New Year's Eve celebration.",
+    "reason": "The identifiable main article is about beer packaging. The lone climate reference is in an unrelated snippet and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3a135e6a4580b499b882cb8bc3d89ef099391121d25dfe2d6c0e21343aa3d697",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7fc78244975b1bbd495dc36c2b13f06c05c721ee50c5e06b8b19d57cc2997e0e",
+    "raw_response_text_sha256": "084de7019f79da9afede2ed68cda60070872ceb5c85a5af8b4f0fb7bc606d2ec"
+  },
+  "api_metadata": {
+    "id": "resp_0a98221874dfbedd006b06484d644487d198c28267b0aead00",
+    "model": "gpt-6-luna",
+    "created_at": 1795573837.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 728,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 978
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Surly beer packaging redesign\",\n  \"climate_relevance\": \"Climate change appears only in a separate, apparently unrelated fragment about a Times Square New Year's Eve celebration.\",\n  \"reason\": \"The identifiable main article is about beer packaging. The lone climate reference is in an unrelated snippet and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:30:39Z",
+  "duration_seconds": 2.398,
+  "error": null
+}

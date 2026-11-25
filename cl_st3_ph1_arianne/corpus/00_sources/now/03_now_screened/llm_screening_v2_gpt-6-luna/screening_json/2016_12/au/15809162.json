@@ -1,0 +1,77 @@
+{
+  "article_id": "15809162",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_12/au/15809162.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_12/au/15809162.json"
+  },
+  "manifest_row": {
+    "article_id": "15809162",
+    "group": "2016_12",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_12/au/15809162.txt",
+    "now_field_2": "231",
+    "date_original": "16-12-08",
+    "date_iso": "2016-12-08",
+    "source_name": "ABC Online",
+    "url": "http://www.abc.net.au/news/2016-12-09/queensland-anti-fraud-squad-created-significant-fraud-risk/8105216",
+    "title": "Fraud squad exposed Queensland Police Service to serious fraud ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-12.txt\"]",
+    "metadata_article_files": "[\"text-16-12/text_16-12-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Queensland police fraud squad initiative and findings of a corruption watchdog investigation",
+    "climate_relevance": "The only climate reference is a disconnected sentence about the Paris Agreement, unrelated to the police investigation.",
+    "reason": "The identifiable main article concerns alleged financial and governance problems in a police program. The climate-related sentence appears to be an unrelated snippet and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3480a02974a7dc4de37f901f77c8ab0e5e166797ea7d074e05847038431aaf4f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4dd60b2abfaf51142e7ecf93274dae570cada3386298c3b4a8f74a863393bca0",
+    "raw_response_text_sha256": "5e41f931eae11ef8e2263b6ea39b4298bf4ed32168d90f655a605b1015623922"
+  },
+  "api_metadata": {
+    "id": "resp_0b69c023bc2521f4006b06070d9d0887d2b43c70eab521098c",
+    "model": "gpt-6-luna",
+    "created_at": 1795557133.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 780,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 985
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Queensland police fraud squad initiative and findings of a corruption watchdog investigation\",\n  \"climate_relevance\": \"The only climate reference is a disconnected sentence about the Paris Agreement, unrelated to the police investigation.\",\n  \"reason\": \"The identifiable main article concerns alleged financial and governance problems in a police program. The climate-related sentence appears to be an unrelated snippet and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:52:15Z",
+  "duration_seconds": 2.155,
+  "error": null
+}

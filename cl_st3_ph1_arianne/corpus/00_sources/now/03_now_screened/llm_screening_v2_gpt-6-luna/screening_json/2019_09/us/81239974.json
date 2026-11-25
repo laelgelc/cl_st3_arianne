@@ -1,0 +1,77 @@
+{
+  "article_id": "81239974",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/81239974.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/81239974.json"
+  },
+  "manifest_row": {
+    "article_id": "81239974",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/81239974.txt",
+    "now_field_2": "553",
+    "date_original": "19-09-23",
+    "date_iso": "2019-09-23",
+    "source_name": "WTAQ",
+    "url": "https://wtaq.com/news/articles/2019/sep/23/climate-activists-plan-to-block-traffic-in-us-capital/939917/?refer-section=national",
+    "title": "Climate activists plan to block traffic in U.S. capital",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Climate activists' protests in Washington, D.C., and efforts to pressure U.S. politicians and companies to address climate change.",
+    "climate_relevance": "The main Reuters report focuses on climate activism, emissions reductions, climate negotiations, the Paris accord, and the risks activists associate with climate change.",
+    "reason": "Climate change is central to the identifiable main article. The text also contains an unrelated local road-marking Q&A snippet appended after the Reuters report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3cbc27201243eca56dc192e5fec0236c92aa33fe40a7dfcf2b6e0f27fd8f4f9b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2430a3bc7f4e303ad60c4c426a2c88e66e36e83ebb2a2d936ad4aaeacc381a05",
+    "raw_response_text_sha256": "9444bb48e5ccf169ffbf253a9bd65adb3a014d9d8e57077917f432739c99b945"
+  },
+  "api_metadata": {
+    "id": "resp_01ba4cfeb133cc1b006b064717c2ec87d19fbaac0bc908e621",
+    "model": "gpt-6-luna",
+    "created_at": 1795573527.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1564,
+      "input_tokens_details": {
+        "cache_write_tokens": 1561,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1561
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1792
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Climate activists' protests in Washington, D.C., and efforts to pressure U.S. politicians and companies to address climate change.\",\n  \"climate_relevance\": \"The main Reuters report focuses on climate activism, emissions reductions, climate negotiations, the Paris accord, and the risks activists associate with climate change.\",\n  \"reason\": \"Climate change is central to the identifiable main article. The text also contains an unrelated local road-marking Q&A snippet appended after the Reuters report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:25:29Z",
+  "duration_seconds": 2.091,
+  "error": null
+}

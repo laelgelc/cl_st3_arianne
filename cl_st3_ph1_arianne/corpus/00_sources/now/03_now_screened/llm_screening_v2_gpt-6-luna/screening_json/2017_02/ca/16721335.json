@@ -1,0 +1,77 @@
+{
+  "article_id": "16721335",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/ca/16721335.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/ca/16721335.json"
+  },
+  "manifest_row": {
+    "article_id": "16721335",
+    "group": "2017_02",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/ca/16721335.txt",
+    "now_field_2": "425",
+    "date_original": "17-02-03",
+    "date_iso": "2017-02-03",
+    "source_name": "CBC.ca",
+    "url": "http://www.cbc.ca/news/canada/toronto/ontario-budget-online-vote-project-funding-1.3964297",
+    "title": "Ontario asks online voters to pick projects for budget funding",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Public-submitted ideas for Ontario budget funding",
+    "climate_relevance": "Climate change is mentioned only as one of several broad categories for submitted ideas; no climate-related proposal or discussion is described.",
+    "reason": "The article focuses on the budget process and shortlisted projects. Its brief mention of fighting climate change does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e94f7ebf906f28d03cafdc5181ac8e05e9f206b411c02de0355270f77c27c5aa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "564dcb58ec5cd3db31f6e637c279e7b7516af89e5709a29a2829855fd0cda4af",
+    "raw_response_text_sha256": "68d927e198726571360d86178f1f02ea0fbd44c50543d598491c54f24fad3e2b"
+  },
+  "api_metadata": {
+    "id": "resp_04d42ff862bcfa6d006b06081d1d3c87d284e277785080bc71",
+    "model": "gpt-6-luna",
+    "created_at": 1795557405.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1012,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 1287
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Public-submitted ideas for Ontario budget funding\",\n  \"climate_relevance\": \"Climate change is mentioned only as one of several broad categories for submitted ideas; no climate-related proposal or discussion is described.\",\n  \"reason\": \"The article focuses on the budget process and shortlisted projects. Its brief mention of fighting climate change does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:56:47Z",
+  "duration_seconds": 2.595,
+  "error": null
+}

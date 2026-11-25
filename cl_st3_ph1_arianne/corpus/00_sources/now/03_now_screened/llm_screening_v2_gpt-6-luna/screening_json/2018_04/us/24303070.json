@@ -1,0 +1,77 @@
+{
+  "article_id": "24303070",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_04/us/24303070.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_04/us/24303070.json"
+  },
+  "manifest_row": {
+    "article_id": "24303070",
+    "group": "2018_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_04/us/24303070.txt",
+    "now_field_2": "627",
+    "date_original": "18-04-23",
+    "date_iso": "2018-04-23",
+    "source_name": "Politico",
+    "url": "https://www.politico.com/story/2018/04/23/paul-to-back-pompeo-ensuring-confirmation-as-secretary-of-state-546037",
+    "title": "Paul to back Pompeo, ensuring confirmation as secretary of state",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-04.txt\"]",
+    "metadata_article_files": "[\"text-18-04/18-04-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Mike Pompeo's Senate confirmation as secretary of state",
+    "climate_relevance": "Climate change appears only in an activist's list of political characterizations of Pompeo; the text does not discuss climate issues.",
+    "reason": "The article is about Pompeo's nomination and Senate proceedings. Its sole climate reference is a passing label, 'climate change-denying,' with no substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1a62640db456e79a16fbb490aa2b8884cb0f752e9371de85e78e440eccb644bd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4062c547ae2774aa0f73ae84560d973fb598595a5a819ebd929ca41dbe9b1baa",
+    "raw_response_text_sha256": "e39cd3d5190fce0f0c5993c2c5613df6066dc642b81281c96d52b46611d4a029"
+  },
+  "api_metadata": {
+    "id": "resp_0e50ab03892acac2006b06124eaaa087d2a373f94390bb6725",
+    "model": "gpt-6-luna",
+    "created_at": 1795560014.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1316,
+      "input_tokens_details": {
+        "cache_write_tokens": 1313,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1313
+        }
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1521
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Mike Pompeo's Senate confirmation as secretary of state\",\n  \"climate_relevance\": \"Climate change appears only in an activist's list of political characterizations of Pompeo; the text does not discuss climate issues.\",\n  \"reason\": \"The article is about Pompeo's nomination and Senate proceedings. Its sole climate reference is a passing label, 'climate change-denying,' with no substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:40:16Z",
+  "duration_seconds": 1.736,
+  "error": null
+}

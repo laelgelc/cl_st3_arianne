@@ -1,0 +1,77 @@
+{
+  "article_id": "31593505",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/31593505.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/31593505.json"
+  },
+  "manifest_row": {
+    "article_id": "31593505",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/31593505.txt",
+    "now_field_2": "316",
+    "date_original": "20-01-22",
+    "date_iso": "2020-01-22",
+    "source_name": "gizmodo.com",
+    "url": "https://gizmodo.com/big-praise-trump-says-elon-does-good-at-rockets-zucks-1841165182",
+    "title": "Big Praise: Trump Says Elon 'Does Good at Rockets,' Zuck's ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "A Trump interview snippet followed by an unrelated Game of Thrones discussion",
+    "climate_relevance": "Climate change appears only in a brief question about whether people might start thinking about it as an ancillary issue; no substantive discussion follows in the available text.",
+    "reason": "The climate reference is a passing mention without meaningful climate discourse. The text also contains apparently unrelated article snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "38cdc8734258d4b5cdb7905cf44dc3c7cb5d6ccdd0382ecc6f9fa880187ef7aa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ab64244b15198362e2d28dda77d139a9a940fb056771f0125aa99b3b4528760d",
+    "raw_response_text_sha256": "f438bb36ba5d8ed11737930cb44ee0c5f6428613cf0f17147313a2ec1db7dd9e"
+  },
+  "api_metadata": {
+    "id": "resp_0eada2144ec7a8dc006b061850f18887d28c7b0125a66b99c5",
+    "model": "gpt-6-luna",
+    "created_at": 1795561553.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1770,
+      "input_tokens_details": {
+        "cache_write_tokens": 1767,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1767
+        }
+      },
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 2071
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A Trump interview snippet followed by an unrelated Game of Thrones discussion\",\n  \"climate_relevance\": \"Climate change appears only in a brief question about whether people might start thinking about it as an ancillary issue; no substantive discussion follows in the available text.\",\n  \"reason\": \"The climate reference is a passing mention without meaningful climate discourse. The text also contains apparently unrelated article snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:05:55Z",
+  "duration_seconds": 2.457,
+  "error": null
+}

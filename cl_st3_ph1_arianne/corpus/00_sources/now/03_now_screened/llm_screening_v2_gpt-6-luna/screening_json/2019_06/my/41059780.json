@@ -1,0 +1,77 @@
+{
+  "article_id": "41059780",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/my/41059780.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/my/41059780.json"
+  },
+  "manifest_row": {
+    "article_id": "41059780",
+    "group": "2019_06",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/my/41059780.txt",
+    "now_field_2": "176",
+    "date_original": "19-06-13",
+    "date_iso": "2019-06-13",
+    "source_name": "WORLD OF BUZ",
+    "url": "https://www.worldofbuzz.com/canada-says-it-wont-be-accepting-plastic-waste-sent-back-from-malaysia/",
+    "title": "Canada Says It Won't Be Accepting Plastic Waste Sent Back From ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "International disputes over contaminated plastic waste shipments",
+    "climate_relevance": "Climate change appears only as part of the name Environment and Climate Change Canada; the text discusses plastic waste, not climate change or its implications.",
+    "reason": "The article focuses on waste shipments and government responses. The climate reference is incidental institutional wording and does not constitute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e43753123ea0b7dc98270a7cc44c8edcd33e915889702d54f4593f4694548bd7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c4ed2afeb2110e7b29f81e17f700269d7a1aa7dfc9bdc4de640c1bd779df6937",
+    "raw_response_text_sha256": "67dc5eef1f248f77ba93eee04daf814ff26130dd3b8572830bf41b2f2371c04d"
+  },
+  "api_metadata": {
+    "id": "resp_01ff9cb0cde7e22b006b0620c51afc87d2bf35e1b82c28b153",
+    "model": "gpt-6-luna",
+    "created_at": 1795563717.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 710,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 195,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 905
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"International disputes over contaminated plastic waste shipments\",\n  \"climate_relevance\": \"Climate change appears only as part of the name Environment and Climate Change Canada; the text discusses plastic waste, not climate change or its implications.\",\n  \"reason\": \"The article focuses on waste shipments and government responses. The climate reference is incidental institutional wording and does not constitute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:41:58Z",
+  "duration_seconds": 1.939,
+  "error": null
+}

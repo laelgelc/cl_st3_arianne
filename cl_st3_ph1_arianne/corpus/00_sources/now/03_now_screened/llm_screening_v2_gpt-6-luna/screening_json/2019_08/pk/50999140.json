@@ -1,0 +1,77 @@
+{
+  "article_id": "50999140",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/pk/50999140.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/pk/50999140.json"
+  },
+  "manifest_row": {
+    "article_id": "50999140",
+    "group": "2019_08",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/pk/50999140.txt",
+    "now_field_2": "884",
+    "date_original": "19-08-30",
+    "date_iso": "2019-08-30",
+    "source_name": "tns.thenews.com.pk",
+    "url": "http://tns.thenews.com.pk/ban-plastic-bags-enforcement-challenge/",
+    "title": "Ban on plastic bags: Enforcement is the challenge | TNS ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Enforcement of Pakistan's plastic bag ban and plastic waste management",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Climate Change; the text discusses plastic pollution and waste policy without meaningful discussion of climate change or its implications.",
+    "reason": "The article is substantially about plastic bags, pollution, and enforcement of a ban. The institutional name is only an incidental reference and does not constitute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4bc18d705a0cc3e258d37b5ae7c279483601b1c8d6b52075f134b4d1fa605419",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e606e1cc7ae66a204a4d116e20036789fcbaf55c20283ab72faff66dd333bf40",
+    "raw_response_text_sha256": "b47f7e8f9f3888baf184b494481d18581ecc411bcbe5fb522ecdaa4fb680ba58"
+  },
+  "api_metadata": {
+    "id": "resp_0de3dfd6fe6c01be006b062b4c835487d1a8bf8e738c8fd842",
+    "model": "gpt-6-luna",
+    "created_at": 1795566412.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1602,
+      "input_tokens_details": {
+        "cache_write_tokens": 1599,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1599
+        }
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 157
+      },
+      "total_tokens": 1915
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Enforcement of Pakistan's plastic bag ban and plastic waste management\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Climate Change; the text discusses plastic pollution and waste policy without meaningful discussion of climate change or its implications.\",\n  \"reason\": \"The article is substantially about plastic bags, pollution, and enforcement of a ban. The institutional name is only an incidental reference and does not constitute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:26:55Z",
+  "duration_seconds": 3.184,
+  "error": null
+}

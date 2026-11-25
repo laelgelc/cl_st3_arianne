@@ -1,0 +1,77 @@
+{
+  "article_id": "70682521",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/us/70682521.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/us/70682521.json"
+  },
+  "manifest_row": {
+    "article_id": "70682521",
+    "group": "2019_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/us/70682521.txt",
+    "now_field_2": "587",
+    "date_original": "19-04-13",
+    "date_iso": "2019-04-13",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/irwin-jacobs-150-yards-ahead-of-anyone-else/508543682/",
+    "title": "Irwin Jacobs: '150 yards ahead of anyone else'",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Irwin Jacobs's business career and role in boating and tournament fishing",
+    "climate_relevance": "A sentence about climate change and its effects in Minnesota appears unrelated to the identifiable main article.",
+    "reason": "The main article is a profile of Irwin Jacobs and his involvement in boating and fishing tournaments. Climate change appears only in a disconnected snippet, not as meaningful discourse within the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c9f9e549db05e6a7a3b589f3a16eaa229346cca4ee00008d34e2b8d0a307f1b0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "437fcc324784af9b7ee6fdc44be41a581ed88cd758be449447919dde5db00b67",
+    "raw_response_text_sha256": "9dcd3a8c0d8f50333cd3230a8a9eed1eae5103d998a662cd9c1f8dc6bdf647f0"
+  },
+  "api_metadata": {
+    "id": "resp_0131f28953e9b302006b063e747e4887d1bbe72960d7f1de46",
+    "model": "gpt-6-luna",
+    "created_at": 1795571316.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1237,
+      "input_tokens_details": {
+        "cache_write_tokens": 1234,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1234
+        }
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 1482
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Irwin Jacobs's business career and role in boating and tournament fishing\",\n  \"climate_relevance\": \"A sentence about climate change and its effects in Minnesota appears unrelated to the identifiable main article.\",\n  \"reason\": \"The main article is a profile of Irwin Jacobs and his involvement in boating and fishing tournaments. Climate change appears only in a disconnected snippet, not as meaningful discourse within the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:48:38Z",
+  "duration_seconds": 2.406,
+  "error": null
+}

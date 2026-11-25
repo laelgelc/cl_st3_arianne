@@ -1,0 +1,77 @@
+{
+  "article_id": "30445642",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/in/30445642.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/in/30445642.json"
+  },
+  "manifest_row": {
+    "article_id": "30445642",
+    "group": "2019_01",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/in/30445642.txt",
+    "now_field_2": "369",
+    "date_original": "19-01-12",
+    "date_iso": "2019-01-12",
+    "source_name": "Times of India",
+    "url": "https://timesofindia.indiatimes.com/city/chandigarh/ngt-set-solid-waste-mgmt-plan-in-month/articleshow/67507371.cms",
+    "title": "NGT: Set solid waste mgmt plan in month",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-in1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Municipal solid waste management in Mandi, Himachal Pradesh",
+    "climate_relevance": "Climate change appears only in the name of a government ministry; the article concerns waste-management compliance and funding.",
+    "reason": "The article is about a tribunal-directed solid waste management plan. The ministry name is not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "eac043e573cdbfa142aa9b5c9dbfbe6e01ea6cf4359467a05c35029ab31908e9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3119c0102a5d6a0dddccc80f985d8f02fe62b843861d855f21ce6d8c867dd2ff",
+    "raw_response_text_sha256": "0eef3b9246831fc93bc9205c8ad661000903e514b9ad9f053ace7491fc6906d5"
+  },
+  "api_metadata": {
+    "id": "resp_0636aa6bf2d35339006b06143737f887d28a38cd8431fdf039",
+    "model": "gpt-6-luna",
+    "created_at": 1795560503.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 992,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 202,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 1194
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Municipal solid waste management in Mandi, Himachal Pradesh\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government ministry; the article concerns waste-management compliance and funding.\",\n  \"reason\": \"The article is about a tribunal-directed solid waste management plan. The ministry name is not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:48:25Z",
+  "duration_seconds": 1.861,
+  "error": null
+}

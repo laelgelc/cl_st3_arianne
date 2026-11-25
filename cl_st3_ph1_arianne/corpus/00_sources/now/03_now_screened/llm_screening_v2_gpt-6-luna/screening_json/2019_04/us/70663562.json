@@ -1,0 +1,77 @@
+{
+  "article_id": "70663562",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/us/70663562.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/us/70663562.json"
+  },
+  "manifest_row": {
+    "article_id": "70663562",
+    "group": "2019_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/us/70663562.txt",
+    "now_field_2": "436",
+    "date_original": "19-04-07",
+    "date_iso": "2019-04-07",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/wild-winger-j-t-brown-arrested-on-suspicion-of-public-intoxication/508242702/",
+    "title": "Wild winger JT Brown arrested on suspicion of public intoxication",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Minnesota Wild forward J.T. Brown's arrest for public intoxication",
+    "climate_relevance": "The final sentence briefly describes climate change impacts, but it is unrelated to the main article and appears to be a separate snippet.",
+    "reason": "The identifiable main article concerns a hockey player's arrest and contains no climate discourse. The climate-related sentence is an unrelated appended snippet rather than part of the article's discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "df5160934799d00c704aa4ebbdcd8c9676440626f8278e0c73960824a3eb8982",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ebdb0213aae600323916a07161dc86cb9b45506c48804a8afa6214cd64f84670",
+    "raw_response_text_sha256": "dad9548e9bf806c22f390672dc1afea15b4d061e6377b2d07b4df5c25e009532"
+  },
+  "api_metadata": {
+    "id": "resp_0e043119ca394743006b063e553d7087d1bfbeba28a5f7f5ce",
+    "model": "gpt-6-luna",
+    "created_at": 1795571285.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1055,
+      "input_tokens_details": {
+        "cache_write_tokens": 1052,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1052
+        }
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1299
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Minnesota Wild forward J.T. Brown's arrest for public intoxication\",\n  \"climate_relevance\": \"The final sentence briefly describes climate change impacts, but it is unrelated to the main article and appears to be a separate snippet.\",\n  \"reason\": \"The identifiable main article concerns a hockey player's arrest and contains no climate discourse. The climate-related sentence is an unrelated appended snippet rather than part of the article's discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:48:07Z",
+  "duration_seconds": 2.387,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "32304750",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/nz/32304750.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/nz/32304750.json"
+  },
+  "manifest_row": {
+    "article_id": "32304750",
+    "group": "2020_11",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/nz/32304750.txt",
+    "now_field_2": "1220",
+    "date_original": "20-11-05",
+    "date_iso": "2020-11-05",
+    "source_name": "scoop.co.nz",
+    "url": "https://www.scoop.co.nz/stories/HL2011/S00034/electoral-musings-notes-from-the-edge-of-the-narrative-matrix.htm",
+    "title": "Electoral Musings: Notes From The Edge of The Narrative ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Electoral politics and criticism of the Democratic Party",
+    "climate_relevance": "The main article refers generally to 'destroy[ing] the environment,' and a separate related-content teaser briefly mentions combating climate change. Neither develops climate issues.",
+    "reason": "The identifiable main article is political commentary, not climate coverage. The climate reference appears only in a truncated, unrelated teaser and is too brief to provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f22e9f76968a85598dd82737a97df2df7bfa87c12a5b1c74f3c0c705b5ef269b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "51419a88ef80db9f02150520f7e0f807ae95d74c0ce0dea5f5c729c16af62572",
+    "raw_response_text_sha256": "36605e8abd76be8f7c9413366bf75805fb53fd4c021111250a36ad1379e3c205"
+  },
+  "api_metadata": {
+    "id": "resp_0ea908557813d12f006b061c0d275487d29356d4e0f6f0b74d",
+    "model": "gpt-6-luna",
+    "created_at": 1795562509.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2046,
+      "input_tokens_details": {
+        "cache_write_tokens": 2043,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2043
+        }
+      },
+      "output_tokens": 538,
+      "output_tokens_details": {
+        "reasoning_tokens": 385
+      },
+      "total_tokens": 2584
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Electoral politics and criticism of the Democratic Party\",\n  \"climate_relevance\": \"The main article refers generally to 'destroy[ing] the environment,' and a separate related-content teaser briefly mentions combating climate change. Neither develops climate issues.\",\n  \"reason\": \"The identifiable main article is political commentary, not climate coverage. The climate reference appears only in a truncated, unrelated teaser and is too brief to provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:21:53Z",
+  "duration_seconds": 4.047,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "24616717",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/in/24616717.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/in/24616717.json"
+  },
+  "manifest_row": {
+    "article_id": "24616717",
+    "group": "2018_05",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/in/24616717.txt",
+    "now_field_2": "1054",
+    "date_original": "18-05-12",
+    "date_iso": "2018-05-12",
+    "source_name": "Economic Times",
+    "url": "https://economictimes.indiatimes.com/news/environment/pollution/city-environmentalists-find-gaps-in-ncap-delhi-centric/articleshow/64139743.cms",
+    "title": "City environmentalists find gaps in NCAP, Delhi-centric",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-in.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Air pollution in Kolkata and concerns about India's National Clean Air Programme",
+    "climate_relevance": "Climate change appears only as part of the environment ministry's official name; the article discusses air quality, pollution monitoring, and clean-air policy without meaningful climate discourse.",
+    "reason": "The article is focused on urban air pollution and the draft NCAP. Its reference to climate change is incidental and does not contribute to climate-related discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cd30e9d9b1eff8216145ea64cff9f89e81994adc0e238ecc797d599bb7b54e07",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6b5a841d0812e48db18834824d2a9e8acb98819e98e7cf18d91f3979a9066885",
+    "raw_response_text_sha256": "7dba61467eebe226a97a5c934a9d350ccaf1c63a1e719a1caf86d9b16cf06b04"
+  },
+  "api_metadata": {
+    "id": "resp_094c3ac36e04998e006b0612a0c62487d289ab8329a0cece99",
+    "model": "gpt-6-luna",
+    "created_at": 1795560096.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1867,
+      "input_tokens_details": {
+        "cache_write_tokens": 1864,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1864
+        }
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 2082
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Air pollution in Kolkata and concerns about India's National Clean Air Programme\",\n  \"climate_relevance\": \"Climate change appears only as part of the environment ministry's official name; the article discusses air quality, pollution monitoring, and clean-air policy without meaningful climate discourse.\",\n  \"reason\": \"The article is focused on urban air pollution and the draft NCAP. Its reference to climate change is incidental and does not contribute to climate-related discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:41:38Z",
+  "duration_seconds": 2.146,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70361823",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/nz/70361823.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/nz/70361823.json"
+  },
+  "manifest_row": {
+    "article_id": "70361823",
+    "group": "2018_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/nz/70361823.txt",
+    "now_field_2": "275",
+    "date_original": "18-12-26",
+    "date_iso": "2018-12-26",
+    "source_name": "waateanews.com",
+    "url": "https://www.waateanews.com/waateanews/x_news/MjA4NzY/State-Spying-on-M%C4%81ori,-environmentalists-and-activists-requires-immediate-response",
+    "title": "State Spying on Maori, environmentalists and activists requires ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "Government surveillance of activists and public accountability",
+    "climate_relevance": "A final, apparently separate passage links current climate change to studies warning that Antarctica is at risk of melting.",
+    "reason": "The identifiable main article is about state surveillance, not climate change. The final sentence contains meaningful climate discourse, but appears to belong to a separate snippet, so the text is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8b603f01ee898ae648969223ee5722ce5816c65aa78525147472a91a9e78847e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9fa5db5f0f9b18f6d0a033de851af0c336145c595606ce5c84d1fb269d924c2a",
+    "raw_response_text_sha256": "d93d7931c767165855c5c62a8e4526a4005486ce4225af374a3a1b3e7a021d99"
+  },
+  "api_metadata": {
+    "id": "resp_06df6594ba980a6f006b063c2c86e087d1aaf3d2fdb6e41099",
+    "model": "gpt-6-luna",
+    "created_at": 1795570732.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 810,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 558,
+      "output_tokens_details": {
+        "reasoning_tokens": 413
+      },
+      "total_tokens": 1368
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Government surveillance of activists and public accountability\",\n  \"climate_relevance\": \"A final, apparently separate passage links current climate change to studies warning that Antarctica is at risk of melting.\",\n  \"reason\": \"The identifiable main article is about state surveillance, not climate change. The final sentence contains meaningful climate discourse, but appears to belong to a separate snippet, so the text is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:38:57Z",
+  "duration_seconds": 4.552,
+  "error": null
+}

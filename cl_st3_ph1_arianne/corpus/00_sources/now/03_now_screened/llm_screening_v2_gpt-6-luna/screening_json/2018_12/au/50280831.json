@@ -1,0 +1,77 @@
+{
+  "article_id": "50280831",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/au/50280831.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/au/50280831.json"
+  },
+  "manifest_row": {
+    "article_id": "50280831",
+    "group": "2018_12",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/au/50280831.txt",
+    "now_field_2": "351",
+    "date_original": "18-12-11",
+    "date_iso": "2018-12-11",
+    "source_name": "Brisbane Times",
+    "url": "https://www.brisbanetimes.com.au/world/middle-east/iran-confirms-recent-ballistic-missile-test-that-angered-us-20181211-p50ln2.html",
+    "title": "Iran confirms recent ballistic missile test that angered US",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-au.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Climate change debate, mitigation, climate scepticism, and youth climate activism",
+    "climate_relevance": "The opinion piece is substantially focused on climate change, its causes and risks, political responses, industry misinformation, and climate protests.",
+    "reason": "Although the text begins with an unrelated report about Iran's ballistic missile test, it also contains a clearly identifiable, extensive climate-focused opinion piece. Climate change is central to that piece, so it qualifies as CORE.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "17c4ed9fc3eba52e9b524114feae2a59c305dbfb2f40a26d0eb2f22ee5ca20e5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b7ebfc3c20b1f24c1f94cccc16a12e75459bbaaeee3a1e8a7bbeceb5f608ca1a",
+    "raw_response_text_sha256": "dc1468da2cefb1c5b352775cb32879d7ae3a77d6f40c350625eb4a15a4ddba72"
+  },
+  "api_metadata": {
+    "id": "resp_06e96295e5dbfe19006b062863ab6487d19012b6f892503374",
+    "model": "gpt-6-luna",
+    "created_at": 1795565667.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2559,
+      "input_tokens_details": {
+        "cache_write_tokens": 2556,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2556
+        }
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 2829
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Climate change debate, mitigation, climate scepticism, and youth climate activism\",\n  \"climate_relevance\": \"The opinion piece is substantially focused on climate change, its causes and risks, political responses, industry misinformation, and climate protests.\",\n  \"reason\": \"Although the text begins with an unrelated report about Iran's ballistic missile test, it also contains a clearly identifiable, extensive climate-focused opinion piece. Climate change is central to that piece, so it qualifies as CORE.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:14:30Z",
+  "duration_seconds": 2.749,
+  "error": null
+}

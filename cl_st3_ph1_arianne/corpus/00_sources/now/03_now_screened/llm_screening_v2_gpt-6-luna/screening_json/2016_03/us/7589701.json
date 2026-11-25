@@ -1,0 +1,77 @@
+{
+  "article_id": "7589701",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_03/us/7589701.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_03/us/7589701.json"
+  },
+  "manifest_row": {
+    "article_id": "7589701",
+    "group": "2016_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_03/us/7589701.txt",
+    "now_field_2": "1388",
+    "date_original": "16-03-08",
+    "date_iso": "2016-03-08",
+    "source_name": "Voice of America",
+    "url": "http://www.voanews.com/content/report-bleak-picture-life-in-besieged-areas-syria/3226870.html",
+    "title": "Report Paints Bleak Picture of Life in Besieged Areas of Syria",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-03-sls/16-03-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Humanitarian conditions in besieged areas of Syria",
+    "climate_relevance": "A separate video teaser links species loss to global climate change, but the identifiable main article about Syria contains no climate discourse.",
+    "reason": "Climate change appears only in an unrelated video listing within a collection of separate news snippets, not in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0a01bb702d255cdb4f87bde4c26111c0875fcd11582e5811e6bfa1d1986d6f5f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "755e2adacbd4f5f634f0882d5a03b4de91d4571f794c17ef7c13784ba807a11c",
+    "raw_response_text_sha256": "427731c224223b2f6bf4b0841c3368e737c17a6887197011ce0703370827fd22"
+  },
+  "api_metadata": {
+    "id": "resp_04f4ab870a0373db006b06463be1d887d1b614021ba4bafc07",
+    "model": "gpt-6-luna",
+    "created_at": 1795573307.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2311,
+      "input_tokens_details": {
+        "cache_write_tokens": 2308,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2308
+        }
+      },
+      "output_tokens": 363,
+      "output_tokens_details": {
+        "reasoning_tokens": 226
+      },
+      "total_tokens": 2674
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Humanitarian conditions in besieged areas of Syria\",\n  \"climate_relevance\": \"A separate video teaser links species loss to global climate change, but the identifiable main article about Syria contains no climate discourse.\",\n  \"reason\": \"Climate change appears only in an unrelated video listing within a collection of separate news snippets, not in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:21:51Z",
+  "duration_seconds": 3.286,
+  "error": null
+}

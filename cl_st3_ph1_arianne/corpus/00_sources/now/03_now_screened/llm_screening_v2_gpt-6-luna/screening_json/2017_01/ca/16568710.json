@@ -1,0 +1,77 @@
+{
+  "article_id": "16568710",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/ca/16568710.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/ca/16568710.json"
+  },
+  "manifest_row": {
+    "article_id": "16568710",
+    "group": "2017_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/ca/16568710.txt",
+    "now_field_2": "614",
+    "date_original": "17-01-24",
+    "date_iso": "2017-01-24",
+    "source_name": "Saskatoon StarPhoenix",
+    "url": "http://thestarphoenix.com/news/local-news/suspicious-odour-lead-to-the-discovery-of-an-oil-pipeline-leak-near-stoughton-chief",
+    "title": "Suspicious odour led to the discovery of an oil pipeline leak near ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An oil spill on agricultural land and the cleanup response",
+    "climate_relevance": "Climate change is not discussed; Environment and Climate Change Canada appears only as the name of an agency notified about the spill.",
+    "reason": "The article concerns an oil spill and its cleanup, with no meaningful discourse about climate change or its implications. The remaining material is account and advertising boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "728c3c97fd07ecba6f1103f7df4ccf3ae5aa012599238b209196eb89f0766d55",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c464b8598ee688fa2f823b27956aba51cad2715f3679e0edbc567cd2d6b20f8d",
+    "raw_response_text_sha256": "b67f4061ce3483bf4940f4becdb70bd020c56ffbe3d983b2aa89cf75cad96f23"
+  },
+  "api_metadata": {
+    "id": "resp_0a18ea03240510d7006b0607daf60887d28d0d5e89ee89ea66",
+    "model": "gpt-6-luna",
+    "created_at": 1795557339.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1281,
+      "input_tokens_details": {
+        "cache_write_tokens": 1278,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1278
+        }
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 1479
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An oil spill on agricultural land and the cleanup response\",\n  \"climate_relevance\": \"Climate change is not discussed; Environment and Climate Change Canada appears only as the name of an agency notified about the spill.\",\n  \"reason\": \"The article concerns an oil spill and its cleanup, with no meaningful discourse about climate change or its implications. The remaining material is account and advertising boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:55:40Z",
+  "duration_seconds": 1.785,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "51006030",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ng/51006030.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ng/51006030.json"
+  },
+  "manifest_row": {
+    "article_id": "51006030",
+    "group": "2019_09",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ng/51006030.txt",
+    "now_field_2": "1403",
+    "date_original": "19-09-02",
+    "date_iso": "2019-09-02",
+    "source_name": "blueprint.ng",
+    "url": "https://www.blueprint.ng/nscdc-under-gana-how-far-so-far/",
+    "title": "NSCDC under Gana: How far, so far? - Blueprint",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The leadership and security activities of the Nigeria Security and Civil Defence Corps",
+    "climate_relevance": "Climate change appears only in a brief excerpt from an unrelated column listed among other snippets.",
+    "reason": "The identifiable main article is about the NSCDC and contains no meaningful climate discourse. The isolated Greta Thunberg reference belongs to a separate column snippet and does not make the main article relevant to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c6314c2467a708282c12fb96d8817c41acde3910988440d97f9e6e923b5beaf2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "41c278eab8aaaf69922ccedc344f815aa97ee9cfd430bc315f3629a769f0ac47",
+    "raw_response_text_sha256": "87906342fbd11172c63ce2cbe9c8572182d5e37005b31860b7b869ca7adfca8f"
+  },
+  "api_metadata": {
+    "id": "resp_0c30d7b4234001bd006b062b55785087d18a62865582fc2f57",
+    "model": "gpt-6-luna",
+    "created_at": 1795566421.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2377,
+      "input_tokens_details": {
+        "cache_write_tokens": 2374,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2374
+        }
+      },
+      "output_tokens": 296,
+      "output_tokens_details": {
+        "reasoning_tokens": 144
+      },
+      "total_tokens": 2673
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The leadership and security activities of the Nigeria Security and Civil Defence Corps\",\n  \"climate_relevance\": \"Climate change appears only in a brief excerpt from an unrelated column listed among other snippets.\",\n  \"reason\": \"The identifiable main article is about the NSCDC and contains no meaningful climate discourse. The isolated Greta Thunberg reference belongs to a separate column snippet and does not make the main article relevant to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:27:03Z",
+  "duration_seconds": 2.53,
+  "error": null
+}

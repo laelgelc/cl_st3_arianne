@@ -1,0 +1,77 @@
+{
+  "article_id": "71213724",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/au/71213724.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/au/71213724.json"
+  },
+  "manifest_row": {
+    "article_id": "71213724",
+    "group": "2019_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/au/71213724.txt",
+    "now_field_2": "446",
+    "date_original": "19-09-15",
+    "date_iso": "2019-09-15",
+    "source_name": "abc.net.au",
+    "url": "https://www.abc.net.au/news/2019-09-09/lawyer-x-royal-commission-hears-nicola-gobbo-edited-statements/11478666",
+    "title": "Lawyer X royal commission hears Nicola Gobbo secretly ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Police informant misconduct and gangland prosecutions",
+    "climate_relevance": "Climate change appears only in a separate 'Features' teaser about a fact check of the Prime Minister's statements; no climate-related discussion is provided.",
+    "reason": "The main article concerns a police informant and a royal commission. The climate reference is an unrelated feature snippet, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "210c6134dfebf07a953be5d7c42383d0b1b2522f0ca6bdd24f269963bbff2ed5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9a934709273b7f7bf5ee540744e2e4ea5170bd122a08ac7fd8cc3610d82e2b6a",
+    "raw_response_text_sha256": "44697f7312d10027d03a4edd7a6beaf45ce8744441ddd57ccfb613c63a940acc"
+  },
+  "api_metadata": {
+    "id": "resp_0005273561c8f104006b064069811c87d1bec42c6c8594aad5",
+    "model": "gpt-6-luna",
+    "created_at": 1795571817.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1066,
+      "input_tokens_details": {
+        "cache_write_tokens": 1063,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1063
+        }
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 1296
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Police informant misconduct and gangland prosecutions\",\n  \"climate_relevance\": \"Climate change appears only in a separate 'Features' teaser about a fact check of the Prime Minister's statements; no climate-related discussion is provided.\",\n  \"reason\": \"The main article concerns a police informant and a royal commission. The climate reference is an unrelated feature snippet, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:56:59Z",
+  "duration_seconds": 2.503,
+  "error": null
+}

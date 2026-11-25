@@ -1,0 +1,77 @@
+{
+  "article_id": "83727065",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/83727065.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/83727065.json"
+  },
+  "manifest_row": {
+    "article_id": "83727065",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/83727065.txt",
+    "now_field_2": "204",
+    "date_original": "20-02-09",
+    "date_iso": "2020-02-09",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20200209173935-r9ci4",
+    "title": "Storm Sabine disrupts flights and trains in Germany",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us6.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Storm-related flight and railway disruptions in Germany and nearby countries",
+    "climate_relevance": "Climate change appears only in an unrelated boilerplate description of coverage areas; the article does not discuss its causes, impacts, or implications.",
+    "reason": "The report focuses on travel disruption caused by storm Sabine/Ciara. The sole climate-change mention is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c0da52a1ac9be966848f99c372ed474e4a0f7ba2d8d48d5ed4f0e5b3ba4a7ccd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "882b053ef63a7d7bebcc7afceed46c2ad95707e5622eb4e44d90a11fd986dbef",
+    "raw_response_text_sha256": "a2b42e91082aa4771564afe6c405dc281a3ea7b3dcd1b243e65f95aba63844b3"
+  },
+  "api_metadata": {
+    "id": "resp_0c49ebf35f4d51e5006b0649ef706087d1a68f51e5ae42aa52",
+    "model": "gpt-6-luna",
+    "created_at": 1795574255.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 771,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 184,
+      "output_tokens_details": {
+        "reasoning_tokens": 41
+      },
+      "total_tokens": 955
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Storm-related flight and railway disruptions in Germany and nearby countries\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated boilerplate description of coverage areas; the article does not discuss its causes, impacts, or implications.\",\n  \"reason\": \"The report focuses on travel disruption caused by storm Sabine/Ciara. The sole climate-change mention is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:37:39Z",
+  "duration_seconds": 4.548,
+  "error": null
+}

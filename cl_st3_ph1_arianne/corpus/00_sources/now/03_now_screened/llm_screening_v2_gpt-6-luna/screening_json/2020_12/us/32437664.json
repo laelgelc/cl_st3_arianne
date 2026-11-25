@@ -1,0 +1,77 @@
+{
+  "article_id": "32437664",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/32437664.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/32437664.json"
+  },
+  "manifest_row": {
+    "article_id": "32437664",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/32437664.txt",
+    "now_field_2": "395",
+    "date_original": "20-12-19",
+    "date_iso": "2020-12-19",
+    "source_name": "forbes.com",
+    "url": "https://www.forbes.com/companies/skanska/",
+    "title": "<strong>Skanska</strong> - <strong>Forbes</strong>",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Skanska company profile and construction business",
+    "climate_relevance": "Climate-related references appear in separate Forbes recommendation snippets, not in the identifiable company profile.",
+    "reason": "The main text describes Skanska's business and company details without meaningful discussion of climate change. The climate references occur in unrelated snippets, including a general mention of mitigation and a carbon-negative flooring prototype.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5a8a167435de0c27256a25b35fdca80c2800e5bf0a345185f8a83adfc5f69e16",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "78422aaba582b615ee262cb4c3be7332d58e9f9163f1f98eed4dafd8c5292df8",
+    "raw_response_text_sha256": "a08eea71a615b995ddca092f2e4c5f087a234f6f763a4dfafb1a0683b1fce4c2"
+  },
+  "api_metadata": {
+    "id": "resp_0246817fd11b2db0006b061ca85e8887d2bd29e3f2f4bc1895",
+    "model": "gpt-6-luna",
+    "created_at": 1795562664.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1036,
+      "input_tokens_details": {
+        "cache_write_tokens": 1033,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1033
+        }
+      },
+      "output_tokens": 430,
+      "output_tokens_details": {
+        "reasoning_tokens": 287
+      },
+      "total_tokens": 1466
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Skanska company profile and construction business\",\n  \"climate_relevance\": \"Climate-related references appear in separate Forbes recommendation snippets, not in the identifiable company profile.\",\n  \"reason\": \"The main text describes Skanska's business and company details without meaningful discussion of climate change. The climate references occur in unrelated snippets, including a general mention of mitigation and a carbon-negative flooring prototype.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:24:28Z",
+  "duration_seconds": 3.919,
+  "error": null
+}

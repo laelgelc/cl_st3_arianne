@@ -1,0 +1,77 @@
+{
+  "article_id": "42250923",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/gb/42250923.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/gb/42250923.json"
+  },
+  "manifest_row": {
+    "article_id": "42250923",
+    "group": "2020_09",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/gb/42250923.txt",
+    "now_field_2": "5378",
+    "date_original": "20-09-07",
+    "date_iso": "2020-09-07",
+    "source_name": "independent.co.uk",
+    "url": "https://www.independent.co.uk/news/uk/politics/press-freedom-uk-government-council-europe-alert-boris-johnson-priti-patel-a9706741.html",
+    "title": "Council of Europe issues media freedom alert over UK ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Press freedom and the UK government’s treatment of investigative journalists",
+    "climate_relevance": "The article mentions climate coverage as the subject of environmental activists’ blockades of newspaper printing plants, and quotes Boris Johnson referring to the fight against climate change. Climate discourse is relevant context, not the article’s main focus.",
+    "reason": "The main article is about a media-freedom alert and government restrictions on journalists. Its climate references meaningfully connect press freedom, newspaper coverage, and protest, but do not make climate change a central topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "09aef0b6a52c079adf1ee66cbde3eb17c9ace622abd446c6c5273417749250fd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fcf19127bf8c3018a92d2a580b456b1677074e518d968c3a604e111cdb0d75b6",
+    "raw_response_text_sha256": "e0c0d17ece9e85a27c683621080d7cd0a34c657860ae3cac7407107f94dec054"
+  },
+  "api_metadata": {
+    "id": "resp_055020932459c8b3006b0625519ad887d2bdff8cf71324e0da",
+    "model": "gpt-6-luna",
+    "created_at": 1795564881.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4308,
+      "input_tokens_details": {
+        "cache_write_tokens": 4305,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4305
+        }
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 4547
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Press freedom and the UK government’s treatment of investigative journalists\",\n  \"climate_relevance\": \"The article mentions climate coverage as the subject of environmental activists’ blockades of newspaper printing plants, and quotes Boris Johnson referring to the fight against climate change. Climate discourse is relevant context, not the article’s main focus.\",\n  \"reason\": \"The main article is about a media-freedom alert and government restrictions on journalists. Its climate references meaningfully connect press freedom, newspaper coverage, and protest, but do not make climate change a central topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:01:23Z",
+  "duration_seconds": 2.275,
+  "error": null
+}

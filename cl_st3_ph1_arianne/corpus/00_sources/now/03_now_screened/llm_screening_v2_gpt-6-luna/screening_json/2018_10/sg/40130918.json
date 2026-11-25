@@ -1,0 +1,77 @@
+{
+  "article_id": "40130918",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/sg/40130918.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/sg/40130918.json"
+  },
+  "manifest_row": {
+    "article_id": "40130918",
+    "group": "2018_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/sg/40130918.txt",
+    "now_field_2": "555",
+    "date_original": "18-10-09",
+    "date_iso": "2018-10-09",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/dutch-court-tells-government-slash-greenhouse-gas-143718382.html",
+    "title": "Dutch court tells government to slash greenhouse gas",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-sg.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "A Dutch court ruling requiring the government to reduce greenhouse gas emissions to address climate change.",
+    "climate_relevance": "The report focuses on climate litigation, emissions-reduction targets, government responsibility, and the risks of global warming.",
+    "reason": "Climate change and its mitigation are the central subject of the article, including the court's ruling, the government's obligations, and emissions policies.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bfc5632d8782723279fc80064f8e291e35d50ac0d6c903cb43e5cf1dfe7bd207",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6ffe480ada427b3734ffa1c0735f1bf86171f12c81136a2add6f03aa3c9e82d7",
+    "raw_response_text_sha256": "3490f3d72adc6d363ca49d66793f2b994bbf8a6d850258744b778d8463241efe"
+  },
+  "api_metadata": {
+    "id": "resp_054609ab2c95359c006b061e47592c87d2a2359a0fd29d6219",
+    "model": "gpt-6-luna",
+    "created_at": 1795563079.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1214,
+      "input_tokens_details": {
+        "cache_write_tokens": 1211,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1211
+        }
+      },
+      "output_tokens": 178,
+      "output_tokens_details": {
+        "reasoning_tokens": 39
+      },
+      "total_tokens": 1392
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"A Dutch court ruling requiring the government to reduce greenhouse gas emissions to address climate change.\",\n  \"climate_relevance\": \"The report focuses on climate litigation, emissions-reduction targets, government responsibility, and the risks of global warming.\",\n  \"reason\": \"Climate change and its mitigation are the central subject of the article, including the court's ruling, the government's obligations, and emissions policies.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:31:21Z",
+  "duration_seconds": 1.792,
+  "error": null
+}

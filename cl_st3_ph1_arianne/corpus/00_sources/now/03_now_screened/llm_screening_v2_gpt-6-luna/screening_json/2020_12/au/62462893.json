@@ -1,0 +1,77 @@
+{
+  "article_id": "62462893",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/au/62462893.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/au/62462893.json"
+  },
+  "manifest_row": {
+    "article_id": "62462893",
+    "group": "2020_12",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/au/62462893.txt",
+    "now_field_2": "425",
+    "date_original": "20-12-10",
+    "date_iso": "2020-12-10",
+    "source_name": "popculture.com",
+    "url": "https://popculture.com/trending/news/donald-trump-finalist-time-2020-person-of-the-year/",
+    "title": "Donald Trump Named a Finalist for Time's 2020 Person of ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "The finalists for TIME Magazine's 2020 Person of the Year",
+    "climate_relevance": "Climate change appears only in a brief reference to Greta Thunberg's environmental activism; wildfires are also listed without climate context.",
+    "reason": "The article is about the Person of the Year shortlist and reactions to it. Its climate references are passing mentions and do not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f8aeb557f051c6ab28b40c1e8a18e92d45171e8d64d3747fce39b30e1495b92b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3073ca08e4353605408da7f2f7f821737ddd26dd4e16259c694331178ab68a66",
+    "raw_response_text_sha256": "ae101940ae90f4b48b5f903bcae7f2957402342e58dbe68dfde88d5ac97bc00f"
+  },
+  "api_metadata": {
+    "id": "resp_0cd24d6b92410a5d006b063a49973087d18c65bddcab8cdbfb",
+    "model": "gpt-6-luna",
+    "created_at": 1795570249.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1024,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 303,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 1327
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The finalists for TIME Magazine's 2020 Person of the Year\",\n  \"climate_relevance\": \"Climate change appears only in a brief reference to Greta Thunberg's environmental activism; wildfires are also listed without climate context.\",\n  \"reason\": \"The article is about the Person of the Year shortlist and reactions to it. Its climate references are passing mentions and do not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:30:52Z",
+  "duration_seconds": 2.612,
+  "error": null
+}

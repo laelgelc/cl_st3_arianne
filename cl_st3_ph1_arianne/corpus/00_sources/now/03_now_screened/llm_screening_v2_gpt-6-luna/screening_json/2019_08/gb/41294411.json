@@ -1,0 +1,77 @@
+{
+  "article_id": "41294411",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/gb/41294411.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/gb/41294411.json"
+  },
+  "manifest_row": {
+    "article_id": "41294411",
+    "group": "2019_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/gb/41294411.txt",
+    "now_field_2": "603",
+    "date_original": "19-08-24",
+    "date_iso": "2019-08-24",
+    "source_name": "standard.co.uk",
+    "url": "https://www.standard.co.uk/news/world/amazon-fires-brazilian-military-begins-operations-to-fight-record-number-of-blazes-amid-global-a4220876.html",
+    "title": "Amazon fires: Brazilian military begins operations to ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Brazil's military response to record Amazon fires and the resulting political and international dispute",
+    "climate_relevance": "The text explicitly connects protecting the Amazon to efforts to contain climate change, but climate is not the main focus of the report.",
+    "reason": "The article mainly covers the fires, firefighting operations, and political fallout. Its climate-change reference gives the story meaningful climate relevance, but the available text does not substantially discuss climate causes, impacts, or policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "765b2900a386bd691ea13f43e3e2dce69699e0cd7240925cf66cb2877ff42707",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "79a91eb2ef1532d657d1be6baa337efffee97eaab45bb2b07e22a45e02b0ff6a",
+    "raw_response_text_sha256": "626112b31f4f13fbb5182e3e2fd0acc71a9ace6615ef04c0e8e25278847c9ac8"
+  },
+  "api_metadata": {
+    "id": "resp_0ae7ead37d316b4a006b062110024c87d28c1502da7605dbaa",
+    "model": "gpt-6-luna",
+    "created_at": 1795563792.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1450,
+      "input_tokens_details": {
+        "cache_write_tokens": 1447,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1447
+        }
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 1705
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Brazil's military response to record Amazon fires and the resulting political and international dispute\",\n  \"climate_relevance\": \"The text explicitly connects protecting the Amazon to efforts to contain climate change, but climate is not the main focus of the report.\",\n  \"reason\": \"The article mainly covers the fires, firefighting operations, and political fallout. Its climate-change reference gives the story meaningful climate relevance, but the available text does not substantially discuss climate causes, impacts, or policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:43:14Z",
+  "duration_seconds": 2.315,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "41063676",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/sg/41063676.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/sg/41063676.json"
+  },
+  "manifest_row": {
+    "article_id": "41063676",
+    "group": "2019_06",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/sg/41063676.txt",
+    "now_field_2": "356",
+    "date_original": "19-06-14",
+    "date_iso": "2019-06-14",
+    "source_name": "The Straits Times",
+    "url": "https://www.straitstimes.com/asia/se-asia/more-plastic-waste-found-in-penang",
+    "title": "More plastic waste found in Penang",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Canadian plastic waste shipments to Malaysia and the handling of imported waste",
+    "climate_relevance": "Climate change appears only as part of the name of Canada's environment ministry; the text contains no meaningful climate-related discussion.",
+    "reason": "The article focuses on plastic waste, recycling, and the return of waste shipments. The ministry name is incidental and does not contribute to climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "abda0d56a97d84c1e587a948572e6332615b2b3fc1b392eb287f17d8e6999724",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c4e00b5ec9dfb6aa5f7e0e61a86192bc6fdb0c635fb9dd4995cba3e212be2477",
+    "raw_response_text_sha256": "0f8f1911641e672f2175c27c1c42e4c33b4b839659f87ddbeb4289e5bbc790c3"
+  },
+  "api_metadata": {
+    "id": "resp_0ba10f220265d728006b0620c7536487d299e58096cd4cc656",
+    "model": "gpt-6-luna",
+    "created_at": 1795563719.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 933,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 200,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 1133
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Canadian plastic waste shipments to Malaysia and the handling of imported waste\",\n  \"climate_relevance\": \"Climate change appears only as part of the name of Canada's environment ministry; the text contains no meaningful climate-related discussion.\",\n  \"reason\": \"The article focuses on plastic waste, recycling, and the return of waste shipments. The ministry name is incidental and does not contribute to climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:42:01Z",
+  "duration_seconds": 1.869,
+  "error": null
+}

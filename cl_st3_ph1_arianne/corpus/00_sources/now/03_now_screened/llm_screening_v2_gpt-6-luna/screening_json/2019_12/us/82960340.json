@@ -1,0 +1,77 @@
+{
+  "article_id": "82960340",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82960340.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82960340.json"
+  },
+  "manifest_row": {
+    "article_id": "82960340",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82960340.txt",
+    "now_field_2": "158",
+    "date_original": "19-12-29",
+    "date_iso": "2019-12-29",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191230043130-z2b7t",
+    "title": "Chinese court sentences Early Rain Church pastor to nine years for subversion",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The sentencing of a Chinese church pastor for inciting subversion of state power.",
+    "climate_relevance": "Climate change appears only in a generic description of the news organization’s coverage areas.",
+    "reason": "The article is about a pastor’s imprisonment and contains no meaningful climate discourse; the sole reference is boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "054c6502a856d043e1020eea6f2f268b2b0d83e25111bca2c1243d77b8f9a432",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dd014dc3de361b833eaf2f5f3148b565418980423605572ff1ae181b47ff9e6b",
+    "raw_response_text_sha256": "bfda7ac13071091f589678f242d66bd9244d2b9da346f442844a733d5c70d85b"
+  },
+  "api_metadata": {
+    "id": "resp_0b0349d0be7e7dcc006b064900a0e087d1a3e32b5be1aec844",
+    "model": "gpt-6-luna",
+    "created_at": 1795574016.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 693,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 188,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 881
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The sentencing of a Chinese church pastor for inciting subversion of state power.\",\n  \"climate_relevance\": \"Climate change appears only in a generic description of the news organization’s coverage areas.\",\n  \"reason\": \"The article is about a pastor’s imprisonment and contains no meaningful climate discourse; the sole reference is boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:33:38Z",
+  "duration_seconds": 1.819,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40920687",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/my/40920687.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/my/40920687.json"
+  },
+  "manifest_row": {
+    "article_id": "40920687",
+    "group": "2019_05",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/my/40920687.txt",
+    "now_field_2": "142",
+    "date_original": "19-05-05",
+    "date_iso": "2019-05-05",
+    "source_name": "Malaysiakini",
+    "url": "https://www.malaysiakini.com/news/475029",
+    "title": "Australia shoots down Putrajaya's bid to return Lynas' radioactive waste",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Disposal of waste from Lynas's rare-earth processing facility",
+    "climate_relevance": "Climate change appears only in the title of a ministerial portfolio; the text does not discuss climate issues.",
+    "reason": "The passage concerns rare-earth processing waste and its return to Australia. The climate reference is part of a minister's official title, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "75910df2b5119c95a443c8162514d3d24b0aca70c54c688c65c7069d23abe479",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9e628af4ae20cd80ec8db33e0b4a5f25aa05e2ba9990c02707e16001861a3fc7",
+    "raw_response_text_sha256": "c692ee96adbbb4896248aa4d7c468851070f5f2d33505d6d26de911320157bfb"
+  },
+  "api_metadata": {
+    "id": "resp_042841b6b8ed6aff006b062057273887d2b7c90e8eeff56b51",
+    "model": "gpt-6-luna",
+    "created_at": 1795563607.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 665,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 873
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Disposal of waste from Lynas's rare-earth processing facility\",\n  \"climate_relevance\": \"Climate change appears only in the title of a ministerial portfolio; the text does not discuss climate issues.\",\n  \"reason\": \"The passage concerns rare-earth processing waste and its return to Australia. The climate reference is part of a minister's official title, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:40:09Z",
+  "duration_seconds": 2.076,
+  "error": null
+}

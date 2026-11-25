@@ -1,0 +1,77 @@
+{
+  "article_id": "7719362",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_03/ca/7719362.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_03/ca/7719362.json"
+  },
+  "manifest_row": {
+    "article_id": "7719362",
+    "group": "2016_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_03/ca/7719362.txt",
+    "now_field_2": "799",
+    "date_original": "16-03-15",
+    "date_iso": "2016-03-15",
+    "source_name": "National Post",
+    "url": "http://news.nationalpost.com/news/canada/national-parks-improvements-planned-with-goal-of-attracting-more-immigrants-urbanites",
+    "title": "National parks improvements planned, with goal of attracting more ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-03-sls/16-03-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Parks Canada plans to attract more visitors and improve visitor facilities and programs.",
+    "climate_relevance": "Climate change appears only as part of the minister's official title; the article contains no meaningful discussion of climate change.",
+    "reason": "The article focuses on park visitation, tourism, funding, and ecological integrity. Its climate reference is incidental and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "72a31e06f4fa5540e34238875318b7299300add492b531ed8023c092adbc0d90",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "efafddd3a29dc088ea3353a1158ea13087499097fbc7ccde7100bc963d126fa5",
+    "raw_response_text_sha256": "ef25a1082c4d35e5677b988cf750e4318b250f0d369b019bfe13e961c3d2aa50"
+  },
+  "api_metadata": {
+    "id": "resp_0af7cab0636608d4006b0646593eec87d1ad2bbe23be86c279",
+    "model": "gpt-6-luna",
+    "created_at": 1795573337.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1537,
+      "input_tokens_details": {
+        "cache_write_tokens": 1534,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1534
+        }
+      },
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 1744
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Parks Canada plans to attract more visitors and improve visitor facilities and programs.\",\n  \"climate_relevance\": \"Climate change appears only as part of the minister's official title; the article contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on park visitation, tourism, funding, and ecological integrity. Its climate reference is incidental and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:22:19Z",
+  "duration_seconds": 2.434,
+  "error": null
+}

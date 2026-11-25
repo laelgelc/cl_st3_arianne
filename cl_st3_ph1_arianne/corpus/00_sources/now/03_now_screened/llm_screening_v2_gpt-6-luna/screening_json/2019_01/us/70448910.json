@@ -1,0 +1,77 @@
+{
+  "article_id": "70448910",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/us/70448910.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/us/70448910.json"
+  },
+  "manifest_row": {
+    "article_id": "70448910",
+    "group": "2019_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/us/70448910.txt",
+    "now_field_2": "320",
+    "date_original": "19-01-24",
+    "date_iso": "2019-01-24",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/weather/2019/01/24/soaking-rain-downpours-lead-pockets-flooding-washington-region/",
+    "title": "Soaking rain and downpours lead to pockets of flooding in the ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Heavy rain, flooding, and weather conditions in the Washington region",
+    "climate_relevance": "Climate change appears only in the author’s biography, which notes prior work as a climate change science analyst.",
+    "reason": "The article reports a specific rainfall and flooding event without discussing climate change; its sole climate reference is incidental biographical information.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a348f7c176878d23e67da533676c7088882363ee7e98fe886ed0164b48dcd603",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9a606ef7a1e191898763069fbe0aea8b24a867e8a10b77da3c2d0aaa6d72c145",
+    "raw_response_text_sha256": "e1a411fccca3ee8dfab7fffe1d2ea02dfcb42b61ab9490f72f714a273d49be66"
+  },
+  "api_metadata": {
+    "id": "resp_0ffdd2812d530c02006b063c987fbc87d187acae18e93ea9aa",
+    "model": "gpt-6-luna",
+    "created_at": 1795570840.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 909,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 187,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 1096
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Heavy rain, flooding, and weather conditions in the Washington region\",\n  \"climate_relevance\": \"Climate change appears only in the author’s biography, which notes prior work as a climate change science analyst.\",\n  \"reason\": \"The article reports a specific rainfall and flooding event without discussing climate change; its sole climate reference is incidental biographical information.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:42Z",
+  "duration_seconds": 1.734,
+  "error": null
+}

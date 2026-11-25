@@ -1,0 +1,77 @@
+{
+  "article_id": "85889112",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/85889112.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/85889112.json"
+  },
+  "manifest_row": {
+    "article_id": "85889112",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/85889112.txt",
+    "now_field_2": "1449",
+    "date_original": "20-09-09",
+    "date_iso": "2020-09-09",
+    "source_name": "The Plain Dealer  Cleveland on MSN.com",
+    "url": "https://www.msn.com/en-us/news/us/cleveland-police-charge-3-in-detective-e2-80-99s-murder-the-wake-up-for-wednesday-sept-9-2020/ar-BB18QT0T",
+    "title": "Cleveland police charge 3 in detective's murder: The Wake Up for Wednesday, Sept. 9, 2020",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "passing",
+    "main_topic": "A roundup of Cleveland and Ohio news items",
+    "climate_relevance": "A podcast teaser connects a record-setting Labor Day rainstorm and flooding with the question of whether climate change is involved.",
+    "reason": "The text is a collection of unrelated news briefs, most of which concern other topics. One brief explicitly raises climate change as a possible factor in severe rainfall and flooding, but provides no further climate discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c9f972e9bf197227e1c5dc579d365ba762ed1e4c8da3b6ba6b3eaeb34ed63eb3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f75eb029457333315a2947dd86fc7b6124159d2bb1a46924f6e0796a49f0700b",
+    "raw_response_text_sha256": "ff2e4c9895c743914a19b3d547a0caf000c3baf5747227d02c31d76058d39741"
+  },
+  "api_metadata": {
+    "id": "resp_0b28d4f570488e67006b064d6cfcec87d1a26cc6104c1d365b",
+    "model": "gpt-6-luna",
+    "created_at": 1795575149.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2389,
+      "input_tokens_details": {
+        "cache_write_tokens": 2386,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2386
+        }
+      },
+      "output_tokens": 368,
+      "output_tokens_details": {
+        "reasoning_tokens": 221
+      },
+      "total_tokens": 2757
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A roundup of Cleveland and Ohio news items\",\n  \"climate_relevance\": \"A podcast teaser connects a record-setting Labor Day rainstorm and flooding with the question of whether climate change is involved.\",\n  \"reason\": \"The text is a collection of unrelated news briefs, most of which concern other topics. One brief explicitly raises climate change as a possible factor in severe rainfall and flooding, but provides no further climate discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:52:32Z",
+  "duration_seconds": 3.473,
+  "error": null
+}

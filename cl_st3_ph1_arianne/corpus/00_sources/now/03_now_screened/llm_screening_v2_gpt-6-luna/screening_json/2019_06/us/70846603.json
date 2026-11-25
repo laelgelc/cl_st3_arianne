@@ -1,0 +1,77 @@
+{
+  "article_id": "70846603",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/us/70846603.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/us/70846603.json"
+  },
+  "manifest_row": {
+    "article_id": "70846603",
+    "group": "2019_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/us/70846603.txt",
+    "now_field_2": "945",
+    "date_original": "19-06-07",
+    "date_iso": "2019-06-07",
+    "source_name": "Dailyuw",
+    "url": "http://www.dailyuw.com/opinion/article_415e3a2c-88d6-11e9-ab1c-f35f3a3832ee.html",
+    "title": "A recent history of student activism we shall never forget",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Student activism, the 1989 Tiananmen Square crackdown, and political memory",
+    "climate_relevance": "Climate change appears only in a separate Top Story teaser about its limited discussion during Democratic debates; it is not meaningfully discussed in the identifiable main article.",
+    "reason": "The main article concerns student activism and political repression. The climate-related text is an unrelated news teaser, not part of the article's substantive discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "375d8f57fc544166d23556c80d3f3bda4203123b3675b48a66e0889922084343",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4ec427f244f205c19bb12b8b50da72cd85c3487f67957ea3eb4685a31ff95da3",
+    "raw_response_text_sha256": "8552b9d672a9aa9028f843de95bd98fdb517b08a1df12d24a40b8e8f368f6433"
+  },
+  "api_metadata": {
+    "id": "resp_005a9539b4a4632d006b063f81f01087d1a8b152687903a8c4",
+    "model": "gpt-6-luna",
+    "created_at": 1795571586.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1718,
+      "input_tokens_details": {
+        "cache_write_tokens": 1715,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1715
+        }
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 2000
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Student activism, the 1989 Tiananmen Square crackdown, and political memory\",\n  \"climate_relevance\": \"Climate change appears only in a separate Top Story teaser about its limited discussion during Democratic debates; it is not meaningfully discussed in the identifiable main article.\",\n  \"reason\": \"The main article concerns student activism and political repression. The climate-related text is an unrelated news teaser, not part of the article's substantive discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:53:08Z",
+  "duration_seconds": 2.367,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "15390903",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_11/nz/15390903.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_11/nz/15390903.json"
+  },
+  "manifest_row": {
+    "article_id": "15390903",
+    "group": "2016_11",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_11/nz/15390903.txt",
+    "now_field_2": "1110",
+    "date_original": "16-11-14",
+    "date_iso": "2016-11-14",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/BU1611/S00557/majority-of-new-zealanders-expect-more-from-their-kiwisaver.htm",
+    "title": "Majority of New Zealanders expect more from their KiwiSaver",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-11.txt\"]",
+    "metadata_article_files": "[\"text-16-11/text_16-11-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "New Zealanders’ expectations for responsible and ethical investment in KiwiSaver funds",
+    "climate_relevance": "The article mentions environmental risks and carbon emissions as investment considerations, and lists climate change as a conference topic, but does not develop climate-related discussion.",
+    "reason": "The identifiable main article is about responsible investment and consumer expectations more broadly. Its references to climate-related issues are relevant but limited, so it is peripheral rather than core climate coverage. Unrelated snippets follow the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1f137a08ca516ae1708770b29e4d8c219f15b3f5353ae399b045992d63a0aaf9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "16364b87c08f1fea0024a17a16fb514f57ed540d8249fee67ce5073f7f8b3ff8",
+    "raw_response_text_sha256": "0b271b79bfe5cd60d9ab1170ca62a2c8295ba0a6fb8c71a00fe8d37b08cb42b7"
+  },
+  "api_metadata": {
+    "id": "resp_0bda80e9b8294911006b06069ca2d487d2816b0668fe85d5d5",
+    "model": "gpt-6-luna",
+    "created_at": 1795557020.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1916,
+      "input_tokens_details": {
+        "cache_write_tokens": 1913,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1913
+        }
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 157
+      },
+      "total_tokens": 2235
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"New Zealanders’ expectations for responsible and ethical investment in KiwiSaver funds\",\n  \"climate_relevance\": \"The article mentions environmental risks and carbon emissions as investment considerations, and lists climate change as a conference topic, but does not develop climate-related discussion.\",\n  \"reason\": \"The identifiable main article is about responsible investment and consumer expectations more broadly. Its references to climate-related issues are relevant but limited, so it is peripheral rather than core climate coverage. Unrelated snippets follow the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:50:23Z",
+  "duration_seconds": 3.314,
+  "error": null
+}

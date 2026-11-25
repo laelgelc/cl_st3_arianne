@@ -1,0 +1,77 @@
+{
+  "article_id": "85920536",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/85920536.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/85920536.json"
+  },
+  "manifest_row": {
+    "article_id": "85920536",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/85920536.txt",
+    "now_field_2": "851",
+    "date_original": "20-09-12",
+    "date_iso": "2020-09-12",
+    "source_name": "New York Times",
+    "url": "https://www.nytimes.com/2020/09/12/climate/oregon-wildfires.html",
+    "title": "In Oregon, a New Climate Menace: Fires Raging Where They Don't Usually Burn",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us2.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.93,
+    "climate_role": "substantial",
+    "main_topic": "Unusually severe wildfires in western Oregon and the conditions driving their spread",
+    "climate_relevance": "The article substantially discusses how climate change has altered precipitation and temperature patterns and contributed to dry conditions that make fires more likely and severe.",
+    "reason": "Although the immediate focus is the Oregon fires, climate change is a significant part of the article's explanation of their severity and of warnings about future fire risk.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3cbff0378482f1e830157c741d6a991b5d62163002842f1a1174c71514f25404",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "02a8d69f6cc60695e28ed4331cea1950e122ecf0188d7833478a75f9239fed41",
+    "raw_response_text_sha256": "a4568cbd433ec7527ac24cd3e8dda6a401dced87f2c0b9261131df0bf34a5c3c"
+  },
+  "api_metadata": {
+    "id": "resp_0d54b5b5ffae61ba006b064d91b68487d18964960f9397ed09",
+    "model": "gpt-6-luna",
+    "created_at": 1795575185.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1599,
+      "input_tokens_details": {
+        "cache_write_tokens": 1596,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1596
+        }
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 1869
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Unusually severe wildfires in western Oregon and the conditions driving their spread\",\n  \"climate_relevance\": \"The article substantially discusses how climate change has altered precipitation and temperature patterns and contributed to dry conditions that make fires more likely and severe.\",\n  \"reason\": \"Although the immediate focus is the Oregon fires, climate change is a significant part of the article's explanation of their severity and of warnings about future fire risk.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:53:08Z",
+  "duration_seconds": 2.472,
+  "error": null
+}

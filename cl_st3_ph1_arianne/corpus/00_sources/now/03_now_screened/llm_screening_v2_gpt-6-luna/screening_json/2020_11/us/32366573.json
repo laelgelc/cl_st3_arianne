@@ -1,0 +1,77 @@
+{
+  "article_id": "32366573",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/us/32366573.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/us/32366573.json"
+  },
+  "manifest_row": {
+    "article_id": "32366573",
+    "group": "2020_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/us/32366573.txt",
+    "now_field_2": "1773",
+    "date_original": "20-11-23",
+    "date_iso": "2020-11-23",
+    "source_name": "nymag.com",
+    "url": "https://nymag.com/intelligencer/2020/11/who-could-lead-trumpism-without-trump.html",
+    "title": "Who Could Lead Trumpism Without Trump?",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Possible political successors and future forms of Trumpism",
+    "climate_relevance": "Climate change is mentioned only in a separate breaking-news snippet about John Kerry's appointment as climate envoy.",
+    "reason": "The identifiable main article analyzes Trumpism and Republican politics, not climate change. The climate reference appears only in an unrelated news snippet and does not provide substantive climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "57b94facb987c6a00108904be43c87a3c080c6b337033a12fd5b041d22ba5f92",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "97a2734de00f22f30ccc9acc0e3585600edb7222d1bc239651ecfc645b90fe91",
+    "raw_response_text_sha256": "4057d2d276b5628ff7d3315ac7a93a76e1e7f25c4577c3dbbbf6e029d49a3aca"
+  },
+  "api_metadata": {
+    "id": "resp_02b6621093097797006b061c5d0cec87d292ac25321b6591f4",
+    "model": "gpt-6-luna",
+    "created_at": 1795562589.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2786,
+      "input_tokens_details": {
+        "cache_write_tokens": 2783,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2783
+        }
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 176
+      },
+      "total_tokens": 3108
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Possible political successors and future forms of Trumpism\",\n  \"climate_relevance\": \"Climate change is mentioned only in a separate breaking-news snippet about John Kerry's appointment as climate envoy.\",\n  \"reason\": \"The identifiable main article analyzes Trumpism and Republican politics, not climate change. The climate reference appears only in an unrelated news snippet and does not provide substantive climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:23:11Z",
+  "duration_seconds": 2.458,
+  "error": null
+}

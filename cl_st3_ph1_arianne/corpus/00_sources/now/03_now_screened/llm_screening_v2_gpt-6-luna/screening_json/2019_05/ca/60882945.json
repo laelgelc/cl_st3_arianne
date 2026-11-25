@@ -1,0 +1,77 @@
+{
+  "article_id": "60882945",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/ca/60882945.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/ca/60882945.json"
+  },
+  "manifest_row": {
+    "article_id": "60882945",
+    "group": "2019_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/ca/60882945.txt",
+    "now_field_2": "667",
+    "date_original": "19-05-31",
+    "date_iso": "2019-05-31",
+    "source_name": "Lethbridge News Now",
+    "url": "https://lethbridgenewsnow.com/2019/05/31/well-work-with-cities-even-when-provinces-wont-work-with-ottawa-trudeau",
+    "title": "We'll work with cities, even when provinces won't work with Ottawa ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Trudeau's address to Canadian municipal leaders about federal-municipal cooperation, infrastructure funding, and provincial relations.",
+    "climate_relevance": "The article connects climate change with extreme weather and says Trudeau's government has a plan to address it, but climate is not the main focus.",
+    "reason": "Climate change and its impacts receive meaningful mention, while the article mainly concerns political cooperation and municipal infrastructure. Unrelated local-news snippets appear after the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2e3cd0406cb8f135a1931f718ed057fdcc51b1a7913ce9c5cd7ee672ca446a5b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "882ed88b665b21b219bee41f8c1a94dac71ab04d45d1f12eb1544edb53ca5666",
+    "raw_response_text_sha256": "7fe4c2a25112b42e41890a020e9e79375ef2c0cc32656734c4280289890978e4"
+  },
+  "api_metadata": {
+    "id": "resp_08679ec68241c03a006b06352a4f3087d18cc704dac1208530",
+    "model": "gpt-6-luna",
+    "created_at": 1795568938.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1375,
+      "input_tokens_details": {
+        "cache_write_tokens": 1372,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1372
+        }
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1614
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Trudeau's address to Canadian municipal leaders about federal-municipal cooperation, infrastructure funding, and provincial relations.\",\n  \"climate_relevance\": \"The article connects climate change with extreme weather and says Trudeau's government has a plan to address it, but climate is not the main focus.\",\n  \"reason\": \"Climate change and its impacts receive meaningful mention, while the article mainly concerns political cooperation and municipal infrastructure. Unrelated local-news snippets appear after the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:09:00Z",
+  "duration_seconds": 2.473,
+  "error": null
+}

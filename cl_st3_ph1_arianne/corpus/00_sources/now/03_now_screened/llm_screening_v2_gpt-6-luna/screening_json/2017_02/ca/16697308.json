@@ -1,0 +1,77 @@
+{
+  "article_id": "16697308",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/ca/16697308.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/ca/16697308.json"
+  },
+  "manifest_row": {
+    "article_id": "16697308",
+    "group": "2017_02",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/ca/16697308.txt",
+    "now_field_2": "731",
+    "date_original": "17-02-01",
+    "date_iso": "2017-02-01",
+    "source_name": "The Globe and Mail",
+    "url": "http://www.theglobeandmail.com/news/british-columbia/university-of-victoria-oceanographer-jay-cullen-on-canadian-astronaut-shortlist/article33874027/",
+    "title": "University of Victoria oceanographer Jay Cullen on Canadian ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "A University of Victoria oceanographer's candidacy to become a Canadian astronaut",
+    "climate_relevance": "Climate change is mentioned once as part of a brief description of the candidate's ocean research, without further discussion.",
+    "reason": "The article focuses on astronaut selection and the candidate's experience. The climate reference is a passing biographical detail rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bb6c504cfe36772a311db32653c942d89cf6495d8f18fbe258da6c84371e1e4b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4fd000eee35fab13bc4e266291530b785b6b83f94bbb3be56fddf459be94a88c",
+    "raw_response_text_sha256": "9bedb032b567d5305841a38d98db0d28b9627e2e316b2a362ad094a737d64e01"
+  },
+  "api_metadata": {
+    "id": "resp_0b084062867a90cf006b06080c737487d2bdac02d461797098",
+    "model": "gpt-6-luna",
+    "created_at": 1795557388.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1392,
+      "input_tokens_details": {
+        "cache_write_tokens": 1389,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1389
+        }
+      },
+      "output_tokens": 367,
+      "output_tokens_details": {
+        "reasoning_tokens": 229
+      },
+      "total_tokens": 1759
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A University of Victoria oceanographer's candidacy to become a Canadian astronaut\",\n  \"climate_relevance\": \"Climate change is mentioned once as part of a brief description of the candidate's ocean research, without further discussion.\",\n  \"reason\": \"The article focuses on astronaut selection and the candidate's experience. The climate reference is a passing biographical detail rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:56:31Z",
+  "duration_seconds": 3.039,
+  "error": null
+}

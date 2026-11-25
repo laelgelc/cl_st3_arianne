@@ -1,0 +1,77 @@
+{
+  "article_id": "83224216",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83224216.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83224216.json"
+  },
+  "manifest_row": {
+    "article_id": "83224216",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83224216.txt",
+    "now_field_2": "2717",
+    "date_original": "20-01-13",
+    "date_iso": "2020-01-13",
+    "source_name": "Des Moines Register",
+    "url": "https://www.desmoinesregister.com/story/opinion/columnists/caucus/2020/01/13/amy-klobuchar-democrat-president-iowa-caucus-bridge-divides-fight/4419576002/",
+    "title": "Amy Klobuchar: I will get things done, for all of America, not just half",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Amy Klobuchar's presidential campaign and political platform",
+    "climate_relevance": "The platform briefly promises to take on big oil to tackle climate change, but climate policy is not a sustained focus.",
+    "reason": "The main text is a campaign op-ed about Klobuchar's candidacy and governing priorities. Its single explicit climate-policy commitment is meaningful but incidental to the broader discussion, so the text is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "eb5ec2f5ee25721aacc494391794e654401b3d80380f1c971960bc939fd19624",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "19831cf1c3549ac1c27e0d69267ac79b3aaffe5026241cbad0179def8343c5b1",
+    "raw_response_text_sha256": "0f718d05fef27ca899d77b71a948df9e72cb60d990550c813a11bec3cf8de446"
+  },
+  "api_metadata": {
+    "id": "resp_05fcfa58f89ab6a3006b06494e647887d197d62e3f17f3388f",
+    "model": "gpt-6-luna",
+    "created_at": 1795574094.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4428,
+      "input_tokens_details": {
+        "cache_write_tokens": 4425,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4425
+        }
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 4715
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Amy Klobuchar's presidential campaign and political platform\",\n  \"climate_relevance\": \"The platform briefly promises to take on big oil to tackle climate change, but climate policy is not a sustained focus.\",\n  \"reason\": \"The main text is a campaign op-ed about Klobuchar's candidacy and governing priorities. Its single explicit climate-policy commitment is meaningful but incidental to the broader discussion, so the text is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:34:56Z",
+  "duration_seconds": 2.627,
+  "error": null
+}

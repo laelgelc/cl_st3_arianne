@@ -1,0 +1,77 @@
+{
+  "article_id": "82191720",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82191720.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82191720.json"
+  },
+  "manifest_row": {
+    "article_id": "82191720",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82191720.txt",
+    "now_field_2": "352",
+    "date_original": "19-11-17",
+    "date_iso": "2019-11-17",
+    "source_name": "San Diego Union-Tribune",
+    "url": "https://www.sandiegouniontribune.com/news/nation-world/story/2019-11-17/1-000s-protest-election-reform-failure-in-georgian-capital",
+    "title": "1,000s protest election reform failure in Georgian capital",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.84,
+    "climate_role": "passing",
+    "main_topic": "A collection of unrelated news snippets, including election protests, koala deaths in wildfires, and a New Year's Eve event",
+    "climate_relevance": "One sentence says the Times Square celebration will spotlight efforts to combat climate change, but gives no further discussion of climate issues.",
+    "reason": "The climate reference is a brief event detail without substantive climate discourse. The wildfire item mentions high temperatures but does not connect them to climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0809425293709d1a403f50d33f4ac1cf74c23b3084746f86ef59a1d9dee268a0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b3222d0938425b1d7e97c3bdc8c0fcc547d609758b64649273c05514a4aafe46",
+    "raw_response_text_sha256": "c2f3aa3acfe1acb511cc9b31ce65acceb012ae452ff1ac8b4b78d138d8ca934a"
+  },
+  "api_metadata": {
+    "id": "resp_09352fa1446c4c6b006b06482c3ed087d180ad58fa9c8fa8b7",
+    "model": "gpt-6-luna",
+    "created_at": 1795573804.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 941,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 515,
+      "output_tokens_details": {
+        "reasoning_tokens": 364
+      },
+      "total_tokens": 1456
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.84,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of unrelated news snippets, including election protests, koala deaths in wildfires, and a New Year's Eve event\",\n  \"climate_relevance\": \"One sentence says the Times Square celebration will spotlight efforts to combat climate change, but gives no further discussion of climate issues.\",\n  \"reason\": \"The climate reference is a brief event detail without substantive climate discourse. The wildfire item mentions high temperatures but does not connect them to climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:30:08Z",
+  "duration_seconds": 4.039,
+  "error": null
+}

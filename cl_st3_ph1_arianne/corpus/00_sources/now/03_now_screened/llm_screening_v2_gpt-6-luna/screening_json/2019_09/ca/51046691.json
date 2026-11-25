@@ -1,0 +1,77 @@
+{
+  "article_id": "51046691",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ca/51046691.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ca/51046691.json"
+  },
+  "manifest_row": {
+    "article_id": "51046691",
+    "group": "2019_09",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ca/51046691.txt",
+    "now_field_2": "380",
+    "date_original": "19-09-17",
+    "date_iso": "2019-09-17",
+    "source_name": "baytoday.ca",
+    "url": "https://www.baytoday.ca/local-news/td-tree-days-to-help-drive-target-of-one-million-trees-by-2030-1693488",
+    "title": "TD Tree Days to help drive target of one million trees by ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "TD Tree Days and community tree planting",
+    "climate_relevance": "The article says the planting effort will help build climate change resiliency, but its main focus is the tree-planting initiative and its community benefits.",
+    "reason": "Climate change has a meaningful but secondary connection to the article’s discussion of resilience; it is not the central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5538f384e216dc7cfc4cc79e166bd1aeb38f56342579cef87d68ec0eaf39ed15",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "936c9f7df6d249a4790b01f74f107631abf2c238aa02c2fafacc32dbed17918e",
+    "raw_response_text_sha256": "165ad8b92a21ef3d081f638122b9d57fbf97b1f09ab5c379ceff01c0bfaf8dd6"
+  },
+  "api_metadata": {
+    "id": "resp_016a22c05dbd6b7c006b062ba55ed087d1a396e5194e8f1b34",
+    "model": "gpt-6-luna",
+    "created_at": 1795566501.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 971,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 1241
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"TD Tree Days and community tree planting\",\n  \"climate_relevance\": \"The article says the planting effort will help build climate change resiliency, but its main focus is the tree-planting initiative and its community benefits.\",\n  \"reason\": \"Climate change has a meaningful but secondary connection to the article’s discussion of resilience; it is not the central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:28:23Z",
+  "duration_seconds": 2.363,
+  "error": null
+}

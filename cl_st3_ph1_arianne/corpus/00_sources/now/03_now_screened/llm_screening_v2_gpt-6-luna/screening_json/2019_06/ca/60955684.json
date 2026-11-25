@@ -1,0 +1,77 @@
+{
+  "article_id": "60955684",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ca/60955684.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ca/60955684.json"
+  },
+  "manifest_row": {
+    "article_id": "60955684",
+    "group": "2019_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ca/60955684.txt",
+    "now_field_2": "377",
+    "date_original": "19-06-24",
+    "date_iso": "2019-06-24",
+    "source_name": "The Sarnia Journal",
+    "url": "https://thesarniajournal.ca/plastics-ban-could-hurt-local-industry-association/",
+    "title": "Plastics ban could hurt local industry: association",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The proposed ban on single-use plastics and its potential effects on local industry and recycling.",
+    "climate_relevance": "Climate change appears only in the name of a government department cited as the source of a plastics-recycling study; the text does not discuss climate change.",
+    "reason": "The article focuses on plastics policy, industry, and waste management. Its sole climate-related reference is incidental metadata within a department name.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bda0c8e5f30f3de85f2f063eba5b56f5b2f4fd2d30a56f50e0504d2e9aa6e921",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6a082d6cfc6bb125ba9c40ed4b539607bc99f3e517bde5d536de4f1f4d928573",
+    "raw_response_text_sha256": "18ef317af505d5b35ff1e04e4a8ccdb4451c42741f5ee68b765ef704e62c117d"
+  },
+  "api_metadata": {
+    "id": "resp_0b5d12a963c5f51f006b0635bff7e487d19e76195735e935dc",
+    "model": "gpt-6-luna",
+    "created_at": 1795569088.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 993,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1215
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The proposed ban on single-use plastics and its potential effects on local industry and recycling.\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government department cited as the source of a plastics-recycling study; the text does not discuss climate change.\",\n  \"reason\": \"The article focuses on plastics policy, industry, and waste management. Its sole climate-related reference is incidental metadata within a department name.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:11:30Z",
+  "duration_seconds": 2.185,
+  "error": null
+}

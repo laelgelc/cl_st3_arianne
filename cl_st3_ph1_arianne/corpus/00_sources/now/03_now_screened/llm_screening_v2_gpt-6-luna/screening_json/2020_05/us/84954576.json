@@ -1,0 +1,77 @@
+{
+  "article_id": "84954576",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/us/84954576.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/us/84954576.json"
+  },
+  "manifest_row": {
+    "article_id": "84954576",
+    "group": "2020_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/us/84954576.txt",
+    "now_field_2": "1039",
+    "date_original": "20-05-18",
+    "date_iso": "2020-05-18",
+    "source_name": "Milwaukee Journal Sentinel",
+    "url": "https://www.jsonline.com/story/news/2020/05/18/can-hydroxychloroquine-prevent-covid-19-president-trump-thinks-maybe/5217204002/",
+    "title": "Can hydroxychloroquine prevent COVID-19? President Trump thinks maybe. There's no data to support that.",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Hydroxychloroquine use and evidence for treating or preventing COVID-19",
+    "climate_relevance": "Climate change appears only in a brief description of a microbiologist who denied it was happening.",
+    "reason": "The article is about COVID-19 and hydroxychloroquine. The isolated reference to climate change is incidental biographical context and does not develop climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "695143585f545f5a3806b28ac28ee33e364f021164d679bd1da9afe0e54bfe62",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5c0b3635665cf70d9b6e3d175224c489c4014374f356e8f0f8862ff39ba955fb",
+    "raw_response_text_sha256": "d00841b380ae4b03c8930600f4f16f962298e5ba0d72f21f4481a379234552b7"
+  },
+  "api_metadata": {
+    "id": "resp_0b8659a16f4f4dfe006b064aebced087d197f49f2313c1a749",
+    "model": "gpt-6-luna",
+    "created_at": 1795574507.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1875,
+      "input_tokens_details": {
+        "cache_write_tokens": 1872,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1872
+        }
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 2141
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Hydroxychloroquine use and evidence for treating or preventing COVID-19\",\n  \"climate_relevance\": \"Climate change appears only in a brief description of a microbiologist who denied it was happening.\",\n  \"reason\": \"The article is about COVID-19 and hydroxychloroquine. The isolated reference to climate change is incidental biographical context and does not develop climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:41:49Z",
+  "duration_seconds": 2.265,
+  "error": null
+}

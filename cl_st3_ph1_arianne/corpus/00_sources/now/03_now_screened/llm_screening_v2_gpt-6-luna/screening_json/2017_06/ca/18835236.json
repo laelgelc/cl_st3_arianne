@@ -1,0 +1,77 @@
+{
+  "article_id": "18835236",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/ca/18835236.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/ca/18835236.json"
+  },
+  "manifest_row": {
+    "article_id": "18835236",
+    "group": "2017_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/ca/18835236.txt",
+    "now_field_2": "540",
+    "date_original": "17-06-06",
+    "date_iso": "2017-06-06",
+    "source_name": "CTV News",
+    "url": "http://www.ctvnews.ca/canada/one-massive-nature-selfie-a-snapshot-of-canada-s-biodiversity-as-it-exists-in-2017-1.3444653",
+    "title": "BioBlitz Canada 150 aims to link technology and living nature, with ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A national citizen-science project documenting Canada's biodiversity",
+    "climate_relevance": "The article says the collected data can help scientists monitor climate change's environmental impact, but climate change is not a main focus.",
+    "reason": "The article is substantially about biodiversity documentation and wildlife observation. Climate change appears in a meaningful sentence about one use of the data, making the text relevant as background rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9c58c95d445b2179920a18e93db521e47a700c3f3487dd76abec3abe70cd9e4c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4dbfe480437216672b8b255c4617d4feb0adca7367417b3ef3f303171b83649e",
+    "raw_response_text_sha256": "31acf80cc2fd7f3dc1c039d9f479439ec8e0c84f177b7aa8b1661c3b8b1b1f7c"
+  },
+  "api_metadata": {
+    "id": "resp_0feaacd50082c1a6006b060b18f42887d2a8e22cf1695bd206",
+    "model": "gpt-6-luna",
+    "created_at": 1795558169.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1209,
+      "input_tokens_details": {
+        "cache_write_tokens": 1206,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1206
+        }
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1425
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A national citizen-science project documenting Canada's biodiversity\",\n  \"climate_relevance\": \"The article says the collected data can help scientists monitor climate change's environmental impact, but climate change is not a main focus.\",\n  \"reason\": \"The article is substantially about biodiversity documentation and wildlife observation. Climate change appears in a meaningful sentence about one use of the data, making the text relevant as background rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:09:30Z",
+  "duration_seconds": 1.904,
+  "error": null
+}

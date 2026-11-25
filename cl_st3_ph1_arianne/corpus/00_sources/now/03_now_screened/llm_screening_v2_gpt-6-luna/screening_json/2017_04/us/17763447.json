@@ -1,0 +1,77 @@
+{
+  "article_id": "17763447",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/us/17763447.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/us/17763447.json"
+  },
+  "manifest_row": {
+    "article_id": "17763447",
+    "group": "2017_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/us/17763447.txt",
+    "now_field_2": "661",
+    "date_original": "17-04-03",
+    "date_iso": "2017-04-03",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/public-safety-measure-prompts-testy-debate-over-rights-of-protesters/418022763/",
+    "title": "Public safety measure prompts testy debate over rights of protesters",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Minnesota public safety legislation, including penalties for freeway protests and leasing a private prison",
+    "climate_relevance": "Climate change appears only in a separate, unrelated snippet about a climate agreement between Scotland and California.",
+    "reason": "The identifiable main article concerns Minnesota public safety policy and contains no meaningful climate discourse. The sole climate-related line is an unrelated news snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ca2367543e97fd8f1301b09255ab18155f9073ac439f23b515e8d522d6ab5bf4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9ac337510726749077e51b6f58b57c23ccedc7e5813a60e0690100e67f8bcae0",
+    "raw_response_text_sha256": "3ce4241c37ace198a235d5ba75831af732d1737a207743e62315d69c166b8117"
+  },
+  "api_metadata": {
+    "id": "resp_0322ccb4200da3ee006b060962eb2887d2ac849eee64a350f4",
+    "model": "gpt-6-luna",
+    "created_at": 1795557731.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1331,
+      "input_tokens_details": {
+        "cache_write_tokens": 1328,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1328
+        }
+      },
+      "output_tokens": 211,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1542
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Minnesota public safety legislation, including penalties for freeway protests and leasing a private prison\",\n  \"climate_relevance\": \"Climate change appears only in a separate, unrelated snippet about a climate agreement between Scotland and California.\",\n  \"reason\": \"The identifiable main article concerns Minnesota public safety policy and contains no meaningful climate discourse. The sole climate-related line is an unrelated news snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:02:12Z",
+  "duration_seconds": 2.043,
+  "error": null
+}

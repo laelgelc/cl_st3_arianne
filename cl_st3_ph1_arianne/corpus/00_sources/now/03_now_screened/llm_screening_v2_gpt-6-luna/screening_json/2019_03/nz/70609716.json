@@ -1,0 +1,77 @@
+{
+  "article_id": "70609716",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70609716.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70609716.json"
+  },
+  "manifest_row": {
+    "article_id": "70609716",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70609716.txt",
+    "now_field_2": "540",
+    "date_original": "19-03-20",
+    "date_iso": "2019-03-20",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/BU1903/S00514/nz-dollar-eases-amid-snags-in-us-china-trade-talks.htm",
+    "title": "NZ dollar eases amid snags in US-China trade talks",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "New Zealand dollar movements and currency-market conditions",
+    "climate_relevance": "Climate-related references occur only in appended, unrelated snippets about forestry, the emissions trading scheme, and climate targets—not in the main currency-market report.",
+    "reason": "The identifiable main article concerns currency markets and contains no meaningful climate discussion. The climate references appear in separate trailing snippets, so they do not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "422e836fb824c562d55947a2b37d8ecc6bee61b749a676817cc0d4f2738ce21a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "92351834b19fcc8c84dd2cebd5f0cb7d460d5d4e457eab104d2ae161aa05a8dc",
+    "raw_response_text_sha256": "170ecaf6c42fe96f81656d338ea9e9f6de2085fcdd4ad6ed3e12a19cb310bdeb"
+  },
+  "api_metadata": {
+    "id": "resp_0b625ff7b96a4195006b063df16fec87d194baef38f32783d3",
+    "model": "gpt-6-luna",
+    "created_at": 1795571185.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1262,
+      "input_tokens_details": {
+        "cache_write_tokens": 1259,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1259
+        }
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "total_tokens": 1567
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"New Zealand dollar movements and currency-market conditions\",\n  \"climate_relevance\": \"Climate-related references occur only in appended, unrelated snippets about forestry, the emissions trading scheme, and climate targets—not in the main currency-market report.\",\n  \"reason\": \"The identifiable main article concerns currency markets and contains no meaningful climate discussion. The climate references appear in separate trailing snippets, so they do not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:46:28Z",
+  "duration_seconds": 2.842,
+  "error": null
+}

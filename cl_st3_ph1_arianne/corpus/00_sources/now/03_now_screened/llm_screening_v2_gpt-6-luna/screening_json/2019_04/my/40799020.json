@@ -1,0 +1,77 @@
+{
+  "article_id": "40799020",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40799020.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40799020.json"
+  },
+  "manifest_row": {
+    "article_id": "40799020",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40799020.txt",
+    "now_field_2": "444",
+    "date_original": "19-04-03",
+    "date_iso": "2019-04-03",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/04/brookfield-mulls-china-property-deal/",
+    "title": "Brookfield mulls China property deal",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A planned commercial property acquisition in Shanghai",
+    "climate_relevance": "Climate appears only in a brief roundup item naming Malaysia's climate minister; the main article contains no climate discourse.",
+    "reason": "The identifiable main article concerns real estate investment. A separate roundup line mentions sustainable energy solutions, but offers no meaningful discussion of climate change or its implications.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "687e2f2c114165623d412cd1a26308017f2c691fc572ed58377b1e33cabff3b7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6389bd6179a53b7b2472eb1477e5499c8a77635b3ed98b70ceae709cdd8df5b8",
+    "raw_response_text_sha256": "c911f20b8378761b2daaca2314a046f54bf3c4dd3ba676bd360a00ec2e8616b4"
+  },
+  "api_metadata": {
+    "id": "resp_0fc3c08521217ea5006b061fc00d3887d28d205f94fa117e9b",
+    "model": "gpt-6-luna",
+    "created_at": 1795563456.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1091,
+      "input_tokens_details": {
+        "cache_write_tokens": 1088,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1088
+        }
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 1367
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A planned commercial property acquisition in Shanghai\",\n  \"climate_relevance\": \"Climate appears only in a brief roundup item naming Malaysia's climate minister; the main article contains no climate discourse.\",\n  \"reason\": \"The identifiable main article concerns real estate investment. A separate roundup line mentions sustainable energy solutions, but offers no meaningful discussion of climate change or its implications.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:38Z",
+  "duration_seconds": 2.28,
+  "error": null
+}

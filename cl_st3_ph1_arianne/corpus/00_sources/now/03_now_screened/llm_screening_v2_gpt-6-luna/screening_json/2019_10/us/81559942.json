@@ -1,0 +1,77 @@
+{
+  "article_id": "81559942",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81559942.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81559942.json"
+  },
+  "manifest_row": {
+    "article_id": "81559942",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81559942.txt",
+    "now_field_2": "197",
+    "date_original": "19-10-12",
+    "date_iso": "2019-10-12",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191012085210-mam5o",
+    "title": "Car bomb detonates at jail in Syria holding IS prisoners-monitor, SDF",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An Islamic State detainee prison and security unrest in northeastern Syria",
+    "climate_relevance": "Climate change appears only in a boilerplate list of topics covered by the news organization.",
+    "reason": "The article is about security developments in Syria; its only climate reference is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a5392d02395fe4094745694147527bc11e467738ae7ca47dea181836c151bb85",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f5d6391e43b5964ded6b83e264bd97c9d8679eb30c23aed0d7b1a8585294f71f",
+    "raw_response_text_sha256": "d966ae1b8b034ae81ef28dfdbf3a8c793c99ef906754ad0100eaa558cb6a46bb"
+  },
+  "api_metadata": {
+    "id": "resp_0c6fc09ef1e2000d006b064773b4d487d1ad9f96ccd320566b",
+    "model": "gpt-6-luna",
+    "created_at": 1795573619.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 743,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 132
+      },
+      "total_tokens": 1002
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An Islamic State detainee prison and security unrest in northeastern Syria\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate list of topics covered by the news organization.\",\n  \"reason\": \"The article is about security developments in Syria; its only climate reference is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:27:02Z",
+  "duration_seconds": 2.447,
+  "error": null
+}

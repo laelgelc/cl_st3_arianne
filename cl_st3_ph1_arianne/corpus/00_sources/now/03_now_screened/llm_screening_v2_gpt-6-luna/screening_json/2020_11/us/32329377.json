@@ -1,0 +1,77 @@
+{
+  "article_id": "32329377",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/us/32329377.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/us/32329377.json"
+  },
+  "manifest_row": {
+    "article_id": "32329377",
+    "group": "2020_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/us/32329377.txt",
+    "now_field_2": "1779",
+    "date_original": "20-11-11",
+    "date_iso": "2020-11-11",
+    "source_name": "news.yahoo.com",
+    "url": "https://news.yahoo.com/world/",
+    "title": "World | Yahoo News - Latest News &amp; Headlines",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A collection of unrelated world news snippets",
+    "climate_relevance": "Climate change is briefly listed as one topic world leaders discussed with President-elect Biden; no further climate-related discourse appears.",
+    "reason": "The text contains multiple unrelated snippets, and its only climate reference is a passing mention in a list of issues for diplomatic cooperation. It does not provide meaningful material for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b4f86d8c807087af8ec375ddba3e0bd632e2b1bbc92c6810829816a5f6173596",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b036bfa3cb3418f3b2e8cbdfcfa986ce6033a2b5be98102bed40ab5f8abc15c8",
+    "raw_response_text_sha256": "3dc702a84f1fca4bd6a3279ca42c03e628677f199d90b2de299a013b5eeb2f9c"
+  },
+  "api_metadata": {
+    "id": "resp_0146f93fed3d1941006b061c31fbe487d29352f75f80192579",
+    "model": "gpt-6-luna",
+    "created_at": 1795562546.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2714,
+      "input_tokens_details": {
+        "cache_write_tokens": 2711,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2711
+        }
+      },
+      "output_tokens": 330,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 3044
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of unrelated world news snippets\",\n  \"climate_relevance\": \"Climate change is briefly listed as one topic world leaders discussed with President-elect Biden; no further climate-related discourse appears.\",\n  \"reason\": \"The text contains multiple unrelated snippets, and its only climate reference is a passing mention in a list of issues for diplomatic cooperation. It does not provide meaningful material for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:22:28Z",
+  "duration_seconds": 2.675,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "22863350",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_01/au/22863350.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_01/au/22863350.json"
+  },
+  "manifest_row": {
+    "article_id": "22863350",
+    "group": "2018_01",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_01/au/22863350.txt",
+    "now_field_2": "304",
+    "date_original": "18-01-21",
+    "date_iso": "2018-01-21",
+    "source_name": "Yahoo7 News",
+    "url": "https://au.news.yahoo.com/qld/a/38673594/pm-to-give-60m-to-save-great-barrier-reef/",
+    "title": "PM to give $60m to save Great Barrier Reef",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
+    "metadata_article_files": "[\"text-18-01/text_18-01-AU.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "Australian government funding to protect the Great Barrier Reef from crown-of-thorns starfish and agricultural run-off",
+    "climate_relevance": "The article mentions consecutive coral-bleaching events and includes criticism that the reef plan does not adequately address climate change and harmful emissions.",
+    "reason": "The main focus is a reef-protection funding plan addressing several pressures, especially run-off and starfish. Climate change is meaningfully raised as a cause of concern and as a point of policy debate, but it is not the article’s central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0eccff071bcdd20aebccd760c7b165db97e51340c47040315cfa3fde1199aa88",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e92bc0d6a4cda895caa200f63177eb72919cdb3225a3a8ab896b17b42ebbea53",
+    "raw_response_text_sha256": "0bb4bf6286982f30115d0de845ec22f98418e06aac5169b1458bec48f22fc50e"
+  },
+  "api_metadata": {
+    "id": "resp_099c50fc2715671c006b06109a488c87d2a5a414b24e7debe9",
+    "model": "gpt-6-luna",
+    "created_at": 1795559578.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 891,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 332,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 1223
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Australian government funding to protect the Great Barrier Reef from crown-of-thorns starfish and agricultural run-off\",\n  \"climate_relevance\": \"The article mentions consecutive coral-bleaching events and includes criticism that the reef plan does not adequately address climate change and harmful emissions.\",\n  \"reason\": \"The main focus is a reef-protection funding plan addressing several pressures, especially run-off and starfish. Climate change is meaningfully raised as a cause of concern and as a point of policy debate, but it is not the article’s central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:33:01Z",
+  "duration_seconds": 2.925,
+  "error": null
+}

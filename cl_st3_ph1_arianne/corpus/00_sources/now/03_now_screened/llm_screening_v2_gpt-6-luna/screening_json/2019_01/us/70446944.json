@@ -1,0 +1,77 @@
+{
+  "article_id": "70446944",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/us/70446944.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/us/70446944.json"
+  },
+  "manifest_row": {
+    "article_id": "70446944",
+    "group": "2019_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/us/70446944.txt",
+    "now_field_2": "1248",
+    "date_original": "19-01-23",
+    "date_iso": "2019-01-23",
+    "source_name": "The Guardian",
+    "url": "https://www.theguardian.com/world/2019/jan/24/thursday-briefing-trump-puts-state-of-the-union-address-on-hold",
+    "title": "Thursday briefing: Trump puts State of the Union address on hold",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A daily news briefing covering the US government shutdown and several unrelated stories",
+    "climate_relevance": "Climate change appears only as a brief comparison in a sentence about antibiotic resistance. The report of extreme heat in Australia is not connected to climate change.",
+    "reason": "The text contains no substantive discussion of climate change; its only explicit reference is incidental.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "23c8ab2f24bc17f2c8911151debb24f0c56754f3c989f4f6a582c27be7ad4bb9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "33a6f58fc018b71de55bf151e87cbed336b91b318199b064ae01406ff5ebc995",
+    "raw_response_text_sha256": "852da1d5e6d06bb7102b277cc95e7b1a226a32403730a74299323d02c2f813d4"
+  },
+  "api_metadata": {
+    "id": "resp_030abbd97c8fe768006b063c93d4c887d1a6641e2c96cb39ae",
+    "model": "gpt-6-luna",
+    "created_at": 1795570835.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2081,
+      "input_tokens_details": {
+        "cache_write_tokens": 2078,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2078
+        }
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 2396
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A daily news briefing covering the US government shutdown and several unrelated stories\",\n  \"climate_relevance\": \"Climate change appears only as a brief comparison in a sentence about antibiotic resistance. The report of extreme heat in Australia is not connected to climate change.\",\n  \"reason\": \"The text contains no substantive discussion of climate change; its only explicit reference is incidental.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:38Z",
+  "duration_seconds": 3.051,
+  "error": null
+}

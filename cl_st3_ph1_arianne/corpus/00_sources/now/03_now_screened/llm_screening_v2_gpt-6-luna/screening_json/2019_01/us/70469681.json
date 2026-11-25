@@ -1,0 +1,77 @@
+{
+  "article_id": "70469681",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/us/70469681.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/us/70469681.json"
+  },
+  "manifest_row": {
+    "article_id": "70469681",
+    "group": "2019_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/us/70469681.txt",
+    "now_field_2": "488",
+    "date_original": "19-01-31",
+    "date_iso": "2019-01-31",
+    "source_name": "Public News Service",
+    "url": "https://www.publicnewsservice.org/2019-01-31/environment/protection-of-wildlife-urged-amid-wind-power-expansion/a65391-1",
+    "title": "Protection of Wildlife Urged Amid Wind-Power Expansion",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Protecting wildlife while expanding wind power",
+    "climate_relevance": "The article presents renewable energy as critical to combating climate change and discusses state plans to expand wind power, but focuses mainly on wildlife impacts and where wind farms should be sited.",
+    "reason": "Climate change and mitigation provide meaningful context for the wind-energy expansion discussed, though they are not the article’s central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "822d271ee7940bb62667520a5959d858cdde3b50fdc0f28627cdf18511948788",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "620deff2c12a1818df41ac0934e9b6eaa6397520cd288abc0a1364ceaf76bbe9",
+    "raw_response_text_sha256": "cc85c966ed928fc93db98e69a7c3b429d2fa4dd12e229cc671d64c0537480917"
+  },
+  "api_metadata": {
+    "id": "resp_08bd069fd151fc77006b063cba239087d19355f3f03347f915",
+    "model": "gpt-6-luna",
+    "created_at": 1795570874.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1164,
+      "input_tokens_details": {
+        "cache_write_tokens": 1161,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1161
+        }
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 1417
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Protecting wildlife while expanding wind power\",\n  \"climate_relevance\": \"The article presents renewable energy as critical to combating climate change and discusses state plans to expand wind power, but focuses mainly on wildlife impacts and where wind farms should be sited.\",\n  \"reason\": \"Climate change and mitigation provide meaningful context for the wind-energy expansion discussed, though they are not the article’s central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:41:16Z",
+  "duration_seconds": 2.206,
+  "error": null
+}

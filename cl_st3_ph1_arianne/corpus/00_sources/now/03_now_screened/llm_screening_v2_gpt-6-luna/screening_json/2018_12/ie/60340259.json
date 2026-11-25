@@ -1,0 +1,77 @@
+{
+  "article_id": "60340259",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ie/60340259.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ie/60340259.json"
+  },
+  "manifest_row": {
+    "article_id": "60340259",
+    "group": "2018_12",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ie/60340259.txt",
+    "now_field_2": "525",
+    "date_original": "18-12-10",
+    "date_iso": "2018-12-10",
+    "source_name": "Attain News",
+    "url": "https://attain.news/academic/mount-girl-commended-by-royal-geographical-society",
+    "title": "Mount Girl Commended by Royal Geographical Society",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A school student's recognition in a geography competition about the Arctic",
+    "climate_relevance": "Climate change is mentioned only as a subject the student studied; the article does not discuss it or its implications.",
+    "reason": "The identifiable main article is about a student's award, with only a passing biographical reference to studying Arctic climate change. A separate unrelated snippet about a UN migration pact is also appended.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a64879cfa703a357980daa61cf7417d8b4691a54230f309148f17ee83a16003a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "53ee301e61efcbb18fe4486369e7eef1d76c95829c0f4309669bb4e740a8f789",
+    "raw_response_text_sha256": "ccb9bb3f78dd18df881513e3ce1a46b22eb14df8199448c77708723d4660ece9"
+  },
+  "api_metadata": {
+    "id": "resp_0726baa31dbf29f7006b0632312f3c87d1b2df8dfc6d4f2c94",
+    "model": "gpt-6-luna",
+    "created_at": 1795568177.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1516,
+      "input_tokens_details": {
+        "cache_write_tokens": 1513,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1513
+        }
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 1814
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A school student's recognition in a geography competition about the Arctic\",\n  \"climate_relevance\": \"Climate change is mentioned only as a subject the student studied; the article does not discuss it or its implications.\",\n  \"reason\": \"The identifiable main article is about a student's award, with only a passing biographical reference to studying Arctic climate change. A separate unrelated snippet about a UN migration pact is also appended.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:56:19Z",
+  "duration_seconds": 2.733,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "42528226",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/hk/42528226.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/hk/42528226.json"
+  },
+  "manifest_row": {
+    "article_id": "42528226",
+    "group": "2020_12",
+    "country_code": "hk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/hk/42528226.txt",
+    "now_field_2": "477",
+    "date_original": "20-12-06",
+    "date_iso": "2020-12-06",
+    "source_name": "hongkongfp.com",
+    "url": "https://hongkongfp.com/2020/12/03/democrat-ted-hui-denies-he-is-seeking-asylum-in-demark-despite-facing-charges-in-hong-kong-family-leaves-city/",
+    "title": "Democrat Ted Hui denies he is seeking asylum in Denmark ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-hk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Ted Hui's visit to Denmark, family, and legal and political situation in Hong Kong",
+    "climate_relevance": "Climate change is mentioned only as the stated subject of a parliamentary conference Hui reportedly planned to attend; the article says the meetings were made up and provides no climate-related discussion.",
+    "reason": "The article focuses on Hui's political circumstances and possible asylum, while climate change appears only as incidental context for his trip.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3f2294d40c38d00227be9a7497c8a8db6845e04114671caa2a558bf2fa9e3ab2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8fc8756c6704c3f8d5ee8ac3d81a94ee3ebb466dc016d9eaf1d4076a5ac8fb87",
+    "raw_response_text_sha256": "fd7c72ce53336d359595212c27312f2aa328ab86a008bd2c89d8e4e43f1fe675"
+  },
+  "api_metadata": {
+    "id": "resp_02aa332dc8466d1e006b06266833bc87d28f6339103dc8d42c",
+    "model": "gpt-6-luna",
+    "created_at": 1795565160.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1122,
+      "input_tokens_details": {
+        "cache_write_tokens": 1119,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1119
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 1372
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Ted Hui's visit to Denmark, family, and legal and political situation in Hong Kong\",\n  \"climate_relevance\": \"Climate change is mentioned only as the stated subject of a parliamentary conference Hui reportedly planned to attend; the article says the meetings were made up and provides no climate-related discussion.\",\n  \"reason\": \"The article focuses on Hui's political circumstances and possible asylum, while climate change appears only as incidental context for his trip.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:06:02Z",
+  "duration_seconds": 2.25,
+  "error": null
+}

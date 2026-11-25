@@ -1,0 +1,77 @@
+{
+  "article_id": "86456371",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/86456371.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/86456371.json"
+  },
+  "manifest_row": {
+    "article_id": "86456371",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/86456371.txt",
+    "now_field_2": "1521",
+    "date_original": "20-12-23",
+    "date_iso": "2020-12-23",
+    "source_name": "CNN on MSN.com",
+    "url": "https://www.msn.com/en-us/news/world/every-country-has-vaccine-skeptics-in-russia-doctors-are-in-their-ranks/ar-BB1cawj5",
+    "title": "Every country has vaccine skeptics. In Russia, doctors are in their ranks",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Public uptake and mistrust of Russia’s Sputnik V Covid-19 vaccine",
+    "climate_relevance": "Climate change appears only in a passing reference to Oliver Stone filming a climate change documentary in Russia.",
+    "reason": "The article focuses on Covid-19 vaccination, vaccine confidence, and Russia’s rollout. The climate reference provides no meaningful climate-related discussion.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2c27d4632b3f6b49f828bd69b7251856d4d24dae9c1bd6a9e699bc8e16443213",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9766d9f6bfeb7efb51a6f8fdf850db6749b9f900ffd405665a11d5d06d01d5c4",
+    "raw_response_text_sha256": "540af6cc34c28d8ffef94b68416b85e54744b86b7568a75d3048dfadbc9a9ced"
+  },
+  "api_metadata": {
+    "id": "resp_0af9b89645961f15006b065057fea087d19745594f8adce8c7",
+    "model": "gpt-6-luna",
+    "created_at": 1795575896.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2446,
+      "input_tokens_details": {
+        "cache_write_tokens": 2443,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2443
+        }
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 2663
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Public uptake and mistrust of Russia’s Sputnik V Covid-19 vaccine\",\n  \"climate_relevance\": \"Climate change appears only in a passing reference to Oliver Stone filming a climate change documentary in Russia.\",\n  \"reason\": \"The article focuses on Covid-19 vaccination, vaccine confidence, and Russia’s rollout. The climate reference provides no meaningful climate-related discussion.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:04:58Z",
+  "duration_seconds": 2.335,
+  "error": null
+}

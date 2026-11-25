@@ -1,0 +1,77 @@
+{
+  "article_id": "81539751",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81539751.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81539751.json"
+  },
+  "manifest_row": {
+    "article_id": "81539751",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81539751.txt",
+    "now_field_2": "141",
+    "date_original": "19-10-11",
+    "date_iso": "2019-10-11",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191011064704-8ecb4",
+    "title": "Spain's top court set to announce verdict for Catalan separatist leaders on Monday - source",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The expected verdict in the trial of Catalan separatist leaders.",
+    "climate_relevance": "Climate change appears only in boilerplate describing the news organization's coverage areas.",
+    "reason": "The article concerns Catalan separatist leaders and contains no meaningful climate-change discourse; the sole mention is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "41159dbcbaf543a8c9b837859ca0b22d12292712da7b8639c3be9af00a571800",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "883c3eb76c1a14ce1961372c88e87021eb54964604957f87694a92a0cac5ec61",
+    "raw_response_text_sha256": "82bd00105a47a5566000457865d456ea19e540e60e8217abcfcbac0e267b52b7"
+  },
+  "api_metadata": {
+    "id": "resp_0eb22dab9412a03b006b06476a9b3487d1a5f28f51ae4e4569",
+    "model": "gpt-6-luna",
+    "created_at": 1795573610.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 661,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 159,
+      "output_tokens_details": {
+        "reasoning_tokens": 29
+      },
+      "total_tokens": 820
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The expected verdict in the trial of Catalan separatist leaders.\",\n  \"climate_relevance\": \"Climate change appears only in boilerplate describing the news organization's coverage areas.\",\n  \"reason\": \"The article concerns Catalan separatist leaders and contains no meaningful climate-change discourse; the sole mention is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:26:52Z",
+  "duration_seconds": 1.754,
+  "error": null
+}

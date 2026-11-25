@@ -1,0 +1,77 @@
+{
+  "article_id": "70608551",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70608551.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70608551.json"
+  },
+  "manifest_row": {
+    "article_id": "70608551",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70608551.txt",
+    "now_field_2": "345",
+    "date_original": "19-03-19",
+    "date_iso": "2019-03-19",
+    "source_name": "Stuff.co.nz",
+    "url": "https://i.stuff.co.nz/timaru-herald/news/111382868/south-canterburys-nicky-hyslop-stakes-her-claim-at-beeflamb",
+    "title": "South Canterbury's Nicky Hyslop stakes her claim at Beef+Lamb",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A farming organization board appointment, followed by an unrelated story about a bereaved family seeking support in New Zealand.",
+    "climate_relevance": "Climate change appears only in a passing reference to an opposition spokesperson's role; there is no substantive climate-related discussion.",
+    "reason": "The available text contains unrelated article material, but neither section meaningfully discusses climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "82309c46f3f1e52295a06f8c538326f65bb0f989dfb593837c294c8bfa0d7b54",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cffdaff2c38d8511a450caf9972a4714ca9365f80239679273bc5031485ce1b1",
+    "raw_response_text_sha256": "4462c9afce397b933b1dfa7f5cd98a1f3e045b862efff7eee89fbcee2383918b"
+  },
+  "api_metadata": {
+    "id": "resp_0701e37d16451da0006b063df0347487d1a6570844d1152726",
+    "model": "gpt-6-luna",
+    "created_at": 1795571184.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1458,
+      "input_tokens_details": {
+        "cache_write_tokens": 1455,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1455
+        }
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 1724
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A farming organization board appointment, followed by an unrelated story about a bereaved family seeking support in New Zealand.\",\n  \"climate_relevance\": \"Climate change appears only in a passing reference to an opposition spokesperson's role; there is no substantive climate-related discussion.\",\n  \"reason\": \"The available text contains unrelated article material, but neither section meaningfully discusses climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:46:26Z",
+  "duration_seconds": 2.554,
+  "error": null
+}

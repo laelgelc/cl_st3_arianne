@@ -1,0 +1,77 @@
+{
+  "article_id": "15808558",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_12/au/15808558.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_12/au/15808558.json"
+  },
+  "manifest_row": {
+    "article_id": "15808558",
+    "group": "2016_12",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_12/au/15808558.txt",
+    "now_field_2": "387",
+    "date_original": "16-12-08",
+    "date_iso": "2016-12-08",
+    "source_name": "ABC Online",
+    "url": "http://www.abc.net.au/news/2016-12-09/new-deal-to-export-forestry-products-from-hobart/8105710",
+    "title": "New deal paves way for forestry products to be exported from Hobart ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-12.txt\"]",
+    "metadata_article_files": "[\"text-16-12/text_16-12-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A proposed log-export operation at a Tasmanian port and reactions from government and the Wilderness Society.",
+    "climate_relevance": "The Paris Agreement and climate change appear only in a disconnected sentence at the end, unrelated to the main article.",
+    "reason": "The identifiable main article concerns forestry exports, port operations, and environmental objections, but contains no meaningful climate discourse. The final climate-related sentence appears to be an unrelated snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9f9a75b9975bb36ba1bd168c51021bc2e80dda26204b97b05b79db502ce46cf6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "caf030059577d646cc4c64a011f272ef54793d2c19f5bb0ab24697cad54f54b8",
+    "raw_response_text_sha256": "d47cc9955d0fded0ecbae36bdc68ff969133edd1ce169d7c3667b432945c66f3"
+  },
+  "api_metadata": {
+    "id": "resp_07478b4cfa9e7012006b06070d540c87d2a68fe82b1e700372",
+    "model": "gpt-6-luna",
+    "created_at": 1795557133.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 993,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 1260
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A proposed log-export operation at a Tasmanian port and reactions from government and the Wilderness Society.\",\n  \"climate_relevance\": \"The Paris Agreement and climate change appear only in a disconnected sentence at the end, unrelated to the main article.\",\n  \"reason\": \"The identifiable main article concerns forestry exports, port operations, and environmental objections, but contains no meaningful climate discourse. The final climate-related sentence appears to be an unrelated snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:52:15Z",
+  "duration_seconds": 2.553,
+  "error": null
+}

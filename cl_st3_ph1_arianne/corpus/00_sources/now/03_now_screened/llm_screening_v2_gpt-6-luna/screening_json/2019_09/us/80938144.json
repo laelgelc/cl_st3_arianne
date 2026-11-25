@@ -1,0 +1,77 @@
+{
+  "article_id": "80938144",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/80938144.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/80938144.json"
+  },
+  "manifest_row": {
+    "article_id": "80938144",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/80938144.txt",
+    "now_field_2": "707",
+    "date_original": "19-09-06",
+    "date_iso": "2019-09-06",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20190906073340-370p2",
+    "title": "British opposition parties discuss PM Johnson's Brexit election gamble",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Brexit, UK politics, and the prospect of a snap election",
+    "climate_relevance": "Climate change appears only in a boilerplate description of Reuters' coverage areas.",
+    "reason": "The article focuses on Brexit and UK political developments; its only climate-change reference is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5bc638b98f34570d48216e2db4fd7c14cba3fb2d61a248635cb958438dceef6d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "87fe287d2e7a1c6a54d97a8556217ed9cb3c294bb30168dc206c9a39f37babab",
+    "raw_response_text_sha256": "d816926f6554fc73964c5a3d30258015b61f0256a8dfcd7f6a430155da79c064"
+  },
+  "api_metadata": {
+    "id": "resp_00c42dbac1900cb2006b0646bc11d887d1be40d39731432a18",
+    "model": "gpt-6-luna",
+    "created_at": 1795573436.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1405,
+      "input_tokens_details": {
+        "cache_write_tokens": 1402,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1402
+        }
+      },
+      "output_tokens": 185,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 1590
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Brexit, UK politics, and the prospect of a snap election\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of Reuters' coverage areas.\",\n  \"reason\": \"The article focuses on Brexit and UK political developments; its only climate-change reference is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:23:58Z",
+  "duration_seconds": 2.085,
+  "error": null
+}

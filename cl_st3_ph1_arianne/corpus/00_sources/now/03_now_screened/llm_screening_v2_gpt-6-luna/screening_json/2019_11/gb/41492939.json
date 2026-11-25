@@ -1,0 +1,77 @@
+{
+  "article_id": "41492939",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/gb/41492939.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/gb/41492939.json"
+  },
+  "manifest_row": {
+    "article_id": "41492939",
+    "group": "2019_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/gb/41492939.txt",
+    "now_field_2": "962",
+    "date_original": "19-11-17",
+    "date_iso": "2019-11-17",
+    "source_name": "wired.co.uk",
+    "url": "https://www.wired.co.uk/article/wired-awake-241117",
+    "title": "Friday briefing: A new species of Galapagos finch evolved ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A collection of unrelated news and promotional snippets",
+    "climate_relevance": "Climate change appears only in a promotional teaser listing topics addressed by a magazine issue. The battery and wind farm snippet concerns energy storage and blackouts but does not meaningfully discuss climate change.",
+    "reason": "The text contains no substantive climate discourse; its only explicit climate reference is a passing magazine advertisement.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "da7139428145e040e828f3123bb867cb40cb3f5e30d48b36c739a11ea08da5aa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0de40d52d2d4003cbeee24ff1e4f8b9985f0b71947f5ee1cdd97fe698c22e8f4",
+    "raw_response_text_sha256": "6fb59e1ce37f519e77319cbf2c78088aab2fb6e79d658cd76d6b1d558c395083"
+  },
+  "api_metadata": {
+    "id": "resp_0e3ca03b487bb6bf006b0621fa7f8487d2a1c802e61bdc38e9",
+    "model": "gpt-6-luna",
+    "created_at": 1795564026.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1740,
+      "input_tokens_details": {
+        "cache_write_tokens": 1737,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1737
+        }
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1982
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A collection of unrelated news and promotional snippets\",\n  \"climate_relevance\": \"Climate change appears only in a promotional teaser listing topics addressed by a magazine issue. The battery and wind farm snippet concerns energy storage and blackouts but does not meaningfully discuss climate change.\",\n  \"reason\": \"The text contains no substantive climate discourse; its only explicit climate reference is a passing magazine advertisement.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:47:08Z",
+  "duration_seconds": 2.09,
+  "error": null
+}

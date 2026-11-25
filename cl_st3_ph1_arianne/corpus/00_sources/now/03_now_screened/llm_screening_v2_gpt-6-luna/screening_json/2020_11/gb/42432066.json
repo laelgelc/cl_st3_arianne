@@ -1,0 +1,77 @@
+{
+  "article_id": "42432066",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/gb/42432066.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/gb/42432066.json"
+  },
+  "manifest_row": {
+    "article_id": "42432066",
+    "group": "2020_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/gb/42432066.txt",
+    "now_field_2": "936",
+    "date_original": "20-11-04",
+    "date_iso": "2020-11-04",
+    "source_name": "blogs.lse.ac.uk",
+    "url": "https://blogs.lse.ac.uk/internationaldevelopment/2020/11/04/cutting-edge-issues-in-development-panel-on-china-in-africa/",
+    "title": "Cutting Edge Issues in Development - Panel on China in ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "China's lending, investment, and political influence in Africa",
+    "climate_relevance": "Climate change appears only in an unrelated SouthAsia@LSE snippet about water scarcity and India-China tensions, not in the identifiable main article.",
+    "reason": "The main article discusses China-Africa development and debt diplomacy without meaningful climate discourse. The climate reference belongs to a separate snippet and does not make the main article relevant to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "097987f38888ef6bd925688ba51004396ec78496ddc0cae7371cc39ab1afae60",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ae436a3f4714898f6d8ed2a8886dad34a0e9ea48c6ca1febbc4ac085a290d7ab",
+    "raw_response_text_sha256": "88cf4c5130c5574dd4cece3e34110978be71e1a354c4e2344ee736b99dcb49e1"
+  },
+  "api_metadata": {
+    "id": "resp_0743aecc1ebef8fd006b062609a76487d2b77625a1da27533e",
+    "model": "gpt-6-luna",
+    "created_at": 1795565065.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1649,
+      "input_tokens_details": {
+        "cache_write_tokens": 1646,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1646
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 1899
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"China's lending, investment, and political influence in Africa\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated SouthAsia@LSE snippet about water scarcity and India-China tensions, not in the identifiable main article.\",\n  \"reason\": \"The main article discusses China-Africa development and debt diplomacy without meaningful climate discourse. The climate reference belongs to a separate snippet and does not make the main article relevant to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:04:27Z",
+  "duration_seconds": 2.195,
+  "error": null
+}

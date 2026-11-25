@@ -1,0 +1,77 @@
+{
+  "article_id": "16829167",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/za/16829167.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/za/16829167.json"
+  },
+  "manifest_row": {
+    "article_id": "16829167",
+    "group": "2017_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/za/16829167.txt",
+    "now_field_2": "468",
+    "date_original": "17-02-09",
+    "date_iso": "2017-02-09",
+    "source_name": "Creamer Media's Engineering News",
+    "url": "http://www.engineeringnews.co.za/article/rs-components-stocks-power-tools-with-lithium-ion-batteries-to-replace-nickel-cadmium-types-following-lifting-of-eu-exemption-2017-02-09",
+    "title": "RS Components stocks power tools with lithium-ion batteries to ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Lithium-ion power tools replacing nickel-cadmium batteries",
+    "climate_relevance": "The main media statement concerns battery technology and regulation, not climate change. The closing passage contains meaningful climate discourse about mitigation and record temperatures but appears to be an unrelated article snippet.",
+    "reason": "The identifiable main article is about power-tool batteries. Following it is a distinct passage about climate change and green buildings, which appears to be a separate snippet rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2cfa09e7c944c1115f2c76c199e1a2fea97f20e2c5553140f2c519cc07c15fbf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b24abac7cb99f9ebc27dd6a6acf51657042f4711d50acf79a74180ffd29e5476",
+    "raw_response_text_sha256": "5d428a8a10d2a77316a77be1f3383f8ad929def755b54efd184681a7ee313962"
+  },
+  "api_metadata": {
+    "id": "resp_051311fec5aa4c9d006b060847c58087d2a20118f7d4e7155e",
+    "model": "gpt-6-luna",
+    "created_at": 1795557447.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1089,
+      "input_tokens_details": {
+        "cache_write_tokens": 1086,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1086
+        }
+      },
+      "output_tokens": 422,
+      "output_tokens_details": {
+        "reasoning_tokens": 258
+      },
+      "total_tokens": 1511
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Lithium-ion power tools replacing nickel-cadmium batteries\",\n  \"climate_relevance\": \"The main media statement concerns battery technology and regulation, not climate change. The closing passage contains meaningful climate discourse about mitigation and record temperatures but appears to be an unrelated article snippet.\",\n  \"reason\": \"The identifiable main article is about power-tool batteries. Following it is a distinct passage about climate change and green buildings, which appears to be a separate snippet rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:57:31Z",
+  "duration_seconds": 3.524,
+  "error": null
+}

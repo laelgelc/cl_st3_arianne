@@ -1,0 +1,77 @@
+{
+  "article_id": "40374344",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/sg/40374344.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/sg/40374344.json"
+  },
+  "manifest_row": {
+    "article_id": "40374344",
+    "group": "2018_12",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/sg/40374344.txt",
+    "now_field_2": "249",
+    "date_original": "18-12-10",
+    "date_iso": "2018-12-10",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/amazon-suffering-epidemic-illegal-gold-mines-212202394.html",
+    "title": "Amazon suffering 'epidemic' of illegal gold mines",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "Illegal gold mining and its impacts on the Amazon",
+    "climate_relevance": "The article briefly notes criticism of Brazil's incoming president for dismissing climate change concerns, linking climate discourse to environmental politics.",
+    "reason": "Climate change is not the article's main subject, but the reference to a political figure dismissing climate concerns is relevant to broader discourse about climate politics.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6a78f3bf8d3ecf45eb39925b0793a6c2ca147ee0d51d8e9f4b4969aa729a952d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "87dd254be8570b536624b99702e00fb363232fe7338dab085dc043e3c6391349",
+    "raw_response_text_sha256": "a1df406fb7182aeb5bbaec8fdb0763e41aef8d7e8d9454d8164deb6dfcaa1c4c"
+  },
+  "api_metadata": {
+    "id": "resp_0ca94c98f0814a36006b061edc109c87d29be80be553ed7a12",
+    "model": "gpt-6-luna",
+    "created_at": 1795563228.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 811,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 178
+      },
+      "total_tokens": 1128
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Illegal gold mining and its impacts on the Amazon\",\n  \"climate_relevance\": \"The article briefly notes criticism of Brazil's incoming president for dismissing climate change concerns, linking climate discourse to environmental politics.\",\n  \"reason\": \"Climate change is not the article's main subject, but the reference to a political figure dismissing climate concerns is relevant to broader discourse about climate politics.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:33:50Z",
+  "duration_seconds": 2.805,
+  "error": null
+}

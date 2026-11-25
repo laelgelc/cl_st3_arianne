@@ -1,0 +1,77 @@
+{
+  "article_id": "60812224",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/ca/60812224.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/ca/60812224.json"
+  },
+  "manifest_row": {
+    "article_id": "60812224",
+    "group": "2019_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/ca/60812224.txt",
+    "now_field_2": "6722",
+    "date_original": "19-05-07",
+    "date_iso": "2019-05-07",
+    "source_name": "Canada NewsWir",
+    "url": "https://www.newswire.ca/news-releases/b2gold-reports-strong-first-quarter-2019-results-quarterly-gold-production-of-231-000-oz-6-above-budget-aisc-of-848-oz-sold-significantly-below-budget-by-133-oz-818633940.html",
+    "title": "B2Gold Reports Strong First Quarter 2019 Results; Quarterly Gold ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "B2Gold's first-quarter 2019 operational and financial results, gold production, and mine expansion plans",
+    "climate_relevance": "Climate change appears only in a generic list of business risks, alongside climate change regulations, without further discussion.",
+    "reason": "The release is about gold mining operations and financial performance. Its sole climate reference is boilerplate in a risk disclosure and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e862683eaa5a1c41c491f081b5ea06cf400ec79aa7c4c542207734ddaccb5d57",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4ae240b40c4e2243e288940b79f0fda4e2071d082a01b107bb5456750715a04b",
+    "raw_response_text_sha256": "6b339fb5e0c3fd912ce779ff273aa5a22bc2b26305a330afa31015dd1c92bf70"
+  },
+  "api_metadata": {
+    "id": "resp_0c39f447a7ce7ea5006b0634a7f4d487d189de536179a84d88",
+    "model": "gpt-6-luna",
+    "created_at": 1795568808.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10297,
+      "input_tokens_details": {
+        "cache_write_tokens": 10294,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 10294
+        }
+      },
+      "output_tokens": 209,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 10506
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"B2Gold's first-quarter 2019 operational and financial results, gold production, and mine expansion plans\",\n  \"climate_relevance\": \"Climate change appears only in a generic list of business risks, alongside climate change regulations, without further discussion.\",\n  \"reason\": \"The release is about gold mining operations and financial performance. Its sole climate reference is boilerplate in a risk disclosure and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:06:50Z",
+  "duration_seconds": 2.301,
+  "error": null
+}

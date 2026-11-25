@@ -1,0 +1,77 @@
+{
+  "article_id": "20540996",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_09/nz/20540996.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_09/nz/20540996.json"
+  },
+  "manifest_row": {
+    "article_id": "20540996",
+    "group": "2017_09",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_09/nz/20540996.txt",
+    "now_field_2": "4973",
+    "date_original": "17-09-14",
+    "date_iso": "2017-09-14",
+    "source_name": "Interest.co.nz",
+    "url": "https://www.interest.co.nz/news/89837/labour-and-greens-could-form-govt-together-1-news-colmar-brunton-poll-shows-nz-first-not",
+    "title": "Labour and Greens could form govt together, 1 News Colmar ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-09.txt\"]",
+    "metadata_article_files": "[\"text-17-09/text_17-09-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "New Zealand election polling and party coalition prospects",
+    "climate_relevance": "Climate change is mentioned in a comment comparing it to a defining generational issue, and another comment refers to including farming in the emissions trading scheme.",
+    "reason": "The main article concerns election polling, not climate change. The comments contain some meaningful climate-related political discourse, so the text is relevant peripherally rather than as core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a38d53c5ee3a27a6073072983352b4b095ee507d73e8ed00273e3022160459f1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b51569689c0b5eeb1d7fe948bb16cd0f1de1a33992ef9b8c296dfbd6e153372b",
+    "raw_response_text_sha256": "c151b1a049902ee73522de01452f51bdc51aa52b7d592381d2be8bee4250f07f"
+  },
+  "api_metadata": {
+    "id": "resp_03e8f90c7cad0ad3006b060d6c04a487d2ad194610eeebbfe3",
+    "model": "gpt-6-luna",
+    "created_at": 1795558764.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6714,
+      "input_tokens_details": {
+        "cache_write_tokens": 6711,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6711
+        }
+      },
+      "output_tokens": 451,
+      "output_tokens_details": {
+        "reasoning_tokens": 302
+      },
+      "total_tokens": 7165
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"New Zealand election polling and party coalition prospects\",\n  \"climate_relevance\": \"Climate change is mentioned in a comment comparing it to a defining generational issue, and another comment refers to including farming in the emissions trading scheme.\",\n  \"reason\": \"The main article concerns election polling, not climate change. The comments contain some meaningful climate-related political discourse, so the text is relevant peripherally rather than as core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:19:27Z",
+  "duration_seconds": 3.446,
+  "error": null
+}

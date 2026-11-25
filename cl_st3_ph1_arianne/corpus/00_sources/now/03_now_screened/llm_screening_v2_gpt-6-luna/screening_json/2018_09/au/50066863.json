@@ -1,0 +1,77 @@
+{
+  "article_id": "50066863",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/au/50066863.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/au/50066863.json"
+  },
+  "manifest_row": {
+    "article_id": "50066863",
+    "group": "2018_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/au/50066863.txt",
+    "now_field_2": "615",
+    "date_original": "18-09-03",
+    "date_iso": "2018-09-03",
+    "source_name": "Bega District News",
+    "url": "http://www.begadistrictnews.com.au/story/5623533/letters-flight-school-proposal-ludicrous-not-contentious/",
+    "title": "Ludicrous proposal",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "A collection of letters to the editor on local issues, including flight-school development, forestry and animal agriculture.",
+    "climate_relevance": "One letter explicitly discusses climate change, attributing more frequent and severe droughts, fires and floods to it and linking it to animal agriculture and greenhouse-gas emissions.",
+    "reason": "The text contains meaningful climate discourse, but it is one item within a collection of letters covering several unrelated topics, so the supplied text as a whole is not centrally about climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a63419f153f1424825366ea30880b7c0d93e78e153a580d0cb5ef51dd596f808",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9e15f333800b795f72c901372e8cfdbba28bdfbb53da8f69b8383dea2ee8f69d",
+    "raw_response_text_sha256": "145c358888d87415936bec2896c6a48845cef41ad0157f7131d00c56397dac0a"
+  },
+  "api_metadata": {
+    "id": "resp_09e2780c46b02e5e006b06277edd2087d1b1c40649280f7f79",
+    "model": "gpt-6-luna",
+    "created_at": 1795565438.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1280,
+      "input_tokens_details": {
+        "cache_write_tokens": 1277,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1277
+        }
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 177
+      },
+      "total_tokens": 1622
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of letters to the editor on local issues, including flight-school development, forestry and animal agriculture.\",\n  \"climate_relevance\": \"One letter explicitly discusses climate change, attributing more frequent and severe droughts, fires and floods to it and linking it to animal agriculture and greenhouse-gas emissions.\",\n  \"reason\": \"The text contains meaningful climate discourse, but it is one item within a collection of letters covering several unrelated topics, so the supplied text as a whole is not centrally about climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:10:41Z",
+  "duration_seconds": 3.199,
+  "error": null
+}

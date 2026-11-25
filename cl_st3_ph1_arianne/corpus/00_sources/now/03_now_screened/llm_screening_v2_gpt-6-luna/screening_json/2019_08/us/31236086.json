@@ -1,0 +1,77 @@
+{
+  "article_id": "31236086",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/us/31236086.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/us/31236086.json"
+  },
+  "manifest_row": {
+    "article_id": "31236086",
+    "group": "2019_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/us/31236086.txt",
+    "now_field_2": "1553",
+    "date_original": "19-08-22",
+    "date_iso": "2019-08-22",
+    "source_name": "nymag.com",
+    "url": "http://nymag.com/intelligencer/2019/08/democratic-push-for-more-blue-secretaries-of-state.html",
+    "title": "Democratic Push for More Blue Secretaries of State",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-us5.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Voting rights and Democratic efforts to win secretary-of-state races",
+    "climate_relevance": "A separate passage reports the Trump administration’s proposed rollback of methane-emissions regulations and notes that methane contributes to climate change.",
+    "reason": "The identifiable main article is about elections and voting rights, not climate change. However, the text also contains a meaningful, distinct news passage about methane regulation, so it is relevant peripherally rather than wholly incidental.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e2bb251e0696fb344a3b4db198f110f4741dfa6c5dabf6b03043a7c785d3e000",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "255fa9670e21f795b6d5a915d32b0ffaa3fa9ca5cefd0718cf3963df64476a48",
+    "raw_response_text_sha256": "a565fb6ea16652fc9897aef5f8113495cd29da0a4da0940bc1bbae8c59ecb47c"
+  },
+  "api_metadata": {
+    "id": "resp_088228279831a9f0006b061641a61c87d2bf41274d280f25a0",
+    "model": "gpt-6-luna",
+    "created_at": 1795561025.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2526,
+      "input_tokens_details": {
+        "cache_write_tokens": 2523,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2523
+        }
+      },
+      "output_tokens": 496,
+      "output_tokens_details": {
+        "reasoning_tokens": 342
+      },
+      "total_tokens": 3022
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Voting rights and Democratic efforts to win secretary-of-state races\",\n  \"climate_relevance\": \"A separate passage reports the Trump administration’s proposed rollback of methane-emissions regulations and notes that methane contributes to climate change.\",\n  \"reason\": \"The identifiable main article is about elections and voting rights, not climate change. However, the text also contains a meaningful, distinct news passage about methane regulation, so it is relevant peripherally rather than wholly incidental.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:57:09Z",
+  "duration_seconds": 3.424,
+  "error": null
+}

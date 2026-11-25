@@ -1,0 +1,77 @@
+{
+  "article_id": "20250456",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/au/20250456.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/au/20250456.json"
+  },
+  "manifest_row": {
+    "article_id": "20250456",
+    "group": "2017_08",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/au/20250456.txt",
+    "now_field_2": "1285",
+    "date_original": "17-08-28",
+    "date_iso": "2017-08-28",
+    "source_name": "InDaily",
+    "url": "https://indaily.com.au/opinion/2017/08/29/taxpayers-give-50-million-wine-cider-makers/",
+    "title": "Taxpayers give $50 million to wine and cider makers",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-AU.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Australian wine-industry funding and export support",
+    "climate_relevance": "The text says global warming is making Australia’s warmest wine-growing regions difficult to manage and notes the minister’s climate-change denial, but climate change is not the article’s main subject.",
+    "reason": "The article is primarily about a government support package for the wine industry. Its climate references are meaningful to the discussion of wine-growing impacts and the minister’s position, so it is relevant as peripheral climate discourse rather than core coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f967b5049df76f30fdc9a725a5936cc240a830527b1dfd88a48534af6cd3771c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0f851add477b74187da1fbaef91c9aa102ff31eb8f1af9dd5205595786df6cc7",
+    "raw_response_text_sha256": "2b88a73b9bbf46f96ddee7e55309b9457da36860293017263fcf68283d7c7d02"
+  },
+  "api_metadata": {
+    "id": "resp_0488ba7967a69098006b060d06028487d29c019d0cc78011be",
+    "model": "gpt-6-luna",
+    "created_at": 1795558662.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2202,
+      "input_tokens_details": {
+        "cache_write_tokens": 2199,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2199
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 2452
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Australian wine-industry funding and export support\",\n  \"climate_relevance\": \"The text says global warming is making Australia’s warmest wine-growing regions difficult to manage and notes the minister’s climate-change denial, but climate change is not the article’s main subject.\",\n  \"reason\": \"The article is primarily about a government support package for the wine industry. Its climate references are meaningful to the discussion of wine-growing impacts and the minister’s position, so it is relevant as peripheral climate discourse rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:44Z",
+  "duration_seconds": 2.131,
+  "error": null
+}

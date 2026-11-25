@@ -1,0 +1,77 @@
+{
+  "article_id": "81203943",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/81203943.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/81203943.json"
+  },
+  "manifest_row": {
+    "article_id": "81203943",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/81203943.txt",
+    "now_field_2": "133",
+    "date_original": "19-09-21",
+    "date_iso": "2019-09-21",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20190921090640-edi0z",
+    "title": "Motion to oust UK Labour Party deputy leader withdrawn- lawmaker",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Labour Party internal politics and Brexit",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news organization's coverage areas.",
+    "reason": "The article concerns a Labour Party motion targeting deputy leader Tom Watson. Its sole climate reference is unrelated boilerplate, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a68c670f91c672a3265be2d7769e428fb6eab235fed89475761e5e110df78ecf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b0c888ad30e83f32b7fcb27c353eed3290d3c71ba1d84240d7d4bd99ae9c9d47",
+    "raw_response_text_sha256": "503b395607b3aadf5aa7564c5b717f2c96cb1a2a8d1b786ba6c4d4dcf59ea071"
+  },
+  "api_metadata": {
+    "id": "resp_093907356b584538006b06470c422087d1b6c61bde421c0b9e",
+    "model": "gpt-6-luna",
+    "created_at": 1795573516.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 668,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 858
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Labour Party internal politics and Brexit\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news organization's coverage areas.\",\n  \"reason\": \"The article concerns a Labour Party motion targeting deputy leader Tom Watson. Its sole climate reference is unrelated boilerplate, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:25:18Z",
+  "duration_seconds": 1.873,
+  "error": null
+}

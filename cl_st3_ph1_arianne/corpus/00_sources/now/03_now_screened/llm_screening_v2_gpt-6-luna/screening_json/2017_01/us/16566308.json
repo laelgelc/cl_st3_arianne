@@ -1,0 +1,77 @@
+{
+  "article_id": "16566308",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/us/16566308.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/us/16566308.json"
+  },
+  "manifest_row": {
+    "article_id": "16566308",
+    "group": "2017_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/us/16566308.txt",
+    "now_field_2": "8305",
+    "date_original": "17-01-24",
+    "date_iso": "2017-01-24",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/news/powerpost/paloma/daily-202/2017/01/24/daily-202-the-sorest-winner-of-all-time-cannot-stop-whining/5886adb5e9b69b432bc7e07f/",
+    "title": "The Daily 202: The sorest winner of all time cannot stop whining",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "A political news roundup covering the opening days of the Trump administration and its policies, personnel, and controversies.",
+    "climate_relevance": "The roundup reports that an EPA funding and contracts freeze could affect state-led climate research, and that the CDC canceled a planned conference on climate change and health shortly before Trump's inauguration.",
+    "reason": "Climate change is not the main subject, but the references describe consequential actions affecting climate research and public-health discussion, making them meaningful background discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2c7b03b6e84a4eceee6744466a3f952e80facad4fa2d1c044da9dd9e5106e675",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7675fb836ec5d80d02a67d97527428b4dcb9a9f02b70e68f39f88a1c933c2e60",
+    "raw_response_text_sha256": "5a957f0cf430c10bc660cba064febe79ca9c7633008e08951a2aadbd7dba337f"
+  },
+  "api_metadata": {
+    "id": "resp_0f4c949fde6b24fb006b0607d8e3e087d2a0eff85f0c8c1697",
+    "model": "gpt-6-luna",
+    "created_at": 1795557337.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 11299,
+      "input_tokens_details": {
+        "cache_write_tokens": 11296,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 11296
+        }
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 11559
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A political news roundup covering the opening days of the Trump administration and its policies, personnel, and controversies.\",\n  \"climate_relevance\": \"The roundup reports that an EPA funding and contracts freeze could affect state-led climate research, and that the CDC canceled a planned conference on climate change and health shortly before Trump's inauguration.\",\n  \"reason\": \"Climate change is not the main subject, but the references describe consequential actions affecting climate research and public-health discussion, making them meaningful background discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:55:39Z",
+  "duration_seconds": 2.594,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "71146687",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/au/71146687.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/au/71146687.json"
+  },
+  "manifest_row": {
+    "article_id": "71146687",
+    "group": "2019_08",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/au/71146687.txt",
+    "now_field_2": "3807",
+    "date_original": "19-08-23",
+    "date_iso": "2019-08-23",
+    "source_name": "thesaturdaypaper.com.au",
+    "url": "https://www.thesaturdaypaper.com.au/news/politics/2019/08/24/the-power-and-hypocrisy-george-pells-supporters/15665688008647",
+    "title": "The power and hypocrisy of George Pell's supporters | The ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.9,
+    "climate_role": "passing",
+    "main_topic": "George Pell's conviction and the support he received from conservative and Catholic institutions",
+    "climate_relevance": "The identifiable main article briefly notes that Pell broke with church doctrine on global warming, without developing the topic.",
+    "reason": "Climate change is only mentioned in passing in the main article and does not contribute meaningfully to its discourse. The supplied text also includes a separate, substantial article about climate change and Tokelau, but that is distinct from the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3f5100933b9c5ac5754ff926504086a042dd1b94b2d0dd517f6a90862a8062ad",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "165986b7c39373c3f2c71d4cf17790da23e6712ef8f94610e246a44c028b7c4a",
+    "raw_response_text_sha256": "ce85cc523df2a507ac5d8c89e03b118f49ac268464492a30081e69e0df20649e"
+  },
+  "api_metadata": {
+    "id": "resp_0131f13209973dae006b06401aa41887d1a99164f32b4fddec",
+    "model": "gpt-6-luna",
+    "created_at": 1795571738.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8711,
+      "input_tokens_details": {
+        "cache_write_tokens": 8708,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 8708
+        }
+      },
+      "output_tokens": 591,
+      "output_tokens_details": {
+        "reasoning_tokens": 432
+      },
+      "total_tokens": 9302
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"George Pell's conviction and the support he received from conservative and Catholic institutions\",\n  \"climate_relevance\": \"The identifiable main article briefly notes that Pell broke with church doctrine on global warming, without developing the topic.\",\n  \"reason\": \"Climate change is only mentioned in passing in the main article and does not contribute meaningfully to its discourse. The supplied text also includes a separate, substantial article about climate change and Tokelau, but that is distinct from the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:55:43Z",
+  "duration_seconds": 4.957,
+  "error": null
+}

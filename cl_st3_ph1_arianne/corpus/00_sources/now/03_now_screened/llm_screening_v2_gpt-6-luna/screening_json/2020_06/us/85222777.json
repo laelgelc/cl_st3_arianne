@@ -1,0 +1,77 @@
+{
+  "article_id": "85222777",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/us/85222777.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/us/85222777.json"
+  },
+  "manifest_row": {
+    "article_id": "85222777",
+    "group": "2020_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/us/85222777.txt",
+    "now_field_2": "583",
+    "date_original": "20-06-20",
+    "date_iso": "2020-06-20",
+    "source_name": "Bloomberg on MSN.com",
+    "url": "https://www.msn.com/en-us/finance/markets/coronavirus-climate-change-boost-air-conditioner-giant-in-japan/ar-BB15LI6e",
+    "title": "Coronavirus, Climate Change Boost Air Conditioner Giant in Japan",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-us7.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "background",
+    "main_topic": "Daikin's business prospects, particularly demand for air conditioners and ventilation during the coronavirus pandemic",
+    "climate_relevance": "Climate change is identified in the headline and opening as a long-term factor that may benefit the air-conditioning company, but the article does not develop that connection.",
+    "reason": "The article is primarily business coverage about Daikin and the pandemic. Climate change is more than unrelated boilerplate because it is explicitly framed as a long-term market driver, but it receives no further discussion.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "23cd5bd73b2131b805985c297c3e93709a96e398b16a1ad2c401bb0fd8a1e273",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f49331236a23e85e5f25bba536de4e225758fe0cda675b5050a53e0d361d0c83",
+    "raw_response_text_sha256": "e61faad41f647ee6e1ef83990cb7e6cbb89418d1c21a85e898a071658a9787aa"
+  },
+  "api_metadata": {
+    "id": "resp_009ac5e3007d8b20006b064b87d03887d1a57d15ec1f192c1e",
+    "model": "gpt-6-luna",
+    "created_at": 1795574663.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1294,
+      "input_tokens_details": {
+        "cache_write_tokens": 1291,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1291
+        }
+      },
+      "output_tokens": 411,
+      "output_tokens_details": {
+        "reasoning_tokens": 247
+      },
+      "total_tokens": 1705
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Daikin's business prospects, particularly demand for air conditioners and ventilation during the coronavirus pandemic\",\n  \"climate_relevance\": \"Climate change is identified in the headline and opening as a long-term factor that may benefit the air-conditioning company, but the article does not develop that connection.\",\n  \"reason\": \"The article is primarily business coverage about Daikin and the pandemic. Climate change is more than unrelated boilerplate because it is explicitly framed as a long-term market driver, but it receives no further discussion.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:44:27Z",
+  "duration_seconds": 3.582,
+  "error": null
+}

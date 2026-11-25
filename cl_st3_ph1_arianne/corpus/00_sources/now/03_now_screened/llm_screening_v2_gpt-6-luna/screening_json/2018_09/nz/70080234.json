@@ -1,0 +1,77 @@
+{
+  "article_id": "70080234",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/nz/70080234.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/nz/70080234.json"
+  },
+  "manifest_row": {
+    "article_id": "70080234",
+    "group": "2018_09",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/nz/70080234.txt",
+    "now_field_2": "1391",
+    "date_original": "18-09-04",
+    "date_iso": "2018-09-04",
+    "source_name": "Interest.co.nz",
+    "url": "https://www.interest.co.nz/rural-news/95685/allan-barber-notes-new-zealand-agriculture-has-reached-peak-production-volume-here",
+    "title": "Allan Barber notes that New Zealand agriculture has reached peak ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "New Zealand agriculture’s production limits, value-added strategy, and economic outlook",
+    "climate_relevance": "Climate change is discussed as one uncertainty affecting agriculture, alongside emissions policy and environmental constraints. The appended comments also debate climate-related claims about warming, CO2, and agricultural yields.",
+    "reason": "The article is mainly about agricultural economics and moving production up the value chain, not climate change. Climate change and emissions nonetheless have meaningful relevance to its discussion of farming limits and environmental pressure, so it is useful as peripheral climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d08c25f17c463689330c81f75d926d8c858bceac654479e85043564316990244",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "14df33ee66f732e8c89cd14b75bf005d994aa5007e4de5ccbefaf5ef8102f9d0",
+    "raw_response_text_sha256": "3dedf039a806dc1d59b77d800210da13568f2d7a1ff2812e35ff65a5aee85d86"
+  },
+  "api_metadata": {
+    "id": "resp_021a553deb6acd03006b063ac38af887d1995ba78d31a3d660",
+    "model": "gpt-6-luna",
+    "created_at": 1795570371.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2187,
+      "input_tokens_details": {
+        "cache_write_tokens": 2184,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2184
+        }
+      },
+      "output_tokens": 311,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 2498
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"New Zealand agriculture’s production limits, value-added strategy, and economic outlook\",\n  \"climate_relevance\": \"Climate change is discussed as one uncertainty affecting agriculture, alongside emissions policy and environmental constraints. The appended comments also debate climate-related claims about warming, CO2, and agricultural yields.\",\n  \"reason\": \"The article is mainly about agricultural economics and moving production up the value chain, not climate change. Climate change and emissions nonetheless have meaningful relevance to its discussion of farming limits and environmental pressure, so it is useful as peripheral climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:32:54Z",
+  "duration_seconds": 2.801,
+  "error": null
+}

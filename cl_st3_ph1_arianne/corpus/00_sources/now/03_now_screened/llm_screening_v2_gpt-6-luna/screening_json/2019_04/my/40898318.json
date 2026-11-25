@@ -1,0 +1,77 @@
+{
+  "article_id": "40898318",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40898318.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40898318.json"
+  },
+  "manifest_row": {
+    "article_id": "40898318",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40898318.txt",
+    "now_field_2": "651",
+    "date_original": "19-04-29",
+    "date_iso": "2019-04-29",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/30/rakuten-holds-ringgit-projection-at-rm3-90/",
+    "title": "Rakuten holds ringgit projection at RM3.90",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Malaysian currency and foreign investment flows",
+    "climate_relevance": "Climate-related wording appears only in a separate introductory snippet about Malaysia exhibiting sustainable energy solutions and in a minister's portfolio title; the main article is about currency and financial markets.",
+    "reason": "The identifiable main article contains no meaningful climate-change discourse. The brief energy reference is part of an apparently unrelated snippet, not the article's discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "29d3b54585745653419200b64fe889ef909f1848d69f422e49705aa4c09cc576",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fb503ae9d4f90239b02592ccdfcede063a642332f28bcab3cd8c6e5440dfd4e6",
+    "raw_response_text_sha256": "66d822caf28ecb060766c13b6322d8caf2d9085a84bafe081c998d5cafe267e7"
+  },
+  "api_metadata": {
+    "id": "resp_0c89d6dd3f00dfbb006b0620458a7487d2842e0c72d1b074ce",
+    "model": "gpt-6-luna",
+    "created_at": 1795563589.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1374,
+      "input_tokens_details": {
+        "cache_write_tokens": 1371,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1371
+        }
+      },
+      "output_tokens": 295,
+      "output_tokens_details": {
+        "reasoning_tokens": 144
+      },
+      "total_tokens": 1669
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Malaysian currency and foreign investment flows\",\n  \"climate_relevance\": \"Climate-related wording appears only in a separate introductory snippet about Malaysia exhibiting sustainable energy solutions and in a minister's portfolio title; the main article is about currency and financial markets.\",\n  \"reason\": \"The identifiable main article contains no meaningful climate-change discourse. The brief energy reference is part of an apparently unrelated snippet, not the article's discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:52Z",
+  "duration_seconds": 2.608,
+  "error": null
+}

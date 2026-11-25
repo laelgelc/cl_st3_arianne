@@ -1,0 +1,77 @@
+{
+  "article_id": "70533234",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70533234.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70533234.json"
+  },
+  "manifest_row": {
+    "article_id": "70533234",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70533234.txt",
+    "now_field_2": "1002",
+    "date_original": "19-02-20",
+    "date_iso": "2019-02-20",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00509/returning-home-after-evacuation.htm",
+    "title": "Returning home after evacuation",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Advice for residents returning after evacuations, focused on animal welfare and fire recovery.",
+    "climate_relevance": "The main article discusses fires and drought conditions without connecting them to climate change. A separate Greenpeace teaser briefly mentions climate change policy.",
+    "reason": "Climate change appears only in a brief, unrelated snippet rather than as meaningful discourse in the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "58a1c1f559b230abfd5f617a3ab5af581b3d9b710b86c3f15e844f90a7c51273",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "09f12ed939bbca8674921633bd4d5e02d4512f242b98702896a29b1bc9161843",
+    "raw_response_text_sha256": "9204bac80ade11fdd6a9d18e66c812247269a220d77f80fd148ebf441a128d23"
+  },
+  "api_metadata": {
+    "id": "resp_0b7046c77eed44d9006b063d55e6dc87d1855502788138d7ee",
+    "model": "gpt-6-luna",
+    "created_at": 1795571030.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1749,
+      "input_tokens_details": {
+        "cache_write_tokens": 1746,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1746
+        }
+      },
+      "output_tokens": 386,
+      "output_tokens_details": {
+        "reasoning_tokens": 250
+      },
+      "total_tokens": 2135
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Advice for residents returning after evacuations, focused on animal welfare and fire recovery.\",\n  \"climate_relevance\": \"The main article discusses fires and drought conditions without connecting them to climate change. A separate Greenpeace teaser briefly mentions climate change policy.\",\n  \"reason\": \"Climate change appears only in a brief, unrelated snippet rather than as meaningful discourse in the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:52Z",
+  "duration_seconds": 3.149,
+  "error": null
+}

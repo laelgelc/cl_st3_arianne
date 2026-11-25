@@ -1,0 +1,77 @@
+{
+  "article_id": "70527234",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70527234.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70527234.json"
+  },
+  "manifest_row": {
+    "article_id": "70527234",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70527234.txt",
+    "now_field_2": "762",
+    "date_original": "19-02-18",
+    "date_iso": "2019-02-18",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00464/getting-ready-for-action-on-stage-two-of-town-centre-upgrade.htm",
+    "title": "Getting ready for action on Stage Two of Town Centre Upgrade",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Whitianga Town Centre upgrade and related infrastructure work",
+    "climate_relevance": "Climate change appears only in an unrelated embedded news snippet about Greenpeace's response to National Party environment policy.",
+    "reason": "The identifiable main article concerns playground, footpath, and town-centre improvements. The climate reference belongs to a separate, brief snippet and does not meaningfully contribute to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f0f662ea4af06c1129227adac62e18bf084aa2c865c3866e511243a7307e6c54",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2334c9c50ec74b776f807a5e5818dab31126127d90ea7e864927543c6be56401",
+    "raw_response_text_sha256": "cb402584a83fd67d9c51d0812769c4cb8a2edd7038abf6cd52ad3473fa178876"
+  },
+  "api_metadata": {
+    "id": "resp_005fd39fbc66fd1d006b063d455e8c87d18e4e1e334dc16932",
+    "model": "gpt-6-luna",
+    "created_at": 1795571013.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1471,
+      "input_tokens_details": {
+        "cache_write_tokens": 1468,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1468
+        }
+      },
+      "output_tokens": 338,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 1809
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Whitianga Town Centre upgrade and related infrastructure work\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated embedded news snippet about Greenpeace's response to National Party environment policy.\",\n  \"reason\": \"The identifiable main article concerns playground, footpath, and town-centre improvements. The climate reference belongs to a separate, brief snippet and does not meaningfully contribute to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:35Z",
+  "duration_seconds": 2.545,
+  "error": null
+}

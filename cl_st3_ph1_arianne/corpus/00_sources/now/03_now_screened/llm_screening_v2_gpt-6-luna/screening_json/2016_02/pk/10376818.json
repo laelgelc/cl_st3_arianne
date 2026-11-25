@@ -1,0 +1,77 @@
+{
+  "article_id": "10376818",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_02/pk/10376818.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_02/pk/10376818.json"
+  },
+  "manifest_row": {
+    "article_id": "10376818",
+    "group": "2016_02",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_02/pk/10376818.txt",
+    "now_field_2": "266",
+    "date_original": "16-02-26",
+    "date_iso": "2016-02-26",
+    "source_name": "PakistanHerald-Feb 25, 2016",
+    "url": "http://www.pakistanherald.com/news/9804/26-february-2016/sc-annuls-special-court-verdict-to-include-co-accused-in-high-treason-trial",
+    "title": "SC annuls special court verdict to include co-accused in high ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-02-iuq/16-02-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Supreme Court ruling concerning the inclusion of co-accused in Pervez Musharraf’s high treason trial.",
+    "climate_relevance": "Climate change appears only in the job title of a federal minister mentioned among the people named in the report; there is no climate-related discussion.",
+    "reason": "The report focuses on a legal proceeding, and the climate reference is incidental identification rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "be8bd3bc2c22dc51bb826d3a9d23765723703d4a66ee2a45d959312c44f726b6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bf3fa9f3fd591556c1d390d17ac360378d637f91cadcc1d79d5655db565c011e",
+    "raw_response_text_sha256": "de465e2b6f9a2130f4e5f5079c2555b4d700f9d5e1b19bc5554b7f36de91661a"
+  },
+  "api_metadata": {
+    "id": "resp_0ba8525d1ea4ebe3006b060511f66887d28405433ed1583abb",
+    "model": "gpt-6-luna",
+    "created_at": 1795556626.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 863,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1088
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Supreme Court ruling concerning the inclusion of co-accused in Pervez Musharraf’s high treason trial.\",\n  \"climate_relevance\": \"Climate change appears only in the job title of a federal minister mentioned among the people named in the report; there is no climate-related discussion.\",\n  \"reason\": \"The report focuses on a legal proceeding, and the climate reference is incidental identification rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:43:48Z",
+  "duration_seconds": 2.187,
+  "error": null
+}

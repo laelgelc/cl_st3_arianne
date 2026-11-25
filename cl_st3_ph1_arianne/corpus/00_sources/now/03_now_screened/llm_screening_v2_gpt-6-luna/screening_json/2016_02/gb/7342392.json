@@ -1,0 +1,77 @@
+{
+  "article_id": "7342392",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_02/gb/7342392.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_02/gb/7342392.json"
+  },
+  "manifest_row": {
+    "article_id": "7342392",
+    "group": "2016_02",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_02/gb/7342392.txt",
+    "now_field_2": "607",
+    "date_original": "16-02-06",
+    "date_iso": "2016-02-06",
+    "source_name": "The Guardian",
+    "url": "http://www.theguardian.com/world/2016/feb/06/ban-ki-moon-woman-un-secretary-general",
+    "title": "Ban Ki-moon says woman at helm of UN would be 'a great idea'",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-02-iuq/16-02-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Campaign for a woman to become the next UN secretary-general and the selection process",
+    "climate_relevance": "Climate change appears only in a biographical reference identifying Gro Harlem Brundtland as a UN special envoy on climate change.",
+    "reason": "The text does not discuss climate change, its implications, or related policy; the reference is incidental to the article's focus on UN leadership.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9a76e9761bb99999b515c87277f1a855040dcaf6e79e63c61d1623dfec336451",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6ce3cf53f0525086053860da9fff41254d51fe9af4d10536a85ba1fa46eb7267",
+    "raw_response_text_sha256": "3eb90693c047eb700ac3c3c9cb1c3995816c834fc5ee4861806ea711e8e1dec6"
+  },
+  "api_metadata": {
+    "id": "resp_0e1158e1a3a14e83006b064604ccc087d18b1650a85d74cffa",
+    "model": "gpt-6-luna",
+    "created_at": 1795573253.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1252,
+      "input_tokens_details": {
+        "cache_write_tokens": 1249,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1249
+        }
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1494
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Campaign for a woman to become the next UN secretary-general and the selection process\",\n  \"climate_relevance\": \"Climate change appears only in a biographical reference identifying Gro Harlem Brundtland as a UN special envoy on climate change.\",\n  \"reason\": \"The text does not discuss climate change, its implications, or related policy; the reference is incidental to the article's focus on UN leadership.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:20:55Z",
+  "duration_seconds": 2.397,
+  "error": null
+}

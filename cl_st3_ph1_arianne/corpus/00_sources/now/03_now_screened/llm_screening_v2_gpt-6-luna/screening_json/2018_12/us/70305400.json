@@ -1,0 +1,77 @@
+{
+  "article_id": "70305400",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/us/70305400.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/us/70305400.json"
+  },
+  "manifest_row": {
+    "article_id": "70305400",
+    "group": "2018_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/us/70305400.txt",
+    "now_field_2": "310",
+    "date_original": "18-12-04",
+    "date_iso": "2018-12-04",
+    "source_name": "Free Malaysia Today",
+    "url": "https://www.freemalaysiatoday.com/category/nation/2018/12/04/lynas-studying-governments-report-on-review-of-its-operations/",
+    "title": "Lynas studying government's report on review of its operations",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Lynas's radioactive and non-radioactive waste management and the conditions for renewing its operating licences in Malaysia.",
+    "climate_relevance": "Climate change appears only as part of the ministry's name; the text contains no meaningful discussion of climate change.",
+    "reason": "The article focuses on radioactive residues, waste disposal, and safety reviews at a rare-earth processing plant. The climate reference is incidental institutional context.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "43c890ccd59704f901e04d374b6223d54f6b3fc6be9fbd9c7ded575908fcaee4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fe969a31e0a618a1bf962e5c175e72efb42373828a72fb46f0692ba030f12e78",
+    "raw_response_text_sha256": "d0b64993376f0170510cf6bec5cf756aee48f57d87f6706b1c3fab6ddf5b2782"
+  },
+  "api_metadata": {
+    "id": "resp_00808478b55f209d006b063bd5e1a487d183489aa40be22de6",
+    "model": "gpt-6-luna",
+    "created_at": 1795570645.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 894,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1122
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Lynas's radioactive and non-radioactive waste management and the conditions for renewing its operating licences in Malaysia.\",\n  \"climate_relevance\": \"Climate change appears only as part of the ministry's name; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on radioactive residues, waste disposal, and safety reviews at a rare-earth processing plant. The climate reference is incidental institutional context.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:37:27Z",
+  "duration_seconds": 2.108,
+  "error": null
+}

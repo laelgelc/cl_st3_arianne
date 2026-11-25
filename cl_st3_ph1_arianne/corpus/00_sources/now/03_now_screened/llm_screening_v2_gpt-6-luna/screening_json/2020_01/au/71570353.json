@@ -1,0 +1,77 @@
+{
+  "article_id": "71570353",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/au/71570353.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/au/71570353.json"
+  },
+  "manifest_row": {
+    "article_id": "71570353",
+    "group": "2020_01",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/au/71570353.txt",
+    "now_field_2": "551",
+    "date_original": "20-01-13",
+    "date_iso": "2020-01-13",
+    "source_name": "brisbanetimes.com.au",
+    "url": "https://www.brisbanetimes.com.au/national/nsw/new-year-s-revellers-raise-more-than-2-million-for-bushfire-relief-20200101-p53o2v.html",
+    "title": "NSW Bushfires: New Year's revellers raise more than $2 ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Sydney New Year's Eve fireworks and public safety amid severe bushfires",
+    "climate_relevance": "The mayor calls the fires a wake-up call for governments to act on climate change, but climate change is not the article's main focus.",
+    "reason": "The report primarily covers the fireworks, crowds, emergency response, and bushfire deaths and damage. Its explicit climate-change reference is meaningful but brief, making the text useful as peripheral climate discourse rather than core coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "09c0442d9873fd98d2d3039977611c7acbf624ea8ccc2f1d7f1902543749880a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "deff41fc7c6ca7dbf9a0629294985a9e0ff9bd1e161d894e24ef5d66dd3c146a",
+    "raw_response_text_sha256": "70aa805d839202fccc941ff7f053bb0bbe969c5a47af8f3ba1dd71319ee4dd62"
+  },
+  "api_metadata": {
+    "id": "resp_0cfd83cdb98ab0a9006b0641fe107887d1a3c09bc3524d0619",
+    "model": "gpt-6-luna",
+    "created_at": 1795572222.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1231,
+      "input_tokens_details": {
+        "cache_write_tokens": 1228,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1228
+        }
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1476
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Sydney New Year's Eve fireworks and public safety amid severe bushfires\",\n  \"climate_relevance\": \"The mayor calls the fires a wake-up call for governments to act on climate change, but climate change is not the article's main focus.\",\n  \"reason\": \"The report primarily covers the fireworks, crowds, emergency response, and bushfire deaths and damage. Its explicit climate-change reference is meaningful but brief, making the text useful as peripheral climate discourse rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:03:44Z",
+  "duration_seconds": 2.494,
+  "error": null
+}

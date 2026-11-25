@@ -1,0 +1,77 @@
+{
+  "article_id": "18316368",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/nz/18316368.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/nz/18316368.json"
+  },
+  "manifest_row": {
+    "article_id": "18316368",
+    "group": "2017_05",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/nz/18316368.txt",
+    "now_field_2": "813",
+    "date_original": "17-05-07",
+    "date_iso": "2017-05-07",
+    "source_name": "New Zealand Herald",
+    "url": "http://www.nzherald.co.nz/the-country/news/article.cfm?c_id=16&amp;objectid=11851161",
+    "title": "Simon Nixon: Hastings should withdraw from urban strategy",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Hastings and Hawke's Bay urban development strategy, housing growth, and land use",
+    "climate_relevance": "The text briefly discusses climate change predictions and rising sea levels as a potential coastal hazard, and mentions managed retreat from coastal areas.",
+    "reason": "The article is primarily an argument about the regional urban development strategy and its economic and housing consequences. Climate change and sea-level rise are meaningful but limited considerations in that argument, so the text is relevant as peripheral discourse rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a0d6a77271e03191b720f11534d69f249bde09b5629a79bf173990e650637d72",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3a72bcf5f21b710904e3a6f5f486c0cf69b36a8b7e210ab89ddd54056414788b",
+    "raw_response_text_sha256": "69b83aa026a711ad3d2b3ddd837473ea59c4908a5fa14d9aadc17e97345ea155"
+  },
+  "api_metadata": {
+    "id": "resp_0ebf8d0d42f50c05006b060a15a4c487d297d29d4ef317ef59",
+    "model": "gpt-6-luna",
+    "created_at": 1795557909.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1532,
+      "input_tokens_details": {
+        "cache_write_tokens": 1529,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1529
+        }
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 1752
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Hastings and Hawke's Bay urban development strategy, housing growth, and land use\",\n  \"climate_relevance\": \"The text briefly discusses climate change predictions and rising sea levels as a potential coastal hazard, and mentions managed retreat from coastal areas.\",\n  \"reason\": \"The article is primarily an argument about the regional urban development strategy and its economic and housing consequences. Climate change and sea-level rise are meaningful but limited considerations in that argument, so the text is relevant as peripheral discourse rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:05:11Z",
+  "duration_seconds": 2.28,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "41752884",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/gb/41752884.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/gb/41752884.json"
+  },
+  "manifest_row": {
+    "article_id": "41752884",
+    "group": "2020_02",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/gb/41752884.txt",
+    "now_field_2": "168",
+    "date_original": "20-02-19",
+    "date_iso": "2020-02-19",
+    "source_name": "thetimes.co.uk",
+    "url": "https://www.thetimes.co.uk/article/tony-abbott-told-mh370-pilot-downed-plane-in-murder-suicide-s26mp6fcf",
+    "title": "Malaysia `believes pilot of MH370 committed suicidal mass ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The disappearance of Malaysia Airlines Flight MH370 and claims about its pilot",
+    "climate_relevance": "The main article is unrelated to climate change. A separate item begins with the headline “Can we trust the green Tory flip-floppers?” and includes meaningful discussion of climate policy, extreme weather, and climate scepticism.",
+    "reason": "The identifiable main article concerns MH370 and contains no climate discourse. The climate-related material belongs to a separate article fragment, so it does not make the main article suitable for the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fe9fd660b1596afbcf0517fd9c6b8c71530c0050cd02e6f78808cad4ce2ec5ed",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "44e96706624d3fb2a14f392345ef7beb667e9fadde815a3606fde6b5569c1a44",
+    "raw_response_text_sha256": "2bf1e23f148aed7aace44108478f1ffd33af825353f033ea4b2b83ea7f259050"
+  },
+  "api_metadata": {
+    "id": "resp_00a7213e340000a6006b06230c547087d2929b196d3f88cb07",
+    "model": "gpt-6-luna",
+    "created_at": 1795564300.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 947,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 655,
+      "output_tokens_details": {
+        "reasoning_tokens": 481
+      },
+      "total_tokens": 1602
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The disappearance of Malaysia Airlines Flight MH370 and claims about its pilot\",\n  \"climate_relevance\": \"The main article is unrelated to climate change. A separate item begins with the headline “Can we trust the green Tory flip-floppers?” and includes meaningful discussion of climate policy, extreme weather, and climate scepticism.\",\n  \"reason\": \"The identifiable main article concerns MH370 and contains no climate discourse. The climate-related material belongs to a separate article fragment, so it does not make the main article suitable for the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:51:44Z",
+  "duration_seconds": 4.577,
+  "error": null
+}

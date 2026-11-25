@@ -1,0 +1,77 @@
+{
+  "article_id": "83545209",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83545209.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83545209.json"
+  },
+  "manifest_row": {
+    "article_id": "83545209",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83545209.txt",
+    "now_field_2": "142",
+    "date_original": "20-01-30",
+    "date_iso": "2020-01-30",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20200130223515-anbue",
+    "title": "China has confidence and capability to win the war against coronavirus -foreign ministry",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "China's response to the coronavirus outbreak",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news organization's coverage areas.",
+    "reason": "The article is about the coronavirus outbreak and contains no meaningful climate discourse; the sole climate reference is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d6168aeb75e5a82a7734a5df65b8048da14b21309a7206d0da32700c9f402eb8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "054c82428894532706409d39af2611d86e984a8958172210bacfdd70ce8e8b4e",
+    "raw_response_text_sha256": "b73822d4c4e3bc90f158e660af4c631661aa1ec244f564d94a398a7a11c1f1fc"
+  },
+  "api_metadata": {
+    "id": "resp_06c2c808f7ded062006b0649ba70fc87d1a56c6a74e45ff4e1",
+    "model": "gpt-6-luna",
+    "created_at": 1795574202.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 670,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 931
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"China's response to the coronavirus outbreak\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news organization's coverage areas.\",\n  \"reason\": \"The article is about the coronavirus outbreak and contains no meaningful climate discourse; the sole climate reference is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:36:44Z",
+  "duration_seconds": 2.243,
+  "error": null
+}

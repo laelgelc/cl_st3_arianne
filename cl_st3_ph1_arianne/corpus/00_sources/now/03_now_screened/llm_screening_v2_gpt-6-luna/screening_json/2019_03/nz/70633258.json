@@ -1,0 +1,77 @@
+{
+  "article_id": "70633258",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70633258.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70633258.json"
+  },
+  "manifest_row": {
+    "article_id": "70633258",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70633258.txt",
+    "now_field_2": "674",
+    "date_original": "19-03-27",
+    "date_iso": "2019-03-27",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/BU1903/S00709/eqc-advice-to-homeowners-affected-by-heavy-rain.htm",
+    "title": "EQC advice to homeowners affected by heavy rain",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "EQC advice for homeowners whose properties were damaged by heavy rain and storms",
+    "climate_relevance": "The main article concerns storm damage claims and preparedness, not climate change. Climate change appears only in a separate snippet about a report on long-term targets and policies.",
+    "reason": "The identifiable main article contains no meaningful climate-change discourse. The climate-related report mention is an unrelated snippet and does not make the main article relevant to the corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "20746cd70f8be39939b6dffe0cd7e39e6d2fee220219232985d271de7ef6af40",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2772f6c98edb7d68342c73890ee50e97864486b9a58aa2fc3fbc06d21dfc8532",
+    "raw_response_text_sha256": "0a5820e8f6f10ad952dd39e27032a207521083829acba3b7af23f10bb507cd30"
+  },
+  "api_metadata": {
+    "id": "resp_0b784ba37bed1c5c006b063e1fcc6887d1be73cfbab4b0822c",
+    "model": "gpt-6-luna",
+    "created_at": 1795571231.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1363,
+      "input_tokens_details": {
+        "cache_write_tokens": 1360,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1360
+        }
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 159
+      },
+      "total_tokens": 1680
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"EQC advice for homeowners whose properties were damaged by heavy rain and storms\",\n  \"climate_relevance\": \"The main article concerns storm damage claims and preparedness, not climate change. Climate change appears only in a separate snippet about a report on long-term targets and policies.\",\n  \"reason\": \"The identifiable main article contains no meaningful climate-change discourse. The climate-related report mention is an unrelated snippet and does not make the main article relevant to the corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:47:14Z",
+  "duration_seconds": 2.655,
+  "error": null
+}

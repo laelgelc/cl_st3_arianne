@@ -1,0 +1,77 @@
+{
+  "article_id": "31559332",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/31559332.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/31559332.json"
+  },
+  "manifest_row": {
+    "article_id": "31559332",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/31559332.txt",
+    "now_field_2": "479",
+    "date_original": "20-01-08",
+    "date_iso": "2020-01-08",
+    "source_name": "cbsnews.com",
+    "url": "https://www.cbsnews.com/news/mayor-of-south-carolinas-capital-says-he-would-back-michael-bloomberg/",
+    "title": "Mayor of South Carolina's capital says he would back ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Michael Bloomberg's potential presidential campaign and apology for New York City's stop-and-frisk policing",
+    "climate_relevance": "Climate change appears only in a brief characterization of Bloomberg as a climate-change advocate; the text does not discuss climate issues.",
+    "reason": "The article focuses on policing, Bloomberg's apology, and his political prospects. The climate reference is a passing remark rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5fe0237f41c2cc79c05957b5b3929424317df254cf474884b2471043b92a3b8a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3ddd8c7a48f478e1261b6955a048d7bff6a349ed0be14d719d7b2fcab5be2efe",
+    "raw_response_text_sha256": "7c87f564ac60cfa21d6fc88cbdf06653d4b61f01256d90644fbf0cbb563a0dae"
+  },
+  "api_metadata": {
+    "id": "resp_01060f00a7197e22006b06180c3a2087d28bf5e616f81db1b6",
+    "model": "gpt-6-luna",
+    "created_at": 1795561484.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1097,
+      "input_tokens_details": {
+        "cache_write_tokens": 1094,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1094
+        }
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1315
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Michael Bloomberg's potential presidential campaign and apology for New York City's stop-and-frisk policing\",\n  \"climate_relevance\": \"Climate change appears only in a brief characterization of Bloomberg as a climate-change advocate; the text does not discuss climate issues.\",\n  \"reason\": \"The article focuses on policing, Bloomberg's apology, and his political prospects. The climate reference is a passing remark rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:04:46Z",
+  "duration_seconds": 2.04,
+  "error": null
+}

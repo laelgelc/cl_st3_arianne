@@ -1,0 +1,77 @@
+{
+  "article_id": "31500874",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/nz/31500874.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/nz/31500874.json"
+  },
+  "manifest_row": {
+    "article_id": "31500874",
+    "group": "2019_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/nz/31500874.txt",
+    "now_field_2": "1493",
+    "date_original": "19-12-12",
+    "date_iso": "2019-12-12",
+    "source_name": "newsroom.co.nz",
+    "url": "https://www.newsroom.co.nz/2019/12/13/943831/stop-the-tail-from-wagging-the-dog",
+    "title": "Stop the tail from wagging the dog - <strong>newsroom.co.nz</strong>",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "New Zealand coalition politics and the balance of power between Labour and New Zealand First",
+    "climate_relevance": "Climate change appears only in a promotional footer listing topics covered by Newsroom.",
+    "reason": "The article is about coalition politics and government formation; the climate-change reference is boilerplate and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2d2c7d163ff9d9760cc5a31634f5385ef33bab470f183ad5de680ae9246e36e4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "17d50a09541ac0ce356be729d35b869bb36fcac90e3484e759fb65f537072a89",
+    "raw_response_text_sha256": "1273a660ffb8e5c557d33f64aa36aa7fa6281ca202fee83b89c9fc97c28cc097"
+  },
+  "api_metadata": {
+    "id": "resp_0f353a1563ba4a57006b06179c786487d2939f52e7e1cf4c0a",
+    "model": "gpt-6-luna",
+    "created_at": 1795561372.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2311,
+      "input_tokens_details": {
+        "cache_write_tokens": 2308,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2308
+        }
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 2532
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"New Zealand coalition politics and the balance of power between Labour and New Zealand First\",\n  \"climate_relevance\": \"Climate change appears only in a promotional footer listing topics covered by Newsroom.\",\n  \"reason\": \"The article is about coalition politics and government formation; the climate-change reference is boilerplate and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:02:54Z",
+  "duration_seconds": 2.238,
+  "error": null
+}

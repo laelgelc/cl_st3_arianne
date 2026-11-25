@@ -1,0 +1,77 @@
+{
+  "article_id": "51245168",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/ca/51245168.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/ca/51245168.json"
+  },
+  "manifest_row": {
+    "article_id": "51245168",
+    "group": "2019_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/ca/51245168.txt",
+    "now_field_2": "372",
+    "date_original": "19-12-05",
+    "date_iso": "2019-12-05",
+    "source_name": "pembinavalleyonline.com",
+    "url": "https://ftp.pembinavalleyonline.com/ag-news/agriculture-news-sk/food-prices-expected-to-increase-in-2020",
+    "title": "Food Prices Expected To Increase In 2020 ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-ca2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Forecast food prices and food inflation in Canada",
+    "climate_relevance": "Climate change is named as one of the factors affecting Canadian food prices, but the text does not explain its effects or discuss it further.",
+    "reason": "The article is primarily about food-price forecasts. Its brief mention of climate change as a food-price factor is relevant but not developed enough for core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4895401b8363fb626d856433d08cc94647e0c3809c03dc0d6e011d305b6b2315",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8a708073e6f52facac9968f57664397a57a65ade8c3f3d12f2e3fe766454de4e",
+    "raw_response_text_sha256": "c1fe9fcf19752663a8382c9ba31c9b0c11f2253828801d35d212fdd89ea8c534"
+  },
+  "api_metadata": {
+    "id": "resp_0cdcf93c305ee54b006b062cd6cafc87d180f63575347f4906",
+    "model": "gpt-6-luna",
+    "created_at": 1795566806.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 989,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 200
+      },
+      "total_tokens": 1331
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Forecast food prices and food inflation in Canada\",\n  \"climate_relevance\": \"Climate change is named as one of the factors affecting Canadian food prices, but the text does not explain its effects or discuss it further.\",\n  \"reason\": \"The article is primarily about food-price forecasts. Its brief mention of climate change as a food-price factor is relevant but not developed enough for core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:33:29Z",
+  "duration_seconds": 2.993,
+  "error": null
+}

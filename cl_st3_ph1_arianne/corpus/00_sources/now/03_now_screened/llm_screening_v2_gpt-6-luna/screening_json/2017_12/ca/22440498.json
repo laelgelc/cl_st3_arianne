@@ -1,0 +1,77 @@
+{
+  "article_id": "22440498",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_12/ca/22440498.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_12/ca/22440498.json"
+  },
+  "manifest_row": {
+    "article_id": "22440498",
+    "group": "2017_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_12/ca/22440498.txt",
+    "now_field_2": "1263",
+    "date_original": "17-12-27",
+    "date_iso": "2017-12-27",
+    "source_name": "Montreal Gazette",
+    "url": "http://montrealgazette.com/news/local-news/year-in-review-top-5-wacky-montreal-weather-stories-from-2017",
+    "title": "Year in Review: Top 5 wacky Montreal weather stories from 2017",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-12.txt\"]",
+    "metadata_article_files": "[\"text-17-12/text_17-12-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "climate_role": "background",
+    "main_topic": "Unusual weather events across Canada and Montreal in 2017",
+    "climate_relevance": "The article connects the year's weather to climate change, noting that the events are consistent with effects predicted in a warming world and that 2017 was among the warmest years on record. Most of the article, however, describes individual weather events rather than climate change itself.",
+    "reason": "Climate change provides meaningful context for the weather coverage but is not the article's central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2e20dbeb3c6872c3c52fcaab471e466519339119018854448167ed44713601e3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d63e189bd6d6fb2a2a4af5468427329a16d242082cf69b06d827db530f780a87",
+    "raw_response_text_sha256": "8c94d4a9b92af203ef139710551c01b65dd9ca0cac421cf7b17776173b288c13"
+  },
+  "api_metadata": {
+    "id": "resp_019d2d6c99bd69e2006b061023e60487d2bff226c565c3dbe1",
+    "model": "gpt-6-luna",
+    "created_at": 1795559460.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2159,
+      "input_tokens_details": {
+        "cache_write_tokens": 2156,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2156
+        }
+      },
+      "output_tokens": 375,
+      "output_tokens_details": {
+        "reasoning_tokens": 215
+      },
+      "total_tokens": 2534
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Unusual weather events across Canada and Montreal in 2017\",\n  \"climate_relevance\": \"The article connects the year's weather to climate change, noting that the events are consistent with effects predicted in a warming world and that 2017 was among the warmest years on record. Most of the article, however, describes individual weather events rather than climate change itself.\",\n  \"reason\": \"Climate change provides meaningful context for the weather coverage but is not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:31:02Z",
+  "duration_seconds": 3.163,
+  "error": null
+}

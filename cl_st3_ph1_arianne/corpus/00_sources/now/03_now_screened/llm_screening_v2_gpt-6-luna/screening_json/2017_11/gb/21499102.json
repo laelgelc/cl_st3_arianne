@@ -1,0 +1,77 @@
+{
+  "article_id": "21499102",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/gb/21499102.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/gb/21499102.json"
+  },
+  "manifest_row": {
+    "article_id": "21499102",
+    "group": "2017_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/gb/21499102.txt",
+    "now_field_2": "299",
+    "date_original": "17-11-05",
+    "date_iso": "2017-11-05",
+    "source_name": "The Dumbarton and Vale of Leven Reporter",
+    "url": "http://www.dumbartonreporter.co.uk/news/15641762.Donald_Trump___s_golf_resort____could_face_severe_flooding___/",
+    "title": "Donald Trump's golf resort 'could face severe flooding'",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-GB.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.89,
+    "climate_role": "background",
+    "main_topic": "Predicted coastal erosion and flooding risks to Scottish golf courses and other coastal sites.",
+    "climate_relevance": "The article briefly notes Donald Trump's withdrawal from the Paris climate agreement and his dismissal of man-made climate change. It reports coastal retreat and flood risk, but does not explicitly attribute those risks to climate change.",
+    "reason": "The main focus is the risks facing golf courses and coastal infrastructure, rather than climate change. The reference to Trump's climate stance is meaningful but brief, so the text is relevant as peripheral climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "10898dee786cd23b9ecf28229bf91ff7d1b2706de5c62df4c448b77014e64178",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "494c760b6584cf746fc821fdd171a4bbea63766210593c2a92260ccc8a528910",
+    "raw_response_text_sha256": "5ce4c4dbdc7da83d19c5530c3d66f884156ade810c76270067de6757b590b966"
+  },
+  "api_metadata": {
+    "id": "resp_0f61414cf461e7b2006b060ee9244887d29502e771d93302e7",
+    "model": "gpt-6-luna",
+    "created_at": 1795559145.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 881,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 349,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 1230
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.89,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Predicted coastal erosion and flooding risks to Scottish golf courses and other coastal sites.\",\n  \"climate_relevance\": \"The article briefly notes Donald Trump's withdrawal from the Paris climate agreement and his dismissal of man-made climate change. It reports coastal retreat and flood risk, but does not explicitly attribute those risks to climate change.\",\n  \"reason\": \"The main focus is the risks facing golf courses and coastal infrastructure, rather than climate change. The reference to Trump's climate stance is meaningful but brief, so the text is relevant as peripheral climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:25:48Z",
+  "duration_seconds": 3.004,
+  "error": null
+}

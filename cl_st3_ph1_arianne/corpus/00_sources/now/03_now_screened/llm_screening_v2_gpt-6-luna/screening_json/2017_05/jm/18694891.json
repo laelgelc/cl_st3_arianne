@@ -1,0 +1,77 @@
+{
+  "article_id": "18694891",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/jm/18694891.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/jm/18694891.json"
+  },
+  "manifest_row": {
+    "article_id": "18694891",
+    "group": "2017_05",
+    "country_code": "jm",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/jm/18694891.txt",
+    "now_field_2": "187",
+    "date_original": "17-05-29",
+    "date_iso": "2017-05-29",
+    "source_name": "Jamaica Gleaner",
+    "url": "http://jamaica-gleaner.com/article/news/20170529/utech-students-attend-international-summit",
+    "title": "UTech students to attend international summit",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-JM.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "University students attending an international summit on sustainable resource management and energy development",
+    "climate_relevance": "Climate change appears only within the name of a supporting regional program; the article otherwise discusses energy and the energy transition without substantive climate framing.",
+    "reason": "The climate reference is incidental and does not provide meaningful climate-change discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "adef16314bb7eb0cc025e87ceebce6ab2c3153cbed282592fc339688d301fb6c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4bc4f0279edad61b83ccb10a8e86e6da93b9073541d1e808cc763408b38d69ac",
+    "raw_response_text_sha256": "0a695159ada96b9881f25af559930f54a5045ff65943ae0ae105442d45a9bd57"
+  },
+  "api_metadata": {
+    "id": "resp_094d7604ecc949f3006b060a9bf33087d289bedf1b1ce3488f",
+    "model": "gpt-6-luna",
+    "created_at": 1795558044.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 725,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 339,
+      "output_tokens_details": {
+        "reasoning_tokens": 208
+      },
+      "total_tokens": 1064
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"University students attending an international summit on sustainable resource management and energy development\",\n  \"climate_relevance\": \"Climate change appears only within the name of a supporting regional program; the article otherwise discusses energy and the energy transition without substantive climate framing.\",\n  \"reason\": \"The climate reference is incidental and does not provide meaningful climate-change discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:07:26Z",
+  "duration_seconds": 2.92,
+  "error": null
+}

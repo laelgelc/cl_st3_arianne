@@ -1,0 +1,77 @@
+{
+  "article_id": "60669829",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/ie/60669829.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/ie/60669829.json"
+  },
+  "manifest_row": {
+    "article_id": "60669829",
+    "group": "2019_03",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/ie/60669829.txt",
+    "now_field_2": "374",
+    "date_original": "19-03-25",
+    "date_iso": "2019-03-25",
+    "source_name": "Trade Arabia",
+    "url": "http://www.tradearabia.com/news/IND_352602.html",
+    "title": "Firm imports 40 tonnes of honeybees through RAK airport",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Importing and transporting honeybees to the UAE",
+    "climate_relevance": "Climate change appears only as part of the name of the Ministry of Environment and Climate Change.",
+    "reason": "The article reports on a honeybee shipment and airport handling. It contains no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "08ec8d07e9af2686a975e609e263a0313b23911ef19b956466121df5174cacd1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "29bc4aed4d9f76e5d539de8530937bd3885b802004ed0f8475b9d6fdfb465049",
+    "raw_response_text_sha256": "9f156daf982095fda4992177d8cc990479eee6cee70d369eac631b21113f8f57"
+  },
+  "api_metadata": {
+    "id": "resp_0ee1adf8b3cda251006b0633b2d24487d1a45d030752e2d8f1",
+    "model": "gpt-6-luna",
+    "created_at": 1795568562.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 990,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 178,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 1168
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Importing and transporting honeybees to the UAE\",\n  \"climate_relevance\": \"Climate change appears only as part of the name of the Ministry of Environment and Climate Change.\",\n  \"reason\": \"The article reports on a honeybee shipment and airport handling. It contains no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:02:44Z",
+  "duration_seconds": 1.823,
+  "error": null
+}

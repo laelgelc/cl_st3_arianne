@@ -1,0 +1,77 @@
+{
+  "article_id": "32442762",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/ph/32442762.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/ph/32442762.json"
+  },
+  "manifest_row": {
+    "article_id": "32442762",
+    "group": "2020_12",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/ph/32442762.txt",
+    "now_field_2": "181",
+    "date_original": "20-12-21",
+    "date_iso": "2020-12-21",
+    "source_name": "mb.com.ph",
+    "url": "https://mb.com.ph/2020/0/page/4023/",
+    "title": "2020 - Page 4023 - Manila Bulletin",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-ph.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.82,
+    "climate_role": "central",
+    "main_topic": "JetBlue's plan to offset emissions from its domestic flights and become carbon neutral",
+    "climate_relevance": "The opening sentence directly discusses airline emissions, carbon neutrality, and pressure from climate change activists.",
+    "reason": "The identifiable opening item is centrally about a climate mitigation commitment. The remaining text consists of unrelated manufacturing, sports, and health snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ce1e9eaa80ff1723a077d17ec07ebe8051086edc33cb944776c0439dcee487cf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e60ce90fc8edda3340f118e8d18a89fdab8f09a82659cafae8071f7b9ff58a21",
+    "raw_response_text_sha256": "4a31826036e0bb30447bb361fd591379913157c328026f04fdb14795aa8bc0c9"
+  },
+  "api_metadata": {
+    "id": "resp_054783d201d50c1d006b061cad8dc087d2a2cb6a960f015794",
+    "model": "gpt-6-luna",
+    "created_at": 1795562669.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 723,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 545,
+      "output_tokens_details": {
+        "reasoning_tokens": 412
+      },
+      "total_tokens": 1268
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.82,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"JetBlue's plan to offset emissions from its domestic flights and become carbon neutral\",\n  \"climate_relevance\": \"The opening sentence directly discusses airline emissions, carbon neutrality, and pressure from climate change activists.\",\n  \"reason\": \"The identifiable opening item is centrally about a climate mitigation commitment. The remaining text consists of unrelated manufacturing, sports, and health snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:24:33Z",
+  "duration_seconds": 4.237,
+  "error": null
+}

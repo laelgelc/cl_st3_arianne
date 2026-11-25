@@ -1,0 +1,77 @@
+{
+  "article_id": "7063927",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/nz/7063927.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/nz/7063927.json"
+  },
+  "manifest_row": {
+    "article_id": "7063927",
+    "group": "2016_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/nz/7063927.txt",
+    "now_field_2": "1828",
+    "date_original": "16-01-13",
+    "date_iso": "2016-01-13",
+    "source_name": "The National Business Review",
+    "url": "http://www.nbr.co.nz/article/analysis-asia-pacific-key-obama%E2%80%99s-final-year-foreign-policy-focus-183559",
+    "title": "Analysis: Asia Pacific is key to Obama's final year foreign policy focus",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Barack Obama's foreign-policy agenda for 2016, including trade agreements and international diplomacy",
+    "climate_relevance": "A reader comment argues that the TPP and TTIP could worsen climate change and other environmental problems. Climate change is not discussed in the main article.",
+    "reason": "The text is primarily about foreign policy and trade, but it contains a meaningful climate-related claim in a comment about the environmental implications of trade agreements.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2af81c8ea5a2831b6e1509906dca080bac57e529acab54b5055d36e7ee166225",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a7a24d1d51c607054a9b68c27551151b4ba8f40960e6443e3fc4e0de56f19733",
+    "raw_response_text_sha256": "505403b43fca41894df950c2496cb651bf17ffdb2b6119028bfd52a9aca1fb1f"
+  },
+  "api_metadata": {
+    "id": "resp_0107d69a689e3c5e006b063e2e444087d198c8b639de24c58b",
+    "model": "gpt-6-luna",
+    "created_at": 1795571246.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2860,
+      "input_tokens_details": {
+        "cache_write_tokens": 2857,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2857
+        }
+      },
+      "output_tokens": 297,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 3157
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Barack Obama's foreign-policy agenda for 2016, including trade agreements and international diplomacy\",\n  \"climate_relevance\": \"A reader comment argues that the TPP and TTIP could worsen climate change and other environmental problems. Climate change is not discussed in the main article.\",\n  \"reason\": \"The text is primarily about foreign policy and trade, but it contains a meaningful climate-related claim in a comment about the environmental implications of trade agreements.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:47:28Z",
+  "duration_seconds": 2.53,
+  "error": null
+}

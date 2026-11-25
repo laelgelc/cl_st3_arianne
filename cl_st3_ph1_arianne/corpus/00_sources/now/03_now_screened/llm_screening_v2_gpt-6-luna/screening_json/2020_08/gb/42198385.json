@@ -1,0 +1,77 @@
+{
+  "article_id": "42198385",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/gb/42198385.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/gb/42198385.json"
+  },
+  "manifest_row": {
+    "article_id": "42198385",
+    "group": "2020_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/gb/42198385.txt",
+    "now_field_2": "446",
+    "date_original": "20-08-17",
+    "date_iso": "2020-08-17",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/boris-johnson-claims-stormzy-said-back-boris-not-fuck-boris-at-glastonbury-1-6134021",
+    "title": "Boris Johnson claims Stormzy said `back Boris' not `fuck ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Boris Johnson's comments about Stormzy's Glastonbury performance",
+    "climate_relevance": "Climate change appears only in repeated promotional text describing the publication's coverage; the article contains no substantive climate discourse.",
+    "reason": "The identifiable article concerns Boris Johnson, Stormzy, and Glastonbury. The climate reference is publisher boilerplate, not meaningful article content.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e2aae19ce04f720ac0d0ac9e1709f12b1c0fdc55068a782a028ef0c90f026729",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6c79a2fb80e3bc90f65748e89b1381753a02704c739d86af47370b28497ff4a4",
+    "raw_response_text_sha256": "e69f14035f4df2897f1f9e4a8a42ff0aa6232eba4fab86e2d204505fababe694"
+  },
+  "api_metadata": {
+    "id": "resp_064574682bf273b6006b0624fbdac887d2a177925492090324",
+    "model": "gpt-6-luna",
+    "created_at": 1795564795.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1068,
+      "input_tokens_details": {
+        "cache_write_tokens": 1065,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1065
+        }
+      },
+      "output_tokens": 187,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 1255
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Boris Johnson's comments about Stormzy's Glastonbury performance\",\n  \"climate_relevance\": \"Climate change appears only in repeated promotional text describing the publication's coverage; the article contains no substantive climate discourse.\",\n  \"reason\": \"The identifiable article concerns Boris Johnson, Stormzy, and Glastonbury. The climate reference is publisher boilerplate, not meaningful article content.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:59:57Z",
+  "duration_seconds": 1.963,
+  "error": null
+}

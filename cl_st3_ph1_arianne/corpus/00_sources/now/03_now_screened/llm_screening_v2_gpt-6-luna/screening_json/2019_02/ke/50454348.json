@@ -1,0 +1,77 @@
+{
+  "article_id": "50454348",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/ke/50454348.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/ke/50454348.json"
+  },
+  "manifest_row": {
+    "article_id": "50454348",
+    "group": "2019_02",
+    "country_code": "ke",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/ke/50454348.txt",
+    "now_field_2": "541",
+    "date_original": "19-02-19",
+    "date_iso": "2019-02-19",
+    "source_name": "Brits in Kenya",
+    "url": "https://www.britsinkenya.com/2019/02/20/cities-need-to-grow-up-not-out-to-survive-researchers-warn/",
+    "title": "Cities need to grow up - not out - to survive, researchers warn",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-ke.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Urban growth, land use, and city planning in developing countries",
+    "climate_relevance": "The article discusses flooding and environmental risk in relation to urban development, but does not connect these issues to climate change. Climate change appears only in a boilerplate description of the Thomson Reuters Foundation's coverage.",
+    "reason": "The identifiable main article is about urban expansion and land-use policy, with no meaningful climate-change discourse. The climate reference is boilerplate, and the closing website text appears unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ebbf2cf8fb8771738c317efa375747a178c0a58711503a287420de59e37085f0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1c291d738af108517c2329d5698069834ecfbcf3e76a02ac8e89b032185e3551",
+    "raw_response_text_sha256": "2c98c3645fdc14b81a088024cd3d3458f57aea34e9f76566630d4068ba8f3a71"
+  },
+  "api_metadata": {
+    "id": "resp_0498d86277043bbe006b0629027fa087d18b1d296ad3a06690",
+    "model": "gpt-6-luna",
+    "created_at": 1795565826.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1177,
+      "input_tokens_details": {
+        "cache_write_tokens": 1174,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1174
+        }
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1421
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Urban growth, land use, and city planning in developing countries\",\n  \"climate_relevance\": \"The article discusses flooding and environmental risk in relation to urban development, but does not connect these issues to climate change. Climate change appears only in a boilerplate description of the Thomson Reuters Foundation's coverage.\",\n  \"reason\": \"The identifiable main article is about urban expansion and land-use policy, with no meaningful climate-change discourse. The climate reference is boilerplate, and the closing website text appears unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:17:08Z",
+  "duration_seconds": 2.205,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "81856828",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81856828.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81856828.json"
+  },
+  "manifest_row": {
+    "article_id": "81856828",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81856828.txt",
+    "now_field_2": "875",
+    "date_original": "19-10-28",
+    "date_iso": "2019-10-28",
+    "source_name": "Moscow-Pullman Daily News",
+    "url": "https://dnews.com/sports/payback-for-all-of-wsu-s-faceless-opponents/article_f9f03269-8f90-594e-9127-2730c355be89.html",
+    "title": "Payback for all of WSU's `faceless' opponents",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Moscow City Council candidates and issues raised at a candidate forum",
+    "climate_relevance": "The forum is reported to have addressed candidates’ beliefs on climate change, but the available text gives no further detail about their positions or climate policy.",
+    "reason": "Climate change is one of several issues mentioned in the identifiable local-election item, so it has some relevance but is not the item’s central focus. The remaining text concerns unrelated voting and college football topics.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "40ef4e203eb4ccd1238c4d976244d68495a541fef2b3659398aac1cfdf891204",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9c920e5b06001339c4e7c85305a74fd40a080c91a43851debd6bbad1de7c7c2e",
+    "raw_response_text_sha256": "b6223e5ad794724679e5560717c082ceedcf355abb12f5c36d3312a2648934e9"
+  },
+  "api_metadata": {
+    "id": "resp_02ff61adecc8594e006b0647c6487c87d182478abe06574fc3",
+    "model": "gpt-6-luna",
+    "created_at": 1795573702.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1686,
+      "input_tokens_details": {
+        "cache_write_tokens": 1683,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1683
+        }
+      },
+      "output_tokens": 364,
+      "output_tokens_details": {
+        "reasoning_tokens": 207
+      },
+      "total_tokens": 2050
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Moscow City Council candidates and issues raised at a candidate forum\",\n  \"climate_relevance\": \"The forum is reported to have addressed candidates’ beliefs on climate change, but the available text gives no further detail about their positions or climate policy.\",\n  \"reason\": \"Climate change is one of several issues mentioned in the identifiable local-election item, so it has some relevance but is not the item’s central focus. The remaining text concerns unrelated voting and college football topics.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:28:25Z",
+  "duration_seconds": 2.975,
+  "error": null
+}

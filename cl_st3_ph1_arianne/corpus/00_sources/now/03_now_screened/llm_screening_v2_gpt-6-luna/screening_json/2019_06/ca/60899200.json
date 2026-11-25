@@ -1,0 +1,77 @@
+{
+  "article_id": "60899200",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ca/60899200.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ca/60899200.json"
+  },
+  "manifest_row": {
+    "article_id": "60899200",
+    "group": "2019_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ca/60899200.txt",
+    "now_field_2": "729",
+    "date_original": "19-06-06",
+    "date_iso": "2019-06-06",
+    "source_name": "Sudbury.com",
+    "url": "https://www.sudbury.com/local-news/canadas-emergency-alert-system-cant-measure-how-many-phones-get-the-notices-1494340",
+    "title": "Canada's emergency alert system can't measure how many phones ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Canada's emergency alert system and its response to tornadoes",
+    "climate_relevance": "The article discusses severe weather warnings and emergency communications, but does not meaningfully address climate change. Its only climate-related wording is part of the name Environment and Climate Change Canada.",
+    "reason": "Climate change appears only incidentally in an agency name; the substantive focus is emergency alerts, tornado forecasting, and cellphone coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7e797c1d6407797b1f251e7f699c1caba139b533d463a759349577883f411649",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "758e93fb88c04ae5d8722d4073193dc745ab5029ba41b67c622da442149c7eac",
+    "raw_response_text_sha256": "258e31f0b48310544028cae7653724d1ce81dbb5452557e948cdcea096239bab"
+  },
+  "api_metadata": {
+    "id": "resp_0a7b6bda296423f2006b06354d696087d1881211cfed21c666",
+    "model": "gpt-6-luna",
+    "created_at": 1795568973.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1390,
+      "input_tokens_details": {
+        "cache_write_tokens": 1387,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1387
+        }
+      },
+      "output_tokens": 209,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1599
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Canada's emergency alert system and its response to tornadoes\",\n  \"climate_relevance\": \"The article discusses severe weather warnings and emergency communications, but does not meaningfully address climate change. Its only climate-related wording is part of the name Environment and Climate Change Canada.\",\n  \"reason\": \"Climate change appears only incidentally in an agency name; the substantive focus is emergency alerts, tornado forecasting, and cellphone coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:09:35Z",
+  "duration_seconds": 2.231,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40847752",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40847752.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40847752.json"
+  },
+  "manifest_row": {
+    "article_id": "40847752",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40847752.txt",
+    "now_field_2": "676",
+    "date_original": "19-04-16",
+    "date_iso": "2019-04-16",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/17/malaysia-wants-to-improve-existing-rail-services-network/",
+    "title": "Malaysia wants to improve existing rail services, network",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Malaysia's rail network and high-speed rail plans",
+    "climate_relevance": "A separate lead-in snippet mentions sustainable energy solutions and names the climate-change minister, but the identifiable main article is about rail transport and contains no meaningful climate-change discourse.",
+    "reason": "The climate-related wording appears only in an unrelated news snippet preceding the main rail article, rather than as substantive discussion in the article itself.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "243fd590bb80661389a30e360bc6d7c07f292ce2efad26d0afffb5706fbdc7e3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cd16d9e11013036580741d33def796e896d1e44dc9dd533e3106f37cfdcf0cf6",
+    "raw_response_text_sha256": "ec340069c295a7f8b90b122dfaa4fb870340dc6e0512756a7a619f75e617afe0"
+  },
+  "api_metadata": {
+    "id": "resp_01b60a5384a2ce47006b062004808087d2a9ed8d65a82eb71c",
+    "model": "gpt-6-luna",
+    "created_at": 1795563524.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1397,
+      "input_tokens_details": {
+        "cache_write_tokens": 1394,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1394
+        }
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 1701
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Malaysia's rail network and high-speed rail plans\",\n  \"climate_relevance\": \"A separate lead-in snippet mentions sustainable energy solutions and names the climate-change minister, but the identifiable main article is about rail transport and contains no meaningful climate-change discourse.\",\n  \"reason\": \"The climate-related wording appears only in an unrelated news snippet preceding the main rail article, rather than as substantive discussion in the article itself.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:47Z",
+  "duration_seconds": 2.748,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "51185459",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/pk/51185459.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/pk/51185459.json"
+  },
+  "manifest_row": {
+    "article_id": "51185459",
+    "group": "2019_11",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/pk/51185459.txt",
+    "now_field_2": "1311",
+    "date_original": "19-11-12",
+    "date_iso": "2019-11-12",
+    "source_name": "tribune.com.pk",
+    "url": "https://blogs.tribune.com.pk/story/90684/is-pakistans-smog-epidemic-about-to-get-worse/",
+    "title": "Is Pakistan's smog epidemic about to get worse? - The ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Smog and urban air pollution in Pakistan, especially Lahore",
+    "climate_relevance": "Climate change appears only in the title of a government adviser; the article focuses on air quality, pollution sources, and smog policy without substantive climate-change discussion.",
+    "reason": "The text meaningfully discusses air pollution and related environmental policies, but does not connect these issues to climate change. The isolated reference to the Prime Minister’s Advisor on Climate Change is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f921bfb8632f51828e3e070494dd17652e916eaf212882bc2c81b67820a2724e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "80b8acb1cdb92ff7e8f9a2c3d0f15bed7656502c5477fd3fb6b00df75c402831",
+    "raw_response_text_sha256": "1152c08c509989602172e8bd7e3c42fd5755eff87ad0d46fdc3dc45a9f212cc4"
+  },
+  "api_metadata": {
+    "id": "resp_08c37f94208a2f22006b062c89793087d19ba354196cda33fa",
+    "model": "gpt-6-luna",
+    "created_at": 1795566729.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2129,
+      "input_tokens_details": {
+        "cache_write_tokens": 2126,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2126
+        }
+      },
+      "output_tokens": 361,
+      "output_tokens_details": {
+        "reasoning_tokens": 201
+      },
+      "total_tokens": 2490
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Smog and urban air pollution in Pakistan, especially Lahore\",\n  \"climate_relevance\": \"Climate change appears only in the title of a government adviser; the article focuses on air quality, pollution sources, and smog policy without substantive climate-change discussion.\",\n  \"reason\": \"The text meaningfully discusses air pollution and related environmental policies, but does not connect these issues to climate change. The isolated reference to the Prime Minister’s Advisor on Climate Change is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:32:12Z",
+  "duration_seconds": 3.143,
+  "error": null
+}

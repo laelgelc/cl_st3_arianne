@@ -1,0 +1,77 @@
+{
+  "article_id": "81608103",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81608103.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81608103.json"
+  },
+  "manifest_row": {
+    "article_id": "81608103",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81608103.txt",
+    "now_field_2": "6965",
+    "date_original": "19-10-14",
+    "date_iso": "2019-10-14",
+    "source_name": "The Arizona Republic",
+    "url": "https://www.azcentral.com/story/news/50-states/2019/10/14/trash-pigs-unabomber-cabin-weighty-avocado-news-around-states/40314339/",
+    "title": "Trash for pigs, Unabomber cabin, weighty avocado: News from around our 50 states",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "climate_role": "background",
+    "main_topic": "A roundup of brief news items from U.S. states on unrelated local topics",
+    "climate_relevance": "The Iowa item discusses a student climate strike and demands for a climate accord, including renewable-energy targets and ending coal use. The Vermont item covers a proposed carbon pollution fee and towns declaring climate emergencies.",
+    "reason": "Climate change is meaningfully discussed in a few entries, but the text as a whole is a broad state-news roundup rather than climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "947a835ca3d3cca2930c5e6d12e4d53cebb650249157283b258a913a84f31233",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8493ddc3a2f0862d3b97310f8e79d77adb82b9df80318a3e4ba596b7129581c1",
+    "raw_response_text_sha256": "bfc07be7153bf03bac1557b792b9b1e4d91f27a38d802df441a9e26abb1fe850"
+  },
+  "api_metadata": {
+    "id": "resp_0f9b06005eb58604006b0647818d6c87d1b47d84afb9086b40",
+    "model": "gpt-6-luna",
+    "created_at": 1795573633.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 9416,
+      "input_tokens_details": {
+        "cache_write_tokens": 9413,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 9413
+        }
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 9677
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A roundup of brief news items from U.S. states on unrelated local topics\",\n  \"climate_relevance\": \"The Iowa item discusses a student climate strike and demands for a climate accord, including renewable-energy targets and ending coal use. The Vermont item covers a proposed carbon pollution fee and towns declaring climate emergencies.\",\n  \"reason\": \"Climate change is meaningfully discussed in a few entries, but the text as a whole is a broad state-news roundup rather than climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:27:16Z",
+  "duration_seconds": 2.54,
+  "error": null
+}

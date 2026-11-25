@@ -1,0 +1,77 @@
+{
+  "article_id": "32408195",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/nz/32408195.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/nz/32408195.json"
+  },
+  "manifest_row": {
+    "article_id": "32408195",
+    "group": "2020_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/nz/32408195.txt",
+    "now_field_2": "265",
+    "date_original": "20-12-10",
+    "date_iso": "2020-12-10",
+    "source_name": "tvnz.co.nz",
+    "url": "http://www.tvnz.co.nz/one-news/new-zealand/forbes-names-jacinda-ardern-ahead-queen-in-list-world-s-100-most-powerful-women",
+    "title": "Forbes names Jacinda Ardern ahead of the Queen in list of ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Forbes ranking of the world's most powerful women",
+    "climate_relevance": "Climate change is mentioned as one of Jacinda Ardern's policy priorities, alongside child poverty.",
+    "reason": "The article focuses on the Forbes ranking and Ardern's leadership. Its brief reference to plans to tackle climate change is relevant political discourse, but climate is not developed.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "53e04b672db3dfdf76c36ab90a8090febc22d4a2df2a51fa6ef0494ec36406c1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0979f53d8f25911b90da17191c7203fd2d315a49439e0639fc088c727bc0b5a2",
+    "raw_response_text_sha256": "91ddaa982cbb2eeeb0f1972a773c75513dac30ff8b85aa44003512e2304248b5"
+  },
+  "api_metadata": {
+    "id": "resp_0f5ba8a2dcce56eb006b061c86f6b087d2a68f361822d21cfe",
+    "model": "gpt-6-luna",
+    "created_at": 1795562631.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 873,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 1111
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Forbes ranking of the world's most powerful women\",\n  \"climate_relevance\": \"Climate change is mentioned as one of Jacinda Ardern's policy priorities, alongside child poverty.\",\n  \"reason\": \"The article focuses on the Forbes ranking and Ardern's leadership. Its brief reference to plans to tackle climate change is relevant political discourse, but climate is not developed.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:23:53Z",
+  "duration_seconds": 2.19,
+  "error": null
+}

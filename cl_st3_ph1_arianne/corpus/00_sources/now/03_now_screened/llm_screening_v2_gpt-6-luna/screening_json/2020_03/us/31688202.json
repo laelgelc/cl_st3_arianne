@@ -1,0 +1,77 @@
+{
+  "article_id": "31688202",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/us/31688202.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/us/31688202.json"
+  },
+  "manifest_row": {
+    "article_id": "31688202",
+    "group": "2020_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/us/31688202.txt",
+    "now_field_2": "676",
+    "date_original": "20-03-04",
+    "date_iso": "2020-03-04",
+    "source_name": "usatoday.com",
+    "url": "https://www.usatoday.com/story/news/politics/elections/2020/03/04/election-2020-michael-bloomberg-drops-out-of-presidential-race/2595841001/",
+    "title": "Election 2020: Michael Bloomberg drops out of presidential ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Mike Bloomberg ending his 2020 presidential campaign",
+    "climate_relevance": "Climate change appears only in a fragment listing issues associated with Biden; no climate-related discussion is provided.",
+    "reason": "The article is about the Democratic presidential primary and Bloomberg's campaign exit. The isolated climate-change reference is too brief and contextually incomplete to contribute meaningfully to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "67590c63d239eb1034e1cbb531abdf7c5473803a21c03b9307a13660ef1181d2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d007b33769901558296dc4ff9bf33149609455b22be50a18bf5387ffdf359458",
+    "raw_response_text_sha256": "84821e4ceabc7b0f6d37e7994fe4728022a6c88f7e9010a3b1b6f07bdd6ff99d"
+  },
+  "api_metadata": {
+    "id": "resp_0f1d49bc8215de82006b0618f6e2b887d2bd133543162653b5",
+    "model": "gpt-6-luna",
+    "created_at": 1795561719.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1364,
+      "input_tokens_details": {
+        "cache_write_tokens": 1361,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1361
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 1589
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Mike Bloomberg ending his 2020 presidential campaign\",\n  \"climate_relevance\": \"Climate change appears only in a fragment listing issues associated with Biden; no climate-related discussion is provided.\",\n  \"reason\": \"The article is about the Democratic presidential primary and Bloomberg's campaign exit. The isolated climate-change reference is too brief and contextually incomplete to contribute meaningfully to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:08:40Z",
+  "duration_seconds": 2.042,
+  "error": null
+}

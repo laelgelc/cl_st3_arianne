@@ -1,0 +1,77 @@
+{
+  "article_id": "70722951",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/us/70722951.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/us/70722951.json"
+  },
+  "manifest_row": {
+    "article_id": "70722951",
+    "group": "2019_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/us/70722951.txt",
+    "now_field_2": "381",
+    "date_original": "19-04-26",
+    "date_iso": "2019-04-26",
+    "source_name": "Washington Examiner",
+    "url": "https://www.washingtonexaminer.com/policy/energy/trump-and-japanese-leader-talk-energy-ahead-of-iran-oil-deadline",
+    "title": "Trump and Japanese leader talk energy ahead of Iran oil deadline",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "U.S.-Japan energy cooperation and Japan's plans to replace Iranian oil imports amid U.S. sanctions",
+    "climate_relevance": "Climate change appears only in a separate, unrelated snippet about Beto O'Rourke's campaign plan.",
+    "reason": "The identifiable main article concerns oil imports, sanctions, and U.S.-Japan relations, not climate change. The climate-related sentence is part of an unrelated snippet and does not constitute climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cd5370630ac7c3befc3fec360a9f9a782f2dc14ad60d496a54d0253d6a9e5ef2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5cdbb2611b059af89027bb6d748e76c5061cf2085f02ae2f8c5ed60db3e13906",
+    "raw_response_text_sha256": "60ab0621ecb9545efe22398fad9c61c5c494cb458eda036295286eda684f2911"
+  },
+  "api_metadata": {
+    "id": "resp_00a9003be426b8e9006b063ebca12487d18d38200141b83ede",
+    "model": "gpt-6-luna",
+    "created_at": 1795571388.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 977,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 1281
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"U.S.-Japan energy cooperation and Japan's plans to replace Iranian oil imports amid U.S. sanctions\",\n  \"climate_relevance\": \"Climate change appears only in a separate, unrelated snippet about Beto O'Rourke's campaign plan.\",\n  \"reason\": \"The identifiable main article concerns oil imports, sanctions, and U.S.-Japan relations, not climate change. The climate-related sentence is part of an unrelated snippet and does not constitute climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:49:51Z",
+  "duration_seconds": 2.745,
+  "error": null
+}

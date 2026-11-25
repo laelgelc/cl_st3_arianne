@@ -1,0 +1,77 @@
+{
+  "article_id": "23825487",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_03/my/23825487.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_03/my/23825487.json"
+  },
+  "manifest_row": {
+    "article_id": "23825487",
+    "group": "2018_03",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_03/my/23825487.txt",
+    "now_field_2": "493",
+    "date_original": "18-03-24",
+    "date_iso": "2018-03-24",
+    "source_name": "Daily Express",
+    "url": "http://www.dailyexpress.com.my/news.cfm?NewsID=123666",
+    "title": "Why Sabah is not included",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-03.txt\"]",
+    "metadata_article_files": "[\"text-18-03/text_18-03-MY.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Sabah electoral boundary review and a meteorological research cooperation agreement",
+    "climate_relevance": "Climate change is briefly listed among the issues the World Meteorological Day celebration aimed to raise awareness about, but the text does not discuss it further.",
+    "reason": "The article focuses on electoral boundaries, party politics, and meteorological research cooperation. Its single climate-change reference is passing rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "55b9aae6784770e22283a68402e2967cb292c9b7b534400c78b33a24fda5943d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2941a79cf7c47ec20d95adbabe52d05b3440c0a60f4da8f362ef1ec43cdf7d7b",
+    "raw_response_text_sha256": "32f6d52376a262d290b03dd3558eac17fb391c14ccb34f5f64a11ec3766b0229"
+  },
+  "api_metadata": {
+    "id": "resp_057cbd874d90ec91006b0611bedb1887d2bc1c97dc2f4fcd65",
+    "model": "gpt-6-luna",
+    "created_at": 1795559870.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1147,
+      "input_tokens_details": {
+        "cache_write_tokens": 1144,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1144
+        }
+      },
+      "output_tokens": 349,
+      "output_tokens_details": {
+        "reasoning_tokens": 204
+      },
+      "total_tokens": 1496
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Sabah electoral boundary review and a meteorological research cooperation agreement\",\n  \"climate_relevance\": \"Climate change is briefly listed among the issues the World Meteorological Day celebration aimed to raise awareness about, but the text does not discuss it further.\",\n  \"reason\": \"The article focuses on electoral boundaries, party politics, and meteorological research cooperation. Its single climate-change reference is passing rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:37:53Z",
+  "duration_seconds": 2.862,
+  "error": null
+}

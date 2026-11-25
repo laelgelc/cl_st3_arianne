@@ -1,0 +1,77 @@
+{
+  "article_id": "16975748",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/au/16975748.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/au/16975748.json"
+  },
+  "manifest_row": {
+    "article_id": "16975748",
+    "group": "2017_02",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/au/16975748.txt",
+    "now_field_2": "285",
+    "date_original": "17-02-17",
+    "date_iso": "2017-02-17",
+    "source_name": "NEWS.com.au",
+    "url": "http://www.news.com.au/world/breaking-news/senate-confirms-trumps-epa-pick/news-story/cd3b2e7e082f2b276a72bae3d47f3757",
+    "title": "Senate confirms Trump's EPA pick",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-AU.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Senate confirmation of Scott Pruitt to lead the EPA",
+    "climate_relevance": "The text notes Pruitt's doubts about climate science and Trump's plan to repeal the Clean Power Plan, which sought to reduce power-plant carbon emissions.",
+    "reason": "The article is primarily about Pruitt's confirmation and the future direction of the EPA. Climate change and emissions policy are meaningful parts of that discussion, but are not the central focus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "eeb9432f82f96ee9a3541eba3a0c483f28b29d6b2c5ec3bb8dd739f968d35a30",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9c61824d263aff70fe626b834b1fa9e12b921dfda176b90b8b062f1c6a0e8101",
+    "raw_response_text_sha256": "8b37c8975754e62f9d7993f7de63f50aaed09e80d0271410f86cf6e51067301b"
+  },
+  "api_metadata": {
+    "id": "resp_0df2e0a19fd9b156006b06086e2fc087d2bf974137525468f9",
+    "model": "gpt-6-luna",
+    "created_at": 1795557486.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 847,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 1113
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Senate confirmation of Scott Pruitt to lead the EPA\",\n  \"climate_relevance\": \"The text notes Pruitt's doubts about climate science and Trump's plan to repeal the Clean Power Plan, which sought to reduce power-plant carbon emissions.\",\n  \"reason\": \"The article is primarily about Pruitt's confirmation and the future direction of the EPA. Climate change and emissions policy are meaningful parts of that discussion, but are not the central focus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:58:08Z",
+  "duration_seconds": 2.399,
+  "error": null
+}

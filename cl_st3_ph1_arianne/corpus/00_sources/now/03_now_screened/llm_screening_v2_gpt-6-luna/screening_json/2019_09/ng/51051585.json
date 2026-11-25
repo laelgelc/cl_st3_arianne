@@ -1,0 +1,77 @@
+{
+  "article_id": "51051585",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ng/51051585.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ng/51051585.json"
+  },
+  "manifest_row": {
+    "article_id": "51051585",
+    "group": "2019_09",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ng/51051585.txt",
+    "now_field_2": "573",
+    "date_original": "19-09-19",
+    "date_iso": "2019-09-19",
+    "source_name": "blueprint.ng",
+    "url": "https://www.blueprint.ng/equity-market-remains-volatile-as-govt-delays-cabinet-reconstitution/",
+    "title": "Equity market remains volatile as govt delays cabinet ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Nigerian stock market performance and corporate financial results",
+    "climate_relevance": "Climate change appears only in a separate column teaser about Greta Thunberg and world leaders’ inaction, not in the main stock-market report.",
+    "reason": "The identifiable main article concerns stock performance and company results. The climate-related line belongs to an unrelated column snippet and does not make the main article relevant for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b1f902d72376bd1d9d81060cb80c081e819e6529f76348d34ffa775bd443b993",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ace15ff546e24304d5f8b1a3b12b1b76ec99d5161301d9dd85ef68f452b24713",
+    "raw_response_text_sha256": "f4881086370638c37cad2833ce78f5f9fc09ccffa9c71c3ae13b21090a2012fd"
+  },
+  "api_metadata": {
+    "id": "resp_0a42407adb9ca8ef006b062bacb72c87d1a02bc40bf1e31f1b",
+    "model": "gpt-6-luna",
+    "created_at": 1795566508.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1299,
+      "input_tokens_details": {
+        "cache_write_tokens": 1296,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1296
+        }
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 1641
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Nigerian stock market performance and corporate financial results\",\n  \"climate_relevance\": \"Climate change appears only in a separate column teaser about Greta Thunberg and world leaders’ inaction, not in the main stock-market report.\",\n  \"reason\": \"The identifiable main article concerns stock performance and company results. The climate-related line belongs to an unrelated column snippet and does not make the main article relevant for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:28:31Z",
+  "duration_seconds": 3.023,
+  "error": null
+}

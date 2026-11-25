@@ -1,0 +1,77 @@
+{
+  "article_id": "70590411",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70590411.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70590411.json"
+  },
+  "manifest_row": {
+    "article_id": "70590411",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70590411.txt",
+    "now_field_2": "315",
+    "date_original": "19-03-13",
+    "date_iso": "2019-03-13",
+    "source_name": "Newshub",
+    "url": "https://www.newshub.co.nz/home/politics/2019/03/james-shaw-attacked.html",
+    "title": "James Shaw in hospital after attack",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "The assault of New Zealand Climate Change Minister James Shaw and politicians’ safety",
+    "climate_relevance": "Climate change appears only in Shaw’s ministerial title; the text contains no meaningful discussion of climate issues.",
+    "reason": "The article focuses on the assault, Shaw’s recovery, and political security. His climate portfolio is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "109e9909754c6c918f99e44b8658ebb0c0a6356455fd43544bb2b0679687bc1f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "99224aed8d5be6fe841196f960bdd72eb236bf03d380f92d6c8d27d86c398135",
+    "raw_response_text_sha256": "bd625208c1cf922f4db5c38ff1fa96521bc358fc6efec4e6637b9fe02b1fac66"
+  },
+  "api_metadata": {
+    "id": "resp_08508a44b82f5faf006b063dca472887d1b9eff1f2f67c49d4",
+    "model": "gpt-6-luna",
+    "created_at": 1795571146.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 892,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 192,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1084
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The assault of New Zealand Climate Change Minister James Shaw and politicians’ safety\",\n  \"climate_relevance\": \"Climate change appears only in Shaw’s ministerial title; the text contains no meaningful discussion of climate issues.\",\n  \"reason\": \"The article focuses on the assault, Shaw’s recovery, and political security. His climate portfolio is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:45:48Z",
+  "duration_seconds": 2.23,
+  "error": null
+}

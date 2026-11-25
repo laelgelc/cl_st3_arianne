@@ -1,0 +1,77 @@
+{
+  "article_id": "60031306",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/ca/60031306.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/ca/60031306.json"
+  },
+  "manifest_row": {
+    "article_id": "60031306",
+    "group": "2018_09",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/ca/60031306.txt",
+    "now_field_2": "1298",
+    "date_original": "18-09-16",
+    "date_iso": "2018-09-16",
+    "source_name": "iPolitics.ca",
+    "url": "https://ipolitics.ca/2018/09/16/what-were-watching-priorities-and-plans-as-parliament-returns/",
+    "title": "What We're Watching: Priorities and plans as Parliament returns",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "Canadian parliamentary business, including trade negotiations, the Trans Mountain pipeline, and committee activity",
+    "climate_relevance": "Climate change appears only in a brief agenda listing for a G7 meeting; the text provides no substantive discussion of climate issues.",
+    "reason": "The article is a parliamentary preview. Its sole explicit climate reference says that ministers will meet to discuss climate change, oceans, and clean energy, without elaborating on those topics. The pipeline discussion is framed around a court ruling and Indigenous consultation, not climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7c30dfbd3818bfdcbecf1ef89ca2fe9bf2faac6fb9060364a1a6c08afd27e593",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "be7077fcf414b981197b71c2a8fb9986fb377baf7aec95a0e8221f2fcdf7429d",
+    "raw_response_text_sha256": "1d9d69c39a1a47a0551c027964c21ef9e99e7377ec814624b81cfc042869f383"
+  },
+  "api_metadata": {
+    "id": "resp_0a89060edf7583ec006b0630c08d9c87d188556dcab7948e7a",
+    "model": "gpt-6-luna",
+    "created_at": 1795567808.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2121,
+      "input_tokens_details": {
+        "cache_write_tokens": 2118,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2118
+        }
+      },
+      "output_tokens": 433,
+      "output_tokens_details": {
+        "reasoning_tokens": 265
+      },
+      "total_tokens": 2554
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Canadian parliamentary business, including trade negotiations, the Trans Mountain pipeline, and committee activity\",\n  \"climate_relevance\": \"Climate change appears only in a brief agenda listing for a G7 meeting; the text provides no substantive discussion of climate issues.\",\n  \"reason\": \"The article is a parliamentary preview. Its sole explicit climate reference says that ministers will meet to discuss climate change, oceans, and clean energy, without elaborating on those topics. The pipeline discussion is framed around a court ruling and Indigenous consultation, not climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:50:12Z",
+  "duration_seconds": 3.567,
+  "error": null
+}

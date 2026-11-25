@@ -1,0 +1,77 @@
+{
+  "article_id": "3918327",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/us/3918327.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/us/3918327.json"
+  },
+  "manifest_row": {
+    "article_id": "3918327",
+    "group": "2015_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/us/3918327.txt",
+    "now_field_2": "874",
+    "date_original": "15-12-20",
+    "date_iso": "2015-12-20",
+    "source_name": "Deseret News",
+    "url": "http://www.deseretnews.com/article/865644093/Frank-Pignanelli--LaVarr-Webb-Pontificating-on-the-possibility-of-running-out-of-party-ice.html?pg=all",
+    "title": "Frank Pignanelli &amp; LaVarr Webb: Pontificating on the possibility of ...",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Multi-topic political commentary on climate change, the Republican presidential race, and gun control.",
+    "climate_relevance": "The opening section discusses the Paris climate agreements, possible climate impacts in Utah, water and snowpack concerns, and responses to climate change. It is meaningful climate discourse, but shares the article with substantial discussion of elections and gun policy.",
+    "reason": "Climate change receives a substantive section, but the available article is a broader political discussion covering several unrelated issues, so climate is not the overall central topic.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b5c6d83ac46112394db764f2380674c214bdfffb0d9af84816972f45a47895a8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "07a78c895b18348270efa8fcc41ef2eaa4ec75f3853b38f178c80952d1b61e90",
+    "raw_response_text_sha256": "e28cb3771382a6f0768fab32655eabc24d6aaf75be3e9fc3ab017c2d13ea1f76"
+  },
+  "api_metadata": {
+    "id": "resp_0dac1dd6d5da92d8006b061de1abc887d2ab0fcb33e840e2b4",
+    "model": "gpt-6-luna",
+    "created_at": 1795562977.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1625,
+      "input_tokens_details": {
+        "cache_write_tokens": 1622,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1622
+        }
+      },
+      "output_tokens": 494,
+      "output_tokens_details": {
+        "reasoning_tokens": 326
+      },
+      "total_tokens": 2119
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Multi-topic political commentary on climate change, the Republican presidential race, and gun control.\",\n  \"climate_relevance\": \"The opening section discusses the Paris climate agreements, possible climate impacts in Utah, water and snowpack concerns, and responses to climate change. It is meaningful climate discourse, but shares the article with substantial discussion of elections and gun policy.\",\n  \"reason\": \"Climate change receives a substantive section, but the available article is a broader political discussion covering several unrelated issues, so climate is not the overall central topic.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:29:41Z",
+  "duration_seconds": 4.046,
+  "error": null
+}

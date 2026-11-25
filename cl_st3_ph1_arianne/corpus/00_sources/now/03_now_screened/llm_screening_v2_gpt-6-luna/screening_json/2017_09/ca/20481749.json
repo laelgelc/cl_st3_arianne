@@ -1,0 +1,77 @@
+{
+  "article_id": "20481749",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_09/ca/20481749.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_09/ca/20481749.json"
+  },
+  "manifest_row": {
+    "article_id": "20481749",
+    "group": "2017_09",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_09/ca/20481749.txt",
+    "now_field_2": "447",
+    "date_original": "17-09-11",
+    "date_iso": "2017-09-11",
+    "source_name": "Varsity",
+    "url": "https://thevarsity.ca/2017/09/11/fourth-annual-science-literacy-week-returning-with-700-events/",
+    "title": "Fourth annual Science Literacy Week returning with 700 events",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-09.txt\"]",
+    "metadata_article_files": "[\"text-17-09/text_17-09-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "Science Literacy Week and its events",
+    "climate_relevance": "Climate change is briefly named as one example of science appearing in the news; no climate-related issue is discussed.",
+    "reason": "The article is about a science-literacy event. Its single passing reference to climate change does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "28fc9d7eeb9558a6eb8a1c8b8b41ee2b2565cab7157ba471a9331fc508474b75",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0363897e356a949f2e972527eb638592271057c8cd0615ae8f1f1fe1c276f6fd",
+    "raw_response_text_sha256": "17179090cdd73db4d587be81435752d65ffb78b8a9754482ce9e0718d8d8b5eb"
+  },
+  "api_metadata": {
+    "id": "resp_086d963fd60fcc8e006b060d56c98c87d2bc98b09a3da2c5e0",
+    "model": "gpt-6-luna",
+    "created_at": 1795558743.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1134,
+      "input_tokens_details": {
+        "cache_write_tokens": 1131,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1131
+        }
+      },
+      "output_tokens": 281,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 1415
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Science Literacy Week and its events\",\n  \"climate_relevance\": \"Climate change is briefly named as one example of science appearing in the news; no climate-related issue is discussed.\",\n  \"reason\": \"The article is about a science-literacy event. Its single passing reference to climate change does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:19:05Z",
+  "duration_seconds": 2.435,
+  "error": null
+}

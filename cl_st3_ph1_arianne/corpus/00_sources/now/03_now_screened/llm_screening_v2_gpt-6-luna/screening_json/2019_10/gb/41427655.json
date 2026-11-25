@@ -1,0 +1,77 @@
+{
+  "article_id": "41427655",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/gb/41427655.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/gb/41427655.json"
+  },
+  "manifest_row": {
+    "article_id": "41427655",
+    "group": "2019_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/gb/41427655.txt",
+    "now_field_2": "525",
+    "date_original": "19-10-21",
+    "date_iso": "2019-10-21",
+    "source_name": "inews.co.uk",
+    "url": "https://inews.co.uk/news/politics/brexit/brexit-deal-deadlock-latest-eu-summit-boris-johnson-approval-dup-815873",
+    "title": "Brexit deal deadlock: Boris Johnson battles to win ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Brexit negotiations and the proposed Withdrawal Agreement",
+    "climate_relevance": "Climate change appears only as one item in a brief list of issues on the EU agenda.",
+    "reason": "The text focuses on Brexit negotiations, Northern Ireland arrangements, and parliamentary support. It contains no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7a051cf40c3d101fac793dcc29a98a4be4becc4aaa3bab6fd4c5fddcd5bb59d7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1e27304bd5068b580365d2df7adbb9cd98c92d4f624876c8dddcb1ac3055cd50",
+    "raw_response_text_sha256": "a181e22dc16afbb7979c52306b2dff7ee621779acabd5f13650c33480921aded"
+  },
+  "api_metadata": {
+    "id": "resp_0dbce156266a9cd6006b0621babce087d287a37c9c3b21a879",
+    "model": "gpt-6-luna",
+    "created_at": 1795563962.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1156,
+      "input_tokens_details": {
+        "cache_write_tokens": 1153,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1153
+        }
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1368
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Brexit negotiations and the proposed Withdrawal Agreement\",\n  \"climate_relevance\": \"Climate change appears only as one item in a brief list of issues on the EU agenda.\",\n  \"reason\": \"The text focuses on Brexit negotiations, Northern Ireland arrangements, and parliamentary support. It contains no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:46:04Z",
+  "duration_seconds": 1.973,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "60296147",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/ca/60296147.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/ca/60296147.json"
+  },
+  "manifest_row": {
+    "article_id": "60296147",
+    "group": "2018_11",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/ca/60296147.txt",
+    "now_field_2": "712",
+    "date_original": "18-11-27",
+    "date_iso": "2018-11-27",
+    "source_name": "London Free Press (Blogs",
+    "url": "https://lfpress.com/opinion/columnists/oil-pricing-differential-hitting-hard-in-a-different-way/wcm/22af98cb-13fc-4d96-99b9-6e3aa1b3d2e0",
+    "title": "Oil pricing differential hitting hard in a different way",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "climate_role": "passing",
+    "main_topic": "The text contains an article about Saskatchewan oil revenues and market access, followed by an opinion piece opposing a proposed parents' bill of rights in Ontario.",
+    "climate_relevance": "The opinion piece identifies the existence of climate change and human influence on climate as topics parents in the United States have sought to avoid in schools, linking climate discourse to education and parental-rights debates.",
+    "reason": "Climate change is not the focus of either identifiable article, but the second article makes a meaningful reference to disputes over teaching climate change and human influence on climate. This supports peripheral relevance; the oil-revenue article contains no clear climate discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "54e8e628aeaabd3ffa534705999f7059dd938160c1aaf35b4b81ef89a55b5fe5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b221e484e38bf03ac1f5c1e5a13b2c065bf184740f773946da5270392647c53b",
+    "raw_response_text_sha256": "67d02e9210f9304cdace26570fd25040d0153bc82b0f97ad5cc416d1842c8864"
+  },
+  "api_metadata": {
+    "id": "resp_0ca2d1f4b142bfb0006b0631ec673087d1bb5587b4402d0f2f",
+    "model": "gpt-6-luna",
+    "created_at": 1795568108.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2374,
+      "input_tokens_details": {
+        "cache_write_tokens": 2371,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2371
+        }
+      },
+      "output_tokens": 431,
+      "output_tokens_details": {
+        "reasoning_tokens": 241
+      },
+      "total_tokens": 2805
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The text contains an article about Saskatchewan oil revenues and market access, followed by an opinion piece opposing a proposed parents' bill of rights in Ontario.\",\n  \"climate_relevance\": \"The opinion piece identifies the existence of climate change and human influence on climate as topics parents in the United States have sought to avoid in schools, linking climate discourse to education and parental-rights debates.\",\n  \"reason\": \"Climate change is not the focus of either identifiable article, but the second article makes a meaningful reference to disputes over teaching climate change and human influence on climate. This supports peripheral relevance; the oil-revenue article contains no clear climate discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:55:11Z",
+  "duration_seconds": 3.606,
+  "error": null
+}

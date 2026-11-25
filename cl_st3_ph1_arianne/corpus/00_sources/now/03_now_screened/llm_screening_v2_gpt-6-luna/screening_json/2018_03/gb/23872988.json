@@ -1,0 +1,77 @@
+{
+  "article_id": "23872988",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_03/gb/23872988.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_03/gb/23872988.json"
+  },
+  "manifest_row": {
+    "article_id": "23872988",
+    "group": "2018_03",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_03/gb/23872988.txt",
+    "now_field_2": "788",
+    "date_original": "18-03-27",
+    "date_iso": "2018-03-27",
+    "source_name": "BBC News",
+    "url": "http://www.bbc.co.uk/news/uk-scotland-scotland-politics-43559165",
+    "title": "'Clutter' of strategies stifling Scotland's growth, say economists",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-03.txt\"]",
+    "metadata_article_files": "[\"text-18-03/text_18-03-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Scottish economic performance and the proliferation of government economic strategies",
+    "climate_relevance": "Climate change appears only as the name of one item in a list of Scottish government strategies.",
+    "reason": "The text focuses on Scotland's economy, economic policymaking, and Brexit. It contains no meaningful discussion of climate change beyond a passing listing of a Climate Change Plan.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8b0b6e869267c7fd616aadda978cf99d8b91308779934570997db848ce63fa05",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "729e08a240d7a7db119a826cf5cdf87287f384933eb17e257e160e70eb2f77d3",
+    "raw_response_text_sha256": "55af138b5923b5f56057325807c3a342585c46c05033f13abf9bfe0d8ac0e823"
+  },
+  "api_metadata": {
+    "id": "resp_0c2c04c390401d6a006b0611ce7b2087d2a688150ee5aeccd6",
+    "model": "gpt-6-luna",
+    "created_at": 1795559886.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1569,
+      "input_tokens_details": {
+        "cache_write_tokens": 1566,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1566
+        }
+      },
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1776
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Scottish economic performance and the proliferation of government economic strategies\",\n  \"climate_relevance\": \"Climate change appears only as the name of one item in a list of Scottish government strategies.\",\n  \"reason\": \"The text focuses on Scotland's economy, economic policymaking, and Brexit. It contains no meaningful discussion of climate change beyond a passing listing of a Climate Change Plan.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:38:09Z",
+  "duration_seconds": 2.987,
+  "error": null
+}

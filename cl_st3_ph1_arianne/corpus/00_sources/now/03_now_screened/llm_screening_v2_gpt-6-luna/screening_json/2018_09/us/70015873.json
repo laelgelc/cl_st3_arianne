@@ -1,0 +1,77 @@
+{
+  "article_id": "70015873",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/us/70015873.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/us/70015873.json"
+  },
+  "manifest_row": {
+    "article_id": "70015873",
+    "group": "2018_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/us/70015873.txt",
+    "now_field_2": "838",
+    "date_original": "18-09-10",
+    "date_iso": "2018-09-10",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/weather/2018/09/10/what-will-hurricane-florence-mean-washington-dc-area/",
+    "title": "What will Hurricane Florence mean for the Washington area?",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Hurricane Florence's forecast impacts and preparation in the Washington area",
+    "climate_relevance": "Climate change appears only in the author's biographical credentials, not in the article's discussion.",
+    "reason": "The text focuses on storm forecasts, flooding, wind hazards, and preparation. Its sole climate change reference is incidental biographical information and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f53b1b60ea88fed5b0eb82d36d0dae8a396ac6c2687f8d6ffed91d8468729d62",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7fe8a81457c39c9763f8ccfc72b2559ee8c2da6abfec5d9a10325e66fd8cdc35",
+    "raw_response_text_sha256": "e9f1e2f76ba9cdc5e3065288fa1bdbd48607e2cf0e0f4bcb89541c0853a9656c"
+  },
+  "api_metadata": {
+    "id": "resp_005339d95536ebe6006b063a83e86487d1993c1ca5ba42ce59",
+    "model": "gpt-6-luna",
+    "created_at": 1795570308.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cache_write_tokens": 1559,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1559
+        }
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 1768
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Hurricane Florence's forecast impacts and preparation in the Washington area\",\n  \"climate_relevance\": \"Climate change appears only in the author's biographical credentials, not in the article's discussion.\",\n  \"reason\": \"The text focuses on storm forecasts, flooding, wind hazards, and preparation. Its sole climate change reference is incidental biographical information and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:31:49Z",
+  "duration_seconds": 1.935,
+  "error": null
+}

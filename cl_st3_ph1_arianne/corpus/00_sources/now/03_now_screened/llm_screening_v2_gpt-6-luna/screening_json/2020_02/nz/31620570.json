@@ -1,0 +1,77 @@
+{
+  "article_id": "31620570",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/nz/31620570.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/nz/31620570.json"
+  },
+  "manifest_row": {
+    "article_id": "31620570",
+    "group": "2020_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/nz/31620570.txt",
+    "now_field_2": "2291",
+    "date_original": "20-02-03",
+    "date_iso": "2020-02-03",
+    "source_name": "newsroom.co.nz",
+    "url": "https://www.newsroom.co.nz/2020/02/04/1011719/who-budgeted-what-in-the-12b-roads-debate",
+    "title": "Who rules the road? Fact-checking Ardern vs Bridges",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A comparison of Labour and National's claims and records on road infrastructure projects in New Zealand.",
+    "climate_relevance": "Climate change appears only in a boilerplate description of Newsroom's coverage areas; the article itself contains no meaningful climate discourse.",
+    "reason": "The main article discusses transport funding, roads, and election-related political claims. The sole climate reference is incidental boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8386a2264dfc8b6c15bfc7ed9c8cc97f78030a51b27f9974eff00c781a3fef3c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f1476886462ade8ccf220903b1e61b24b31f6b95462c0ccd8195bdaf46acacc8",
+    "raw_response_text_sha256": "f7806a349c6271e98f0b53cf4c69784846b4d01826e95790883f45d0840a985a"
+  },
+  "api_metadata": {
+    "id": "resp_04bbb82ac95b2e59006b06187c782887d288f864f5b74a125d",
+    "model": "gpt-6-luna",
+    "created_at": 1795561596.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3443,
+      "input_tokens_details": {
+        "cache_write_tokens": 3440,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3440
+        }
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 3703
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A comparison of Labour and National's claims and records on road infrastructure projects in New Zealand.\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of Newsroom's coverage areas; the article itself contains no meaningful climate discourse.\",\n  \"reason\": \"The main article discusses transport funding, roads, and election-related political claims. The sole climate reference is incidental boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:06:38Z",
+  "duration_seconds": 2.495,
+  "error": null
+}

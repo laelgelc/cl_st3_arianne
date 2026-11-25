@@ -1,0 +1,77 @@
+{
+  "article_id": "60277035",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/ca/60277035.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/ca/60277035.json"
+  },
+  "manifest_row": {
+    "article_id": "60277035",
+    "group": "2018_11",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/ca/60277035.txt",
+    "now_field_2": "181",
+    "date_original": "18-11-21",
+    "date_iso": "2018-11-21",
+    "source_name": "Sporting News",
+    "url": "http://www.sportingnews.com/ca/mlb/news/mlb-trade-rumors-los-angeles-dodgers-cleveland-indians-having-lots-of-different-discussions-yan-gomes/eusz7pmuqprn17vpc82xox0b8",
+    "title": "MLB trade rumors: Dodgers, Indians having 'lots of different discussions'",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "U.S. political polarization and public attitudes toward contentious issues",
+    "climate_relevance": "Climate change appears only in a list of survey topics, with no discussion of its causes, impacts, policies, or debate.",
+    "reason": "The identifiable opinion article focuses on political polarization and survey findings; its single mention of climate change is incidental and does not meaningfully contribute to climate discourse analysis. The text also includes an unrelated baseball-trade snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a8774f436d83731ceb27408211c4876a2adfdf3619db8af569ebe6ba58b80d47",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d2d654063edcae01a391beb14576d2d79df38863ca3d525400cb470649ffda60",
+    "raw_response_text_sha256": "badbe518307324cbf3f4c9123823d571fbd262591bc5d44ea2d4df6a95b21b71"
+  },
+  "api_metadata": {
+    "id": "resp_0033b406ca8403ec006b0631d672bc87d180d61025fe567858",
+    "model": "gpt-6-luna",
+    "created_at": 1795568086.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2565,
+      "input_tokens_details": {
+        "cache_write_tokens": 2562,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2562
+        }
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 2792
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"U.S. political polarization and public attitudes toward contentious issues\",\n  \"climate_relevance\": \"Climate change appears only in a list of survey topics, with no discussion of its causes, impacts, policies, or debate.\",\n  \"reason\": \"The identifiable opinion article focuses on political polarization and survey findings; its single mention of climate change is incidental and does not meaningfully contribute to climate discourse analysis. The text also includes an unrelated baseball-trade snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:54:48Z",
+  "duration_seconds": 1.991,
+  "error": null
+}

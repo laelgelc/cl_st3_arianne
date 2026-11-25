@@ -1,0 +1,77 @@
+{
+  "article_id": "20289732",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/ca/20289732.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/ca/20289732.json"
+  },
+  "manifest_row": {
+    "article_id": "20289732",
+    "group": "2017_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/ca/20289732.txt",
+    "now_field_2": "1216",
+    "date_original": "17-08-30",
+    "date_iso": "2017-08-30",
+    "source_name": "countylive.ca",
+    "url": "http://www.countylive.ca/plans-for-controversial-shipping-port-include-keeping-salt-out-of-picton-bay/",
+    "title": "Plans for controversial shipping port include keeping salt out of ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Picton Terminals' operations, salt storage and water contamination concerns, and related zoning and noise disputes",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Environment and Climate Change. The article discusses local pollution and environmental impacts, but not climate change or its implications.",
+    "reason": "The article is about a port's local environmental and regulatory issues. A ministry name and a general reference to the environmental impact of truck traffic do not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f9be4fcba7c3222d6ae7e8c1f87e2297d1d5c295c173b9f6de4639b64a827c10",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "84e416746c0d0fa13f201523f6d31f64f9343abec664e5fea3b26c6ee9633e57",
+    "raw_response_text_sha256": "3e67ac850a5531d24a93204005f295ed3bbc24a13d1880f679211db03064ba80"
+  },
+  "api_metadata": {
+    "id": "resp_05443b34217b5201006b060d1515bc87d285407aada1d78ccd",
+    "model": "gpt-6-luna",
+    "created_at": 1795558677.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2099,
+      "input_tokens_details": {
+        "cache_write_tokens": 2096,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2096
+        }
+      },
+      "output_tokens": 294,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 2393
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Picton Terminals' operations, salt storage and water contamination concerns, and related zoning and noise disputes\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Environment and Climate Change. The article discusses local pollution and environmental impacts, but not climate change or its implications.\",\n  \"reason\": \"The article is about a port's local environmental and regulatory issues. A ministry name and a general reference to the environmental impact of truck traffic do not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:59Z",
+  "duration_seconds": 2.463,
+  "error": null
+}

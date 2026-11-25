@@ -1,0 +1,77 @@
+{
+  "article_id": "70395882",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/ph/70395882.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/ph/70395882.json"
+  },
+  "manifest_row": {
+    "article_id": "70395882",
+    "group": "2019_01",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/ph/70395882.txt",
+    "now_field_2": "499",
+    "date_original": "19-01-07",
+    "date_iso": "2019-01-07",
+    "source_name": "Top Gear Philippines",
+    "url": "https://www.topgear.com.ph/news/car-news/lamborghini-huracan-evo-tguk-a2608-20190108",
+    "title": "The new Lamborghini Huracan Evo has Performante levels of power",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "A Lamborghini Huracan Evo review, followed by unrelated items about Sipalay tourism and a US social-media court ruling",
+    "climate_relevance": "Climate change appears only in a list of sustainable-tourism priorities in the Sipalay item, without further discussion.",
+    "reason": "The text contains multiple unrelated articles. The identifiable opening article is about a sports car, and the only climate reference is a passing mention in the tourism snippet that does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d4e8b426ffe5a52ac8302b501457021a223ea6244c3e2af19ec19588b8429d1b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1939054506ca37cf2355ae5ccbeb2bd03db37d29c29c19cce55b1457a5e06764",
+    "raw_response_text_sha256": "01e39e30e2143e737b465e4bac2d8f9e411e23ebf553c9b218366f7b9fa88a86"
+  },
+  "api_metadata": {
+    "id": "resp_04ecbf6454ef4162006b063c52556487d19532674cdb83bf43",
+    "model": "gpt-6-luna",
+    "created_at": 1795570770.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2542,
+      "input_tokens_details": {
+        "cache_write_tokens": 2539,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2539
+        }
+      },
+      "output_tokens": 474,
+      "output_tokens_details": {
+        "reasoning_tokens": 317
+      },
+      "total_tokens": 3016
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A Lamborghini Huracan Evo review, followed by unrelated items about Sipalay tourism and a US social-media court ruling\",\n  \"climate_relevance\": \"Climate change appears only in a list of sustainable-tourism priorities in the Sipalay item, without further discussion.\",\n  \"reason\": \"The text contains multiple unrelated articles. The identifiable opening article is about a sports car, and the only climate reference is a passing mention in the tourism snippet that does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:39:34Z",
+  "duration_seconds": 3.965,
+  "error": null
+}

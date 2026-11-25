@@ -1,0 +1,77 @@
+{
+  "article_id": "60778901",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/ca/60778901.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/ca/60778901.json"
+  },
+  "manifest_row": {
+    "article_id": "60778901",
+    "group": "2019_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/ca/60778901.txt",
+    "now_field_2": "422",
+    "date_original": "19-04-26",
+    "date_iso": "2019-04-26",
+    "source_name": "The Telegram",
+    "url": "https://www.thetelegram.com/news/local/busy-iceberg-season-expected-this-year-in-newfoundland-and-labrador-306152/",
+    "title": "Busy iceberg season expected this year in Newfoundland and Labrador",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The expected iceberg season and local weather and sea-ice conditions in Newfoundland and Labrador.",
+    "climate_relevance": "The article discusses seasonal iceberg numbers, winds, and sea ice, but does not meaningfully address climate change. The phrase “climatologically normal” is a comparison of conditions, not climate-change discourse.",
+    "reason": "Climate change is not a substantive topic; the reference to Environment and Climate Change Canada is the agency’s name, and the article focuses on iceberg viewing and short-term conditions.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4996274eb51c9cbad7be75a576e71038644d2287627d8b129aebb01111ae9329",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ba2b250dc4d265c1fb2e4d74fc8add880c4c6a3cf47fffee486646438fb39f42",
+    "raw_response_text_sha256": "2849c3af0b99637f7bf1e775e4316d7ed706ae594106aea4fc0bd7bee17006c3"
+  },
+  "api_metadata": {
+    "id": "resp_0ce81b38c3a7be4f006b063468af7487d19336664f8bf4242f",
+    "model": "gpt-6-luna",
+    "created_at": 1795568745.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1042,
+      "input_tokens_details": {
+        "cache_write_tokens": 1039,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1039
+        }
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 1279
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The expected iceberg season and local weather and sea-ice conditions in Newfoundland and Labrador.\",\n  \"climate_relevance\": \"The article discusses seasonal iceberg numbers, winds, and sea ice, but does not meaningfully address climate change. The phrase “climatologically normal” is a comparison of conditions, not climate-change discourse.\",\n  \"reason\": \"Climate change is not a substantive topic; the reference to Environment and Climate Change Canada is the agency’s name, and the article focuses on iceberg viewing and short-term conditions.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:05:47Z",
+  "duration_seconds": 2.485,
+  "error": null
+}

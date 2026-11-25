@@ -1,0 +1,77 @@
+{
+  "article_id": "30479163",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/in/30479163.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/in/30479163.json"
+  },
+  "manifest_row": {
+    "article_id": "30479163",
+    "group": "2019_01",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/in/30479163.txt",
+    "now_field_2": "807",
+    "date_original": "19-01-22",
+    "date_iso": "2019-01-22",
+    "source_name": "Times Now",
+    "url": "https://www.timesnownews.com/health/article/from-air-pollution-and-climate-change-to-dengue-and-superbugs-hiv-influenza-pandemic-ebola-who-list-of-top-10-global-health-threats-in-2019/351836",
+    "title": "From air pollution and climate change to dengue and superbugs ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-in2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.86,
+    "climate_role": "passing",
+    "main_topic": "The WHO's list of global health threats for 2019",
+    "climate_relevance": "Climate change appears in the headline and in a section heading paired with air pollution, but the available discussion focuses on air pollution's health effects and does not meaningfully address climate change.",
+    "reason": "The article is primarily a survey of global health threats. Climate change is named but receives no substantive discussion in the supplied text.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "443b04d0964236f6078e90e357e90d545f44d23a5b61483a18161281612b6200",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1bcbd837a8106c5588dd7368a77c617d47f1f1c2295f83f1ea5b48eea2d78fd2",
+    "raw_response_text_sha256": "20daead914b19b945a66975529d2b0a1db76483aae9dcc13b24d2af1a4ca854b"
+  },
+  "api_metadata": {
+    "id": "resp_09b0a6dafea570a2006b06144b19f887d286b278fc429182ee",
+    "model": "gpt-6-luna",
+    "created_at": 1795560523.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1548,
+      "input_tokens_details": {
+        "cache_write_tokens": 1545,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1545
+        }
+      },
+      "output_tokens": 538,
+      "output_tokens_details": {
+        "reasoning_tokens": 390
+      },
+      "total_tokens": 2086
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The WHO's list of global health threats for 2019\",\n  \"climate_relevance\": \"Climate change appears in the headline and in a section heading paired with air pollution, but the available discussion focuses on air pollution's health effects and does not meaningfully address climate change.\",\n  \"reason\": \"The article is primarily a survey of global health threats. Climate change is named but receives no substantive discussion in the supplied text.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:48:46Z",
+  "duration_seconds": 3.71,
+  "error": null
+}

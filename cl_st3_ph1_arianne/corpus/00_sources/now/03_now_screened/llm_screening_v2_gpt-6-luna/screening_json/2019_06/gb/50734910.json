@@ -1,0 +1,77 @@
+{
+  "article_id": "50734910",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/gb/50734910.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/gb/50734910.json"
+  },
+  "manifest_row": {
+    "article_id": "50734910",
+    "group": "2019_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/gb/50734910.txt",
+    "now_field_2": "370",
+    "date_original": "19-06-04",
+    "date_iso": "2019-06-04",
+    "source_name": "NME.com",
+    "url": "https://www.nme.com/news/he-breaks-my-heart-thousands-of-protestors-attend-anti-trump-march-in-london-2504755",
+    "title": "Watch thousands of protestors attend anti-Trump march in London ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "Protests against Donald Trump during his visit to the UK",
+    "climate_relevance": "Climate change appears only in a brief list of criticisms of Trump, with no further discussion.",
+    "reason": "The article focuses on protests and criticism of Trump; the reference to his denying climate change is incidental and does not develop climate-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5fd1132c9e783db0d67a7fe5283a9ebfda9a3d6fe45d1f0f08b726ca53b5b349",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "55d4014198b4a9f78c2cd8a0dab541ac592a21cd8594b82c289c983af2a5d69f",
+    "raw_response_text_sha256": "82160fccbb407f651343f993fcd2814a01f1eb4428ad4ed57ae038b4472d23b8"
+  },
+  "api_metadata": {
+    "id": "resp_0b7013aac7372fe6006b062a9cff0087d19160612a56297f8f",
+    "model": "gpt-6-luna",
+    "created_at": 1795566237.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 962,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 430,
+      "output_tokens_details": {
+        "reasoning_tokens": 299
+      },
+      "total_tokens": 1392
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Protests against Donald Trump during his visit to the UK\",\n  \"climate_relevance\": \"Climate change appears only in a brief list of criticisms of Trump, with no further discussion.\",\n  \"reason\": \"The article focuses on protests and criticism of Trump; the reference to his denying climate change is incidental and does not develop climate-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:24:00Z",
+  "duration_seconds": 3.585,
+  "error": null
+}

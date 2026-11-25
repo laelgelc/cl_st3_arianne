@@ -1,0 +1,77 @@
+{
+  "article_id": "30654720",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/in/30654720.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/in/30654720.json"
+  },
+  "manifest_row": {
+    "article_id": "30654720",
+    "group": "2019_03",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/in/30654720.txt",
+    "now_field_2": "899",
+    "date_original": "19-03-12",
+    "date_iso": "2019-03-12",
+    "source_name": "India Today",
+    "url": "https://www.indiatoday.in/india/story/supreme-court-firecrackers-automobiles-pollution-1476080-2019-03-12",
+    "title": "Why run after firecracker makers? Vehicles pollute more: Supreme Court",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-in1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Supreme Court proceedings on firecracker restrictions, air pollution, and employment",
+    "climate_relevance": "Climate change appears only in the formal name of the Ministry of Environment, Forest and Climate Change; the article discusses air pollution from firecrackers and vehicles, not climate change.",
+    "reason": "The article's environmental discussion concerns local air pollution and firecracker regulation. The sole climate reference is part of an institutional name and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5e2912b357c00b1b245b8b756db043b3f92857e554cc06945c7f6d3dcb17ba31",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b2402f9613ac1a61bb739f21a9cd4aed905e52bab898d5ae6df33ff710155855",
+    "raw_response_text_sha256": "6e21a51ef9eb6b3e9bf2c9d45fc123c9766e9a441638b5186940aee43f92cd0d"
+  },
+  "api_metadata": {
+    "id": "resp_0ede7284bfabad7f006b0614cb94c087d2b22b980d597c82ef",
+    "model": "gpt-6-luna",
+    "created_at": 1795560651.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1711,
+      "input_tokens_details": {
+        "cache_write_tokens": 1708,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1708
+        }
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1949
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Supreme Court proceedings on firecracker restrictions, air pollution, and employment\",\n  \"climate_relevance\": \"Climate change appears only in the formal name of the Ministry of Environment, Forest and Climate Change; the article discusses air pollution from firecrackers and vehicles, not climate change.\",\n  \"reason\": \"The article's environmental discussion concerns local air pollution and firecracker regulation. The sole climate reference is part of an institutional name and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:50:53Z",
+  "duration_seconds": 1.822,
+  "error": null
+}

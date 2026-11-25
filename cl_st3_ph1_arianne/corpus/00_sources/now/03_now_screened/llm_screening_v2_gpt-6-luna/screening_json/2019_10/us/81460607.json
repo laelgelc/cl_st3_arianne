@@ -1,0 +1,77 @@
+{
+  "article_id": "81460607",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81460607.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81460607.json"
+  },
+  "manifest_row": {
+    "article_id": "81460607",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81460607.txt",
+    "now_field_2": "2001",
+    "date_original": "19-10-05",
+    "date_iso": "2019-10-05",
+    "source_name": "Tulsa World",
+    "url": "https://www.tulsaworld.com/news/trending/photos-of-the-best-images-from-the-past-week/collection_059ecaa0-4baf-5057-8409-2fd8048179fa.html",
+    "title": "Photos: 30 of the best images from the past week",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "A weekly AP photo gallery covering news and events around the world.",
+    "climate_relevance": "One caption describes a worldwide protest in Buenos Aires demanding action on climate change.",
+    "reason": "The gallery is mostly about unrelated events, but the climate-protest caption provides meaningful, though limited, climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3fbba740cbc0c40a620ece3cf9cba37f0fc2d79ac00f426b11c73d18c6073b2e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "40be7aa15f3a7afe91f74958d63263447d0634f1796aa1a9ced5bdc1613c7be5",
+    "raw_response_text_sha256": "78d3ab1a97113f779d85302fd81de1e066d55ee0e326e2f473d3713414e76515"
+  },
+  "api_metadata": {
+    "id": "resp_0dd699116595647e006b06475a63d087d18fdf6cf186d79518",
+    "model": "gpt-6-luna",
+    "created_at": 1795573594.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3472,
+      "input_tokens_details": {
+        "cache_write_tokens": 3469,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3469
+        }
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 3728
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A weekly AP photo gallery covering news and events around the world.\",\n  \"climate_relevance\": \"One caption describes a worldwide protest in Buenos Aires demanding action on climate change.\",\n  \"reason\": \"The gallery is mostly about unrelated events, but the climate-protest caption provides meaningful, though limited, climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:26:36Z",
+  "duration_seconds": 2.295,
+  "error": null
+}

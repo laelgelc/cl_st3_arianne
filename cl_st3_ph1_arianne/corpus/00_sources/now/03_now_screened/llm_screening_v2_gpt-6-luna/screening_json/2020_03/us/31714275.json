@@ -1,0 +1,77 @@
+{
+  "article_id": "31714275",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/us/31714275.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/us/31714275.json"
+  },
+  "manifest_row": {
+    "article_id": "31714275",
+    "group": "2020_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/us/31714275.txt",
+    "now_field_2": "910",
+    "date_original": "20-03-16",
+    "date_iso": "2020-03-16",
+    "source_name": "wired.com",
+    "url": "https://www.wired.com/story/bill-gates-steps-down-microsoft-board/",
+    "title": "Bill Gates Steps Down from Microsoft's Board | WIRED",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-us6.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "Bill Gates stepping down from Microsoft and Berkshire Hathaway boards and focusing more on philanthropy",
+    "climate_relevance": "Climate change and rising seas are briefly listed among Gates's philanthropic priorities, but the article does not discuss them in any depth.",
+    "reason": "The main article concerns Gates's career and philanthropic shift. Climate appears only as a passing example, without meaningful discussion of its causes, impacts, policy, or response.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7efce2d933fba7ea6a9e5648ab654d8606665f9be8daec14ea286ca658d1c377",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1d52e79a5107771d5a13e8d42b34da73679fc1ea7f561f212a50dfa748fda948",
+    "raw_response_text_sha256": "0b7a85f6cb015276a6fc921626e255900c2d04d4634a9a3cd777bf0c2c5e0ad8"
+  },
+  "api_metadata": {
+    "id": "resp_07930fe6c24ca1d4006b061919d75887d294225e28cb6a7815",
+    "model": "gpt-6-luna",
+    "created_at": 1795561753.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1628,
+      "input_tokens_details": {
+        "cache_write_tokens": 1625,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1625
+        }
+      },
+      "output_tokens": 713,
+      "output_tokens_details": {
+        "reasoning_tokens": 564
+      },
+      "total_tokens": 2341
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Bill Gates stepping down from Microsoft and Berkshire Hathaway boards and focusing more on philanthropy\",\n  \"climate_relevance\": \"Climate change and rising seas are briefly listed among Gates's philanthropic priorities, but the article does not discuss them in any depth.\",\n  \"reason\": \"The main article concerns Gates's career and philanthropic shift. Climate appears only as a passing example, without meaningful discussion of its causes, impacts, policy, or response.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:09:19Z",
+  "duration_seconds": 5.845,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "60317521",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ca/60317521.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ca/60317521.json"
+  },
+  "manifest_row": {
+    "article_id": "60317521",
+    "group": "2018_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ca/60317521.txt",
+    "now_field_2": "687",
+    "date_original": "18-12-03",
+    "date_iso": "2018-12-03",
+    "source_name": "Toronto Star",
+    "url": "https://www.thestar.com/news/canada/2018/12/03/scientists-say-half-of-canadas-chinook-salmon-populations-are-in-decline.html",
+    "title": "Half of Canada's chinook salmon populations assessed are in decline ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "The conservation status and decline of Chinook salmon populations in southern British Columbia.",
+    "climate_relevance": "The article identifies climate change as a broader challenge for Chinook salmon, noting that it is leading to warmer water temperatures. Climate change is relevant but not the main focus.",
+    "reason": "The main article reports on endangered Chinook populations, harvest pressures, habitat degradation, and conservation needs. Its explicit discussion of climate change and warmer water temperatures is meaningful, so it is relevant as peripheral climate discourse rather than core climate coverage. A separate, unrelated article about a holiday event at a Vancouver market is also included.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a036b89d58e07573fe9755f87891234ead4addbc601dcf22945163a275a63b94",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7509541977b1b008a26832184fff18b6629700973224ea303deef9e0477d98c2",
+    "raw_response_text_sha256": "9f64035c6b37a9ec20b3e8573e82a7832b0f0b641c139ab710023d52eb17f39a"
+  },
+  "api_metadata": {
+    "id": "resp_0ea2d75a509492cd006b06320f7ae887d1ad1eb0d3a6539390",
+    "model": "gpt-6-luna",
+    "created_at": 1795568143.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2490,
+      "input_tokens_details": {
+        "cache_write_tokens": 2487,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2487
+        }
+      },
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 2797
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The conservation status and decline of Chinook salmon populations in southern British Columbia.\",\n  \"climate_relevance\": \"The article identifies climate change as a broader challenge for Chinook salmon, noting that it is leading to warmer water temperatures. Climate change is relevant but not the main focus.\",\n  \"reason\": \"The main article reports on endangered Chinook populations, harvest pressures, habitat degradation, and conservation needs. Its explicit discussion of climate change and warmer water temperatures is meaningful, so it is relevant as peripheral climate discourse rather than core climate coverage. A separate, unrelated article about a holiday event at a Vancouver market is also included.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:55:46Z",
+  "duration_seconds": 2.984,
+  "error": null
+}

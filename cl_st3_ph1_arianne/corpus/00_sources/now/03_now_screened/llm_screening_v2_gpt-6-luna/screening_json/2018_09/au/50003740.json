@@ -1,0 +1,77 @@
+{
+  "article_id": "50003740",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/au/50003740.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/au/50003740.json"
+  },
+  "manifest_row": {
+    "article_id": "50003740",
+    "group": "2018_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/au/50003740.txt",
+    "now_field_2": "2322",
+    "date_original": "18-09-05",
+    "date_iso": "2018-09-05",
+    "source_name": "Money Morning Australia",
+    "url": "https://www.moneymorning.com.au/20180906/the-current-state-of-the-economy.html",
+    "title": "The Current State of the Economy",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.87,
+    "climate_role": "passing",
+    "main_topic": "Financial markets and the Australian economy, including gas supply and investment commentary",
+    "climate_relevance": "Climate change and carbon emissions appear briefly in a framing sentence, but the article does not develop them or discuss their implications in a meaningful way.",
+    "reason": "The identifiable article is primarily economic and financial commentary. Its brief reference to climate change is incidental rather than substantive climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "985b64c43a3785af9f456ba16f84c93c912b6ab7c08ab4161a23c115f6545517",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6368a1c93f61d756b1520aaf03b049aae0a0b35445f0f4bae143a130d8706928",
+    "raw_response_text_sha256": "102abc9429b6cd1c63652de95cc14add0a4c1fd05a6a6bbe2b4023b333958f80"
+  },
+  "api_metadata": {
+    "id": "resp_0adadb1f71f99551006b062758d3a087d19d5d13d3819f29a8",
+    "model": "gpt-6-luna",
+    "created_at": 1795565400.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3372,
+      "input_tokens_details": {
+        "cache_write_tokens": 3369,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3369
+        }
+      },
+      "output_tokens": 379,
+      "output_tokens_details": {
+        "reasoning_tokens": 239
+      },
+      "total_tokens": 3751
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Financial markets and the Australian economy, including gas supply and investment commentary\",\n  \"climate_relevance\": \"Climate change and carbon emissions appear briefly in a framing sentence, but the article does not develop them or discuss their implications in a meaningful way.\",\n  \"reason\": \"The identifiable article is primarily economic and financial commentary. Its brief reference to climate change is incidental rather than substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:10:03Z",
+  "duration_seconds": 3.162,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "13910321",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_08/ca/13910321.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_08/ca/13910321.json"
+  },
+  "manifest_row": {
+    "article_id": "13910321",
+    "group": "2016_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_08/ca/13910321.txt",
+    "now_field_2": "518",
+    "date_original": "16-08-18",
+    "date_iso": "2016-08-18",
+    "source_name": "News1130",
+    "url": "http://www.news1130.com/2016/08/18/affordable-housing-tops-list-of-issues-important-to-bc-voters/",
+    "title": "Affordable housing tops list of issues important to BC voters",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-08-pcg/16-08-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "BC voters' priorities ahead of the provincial election, especially affordable housing",
+    "climate_relevance": "Climate change is briefly named as an issue that ranked lower in importance than expected in the survey.",
+    "reason": "The article is primarily about housing affordability and voter priorities. Its brief comparison involving climate change provides some relevant public-opinion discourse, but climate is not a substantial focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b35d1b9f4b7b209d94b112aafc44410f8af9e5a80385ee171d6794bfcc8f49ac",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "36961d9427b216036d9a573735fbcecaad16c288a6d4f1a5677ca2015c1ea2ba",
+    "raw_response_text_sha256": "2a5c0895f3e02cb755e1b8f1b26e82e173d2db561b9b5902da8a10d32baf1258"
+  },
+  "api_metadata": {
+    "id": "resp_029936e2584b3f02006b060556e67487d2a7928238420fc14a",
+    "model": "gpt-6-luna",
+    "created_at": 1795556695.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1230,
+      "input_tokens_details": {
+        "cache_write_tokens": 1227,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1227
+        }
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 214
+      },
+      "total_tokens": 1585
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"BC voters' priorities ahead of the provincial election, especially affordable housing\",\n  \"climate_relevance\": \"Climate change is briefly named as an issue that ranked lower in importance than expected in the survey.\",\n  \"reason\": \"The article is primarily about housing affordability and voter priorities. Its brief comparison involving climate change provides some relevant public-opinion discourse, but climate is not a substantial focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:44:57Z",
+  "duration_seconds": 3.116,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70041314",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/nz/70041314.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/nz/70041314.json"
+  },
+  "manifest_row": {
+    "article_id": "70041314",
+    "group": "2018_09",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/nz/70041314.txt",
+    "now_field_2": "349",
+    "date_original": "18-09-17",
+    "date_iso": "2018-09-17",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PA1809/S00233/announcement-of-nzs-first-resident-ambassador-to-ireland.htm",
+    "title": "Announcement of NZ's first resident Ambassador to Ireland",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "A collection of New Zealand news snippets, including an ambassadorial appointment and unrelated political matters",
+    "climate_relevance": "Climate change is briefly listed as one of several global issues on which Ireland and New Zealand work together.",
+    "reason": "The only climate reference is a passing mention within a list; the available text contains no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "62001c44402456bd8314557b710b0cc1d76115534249566625fd41aafe362034",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "72255c1f4cf27c983fd41cb63330cadda7504117de0850151e76947ff56f6792",
+    "raw_response_text_sha256": "9218a1bb256ddb64fcbf9d83aa6f2ddf375b530e0237d8b7d92372c760cbd791"
+  },
+  "api_metadata": {
+    "id": "resp_0f98846c51a41225006b063a9f1de087d18157f6028df1593a",
+    "model": "gpt-6-luna",
+    "created_at": 1795570335.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 923,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 1151
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of New Zealand news snippets, including an ambassadorial appointment and unrelated political matters\",\n  \"climate_relevance\": \"Climate change is briefly listed as one of several global issues on which Ireland and New Zealand work together.\",\n  \"reason\": \"The only climate reference is a passing mention within a list; the available text contains no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:32:17Z",
+  "duration_seconds": 2.223,
+  "error": null
+}

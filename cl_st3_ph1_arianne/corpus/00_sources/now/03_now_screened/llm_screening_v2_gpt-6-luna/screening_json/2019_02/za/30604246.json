@@ -1,0 +1,77 @@
+{
+  "article_id": "30604246",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/za/30604246.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/za/30604246.json"
+  },
+  "manifest_row": {
+    "article_id": "30604246",
+    "group": "2019_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/za/30604246.txt",
+    "now_field_2": "3717",
+    "date_original": "19-02-25",
+    "date_iso": "2019-02-25",
+    "source_name": "Forbes Africa",
+    "url": "https://www.forbesafrica.com/wealth/2019/02/25/noted-hedge-fund-says-crypto-hasnt-bottomed-yet/",
+    "title": "Noted Hedge Fund Says Crypto Hasn't Bottomed Yet",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Cryptocurrency markets and a hedge fund's investment strategy",
+    "climate_relevance": "The identifiable opening article is about cryptocurrency and contains no meaningful climate discourse. Later text includes a separate Patagonia story with substantial climate discussion, plus other unrelated material.",
+    "reason": "The main article is a cryptocurrency interview, so the climate discussion appears in an unrelated appended article rather than in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2e3077ce4723a47c542001b26436ca0acfc7ce7d1d81398fefd5884bf43d4090",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ab455fed3f90da8d28b06fce967b99dada881073c3950a077bcd8ceaf7727233",
+    "raw_response_text_sha256": "a0bb2bf47a2a4af8d39fe2c701f5010ee28a705098224ebe32a22d240ea941c9"
+  },
+  "api_metadata": {
+    "id": "resp_0d4b4d13182b75bc006b0614a5cc4c87d28302a249b3e0590e",
+    "model": "gpt-6-luna",
+    "created_at": 1795560614.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5432,
+      "input_tokens_details": {
+        "cache_write_tokens": 5429,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5429
+        }
+      },
+      "output_tokens": 483,
+      "output_tokens_details": {
+        "reasoning_tokens": 337
+      },
+      "total_tokens": 5915
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Cryptocurrency markets and a hedge fund's investment strategy\",\n  \"climate_relevance\": \"The identifiable opening article is about cryptocurrency and contains no meaningful climate discourse. Later text includes a separate Patagonia story with substantial climate discussion, plus other unrelated material.\",\n  \"reason\": \"The main article is a cryptocurrency interview, so the climate discussion appears in an unrelated appended article rather than in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:50:17Z",
+  "duration_seconds": 4.043,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "51912612",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/ca/51912612.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/ca/51912612.json"
+  },
+  "manifest_row": {
+    "article_id": "51912612",
+    "group": "2020_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/ca/51912612.txt",
+    "now_field_2": "2025",
+    "date_original": "20-08-26",
+    "date_iso": "2020-08-26",
+    "source_name": "rabble.ca",
+    "url": "https://rabble.ca/blogs/bloggers",
+    "title": "Bloggers | rabble.ca",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A directory of rabble.ca bloggers and descriptions of their blogs",
+    "climate_relevance": "Climate change appears only in a blog title and passing references to climate summits; the text contains no meaningful climate discussion.",
+    "reason": "The available text is a collection of blogger biographies and blog descriptions. Climate-related references are incidental metadata rather than substantive discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7e287c0cb60b401b61d3bd1b07d4dedade1d15f8c2b97c3bd77cd952446c8e71",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2207ff402c2ea240fe49f7674103dcf3d0712eab969c139e8f3d3c58344c4121",
+    "raw_response_text_sha256": "b46cac675f8a025a496d805f65c2b3fe08b8dfbfd416c9624f475d34ca4290fb"
+  },
+  "api_metadata": {
+    "id": "resp_0814ea34d1158229006b062f356f3487d1bd6f475ade0d6323",
+    "model": "gpt-6-luna",
+    "created_at": 1795567413.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3231,
+      "input_tokens_details": {
+        "cache_write_tokens": 3228,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3228
+        }
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 3511
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A directory of rabble.ca bloggers and descriptions of their blogs\",\n  \"climate_relevance\": \"Climate change appears only in a blog title and passing references to climate summits; the text contains no meaningful climate discussion.\",\n  \"reason\": \"The available text is a collection of blogger biographies and blog descriptions. Climate-related references are incidental metadata rather than substantive discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:43:35Z",
+  "duration_seconds": 2.531,
+  "error": null
+}

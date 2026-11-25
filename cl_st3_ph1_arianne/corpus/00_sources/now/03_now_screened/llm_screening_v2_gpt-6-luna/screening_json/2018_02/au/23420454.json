@@ -1,0 +1,77 @@
+{
+  "article_id": "23420454",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_02/au/23420454.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_02/au/23420454.json"
+  },
+  "manifest_row": {
+    "article_id": "23420454",
+    "group": "2018_02",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_02/au/23420454.txt",
+    "now_field_2": "513",
+    "date_original": "18-02-27",
+    "date_iso": "2018-02-27",
+    "source_name": "NEWS.com.au",
+    "url": "http://www.news.com.au/technology/environment/east-coasters-are-set-to-swelter-through-the-last-day-of-summer/news-story/891eb9843aec82ff75a262928439a1cf",
+    "title": "East coasters are set to swelter through the last day of summer",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-02.txt\"]",
+    "metadata_article_files": "[\"text-18-02/text_18-02-AU.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "Weather conditions and forecasts in eastern Australia at the end of summer",
+    "climate_relevance": "The report links several consecutive summers of above-average temperatures to the warming trend associated with climate change.",
+    "reason": "The article is primarily a weather report about heat, storms, and forecasts. Its explicit climate-change reference is meaningful context, but climate change is not a central or substantial focus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6c9944ffa45b9311e22e8a558ad8542ff8660ff1be0aa79ac0037708ad9f5e73",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "58bc2319ead477472460bc8e528d55183a0b4735781f762e3f22f9b529dbedc9",
+    "raw_response_text_sha256": "924cfe0cf9459488c2037b7830d0dd392a4196b84f336e92e26d3b93ff6a6dc5"
+  },
+  "api_metadata": {
+    "id": "resp_0ab08f2a6a897ae2006b061136c81087d2809bff6861e30148",
+    "model": "gpt-6-luna",
+    "created_at": 1795559734.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1229,
+      "input_tokens_details": {
+        "cache_write_tokens": 1226,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1226
+        }
+      },
+      "output_tokens": 416,
+      "output_tokens_details": {
+        "reasoning_tokens": 274
+      },
+      "total_tokens": 1645
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Weather conditions and forecasts in eastern Australia at the end of summer\",\n  \"climate_relevance\": \"The report links several consecutive summers of above-average temperatures to the warming trend associated with climate change.\",\n  \"reason\": \"The article is primarily a weather report about heat, storms, and forecasts. Its explicit climate-change reference is meaningful context, but climate change is not a central or substantial focus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:35:37Z",
+  "duration_seconds": 2.934,
+  "error": null
+}

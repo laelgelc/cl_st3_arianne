@@ -1,0 +1,77 @@
+{
+  "article_id": "85624150",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85624150.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85624150.json"
+  },
+  "manifest_row": {
+    "article_id": "85624150",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85624150.txt",
+    "now_field_2": "411",
+    "date_original": "20-08-08",
+    "date_iso": "2020-08-08",
+    "source_name": "SFGate",
+    "url": "https://www.sfgate.com/news/article/Welch-faces-single-challenger-in-Vermont-15468942.php",
+    "title": "Welch faces single challenger in Vermont Democratic primary",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Vermont congressional primary and candidates",
+    "climate_relevance": "Climate change is mentioned once as an example of an issue affecting young people, with no further discussion.",
+    "reason": "The article focuses on the election and candidates. The brief reference to climate change is incidental and does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fadda9f0fbdf33f98430e646886bd4eea44e7dd39a014da9db571153eb5ecc8a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a096132fee96553f0625a68aee1db5d7caf8e664bd5b7a2ab503a13e1f3a85f3",
+    "raw_response_text_sha256": "0ebeca7ae0ef7e5a6a36dc06efb701fe23cf97e6433e3eee8d1838293ceebfde"
+  },
+  "api_metadata": {
+    "id": "resp_074b96c5fae31b6b006b064c8b77e887d19ef53eaf94a50c6d",
+    "model": "gpt-6-luna",
+    "created_at": 1795574923.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1044,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1041,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 1288
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Vermont congressional primary and candidates\",\n  \"climate_relevance\": \"Climate change is mentioned once as an example of an issue affecting young people, with no further discussion.\",\n  \"reason\": \"The article focuses on the election and candidates. The brief reference to climate change is incidental and does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:48:45Z",
+  "duration_seconds": 2.273,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "30040115",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/bd/30040115.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/bd/30040115.json"
+  },
+  "manifest_row": {
+    "article_id": "30040115",
+    "group": "2018_09",
+    "country_code": "bd",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/bd/30040115.txt",
+    "now_field_2": "1204",
+    "date_original": "18-09-17",
+    "date_iso": "2018-09-17",
+    "source_name": "theindependentbd.com",
+    "url": "http://www.theindependentbd.com/post/166768",
+    "title": "'Heat-related deaths likely to increase as global temperatures rise'",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-bd.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Projected health impacts of global warming, especially heat-related mortality and the role of the Paris Agreement in limiting those impacts.",
+    "climate_relevance": "The article reports a study comparing temperature-related deaths under different warming scenarios and discusses climate policy implications of limiting warming.",
+    "reason": "Climate change, warming scenarios, projected mortality, and implementation of the Paris Agreement are the article’s central focus. A separate snippet about Nepal’s tiger population appears at the end and is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6cd055ef2c24bd826535af105f0bdd43577438dc374509c3b1738dc60de7224b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "928cce532ff9a0670fada24df1ada17af751925f12cc71b5ffe2739c5ea2bdae",
+    "raw_response_text_sha256": "1878cbfb609d11b7847e6104ee70911f32f893fbdbf6ad3a7726dc5e98b2f6b6"
+  },
+  "api_metadata": {
+    "id": "resp_0a375df414a6726e006b061310e70087d2b036f3d237d3d722",
+    "model": "gpt-6-luna",
+    "created_at": 1795560209.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2077,
+      "input_tokens_details": {
+        "cache_write_tokens": 2074,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2074
+        }
+      },
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 2285
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Projected health impacts of global warming, especially heat-related mortality and the role of the Paris Agreement in limiting those impacts.\",\n  \"climate_relevance\": \"The article reports a study comparing temperature-related deaths under different warming scenarios and discusses climate policy implications of limiting warming.\",\n  \"reason\": \"Climate change, warming scenarios, projected mortality, and implementation of the Paris Agreement are the article’s central focus. A separate snippet about Nepal’s tiger population appears at the end and is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:43:31Z",
+  "duration_seconds": 2.244,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "20609256",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_09/us/20609256.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_09/us/20609256.json"
+  },
+  "manifest_row": {
+    "article_id": "20609256",
+    "group": "2017_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_09/us/20609256.txt",
+    "now_field_2": "1007",
+    "date_original": "17-09-18",
+    "date_iso": "2017-09-18",
+    "source_name": "Arkansas Online",
+    "url": "http://www.arkansasonline.com/news/2017/sep/18/dating-sites-cut-to-chase-target-single/?f=business",
+    "title": "Dating sites cut to chase, target singles of specific political leanings",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-09.txt\"]",
+    "metadata_article_files": "[\"text-17-09/text_17-09-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A miscellaneous advice column covering dating sites, apps, gadgets, and consumer products.",
+    "climate_relevance": "A section heading says “Climate Change: Call Home,” but the accompanying text is about protecting a phone from extreme heat and cold, not climate change.",
+    "reason": "Climate change appears only as a heading; the article contains no meaningful discussion of its causes, impacts, policy, science, or public debate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3f729e96b3285845ef278b336c0b5199f376c4cc5085f09359cc381295eb7895",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4f0438855473e8087aa20acb528eaf1635cc3e853ffbafdd4e2ec6fca24d030d",
+    "raw_response_text_sha256": "8ce69695c6496ba03c5f5559c5f3c311be2fe0ae6b21348033a8e66e816627cd"
+  },
+  "api_metadata": {
+    "id": "resp_03945e821bae6285006b060d87a67487d2b73007713e328807",
+    "model": "gpt-6-luna",
+    "created_at": 1795558791.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1844,
+      "input_tokens_details": {
+        "cache_write_tokens": 1841,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1841
+        }
+      },
+      "output_tokens": 440,
+      "output_tokens_details": {
+        "reasoning_tokens": 292
+      },
+      "total_tokens": 2284
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A miscellaneous advice column covering dating sites, apps, gadgets, and consumer products.\",\n  \"climate_relevance\": \"A section heading says “Climate Change: Call Home,” but the accompanying text is about protecting a phone from extreme heat and cold, not climate change.\",\n  \"reason\": \"Climate change appears only as a heading; the article contains no meaningful discussion of its causes, impacts, policy, science, or public debate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:19:55Z",
+  "duration_seconds": 3.98,
+  "error": null
+}

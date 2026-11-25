@@ -1,0 +1,77 @@
+{
+  "article_id": "70630480",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70630480.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70630480.json"
+  },
+  "manifest_row": {
+    "article_id": "70630480",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70630480.txt",
+    "now_field_2": "490",
+    "date_original": "19-03-26",
+    "date_iso": "2019-03-26",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/SC1903/S00044/west-coast-flooding-expert-reaction.htm",
+    "title": "West Coast flooding - Expert Reaction",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "West Coast transport access and resilience to floods, landslides, and other hazards",
+    "climate_relevance": "The main passage mentions glacier retreat and its effects on sediment and river levels, but does not substantially discuss climate change. Later snippets refer to forestry incentives under the ETS and climate-change targets and policies.",
+    "reason": "The identifiable main passage focuses on infrastructure and natural hazards, with glacier retreat as relevant background rather than the central subject. The separate climate-policy snippets contain meaningful climate discourse but appear unrelated to that main passage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fdeb1b58a81c3e4526445b20b54c774f06175e66f24bc1a4bbaed7b95bb7d19a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9486454a385680e78ecbae4f889c48d1e815d6c0cd81336ce06d255f5e10e12d",
+    "raw_response_text_sha256": "523877c1cac2ebf89928f170131e93d879e3dbcd5b8f30ecce1ab46fcb1ecb1f"
+  },
+  "api_metadata": {
+    "id": "resp_02b1b7c5e82c6b2b006b063e19842c87d1889d96bbd0fa0ef7",
+    "model": "gpt-6-luna",
+    "created_at": 1795571225.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1087,
+      "input_tokens_details": {
+        "cache_write_tokens": 1084,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1084
+        }
+      },
+      "output_tokens": 482,
+      "output_tokens_details": {
+        "reasoning_tokens": 311
+      },
+      "total_tokens": 1569
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"West Coast transport access and resilience to floods, landslides, and other hazards\",\n  \"climate_relevance\": \"The main passage mentions glacier retreat and its effects on sediment and river levels, but does not substantially discuss climate change. Later snippets refer to forestry incentives under the ETS and climate-change targets and policies.\",\n  \"reason\": \"The identifiable main passage focuses on infrastructure and natural hazards, with glacier retreat as relevant background rather than the central subject. The separate climate-policy snippets contain meaningful climate discourse but appear unrelated to that main passage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:47:09Z",
+  "duration_seconds": 4.27,
+  "error": null
+}

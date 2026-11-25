@@ -1,0 +1,77 @@
+{
+  "article_id": "82853135",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82853135.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82853135.json"
+  },
+  "manifest_row": {
+    "article_id": "82853135",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82853135.txt",
+    "now_field_2": "699",
+    "date_original": "19-12-23",
+    "date_iso": "2019-12-23",
+    "source_name": "Houston Chronicle",
+    "url": "https://www.houstonchronicle.com/lifestyle/renew-houston/fitness/article/It-was-not-love-at-first-run-for-Dr-Tania-14913148.php",
+    "title": "It was not love at first run for Dr. Tania Booker. But she found her pace and her Instagram following.",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A physician's running and marathon journey",
+    "climate_relevance": "Climate change appears only in the reporter's biography, which says her experiences have led her to explore environmental journalism and climate change.",
+    "reason": "The article is a profile about running, fitness, and marathons. Its sole climate reference is an incidental mention in the author's bio and contains no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9ab21814eb97b01c24a78c02ad58c85f3f2eee41aa577fa230ab34990fc2c134",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c209f94b988721785de083c57fcf8b44a4fd3b0a1fe6fdd242f1ef13e7f051e6",
+    "raw_response_text_sha256": "676823541f536e6137246773641b8bf1e327f32dad93531eae11d28284357d54"
+  },
+  "api_metadata": {
+    "id": "resp_0da0ed5b9b6a3305006b0648ecefec87d18c19bde5325bcdc8",
+    "model": "gpt-6-luna",
+    "created_at": 1795573997.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1409,
+      "input_tokens_details": {
+        "cache_write_tokens": 1406,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1406
+        }
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1646
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A physician's running and marathon journey\",\n  \"climate_relevance\": \"Climate change appears only in the reporter's biography, which says her experiences have led her to explore environmental journalism and climate change.\",\n  \"reason\": \"The article is a profile about running, fitness, and marathons. Its sole climate reference is an incidental mention in the author's bio and contains no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:33:19Z",
+  "duration_seconds": 2.389,
+  "error": null
+}

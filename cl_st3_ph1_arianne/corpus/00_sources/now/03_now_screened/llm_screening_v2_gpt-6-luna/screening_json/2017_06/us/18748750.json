@@ -1,0 +1,77 @@
+{
+  "article_id": "18748750",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/us/18748750.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/us/18748750.json"
+  },
+  "manifest_row": {
+    "article_id": "18748750",
+    "group": "2017_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/us/18748750.txt",
+    "now_field_2": "379",
+    "date_original": "17-06-01",
+    "date_iso": "2017-06-01",
+    "source_name": "Fox Business",
+    "url": "http://www.foxbusiness.com/features/2017/06/01/news-highlights-top-company-news-day0.html",
+    "title": "News Highlights: Top Company News of the Day",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "A roundup of company news, including shareholder pressure on Exxon to disclose climate-related risks.",
+    "climate_relevance": "One item explicitly discusses climate change and regulation as risks Exxon shareholders want the company to address, but climate is not the roundup’s main focus.",
+    "reason": "The text contains meaningful climate-related corporate discourse, but it is one brief item among several unrelated business-news highlights.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0a96801dd8a4c87b13fefb78c0620ba224574a7c957e2c749514c8d1d793ebef",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "985fa0767ccd07ad861e988d91c85eec1d281fb83996dc5d6c089d5cff1418c1",
+    "raw_response_text_sha256": "b7234f156b422a991d34af71a614abe6c3a93323bfad7f67cd597bbfaf042bd6"
+  },
+  "api_metadata": {
+    "id": "resp_0c77e584fed0c7b9006b060abb5c7487d2b05e70934247ca42",
+    "model": "gpt-6-luna",
+    "created_at": 1795558075.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 996,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 1262
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A roundup of company news, including shareholder pressure on Exxon to disclose climate-related risks.\",\n  \"climate_relevance\": \"One item explicitly discusses climate change and regulation as risks Exxon shareholders want the company to address, but climate is not the roundup’s main focus.\",\n  \"reason\": \"The text contains meaningful climate-related corporate discourse, but it is one brief item among several unrelated business-news highlights.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:07:57Z",
+  "duration_seconds": 2.356,
+  "error": null
+}

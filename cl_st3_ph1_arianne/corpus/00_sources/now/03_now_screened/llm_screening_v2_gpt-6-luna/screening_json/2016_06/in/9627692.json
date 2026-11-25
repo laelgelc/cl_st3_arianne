@@ -1,0 +1,77 @@
+{
+  "article_id": "9627692",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_06/in/9627692.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_06/in/9627692.json"
+  },
+  "manifest_row": {
+    "article_id": "9627692",
+    "group": "2016_06",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_06/in/9627692.txt",
+    "now_field_2": "629",
+    "date_original": "16-06-29",
+    "date_iso": "2016-06-29",
+    "source_name": "Times of India",
+    "url": "http://timesofindia.indiatimes.com/city/goa/GSPCB-grants-consent-to-airport-at-Mopa/articleshow/52980536.cms",
+    "title": "GSPCB grants consent to airport at Mopa",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-06-uda/16-06-in.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Regulatory approval and development plans for the Mopa airport in Goa",
+    "climate_relevance": "Climate change appears only in the formal name of the Ministry of Environment, Forest and Climate Change; the article contains no meaningful discussion of climate issues.",
+    "reason": "The report focuses on airport consent, construction, and waste-management conditions. The climate reference is incidental, and the unrelated popular-news snippets do not add climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0bdc4766fcd2bd6c2d7be93497a9d63691dda020e8fe52dec037f3e15b5f207c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ff164b00a11a53985aa07592ae187bf8a30da28036395020647535dac4243e86",
+    "raw_response_text_sha256": "3d3d612e90937e38744e25da327469a882636040f8825fa9a61329d4c363439f"
+  },
+  "api_metadata": {
+    "id": "resp_02d6edc5a6c48f91006b065141603887d1a8cb6fe4dc6ed7cd",
+    "model": "gpt-6-luna",
+    "created_at": 1795576129.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1388,
+      "input_tokens_details": {
+        "cache_write_tokens": 1385,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1385
+        }
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 1654
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Regulatory approval and development plans for the Mopa airport in Goa\",\n  \"climate_relevance\": \"Climate change appears only in the formal name of the Ministry of Environment, Forest and Climate Change; the article contains no meaningful discussion of climate issues.\",\n  \"reason\": \"The report focuses on airport consent, construction, and waste-management conditions. The climate reference is incidental, and the unrelated popular-news snippets do not add climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:08:51Z",
+  "duration_seconds": 2.599,
+  "error": null
+}

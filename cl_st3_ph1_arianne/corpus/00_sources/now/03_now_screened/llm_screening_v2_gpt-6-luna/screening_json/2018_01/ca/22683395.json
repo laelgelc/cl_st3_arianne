@@ -1,0 +1,77 @@
+{
+  "article_id": "22683395",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_01/ca/22683395.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_01/ca/22683395.json"
+  },
+  "manifest_row": {
+    "article_id": "22683395",
+    "group": "2018_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_01/ca/22683395.txt",
+    "now_field_2": "198",
+    "date_original": "18-01-10",
+    "date_iso": "2018-01-10",
+    "source_name": "HalifaxToday.ca",
+    "url": "https://www.halifaxtoday.ca/local-news/meteorologists-warn-of-storms-coming-late-friday-and-saturday-810170",
+    "title": "Meteorologists warn of storms coming late Friday and Saturday",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
+    "metadata_article_files": "[\"text-18-01/text_18-01-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A forecast of rain and possible freezing rain",
+    "climate_relevance": "The phrase “Environment and Climate Change Canada” appears only as the name of the weather agency; the text contains no meaningful discussion of climate change.",
+    "reason": "This is a short-term weather forecast, and the climate reference is incidental to the agency name.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c895a8f55764983bed551a71ca7cc4d0a221ed188f5fdad9b888baf8730c7bc5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "51fde6bb6fce4da918817428aaa85a340ff4bf6c67f349821446472d05ab2bb7",
+    "raw_response_text_sha256": "35e00710fb669804e0d1e1ee7ee8a70252312aa442cd1770e46e125ba9baea3f"
+  },
+  "api_metadata": {
+    "id": "resp_054cdc7d66d74b42006b06106aafec87d29b400d03573cedfb",
+    "model": "gpt-6-luna",
+    "created_at": 1795559530.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 721,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 170,
+      "output_tokens_details": {
+        "reasoning_tokens": 34
+      },
+      "total_tokens": 891
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A forecast of rain and possible freezing rain\",\n  \"climate_relevance\": \"The phrase “Environment and Climate Change Canada” appears only as the name of the weather agency; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"This is a short-term weather forecast, and the climate reference is incidental to the agency name.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:32:12Z",
+  "duration_seconds": 1.715,
+  "error": null
+}

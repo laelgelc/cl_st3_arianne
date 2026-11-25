@@ -1,0 +1,77 @@
+{
+  "article_id": "24826427",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/ca/24826427.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/ca/24826427.json"
+  },
+  "manifest_row": {
+    "article_id": "24826427",
+    "group": "2018_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/ca/24826427.txt",
+    "now_field_2": "423",
+    "date_original": "18-05-24",
+    "date_iso": "2018-05-24",
+    "source_name": "The Sarnia Journal",
+    "url": "http://thesarniajournal.ca/independent-fanina-kodre-attempting-to-build-new-party/",
+    "title": "Independent Fanina Kodre attempting to build new party",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A political candidate forming a new party and its provincial policy proposals",
+    "climate_relevance": "Climate change appears only in the candidate's occupation in the closing biographical details; the article contains no meaningful climate-related discussion.",
+    "reason": "The article focuses on the candidate, her party, and Ontario public services. The climate reference is a brief biographical label, not substantive discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "dc4ff65240a1f56b2d834e8f7bd23b1a75dd55e30f1f8838d4444d9bef74a2a8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ab0fbe96884462e66aca285e295d5fb6ed6d60b6d68b7467943757581a12dc96",
+    "raw_response_text_sha256": "a9a31d7a64291013a7011b22d11a3e6ef84f37619344c87d1394b6fcdf9aa2b6"
+  },
+  "api_metadata": {
+    "id": "resp_040f4f2ec8c3be90006b0612cef71c87d2b177097eb89f9a52",
+    "model": "gpt-6-luna",
+    "created_at": 1795560143.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1055,
+      "input_tokens_details": {
+        "cache_write_tokens": 1052,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1052
+        }
+      },
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1262
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A political candidate forming a new party and its provincial policy proposals\",\n  \"climate_relevance\": \"Climate change appears only in the candidate's occupation in the closing biographical details; the article contains no meaningful climate-related discussion.\",\n  \"reason\": \"The article focuses on the candidate, her party, and Ontario public services. The climate reference is a brief biographical label, not substantive discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:42:24Z",
+  "duration_seconds": 2.048,
+  "error": null
+}

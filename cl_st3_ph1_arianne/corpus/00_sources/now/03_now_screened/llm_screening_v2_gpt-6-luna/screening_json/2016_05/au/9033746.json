@@ -1,0 +1,77 @@
+{
+  "article_id": "9033746",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_05/au/9033746.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_05/au/9033746.json"
+  },
+  "manifest_row": {
+    "article_id": "9033746",
+    "group": "2016_05",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_05/au/9033746.txt",
+    "now_field_2": "669",
+    "date_original": "16-05-26",
+    "date_iso": "2016-05-26",
+    "source_name": "The Australian Financial Review",
+    "url": "http://www.afr.com/business/infrastructure/politicians-should-stop-putting-a-spin-on-economic-challenges-20160526-gp473m",
+    "title": "Politicians should stop putting a spin on economic challenges",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-05-bvk/16-05-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.9,
+    "climate_role": "passing",
+    "main_topic": "Economic policy and budget management in an election campaign",
+    "climate_relevance": "Climate change is briefly listed as one of several medium-term structural challenges, without discussion of its causes, impacts, or policy responses.",
+    "reason": "The text is primarily about election economics, budgets, and structural reform. Its single passing reference to climate change does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "31231edb597bde7a6fed1257f1967f7db58579581453372f7ccde552d9a0bac5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d6bf424f56d9ac92eacb86cfb9dab758d13d45641cbcda292a75d8d777b287e2",
+    "raw_response_text_sha256": "3d6153941b04f318c93885bc1e419f2f750ce658e7c4c24d79df27faae9b549e"
+  },
+  "api_metadata": {
+    "id": "resp_01b903c32c6f6493006b0650d49b2087d1bb5732bdd29edf38",
+    "model": "gpt-6-luna",
+    "created_at": 1795576020.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1356,
+      "input_tokens_details": {
+        "cache_write_tokens": 1353,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1353
+        }
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 158
+      },
+      "total_tokens": 1654
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Economic policy and budget management in an election campaign\",\n  \"climate_relevance\": \"Climate change is briefly listed as one of several medium-term structural challenges, without discussion of its causes, impacts, or policy responses.\",\n  \"reason\": \"The text is primarily about election economics, budgets, and structural reform. Its single passing reference to climate change does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:07:03Z",
+  "duration_seconds": 2.583,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "41646413",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/sg/41646413.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/sg/41646413.json"
+  },
+  "manifest_row": {
+    "article_id": "41646413",
+    "group": "2020_01",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/sg/41646413.txt",
+    "now_field_2": "5532",
+    "date_original": "20-01-13",
+    "date_iso": "2020-01-13",
+    "source_name": "theindependent.sg",
+    "url": "http://theindependent.sg/news/singapore/feed/",
+    "title": "Home News - The Independent News",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A collection of Singapore news snippets, predominantly about the COVID-19 outbreak, with other items on social and political issues.",
+    "climate_relevance": "One snippet on an economic plan lists funding efforts to curb climate change among several proposed uses of public funds.",
+    "reason": "Climate change is mentioned in a meaningful policy context, but only briefly and as one item in a list; it is not the focus of the available coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c0ba6e966400767946037a96117e5bc26e2634eed012fe38344ea89ab5e98b37",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "eaf813f30243673355941fa4ffb5a82278c7b1539a9a6ac9ebee6991d10c153d",
+    "raw_response_text_sha256": "e61d74a2e43cb258fdc98deea111681b02ea1820d002b09f57d37ffa69f10204"
+  },
+  "api_metadata": {
+    "id": "resp_09a0ca95aeab85e5006b062296166c87d29cebce094529e666",
+    "model": "gpt-6-luna",
+    "created_at": 1795564182.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8668,
+      "input_tokens_details": {
+        "cache_write_tokens": 8665,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 8665
+        }
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 8935
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of Singapore news snippets, predominantly about the COVID-19 outbreak, with other items on social and political issues.\",\n  \"climate_relevance\": \"One snippet on an economic plan lists funding efforts to curb climate change among several proposed uses of public funds.\",\n  \"reason\": \"Climate change is mentioned in a meaningful policy context, but only briefly and as one item in a list; it is not the focus of the available coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:49:44Z",
+  "duration_seconds": 2.638,
+  "error": null
+}

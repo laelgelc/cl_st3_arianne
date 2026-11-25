@@ -1,0 +1,77 @@
+{
+  "article_id": "23039311",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_02/us/23039311.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_02/us/23039311.json"
+  },
+  "manifest_row": {
+    "article_id": "23039311",
+    "group": "2018_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_02/us/23039311.txt",
+    "now_field_2": "1061",
+    "date_original": "18-02-05",
+    "date_iso": "2018-02-05",
+    "source_name": "USA TODAY",
+    "url": "https://www.usatoday.com/story/opinion/2018/02/05/we-monitor-everyone-dealing-nuclear-weapons-except-presidents-bandy-lee-james-merikangas-column/1088561001/",
+    "title": "Why do we monitor everyone in charge of nuclear weapons except ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-02.txt\"]",
+    "metadata_article_files": "[\"text-18-02/text_18-02-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.84,
+    "climate_role": "passing",
+    "main_topic": "Nuclear weapons risk and calls for evaluating President Trump's fitness to command a nuclear strike",
+    "climate_relevance": "The opening links Trump's minimization of climate science to the Doomsday Clock's assessment of global catastrophe risk, but the article does not otherwise discuss climate change.",
+    "reason": "The article is primarily about nuclear weapons and presidential oversight. Its climate reference provides a relevant framing of climate-science minimization as a risk factor, but is too brief for CORE classification.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3b419f50ef6e9913b342d25fb8ade0da006ef22fc36cf09267b93ce61c8b6fa6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2817c5a5e42f3403fb5a2d8667c7594b5b6923b538c8ad0906a2140df1e59037",
+    "raw_response_text_sha256": "98950433dee40f9f157b723e69dcfd87064d67ac13ff73753c16d89d63917451"
+  },
+  "api_metadata": {
+    "id": "resp_002bde20f5bddb70006b0610cef48c87d28647203c705dce01",
+    "model": "gpt-6-luna",
+    "created_at": 1795559631.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1767,
+      "input_tokens_details": {
+        "cache_write_tokens": 1764,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1764
+        }
+      },
+      "output_tokens": 369,
+      "output_tokens_details": {
+        "reasoning_tokens": 208
+      },
+      "total_tokens": 2136
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.84,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Nuclear weapons risk and calls for evaluating President Trump's fitness to command a nuclear strike\",\n  \"climate_relevance\": \"The opening links Trump's minimization of climate science to the Doomsday Clock's assessment of global catastrophe risk, but the article does not otherwise discuss climate change.\",\n  \"reason\": \"The article is primarily about nuclear weapons and presidential oversight. Its climate reference provides a relevant framing of climate-science minimization as a risk factor, but is too brief for CORE classification.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:33:54Z",
+  "duration_seconds": 3.264,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "24356068",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_04/gb/24356068.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_04/gb/24356068.json"
+  },
+  "manifest_row": {
+    "article_id": "24356068",
+    "group": "2018_04",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_04/gb/24356068.txt",
+    "now_field_2": "698",
+    "date_original": "18-04-26",
+    "date_iso": "2018-04-26",
+    "source_name": "BBC News",
+    "url": "http://www.bbc.co.uk/news/world-us-canada-43903897",
+    "title": "Macron sees Trump dropping Iran nuclear deal",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-04.txt\"]",
+    "metadata_article_files": "[\"text-18-04/18-04-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "The Iran nuclear deal and Macron’s efforts to persuade Trump not to abandon it",
+    "climate_relevance": "Climate change appears only in brief references to US positions on global issues and the possibility of rejoining the Paris climate accord.",
+    "reason": "The article focuses on the Iran nuclear agreement. Its climate references are passing mentions without meaningful discussion of climate policy or its implications.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "297b2ef238e1ce98f587eac44c5b4e38e33f6639444c6df120ef630eb7614779",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5807031ad1be744212c44f744830a7d84f08b5517dca44795a9925c8460b1e95",
+    "raw_response_text_sha256": "fe8574a653c240566558a7c472de3e0398eed93c9e3f54c8ce0bae7fca65a062"
+  },
+  "api_metadata": {
+    "id": "resp_0f9d9685238bef7e006b06125b11ec87d2b01233dbec045083",
+    "model": "gpt-6-luna",
+    "created_at": 1795560027.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1400,
+      "input_tokens_details": {
+        "cache_write_tokens": 1397,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1397
+        }
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 203
+      },
+      "total_tokens": 1742
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The Iran nuclear deal and Macron’s efforts to persuade Trump not to abandon it\",\n  \"climate_relevance\": \"Climate change appears only in brief references to US positions on global issues and the possibility of rejoining the Paris climate accord.\",\n  \"reason\": \"The article focuses on the Iran nuclear agreement. Its climate references are passing mentions without meaningful discussion of climate policy or its implications.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:40:30Z",
+  "duration_seconds": 3.089,
+  "error": null
+}

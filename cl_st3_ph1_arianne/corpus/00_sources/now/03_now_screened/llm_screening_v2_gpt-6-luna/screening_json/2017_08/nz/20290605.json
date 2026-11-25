@@ -1,0 +1,77 @@
+{
+  "article_id": "20290605",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/nz/20290605.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/nz/20290605.json"
+  },
+  "manifest_row": {
+    "article_id": "20290605",
+    "group": "2017_08",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/nz/20290605.txt",
+    "now_field_2": "635",
+    "date_original": "17-08-30",
+    "date_iso": "2017-08-30",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1708/S00867/climate-change-realities-addressed-by-regional-council.htm",
+    "title": "Climate change realities addressed by regional council",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Waikato Regional Council's guideline for adapting to climate change risks",
+    "climate_relevance": "The main article focuses on climate change impacts and adaptation planning, including sea-level rise, flooding, drought, infrastructure risks, and council responses.",
+    "reason": "Climate change is the central subject throughout the main article. The additional 'ALSO' items are unrelated snippets and do not alter the classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "166b2a7cbcd7df56d3afa94490322c3ea9127642268f465fbc373d7f569b6022",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "269547c03d2d050a826b9b7bb025e3e45b25652230947d57a081ba25c5f6efe7",
+    "raw_response_text_sha256": "b0dc673eb634cdf515bb279e6c8781227af43eb84edbadb4eed3593163e57fa7"
+  },
+  "api_metadata": {
+    "id": "resp_035fe264ee36a588006b060d152b3487d2bee909eebc334e7d",
+    "model": "gpt-6-luna",
+    "created_at": 1795558677.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1311,
+      "input_tokens_details": {
+        "cache_write_tokens": 1308,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1308
+        }
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 1509
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Waikato Regional Council's guideline for adapting to climate change risks\",\n  \"climate_relevance\": \"The main article focuses on climate change impacts and adaptation planning, including sea-level rise, flooding, drought, infrastructure risks, and council responses.\",\n  \"reason\": \"Climate change is the central subject throughout the main article. The additional 'ALSO' items are unrelated snippets and do not alter the classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:58Z",
+  "duration_seconds": 1.743,
+  "error": null
+}

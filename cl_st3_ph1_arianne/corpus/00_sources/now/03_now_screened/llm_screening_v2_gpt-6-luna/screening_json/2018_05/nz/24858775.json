@@ -1,0 +1,77 @@
+{
+  "article_id": "24858775",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/nz/24858775.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/nz/24858775.json"
+  },
+  "manifest_row": {
+    "article_id": "24858775",
+    "group": "2018_05",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/nz/24858775.txt",
+    "now_field_2": "1130",
+    "date_original": "18-05-27",
+    "date_iso": "2018-05-27",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1805/S00613/victory-for-rural-communities.htm",
+    "title": "Victory for Rural Communities",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "Local restrictions on outdoor use of genetically modified organisms and protection of GE-free agricultural communities",
+    "climate_relevance": "A separate snippet calls for climate-change adaptation to be integrated urgently into the work of organisations and sectors across New Zealand.",
+    "reason": "The identifiable main article concerns GMO policy, not climate change. However, the supplied text includes a meaningful sentence about planning for climate-change adaptation, making it peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "515edfa310c70fd130053ca9d551754891460b08dd4e8d094655e2a6c8a580a7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "35811f1f2e9bd75277579dc5b01b6dd2ec1aef38cdc486f3665144085d0f0e63",
+    "raw_response_text_sha256": "77f969f3e7a26ff59a667e59ad843cf698b60f510ea4a54bcb8660c264325faa"
+  },
+  "api_metadata": {
+    "id": "resp_0fa3319c8debd9f2006b0612db0a7887d29868447c62853055",
+    "model": "gpt-6-luna",
+    "created_at": 1795560155.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1988,
+      "input_tokens_details": {
+        "cache_write_tokens": 1985,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1985
+        }
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 2241
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Local restrictions on outdoor use of genetically modified organisms and protection of GE-free agricultural communities\",\n  \"climate_relevance\": \"A separate snippet calls for climate-change adaptation to be integrated urgently into the work of organisations and sectors across New Zealand.\",\n  \"reason\": \"The identifiable main article concerns GMO policy, not climate change. However, the supplied text includes a meaningful sentence about planning for climate-change adaptation, making it peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:42:37Z",
+  "duration_seconds": 2.054,
+  "error": null
+}

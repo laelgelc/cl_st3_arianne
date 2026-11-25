@@ -1,0 +1,77 @@
+{
+  "article_id": "52183166",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/pk/52183166.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/pk/52183166.json"
+  },
+  "manifest_row": {
+    "article_id": "52183166",
+    "group": "2020_11",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/pk/52183166.txt",
+    "now_field_2": "766",
+    "date_original": "20-11-09",
+    "date_iso": "2020-11-09",
+    "source_name": "dailytimes.com.pk",
+    "url": "https://dailytimes.com.pk/686933/govt-taking-measures-to-control-smog-amin-aslam/",
+    "title": "Govt taking measures to control smog: Amin Aslam - Daily Times",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Government measures to reduce smog and its health effects in Pakistan",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Climate Change. Fossil-fuel emissions are discussed as contributors to smog and air pollution, not as climate-change causes or impacts.",
+    "reason": "The text is substantially about smog, its health hazards, and measures to prevent crop-residue burning. It contains no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "24c2c12ee0e94395d4708cc7150266973a3315c95feea7907ae19d745dc3484e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e17bf66e243d3dfa9d7e88de4135bc4139d37608521acd66072c2938dd1f3b2e",
+    "raw_response_text_sha256": "52a562bcea67768222c7d585fdd3a79aa4a28f5389bda50906393f2bacaa189f"
+  },
+  "api_metadata": {
+    "id": "resp_0e603e23f29c0e64006b063012b09c87d198e76d63cb9112fb",
+    "model": "gpt-6-luna",
+    "created_at": 1795567634.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1462,
+      "input_tokens_details": {
+        "cache_write_tokens": 1459,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1459
+        }
+      },
+      "output_tokens": 376,
+      "output_tokens_details": {
+        "reasoning_tokens": 216
+      },
+      "total_tokens": 1838
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Government measures to reduce smog and its health effects in Pakistan\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Climate Change. Fossil-fuel emissions are discussed as contributors to smog and air pollution, not as climate-change causes or impacts.\",\n  \"reason\": \"The text is substantially about smog, its health hazards, and measures to prevent crop-residue burning. It contains no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:47:17Z",
+  "duration_seconds": 3.126,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50612153",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/gb/50612153.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/gb/50612153.json"
+  },
+  "manifest_row": {
+    "article_id": "50612153",
+    "group": "2019_04",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/gb/50612153.txt",
+    "now_field_2": "178",
+    "date_original": "19-04-20",
+    "date_iso": "2019-04-20",
+    "source_name": "BBC News",
+    "url": "https://www.bbc.co.uk/news/uk-england-leeds-47999394",
+    "title": "Ilkley Moor fire: Crews battling 'intense' moorland blaze",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "A moorland fire on Ilkley Moor and the firefighting response",
+    "climate_relevance": "A quoted comment links the fire and intense heat to the need to tackle climate change.",
+    "reason": "The report is mainly about the blaze, but the explicit climate-change comment provides meaningful, if brief, climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "423ef5927c5680141c4bb417bb4973db3fb6965bf49b14c715350d1519064805",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6726fb2229cb2615be3f368b0adaea45340e7f9ec7f513aa1be96693f9ff6592",
+    "raw_response_text_sha256": "38cb00e7f1c6c6af70aa8b939cbf7ad1ea93d10c08d1a4ff62d74be96eaae99a"
+  },
+  "api_metadata": {
+    "id": "resp_09f131a54a7c4e49006b0629c3115c87d1a85ad0aeddeb6ae2",
+    "model": "gpt-6-luna",
+    "created_at": 1795566019.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 722,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 947
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A moorland fire on Ilkley Moor and the firefighting response\",\n  \"climate_relevance\": \"A quoted comment links the fire and intense heat to the need to tackle climate change.\",\n  \"reason\": \"The report is mainly about the blaze, but the explicit climate-change comment provides meaningful, if brief, climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:20:21Z",
+  "duration_seconds": 2.386,
+  "error": null
+}

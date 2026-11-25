@@ -1,0 +1,77 @@
+{
+  "article_id": "17057118",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/lk/17057118.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/lk/17057118.json"
+  },
+  "manifest_row": {
+    "article_id": "17057118",
+    "group": "2017_02",
+    "country_code": "lk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/lk/17057118.txt",
+    "now_field_2": "576",
+    "date_original": "17-02-22",
+    "date_iso": "2017-02-22",
+    "source_name": "Daily Mirror",
+    "url": "http://www.dailymirror.lk/article/Dr-Priyantha-Wijayatunga-appointed-as-ADB-South-Asia-Energy-Division-Director-124328.html",
+    "title": "Dr. Priyantha Wijayatunga appointed as ADB South Asia Energy ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-LK.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The appointment and professional biography of an energy-sector executive.",
+    "climate_relevance": "Climate change appears only in the name of an ADB department; the text provides no meaningful discussion of climate change or its implications.",
+    "reason": "The article focuses on Dr. Wijayatunga’s career, qualifications, and energy-sector work. The department-name reference is incidental and does not contribute substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "119b2030ac23e223b310824d40f23d557f9bddda4fd6abe1f97de538ae5c2e1d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "332c82e331557be2d830e9ce6dbfe3cb1fe56741183cbddfa618ea7e0faae4eb",
+    "raw_response_text_sha256": "15ce0d7d183843d9b012bcab2990adf26b26d97eaa286cabfd5f016ad5510e0f"
+  },
+  "api_metadata": {
+    "id": "resp_02d2d8b3039b2eeb006b060883158887d2bee2f7266759f702",
+    "model": "gpt-6-luna",
+    "created_at": 1795557507.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1186,
+      "input_tokens_details": {
+        "cache_write_tokens": 1183,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1183
+        }
+      },
+      "output_tokens": 214,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1400
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The appointment and professional biography of an energy-sector executive.\",\n  \"climate_relevance\": \"Climate change appears only in the name of an ADB department; the text provides no meaningful discussion of climate change or its implications.\",\n  \"reason\": \"The article focuses on Dr. Wijayatunga’s career, qualifications, and energy-sector work. The department-name reference is incidental and does not contribute substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:58:28Z",
+  "duration_seconds": 1.76,
+  "error": null
+}

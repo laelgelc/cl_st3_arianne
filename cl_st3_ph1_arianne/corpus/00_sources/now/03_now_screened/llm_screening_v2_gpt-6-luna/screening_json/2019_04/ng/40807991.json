@@ -1,0 +1,77 @@
+{
+  "article_id": "40807991",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/ng/40807991.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/ng/40807991.json"
+  },
+  "manifest_row": {
+    "article_id": "40807991",
+    "group": "2019_04",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/ng/40807991.txt",
+    "now_field_2": "377",
+    "date_original": "19-04-06",
+    "date_iso": "2019-04-06",
+    "source_name": "TODAY.NG",
+    "url": "https://www.today.ng/news/nigeria/nigeria-suffers-severe-heatwave-relief-sight-210084",
+    "title": "Nigeria suffers severe heatwave with no relief in sight",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-ng1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "climate_role": "central",
+    "main_topic": "A severe heatwave in Nigeria and its health impacts, with discussion of climate change and emissions-reduction measures.",
+    "climate_relevance": "Climate change is explicitly connected to public-health risk, and experts call for long-term measures to reduce its effects.",
+    "reason": "The identifiable main article focuses on extreme heat and meaningfully discusses climate change impacts and mitigation. Several unrelated news snippets appear after it.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e8bde9148f961ddf4fd08766896e76a1635a85b59789f47b81c9063acaa3b418",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2a4d3ea17f21311953c3be0af508035e411bd379573256d60bb4b84f19447ec8",
+    "raw_response_text_sha256": "32cf773e852d6d9720a4754bc972fbbf0d4a0abc423ca2263011b5d44f4fc78b"
+  },
+  "api_metadata": {
+    "id": "resp_09820f4a0ff3447e006b061fcbed9887d2a7bd16db313291bb",
+    "model": "gpt-6-luna",
+    "created_at": 1795563468.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 996,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1213
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"A severe heatwave in Nigeria and its health impacts, with discussion of climate change and emissions-reduction measures.\",\n  \"climate_relevance\": \"Climate change is explicitly connected to public-health risk, and experts call for long-term measures to reduce its effects.\",\n  \"reason\": \"The identifiable main article focuses on extreme heat and meaningfully discusses climate change impacts and mitigation. Several unrelated news snippets appear after it.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:49Z",
+  "duration_seconds": 2.115,
+  "error": null
+}

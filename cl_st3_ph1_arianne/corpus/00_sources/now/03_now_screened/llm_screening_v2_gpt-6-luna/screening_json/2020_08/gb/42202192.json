@@ -1,0 +1,77 @@
+{
+  "article_id": "42202192",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/gb/42202192.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/gb/42202192.json"
+  },
+  "manifest_row": {
+    "article_id": "42202192",
+    "group": "2020_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/gb/42202192.txt",
+    "now_field_2": "688",
+    "date_original": "20-08-18",
+    "date_iso": "2020-08-18",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/tory-mps-want-gavin-williamson-to-resign-according-to-the-telegraph-1-6792989",
+    "title": "Tories call for `disgraced' and `useless' Gavin Williamson ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The controversy over the handling of A-Level results during the coronavirus pandemic",
+    "climate_relevance": "Climate change appears only in repeated publication-description boilerplate and is not discussed in the article.",
+    "reason": "The article focuses on exam grading and calls for the education secretary to resign; the climate references are promotional boilerplate rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ba3716e07db296160d78c9b85dd6ca6e35a0411c561d686e06d5d2b50ca245da",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "65a4a5557064eccd74303b16ba0719c4629d9b97ede71d41d6ee16bc04f3f236",
+    "raw_response_text_sha256": "df9c623bf70ff872aa4d24e9e0c12e0107e2d82bee2c1ca491c5be098f69a935"
+  },
+  "api_metadata": {
+    "id": "resp_07f69b4e6c2e20cb006b062501e4fc87d2bbedfe7144982c5d",
+    "model": "gpt-6-luna",
+    "created_at": 1795564802.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1386,
+      "input_tokens_details": {
+        "cache_write_tokens": 1383,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1383
+        }
+      },
+      "output_tokens": 202,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 1588
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The controversy over the handling of A-Level results during the coronavirus pandemic\",\n  \"climate_relevance\": \"Climate change appears only in repeated publication-description boilerplate and is not discussed in the article.\",\n  \"reason\": \"The article focuses on exam grading and calls for the education secretary to resign; the climate references are promotional boilerplate rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:00:03Z",
+  "duration_seconds": 1.789,
+  "error": null
+}

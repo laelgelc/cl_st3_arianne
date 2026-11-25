@@ -1,0 +1,77 @@
+{
+  "article_id": "83819204",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/83819204.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/83819204.json"
+  },
+  "manifest_row": {
+    "article_id": "83819204",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/83819204.txt",
+    "now_field_2": "253",
+    "date_original": "20-02-14",
+    "date_iso": "2020-02-14",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "https://news.trust.org/item/20200215024352-2q5dd/",
+    "title": "U.S. to evacuate American citizens aboard quarantined cruise ship in Japan - WSJ",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Evacuation of U.S. citizens from the Diamond Princess cruise ship during a coronavirus outbreak",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news organization's coverage areas.",
+    "reason": "The article is about coronavirus evacuations and quarantine; it contains no meaningful climate-change discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3ea2765c054ec0a1ff87eecf978ec715077d3921f10f93ae3d84157bbfa572e2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0fd7d003a0cbf2f8f7533545f05b890b36da48f3448001e8cb5224c2bdcaeb6f",
+    "raw_response_text_sha256": "69e3ca5a105bbd89341830160065bf03597ebff0698b2b821dd31d66bed98546"
+  },
+  "api_metadata": {
+    "id": "resp_0e4b104a7c745bcc006b064a08288c87d19ac43001e6cbfdb9",
+    "model": "gpt-6-luna",
+    "created_at": 1795574280.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 838,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 159,
+      "output_tokens_details": {
+        "reasoning_tokens": 27
+      },
+      "total_tokens": 997
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Evacuation of U.S. citizens from the Diamond Princess cruise ship during a coronavirus outbreak\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news organization's coverage areas.\",\n  \"reason\": \"The article is about coronavirus evacuations and quarantine; it contains no meaningful climate-change discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:38:01Z",
+  "duration_seconds": 1.61,
+  "error": null
+}

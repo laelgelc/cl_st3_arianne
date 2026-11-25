@@ -1,0 +1,77 @@
+{
+  "article_id": "60814962",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/ca/60814962.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/ca/60814962.json"
+  },
+  "manifest_row": {
+    "article_id": "60814962",
+    "group": "2019_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/ca/60814962.txt",
+    "now_field_2": "342",
+    "date_original": "19-05-08",
+    "date_iso": "2019-05-08",
+    "source_name": "Toronto Star",
+    "url": "https://www.thestar.com/news/canada/2019/05/08/winnipeg-man-found-guilty-of-murdering-indigenous-woman-christine-wood.html",
+    "title": "Winnipeg man found guilty of murdering Indigenous woman Christine ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Canada's failure to prosecute Volkswagen over emissions cheating and pollution regulation",
+    "climate_relevance": "The article links vehicle emissions and delayed clean-technology development to climate-warming emissions and broader climate and pollution crises, but its main focus is corporate accountability and air pollution.",
+    "reason": "The supplied text contains an unrelated murder-trial snippet followed by an opinion article about the Volkswagen emissions scandal. The latter includes meaningful climate-related discussion, but climate change is not its central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "62d577107bd51c8180e72c9605028d9722ff1ae7f797853d937cfdedb5bd8d73",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3be488d9be54def6e8fbab6d17770d7c0ec236fb2a9c236ed82e6891a9310acc",
+    "raw_response_text_sha256": "dbcc654e1bc5764f124aa6f5078b27438c2becd51d4e343ab7d078ffbb1e9d71"
+  },
+  "api_metadata": {
+    "id": "resp_02624f02461248d9006b0634ac4cac87d1b115134ba1b7b58e",
+    "model": "gpt-6-luna",
+    "created_at": 1795568812.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1770,
+      "input_tokens_details": {
+        "cache_write_tokens": 1767,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1767
+        }
+      },
+      "output_tokens": 330,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 2100
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Canada's failure to prosecute Volkswagen over emissions cheating and pollution regulation\",\n  \"climate_relevance\": \"The article links vehicle emissions and delayed clean-technology development to climate-warming emissions and broader climate and pollution crises, but its main focus is corporate accountability and air pollution.\",\n  \"reason\": \"The supplied text contains an unrelated murder-trial snippet followed by an opinion article about the Volkswagen emissions scandal. The latter includes meaningful climate-related discussion, but climate change is not its central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:06:55Z",
+  "duration_seconds": 2.836,
+  "error": null
+}

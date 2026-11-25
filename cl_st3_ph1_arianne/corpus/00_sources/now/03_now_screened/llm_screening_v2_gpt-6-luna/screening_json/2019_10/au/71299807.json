@@ -1,0 +1,77 @@
+{
+  "article_id": "71299807",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/au/71299807.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/au/71299807.json"
+  },
+  "manifest_row": {
+    "article_id": "71299807",
+    "group": "2019_10",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/au/71299807.txt",
+    "now_field_2": "1207",
+    "date_original": "19-10-17",
+    "date_iso": "2019-10-17",
+    "source_name": "abc.net.au",
+    "url": "https://www.abc.net.au/news/2019-10-14/australia-urged-to-ban-import-of-gloves-from-ansell-supplier-wrp/11594690",
+    "title": "Australia urged to follow US, ban shipments of rubber ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Forced labour and modern slavery in rubber-glove supply chains",
+    "climate_relevance": "The identifiable main article does not discuss climate change. A separate appended snippet about desertification compares human activities to climate change, but climate is not its focus.",
+    "reason": "The main article is about forced labour allegations, import restrictions, and corporate responsibility. The later desertification material appears to be a separate article and contains only a brief climate-change comparison, so it does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2c780467a99c9b5a2dc5fc8700bea65bd79d6716b7b6bfa6d9b7f36427c34355",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e7ed026d9bf77e674fa52e4c1a07bfc1b60434fc7d83c2c32be84659d33ba2f8",
+    "raw_response_text_sha256": "92c6052436239a210dece9f0f3880743a2e5e544ecf20f8def0b895d71390c77"
+  },
+  "api_metadata": {
+    "id": "resp_0a8e2d5b644cf13b006b0640cf4a9c87d1ba55e18e1b09e9ce",
+    "model": "gpt-6-luna",
+    "created_at": 1795571919.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3248,
+      "input_tokens_details": {
+        "cache_write_tokens": 3245,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3245
+        }
+      },
+      "output_tokens": 450,
+      "output_tokens_details": {
+        "reasoning_tokens": 284
+      },
+      "total_tokens": 3698
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Forced labour and modern slavery in rubber-glove supply chains\",\n  \"climate_relevance\": \"The identifiable main article does not discuss climate change. A separate appended snippet about desertification compares human activities to climate change, but climate is not its focus.\",\n  \"reason\": \"The main article is about forced labour allegations, import restrictions, and corporate responsibility. The later desertification material appears to be a separate article and contains only a brief climate-change comparison, so it does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:58:43Z",
+  "duration_seconds": 4.054,
+  "error": null
+}

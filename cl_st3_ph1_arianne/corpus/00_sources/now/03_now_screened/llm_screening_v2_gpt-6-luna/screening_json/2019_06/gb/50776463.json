@@ -1,0 +1,77 @@
+{
+  "article_id": "50776463",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/gb/50776463.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/gb/50776463.json"
+  },
+  "manifest_row": {
+    "article_id": "50776463",
+    "group": "2019_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/gb/50776463.txt",
+    "now_field_2": "1800",
+    "date_original": "19-06-18",
+    "date_iso": "2019-06-18",
+    "source_name": "North Wales Live",
+    "url": "https://www.dailypost.co.uk/news/north-wales-news/six-young-entrepreneurs-share-secrets-16291304",
+    "title": "Six young entrepreneurs share the secrets of their success",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Young entrepreneurs and businesses in North Wales",
+    "climate_relevance": "The identifiable main article is about local businesses and contains no meaningful climate discourse. A separate appended report discusses a proposed fossil-fuel power station, net zero, and the energy transition.",
+    "reason": "The climate-related material belongs to an unrelated article appended after the entrepreneurship report, so it does not make the identifiable main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e765ad308f4cc5de6080d834f1bd8d48fb2c91207d54e7f0f6f04fdfed39aba9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ece498cc7b110984367979bc2f5e0815394c809c16ec02c5b25fb233aa52c9bd",
+    "raw_response_text_sha256": "946ccb989efcb0afcc65afcda0e487520d1657ac13732274168efc36dd8e116c"
+  },
+  "api_metadata": {
+    "id": "resp_0b649569e5f80a0b006b062adb84b087d1840d4ec7c2709e83",
+    "model": "gpt-6-luna",
+    "created_at": 1795566299.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3586,
+      "input_tokens_details": {
+        "cache_write_tokens": 3583,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3583
+        }
+      },
+      "output_tokens": 387,
+      "output_tokens_details": {
+        "reasoning_tokens": 234
+      },
+      "total_tokens": 3973
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Young entrepreneurs and businesses in North Wales\",\n  \"climate_relevance\": \"The identifiable main article is about local businesses and contains no meaningful climate discourse. A separate appended report discusses a proposed fossil-fuel power station, net zero, and the energy transition.\",\n  \"reason\": \"The climate-related material belongs to an unrelated article appended after the entrepreneurship report, so it does not make the identifiable main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:25:02Z",
+  "duration_seconds": 2.889,
+  "error": null
+}

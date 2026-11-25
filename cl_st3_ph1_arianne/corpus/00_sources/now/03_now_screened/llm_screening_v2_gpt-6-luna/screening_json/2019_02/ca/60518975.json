@@ -1,0 +1,77 @@
+{
+  "article_id": "60518975",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/ca/60518975.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/ca/60518975.json"
+  },
+  "manifest_row": {
+    "article_id": "60518975",
+    "group": "2019_02",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/ca/60518975.txt",
+    "now_field_2": "924",
+    "date_original": "19-02-06",
+    "date_iso": "2019-02-06",
+    "source_name": "The Globe and Mail",
+    "url": "https://www.theglobeandmail.com/business/article-senators-challenge-efficacy-of-liberals-resource-project-assessment/",
+    "title": "Senators challenge efficacy of Liberals' resource project assessment ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Canadian project-assessment legislation and the review and approval of major resource projects",
+    "climate_relevance": "Climate change appears only in the name of a government department. Renewable energy is mentioned as a project type, without discussion of climate change or its implications.",
+    "reason": "The article focuses on the complexity, timelines, and likely effects of Bill C-69 on resource-project approvals. The available text contains no meaningful climate-change discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4f1546c2da8119ae8fdb88366fc43f87cca39787b1c9f2992342cf09c8fbe762",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "12aef32deb1f531085ba4852924d31318dbf6a3726eff889be36bf2bcbaed9fc",
+    "raw_response_text_sha256": "d9537cbedb0788b3557319fe32d9ad162a79c8247a806964e9ea49a923ec29ff"
+  },
+  "api_metadata": {
+    "id": "resp_0f4e518675119695006b0632fb8ab087d1a27a5a4ca90d1c71",
+    "model": "gpt-6-luna",
+    "created_at": 1795568379.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1648,
+      "input_tokens_details": {
+        "cache_write_tokens": 1645,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1645
+        }
+      },
+      "output_tokens": 333,
+      "output_tokens_details": {
+        "reasoning_tokens": 177
+      },
+      "total_tokens": 1981
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Canadian project-assessment legislation and the review and approval of major resource projects\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government department. Renewable energy is mentioned as a project type, without discussion of climate change or its implications.\",\n  \"reason\": \"The article focuses on the complexity, timelines, and likely effects of Bill C-69 on resource-project approvals. The available text contains no meaningful climate-change discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:59:42Z",
+  "duration_seconds": 2.752,
+  "error": null
+}

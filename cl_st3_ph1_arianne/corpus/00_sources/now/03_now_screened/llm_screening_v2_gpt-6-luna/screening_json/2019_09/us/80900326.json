@@ -1,0 +1,77 @@
+{
+  "article_id": "80900326",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/80900326.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/80900326.json"
+  },
+  "manifest_row": {
+    "article_id": "80900326",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/80900326.txt",
+    "now_field_2": "1186",
+    "date_original": "19-09-04",
+    "date_iso": "2019-09-04",
+    "source_name": "Port Townsend Leader",
+    "url": "https://www.ptleader.com/stories/port-ludlow-golfers-swing-through-summer,64489",
+    "title": "Port Ludlow golfers swing through summer",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Local golf club tournaments and events",
+    "climate_relevance": "Climate change appears only in a brief, separate mention of a student demonstration calling for a faster response.",
+    "reason": "The text is primarily a golf-club report. The climate reference is confined to a passing line in an unrelated local-news snippet and does not provide substantive climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "67b53d28e690ec5358f64564824449d856cecbc93a9323dbcae1e42905f76204",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9b5dfa51ca32633d31efa9bdf0dc9f430c7096cd58819918d16f0c643da45f26",
+    "raw_response_text_sha256": "84d6008416ae399584d674eb44d7fc931cb130f609dc068030dd968cadd94ddc"
+  },
+  "api_metadata": {
+    "id": "resp_00648ec32c603b17006b0646b1befc87d1a0c7dbf3b28d3beb",
+    "model": "gpt-6-luna",
+    "created_at": 1795573425.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2142,
+      "input_tokens_details": {
+        "cache_write_tokens": 2139,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2139
+        }
+      },
+      "output_tokens": 385,
+      "output_tokens_details": {
+        "reasoning_tokens": 251
+      },
+      "total_tokens": 2527
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Local golf club tournaments and events\",\n  \"climate_relevance\": \"Climate change appears only in a brief, separate mention of a student demonstration calling for a faster response.\",\n  \"reason\": \"The text is primarily a golf-club report. The climate reference is confined to a passing line in an unrelated local-news snippet and does not provide substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:23:49Z",
+  "duration_seconds": 3.346,
+  "error": null
+}

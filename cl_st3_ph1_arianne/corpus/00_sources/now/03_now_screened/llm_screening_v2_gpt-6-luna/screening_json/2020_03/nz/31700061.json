@@ -1,0 +1,77 @@
+{
+  "article_id": "31700061",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/nz/31700061.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/nz/31700061.json"
+  },
+  "manifest_row": {
+    "article_id": "31700061",
+    "group": "2020_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/nz/31700061.txt",
+    "now_field_2": "1050",
+    "date_original": "20-03-10",
+    "date_iso": "2020-03-10",
+    "source_name": "tvnz.co.nz",
+    "url": "https://www.tvnz.co.nz/one-news/new-zealand/amnesty-international-raises-concerns-un-over-human-rights-kiwi-children",
+    "title": "Amnesty International raises concerns with UN over human ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "Amnesty International's concerns about children's rights in New Zealand; the text also includes an unrelated report on the funeral industry.",
+    "climate_relevance": "The children's-rights article notes recommendations concerning children most at risk from climate change in New Zealand, but climate change is not a central topic.",
+    "reason": "The climate reference is meaningful in the context of children's vulnerability and rights, so the text is relevant peripherally rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "74f10d53df7eabec829360ca8579fb5059272623f14fcddac82fbbf288856e90",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c50b7fdcf053268f1a9623640ad1853b1d071092f22a11d10af1d2e18aaee819",
+    "raw_response_text_sha256": "2b95405b091ce2c8c7bbb288172e9f14666deae8772ec601b9d7eaf51c869fd1"
+  },
+  "api_metadata": {
+    "id": "resp_0a35ed3a80f3ca71006b061908ba8487d28882138b15703958",
+    "model": "gpt-6-luna",
+    "created_at": 1795561736.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1762,
+      "input_tokens_details": {
+        "cache_write_tokens": 1759,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1759
+        }
+      },
+      "output_tokens": 309,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 2071
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Amnesty International's concerns about children's rights in New Zealand; the text also includes an unrelated report on the funeral industry.\",\n  \"climate_relevance\": \"The children's-rights article notes recommendations concerning children most at risk from climate change in New Zealand, but climate change is not a central topic.\",\n  \"reason\": \"The climate reference is meaningful in the context of children's vulnerability and rights, so the text is relevant peripherally rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:08:59Z",
+  "duration_seconds": 2.697,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "7627727",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_03/us/7627727.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_03/us/7627727.json"
+  },
+  "manifest_row": {
+    "article_id": "7627727",
+    "group": "2016_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_03/us/7627727.txt",
+    "now_field_2": "989",
+    "date_original": "16-03-10",
+    "date_iso": "2016-03-10",
+    "source_name": "Los Angeles Times",
+    "url": "http://www.latimes.com/world/mexico-americas/la-fg-sej-canada-arctic-climate-20160310-story.html",
+    "title": "US and Canada pledge to cut methane emissions as part of broad ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-03-sls/16-03-us.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "U.S.-Canada climate initiatives, including methane-emissions reductions, implementation of the Paris Agreement, and Arctic protection",
+    "climate_relevance": "The text substantially discusses climate policy, emissions, warming impacts, and competing responses from government, industry, and environmental groups.",
+    "reason": "Climate change and related policy are the article’s central focus. The text also contains duplicated and corrupted passages, including what appears to be an inserted pipeline-related snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3b647bff33f6024022b264dede43f1b6bc8ffd2c293ee6beb6cf2c4834c8ca60",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f41bf39a83d9ce5f15e36a447804daebf082c9780c51d8bc3075e46c42279782",
+    "raw_response_text_sha256": "ab6ac76fc3792a5e18ae22a1817b78d0e75157f047540906d72cdf444ffa7306"
+  },
+  "api_metadata": {
+    "id": "resp_02d2fc925263f25e006b0646447d7887d1bc036f0db85e9b6a",
+    "model": "gpt-6-luna",
+    "created_at": 1795573316.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1723,
+      "input_tokens_details": {
+        "cache_write_tokens": 1720,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1720
+        }
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 1961
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"U.S.-Canada climate initiatives, including methane-emissions reductions, implementation of the Paris Agreement, and Arctic protection\",\n  \"climate_relevance\": \"The text substantially discusses climate policy, emissions, warming impacts, and competing responses from government, industry, and environmental groups.\",\n  \"reason\": \"Climate change and related policy are the article’s central focus. The text also contains duplicated and corrupted passages, including what appears to be an inserted pipeline-related snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:21:58Z",
+  "duration_seconds": 2.538,
+  "error": null
+}

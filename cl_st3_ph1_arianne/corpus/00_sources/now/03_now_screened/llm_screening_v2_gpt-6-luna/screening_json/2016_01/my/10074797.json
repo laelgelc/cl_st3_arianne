@@ -1,0 +1,77 @@
+{
+  "article_id": "10074797",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/my/10074797.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10074797.json"
+  },
+  "manifest_row": {
+    "article_id": "10074797",
+    "group": "2016_01",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/my/10074797.txt",
+    "now_field_2": "1262",
+    "date_original": "16-01-14",
+    "date_iso": "2016-01-14",
+    "source_name": "The Asia Sentinel",
+    "url": "http://www.asiasentinel.com/politics/isis-behind-jakarta-attack/",
+    "title": "ISIS behind Jakarta Attack, Poli.",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The Jakarta terrorist attack and a separate report about a UN campaign promoting the Sustainable Development Goals in Nigeria",
+    "climate_relevance": "Climate change appears only in a list of planned UN programmes in the separate SDG report; it is not discussed.",
+    "reason": "The identifiable main article concerns terrorism in Indonesia and contains no climate discourse. A second, unrelated snippet mentions climate change only as one item in a programme list, which is too incidental to contribute meaningfully to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d4ebe86cb20e6c2f13ce05982a3f492a85937a53896f39e5312ffbf5b85b3467",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a350540157f72c11541838ad43d495ae06c8daa9c6b5107d72af91885e05ed3e",
+    "raw_response_text_sha256": "a2c23aa25fe6b62972543b8b4c75f16ca6ecdaf1ae4d7b3c3f100b7e3aa7305a"
+  },
+  "api_metadata": {
+    "id": "resp_0f3c994d04dffe04006b0604dffd9c87d294fe7656b9cbd608",
+    "model": "gpt-6-luna",
+    "created_at": 1795556576.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2126,
+      "input_tokens_details": {
+        "cache_write_tokens": 2123,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2123
+        }
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 2410
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The Jakarta terrorist attack and a separate report about a UN campaign promoting the Sustainable Development Goals in Nigeria\",\n  \"climate_relevance\": \"Climate change appears only in a list of planned UN programmes in the separate SDG report; it is not discussed.\",\n  \"reason\": \"The identifiable main article concerns terrorism in Indonesia and contains no climate discourse. A second, unrelated snippet mentions climate change only as one item in a programme list, which is too incidental to contribute meaningfully to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:42:58Z",
+  "duration_seconds": 2.369,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31246728",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/us/31246728.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/us/31246728.json"
+  },
+  "manifest_row": {
+    "article_id": "31246728",
+    "group": "2019_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/us/31246728.txt",
+    "now_field_2": "1640",
+    "date_original": "19-08-26",
+    "date_iso": "2019-08-26",
+    "source_name": "nymag.com",
+    "url": "http://nymag.com/intelligencer/2019/08/dianne-feinstein-isnt-sure-she-wants-susan-collins-to-lose.html",
+    "title": "Dianne Feinstein Isn't Sure She Wants Susan Collins to Lose",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Democratic Party strategy, Senate politics, and the 2020 election",
+    "climate_relevance": "The main political commentary briefly names government action on climate change as one potential policy outcome of Senate control. A separate passage discusses a proposed rollback of methane-emissions regulations.",
+    "reason": "The identifiable main article is about partisan strategy rather than climate change, and its climate reference is brief. The methane-regulation passage contains meaningful climate discourse but appears to be a separate snippet, so it does not make the main article core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3f93415ec0db4b24d37b4655d01f31c501e33bea21aba7aa4bba806f31579b84",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "901d0496bdf20201718e462cb8b7dbb6671f97a6e6d3d9f6cbc5579d4a4abf1e",
+    "raw_response_text_sha256": "d5f9e29267a8220c3bde94a12f8643a76e6b135d483e3068db19a6183ca38b06"
+  },
+  "api_metadata": {
+    "id": "resp_0fb5b32a69a3ef4a006b061658972487d2ad0144d82dea566f",
+    "model": "gpt-6-luna",
+    "created_at": 1795561048.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2664,
+      "input_tokens_details": {
+        "cache_write_tokens": 2661,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2661
+        }
+      },
+      "output_tokens": 777,
+      "output_tokens_details": {
+        "reasoning_tokens": 605
+      },
+      "total_tokens": 3441
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Democratic Party strategy, Senate politics, and the 2020 election\",\n  \"climate_relevance\": \"The main political commentary briefly names government action on climate change as one potential policy outcome of Senate control. A separate passage discusses a proposed rollback of methane-emissions regulations.\",\n  \"reason\": \"The identifiable main article is about partisan strategy rather than climate change, and its climate reference is brief. The methane-regulation passage contains meaningful climate discourse but appears to be a separate snippet, so it does not make the main article core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:57:34Z",
+  "duration_seconds": 5.513,
+  "error": null
+}

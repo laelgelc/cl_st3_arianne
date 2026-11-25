@@ -1,0 +1,77 @@
+{
+  "article_id": "4906819",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/sg/4906819.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/sg/4906819.json"
+  },
+  "manifest_row": {
+    "article_id": "4906819",
+    "group": "2015_12",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/sg/4906819.txt",
+    "now_field_2": "439",
+    "date_original": "15-12-12",
+    "date_iso": "2015-12-12",
+    "source_name": "Biotechin.Asia",
+    "url": "http://biotechin.asia/2015/12/13/french-mps-vote-to-force-supermarkets-to-give-away-unsold-food/",
+    "title": "French MPs vote to force supermarkets to give away unsold food",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "French legislation requiring supermarkets to give away unsold food",
+    "climate_relevance": "Climate change appears only as context for the timing of the vote, through a reference to the COP21 summit; the article does not discuss climate change or its implications.",
+    "reason": "The article focuses on food waste legislation and food redistribution. Its brief COP21 reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "47496de059798e49fb649a7154b6c779d81d0c1140a01072cc6a69a3e491d913",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2e8df59ee444d4b551ac29eff307f1a462314f877efbef218a3777b876fb7ffa",
+    "raw_response_text_sha256": "5be00b337c9d78bc5cac5cd5feacac66ee21ef51b46a4d5faf52f959f8497b75"
+  },
+  "api_metadata": {
+    "id": "resp_06a0a83920114353006b06272da47487d1b57c1831337bb033",
+    "model": "gpt-6-luna",
+    "created_at": 1795565357.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1090,
+      "input_tokens_details": {
+        "cache_write_tokens": 1087,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1087
+        }
+      },
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 1365
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"French legislation requiring supermarkets to give away unsold food\",\n  \"climate_relevance\": \"Climate change appears only as context for the timing of the vote, through a reference to the COP21 summit; the article does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on food waste legislation and food redistribution. Its brief COP21 reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:09:19Z",
+  "duration_seconds": 2.188,
+  "error": null
+}

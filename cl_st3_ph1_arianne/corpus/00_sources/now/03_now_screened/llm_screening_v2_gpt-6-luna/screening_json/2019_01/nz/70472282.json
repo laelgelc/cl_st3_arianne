@@ -1,0 +1,77 @@
+{
+  "article_id": "70472282",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/nz/70472282.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/nz/70472282.json"
+  },
+  "manifest_row": {
+    "article_id": "70472282",
+    "group": "2019_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/nz/70472282.txt",
+    "now_field_2": "1029",
+    "date_original": "19-01-31",
+    "date_iso": "2019-01-31",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00025/triathlon-festival-invites-community-join-charity-fun-run.htm",
+    "title": "Triathlon festival invites community join charity fun run",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A community charity fun run held alongside a triathlon festival.",
+    "climate_relevance": "The main article contains no meaningful climate discourse. An appended unrelated teaser mentions sea-level rise and climate-change impacts, but it is not part of the identifiable main article.",
+    "reason": "The identifiable article is about a local sporting and charity event. Climate change appears only in an unrelated appended snippet, so it does not make the main article relevant for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9460e3d2aac413aa27781cb9a617f67fab6ec77b39f64fcb5a2a4677cecc4bd0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "73402c837c6b82cbf51aefc9413e7ff5ddcf9f4555b14ccd6bc7df1b17eb6dd3",
+    "raw_response_text_sha256": "f4291ae685229bb540a66819290968fd9a40b465bce9bbd439fb848806df994d"
+  },
+  "api_metadata": {
+    "id": "resp_0f3be1479c4585e9006b063cc1ab1087d1a63e0c7dce5314c1",
+    "model": "gpt-6-luna",
+    "created_at": 1795570881.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1781,
+      "input_tokens_details": {
+        "cache_write_tokens": 1778,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1778
+        }
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 2026
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A community charity fun run held alongside a triathlon festival.\",\n  \"climate_relevance\": \"The main article contains no meaningful climate discourse. An appended unrelated teaser mentions sea-level rise and climate-change impacts, but it is not part of the identifiable main article.\",\n  \"reason\": \"The identifiable article is about a local sporting and charity event. Climate change appears only in an unrelated appended snippet, so it does not make the main article relevant for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:41:23Z",
+  "duration_seconds": 2.389,
+  "error": null
+}

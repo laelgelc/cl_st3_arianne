@@ -1,0 +1,77 @@
+{
+  "article_id": "8639994",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_05/gb/8639994.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_05/gb/8639994.json"
+  },
+  "manifest_row": {
+    "article_id": "8639994",
+    "group": "2016_05",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_05/gb/8639994.txt",
+    "now_field_2": "2433",
+    "date_original": "16-05-04",
+    "date_iso": "2016-05-04",
+    "source_name": "The Guardian",
+    "url": "http://www.theguardian.com/us-news/live/2016/may/04/donald-trump-nomination-sanders-clinton-indiana-primary",
+    "title": "John Kasich to make statement in home state of Ohio - campaign live",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-05-bvk/16-05-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "The 2016 US presidential campaign and Donald Trump becoming the presumptive Republican nominee",
+    "climate_relevance": "A quoted comment warns that electing a climate change denier could threaten global action against climate disruption.",
+    "reason": "The text is mainly a campaign live blog, but the climate-related comment is a meaningful reference to climate policy and its implications.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6c347fc7bc51d3cf0b57bf58dbdbbd5905d67576ae097b87572c6683eeedba9c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "40a848e8cc980ee89b5b65f539cef1db4e788ccf05725c5b7bc64e64ca357565",
+    "raw_response_text_sha256": "6c4aca7764ab8eea84bfb485a5c96e2a969689c4f5898ef71b6d97fcb29f6265"
+  },
+  "api_metadata": {
+    "id": "resp_0d83531975706be1006b0650027a6c87d19eeb47f177c2f9db",
+    "model": "gpt-6-luna",
+    "created_at": 1795575810.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3671,
+      "input_tokens_details": {
+        "cache_write_tokens": 3668,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3668
+        }
+      },
+      "output_tokens": 351,
+      "output_tokens_details": {
+        "reasoning_tokens": 214
+      },
+      "total_tokens": 4022
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The 2016 US presidential campaign and Donald Trump becoming the presumptive Republican nominee\",\n  \"climate_relevance\": \"A quoted comment warns that electing a climate change denier could threaten global action against climate disruption.\",\n  \"reason\": \"The text is mainly a campaign live blog, but the climate-related comment is a meaningful reference to climate policy and its implications.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:03:33Z",
+  "duration_seconds": 3.485,
+  "error": null
+}

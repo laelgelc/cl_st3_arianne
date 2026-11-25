@@ -1,0 +1,77 @@
+{
+  "article_id": "50179956",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/au/50179956.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/au/50179956.json"
+  },
+  "manifest_row": {
+    "article_id": "50179956",
+    "group": "2018_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/au/50179956.txt",
+    "now_field_2": "619",
+    "date_original": "18-11-02",
+    "date_iso": "2018-11-02",
+    "source_name": "Brisbane Times",
+    "url": "https://www.brisbanetimes.com.au/lifestyle/life-and-relationships/thanks-sbs-news-for-cheering-me-up-20181101-p50dan.html",
+    "title": "Thanks, SBS news, for cheering me up",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "A humorous personal column about being cheered up by watching distressing news.",
+    "climate_relevance": "Climate change appears only in a passing list of distressing news stories, with no discussion of its causes, impacts, or implications.",
+    "reason": "The text is not meaningfully about climate change; the brief reference to climate change disasters does not contribute substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a6be647cb038233ca518a75553d856e35802a2ac84c702714d5ac99fdc0e3f9d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8f7d5d5e11a3223f4bea6c3236564a594ce0d2b87f7ab556570f7dd72e69e32e",
+    "raw_response_text_sha256": "1e8a8314b9cf474bc44994e8dd0acd0e842e39bbbcc80080381bb52ff5a810ca"
+  },
+  "api_metadata": {
+    "id": "resp_0bb51cf8c68a6a0d006b0627e57f1087d188e0a3ecbc0e27a0",
+    "model": "gpt-6-luna",
+    "created_at": 1795565541.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1315,
+      "input_tokens_details": {
+        "cache_write_tokens": 1312,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1312
+        }
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 1509
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A humorous personal column about being cheered up by watching distressing news.\",\n  \"climate_relevance\": \"Climate change appears only in a passing list of distressing news stories, with no discussion of its causes, impacts, or implications.\",\n  \"reason\": \"The text is not meaningfully about climate change; the brief reference to climate change disasters does not contribute substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:12:23Z",
+  "duration_seconds": 1.886,
+  "error": null
+}

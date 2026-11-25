@@ -1,0 +1,77 @@
+{
+  "article_id": "16503049",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/ie/16503049.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/ie/16503049.json"
+  },
+  "manifest_row": {
+    "article_id": "16503049",
+    "group": "2017_01",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/ie/16503049.txt",
+    "now_field_2": "540",
+    "date_original": "17-01-20",
+    "date_iso": "2017-01-20",
+    "source_name": "Irish Times",
+    "url": "http://www.irishtimes.com/news/ireland/irish-news/images-of-the-week-1.2945583",
+    "title": "Images of the Week",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-IE.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "A weekly photo gallery covering unrelated news and events",
+    "climate_relevance": "One caption reports that the WMO identified 2016 as the hottest year on record globally in its climate change statistics.",
+    "reason": "The gallery is not primarily about climate change, but the explicit reference to climate change statistics and the hottest year on record is meaningful enough for peripheral discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8ac746650c1909b96e0a7a3faef2cb9a4cfea0c213d1a7badb9d03adc7806769",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8d3dd7b3dc5a9cab9583158916b49e63192458e887b85f6a52a09de0105b67f6",
+    "raw_response_text_sha256": "a9fb078e7700da46467479ff52229d8e650c46df65feb80665c55be4894f3fc9"
+  },
+  "api_metadata": {
+    "id": "resp_0e1553077988dd3c006b0607bd915887d2a787ce2d1fbdf43b",
+    "model": "gpt-6-luna",
+    "created_at": 1795557309.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1285,
+      "input_tokens_details": {
+        "cache_write_tokens": 1282,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1282
+        }
+      },
+      "output_tokens": 283,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 1568
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A weekly photo gallery covering unrelated news and events\",\n  \"climate_relevance\": \"One caption reports that the WMO identified 2016 as the hottest year on record globally in its climate change statistics.\",\n  \"reason\": \"The gallery is not primarily about climate change, but the explicit reference to climate change statistics and the hottest year on record is meaningful enough for peripheral discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:55:11Z",
+  "duration_seconds": 2.491,
+  "error": null
+}

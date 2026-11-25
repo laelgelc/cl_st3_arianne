@@ -1,0 +1,77 @@
+{
+  "article_id": "30801596",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/za/30801596.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/za/30801596.json"
+  },
+  "manifest_row": {
+    "article_id": "30801596",
+    "group": "2019_04",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/za/30801596.txt",
+    "now_field_2": "867",
+    "date_original": "19-04-23",
+    "date_iso": "2019-04-23",
+    "source_name": "Creamer Media's Engineering News",
+    "url": "https://www.engineeringnews.co.za/article/sandtons-leonardo-an-example-of-south-africas-architectural-future-says-co-arc-2019-04-23",
+    "title": "Sandton's Leonardo an example of South Africa's architectural future ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The Leonardo high-rise development in Sandton and its architecture, construction, and facilities.",
+    "climate_relevance": "The main article does not discuss climate change. A separate appended snippet about EDF mentions renewable energy and tackling climate change, but it is unrelated to the identifiable main article.",
+    "reason": "Climate-related language appears only in a distinct, unrelated snippet; it is not meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "74597d9279625cf2a5c57a4859037305c1883d543fd8fe83f2f19e0e4c08b564",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cc258c7f6c727d64eb907c78d2b0b3dcb5c398ec4ccefeda7ab77fa6c0de0fe2",
+    "raw_response_text_sha256": "abc477a6f2f3ef71acf2b6416607544f0eb87002a607e1b778be379d33a4957c"
+  },
+  "api_metadata": {
+    "id": "resp_0b69779f636fa17b006b06154480b087d28966ef9cc04988df",
+    "model": "gpt-6-luna",
+    "created_at": 1795560772.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1627,
+      "input_tokens_details": {
+        "cache_write_tokens": 1624,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1624
+        }
+      },
+      "output_tokens": 383,
+      "output_tokens_details": {
+        "reasoning_tokens": 231
+      },
+      "total_tokens": 2010
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The Leonardo high-rise development in Sandton and its architecture, construction, and facilities.\",\n  \"climate_relevance\": \"The main article does not discuss climate change. A separate appended snippet about EDF mentions renewable energy and tackling climate change, but it is unrelated to the identifiable main article.\",\n  \"reason\": \"Climate-related language appears only in a distinct, unrelated snippet; it is not meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:52:55Z",
+  "duration_seconds": 3.045,
+  "error": null
+}

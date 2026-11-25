@@ -1,0 +1,77 @@
+{
+  "article_id": "51112456",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/pk/51112456.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/pk/51112456.json"
+  },
+  "manifest_row": {
+    "article_id": "51112456",
+    "group": "2019_10",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/pk/51112456.txt",
+    "now_field_2": "250",
+    "date_original": "19-10-16",
+    "date_iso": "2019-10-16",
+    "source_name": "samaa.tv",
+    "url": "https://www.samaa.tv/news/2019/10/karachi-hospitals-to-face-the-music-for-unsatisfactory-waste-disposal/",
+    "title": "Karachi hospitals to face the music for unsatisfactory ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Hospital waste disposal regulation in Karachi",
+    "climate_relevance": "Climate change appears only in the title of a government adviser; the article discusses medical waste management without meaningful climate discourse.",
+    "reason": "The article focuses on hospital waste disposal and regulatory enforcement. The isolated reference to climate change is part of an official's portfolio title.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5faf5588bb71ea9933211822b8feaf2d38fdc13ff7dc2ccdef298c61d2e2d1f3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2c7b7fb3db74280b859dec8a2a22e794fd656feb7640062e21d53cafd8895d10",
+    "raw_response_text_sha256": "912ea2ce73d6d053f1cd75c8c6b6946bfbd80cd162bab45e665f6e6831ff53f1"
+  },
+  "api_metadata": {
+    "id": "resp_0d10e3a5c444e5f5006b062c215c7087d182087a94b5d1d479",
+    "model": "gpt-6-luna",
+    "created_at": 1795566625.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 786,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 197,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 983
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Hospital waste disposal regulation in Karachi\",\n  \"climate_relevance\": \"Climate change appears only in the title of a government adviser; the article discusses medical waste management without meaningful climate discourse.\",\n  \"reason\": \"The article focuses on hospital waste disposal and regulatory enforcement. The isolated reference to climate change is part of an official's portfolio title.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:30:29Z",
+  "duration_seconds": 3.951,
+  "error": null
+}

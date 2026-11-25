@@ -1,0 +1,77 @@
+{
+  "article_id": "10159130",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/my/10159130.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/my/10159130.json"
+  },
+  "manifest_row": {
+    "article_id": "10159130",
+    "group": "2016_01",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/my/10159130.txt",
+    "now_field_2": "302",
+    "date_original": "16-01-25",
+    "date_iso": "2016-01-25",
+    "source_name": "Malay Mail Online",
+    "url": "http://www.themalaymailonline.com/malaysia/article/upm-voted-asias-best-green-campus-worlds-top-17-in-2015",
+    "title": "UPM voted Asia's Best Green Campus, world's top 17 in 2015",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "University rankings for campus sustainability and environmental management",
+    "climate_relevance": "Climate change is named only as one component of the ranking’s indicators, without further discussion.",
+    "reason": "The article focuses on university sustainability rankings and campus initiatives. Its brief reference to an 'energy and climate change' indicator does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "75ac03052e59f986d808c8c18654287a90f6919d24191ab7fd6f73bfc195c25c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bfeabe5686d789b79cb1759320c8345a73edc669987b49289b7a612120bc1ba6",
+    "raw_response_text_sha256": "81d4382c1755a8244ee17786e2e4954620f67ab135e9ec071e3b4e3531c5be82"
+  },
+  "api_metadata": {
+    "id": "resp_053fbb9319444621006b0604f6480887d2aba848a515da47f2",
+    "model": "gpt-6-luna",
+    "created_at": 1795556598.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 919,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 311,
+      "output_tokens_details": {
+        "reasoning_tokens": 180
+      },
+      "total_tokens": 1230
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"University rankings for campus sustainability and environmental management\",\n  \"climate_relevance\": \"Climate change is named only as one component of the ranking’s indicators, without further discussion.\",\n  \"reason\": \"The article focuses on university sustainability rankings and campus initiatives. Its brief reference to an 'energy and climate change' indicator does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:43:20Z",
+  "duration_seconds": 2.601,
+  "error": null
+}

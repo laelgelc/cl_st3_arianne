@@ -1,0 +1,77 @@
+{
+  "article_id": "83526594",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83526594.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83526594.json"
+  },
+  "manifest_row": {
+    "article_id": "83526594",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83526594.txt",
+    "now_field_2": "7531",
+    "date_original": "20-01-29",
+    "date_iso": "2020-01-29",
+    "source_name": "The Arizona Republic",
+    "url": "https://www.azcentral.com/story/news/50-states/2020/01/29/atari-hotel-wienermobile-warning-goat-mayors-rival-news-around-states/41104037/",
+    "title": "Atari hotel, Wienermobile warning, goat mayor's K-9 rival: News from around our 50 states",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us8.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "A roundup of unrelated state and local news briefs",
+    "climate_relevance": "One Rhode Island brief attributes coastal erosion and washouts at a state park to storm surge intensified by climate change-driven sea-level rise.",
+    "reason": "The text is primarily a compilation of unrelated news items, but the Rhode Island brief contains a meaningful statement about climate change impacts.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6fedb63ab02ecd8fb914d8e8fe88f0331a48b0766251ab4e6a6ce1ae691b5ae5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1cfdca519d0eab593561de398420905f54bf54f824451e5c3bea6afee4329e03",
+    "raw_response_text_sha256": "8b27cc05b48b977e9062b65242496125477b776e8f05a174c0acc0b1a04f3ef6"
+  },
+  "api_metadata": {
+    "id": "resp_0dc6bce2187a8e6c006b0649b6189c87d1866de559106cf9e2",
+    "model": "gpt-6-luna",
+    "created_at": 1795574198.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10075,
+      "input_tokens_details": {
+        "cache_write_tokens": 10072,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 10072
+        }
+      },
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 10297
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A roundup of unrelated state and local news briefs\",\n  \"climate_relevance\": \"One Rhode Island brief attributes coastal erosion and washouts at a state park to storm surge intensified by climate change-driven sea-level rise.\",\n  \"reason\": \"The text is primarily a compilation of unrelated news items, but the Rhode Island brief contains a meaningful statement about climate change impacts.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:36:40Z",
+  "duration_seconds": 2.197,
+  "error": null
+}

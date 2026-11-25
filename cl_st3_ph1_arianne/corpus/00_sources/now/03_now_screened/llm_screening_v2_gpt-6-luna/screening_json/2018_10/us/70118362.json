@@ -1,0 +1,77 @@
+{
+  "article_id": "70118362",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/us/70118362.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/us/70118362.json"
+  },
+  "manifest_row": {
+    "article_id": "70118362",
+    "group": "2018_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/us/70118362.txt",
+    "now_field_2": "1716",
+    "date_original": "18-10-06",
+    "date_iso": "2018-10-06",
+    "source_name": "Washington Examiner",
+    "url": "https://www.washingtonexaminer.com/opinion/op-eds/susan-collins-just-saved-the-womens-movement-and-its-progress-on-rape-prosecutions",
+    "title": "Susan Collins just saved the women's movement and its progress on ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-us-1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Due process, sexual assault allegations, and the Kavanaugh confirmation",
+    "climate_relevance": "Climate change appears only in a separate related-news snippet about a climate lawsuit brought by children against the U.S. government.",
+    "reason": "The identifiable main article discusses sexual assault allegations and due process, not climate change. The climate reference is an unrelated snippet and does not contribute to the main article's climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ec55a825c44ff7e32dad4a7a3c7145cfe814afa0a8fa9200d955a062a8387273",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "88e9316e9c4e7a536fa552edaac02f3701a3a99feabe9421a0c23710f34b3262",
+    "raw_response_text_sha256": "6ed7ba41ebe3808fa3fc0d4158fbbbe6dd96e9e93e2d70776e09833c8ffda947"
+  },
+  "api_metadata": {
+    "id": "resp_09baaa12dab0bc14006b063aec157087d19272c9cfeb789eb6",
+    "model": "gpt-6-luna",
+    "created_at": 1795570412.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2668,
+      "input_tokens_details": {
+        "cache_write_tokens": 2665,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2665
+        }
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 2945
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Due process, sexual assault allegations, and the Kavanaugh confirmation\",\n  \"climate_relevance\": \"Climate change appears only in a separate related-news snippet about a climate lawsuit brought by children against the U.S. government.\",\n  \"reason\": \"The identifiable main article discusses sexual assault allegations and due process, not climate change. The climate reference is an unrelated snippet and does not contribute to the main article's climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:33:34Z",
+  "duration_seconds": 2.324,
+  "error": null
+}

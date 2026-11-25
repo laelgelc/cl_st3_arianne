@@ -1,0 +1,77 @@
+{
+  "article_id": "60834098",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/ca/60834098.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/ca/60834098.json"
+  },
+  "manifest_row": {
+    "article_id": "60834098",
+    "group": "2019_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/ca/60834098.txt",
+    "now_field_2": "326",
+    "date_original": "19-05-16",
+    "date_iso": "2019-05-16",
+    "source_name": "Lethbridge News Now",
+    "url": "https://lethbridgenewsnow.com/2019/05/16/bank-of-canada-identifies-climate-change-as-important-economic-weak-spot",
+    "title": "Bank of Canada identifies climate change as important economic ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "substantial",
+    "main_topic": "The Bank of Canada’s assessment of climate-related risks to the financial system and economy",
+    "climate_relevance": "The main article discusses extreme weather, the transition to a lower-carbon economy, and potential risks to carbon-intensive sectors, insurers, banks, and asset managers.",
+    "reason": "Climate change is a substantial focus of the identifiable main article, which describes it as a financial-system vulnerability and outlines related economic risks. Unrelated news snippets follow the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f50123a480500a751893ca5319bd137e619332f5a8008a73f134097010c191eb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "81c6073a1f259f4beabceeef893b44682e10e455aa307062d0ae26da96facbfb",
+    "raw_response_text_sha256": "663915d6b88cfafaf8199101f4b638445b8d149bf2f3f0cfc4459abe926b6853"
+  },
+  "api_metadata": {
+    "id": "resp_0a414501041fefb0006b0634cd765487d19f9acc7bffac84b1",
+    "model": "gpt-6-luna",
+    "created_at": 1795568845.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 913,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1141
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"The Bank of Canada’s assessment of climate-related risks to the financial system and economy\",\n  \"climate_relevance\": \"The main article discusses extreme weather, the transition to a lower-carbon economy, and potential risks to carbon-intensive sectors, insurers, banks, and asset managers.\",\n  \"reason\": \"Climate change is a substantial focus of the identifiable main article, which describes it as a financial-system vulnerability and outlines related economic risks. Unrelated news snippets follow the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:07:27Z",
+  "duration_seconds": 2.303,
+  "error": null
+}

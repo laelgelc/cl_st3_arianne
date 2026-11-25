@@ -1,0 +1,77 @@
+{
+  "article_id": "32133765",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/32133765.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/32133765.json"
+  },
+  "manifest_row": {
+    "article_id": "32133765",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/32133765.txt",
+    "now_field_2": "538",
+    "date_original": "20-10-05",
+    "date_iso": "2020-10-05",
+    "source_name": "bostonglobe.com",
+    "url": "https://www.bostonglobe.com/2020/10/05/metro/election-contest-pick-winners-rhode-island-races-win-money/",
+    "title": "Election contest: Pick the winners of the Rhode Island ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Rhode Island daily news and election briefing",
+    "climate_relevance": "Climate change appears only in a biographical note saying a former reporter contributed to past op-eds on the topic, including one about reliance on fossil fuels.",
+    "reason": "The text contains no substantive climate discussion; the reference is incidental and points to other material.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4d51bc47523be4342088c6550dc5ce495036ad66706fef38ec165af37faa05de",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e6dd060e16e040c9d51270fca8589bb8f30a29df075e43c4fd73799112b12b93",
+    "raw_response_text_sha256": "e5e8f4c99e4494a05bf5c94aaf3e709397c6819ac61954d0627d77ba275f9304"
+  },
+  "api_metadata": {
+    "id": "resp_0bba3a5a7970f9cf006b061b7815d887d28c07a60c119126e2",
+    "model": "gpt-6-luna",
+    "created_at": 1795562360.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1241,
+      "input_tokens_details": {
+        "cache_write_tokens": 1238,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1238
+        }
+      },
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1431
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Rhode Island daily news and election briefing\",\n  \"climate_relevance\": \"Climate change appears only in a biographical note saying a former reporter contributed to past op-eds on the topic, including one about reliance on fossil fuels.\",\n  \"reason\": \"The text contains no substantive climate discussion; the reference is incidental and points to other material.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:19:21Z",
+  "duration_seconds": 1.718,
+  "error": null
+}

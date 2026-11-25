@@ -1,0 +1,77 @@
+{
+  "article_id": "71193388",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/au/71193388.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/au/71193388.json"
+  },
+  "manifest_row": {
+    "article_id": "71193388",
+    "group": "2019_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/au/71193388.txt",
+    "now_field_2": "519",
+    "date_original": "19-09-08",
+    "date_iso": "2019-09-08",
+    "source_name": "abc.net.au",
+    "url": "https://www.abc.net.au/news/2019-09-07/lawyer-stephen-mcnamara-found-guilty-of-deceased-estates-theft/11488778",
+    "title": "Lawyer found guilty ... - Australian Broadcasting Corporation",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A lawyer's theft of estate funds and the related court case",
+    "climate_relevance": "Climate change appears only in a separate, brief reference to a fact-check of a political speech; no meaningful climate discourse is present in the main text.",
+    "reason": "The available main article concerns estate-fund theft and judicial proceedings. The final climate-related line appears to be an unrelated snippet or feature reference, not substantive discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "204a7521c57c4198fdbfe6efefca23cfe4f76a9110f6519b4c98cf7c8c416517",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1889f15fdd9012d8784c2aad5a6a1ee71e1955b16ded1b11496abeea07a7341c",
+    "raw_response_text_sha256": "193fe9b63fb36f651b4f60172af8c3ecb7a05604e27c127dc1ae8349cd3be6e3"
+  },
+  "api_metadata": {
+    "id": "resp_0336748bef46600e006b06404fc80087d192406923983fd8b0",
+    "model": "gpt-6-luna",
+    "created_at": 1795571791.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1220,
+      "input_tokens_details": {
+        "cache_write_tokens": 1217,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1217
+        }
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 1462
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A lawyer's theft of estate funds and the related court case\",\n  \"climate_relevance\": \"Climate change appears only in a separate, brief reference to a fact-check of a political speech; no meaningful climate discourse is present in the main text.\",\n  \"reason\": \"The available main article concerns estate-fund theft and judicial proceedings. The final climate-related line appears to be an unrelated snippet or feature reference, not substantive discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:56:34Z",
+  "duration_seconds": 2.398,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "60621254",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/ca/60621254.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/ca/60621254.json"
+  },
+  "manifest_row": {
+    "article_id": "60621254",
+    "group": "2019_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/ca/60621254.txt",
+    "now_field_2": "664",
+    "date_original": "19-03-11",
+    "date_iso": "2019-03-11",
+    "source_name": "Canada NewsWir",
+    "url": "https://www.newswire.ca/news-releases/pulse-oil-corp-announces-spud-of-1st-well-of-the-bigoray-drilling-program-844911530.html",
+    "title": "Pulse Oil Corp. Announces Spud of 1st Well of the Bigoray Drilling ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Pulse Oil Corp.'s new well drilling and oil production plans",
+    "climate_relevance": "Climate change appears only in a standard list of potential environmental and weather risks in the forward-looking statements disclaimer.",
+    "reason": "The press release concerns oil drilling and company operations; its sole climate reference is boilerplate and does not meaningfully discuss climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "542717dcb916f21b20444c1ca2e0803d4822cff0a28514d527a2237a74987848",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7e08122f374709beb8c8f03aa3dc2885bda50b75258cc6d03ae6abec5cdb1ff7",
+    "raw_response_text_sha256": "c914bab8914897c08f4e0267edf04f312377621bd0c04fc7285527d69fefc0ac"
+  },
+  "api_metadata": {
+    "id": "resp_0381ace383cb6a5b006b06337005bc87d18df047533041c970",
+    "model": "gpt-6-luna",
+    "created_at": 1795568496.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1359,
+      "input_tokens_details": {
+        "cache_write_tokens": 1356,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1356
+        }
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1557
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Pulse Oil Corp.'s new well drilling and oil production plans\",\n  \"climate_relevance\": \"Climate change appears only in a standard list of potential environmental and weather risks in the forward-looking statements disclaimer.\",\n  \"reason\": \"The press release concerns oil drilling and company operations; its sole climate reference is boilerplate and does not meaningfully discuss climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:01:37Z",
+  "duration_seconds": 2.0,
+  "error": null
+}

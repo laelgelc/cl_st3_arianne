@@ -1,0 +1,77 @@
+{
+  "article_id": "60332176",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/pk/60332176.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/pk/60332176.json"
+  },
+  "manifest_row": {
+    "article_id": "60332176",
+    "group": "2018_12",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/pk/60332176.txt",
+    "now_field_2": "920",
+    "date_original": "18-12-07",
+    "date_iso": "2018-12-07",
+    "source_name": "The News International",
+    "url": "https://www.thenews.com.pk/print/403149-minister-for-youths-role-in-peace",
+    "title": "Minister for youths' role in peace",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Peace, terrorism, and Pakistan's role in the war on terror",
+    "climate_relevance": "Climate change appears only in the minister's official title; the article contains no meaningful discussion of climate change.",
+    "reason": "The report focuses on a peace seminar and related issues. The climate reference is incidental identification of the speaker, not climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "54653a583ce8804260b6361e06a5350c771af7d8bedbb002ae4704172de62734",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e49ee640b80fff13c189736aaa11789d5dbe545edb501c3f0bb31e01acc44566",
+    "raw_response_text_sha256": "dba098537b045c22159f9730d9af15a8ad0083da1537f625fba6cbaf2eec3b8b"
+  },
+  "api_metadata": {
+    "id": "resp_01d60ccb3c0d933b006b06322798d887d19f1c8f2fd1113ce1",
+    "model": "gpt-6-luna",
+    "created_at": 1795568167.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1560,
+      "input_tokens_details": {
+        "cache_write_tokens": 1557,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1557
+        }
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 1826
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Peace, terrorism, and Pakistan's role in the war on terror\",\n  \"climate_relevance\": \"Climate change appears only in the minister's official title; the article contains no meaningful discussion of climate change.\",\n  \"reason\": \"The report focuses on a peace seminar and related issues. The climate reference is incidental identification of the speaker, not climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:56:10Z",
+  "duration_seconds": 2.97,
+  "error": null
+}

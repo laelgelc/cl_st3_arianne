@@ -1,0 +1,77 @@
+{
+  "article_id": "72044010",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/jm/72044010.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/jm/72044010.json"
+  },
+  "manifest_row": {
+    "article_id": "72044010",
+    "group": "2020_06",
+    "country_code": "jm",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/jm/72044010.txt",
+    "now_field_2": "309",
+    "date_original": "20-06-26",
+    "date_iso": "2020-06-26",
+    "source_name": "jis.gov.jm",
+    "url": "https://jis.gov.jm/forestry-dept-to-embark-on-reforestation-of-150-hectares-of-land/",
+    "title": "Forestry Dept. To Embark On Reforestation Of 150 Hectares ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-jm.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Forestry Department reforestation, mangrove assessment, tree planting, and related employment",
+    "climate_relevance": "Climate change appears only in a final sentence listing a minister's assigned portfolio; the article does not discuss climate issues or connect its forestry plans to climate change.",
+    "reason": "The article is about forestry programmes and employment. Its sole climate-change reference is an administrative portfolio assignment, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3d8abfa5e284d698730d94c837b1c3b4919f6606fae3679e8fae9cbaf4cac939",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0f1ed3d4914a9193239172d950264c516d586f514c0fe9e6b8ea4fb098f6f73f",
+    "raw_response_text_sha256": "79f091f20911f32f373e5f386e1f44867245aa4d888ff5b9fc4b89ab050ee23d"
+  },
+  "api_metadata": {
+    "id": "resp_0fd531344c0473f6006b0643cbf79487d198b98039692f7b24",
+    "model": "gpt-6-luna",
+    "created_at": 1795572684.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 906,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1150
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Forestry Department reforestation, mangrove assessment, tree planting, and related employment\",\n  \"climate_relevance\": \"Climate change appears only in a final sentence listing a minister's assigned portfolio; the article does not discuss climate issues or connect its forestry plans to climate change.\",\n  \"reason\": \"The article is about forestry programmes and employment. Its sole climate-change reference is an administrative portfolio assignment, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:11:26Z",
+  "duration_seconds": 2.323,
+  "error": null
+}

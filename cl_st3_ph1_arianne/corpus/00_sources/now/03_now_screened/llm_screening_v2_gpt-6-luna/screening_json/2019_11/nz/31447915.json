@@ -1,0 +1,77 @@
+{
+  "article_id": "31447915",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/nz/31447915.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/nz/31447915.json"
+  },
+  "manifest_row": {
+    "article_id": "31447915",
+    "group": "2019_11",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/nz/31447915.txt",
+    "now_field_2": "583",
+    "date_original": "19-11-21",
+    "date_iso": "2019-11-21",
+    "source_name": "scoop.co.nz",
+    "url": "https://www.scoop.co.nz/stories/PO0709/S00127/popular-live-broadcast-of-tribunal-hearing.htm",
+    "title": "Popular live broadcast of Tribunal hearing | Scoop News",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A live broadcast of a Whanganui District Inquiry hearing and the issues raised in the inquiry",
+    "climate_relevance": "Climate change appears only in a separate, unrelated promotional/news snippet about the Climate Change Commission, not in the main article.",
+    "reason": "The identifiable main article concerns iwi radio coverage of a tribunal hearing about Māori land and related issues. The climate-related sentence is part of an unrelated snippet and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d8efc123c0a73f023ba6c0664bf4a3760cf8197a69ebc4b8053ede735e21f050",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6f290638d4879aca851e5e7678f343d6f5205a58474b6d04e2049cde41a76f26",
+    "raw_response_text_sha256": "308c111ad889b6a4921dab5fa39e565520cc62c55d6c90779652584e8d889999"
+  },
+  "api_metadata": {
+    "id": "resp_0d24a124f0d86ed5006b06175d162887d29027b170c4ee4917",
+    "model": "gpt-6-luna",
+    "created_at": 1795561309.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1320,
+      "input_tokens_details": {
+        "cache_write_tokens": 1317,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1317
+        }
+      },
+      "output_tokens": 350,
+      "output_tokens_details": {
+        "reasoning_tokens": 187
+      },
+      "total_tokens": 1670
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A live broadcast of a Whanganui District Inquiry hearing and the issues raised in the inquiry\",\n  \"climate_relevance\": \"Climate change appears only in a separate, unrelated promotional/news snippet about the Climate Change Commission, not in the main article.\",\n  \"reason\": \"The identifiable main article concerns iwi radio coverage of a tribunal hearing about Māori land and related issues. The climate-related sentence is part of an unrelated snippet and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:01:51Z",
+  "duration_seconds": 2.853,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70381444",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/us/70381444.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/us/70381444.json"
+  },
+  "manifest_row": {
+    "article_id": "70381444",
+    "group": "2019_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/us/70381444.txt",
+    "now_field_2": "2652",
+    "date_original": "19-01-02",
+    "date_iso": "2019-01-02",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/an-extended-january-thaw-this-year-12-of-next-14-days-above-32f/503819802/",
+    "title": "An Extended January Thaw This Year - 12 of Next 14 Days Above 32F?",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "climate_role": "background",
+    "main_topic": "Minnesota weather forecasts and a roundup of weather-related news and commentary",
+    "climate_relevance": "Several linked excerpts discuss climate change directly, including climate policy, media coverage, military-site risks, extreme-weather impacts, and the global transition to zero-carbon energy.",
+    "reason": "The text is primarily a weather blog and forecast roundup, rather than coverage centered on climate change. However, its multiple substantive climate-related excerpts make it useful as peripheral climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "91091af0075b76c6c8a51eb9cc941a2a7b7d4ee8616517cadb76a789ad30c4c4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "84722c2ed59b75b0938c47bed897a58f7b9bc74b50408fc182384befff0f4fe1",
+    "raw_response_text_sha256": "61ed876c257e5bba3886167cbc3f26f93424c1f5b58eca32cb08427f8aeedb35"
+  },
+  "api_metadata": {
+    "id": "resp_01089d0562216d24006b063c43401c87d1826c8f9e05cffbc8",
+    "model": "gpt-6-luna",
+    "created_at": 1795570755.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4016,
+      "input_tokens_details": {
+        "cache_write_tokens": 4013,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4013
+        }
+      },
+      "output_tokens": 382,
+      "output_tokens_details": {
+        "reasoning_tokens": 226
+      },
+      "total_tokens": 4398
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Minnesota weather forecasts and a roundup of weather-related news and commentary\",\n  \"climate_relevance\": \"Several linked excerpts discuss climate change directly, including climate policy, media coverage, military-site risks, extreme-weather impacts, and the global transition to zero-carbon energy.\",\n  \"reason\": \"The text is primarily a weather blog and forecast roundup, rather than coverage centered on climate change. However, its multiple substantive climate-related excerpts make it useful as peripheral climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:39:18Z",
+  "duration_seconds": 3.291,
+  "error": null
+}

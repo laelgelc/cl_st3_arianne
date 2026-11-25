@@ -1,0 +1,77 @@
+{
+  "article_id": "18932248",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/us/18932248.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/us/18932248.json"
+  },
+  "manifest_row": {
+    "article_id": "18932248",
+    "group": "2017_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/us/18932248.txt",
+    "now_field_2": "1149",
+    "date_original": "17-06-12",
+    "date_iso": "2017-06-12",
+    "source_name": "Los Angeles Times",
+    "url": "http://www.latimes.com/local/lanow/la-me-ln-new-pride-20170611-story.html",
+    "title": "Tens of thousands take to the streets in Resist March",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "The 2017 LA Pride #ResistMarch and LGBTQ rights activism",
+    "climate_relevance": "Climate change is listed among issues named on marchers’ signs, but the text provides no further discussion of it.",
+    "reason": "The article focuses on the Pride march, LGBTQ rights, and opposition to the Trump administration. Climate change appears only as one item in a passing list, so it does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "24bb471ffd45d7fcd3f95f9823593ce5730d559667f18fb8eb9c1694e1f95c84",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "af6b5a9855bf5822f97ed29e45d3ed704569e0c5487b28142820f49f819277c0",
+    "raw_response_text_sha256": "9ea81dfead148b3b3905b2670e5c67c73dfc6123d7bb1afec083e9cc4ff7d122"
+  },
+  "api_metadata": {
+    "id": "resp_02da2cb9dd264300006b060b3ddc7087d2874fcc2cf9cb2bc6",
+    "model": "gpt-6-luna",
+    "created_at": 1795558205.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2081,
+      "input_tokens_details": {
+        "cache_write_tokens": 2078,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2078
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 2306
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The 2017 LA Pride #ResistMarch and LGBTQ rights activism\",\n  \"climate_relevance\": \"Climate change is listed among issues named on marchers’ signs, but the text provides no further discussion of it.\",\n  \"reason\": \"The article focuses on the Pride march, LGBTQ rights, and opposition to the Trump administration. Climate change appears only as one item in a passing list, so it does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:10:08Z",
+  "duration_seconds": 2.339,
+  "error": null
+}

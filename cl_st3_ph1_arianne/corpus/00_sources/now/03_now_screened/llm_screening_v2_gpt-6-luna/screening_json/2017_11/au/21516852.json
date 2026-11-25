@@ -1,0 +1,77 @@
+{
+  "article_id": "21516852",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/au/21516852.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/au/21516852.json"
+  },
+  "manifest_row": {
+    "article_id": "21516852",
+    "group": "2017_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/au/21516852.txt",
+    "now_field_2": "99",
+    "date_original": "17-11-06",
+    "date_iso": "2017-11-06",
+    "source_name": "Yahoo7 News",
+    "url": "https://au.news.yahoo.com/a/37761529/hsbc-pledges-100-billion-of-finance-by-2025-to-combat-climate-change/",
+    "title": "HSBC pledges $100 billion of finance by 2025 to combat climate ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-AU.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "HSBC's climate-related financing and investment pledge",
+    "climate_relevance": "The report focuses on financing intended to support clean energy and lower-carbon technologies, including green bonds and project finance.",
+    "reason": "Climate change is central to the article: HSBC's $100 billion commitment is explicitly framed as helping combat climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0dcd034d28aa4a3ba426febc4114e525dd4085cd39d955b29578d6970a7bccd0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9a74af6e30c062a731d5784a0916aa721a62dd3f80fbf5c27af53d785415dfe1",
+    "raw_response_text_sha256": "51ad4f93848db9b152d0382944d186dedb35686847b7d9d2f8c63b791176ed1a"
+  },
+  "api_metadata": {
+    "id": "resp_0409ae3570f0b024006b060ef21dc887d29420e0899097d6e7",
+    "model": "gpt-6-luna",
+    "created_at": 1795559154.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 610,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 149,
+      "output_tokens_details": {
+        "reasoning_tokens": 21
+      },
+      "total_tokens": 759
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"HSBC's climate-related financing and investment pledge\",\n  \"climate_relevance\": \"The report focuses on financing intended to support clean energy and lower-carbon technologies, including green bonds and project finance.\",\n  \"reason\": \"Climate change is central to the article: HSBC's $100 billion commitment is explicitly framed as helping combat climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:25:55Z",
+  "duration_seconds": 1.505,
+  "error": null
+}

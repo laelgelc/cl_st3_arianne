@@ -1,0 +1,77 @@
+{
+  "article_id": "14659008",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_10/gb/14659008.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_10/gb/14659008.json"
+  },
+  "manifest_row": {
+    "article_id": "14659008",
+    "group": "2016_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_10/gb/14659008.txt",
+    "now_field_2": "512",
+    "date_original": "16-10-02",
+    "date_iso": "2016-10-02",
+    "source_name": "iNews",
+    "url": "https://inews.co.uk/essentials/news/environment/star-attraction-danger-puffins-show-worrying-signs-decline/",
+    "title": "Puffins show worrying signs of decline in numbers",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-10-ykw/16-10-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Declining puffin numbers and the need for a seabird census",
+    "climate_relevance": "Climate change is named as one of several challenges facing puffins, alongside pollution, over-fishing, and wind farms, but is not discussed further.",
+    "reason": "The article is primarily about puffin populations and monitoring. Its brief reference to climate change as a pressure on seabirds is relevant to broader climate discourse but not substantial enough for core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1da417b34625f9b7101a23ae7627e0b0267e2db9e2abce799ba6b6bef69bf1d6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "26ee8520f656720f1b1bbe1dfd40142e6de2b5474eb6f32fa7ae9a04a1250e5b",
+    "raw_response_text_sha256": "e11aa0cc5684027901d080e40cd99cb9a3a7703dac4d25ecd7a84fa0db4dfe7c"
+  },
+  "api_metadata": {
+    "id": "resp_07e7e85bb17a0bbd006b0605ea3dc887d29e40de474283308c",
+    "model": "gpt-6-luna",
+    "created_at": 1795556842.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1182,
+      "input_tokens_details": {
+        "cache_write_tokens": 1179,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1179
+        }
+      },
+      "output_tokens": 381,
+      "output_tokens_details": {
+        "reasoning_tokens": 224
+      },
+      "total_tokens": 1563
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Declining puffin numbers and the need for a seabird census\",\n  \"climate_relevance\": \"Climate change is named as one of several challenges facing puffins, alongside pollution, over-fishing, and wind farms, but is not discussed further.\",\n  \"reason\": \"The article is primarily about puffin populations and monitoring. Its brief reference to climate change as a pressure on seabirds is relevant to broader climate discourse but not substantial enough for core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:47:24Z",
+  "duration_seconds": 2.789,
+  "error": null
+}

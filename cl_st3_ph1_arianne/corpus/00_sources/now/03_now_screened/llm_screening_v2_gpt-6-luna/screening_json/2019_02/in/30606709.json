@@ -1,0 +1,77 @@
+{
+  "article_id": "30606709",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/in/30606709.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/in/30606709.json"
+  },
+  "manifest_row": {
+    "article_id": "30606709",
+    "group": "2019_02",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/in/30606709.txt",
+    "now_field_2": "775",
+    "date_original": "19-02-25",
+    "date_iso": "2019-02-25",
+    "source_name": "The Indian Express",
+    "url": "https://indianexpress.com/article/opinion/columns/air-pollution-lancet-india-disease-burden-initiative-5600568/",
+    "title": "The thing about air",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-in2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Air pollution in India as a public health and social policy issue",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Environment, Forest and Climate Change; the article does not meaningfully discuss climate change.",
+    "reason": "The article focuses on air pollution, its health effects, and responses such as regulation and air-quality technologies. References to emissions and clean energy are not connected to climate change discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f34f012437f056f802f330271111452a9f4680b633579fb20c0f49b35876ab63",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cbd654f7bc18b5b287df1d1169d3bb4fb4c3cde64611eadbeced3cebd83407ca",
+    "raw_response_text_sha256": "a1ffb76057b74ded5593c8ae9d9855347f2bd409968a6c56683f9e2f43710d30"
+  },
+  "api_metadata": {
+    "id": "resp_09921fc5c5b69c05006b0614a7cc7087d293d137aeb6b3ef6b",
+    "model": "gpt-6-luna",
+    "created_at": 1795560615.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1452,
+      "input_tokens_details": {
+        "cache_write_tokens": 1449,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1449
+        }
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 1715
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Air pollution in India as a public health and social policy issue\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Environment, Forest and Climate Change; the article does not meaningfully discuss climate change.\",\n  \"reason\": \"The article focuses on air pollution, its health effects, and responses such as regulation and air-quality technologies. References to emissions and clean energy are not connected to climate change discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:50:17Z",
+  "duration_seconds": 1.987,
+  "error": null
+}

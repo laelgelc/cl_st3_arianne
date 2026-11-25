@@ -1,0 +1,77 @@
+{
+  "article_id": "82757209",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82757209.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82757209.json"
+  },
+  "manifest_row": {
+    "article_id": "82757209",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82757209.txt",
+    "now_field_2": "182",
+    "date_original": "19-12-18",
+    "date_iso": "2019-12-18",
+    "source_name": "Q13 FOX News",
+    "url": "https://q13fox.com/2019/12/18/inslee-wants-to-tap-reserve-to-address-homelessness-crisis/",
+    "title": "Inslee wants to tap reserve to address homelessness crisis",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Washington Governor Jay Inslee's proposed spending to address homelessness",
+    "climate_relevance": "Climate change appears only in a photo caption identifying Inslee speaking at an event; the article text does not discuss it.",
+    "reason": "The article is about homelessness funding, and the climate reference is incidental caption material rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "68f82ebc88fe90bf25fd617f1d327542255bd8f96c1d3b38b49ae733696afe85",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "36ce8e0a7056afc1b9cf8da4a381cea3a4ca5131328dd5108081b7981c7c0ce9",
+    "raw_response_text_sha256": "f49be95f01e0b9e1a8332406f6009f536565cdabc64072a1a77d5567fb99e8d6"
+  },
+  "api_metadata": {
+    "id": "resp_06c6090aff7824b0006b0648d3515c87d180b35dfe7c082b0a",
+    "model": "gpt-6-luna",
+    "created_at": 1795573971.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 735,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 183,
+      "output_tokens_details": {
+        "reasoning_tokens": 47
+      },
+      "total_tokens": 918
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Washington Governor Jay Inslee's proposed spending to address homelessness\",\n  \"climate_relevance\": \"Climate change appears only in a photo caption identifying Inslee speaking at an event; the article text does not discuss it.\",\n  \"reason\": \"The article is about homelessness funding, and the climate reference is incidental caption material rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:32:53Z",
+  "duration_seconds": 1.904,
+  "error": null
+}

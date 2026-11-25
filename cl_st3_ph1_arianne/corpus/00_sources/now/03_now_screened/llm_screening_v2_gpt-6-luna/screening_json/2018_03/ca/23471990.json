@@ -1,0 +1,77 @@
+{
+  "article_id": "23471990",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_03/ca/23471990.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_03/ca/23471990.json"
+  },
+  "manifest_row": {
+    "article_id": "23471990",
+    "group": "2018_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_03/ca/23471990.txt",
+    "now_field_2": "711",
+    "date_original": "18-03-02",
+    "date_iso": "2018-03-02",
+    "source_name": "GuelphToday",
+    "url": "https://www.guelphtoday.com/local-news/new-bike-lanes-bike-parking-downtown-announced-by-city-852883",
+    "title": "New bike lanes, bike parking downtown announced by city",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-03.txt\"]",
+    "metadata_article_files": "[\"text-18-03/text_18-03-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "New cycling infrastructure and bicycle parking in Guelph",
+    "climate_relevance": "The article notes that cycling is a way to fight climate change and mentions provincial funding tied to a pollution cap and carbon market, but its main focus is cycling safety and infrastructure.",
+    "reason": "Climate change is meaningfully connected to the discussion of cycling as a transport option, but it is not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3a5b197533287e9e5df1cfc634a524f40d51f66da02d8e00a0e9bd6d5e11407c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "574a04ce1e93364f5e1978598b815aba5a2d29019247f6390bb53c77b1a9a98c",
+    "raw_response_text_sha256": "a6329a139a94c2302f5f9b274fc6047bfe0c9633d47190b8acd54d9176d22db1"
+  },
+  "api_metadata": {
+    "id": "resp_081b4aa6ee9aa90f006b06114713bc87d2a5b40739b8167fc3",
+    "model": "gpt-6-luna",
+    "created_at": 1795559751.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1406,
+      "input_tokens_details": {
+        "cache_write_tokens": 1403,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1403
+        }
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1618
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"New cycling infrastructure and bicycle parking in Guelph\",\n  \"climate_relevance\": \"The article notes that cycling is a way to fight climate change and mentions provincial funding tied to a pollution cap and carbon market, but its main focus is cycling safety and infrastructure.\",\n  \"reason\": \"Climate change is meaningfully connected to the discussion of cycling as a transport option, but it is not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:35:53Z",
+  "duration_seconds": 2.109,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "18337153",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/in/18337153.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/in/18337153.json"
+  },
+  "manifest_row": {
+    "article_id": "18337153",
+    "group": "2017_05",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/in/18337153.txt",
+    "now_field_2": "772",
+    "date_original": "17-05-08",
+    "date_iso": "2017-05-08",
+    "source_name": "Times of India",
+    "url": "http://timesofindia.indiatimes.com/city/ahmedabad/records-show-shrinking-of-eszs-finalized-before-hc-stay/articleshow/58582959.cms",
+    "title": "Records show shrinking of ESZs finalized before HC stay",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-IN.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Changes to Eco-Sensitive Zone boundaries around Gujarat wildlife sanctuaries and related government decisions.",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Environment, Forest and Climate Change; the article does not discuss climate change or its implications.",
+    "reason": "The article concerns sanctuary protection zones, biodiversity, and administrative decisions, not climate discourse. The final paragraph about a farmers' protest and power-grid substation appears to be an unrelated snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b9ccee3926d12a49451d1b9ee6264c82ed624df03bfea866180c6904db2ea096",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "db5dde234909f5a730242a18cb2d11648aecdd4b27dfa01de947a1cb5b3c891c",
+    "raw_response_text_sha256": "346a47384e0d33348086e542033de688071a8da1c05a4d43094d8d916e959144"
+  },
+  "api_metadata": {
+    "id": "resp_07cb31da2d5d55f9006b060a1e6a7887d28c0279f2ccfc37e0",
+    "model": "gpt-6-luna",
+    "created_at": 1795557918.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1559,
+      "input_tokens_details": {
+        "cache_write_tokens": 1556,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1556
+        }
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1813
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Changes to Eco-Sensitive Zone boundaries around Gujarat wildlife sanctuaries and related government decisions.\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Environment, Forest and Climate Change; the article does not discuss climate change or its implications.\",\n  \"reason\": \"The article concerns sanctuary protection zones, biodiversity, and administrative decisions, not climate discourse. The final paragraph about a farmers' protest and power-grid substation appears to be an unrelated snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:05:20Z",
+  "duration_seconds": 1.965,
+  "error": null
+}

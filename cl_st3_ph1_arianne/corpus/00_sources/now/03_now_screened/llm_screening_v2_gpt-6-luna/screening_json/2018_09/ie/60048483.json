@@ -1,0 +1,77 @@
+{
+  "article_id": "60048483",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/ie/60048483.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/ie/60048483.json"
+  },
+  "manifest_row": {
+    "article_id": "60048483",
+    "group": "2018_09",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/ie/60048483.txt",
+    "now_field_2": "177",
+    "date_original": "18-09-21",
+    "date_iso": "2018-09-21",
+    "source_name": "Dublin Live",
+    "url": "https://www.dublinlive.ie/news/dublin-news/irelands-first-driverless-bus-out-15181478",
+    "title": "Ireland's first driverless bus will be out on the streets of Dublin this ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "The main article concerns transparency and systemic risks in European commercial real-estate lending; an unrelated snippet describes a driverless shuttle in Dublin.",
+    "climate_relevance": "Climate change is briefly listed as one possible unforeseen agent of a financial downturn, without further discussion. The shuttle snippet mentions sustainable transport but does not meaningfully connect it to climate change.",
+    "reason": "The available climate reference is a passing mention in a list and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1e2afe0d5ded24fcef149adc4b6dc8ce33538b6421fc475f4095db4b497647cd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a2d887d9b9abbdcdd234f700507cdfe730ca1f916be9b69fa34c39df039869cb",
+    "raw_response_text_sha256": "594f0a7bc25a9d6f7df31b5101636f2107f22467598c42424d732a7dc1d56eb2"
+  },
+  "api_metadata": {
+    "id": "resp_0c855b92450154dd006b0630d6091887d1ba4c5e4a851fc128",
+    "model": "gpt-6-luna",
+    "created_at": 1795567830.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4272,
+      "input_tokens_details": {
+        "cache_write_tokens": 4269,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4269
+        }
+      },
+      "output_tokens": 351,
+      "output_tokens_details": {
+        "reasoning_tokens": 195
+      },
+      "total_tokens": 4623
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The main article concerns transparency and systemic risks in European commercial real-estate lending; an unrelated snippet describes a driverless shuttle in Dublin.\",\n  \"climate_relevance\": \"Climate change is briefly listed as one possible unforeseen agent of a financial downturn, without further discussion. The shuttle snippet mentions sustainable transport but does not meaningfully connect it to climate change.\",\n  \"reason\": \"The available climate reference is a passing mention in a list and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:50:32Z",
+  "duration_seconds": 2.603,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "42021190",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/gb/42021190.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/gb/42021190.json"
+  },
+  "manifest_row": {
+    "article_id": "42021190",
+    "group": "2020_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/gb/42021190.txt",
+    "now_field_2": "748",
+    "date_original": "20-06-01",
+    "date_iso": "2020-06-01",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/house-of-lords-committee-report-on-northern-ireland-1-6678669",
+    "title": "Fresh concerns over the `potent threat' Brexit poses to ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Brexit transition arrangements and the Northern Ireland Protocol",
+    "climate_relevance": "Climate change appears only in repeated promotional descriptions of the publication's coverage; the article itself contains no meaningful climate discourse.",
+    "reason": "The report focuses on the economic and political effects of Brexit arrangements in Northern Ireland. Climate change is mentioned only in boilerplate about the publication.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "be333aa0c9d337751ccd1a1f5c2c75fcb9fc79fb25a175b33fe8ca4e2f65f3a4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "26052e0bc3f3ca0226d5092963375e7ff7499f301d4402952de2bcf5559a1e78",
+    "raw_response_text_sha256": "11306822727d32425d59d912ecaa0ff30c6cc9a7baf6e3b664e0cb7485637970"
+  },
+  "api_metadata": {
+    "id": "resp_0180eca4ce3b57d3006b062407aa1487d291b7d7745c0a51c0",
+    "model": "gpt-6-luna",
+    "created_at": 1795564551.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1394,
+      "input_tokens_details": {
+        "cache_write_tokens": 1391,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1391
+        }
+      },
+      "output_tokens": 186,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 1580
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Brexit transition arrangements and the Northern Ireland Protocol\",\n  \"climate_relevance\": \"Climate change appears only in repeated promotional descriptions of the publication's coverage; the article itself contains no meaningful climate discourse.\",\n  \"reason\": \"The report focuses on the economic and political effects of Brexit arrangements in Northern Ireland. Climate change is mentioned only in boilerplate about the publication.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:55:53Z",
+  "duration_seconds": 1.689,
+  "error": null
+}

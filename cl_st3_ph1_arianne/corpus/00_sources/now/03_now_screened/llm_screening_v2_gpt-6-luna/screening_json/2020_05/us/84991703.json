@@ -1,0 +1,77 @@
+{
+  "article_id": "84991703",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/us/84991703.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/us/84991703.json"
+  },
+  "manifest_row": {
+    "article_id": "84991703",
+    "group": "2020_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/us/84991703.txt",
+    "now_field_2": "1178",
+    "date_original": "20-05-22",
+    "date_iso": "2020-05-22",
+    "source_name": "Houston Chronicle",
+    "url": "https://www.chron.com/news/article/Trump-administration-discussed-conducting-first-15290244.php",
+    "title": "Trump administration discussed conducting first U.S. nuclear test in decades",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Trump administration discussions about resuming U.S. nuclear testing and arms control",
+    "climate_relevance": "Climate change appears only in a repeated image caption about the Doomsday Clock; the article itself does not discuss climate change.",
+    "reason": "The identifiable main article concerns nuclear testing and arms control. The climate reference is confined to an unrelated caption and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "414b4113ab5c2095b3010f5db45bf6019128abfc5b419057a1b2bf57ce60522a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e76c844b730cd47d62ec1cfa9f2a8964d508019f8f93672f201a8a3891b867fb",
+    "raw_response_text_sha256": "a6ab8fd66f5a8732240ede8af9ffdc1bd497bd1ef074e7dac6de480b1ef2871a"
+  },
+  "api_metadata": {
+    "id": "resp_005839b230a2b616006b064afb370887d1ab01cafaf26045c8",
+    "model": "gpt-6-luna",
+    "created_at": 1795574523.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1995,
+      "input_tokens_details": {
+        "cache_write_tokens": 1992,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1992
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 2223
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Trump administration discussions about resuming U.S. nuclear testing and arms control\",\n  \"climate_relevance\": \"Climate change appears only in a repeated image caption about the Doomsday Clock; the article itself does not discuss climate change.\",\n  \"reason\": \"The identifiable main article concerns nuclear testing and arms control. The climate reference is confined to an unrelated caption and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:42:05Z",
+  "duration_seconds": 2.023,
+  "error": null
+}

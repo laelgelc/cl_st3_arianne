@@ -1,0 +1,77 @@
+{
+  "article_id": "7538275",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_03/pk/7538275.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_03/pk/7538275.json"
+  },
+  "manifest_row": {
+    "article_id": "7538275",
+    "group": "2016_03",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_03/pk/7538275.txt",
+    "now_field_2": "433",
+    "date_original": "16-03-06",
+    "date_iso": "2016-03-06",
+    "source_name": "PakTribune.com",
+    "url": "http://paktribune.com/news/Mamnoon-Hussain-to-attend-OIC-meeting-275872.html",
+    "title": "Mamnoon Hussain to attend OIC meeting",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-03-sls/16-03-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "An OIC summit focused on Palestine and Al-Quds",
+    "climate_relevance": "Climate change appears only in the title of a minister attending the summit; no climate-related issue or discourse is discussed.",
+    "reason": "The article concerns the Palestine summit and its agenda. The passing reference to Pakistan's Minister for Climate Change is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "971ee7f67c8c1108fd203c812e0f76879877d5969f7d62c83ed6a4d5a0c7de99",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2e79024e7767ab5e98e6a423e067500bb29ebc4fafa6cf5980ebf35d74bdfb19",
+    "raw_response_text_sha256": "639d28eb89c6ad41b17a61c97848689874348cf858106845e8a660ae657c34d9"
+  },
+  "api_metadata": {
+    "id": "resp_0737702800ba2765006b0646312acc87d18ebe2d107b5405dd",
+    "model": "gpt-6-luna",
+    "created_at": 1795573297.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1070,
+      "input_tokens_details": {
+        "cache_write_tokens": 1067,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1067
+        }
+      },
+      "output_tokens": 178,
+      "output_tokens_details": {
+        "reasoning_tokens": 39
+      },
+      "total_tokens": 1248
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"An OIC summit focused on Palestine and Al-Quds\",\n  \"climate_relevance\": \"Climate change appears only in the title of a minister attending the summit; no climate-related issue or discourse is discussed.\",\n  \"reason\": \"The article concerns the Palestine summit and its agenda. The passing reference to Pakistan's Minister for Climate Change is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:21:38Z",
+  "duration_seconds": 1.834,
+  "error": null
+}

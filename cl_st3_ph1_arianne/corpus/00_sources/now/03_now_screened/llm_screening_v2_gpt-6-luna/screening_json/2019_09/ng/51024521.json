@@ -1,0 +1,77 @@
+{
+  "article_id": "51024521",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ng/51024521.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ng/51024521.json"
+  },
+  "manifest_row": {
+    "article_id": "51024521",
+    "group": "2019_09",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ng/51024521.txt",
+    "now_field_2": "1137",
+    "date_original": "19-09-09",
+    "date_iso": "2019-09-09",
+    "source_name": "blueprint.ng",
+    "url": "https://www.blueprint.ng/frank-urges-tribunal-justices-to-stand-for-honour/",
+    "title": "Frank urges tribunal Justices to stand for honour - Blueprint",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A political activist’s appeal to judges handling a Nigerian presidential election petition",
+    "climate_relevance": "The main article contains no climate discourse. A separate, truncated column snippet briefly mentions Greta Thunberg and climate change.",
+    "reason": "Climate change appears only in an unrelated snippet appended to the main election article, not as meaningful discourse in the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c72d40e0767c476bed67b4e5674a11e866a305e3c244968ec2af789a0aa14341",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0d81ece10a023315e03933bead2cc8e5d52ccdb3d2a3d132e68f5068ed3ba7db",
+    "raw_response_text_sha256": "6fee3945fa835cebc685ec1dcd2084695c2cc28c83a965a926ee1b6261e2fbd4"
+  },
+  "api_metadata": {
+    "id": "resp_0572bcd02d41cf2d006b062b78c34087d1815fd9844fa9e471",
+    "model": "gpt-6-luna",
+    "created_at": 1795566456.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1898,
+      "input_tokens_details": {
+        "cache_write_tokens": 1895,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1895
+        }
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 2188
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A political activist’s appeal to judges handling a Nigerian presidential election petition\",\n  \"climate_relevance\": \"The main article contains no climate discourse. A separate, truncated column snippet briefly mentions Greta Thunberg and climate change.\",\n  \"reason\": \"Climate change appears only in an unrelated snippet appended to the main election article, not as meaningful discourse in the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:27:40Z",
+  "duration_seconds": 3.888,
+  "error": null
+}

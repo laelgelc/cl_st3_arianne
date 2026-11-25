@@ -1,0 +1,77 @@
+{
+  "article_id": "81593921",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81593921.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81593921.json"
+  },
+  "manifest_row": {
+    "article_id": "81593921",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81593921.txt",
+    "now_field_2": "348",
+    "date_original": "19-10-14",
+    "date_iso": "2019-10-14",
+    "source_name": "AllAfrica.com",
+    "url": "https://allafrica.com/stories/201910140220.html",
+    "title": "Sudan: Five New Cases of Rift Valley Fever in Red Sea State",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Rift Valley Fever and an unidentified disease outbreak in Sudan",
+    "climate_relevance": "Climate change is discussed in a separate Reuters report appended after the AllAfrica boilerplate, not in the identifiable main article.",
+    "reason": "The headline and main article concern disease outbreaks in Sudan. Although the appended Reuters report contains substantial climate discourse, it is a distinct, unrelated article and does not make the main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "deb95b90e16a384b5fb96b7a2625bb846260938f1aedfc7677e5254e0502a41f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "31ae0cbab12e3863400c731d50e08e6fa2ff986da3909698c2de057ea930a316",
+    "raw_response_text_sha256": "4f36f9b5792fd67a9529fa0d84cc7e38ee77c751417434e0cc8c37f6a17c0ba4"
+  },
+  "api_metadata": {
+    "id": "resp_00008aa1a997e8de006b06477cde6487d18645817ed9bb56fb",
+    "model": "gpt-6-luna",
+    "created_at": 1795573628.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1887,
+      "input_tokens_details": {
+        "cache_write_tokens": 1884,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1884
+        }
+      },
+      "output_tokens": 377,
+      "output_tokens_details": {
+        "reasoning_tokens": 221
+      },
+      "total_tokens": 2264
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Rift Valley Fever and an unidentified disease outbreak in Sudan\",\n  \"climate_relevance\": \"Climate change is discussed in a separate Reuters report appended after the AllAfrica boilerplate, not in the identifiable main article.\",\n  \"reason\": \"The headline and main article concern disease outbreaks in Sudan. Although the appended Reuters report contains substantial climate discourse, it is a distinct, unrelated article and does not make the main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:27:11Z",
+  "duration_seconds": 3.038,
+  "error": null
+}

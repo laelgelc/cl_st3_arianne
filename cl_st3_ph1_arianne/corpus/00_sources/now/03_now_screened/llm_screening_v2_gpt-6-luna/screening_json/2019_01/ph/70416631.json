@@ -1,0 +1,77 @@
+{
+  "article_id": "70416631",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/ph/70416631.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/ph/70416631.json"
+  },
+  "manifest_row": {
+    "article_id": "70416631",
+    "group": "2019_01",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/ph/70416631.txt",
+    "now_field_2": "587",
+    "date_original": "19-01-14",
+    "date_iso": "2019-01-14",
+    "source_name": "Philippine Star",
+    "url": "https://www.philstar.com/business/2019/01/15/1885075/world-bank-doubles-philippines-disaster-insurance-coverage-390-million",
+    "title": "World Bank doubles Philippines disaster insurance coverage to $390 ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-ph.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "World Bank disaster risk insurance coverage for the Philippines",
+    "climate_relevance": "The article discusses insurance against typhoons and other extreme weather events and explicitly connects the program to climate change impacts and resilience, but its main focus is disaster financing rather than climate change.",
+    "reason": "Climate change is meaningfully invoked as part of the rationale for disaster resilience, making the article relevant to broader climate discourse but not core climate coverage. The supplied text also includes unrelated business, sports, and post-conflict material after the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "87050d7551276200625741b0b6318bbfdb90354b828d1e0aa77c6ef816eff73e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "71ad6f86aa36ec35e96d31d3ab805328da71cb4d6cb7e28273e3d1929996a43a",
+    "raw_response_text_sha256": "61b2151f5ec4a81cc892ec5ac89e9836d9c613aa2a43485e051e91eb2f812004"
+  },
+  "api_metadata": {
+    "id": "resp_0e89919f7795d163006b063c6e9c3087d18ce3a03f0c7b1308",
+    "model": "gpt-6-luna",
+    "created_at": 1795570799.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1244,
+      "input_tokens_details": {
+        "cache_write_tokens": 1241,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1241
+        }
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1508
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"World Bank disaster risk insurance coverage for the Philippines\",\n  \"climate_relevance\": \"The article discusses insurance against typhoons and other extreme weather events and explicitly connects the program to climate change impacts and resilience, but its main focus is disaster financing rather than climate change.\",\n  \"reason\": \"Climate change is meaningfully invoked as part of the rationale for disaster resilience, making the article relevant to broader climate discourse but not core climate coverage. The supplied text also includes unrelated business, sports, and post-conflict material after the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:01Z",
+  "duration_seconds": 2.687,
+  "error": null
+}

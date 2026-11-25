@@ -1,0 +1,77 @@
+{
+  "article_id": "40214799",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/sg/40214799.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/sg/40214799.json"
+  },
+  "manifest_row": {
+    "article_id": "40214799",
+    "group": "2018_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/sg/40214799.txt",
+    "now_field_2": "1737",
+    "date_original": "18-10-30",
+    "date_iso": "2018-10-30",
+    "source_name": "Channel NewsAsia",
+    "url": "https://www.channelnewsasia.com/news/cnainsider/see-hum-laksa-char-kway-teow-blood-cockles-food-price-hike-10881248",
+    "title": "No more 'hum' in laksa? Why cockles are becoming costlier and ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Declining blood cockle supplies and the causes of rising prices, including pollution, smuggling, and overharvesting.",
+    "climate_relevance": "Climate change is briefly mentioned as a possible factor in food-price increases, but the article does not develop that connection.",
+    "reason": "The article focuses on cockle supply and environmental damage from pollution and human development. Its single passing reference to climate change does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "767dcf1976bd2ec20d764fd41c9261277e7df0ff4ff0db52217c94c044b2b08a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "add321f5b24637386ee4b05723a60188bcd8991e9993753e2e7355828a91753c",
+    "raw_response_text_sha256": "006ce9c9068fa2d7a2a7afcd894782be57ea1c724b029e0294d6d04448452df6"
+  },
+  "api_metadata": {
+    "id": "resp_0350e64d5d1a4859006b061e82ccb887d29ae8a8a8c1a17388",
+    "model": "gpt-6-luna",
+    "created_at": 1795563138.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2963,
+      "input_tokens_details": {
+        "cache_write_tokens": 2960,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2960
+        }
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 3269
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Declining blood cockle supplies and the causes of rising prices, including pollution, smuggling, and overharvesting.\",\n  \"climate_relevance\": \"Climate change is briefly mentioned as a possible factor in food-price increases, but the article does not develop that connection.\",\n  \"reason\": \"The article focuses on cockle supply and environmental damage from pollution and human development. Its single passing reference to climate change does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:32:21Z",
+  "duration_seconds": 2.727,
+  "error": null
+}

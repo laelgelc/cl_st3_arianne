@@ -1,0 +1,77 @@
+{
+  "article_id": "40271602",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/my/40271602.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/my/40271602.json"
+  },
+  "manifest_row": {
+    "article_id": "40271602",
+    "group": "2018_11",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/my/40271602.txt",
+    "now_field_2": "123",
+    "date_original": "18-11-15",
+    "date_iso": "2018-11-15",
+    "source_name": "The Malaysian Insight",
+    "url": "https://www.themalaysianinsight.com/s/111729",
+    "title": "Ministry only reviewing IPP deals won via direct negotiations",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Reviewing independent power producer contracts awarded through direct negotiations",
+    "climate_relevance": "Climate change appears only in the minister's portfolio title; the article discusses power contracts and consumer rates without meaningful climate-related content.",
+    "reason": "The text contains no substantive discussion of climate change, its impacts, or climate policy. The portfolio label alone is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9e8becf662f7158cda7c54e613457607ab84495f4696f3eea70a57479df11a86",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b09ba1d688eeac1b8a88dea6680721625c8be7a38dfdfa2ea5249d5874de365a",
+    "raw_response_text_sha256": "b306982c40251f2e9614620320a3836a87afa8921bd6169af01206b32c356b3e"
+  },
+  "api_metadata": {
+    "id": "resp_04df17db5dfbc233006b061e9fe8c487d2bba78d6a76c73f8f",
+    "model": "gpt-6-luna",
+    "created_at": 1795563168.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 656,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 202,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 858
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Reviewing independent power producer contracts awarded through direct negotiations\",\n  \"climate_relevance\": \"Climate change appears only in the minister's portfolio title; the article discusses power contracts and consumer rates without meaningful climate-related content.\",\n  \"reason\": \"The text contains no substantive discussion of climate change, its impacts, or climate policy. The portfolio label alone is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:32:49Z",
+  "duration_seconds": 1.975,
+  "error": null
+}

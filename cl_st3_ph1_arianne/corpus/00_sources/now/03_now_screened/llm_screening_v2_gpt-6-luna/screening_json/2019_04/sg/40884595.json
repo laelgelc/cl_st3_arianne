@@ -1,0 +1,77 @@
+{
+  "article_id": "40884595",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/sg/40884595.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/sg/40884595.json"
+  },
+  "manifest_row": {
+    "article_id": "40884595",
+    "group": "2019_04",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/sg/40884595.txt",
+    "now_field_2": "214",
+    "date_original": "19-04-26",
+    "date_iso": "2019-04-26",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/volkswagen-apos-police-apos-riot-070000495.html",
+    "title": "Volkswagen's new police 'riot' van conversion revealed",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Volkswagen's police riot van conversion",
+    "climate_relevance": "Climate change appears only as brief context for the timing of the announcement, through a reference to protests in London.",
+    "reason": "The text focuses on the police van and its features; it contains no meaningful discussion of climate change or the protests.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "65e92ad95fc0530c65f59356f85cd4e29999b01d75721eb631365c105cec3a37",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b997413f979c3dbe27bce0f68bc353728736311aa42ed7c860830453f4fdede7",
+    "raw_response_text_sha256": "425416f9b4c11cab2214620d11e416b2ce6e6deb5c7ebb885dd0d0663ec1d12a"
+  },
+  "api_metadata": {
+    "id": "resp_03c0b6d64f17a914006b06203970a887d2a0c5ae29627a6b3b",
+    "model": "gpt-6-luna",
+    "created_at": 1795563577.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 756,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 984
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Volkswagen's police riot van conversion\",\n  \"climate_relevance\": \"Climate change appears only as brief context for the timing of the announcement, through a reference to protests in London.\",\n  \"reason\": \"The text focuses on the police van and its features; it contains no meaningful discussion of climate change or the protests.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:39Z",
+  "duration_seconds": 1.92,
+  "error": null
+}

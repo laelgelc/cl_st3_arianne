@@ -1,0 +1,77 @@
+{
+  "article_id": "81947105",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/81947105.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/81947105.json"
+  },
+  "manifest_row": {
+    "article_id": "81947105",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/81947105.txt",
+    "now_field_2": "188",
+    "date_original": "19-11-02",
+    "date_iso": "2019-11-02",
+    "source_name": "Lincoln Journal Star",
+    "url": "https://journalstar.com/news/local/education/ebke-receives-heart-of--h-award/article_2d6a8dca-9482-5598-a10f-91bb5ed25be0.html",
+    "title": "Ebke receives Heart of 4-H Award",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A 4-H volunteer’s work with youth and horse-showing activities",
+    "climate_relevance": "Climate change appears only in a disconnected fragment about fossil-fuel investment portfolios and avoiding climate politics.",
+    "reason": "The identifiable main article is a profile of a 4-H horse volunteer. The climate-related fragment is unrelated to that article and is too fragmentary to provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "98c52ea38c42a8f3262d0b21d55dd0fc700095daf552134b2e0b01ebfa6d9a97",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "194fd67eb498a23eded89104af2fdc9197a92f14813ec9b7d120218ed2019dc8",
+    "raw_response_text_sha256": "a1a6e8c4be15bc10bf29aa07ab9fd92ce9af625b8285b0ecbf1dc076e6d5700d"
+  },
+  "api_metadata": {
+    "id": "resp_02cce6d9831fec86006b0647e17f6087d18eba6a4ad18df8e7",
+    "model": "gpt-6-luna",
+    "created_at": 1795573729.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 724,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 1013
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A 4-H volunteer’s work with youth and horse-showing activities\",\n  \"climate_relevance\": \"Climate change appears only in a disconnected fragment about fossil-fuel investment portfolios and avoiding climate politics.\",\n  \"reason\": \"The identifiable main article is a profile of a 4-H horse volunteer. The climate-related fragment is unrelated to that article and is too fragmentary to provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:28:51Z",
+  "duration_seconds": 2.551,
+  "error": null
+}

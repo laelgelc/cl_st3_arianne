@@ -1,0 +1,77 @@
+{
+  "article_id": "50206531",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/gb/50206531.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/gb/50206531.json"
+  },
+  "manifest_row": {
+    "article_id": "50206531",
+    "group": "2018_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/gb/50206531.txt",
+    "now_field_2": "466",
+    "date_original": "18-11-13",
+    "date_iso": "2018-11-13",
+    "source_name": "NewStartMag",
+    "url": "https://newstartmag.co.uk/job/head-of-policy/",
+    "title": "Head of Policy",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "A job advertisement for a Head of Policy role at National Parks England",
+    "climate_relevance": "Climate change appears only in a list of policy areas the organisation works on.",
+    "reason": "The text contains no substantive discussion of climate change; the mention is incidental to the job description.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a409f19cd791e6b4436e782fee758bee79b75a3316360c51dfb7b4904324457e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "19430be986f5af1c45b7fbe0c511f4b7cf8dd839add7e805ae9ec961b800793a",
+    "raw_response_text_sha256": "e6332fb0fada42f7d132a471f1c0617f408d70f309180e4e673cae21bed0c7ae"
+  },
+  "api_metadata": {
+    "id": "resp_08e0d7779ab07b42006b062800bd3887d1a152d2f67dc71eaa",
+    "model": "gpt-6-luna",
+    "created_at": 1795565568.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1077,
+      "input_tokens_details": {
+        "cache_write_tokens": 1074,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1074
+        }
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 1309
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A job advertisement for a Head of Policy role at National Parks England\",\n  \"climate_relevance\": \"Climate change appears only in a list of policy areas the organisation works on.\",\n  \"reason\": \"The text contains no substantive discussion of climate change; the mention is incidental to the job description.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:12:50Z",
+  "duration_seconds": 2.175,
+  "error": null
+}

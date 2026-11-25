@@ -1,0 +1,77 @@
+{
+  "article_id": "21473061",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/us/21473061.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/us/21473061.json"
+  },
+  "manifest_row": {
+    "article_id": "21473061",
+    "group": "2017_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/us/21473061.txt",
+    "now_field_2": "1169",
+    "date_original": "17-11-03",
+    "date_iso": "2017-11-03",
+    "source_name": "W Magazine",
+    "url": "https://www.wmagazine.com/story/10-books-to-read-november-2017",
+    "title": "Love Letters to Michelle Obama, a Biography of Stevie Nicks, and ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "A roundup of books to read, covering memoir, fiction, poetry, and biography.",
+    "climate_relevance": "Climate change is mentioned only as one potential interest for readers of a book about jellyfish and oceans.",
+    "reason": "The article is a book-recommendation roundup, and the brief reference to climate change's effects on oceans provides no substantive discussion of climate issues.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "08f0639cea7ddc0c72913780488723bb86aad1e3c03bfa4cd977bea82f78d409",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d3fad4df6486119e54b9e8abc74915f159f6e112d794cb03626ce6d99ce45403",
+    "raw_response_text_sha256": "7f4c0ce9ce10374dc4a8a9af4d83edd89f3d32cef810398c48991be4a32da1e1"
+  },
+  "api_metadata": {
+    "id": "resp_09825c3ecbcb0963006b060edccf6487d2ada4f0e6e0923873",
+    "model": "gpt-6-luna",
+    "created_at": 1795559132.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1994,
+      "input_tokens_details": {
+        "cache_write_tokens": 1991,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1991
+        }
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 188
+      },
+      "total_tokens": 2322
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A roundup of books to read, covering memoir, fiction, poetry, and biography.\",\n  \"climate_relevance\": \"Climate change is mentioned only as one potential interest for readers of a book about jellyfish and oceans.\",\n  \"reason\": \"The article is a book-recommendation roundup, and the brief reference to climate change's effects on oceans provides no substantive discussion of climate issues.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:25:35Z",
+  "duration_seconds": 2.614,
+  "error": null
+}

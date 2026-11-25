@@ -1,0 +1,77 @@
+{
+  "article_id": "16457554",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/us/16457554.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/us/16457554.json"
+  },
+  "manifest_row": {
+    "article_id": "16457554",
+    "group": "2017_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/us/16457554.txt",
+    "now_field_2": "831",
+    "date_original": "17-01-18",
+    "date_iso": "2017-01-18",
+    "source_name": "ABC News",
+    "url": "http://abcnews.go.com/Politics/king-bankruptcy-wilbur-ross-set-confirmation-hearing/story?id=44838900",
+    "title": "'King of Bankruptcy' Wilbur Ross Set for Confirmation Hearing",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Wilbur Ross's Senate confirmation hearing for Commerce Secretary, focusing mainly on trade and his qualifications",
+    "climate_relevance": "Climate change appears only in a brief list of Trump policy areas, with no discussion of climate policy or its implications.",
+    "reason": "The article is primarily about Ross's confirmation hearing and trade policy. The sole climate reference is a passing mention in a list and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "121e5ed40ee66854a237c637d03e4b248ab3d4ba3e9513447da6105f6ae81eed",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c6f956d482aa4745f5b9b48f4e3874ece8fcf50a522fd46d874fc037166870b0",
+    "raw_response_text_sha256": "f111651987ecc99a94b1aa272a96585668c3571b91eaa366b561f38adeda10d9"
+  },
+  "api_metadata": {
+    "id": "resp_09f37abcaa9da150006b0607a7978887d2ba87955e27192a14",
+    "model": "gpt-6-luna",
+    "created_at": 1795557287.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1538,
+      "input_tokens_details": {
+        "cache_write_tokens": 1535,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1535
+        }
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 1796
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Wilbur Ross's Senate confirmation hearing for Commerce Secretary, focusing mainly on trade and his qualifications\",\n  \"climate_relevance\": \"Climate change appears only in a brief list of Trump policy areas, with no discussion of climate policy or its implications.\",\n  \"reason\": \"The article is primarily about Ross's confirmation hearing and trade policy. The sole climate reference is a passing mention in a list and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:54:49Z",
+  "duration_seconds": 2.196,
+  "error": null
+}

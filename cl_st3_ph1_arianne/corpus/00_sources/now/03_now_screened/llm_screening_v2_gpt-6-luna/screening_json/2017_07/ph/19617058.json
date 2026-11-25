@@ -1,0 +1,77 @@
+{
+  "article_id": "19617058",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/ph/19617058.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/ph/19617058.json"
+  },
+  "manifest_row": {
+    "article_id": "19617058",
+    "group": "2017_07",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/ph/19617058.txt",
+    "now_field_2": "824",
+    "date_original": "17-07-22",
+    "date_iso": "2017-07-22",
+    "source_name": "Manila Bulletin",
+    "url": "http://news.mb.com.ph/2017/07/22/marine-team-discovers-30-new-species-off-verde-island/",
+    "title": "Marine team discovers 30 new species off Verde Island",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-PH.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Marine biodiversity discoveries and conservation in the Verde Island Passage",
+    "climate_relevance": "Climate change and ocean acidification are named among the combined threats to coral reefs, but the article does not develop them further.",
+    "reason": "The article focuses on marine species, reef health, and conservation measures. Its brief mention of climate change as a threat to coral reefs provides relevant background discourse but is not substantial enough for CORE.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "283d89e1ab7813883e8b1b8fb90575bf779ae066749a81980126b83f63c1c080",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ed33c20fa22f599ece225429165f5481396ac6b40d862ecc9954fd5169c8de60",
+    "raw_response_text_sha256": "8cd5bb28b2f7fbd82c16c4f6844d882e48bedab9359aca70d4a246c6b3d4cd86"
+  },
+  "api_metadata": {
+    "id": "resp_06858c19c36b8380006b060c408ab887d2901ab29b981343d6",
+    "model": "gpt-6-luna",
+    "created_at": 1795558464.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1549,
+      "input_tokens_details": {
+        "cache_write_tokens": 1546,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1546
+        }
+      },
+      "output_tokens": 382,
+      "output_tokens_details": {
+        "reasoning_tokens": 233
+      },
+      "total_tokens": 1931
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Marine biodiversity discoveries and conservation in the Verde Island Passage\",\n  \"climate_relevance\": \"Climate change and ocean acidification are named among the combined threats to coral reefs, but the article does not develop them further.\",\n  \"reason\": \"The article focuses on marine species, reef health, and conservation measures. Its brief mention of climate change as a threat to coral reefs provides relevant background discourse but is not substantial enough for CORE.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:14:27Z",
+  "duration_seconds": 2.719,
+  "error": null
+}

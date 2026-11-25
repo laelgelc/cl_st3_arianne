@@ -1,0 +1,77 @@
+{
+  "article_id": "42162817",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/gb/42162817.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/gb/42162817.json"
+  },
+  "manifest_row": {
+    "article_id": "42162817",
+    "group": "2020_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/gb/42162817.txt",
+    "now_field_2": "533",
+    "date_original": "20-08-03",
+    "date_iso": "2020-08-03",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/home-secretary-criticises-labour-leader-1-6701878",
+    "title": "Priti Patel accuses Keir Starmer of `failing to depart ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A parliamentary exchange about allegations of racism and political divisions.",
+    "climate_relevance": "Climate change appears only in a repeated publication description listing topics the outlet covers; the article itself contains no meaningful climate discourse.",
+    "reason": "The climate reference is promotional boilerplate, not part of the article’s substantive content.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "63ca498058f68e809c40a0ea94754442297479f380e467c42f870227a0bb8e01",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2513f4f6fe10df95398a48c579f2d39d8712bee2843f7b993e2142a49c896b3d",
+    "raw_response_text_sha256": "0e6aff7280384257911aa26a0844a5185f4a7f62148e3b7eabe9a67e043adbc5"
+  },
+  "api_metadata": {
+    "id": "resp_0cc0672c1b9ea739006b0624ca3f5c87d296e62e3ffc18a206",
+    "model": "gpt-6-luna",
+    "created_at": 1795564746.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1142,
+      "input_tokens_details": {
+        "cache_write_tokens": 1139,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1139
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 1367
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A parliamentary exchange about allegations of racism and political divisions.\",\n  \"climate_relevance\": \"Climate change appears only in a repeated publication description listing topics the outlet covers; the article itself contains no meaningful climate discourse.\",\n  \"reason\": \"The climate reference is promotional boilerplate, not part of the article’s substantive content.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:59:08Z",
+  "duration_seconds": 1.979,
+  "error": null
+}

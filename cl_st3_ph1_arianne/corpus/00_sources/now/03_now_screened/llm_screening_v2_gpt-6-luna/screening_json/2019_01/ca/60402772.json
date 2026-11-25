@@ -1,0 +1,77 @@
+{
+  "article_id": "60402772",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/ca/60402772.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/ca/60402772.json"
+  },
+  "manifest_row": {
+    "article_id": "60402772",
+    "group": "2019_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/ca/60402772.txt",
+    "now_field_2": "1132",
+    "date_original": "19-01-03",
+    "date_iso": "2019-01-03",
+    "source_name": "countylive.ca",
+    "url": "http://www.countylive.ca/year-in-review-in-photos-july-2018/",
+    "title": "Year in Review in photos - July 2018",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "A year-in-review collection of local community events and news in Prince Edward County",
+    "climate_relevance": "One item reports the cancellation of a local wind turbine project and includes a political claim about whether it would help fight climate change.",
+    "reason": "The text is a collection of mostly unrelated photo captions, not climate coverage. However, the wind-project item contains meaningful climate-policy discourse, so the text is relevant as peripheral material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "14b2101a166b2bfe3f542d2942108ae1457b9691e4456baf0182cf2c8f23ae33",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b60cef554145379f160b3410d77e21242d72730a125398082d7cfbb1481f8aff",
+    "raw_response_text_sha256": "4e516bfd3876d5153ab8c72f52f77572c4f080a20ac36330e0a0c1b66a8a7d9b"
+  },
+  "api_metadata": {
+    "id": "resp_09f156c5383ee60a006b06327ee97887d1bfe11ec00e451c87",
+    "model": "gpt-6-luna",
+    "created_at": 1795568255.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1961,
+      "input_tokens_details": {
+        "cache_write_tokens": 1958,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1958
+        }
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 2261
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A year-in-review collection of local community events and news in Prince Edward County\",\n  \"climate_relevance\": \"One item reports the cancellation of a local wind turbine project and includes a political claim about whether it would help fight climate change.\",\n  \"reason\": \"The text is a collection of mostly unrelated photo captions, not climate coverage. However, the wind-project item contains meaningful climate-policy discourse, so the text is relevant as peripheral material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:57:37Z",
+  "duration_seconds": 3.009,
+  "error": null
+}

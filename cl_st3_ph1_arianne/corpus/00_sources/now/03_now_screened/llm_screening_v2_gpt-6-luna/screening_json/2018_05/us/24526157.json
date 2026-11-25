@@ -1,0 +1,77 @@
+{
+  "article_id": "24526157",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/us/24526157.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/us/24526157.json"
+  },
+  "manifest_row": {
+    "article_id": "24526157",
+    "group": "2018_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/us/24526157.txt",
+    "now_field_2": "1658",
+    "date_original": "18-05-06",
+    "date_iso": "2018-05-06",
+    "source_name": "EcoWatch",
+    "url": "https://www.ecowatch.com/glacier-climbing-caves-2565817605.html",
+    "title": "Meet the Adventurers Who Brave Glacial Caves in the Name of Science",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Exploration and scientific study of glacial caves beneath Pacific Northwest volcanoes",
+    "climate_relevance": "The main article says glaciologists study changes beneath the ice for information about climate change and describes glaciers as paleoclimate archives. It also mentions potential implications for watersheds and natural resources.",
+    "reason": "Climate research is a meaningful part of the main article, but the focus is on cave exploration, safety, and the broader scientific uses of the expeditions rather than climate change itself. The text also contains several unrelated appended snippets, some of which discuss climate issues.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "55e1e4130c04b4e83af50118ec271f48239f260a11912df44b7c757dda9fae13",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a9af2496bc64b482c16a009ba4feb1717c1ffb8ab3f9ac6b9988d158ff2bfb41",
+    "raw_response_text_sha256": "32fb3dc81be2a15acd37f0c80e23ea5e774c2e0105efdd86aba7d39915aad0f6"
+  },
+  "api_metadata": {
+    "id": "resp_04e4edf12e8ac490006b0612825ef087d2ae186ce6f579b345",
+    "model": "gpt-6-luna",
+    "created_at": 1795560066.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2690,
+      "input_tokens_details": {
+        "cache_write_tokens": 2687,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2687
+        }
+      },
+      "output_tokens": 359,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 3049
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Exploration and scientific study of glacial caves beneath Pacific Northwest volcanoes\",\n  \"climate_relevance\": \"The main article says glaciologists study changes beneath the ice for information about climate change and describes glaciers as paleoclimate archives. It also mentions potential implications for watersheds and natural resources.\",\n  \"reason\": \"Climate research is a meaningful part of the main article, but the focus is on cave exploration, safety, and the broader scientific uses of the expeditions rather than climate change itself. The text also contains several unrelated appended snippets, some of which discuss climate issues.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:41:09Z",
+  "duration_seconds": 2.715,
+  "error": null
+}

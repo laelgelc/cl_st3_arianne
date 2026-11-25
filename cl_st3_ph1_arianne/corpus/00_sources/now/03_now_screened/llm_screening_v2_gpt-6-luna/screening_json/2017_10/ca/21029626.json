@@ -1,0 +1,77 @@
+{
+  "article_id": "21029626",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/ca/21029626.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/ca/21029626.json"
+  },
+  "manifest_row": {
+    "article_id": "21029626",
+    "group": "2017_10",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/ca/21029626.txt",
+    "now_field_2": "1232",
+    "date_original": "17-10-10",
+    "date_iso": "2017-10-10",
+    "source_name": "National Observer",
+    "url": "https://www.nationalobserver.com/2017/10/10/opinion/save-money-save-lives-four-steps-ottawa-link-health-and-environment",
+    "title": "Save money, save lives: Four steps for Ottawa to link health and the ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Environmental chemical regulation and public health",
+    "climate_relevance": "Climate change appears only in the official title of the Minister of Environment and Climate Change; the text does not discuss climate issues.",
+    "reason": "The article focuses on chemical exposures, health impacts, and reform of the Canadian Environmental Protection Act. The ministerial title is an incidental mention, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "65b0a6b25d4a3a7323858db38720ca0c5e6eaf541da6472e74fe9ba960a1c03d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8f079624f7769db68df166b73b4672b35d582b816382ff420c58c433bd486cb9",
+    "raw_response_text_sha256": "c3cf5a69d7946c7f3b89c2c596ff7fc5d2680eb1d9694ca3ffd8ea2062434cb9"
+  },
+  "api_metadata": {
+    "id": "resp_0d3457fb16ebac07006b060e240d9c87d2bf55991a0767ab49",
+    "model": "gpt-6-luna",
+    "created_at": 1795558948.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2115,
+      "input_tokens_details": {
+        "cache_write_tokens": 2112,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2112
+        }
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 2330
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Environmental chemical regulation and public health\",\n  \"climate_relevance\": \"Climate change appears only in the official title of the Minister of Environment and Climate Change; the text does not discuss climate issues.\",\n  \"reason\": \"The article focuses on chemical exposures, health impacts, and reform of the Canadian Environmental Protection Act. The ministerial title is an incidental mention, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:22:29Z",
+  "duration_seconds": 1.91,
+  "error": null
+}

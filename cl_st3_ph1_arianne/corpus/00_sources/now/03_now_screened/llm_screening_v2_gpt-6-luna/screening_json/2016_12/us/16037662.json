@@ -1,0 +1,77 @@
+{
+  "article_id": "16037662",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_12/us/16037662.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_12/us/16037662.json"
+  },
+  "manifest_row": {
+    "article_id": "16037662",
+    "group": "2016_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_12/us/16037662.txt",
+    "now_field_2": "2390",
+    "date_original": "16-12-22",
+    "date_iso": "2016-12-22",
+    "source_name": "ESPN",
+    "url": "http://www.espn.com/mlb/story/_/id/18326987/controversy-surrounding-curt-schilling-clouds-cooperstown-case-hall-fame-voters",
+    "title": "Did Curt Schilling tweet his way out of Cooperstown?",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-12.txt\"]",
+    "metadata_article_files": "[\"text-16-12/text_16-12-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Curt Schilling's baseball Hall of Fame candidacy and public controversies",
+    "climate_relevance": "Climate change is mentioned only in a list of topics Schilling discusses on his radio show; no climate-related views or issues are described.",
+    "reason": "The article focuses on baseball voting, Schilling's conduct, and the Hall of Fame character clause. The climate reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bc6a3a0bee0f5033124108131f9c115f734658f2c10bb3748ee5368472b3012c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1016a13b69db4735b390644f0534f1fc68d78b87ea2d9d0b3915714cf0cf111b",
+    "raw_response_text_sha256": "f82842f749b36c3354a41fa733878d2b77ad79fa84cbd45dac0ca0b1f9445328"
+  },
+  "api_metadata": {
+    "id": "resp_0b43500cd1b05c1d006b060744aeb887d2a060b8a3b3f02f67",
+    "model": "gpt-6-luna",
+    "created_at": 1795557188.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3653,
+      "input_tokens_details": {
+        "cache_write_tokens": 3650,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3650
+        }
+      },
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 3860
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Curt Schilling's baseball Hall of Fame candidacy and public controversies\",\n  \"climate_relevance\": \"Climate change is mentioned only in a list of topics Schilling discusses on his radio show; no climate-related views or issues are described.\",\n  \"reason\": \"The article focuses on baseball voting, Schilling's conduct, and the Hall of Fame character clause. The climate reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:53:11Z",
+  "duration_seconds": 3.3,
+  "error": null
+}

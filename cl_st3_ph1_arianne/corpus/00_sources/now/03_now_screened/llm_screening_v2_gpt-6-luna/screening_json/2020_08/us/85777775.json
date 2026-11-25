@@ -1,0 +1,77 @@
+{
+  "article_id": "85777775",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85777775.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85777775.json"
+  },
+  "manifest_row": {
+    "article_id": "85777775",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85777775.txt",
+    "now_field_2": "1004",
+    "date_original": "20-08-27",
+    "date_iso": "2020-08-27",
+    "source_name": "Phys.org",
+    "url": "https://phys.org/news/2020-08-alaska-forest-reagan-biographer-gop.html",
+    "title": "In Alaska forest, Reagan biographer sees a winning GOP strategy",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Conservative political strategy around protecting the Tongass National Forest and opposing changes to the roadless rule.",
+    "climate_relevance": "The article briefly compares Republican and Democratic voters’ levels of concern about climate change, citing a poll.",
+    "reason": "The main focus is forest protection and electoral politics, not climate change. The polling reference to climate change provides a limited but meaningful point about partisan attitudes, making the text peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ea3eb09c74bdd8a72be9df292dc0b2352eb7a253ccc705f87cf7c309a854c7e8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8a074b1e864ececd1c19eda511529a1364fa00c090b24fd82d7c5f97c13156ec",
+    "raw_response_text_sha256": "c78519a8032ce7ca75fd693a70435653f4fecd083ad27cca202e62d827784b2d"
+  },
+  "api_metadata": {
+    "id": "resp_0a4e61db73ff8b91006b064d124bc087d1ba5f80de4de544e6",
+    "model": "gpt-6-luna",
+    "created_at": 1795575058.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1843,
+      "input_tokens_details": {
+        "cache_write_tokens": 1840,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1840
+        }
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 2149
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Conservative political strategy around protecting the Tongass National Forest and opposing changes to the roadless rule.\",\n  \"climate_relevance\": \"The article briefly compares Republican and Democratic voters’ levels of concern about climate change, citing a poll.\",\n  \"reason\": \"The main focus is forest protection and electoral politics, not climate change. The polling reference to climate change provides a limited but meaningful point about partisan attitudes, making the text peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:51:00Z",
+  "duration_seconds": 2.72,
+  "error": null
+}

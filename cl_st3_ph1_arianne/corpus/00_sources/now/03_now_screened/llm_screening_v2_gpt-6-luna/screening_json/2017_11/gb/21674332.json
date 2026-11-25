@@ -1,0 +1,77 @@
+{
+  "article_id": "21674332",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/gb/21674332.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/gb/21674332.json"
+  },
+  "manifest_row": {
+    "article_id": "21674332",
+    "group": "2017_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/gb/21674332.txt",
+    "now_field_2": "3423",
+    "date_original": "17-11-14",
+    "date_iso": "2017-11-14",
+    "source_name": "The Independent",
+    "url": "http://www.independent.co.uk/news/uk/home-news/charles-bronson-wedding-jail-prison-marries-paula-williamson-soap-actress-emmerdale-coronation-a8055016.html",
+    "title": "The weird story of Charles Bronson's wedding, where trouser zips ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Charles Bronson's prison wedding and personal history",
+    "climate_relevance": "Climate-related material appears only in unrelated photo-gallery captions, including a demonstration connected to COP23 and an offshore wind farm.",
+    "reason": "The identifiable main article concerns Charles Bronson and his wedding, not climate change. The climate references are incidental captions in a gallery and do not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "28479fe95d7a11318ac30d2f96ec2165c2337c46ad1a105ffecd4ce24a7431e1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a3d616b211a23410e2c93fc10d99cc8f7ca41b66014fc10c6a770ba2935ea4cf",
+    "raw_response_text_sha256": "0439c106e612da0b21db07472b6d700729f0d0adab997c5f183f55f25c21ac70"
+  },
+  "api_metadata": {
+    "id": "resp_01232630be3ecad6006b060f391ad887d282b0fd77eb85ed3e",
+    "model": "gpt-6-luna",
+    "created_at": 1795559225.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5530,
+      "input_tokens_details": {
+        "cache_write_tokens": 5527,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5527
+        }
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 5763
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Charles Bronson's prison wedding and personal history\",\n  \"climate_relevance\": \"Climate-related material appears only in unrelated photo-gallery captions, including a demonstration connected to COP23 and an offshore wind farm.\",\n  \"reason\": \"The identifiable main article concerns Charles Bronson and his wedding, not climate change. The climate references are incidental captions in a gallery and do not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:27:07Z",
+  "duration_seconds": 2.141,
+  "error": null
+}

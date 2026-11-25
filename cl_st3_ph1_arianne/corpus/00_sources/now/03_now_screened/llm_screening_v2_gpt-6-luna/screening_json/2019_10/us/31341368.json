@@ -1,0 +1,77 @@
+{
+  "article_id": "31341368",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/31341368.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/31341368.json"
+  },
+  "manifest_row": {
+    "article_id": "31341368",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/31341368.txt",
+    "now_field_2": "1003",
+    "date_original": "19-10-11",
+    "date_iso": "2019-10-11",
+    "source_name": "businesswire.com",
+    "url": "https://www.businesswire.com/news/home/20191011005532/en/3M-Completes-Acquisition-Acelity",
+    "title": "3M Completes Acquisition of Acelity, Inc. | Business Wire",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "3M's acquisition of Acelity, a medical technology company focused on wound care.",
+    "climate_relevance": "Climate change appears only in a standard forward-looking risk disclosure, listed among external conditions that could affect 3M or its customers and suppliers.",
+    "reason": "The text is a corporate acquisition announcement about medical technology and wound care. Its sole climate reference is boilerplate risk language, with no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "dc35cbc1a5143259b0e8e31e59735c9259115b26b8483c37fa1f88dc8304e0a7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d6435305ff63e2a45230f4a9eb440334939c65b2a5d91f52ac3362ebea94add1",
+    "raw_response_text_sha256": "7212e35ecb22f4bb4cf53b7ee2e514d1026beeae0afe59c9b77cad7d862f98d4"
+  },
+  "api_metadata": {
+    "id": "resp_044cf003884d27eb006b0616e13b6c87d2a79239d058aff938",
+    "model": "gpt-6-luna",
+    "created_at": 1795561185.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1845,
+      "input_tokens_details": {
+        "cache_write_tokens": 1842,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1842
+        }
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 2050
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"3M's acquisition of Acelity, a medical technology company focused on wound care.\",\n  \"climate_relevance\": \"Climate change appears only in a standard forward-looking risk disclosure, listed among external conditions that could affect 3M or its customers and suppliers.\",\n  \"reason\": \"The text is a corporate acquisition announcement about medical technology and wound care. Its sole climate reference is boilerplate risk language, with no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:59:46Z",
+  "duration_seconds": 1.716,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "41797320",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/gb/41797320.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/gb/41797320.json"
+  },
+  "manifest_row": {
+    "article_id": "41797320",
+    "group": "2020_03",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/gb/41797320.txt",
+    "now_field_2": "1463",
+    "date_original": "20-03-05",
+    "date_iso": "2020-03-05",
+    "source_name": "inews.co.uk",
+    "url": "https://inews.co.uk/news/health/coronavirus-live-news-latest-updates-uk-cases-travel-40-advice-boris-johnson-cobra-meeting-2005660",
+    "title": "Coronavirus live news: latest updates as Boris Johnson ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Coronavirus outbreak updates and its effects on public health, events, travel, and other sectors",
+    "climate_relevance": "A distinct section discusses how the coronavirus outbreak and travel restrictions could disrupt preparations for the COP26 climate talks in Glasgow.",
+    "reason": "The available text is mainly a coronavirus live-update report, but the COP26 section contains meaningful climate-related discourse about summit preparations and the roles of China and Italy. Climate change is therefore relevant but not the main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5f149afbc7ffbc0ce68b5a49d3c087f278b02e3aaa9c3f2e0e3e4972766a76f1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6bf251c0a37be99dff822a139bc70d052c566a2e67d8c23098102a065206e285",
+    "raw_response_text_sha256": "beb57760916da6b1ae5f848821ce42189b771287c69fb3c5f57c37d1dc3d14c8"
+  },
+  "api_metadata": {
+    "id": "resp_0405549cd630c150006b062337963c87d2acdb11e81c4f5c58",
+    "model": "gpt-6-luna",
+    "created_at": 1795564343.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2395,
+      "input_tokens_details": {
+        "cache_write_tokens": 2392,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2392
+        }
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 139
+      },
+      "total_tokens": 2693
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Coronavirus outbreak updates and its effects on public health, events, travel, and other sectors\",\n  \"climate_relevance\": \"A distinct section discusses how the coronavirus outbreak and travel restrictions could disrupt preparations for the COP26 climate talks in Glasgow.\",\n  \"reason\": \"The available text is mainly a coronavirus live-update report, but the COP26 section contains meaningful climate-related discourse about summit preparations and the roles of China and Italy. Climate change is therefore relevant but not the main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:52:26Z",
+  "duration_seconds": 2.651,
+  "error": null
+}

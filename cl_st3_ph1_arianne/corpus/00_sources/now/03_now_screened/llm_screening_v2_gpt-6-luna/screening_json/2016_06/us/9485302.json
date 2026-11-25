@@ -1,0 +1,77 @@
+{
+  "article_id": "9485302",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_06/us/9485302.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_06/us/9485302.json"
+  },
+  "manifest_row": {
+    "article_id": "9485302",
+    "group": "2016_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_06/us/9485302.txt",
+    "now_field_2": "1366",
+    "date_original": "16-06-21",
+    "date_iso": "2016-06-21",
+    "source_name": "Voice of America",
+    "url": "http://www.voanews.com/content/thomas-waldhauser-us-military-africa-favors-powers-to-strike-islamic-state/3386111.html",
+    "title": "Nominee to Head US Military in Africa Warns of IS Focus on Libya",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-06-uda/16-06-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A U.S. military nominee's warning about Islamic State activity in Africa",
+    "climate_relevance": "Climate change appears only in a separate, unrelated video item appended to the text.",
+    "reason": "The identifiable main article concerns Islamic State activity and U.S. military policy in Africa. The brief climate-change reference belongs to an unrelated snippet and does not contribute meaningfully to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7bb53e0ede54c55b10afcbef501242bda9ec9da70dfff071d951edb0c8dc1a48",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "208fcec44765680199ebb1224b07641ecf5649279b32211f7923245b7002bf14",
+    "raw_response_text_sha256": "01771fdb124cb567c762261b393aa42f613a4c0ae6858ec4ed17874c08ec5c8f"
+  },
+  "api_metadata": {
+    "id": "resp_07d8d6052a1e51bf006b0651274aa087d1ac7885f5a1c79bb5",
+    "model": "gpt-6-luna",
+    "created_at": 1795576103.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2310,
+      "input_tokens_details": {
+        "cache_write_tokens": 2307,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2307
+        }
+      },
+      "output_tokens": 243,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 2553
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A U.S. military nominee's warning about Islamic State activity in Africa\",\n  \"climate_relevance\": \"Climate change appears only in a separate, unrelated video item appended to the text.\",\n  \"reason\": \"The identifiable main article concerns Islamic State activity and U.S. military policy in Africa. The brief climate-change reference belongs to an unrelated snippet and does not contribute meaningfully to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:08:25Z",
+  "duration_seconds": 2.56,
+  "error": null
+}

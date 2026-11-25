@@ -1,0 +1,77 @@
+{
+  "article_id": "40160924",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/sg/40160924.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/sg/40160924.json"
+  },
+  "manifest_row": {
+    "article_id": "40160924",
+    "group": "2018_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/sg/40160924.txt",
+    "now_field_2": "615",
+    "date_original": "18-10-17",
+    "date_iso": "2018-10-17",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/tornadoes-spinning-farther-east-us-study-finds-090703155.html",
+    "title": "Tornadoes are spinning up farther east in US, study finds",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "A study of the eastward shift in US tornado activity and its potential risks",
+    "climate_relevance": "The article discusses whether the observed shift resembles what climate change scenarios might predict, while noting that researchers cannot confirm global warming as its cause.",
+    "reason": "Tornado trends and exposure are the main focus, but climate change is meaningfully raised as a possible context for the observed pattern.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6c3cfa843bec593559a50a750f208d965276152fa570bbfb7cefab822d15955a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3227c02b3b0a31ef3c52409def872a1d8b9bf0453b6a30db9ec988a5fc2aff2e",
+    "raw_response_text_sha256": "07aece527b757f1a30a5daf360f34d466fbfc106288a11d4544b6d16d6bf0b99"
+  },
+  "api_metadata": {
+    "id": "resp_02bd73f023690bac006b061e5f8d9487d2909a39bdb2f65e46",
+    "model": "gpt-6-luna",
+    "created_at": 1795563103.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1310,
+      "input_tokens_details": {
+        "cache_write_tokens": 1307,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1307
+        }
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 1566
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A study of the eastward shift in US tornado activity and its potential risks\",\n  \"climate_relevance\": \"The article discusses whether the observed shift resembles what climate change scenarios might predict, while noting that researchers cannot confirm global warming as its cause.\",\n  \"reason\": \"Tornado trends and exposure are the main focus, but climate change is meaningfully raised as a possible context for the observed pattern.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:31:45Z",
+  "duration_seconds": 2.068,
+  "error": null
+}

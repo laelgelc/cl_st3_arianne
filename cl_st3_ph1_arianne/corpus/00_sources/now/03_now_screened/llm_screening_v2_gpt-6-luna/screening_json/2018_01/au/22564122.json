@@ -1,0 +1,77 @@
+{
+  "article_id": "22564122",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_01/au/22564122.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_01/au/22564122.json"
+  },
+  "manifest_row": {
+    "article_id": "22564122",
+    "group": "2018_01",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_01/au/22564122.txt",
+    "now_field_2": "265",
+    "date_original": "18-01-03",
+    "date_iso": "2018-01-03",
+    "source_name": "Riverine Herald",
+    "url": "http://www.riverineherald.com.au/regional/2018/01/04/126363/funding-for-carers-of-creatures-great-and-small",
+    "title": "Funding for carers of creatures great and small",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
+    "metadata_article_files": "[\"text-18-01/text_18-01-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Funding for wildlife rehabilitators and wildlife care",
+    "climate_relevance": "Climate change appears only in the minister's portfolio title; the text contains no meaningful climate-related discussion.",
+    "reason": "The article focuses on grants for wildlife rehabilitation, equipment, training, and care. The climate reference is incidental metadata within a ministerial title.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fae9aba2cab2449528a95486236f24f6438af12eb3e089cd44eb409d0afa8f16",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1a892d75146afada737fcdb5df4c49a7f701c65011a624dac67e7a6734838514",
+    "raw_response_text_sha256": "4ef54ca8bb239b8a50fe59544e2ebbf601af4d8d3f1788b71705b70213c6741f"
+  },
+  "api_metadata": {
+    "id": "resp_0bc9847e40b1cfab006b06104a0c3487d2a626312c7cacd5e0",
+    "model": "gpt-6-luna",
+    "created_at": 1795559498.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 851,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 173,
+      "output_tokens_details": {
+        "reasoning_tokens": 36
+      },
+      "total_tokens": 1024
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Funding for wildlife rehabilitators and wildlife care\",\n  \"climate_relevance\": \"Climate change appears only in the minister's portfolio title; the text contains no meaningful climate-related discussion.\",\n  \"reason\": \"The article focuses on grants for wildlife rehabilitation, equipment, training, and care. The climate reference is incidental metadata within a ministerial title.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:31:39Z",
+  "duration_seconds": 1.637,
+  "error": null
+}

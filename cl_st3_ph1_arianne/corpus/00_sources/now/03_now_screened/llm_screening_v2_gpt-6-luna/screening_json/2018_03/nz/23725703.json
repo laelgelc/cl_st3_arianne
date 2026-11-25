@@ -1,0 +1,77 @@
+{
+  "article_id": "23725703",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_03/nz/23725703.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_03/nz/23725703.json"
+  },
+  "manifest_row": {
+    "article_id": "23725703",
+    "group": "2018_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_03/nz/23725703.txt",
+    "now_field_2": "875",
+    "date_original": "18-03-18",
+    "date_iso": "2018-03-18",
+    "source_name": "New Zealand Herald",
+    "url": "http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&amp;objectid=12015748",
+    "title": "Claire Trevett: The Green Party's patsies Prohibition",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-03.txt\"]",
+    "metadata_article_files": "[\"text-18-03/text_18-03-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "The Green Party's decision to forgo routine parliamentary questions and the political implications of that strategy.",
+    "climate_relevance": "Climate change is mentioned only as an example of a ministerial portfolio in a discussion of scripted parliamentary questions; no climate issue or policy is discussed.",
+    "reason": "The article is political commentary about Question Time. Its brief climate reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1ea9fb29b7a93d6931f9ab09ec77f59f46ac76c5c9798a80dabc053d5cf6c486",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bd43198ec29c11d097ebc589e14bd75b134623308984b72df7171fe2305dafec",
+    "raw_response_text_sha256": "8dba78444713c5e7c580dddd56034876e7abd3831747bc1fd761317ebe028c8f"
+  },
+  "api_metadata": {
+    "id": "resp_003939b428a11a22006b0611993bf887d28d5af96b57619880",
+    "model": "gpt-6-luna",
+    "created_at": 1795559833.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1539,
+      "input_tokens_details": {
+        "cache_write_tokens": 1536,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1536
+        }
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 1794
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The Green Party's decision to forgo routine parliamentary questions and the political implications of that strategy.\",\n  \"climate_relevance\": \"Climate change is mentioned only as an example of a ministerial portfolio in a discussion of scripted parliamentary questions; no climate issue or policy is discussed.\",\n  \"reason\": \"The article is political commentary about Question Time. Its brief climate reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:37:15Z",
+  "duration_seconds": 2.476,
+  "error": null
+}

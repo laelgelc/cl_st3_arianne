@@ -1,0 +1,77 @@
+{
+  "article_id": "3872105",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/ca/3872105.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/ca/3872105.json"
+  },
+  "manifest_row": {
+    "article_id": "3872105",
+    "group": "2015_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/ca/3872105.txt",
+    "now_field_2": "469",
+    "date_original": "15-12-07",
+    "date_iso": "2015-12-07",
+    "source_name": "CBC.ca",
+    "url": "http://www.cbc.ca/news/canada/calgary/climate-change-plan-mainstreet-postmedia-poll-1.3353891",
+    "title": "68% of Albertans opposed to NDP's climate change strategy, poll ...",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-ca.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Public opinion in Alberta about the province’s climate strategy, including its carbon tax, emissions limits, coal phase-out, and renewable energy plans.",
+    "climate_relevance": "The text focuses on support and opposition to climate policy and discusses the plan’s costs, energy measures, and links to pipeline approvals.",
+    "reason": "Climate change policy and public debate are the article’s central subject, rather than a passing or background mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "39bf0b3a5712f4acf68f0b530f594a228206fa692b9c4a14f4e71eddb57abbe0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8fd63c7d94477b43688fad730d3cbbca325cec4a848806dc069f4acacf053a89",
+    "raw_response_text_sha256": "724ee9908420e89bd6a6366dc927da0c7247eed78d8cf1cd1af13c20cfc383dc"
+  },
+  "api_metadata": {
+    "id": "resp_0031c26f8bc18583006b061d8e498087d2ae7182b3ead341cb",
+    "model": "gpt-6-luna",
+    "created_at": 1795562894.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1102,
+      "input_tokens_details": {
+        "cache_write_tokens": 1099,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1099
+        }
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1320
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Public opinion in Alberta about the province’s climate strategy, including its carbon tax, emissions limits, coal phase-out, and renewable energy plans.\",\n  \"climate_relevance\": \"The text focuses on support and opposition to climate policy and discusses the plan’s costs, energy measures, and links to pipeline approvals.\",\n  \"reason\": \"Climate change policy and public debate are the article’s central subject, rather than a passing or background mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:28:16Z",
+  "duration_seconds": 2.187,
+  "error": null
+}

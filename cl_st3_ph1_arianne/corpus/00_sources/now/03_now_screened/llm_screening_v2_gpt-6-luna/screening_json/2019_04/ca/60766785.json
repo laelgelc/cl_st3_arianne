@@ -1,0 +1,77 @@
+{
+  "article_id": "60766785",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/ca/60766785.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/ca/60766785.json"
+  },
+  "manifest_row": {
+    "article_id": "60766785",
+    "group": "2019_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/ca/60766785.txt",
+    "now_field_2": "1048",
+    "date_original": "19-04-23",
+    "date_iso": "2019-04-23",
+    "source_name": "Canada NewsWir",
+    "url": "https://www.newswire.ca/news-releases/pulse-oil-corp-announces-first-bigoray-well-encounters-over-50-meters-of-oil-pay-the-spudding-of-pulse-s-second-bigoray-well-and-pulse-s-production-testing-underway-at-queenstown-804329141.html",
+    "title": "Pulse Oil Corp. Announces First Bigoray Well Encounters Over 50 ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Pulse Oil Corp.'s drilling, production, and enhanced oil recovery operations in Alberta",
+    "climate_relevance": "Climate change appears only in a standard forward-looking risk list as a possible source of environmental and weather impacts.",
+    "reason": "The press release is about the company's oil operations. Its brief climate-change reference is boilerplate and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6aa6f8af17583e411e669600eb4ebf6db596f13f0635507dda33281766107f50",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e1a986e48e0ef4d21168f9e6e4944f439633f1fd7951fd64c46a9ddcb2edc53b",
+    "raw_response_text_sha256": "787be6804b3cd8a54a8a9958d8c1eba5df15d8b18ef30fcc5a1ffe75ee0c0260"
+  },
+  "api_metadata": {
+    "id": "resp_038e712b9c6f1ac3006b0634531f7c87d1928697708acc51d7",
+    "model": "gpt-6-luna",
+    "created_at": 1795568723.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1867,
+      "input_tokens_details": {
+        "cache_write_tokens": 1864,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1864
+        }
+      },
+      "output_tokens": 179,
+      "output_tokens_details": {
+        "reasoning_tokens": 36
+      },
+      "total_tokens": 2046
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Pulse Oil Corp.'s drilling, production, and enhanced oil recovery operations in Alberta\",\n  \"climate_relevance\": \"Climate change appears only in a standard forward-looking risk list as a possible source of environmental and weather impacts.\",\n  \"reason\": \"The press release is about the company's oil operations. Its brief climate-change reference is boilerplate and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:05:24Z",
+  "duration_seconds": 1.923,
+  "error": null
+}

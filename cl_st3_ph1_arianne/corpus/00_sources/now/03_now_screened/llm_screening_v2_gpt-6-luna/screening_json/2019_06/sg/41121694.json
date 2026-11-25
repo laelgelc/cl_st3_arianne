@@ -1,0 +1,77 @@
+{
+  "article_id": "41121694",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/sg/41121694.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/sg/41121694.json"
+  },
+  "manifest_row": {
+    "article_id": "41121694",
+    "group": "2019_06",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/sg/41121694.txt",
+    "now_field_2": "236",
+    "date_original": "19-06-30",
+    "date_iso": "2019-06-30",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/still-no-deal-top-eu-045924889.html",
+    "title": "Still no deal on top EU jobs despite all-night haggling",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "EU leaders' negotiations over appointments to top EU posts",
+    "climate_relevance": "Climate change is briefly listed among crises the EU has struggled to respond to.",
+    "reason": "The article focuses on EU appointments and decision-making. Climate change appears only in a passing list of crises, without meaningful discussion.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "91111f0b290db2b5877b3f3d80fbac4424bf1a222376d114cd4e46906948b914",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8e2840fee4f1cca6cd9fd063132d5c987bc27f70a448ec2b6772fe2efb19d422",
+    "raw_response_text_sha256": "3c018fcb17994f0ad7f1fc001300faee33d112d89237f814ab9145b905729841"
+  },
+  "api_metadata": {
+    "id": "resp_01da9dfb4b704d22006b0620fadabc87d2974ee4d7b80e7898",
+    "model": "gpt-6-luna",
+    "created_at": 1795563771.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 801,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 243,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 1044
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"EU leaders' negotiations over appointments to top EU posts\",\n  \"climate_relevance\": \"Climate change is briefly listed among crises the EU has struggled to respond to.\",\n  \"reason\": \"The article focuses on EU appointments and decision-making. Climate change appears only in a passing list of crises, without meaningful discussion.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:42:52Z",
+  "duration_seconds": 2.196,
+  "error": null
+}

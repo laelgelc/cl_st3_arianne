@@ -1,0 +1,77 @@
+{
+  "article_id": "85304504",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/us/85304504.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/us/85304504.json"
+  },
+  "manifest_row": {
+    "article_id": "85304504",
+    "group": "2020_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/us/85304504.txt",
+    "now_field_2": "312",
+    "date_original": "20-06-30",
+    "date_iso": "2020-06-30",
+    "source_name": "Reuters on MSN.com",
+    "url": "https://www.msn.com/en-au/finance/news/japans-ntt-aims-to-expand-renewable-energy-capacity-to-75-gw-by-2030/ar-BB168Ewp",
+    "title": "Japan's NTT aims to expand renewable energy capacity to 7.5 GW by 2030",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.84,
+    "climate_role": "substantial",
+    "main_topic": "NTT's plan to expand renewable energy capacity and its energy business",
+    "climate_relevance": "The article presents the company's renewable-energy investment as part of corporate efforts to tackle climate change, with substantial detail on its planned capacity and projects.",
+    "reason": "Although framed as a corporate energy-business story, the central action is a major expansion of renewable power, explicitly linked to tackling climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5fc71b39d4c851b7249360ca527e6b2461b545b1a529fa1f6a255eb360d0a114",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f6989c785b455d875d04ebf2e1fec9ca38c1262a24cb57b8974a719a1d9358d7",
+    "raw_response_text_sha256": "b8c485c071c463e1bbddfa11d758df5cf9040106f000eeeda31296f901aeb92a"
+  },
+  "api_metadata": {
+    "id": "resp_0a4aa492f4a8c554006b064bc005c087d19af32414d25fad49",
+    "model": "gpt-6-luna",
+    "created_at": 1795574720.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 902,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 398,
+      "output_tokens_details": {
+        "reasoning_tokens": 255
+      },
+      "total_tokens": 1300
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.84,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"NTT's plan to expand renewable energy capacity and its energy business\",\n  \"climate_relevance\": \"The article presents the company's renewable-energy investment as part of corporate efforts to tackle climate change, with substantial detail on its planned capacity and projects.\",\n  \"reason\": \"Although framed as a corporate energy-business story, the central action is a major expansion of renewable power, explicitly linked to tackling climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:45:23Z",
+  "duration_seconds": 3.23,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "8487983",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_04/gb/8487983.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_04/gb/8487983.json"
+  },
+  "manifest_row": {
+    "article_id": "8487983",
+    "group": "2016_04",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_04/gb/8487983.txt",
+    "now_field_2": "124",
+    "date_original": "16-04-26",
+    "date_iso": "2016-04-26",
+    "source_name": "Business Reporter",
+    "url": "http://business-reporter.co.uk/2016/04/26/mps-call-explanation-delay-hinkley-point-nuclear-power-station/",
+    "title": "MPs call for explanation of further delay on Hinkley Point nuclear ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-04-ovb/16-04-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Delay in the final investment decision for the Hinkley Point nuclear power station",
+    "climate_relevance": "Climate change appears only in the name of the Energy and Climate Change Committee; the text does not discuss climate issues or connect the project to climate policy.",
+    "reason": "The available text focuses on the project's delayed investment decision. Any climate connection would require inference beyond what is stated.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c182b25733c39f3a5ce1e290e8a7a1997e1743eff5108e9e5570823eb76e7967",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "47bfec252f7106a6f8e65e611737c35460ffe2645e83263fa198bdfd3055e621",
+    "raw_response_text_sha256": "458fe6815019c82c30fa898dd211b112a786b3ac82fa2877ee0b4d257bda7020"
+  },
+  "api_metadata": {
+    "id": "resp_0b15e38c904eb4c9006b064adfc0d887d1a8b9975f688c9fc0",
+    "model": "gpt-6-luna",
+    "created_at": 1795574495.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 635,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 880
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Delay in the final investment decision for the Hinkley Point nuclear power station\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Energy and Climate Change Committee; the text does not discuss climate issues or connect the project to climate policy.\",\n  \"reason\": \"The available text focuses on the project's delayed investment decision. Any climate connection would require inference beyond what is stated.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:41:37Z",
+  "duration_seconds": 2.311,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "8751301",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_05/au/8751301.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_05/au/8751301.json"
+  },
+  "manifest_row": {
+    "article_id": "8751301",
+    "group": "2016_05",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_05/au/8751301.txt",
+    "now_field_2": "395",
+    "date_original": "16-05-10",
+    "date_iso": "2016-05-10",
+    "source_name": "The New Daily",
+    "url": "http://thenewdaily.com.au/money/2016/05/10/coalition-attack-allies/",
+    "title": "Coalition under attack, from its own allies",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-05-bvk/16-05-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Australian government changes to superannuation and criticism of their retrospective effects",
+    "climate_relevance": "Climate change appears only in a brief comparison to other political issues; there is no substantive discussion of climate change.",
+    "reason": "The article focuses on superannuation policy. Its sole climate reference is a passing mention in a quoted list, which does not meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "57cd5c74de708b7188b9b15da4f83f982b9451f2ffb8a2f0f779a5ae3c99049e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8138c728e7bbef51bc0f45fc9b7db2fa0dca9d6e99d18cab3892042f25a53ae3",
+    "raw_response_text_sha256": "8c92e30e777db72cbc4205c49bc58513bf5ad04351f2cb0be9738ede8fb23170"
+  },
+  "api_metadata": {
+    "id": "resp_077a76792bd305bd006b06509ae7bc87d19149a49697a74a4f",
+    "model": "gpt-6-luna",
+    "created_at": 1795575963.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1038,
+      "input_tokens_details": {
+        "cache_write_tokens": 1035,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1035
+        }
+      },
+      "output_tokens": 323,
+      "output_tokens_details": {
+        "reasoning_tokens": 180
+      },
+      "total_tokens": 1361
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Australian government changes to superannuation and criticism of their retrospective effects\",\n  \"climate_relevance\": \"Climate change appears only in a brief comparison to other political issues; there is no substantive discussion of climate change.\",\n  \"reason\": \"The article focuses on superannuation policy. Its sole climate reference is a passing mention in a quoted list, which does not meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:06:05Z",
+  "duration_seconds": 3.118,
+  "error": null
+}

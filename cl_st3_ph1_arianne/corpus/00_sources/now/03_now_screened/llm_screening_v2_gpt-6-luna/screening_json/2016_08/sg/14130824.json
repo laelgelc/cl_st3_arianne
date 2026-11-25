@@ -1,0 +1,77 @@
+{
+  "article_id": "14130824",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_08/sg/14130824.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_08/sg/14130824.json"
+  },
+  "manifest_row": {
+    "article_id": "14130824",
+    "group": "2016_08",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_08/sg/14130824.txt",
+    "now_field_2": "506",
+    "date_original": "16-08-31",
+    "date_iso": "2016-08-31",
+    "source_name": "THE BUSINESS TIMES",
+    "url": "http://www.businesstimes.com.sg/government-economy/obama-leaves-washington-for-final-g20-summit",
+    "title": "Obama leaves Washington for final G20 summit",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-08-pcg/16-08-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.87,
+    "climate_role": "passing",
+    "main_topic": "Barack Obama's final G20 summit and diplomatic trip to Asia",
+    "climate_relevance": "Climate change is briefly listed as one of three major topics for the president's agenda, without further discussion.",
+    "reason": "The article focuses on Obama's diplomatic travel and meetings. Climate change receives only a passing mention and does not meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3775e75e07f71f4f2d945e78b8bb4d6301f0b41eacecd62d935534b9bcf73dc0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bfa0070ff5607f268707976657aeab197e40908f3f9e97bd7064594b73ea04f7",
+    "raw_response_text_sha256": "946b446ed3f3e8be78df89ad3b2deb569efd003bab2bfe7c4efb0458721ae1b8"
+  },
+  "api_metadata": {
+    "id": "resp_0297150d5659d76c006b06057c750087d29e82e2b1faf4f7e1",
+    "model": "gpt-6-luna",
+    "created_at": 1795556732.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1153,
+      "input_tokens_details": {
+        "cache_write_tokens": 1150,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1150
+        }
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 1475
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Barack Obama's final G20 summit and diplomatic trip to Asia\",\n  \"climate_relevance\": \"Climate change is briefly listed as one of three major topics for the president's agenda, without further discussion.\",\n  \"reason\": \"The article focuses on Obama's diplomatic travel and meetings. Climate change receives only a passing mention and does not meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:45:35Z",
+  "duration_seconds": 2.944,
+  "error": null
+}

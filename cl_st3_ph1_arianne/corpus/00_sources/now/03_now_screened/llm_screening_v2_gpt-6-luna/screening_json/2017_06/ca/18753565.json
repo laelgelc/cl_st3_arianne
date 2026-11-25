@@ -1,0 +1,77 @@
+{
+  "article_id": "18753565",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/ca/18753565.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/ca/18753565.json"
+  },
+  "manifest_row": {
+    "article_id": "18753565",
+    "group": "2017_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/ca/18753565.txt",
+    "now_field_2": "484",
+    "date_original": "17-06-01",
+    "date_iso": "2017-06-01",
+    "source_name": "Stockhouse",
+    "url": "http://www.stockhouse.com/news/press-releases/2017/06/01/westport-fuel-systems-closes-the-second-divestiture-action-of-the-industrial",
+    "title": "Westport Fuel Systems Closes the Second Divestiture Action of the ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Sale of assets by Westport Fuel Systems",
+    "climate_relevance": "Climate change appears only in a corporate description of the company's fuel systems and their claimed environmental benefits.",
+    "reason": "The press release focuses on a business asset sale. Its sole climate reference is promotional boilerplate and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "116d99f12ac51703ab9402d9b8ff5477f10a16359a6b16a1a45be37759578df0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4f7669b1efc0a22566b72264d31b2f97a36716bcf7461078b3b381af7b51686c",
+    "raw_response_text_sha256": "5d6773138c267fa541206ccce92dbc3cc3a02dccf0eed24e501ae4d4cb966a85"
+  },
+  "api_metadata": {
+    "id": "resp_0befdb3d65c2601c006b060ac0601c87d2bdc6559524acf6f7",
+    "model": "gpt-6-luna",
+    "created_at": 1795558080.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1084,
+      "input_tokens_details": {
+        "cache_write_tokens": 1081,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1081
+        }
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1315
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Sale of assets by Westport Fuel Systems\",\n  \"climate_relevance\": \"Climate change appears only in a corporate description of the company's fuel systems and their claimed environmental benefits.\",\n  \"reason\": \"The press release focuses on a business asset sale. Its sole climate reference is promotional boilerplate and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:08:02Z",
+  "duration_seconds": 2.146,
+  "error": null
+}

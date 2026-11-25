@@ -1,0 +1,77 @@
+{
+  "article_id": "70479885",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70479885.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70479885.json"
+  },
+  "manifest_row": {
+    "article_id": "70479885",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70479885.txt",
+    "now_field_2": "975",
+    "date_original": "19-02-03",
+    "date_iso": "2019-02-03",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/HL1902/S00006/sexualized-violence-as-a-weapon-of-war.htm",
+    "title": "Sexualized violence as a weapon of war",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Sexualized violence and rape as weapons of war",
+    "climate_relevance": "Climate change is discussed only in a separate 'ALSO' teaser about wildfire risk in New Zealand, not in the identifiable main article.",
+    "reason": "The main article concerns sexual violence in conflict. The climate-related sentence is part of an unrelated snippet, so it does not make the article relevant to the climate discourse corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "02343a3853bbe974f1b4becb2977b596b25576f63b6c0e4868eb0d7b124af99b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7317b1cded2952ad3e69feeb7821daa0d02650bf6a1561170f48479954ba71f6",
+    "raw_response_text_sha256": "9063537281181d8db06350aefc9ed8062a345b940f02c1c1e7fb13112cf79ce3"
+  },
+  "api_metadata": {
+    "id": "resp_05179c0c5d21ceba006b063cd0e97487d1b54a7ff79e7b340b",
+    "model": "gpt-6-luna",
+    "created_at": 1795570897.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1813,
+      "input_tokens_details": {
+        "cache_write_tokens": 1810,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1810
+        }
+      },
+      "output_tokens": 376,
+      "output_tokens_details": {
+        "reasoning_tokens": 225
+      },
+      "total_tokens": 2189
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Sexualized violence and rape as weapons of war\",\n  \"climate_relevance\": \"Climate change is discussed only in a separate 'ALSO' teaser about wildfire risk in New Zealand, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns sexual violence in conflict. The climate-related sentence is part of an unrelated snippet, so it does not make the article relevant to the climate discourse corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:41:40Z",
+  "duration_seconds": 3.373,
+  "error": null
+}

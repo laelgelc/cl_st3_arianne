@@ -1,0 +1,77 @@
+{
+  "article_id": "70777544",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/us/70777544.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/us/70777544.json"
+  },
+  "manifest_row": {
+    "article_id": "70777544",
+    "group": "2019_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/us/70777544.txt",
+    "now_field_2": "1007",
+    "date_original": "19-05-16",
+    "date_iso": "2019-05-16",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/world/philippines-recalls-its-envoys-in-canada-over-tons-of-rotting-garbage/2019/05/16/1d80d808-7792-11e9-b7ae-390de4259661_story.html",
+    "title": "Philippines recalls its envoys in Canada over tons of rotting garbage",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A diplomatic dispute between the Philippines and Canada over Canadian waste shipped to the Philippines",
+    "climate_relevance": "Climate change is briefly mentioned as part of Trudeau's environmental commitments and Canada's reputation, but the article focuses on waste exports and diplomacy.",
+    "reason": "The text contains a relevant reference to combating climate change, but climate issues are not developed; the main discussion concerns garbage, environmental harm, and the Basel Convention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "deb75cf7bbc47756d8f4773d45f5e5ebfa7052e86e2d6e2cfe01f505d252ee8b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b22fafdefcc59517b4d669b86d30105483b6573edc89618648583cfbc8ffc82d",
+    "raw_response_text_sha256": "f96e466c58f72e2fe3a1e5e0d755dc791657038b67ec7f0871887dd1a79067f0"
+  },
+  "api_metadata": {
+    "id": "resp_0aaf63cc57e9c4ac006b063f1380e887d195881bdcdc1bf943",
+    "model": "gpt-6-luna",
+    "created_at": 1795571475.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1802,
+      "input_tokens_details": {
+        "cache_write_tokens": 1799,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1799
+        }
+      },
+      "output_tokens": 309,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 2111
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A diplomatic dispute between the Philippines and Canada over Canadian waste shipped to the Philippines\",\n  \"climate_relevance\": \"Climate change is briefly mentioned as part of Trudeau's environmental commitments and Canada's reputation, but the article focuses on waste exports and diplomacy.\",\n  \"reason\": \"The text contains a relevant reference to combating climate change, but climate issues are not developed; the main discussion concerns garbage, environmental harm, and the Basel Convention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:51:18Z",
+  "duration_seconds": 2.978,
+  "error": null
+}

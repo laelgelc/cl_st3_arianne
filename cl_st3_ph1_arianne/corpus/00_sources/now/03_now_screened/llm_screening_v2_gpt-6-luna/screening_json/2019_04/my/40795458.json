@@ -1,0 +1,77 @@
+{
+  "article_id": "40795458",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40795458.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40795458.json"
+  },
+  "manifest_row": {
+    "article_id": "40795458",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40795458.txt",
+    "now_field_2": "518",
+    "date_original": "19-04-03",
+    "date_iso": "2019-04-03",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/03/knight-frank-more-transactions-expected-in-healthcare-institutional-subsector-in-2019/",
+    "title": "Knight Frank: More transactions expected in healthcare, institutional ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Malaysia's commercial real estate investment outlook, particularly healthcare and institutional properties",
+    "climate_relevance": "Climate change appears only in the title of a minister mentioned in an unrelated headline-style snippet; the article contains no meaningful climate discourse.",
+    "reason": "The identifiable main article concerns property investment. The sole climate reference is part of a government minister's portfolio title in an unrelated opening snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5c5b047930c281c816728817d69cd268ae6432fa44ab53bd7771beb122f880e0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2ce7ea0a104d71c77d6837ccf62ace7824887d06ff189f730296099ff3df68a2",
+    "raw_response_text_sha256": "62a29c5ad3b64d554a984e1091291134140bc83415a93b156baf3a849d5915fe"
+  },
+  "api_metadata": {
+    "id": "resp_0df853bf52ef68f3006b061fba67b887d2ae8e8d640c53bfdc",
+    "model": "gpt-6-luna",
+    "created_at": 1795563450.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1176,
+      "input_tokens_details": {
+        "cache_write_tokens": 1173,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1173
+        }
+      },
+      "output_tokens": 262,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 1438
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Malaysia's commercial real estate investment outlook, particularly healthcare and institutional properties\",\n  \"climate_relevance\": \"Climate change appears only in the title of a minister mentioned in an unrelated headline-style snippet; the article contains no meaningful climate discourse.\",\n  \"reason\": \"The identifiable main article concerns property investment. The sole climate reference is part of a government minister's portfolio title in an unrelated opening snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:33Z",
+  "duration_seconds": 3.509,
+  "error": null
+}

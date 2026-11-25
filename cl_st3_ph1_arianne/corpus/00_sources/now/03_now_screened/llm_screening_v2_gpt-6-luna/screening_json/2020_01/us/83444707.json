@@ -1,0 +1,77 @@
+{
+  "article_id": "83444707",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83444707.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83444707.json"
+  },
+  "manifest_row": {
+    "article_id": "83444707",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83444707.txt",
+    "now_field_2": "140",
+    "date_original": "20-01-25",
+    "date_iso": "2020-01-25",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20200125164006-4bdzb",
+    "title": "Lebanese security fire water cannons at protesters breaching barricade",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Protests and political crisis in Lebanon",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news organization's coverage areas.",
+    "reason": "The article reports on protests and violence in Lebanon; its only climate reference is unrelated editorial boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "10ca4334fde68e17f5d08070761b7985afe51b057973a704405270da13c94a26",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1c8202a10263bac6e80abe4945054595cb4d5fecdc159a23fd561de8a9330188",
+    "raw_response_text_sha256": "6219e0b97f9c520427db637a74eed24502292f79511aa3541e03c56eab8ef0a1"
+  },
+  "api_metadata": {
+    "id": "resp_01708dcc3f87a40d006b0649996e4887d19cc07cf3f9b0a622",
+    "model": "gpt-6-luna",
+    "created_at": 1795574169.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 665,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 150,
+      "output_tokens_details": {
+        "reasoning_tokens": 27
+      },
+      "total_tokens": 815
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Protests and political crisis in Lebanon\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news organization's coverage areas.\",\n  \"reason\": \"The article reports on protests and violence in Lebanon; its only climate reference is unrelated editorial boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:36:11Z",
+  "duration_seconds": 1.657,
+  "error": null
+}

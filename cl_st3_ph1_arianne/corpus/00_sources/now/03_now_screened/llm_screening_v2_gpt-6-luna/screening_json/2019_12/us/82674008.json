@@ -1,0 +1,77 @@
+{
+  "article_id": "82674008",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82674008.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82674008.json"
+  },
+  "manifest_row": {
+    "article_id": "82674008",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82674008.txt",
+    "now_field_2": "363",
+    "date_original": "19-12-13",
+    "date_iso": "2019-12-13",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191213203020-oyfwv",
+    "title": "New Zealand resumes mission to retrieve remaining bodies following volcanic eruption",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Search and recovery efforts after the fatal White Island volcanic eruption",
+    "climate_relevance": "Climate change appears only in a generic Reuters editorial tagline.",
+    "reason": "The report focuses on the volcanic eruption, recovery efforts, and victims. Its only climate reference is unrelated boilerplate and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "543dcacb24d5c58629732be0b454175376d11588bbc26f2d8144b579b7f2f514",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e267370bfec8047160b65aae006c1fd6ba300d69ea92b86384d9876f58f36804",
+    "raw_response_text_sha256": "002ef176860aedb592baf2eecd7916c46de00f4c279c36e00647eee45113a02f"
+  },
+  "api_metadata": {
+    "id": "resp_05967de248f197ca006b0648baa4f087d1b15505d50ac44e68",
+    "model": "gpt-6-luna",
+    "created_at": 1795573946.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 953,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 1147
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Search and recovery efforts after the fatal White Island volcanic eruption\",\n  \"climate_relevance\": \"Climate change appears only in a generic Reuters editorial tagline.\",\n  \"reason\": \"The report focuses on the volcanic eruption, recovery efforts, and victims. Its only climate reference is unrelated boilerplate and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:32:28Z",
+  "duration_seconds": 1.883,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "41986044",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/gb/41986044.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/gb/41986044.json"
+  },
+  "manifest_row": {
+    "article_id": "41986044",
+    "group": "2020_05",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/gb/41986044.txt",
+    "now_field_2": "749",
+    "date_original": "20-05-17",
+    "date_iso": "2020-05-17",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/stanley-johnson-interview-with-ta-nea-1-6657467",
+    "title": "Boris Johnson's father says UK `on the right track' over ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Stanley Johnson’s comments on the coronavirus pandemic and his son’s response to it",
+    "climate_relevance": "Climate change appears only in promotional copy about the newspaper’s coverage. The article’s brief reference to a greener way of life is not explicitly connected to climate change.",
+    "reason": "The article is principally about Covid-19. Its climate-change mentions are boilerplate, and the general comment about greener living does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fec440c5a439f6720dcd292b1fefe2d672218f648abef27dfd001dc669cafb1e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "766aeddb261f8196e56334c84c5ccdd4b09c2f86f936c3b12b137d4095f20f09",
+    "raw_response_text_sha256": "f2bf5dd35f1cabe751fca7f432110e0894070fa14c2254634b088a6fa76609c4"
+  },
+  "api_metadata": {
+    "id": "resp_0dde14b57089a082006b0623dfb80087d2995725fa0b565ada",
+    "model": "gpt-6-luna",
+    "created_at": 1795564511.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1431,
+      "input_tokens_details": {
+        "cache_write_tokens": 1428,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1428
+        }
+      },
+      "output_tokens": 400,
+      "output_tokens_details": {
+        "reasoning_tokens": 241
+      },
+      "total_tokens": 1831
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Stanley Johnson’s comments on the coronavirus pandemic and his son’s response to it\",\n  \"climate_relevance\": \"Climate change appears only in promotional copy about the newspaper’s coverage. The article’s brief reference to a greener way of life is not explicitly connected to climate change.\",\n  \"reason\": \"The article is principally about Covid-19. Its climate-change mentions are boilerplate, and the general comment about greener living does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:55:14Z",
+  "duration_seconds": 2.916,
+  "error": null
+}

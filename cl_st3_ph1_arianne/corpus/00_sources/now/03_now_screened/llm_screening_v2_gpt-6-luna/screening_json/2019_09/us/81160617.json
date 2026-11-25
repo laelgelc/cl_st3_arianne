@@ -1,0 +1,77 @@
+{
+  "article_id": "81160617",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/81160617.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/81160617.json"
+  },
+  "manifest_row": {
+    "article_id": "81160617",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/81160617.txt",
+    "now_field_2": "179",
+    "date_original": "19-09-18",
+    "date_iso": "2019-09-18",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20190919040858-uay24",
+    "title": "Lorena strengthens into hurricane off coast of Colima, Mexico",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Hurricane Lorena and its forecast impacts in Mexico",
+    "climate_relevance": "Climate change appears only in a boilerplate description of Reuters coverage areas; the report does not discuss climate change or connect it to the storm.",
+    "reason": "The article reports on a hurricane, rainfall, and forecasts, but contains no meaningful climate-change discourse. The sole mention of climate change is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5853d6c5f26650193938d103a68b40f6efcd40c4b8ead86534ef25e8e3d1a217",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4d42ff17191470be2144105e211bb05ed28aa084cd4bef8a343478df84de15d6",
+    "raw_response_text_sha256": "761169cd375ff838370bfbe573868042a96e78e6f3083add6d09b77f3e5e884d"
+  },
+  "api_metadata": {
+    "id": "resp_0fdb835aef7c874e006b0646f70c0c87d1a29b51bdbbdef8e7",
+    "model": "gpt-6-luna",
+    "created_at": 1795573495.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 749,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 189,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "total_tokens": 938
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Hurricane Lorena and its forecast impacts in Mexico\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of Reuters coverage areas; the report does not discuss climate change or connect it to the storm.\",\n  \"reason\": \"The article reports on a hurricane, rainfall, and forecasts, but contains no meaningful climate-change discourse. The sole mention of climate change is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:24:57Z",
+  "duration_seconds": 2.219,
+  "error": null
+}

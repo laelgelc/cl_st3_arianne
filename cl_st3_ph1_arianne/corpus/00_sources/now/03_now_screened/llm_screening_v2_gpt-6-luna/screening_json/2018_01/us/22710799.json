@@ -1,0 +1,77 @@
+{
+  "article_id": "22710799",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_01/us/22710799.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_01/us/22710799.json"
+  },
+  "manifest_row": {
+    "article_id": "22710799",
+    "group": "2018_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_01/us/22710799.txt",
+    "now_field_2": "1117",
+    "date_original": "18-01-12",
+    "date_iso": "2018-01-12",
+    "source_name": "New York Times",
+    "url": "https://www.nytimes.com/2018/01/12/world/europe/trump-london-embassy-opening.html",
+    "title": "Trump Won't Visit London for Embassy Opening, Citing Location",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
+    "metadata_article_files": "[\"text-18-01/text_18-01-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "President Trump's cancellation of a planned London visit and the resulting U.S.-U.K. diplomatic and political tensions.",
+    "climate_relevance": "The Paris climate change accord is briefly named as an example of an issue on which Theresa May aligned with the European Union.",
+    "reason": "Climate policy appears only in a passing example and is not developed in a way that would meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "57b7f0a9e3b574fa0c9117cbc779acbb5c54207e03b25f271a7dca56285d6767",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1fde9866a54d59303c00f74a5909c95ef024553e76308c7b314baa4f15027a07",
+    "raw_response_text_sha256": "ad8f8919f01c292b6638ef987f6384507f3debce656b078fbf40aa4d4670ca66"
+  },
+  "api_metadata": {
+    "id": "resp_0b43fbcb0da08622006b0610717b9c87d28d4822fae77af351",
+    "model": "gpt-6-luna",
+    "created_at": 1795559537.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1928,
+      "input_tokens_details": {
+        "cache_write_tokens": 1925,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1925
+        }
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 2241
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"President Trump's cancellation of a planned London visit and the resulting U.S.-U.K. diplomatic and political tensions.\",\n  \"climate_relevance\": \"The Paris climate change accord is briefly named as an example of an issue on which Theresa May aligned with the European Union.\",\n  \"reason\": \"Climate policy appears only in a passing example and is not developed in a way that would meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:32:19Z",
+  "duration_seconds": 2.509,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31985106",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/31985106.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/31985106.json"
+  },
+  "manifest_row": {
+    "article_id": "31985106",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/31985106.txt",
+    "now_field_2": "576",
+    "date_original": "20-07-29",
+    "date_iso": "2020-07-29",
+    "source_name": "ottawacitizen.com",
+    "url": "https://ottawacitizen.com/news/local-news/weather-cooler-temperatures-start-now-but-so-do-cloudy-skies-and-likely-showers",
+    "title": "Weather: Cooler temperatures start now, but showers and ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Ottawa weather forecast and beach water-quality advisory",
+    "climate_relevance": "The text reports short-term weather conditions and mentions Environment and Climate Change Canada only as the name of the forecasting agency; it contains no meaningful discussion of climate change.",
+    "reason": "This is a routine weather forecast with site boilerplate. References to showers, temperatures, and seasonal normals concern weather, not climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "eef40fa5f8a81a9cf9d16ef22d3eb5415f260f15ca624535ada903228df2dabe",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "512e339b0ebf5ac489d063e4a68ad19144cc7def3b848da8acc322825aff43df",
+    "raw_response_text_sha256": "8f2e9cf7385755458f1c5e54c54eec77e207c5ee687997f2bba614111cd7042a"
+  },
+  "api_metadata": {
+    "id": "resp_0c2d229cae3b4d1a006b061a89b8e087d29ed1daf82d7114f2",
+    "model": "gpt-6-luna",
+    "created_at": 1795562121.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1255,
+      "input_tokens_details": {
+        "cache_write_tokens": 1252,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1252
+        }
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1472
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ottawa weather forecast and beach water-quality advisory\",\n  \"climate_relevance\": \"The text reports short-term weather conditions and mentions Environment and Climate Change Canada only as the name of the forecasting agency; it contains no meaningful discussion of climate change.\",\n  \"reason\": \"This is a routine weather forecast with site boilerplate. References to showers, temperatures, and seasonal normals concern weather, not climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:15:23Z",
+  "duration_seconds": 1.799,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31295240",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/31295240.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/31295240.json"
+  },
+  "manifest_row": {
+    "article_id": "31295240",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/31295240.txt",
+    "now_field_2": "2848",
+    "date_original": "19-09-18",
+    "date_iso": "2019-09-18",
+    "source_name": "theguardian.com",
+    "url": "https://www.theguardian.com/politics/government-data/rss",
+    "title": "Government data | The Guardian",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A compilation of unrelated Guardian news snippets, including one about UK power-station output and renewable electricity.",
+    "climate_relevance": "Climate change appears only in the energy article’s metadata tags; the available article text does not meaningfully discuss climate change or its implications.",
+    "reason": "The supplied text combines multiple unrelated articles, and no single main article is identifiable. The energy snippet concerns electricity generation and renewables, but its climate-change reference is only a metadata tag.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c7ae41fd6f1b60bc4c253bcd20dc3a878183f383c2043287e9bfddfb9a3e7228",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ffac0ea5faf682a1191e0621e6b75ec5e79f8261981e686382ff9d62a191ce2c",
+    "raw_response_text_sha256": "b70a07379857f91ee54e4a4f87b920e342055ff321a30bb0a03956682fcc5b3a"
+  },
+  "api_metadata": {
+    "id": "resp_0b67a26533f3eb92006b0616a2c34887d29f88bb2095ad8ab9",
+    "model": "gpt-6-luna",
+    "created_at": 1795561122.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7626,
+      "input_tokens_details": {
+        "cache_write_tokens": 7623,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 7623
+        }
+      },
+      "output_tokens": 369,
+      "output_tokens_details": {
+        "reasoning_tokens": 206
+      },
+      "total_tokens": 7995
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A compilation of unrelated Guardian news snippets, including one about UK power-station output and renewable electricity.\",\n  \"climate_relevance\": \"Climate change appears only in the energy article’s metadata tags; the available article text does not meaningfully discuss climate change or its implications.\",\n  \"reason\": \"The supplied text combines multiple unrelated articles, and no single main article is identifiable. The energy snippet concerns electricity generation and renewables, but its climate-change reference is only a metadata tag.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:58:45Z",
+  "duration_seconds": 3.202,
+  "error": null
+}

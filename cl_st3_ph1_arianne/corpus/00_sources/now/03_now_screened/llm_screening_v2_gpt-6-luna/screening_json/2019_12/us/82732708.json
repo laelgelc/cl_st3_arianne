@@ -1,0 +1,77 @@
+{
+  "article_id": "82732708",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82732708.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82732708.json"
+  },
+  "manifest_row": {
+    "article_id": "82732708",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82732708.txt",
+    "now_field_2": "392",
+    "date_original": "19-12-17",
+    "date_iso": "2019-12-17",
+    "source_name": "WKYT",
+    "url": "https://www.wkyt.com/content/news/Pro-Impeachment-rally-to-be-held-in-Lexington-566270451.html",
+    "title": "Pro-Impeachment rally to be held in Lexington",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "A rally in Lexington supporting President Trump's impeachment",
+    "climate_relevance": "One attendee identifies Trump's view of climate change as a hoax as a reason for supporting his removal from office.",
+    "reason": "The report is mainly about the impeachment rally. Climate change appears in a meaningful but brief comment about Trump's environmental views, making it peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "78cc5c724291bcddea94558c08e4990c6ecd3924c51964a05fc64d89925e0f71",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "865023b6b9c1f5a2f5459b0dd36c2ce483cd2e64a0ef9d539338499a3c30a4eb",
+    "raw_response_text_sha256": "9b5d1422cfb9aa2534dcc7a4aea5c08e1ded8a72ac3ce3da5c88d903d91bdfe0"
+  },
+  "api_metadata": {
+    "id": "resp_02770e2a25a5c6d9006b0648cb6db487d1a415bde5cd4ae564",
+    "model": "gpt-6-luna",
+    "created_at": 1795573963.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1079,
+      "input_tokens_details": {
+        "cache_write_tokens": 1076,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1076
+        }
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1308
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A rally in Lexington supporting President Trump's impeachment\",\n  \"climate_relevance\": \"One attendee identifies Trump's view of climate change as a hoax as a reason for supporting his removal from office.\",\n  \"reason\": \"The report is mainly about the impeachment rally. Climate change appears in a meaningful but brief comment about Trump's environmental views, making it peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:32:45Z",
+  "duration_seconds": 2.365,
+  "error": null
+}

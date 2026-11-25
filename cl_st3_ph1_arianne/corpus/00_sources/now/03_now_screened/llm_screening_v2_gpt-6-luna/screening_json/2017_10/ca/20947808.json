@@ -1,0 +1,77 @@
+{
+  "article_id": "20947808",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/ca/20947808.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/ca/20947808.json"
+  },
+  "manifest_row": {
+    "article_id": "20947808",
+    "group": "2017_10",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/ca/20947808.txt",
+    "now_field_2": "481",
+    "date_original": "17-10-06",
+    "date_iso": "2017-10-06",
+    "source_name": "Montreal Gazette",
+    "url": "http://montrealgazette.com/pmn/news-pmn/ocean-conference-raises-over-7-billion-to-marine-protection/wcm/e2517158-bcfd-4e8e-a69c-766b1939f0a0",
+    "title": "Ocean conference raises over $7 billion to marine protection",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.84,
+    "climate_role": "passing",
+    "main_topic": "Funding commitments and projects announced at an international conference on marine protection.",
+    "climate_relevance": "Climate change is named as one issue addressed by conference projects, specifically its effects, but the article provides no further discussion.",
+    "reason": "The identifiable news article is mainly about marine conservation funding. Its reference to projects examining climate change effects gives the topic some relevance, but the mention is brief and not developed.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7b8b009c90ff031efed82a2c33a82136e63c9b0acefb52a2b03910bffc410158",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "df2c5e6a870be90728b095a00f79a05aa9a861deda805a99d33f9e5ca53e7c43",
+    "raw_response_text_sha256": "6264175a850d7711786da0c9914416c85d75f93126f48ebc0d64a03f52c539af"
+  },
+  "api_metadata": {
+    "id": "resp_06cab6c55daf8219006b060e09785887d2a40d8692ce9d6f32",
+    "model": "gpt-6-luna",
+    "created_at": 1795558921.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1112,
+      "input_tokens_details": {
+        "cache_write_tokens": 1109,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1109
+        }
+      },
+      "output_tokens": 466,
+      "output_tokens_details": {
+        "reasoning_tokens": 320
+      },
+      "total_tokens": 1578
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.84,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Funding commitments and projects announced at an international conference on marine protection.\",\n  \"climate_relevance\": \"Climate change is named as one issue addressed by conference projects, specifically its effects, but the article provides no further discussion.\",\n  \"reason\": \"The identifiable news article is mainly about marine conservation funding. Its reference to projects examining climate change effects gives the topic some relevance, but the mention is brief and not developed.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:22:04Z",
+  "duration_seconds": 3.154,
+  "error": null
+}

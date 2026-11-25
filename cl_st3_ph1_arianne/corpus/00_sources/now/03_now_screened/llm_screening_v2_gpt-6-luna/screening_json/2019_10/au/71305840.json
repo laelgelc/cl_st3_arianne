@@ -1,0 +1,77 @@
+{
+  "article_id": "71305840",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/au/71305840.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/au/71305840.json"
+  },
+  "manifest_row": {
+    "article_id": "71305840",
+    "group": "2019_10",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/au/71305840.txt",
+    "now_field_2": "1024",
+    "date_original": "19-10-19",
+    "date_iso": "2019-10-19",
+    "source_name": "smh.com.au",
+    "url": "https://www.smh.com.au/world/north-america/the-most-ruthlessly-honest-president-of-modern-times-a-thousand-days-of-trump-20191017-p531r7.html",
+    "title": "The most ruthlessly honest president of modern times: a ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.89,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Donald Trump’s presidency and political record",
+    "climate_relevance": "The identifiable main article is about Trump and does not meaningfully discuss climate change. A separate, substantial climate-change article begins later in the supplied text.",
+    "reason": "The text contains two unrelated articles. Following the instruction to assess the identifiable main article, the Trump opinion is excluded; the appended climate article appears to be a separate story rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e4c2fdd908fc2ede81b42c905c24d1639ae8d32757cc9043db8c6bbf277a3e04",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1bd788266d384d2b410c1e9cd312a5563e26ed82d1fb7445e71d9191815b549f",
+    "raw_response_text_sha256": "70f0794403b16abc5f2760aa980f9b0568fc0e1714c15b233fe09b0004891a05"
+  },
+  "api_metadata": {
+    "id": "resp_0c48bb7cc72d8f38006b0640d5c1b487d1b81655727f9c758d",
+    "model": "gpt-6-luna",
+    "created_at": 1795571926.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4089,
+      "input_tokens_details": {
+        "cache_write_tokens": 4086,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4086
+        }
+      },
+      "output_tokens": 585,
+      "output_tokens_details": {
+        "reasoning_tokens": 427
+      },
+      "total_tokens": 4674
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.89,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Donald Trump’s presidency and political record\",\n  \"climate_relevance\": \"The identifiable main article is about Trump and does not meaningfully discuss climate change. A separate, substantial climate-change article begins later in the supplied text.\",\n  \"reason\": \"The text contains two unrelated articles. Following the instruction to assess the identifiable main article, the Trump opinion is excluded; the appended climate article appears to be a separate story rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:58:50Z",
+  "duration_seconds": 4.496,
+  "error": null
+}

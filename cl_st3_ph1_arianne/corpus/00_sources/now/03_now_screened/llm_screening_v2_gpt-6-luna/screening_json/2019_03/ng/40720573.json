@@ -1,0 +1,77 @@
+{
+  "article_id": "40720573",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/ng/40720573.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/ng/40720573.json"
+  },
+  "manifest_row": {
+    "article_id": "40720573",
+    "group": "2019_03",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/ng/40720573.txt",
+    "now_field_2": "268",
+    "date_original": "19-03-14",
+    "date_iso": "2019-03-14",
+    "source_name": "TODAY.NG",
+    "url": "https://www.today.ng/news/africa/malawi-floods-kills-56-80000-displaced-cyclone-approaches-203029",
+    "title": "Malawi floods kills 56, over 80000 displaced as cyclone approaches",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Flooding and an approaching tropical cyclone in Malawi",
+    "climate_relevance": "The text reports severe flooding and a cyclone but does not discuss climate change or its implications; climate change appears only in the name of a government department.",
+    "reason": "The main report concerns an acute weather disaster without meaningful climate-change discourse. It also includes an unrelated corruption snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9192199ce2837898d5a44c2200528519f482494ed934404659510c8429bd6cc2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "389a1c680839b6b514845271571d9a05b8b2127e0282ba7f15cdad7811567df5",
+    "raw_response_text_sha256": "01a52a97aab8bee1baad9076b27327ac61264b9ec77b10d769e0693c02603772"
+  },
+  "api_metadata": {
+    "id": "resp_022f7d873924bc52006b061f8725e487d2aad814ea44ad9d21",
+    "model": "gpt-6-luna",
+    "created_at": 1795563399.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 848,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 1060
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Flooding and an approaching tropical cyclone in Malawi\",\n  \"climate_relevance\": \"The text reports severe flooding and a cyclone but does not discuss climate change or its implications; climate change appears only in the name of a government department.\",\n  \"reason\": \"The main report concerns an acute weather disaster without meaningful climate-change discourse. It also includes an unrelated corruption snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:36:41Z",
+  "duration_seconds": 2.015,
+  "error": null
+}

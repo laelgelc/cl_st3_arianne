@@ -1,0 +1,77 @@
+{
+  "article_id": "19368075",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/za/19368075.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/za/19368075.json"
+  },
+  "manifest_row": {
+    "article_id": "19368075",
+    "group": "2017_07",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/za/19368075.txt",
+    "now_field_2": "184",
+    "date_original": "17-07-07",
+    "date_iso": "2017-07-07",
+    "source_name": "News24",
+    "url": "http://www.news24.com/World/News/fresh-g20-clashes-in-hamburg-police-cars-torched-20170707",
+    "title": "Fresh G20 clashes in Hamburg, police cars torched",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Clashes and anticipated protests around the G20 summit in Hamburg",
+    "climate_relevance": "Climate change is mentioned only as one item on the summit agenda; the text contains no substantive climate-related discussion.",
+    "reason": "The article focuses on protests, anarchist groups, and police, while climate change appears only in a passing list of summit topics. The remaining text is site-interface boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e0ae53282f9c8f7163fb23db93d7ac4410712803443c9e9c2b84b0dcabeb47fd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4dabcebeaafa75ede0d8d7eb9c3b4f6c4f3ff8f0e0039b2199266ec53527f5da",
+    "raw_response_text_sha256": "b6be15d9256c884391df52e2c8afc457eab2fb4ea98dfd79fffd91fdfec98f7f"
+  },
+  "api_metadata": {
+    "id": "resp_02d82325ce646fe4006b060bd64b0c87d290931608aba85e11",
+    "model": "gpt-6-luna",
+    "created_at": 1795558358.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 738,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 309,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 1047
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Clashes and anticipated protests around the G20 summit in Hamburg\",\n  \"climate_relevance\": \"Climate change is mentioned only as one item on the summit agenda; the text contains no substantive climate-related discussion.\",\n  \"reason\": \"The article focuses on protests, anarchist groups, and police, while climate change appears only in a passing list of summit topics. The remaining text is site-interface boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:12:40Z",
+  "duration_seconds": 2.271,
+  "error": null
+}

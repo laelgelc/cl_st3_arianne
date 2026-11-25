@@ -1,0 +1,77 @@
+{
+  "article_id": "86422345",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/86422345.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/86422345.json"
+  },
+  "manifest_row": {
+    "article_id": "86422345",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/86422345.txt",
+    "now_field_2": "182",
+    "date_original": "20-12-16",
+    "date_iso": "2020-12-16",
+    "source_name": "The Hill",
+    "url": "https://thehill.com/blogs/in-the-know/in-the-know/530476-oliver-stone-says-hes-taken-russian-coronavirus-vaccine",
+    "title": "Oliver Stone says he's taken Russian coronavirus vaccine",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "passing",
+    "main_topic": "Russian coronavirus vaccine and comments about Russia, China, and the United States",
+    "climate_relevance": "Climate change appears in a brief fragment about Russia and China as potential partners in addressing it.",
+    "reason": "The text is mainly about the Russian vaccine. The climate reference is brief but conveys a position on international cooperation, making it relevant as peripheral discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fa844f04a180c00c7f3c9b9f06ea10cf68dd185f06d5563ea68139d992ce8ea8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b4322e1cca2f81c6c991a239cae6a11672a97604c175e9405dbb08820b520275",
+    "raw_response_text_sha256": "9bacd7576793603cd04026e4388397d9a5fee237f63d596feea2ee98ccc2c007"
+  },
+  "api_metadata": {
+    "id": "resp_07f82f681b1c4f8c006b06502446a887d190429c2f30408725",
+    "model": "gpt-6-luna",
+    "created_at": 1795575844.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 712,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 382,
+      "output_tokens_details": {
+        "reasoning_tokens": 245
+      },
+      "total_tokens": 1094
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Russian coronavirus vaccine and comments about Russia, China, and the United States\",\n  \"climate_relevance\": \"Climate change appears in a brief fragment about Russia and China as potential partners in addressing it.\",\n  \"reason\": \"The text is mainly about the Russian vaccine. The climate reference is brief but conveys a position on international cooperation, making it relevant as peripheral discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:04:07Z",
+  "duration_seconds": 3.272,
+  "error": null
+}

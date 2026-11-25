@@ -1,0 +1,77 @@
+{
+  "article_id": "40812734",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40812734.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40812734.json"
+  },
+  "manifest_row": {
+    "article_id": "40812734",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40812734.txt",
+    "now_field_2": "721",
+    "date_original": "19-04-07",
+    "date_iso": "2019-04-07",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/08/th-no-more-surprises-after-one-off-impairment/",
+    "title": "TH: No more 'surprises' after one-off impairment",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Lembaga Tabung Haji's financial performance and restructuring",
+    "climate_relevance": "Climate-related wording appears only in an unrelated introductory news brief about Malaysia exhibiting sustainable energy solutions and in a minister's portfolio title.",
+    "reason": "The identifiable main article concerns the pilgrim fund's finances and contains no meaningful climate-change discussion. The brief mention of sustainable energy is part of an unrelated snippet, not the article's subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "496dbce0cbb19f51e95fe351626eee85cff15d33dbd0306b32bb9842f7a3cdd1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ea7df6b3d64a46e46dd94241d6d9b939475a78d1d6aedaeabf21a7136da9e4fe",
+    "raw_response_text_sha256": "0ecccfd2f0b68c5f37fee3f953ea8b3f0da779b4ea4dc6efa1a4f4a8240fa8ca"
+  },
+  "api_metadata": {
+    "id": "resp_0e926ab4015e9477006b061fcf786087d285ddcb75c3a45067",
+    "model": "gpt-6-luna",
+    "created_at": 1795563471.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1535,
+      "input_tokens_details": {
+        "cache_write_tokens": 1532,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1532
+        }
+      },
+      "output_tokens": 338,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 1873
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Lembaga Tabung Haji's financial performance and restructuring\",\n  \"climate_relevance\": \"Climate-related wording appears only in an unrelated introductory news brief about Malaysia exhibiting sustainable energy solutions and in a minister's portfolio title.\",\n  \"reason\": \"The identifiable main article concerns the pilgrim fund's finances and contains no meaningful climate-change discussion. The brief mention of sustainable energy is part of an unrelated snippet, not the article's subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:54Z",
+  "duration_seconds": 3.143,
+  "error": null
+}

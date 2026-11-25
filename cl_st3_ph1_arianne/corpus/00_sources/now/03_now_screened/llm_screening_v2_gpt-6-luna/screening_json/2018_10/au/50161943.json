@@ -1,0 +1,77 @@
+{
+  "article_id": "50161943",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/au/50161943.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/au/50161943.json"
+  },
+  "manifest_row": {
+    "article_id": "50161943",
+    "group": "2018_10",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/au/50161943.txt",
+    "now_field_2": "1493",
+    "date_original": "18-10-27",
+    "date_iso": "2018-10-27",
+    "source_name": "NEWS.com.au",
+    "url": "https://www.news.com.au/entertainment/celebrity-life/royals/royal-tour-day-12-meghan-and-harrys-final-day-in-sydney/news-story/a4cee671c09b9e62911eced51a5b1447",
+    "title": "Royal Tour, Day 12: Meghan and Harry's final day in Australia",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Meghan and Harry attending the Invictus Games closing ceremony during their Australian royal tour",
+    "climate_relevance": "An embedded clip summary reports Prince Harry calling on governments to act on climate change and describing climate warnings as grounded in science and fact.",
+    "reason": "The identifiable main article focuses on the royal tour and the Invictus Games, not climate change. The climate passage is meaningful but appears to be a separate, brief clip or snippet, so it is relevant only peripherally.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1a52c2a0d7e2b9416cc8c00d74e5fa93daf504b4c274bfcd6cc335ce79f588b9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "aa88750a2e0e00a2d3e3b735f5c5b15f82b87d40524af1b8fd59b30ba19bfe73",
+    "raw_response_text_sha256": "5cda510c1a20f01fe748d0eb7a1fcdf55beb84e9fe89f2037515ad79e8daba77"
+  },
+  "api_metadata": {
+    "id": "resp_0cc2360aa778b19a006b0627d8ecd887d1bb0e2d96e2cc4b20",
+    "model": "gpt-6-luna",
+    "created_at": 1795565529.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2582,
+      "input_tokens_details": {
+        "cache_write_tokens": 2579,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2579
+        }
+      },
+      "output_tokens": 346,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 2928
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Meghan and Harry attending the Invictus Games closing ceremony during their Australian royal tour\",\n  \"climate_relevance\": \"An embedded clip summary reports Prince Harry calling on governments to act on climate change and describing climate warnings as grounded in science and fact.\",\n  \"reason\": \"The identifiable main article focuses on the royal tour and the Invictus Games, not climate change. The climate passage is meaningful but appears to be a separate, brief clip or snippet, so it is relevant only peripherally.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:12:11Z",
+  "duration_seconds": 2.749,
+  "error": null
+}

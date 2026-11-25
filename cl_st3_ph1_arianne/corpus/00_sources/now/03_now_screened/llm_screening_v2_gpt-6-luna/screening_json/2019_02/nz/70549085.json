@@ -1,0 +1,77 @@
+{
+  "article_id": "70549085",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70549085.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70549085.json"
+  },
+  "manifest_row": {
+    "article_id": "70549085",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70549085.txt",
+    "now_field_2": "3289",
+    "date_original": "19-02-25",
+    "date_iso": "2019-02-25",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/HL1902/S00111/gordon-campbell-on-nationals-cosy-relationship-with-china.htm",
+    "title": "Gordon Campbell on National's cosy relationship with China",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "New Zealand National Party politicians’ economic and security relationships with China",
+    "climate_relevance": "Climate change appears only in a separate 'ALSO' teaser about the Nelson fire and expected wildfire risks; it is not part of the main article.",
+    "reason": "The identifiable main article concerns New Zealand–China relations and contains no meaningful climate discourse. The climate reference belongs to an unrelated snippet, rather than the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b17ec11a071a00abecd8c3039d4aafdcc62da721767b1fcc915f6cdab8c4305e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7ac4c249a002364905d799bac6c40ca2a72de1485352a0403012a7d7f354783b",
+    "raw_response_text_sha256": "d2d5effd4388648c7016b3b11d5d49afeb1b073bd7525fc3e86b853e7ac18eab"
+  },
+  "api_metadata": {
+    "id": "resp_03472c6370822b16006b063d7ce30887d191838bc948fb6d33",
+    "model": "gpt-6-luna",
+    "created_at": 1795571069.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4701,
+      "input_tokens_details": {
+        "cache_write_tokens": 4698,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4698
+        }
+      },
+      "output_tokens": 434,
+      "output_tokens_details": {
+        "reasoning_tokens": 280
+      },
+      "total_tokens": 5135
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"New Zealand National Party politicians’ economic and security relationships with China\",\n  \"climate_relevance\": \"Climate change appears only in a separate 'ALSO' teaser about the Nelson fire and expected wildfire risks; it is not part of the main article.\",\n  \"reason\": \"The identifiable main article concerns New Zealand–China relations and contains no meaningful climate discourse. The climate reference belongs to an unrelated snippet, rather than the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:44:32Z",
+  "duration_seconds": 3.804,
+  "error": null
+}

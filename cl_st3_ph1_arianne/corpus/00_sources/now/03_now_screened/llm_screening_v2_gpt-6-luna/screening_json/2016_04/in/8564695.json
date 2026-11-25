@@ -1,0 +1,77 @@
+{
+  "article_id": "8564695",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_04/in/8564695.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_04/in/8564695.json"
+  },
+  "manifest_row": {
+    "article_id": "8564695",
+    "group": "2016_04",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_04/in/8564695.txt",
+    "now_field_2": "993",
+    "date_original": "16-04-30",
+    "date_iso": "2016-04-30",
+    "source_name": "Times of India",
+    "url": "http://timesofindia.indiatimes.com/city/bengaluru/Clad-in-gold-girls-outshine-boys-in-agri-varisty/articleshow/52054738.cms",
+    "title": "Clad in gold, girls outshine boys in agri varisty",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-04-ovb/16-04-in.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Agricultural science graduates, their career goals, and challenges facing Indian agriculture",
+    "climate_relevance": "A convocation speech discusses global warming and climate-change impacts on agro-ecosystems, crop yields, pests, and natural disasters, and mentions adaptation and tolerant crop varieties.",
+    "reason": "The article is mainly about agricultural graduates and agricultural development, but climate change receives meaningful discussion in the convocation address. A separate, unrelated Delhi transport snippet appears at the end.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e6e0bfbed8ae0e321cc7d6f7b95f0b00c009c1b936c84b44b52fd19afd06ff8b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "861e53bccde46d2086990ba35f11662447be167e1c21135e8c1fccc03cea9e33",
+    "raw_response_text_sha256": "1607ad335e1706f974b35c8a3be962f65ab9e2d0c9c347e2f0e853e8a1d889d8"
+  },
+  "api_metadata": {
+    "id": "resp_0cc621618cceb9bd006b064c9a5d9887d1b626c382c3333b9f",
+    "model": "gpt-6-luna",
+    "created_at": 1795574938.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1755,
+      "input_tokens_details": {
+        "cache_write_tokens": 1752,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1752
+        }
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 2025
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Agricultural science graduates, their career goals, and challenges facing Indian agriculture\",\n  \"climate_relevance\": \"A convocation speech discusses global warming and climate-change impacts on agro-ecosystems, crop yields, pests, and natural disasters, and mentions adaptation and tolerant crop varieties.\",\n  \"reason\": \"The article is mainly about agricultural graduates and agricultural development, but climate change receives meaningful discussion in the convocation address. A separate, unrelated Delhi transport snippet appears at the end.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:49:00Z",
+  "duration_seconds": 2.378,
+  "error": null
+}

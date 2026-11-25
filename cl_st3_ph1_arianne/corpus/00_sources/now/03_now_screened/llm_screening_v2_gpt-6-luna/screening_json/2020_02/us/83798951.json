@@ -1,0 +1,77 @@
+{
+  "article_id": "83798951",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/83798951.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/83798951.json"
+  },
+  "manifest_row": {
+    "article_id": "83798951",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/83798951.txt",
+    "now_field_2": "765",
+    "date_original": "20-02-13",
+    "date_iso": "2020-02-13",
+    "source_name": "Delaware Online",
+    "url": "https://www.delawareonline.com/story/opinion/contributors/2020/02/13/why-arent-republicans-complaining-lack-balanced-budget-opinion/4716103002/",
+    "title": "Why aren't Republicans complaining about the lack of balanced budget? (Opinion)",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Federal budget deficits and Republican fiscal responsibility",
+    "climate_relevance": "Climate change is mentioned only as one item in a list of problems Americans consider major.",
+    "reason": "The article focuses on budget deficits and political debate over fiscal responsibility. Its brief reference to climate change is a passing polling comparison and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "be33a09748f0eca7133720db18cf4476deb34eff33efab9580f19c896d603e2b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "609f6d8190b0154a4be29815fd9102b5dfb5fd7c9cf46498c705eb70f472f348",
+    "raw_response_text_sha256": "d0ddacbb68b904ad439aab0990d2ce9d407ebdfd0b5922e78a9d12ebd5c9d25a"
+  },
+  "api_metadata": {
+    "id": "resp_0bb09d59a8ee2d33006b064a026b9087d184668bc457b73ddc",
+    "model": "gpt-6-luna",
+    "created_at": 1795574274.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1462,
+      "input_tokens_details": {
+        "cache_write_tokens": 1459,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1459
+        }
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1682
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Federal budget deficits and Republican fiscal responsibility\",\n  \"climate_relevance\": \"Climate change is mentioned only as one item in a list of problems Americans consider major.\",\n  \"reason\": \"The article focuses on budget deficits and political debate over fiscal responsibility. Its brief reference to climate change is a passing polling comparison and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:37:56Z",
+  "duration_seconds": 2.183,
+  "error": null
+}

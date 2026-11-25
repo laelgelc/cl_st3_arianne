@@ -1,0 +1,77 @@
+{
+  "article_id": "40224141",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/sg/40224141.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/sg/40224141.json"
+  },
+  "manifest_row": {
+    "article_id": "40224141",
+    "group": "2018_11",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/sg/40224141.txt",
+    "now_field_2": "499",
+    "date_original": "18-11-01",
+    "date_iso": "2018-11-01",
+    "source_name": "Eco-Business",
+    "url": "https://www.eco-business.com/news/renewable-brew-indonesian-geothermal-project-energises-women-coffee-growers/",
+    "title": "Renewable brew: Indonesian geothermal project energises women ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Support for coffee farmers in Indonesia alongside construction of a geothermal power plant",
+    "climate_relevance": "The article mentions a geothermal project but does not discuss climate change, emissions, or climate policy; climate change appears only in boilerplate describing the Thomson Reuters Foundation.",
+    "reason": "The main discussion concerns coffee production, farmer livelihoods, and company support. The geothermal plant is background context, with no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "04597173a63015eeac22d706e61a52cc3e45db6e05309d70aa1a5f9a7b214a21",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "90251d37a5c3694ab4aa55d9dd108d55d489dea0439167bb06c78b74b6711c10",
+    "raw_response_text_sha256": "6c0025e53b913dc46688470ed54beb6b55120a6646ed1e5219991e52d6d1e3ec"
+  },
+  "api_metadata": {
+    "id": "resp_003d813a14350ac8006b061e858a8887d2afdf491a31d56d1c",
+    "model": "gpt-6-luna",
+    "created_at": 1795563141.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1154,
+      "input_tokens_details": {
+        "cache_write_tokens": 1151,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1151
+        }
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 1466
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Support for coffee farmers in Indonesia alongside construction of a geothermal power plant\",\n  \"climate_relevance\": \"The article mentions a geothermal project but does not discuss climate change, emissions, or climate policy; climate change appears only in boilerplate describing the Thomson Reuters Foundation.\",\n  \"reason\": \"The main discussion concerns coffee production, farmer livelihoods, and company support. The geothermal plant is background context, with no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:32:27Z",
+  "duration_seconds": 5.807,
+  "error": null
+}

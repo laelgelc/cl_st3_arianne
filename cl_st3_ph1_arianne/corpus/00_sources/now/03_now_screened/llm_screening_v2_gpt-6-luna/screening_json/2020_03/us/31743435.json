@@ -1,0 +1,77 @@
+{
+  "article_id": "31743435",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/us/31743435.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/us/31743435.json"
+  },
+  "manifest_row": {
+    "article_id": "31743435",
+    "group": "2020_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/us/31743435.txt",
+    "now_field_2": "42529",
+    "date_original": "20-03-26",
+    "date_iso": "2020-03-26",
+    "source_name": "montrealgazette.com",
+    "url": "https://montrealgazette.com/category/technology/feed.xml",
+    "title": "Montreal Gazette - RSS Feed",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "An RSS feed containing numerous unrelated Montreal Gazette articles and columns",
+    "climate_relevance": "The feed includes a substantial article about underfunding Canadian climate science, climate research needs, and climate awareness. Other items also touch on emissions and energy transition, but climate change is not the organizing topic of the feed as a whole.",
+    "reason": "The supplied text is a multi-article RSS feed rather than a single identifiable main article. It contains meaningful climate discourse, especially in the article on Canadian climate science funding, so it is relevant beyond incidental mention; however, the feed overall is not centrally about climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "82268aaab9aa3d961a220ed0655310e2d163aacf24f41c6f6da7eb7f539040dc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "51ebe45e8bc8a2dca27d1523ac23abe4771ca18d38fd625353f5557c762c227e",
+    "raw_response_text_sha256": "0bb038621b8aec46d7c9f34ee98d57a2178d0cac2ddf0fb455fb7ba0abf5087e"
+  },
+  "api_metadata": {
+    "id": "resp_0f4a03dd7e9caccc006b061933ba2887d2a0d9e70836a7bb20",
+    "model": "gpt-6-luna",
+    "created_at": 1795561779.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 78198,
+      "input_tokens_details": {
+        "cache_write_tokens": 78195,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 78195
+        }
+      },
+      "output_tokens": 600,
+      "output_tokens_details": {
+        "reasoning_tokens": 412
+      },
+      "total_tokens": 78798
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"An RSS feed containing numerous unrelated Montreal Gazette articles and columns\",\n  \"climate_relevance\": \"The feed includes a substantial article about underfunding Canadian climate science, climate research needs, and climate awareness. Other items also touch on emissions and energy transition, but climate change is not the organizing topic of the feed as a whole.\",\n  \"reason\": \"The supplied text is a multi-article RSS feed rather than a single identifiable main article. It contains meaningful climate discourse, especially in the article on Canadian climate science funding, so it is relevant beyond incidental mention; however, the feed overall is not centrally about climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:09:44Z",
+  "duration_seconds": 5.317,
+  "error": null
+}

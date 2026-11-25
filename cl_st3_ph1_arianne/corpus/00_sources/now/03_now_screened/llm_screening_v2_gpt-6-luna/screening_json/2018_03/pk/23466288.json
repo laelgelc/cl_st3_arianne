@@ -1,0 +1,77 @@
+{
+  "article_id": "23466288",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_03/pk/23466288.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_03/pk/23466288.json"
+  },
+  "manifest_row": {
+    "article_id": "23466288",
+    "group": "2018_03",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_03/pk/23466288.txt",
+    "now_field_2": "946",
+    "date_original": "18-03-02",
+    "date_iso": "2018-03-02",
+    "source_name": "The Express Tribune",
+    "url": "https://tribune.com.pk/story/1649418/1-pml-n-lawmakers-threaten-legislate-judiciary/",
+    "title": "PML-N lawmakers threaten to legislate against judiciary",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-03.txt\"]",
+    "metadata_article_files": "[\"text-18-03/text_18-03-PK.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Parliamentary disputes over the judiciary, loan waivers, and petroleum prices",
+    "climate_relevance": "Climate change appears only in the title of a minister. The article briefly mentions environmental harm from increased wood use, but does not meaningfully discuss climate change or its implications.",
+    "reason": "The available text is principally about parliamentary and economic affairs; neither the ministerial title nor the passing environmental remark constitutes meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a3daa7e7dc324eeebce49d6e7df8ee46853bd74ee7b89be28d3d9495ffabfb1f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9453af96853c7bf8f86e4499031664c2be846b95f2053590a74c14b37b3517a7",
+    "raw_response_text_sha256": "4883ee5cf080af972747afdade5e14b5dc48b81af38bd08d9ef63620a1c667b2"
+  },
+  "api_metadata": {
+    "id": "resp_0c8082822d71e3bd006b061144e9f087d28e9c867e4706363b",
+    "model": "gpt-6-luna",
+    "created_at": 1795559749.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1700,
+      "input_tokens_details": {
+        "cache_write_tokens": 1697,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1697
+        }
+      },
+      "output_tokens": 366,
+      "output_tokens_details": {
+        "reasoning_tokens": 211
+      },
+      "total_tokens": 2066
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Parliamentary disputes over the judiciary, loan waivers, and petroleum prices\",\n  \"climate_relevance\": \"Climate change appears only in the title of a minister. The article briefly mentions environmental harm from increased wood use, but does not meaningfully discuss climate change or its implications.\",\n  \"reason\": \"The available text is principally about parliamentary and economic affairs; neither the ministerial title nor the passing environmental remark constitutes meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:35:52Z",
+  "duration_seconds": 3.252,
+  "error": null
+}

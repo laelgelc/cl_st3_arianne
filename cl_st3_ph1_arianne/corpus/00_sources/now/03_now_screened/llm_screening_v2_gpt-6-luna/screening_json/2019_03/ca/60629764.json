@@ -1,0 +1,77 @@
+{
+  "article_id": "60629764",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/ca/60629764.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/ca/60629764.json"
+  },
+  "manifest_row": {
+    "article_id": "60629764",
+    "group": "2019_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/ca/60629764.txt",
+    "now_field_2": "572",
+    "date_original": "19-03-13",
+    "date_iso": "2019-03-13",
+    "source_name": "Globalnews.ca",
+    "url": "https://globalnews.ca/news/5052061/acap-launches-adapt-sj/",
+    "title": "ACAP Saint John lauches Adapt SJ to look at human impact of climate ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-ca.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Saint John's Adapt SJ initiative, including local climate-risk planning, community input, adaptation, and greenhouse-gas reduction.",
+    "climate_relevance": "The text is substantially focused on climate change: it discusses projected sea-level impacts, neighbourhood vulnerabilities, adaptation and resilience planning, and the city's emissions-reduction strategy.",
+    "reason": "Climate change and the municipal response to its impacts are the article's central subject. A separate 'WATCH' headline about a Trudeau climate-change rally appears to be an inserted unrelated snippet, but the main article is identifiable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2478b26684688ab4aae31a051da23961d60078df4e5fc0225fab221c74a4fab1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8f17358ae2abc69296cc74a41907e7497758db47422aafeab5d11350b5c407cf",
+    "raw_response_text_sha256": "9e978f353f400f6a1ae51375a6ac2dc5aa27ea4484016b91d8f38801d9605e64"
+  },
+  "api_metadata": {
+    "id": "resp_092d60ae4ef2c940006b06337901ac87d1b0772cbb404c8c80",
+    "model": "gpt-6-luna",
+    "created_at": 1795568505.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1184,
+      "input_tokens_details": {
+        "cache_write_tokens": 1181,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1181
+        }
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 1439
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Saint John's Adapt SJ initiative, including local climate-risk planning, community input, adaptation, and greenhouse-gas reduction.\",\n  \"climate_relevance\": \"The text is substantially focused on climate change: it discusses projected sea-level impacts, neighbourhood vulnerabilities, adaptation and resilience planning, and the city's emissions-reduction strategy.\",\n  \"reason\": \"Climate change and the municipal response to its impacts are the article's central subject. A separate 'WATCH' headline about a Trudeau climate-change rally appears to be an inserted unrelated snippet, but the main article is identifiable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:01:47Z",
+  "duration_seconds": 2.41,
+  "error": null
+}

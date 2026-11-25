@@ -1,0 +1,77 @@
+{
+  "article_id": "3916947",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/au/3916947.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/au/3916947.json"
+  },
+  "manifest_row": {
+    "article_id": "3916947",
+    "group": "2015_12",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/au/3916947.txt",
+    "now_field_2": "1656",
+    "date_original": "15-12-18",
+    "date_iso": "2015-12-18",
+    "source_name": "Sydney Morning Herald",
+    "url": "http://www.smh.com.au/comment/the-dangers-of-driving-with-treasurer-scott-morrison-20151218-glqso0.html",
+    "title": "The dangers of driving with ScoMo",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Australian budget forecasts and Treasurer Scott Morrison’s political performance",
+    "climate_relevance": "Climate change appears only in a brief reader comment, not in the article’s discussion.",
+    "reason": "The article is primarily about fiscal policy and Morrison. A single comment says there was no climate change in 1950, but this passing remark does not develop climate discourse enough to make the text useful for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7cd18c5940e26612e2d201cb047903234e84b20c1ee2b22965c9b058b1155231",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "895db0b3f4baef520b1056bc91a935dcbedfeb75608e6537d651ff5a4d2ede25",
+    "raw_response_text_sha256": "dac63aa99d38d01df968cb99579e2f347214355a947573e8b428d8a1a93e6922"
+  },
+  "api_metadata": {
+    "id": "resp_0b091f46bd8a9196006b061ddfd8c487d299df7ad838c51d7b",
+    "model": "gpt-6-luna",
+    "created_at": 1795562975.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2851,
+      "input_tokens_details": {
+        "cache_write_tokens": 2848,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2848
+        }
+      },
+      "output_tokens": 431,
+      "output_tokens_details": {
+        "reasoning_tokens": 287
+      },
+      "total_tokens": 3282
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Australian budget forecasts and Treasurer Scott Morrison’s political performance\",\n  \"climate_relevance\": \"Climate change appears only in a brief reader comment, not in the article’s discussion.\",\n  \"reason\": \"The article is primarily about fiscal policy and Morrison. A single comment says there was no climate change in 1950, but this passing remark does not develop climate discourse enough to make the text useful for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:29:39Z",
+  "duration_seconds": 3.366,
+  "error": null
+}

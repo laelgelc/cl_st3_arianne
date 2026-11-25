@@ -1,0 +1,77 @@
+{
+  "article_id": "20080863",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/ca/20080863.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/ca/20080863.json"
+  },
+  "manifest_row": {
+    "article_id": "20080863",
+    "group": "2017_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/ca/20080863.txt",
+    "now_field_2": "862",
+    "date_original": "17-08-18",
+    "date_iso": "2017-08-18",
+    "source_name": "Vancouver Sun",
+    "url": "http://vancouversun.com/entertainment/local-arts/theatre-review-nomadic-tempest-a-climatopian-extravaganza-on-false-creek",
+    "title": "Theatre review: Nomadic Tempest a climatopian extravaganza on ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "substantial",
+    "main_topic": "Review of a theatrical production",
+    "climate_relevance": "The review describes a climate-change-driven post-apocalyptic plot, the fossil-fuel industry as an antagonist, and the production’s environmental message, but its main focus is the performance.",
+    "reason": "Climate change is a meaningful and recurring theme in the production discussed, though the article is primarily a theatre review rather than climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1c4b9a695792bd554bf0a086da2aa7278ae5214a00a62275f9c561b5952f5faa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "354a1b111d28cedb2c7f038592c0e4d7085e13a5d85b1bdfd13e89a29ca4812b",
+    "raw_response_text_sha256": "edc54d12ff53d9557eff7be418a1a8ad51d1534f3c3c9266c9f23f924ac668bb"
+  },
+  "api_metadata": {
+    "id": "resp_0bff17f48d1bd927006b060cd92ef887d297984098b330bc39",
+    "model": "gpt-6-luna",
+    "created_at": 1795558617.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1690,
+      "input_tokens_details": {
+        "cache_write_tokens": 1687,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1687
+        }
+      },
+      "output_tokens": 443,
+      "output_tokens_details": {
+        "reasoning_tokens": 299
+      },
+      "total_tokens": 2133
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Review of a theatrical production\",\n  \"climate_relevance\": \"The review describes a climate-change-driven post-apocalyptic plot, the fossil-fuel industry as an antagonist, and the production’s environmental message, but its main focus is the performance.\",\n  \"reason\": \"Climate change is a meaningful and recurring theme in the production discussed, though the article is primarily a theatre review rather than climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:00Z",
+  "duration_seconds": 3.689,
+  "error": null
+}

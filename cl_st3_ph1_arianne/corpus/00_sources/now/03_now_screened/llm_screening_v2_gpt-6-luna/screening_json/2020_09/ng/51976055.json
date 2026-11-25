@@ -1,0 +1,77 @@
+{
+  "article_id": "51976055",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/ng/51976055.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/ng/51976055.json"
+  },
+  "manifest_row": {
+    "article_id": "51976055",
+    "group": "2020_09",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/ng/51976055.txt",
+    "now_field_2": "516",
+    "date_original": "20-09-23",
+    "date_iso": "2020-09-23",
+    "source_name": "brandspurng.com",
+    "url": "https://brandspurng.com/2020/09/23/ekiti-first-lady-launches-new-initiative-for-women-empowerment-photos/",
+    "title": "Ekiti First Lady Launches New Initiative for Women ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A women’s empowerment programme in Ekiti State, Nigeria.",
+    "climate_relevance": "A separate Nestlé snippet mentions reforestation and the company’s climate and net-zero pledges, but climate change is not part of the identifiable main article.",
+    "reason": "The main article concerns women’s empowerment. The climate reference appears only in an unrelated, separate snippet and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d82becd7d51ad6d21620c9b1284d5073b6a8029ecaf871f1c84a2a7f93e27f21",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "22dfd03839fd9025f72fec4172cb653aa7a41734f0f2488d236c3685024cb097",
+    "raw_response_text_sha256": "605b253b490b32066bab87e4993e0e16234bfec068f3207c5966460540f2d56f"
+  },
+  "api_metadata": {
+    "id": "resp_0b856548748d4c32006b062f8d098087d1a9cc6859c4563d16",
+    "model": "gpt-6-luna",
+    "created_at": 1795567501.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1203,
+      "input_tokens_details": {
+        "cache_write_tokens": 1200,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1200
+        }
+      },
+      "output_tokens": 448,
+      "output_tokens_details": {
+        "reasoning_tokens": 294
+      },
+      "total_tokens": 1651
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A women’s empowerment programme in Ekiti State, Nigeria.\",\n  \"climate_relevance\": \"A separate Nestlé snippet mentions reforestation and the company’s climate and net-zero pledges, but climate change is not part of the identifiable main article.\",\n  \"reason\": \"The main article concerns women’s empowerment. The climate reference appears only in an unrelated, separate snippet and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:45:04Z",
+  "duration_seconds": 3.4,
+  "error": null
+}

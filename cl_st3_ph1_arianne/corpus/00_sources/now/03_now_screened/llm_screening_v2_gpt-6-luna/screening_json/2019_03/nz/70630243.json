@@ -1,0 +1,77 @@
+{
+  "article_id": "70630243",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70630243.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70630243.json"
+  },
+  "manifest_row": {
+    "article_id": "70630243",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70630243.txt",
+    "now_field_2": "595",
+    "date_original": "19-03-26",
+    "date_iso": "2019-03-26",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/BU1903/S00674/commitment-to-innovation-and-leadership-recognised.htm",
+    "title": "Commitment to innovation and leadership recognised",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A tourism-industry professional receiving an event award in New Zealand",
+    "climate_relevance": "Climate-related content appears only in unrelated snippets after the main article, including brief references to forestry and climate targets.",
+    "reason": "The identifiable main article concerns tourism events and awards. The climate references are separate snippets and do not form part of its meaningful discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2680c9c835b532595b53750f76c3db80d83637ae02a47ad955ff7babd0d924e7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a86f2c123c84cf76221ba24687ce3a2c868f7fa960a29127e1929f7bb34c7992",
+    "raw_response_text_sha256": "1796192e13811e4246684181aec29a203748105f1e3a643d9c1e2a2be3f0862c"
+  },
+  "api_metadata": {
+    "id": "resp_0c886c4903d42aee006b063e18544487d1863e5ab2e42d2dd2",
+    "model": "gpt-6-luna",
+    "created_at": 1795571224.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1240,
+      "input_tokens_details": {
+        "cache_write_tokens": 1237,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1237
+        }
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 1522
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A tourism-industry professional receiving an event award in New Zealand\",\n  \"climate_relevance\": \"Climate-related content appears only in unrelated snippets after the main article, including brief references to forestry and climate targets.\",\n  \"reason\": \"The identifiable main article concerns tourism events and awards. The climate references are separate snippets and do not form part of its meaningful discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:47:06Z",
+  "duration_seconds": 2.574,
+  "error": null
+}

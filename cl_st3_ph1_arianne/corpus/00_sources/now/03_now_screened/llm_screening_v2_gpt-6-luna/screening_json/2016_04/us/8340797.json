@@ -1,0 +1,77 @@
+{
+  "article_id": "8340797",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_04/us/8340797.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_04/us/8340797.json"
+  },
+  "manifest_row": {
+    "article_id": "8340797",
+    "group": "2016_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_04/us/8340797.txt",
+    "now_field_2": "554",
+    "date_original": "16-04-18",
+    "date_iso": "2016-04-18",
+    "source_name": "Houston Chronicle",
+    "url": "http://www.houstonchronicle.com/business/technology/article/Tesla-leader-ahead-of-pace-for-big-payday-7256428.php",
+    "title": "Tesla leader ahead of pace for big payday",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-04-ovb/16-04-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Elon Musk's compensation and Tesla's performance milestones",
+    "climate_relevance": "Climate change appears only in a photo caption identifying the 2015 UN Climate Change Conference; the article does not discuss climate issues or implications.",
+    "reason": "The article focuses on Musk's stock options and Tesla's business targets. The climate reference is incidental caption material and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8c252e2834da2631b7cc2e6b21493c5036cdbbfa46b0605bb297eb1e2c60d32a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "295f819b144af42ae4f05992e5cdc256941a440cef87e8aac2eb33a3c7e5213f",
+    "raw_response_text_sha256": "68bb3f66f9933dccf5ce5e92ed7b59dd9b7a568960717f7b25a57212676e7c55"
+  },
+  "api_metadata": {
+    "id": "resp_077ef07a6cd2418a006b06498ef23487d181253c28e77ee95d",
+    "model": "gpt-6-luna",
+    "created_at": 1795574159.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1299,
+      "input_tokens_details": {
+        "cache_write_tokens": 1296,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1296
+        }
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1505
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Elon Musk's compensation and Tesla's performance milestones\",\n  \"climate_relevance\": \"Climate change appears only in a photo caption identifying the 2015 UN Climate Change Conference; the article does not discuss climate issues or implications.\",\n  \"reason\": \"The article focuses on Musk's stock options and Tesla's business targets. The climate reference is incidental caption material and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:36:00Z",
+  "duration_seconds": 1.917,
+  "error": null
+}

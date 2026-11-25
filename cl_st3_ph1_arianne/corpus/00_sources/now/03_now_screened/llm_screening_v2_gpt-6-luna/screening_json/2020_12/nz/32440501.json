@@ -1,0 +1,77 @@
+{
+  "article_id": "32440501",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/nz/32440501.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/nz/32440501.json"
+  },
+  "manifest_row": {
+    "article_id": "32440501",
+    "group": "2020_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/nz/32440501.txt",
+    "now_field_2": "632",
+    "date_original": "20-12-21",
+    "date_iso": "2020-12-21",
+    "source_name": "ruralnewsgroup.co.nz",
+    "url": "https://www.ruralnewsgroup.co.nz/rural-news/rural-general-news/kiwifruit-in-the-fast-lane",
+    "title": "Kiwifruit in the fast lane - ruralnewsgroup.co.nz",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Kiwifruit breeding and the proposed Kiwifruit Breeding Centre joint venture",
+    "climate_relevance": "Climate change and global warming are named as environmental concerns that matter to consumers, in the context of the kiwifruit sector's sustainability and environmental policies.",
+    "reason": "The article is mainly about kiwifruit breeding, but it includes a meaningful, if brief, reference to consumer concern about climate change and global warming. A final sentence about sheep and beef farming appears unrelated to the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "10c967341366cd7b9d6cf63d01c5c3637e30f7235bd6c9ded82ae0e2738404a4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f7c5833799777071055a4a18c5496820000bc226864318f8b5d1dbca692d223f",
+    "raw_response_text_sha256": "39cd57ef108695135f8a332f20475fd6ae537cd47f7d61dc2191c17b5954d90a"
+  },
+  "api_metadata": {
+    "id": "resp_0acee2306dab4964006b061cabc55087d2b08615aa2422f3ce",
+    "model": "gpt-6-luna",
+    "created_at": 1795562667.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1319,
+      "input_tokens_details": {
+        "cache_write_tokens": 1316,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1316
+        }
+      },
+      "output_tokens": 324,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 1643
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Kiwifruit breeding and the proposed Kiwifruit Breeding Centre joint venture\",\n  \"climate_relevance\": \"Climate change and global warming are named as environmental concerns that matter to consumers, in the context of the kiwifruit sector's sustainability and environmental policies.\",\n  \"reason\": \"The article is mainly about kiwifruit breeding, but it includes a meaningful, if brief, reference to consumer concern about climate change and global warming. A final sentence about sheep and beef farming appears unrelated to the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:24:30Z",
+  "duration_seconds": 2.427,
+  "error": null
+}

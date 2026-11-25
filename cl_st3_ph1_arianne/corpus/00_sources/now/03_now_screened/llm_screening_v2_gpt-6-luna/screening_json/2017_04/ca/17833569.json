@@ -1,0 +1,77 @@
+{
+  "article_id": "17833569",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/ca/17833569.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/ca/17833569.json"
+  },
+  "manifest_row": {
+    "article_id": "17833569",
+    "group": "2017_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/ca/17833569.txt",
+    "now_field_2": "614",
+    "date_original": "17-04-07",
+    "date_iso": "2017-04-07",
+    "source_name": "The Labradorian",
+    "url": "http://www.thelabradorian.ca/news/regional/2017/4/7/town-of-happy-valley-goose-bay-concerned-with-material-burning-a.html",
+    "title": "Town of Happy Valley-Goose Bay concerned with material burning ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A town council's concerns about Nalcor burning construction and demolition waste at the Muskrat Falls site",
+    "climate_relevance": "Climate change appears only in the name of the provincial Environment and Climate Change department; the article discusses waste burning, air pollution, and environmental regulation without meaningful climate-change discourse.",
+    "reason": "The article is about local waste disposal and regulatory responsibility. The department name alone is incidental and does not make the text relevant to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0ee1c53865d73b550b6acd4b0e9ec5039a4fbaaf95e357dce34bc70566eee34a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e6a5eb4a1e65b3d035108d48fc369a4abc39deda88b7ec2019b7caceda53019b",
+    "raw_response_text_sha256": "520464e3d833670c14c1c169fcc1f655bf8565535ce008a237a7c1384c14047b"
+  },
+  "api_metadata": {
+    "id": "resp_041f5e7fdea1d383006b060978125487d28aab6277d342a8a8",
+    "model": "gpt-6-luna",
+    "created_at": 1795557752.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1248,
+      "input_tokens_details": {
+        "cache_write_tokens": 1245,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1245
+        }
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 1525
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A town council's concerns about Nalcor burning construction and demolition waste at the Muskrat Falls site\",\n  \"climate_relevance\": \"Climate change appears only in the name of the provincial Environment and Climate Change department; the article discusses waste burning, air pollution, and environmental regulation without meaningful climate-change discourse.\",\n  \"reason\": \"The article is about local waste disposal and regulatory responsibility. The department name alone is incidental and does not make the text relevant to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:02:34Z",
+  "duration_seconds": 2.293,
+  "error": null
+}

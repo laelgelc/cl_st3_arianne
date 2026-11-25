@@ -1,0 +1,77 @@
+{
+  "article_id": "16595068",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/ca/16595068.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/ca/16595068.json"
+  },
+  "manifest_row": {
+    "article_id": "16595068",
+    "group": "2017_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/ca/16595068.txt",
+    "now_field_2": "990",
+    "date_original": "17-01-26",
+    "date_iso": "2017-01-26",
+    "source_name": "CBC.ca",
+    "url": "http://www.cbc.ca/news/politics/parks-canada-report-condition-1.3952144",
+    "title": "Nearly half of national park ecosystems rate as 'fair' or 'poor' in Parks ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Ecological condition of Canadian national parks and the effects of increased visitation and development",
+    "climate_relevance": "Climate change is not meaningfully discussed; it appears only as part of a ministerial title.",
+    "reason": "The article focuses on park ecosystem ratings, visitor pressures, development, and conservation. The phrase “Environment and Climate Change Minister” is an incidental title, not climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7e83096e7d53a7ce5c8136ad774248de593508ee62ef4971f3b0b2db2bd66934",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "851d48875146b458ad7480be6885e010d63cc251a0651d65d9af353bb50d00ea",
+    "raw_response_text_sha256": "523ff7cb8df8eda4a0e53d1e3e9bd569b1a10f0630723080eef9fd9172e7a21a"
+  },
+  "api_metadata": {
+    "id": "resp_09ee136b76e9176f006b0607e7fbf087d2af079e1c033c3862",
+    "model": "gpt-6-luna",
+    "created_at": 1795557352.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1763,
+      "input_tokens_details": {
+        "cache_write_tokens": 1760,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1760
+        }
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 1968
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ecological condition of Canadian national parks and the effects of increased visitation and development\",\n  \"climate_relevance\": \"Climate change is not meaningfully discussed; it appears only as part of a ministerial title.\",\n  \"reason\": \"The article focuses on park ecosystem ratings, visitor pressures, development, and conservation. The phrase “Environment and Climate Change Minister” is an incidental title, not climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:55:53Z",
+  "duration_seconds": 1.83,
+  "error": null
+}

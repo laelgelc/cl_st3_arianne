@@ -1,0 +1,77 @@
+{
+  "article_id": "50974595",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/ca/50974595.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/ca/50974595.json"
+  },
+  "manifest_row": {
+    "article_id": "50974595",
+    "group": "2019_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/ca/50974595.txt",
+    "now_field_2": "2291",
+    "date_original": "19-08-21",
+    "date_iso": "2019-08-21",
+    "source_name": "ca.finance.yahoo.com",
+    "url": "https://ca.finance.yahoo.com/news/royal-bank-canada-reports-third-100000932.html",
+    "title": "Royal Bank of Canada Reports Third Quarter 2019 Results",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Royal Bank of Canada's third-quarter 2019 financial results",
+    "climate_relevance": "Climate change appears only in a list of potential risk factors in the forward-looking-statements disclaimer.",
+    "reason": "The text is a corporate earnings release, and its brief climate-change reference is boilerplate rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9207eeb1de679148ba019f8265620c74a207a077a3a904fe9357d0e05a8c4e43",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c56d304fc8733878519dae04f28c6baa738c2586aab3dacb375b6a9f6783100b",
+    "raw_response_text_sha256": "b993c6aa98333f9d889383a209e84cb7853237be8bfeba831d5580be78004e18"
+  },
+  "api_metadata": {
+    "id": "resp_084c4715482d1100006b062b2cac3087d1b948d18d7ae2db24",
+    "model": "gpt-6-luna",
+    "created_at": 1795566380.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3844,
+      "input_tokens_details": {
+        "cache_write_tokens": 3841,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3841
+        }
+      },
+      "output_tokens": 177,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 4021
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Royal Bank of Canada's third-quarter 2019 financial results\",\n  \"climate_relevance\": \"Climate change appears only in a list of potential risk factors in the forward-looking-statements disclaimer.\",\n  \"reason\": \"The text is a corporate earnings release, and its brief climate-change reference is boilerplate rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:26:22Z",
+  "duration_seconds": 1.919,
+  "error": null
+}

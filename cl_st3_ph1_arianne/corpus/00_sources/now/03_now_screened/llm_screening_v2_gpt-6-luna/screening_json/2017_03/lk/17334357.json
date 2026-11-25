@@ -1,0 +1,77 @@
+{
+  "article_id": "17334357",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_03/lk/17334357.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_03/lk/17334357.json"
+  },
+  "manifest_row": {
+    "article_id": "17334357",
+    "group": "2017_03",
+    "country_code": "lk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_03/lk/17334357.txt",
+    "now_field_2": "482",
+    "date_original": "17-03-09",
+    "date_iso": "2017-03-09",
+    "source_name": "EconomyNext",
+    "url": "http://www.economynext.com/Sri_Lanka_farmers_advised_to_grow_short_maturing_rice,_other_crops_in_2017-3-7535-9.html",
+    "title": "Sri Lanka farmers advised to grow short maturing rice, other crops in ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-03.txt\"]",
+    "metadata_article_files": "[\"text-17-03/text_17-03-LK.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Agricultural advice for Sri Lankan farmers responding to seasonal rainfall forecasts and low water levels",
+    "climate_relevance": "The article discusses rainfall, drought, and crop choices, but does not meaningfully address climate change. The only explicit reference is the name of a Department of Agriculture division.",
+    "reason": "The focus is short-term weather conditions and their effects on cultivation, not climate change or its causes, impacts, or policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "62c692a434eccbb4799ee78209d4b45a1fdd62c3efed6fcde60c7c3167588516",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2030a4f020a931c419d89801e10e25999fdb3ad7747971b5609e7a8210301da7",
+    "raw_response_text_sha256": "f8ce6051a66740f47e0e710f41c27998f857fcb0fb08e160240bf132327592fa"
+  },
+  "api_metadata": {
+    "id": "resp_07b91e98361f67d6006b0608c4016087d2b35f7f7a8b42e316",
+    "model": "gpt-6-luna",
+    "created_at": 1795557572.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1140,
+      "input_tokens_details": {
+        "cache_write_tokens": 1137,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1137
+        }
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 1459
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Agricultural advice for Sri Lankan farmers responding to seasonal rainfall forecasts and low water levels\",\n  \"climate_relevance\": \"The article discusses rainfall, drought, and crop choices, but does not meaningfully address climate change. The only explicit reference is the name of a Department of Agriculture division.\",\n  \"reason\": \"The focus is short-term weather conditions and their effects on cultivation, not climate change or its causes, impacts, or policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:59:34Z",
+  "duration_seconds": 2.981,
+  "error": null
+}

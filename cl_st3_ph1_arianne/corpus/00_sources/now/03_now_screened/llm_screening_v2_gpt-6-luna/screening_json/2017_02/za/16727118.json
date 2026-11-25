@@ -1,0 +1,77 @@
+{
+  "article_id": "16727118",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/za/16727118.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/za/16727118.json"
+  },
+  "manifest_row": {
+    "article_id": "16727118",
+    "group": "2017_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/za/16727118.txt",
+    "now_field_2": "554",
+    "date_original": "17-02-03",
+    "date_iso": "2017-02-03",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/sport/rugby/2017/02/03/SA-Rugby-mum-on-Coetzee-as-Bok-coach1",
+    "title": "SA Rugby mum on Coetzee as Bok coach",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "South African rugby coaching and the review of Springboks coach Allister Coetzee",
+    "climate_relevance": "A fragment about greenhouse-gas emissions and uncertainty over climate policy appears embedded in an unrelated vehicle-related sentence; it is not part of the identifiable rugby report.",
+    "reason": "The identifiable main article concerns rugby. The climate reference is an isolated, apparently spliced fragment in a collection of unrelated news snippets and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e2253b1279d084acaf3a1be1e8df05cdefb4b06d7192d0520ee8760d2efd4cb4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "287a8709d1870101b949dcc9ac9b12d90e31bc4a111f8d8eb0a8c0735435b4a8",
+    "raw_response_text_sha256": "a9f39ec9fae48153c08aa56849a358d9402429d7346d7c0fe4c38e7025ab093e"
+  },
+  "api_metadata": {
+    "id": "resp_00b46eb664c213e4006b060821f0b887d2a37841ce6327ba71",
+    "model": "gpt-6-luna",
+    "created_at": 1795557410.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1201,
+      "input_tokens_details": {
+        "cache_write_tokens": 1198,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1198
+        }
+      },
+      "output_tokens": 519,
+      "output_tokens_details": {
+        "reasoning_tokens": 354
+      },
+      "total_tokens": 1720
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"South African rugby coaching and the review of Springboks coach Allister Coetzee\",\n  \"climate_relevance\": \"A fragment about greenhouse-gas emissions and uncertainty over climate policy appears embedded in an unrelated vehicle-related sentence; it is not part of the identifiable rugby report.\",\n  \"reason\": \"The identifiable main article concerns rugby. The climate reference is an isolated, apparently spliced fragment in a collection of unrelated news snippets and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:56:53Z",
+  "duration_seconds": 4.039,
+  "error": null
+}

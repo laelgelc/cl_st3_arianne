@@ -1,0 +1,77 @@
+{
+  "article_id": "42083597",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/gb/42083597.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/gb/42083597.json"
+  },
+  "manifest_row": {
+    "article_id": "42083597",
+    "group": "2020_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/gb/42083597.txt",
+    "now_field_2": "549",
+    "date_original": "20-06-29",
+    "date_iso": "2020-06-29",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/nigel-farage-defends-racist-trump-tweet-on-talkradio-1-6721494",
+    "title": "Nigel Farage defends Trump tweet of white supremacist ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Nigel Farage's comments defending Donald Trump after Trump shared a video containing a white-power chant",
+    "climate_relevance": "Climate change appears only in a duplicated publication-support blurb listing the outlet's coverage areas.",
+    "reason": "The identifiable article concerns Farage, Trump, and the video; it contains no meaningful climate-change discourse. The sole climate reference is boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "935935561f17e8971668dcf8cb4ee0d846809c80b96b0afc877157e3a905d05a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6620d77477e7bb37fa7f5371c3a0746aca8903cbf028cb54b1d341e98c687a36",
+    "raw_response_text_sha256": "1aca30fd91863355f0ea8bc8f0d01b476f4b9da744b0bcba5e02f04578a93505"
+  },
+  "api_metadata": {
+    "id": "resp_0c392de054d2ab14006b062460e1a487d28a6bde6026b2cc7f",
+    "model": "gpt-6-luna",
+    "created_at": 1795564641.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1201,
+      "input_tokens_details": {
+        "cache_write_tokens": 1198,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1198
+        }
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 1469
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Nigel Farage's comments defending Donald Trump after Trump shared a video containing a white-power chant\",\n  \"climate_relevance\": \"Climate change appears only in a duplicated publication-support blurb listing the outlet's coverage areas.\",\n  \"reason\": \"The identifiable article concerns Farage, Trump, and the video; it contains no meaningful climate-change discourse. The sole climate reference is boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:57:23Z",
+  "duration_seconds": 2.513,
+  "error": null
+}

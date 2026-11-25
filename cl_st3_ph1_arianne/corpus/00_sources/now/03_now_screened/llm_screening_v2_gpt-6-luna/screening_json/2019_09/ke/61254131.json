@@ -1,0 +1,77 @@
+{
+  "article_id": "61254131",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ke/61254131.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ke/61254131.json"
+  },
+  "manifest_row": {
+    "article_id": "61254131",
+    "group": "2019_09",
+    "country_code": "ke",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ke/61254131.txt",
+    "now_field_2": "680",
+    "date_original": "19-09-25",
+    "date_iso": "2019-09-25",
+    "source_name": "nairobiwire.com",
+    "url": "http://nairobiwire.com/2019/09/the-top-stories-on-the-internet-today-wednesday-september-25.html",
+    "title": "The Top Stories on the Internet Today (Wednesday September 25)",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ke.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "A collection of unrelated news snippets, including a brief report on Amazon's Climate Pledge and electric-van purchases.",
+    "climate_relevance": "The final snippet meaningfully connects Amazon's climate pledge to the company's climate record and business interests, but climate is not the focus of the collection as a whole.",
+    "reason": "Most of the supplied text concerns unrelated topics. The Amazon snippet contains relevant climate discourse, so the text is more than incidental, but the mixed-snippet format makes it unsuitable as core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b511b29679b307057bdd45b3544ba203731a623b4d0294744e3a3fb91e440d43",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0d416ed50df3ddcd846826035c8d1ef72d3aa42e4fa4e700646279848975ff19",
+    "raw_response_text_sha256": "e3f09eb7d1d162240ca757ea687cd79a9db98ef84fec66f216c220e0fd50cd3f"
+  },
+  "api_metadata": {
+    "id": "resp_02e1b853484847be006b06365ebffc87d180d9162689afad4b",
+    "model": "gpt-6-luna",
+    "created_at": 1795569246.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1350,
+      "input_tokens_details": {
+        "cache_write_tokens": 1347,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1347
+        }
+      },
+      "output_tokens": 479,
+      "output_tokens_details": {
+        "reasoning_tokens": 310
+      },
+      "total_tokens": 1829
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of unrelated news snippets, including a brief report on Amazon's Climate Pledge and electric-van purchases.\",\n  \"climate_relevance\": \"The final snippet meaningfully connects Amazon's climate pledge to the company's climate record and business interests, but climate is not the focus of the collection as a whole.\",\n  \"reason\": \"Most of the supplied text concerns unrelated topics. The Amazon snippet contains relevant climate discourse, so the text is more than incidental, but the mixed-snippet format makes it unsuitable as core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:14:10Z",
+  "duration_seconds": 4.027,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "20245605",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/gb/20245605.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/gb/20245605.json"
+  },
+  "manifest_row": {
+    "article_id": "20245605",
+    "group": "2017_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/gb/20245605.txt",
+    "now_field_2": "798",
+    "date_original": "17-08-28",
+    "date_iso": "2017-08-28",
+    "source_name": "Daily Mail",
+    "url": "http://www.dailymail.co.uk/news/article-4830676/Photo-planes-flooded-Houstin-airport-fake.html",
+    "title": "Jaw-dropping photo of planes floating on flooded tarmac at Houston ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-GB.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A fake image of a flooded Houston airport circulated during Hurricane Harvey, though it was originally a sea-level-rise simulation of LaGuardia Airport.",
+    "climate_relevance": "The article explains that the image came from a climate-change organization's visualisation of possible sea-level rise, including scenarios of 5, 12, and 25 feet. Climate change is relevant context, but not the article's main subject.",
+    "reason": "The main focus is debunking a misleading image and reporting on airport closures during Hurricane Harvey. Its discussion of sea-level-rise projections is meaningful but secondary, so the text is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c66fd9275e4c5b8dce6b741cde7fd2603a3098e163c66cdcaa262b0d2297b96f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f4f19a1e2ee3b529dff5eab5fc9822f1b60a1a3b9a913eda84e3c71dcb8d5f42",
+    "raw_response_text_sha256": "8075d71e931955e11e9c3f1a3b16cec0e037490618bb245550885f8d8be6b993"
+  },
+  "api_metadata": {
+    "id": "resp_012b9ae4aad950f5006b060d044d7087d289aca89494ddea86",
+    "model": "gpt-6-luna",
+    "created_at": 1795558660.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1504,
+      "input_tokens_details": {
+        "cache_write_tokens": 1501,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1501
+        }
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 1817
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A fake image of a flooded Houston airport circulated during Hurricane Harvey, though it was originally a sea-level-rise simulation of LaGuardia Airport.\",\n  \"climate_relevance\": \"The article explains that the image came from a climate-change organization's visualisation of possible sea-level rise, including scenarios of 5, 12, and 25 feet. Climate change is relevant context, but not the article's main subject.\",\n  \"reason\": \"The main focus is debunking a misleading image and reporting on airport closures during Hurricane Harvey. Its discussion of sea-level-rise projections is meaningful but secondary, so the text is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:43Z",
+  "duration_seconds": 2.8,
+  "error": null
+}

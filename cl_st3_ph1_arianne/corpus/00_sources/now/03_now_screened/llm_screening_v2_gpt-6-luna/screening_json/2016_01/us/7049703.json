@@ -1,0 +1,77 @@
+{
+  "article_id": "7049703",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/us/7049703.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/us/7049703.json"
+  },
+  "manifest_row": {
+    "article_id": "7049703",
+    "group": "2016_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/us/7049703.txt",
+    "now_field_2": "961",
+    "date_original": "16-01-11",
+    "date_iso": "2016-01-11",
+    "source_name": "Ventura County Star",
+    "url": "http://www.vcstar.com/news/politics/what-you-need-to-know-about-state-of-the-union-speech-2912cdb3-d5df-43a4-e053-0100007f347e-364914601.html",
+    "title": "What you need to know about State of the Union",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Preview of President Obama's State of the Union address and its likely themes",
+    "climate_relevance": "The text mentions Obama's praise for the Paris climate accord and a representative's call to move away from fossil fuels by investing in renewable energy.",
+    "reason": "Climate change appears as one of several topics in a broader political preview, so the climate discourse is meaningful but not central. The opening mountain-lion and rodenticide passage appears unrelated to the identifiable State of the Union article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a95055c560d888976e68082efae86397e9468540e92f5d8228c9bc5c5342e9cf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2f69c6e61bdc771bb8501a22f49e2cc21e66cd7569072530d9a8e16ab4f42a68",
+    "raw_response_text_sha256": "51898308e52df0c1a17ea3b6850753da58b63ec9e0632fb7fee0dc79c48fcaec"
+  },
+  "api_metadata": {
+    "id": "resp_0aa8d1e3daafd86d006b063cf7bfa087d1944c5146204447b1",
+    "model": "gpt-6-luna",
+    "created_at": 1795570935.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1785,
+      "input_tokens_details": {
+        "cache_write_tokens": 1782,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1782
+        }
+      },
+      "output_tokens": 302,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 2087
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Preview of President Obama's State of the Union address and its likely themes\",\n  \"climate_relevance\": \"The text mentions Obama's praise for the Paris climate accord and a representative's call to move away from fossil fuels by investing in renewable energy.\",\n  \"reason\": \"Climate change appears as one of several topics in a broader political preview, so the climate discourse is meaningful but not central. The opening mountain-lion and rodenticide passage appears unrelated to the identifiable State of the Union article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:18Z",
+  "duration_seconds": 2.838,
+  "error": null
+}

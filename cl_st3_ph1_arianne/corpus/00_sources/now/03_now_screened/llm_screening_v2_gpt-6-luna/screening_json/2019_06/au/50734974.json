@@ -1,0 +1,77 @@
+{
+  "article_id": "50734974",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/au/50734974.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/au/50734974.json"
+  },
+  "manifest_row": {
+    "article_id": "50734974",
+    "group": "2019_06",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/au/50734974.txt",
+    "now_field_2": "1934",
+    "date_original": "19-06-04",
+    "date_iso": "2019-06-04",
+    "source_name": "Mirage News",
+    "url": "https://www.miragenews.com/leading-new-space-age-government-backs-ambitious-plans-for-uk-in-space/",
+    "title": "Leading new space age: government backs ambitious plans for UK in ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "UK government support for the space industry, including spaceports, space-weather forecasting, and space-sector governance",
+    "climate_relevance": "Climate change appears only in a brief reference to satellites gathering climate-change data; the text does not discuss climate change or its implications.",
+    "reason": "The identifiable main article concerns UK space policy and commercial spaceflight. Its climate-change reference is incidental rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "72146f73a9d5b37521ed7812cc566be8c313526e8bdde0c38e396fc1399271b5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "71eb3aa8ddd57243654bc71573183ecedfa33f903f4b5a1cfcf26dda07b53789",
+    "raw_response_text_sha256": "65e42f5fedc9d118f62ae93976ab8e6541694209d9ae40c2177e6fc52f4838cd"
+  },
+  "api_metadata": {
+    "id": "resp_06a8ca6e118b0525006b062a9d052087d1b2cd44c02b4cc435",
+    "model": "gpt-6-luna",
+    "created_at": 1795566237.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3678,
+      "input_tokens_details": {
+        "cache_write_tokens": 3675,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3675
+        }
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "total_tokens": 3976
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"UK government support for the space industry, including spaceports, space-weather forecasting, and space-sector governance\",\n  \"climate_relevance\": \"Climate change appears only in a brief reference to satellites gathering climate-change data; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The identifiable main article concerns UK space policy and commercial spaceflight. Its climate-change reference is incidental rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:23:59Z",
+  "duration_seconds": 2.555,
+  "error": null
+}

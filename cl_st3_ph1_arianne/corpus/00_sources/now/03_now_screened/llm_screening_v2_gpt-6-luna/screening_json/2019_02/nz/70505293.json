@@ -1,0 +1,77 @@
+{
+  "article_id": "70505293",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70505293.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70505293.json"
+  },
+  "manifest_row": {
+    "article_id": "70505293",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70505293.txt",
+    "now_field_2": "363",
+    "date_original": "19-02-11",
+    "date_iso": "2019-02-11",
+    "source_name": "Stuff.co.nz",
+    "url": "https://www.stuff.co.nz/environment/110495348/one-in-ten-new-zealanders-mostly-or-completely-meatfree",
+    "title": "One in ten New Zealanders mostly, or completely, meat-free",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "climate_role": "background",
+    "main_topic": "Public concern about plastic waste and lifestyle choices, with an apparent unrelated section on child welfare",
+    "climate_relevance": "Climate change is meaningfully discussed as a problem that policy could help address, and plastic reduction is presented as a possible gateway to wider climate action and lower carbon footprints.",
+    "reason": "The available text contains substantive climate-related remarks, but climate change is discussed in relation to plastic concerns and lifestyle choices rather than as the central topic. The abrupt shift to child welfare suggests the text may combine unrelated material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "415fdf21c1b11fb21d23a755c752462b59433a2b878405da4a99848f45b25cea",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "715e5b3354061ac7db94573c9f85e685183b548e21ba00605d06bcaf3e9ea79f",
+    "raw_response_text_sha256": "9c8e728c29a39ea718b79de50032fe296d188788e8561a639dddcfbc9da71afe"
+  },
+  "api_metadata": {
+    "id": "resp_0e749600906961c0006b063d0d80b487d1b2e13ec024c3a4b1",
+    "model": "gpt-6-luna",
+    "created_at": 1795570957.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1004,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 376,
+      "output_tokens_details": {
+        "reasoning_tokens": 207
+      },
+      "total_tokens": 1380
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Public concern about plastic waste and lifestyle choices, with an apparent unrelated section on child welfare\",\n  \"climate_relevance\": \"Climate change is meaningfully discussed as a problem that policy could help address, and plastic reduction is presented as a possible gateway to wider climate action and lower carbon footprints.\",\n  \"reason\": \"The available text contains substantive climate-related remarks, but climate change is discussed in relation to plastic concerns and lifestyle choices rather than as the central topic. The abrupt shift to child welfare suggests the text may combine unrelated material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:40Z",
+  "duration_seconds": 3.509,
+  "error": null
+}

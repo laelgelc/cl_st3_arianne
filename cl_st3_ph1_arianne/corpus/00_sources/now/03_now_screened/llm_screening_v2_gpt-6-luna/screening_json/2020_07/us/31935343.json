@@ -1,0 +1,77 @@
+{
+  "article_id": "31935343",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/31935343.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/31935343.json"
+  },
+  "manifest_row": {
+    "article_id": "31935343",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/31935343.txt",
+    "now_field_2": "779",
+    "date_original": "20-07-04",
+    "date_iso": "2020-07-04",
+    "source_name": "washingtonexaminer.com",
+    "url": "https://www.washingtonexaminer.com/opinion/a-civil-war-for-dumbest-of-them-all",
+    "title": "A 'civil war' for dumbest of them all",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Commentary criticizing university and entertainment-industry decisions to remove or rename content associated with racism.",
+    "climate_relevance": "Climate change appears only in the title of a study cited within an unrelated personal anecdote in the appended material.",
+    "reason": "The identifiable main article concerns culture-war disputes, not climate change. The sole climate reference is an incidental headline in unrelated additional content and offers no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "61a5044f83bd40d632653b40ec2de76b2e5bf293d7d54713c412451068375574",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6373cff970a2eb3c7ecebccb07cf5c0a6443226191afd376471ddade5d63263e",
+    "raw_response_text_sha256": "a1d9eacd08e6c2983560cdb61404cc53e4efd7d20d31ebd5347405e31256f001"
+  },
+  "api_metadata": {
+    "id": "resp_050f57fd684edfc7006b061a3faf8c87d2901c1117885bd11b",
+    "model": "gpt-6-luna",
+    "created_at": 1795562047.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1483,
+      "input_tokens_details": {
+        "cache_write_tokens": 1480,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1480
+        }
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 221
+      },
+      "total_tokens": 1855
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Commentary criticizing university and entertainment-industry decisions to remove or rename content associated with racism.\",\n  \"climate_relevance\": \"Climate change appears only in the title of a study cited within an unrelated personal anecdote in the appended material.\",\n  \"reason\": \"The identifiable main article concerns culture-war disputes, not climate change. The sole climate reference is an incidental headline in unrelated additional content and offers no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:14:10Z",
+  "duration_seconds": 3.05,
+  "error": null
+}

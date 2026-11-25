@@ -1,0 +1,77 @@
+{
+  "article_id": "7164866",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/us/7164866.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/us/7164866.json"
+  },
+  "manifest_row": {
+    "article_id": "7164866",
+    "group": "2016_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/us/7164866.txt",
+    "now_field_2": "1702",
+    "date_original": "16-01-16",
+    "date_iso": "2016-01-16",
+    "source_name": "Motherboard",
+    "url": "http://motherboard.vice.com/read/a-catalog-of-programming-languages-that-programmers-hate",
+    "title": "A Catalog of Programming Languages that Programmers Hate",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Programming languages and their perceived strengths and weaknesses",
+    "climate_relevance": "Climate change appears only in a brief description of a computer science professor as a skeptic.",
+    "reason": "The text is about programming languages; it contains no meaningful discussion of climate change beyond an incidental mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "172885d41c7db77e8dace96f377b6cd00db6bff48dfa8cec86d13302c9c70a93",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7057e9f2a0486dfbc8e47ea9bb864158ed18f673b7c92d1ab035b8775caac84b",
+    "raw_response_text_sha256": "2622770645b11a19866efae6dfc423763475eabbf814379601ac82616b13870f"
+  },
+  "api_metadata": {
+    "id": "resp_080072ebd1e43827006b06425e557487d183aafef593b9c991",
+    "model": "gpt-6-luna",
+    "created_at": 1795572318.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2667,
+      "input_tokens_details": {
+        "cache_write_tokens": 2664,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2664
+        }
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 2838
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Programming languages and their perceived strengths and weaknesses\",\n  \"climate_relevance\": \"Climate change appears only in a brief description of a computer science professor as a skeptic.\",\n  \"reason\": \"The text is about programming languages; it contains no meaningful discussion of climate change beyond an incidental mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:05:20Z",
+  "duration_seconds": 2.138,
+  "error": null
+}

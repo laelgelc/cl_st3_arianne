@@ -1,0 +1,77 @@
+{
+  "article_id": "7196899",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/ca/7196899.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/ca/7196899.json"
+  },
+  "manifest_row": {
+    "article_id": "7196899",
+    "group": "2016_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/ca/7196899.txt",
+    "now_field_2": "1760",
+    "date_original": "16-01-18",
+    "date_iso": "2016-01-18",
+    "source_name": "Turtle Island News",
+    "url": "http://theturtleislandnews.com/index.php/2016/01/18/thousands-of-dogs-frozen-slaughtered-on-manitoba-first-nations-rescuer-says/",
+    "title": "Dogs frozen, slaughtered on Manitoba First Nations, rescuer says",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Dog welfare and stray-dog management in Manitoba First Nations",
+    "climate_relevance": "The identifiable main article mentions very cold weather only as context for animal suffering; it does not discuss climate change. A separate appended opinion piece contains substantial climate-change discourse.",
+    "reason": "The main article is about animal rescue and community dog management, with no meaningful climate discourse. The appended opinion piece is unrelated to that article and should not determine its classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "26c6a6dc72a490870041ca31ebb803a2e884e6b13793400361fb92fc15252ff1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4aa4619fdbf346f5454070b68476ae8d67849c6827f03393106b4673633fcd50",
+    "raw_response_text_sha256": "37e89dc6472d10bd2aecf8bb63220efdbf26fbdb125cbeed140eccb822a07566"
+  },
+  "api_metadata": {
+    "id": "resp_074baaaa13649ffe006b0643770f0c87d18112b9c880ffeaf7",
+    "model": "gpt-6-luna",
+    "created_at": 1795572599.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2802,
+      "input_tokens_details": {
+        "cache_write_tokens": 2799,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2799
+        }
+      },
+      "output_tokens": 488,
+      "output_tokens_details": {
+        "reasoning_tokens": 335
+      },
+      "total_tokens": 3290
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Dog welfare and stray-dog management in Manitoba First Nations\",\n  \"climate_relevance\": \"The identifiable main article mentions very cold weather only as context for animal suffering; it does not discuss climate change. A separate appended opinion piece contains substantial climate-change discourse.\",\n  \"reason\": \"The main article is about animal rescue and community dog management, with no meaningful climate discourse. The appended opinion piece is unrelated to that article and should not determine its classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:10:03Z",
+  "duration_seconds": 4.032,
+  "error": null
+}

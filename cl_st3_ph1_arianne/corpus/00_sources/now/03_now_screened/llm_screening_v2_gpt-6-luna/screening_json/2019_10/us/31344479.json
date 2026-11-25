@@ -1,0 +1,77 @@
+{
+  "article_id": "31344479",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/31344479.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/31344479.json"
+  },
+  "manifest_row": {
+    "article_id": "31344479",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/31344479.txt",
+    "now_field_2": "975",
+    "date_original": "19-10-13",
+    "date_iso": "2019-10-13",
+    "source_name": "theatlantic.com",
+    "url": "https://www.theatlantic.com/photo/2019/10/photos-of-the-week-ute-muster-snow-leopard-highway-acrobat/599860/",
+    "title": "Photos of the Week: Ute Muster, Snow Leopard, Highway ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A weekly photo roundup covering unrelated events around the world",
+    "climate_relevance": "Two photo captions describe Extinction Rebellion protests and their efforts to draw attention to climate change and press governments to declare a climate emergency.",
+    "reason": "Climate change is meaningfully mentioned in protest captions, but the collection is not centrally about climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a2dfe6a79f62d10134162e7b490b077748d62accfe22a27f8d1da9ad2df6db6f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "abcf869cf1507308b26957821663bd3126b07aee39aaa681cc588230f14ca6f7",
+    "raw_response_text_sha256": "cc9baec7322ccd0211c8bb0165e142188d1173274e28422290cceee40763c87f"
+  },
+  "api_metadata": {
+    "id": "resp_0fd20b86bdda10e2006b0616e6bb5887d2b40c24f73a803119",
+    "model": "gpt-6-luna",
+    "created_at": 1795561190.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1871,
+      "input_tokens_details": {
+        "cache_write_tokens": 1868,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1868
+        }
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 2106
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A weekly photo roundup covering unrelated events around the world\",\n  \"climate_relevance\": \"Two photo captions describe Extinction Rebellion protests and their efforts to draw attention to climate change and press governments to declare a climate emergency.\",\n  \"reason\": \"Climate change is meaningfully mentioned in protest captions, but the collection is not centrally about climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:59:53Z",
+  "duration_seconds": 2.439,
+  "error": null
+}

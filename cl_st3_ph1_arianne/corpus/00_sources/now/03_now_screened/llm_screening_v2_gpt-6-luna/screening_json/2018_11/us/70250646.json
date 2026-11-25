@@ -1,0 +1,77 @@
+{
+  "article_id": "70250646",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/us/70250646.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/us/70250646.json"
+  },
+  "manifest_row": {
+    "article_id": "70250646",
+    "group": "2018_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/us/70250646.txt",
+    "now_field_2": "804",
+    "date_original": "18-11-17",
+    "date_iso": "2018-11-17",
+    "source_name": "CBS Baltimore",
+    "url": "https://baltimore.cbslocal.com/2018/11/17/study-finds-colorado-only-recycling-12-percent-of-trash/",
+    "title": "Study Finds Colorado Only Recycling 12 Percent Of Trash",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Colorado recycling rates, landfill waste, and waste-diversion efforts",
+    "climate_relevance": "The article notes that decomposing landfill waste produces methane, a contributor to climate change, and mentions Vail Resorts' goal of zero net carbon emissions as part of its sustainability initiative.",
+    "reason": "The article is primarily about recycling and waste management rather than climate change. Climate appears as a meaningful implication of landfill waste and in a company emissions goal, but it is not a central focus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "30b747bd935f748835a0faf1a4e402d8246e0a8b21722bbdff385c5485dc40dd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d3cdb2e3508b20809cc62eb28ed1b4cb968cfbcf125c6530c121e5c7a0d66c4f",
+    "raw_response_text_sha256": "34c7f2fde53abcef4ae9cfe244d4c810178b8f146709e78e05a297aa818724fe"
+  },
+  "api_metadata": {
+    "id": "resp_0ebef552c0f85a6b006b063b8cc38487d1b84d951e57277762",
+    "model": "gpt-6-luna",
+    "created_at": 1795570572.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1501,
+      "input_tokens_details": {
+        "cache_write_tokens": 1498,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1498
+        }
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1733
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Colorado recycling rates, landfill waste, and waste-diversion efforts\",\n  \"climate_relevance\": \"The article notes that decomposing landfill waste produces methane, a contributor to climate change, and mentions Vail Resorts' goal of zero net carbon emissions as part of its sustainability initiative.\",\n  \"reason\": \"The article is primarily about recycling and waste management rather than climate change. Climate appears as a meaningful implication of landfill waste and in a company emissions goal, but it is not a central focus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:36:14Z",
+  "duration_seconds": 2.234,
+  "error": null
+}

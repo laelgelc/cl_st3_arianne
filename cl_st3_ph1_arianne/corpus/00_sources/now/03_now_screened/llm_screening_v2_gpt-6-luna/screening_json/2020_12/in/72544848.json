@@ -1,0 +1,77 @@
+{
+  "article_id": "72544848",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/in/72544848.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/in/72544848.json"
+  },
+  "manifest_row": {
+    "article_id": "72544848",
+    "group": "2020_12",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/in/72544848.txt",
+    "now_field_2": "382",
+    "date_original": "20-12-27",
+    "date_iso": "2020-12-27",
+    "source_name": "navhindtimes.in",
+    "url": "https://www.navhindtimes.in/2020/12/27/goanews/ngt-wants-bird-diverters-installed-on-power-lines/",
+    "title": "NGT wants bird diverters installed on power lines - The ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-in.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Measures to prevent Great Indian Bustard deaths caused by collisions with power lines, including lines associated with wind and solar projects.",
+    "climate_relevance": "Climate change is not discussed; it appears only in the name of the Ministry of Environment, Forests and Climate Change. The renewable-energy projects are discussed in relation to biodiversity impacts, not climate policy or mitigation.",
+    "reason": "The article is substantially about wildlife protection and environmental assessment of power lines and energy projects, but contains no meaningful discourse about climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "66477bc5d110673ff4db60a37fe9eac0eebc915a73141ca4a938f67dad0c791d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "530f49d0d7df622ae9f83261f7f242458f7c6c14745a3e94e64d0caaec004ce2",
+    "raw_response_text_sha256": "60ce8bf2cb9263cbff86eb8119f855b01d721198cf7e1b89f455b62349261d5b"
+  },
+  "api_metadata": {
+    "id": "resp_065521d637cffa1b006b0645e77fe087d1a11b48f0837e9979",
+    "model": "gpt-6-luna",
+    "created_at": 1795573223.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 983,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 1261
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Measures to prevent Great Indian Bustard deaths caused by collisions with power lines, including lines associated with wind and solar projects.\",\n  \"climate_relevance\": \"Climate change is not discussed; it appears only in the name of the Ministry of Environment, Forests and Climate Change. The renewable-energy projects are discussed in relation to biodiversity impacts, not climate policy or mitigation.\",\n  \"reason\": \"The article is substantially about wildlife protection and environmental assessment of power lines and energy projects, but contains no meaningful discourse about climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:20:25Z",
+  "duration_seconds": 2.187,
+  "error": null
+}

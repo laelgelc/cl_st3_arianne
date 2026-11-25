@@ -1,0 +1,77 @@
+{
+  "article_id": "60265007",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/ca/60265007.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/ca/60265007.json"
+  },
+  "manifest_row": {
+    "article_id": "60265007",
+    "group": "2018_11",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/ca/60265007.txt",
+    "now_field_2": "305",
+    "date_original": "18-11-17",
+    "date_iso": "2018-11-17",
+    "source_name": "CTV News",
+    "url": "https://www.ctvnews.ca/canada/bad-weather-hampers-oil-spill-containment-off-the-coast-of-newfoundland-1.4181576",
+    "title": "Bad weather hampers oil spill containment off the coast of ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An offshore oil spill and the response to it",
+    "climate_relevance": "Climate change appears only in the name of Environment and Climate Change Canada; there is no substantive climate discourse.",
+    "reason": "The article concerns an oil spill, weather conditions affecting containment, and response operations. The government department's name is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5b264856b1df00a07e13782e4ba0ee4ce01de5ebef9d23ca2e9dee88a3dfddc9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a7a09231140ae59860893ae871e7fe341ec85bb1d471617737815569fdc39d7c",
+    "raw_response_text_sha256": "2c995464b17fe432449800ab541cf0f6a53ed4d1df5d6270f3bf85a21a850df5"
+  },
+  "api_metadata": {
+    "id": "resp_0dc5eb3baa8aaafe006b0631c9bd2c87d191dff4ce3d4ab181",
+    "model": "gpt-6-luna",
+    "created_at": 1795568073.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 894,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 1090
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An offshore oil spill and the response to it\",\n  \"climate_relevance\": \"Climate change appears only in the name of Environment and Climate Change Canada; there is no substantive climate discourse.\",\n  \"reason\": \"The article concerns an oil spill, weather conditions affecting containment, and response operations. The government department's name is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:54:35Z",
+  "duration_seconds": 1.843,
+  "error": null
+}

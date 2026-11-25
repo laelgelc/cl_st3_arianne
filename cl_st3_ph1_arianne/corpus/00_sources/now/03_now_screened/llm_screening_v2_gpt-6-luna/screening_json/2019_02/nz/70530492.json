@@ -1,0 +1,77 @@
+{
+  "article_id": "70530492",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70530492.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70530492.json"
+  },
+  "manifest_row": {
+    "article_id": "70530492",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70530492.txt",
+    "now_field_2": "658",
+    "date_original": "19-02-19",
+    "date_iso": "2019-02-19",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00485/fish-game-reminds-hunters-of-special-game-bird-hunt.htm",
+    "title": "Fish &amp; Game reminds hunters of 'special game bird hunt'",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A special game bird hunting season and its regulations",
+    "climate_relevance": "The main article does not discuss climate change. A separate unrelated teaser briefly mentions climate change in connection with a political party's environment policy.",
+    "reason": "The identifiable main article concerns hunting rules and contains no meaningful climate discourse; the climate reference appears only in an unrelated teaser.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "12f3173bf1e25da357059af4040af6d74ae7047c086b5692146a2749d42cb36f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2a831da4662dd42be24c90aa238a90810ef0a5611def34efd86086fadf53eb58",
+    "raw_response_text_sha256": "df677005bfa23792f173e723828e27977f953cae7f2e3d1f4cb064123ef1bedd"
+  },
+  "api_metadata": {
+    "id": "resp_0b690aed160dbbdf006b063d4f752887d195ca04a57bf927c8",
+    "model": "gpt-6-luna",
+    "created_at": 1795571023.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1351,
+      "input_tokens_details": {
+        "cache_write_tokens": 1348,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1348
+        }
+      },
+      "output_tokens": 446,
+      "output_tokens_details": {
+        "reasoning_tokens": 306
+      },
+      "total_tokens": 1797
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A special game bird hunting season and its regulations\",\n  \"climate_relevance\": \"The main article does not discuss climate change. A separate unrelated teaser briefly mentions climate change in connection with a political party's environment policy.\",\n  \"reason\": \"The identifiable main article concerns hunting rules and contains no meaningful climate discourse; the climate reference appears only in an unrelated teaser.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:46Z",
+  "duration_seconds": 3.507,
+  "error": null
+}

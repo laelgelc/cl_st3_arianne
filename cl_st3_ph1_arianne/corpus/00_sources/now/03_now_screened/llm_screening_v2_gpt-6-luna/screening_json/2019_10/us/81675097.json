@@ -1,0 +1,77 @@
+{
+  "article_id": "81675097",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81675097.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81675097.json"
+  },
+  "manifest_row": {
+    "article_id": "81675097",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81675097.txt",
+    "now_field_2": "272",
+    "date_original": "19-10-18",
+    "date_iso": "2019-10-18",
+    "source_name": "WWBT",
+    "url": "https://www.nbc12.com/2019/10/18/northam-dominion-reach-deal-power-state-buildings-with-renewable-energy/",
+    "title": "Northam, Dominion reach deal to power state buildings with renewable energy",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us5.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.87,
+    "climate_role": "substantial",
+    "main_topic": "Virginia wind and solar energy projects",
+    "climate_relevance": "The report describes a clean-energy package and explicitly frames it as an effort to combat climate change.",
+    "reason": "Renewable energy development and its stated climate-mitigation purpose are substantial parts of the identifiable main report. A separate haunted-house snippet appears at the end and is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0b936c5b3c27c31d1fb4b9e4bdba964025c1da9a3095739837e8b26f6c3db6e9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "602219b47f37f0aee8a4eb35999dd432d177f634d7e7d239a4b99c5bab7c6e16",
+    "raw_response_text_sha256": "4b1998334253e7f8cf866a6d9540381b3b7db19efb1eafa0b3446977645dbba9"
+  },
+  "api_metadata": {
+    "id": "resp_08f0f787f5b58b10006b064797197c87d1b3a78ccd69f48ce3",
+    "model": "gpt-6-luna",
+    "created_at": 1795573655.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 847,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 240,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 1087
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Virginia wind and solar energy projects\",\n  \"climate_relevance\": \"The report describes a clean-energy package and explicitly frames it as an effort to combat climate change.\",\n  \"reason\": \"Renewable energy development and its stated climate-mitigation purpose are substantial parts of the identifiable main report. A separate haunted-house snippet appears at the end and is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:27:37Z",
+  "duration_seconds": 2.169,
+  "error": null
+}

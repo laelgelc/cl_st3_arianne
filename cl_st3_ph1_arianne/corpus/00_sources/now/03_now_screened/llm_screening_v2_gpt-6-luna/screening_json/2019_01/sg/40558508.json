@@ -1,0 +1,77 @@
+{
+  "article_id": "40558508",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/sg/40558508.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/sg/40558508.json"
+  },
+  "manifest_row": {
+    "article_id": "40558508",
+    "group": "2019_01",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/sg/40558508.txt",
+    "now_field_2": "689",
+    "date_original": "19-01-29",
+    "date_iso": "2019-01-29",
+    "source_name": "Channel NewsAsia",
+    "url": "https://www.channelnewsasia.com/news/sport/south-africa-have-lowered-world-cup-expectations--says-du-plessis-11181566",
+    "title": "South Africa have lowered World Cup expectations, says Du Plessis",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "South Africa's expectations for the Cricket World Cup",
+    "climate_relevance": "The identifiable main article is about cricket and contains no meaningful climate-change discourse. A separate building-design feature discusses sustainability and refers to climate change, but it is unrelated to the main article.",
+    "reason": "The main article concerns sport, not climate change. The climate-related discussion appears in a distinct, appended feature among multiple unrelated pieces and does not make the main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "99b60de4036cd4961b25b34e23d7a76577574255b7431535a5c140520e80191e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "db81f0994e6fd87502e5bffc15662410ad25c4ad41703c669cad45cbfeb32b23",
+    "raw_response_text_sha256": "227a1474d1417752f78bd0e61e0c86549ccf9b676cb81a3c3dfb67c8d2b54112"
+  },
+  "api_metadata": {
+    "id": "resp_0c0df3c0863aeb58006b061f353b8087d284501c8bf1bce7c1",
+    "model": "gpt-6-luna",
+    "created_at": 1795563317.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3390,
+      "input_tokens_details": {
+        "cache_write_tokens": 3387,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3387
+        }
+      },
+      "output_tokens": 446,
+      "output_tokens_details": {
+        "reasoning_tokens": 282
+      },
+      "total_tokens": 3836
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"South Africa's expectations for the Cricket World Cup\",\n  \"climate_relevance\": \"The identifiable main article is about cricket and contains no meaningful climate-change discourse. A separate building-design feature discusses sustainability and refers to climate change, but it is unrelated to the main article.\",\n  \"reason\": \"The main article concerns sport, not climate change. The climate-related discussion appears in a distinct, appended feature among multiple unrelated pieces and does not make the main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:35:20Z",
+  "duration_seconds": 3.306,
+  "error": null
+}

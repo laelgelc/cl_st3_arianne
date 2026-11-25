@@ -1,0 +1,77 @@
+{
+  "article_id": "18548371",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/gb/18548371.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/gb/18548371.json"
+  },
+  "manifest_row": {
+    "article_id": "18548371",
+    "group": "2017_05",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/gb/18548371.txt",
+    "now_field_2": "455",
+    "date_original": "17-05-20",
+    "date_iso": "2017-05-20",
+    "source_name": "The Scotsman",
+    "url": "http://www.scotsman.com/news/environment/msps-query-decision-to-drop-bird-of-prey-shooting-case-1-4452092",
+    "title": "MSPs query decision to drop bird of prey shooting case",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A dropped prosecution over the alleged illegal killing of a hen harrier and the admissibility of evidence in wildlife crime cases.",
+    "climate_relevance": "Climate change appears only in the name of the committee; the text contains no meaningful discussion of climate change or its implications.",
+    "reason": "The article concerns wildlife crime and evidence admissibility, not climate change. The committee name is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e4a3b1fdd9e314059c6c23ce129fc36c9bc987564ae91772d5bbd06cc2d7a322",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ef7db189e24f3e0734df7e2b36054c20068f20d8c083f6cb0096d6d8dee10924",
+    "raw_response_text_sha256": "24533a2d2cab7bc427a1fc45ff36975b22e9c948d8f31d7eba41701559e7cffb"
+  },
+  "api_metadata": {
+    "id": "resp_000883f25627ffb1006b060a5fd23487d28ca7a98223918462",
+    "model": "gpt-6-luna",
+    "created_at": 1795557983.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1072,
+      "input_tokens_details": {
+        "cache_write_tokens": 1069,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1069
+        }
+      },
+      "output_tokens": 186,
+      "output_tokens_details": {
+        "reasoning_tokens": 39
+      },
+      "total_tokens": 1258
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A dropped prosecution over the alleged illegal killing of a hen harrier and the admissibility of evidence in wildlife crime cases.\",\n  \"climate_relevance\": \"Climate change appears only in the name of the committee; the text contains no meaningful discussion of climate change or its implications.\",\n  \"reason\": \"The article concerns wildlife crime and evidence admissibility, not climate change. The committee name is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:06:25Z",
+  "duration_seconds": 2.031,
+  "error": null
+}

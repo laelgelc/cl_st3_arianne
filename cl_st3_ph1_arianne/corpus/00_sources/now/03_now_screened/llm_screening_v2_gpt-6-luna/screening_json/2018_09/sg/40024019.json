@@ -1,0 +1,77 @@
+{
+  "article_id": "40024019",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/sg/40024019.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/sg/40024019.json"
+  },
+  "manifest_row": {
+    "article_id": "40024019",
+    "group": "2018_09",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/sg/40024019.txt",
+    "now_field_2": "442",
+    "date_original": "18-09-11",
+    "date_iso": "2018-09-11",
+    "source_name": "The Straits Times",
+    "url": "https://www.straitstimes.com/singapore/economic-and-social-issues-the-focus-of-womens-forum",
+    "title": "Economic and social issues the focus of women's forum",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A women's forum in Singapore focused on economic and social issues",
+    "climate_relevance": "Climate change is briefly listed among regional challenges, without further discussion.",
+    "reason": "The article is about the forum and its participants; climate change appears only as one item in a passing list and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9995d795411f6a2ba9d2eeb1410372be29dfde2831d5206108dd34a9695aead0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c8646918e49593b66000c8c67051ed86d6cffe963f92544f3623fdfa232f7bd8",
+    "raw_response_text_sha256": "c3277c06bbe46faa17d0b8d7df0afd45431451395ca27e2d61619fd37cb60d3b"
+  },
+  "api_metadata": {
+    "id": "resp_060ebe787151ce80006b061dfa0c7887d28a9e85ad3c7e3508",
+    "model": "gpt-6-luna",
+    "created_at": 1795563002.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1085,
+      "input_tokens_details": {
+        "cache_write_tokens": 1082,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1082
+        }
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 1332
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A women's forum in Singapore focused on economic and social issues\",\n  \"climate_relevance\": \"Climate change is briefly listed among regional challenges, without further discussion.\",\n  \"reason\": \"The article is about the forum and its participants; climate change appears only as one item in a passing list and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:30:04Z",
+  "duration_seconds": 2.231,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "32110322",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/32110322.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/32110322.json"
+  },
+  "manifest_row": {
+    "article_id": "32110322",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/32110322.txt",
+    "now_field_2": "1156",
+    "date_original": "20-09-26",
+    "date_iso": "2020-09-26",
+    "source_name": "abcnews.go.com",
+    "url": "https://abcnews.go.com/US/oregon-governor-issues-emergency-declaration-wildfires/story?id=72895505",
+    "title": "At least 7 dead as nearly 200 wildfires burn across West ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "climate_role": "passing",
+    "main_topic": "Wildfires, deaths, evacuations, and firefighting across the western United States",
+    "climate_relevance": "A brief statement by former President Barack Obama frames the fires as evidence of the effects of climate change.",
+    "reason": "The report is primarily about the immediate impacts and response to western wildfires. Its single explicit climate reference is a meaningful but passing framing, not sustained climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8d2a2411d0369ac24e42416ecc69ff4df92f3d6098ceea017685eb2f987a5a0b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "734cd76e4d6db5385a144f76da9eab0a38de0745571f8ca9c7c8474b638f3eae",
+    "raw_response_text_sha256": "f9b7b6a6a043fa45056663df196c12f8cbf3996550967cf1961d1859a162855d"
+  },
+  "api_metadata": {
+    "id": "resp_02f5efd96ba22463006b061b4b219887d2bfd7f2d3f3c75ab7",
+    "model": "gpt-6-luna",
+    "created_at": 1795562315.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2167,
+      "input_tokens_details": {
+        "cache_write_tokens": 2164,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2164
+        }
+      },
+      "output_tokens": 348,
+      "output_tokens_details": {
+        "reasoning_tokens": 204
+      },
+      "total_tokens": 2515
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Wildfires, deaths, evacuations, and firefighting across the western United States\",\n  \"climate_relevance\": \"A brief statement by former President Barack Obama frames the fires as evidence of the effects of climate change.\",\n  \"reason\": \"The report is primarily about the immediate impacts and response to western wildfires. Its single explicit climate reference is a meaningful but passing framing, not sustained climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:18:38Z",
+  "duration_seconds": 2.93,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "60436202",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/tz/60436202.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/tz/60436202.json"
+  },
+  "manifest_row": {
+    "article_id": "60436202",
+    "group": "2019_01",
+    "country_code": "tz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/tz/60436202.txt",
+    "now_field_2": "1300",
+    "date_original": "19-01-12",
+    "date_iso": "2019-01-12",
+    "source_name": "IPPmedia",
+    "url": "https://www.ippmedia.com/en/news/ongawa-rolls-out-water-solutions-east-usambara-villages",
+    "title": "ONGAWA rolls out water solutions for East Usambara villages",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-tz.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "climate_role": "substantial",
+    "main_topic": "A rural water-supply project in East Usambara, Tanzania",
+    "climate_relevance": "The article presents the water project as a climate change adaptation initiative and describes its infrastructure, community management, and protection of water sources.",
+    "reason": "Climate adaptation is a substantial part of the identifiable main article: the project is explicitly described as a climate change adaptation project, and its water-supply interventions are discussed in detail. Unrelated news snippets appear after the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "86642f7932bfbf3a4626b4229936cf113b97e7060400c8e25ad409fe5ecd1042",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "331abe06ca598e42924240b1935d2b51fe55bf3cfeeca374d72c7632faf523f9",
+    "raw_response_text_sha256": "08b98b1cd1f826d0a472b89d038623d14cb8a35b8a39451beb80d19b794e97f9"
+  },
+  "api_metadata": {
+    "id": "resp_06ccfa26945bbec6006b06329d92e087d1bc89c515cafb5983",
+    "model": "gpt-6-luna",
+    "created_at": 1795568285.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2182,
+      "input_tokens_details": {
+        "cache_write_tokens": 2179,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2179
+        }
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 2429
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"A rural water-supply project in East Usambara, Tanzania\",\n  \"climate_relevance\": \"The article presents the water project as a climate change adaptation initiative and describes its infrastructure, community management, and protection of water sources.\",\n  \"reason\": \"Climate adaptation is a substantial part of the identifiable main article: the project is explicitly described as a climate change adaptation project, and its water-supply interventions are discussed in detail. Unrelated news snippets appear after the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:58:07Z",
+  "duration_seconds": 2.438,
+  "error": null
+}

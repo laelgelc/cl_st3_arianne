@@ -1,0 +1,77 @@
+{
+  "article_id": "70514611",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70514611.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70514611.json"
+  },
+  "manifest_row": {
+    "article_id": "70514611",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70514611.txt",
+    "now_field_2": "630",
+    "date_original": "19-02-14",
+    "date_iso": "2019-02-14",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00361/rangitaiki-river-scheme-review-recommendations-actioned.htm",
+    "title": "Rangitaiki River Scheme Review - recommendations actioned",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Implementation of recommendations following a river flood-scheme review",
+    "climate_relevance": "The identifiable main article concerns flood infrastructure and community safety, without connecting these issues to climate change. A separate brief Greenpeace snippet mentions climate policy, but it is unrelated to the main article.",
+    "reason": "The climate reference appears only in an unrelated snippet and does not make the main article useful for climate-change discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "aa1b6f78e563ebca06004e01827bb94109a04c69355b87c161e66027817f3784",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4357a1ca873c07e0a180b4a4e9aaeb621d64d57b6cbf48e3d6e73116c7ed199d",
+    "raw_response_text_sha256": "38d2c2debe92b1a1f1d170b3f98d056e37dd2675f1ad0dec9316e9824ecb0d15"
+  },
+  "api_metadata": {
+    "id": "resp_0baf0d84e31ac8c5006b063d29887487d1a2842bd7cf7cfa9e",
+    "model": "gpt-6-luna",
+    "created_at": 1795570985.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1279,
+      "input_tokens_details": {
+        "cache_write_tokens": 1276,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1276
+        }
+      },
+      "output_tokens": 394,
+      "output_tokens_details": {
+        "reasoning_tokens": 244
+      },
+      "total_tokens": 1673
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Implementation of recommendations following a river flood-scheme review\",\n  \"climate_relevance\": \"The identifiable main article concerns flood infrastructure and community safety, without connecting these issues to climate change. A separate brief Greenpeace snippet mentions climate policy, but it is unrelated to the main article.\",\n  \"reason\": \"The climate reference appears only in an unrelated snippet and does not make the main article useful for climate-change discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:08Z",
+  "duration_seconds": 3.049,
+  "error": null
+}

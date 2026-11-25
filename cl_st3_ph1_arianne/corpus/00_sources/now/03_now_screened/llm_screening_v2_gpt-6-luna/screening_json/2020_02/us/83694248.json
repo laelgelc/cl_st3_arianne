@@ -1,0 +1,77 @@
+{
+  "article_id": "83694248",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/83694248.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/83694248.json"
+  },
+  "manifest_row": {
+    "article_id": "83694248",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/83694248.txt",
+    "now_field_2": "127",
+    "date_original": "20-02-08",
+    "date_iso": "2020-02-08",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20200209025050-n3f10",
+    "title": "China health body warns against excessive use of protective suits",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "China's shortage and use of protective equipment during the coronavirus outbreak",
+    "climate_relevance": "Climate change appears only in a boilerplate description of Reuters' coverage areas.",
+    "reason": "The article concerns protective equipment and coronavirus; the climate change mention is unrelated promotional boilerplate and offers no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c14d38becd3fce75f05fb08aef2163853c9b0394dbc50d9b34aaf13d1753f2a1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "de1bc32b65a6a4adc9d7f2708c761e3ed975bfc49e441d9cebb7fabf7b56c307",
+    "raw_response_text_sha256": "29fd140cce2aaa900c954a55d2dba7eefd64186901d35db350a44d7389010768"
+  },
+  "api_metadata": {
+    "id": "resp_0769c8bf95e62022006b0649e8103487d1982f8f36973870cb",
+    "model": "gpt-6-luna",
+    "created_at": 1795574248.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 650,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 153,
+      "output_tokens_details": {
+        "reasoning_tokens": 22
+      },
+      "total_tokens": 803
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"China's shortage and use of protective equipment during the coronavirus outbreak\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of Reuters' coverage areas.\",\n  \"reason\": \"The article concerns protective equipment and coronavirus; the climate change mention is unrelated promotional boilerplate and offers no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:37:29Z",
+  "duration_seconds": 1.82,
+  "error": null
+}

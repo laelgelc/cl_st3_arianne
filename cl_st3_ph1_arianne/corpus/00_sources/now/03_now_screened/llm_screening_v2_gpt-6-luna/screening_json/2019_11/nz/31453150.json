@@ -1,0 +1,77 @@
+{
+  "article_id": "31453150",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/nz/31453150.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/nz/31453150.json"
+  },
+  "manifest_row": {
+    "article_id": "31453150",
+    "group": "2019_11",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/nz/31453150.txt",
+    "now_field_2": "1231",
+    "date_original": "19-11-23",
+    "date_iso": "2019-11-23",
+    "source_name": "newsroom.co.nz",
+    "url": "https://www.newsroom.co.nz/2019/11/21/913309/jones-lays-political-noose-threat-on-ports-ceo",
+    "title": "Jones threatens Auckland Port CEO",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Political and economic debate over moving the Port of Auckland to Northland",
+    "climate_relevance": "Climate change appears only in a generic Newsroom supporter appeal listing topics the outlet covers.",
+    "reason": "The article focuses on port relocation, political conflict, and economic studies. Its sole climate-change reference is boilerplate promotional text, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cc96dd4490552121c5655782fff6ea464434432c5cd64a0476bbf7b4f2612a12",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cba9a714ca83c9eab25f2ff6ce0d6b04a28c1cfd1a03026ea481714fe1bdb1ed",
+    "raw_response_text_sha256": "fb4e6e7f4fa04b34d37043231c0d8c2609a1bd0cfe18072b3244b0a574c8128e"
+  },
+  "api_metadata": {
+    "id": "resp_066ad1b423e1eb8d006b061765cdac87d2bda87d128a48581e",
+    "model": "gpt-6-luna",
+    "created_at": 1795561317.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2130,
+      "input_tokens_details": {
+        "cache_write_tokens": 2127,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2127
+        }
+      },
+      "output_tokens": 173,
+      "output_tokens_details": {
+        "reasoning_tokens": 33
+      },
+      "total_tokens": 2303
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Political and economic debate over moving the Port of Auckland to Northland\",\n  \"climate_relevance\": \"Climate change appears only in a generic Newsroom supporter appeal listing topics the outlet covers.\",\n  \"reason\": \"The article focuses on port relocation, political conflict, and economic studies. Its sole climate-change reference is boilerplate promotional text, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:01:59Z",
+  "duration_seconds": 1.811,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "60266104",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/ca/60266104.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/ca/60266104.json"
+  },
+  "manifest_row": {
+    "article_id": "60266104",
+    "group": "2018_11",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/ca/60266104.txt",
+    "now_field_2": "1270",
+    "date_original": "18-11-18",
+    "date_iso": "2018-11-18",
+    "source_name": "Times Colonist",
+    "url": "https://www.timescolonist.com/opinion/letters/sunday-letters-1.23501223",
+    "title": "Sunday letters",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.87,
+    "climate_role": "passing",
+    "main_topic": "A collection of letters to the editor on energy supply, pipelines, health care, military services, road safety, and other local issues.",
+    "climate_relevance": "Climate change is briefly listed as part of the contemporary context in one letter. Another discusses fossil-fuel pipelines and gas supply, but frames these as infrastructure and energy-security issues rather than climate issues.",
+    "reason": "The available text contains no sustained or meaningful discussion of climate change; the explicit reference is passing, and the pipeline discussion does not connect fossil fuels to climate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e5dce3a30c780333262f557b4a84382dd45ee47d9ac52cb08792896264a77f18",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "53e8fb438b0c13e544fba31774b457a415cc31d9b904660e1c848872dc3d1b4b",
+    "raw_response_text_sha256": "5a472194495b93eac53d78d9bfb1d3a2d95b340877eeb5edcf76b48e5c7f5990"
+  },
+  "api_metadata": {
+    "id": "resp_045361b0ec708265006b0631cac62887d19c8de12ed07013bf",
+    "model": "gpt-6-luna",
+    "created_at": 1795568074.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2197,
+      "input_tokens_details": {
+        "cache_write_tokens": 2194,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2194
+        }
+      },
+      "output_tokens": 558,
+      "output_tokens_details": {
+        "reasoning_tokens": 387
+      },
+      "total_tokens": 2755
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of letters to the editor on energy supply, pipelines, health care, military services, road safety, and other local issues.\",\n  \"climate_relevance\": \"Climate change is briefly listed as part of the contemporary context in one letter. Another discusses fossil-fuel pipelines and gas supply, but frames these as infrastructure and energy-security issues rather than climate issues.\",\n  \"reason\": \"The available text contains no sustained or meaningful discussion of climate change; the explicit reference is passing, and the pipeline discussion does not connect fossil fuels to climate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:54:39Z",
+  "duration_seconds": 4.477,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40857640",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40857640.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40857640.json"
+  },
+  "manifest_row": {
+    "article_id": "40857640",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40857640.txt",
+    "now_field_2": "962",
+    "date_original": "19-04-19",
+    "date_iso": "2019-04-19",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/19/first-japan-built-airliner-in-50-years-takes-on-boeing/",
+    "title": "First Japan-built airliner in 50 years takes on Boeing",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Japan's Mitsubishi Regional Jet and the regional aircraft market",
+    "climate_relevance": "The main article does not discuss climate change. An unrelated opening news bullet mentions sustainable energy solutions and a minister whose portfolio includes climate change, but provides no substantive climate discourse.",
+    "reason": "Climate change appears only in the title of a minister's portfolio in an unrelated snippet; the main article concerns aviation manufacturing and contains no meaningful climate discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9a468c6afd2c76cdedf86082487abd434d7ceb9e4be571bc3c95a2598efa33df",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f8055a75368b2e8a5420b8eb72e7a228b4c34b2f054bfa4148d7040018b88c05",
+    "raw_response_text_sha256": "7c30b5bca19c7f24f26f0d78656b2b8ae28012d4c9b16e4c7537a2055e006d44"
+  },
+  "api_metadata": {
+    "id": "resp_042228846d60bf43006b062014548087d2a54416e19859aa9d",
+    "model": "gpt-6-luna",
+    "created_at": 1795563540.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1817,
+      "input_tokens_details": {
+        "cache_write_tokens": 1814,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1814
+        }
+      },
+      "output_tokens": 367,
+      "output_tokens_details": {
+        "reasoning_tokens": 213
+      },
+      "total_tokens": 2184
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Japan's Mitsubishi Regional Jet and the regional aircraft market\",\n  \"climate_relevance\": \"The main article does not discuss climate change. An unrelated opening news bullet mentions sustainable energy solutions and a minister whose portfolio includes climate change, but provides no substantive climate discourse.\",\n  \"reason\": \"Climate change appears only in the title of a minister's portfolio in an unrelated snippet; the main article concerns aviation manufacturing and contains no meaningful climate discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:03Z",
+  "duration_seconds": 3.329,
+  "error": null
+}

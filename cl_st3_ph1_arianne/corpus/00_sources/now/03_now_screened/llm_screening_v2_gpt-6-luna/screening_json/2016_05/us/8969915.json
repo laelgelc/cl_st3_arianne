@@ -1,0 +1,77 @@
+{
+  "article_id": "8969915",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_05/us/8969915.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_05/us/8969915.json"
+  },
+  "manifest_row": {
+    "article_id": "8969915",
+    "group": "2016_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_05/us/8969915.txt",
+    "now_field_2": "1055",
+    "date_original": "16-05-22",
+    "date_iso": "2016-05-22",
+    "source_name": "Las Vegas Review-Journal",
+    "url": "http://www.reviewjournal.com/news/nevada/nevada-s-oldest-known-tree-lives-mythic-stories-its-death",
+    "title": "Nevada's oldest known tree lives on in mythic stories of its death",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-05-bvk/16-05-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "The history and mythology surrounding the felling of Prometheus, an exceptionally old bristlecone pine",
+    "climate_relevance": "Climate change appears only as a brief description of the researcher's purpose in studying ancient trees; the article does not discuss climate change or its implications.",
+    "reason": "The article focuses on Prometheus's age, its felling, and the stories surrounding the event. The passing reference to studying prehistoric climate change is not developed into meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d7ad505b2c2008fda775045aa68240a4a0ac025686f8b5741753455d5614dfd6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bad1c6e11142e0f1b8645ed202e3bf5725404debe22eed76ad1d3d45edafc242",
+    "raw_response_text_sha256": "6a48392211db10d881e3f887accc15cfef8653ce3b2a19cf8d2665426952cac7"
+  },
+  "api_metadata": {
+    "id": "resp_0f4f0b39188855b2006b0650c3681c87d19e34e6821cacc23f",
+    "model": "gpt-6-luna",
+    "created_at": 1795576003.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1925,
+      "input_tokens_details": {
+        "cache_write_tokens": 1922,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1922
+        }
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 2181
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The history and mythology surrounding the felling of Prometheus, an exceptionally old bristlecone pine\",\n  \"climate_relevance\": \"Climate change appears only as a brief description of the researcher's purpose in studying ancient trees; the article does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on Prometheus's age, its felling, and the stories surrounding the event. The passing reference to studying prehistoric climate change is not developed into meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:06:45Z",
+  "duration_seconds": 2.248,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "32105591",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/32105591.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/32105591.json"
+  },
+  "manifest_row": {
+    "article_id": "32105591",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/32105591.txt",
+    "now_field_2": "711",
+    "date_original": "20-09-24",
+    "date_iso": "2020-09-24",
+    "source_name": "washingtonexaminer.com",
+    "url": "https://www.washingtonexaminer.com/politics/up-to-20-inches-of-rain-expected-in-houston-area-from-beta",
+    "title": "Up to 20 inches of rain expected in Houston area from Beta",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Tropical Depression Beta’s flooding impacts and public safety guidance in Texas",
+    "climate_relevance": "Climate change appears only in a separate, unrelated snippet about congressional debate; the main report does not discuss climate change or connect it to the storm.",
+    "reason": "The identifiable main article concerns flooding from Tropical Depression Beta. A standalone sentence about Republicans and the climate-change debate appears among unrelated snippets and is not part of the main report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b7033c00b9e1451635f6271f9e482eefcb4e3665af2f8f7f923ccf7eacd907b3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1fe17994fbffc53580d47a60a89925f9be7d587773ecbfed4b6339178948fdda",
+    "raw_response_text_sha256": "34e5d0f008243f0dde2aae376f438ab045df401af96bd916e9016148728c94c1"
+  },
+  "api_metadata": {
+    "id": "resp_0df881ad3d30d556006b061b40d15c87d2a02ac520c97b38e2",
+    "model": "gpt-6-luna",
+    "created_at": 1795562304.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1389,
+      "input_tokens_details": {
+        "cache_write_tokens": 1386,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1386
+        }
+      },
+      "output_tokens": 302,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 1691
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Tropical Depression Beta’s flooding impacts and public safety guidance in Texas\",\n  \"climate_relevance\": \"Climate change appears only in a separate, unrelated snippet about congressional debate; the main report does not discuss climate change or connect it to the storm.\",\n  \"reason\": \"The identifiable main article concerns flooding from Tropical Depression Beta. A standalone sentence about Republicans and the climate-change debate appears among unrelated snippets and is not part of the main report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:18:27Z",
+  "duration_seconds": 2.78,
+  "error": null
+}

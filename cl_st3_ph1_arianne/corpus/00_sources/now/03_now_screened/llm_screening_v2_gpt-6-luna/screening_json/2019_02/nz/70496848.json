@@ -1,0 +1,77 @@
+{
+  "article_id": "70496848",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70496848.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70496848.json"
+  },
+  "manifest_row": {
+    "article_id": "70496848",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70496848.txt",
+    "now_field_2": "655",
+    "date_original": "19-02-08",
+    "date_iso": "2019-02-08",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00219/spark-keeps-fire-evacuees-near-nelson-connected.htm",
+    "title": "Spark keeps fire evacuees near Nelson connected",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Spark providing free mobile data and calling to customers evacuated near Nelson because of fire risk",
+    "climate_relevance": "The main article concerns telecommunications support during fire evacuations and contains no meaningful climate-change discussion. A separate Greenpeace news snippet briefly mentions climate change, but it is unrelated to the main article.",
+    "reason": "The identifiable main article is not about climate change, and the only climate reference appears in a separate, unrelated snippet rather than contributing to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b35a87a66e82493e798fee60b0d00da214fdb209048bdc46aa3d3e36425e27e9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d0e6ff05c35b7aa7aa7414adb9157f70da06483d30c6113ab977914d0e83aba0",
+    "raw_response_text_sha256": "cbdaed6db39bd70644f1054343207fa5b973d23b02544f8f41d2e4d8f9fec685"
+  },
+  "api_metadata": {
+    "id": "resp_04d8ce7b602fe418006b063cf7762887d1adfd55bd7848f09b",
+    "model": "gpt-6-luna",
+    "created_at": 1795570935.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1307,
+      "input_tokens_details": {
+        "cache_write_tokens": 1304,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1304
+        }
+      },
+      "output_tokens": 331,
+      "output_tokens_details": {
+        "reasoning_tokens": 166
+      },
+      "total_tokens": 1638
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Spark providing free mobile data and calling to customers evacuated near Nelson because of fire risk\",\n  \"climate_relevance\": \"The main article concerns telecommunications support during fire evacuations and contains no meaningful climate-change discussion. A separate Greenpeace news snippet briefly mentions climate change, but it is unrelated to the main article.\",\n  \"reason\": \"The identifiable main article is not about climate change, and the only climate reference appears in a separate, unrelated snippet rather than contributing to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:18Z",
+  "duration_seconds": 3.139,
+  "error": null
+}

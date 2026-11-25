@@ -1,0 +1,77 @@
+{
+  "article_id": "7341668",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_02/us/7341668.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_02/us/7341668.json"
+  },
+  "manifest_row": {
+    "article_id": "7341668",
+    "group": "2016_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_02/us/7341668.txt",
+    "now_field_2": "4592",
+    "date_original": "16-02-06",
+    "date_iso": "2016-02-06",
+    "source_name": "Huffington Post",
+    "url": "http://www.huffingtonpost.com/entry/jim-the-james-foley-story-brian-oakes_us_56b4ee7be4b01d80b2461e8d",
+    "title": "The Director Of HBO's New James Foley Documentary On Making A ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-02-iuq/16-02-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "An interview about a documentary on journalist James Foley, followed by a Sundance documentary preview.",
+    "climate_relevance": "A separate preview entry describes a documentary about communities experiencing the effects of climate change.",
+    "reason": "The identifiable main article is about James Foley and his documentary, not climate change. However, the Sundance preview contains a meaningful, though brief, description of a climate-focused documentary, making the text peripherally relevant.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ca8e666e72fa7a7169510e8bac261244f314d269653cba0aae87fef2bb5d43dd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "84059880e5841355736ec27a9914ceb3cee31bd0c5d1f2aaa9acb23c62bde75d",
+    "raw_response_text_sha256": "fbfb1d03e40d43ad8c6dbc888180065f9bc3df9a759f0737f0599c8d90164708"
+  },
+  "api_metadata": {
+    "id": "resp_0a5c1bf0cde34454006b064603d22c87d1a391bf36d3a7548e",
+    "model": "gpt-6-luna",
+    "created_at": 1795573252.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6632,
+      "input_tokens_details": {
+        "cache_write_tokens": 6629,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6629
+        }
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 6920
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"An interview about a documentary on journalist James Foley, followed by a Sundance documentary preview.\",\n  \"climate_relevance\": \"A separate preview entry describes a documentary about communities experiencing the effects of climate change.\",\n  \"reason\": \"The identifiable main article is about James Foley and his documentary, not climate change. However, the Sundance preview contains a meaningful, though brief, description of a climate-focused documentary, making the text peripherally relevant.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:20:54Z",
+  "duration_seconds": 3.066,
+  "error": null
+}

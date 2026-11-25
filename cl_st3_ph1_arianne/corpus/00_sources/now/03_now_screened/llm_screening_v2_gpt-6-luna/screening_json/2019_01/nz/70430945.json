@@ -1,0 +1,77 @@
+{
+  "article_id": "70430945",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/nz/70430945.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/nz/70430945.json"
+  },
+  "manifest_row": {
+    "article_id": "70430945",
+    "group": "2019_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/nz/70430945.txt",
+    "now_field_2": "550",
+    "date_original": "19-01-18",
+    "date_iso": "2019-01-18",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/WO1901/S00081/asia-pacific-superyachts-at-thailand-yacht-forum.htm",
+    "title": "Asia Pacific Superyachts at Thailand Yacht Forum",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Yachting and superyacht regulation in Thailand",
+    "climate_relevance": "A separate 'ALSO' teaser briefly mentions climate disasters and the UN Climate Change Conference, but the identifiable main article is about yachting and contains no meaningful climate discussion.",
+    "reason": "The climate reference appears in an unrelated news teaser among multiple snippets, not in the main article, so it does not make this text useful as climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "62f1e244b5d85571af27e912f7dff2831b5f61559e41a6dc6f043ab79ff0dbc7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "02810c7c10b05fa757cea6e67b3c43882265a8eca850885dbeecf142122517f3",
+    "raw_response_text_sha256": "a9680347278df62d17f82bd4dc20dfc83f614789d60ceb527b1acddf59f79a29"
+  },
+  "api_metadata": {
+    "id": "resp_076f2af10e8ef87c006b063c806b5487d19bd51528a21d0b05",
+    "model": "gpt-6-luna",
+    "created_at": 1795570816.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2017,
+      "input_tokens_details": {
+        "cache_write_tokens": 2014,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2014
+        }
+      },
+      "output_tokens": 371,
+      "output_tokens_details": {
+        "reasoning_tokens": 215
+      },
+      "total_tokens": 2388
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Yachting and superyacht regulation in Thailand\",\n  \"climate_relevance\": \"A separate 'ALSO' teaser briefly mentions climate disasters and the UN Climate Change Conference, but the identifiable main article is about yachting and contains no meaningful climate discussion.\",\n  \"reason\": \"The climate reference appears in an unrelated news teaser among multiple snippets, not in the main article, so it does not make this text useful as climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:19Z",
+  "duration_seconds": 3.3,
+  "error": null
+}

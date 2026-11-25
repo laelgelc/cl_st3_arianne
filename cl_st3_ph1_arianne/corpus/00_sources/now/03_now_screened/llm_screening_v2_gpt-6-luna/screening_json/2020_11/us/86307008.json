@@ -1,0 +1,77 @@
+{
+  "article_id": "86307008",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/us/86307008.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/us/86307008.json"
+  },
+  "manifest_row": {
+    "article_id": "86307008",
+    "group": "2020_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/us/86307008.txt",
+    "now_field_2": "267",
+    "date_original": "20-11-21",
+    "date_iso": "2020-11-21",
+    "source_name": "SFGate",
+    "url": "https://www.sfgate.com/cnet/article/SpaceX-launches-new-NASA-satellite-and-lands-with-15745105.php",
+    "title": "SpaceX launches new NASA satellite and lands with a boom",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Launch of the Sentinel-6 ocean-monitoring satellite",
+    "climate_relevance": "The satellite is described as continuing a decades-long effort to provide critical data on sea-level rise and climate change.",
+    "reason": "The article mainly reports on the rocket launch and satellite mission. Climate change is meaningfully connected to the satellite’s sea-level measurements, but it is not the article’s central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1eb672a329ad94e784dc4ddb6ad4ee69f126af52468f83cdd7b892dbeb684b12",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3637afbe280819d6bb0d8d0f6620c66f292d237b76b7838033affeebd16e678e",
+    "raw_response_text_sha256": "c39f0440fccc036f6d26ac559f701d0381de1664685764adf5cf0a9ccf843d57"
+  },
+  "api_metadata": {
+    "id": "resp_0cf2d35863d4b331006b064f7bb8d887d183a78bdf70a17c2d",
+    "model": "gpt-6-luna",
+    "created_at": 1795575675.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 808,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 200,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 1008
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Launch of the Sentinel-6 ocean-monitoring satellite\",\n  \"climate_relevance\": \"The satellite is described as continuing a decades-long effort to provide critical data on sea-level rise and climate change.\",\n  \"reason\": \"The article mainly reports on the rocket launch and satellite mission. Climate change is meaningfully connected to the satellite’s sea-level measurements, but it is not the article’s central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:01:17Z",
+  "duration_seconds": 2.003,
+  "error": null
+}

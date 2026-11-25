@@ -1,0 +1,77 @@
+{
+  "article_id": "24555601",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/ng/24555601.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/ng/24555601.json"
+  },
+  "manifest_row": {
+    "article_id": "24555601",
+    "group": "2018_05",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/ng/24555601.txt",
+    "now_field_2": "589",
+    "date_original": "18-05-07",
+    "date_iso": "2018-05-07",
+    "source_name": "NEWSTAGE",
+    "url": "https://newstage.com.ng/2018/05/08/red-cross-plans-to-fight-disasters-with-fast-funding/",
+    "title": "Red Cross plans to fight disasters with fast funding",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Red Cross fund that releases humanitarian aid in advance of forecast natural hazards.",
+    "climate_relevance": "The article discusses disaster preparedness for floods and droughts but does not meaningfully connect these hazards to climate change. The only explicit reference to climate change is in boilerplate describing the Thomson Reuters Foundation.",
+    "reason": "Climate change appears only in organizational boilerplate, not in the substantive article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "37b3c300b1932493cf5104f4cbce226c4bdda49eab50d8e310f2321fd48a26b3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "93768da1afa6817db58d57114c01174b0f35488749396128b4e9389bef3f8177",
+    "raw_response_text_sha256": "716b53560f3dde433685f4eab7343dcfe4c92191b2aae5ff6e1c113f6656227f"
+  },
+  "api_metadata": {
+    "id": "resp_070b8a94a804ec89006b06128d027887d28eee4b57b0dc6fac",
+    "model": "gpt-6-luna",
+    "created_at": 1795560077.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1294,
+      "input_tokens_details": {
+        "cache_write_tokens": 1291,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1291
+        }
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 96
+      },
+      "total_tokens": 1538
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Red Cross fund that releases humanitarian aid in advance of forecast natural hazards.\",\n  \"climate_relevance\": \"The article discusses disaster preparedness for floods and droughts but does not meaningfully connect these hazards to climate change. The only explicit reference to climate change is in boilerplate describing the Thomson Reuters Foundation.\",\n  \"reason\": \"Climate change appears only in organizational boilerplate, not in the substantive article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:41:18Z",
+  "duration_seconds": 1.976,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "9868600",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_07/nz/9868600.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_07/nz/9868600.json"
+  },
+  "manifest_row": {
+    "article_id": "9868600",
+    "group": "2016_07",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_07/nz/9868600.txt",
+    "now_field_2": "534",
+    "date_original": "16-07-13",
+    "date_iso": "2016-07-13",
+    "source_name": "Asia Pacific Report",
+    "url": "http://asiapacificreport.nz/2016/07/14/wjec16roleofjournalismstudents/",
+    "title": "WJEC16: Quality campus media critically important for students ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-07-qxx/16-07-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Journalism education and student media in the Pacific",
+    "climate_relevance": "Climate change appears only in the author's biography, which says she is interested in climate change journalism; the article itself does not discuss climate change.",
+    "reason": "The article focuses on journalism education, student broadcasting, and media coverage of mining disasters. The climate reference is incidental biographical information and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e350fca2fd8d91da9c9b32ab75747ea3488bceabde35148fbea3e8df9cb0aa92",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2cfd63c99de38a30555633106b7e04539ea44d28c95b593f3cb03885f8567c9e",
+    "raw_response_text_sha256": "eac15e6adecbb7f2a7b4f88124de42861be0570405666c90d9343f7f6f83e068"
+  },
+  "api_metadata": {
+    "id": "resp_0b5338674096af82006b065167d2cc87d18ff2cbb3e1d91dd8",
+    "model": "gpt-6-luna",
+    "created_at": 1795576167.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1169,
+      "input_tokens_details": {
+        "cache_write_tokens": 1166,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1166
+        }
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 1404
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Journalism education and student media in the Pacific\",\n  \"climate_relevance\": \"Climate change appears only in the author's biography, which says she is interested in climate change journalism; the article itself does not discuss climate change.\",\n  \"reason\": \"The article focuses on journalism education, student broadcasting, and media coverage of mining disasters. The climate reference is incidental biographical information and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:09:29Z",
+  "duration_seconds": 2.242,
+  "error": null
+}

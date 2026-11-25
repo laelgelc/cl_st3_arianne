@@ -1,0 +1,77 @@
+{
+  "article_id": "18624768",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/us/18624768.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/us/18624768.json"
+  },
+  "manifest_row": {
+    "article_id": "18624768",
+    "group": "2017_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/us/18624768.txt",
+    "now_field_2": "1239",
+    "date_original": "17-05-24",
+    "date_iso": "2017-05-24",
+    "source_name": "USA TODAY",
+    "url": "https://www.usatoday.com/story/news/nation-now/2017/05/25/catholics-see-trump-pope-meeting-harbinger-common-ground/344625001/",
+    "title": "Catholics see Trump-Pope meeting as harbinger of common ground",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "The meeting and relationship between President Trump and Pope Francis, including their political and religious differences.",
+    "climate_relevance": "Climate change appears as one of the issues separating the two leaders: the pope’s encyclical criticizes inaction on human-caused climate change, and a Vatican official urged Trump to remain in the Paris climate accord.",
+    "reason": "The article is mainly about the Vatican meeting and broader relations between Trump and Francis. Climate change receives meaningful but limited discussion as one point of policy disagreement, so the text is relevant to broader climate discourse but is not core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "64c13070753c81e3abafbf09c370196cbeffb0779c2f02ff931fca2b711f3e10",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6c9434f4c4ec7ed27be89e416e60c2317949e5d282618ef9c199c2a815b93af5",
+    "raw_response_text_sha256": "ff0079018b34e92c63d4e2591f26b294ba7f61f797cd9069f80a3a78ddc470bc"
+  },
+  "api_metadata": {
+    "id": "resp_05cf95c640f3b60a006b060a7c6a4c87d2a605db350d5af5e3",
+    "model": "gpt-6-luna",
+    "created_at": 1795558012.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2161,
+      "input_tokens_details": {
+        "cache_write_tokens": 2158,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2158
+        }
+      },
+      "output_tokens": 311,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 2472
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The meeting and relationship between President Trump and Pope Francis, including their political and religious differences.\",\n  \"climate_relevance\": \"Climate change appears as one of the issues separating the two leaders: the pope’s encyclical criticizes inaction on human-caused climate change, and a Vatican official urged Trump to remain in the Paris climate accord.\",\n  \"reason\": \"The article is mainly about the Vatican meeting and broader relations between Trump and Francis. Climate change receives meaningful but limited discussion as one point of policy disagreement, so the text is relevant to broader climate discourse but is not core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:06:55Z",
+  "duration_seconds": 2.892,
+  "error": null
+}

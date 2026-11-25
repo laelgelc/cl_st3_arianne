@@ -1,0 +1,77 @@
+{
+  "article_id": "7372165",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_02/nz/7372165.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_02/nz/7372165.json"
+  },
+  "manifest_row": {
+    "article_id": "7372165",
+    "group": "2016_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_02/nz/7372165.txt",
+    "now_field_2": "163",
+    "date_original": "16-02-11",
+    "date_iso": "2016-02-11",
+    "source_name": "Radio New Zealand",
+    "url": "http://www.radionz.co.nz/international/pacific-news/296342/vanuatu's-new-pm-calls-for-unity",
+    "title": "Vanuatu's new PM calls for unity",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-02-iuq/16-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Vanuatu's new prime minister and his call for political unity",
+    "climate_relevance": "Climate change is mentioned only as the portfolio assigned to a cabinet minister.",
+    "reason": "The article focuses on the election, cabinet appointments, and political unity; it contains no substantive discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "15c6e1bd433e3f073706a99833e335e186a50b0b41c9dcc50db35196b871dcc8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ef0737da5e5ca8553a3d4b3d15234d9cef559172bd85d11f22de83e542512ae0",
+    "raw_response_text_sha256": "728f62706c3490e891bb68f2b19620880f55eddd065dc85a5ef05dbcefc5dcb9"
+  },
+  "api_metadata": {
+    "id": "resp_0a83d2ced84e9fe1006b06460b9aec87d1bf9d7328de1eaf93",
+    "model": "gpt-6-luna",
+    "created_at": 1795573259.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 695,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 172,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 867
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Vanuatu's new prime minister and his call for political unity\",\n  \"climate_relevance\": \"Climate change is mentioned only as the portfolio assigned to a cabinet minister.\",\n  \"reason\": \"The article focuses on the election, cabinet appointments, and political unity; it contains no substantive discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:21:01Z",
+  "duration_seconds": 1.961,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "72042065",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/in/72042065.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/in/72042065.json"
+  },
+  "manifest_row": {
+    "article_id": "72042065",
+    "group": "2020_06",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/in/72042065.txt",
+    "now_field_2": "1178",
+    "date_original": "20-06-25",
+    "date_iso": "2020-06-25",
+    "source_name": "nenow.in",
+    "url": "https://nenow.in/north-east-news/assam/pcba-fails-to-make-oil-accountable-for-baghjan-catastrophe.html",
+    "title": "PCBA fails to make OIL accountable for Baghjan catastrophe",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-in2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Accountability and environmental damage following the Baghjan oil well blowout and fire in Assam",
+    "climate_relevance": "Climate change appears only in the formal name of the Union Ministry of Environment, Forest and Climate Change; the article discusses oil pollution, ecological damage, and regulatory accountability, not climate change.",
+    "reason": "The article is substantially about an oil spill disaster and its effects on people and ecosystems. It contains no meaningful discourse about climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "255ff3c1163ed52792afde34d8a4719001c1296153c687249dc3330861130bd8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fa53ef6406da4f01f26864f933c963c0c79a12c0b69f6e8a384d328f397077a2",
+    "raw_response_text_sha256": "530fe717811b280d54c472362feb605b76684d4137bf553c6a505945aef52cae"
+  },
+  "api_metadata": {
+    "id": "resp_0b302f903b4982de006b0643c82bcc87d185eac36a26c133bb",
+    "model": "gpt-6-luna",
+    "created_at": 1795572680.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2101,
+      "input_tokens_details": {
+        "cache_write_tokens": 2098,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2098
+        }
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 2354
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Accountability and environmental damage following the Baghjan oil well blowout and fire in Assam\",\n  \"climate_relevance\": \"Climate change appears only in the formal name of the Union Ministry of Environment, Forest and Climate Change; the article discusses oil pollution, ecological damage, and regulatory accountability, not climate change.\",\n  \"reason\": \"The article is substantially about an oil spill disaster and its effects on people and ecosystems. It contains no meaningful discourse about climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:11:22Z",
+  "duration_seconds": 2.273,
+  "error": null
+}

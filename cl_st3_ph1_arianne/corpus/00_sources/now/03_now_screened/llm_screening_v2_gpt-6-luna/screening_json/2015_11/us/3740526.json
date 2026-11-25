@@ -1,0 +1,77 @@
+{
+  "article_id": "3740526",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_11/us/3740526.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_11/us/3740526.json"
+  },
+  "manifest_row": {
+    "article_id": "3740526",
+    "group": "2015_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_11/us/3740526.txt",
+    "now_field_2": "4118",
+    "date_original": "15-11-03",
+    "date_iso": "2015-11-03",
+    "source_name": "National Geographic",
+    "url": "http://voices.nationalgeographic.com/2015/11/04/phantom-of-the-forest-could-the-cougar-again-haunt-eastern-u-s-woodlands/",
+    "title": "Phantom of the Forest: Could the Cougar Again Haunt Eastern US ...",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-11-xje/15-11-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Cougar recolonization in eastern North America and its potential ecological effects",
+    "climate_relevance": "Climate change appears only in an unrelated Cat Watch description asking how big cats are coping with climate change; the main article contains no meaningful climate discourse.",
+    "reason": "The article focuses on cougar recovery, sightings, and ecosystem effects. The sole climate reference is part of appended, unrelated Cat Watch page material and is incidental to the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b1ed4f9f84804f217b261a504212b7efb1e07de98d67cea53c6aed8d7d18656e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "56e09a6d7b1a26c5b565a3ee6bd1a39ff4751b65971c07dc67a18add36d04a02",
+    "raw_response_text_sha256": "9ad0cefe8d96ee660f2c06d12a27c9991d1f31b3cda0e73e4e5692272b327498"
+  },
+  "api_metadata": {
+    "id": "resp_04a6cdf0a547d19c006b061ccc7d0487d2bfd487312de184d5",
+    "model": "gpt-6-luna",
+    "created_at": 1795562700.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6318,
+      "input_tokens_details": {
+        "cache_write_tokens": 6315,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6315
+        }
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 6585
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Cougar recolonization in eastern North America and its potential ecological effects\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated Cat Watch description asking how big cats are coping with climate change; the main article contains no meaningful climate discourse.\",\n  \"reason\": \"The article focuses on cougar recovery, sightings, and ecosystem effects. The sole climate reference is part of appended, unrelated Cat Watch page material and is incidental to the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:25:03Z",
+  "duration_seconds": 2.716,
+  "error": null
+}

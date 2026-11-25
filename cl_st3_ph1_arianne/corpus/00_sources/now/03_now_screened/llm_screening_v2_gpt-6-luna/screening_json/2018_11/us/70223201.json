@@ -1,0 +1,77 @@
+{
+  "article_id": "70223201",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/us/70223201.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/us/70223201.json"
+  },
+  "manifest_row": {
+    "article_id": "70223201",
+    "group": "2018_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/us/70223201.txt",
+    "now_field_2": "991",
+    "date_original": "18-11-08",
+    "date_iso": "2018-11-08",
+    "source_name": "San Francisco Chronicle",
+    "url": "https://www.sfchronicle.com/wine/article/Bob-Lindquist-explains-the-sale-of-his-legendary-13372694.php",
+    "title": "Bob Lindquist explains the sale of his legendary Santa Barbara winery ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Wine-industry news, restaurants, and wine recommendations",
+    "climate_relevance": "A brief item notes that some grape varieties could suit areas where climate change and drought threaten viticulture.",
+    "reason": "The text is primarily about wine and food, but the reference connects climate change and drought to viticulture and the potential usefulness of particular grape varieties. This is meaningful but limited climate discourse, so the text is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1305a9c5c224a092ab78c675d03e266a613b34493b440ab8beb3dfef7e7afd55",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7b8bc2499aafcb73e4ffa5a7544e4ba141584729e1bff2f7101631039a5f7e0b",
+    "raw_response_text_sha256": "7403c512aeefe7bdbb8c79f24871478b6e64fcd5f8f18cb08cdd597864493eba"
+  },
+  "api_metadata": {
+    "id": "resp_0e6fbbc876affdf9006b063b6944c087d19c7b0e23b795bdb7",
+    "model": "gpt-6-luna",
+    "created_at": 1795570537.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1860,
+      "input_tokens_details": {
+        "cache_write_tokens": 1857,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1857
+        }
+      },
+      "output_tokens": 353,
+      "output_tokens_details": {
+        "reasoning_tokens": 201
+      },
+      "total_tokens": 2213
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Wine-industry news, restaurants, and wine recommendations\",\n  \"climate_relevance\": \"A brief item notes that some grape varieties could suit areas where climate change and drought threaten viticulture.\",\n  \"reason\": \"The text is primarily about wine and food, but the reference connects climate change and drought to viticulture and the potential usefulness of particular grape varieties. This is meaningful but limited climate discourse, so the text is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:35:40Z",
+  "duration_seconds": 3.002,
+  "error": null
+}

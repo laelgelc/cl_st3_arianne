@@ -1,0 +1,77 @@
+{
+  "article_id": "60016793",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/ca/60016793.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/ca/60016793.json"
+  },
+  "manifest_row": {
+    "article_id": "60016793",
+    "group": "2018_09",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/ca/60016793.txt",
+    "now_field_2": "894",
+    "date_original": "18-09-10",
+    "date_iso": "2018-09-10",
+    "source_name": "Canada NewsWir",
+    "url": "https://www.newswire.ca/news-releases/government-of-canada-and-inuit-mark-joint-ownership-of-franklin-artifacts-in-nunavut-692872621.html",
+    "title": "Government of Canada and Inuit Mark Joint Ownership of Franklin ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Joint Canadian, British, and Inuit ownership and preservation of artifacts from the Franklin Expedition shipwrecks",
+    "climate_relevance": "Climate change appears only in the official title of Canada's Minister of Environment and Climate Change; the text contains no meaningful discussion of climate change.",
+    "reason": "The article focuses on the Franklin Expedition wrecks, archaeological work, and Inuit heritage. The climate reference is incidental to a minister's portfolio title.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "27e04c171e6b9e1592157f7be86740f62e62bb68e684773ba6e40c124950418b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5796ad571e29f1a533a247939773e6e010855c4e9cbc48c34115370cf2f3eb79",
+    "raw_response_text_sha256": "4b2a313fb0240aa5e69bf544390d6f02338d0a45d1dcc2ef6a36bd8842fce4d3"
+  },
+  "api_metadata": {
+    "id": "resp_061da83d8a912dea006b0630ae7ed887d1bf16de3daf460c14",
+    "model": "gpt-6-luna",
+    "created_at": 1795567790.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1598,
+      "input_tokens_details": {
+        "cache_write_tokens": 1595,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1595
+        }
+      },
+      "output_tokens": 197,
+      "output_tokens_details": {
+        "reasoning_tokens": 42
+      },
+      "total_tokens": 1795
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Joint Canadian, British, and Inuit ownership and preservation of artifacts from the Franklin Expedition shipwrecks\",\n  \"climate_relevance\": \"Climate change appears only in the official title of Canada's Minister of Environment and Climate Change; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on the Franklin Expedition wrecks, archaeological work, and Inuit heritage. The climate reference is incidental to a minister's portfolio title.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:49:52Z",
+  "duration_seconds": 1.939,
+  "error": null
+}

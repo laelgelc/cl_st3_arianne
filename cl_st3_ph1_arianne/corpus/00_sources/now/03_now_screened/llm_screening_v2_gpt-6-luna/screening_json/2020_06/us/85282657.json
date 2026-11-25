@@ -1,0 +1,77 @@
+{
+  "article_id": "85282657",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/us/85282657.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/us/85282657.json"
+  },
+  "manifest_row": {
+    "article_id": "85282657",
+    "group": "2020_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/us/85282657.txt",
+    "now_field_2": "794",
+    "date_original": "20-06-27",
+    "date_iso": "2020-06-27",
+    "source_name": "Forbes",
+    "url": "https://www.forbes.com/sites/jeffmcmahon/2020/06/28/most-dust-motes-in-your-home-are-toxic-microplastics-and-the-saharan-dust-storm-may-bring-more/",
+    "title": "Most Dust Motes In Our Homes Are Unsafe Microplastics, And The Saharan Dust Cloud May Bring More",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Microplastics in household dust and their potential health effects",
+    "climate_relevance": "Climate change appears only in the author's biography, which mentions covering UN climate change conferences.",
+    "reason": "The article focuses on airborne microplastics, their sources, and ways to reduce exposure. The brief climate reference is unrelated author-background material and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "eb1162d086ebdd03ba85f59a067e0fccca647cc2632e964f1920917a8b0dd4ad",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "779ec394e74a7ee25119a45f1e12a30139a4af0d06aea7e270286638df50ae97",
+    "raw_response_text_sha256": "0d6071cfce45d23a73efe12ef0081b058ab7bcb87f00a0f2fbc3b201de218adf"
+  },
+  "api_metadata": {
+    "id": "resp_0c763855dc3387fe006b064bb01d7887d19fdd5f90393b154d",
+    "model": "gpt-6-luna",
+    "created_at": 1795574704.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1549,
+      "input_tokens_details": {
+        "cache_write_tokens": 1546,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1546
+        }
+      },
+      "output_tokens": 363,
+      "output_tokens_details": {
+        "reasoning_tokens": 220
+      },
+      "total_tokens": 1912
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Microplastics in household dust and their potential health effects\",\n  \"climate_relevance\": \"Climate change appears only in the author's biography, which mentions covering UN climate change conferences.\",\n  \"reason\": \"The article focuses on airborne microplastics, their sources, and ways to reduce exposure. The brief climate reference is unrelated author-background material and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:45:07Z",
+  "duration_seconds": 3.025,
+  "error": null
+}

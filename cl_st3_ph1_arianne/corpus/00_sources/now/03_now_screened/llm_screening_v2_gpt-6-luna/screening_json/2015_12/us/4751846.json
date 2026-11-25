@@ -1,0 +1,77 @@
+{
+  "article_id": "4751846",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/us/4751846.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/us/4751846.json"
+  },
+  "manifest_row": {
+    "article_id": "4751846",
+    "group": "2015_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/us/4751846.txt",
+    "now_field_2": "1054",
+    "date_original": "15-12-25",
+    "date_iso": "2015-12-25",
+    "source_name": "Longview Daily News",
+    "url": "http://tdn.com/news/local/family-celebrates-christmas-in-new-home-after-months-of-homelessness/article_fa37c822-4b86-5ac0-9cdb-ea6e3c15f004.html",
+    "title": "Family celebrates Christmas in new home after months of ...",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A family’s experience of homelessness and finding housing",
+    "climate_relevance": "A separate, brief climate-change passage mentions the Paris conference, emissions commitments, and the difficulty of limiting warming; it does not relate to the main homelessness story.",
+    "reason": "The identifiable main article is about homelessness. The climate passage is a separate snippet rather than a substantial part of that article, so the text is not suitable as climate coverage for the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bfe5de3291d8c3aa84f1e7ff92084af22e0dc13952acdd66e976596de0c1aad3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "00d465e954b62ec462652695df5324804616f23cd1e78dce6e80ab338b3596cf",
+    "raw_response_text_sha256": "6956a29954aacf7bfb7d764731fe563c8c24a5c816fc4c0373a7bb70db71cc15"
+  },
+  "api_metadata": {
+    "id": "resp_099692caeea604c4006b0626c14a9887d295dc3d73822b288b",
+    "model": "gpt-6-luna",
+    "created_at": 1795565249.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1898,
+      "input_tokens_details": {
+        "cache_write_tokens": 1895,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1895
+        }
+      },
+      "output_tokens": 648,
+      "output_tokens_details": {
+        "reasoning_tokens": 489
+      },
+      "total_tokens": 2546
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A family’s experience of homelessness and finding housing\",\n  \"climate_relevance\": \"A separate, brief climate-change passage mentions the Paris conference, emissions commitments, and the difficulty of limiting warming; it does not relate to the main homelessness story.\",\n  \"reason\": \"The identifiable main article is about homelessness. The climate passage is a separate snippet rather than a substantial part of that article, so the text is not suitable as climate coverage for the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:07:34Z",
+  "duration_seconds": 5.016,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50360656",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/gb/50360656.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/gb/50360656.json"
+  },
+  "manifest_row": {
+    "article_id": "50360656",
+    "group": "2019_01",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/gb/50360656.txt",
+    "now_field_2": "345",
+    "date_original": "19-01-16",
+    "date_iso": "2019-01-16",
+    "source_name": "BBC News",
+    "url": "https://www.bbc.co.uk/news/science-environment-46845461",
+    "title": "The coffees you've never heard of which face extinction",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Adrien Broner and Manny Pacquiao's upcoming boxing match",
+    "climate_relevance": "The opening passage about wild coffee and climate change is meaningful climate-related content, but it is a separate, apparently truncated snippet and not part of the identifiable boxing article.",
+    "reason": "The main identifiable article concerns boxing and contains no meaningful climate discussion. The climate-related coffee passage appears to be an unrelated snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a177a645f2004a81a81168cfb6ab756c310c650dc2e2d492bb9e237b736a1da9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "72119b435e9a6cb981efebe65ae68ae31bca20cd5120215b5f2fc9179d2f9d98",
+    "raw_response_text_sha256": "897b33785c73d6cc4cdd0b7108d20225db2d07b7458eb648deabf4eda056e272"
+  },
+  "api_metadata": {
+    "id": "resp_08c61ba698a7c6eb006b0628a7056087d1909893102277479a",
+    "model": "gpt-6-luna",
+    "created_at": 1795565735.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1911,
+      "input_tokens_details": {
+        "cache_write_tokens": 1908,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1908
+        }
+      },
+      "output_tokens": 618,
+      "output_tokens_details": {
+        "reasoning_tokens": 467
+      },
+      "total_tokens": 2529
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Adrien Broner and Manny Pacquiao's upcoming boxing match\",\n  \"climate_relevance\": \"The opening passage about wild coffee and climate change is meaningful climate-related content, but it is a separate, apparently truncated snippet and not part of the identifiable boxing article.\",\n  \"reason\": \"The main identifiable article concerns boxing and contains no meaningful climate discussion. The climate-related coffee passage appears to be an unrelated snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:15:39Z",
+  "duration_seconds": 4.91,
+  "error": null
+}

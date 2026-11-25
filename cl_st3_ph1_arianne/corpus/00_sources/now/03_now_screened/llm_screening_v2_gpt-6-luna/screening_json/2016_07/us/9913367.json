@@ -1,0 +1,77 @@
+{
+  "article_id": "9913367",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_07/us/9913367.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_07/us/9913367.json"
+  },
+  "manifest_row": {
+    "article_id": "9913367",
+    "group": "2016_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_07/us/9913367.txt",
+    "now_field_2": "1283",
+    "date_original": "16-07-16",
+    "date_iso": "2016-07-16",
+    "source_name": "Los Angeles Times",
+    "url": "http://www.latimes.com/la-ol-opinion-newsletter-nice-france-attacks-20160716-snap-htmlstory.html",
+    "title": "Opinion: Another attack in France, another round of Muslim-bashing",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-07-qxx/16-07-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Opinion roundup focused mainly on the Nice attack, responses to terrorism, and U.S. politics",
+    "climate_relevance": "Climate change appears only in a passing reference to issues Silicon Valley engages with internationally; there is no substantive discussion of climate change.",
+    "reason": "The text is a collection of opinion items, primarily about terrorism and politics. Its sole climate reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "95ee7adf850e4327405c094ea7ff06aea6b122d168275136b54fb4d9dffa304d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "78a6c0851253751f99547adc51a51a5c5920674879299df813af3c5444124cc9",
+    "raw_response_text_sha256": "99d7e4cc0348c8c9c8e7966ea0ed8a1ba50bdc30a0bd272e3ddf5c2db3b19f75"
+  },
+  "api_metadata": {
+    "id": "resp_0e9057d25c4be51c006b06516ef08887d18d45a228ea114bcd",
+    "model": "gpt-6-luna",
+    "created_at": 1795576175.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2144,
+      "input_tokens_details": {
+        "cache_write_tokens": 2141,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2141
+        }
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 2390
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Opinion roundup focused mainly on the Nice attack, responses to terrorism, and U.S. politics\",\n  \"climate_relevance\": \"Climate change appears only in a passing reference to issues Silicon Valley engages with internationally; there is no substantive discussion of climate change.\",\n  \"reason\": \"The text is a collection of opinion items, primarily about terrorism and politics. Its sole climate reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:09:37Z",
+  "duration_seconds": 2.435,
+  "error": null
+}

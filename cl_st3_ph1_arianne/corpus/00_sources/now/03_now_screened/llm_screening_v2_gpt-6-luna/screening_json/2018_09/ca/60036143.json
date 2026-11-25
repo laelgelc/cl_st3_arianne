@@ -1,0 +1,77 @@
+{
+  "article_id": "60036143",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/ca/60036143.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/ca/60036143.json"
+  },
+  "manifest_row": {
+    "article_id": "60036143",
+    "group": "2018_09",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/ca/60036143.txt",
+    "now_field_2": "1435",
+    "date_original": "18-09-17",
+    "date_iso": "2018-09-17",
+    "source_name": "Canada NewsWir",
+    "url": "https://www.newswire.ca/news-releases/gates-foundation-report-says-demographic-trends-threaten-global-progress-calls-for-increased-focus-on-health-and-education-in-poorest-countries-693551841.html",
+    "title": "Gates Foundation Report Says Demographic Trends Threaten Global ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The Gates Foundation's Goalkeepers report on poverty, youth populations, health, education, and economic development.",
+    "climate_relevance": "Climate change appears only in a brief description of the Sustainable Development Goals.",
+    "reason": "The text contains no meaningful discussion of climate change; its sole reference is incidental boilerplate about the Global Goals.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a0cd3064f04ad30889d6e2bf80beaab84ef042339c84674a65cc4c943b7ebde6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dc41f7df4b44a8d06858ca493e91489d5d1981a6f52cc0a8393b2963588f8b61",
+    "raw_response_text_sha256": "4c5176500fd642e6bf18c4dcc51f54e1cc204694c1c7408f00b771947f1c9bd4"
+  },
+  "api_metadata": {
+    "id": "resp_097ead72d747eba0006b0630c763e487d1bf0028adc4d89e51",
+    "model": "gpt-6-luna",
+    "created_at": 1795567815.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2316,
+      "input_tokens_details": {
+        "cache_write_tokens": 2313,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2313
+        }
+      },
+      "output_tokens": 184,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 2500
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The Gates Foundation's Goalkeepers report on poverty, youth populations, health, education, and economic development.\",\n  \"climate_relevance\": \"Climate change appears only in a brief description of the Sustainable Development Goals.\",\n  \"reason\": \"The text contains no meaningful discussion of climate change; its sole reference is incidental boilerplate about the Global Goals.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:50:16Z",
+  "duration_seconds": 1.643,
+  "error": null
+}

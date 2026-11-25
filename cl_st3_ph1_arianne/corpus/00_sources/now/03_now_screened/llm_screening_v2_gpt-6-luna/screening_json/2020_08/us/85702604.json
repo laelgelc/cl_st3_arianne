@@ -1,0 +1,77 @@
+{
+  "article_id": "85702604",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85702604.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85702604.json"
+  },
+  "manifest_row": {
+    "article_id": "85702604",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85702604.txt",
+    "now_field_2": "926",
+    "date_original": "20-08-17",
+    "date_iso": "2020-08-17",
+    "source_name": "USA Today",
+    "url": "https://www.usatoday.com/story/news/environment/2020/08/17/these-zip-codes-may-have-thousands-additional-properties-flood-risk/3330528001/",
+    "title": "Is your home at risk of flooding? In these ZIP codes the risk may be greater than thought",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "Flood risk to Indiana properties and differences between nonprofit estimates and official FEMA floodplain maps",
+    "climate_relevance": "Climate change predictions are cited as a factor in projected future flooding and flood risk in several Indiana communities.",
+    "reason": "The article mainly reports current floodplain estimates and property-level risk, while climate change appears as background to some future projections rather than as the central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5f0c30a99e6975d312123ae414ab52081735b4ff66a4feb7605e886837ad9827",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a620620e4dc59647388efefd033a12425d5515932b19ce54d25e8158e33dcc6a",
+    "raw_response_text_sha256": "93741d48797f59c595e915d8fe75d1fc82fedda1700b9f9f2513e457495bf691"
+  },
+  "api_metadata": {
+    "id": "resp_00d3ec0f0bb7984f006b064cc34ac487d1a88dd093830990fc",
+    "model": "gpt-6-luna",
+    "created_at": 1795574979.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1846,
+      "input_tokens_details": {
+        "cache_write_tokens": 1843,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1843
+        }
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 2065
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Flood risk to Indiana properties and differences between nonprofit estimates and official FEMA floodplain maps\",\n  \"climate_relevance\": \"Climate change predictions are cited as a factor in projected future flooding and flood risk in several Indiana communities.\",\n  \"reason\": \"The article mainly reports current floodplain estimates and property-level risk, while climate change appears as background to some future projections rather than as the central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:49:41Z",
+  "duration_seconds": 2.028,
+  "error": null
+}

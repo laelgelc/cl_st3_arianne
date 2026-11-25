@@ -1,0 +1,77 @@
+{
+  "article_id": "19833579",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/gb/19833579.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/gb/19833579.json"
+  },
+  "manifest_row": {
+    "article_id": "19833579",
+    "group": "2017_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/gb/19833579.txt",
+    "now_field_2": "431",
+    "date_original": "17-08-03",
+    "date_iso": "2017-08-03",
+    "source_name": "www.businessgreen.com",
+    "url": "https://www.businessgreen.com/bg/news/3015092/london-to-double-size-of-electric-car-charging-network-in-2018",
+    "title": "London to double size of electric car charging network in 2018",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-GB.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "London's expansion of electric-vehicle charging infrastructure and related transport policy",
+    "climate_relevance": "The main article focuses on air pollution and transport policy, but its discussion of zero-emission transport, electric vehicles, and phasing out combustion-engine vehicles has meaningful implications for emissions mitigation.",
+    "reason": "The identifiable main article is not centrally about climate change, though its transport measures are relevant to emissions reduction. The opening material about a climate conference and carbon targets appears to be a separate snippet and is not the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d06fadf231c9aba7bed7c488053f1ffc56a611841fa1d22bb46d629d100fddcb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "923654aeaa86bec011bd47e7366eca66bb5a9378d8f0a3924c1aca37dfa3482f",
+    "raw_response_text_sha256": "aa0a3a54123dd273577daac80a6b4e624e5380154cbf7262311c798219a07f6b"
+  },
+  "api_metadata": {
+    "id": "resp_0461fa412c835c65006b060c82745c87d290b6c59f2c53bb88",
+    "model": "gpt-6-luna",
+    "created_at": 1795558530.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1039,
+      "input_tokens_details": {
+        "cache_write_tokens": 1036,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1036
+        }
+      },
+      "output_tokens": 504,
+      "output_tokens_details": {
+        "reasoning_tokens": 334
+      },
+      "total_tokens": 1543
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"London's expansion of electric-vehicle charging infrastructure and related transport policy\",\n  \"climate_relevance\": \"The main article focuses on air pollution and transport policy, but its discussion of zero-emission transport, electric vehicles, and phasing out combustion-engine vehicles has meaningful implications for emissions mitigation.\",\n  \"reason\": \"The identifiable main article is not centrally about climate change, though its transport measures are relevant to emissions reduction. The opening material about a climate conference and carbon targets appears to be a separate snippet and is not the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:15:34Z",
+  "duration_seconds": 4.146,
+  "error": null
+}

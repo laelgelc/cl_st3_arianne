@@ -1,0 +1,77 @@
+{
+  "article_id": "86284913",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/us/86284913.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/us/86284913.json"
+  },
+  "manifest_row": {
+    "article_id": "86284913",
+    "group": "2020_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/us/86284913.txt",
+    "now_field_2": "623",
+    "date_original": "20-11-17",
+    "date_iso": "2020-11-17",
+    "source_name": "Reuters",
+    "url": "https://www.reuters.com/article/usa-cities-trees/tree-equity-u-s-cities-urged-to-focus-planting-in-areas-most-at-risk-idUSL8N2I322L",
+    "title": "'Tree equity': U.S. cities urged to focus planting in areas most at risk",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "Urban tree equity and targeting tree planting to address neighborhood-level health, heat, and economic disparities.",
+    "climate_relevance": "The article connects tree cover with cooling and notes that marginalized communities face heat and natural disasters exacerbated by climate change, while also referring to global warming. Climate change informs the case for urban trees but is not the main subject.",
+    "reason": "The main focus is equitable urban forestry and its local benefits, rather than climate change itself. The climate references are meaningful enough for broader discourse analysis but do not make this core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "813697164657f7f2c5d802f6b912b2d617b5f5ea9001cfbec483f5b5d62fe020",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9a9a921dfb3cad78d77a4d56038fa178ab29b84d4e93456dff4cfbed371d0bb7",
+    "raw_response_text_sha256": "db214c8776e0afc8b0a9ee8a06c2bba1a41b2a5b26b16f2143b4b4b6341529a8"
+  },
+  "api_metadata": {
+    "id": "resp_014b38ad91df9edb006b064f5777c887d1b0764aa13a2fb1ea",
+    "model": "gpt-6-luna",
+    "created_at": 1795575639.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1320,
+      "input_tokens_details": {
+        "cache_write_tokens": 1317,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1317
+        }
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1566
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Urban tree equity and targeting tree planting to address neighborhood-level health, heat, and economic disparities.\",\n  \"climate_relevance\": \"The article connects tree cover with cooling and notes that marginalized communities face heat and natural disasters exacerbated by climate change, while also referring to global warming. Climate change informs the case for urban trees but is not the main subject.\",\n  \"reason\": \"The main focus is equitable urban forestry and its local benefits, rather than climate change itself. The climate references are meaningful enough for broader discourse analysis but do not make this core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:00:42Z",
+  "duration_seconds": 2.64,
+  "error": null
+}

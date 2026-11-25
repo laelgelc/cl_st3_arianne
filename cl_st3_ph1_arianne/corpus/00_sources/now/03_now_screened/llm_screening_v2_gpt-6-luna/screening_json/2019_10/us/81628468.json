@@ -1,0 +1,77 @@
+{
+  "article_id": "81628468",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81628468.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81628468.json"
+  },
+  "manifest_row": {
+    "article_id": "81628468",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81628468.txt",
+    "now_field_2": "166",
+    "date_original": "19-10-15",
+    "date_iso": "2019-10-15",
+    "source_name": "KGMI",
+    "url": "https://kgmi.com/news/007700-husky-lb-tafisi-suffered-significant-stinger-vs-arizona/",
+    "title": "Husky LB Tafisi suffered \"significant\" stinger vs. Arizona",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Washington Huskies linebacker MJ Tafisi's injury",
+    "climate_relevance": "The main article is about college football and contains no climate discussion. A separate, truncated snippet mentions climate adaptation research and soil carbon.",
+    "reason": "The identifiable main article is unrelated to climate change; the climate-related material appears to be a separate snippet rather than part of that article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9174bc421e919084f5e1b69783df6e59ad7b86f500de403b01a66fc80727eb85",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a088f15ea69b7744decf5cfe201555ad885edab1dd3e4a29c130c1790cdf2b35",
+    "raw_response_text_sha256": "05650c70823c3502228811dc6afc5d7a1305ebb52986d73302cc96f36b60a3db"
+  },
+  "api_metadata": {
+    "id": "resp_02dbdf8ad97796a1006b0647881ae487d18fb457605c2cef2b",
+    "model": "gpt-6-luna",
+    "created_at": 1795573640.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 973,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 400,
+      "output_tokens_details": {
+        "reasoning_tokens": 258
+      },
+      "total_tokens": 1373
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Washington Huskies linebacker MJ Tafisi's injury\",\n  \"climate_relevance\": \"The main article is about college football and contains no climate discussion. A separate, truncated snippet mentions climate adaptation research and soil carbon.\",\n  \"reason\": \"The identifiable main article is unrelated to climate change; the climate-related material appears to be a separate snippet rather than part of that article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:27:23Z",
+  "duration_seconds": 3.539,
+  "error": null
+}

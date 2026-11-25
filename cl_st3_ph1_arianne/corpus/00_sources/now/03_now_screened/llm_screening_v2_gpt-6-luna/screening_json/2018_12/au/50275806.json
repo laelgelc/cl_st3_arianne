@@ -1,0 +1,77 @@
+{
+  "article_id": "50275806",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/au/50275806.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/au/50275806.json"
+  },
+  "manifest_row": {
+    "article_id": "50275806",
+    "group": "2018_12",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/au/50275806.txt",
+    "now_field_2": "356",
+    "date_original": "18-12-09",
+    "date_iso": "2018-12-09",
+    "source_name": "Grafton Daily Examiner",
+    "url": "https://www.dailyexaminer.com.au/news/power-30-gm-accepts-win-for-all-of-clarence-valley/3597329/",
+    "title": "POWER 30: GM accepts win for all of Clarence Valley Council",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Clarence Valley Council general manager Ashley Lindsay and his leadership of the council",
+    "climate_relevance": "The identifiable main article is about local government leadership and contains no meaningful climate discussion. A separate appended passage discusses climate policy and investor action, but appears to belong to an unrelated article.",
+    "reason": "The climate material is substantial in its own right, but it is part of a distinct, apparently appended article rather than the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "baedfb04048282dda0c9183267152271c8d319402a934bad0fc80dfe460d3e95",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "81aa7da8222c68b1e987aeb48ac37b8859f591175dc8a802c91d2f8ea04de743",
+    "raw_response_text_sha256": "647b91199e0fd24fbaaeb26da335e3db0930fb04e2ceceb53081a18619341e07"
+  },
+  "api_metadata": {
+    "id": "resp_004b9ea9abe72099006b06285d01fc87d1b9e3efa566c8fe69",
+    "model": "gpt-6-luna",
+    "created_at": 1795565661.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1423,
+      "input_tokens_details": {
+        "cache_write_tokens": 1420,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1420
+        }
+      },
+      "output_tokens": 451,
+      "output_tokens_details": {
+        "reasoning_tokens": 293
+      },
+      "total_tokens": 1874
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Clarence Valley Council general manager Ashley Lindsay and his leadership of the council\",\n  \"climate_relevance\": \"The identifiable main article is about local government leadership and contains no meaningful climate discussion. A separate appended passage discusses climate policy and investor action, but appears to belong to an unrelated article.\",\n  \"reason\": \"The climate material is substantial in its own right, but it is part of a distinct, apparently appended article rather than the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:14:24Z",
+  "duration_seconds": 3.733,
+  "error": null
+}

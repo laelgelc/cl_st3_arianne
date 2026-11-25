@@ -1,0 +1,77 @@
+{
+  "article_id": "21261284",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/ca/21261284.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/ca/21261284.json"
+  },
+  "manifest_row": {
+    "article_id": "21261284",
+    "group": "2017_10",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/ca/21261284.txt",
+    "now_field_2": "946",
+    "date_original": "17-10-23",
+    "date_iso": "2017-10-23",
+    "source_name": "The Daily Courier",
+    "url": "http://www.kelownadailycourier.ca/news/national_news/article_00d50a6b-df26-5cf6-b48d-5a678978d772.html",
+    "title": "New Brunswick premier outlines priorities for new session of the ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "New Brunswick election speculation and the provincial legislature's upcoming session",
+    "climate_relevance": "The main article briefly lists a carbon pricing plan among the government's priorities but offers no substantive discussion of climate change. A separate appended snippet discusses climate-related costs to U.S. taxpayers, but it is unrelated to the identifiable main article.",
+    "reason": "Climate change is not meaningfully developed in the main article; the only relevant reference is a passing mention of a carbon pricing plan. The more substantive climate text appears to be a separate snippet and should not determine the classification of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "929a8a0a9974871efff110dcfaff90adead5ca504ea6773f1e6e89a42c99f2bd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0ce216cb6a2de876ff8343ffb64c3330c71b5886da7f50bc2380430db7d482bb",
+    "raw_response_text_sha256": "936c276720eed688d8c53de2b5e922c43cd9fb2965b8e55c84742ea8e3873791"
+  },
+  "api_metadata": {
+    "id": "resp_0392917cb72654b8006b060e7fdc4c87d2964da2100f8bfe69",
+    "model": "gpt-6-luna",
+    "created_at": 1795559040.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1777,
+      "input_tokens_details": {
+        "cache_write_tokens": 1774,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1774
+        }
+      },
+      "output_tokens": 364,
+      "output_tokens_details": {
+        "reasoning_tokens": 184
+      },
+      "total_tokens": 2141
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New Brunswick election speculation and the provincial legislature's upcoming session\",\n  \"climate_relevance\": \"The main article briefly lists a carbon pricing plan among the government's priorities but offers no substantive discussion of climate change. A separate appended snippet discusses climate-related costs to U.S. taxpayers, but it is unrelated to the identifiable main article.\",\n  \"reason\": \"Climate change is not meaningfully developed in the main article; the only relevant reference is a passing mention of a carbon pricing plan. The more substantive climate text appears to be a separate snippet and should not determine the classification of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:24:02Z",
+  "duration_seconds": 2.59,
+  "error": null
+}

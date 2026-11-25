@@ -1,0 +1,77 @@
+{
+  "article_id": "40070690",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/ng/40070690.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/ng/40070690.json"
+  },
+  "manifest_row": {
+    "article_id": "40070690",
+    "group": "2018_09",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/ng/40070690.txt",
+    "now_field_2": "1072",
+    "date_original": "18-09-24",
+    "date_iso": "2018-09-24",
+    "source_name": "Daily Sun",
+    "url": "http://sunnewsonline.com/anti-graft-policy-leads-to-development/",
+    "title": "Anti-graft policy leads to development",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Anti-corruption policy and development in Nigeria",
+    "climate_relevance": "The main article contains no meaningful climate discourse. A separate appended report about mineral exploration and earthquake monitoring briefly says climate change prompted a reassessment of earthquake risks.",
+    "reason": "The identifiable main article is about corruption and development, not climate change. The climate reference occurs only in a distinct appended article, so it does not make the main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "691ef26664c15da3414910a44e4b0ca2e491837a17a5045fdb0c56cb65c7a01f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "33c4008f6fb2c8d63a79290ac6ba4506efecf73521f014f06cc1a5fbffeb505d",
+    "raw_response_text_sha256": "b4b708e12c71105bd3b197a78566823cc00652c15405fe5dde0faf947a7df8bd"
+  },
+  "api_metadata": {
+    "id": "resp_083b4e69dff35307006b061e1dcec487d28d7f23965de41f8d",
+    "model": "gpt-6-luna",
+    "created_at": 1795563037.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2701,
+      "input_tokens_details": {
+        "cache_write_tokens": 2698,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2698
+        }
+      },
+      "output_tokens": 533,
+      "output_tokens_details": {
+        "reasoning_tokens": 375
+      },
+      "total_tokens": 3234
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Anti-corruption policy and development in Nigeria\",\n  \"climate_relevance\": \"The main article contains no meaningful climate discourse. A separate appended report about mineral exploration and earthquake monitoring briefly says climate change prompted a reassessment of earthquake risks.\",\n  \"reason\": \"The identifiable main article is about corruption and development, not climate change. The climate reference occurs only in a distinct appended article, so it does not make the main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:30:42Z",
+  "duration_seconds": 4.406,
+  "error": null
+}

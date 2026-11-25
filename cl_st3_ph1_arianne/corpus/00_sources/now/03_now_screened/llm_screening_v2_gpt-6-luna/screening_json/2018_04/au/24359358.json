@@ -1,0 +1,77 @@
+{
+  "article_id": "24359358",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_04/au/24359358.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_04/au/24359358.json"
+  },
+  "manifest_row": {
+    "article_id": "24359358",
+    "group": "2018_04",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_04/au/24359358.txt",
+    "now_field_2": "610",
+    "date_original": "18-04-26",
+    "date_iso": "2018-04-26",
+    "source_name": "9news.com.au",
+    "url": "https://www.9news.com.au/national/2018/04/27/07/13/400m-reef-rescue-plan-in-federal-budget",
+    "title": "$400m reef rescue plan in federal budget",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-04.txt\"]",
+    "metadata_article_files": "[\"text-18-04/18-04-au.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "climate_role": "substantial",
+    "main_topic": "Debate over whether the Australian government's Great Barrier Reef rescue plan can succeed without stronger action on coal, pollution, and climate change.",
+    "climate_relevance": "The identifiable reef article links global warming and climate change to coral bleaching and ocean acidification, and discusses climate policy as relevant to protecting the reef.",
+    "reason": "Climate change is a substantial part of the reef article's explanation of the threat and the debate over the adequacy of the proposed rescue plan. The text also contains several unrelated snippets before the reef article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5ca4a0d75cde4c5188f215064ffc9a7d6c9b046492ef9f303fd1160b4ab0adc6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d5f3c07d2e90108f1c81514de80526f8c87352a7ba8330f8ec66bc92b98d1e80",
+    "raw_response_text_sha256": "886c43135ec5ae7024782a27fedefc2e88f5127aee4f6a202dc381a19807a8fd"
+  },
+  "api_metadata": {
+    "id": "resp_00986ef596546570006b06125bef6887d2827bdc5a63b18a99",
+    "model": "gpt-6-luna",
+    "created_at": 1795560028.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1307,
+      "input_tokens_details": {
+        "cache_write_tokens": 1304,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1304
+        }
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1545
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Debate over whether the Australian government's Great Barrier Reef rescue plan can succeed without stronger action on coal, pollution, and climate change.\",\n  \"climate_relevance\": \"The identifiable reef article links global warming and climate change to coral bleaching and ocean acidification, and discusses climate policy as relevant to protecting the reef.\",\n  \"reason\": \"Climate change is a substantial part of the reef article's explanation of the threat and the debate over the adequacy of the proposed rescue plan. The text also contains several unrelated snippets before the reef article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:40:30Z",
+  "duration_seconds": 2.214,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31808328",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_04/nz/31808328.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_04/nz/31808328.json"
+  },
+  "manifest_row": {
+    "article_id": "31808328",
+    "group": "2020_04",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_04/nz/31808328.txt",
+    "now_field_2": "2545",
+    "date_original": "20-04-29",
+    "date_iso": "2020-04-29",
+    "source_name": "interest.co.nz",
+    "url": "https://www.interest.co.nz/news/104762/frank-jasper-fisher-funds-says-covid-19-pandemic-has-shown-investors-need-be-prepared",
+    "title": "Frank Jasper of Fisher Funds says the COVID-19 pandemic ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-04.txt\"]",
+    "metadata_article_files": "[\"text-20-04/20-04-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Investment decisions and financial markets during the COVID-19 pandemic",
+    "climate_relevance": "Climate change appears only in a list of links to earlier interviews, including one with the Climate Change Commission chairman; the text contains no substantive climate discourse.",
+    "reason": "The article and its comments focus on COVID-19 and investment. The climate-related references are incidental link descriptions and do not meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6e8ec73c99ce4573a214d99c15347ce03bbd3bc9dcdfc2cd15cb0a1fe8f138a5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1b6ef4b0864d3dfc4f20811d4a9968c0bee550234c32a1ebe7a8f0c2dd82ee81",
+    "raw_response_text_sha256": "ca9808c564c47281fd838f8053e9df196a9771cc05344d659a0992e38a96f03a"
+  },
+  "api_metadata": {
+    "id": "resp_0cbc650b814b5baf006b06197f910487d280a5fe453c590048",
+    "model": "gpt-6-luna",
+    "created_at": 1795561855.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3602,
+      "input_tokens_details": {
+        "cache_write_tokens": 3599,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3599
+        }
+      },
+      "output_tokens": 303,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 3905
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Investment decisions and financial markets during the COVID-19 pandemic\",\n  \"climate_relevance\": \"Climate change appears only in a list of links to earlier interviews, including one with the Climate Change Commission chairman; the text contains no substantive climate discourse.\",\n  \"reason\": \"The article and its comments focus on COVID-19 and investment. The climate-related references are incidental link descriptions and do not meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:10:57Z",
+  "duration_seconds": 2.408,
+  "error": null
+}

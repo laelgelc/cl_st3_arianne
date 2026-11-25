@@ -1,0 +1,77 @@
+{
+  "article_id": "13614230",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_07/au/13614230.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_07/au/13614230.json"
+  },
+  "manifest_row": {
+    "article_id": "13614230",
+    "group": "2016_07",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_07/au/13614230.txt",
+    "now_field_2": "688",
+    "date_original": "16-07-31",
+    "date_iso": "2016-07-31",
+    "source_name": "Mornington Peninsula News",
+    "url": "http://mpnews.com.au/2016/08/01/shire-part-of-secrecy-probe/",
+    "title": "Shire part of 'secrecy' probe",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-07-qxx/16-07-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An Ombudsman investigation into secrecy and transparency in local government.",
+    "climate_relevance": "Climate change appears only in a separate, truncated snippet about councillors attending a UN climate conference; no substantive climate discourse is available.",
+    "reason": "The identifiable main article concerns local government governance. The climate-related line appears to be an unrelated snippet and only mentions conference attendance and reporting requirements.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "43866ce0bc10e1724391e8b2d90e4fd6d1418e8aee5eb37014d5cec4dd6c883b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b96fce155b4aa905d309d9d9985a3973d36a6bce51011cb886c15c868bb6e756",
+    "raw_response_text_sha256": "1414fb9accee5a907f314190ee51a80e0332492d65eb2a46260bbda4e93a5487"
+  },
+  "api_metadata": {
+    "id": "resp_060010c93a45df33006b060524a69087d28416bddd5a4bb55d",
+    "model": "gpt-6-luna",
+    "created_at": 1795556644.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1424,
+      "input_tokens_details": {
+        "cache_write_tokens": 1421,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1421
+        }
+      },
+      "output_tokens": 303,
+      "output_tokens_details": {
+        "reasoning_tokens": 158
+      },
+      "total_tokens": 1727
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An Ombudsman investigation into secrecy and transparency in local government.\",\n  \"climate_relevance\": \"Climate change appears only in a separate, truncated snippet about councillors attending a UN climate conference; no substantive climate discourse is available.\",\n  \"reason\": \"The identifiable main article concerns local government governance. The climate-related line appears to be an unrelated snippet and only mentions conference attendance and reporting requirements.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:44:07Z",
+  "duration_seconds": 2.632,
+  "error": null
+}

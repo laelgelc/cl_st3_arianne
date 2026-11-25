@@ -1,0 +1,77 @@
+{
+  "article_id": "3863200",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/au/3863200.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/au/3863200.json"
+  },
+  "manifest_row": {
+    "article_id": "3863200",
+    "group": "2015_12",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/au/3863200.txt",
+    "now_field_2": "428",
+    "date_original": "15-12-04",
+    "date_iso": "2015-12-04",
+    "source_name": "NEWS.com.au",
+    "url": "http://www.news.com.au/world/breaking-news/well-be-left-with-climate-mess-youth/news-story/e08fc4f6bd1916e2d800f62e4e033e19",
+    "title": "We'll be left with climate mess: Youth",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-au.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "climate_role": "central",
+    "main_topic": "Young people advocating for climate action at the Paris climate summit",
+    "climate_relevance": "The text discusses climate impacts and displacement risks in the Maldives, youth participation in climate negotiations, emissions reduction, and international commitments to limit global warming.",
+    "reason": "Climate change and the summit are the central focus of the identifiable article, with substantial discussion of impacts, advocacy, and policy. The opening sentence about bushfire road closures appears unrelated to the rest of the text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "14a8c983b61e31d0548ac0589872cddd3f7f7df5608cf416a6d00776aeaa8a86",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c9d59005b700ae46984ecf85ed8abdc9f722b2ff06054688ec9b61603ab2a280",
+    "raw_response_text_sha256": "3fd44b7c5c9b1bc16103907439b8e64847867a763297f38b59f1f92096df837c"
+  },
+  "api_metadata": {
+    "id": "resp_0be5dc1eb56f39da006b061d7f218887d283cd6bdd46086a28",
+    "model": "gpt-6-luna",
+    "created_at": 1795562879.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1054,
+      "input_tokens_details": {
+        "cache_write_tokens": 1051,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1051
+        }
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 1296
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Young people advocating for climate action at the Paris climate summit\",\n  \"climate_relevance\": \"The text discusses climate impacts and displacement risks in the Maldives, youth participation in climate negotiations, emissions reduction, and international commitments to limit global warming.\",\n  \"reason\": \"Climate change and the summit are the central focus of the identifiable article, with substantial discussion of impacts, advocacy, and policy. The opening sentence about bushfire road closures appears unrelated to the rest of the text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:28:01Z",
+  "duration_seconds": 2.354,
+  "error": null
+}

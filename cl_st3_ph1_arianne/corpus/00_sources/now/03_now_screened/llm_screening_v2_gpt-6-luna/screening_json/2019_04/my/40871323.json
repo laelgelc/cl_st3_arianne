@@ -1,0 +1,77 @@
+{
+  "article_id": "40871323",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40871323.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40871323.json"
+  },
+  "manifest_row": {
+    "article_id": "40871323",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40871323.txt",
+    "now_field_2": "220",
+    "date_original": "19-04-23",
+    "date_iso": "2019-04-23",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/23/death-toll-from-philippine-earthquake-rises-to-16/",
+    "title": "Death toll from Philippine earthquake rises to 16",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Earthquake damage and casualties in the Philippines",
+    "climate_relevance": "Climate change appears only in a ministerial portfolio title in an unrelated news blurb; the sustainable-energy reference is too brief to provide meaningful climate discourse.",
+    "reason": "The identifiable main article concerns earthquakes. The brief prefatory items are unrelated snippets and contain no substantive discussion of climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5a4c2d325c7d7a426f4d6f4064f1d53a06b43c149a65f8f03fe6864b8efdf3fe",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "efed39859c49205bbc73e1042d2be296d585db1682de0f03898421de34044e05",
+    "raw_response_text_sha256": "bddf2235abf95e90a3e884370f143d3dc8095434b6da7feaaacf0b9d5e130fdb"
+  },
+  "api_metadata": {
+    "id": "resp_08448a98f33fe770006b062023a07487d2b57339c965c82418",
+    "model": "gpt-6-luna",
+    "created_at": 1795563555.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 804,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 1059
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Earthquake damage and casualties in the Philippines\",\n  \"climate_relevance\": \"Climate change appears only in a ministerial portfolio title in an unrelated news blurb; the sustainable-energy reference is too brief to provide meaningful climate discourse.\",\n  \"reason\": \"The identifiable main article concerns earthquakes. The brief prefatory items are unrelated snippets and contain no substantive discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:17Z",
+  "duration_seconds": 2.218,
+  "error": null
+}

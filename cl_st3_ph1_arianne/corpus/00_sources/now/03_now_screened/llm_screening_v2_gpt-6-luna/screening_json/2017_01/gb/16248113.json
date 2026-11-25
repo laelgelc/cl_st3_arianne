@@ -1,0 +1,77 @@
+{
+  "article_id": "16248113",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/gb/16248113.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/gb/16248113.json"
+  },
+  "manifest_row": {
+    "article_id": "16248113",
+    "group": "2017_01",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/gb/16248113.txt",
+    "now_field_2": "224",
+    "date_original": "17-01-05",
+    "date_iso": "2017-01-05",
+    "source_name": "The World Weekly",
+    "url": "http://www.theworldweekly.com/reader/view/magazine/2017-01-05/2017-year-of-the-dove/9559",
+    "title": "2017: Year of the dove?",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A New Year’s editorial about conflict, peace, and the prospects for reconciliation",
+    "climate_relevance": "Climate change appears only in an unrelated headline about Iran; the available editorial text contains no climate discourse.",
+    "reason": "The climate-related headline is a stray snippet, while the identifiable main article discusses conflict and peace.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4fbc2478b84951d1217e9bca8665eb50eb3f574a3e98cf315af320e2cc9a7be7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "414f63e29e30f4932dedee8354468ef5e443d24e561f464d5525ff24f2183ffa",
+    "raw_response_text_sha256": "562eb78c30aebd14560a319a27876f75a9c85e372ca9600ce7a176f8b3ea6cec"
+  },
+  "api_metadata": {
+    "id": "resp_01358b0726302422006b06076e1e2487d2b401a05b86db3245",
+    "model": "gpt-6-luna",
+    "created_at": 1795557230.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 811,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 1031
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A New Year’s editorial about conflict, peace, and the prospects for reconciliation\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated headline about Iran; the available editorial text contains no climate discourse.\",\n  \"reason\": \"The climate-related headline is a stray snippet, while the identifiable main article discusses conflict and peace.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:53:52Z",
+  "duration_seconds": 2.235,
+  "error": null
+}

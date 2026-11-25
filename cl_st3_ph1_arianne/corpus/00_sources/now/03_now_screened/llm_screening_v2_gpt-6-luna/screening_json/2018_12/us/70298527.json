@@ -1,0 +1,77 @@
+{
+  "article_id": "70298527",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/us/70298527.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/us/70298527.json"
+  },
+  "manifest_row": {
+    "article_id": "70298527",
+    "group": "2018_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/us/70298527.txt",
+    "now_field_2": "1052",
+    "date_original": "18-12-02",
+    "date_iso": "2018-12-02",
+    "source_name": "Fairbanks Daily News-Miner",
+    "url": "http://www.newsminer.com/features/sundays/book_reviews/inside-the-science-of-climate-change/article_69f56bb4-f519-11e8-a5cf-936ba1f02f8a.html",
+    "title": "Inside the science of climate change",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "A review of Mark Serreze’s book on Arctic climate change and the scientific evidence for human-caused warming.",
+    "climate_relevance": "The main article substantially discusses Arctic impacts, human causes of climate change, scientific evidence, and how researchers reached consensus.",
+    "reason": "The identifiable lead article is centrally about climate change. The supplied text also contains unrelated material about Little Rock shootings and reader comments, but these do not alter the climate relevance of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4bae95b0e9a0029c473be05226bc496251f40fdd53fe541ce1c0317a8e1ce0f0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0ae1147aaed0edad163733e2af5916f0f625b082c376b41202e9af137654458e",
+    "raw_response_text_sha256": "b0ad50e52109e68dc86cf09044f555cacf38d809140f50a63b24491ae166fc2a"
+  },
+  "api_metadata": {
+    "id": "resp_000314cf6013c161006b063bc9753c87d1a0b58129db1f3ffb",
+    "model": "gpt-6-luna",
+    "created_at": 1795570633.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3434,
+      "input_tokens_details": {
+        "cache_write_tokens": 3431,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3431
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 3662
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"A review of Mark Serreze’s book on Arctic climate change and the scientific evidence for human-caused warming.\",\n  \"climate_relevance\": \"The main article substantially discusses Arctic impacts, human causes of climate change, scientific evidence, and how researchers reached consensus.\",\n  \"reason\": \"The identifiable lead article is centrally about climate change. The supplied text also contains unrelated material about Little Rock shootings and reader comments, but these do not alter the climate relevance of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:37:16Z",
+  "duration_seconds": 2.856,
+  "error": null
+}

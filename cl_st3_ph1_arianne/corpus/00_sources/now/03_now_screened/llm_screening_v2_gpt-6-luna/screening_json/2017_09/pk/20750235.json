@@ -1,0 +1,77 @@
+{
+  "article_id": "20750235",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_09/pk/20750235.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_09/pk/20750235.json"
+  },
+  "manifest_row": {
+    "article_id": "20750235",
+    "group": "2017_09",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_09/pk/20750235.txt",
+    "now_field_2": "256",
+    "date_original": "17-09-25",
+    "date_iso": "2017-09-25",
+    "source_name": "Pakistan Observer",
+    "url": "http://pakobserver.net/nawaz-face-conspiracies-bravely/",
+    "title": "Nawaz to face all conspiracies bravely",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-09.txt\"]",
+    "metadata_article_files": "[\"text-17-09/text_17-09-PK.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Pakistani political news concerning Nawaz Sharif and the PML-N",
+    "climate_relevance": "Climate change appears only in a ministerial title; there is no meaningful discussion of climate issues.",
+    "reason": "The text focuses on political statements and election-related matters. The climate reference is incidental to a person's title and does not contribute to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "753be9d2024b1308cae477873e22d84373170b637234be4a2983f8ad2a3a1895",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f9ba82b3f19e226890f7e39bf619867b2485398ae6cc9d9a0e40655b83e170fb",
+    "raw_response_text_sha256": "49b3bbe23625d5a223f118c859872b2bae2fd767421f9f76f8e6d8e30f4678ec"
+  },
+  "api_metadata": {
+    "id": "resp_0d80cec9a79b5f6d006b060dc39b1487d2990faea2d52de112",
+    "model": "gpt-6-luna",
+    "created_at": 1795558851.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 824,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 187
+      },
+      "total_tokens": 1152
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Pakistani political news concerning Nawaz Sharif and the PML-N\",\n  \"climate_relevance\": \"Climate change appears only in a ministerial title; there is no meaningful discussion of climate issues.\",\n  \"reason\": \"The text focuses on political statements and election-related matters. The climate reference is incidental to a person's title and does not contribute to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:20:54Z",
+  "duration_seconds": 2.732,
+  "error": null
+}

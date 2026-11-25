@@ -1,0 +1,77 @@
+{
+  "article_id": "70063661",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/us/70063661.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/us/70063661.json"
+  },
+  "manifest_row": {
+    "article_id": "70063661",
+    "group": "2018_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/us/70063661.txt",
+    "now_field_2": "677",
+    "date_original": "18-09-24",
+    "date_iso": "2018-09-24",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/weather/2018/09/24/one-dc-cloudiest-rainiest-septembers-keeps-getting-worse/",
+    "title": "One of DC's cloudiest and rainiest Septembers keeps getting worse",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Unusually wet and cloudy weather in Washington, D.C., during September 2018",
+    "climate_relevance": "Climate change appears only in an author biography describing the writer's past work; the article itself discusses weather observations and records without climate-change analysis.",
+    "reason": "The climate-change reference is incidental biographical information and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "34f6be58d6d6faa2842e07938a6f81de0c7245ad44b45ba1c9c8535a348f537b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6f8f28409f34c2174429eefbc1171f09eba9904dfc52d032c4f3919ad2fa83f0",
+    "raw_response_text_sha256": "e8af19d5d76215cc125759bd0e82c50ec336f7f66b36f0f8152c3b1837bae5ee"
+  },
+  "api_metadata": {
+    "id": "resp_0d47c76b4259af94006b063ab74c0087d1ad7de3699ac89d0a",
+    "model": "gpt-6-luna",
+    "created_at": 1795570359.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1436,
+      "input_tokens_details": {
+        "cache_write_tokens": 1433,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1433
+        }
+      },
+      "output_tokens": 202,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 1638
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Unusually wet and cloudy weather in Washington, D.C., during September 2018\",\n  \"climate_relevance\": \"Climate change appears only in an author biography describing the writer's past work; the article itself discusses weather observations and records without climate-change analysis.\",\n  \"reason\": \"The climate-change reference is incidental biographical information and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:32:41Z",
+  "duration_seconds": 2.13,
+  "error": null
+}

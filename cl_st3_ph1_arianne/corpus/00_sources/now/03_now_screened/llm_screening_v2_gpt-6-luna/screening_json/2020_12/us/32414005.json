@@ -1,0 +1,77 @@
+{
+  "article_id": "32414005",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/32414005.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/32414005.json"
+  },
+  "manifest_row": {
+    "article_id": "32414005",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/32414005.txt",
+    "now_field_2": "241",
+    "date_original": "20-12-11",
+    "date_iso": "2020-12-11",
+    "source_name": "newsday.com",
+    "url": "https://projects.newsday.com/cartoons/topic/environment/page/8/",
+    "title": "Environment Archives - Page 8 of 9 - ND Cartoons",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "climate_role": "background",
+    "main_topic": "A collection of commentary on current events, including environmental and social issues",
+    "climate_relevance": "The text discusses California water use in the context of climate change, global-warming sceptics, and pessimism about climate change, but these are among several unrelated topics.",
+    "reason": "Climate change receives meaningful discussion, but the text is not primarily about climate; it is a multi-topic commentary.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c7ea5f301859aced6090c86ad073d92020be9643ba65f833e53bd5c9072953d2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8d55d82c7a4a409612eba47b336f7ad2d86ba8e5cab553e153f5c977b114a3be",
+    "raw_response_text_sha256": "e8de454048b83479e0c948666098dcbf2cdc5255581407ab1ac5f33f22e9571a"
+  },
+  "api_metadata": {
+    "id": "resp_02034a89dd2ea123006b061c8fc48c87d2a73b0acb72736ae0",
+    "model": "gpt-6-luna",
+    "created_at": 1795562639.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 809,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 392,
+      "output_tokens_details": {
+        "reasoning_tokens": 247
+      },
+      "total_tokens": 1201
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of commentary on current events, including environmental and social issues\",\n  \"climate_relevance\": \"The text discusses California water use in the context of climate change, global-warming sceptics, and pessimism about climate change, but these are among several unrelated topics.\",\n  \"reason\": \"Climate change receives meaningful discussion, but the text is not primarily about climate; it is a multi-topic commentary.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:24:02Z",
+  "duration_seconds": 3.204,
+  "error": null
+}

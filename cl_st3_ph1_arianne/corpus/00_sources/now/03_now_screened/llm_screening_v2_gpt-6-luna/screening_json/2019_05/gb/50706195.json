@@ -1,0 +1,77 @@
+{
+  "article_id": "50706195",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/gb/50706195.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/gb/50706195.json"
+  },
+  "manifest_row": {
+    "article_id": "50706195",
+    "group": "2019_05",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/gb/50706195.txt",
+    "now_field_2": "793",
+    "date_original": "19-05-25",
+    "date_iso": "2019-05-25",
+    "source_name": "Yahoo News UK",
+    "url": "https://uk.news.yahoo.com/men-don-t-abortions-no-050002207.html",
+    "title": "Men don't have abortions. That's no reason not to fight for women's rights",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Abortion rights, gender, and social equality",
+    "climate_relevance": "Climate change is briefly named as one of several issues in a sentence about political polarization, with no further discussion.",
+    "reason": "The article focuses on abortion rights and gender equality; the passing reference to climate change does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "03f711f3844e7886be41be74a9ab9da67aa0a2bd31c65c2a25828c4f8d4f515d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "08262c69fc8bf018eeeb98549399cf75faa122218d5e9fce8706d2ae2cf57561",
+    "raw_response_text_sha256": "9136df3fed47f666d6136a75bb7e73d51adecf5b591b7de8272a3b9d0d0b315d"
+  },
+  "api_metadata": {
+    "id": "resp_0b9e4474bf7c58e4006b062a7168d487d1963db1cae5d900a1",
+    "model": "gpt-6-luna",
+    "created_at": 1795566193.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1486,
+      "input_tokens_details": {
+        "cache_write_tokens": 1483,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1483
+        }
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 1705
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Abortion rights, gender, and social equality\",\n  \"climate_relevance\": \"Climate change is briefly named as one of several issues in a sentence about political polarization, with no further discussion.\",\n  \"reason\": \"The article focuses on abortion rights and gender equality; the passing reference to climate change does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:23:15Z",
+  "duration_seconds": 2.335,
+  "error": null
+}

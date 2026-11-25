@@ -1,0 +1,77 @@
+{
+  "article_id": "70282730",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/us/70282730.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/us/70282730.json"
+  },
+  "manifest_row": {
+    "article_id": "70282730",
+    "group": "2018_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/us/70282730.txt",
+    "now_field_2": "610",
+    "date_original": "18-11-27",
+    "date_iso": "2018-11-27",
+    "source_name": "The Mercury News",
+    "url": "https://www.mercurynews.com/2018/11/27/new-land-deal-links-31000-acres-of-open-space-south-of-san-jose/",
+    "title": "New land deal links 31000 acres of open space south of San Jose",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Acquisition and protection of open space in Santa Clara County",
+    "climate_relevance": "Climate change appears only in the author biography's list of topics he covers; the article itself does not discuss it.",
+    "reason": "The article focuses on land conservation, wildlife corridors, trails, and a fire break. Its reference to dry conditions and a past wildfire is not connected to climate change, which is mentioned only in boilerplate biographical text.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3fcc5043f2987d0ec7a22ce611d1cc840a223b1a0b5a250800b200594977c359",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3733d269bd21c0d981879da2ab84c99c957afe303ffa489b8304b73d45c0754c",
+    "raw_response_text_sha256": "30623571a83040647e1a343e5a821c32e1226f0ed91708e997edb4d12bf1ccb9"
+  },
+  "api_metadata": {
+    "id": "resp_08c50bc69311446e006b063bb34fe487d187a75ed76ae20e14",
+    "model": "gpt-6-luna",
+    "created_at": 1795570611.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1271,
+      "input_tokens_details": {
+        "cache_write_tokens": 1268,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1268
+        }
+      },
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 1479
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Acquisition and protection of open space in Santa Clara County\",\n  \"climate_relevance\": \"Climate change appears only in the author biography's list of topics he covers; the article itself does not discuss it.\",\n  \"reason\": \"The article focuses on land conservation, wildlife corridors, trails, and a fire break. Its reference to dry conditions and a past wildfire is not connected to climate change, which is mentioned only in boilerplate biographical text.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:36:53Z",
+  "duration_seconds": 2.689,
+  "error": null
+}

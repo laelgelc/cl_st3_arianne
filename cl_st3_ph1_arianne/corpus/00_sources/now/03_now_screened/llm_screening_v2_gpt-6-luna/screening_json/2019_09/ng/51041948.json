@@ -1,0 +1,77 @@
+{
+  "article_id": "51041948",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ng/51041948.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ng/51041948.json"
+  },
+  "manifest_row": {
+    "article_id": "51041948",
+    "group": "2019_09",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ng/51041948.txt",
+    "now_field_2": "720",
+    "date_original": "19-09-16",
+    "date_iso": "2019-09-16",
+    "source_name": "blueprint.ng",
+    "url": "https://www.blueprint.ng/anchor-insurance-unveils-2-products-to-deepen-growth/",
+    "title": "Anchor Insurance unveils 2 products to deepen growth ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Launch of travel and agricultural insurance products in Nigeria",
+    "climate_relevance": "The main article discusses agricultural insurance coverage for hazards such as drought and flood but does not connect them to climate change. Climate change appears only in a separate, truncated column snippet about Greta Thunberg and world leaders’ inaction.",
+    "reason": "The identifiable main article is about insurance products, and the climate reference belongs to an unrelated snippet rather than the article’s substantive discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "07cb58ba81cb8d33d2e112c7aa3243e3a971f6411dfa5c363d251f6dca33cdd2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "17099f84d418b41b2c5ada5f9fe20b4cd396dcbec47c5c0253fc77f5a75a06ca",
+    "raw_response_text_sha256": "9726e44fdf762e23a389d624a779c26ad7a3739ba573312ea2b048011a3ff830"
+  },
+  "api_metadata": {
+    "id": "resp_0a8085cec5bddfc1006b062b9dc4f487d18c817907d8a9017d",
+    "model": "gpt-6-luna",
+    "created_at": 1795566493.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1430,
+      "input_tokens_details": {
+        "cache_write_tokens": 1427,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1427
+        }
+      },
+      "output_tokens": 379,
+      "output_tokens_details": {
+        "reasoning_tokens": 218
+      },
+      "total_tokens": 1809
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Launch of travel and agricultural insurance products in Nigeria\",\n  \"climate_relevance\": \"The main article discusses agricultural insurance coverage for hazards such as drought and flood but does not connect them to climate change. Climate change appears only in a separate, truncated column snippet about Greta Thunberg and world leaders’ inaction.\",\n  \"reason\": \"The identifiable main article is about insurance products, and the climate reference belongs to an unrelated snippet rather than the article’s substantive discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:28:16Z",
+  "duration_seconds": 2.86,
+  "error": null
+}

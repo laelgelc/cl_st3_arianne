@@ -1,0 +1,77 @@
+{
+  "article_id": "85566836",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85566836.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85566836.json"
+  },
+  "manifest_row": {
+    "article_id": "85566836",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85566836.txt",
+    "now_field_2": "225",
+    "date_original": "20-08-02",
+    "date_iso": "2020-08-02",
+    "source_name": "The Denver Post",
+    "url": "https://www.denverpost.com/2020/08/02/denver-post-teen-columnists-election-2020/",
+    "title": "The Denver Post is looking to add Teen Columnists to our opinion section. Learn more here.",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "A call for young Coloradans to submit opinions on issues in the November ballot",
+    "climate_relevance": "Climate change appears only as one item in a list of possible submission topics; the text offers no discussion of it.",
+    "reason": "The identifiable main text solicits opinion submissions and merely names climate change in Colorado as a topic. A separate college-related opinion excerpt appears after the 'More in Opinion' heading.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bf92d40ddb0d67ff1525445eda3de8ed7e8ffde361a2caed52639733d18481a4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0a9c4d4b90c1614177984777fb0b305f9679a79736b475cb8f00beb8032c27b8",
+    "raw_response_text_sha256": "c591f6b24fd5c55ea6005f64e64559851b3f74038db917da735c2ff6d797bbc1"
+  },
+  "api_metadata": {
+    "id": "resp_08b52bccc9c7b1eb006b064c67041c87d1980d499f08c89985",
+    "model": "gpt-6-luna",
+    "created_at": 1795574887.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 789,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 279,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 1068
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A call for young Coloradans to submit opinions on issues in the November ballot\",\n  \"climate_relevance\": \"Climate change appears only as one item in a list of possible submission topics; the text offers no discussion of it.\",\n  \"reason\": \"The identifiable main text solicits opinion submissions and merely names climate change in Colorado as a topic. A separate college-related opinion excerpt appears after the 'More in Opinion' heading.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:48:10Z",
+  "duration_seconds": 3.129,
+  "error": null
+}

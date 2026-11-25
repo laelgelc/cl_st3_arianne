@@ -1,0 +1,77 @@
+{
+  "article_id": "40825555",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40825555.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40825555.json"
+  },
+  "manifest_row": {
+    "article_id": "40825555",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40825555.txt",
+    "now_field_2": "670",
+    "date_original": "19-04-10",
+    "date_iso": "2019-04-10",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/11/johor-mb-to-be-chosen-by-govt-not-royal-family/",
+    "title": "Johor MB to be chosen by govt, not royal family",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Johor political succession and Islamic finance",
+    "climate_relevance": "A separate introductory news item mentions sustainable energy solutions and expected investment, but the identifiable main article does not discuss climate change.",
+    "reason": "The climate-related material appears only in an unrelated news snippet; the main article concerns Malaysian politics and Islamic finance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1e9c21bf8fdf16e241fce1f29d080cfc3a49ff7ba99fb3c0fbb296dbe8414e46",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a5e897a68d7dc3bf6a561179d616cf0f54242b8d64cc2a15450ef71981a1aff4",
+    "raw_response_text_sha256": "9aae42870ffbe324126b5a3e01c2f18ff4c5c7bdf039eac734fe5c6a34ce250b"
+  },
+  "api_metadata": {
+    "id": "resp_0b1f9a4c94371abd006b061fe6a79c87d2a33757a9dfafba72",
+    "model": "gpt-6-luna",
+    "created_at": 1795563494.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1404,
+      "input_tokens_details": {
+        "cache_write_tokens": 1401,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1401
+        }
+      },
+      "output_tokens": 379,
+      "output_tokens_details": {
+        "reasoning_tokens": 246
+      },
+      "total_tokens": 1783
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Johor political succession and Islamic finance\",\n  \"climate_relevance\": \"A separate introductory news item mentions sustainable energy solutions and expected investment, but the identifiable main article does not discuss climate change.\",\n  \"reason\": \"The climate-related material appears only in an unrelated news snippet; the main article concerns Malaysian politics and Islamic finance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:17Z",
+  "duration_seconds": 3.162,
+  "error": null
+}

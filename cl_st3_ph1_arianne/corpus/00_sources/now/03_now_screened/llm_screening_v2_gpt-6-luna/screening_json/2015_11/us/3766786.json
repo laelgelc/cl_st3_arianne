@@ -1,0 +1,77 @@
+{
+  "article_id": "3766786",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_11/us/3766786.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_11/us/3766786.json"
+  },
+  "manifest_row": {
+    "article_id": "3766786",
+    "group": "2015_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_11/us/3766786.txt",
+    "now_field_2": "209",
+    "date_original": "15-11-10",
+    "date_iso": "2015-11-10",
+    "source_name": "Reuters",
+    "url": "http://www.reuters.com/article/us-chile-copper-water-idUSKCN0SZ2JY20151110",
+    "title": "Ocean will satisfy half of Chile copper miners' water needs by 2026",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-11-xje/15-11-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Chile's copper mining industry shifting toward seawater and desalination to meet water needs",
+    "climate_relevance": "The article links climate change to projected decreases in precipitation, contributing to freshwater constraints that are prompting miners to use ocean water.",
+    "reason": "The main focus is water supply for copper mining, while climate change is a meaningful background factor rather than the central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "94bfd2e6032cf3d65e9904e8ba483df30214925e5a72bb8c17ac75ab75445a6b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ef5ddb2c170bed3f0e03b94bf766eba2328d2d8bfe651f3dd3138a3da3a85bc7",
+    "raw_response_text_sha256": "6e1aebccf37e443c02fc4d6443b64636064d9cbb60d414d9ca63edef5d260eec"
+  },
+  "api_metadata": {
+    "id": "resp_01b1318e27a501f3006b061ce9013887d2b85fabfb86266f43",
+    "model": "gpt-6-luna",
+    "created_at": 1795562729.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 763,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 957
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Chile's copper mining industry shifting toward seawater and desalination to meet water needs\",\n  \"climate_relevance\": \"The article links climate change to projected decreases in precipitation, contributing to freshwater constraints that are prompting miners to use ocean water.\",\n  \"reason\": \"The main focus is water supply for copper mining, while climate change is a meaningful background factor rather than the central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:25:30Z",
+  "duration_seconds": 1.939,
+  "error": null
+}

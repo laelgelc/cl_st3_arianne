@@ -1,0 +1,77 @@
+{
+  "article_id": "50321600",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/au/50321600.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/au/50321600.json"
+  },
+  "manifest_row": {
+    "article_id": "50321600",
+    "group": "2019_01",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/au/50321600.txt",
+    "now_field_2": "527",
+    "date_original": "19-01-01",
+    "date_iso": "2019-01-01",
+    "source_name": "The Sydney Morning Herald",
+    "url": "https://www.smh.com.au/national/nsw/why-it-s-hot-on-the-beach-but-cold-in-the-surf-this-summer-20190102-p50p8d.html",
+    "title": "Why it's hot on the beach but cold in the surf this summer",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Cold ocean water at Sydney beaches, explained through Ekman transport and ocean currents",
+    "climate_relevance": "The article briefly links the writer’s observation of stronger and more frequent easterly winds to possible climate change.",
+    "reason": "The main focus is a short-term oceanographic explanation for cold surf and coastal conditions. Climate change appears in a meaningful but passing, speculative remark, so the text is relevant to broader discourse but is not core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "95c7feae07df9388fcc689cfb9decc2f123afefeb62177a521f30c8c686eac51",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0dada5a4110daa78aadc9bedf1d9b0ed69a5faaab3764909e54a2df4cc4b3697",
+    "raw_response_text_sha256": "b92d270ab2e87a05cb4589a81ecb2d6a4f63a74dfddf0cec126a611fd6751487"
+  },
+  "api_metadata": {
+    "id": "resp_0ddb09867297ef9e006b062888a95487d1a6795e4c850cdf6d",
+    "model": "gpt-6-luna",
+    "created_at": 1795565704.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1192,
+      "input_tokens_details": {
+        "cache_write_tokens": 1189,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1189
+        }
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 1460
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Cold ocean water at Sydney beaches, explained through Ekman transport and ocean currents\",\n  \"climate_relevance\": \"The article briefly links the writer’s observation of stronger and more frequent easterly winds to possible climate change.\",\n  \"reason\": \"The main focus is a short-term oceanographic explanation for cold surf and coastal conditions. Climate change appears in a meaningful but passing, speculative remark, so the text is relevant to broader discourse but is not core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:15:07Z",
+  "duration_seconds": 3.395,
+  "error": null
+}

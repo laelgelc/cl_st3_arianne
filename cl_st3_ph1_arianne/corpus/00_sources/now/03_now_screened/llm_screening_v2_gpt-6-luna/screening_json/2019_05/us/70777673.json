@@ -1,0 +1,77 @@
+{
+  "article_id": "70777673",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/us/70777673.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/us/70777673.json"
+  },
+  "manifest_row": {
+    "article_id": "70777673",
+    "group": "2019_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/us/70777673.txt",
+    "now_field_2": "983",
+    "date_original": "19-05-16",
+    "date_iso": "2019-05-16",
+    "source_name": "Nasdaq",
+    "url": "https://www.nasdaq.com/press-release/opening-of-new-dutch-wind-farm-puts-philips-on-course-to-becoming-carbon-neutral-by-2020-20190516-00085",
+    "title": "Opening of new Dutch wind farm puts Philips on course to becoming ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "climate_role": "central",
+    "main_topic": "Philips’s renewable-energy procurement and commitment to become carbon neutral",
+    "climate_relevance": "The main article focuses on renewable energy, emissions reduction, carbon neutrality, and corporate climate commitments.",
+    "reason": "Climate mitigation is central to the identifiable Philips press release, which describes wind-power agreements and the company’s progress toward carbon neutrality. Unrelated Nasdaq settings and ad-blocker text appear after the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f4ea673c575c741bd0ca5c19655634151ef75a6ade2419fa6b972995d74cb108",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f197954dbeb122bd94b643c10c8e2d111a5de7cce737c0d6f189fc1d03cc6973",
+    "raw_response_text_sha256": "188bacd00fd32982cb962ce8edb0851721d856960f93ab37f2aaf622910d35ca"
+  },
+  "api_metadata": {
+    "id": "resp_02ca1207276ec487006b063f1487d087d1a29117c16800e96d",
+    "model": "gpt-6-luna",
+    "created_at": 1795571476.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1781,
+      "input_tokens_details": {
+        "cache_write_tokens": 1778,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1778
+        }
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 2025
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Philips’s renewable-energy procurement and commitment to become carbon neutral\",\n  \"climate_relevance\": \"The main article focuses on renewable energy, emissions reduction, carbon neutrality, and corporate climate commitments.\",\n  \"reason\": \"Climate mitigation is central to the identifiable Philips press release, which describes wind-power agreements and the company’s progress toward carbon neutrality. Unrelated Nasdaq settings and ad-blocker text appear after the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:51:18Z",
+  "duration_seconds": 2.496,
+  "error": null
+}

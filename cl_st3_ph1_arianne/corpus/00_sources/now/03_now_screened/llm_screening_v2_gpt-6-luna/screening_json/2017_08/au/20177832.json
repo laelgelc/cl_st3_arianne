@@ -1,0 +1,77 @@
+{
+  "article_id": "20177832",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/au/20177832.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/au/20177832.json"
+  },
+  "manifest_row": {
+    "article_id": "20177832",
+    "group": "2017_08",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/au/20177832.txt",
+    "now_field_2": "733",
+    "date_original": "17-08-24",
+    "date_iso": "2017-08-24",
+    "source_name": "The Sydney Morning Herald",
+    "url": "http://www.smh.com.au/business/comment-and-analysis/walking-the-walk-to-the-sensible-centre-20170823-gy2wcz.html",
+    "title": "One man who walking the walk to the sensible centre",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Homelessness and a Salvation Army campaign for bipartisan action",
+    "climate_relevance": "Climate change appears only in a brief list of issues John Brumby had discussed, alongside energy policy and negative gearing.",
+    "reason": "The article is substantially about homelessness; the climate reference is a passing mention without meaningful discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b163c91346c7bd1946a16db17f10f9b9b8cf478b022cabb4bb68d52e40a3a245",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "293be2a17e9ca621cfb28d83c6691b8e587963918a11befc1d04df987cc7ec66",
+    "raw_response_text_sha256": "ce3b5a371c2efb76c444903492161987fc321b81b79c52fd953561929cf81408"
+  },
+  "api_metadata": {
+    "id": "resp_05b6197b2db70719006b060cf5d19c87d29728f460610e3e13",
+    "model": "gpt-6-luna",
+    "created_at": 1795558645.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1442,
+      "input_tokens_details": {
+        "cache_write_tokens": 1439,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1439
+        }
+      },
+      "output_tokens": 296,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 1738
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Homelessness and a Salvation Army campaign for bipartisan action\",\n  \"climate_relevance\": \"Climate change appears only in a brief list of issues John Brumby had discussed, alongside energy policy and negative gearing.\",\n  \"reason\": \"The article is substantially about homelessness; the climate reference is a passing mention without meaningful discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:28Z",
+  "duration_seconds": 2.316,
+  "error": null
+}

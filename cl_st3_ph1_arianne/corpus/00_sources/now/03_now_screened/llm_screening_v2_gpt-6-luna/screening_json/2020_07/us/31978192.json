@@ -1,0 +1,77 @@
+{
+  "article_id": "31978192",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/31978192.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/31978192.json"
+  },
+  "manifest_row": {
+    "article_id": "31978192",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/31978192.txt",
+    "now_field_2": "36752",
+    "date_original": "20-07-26",
+    "date_iso": "2020-07-26",
+    "source_name": "ottawacitizen.com",
+    "url": "https://ottawacitizen.com/category/business/energy/feed.xml",
+    "title": "Ottawa Citizen - RSS Feed",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us8.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "climate_role": "substantial",
+    "main_topic": "Public opinion on Canadian energy policy, pipelines, carbon pricing, and climate change",
+    "climate_relevance": "The opening article examines how Canadians view climate and energy issues, including carbon pricing, emissions reductions, and tensions between climate goals and pipeline development. The feed also contains several other substantial climate-related articles.",
+    "reason": "The identifiable opening article is substantially about public debate on energy policy and climate change, making it relevant to core climate coverage. The supplied text is an aggregation of many separate RSS items, including unrelated stories, rather than a single article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "449ac2c554428ff125e15c91f7d3e1b09fe6a94df3bdbd5e0a77081b5a180d30",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3c5107c400c2ae8cda58ac60185308fa1ac3a42dcc0bce9eb1e6107f462b4683",
+    "raw_response_text_sha256": "ae06923590a2fbafec81318a835940178690873a91c5a81c52f8ea5a63c348f2"
+  },
+  "api_metadata": {
+    "id": "resp_0dbbd5ba669242c1006b061a7f1a9087d2b42019734e08f42e",
+    "model": "gpt-6-luna",
+    "created_at": 1795562111.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 73756,
+      "input_tokens_details": {
+        "cache_write_tokens": 73753,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 73753
+        }
+      },
+      "output_tokens": 405,
+      "output_tokens_details": {
+        "reasoning_tokens": 230
+      },
+      "total_tokens": 74161
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Public opinion on Canadian energy policy, pipelines, carbon pricing, and climate change\",\n  \"climate_relevance\": \"The opening article examines how Canadians view climate and energy issues, including carbon pricing, emissions reductions, and tensions between climate goals and pipeline development. The feed also contains several other substantial climate-related articles.\",\n  \"reason\": \"The identifiable opening article is substantially about public debate on energy policy and climate change, making it relevant to core climate coverage. The supplied text is an aggregation of many separate RSS items, including unrelated stories, rather than a single article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:15:14Z",
+  "duration_seconds": 3.537,
+  "error": null
+}

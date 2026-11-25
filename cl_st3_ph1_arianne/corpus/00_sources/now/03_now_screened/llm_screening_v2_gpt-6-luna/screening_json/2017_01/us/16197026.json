@@ -1,0 +1,77 @@
+{
+  "article_id": "16197026",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/us/16197026.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/us/16197026.json"
+  },
+  "manifest_row": {
+    "article_id": "16197026",
+    "group": "2017_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/us/16197026.txt",
+    "now_field_2": "802",
+    "date_original": "17-01-02",
+    "date_iso": "2017-01-02",
+    "source_name": "NJ.com",
+    "url": "http://www.nj.com/atlantic/index.ssf/2017/01/annual_bird_count_tracks_progress_of_njs_avian_spe.html",
+    "title": "Annual bird count tracks progress of N.J. avian population",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "The Christmas Bird Count and changes in bird populations and wintering ranges.",
+    "climate_relevance": "The article notes that the U.S. Environmental Protection Agency has used bird-count data as an indicator of climate change, but climate change is not its main focus.",
+    "reason": "The text is primarily about citizen-science bird counting and bird conservation. Its explicit climate-change reference is meaningful but brief, so it is relevant as peripheral discourse rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7298ed4f517e79bd4102729d86f59ec7b9f2cac8bae4e91e11f43167d6d75994",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6b062e464d5291fdd8d8e5ca5fb97d306f476f4f0cbbd099a95727564ae407e6",
+    "raw_response_text_sha256": "ef4cf631344a4bf4234a0decfd02f8ce53ae0c38a2ba27f5b243a94c0ac8b265"
+  },
+  "api_metadata": {
+    "id": "resp_057fe679650df31f006b0607650a9c87d2b45d9f56c381f63e",
+    "model": "gpt-6-luna",
+    "created_at": 1795557221.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1581,
+      "input_tokens_details": {
+        "cache_write_tokens": 1578,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1578
+        }
+      },
+      "output_tokens": 243,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 1824
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The Christmas Bird Count and changes in bird populations and wintering ranges.\",\n  \"climate_relevance\": \"The article notes that the U.S. Environmental Protection Agency has used bird-count data as an indicator of climate change, but climate change is not its main focus.\",\n  \"reason\": \"The text is primarily about citizen-science bird counting and bird conservation. Its explicit climate-change reference is meaningful but brief, so it is relevant as peripheral discourse rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:53:42Z",
+  "duration_seconds": 2.041,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "82373201",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82373201.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82373201.json"
+  },
+  "manifest_row": {
+    "article_id": "82373201",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82373201.txt",
+    "now_field_2": "7478",
+    "date_original": "19-11-27",
+    "date_iso": "2019-11-27",
+    "source_name": "The Arizona Republic",
+    "url": "https://www.azcentral.com/story/news/50-states/2019/11/27/subway-thanksgiving-high-horse-gift-wrap-wars-news-around-states/40714889/",
+    "title": "A subway Thanksgiving, too-high horse, gift wrap wars: News from around our 50 states",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "A roundup of unrelated state and local news briefs",
+    "climate_relevance": "The Oregon brief discusses using king-tide photographs to help scientists understand how communities may be affected by climate change and plan for rising seas. A separate brief mentions potential climate-change impacts on platypus habitat.",
+    "reason": "Climate change is not the focus of the roundup, but the Oregon item contains meaningful discourse about climate impacts and sea-level rise, making the text relevant as peripheral coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0c5e65937b0c6ffd5534116e3a49fe4af375f1ca6604bb63bcc2830db264cb04",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fd804dc17d655f262b282546b4b3166abca88a807242e1783e9c22480baa9405",
+    "raw_response_text_sha256": "5b9dcfcc11027f4fd4f51821220f328eb2b88b311ca0b5971356d00ae4ca7e4f"
+  },
+  "api_metadata": {
+    "id": "resp_0786486f565618c5006b0648682af487d19c65f8fb00a6c5e1",
+    "model": "gpt-6-luna",
+    "created_at": 1795573864.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10020,
+      "input_tokens_details": {
+        "cache_write_tokens": 10017,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 10017
+        }
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 10284
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A roundup of unrelated state and local news briefs\",\n  \"climate_relevance\": \"The Oregon brief discusses using king-tide photographs to help scientists understand how communities may be affected by climate change and plan for rising seas. A separate brief mentions potential climate-change impacts on platypus habitat.\",\n  \"reason\": \"Climate change is not the focus of the roundup, but the Oregon item contains meaningful discourse about climate impacts and sea-level rise, making the text relevant as peripheral coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:31:07Z",
+  "duration_seconds": 3.024,
+  "error": null
+}

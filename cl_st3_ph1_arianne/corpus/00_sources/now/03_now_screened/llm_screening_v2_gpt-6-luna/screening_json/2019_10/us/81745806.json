@@ -1,0 +1,77 @@
+{
+  "article_id": "81745806",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81745806.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81745806.json"
+  },
+  "manifest_row": {
+    "article_id": "81745806",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81745806.txt",
+    "now_field_2": "436",
+    "date_original": "19-10-22",
+    "date_iso": "2019-10-22",
+    "source_name": "Moscow-Pullman Daily News",
+    "url": "https://dnews.com/local/city-council-approves-k-request-from-recovery-center/article_9ba275d4-9210-5ae9-b02e-04fe813d1af9.html",
+    "title": "City council approves $10K request from recovery center",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "A candidate forum and unrelated local news items",
+    "climate_relevance": "Climate change is named among topics discussed at a city council candidate forum, but no climate-related positions or discussion are provided.",
+    "reason": "The only climate reference is a passing mention in a brief forum description; the remaining text concerns unrelated local news.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5ad143fb4f1f531462d519b5e799e1450b26d8958cf45013b86d2acff3e54d0c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3eb802584d9d53e5ef56d83f2aa5ec69539f521f8e2f173874a3f0077378e156",
+    "raw_response_text_sha256": "9c86219b8db575704a65800daa9b99e0520b8f4d03bebdc224a3f4ed9a06ff6e"
+  },
+  "api_metadata": {
+    "id": "resp_0ee205d545765f60006b0647a7e06887d1b491d9981b9a3145",
+    "model": "gpt-6-luna",
+    "created_at": 1795573671.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1025,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 1301
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A candidate forum and unrelated local news items\",\n  \"climate_relevance\": \"Climate change is named among topics discussed at a city council candidate forum, but no climate-related positions or discussion are provided.\",\n  \"reason\": \"The only climate reference is a passing mention in a brief forum description; the remaining text concerns unrelated local news.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:27:54Z",
+  "duration_seconds": 2.485,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "60048778",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/pk/60048778.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/pk/60048778.json"
+  },
+  "manifest_row": {
+    "article_id": "60048778",
+    "group": "2018_09",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/pk/60048778.txt",
+    "now_field_2": "256",
+    "date_original": "18-09-21",
+    "date_iso": "2018-09-21",
+    "source_name": "Daily Times",
+    "url": "https://dailytimes.com.pk/301104/draft-of-pakistans-first-national-wildlife-policy-finalised/",
+    "title": "Draft of Pakistan's first National Wildlife Policy finalised",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Pakistan's draft National Wildlife Policy and wildlife conservation",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Climate Change; the text does not discuss climate change or its implications.",
+    "reason": "The article focuses on wildlife conservation, biodiversity, protected areas, and related environmental agreements. The ministry name is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8c62e00ed327b9e1899fe076aa39271da41d7b83cf4c47222d8ba45be4012938",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "94d7b380dd958b986926ec7e1dd13a96557e20b2b904d4ada4d0e5e86570e82c",
+    "raw_response_text_sha256": "70e63b55b77a713d349cf88ef8f0f716f8b4b686fcaffebf4c275f4b7d833022"
+  },
+  "api_metadata": {
+    "id": "resp_0aa24e7054fade7e006b0630d6194887d193d9eb3a11e68a7a",
+    "model": "gpt-6-luna",
+    "created_at": 1795567830.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 796,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 994
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Pakistan's draft National Wildlife Policy and wildlife conservation\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Climate Change; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on wildlife conservation, biodiversity, protected areas, and related environmental agreements. The ministry name is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:50:31Z",
+  "duration_seconds": 1.722,
+  "error": null
+}

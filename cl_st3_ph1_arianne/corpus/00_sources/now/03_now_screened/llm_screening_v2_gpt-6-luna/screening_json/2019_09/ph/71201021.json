@@ -1,0 +1,77 @@
+{
+  "article_id": "71201021",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ph/71201021.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ph/71201021.json"
+  },
+  "manifest_row": {
+    "article_id": "71201021",
+    "group": "2019_09",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ph/71201021.txt",
+    "now_field_2": "345",
+    "date_original": "19-09-11",
+    "date_iso": "2019-09-11",
+    "source_name": "topgear.com.ph",
+    "url": "https://www.topgear.com.ph/features/feature-articles/2020-land-rover-defender-video-a4354-20190911",
+    "title": "Everything you need to know about the 2020 Land Rover Defender",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ph.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.87,
+    "climate_role": "substantial",
+    "main_topic": "Extreme E and its stated use of electric motorsport to raise awareness of climate change and environmental damage",
+    "climate_relevance": "The Extreme E portion discusses climate awareness, carbon emissions and footprint reduction, and environmental impacts including damaged landscapes and disappearing glaciers. The Defender portion only briefly mentions sustainability and a future plug-in hybrid version.",
+    "reason": "Although the Extreme E coverage is about a motorsport championship, climate and environmental concerns are a substantial part of its stated purpose and the discussion of how it will operate. The supplied text also contains a separate Land Rover Defender article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4d1259f8c9996ae5fdc20e565afa43609e0c965e2ae4b2ef6ac2d6b9ef0ea981",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c014493da2bfadda917c05284ac54601bc8c2adb1e29e6f361a00f2b963a3a7d",
+    "raw_response_text_sha256": "d99ec51f4a8c24734c2b19dbfb83bbb2b5ff08d8a4aafc41e3808ac10ebededc"
+  },
+  "api_metadata": {
+    "id": "resp_0b72c5517650575e006b064059101487d1ac5f8a1ec6f787f3",
+    "model": "gpt-6-luna",
+    "created_at": 1795571801.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1812,
+      "input_tokens_details": {
+        "cache_write_tokens": 1809,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1809
+        }
+      },
+      "output_tokens": 431,
+      "output_tokens_details": {
+        "reasoning_tokens": 253
+      },
+      "total_tokens": 2243
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Extreme E and its stated use of electric motorsport to raise awareness of climate change and environmental damage\",\n  \"climate_relevance\": \"The Extreme E portion discusses climate awareness, carbon emissions and footprint reduction, and environmental impacts including damaged landscapes and disappearing glaciers. The Defender portion only briefly mentions sustainability and a future plug-in hybrid version.\",\n  \"reason\": \"Although the Extreme E coverage is about a motorsport championship, climate and environmental concerns are a substantial part of its stated purpose and the discussion of how it will operate. The supplied text also contains a separate Land Rover Defender article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:56:45Z",
+  "duration_seconds": 4.912,
+  "error": null
+}

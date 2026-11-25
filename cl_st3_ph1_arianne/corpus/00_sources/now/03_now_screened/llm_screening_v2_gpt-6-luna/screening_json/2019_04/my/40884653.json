@@ -1,0 +1,77 @@
+{
+  "article_id": "40884653",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40884653.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40884653.json"
+  },
+  "manifest_row": {
+    "article_id": "40884653",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40884653.txt",
+    "now_field_2": "383",
+    "date_original": "19-04-26",
+    "date_iso": "2019-04-26",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/26/hyflux-seeks-possible-investment-from-middle-east/",
+    "title": "Hyflux seeks possible investment from Middle East",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Hyflux's financial restructuring and possible investment",
+    "climate_relevance": "A separate opening bullet mentions sustainable energy solutions and a minister whose portfolio includes climate change, but the article itself contains no meaningful climate discussion.",
+    "reason": "The identifiable main article concerns Hyflux's financial and legal troubles. The climate-related wording appears only in an unrelated brief and does not provide substantive discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "03af7896d8ab70fb8fef55f65d0a3c8b16890d018240ec7dac94340d90167ab7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cfb6d19ffc916e295d98c64d5de142dca03cfc466b05b90ca3c9ce9d7e9233cf",
+    "raw_response_text_sha256": "be13675ab420e8ef74bd93aa4ab7ddb588d0577c6a1788f79b4eee9323c8f591"
+  },
+  "api_metadata": {
+    "id": "resp_03ee704871a68016006b06203997a887d287d816d16a8980db",
+    "model": "gpt-6-luna",
+    "created_at": 1795563577.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1020,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 1309
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Hyflux's financial restructuring and possible investment\",\n  \"climate_relevance\": \"A separate opening bullet mentions sustainable energy solutions and a minister whose portfolio includes climate change, but the article itself contains no meaningful climate discussion.\",\n  \"reason\": \"The identifiable main article concerns Hyflux's financial and legal troubles. The climate-related wording appears only in an unrelated brief and does not provide substantive discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:39Z",
+  "duration_seconds": 2.386,
+  "error": null
+}

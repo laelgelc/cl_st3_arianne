@@ -1,0 +1,77 @@
+{
+  "article_id": "18794936",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/lk/18794936.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/lk/18794936.json"
+  },
+  "manifest_row": {
+    "article_id": "18794936",
+    "group": "2017_06",
+    "country_code": "lk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/lk/18794936.txt",
+    "now_field_2": "1595",
+    "date_original": "17-06-03",
+    "date_iso": "2017-06-03",
+    "source_name": "Lankaweb",
+    "url": "http://www.lankaweb.com/news/items/2017/06/03/post-deluge-forget-megapolis-focus-on-relief-restoration-and-rebuilding/",
+    "title": "Post-deluge: Forget Megapolis. Focus on Relief, Restoration and ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-LK.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.9,
+    "climate_role": "passing",
+    "main_topic": "Sri Lanka’s flood recovery, urban development, infrastructure, and governance",
+    "climate_relevance": "Climate change is mentioned only in a brief aside about the United States withdrawing from the Paris Climate Change Accord. The article discusses floods and droughts but does not meaningfully connect them to climate change.",
+    "reason": "The article is primarily about disaster relief and rebuilding after floods, with no substantive climate-change discussion; the Accord reference is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "669e16ee3bfe8f254d64f207ed51efb416ae1af22e7898a259002895f1c857fd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "06af78ebfb7a1509f9ea86ad61176affc99270ae60caec194ff7e38af29998ed",
+    "raw_response_text_sha256": "1d5c5d2f432639a8410d8ee1f0597fc11a0e961a421e4ffca7d0702013a2e860"
+  },
+  "api_metadata": {
+    "id": "resp_05174bfeda40d74f006b060afa2d1887d2b940b1031a2670fa",
+    "model": "gpt-6-luna",
+    "created_at": 1795558138.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2437,
+      "input_tokens_details": {
+        "cache_write_tokens": 2434,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2434
+        }
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 173
+      },
+      "total_tokens": 2762
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Sri Lanka’s flood recovery, urban development, infrastructure, and governance\",\n  \"climate_relevance\": \"Climate change is mentioned only in a brief aside about the United States withdrawing from the Paris Climate Change Accord. The article discusses floods and droughts but does not meaningfully connect them to climate change.\",\n  \"reason\": \"The article is primarily about disaster relief and rebuilding after floods, with no substantive climate-change discussion; the Accord reference is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:09:00Z",
+  "duration_seconds": 2.756,
+  "error": null
+}

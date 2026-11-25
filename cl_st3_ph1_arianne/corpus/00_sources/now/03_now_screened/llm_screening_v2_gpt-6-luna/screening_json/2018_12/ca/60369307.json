@@ -1,0 +1,77 @@
+{
+  "article_id": "60369307",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ca/60369307.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ca/60369307.json"
+  },
+  "manifest_row": {
+    "article_id": "60369307",
+    "group": "2018_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ca/60369307.txt",
+    "now_field_2": "1985",
+    "date_original": "18-12-22",
+    "date_iso": "2018-12-22",
+    "source_name": "The Daily Courier",
+    "url": "http://www.kelownadailycourier.ca/life/article_98ab479a-0580-11e9-94a5-afbfb464bc62.html",
+    "title": "Outdoors: Skiing and cycling in same December week",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Outdoor recreation, skiing, cycling, and winter conditions in the Okanagan",
+    "climate_relevance": "The main article describes unusually warm December weather and snow conditions but does not meaningfully connect them to climate change. A final, apparently unrelated sentence links climate change to wildfires and forest infestations.",
+    "reason": "The identifiable main article is an outdoor recreation column, not climate coverage. The explicit climate-change reference occurs only in a separate snippet about the timber industry, so it is not part of the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4a41f2738384c6dfa22a74fbb0b88eb333c9209f23a10a872b1830ec4a7580f0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3164916de941fa9ac4a12f179223ae34156d5158905a35725b2bff371d9ea9d3",
+    "raw_response_text_sha256": "f1aefcea6e7cd7305493ac03c404824776491b00c0a1657099ce5d3262520284"
+  },
+  "api_metadata": {
+    "id": "resp_01ae809b87dea4d9006b0632579e3c87d1826b22b941d396ad",
+    "model": "gpt-6-luna",
+    "created_at": 1795568215.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3276,
+      "input_tokens_details": {
+        "cache_write_tokens": 3273,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3273
+        }
+      },
+      "output_tokens": 644,
+      "output_tokens_details": {
+        "reasoning_tokens": 468
+      },
+      "total_tokens": 3920
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Outdoor recreation, skiing, cycling, and winter conditions in the Okanagan\",\n  \"climate_relevance\": \"The main article describes unusually warm December weather and snow conditions but does not meaningfully connect them to climate change. A final, apparently unrelated sentence links climate change to wildfires and forest infestations.\",\n  \"reason\": \"The identifiable main article is an outdoor recreation column, not climate coverage. The explicit climate-change reference occurs only in a separate snippet about the timber industry, so it is not part of the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:57:00Z",
+  "duration_seconds": 4.928,
+  "error": null
+}

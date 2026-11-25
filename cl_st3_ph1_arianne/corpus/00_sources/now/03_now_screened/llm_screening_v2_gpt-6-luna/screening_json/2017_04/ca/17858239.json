@@ -1,0 +1,77 @@
+{
+  "article_id": "17858239",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/ca/17858239.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/ca/17858239.json"
+  },
+  "manifest_row": {
+    "article_id": "17858239",
+    "group": "2017_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/ca/17858239.txt",
+    "now_field_2": "927",
+    "date_original": "17-04-09",
+    "date_iso": "2017-04-09",
+    "source_name": "Toronto Star",
+    "url": "https://www.thestar.com/opinion/commentary/2017/04/09/former-presidents-vs-former-prime-ministers-watt.html",
+    "title": "Former presidents vs. former prime ministers: Watt",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "The changing role and political usefulness of former presidents and prime ministers",
+    "climate_relevance": "Climate change is mentioned only as an example of Al Gore's area of expertise.",
+    "reason": "The article focuses on former political leaders and their relationships with current leaders. Its single climate reference is incidental and does not develop climate-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3ec14f84321b9a24707413ec3fef23c73e96906806c4bff18dd7e5a9fc033c0e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "05a3bab80021b2ca0c15b79e842458079089dbb94c9e324d72c1a733570b7975",
+    "raw_response_text_sha256": "74da90d1cde8e574cb66bf9c613bcc2aa632ce6375e485c7e51755bfd9ba45fb"
+  },
+  "api_metadata": {
+    "id": "resp_0e97c67462796709006b0609803eac87d2b78d4fb713710b54",
+    "model": "gpt-6-luna",
+    "created_at": 1795557760.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1721,
+      "input_tokens_details": {
+        "cache_write_tokens": 1718,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1718
+        }
+      },
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1943
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The changing role and political usefulness of former presidents and prime ministers\",\n  \"climate_relevance\": \"Climate change is mentioned only as an example of Al Gore's area of expertise.\",\n  \"reason\": \"The article focuses on former political leaders and their relationships with current leaders. Its single climate reference is incidental and does not develop climate-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:02:42Z",
+  "duration_seconds": 2.2,
+  "error": null
+}

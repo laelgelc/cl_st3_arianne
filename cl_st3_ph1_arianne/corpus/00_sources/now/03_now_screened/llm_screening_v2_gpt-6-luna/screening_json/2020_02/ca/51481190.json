@@ -1,0 +1,77 @@
+{
+  "article_id": "51481190",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/ca/51481190.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/ca/51481190.json"
+  },
+  "manifest_row": {
+    "article_id": "51481190",
+    "group": "2020_02",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/ca/51481190.txt",
+    "now_field_2": "5767",
+    "date_original": "20-02-25",
+    "date_iso": "2020-02-25",
+    "source_name": "tvo.org",
+    "url": "https://www.tvo.org/ajax/schedule-ajax/2020-03-03",
+    "title": "www.<strong>tvo.org</strong>",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-ca2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "A television schedule and program listings",
+    "climate_relevance": "One program description says an indoor greenhouse environment is not susceptible to climate change, linking climate change to food growing.",
+    "reason": "The text is primarily a collection of unrelated television listings, not climate coverage. The greenhouse description contains a meaningful but brief climate-related statement, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "55b1f3efa3b1339889efd9d70c9091aafb97badcc5e501f522060327f2af5b58",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "402191c1e7be6e3dce94cf79ce3a1b970d35c6a7b8aca6058e769cfe54d9c9cf",
+    "raw_response_text_sha256": "af685838bfc2bf42657d5d5a467f7ad2fbd1f1074a157587ae6339f00ac025ab"
+  },
+  "api_metadata": {
+    "id": "resp_082c1b9bd5da9d1a006b062dcd06fc87d1a4f2821155e0ef89",
+    "model": "gpt-6-luna",
+    "created_at": 1795567053.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 26711,
+      "input_tokens_details": {
+        "cache_write_tokens": 26708,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 26708
+        }
+      },
+      "output_tokens": 302,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 27013
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A television schedule and program listings\",\n  \"climate_relevance\": \"One program description says an indoor greenhouse environment is not susceptible to climate change, linking climate change to food growing.\",\n  \"reason\": \"The text is primarily a collection of unrelated television listings, not climate coverage. The greenhouse description contains a meaningful but brief climate-related statement, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:37:35Z",
+  "duration_seconds": 2.8,
+  "error": null
+}

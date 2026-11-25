@@ -1,0 +1,77 @@
+{
+  "article_id": "70522757",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70522757.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70522757.json"
+  },
+  "manifest_row": {
+    "article_id": "70522757",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70522757.txt",
+    "now_field_2": "670",
+    "date_original": "19-02-17",
+    "date_iso": "2019-02-17",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00414/coastella-effect-great-for-kapiti-businesses.htm",
+    "title": "Coastella Effect Great for Kapiti Businesses",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The economic and tourism benefits of the Coastella music festival for local Kapiti businesses.",
+    "climate_relevance": "Climate change appears only in a separate brief snippet about Greenpeace's response to National Party environment proposals; it is not part of the identifiable main article.",
+    "reason": "The main article discusses a local music festival and its economic impact, with no meaningful climate discourse. The isolated climate reference is part of an unrelated snippet and does not make the main article relevant for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4812f0302a605fca7eb08baf9e638c063c27e3409f1b88f8c0372f5287904535",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "645b704b8536a1fba5e59df87ca216cb39816747fe604c03f1a489da21336a42",
+    "raw_response_text_sha256": "6ef7f4ba1348a57b862d0bbee62da64f8057e3933f721a9baf52ccc4f0b4b149"
+  },
+  "api_metadata": {
+    "id": "resp_060c4109b9676276006b063d395f9c87d1935453ee4505990e",
+    "model": "gpt-6-luna",
+    "created_at": 1795571001.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1381,
+      "input_tokens_details": {
+        "cache_write_tokens": 1378,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1378
+        }
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 1665
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The economic and tourism benefits of the Coastella music festival for local Kapiti businesses.\",\n  \"climate_relevance\": \"Climate change appears only in a separate brief snippet about Greenpeace's response to National Party environment proposals; it is not part of the identifiable main article.\",\n  \"reason\": \"The main article discusses a local music festival and its economic impact, with no meaningful climate discourse. The isolated climate reference is part of an unrelated snippet and does not make the main article relevant for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:24Z",
+  "duration_seconds": 2.976,
+  "error": null
+}

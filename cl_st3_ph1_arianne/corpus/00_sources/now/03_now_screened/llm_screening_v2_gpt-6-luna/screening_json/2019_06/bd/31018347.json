@@ -1,0 +1,77 @@
+{
+  "article_id": "31018347",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/bd/31018347.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/bd/31018347.json"
+  },
+  "manifest_row": {
+    "article_id": "31018347",
+    "group": "2019_06",
+    "country_code": "bd",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/bd/31018347.txt",
+    "now_field_2": "794",
+    "date_original": "19-06-25",
+    "date_iso": "2019-06-25",
+    "source_name": "theindependentbd.com",
+    "url": "http://www.theindependentbd.com/post/204822",
+    "title": "Bangladesh needs to treat over 1.5m new TB cases in next 5yrs",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-bd.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Bangladesh and USAID partnership to detect and treat tuberculosis",
+    "climate_relevance": "Climate change appears only in a list of USAID program aims, as increasing resilience to climate change; it is not discussed further.",
+    "reason": "The article is centrally about tuberculosis treatment and USAID assistance. The climate reference is a passing item in a general list of program areas and does not provide meaningful climate discourse. A fragment about an unrelated attack appears at the end.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "845c476bb1020ca30f398c9ffd4e3d58374368cae9edbe34ff10ca9bd5bf37e4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7c103b0a580cc0a75e4f97a60c65798afb1075cf7656a91d190bfd09cd994ac9",
+    "raw_response_text_sha256": "ab1e8ee9b5d95b48da8a02c1795f84431acdc79a27a54642e1695ec8b65d9dd5"
+  },
+  "api_metadata": {
+    "id": "resp_0a54f22dc831b7a2006b06160c88f487d2ac2955e126c38afd",
+    "model": "gpt-6-luna",
+    "created_at": 1795560972.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1547,
+      "input_tokens_details": {
+        "cache_write_tokens": 1544,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1544
+        }
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1792
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Bangladesh and USAID partnership to detect and treat tuberculosis\",\n  \"climate_relevance\": \"Climate change appears only in a list of USAID program aims, as increasing resilience to climate change; it is not discussed further.\",\n  \"reason\": \"The article is centrally about tuberculosis treatment and USAID assistance. The climate reference is a passing item in a general list of program areas and does not provide meaningful climate discourse. A fragment about an unrelated attack appears at the end.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:56:15Z",
+  "duration_seconds": 2.648,
+  "error": null
+}

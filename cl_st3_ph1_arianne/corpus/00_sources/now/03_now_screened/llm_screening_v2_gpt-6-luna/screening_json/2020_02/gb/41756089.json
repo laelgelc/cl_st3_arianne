@@ -1,0 +1,77 @@
+{
+  "article_id": "41756089",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/gb/41756089.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/gb/41756089.json"
+  },
+  "manifest_row": {
+    "article_id": "41756089",
+    "group": "2020_02",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/gb/41756089.txt",
+    "now_field_2": "338",
+    "date_original": "20-02-20",
+    "date_iso": "2020-02-20",
+    "source_name": "churchtimes.co.uk",
+    "url": "https://www.churchtimes.co.uk/articles/2020/21-february/news/world/attack-in-burkina-faso-church-kills-24-people",
+    "title": "Attack in Burkina Faso church kills 24 people",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.86,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An extremist attack on a church in Burkina Faso and the resulting deaths and displacement.",
+    "climate_relevance": "The later portion contains extensive discussion of the Church of England's net-zero target and climate action, but it appears to be a separate article or snippet rather than part of the report identified by the headline.",
+    "reason": "The identifiable main article concerns violence and displacement in Burkina Faso and contains no meaningful climate discussion. The substantial climate material appears to belong to an unrelated item, so it does not make the main article suitable for the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "76678eb26713e3fa8327ed17b0221e75667f4520994203bbb563503bd3804a5f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0cff5d72c5d617d9be6df4985086de8590984c532a3311bce81aa3266135473a",
+    "raw_response_text_sha256": "dd7e76e0780ab0a5615ad025f32a3b4126498b860774c4395612c63656a8513f"
+  },
+  "api_metadata": {
+    "id": "resp_037638f5e4012f82006b062310bcf887d2a8df8bf4092b3d61",
+    "model": "gpt-6-luna",
+    "created_at": 1795564304.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2116,
+      "input_tokens_details": {
+        "cache_write_tokens": 2113,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2113
+        }
+      },
+      "output_tokens": 820,
+      "output_tokens_details": {
+        "reasoning_tokens": 641
+      },
+      "total_tokens": 2936
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An extremist attack on a church in Burkina Faso and the resulting deaths and displacement.\",\n  \"climate_relevance\": \"The later portion contains extensive discussion of the Church of England's net-zero target and climate action, but it appears to be a separate article or snippet rather than part of the report identified by the headline.\",\n  \"reason\": \"The identifiable main article concerns violence and displacement in Burkina Faso and contains no meaningful climate discussion. The substantial climate material appears to belong to an unrelated item, so it does not make the main article suitable for the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:51:50Z",
+  "duration_seconds": 5.772,
+  "error": null
+}

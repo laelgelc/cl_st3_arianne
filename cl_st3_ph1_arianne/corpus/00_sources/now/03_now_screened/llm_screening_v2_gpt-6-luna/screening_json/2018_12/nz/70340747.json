@@ -1,0 +1,77 @@
+{
+  "article_id": "70340747",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/nz/70340747.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/nz/70340747.json"
+  },
+  "manifest_row": {
+    "article_id": "70340747",
+    "group": "2018_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/nz/70340747.txt",
+    "now_field_2": "1012",
+    "date_original": "18-12-16",
+    "date_iso": "2018-12-16",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/WO1812/S00111/may-days-in-britain.htm",
+    "title": "May Days in Britain",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Theresa May's leadership and Brexit politics",
+    "climate_relevance": "Climate change appears only in a separate news teaser about the UN Climate Change Conference, not in the main article.",
+    "reason": "The identifiable main article is political commentary about Brexit and Theresa May. The climate-related sentence is an unrelated snippet and does not provide meaningful climate discourse within the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f7c67a86e174e26b9a8d613756794d588419565f03f2ab9ce1d05796469f97d9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "df246673f29ae96e0afd77cada089f719f5c1af529dcbbea4f1a828c582cf4fd",
+    "raw_response_text_sha256": "0bc6877e6f81dc6e4eb71ec8bd3dc0badb0ec527eb26ccfed75a4e7414a4f630"
+  },
+  "api_metadata": {
+    "id": "resp_06e6d638aa0d8b42006b063c10997887d1ad273025abf96b71",
+    "model": "gpt-6-luna",
+    "created_at": 1795570704.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1763,
+      "input_tokens_details": {
+        "cache_write_tokens": 1760,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1760
+        }
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 2001
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Theresa May's leadership and Brexit politics\",\n  \"climate_relevance\": \"Climate change appears only in a separate news teaser about the UN Climate Change Conference, not in the main article.\",\n  \"reason\": \"The identifiable main article is political commentary about Brexit and Theresa May. The climate-related sentence is an unrelated snippet and does not provide meaningful climate discourse within the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:38:26Z",
+  "duration_seconds": 2.27,
+  "error": null
+}

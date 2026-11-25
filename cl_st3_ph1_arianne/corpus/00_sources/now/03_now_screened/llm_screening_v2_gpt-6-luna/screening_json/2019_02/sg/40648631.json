@@ -1,0 +1,77 @@
+{
+  "article_id": "40648631",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/sg/40648631.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/sg/40648631.json"
+  },
+  "manifest_row": {
+    "article_id": "40648631",
+    "group": "2019_02",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/sg/40648631.txt",
+    "now_field_2": "316",
+    "date_original": "19-02-21",
+    "date_iso": "2019-02-21",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/fao-warns-food-supply-threatened-declining-biodiversity-001247307.html",
+    "title": "FAO warns food supply threatened by declining biodiversity",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Declining biodiversity and threats to food production",
+    "climate_relevance": "Climate change is mentioned as a stress that biodiversity helps agricultural systems cope with.",
+    "reason": "The report focuses on biodiversity loss and food security, but it makes a meaningful connection between biodiversity and resilience to climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "50b170999e3cfc3e78bc244802555a0421660975d5e322f82e2e88c3e30f68af",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a01af092a386340fa9f40caf31379e0c2e247ee724f9fd1ca9530e028d3fecbe",
+    "raw_response_text_sha256": "77f21926040e50a89355cdec5a32378e159cea40559a68942e9ae06043fa1dec"
+  },
+  "api_metadata": {
+    "id": "resp_0ec187065f28ce06006b061f6398f487d29635d31010785a46",
+    "model": "gpt-6-luna",
+    "created_at": 1795563363.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 913,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 202,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 1115
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Declining biodiversity and threats to food production\",\n  \"climate_relevance\": \"Climate change is mentioned as a stress that biodiversity helps agricultural systems cope with.\",\n  \"reason\": \"The report focuses on biodiversity loss and food security, but it makes a meaningful connection between biodiversity and resilience to climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:36:05Z",
+  "duration_seconds": 1.905,
+  "error": null
+}

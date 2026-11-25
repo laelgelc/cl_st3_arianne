@@ -1,0 +1,77 @@
+{
+  "article_id": "70480134",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70480134.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70480134.json"
+  },
+  "manifest_row": {
+    "article_id": "70480134",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70480134.txt",
+    "now_field_2": "385",
+    "date_original": "19-02-03",
+    "date_iso": "2019-02-03",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00061/reminder-to-control-dogs-to-protect-penguins.htm",
+    "title": "Reminder to control dogs to protect penguins",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.9,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Protecting little blue penguins from dog attacks",
+    "climate_relevance": "Climate change appears only in a separate, unrelated snippet criticizing a political party's policy proposals.",
+    "reason": "The identifiable main article concerns dog control and penguin safety, not climate change. The brief climate reference belongs to an unrelated snippet and provides no substantive climate discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "898deb5c3277657df29c68694d88494937f6d1b4ee1e046efc16402b975658e1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0740264627ab362fffb3253c46c97a27673ee51b800bb3ca33c34825750a33c0",
+    "raw_response_text_sha256": "d886dc395d19585e49cf8f8ebf50551912650fcf66b2232abac4f002686825fd"
+  },
+  "api_metadata": {
+    "id": "resp_03580d5de2aede24006b063cd14fbc87d180f3de5ffcb3889e",
+    "model": "gpt-6-luna",
+    "created_at": 1795570897.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 987,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 427,
+      "output_tokens_details": {
+        "reasoning_tokens": 288
+      },
+      "total_tokens": 1414
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Protecting little blue penguins from dog attacks\",\n  \"climate_relevance\": \"Climate change appears only in a separate, unrelated snippet criticizing a political party's policy proposals.\",\n  \"reason\": \"The identifiable main article concerns dog control and penguin safety, not climate change. The brief climate reference belongs to an unrelated snippet and provides no substantive climate discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:41:40Z",
+  "duration_seconds": 3.442,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70322635",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/nz/70322635.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/nz/70322635.json"
+  },
+  "manifest_row": {
+    "article_id": "70322635",
+    "group": "2018_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/nz/70322635.txt",
+    "now_field_2": "204",
+    "date_original": "18-12-09",
+    "date_iso": "2018-12-09",
+    "source_name": "waateanews.com",
+    "url": "https://www.waateanews.com/waateanews/x_news/MjA3NjI/Parihaka-looks-to-put-harsh-times-behind",
+    "title": "Parihaka looks to put harsh times behind",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A reconciliation fund for the Parihaka community",
+    "climate_relevance": "Climate change appears only in a separate, apparently unrelated snippet and is not discussed in the identifiable main article.",
+    "reason": "The main article concerns a reconciliation package and support for the Parihaka community. The brief climate-change text appears to be an unrelated appended item, with no meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3f390c52ae7f2b9d70dac763c07a7e86e45ca7903c6b54eff4c45714590754f5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2652d0b7ff349e9a6fe3f9ad11ff0ad9a6fdd1e7dd7e5840b2af0ea1892fce65",
+    "raw_response_text_sha256": "c7e44257d592895551185c5fca0afa9f490617217c18aa69a8d9520a7db541d2"
+  },
+  "api_metadata": {
+    "id": "resp_08570467612f8e05006b063bf3dc1487d1bc8130dbd3d2eaa9",
+    "model": "gpt-6-luna",
+    "created_at": 1795570675.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 746,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 213,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 959
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A reconciliation fund for the Parihaka community\",\n  \"climate_relevance\": \"Climate change appears only in a separate, apparently unrelated snippet and is not discussed in the identifiable main article.\",\n  \"reason\": \"The main article concerns a reconciliation package and support for the Parihaka community. The brief climate-change text appears to be an unrelated appended item, with no meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:37:57Z",
+  "duration_seconds": 2.052,
+  "error": null
+}

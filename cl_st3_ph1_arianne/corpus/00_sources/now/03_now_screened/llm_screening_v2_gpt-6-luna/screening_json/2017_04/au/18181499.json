@@ -1,0 +1,77 @@
+{
+  "article_id": "18181499",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/au/18181499.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/au/18181499.json"
+  },
+  "manifest_row": {
+    "article_id": "18181499",
+    "group": "2017_04",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/au/18181499.txt",
+    "now_field_2": "2062",
+    "date_original": "17-04-29",
+    "date_iso": "2017-04-29",
+    "source_name": "Gizmodo Australia",
+    "url": "https://www.gizmodo.com.au/2017/04/controversial-study-makes-a-staggering-claim-about-when-the-first-humans-settled-north-america/",
+    "title": "Controversial Study Makes A Staggering Claim About When The ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A disputed archaeological study claiming early human habitation in North America",
+    "climate_relevance": "Climate change and geoengineering appear only in an unrelated trending-story snippet at the end, not in the identifiable main article.",
+    "reason": "The main article focuses on archaeological evidence and debate about when humans first reached North America. The brief climate-related passage belongs to a separate, unrelated snippet and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "42e48ba875f3ff8e59161b04e873b62f76ff2ba3da510fbc9a49f76e60f2ef49",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f9c46d44e6a824f02b26a81b626b1ee96bdc1cc9b4ae5426fd7511f1f9749691",
+    "raw_response_text_sha256": "c049e1c44def75de7e5888173f4aebf2a0bbd28d8cc55245aeae62622831d751"
+  },
+  "api_metadata": {
+    "id": "resp_0ebfa0302a0d3af8006b0609e6652c87d29982200221020695",
+    "model": "gpt-6-luna",
+    "created_at": 1795557862.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3144,
+      "input_tokens_details": {
+        "cache_write_tokens": 3141,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3141
+        }
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 3426
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A disputed archaeological study claiming early human habitation in North America\",\n  \"climate_relevance\": \"Climate change and geoengineering appear only in an unrelated trending-story snippet at the end, not in the identifiable main article.\",\n  \"reason\": \"The main article focuses on archaeological evidence and debate about when humans first reached North America. The brief climate-related passage belongs to a separate, unrelated snippet and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:04:25Z",
+  "duration_seconds": 2.771,
+  "error": null
+}

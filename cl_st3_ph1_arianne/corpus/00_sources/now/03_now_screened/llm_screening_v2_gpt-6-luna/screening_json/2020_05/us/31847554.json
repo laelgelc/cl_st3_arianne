@@ -1,0 +1,77 @@
+{
+  "article_id": "31847554",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/us/31847554.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/us/31847554.json"
+  },
+  "manifest_row": {
+    "article_id": "31847554",
+    "group": "2020_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/us/31847554.txt",
+    "now_field_2": "1599",
+    "date_original": "20-05-20",
+    "date_iso": "2020-05-20",
+    "source_name": "finance.yahoo.com",
+    "url": "https://finance.yahoo.com/news/columbia-gas-pennsylvania-files-request-165900550.html",
+    "title": "Columbia Gas of Pennsylvania Files Request for Investment ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Columbia Gas of Pennsylvania's proposed rate increase, infrastructure investments, and customer assistance during the COVID-19 pandemic",
+    "climate_relevance": "Climate change appears only in a list of potential business risks in the forward-looking statements.",
+    "reason": "The text contains no meaningful climate discourse; its sole reference to climate change is boilerplate in a risk-factor list.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6c4e7ef107e90f0c86824191fc151b3fa5caae6823bdce92e7655b71f1bed8ba",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9fb78e4eac0c598be1ce177b483004e76f9ea3f17e4193dd7f9d8a95341a4e44",
+    "raw_response_text_sha256": "2463b81becb859ea6260d0957f933b0ec40cd5c6a4aecd8ba6072e4da7a28a9d"
+  },
+  "api_metadata": {
+    "id": "resp_0dbb7dc0a51afddf006b0619bc9b2887d29991f9b6b57f6c8f",
+    "model": "gpt-6-luna",
+    "created_at": 1795561916.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2572,
+      "input_tokens_details": {
+        "cache_write_tokens": 2569,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2569
+        }
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 2777
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Columbia Gas of Pennsylvania's proposed rate increase, infrastructure investments, and customer assistance during the COVID-19 pandemic\",\n  \"climate_relevance\": \"Climate change appears only in a list of potential business risks in the forward-looking statements.\",\n  \"reason\": \"The text contains no meaningful climate discourse; its sole reference to climate change is boilerplate in a risk-factor list.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:11:58Z",
+  "duration_seconds": 1.751,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "41032577",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/sg/41032577.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/sg/41032577.json"
+  },
+  "manifest_row": {
+    "article_id": "41032577",
+    "group": "2019_06",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/sg/41032577.txt",
+    "now_field_2": "645",
+    "date_original": "19-06-06",
+    "date_iso": "2019-06-06",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/german-greens-explore-leftist-state-124042235.html",
+    "title": "German Greens explore leftist state alliance, in warning to Merkel",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "German Greens' polling performance and coalition options in Bremen and nationally",
+    "climate_relevance": "Climate change is briefly mentioned as context for the Greens' rising support, but the article does not discuss climate issues, policies, or related debate.",
+    "reason": "The coverage is about German electoral politics. The climate reference is a passing explanation of the Greens' popularity rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2dc5df70b9c42f448c8379d8d1f72a4145001884a28bc21634929d20488a917a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "723a0a8ab881ccd7d6b870f6c05186784e8feb030254251758d005d0e5401104",
+    "raw_response_text_sha256": "d370e5d47580ec891d6b34cd7b3701283ece1976dbe268d6f59f2e6cc15a41b5"
+  },
+  "api_metadata": {
+    "id": "resp_0653770ade5eb20a006b0620ad988087d2b5560cbf0fe39379",
+    "model": "gpt-6-luna",
+    "created_at": 1795563693.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1352,
+      "input_tokens_details": {
+        "cache_write_tokens": 1349,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1349
+        }
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1593
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"German Greens' polling performance and coalition options in Bremen and nationally\",\n  \"climate_relevance\": \"Climate change is briefly mentioned as context for the Greens' rising support, but the article does not discuss climate issues, policies, or related debate.\",\n  \"reason\": \"The coverage is about German electoral politics. The climate reference is a passing explanation of the Greens' popularity rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:41:35Z",
+  "duration_seconds": 2.075,
+  "error": null
+}

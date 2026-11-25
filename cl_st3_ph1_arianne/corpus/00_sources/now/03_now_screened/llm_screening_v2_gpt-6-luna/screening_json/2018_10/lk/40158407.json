@@ -1,0 +1,77 @@
+{
+  "article_id": "40158407",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/lk/40158407.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/lk/40158407.json"
+  },
+  "manifest_row": {
+    "article_id": "40158407",
+    "group": "2018_10",
+    "country_code": "lk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/lk/40158407.txt",
+    "now_field_2": "1329",
+    "date_original": "18-10-16",
+    "date_iso": "2018-10-16",
+    "source_name": "ft.lk",
+    "url": "http://www.ft.lk/columns/Responsible-water-stewardship-in-Sri-Lanka/4-664871",
+    "title": "Responsible water stewardship in Sri Lanka",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-lk.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Water stewardship, groundwater use, and water management in Sri Lanka, with examples from other cities",
+    "climate_relevance": "The Cape Town discussion explicitly links future water scarcity to increasingly severe climate change, but climate change is not the article’s main focus.",
+    "reason": "The main article substantially discusses water demand, conservation, pollution, and management rather than climate change. Its climate reference is meaningful context for water scarcity, so it is relevant peripherally. Unrelated snippets appear at the end of the supplied text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "baaf67ea32e34adeabe9a844c73a59479d14aaa5bb4639a00b08c168cbb58a85",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "307d0db2f0a0923d6c7f20aadc1ce53afeee9cba52674e74ad3b929855256b80",
+    "raw_response_text_sha256": "34eed9c573ecd08c044fcbbc0c87d42c904fae18418514ce6eaede93b5fb8c74"
+  },
+  "api_metadata": {
+    "id": "resp_0ea7c29964abd3f7006b061e5c40fc87d2b52501dc8b5390f4",
+    "model": "gpt-6-luna",
+    "created_at": 1795563100.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2247,
+      "input_tokens_details": {
+        "cache_write_tokens": 2244,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2244
+        }
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 2552
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Water stewardship, groundwater use, and water management in Sri Lanka, with examples from other cities\",\n  \"climate_relevance\": \"The Cape Town discussion explicitly links future water scarcity to increasingly severe climate change, but climate change is not the article’s main focus.\",\n  \"reason\": \"The main article substantially discusses water demand, conservation, pollution, and management rather than climate change. Its climate reference is meaningful context for water scarcity, so it is relevant peripherally. Unrelated snippets appear at the end of the supplied text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:31:42Z",
+  "duration_seconds": 2.46,
+  "error": null
+}

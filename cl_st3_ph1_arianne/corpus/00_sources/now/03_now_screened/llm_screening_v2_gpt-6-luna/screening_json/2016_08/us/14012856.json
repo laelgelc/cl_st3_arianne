@@ -1,0 +1,77 @@
+{
+  "article_id": "14012856",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_08/us/14012856.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_08/us/14012856.json"
+  },
+  "manifest_row": {
+    "article_id": "14012856",
+    "group": "2016_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_08/us/14012856.txt",
+    "now_field_2": "227",
+    "date_original": "16-08-24",
+    "date_iso": "2016-08-24",
+    "source_name": "Los Angeles Times",
+    "url": "http://www.latimes.com/politics/essential/la-pol-sac-essential-politics-updates-california-could-soon-expand-legal-1472073533-htmlstory.html",
+    "title": "California could soon expand the definition of rape as a result of the ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-08-pcg/16-08-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "California legislation concerning the legal definition of rape and protections for sexual-assault victims",
+    "climate_relevance": "A brief feed introduction mentions climate change bills, but the article text that follows concerns unrelated legislation and provides no further climate discussion.",
+    "reason": "The climate reference appears only in a separate news-feed teaser, not in the identifiable main article, so it does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "878f864cc7ae56c24e1fdb5c5ff05ead9cee9f043f27eba074f475347c77368e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "495279f57577479505d836272733ead6a4ceb06c6a907ba17546127b49dda21a",
+    "raw_response_text_sha256": "1fdd27485a4d66c44b6c17483fee2569f1d0ef97379aa55a5fc2aa6321147568"
+  },
+  "api_metadata": {
+    "id": "resp_038b4ec5b2a3b753006b0605672b8887d283848bf669892a79",
+    "model": "gpt-6-luna",
+    "created_at": 1795556711.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 766,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 427,
+      "output_tokens_details": {
+        "reasoning_tokens": 277
+      },
+      "total_tokens": 1193
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"California legislation concerning the legal definition of rape and protections for sexual-assault victims\",\n  \"climate_relevance\": \"A brief feed introduction mentions climate change bills, but the article text that follows concerns unrelated legislation and provides no further climate discussion.\",\n  \"reason\": \"The climate reference appears only in a separate news-feed teaser, not in the identifiable main article, so it does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:45:14Z",
+  "duration_seconds": 3.324,
+  "error": null
+}

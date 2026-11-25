@@ -1,0 +1,77 @@
+{
+  "article_id": "42331617",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/gb/42331617.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/gb/42331617.json"
+  },
+  "manifest_row": {
+    "article_id": "42331617",
+    "group": "2020_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/gb/42331617.txt",
+    "now_field_2": "380",
+    "date_original": "20-10-09",
+    "date_iso": "2020-10-09",
+    "source_name": "gov.uk",
+    "url": "https://cscuk.fcdo.gov.uk/category/news/events/page/9/",
+    "title": "Events Archives - Page 9 of 16 - Commonwealth Scholarship ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.89,
+    "climate_role": "passing",
+    "main_topic": "A collection of Commonwealth Scholars event announcements",
+    "climate_relevance": "One announcement identifies a lecture series event focused on climate change, but the text provides no substantive discussion of climate issues.",
+    "reason": "The available text consists of unrelated event snippets and website cookie boilerplate. The climate reference only describes a lecture's topic and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3d6bd5e63b264adafcf5f65d923b53653faa87d4a30217f35665e4756336c1db",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b2d401e1e0e4f9a5d091a332ef03c56d9a2ddcc965a06254c54add98a5333e58",
+    "raw_response_text_sha256": "604da34fde964b6e73c1d9664a4a67490787bce7e96d4b90fd9e9404cb3a2d25"
+  },
+  "api_metadata": {
+    "id": "resp_0ba08a34a9740420006b0625c7750487d2b913e7487aa3ab84",
+    "model": "gpt-6-luna",
+    "created_at": 1795564999.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 946,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 554,
+      "output_tokens_details": {
+        "reasoning_tokens": 418
+      },
+      "total_tokens": 1500
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.89,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of Commonwealth Scholars event announcements\",\n  \"climate_relevance\": \"One announcement identifies a lecture series event focused on climate change, but the text provides no substantive discussion of climate issues.\",\n  \"reason\": \"The available text consists of unrelated event snippets and website cookie boilerplate. The climate reference only describes a lecture's topic and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:03:24Z",
+  "duration_seconds": 4.932,
+  "error": null
+}

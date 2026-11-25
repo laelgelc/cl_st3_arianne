@@ -1,0 +1,77 @@
+{
+  "article_id": "86215505",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86215505.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86215505.json"
+  },
+  "manifest_row": {
+    "article_id": "86215505",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86215505.txt",
+    "now_field_2": "14918",
+    "date_original": "20-10-26",
+    "date_iso": "2020-10-26",
+    "source_name": "New York Times",
+    "url": "https://www.nytimes.com/2020/10/26/opinion/sway-kara-swisher-hillary-clinton.html",
+    "title": "Hillary Clinton Says It's Different This Time",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Hillary Clinton's views on the 2020 election, Donald Trump, and the Democratic Party",
+    "climate_relevance": "Climate change action appears briefly in a list of issues a Biden administration might pursue; it is not discussed or developed.",
+    "reason": "The interview is primarily about electoral politics and Clinton's political experiences. The isolated reference to climate change action is incidental rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "941624f5e8bd7e231050d2cb0fe643f784cecf61e53abaf7f179905c7b6c2b4d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b404c74b5e78b997d3a7ff50e4da8ad23156997599cec8d5ea01d15cea839c6f",
+    "raw_response_text_sha256": "dc6829c0da2fdffffc378899e27ed7d388000dea43a5b04451c47a7636df5118"
+  },
+  "api_metadata": {
+    "id": "resp_034c763b8beba407006b064ecb380487d1ba60ecbd9bbf9b41",
+    "model": "gpt-6-luna",
+    "created_at": 1795575499.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 20902,
+      "input_tokens_details": {
+        "cache_write_tokens": 20899,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 20899
+        }
+      },
+      "output_tokens": 387,
+      "output_tokens_details": {
+        "reasoning_tokens": 242
+      },
+      "total_tokens": 21289
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Hillary Clinton's views on the 2020 election, Donald Trump, and the Democratic Party\",\n  \"climate_relevance\": \"Climate change action appears briefly in a list of issues a Biden administration might pursue; it is not discussed or developed.\",\n  \"reason\": \"The interview is primarily about electoral politics and Clinton's political experiences. The isolated reference to climate change action is incidental rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:58:22Z",
+  "duration_seconds": 3.689,
+  "error": null
+}

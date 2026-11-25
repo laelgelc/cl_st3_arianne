@@ -1,0 +1,77 @@
+{
+  "article_id": "22333802",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_12/us/22333802.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_12/us/22333802.json"
+  },
+  "manifest_row": {
+    "article_id": "22333802",
+    "group": "2017_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_12/us/22333802.txt",
+    "now_field_2": "1184",
+    "date_original": "17-12-20",
+    "date_iso": "2017-12-20",
+    "source_name": "Omaha World-Herald",
+    "url": "http://www.omaha.com/go/review-alexander-payne-s-downsizing-is-bold-ingenious-and-full/article_a93db6f4-e5a8-11e7-a2ed-5f30fd2745eb.html",
+    "title": "Review: Alexander Payne's 'Downsizing' is bold, ingenious and full ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-12.txt\"]",
+    "metadata_article_files": "[\"text-17-12/text_17-12-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "A review of the film Downsizing",
+    "climate_relevance": "The review explains that the film's fictional shrinking process is presented as a way to reduce humanity's environmental impact and slow climate change, but climate change is not a focus of the review.",
+    "reason": "Climate change is mentioned meaningfully as part of the film's premise, while the text is primarily a movie review.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d0a5356a19d2fdf7f5970721e0d4daa465ec365c2b3eefe3b9467d75ee4ef0ac",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b02aa7cee50b50474bd957545f086e9f0f477f5f3c3ab96f794c1a94493d8728",
+    "raw_response_text_sha256": "6f5f40f342d280cead9392a2f77f36be86e712f8dcdbfa2d5ae8c74f533d563d"
+  },
+  "api_metadata": {
+    "id": "resp_03b8af753b70e7ef006b06100a5c1887d2beda95f582d6e78c",
+    "model": "gpt-6-luna",
+    "created_at": 1795559434.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2102,
+      "input_tokens_details": {
+        "cache_write_tokens": 2099,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2099
+        }
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 2335
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A review of the film Downsizing\",\n  \"climate_relevance\": \"The review explains that the film's fictional shrinking process is presented as a way to reduce humanity's environmental impact and slow climate change, but climate change is not a focus of the review.\",\n  \"reason\": \"Climate change is mentioned meaningfully as part of the film's premise, while the text is primarily a movie review.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:30:36Z",
+  "duration_seconds": 1.945,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40355440",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/lk/40355440.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/lk/40355440.json"
+  },
+  "manifest_row": {
+    "article_id": "40355440",
+    "group": "2018_12",
+    "country_code": "lk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/lk/40355440.txt",
+    "now_field_2": "258",
+    "date_original": "18-12-05",
+    "date_iso": "2018-12-05",
+    "source_name": "News 1s",
+    "url": "https://www.newsfirst.lk/2018/12/06/everything-you-need-to-know-today-98/",
+    "title": "Everything you need to know today",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-lk.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A roundup of Sri Lankan news items, mostly concerning crime and public affairs",
+    "climate_relevance": "One item reports Sri Lanka's ranking among countries most affected by climate change, citing the Global Climate Risk Index.",
+    "reason": "Climate change appears in a single substantive news item, while the roundup is mainly about unrelated topics.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ed96f5f57c5d05a233391d43c35284a975ff0113b4ae5655cc1673d0955c4e13",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c922db44c78474ec8aa3465c682532741d598c98c8cb7de34f2e764d5528d267",
+    "raw_response_text_sha256": "36cd939de8827a9233997ec5716f2e530eee4d4869ba8d7ce65f35b766dc439b"
+  },
+  "api_metadata": {
+    "id": "resp_052fb65d44f33ede006b061ed1360c87d2acfa03eeec82caed",
+    "model": "gpt-6-luna",
+    "created_at": 1795563217.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 870,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 1095
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A roundup of Sri Lankan news items, mostly concerning crime and public affairs\",\n  \"climate_relevance\": \"One item reports Sri Lanka's ranking among countries most affected by climate change, citing the Global Climate Risk Index.\",\n  \"reason\": \"Climate change appears in a single substantive news item, while the roundup is mainly about unrelated topics.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:33:39Z",
+  "duration_seconds": 2.212,
+  "error": null
+}

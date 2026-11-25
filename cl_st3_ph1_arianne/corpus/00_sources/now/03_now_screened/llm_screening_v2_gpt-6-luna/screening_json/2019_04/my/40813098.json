@@ -1,0 +1,77 @@
+{
+  "article_id": "40813098",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40813098.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40813098.json"
+  },
+  "manifest_row": {
+    "article_id": "40813098",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40813098.txt",
+    "now_field_2": "507",
+    "date_original": "19-04-08",
+    "date_iso": "2019-04-08",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/08/epf-credits-rm9-5m-incentive-into-%E2%80%A8i-suri-members-accounts/",
+    "title": "EPF credits RM9.5m incentive into i-Suri members' accounts",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Malaysia's i-Suri retirement savings incentive for housewives",
+    "climate_relevance": "Climate appears only in a separate headline-style snippet about sustainable energy solutions and in a minister's portfolio title; the identifiable main article does not discuss climate change.",
+    "reason": "The main article concerns a pension and social-security programme. The climate-related wording is confined to an unrelated snippet and does not provide substantive climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "19af7baea0a0567aa10493397cac794f25e8d39dd15ebaaa3e1b9c41b2bd7ed1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dfd85dd5590023a93edddb1eaaddcc137f3ccdd4d0737e57231e9b15e803faca",
+    "raw_response_text_sha256": "cda3ed0d4e485470d7d482c490828dc6a85665770ffae36b4cf34f7ed3508659"
+  },
+  "api_metadata": {
+    "id": "resp_0d5138f86e6321ef006b061fd0cfa087d2b56520d4eb9b864d",
+    "model": "gpt-6-luna",
+    "created_at": 1795563472.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1193,
+      "input_tokens_details": {
+        "cache_write_tokens": 1190,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1190
+        }
+      },
+      "output_tokens": 447,
+      "output_tokens_details": {
+        "reasoning_tokens": 292
+      },
+      "total_tokens": 1640
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Malaysia's i-Suri retirement savings incentive for housewives\",\n  \"climate_relevance\": \"Climate appears only in a separate headline-style snippet about sustainable energy solutions and in a minister's portfolio title; the identifiable main article does not discuss climate change.\",\n  \"reason\": \"The main article concerns a pension and social-security programme. The climate-related wording is confined to an unrelated snippet and does not provide substantive climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:56Z",
+  "duration_seconds": 3.49,
+  "error": null
+}

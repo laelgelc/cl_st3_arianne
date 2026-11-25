@@ -1,0 +1,77 @@
+{
+  "article_id": "85062318",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/us/85062318.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/us/85062318.json"
+  },
+  "manifest_row": {
+    "article_id": "85062318",
+    "group": "2020_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/us/85062318.txt",
+    "now_field_2": "373",
+    "date_original": "20-05-31",
+    "date_iso": "2020-05-31",
+    "source_name": "San Diego Union-Tribune",
+    "url": "https://www.sandiegouniontribune.com/opinion/letters-to-the-editor/story/2020-05-31/should-the-media-try-to-find-positive-stories-about-the-president",
+    "title": "Should the media try to find positive stories about the president?",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Letters to the editor about whether the media should publish positive stories about President Trump",
+    "climate_relevance": "One letter cites Trump’s stance on climate change as one item in a broader list of criticisms.",
+    "reason": "The text is mainly about media coverage and presidential conduct. Climate change receives a brief but meaningful mention, so the text is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "206d9519484b4b8a7094e5bdbfebb67da9df08e8ddab1a0eefd8a9e51244c293",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c9e0e900cd415be1484b67f52eafc1a0b73b51af06e933f3c0e9fce46b5becbc",
+    "raw_response_text_sha256": "8d0c900336541d342871efb60fe33cb849c80c484c99b3e9ae6c4ea63d67143c"
+  },
+  "api_metadata": {
+    "id": "resp_03e1721bef7d57c9006b064b22a09887d19431e9621662aa73",
+    "model": "gpt-6-luna",
+    "created_at": 1795574562.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 987,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 172
+      },
+      "total_tokens": 1300
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Letters to the editor about whether the media should publish positive stories about President Trump\",\n  \"climate_relevance\": \"One letter cites Trump’s stance on climate change as one item in a broader list of criticisms.\",\n  \"reason\": \"The text is mainly about media coverage and presidential conduct. Climate change receives a brief but meaningful mention, so the text is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:42:45Z",
+  "duration_seconds": 2.612,
+  "error": null
+}

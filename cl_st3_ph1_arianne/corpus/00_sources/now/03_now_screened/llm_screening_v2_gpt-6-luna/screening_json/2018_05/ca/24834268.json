@@ -1,0 +1,77 @@
+{
+  "article_id": "24834268",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/ca/24834268.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/ca/24834268.json"
+  },
+  "manifest_row": {
+    "article_id": "24834268",
+    "group": "2018_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/ca/24834268.txt",
+    "now_field_2": "107",
+    "date_original": "18-05-25",
+    "date_iso": "2018-05-25",
+    "source_name": "Globalnews.ca",
+    "url": "https://globalnews.ca/news/4232300/tornado-warnings-for-south-end-of-lake-manitoba-cancelled/",
+    "title": "Tornado warnings for south end of Lake Manitoba cancelled",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Severe thunderstorm warnings and safety advice in southern Manitoba",
+    "climate_relevance": "The phrase “Environment and Climate Change Canada” appears only as the name of the weather agency; the text contains no meaningful discussion of climate change.",
+    "reason": "This is a short-term weather report about thunderstorm activity, not climate change discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "40b0963c616b50eb23006a4d457ab7b05661440eb0a11bec8de1802676d9e704",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8a3cd304e47ffaacbcfa07efdb17da9d4ce740eb76d77428998c4a4b8edffefa",
+    "raw_response_text_sha256": "264a901231828d0d8907c498d8a69892fd10b16478d5db2094cf7d67a8c96842"
+  },
+  "api_metadata": {
+    "id": "resp_0d3ab8a783158d0f006b0612d1b58087d2be72ab809d3c194e",
+    "model": "gpt-6-luna",
+    "created_at": 1795560145.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 611,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 172,
+      "output_tokens_details": {
+        "reasoning_tokens": 35
+      },
+      "total_tokens": 783
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Severe thunderstorm warnings and safety advice in southern Manitoba\",\n  \"climate_relevance\": \"The phrase “Environment and Climate Change Canada” appears only as the name of the weather agency; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"This is a short-term weather report about thunderstorm activity, not climate change discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:42:27Z",
+  "duration_seconds": 1.762,
+  "error": null
+}

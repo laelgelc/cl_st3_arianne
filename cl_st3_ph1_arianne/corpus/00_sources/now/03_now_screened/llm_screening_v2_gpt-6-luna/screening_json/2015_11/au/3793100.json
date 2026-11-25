@@ -1,0 +1,77 @@
+{
+  "article_id": "3793100",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_11/au/3793100.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_11/au/3793100.json"
+  },
+  "manifest_row": {
+    "article_id": "3793100",
+    "group": "2015_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_11/au/3793100.txt",
+    "now_field_2": "2984",
+    "date_original": "15-11-16",
+    "date_iso": "2015-11-16",
+    "source_name": "Sydney Morning Herald",
+    "url": "http://www.smh.com.au/brand-discover/scroll/brink/19/cardiac/",
+    "title": "Virtual heart care saves lives",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-11-xje/15-11-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Remote monitoring and telehealth support for people with heart failure.",
+    "climate_relevance": "The identifiable main article contains no meaningful climate discourse. A separate article in the supplied text discusses mangroves, blue carbon, and climate mitigation, but it is unrelated to the main article.",
+    "reason": "The text combines several unrelated articles. Following the instruction to assess the identifiable main article, the heart-care article is not relevant to climate discourse; the substantial climate discussion belongs to a separate article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d913302b12c2afc8a26ae0580e75ad9670976b2fdc77261021ae70894a15fa69",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3bcfe6a3fa263e67e111dae6a35452ee47dad40cc23fc44a02f97d864bd96b7e",
+    "raw_response_text_sha256": "b57fda2127a4d45bf5a7a929010bf97ea4ff19bbdf0abac2df8bec6451cff71e"
+  },
+  "api_metadata": {
+    "id": "resp_0e05b76a3582d653006b061d027bbc87d2a6a2a8e93b0f298b",
+    "model": "gpt-6-luna",
+    "created_at": 1795562754.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4322,
+      "input_tokens_details": {
+        "cache_write_tokens": 4319,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4319
+        }
+      },
+      "output_tokens": 592,
+      "output_tokens_details": {
+        "reasoning_tokens": 425
+      },
+      "total_tokens": 4914
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Remote monitoring and telehealth support for people with heart failure.\",\n  \"climate_relevance\": \"The identifiable main article contains no meaningful climate discourse. A separate article in the supplied text discusses mangroves, blue carbon, and climate mitigation, but it is unrelated to the main article.\",\n  \"reason\": \"The text combines several unrelated articles. Following the instruction to assess the identifiable main article, the heart-care article is not relevant to climate discourse; the substantial climate discussion belongs to a separate article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:25:59Z",
+  "duration_seconds": 4.634,
+  "error": null
+}

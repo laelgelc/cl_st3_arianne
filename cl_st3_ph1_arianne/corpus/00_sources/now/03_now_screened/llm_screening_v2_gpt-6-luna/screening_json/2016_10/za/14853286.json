@@ -1,0 +1,77 @@
+{
+  "article_id": "14853286",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_10/za/14853286.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_10/za/14853286.json"
+  },
+  "manifest_row": {
+    "article_id": "14853286",
+    "group": "2016_10",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_10/za/14853286.txt",
+    "now_field_2": "214",
+    "date_original": "16-10-14",
+    "date_iso": "2016-10-14",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/thetimes/2016/10/14/Run-feast-takes-Rossouw-to-top-table",
+    "title": "Run feast takes Rossouw to top table",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-10-ykw/16-10-za.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "Mixed sports reporting and a brief report on international negotiations over greenhouse gases used in refrigeration and air conditioning",
+    "climate_relevance": "One sentence reports on negotiations for a global pact to cut greenhouse-gas emissions and links the proposed deal to climate change.",
+    "reason": "The text contains a meaningful climate-related news sentence, but most of the available material concerns rugby and cricket. The climate passage is not enough to establish climate change as the main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "78a505c3cdfac7322ac2381f7ff678ae5bf5bd8d5f0897748b46af3b80e71815",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f65b794c2b16241c7ae015e6ea62d204f728b598073b2be05858bba8b79e91a1",
+    "raw_response_text_sha256": "1660690450b54f2b6b82ca41ebcdb137edc139c362667d70a7aed83394e67178"
+  },
+  "api_metadata": {
+    "id": "resp_03c038c41c0eccc8006b060611f2e487d293a05cca0c95e0be",
+    "model": "gpt-6-luna",
+    "created_at": 1795556882.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 765,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 370,
+      "output_tokens_details": {
+        "reasoning_tokens": 215
+      },
+      "total_tokens": 1135
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Mixed sports reporting and a brief report on international negotiations over greenhouse gases used in refrigeration and air conditioning\",\n  \"climate_relevance\": \"One sentence reports on negotiations for a global pact to cut greenhouse-gas emissions and links the proposed deal to climate change.\",\n  \"reason\": \"The text contains a meaningful climate-related news sentence, but most of the available material concerns rugby and cricket. The climate passage is not enough to establish climate change as the main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:48:05Z",
+  "duration_seconds": 3.35,
+  "error": null
+}

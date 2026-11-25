@@ -1,0 +1,77 @@
+{
+  "article_id": "51139653",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/bd/51139653.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/bd/51139653.json"
+  },
+  "manifest_row": {
+    "article_id": "51139653",
+    "group": "2019_10",
+    "country_code": "bd",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/bd/51139653.txt",
+    "now_field_2": "871",
+    "date_original": "19-10-26",
+    "date_iso": "2019-10-26",
+    "source_name": "bdnews24.com",
+    "url": "https://bdnews24.com/world/2019/10/22/canada-s-trudeau-to-remain-in-power-but-with-minority-government",
+    "title": "Canada's Trudeau to remain in power but with minority ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-bd.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "Canadian federal election and formation of a minority government",
+    "climate_relevance": "The election report discusses climate-related political issues, including the Greens' criticism of Trudeau's climate record, western opposition to federal environmental policies, and the Conservative pledge to eliminate the carbon tax.",
+    "reason": "Climate policy is a meaningful part of the election context, but the article is primarily about election results, party politics, and government formation. A separate Bangladesh article about religiously motivated clashes is appended and is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "23c637370a3be895bc890e585a58972c437eb5d7706ff98d804407720eaa4861",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "411a057c1562b9b37d7804d24cfd95bd4da11de3b9f63155832dd19913f5c5bc",
+    "raw_response_text_sha256": "c584f33c24c4861868e5f58459f6e804c7ccd5a4a7fd427d9ebd7eb72757ec92"
+  },
+  "api_metadata": {
+    "id": "resp_0a326659fe238cc0006b062c57ce8887d1b7d912a110022ab0",
+    "model": "gpt-6-luna",
+    "created_at": 1795566679.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2882,
+      "input_tokens_details": {
+        "cache_write_tokens": 2879,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2879
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 3132
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Canadian federal election and formation of a minority government\",\n  \"climate_relevance\": \"The election report discusses climate-related political issues, including the Greens' criticism of Trudeau's climate record, western opposition to federal environmental policies, and the Conservative pledge to eliminate the carbon tax.\",\n  \"reason\": \"Climate policy is a meaningful part of the election context, but the article is primarily about election results, party politics, and government formation. A separate Bangladesh article about religiously motivated clashes is appended and is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:31:22Z",
+  "duration_seconds": 2.325,
+  "error": null
+}

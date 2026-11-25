@@ -1,0 +1,77 @@
+{
+  "article_id": "42081419",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/gb/42081419.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/gb/42081419.json"
+  },
+  "manifest_row": {
+    "article_id": "42081419",
+    "group": "2020_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/gb/42081419.txt",
+    "now_field_2": "851",
+    "date_original": "20-06-28",
+    "date_iso": "2020-06-28",
+    "source_name": "fool.co.uk",
+    "url": "https://www.fool.co.uk/investing/2020/06/05/dont-waste-the-stock-market-crash-id-buy-these-2-cheap-ftse-100-shares-right-now/",
+    "title": "Don't waste the stock market crash! I'd buy these 2 cheap ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Investment prospects for HSBC and Legal & General shares",
+    "climate_relevance": "Climate change appears only in a list of Legal & General's structural growth drivers, without further discussion.",
+    "reason": "The article is primarily stock-market investment advice. Its brief mention of climate change does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e3718f9a1bdbb545def627766ed7f9440af3ae1668c913d8cec32f1c39eed328",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7f63036924b1db7618be0955cf88388300dc256111cc48f9f359ab261bc75124",
+    "raw_response_text_sha256": "6e452d660f3eed9c49f840a29f853a0648e7e1f258c8f1454c8bd7dd9ce1e80b"
+  },
+  "api_metadata": {
+    "id": "resp_0f1bde7e34fd4d2f006b06245f179887d29e6d6a0a3f509fd4",
+    "model": "gpt-6-luna",
+    "created_at": 1795564639.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1531,
+      "input_tokens_details": {
+        "cache_write_tokens": 1528,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1528
+        }
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 1798
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Investment prospects for HSBC and Legal & General shares\",\n  \"climate_relevance\": \"Climate change appears only in a list of Legal & General's structural growth drivers, without further discussion.\",\n  \"reason\": \"The article is primarily stock-market investment advice. Its brief mention of climate change does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:57:21Z",
+  "duration_seconds": 2.363,
+  "error": null
+}

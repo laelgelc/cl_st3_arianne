@@ -1,0 +1,77 @@
+{
+  "article_id": "70874955",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/us/70874955.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/us/70874955.json"
+  },
+  "manifest_row": {
+    "article_id": "70874955",
+    "group": "2019_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/us/70874955.txt",
+    "now_field_2": "487",
+    "date_original": "19-06-16",
+    "date_iso": "2019-06-16",
+    "source_name": "AOL",
+    "url": "https://www.aol.com/article/news/2019/06/16/trump-accuses-ny-times-of-treason-over-russia-story/23750584/",
+    "title": "Trump accuses NY Times of 'treason' over Russia story",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Trump's accusations against the New York Times over a report about cyber operations against Russia",
+    "climate_relevance": "Climate change appears only in a gallery caption quoting a New York Times advertisement slogan; it is not part of the article's main discussion.",
+    "reason": "The article concerns Trump's criticism of the press and a Russia-related cyber story. The isolated climate-change slogan is unrelated gallery content and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "02a872300b31cf1bd88cf3111e9de0d5668fe630fd8d526b84917f72aeb88741",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5fc8e0f2549941775b9ac9e448da3a5dc2b1895ce94e2a981d7686d221012022",
+    "raw_response_text_sha256": "0aee437db1d16fda0f0348983920f9539f10238015e2a00b0943decf9a9b24b0"
+  },
+  "api_metadata": {
+    "id": "resp_009cb7b28a2ec6d9006b063fad0e6887d188741f7aa51a13dd",
+    "model": "gpt-6-luna",
+    "created_at": 1795571629.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1284,
+      "input_tokens_details": {
+        "cache_write_tokens": 1281,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1281
+        }
+      },
+      "output_tokens": 279,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 1563
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Trump's accusations against the New York Times over a report about cyber operations against Russia\",\n  \"climate_relevance\": \"Climate change appears only in a gallery caption quoting a New York Times advertisement slogan; it is not part of the article's main discussion.\",\n  \"reason\": \"The article concerns Trump's criticism of the press and a Russia-related cyber story. The isolated climate-change slogan is unrelated gallery content and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:53:51Z",
+  "duration_seconds": 2.642,
+  "error": null
+}

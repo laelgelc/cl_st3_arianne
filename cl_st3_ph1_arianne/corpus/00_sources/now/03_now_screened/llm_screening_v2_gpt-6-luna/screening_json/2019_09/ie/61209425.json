@@ -1,0 +1,77 @@
+{
+  "article_id": "61209425",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ie/61209425.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ie/61209425.json"
+  },
+  "manifest_row": {
+    "article_id": "61209425",
+    "group": "2019_09",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ie/61209425.txt",
+    "now_field_2": "528",
+    "date_original": "19-09-07",
+    "date_iso": "2019-09-07",
+    "source_name": "techcentral.ie",
+    "url": "https://www.techcentral.ie/the-redesigned-samsung-galaxy-folds-best-feature-might-be-the-service-not-the-design/",
+    "title": "The redesigned Samsung Galaxy Fold's best feature might be ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ie1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Samsung Galaxy Fold redesign and customer support service",
+    "climate_relevance": "The identifiable main article does not discuss climate change. A separate water-management feature contains a meaningful sentence about climate change compounding water-security challenges.",
+    "reason": "The text combines unrelated articles. Following the instruction to assess the identifiable main article, the Samsung phone article is unrelated to climate discourse; the climate reference appears only in the separate appended feature.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4756a6ee929276e334a811888d2f31dc9cbcce6ceaf136d8096c046d2c14553d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "47d06c72d0e6cea70bcaa6669b7e6c960736955aeb8ccec8851d6f571d87de38",
+    "raw_response_text_sha256": "b5e9bd82db48f38cfaf5662250763bf790bbbe1f5d6edc876c52b7cf852301d7"
+  },
+  "api_metadata": {
+    "id": "resp_0ba6f3b9b7e2c585006b063626fa6087d197cdacd643fa28cc",
+    "model": "gpt-6-luna",
+    "created_at": 1795569191.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1774,
+      "input_tokens_details": {
+        "cache_write_tokens": 1771,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1771
+        }
+      },
+      "output_tokens": 459,
+      "output_tokens_details": {
+        "reasoning_tokens": 306
+      },
+      "total_tokens": 2233
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Samsung Galaxy Fold redesign and customer support service\",\n  \"climate_relevance\": \"The identifiable main article does not discuss climate change. A separate water-management feature contains a meaningful sentence about climate change compounding water-security challenges.\",\n  \"reason\": \"The text combines unrelated articles. Following the instruction to assess the identifiable main article, the Samsung phone article is unrelated to climate discourse; the climate reference appears only in the separate appended feature.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:13:14Z",
+  "duration_seconds": 3.665,
+  "error": null
+}

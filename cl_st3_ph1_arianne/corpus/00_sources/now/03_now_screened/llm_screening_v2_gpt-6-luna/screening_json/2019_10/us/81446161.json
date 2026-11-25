@@ -1,0 +1,77 @@
+{
+  "article_id": "81446161",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81446161.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81446161.json"
+  },
+  "manifest_row": {
+    "article_id": "81446161",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81446161.txt",
+    "now_field_2": "145",
+    "date_original": "19-10-04",
+    "date_iso": "2019-10-04",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191004084352-aepfl",
+    "title": "Death toll from Iraq unrest rises to 44 - sources",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Anti-government protests and casualties in Iraq",
+    "climate_relevance": "Climate change appears only in a standard description of the news agency's coverage areas, not in the report itself.",
+    "reason": "The article reports on protests, casualties, and political unrest in Iraq. The sole climate change reference is boilerplate and offers no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "401c10d3e67ee86d621e8db1e57686ccbdbce9e2931c8ba0a397b3d8cfe8707e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2b775eb9020acdf1a9acad94ce523dafd90892c70dc671b3fb5aa03251559212",
+    "raw_response_text_sha256": "82d2b056bc6149a9314ed2ac6d84afea9a95142f06117b1f5c2b6a84c75d4db7"
+  },
+  "api_metadata": {
+    "id": "resp_0cab546300edc05e006b06475730d487d1af921bd1fb7de495",
+    "model": "gpt-6-luna",
+    "created_at": 1795573591.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 673,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 163,
+      "output_tokens_details": {
+        "reasoning_tokens": 25
+      },
+      "total_tokens": 836
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Anti-government protests and casualties in Iraq\",\n  \"climate_relevance\": \"Climate change appears only in a standard description of the news agency's coverage areas, not in the report itself.\",\n  \"reason\": \"The article reports on protests, casualties, and political unrest in Iraq. The sole climate change reference is boilerplate and offers no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:26:32Z",
+  "duration_seconds": 1.648,
+  "error": null
+}

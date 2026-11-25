@@ -1,0 +1,77 @@
+{
+  "article_id": "31242664",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/us/31242664.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/us/31242664.json"
+  },
+  "manifest_row": {
+    "article_id": "31242664",
+    "group": "2019_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/us/31242664.txt",
+    "now_field_2": "1043",
+    "date_original": "19-08-24",
+    "date_iso": "2019-08-24",
+    "source_name": "nymag.com",
+    "url": "http://nymag.com/intelligencer/2016/12/horny-gamers-are-melting-down-over-overwatchs-gay-character.html",
+    "title": "Horny Gamers Are Melting Down Over Overwatch's Gay Character",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Overwatch and the reaction to a character being revealed as a lesbian",
+    "climate_relevance": "A separate excerpt discusses a proposed rollback of methane-leak inspection requirements and identifies methane emissions as a contributor to climate change.",
+    "reason": "The identifiable main article concerns a gaming controversy, not climate change. However, the methane-regulation excerpt contains meaningful climate-related policy discourse, so the text is relevant peripherally. The supplied text also includes several unrelated snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "415707d03072b148ebcfa5d2ad3162d5d67f2b680eb4e0288fff6619ef3607a4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2b63b3dcbe100663584025130d009450a6685b5ef6da954ae68e595ecbbb5bc4",
+    "raw_response_text_sha256": "482db65b8be273dc0053e4e37da5de2c26112bac1001a54d5ffc82593a5cf8bb"
+  },
+  "api_metadata": {
+    "id": "resp_06b4917921e12322006b061650169c87d2a03c42020034e97f",
+    "model": "gpt-6-luna",
+    "created_at": 1795561040.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1865,
+      "input_tokens_details": {
+        "cache_write_tokens": 1862,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1862
+        }
+      },
+      "output_tokens": 419,
+      "output_tokens_details": {
+        "reasoning_tokens": 261
+      },
+      "total_tokens": 2284
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Overwatch and the reaction to a character being revealed as a lesbian\",\n  \"climate_relevance\": \"A separate excerpt discusses a proposed rollback of methane-leak inspection requirements and identifies methane emissions as a contributor to climate change.\",\n  \"reason\": \"The identifiable main article concerns a gaming controversy, not climate change. However, the methane-regulation excerpt contains meaningful climate-related policy discourse, so the text is relevant peripherally. The supplied text also includes several unrelated snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:57:23Z",
+  "duration_seconds": 3.382,
+  "error": null
+}

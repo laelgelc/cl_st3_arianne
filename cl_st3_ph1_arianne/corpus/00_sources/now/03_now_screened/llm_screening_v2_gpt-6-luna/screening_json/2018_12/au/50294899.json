@@ -1,0 +1,77 @@
+{
+  "article_id": "50294899",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/au/50294899.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/au/50294899.json"
+  },
+  "manifest_row": {
+    "article_id": "50294899",
+    "group": "2018_12",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/au/50294899.txt",
+    "now_field_2": "167",
+    "date_original": "18-12-19",
+    "date_iso": "2018-12-19",
+    "source_name": "ABC News",
+    "url": "https://www.abc.net.au/news/2018-12-19/states-split-at-coag-energy-meeting/10636230",
+    "title": "Coalition's divide exposed at COAG energy meeting in Adelaide",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-au.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.84,
+    "climate_role": "substantial",
+    "main_topic": "Australian energy-sector policy, reliability obligations, and emissions policy",
+    "climate_relevance": "The energy-sector discussion explicitly addresses climate change and the absence of an emissions policy, making climate policy a substantial part of the article.",
+    "reason": "The identifiable energy-policy article discusses missed opportunities to address climate change and the emissions policy vacuum. A final passage about alcohol appears unrelated and likely comes from a separate snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "946df6a94d244d00c06b9450fadba8f380a2b6230109726acb65758114641354",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "26cbe746ac52ad9d0ba9181bdba9deaf8ce4b300a7d4756437fda0f672c9c338",
+    "raw_response_text_sha256": "82b2329a1877ff96b7e9282a8415bc11bee9cb2e8c02e60324d850799f659703"
+  },
+  "api_metadata": {
+    "id": "resp_05b60a5e08e621b7006b062872f34087d1bc541d24e17097c7",
+    "model": "gpt-6-luna",
+    "created_at": 1795565683.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 682,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 295,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 977
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.84,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Australian energy-sector policy, reliability obligations, and emissions policy\",\n  \"climate_relevance\": \"The energy-sector discussion explicitly addresses climate change and the absence of an emissions policy, making climate policy a substantial part of the article.\",\n  \"reason\": \"The identifiable energy-policy article discusses missed opportunities to address climate change and the emissions policy vacuum. A final passage about alcohol appears unrelated and likely comes from a separate snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:14:46Z",
+  "duration_seconds": 4.027,
+  "error": null
+}

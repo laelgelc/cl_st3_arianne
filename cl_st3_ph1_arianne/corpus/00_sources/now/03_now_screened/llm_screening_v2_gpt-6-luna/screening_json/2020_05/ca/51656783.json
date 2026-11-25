@@ -1,0 +1,77 @@
+{
+  "article_id": "51656783",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/ca/51656783.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/ca/51656783.json"
+  },
+  "manifest_row": {
+    "article_id": "51656783",
+    "group": "2020_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/ca/51656783.txt",
+    "now_field_2": "744",
+    "date_original": "20-05-03",
+    "date_iso": "2020-05-03",
+    "source_name": "ca.finance.yahoo.com",
+    "url": "https://ca.finance.yahoo.com/news/canada-names-tiff-macklem-former-135415100.html",
+    "title": "Canada hands reins  of  central bank to crisis-era ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Appointment of Tiff Macklem as governor of the Bank of Canada during the COVID-19 economic crisis",
+    "climate_relevance": "Macklem briefly says climate change is a major economic force that will affect prices.",
+    "reason": "The article is mainly about central-bank leadership and the pandemic-era economy. Its single direct statement about climate change conveys an economic implication, making it relevant as peripheral discourse rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7a520e8fcd15965f35454dd2ec59c9f7b09405897820abd3fca03ce5bf6990a3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0d084c792bd357020b9daa095422ea9444c5caaca274b77decc4520fda6ca796",
+    "raw_response_text_sha256": "27a6c59f63f80f8857d8bcb95c301c0ca523f8e942065ab703f4ba7baca7caa5"
+  },
+  "api_metadata": {
+    "id": "resp_035c69f4e00120c7006b062e36dea487d18f2a7329b7aea91f",
+    "model": "gpt-6-luna",
+    "created_at": 1795567158.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1468,
+      "input_tokens_details": {
+        "cache_write_tokens": 1465,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1465
+        }
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1710
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Appointment of Tiff Macklem as governor of the Bank of Canada during the COVID-19 economic crisis\",\n  \"climate_relevance\": \"Macklem briefly says climate change is a major economic force that will affect prices.\",\n  \"reason\": \"The article is mainly about central-bank leadership and the pandemic-era economy. Its single direct statement about climate change conveys an economic implication, making it relevant as peripheral discourse rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:39:20Z",
+  "duration_seconds": 2.117,
+  "error": null
+}

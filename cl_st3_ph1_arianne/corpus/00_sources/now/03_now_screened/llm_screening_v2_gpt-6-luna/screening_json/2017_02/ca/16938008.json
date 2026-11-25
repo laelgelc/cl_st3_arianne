@@ -1,0 +1,77 @@
+{
+  "article_id": "16938008",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/ca/16938008.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/ca/16938008.json"
+  },
+  "manifest_row": {
+    "article_id": "16938008",
+    "group": "2017_02",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/ca/16938008.txt",
+    "now_field_2": "650",
+    "date_original": "17-02-15",
+    "date_iso": "2017-02-15",
+    "source_name": "Brampton Guardian",
+    "url": "http://www.bramptonguardian.com/news-story/7142402-peel-asks-ontario-government-to-test-toxicity-of-fluoride-added-to-local-drinking-water/",
+    "title": "Peel asks Ontario government to test toxicity of fluoride added to ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Debate over the safety and regulation of fluoride additives in Peel Region's drinking water",
+    "climate_relevance": "Climate change appears only in the name of Ontario's Ministry of Environment and Climate Change; the text contains no meaningful climate discourse.",
+    "reason": "The article and attached comments focus on water fluoridation, its health effects, and regulatory responsibility. The climate reference is incidental to an agency name.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ab14cd517474310f9a697eb069c819f2117873c3dd076d47211a02567af91d5a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6ed9470252692b320607d3150c1b5edc9bba8f1f58599fe6cccaf0246df210a1",
+    "raw_response_text_sha256": "19f7606e9d0a0c23a9c7f1f1e159e041fc8671657576bcdc766bcce6a8b100f6"
+  },
+  "api_metadata": {
+    "id": "resp_0fe233c96a458581006b060863629487d2b2bdca4b95407f93",
+    "model": "gpt-6-luna",
+    "created_at": 1795557475.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1350,
+      "input_tokens_details": {
+        "cache_write_tokens": 1347,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1347
+        }
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1592
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Debate over the safety and regulation of fluoride additives in Peel Region's drinking water\",\n  \"climate_relevance\": \"Climate change appears only in the name of Ontario's Ministry of Environment and Climate Change; the text contains no meaningful climate discourse.\",\n  \"reason\": \"The article and attached comments focus on water fluoridation, its health effects, and regulatory responsibility. The climate reference is incidental to an agency name.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:57:57Z",
+  "duration_seconds": 2.097,
+  "error": null
+}

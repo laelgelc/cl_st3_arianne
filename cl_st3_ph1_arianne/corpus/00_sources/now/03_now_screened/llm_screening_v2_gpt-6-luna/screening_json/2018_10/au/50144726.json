@@ -1,0 +1,77 @@
+{
+  "article_id": "50144726",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/au/50144726.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/au/50144726.json"
+  },
+  "manifest_row": {
+    "article_id": "50144726",
+    "group": "2018_10",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/au/50144726.txt",
+    "now_field_2": "302",
+    "date_original": "18-10-21",
+    "date_iso": "2018-10-21",
+    "source_name": "9news.com.au",
+    "url": "https://www.9news.com.au/2018/10/21/20/34/headless-chicken-monster-caught-on-film",
+    "title": "'Headless chicken monster' caught on film for the first time",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Filming a deep-sea cucumber in the Southern Ocean",
+    "climate_relevance": "Climate change appears only in a brief sentence in a related-article snippet about meeting proposals.",
+    "reason": "The identifiable main article concerns marine wildlife and camera technology. The climate reference is incidental and belongs to a related-article snippet, not the main report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b0a1a2bf7c4998ba861224e824c44cd102ab38ebb89625fb178798b501bcac16",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e769875bbf0a7375622ab3db058df885d0807de1505c2bea1aece3bf7ec6b7bf",
+    "raw_response_text_sha256": "b622e214f23b8448fbc2e93d29f0db0977d5e69bcac674e2bb4ec3c795c8af55"
+  },
+  "api_metadata": {
+    "id": "resp_0d8134dbdeb6ab5b006b0627c42fe087d1a071fb9c61af1ec2",
+    "model": "gpt-6-luna",
+    "created_at": 1795565508.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 879,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 295,
+      "output_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "total_tokens": 1174
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Filming a deep-sea cucumber in the Southern Ocean\",\n  \"climate_relevance\": \"Climate change appears only in a brief sentence in a related-article snippet about meeting proposals.\",\n  \"reason\": \"The identifiable main article concerns marine wildlife and camera technology. The climate reference is incidental and belongs to a related-article snippet, not the main report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:11:50Z",
+  "duration_seconds": 2.333,
+  "error": null
+}

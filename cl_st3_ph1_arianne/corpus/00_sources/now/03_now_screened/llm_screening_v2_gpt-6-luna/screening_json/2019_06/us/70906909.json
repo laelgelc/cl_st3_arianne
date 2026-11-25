@@ -1,0 +1,77 @@
+{
+  "article_id": "70906909",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/us/70906909.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/us/70906909.json"
+  },
+  "manifest_row": {
+    "article_id": "70906909",
+    "group": "2019_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/us/70906909.txt",
+    "now_field_2": "689",
+    "date_original": "19-06-25",
+    "date_iso": "2019-06-25",
+    "source_name": "Bleacher Report",
+    "url": "https://bleacherreport.com/articles/2842674-dangelo-russell-rumors-suns-devin-booker-campaigned-latest-on-lakers-reunion",
+    "title": "D'Angelo Russell Rumors: Suns' Devin Booker Campaigned; Latest ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "NBA free agency and potential destinations for D'Angelo Russell",
+    "climate_relevance": "The text includes a substantial passage about climate change and heat waves, but it appears abruptly after the basketball article and is unrelated to its topic.",
+    "reason": "The identifiable main article concerns NBA free agency. The climate discussion is a separate, unrelated snippet rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "162ef76cc02cf0009e1b72126d714376d8fc4d950d12bd73e790ef02874174ca",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c4a46e3cccff7aa7e0837b44637b25128708e39eaebb2b1b5f68fe370be9e7a1",
+    "raw_response_text_sha256": "11296d65917505662dd68550daf9dc3eb834c7914191995fb62d84f463761979"
+  },
+  "api_metadata": {
+    "id": "resp_015bab71b79ea405006b063fdd26f087d1afd1dca341bffefc",
+    "model": "gpt-6-luna",
+    "created_at": 1795571677.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1879,
+      "input_tokens_details": {
+        "cache_write_tokens": 1876,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1876
+        }
+      },
+      "output_tokens": 339,
+      "output_tokens_details": {
+        "reasoning_tokens": 193
+      },
+      "total_tokens": 2218
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"NBA free agency and potential destinations for D'Angelo Russell\",\n  \"climate_relevance\": \"The text includes a substantial passage about climate change and heat waves, but it appears abruptly after the basketball article and is unrelated to its topic.\",\n  \"reason\": \"The identifiable main article concerns NBA free agency. The climate discussion is a separate, unrelated snippet rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:54:39Z",
+  "duration_seconds": 2.781,
+  "error": null
+}

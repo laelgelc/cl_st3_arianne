@@ -1,0 +1,77 @@
+{
+  "article_id": "16752748",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/za/16752748.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/za/16752748.json"
+  },
+  "manifest_row": {
+    "article_id": "16752748",
+    "group": "2017_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/za/16752748.txt",
+    "now_field_2": "738",
+    "date_original": "17-02-05",
+    "date_iso": "2017-02-05",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/politics/2017/02/05/Mkhwebane-%E2%80%98harbours-no-ill%E2%80%99-against-Madonsela",
+    "title": "Mkhwebane 'harbours no ill' against Madonsela",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A statement by South Africa’s Public Protector concerning a dispute with her predecessor over withheld gratuity payments and state-car costs.",
+    "climate_relevance": "A fragment mentions a greenhouse-gas emissions target for 2045 and uncertainty about U.S. climate policies, but it appears unrelated to the identifiable main article.",
+    "reason": "The main article is about the Public Protector and contains no meaningful climate discussion. The isolated climate-policy fragment appears to come from a separate snippet and does not make the main article climate-relevant.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1afcf336e1efd27c9f2f352fb460f5c288557b83aba83be0be9eeb5d031fe3da",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "09ef6b9046a34a78722d0803aa7c9d26b196bc897ce7ec2904aae7b247ff7458",
+    "raw_response_text_sha256": "d3f26247fe209963131c77095a42ad2eed6002a7a3615a458f72984d69fcd8be"
+  },
+  "api_metadata": {
+    "id": "resp_0f66bc79b945b4c0006b06082a087c87d2a551025cdc413d5f",
+    "model": "gpt-6-luna",
+    "created_at": 1795557418.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1440,
+      "input_tokens_details": {
+        "cache_write_tokens": 1437,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1437
+        }
+      },
+      "output_tokens": 395,
+      "output_tokens_details": {
+        "reasoning_tokens": 222
+      },
+      "total_tokens": 1835
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A statement by South Africa’s Public Protector concerning a dispute with her predecessor over withheld gratuity payments and state-car costs.\",\n  \"climate_relevance\": \"A fragment mentions a greenhouse-gas emissions target for 2045 and uncertainty about U.S. climate policies, but it appears unrelated to the identifiable main article.\",\n  \"reason\": \"The main article is about the Public Protector and contains no meaningful climate discussion. The isolated climate-policy fragment appears to come from a separate snippet and does not make the main article climate-relevant.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:57:00Z",
+  "duration_seconds": 2.807,
+  "error": null
+}

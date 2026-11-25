@@ -1,0 +1,77 @@
+{
+  "article_id": "7021490",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/us/7021490.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/us/7021490.json"
+  },
+  "manifest_row": {
+    "article_id": "7021490",
+    "group": "2016_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/us/7021490.txt",
+    "now_field_2": "361",
+    "date_original": "16-01-06",
+    "date_iso": "2016-01-06",
+    "source_name": "The Hill",
+    "url": "http://thehill.com/homenews/administration/264999-obama-previews-his-nontraditional-state-of-the-union",
+    "title": "Obama previews his 'nontraditional' State of the Union",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "President Obama's preview of his final State of the Union address",
+    "climate_relevance": "A global climate change agreement appears only as one item in a list of the president's accomplishments.",
+    "reason": "The text does not discuss climate change or the agreement; the sole reference is an incidental item in an accomplishments list.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "abca7e252971093c9bd3cba1951c78f0f91b22dc3034a0d9c6fe7abac09d586b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ffa78d74a13691b8090c2d498b7d1461402cd32608897a652aff97e5f346c9b6",
+    "raw_response_text_sha256": "4c82d5dc3e7e492baeef5e0c9c11eabaebbeff0114a3b0f738ea2a2a57699cd2"
+  },
+  "api_metadata": {
+    "id": "resp_06f7670f48dbc2f0006b063b5e4b3c87d19eeb380aef6faf63",
+    "model": "gpt-6-luna",
+    "created_at": 1795570526.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 931,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 1127
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"President Obama's preview of his final State of the Union address\",\n  \"climate_relevance\": \"A global climate change agreement appears only as one item in a list of the president's accomplishments.\",\n  \"reason\": \"The text does not discuss climate change or the agreement; the sole reference is an incidental item in an accomplishments list.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:35:28Z",
+  "duration_seconds": 1.996,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70514639",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70514639.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70514639.json"
+  },
+  "manifest_row": {
+    "article_id": "70514639",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70514639.txt",
+    "now_field_2": "595",
+    "date_original": "19-02-14",
+    "date_iso": "2019-02-14",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00360/nzs-national-stadium-set-to-deliver-three-different-codes.htm",
+    "title": "NZ's national stadium set to deliver three different codes",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Eden Park's scheduling of multiple sporting events and community activities",
+    "climate_relevance": "Climate change appears only in an unrelated brief snippet about National Party environment policy; the main article contains no climate discussion.",
+    "reason": "The identifiable main article is about stadium operations. A separate snippet mentions climate change but provides no meaningful climate discourse in the available text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "20833344d4a03aa30c2883e3eb6cfa082c297b351740d70f960f0fbea3b56676",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "20ebe1d3866bf58ef5c0882cd144af99dee2b3c2eed6100de586202a2f5c4ba1",
+    "raw_response_text_sha256": "811d5bedaf545b59bff27eab57bcbdd88343c3a71dc906b00bf25a74f6053e2f"
+  },
+  "api_metadata": {
+    "id": "resp_0d5a80d03a28fe6c006b063d29f38487d19802af64c16b2690",
+    "model": "gpt-6-luna",
+    "created_at": 1795570986.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1234,
+      "input_tokens_details": {
+        "cache_write_tokens": 1231,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1231
+        }
+      },
+      "output_tokens": 202,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1436
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Eden Park's scheduling of multiple sporting events and community activities\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated brief snippet about National Party environment policy; the main article contains no climate discussion.\",\n  \"reason\": \"The identifiable main article is about stadium operations. A separate snippet mentions climate change but provides no meaningful climate discourse in the available text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:08Z",
+  "duration_seconds": 2.147,
+  "error": null
+}

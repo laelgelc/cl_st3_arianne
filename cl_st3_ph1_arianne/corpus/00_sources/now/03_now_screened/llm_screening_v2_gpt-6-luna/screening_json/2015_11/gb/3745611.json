@@ -1,0 +1,77 @@
+{
+  "article_id": "3745611",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_11/gb/3745611.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_11/gb/3745611.json"
+  },
+  "manifest_row": {
+    "article_id": "3745611",
+    "group": "2015_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_11/gb/3745611.txt",
+    "now_field_2": "2066",
+    "date_original": "15-11-04",
+    "date_iso": "2015-11-04",
+    "source_name": "The Independent",
+    "url": "http://www.independent.co.uk/news/uk/politics/theresa-may-accused-of-launching-major-attack-on-privacy-amid-plans-to-give-access-to-citizens-a6721546.html",
+    "title": "Theresa May accused of launching 'major attack on privacy' amid ...",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-11-xje/15-11-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "UK surveillance legislation and access to internet usage records",
+    "climate_relevance": "Climate change appears only in an unrelated photo-gallery caption about demonstrators demanding limits on carbon pollution before the Paris climate summit.",
+    "reason": "The identifiable main article concerns surveillance and privacy. The climate reference is confined to an incidental caption in a gallery of unrelated news images and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b5caf3473d47af0a1947cf35284fc6ea7a1e5f512717147641c9c0915041d756",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fb87cf2ae629e4c22bb3fc20451f3f3f0ada17b5158b9dc762650612bc4e460c",
+    "raw_response_text_sha256": "9932f3623dbd737ca0e51c4da7fd553f6a7176cf3c611669b5df5ed1534c3d61"
+  },
+  "api_metadata": {
+    "id": "resp_0053c11fc5b70e1b006b061cd3395087d2ab395f363dcba20b",
+    "model": "gpt-6-luna",
+    "created_at": 1795562707.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3311,
+      "input_tokens_details": {
+        "cache_write_tokens": 3308,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3308
+        }
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 3574
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"UK surveillance legislation and access to internet usage records\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated photo-gallery caption about demonstrators demanding limits on carbon pollution before the Paris climate summit.\",\n  \"reason\": \"The identifiable main article concerns surveillance and privacy. The climate reference is confined to an incidental caption in a gallery of unrelated news images and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:25:09Z",
+  "duration_seconds": 2.234,
+  "error": null
+}

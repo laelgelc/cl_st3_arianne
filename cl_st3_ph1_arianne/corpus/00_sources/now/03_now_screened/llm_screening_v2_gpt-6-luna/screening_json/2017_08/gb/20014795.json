@@ -1,0 +1,77 @@
+{
+  "article_id": "20014795",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/gb/20014795.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/gb/20014795.json"
+  },
+  "manifest_row": {
+    "article_id": "20014795",
+    "group": "2017_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/gb/20014795.txt",
+    "now_field_2": "495",
+    "date_original": "17-08-14",
+    "date_iso": "2017-08-14",
+    "source_name": "NW Evening Mail",
+    "url": "http://www.nwemail.co.uk/news/national/article/Food-price-rises-expected-to-fuel-inflation-as-wage-growth-lags-behind-7a351b26-e407-41bf-bee1-98f5ed3146c0-ds",
+    "title": "Food price rises expected to fuel inflation as wage growth lags behind",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "UK inflation, household costs, and consumer spending",
+    "climate_relevance": "Climate change appears only in the name of the Department for Energy and Climate Change; the text contains no meaningful discussion of climate change.",
+    "reason": "The article focuses on inflation, food and fuel prices, and household spending. The climate reference is incidental institutional wording.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "80a8192e43d1640e75406f48b52113859994a396b60269fb8bb9fc1532ea7b73",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8ee607baa957c60657315a2ccad6f26af392e4bb7e33e128f7a7d4b7213dafc7",
+    "raw_response_text_sha256": "316de619fd32395afe973a549b5c23c0f288d8078941ca3db9f11742f075afa3"
+  },
+  "api_metadata": {
+    "id": "resp_0f7d5e3609ad8083006b060cc5315c87d28cde48412fb8eb6c",
+    "model": "gpt-6-luna",
+    "created_at": 1795558597.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1153,
+      "input_tokens_details": {
+        "cache_write_tokens": 1150,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1150
+        }
+      },
+      "output_tokens": 197,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1350
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"UK inflation, household costs, and consumer spending\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Department for Energy and Climate Change; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on inflation, food and fuel prices, and household spending. The climate reference is incidental institutional wording.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:16:38Z",
+  "duration_seconds": 1.744,
+  "error": null
+}

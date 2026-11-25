@@ -1,0 +1,77 @@
+{
+  "article_id": "40140364",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/sg/40140364.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/sg/40140364.json"
+  },
+  "manifest_row": {
+    "article_id": "40140364",
+    "group": "2018_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/sg/40140364.txt",
+    "now_field_2": "399",
+    "date_original": "18-10-11",
+    "date_iso": "2018-10-11",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/banksy-shredded-painting-stunt-shouldn-t-meme-proof-185354628.html",
+    "title": "Banksy's shredded painting stunt shouldn't be a meme, and here's the ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Banksy's shredded painting stunt and the memes inspired by it",
+    "climate_relevance": "Climate change is mentioned only as the subject of one meme; the text does not discuss climate change or its implications.",
+    "reason": "The article is about Banksy-inspired memes. Its brief reference to a climate-change meme is incidental and provides no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7fddbbc4ea9ef69971ac99a292d5808c0e1ce41d4418dc64d96b3bc957b95d8d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6aa6bf7040b7a5084e625c98c0a60fcf300558264e85c352cb902610a32666b6",
+    "raw_response_text_sha256": "be808946faff7d5403fb39815a08554b142c708c1a7a71b64c5e2ec9e98e82a1"
+  },
+  "api_metadata": {
+    "id": "resp_04382f0ac9a0c0a6006b061e4f65dc87d2b79c392ab8ae27c8",
+    "model": "gpt-6-luna",
+    "created_at": 1795563087.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1113,
+      "input_tokens_details": {
+        "cache_write_tokens": 1110,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1110
+        }
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1318
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Banksy's shredded painting stunt and the memes inspired by it\",\n  \"climate_relevance\": \"Climate change is mentioned only as the subject of one meme; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article is about Banksy-inspired memes. Its brief reference to a climate-change meme is incidental and provides no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:31:29Z",
+  "duration_seconds": 2.022,
+  "error": null
+}

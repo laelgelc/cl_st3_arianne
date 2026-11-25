@@ -1,0 +1,77 @@
+{
+  "article_id": "18781770",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/ca/18781770.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/ca/18781770.json"
+  },
+  "manifest_row": {
+    "article_id": "18781770",
+    "group": "2017_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/ca/18781770.txt",
+    "now_field_2": "337",
+    "date_original": "17-06-02",
+    "date_iso": "2017-06-02",
+    "source_name": "Straight.com",
+    "url": "http://www.straight.com/arts/918681/government-canada-provide-1606643-canada-150-activities-bc",
+    "title": "Government of Canada to provide $1606643 for Canada 150 ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Government funding for Canada 150 community activities in British Columbia",
+    "climate_relevance": "Climate change appears only in the formal title of a government ministerial portfolio; the text contains no substantive discussion of climate change.",
+    "reason": "The article focuses on cultural and community celebration grants. A passing reference to the natural environment and the ministerial title do not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1f64f42b8731916683ead183f78dc9e11241b27c5882957ee7b624f6e729c73d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8e5953a27c9fb2e4ff021f90fe2cecb2d64ed8b636bbdeed49630a0fc10a0777",
+    "raw_response_text_sha256": "1744621fb3d22e0caa7ac242cb4f62606fa3c8efdaec6ecd9f68a750cfeb0aa4"
+  },
+  "api_metadata": {
+    "id": "resp_03527dd95008d5d5006b060aeadf0c87d2a0eb0aab98e1521b",
+    "model": "gpt-6-luna",
+    "created_at": 1795558122.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 939,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 195,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 1134
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Government funding for Canada 150 community activities in British Columbia\",\n  \"climate_relevance\": \"Climate change appears only in the formal title of a government ministerial portfolio; the text contains no substantive discussion of climate change.\",\n  \"reason\": \"The article focuses on cultural and community celebration grants. A passing reference to the natural environment and the ministerial title do not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:08:44Z",
+  "duration_seconds": 1.636,
+  "error": null
+}

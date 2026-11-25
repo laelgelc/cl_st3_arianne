@@ -1,0 +1,77 @@
+{
+  "article_id": "16979059",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/us/16979059.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/us/16979059.json"
+  },
+  "manifest_row": {
+    "article_id": "16979059",
+    "group": "2017_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/us/16979059.txt",
+    "now_field_2": "1039",
+    "date_original": "17-02-17",
+    "date_iso": "2017-02-17",
+    "source_name": "San Francisco Chronicle",
+    "url": "http://www.sfchronicle.com/business/networth/article/Oroville-shows-importance-of-flood-insurance-10942102.php",
+    "title": "Oroville shows importance of flood insurance",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "Flood insurance and the risk of flooding around Oroville Dam",
+    "climate_relevance": "The article briefly links climate change, alongside aging infrastructure, to more frequent flooding in areas not designated high risk.",
+    "reason": "The article is mainly about flood insurance prompted by the Oroville Dam near-disaster. Climate change provides meaningful context for the discussion of flood risk but is not a central topic.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e5f214d812b526a1f3b216b3ed580f337de0ee7c931f39a17f0dd28df0c0b80d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7a7d5af6c7242c58e5999ac27dce8149e56cda5120f298444313af9774bad03e",
+    "raw_response_text_sha256": "b912bd643172ec954d7c6183420092fa9534ea0f7be7d1c1f4167249fcf17bd0"
+  },
+  "api_metadata": {
+    "id": "resp_09e31df79ffe7826006b06086edadc87d2971227e436d96472",
+    "model": "gpt-6-luna",
+    "created_at": 1795557486.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1949,
+      "input_tokens_details": {
+        "cache_write_tokens": 1946,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1946
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 2174
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Flood insurance and the risk of flooding around Oroville Dam\",\n  \"climate_relevance\": \"The article briefly links climate change, alongside aging infrastructure, to more frequent flooding in areas not designated high risk.\",\n  \"reason\": \"The article is mainly about flood insurance prompted by the Oroville Dam near-disaster. Climate change provides meaningful context for the discussion of flood risk but is not a central topic.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:58:08Z",
+  "duration_seconds": 1.86,
+  "error": null
+}

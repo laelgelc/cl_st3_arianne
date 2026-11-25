@@ -1,0 +1,77 @@
+{
+  "article_id": "60222142",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/ca/60222142.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/ca/60222142.json"
+  },
+  "manifest_row": {
+    "article_id": "60222142",
+    "group": "2018_11",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/ca/60222142.txt",
+    "now_field_2": "837",
+    "date_original": "18-11-03",
+    "date_iso": "2018-11-03",
+    "source_name": "Winnipeg Free Press",
+    "url": "https://www.winnipegfreepress.com/local/peaceful-easy-feeling-as-the-worlds-faithful-gather-in-toronto-499483431.html",
+    "title": "Peaceful, easy feeling as the world's faithful gather in Toronto",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "A gathering of religious traditions and a separate marketing column",
+    "climate_relevance": "Climate change is mentioned once in a list of issues that faith can help address, without further discussion.",
+    "reason": "The climate reference is brief and incidental, offering too little discourse to contribute meaningfully to climate-change analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "329e7b50e0b51b6b8c228dc807b1883126a2eb8af8fe1f7756b2a83c6d4fa407",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4b3b2be06f4359eb817dd84025735b3a6cedf718d5749a2800a5e18602d77563",
+    "raw_response_text_sha256": "44cb104cc684e9db7cd49c98f43c296f6f2f99bd705540a6529c9179dee73af8"
+  },
+  "api_metadata": {
+    "id": "resp_0c0e4dad2c4bc294006b06319610e087d1ae52dd78ead0d4e5",
+    "model": "gpt-6-luna",
+    "created_at": 1795568022.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3134,
+      "input_tokens_details": {
+        "cache_write_tokens": 3131,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3131
+        }
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 215
+      },
+      "total_tokens": 3475
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A gathering of religious traditions and a separate marketing column\",\n  \"climate_relevance\": \"Climate change is mentioned once in a list of issues that faith can help address, without further discussion.\",\n  \"reason\": \"The climate reference is brief and incidental, offering too little discourse to contribute meaningfully to climate-change analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:53:44Z",
+  "duration_seconds": 2.778,
+  "error": null
+}

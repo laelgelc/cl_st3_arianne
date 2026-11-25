@@ -1,0 +1,77 @@
+{
+  "article_id": "8323746",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_04/au/8323746.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_04/au/8323746.json"
+  },
+  "manifest_row": {
+    "article_id": "8323746",
+    "group": "2016_04",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_04/au/8323746.txt",
+    "now_field_2": "1129",
+    "date_original": "16-04-18",
+    "date_iso": "2016-04-18",
+    "source_name": "The Australian Financial Review",
+    "url": "http://www.afr.com/opinion/letters-to-the-editor/company-tax-cut-wont-boost-national-income-20160418-go8pr8",
+    "title": "Company tax cut won't boost national income",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-04-ovb/16-04-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "A collection of letters and opinion snippets, led by a debate over company tax cuts.",
+    "climate_relevance": "One letter says that Australia's $1 billion climate-change pledge made in Paris will be taken from other aid projects, linking climate funding to overseas aid priorities.",
+    "reason": "The identifiable lead article is about company taxation, not climate change. Climate appears in a separate aid-and-defence letter in a meaningful but brief policy reference, so the text has peripheral climate relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ec50121050e90a62d4d7509fd6feba3782b2182240b43ebb72f6822a22bc25b6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "83ca1ccfc0ab71078972c7dbdabd0bcdcbefff0d67e4ec2d841bdd2063dbaa96",
+    "raw_response_text_sha256": "25311865a9dbb99f3bb061b3ce6dbcb44e04626979b29c5bce65276920dc0983"
+  },
+  "api_metadata": {
+    "id": "resp_02e634e91d579b40006b06495304d487d19d5b409e64dec973",
+    "model": "gpt-6-luna",
+    "created_at": 1795574099.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1898,
+      "input_tokens_details": {
+        "cache_write_tokens": 1895,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1895
+        }
+      },
+      "output_tokens": 350,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 2248
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of letters and opinion snippets, led by a debate over company tax cuts.\",\n  \"climate_relevance\": \"One letter says that Australia's $1 billion climate-change pledge made in Paris will be taken from other aid projects, linking climate funding to overseas aid priorities.\",\n  \"reason\": \"The identifiable lead article is about company taxation, not climate change. Climate appears in a separate aid-and-defence letter in a meaningful but brief policy reference, so the text has peripheral climate relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:35:02Z",
+  "duration_seconds": 3.471,
+  "error": null
+}

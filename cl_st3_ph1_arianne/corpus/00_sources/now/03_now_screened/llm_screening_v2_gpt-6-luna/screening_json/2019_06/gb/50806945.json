@@ -1,0 +1,77 @@
+{
+  "article_id": "50806945",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/gb/50806945.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/gb/50806945.json"
+  },
+  "manifest_row": {
+    "article_id": "50806945",
+    "group": "2019_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/gb/50806945.txt",
+    "now_field_2": "3020",
+    "date_original": "19-06-27",
+    "date_iso": "2019-06-27",
+    "source_name": "The Independent",
+    "url": "https://www.independent.co.uk/voices/kamala-harris-joe-biden-bernie-sanders-democratic-debate-racism-healthcare-migration-a8978541.html",
+    "title": "At the Democratic debate, Kamala Harris said the next president ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Analysis of the 2020 Democratic presidential debate, focused on candidates’ performances and policy exchanges.",
+    "climate_relevance": "Climate change appears only in an embedded candidate-gallery caption about Jay Inslee’s campaign; a separate caption mentions the Paris Climate Accord. Neither receives meaningful discussion in the main article.",
+    "reason": "The identifiable main article is not about climate change, and the climate references are confined to ancillary gallery material rather than contributing to substantive climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c5e7f7caba183a5fa04c91e7c2c2a8aeb240cc147e33d630cba9dde2ff7abafb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7fd4fdc7579f0d1562314f745f4af02da2c2ba57b1ba5a144d2912dc62362c7f",
+    "raw_response_text_sha256": "229f78ddc61529929f7fa2effcfef905362be7300fe2af75e8589af154bd96fd"
+  },
+  "api_metadata": {
+    "id": "resp_0b2df5ce27eca0b0006b062b0e351887d18a3bdcc9c211a452",
+    "model": "gpt-6-luna",
+    "created_at": 1795566350.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4693,
+      "input_tokens_details": {
+        "cache_write_tokens": 4690,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4690
+        }
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 4980
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Analysis of the 2020 Democratic presidential debate, focused on candidates’ performances and policy exchanges.\",\n  \"climate_relevance\": \"Climate change appears only in an embedded candidate-gallery caption about Jay Inslee’s campaign; a separate caption mentions the Paris Climate Accord. Neither receives meaningful discussion in the main article.\",\n  \"reason\": \"The identifiable main article is not about climate change, and the climate references are confined to ancillary gallery material rather than contributing to substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:25:53Z",
+  "duration_seconds": 3.034,
+  "error": null
+}

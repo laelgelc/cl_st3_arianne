@@ -1,0 +1,77 @@
+{
+  "article_id": "40795467",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40795467.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40795467.json"
+  },
+  "manifest_row": {
+    "article_id": "40795467",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40795467.txt",
+    "now_field_2": "1107",
+    "date_original": "19-04-03",
+    "date_iso": "2019-04-03",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/03/brexits-last-chance-before-the-voters-take-control/",
+    "title": "Brexit's last chance before the voters take control",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Brexit and parliamentary options for the UK's withdrawal from the European Union",
+    "climate_relevance": "Climate change appears only in a minister's portfolio in an unrelated introductory snippet; a separate brief mention of sustainable energy solutions does not develop climate discourse.",
+    "reason": "The identifiable main article is about Brexit. The climate-related material is confined to an unrelated introductory item and is too brief to meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fb3ad3e69d0f67e27801e83a6d84b054f3aa56f0c8e2e8d3b18f979251e59617",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "538a4878dd698f8a569182e73ada5ddbd18d0758d2e9c65e880b1debb3668c03",
+    "raw_response_text_sha256": "2f2ecd78f10c1a04169fc3f08f131b0520aa044149cd7442d17ff23c2ab42f98"
+  },
+  "api_metadata": {
+    "id": "resp_0fb04239bd95fb49006b061fbaca1487d2be22aeac59e4edc2",
+    "model": "gpt-6-luna",
+    "created_at": 1795563450.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1896,
+      "input_tokens_details": {
+        "cache_write_tokens": 1893,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1893
+        }
+      },
+      "output_tokens": 340,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 2236
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Brexit and parliamentary options for the UK's withdrawal from the European Union\",\n  \"climate_relevance\": \"Climate change appears only in a minister's portfolio in an unrelated introductory snippet; a separate brief mention of sustainable energy solutions does not develop climate discourse.\",\n  \"reason\": \"The identifiable main article is about Brexit. The climate-related material is confined to an unrelated introductory item and is too brief to meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:33Z",
+  "duration_seconds": 2.735,
+  "error": null
+}

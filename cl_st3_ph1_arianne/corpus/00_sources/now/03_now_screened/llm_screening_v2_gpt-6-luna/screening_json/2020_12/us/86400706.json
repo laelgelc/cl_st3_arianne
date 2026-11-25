@@ -1,0 +1,77 @@
+{
+  "article_id": "86400706",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/86400706.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/86400706.json"
+  },
+  "manifest_row": {
+    "article_id": "86400706",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/86400706.txt",
+    "now_field_2": "1208",
+    "date_original": "20-12-10",
+    "date_iso": "2020-12-10",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/outlook/five-myths/five-myths-about-the-paris-climate-agreement/2020/12/10/371d6f20-39a5-11eb-9276-ae0ca72729be_story.html",
+    "title": "Five myths about the Paris climate agreement",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "The Paris climate agreement, its emissions targets, and debates about climate policy and clean-energy technologies",
+    "climate_relevance": "The article directly examines claims about the Paris agreement, national emissions commitments, greenhouse gases, and pathways to limit warming.",
+    "reason": "Climate change and the Paris agreement are the central subjects throughout the article, including discussion of mitigation, emissions, energy technologies, and international policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c1f4cd242cfad483fe67753845efb4ba71adc973f6b7bb2ace78638ef5863471",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ba73a84a315412469a8b13254d9f4abf62e54fcec84038ca38deab0746c4639f",
+    "raw_response_text_sha256": "7a9975b9df88055279d087f10d99bb9162d93f79e663caef43710fda23643952"
+  },
+  "api_metadata": {
+    "id": "resp_0666e0effd7a8888006b0650043c2087d1906f155287cf6448",
+    "model": "gpt-6-luna",
+    "created_at": 1795575812.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2060,
+      "input_tokens_details": {
+        "cache_write_tokens": 2057,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2057
+        }
+      },
+      "output_tokens": 204,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 2264
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"The Paris climate agreement, its emissions targets, and debates about climate policy and clean-energy technologies\",\n  \"climate_relevance\": \"The article directly examines claims about the Paris agreement, national emissions commitments, greenhouse gases, and pathways to limit warming.\",\n  \"reason\": \"Climate change and the Paris agreement are the central subjects throughout the article, including discussion of mitigation, emissions, energy technologies, and international policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:03:37Z",
+  "duration_seconds": 5.608,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "3853182",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/ca/3853182.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/ca/3853182.json"
+  },
+  "manifest_row": {
+    "article_id": "3853182",
+    "group": "2015_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/ca/3853182.txt",
+    "now_field_2": "380",
+    "date_original": "15-12-02",
+    "date_iso": "2015-12-02",
+    "source_name": "The Suburban Newspaper",
+    "url": "http://www.thesuburban.com/news/west_island_news/montreal-s-dsp-assures-pointe-claire-of-total-reliance-site/article_216646a5-5e1a-538f-841b-8a59dbb24cb5.html",
+    "title": "Montreal's DSP assures Pointe Claire of total Reliance Site clean-up",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Cleanup of PCB contamination at a former industrial site",
+    "climate_relevance": "Climate change appears only as part of the name of a government ministry; the article discusses toxic contamination and public health, not climate change.",
+    "reason": "The climate reference is incidental to an institutional name and contributes no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b2f24ba473efb12548bd018ac83855b317518c0b4875fcf2dbb1d01d6e0c722e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a6e30e05769bc84940719dbeef7d8306eb1e3344bb29f0ab3a9f4a62072007b7",
+    "raw_response_text_sha256": "cf3fe5b2d95f5ad1734bee6500e8f2a3d1f6569f58509ffa6dcc09d6dea60af1"
+  },
+  "api_metadata": {
+    "id": "resp_0921e8c60addba63006b061d68072c87d2b806b4fb02ebb648",
+    "model": "gpt-6-luna",
+    "created_at": 1795562856.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 983,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 189,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 1172
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Cleanup of PCB contamination at a former industrial site\",\n  \"climate_relevance\": \"Climate change appears only as part of the name of a government ministry; the article discusses toxic contamination and public health, not climate change.\",\n  \"reason\": \"The climate reference is incidental to an institutional name and contributes no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:27:37Z",
+  "duration_seconds": 1.72,
+  "error": null
+}

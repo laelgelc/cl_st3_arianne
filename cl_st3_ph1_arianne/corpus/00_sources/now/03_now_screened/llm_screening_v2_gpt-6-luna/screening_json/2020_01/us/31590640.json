@@ -1,0 +1,77 @@
+{
+  "article_id": "31590640",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/31590640.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/31590640.json"
+  },
+  "manifest_row": {
+    "article_id": "31590640",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/31590640.txt",
+    "now_field_2": "1116",
+    "date_original": "20-01-21",
+    "date_iso": "2020-01-21",
+    "source_name": "vulture.com",
+    "url": "https://www.vulture.com/2020/01/a-timon-of-athens-for-the-age-of-peter-thiel.html",
+    "title": "A `Timon of Athens' for the Age of Peter Thiel",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "A theatrical review of a production of Shakespeare's Timon of Athens",
+    "climate_relevance": "Climate change denial appears only in a brief hypothetical comparison about wealthy people funding causes.",
+    "reason": "The article is about a Shakespeare production and wealth; its single passing mention of climate change denial does not develop meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1abdff4e979938fbf633c92c091338f498bc902176e70a217ae6846d5002e17a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "324371b9357271054768526ba7860b3c228039e385d5635b97aba48379e9884f",
+    "raw_response_text_sha256": "1e85f6d1f45493261980e5dc0d7c64c78e5233f03907676c3ee426974ff1da16"
+  },
+  "api_metadata": {
+    "id": "resp_092ced3a1a9cd943006b06184b3fbc87d29e9b1472162a34d0",
+    "model": "gpt-6-luna",
+    "created_at": 1795561547.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1978,
+      "input_tokens_details": {
+        "cache_write_tokens": 1975,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1975
+        }
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 2210
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A theatrical review of a production of Shakespeare's Timon of Athens\",\n  \"climate_relevance\": \"Climate change denial appears only in a brief hypothetical comparison about wealthy people funding causes.\",\n  \"reason\": \"The article is about a Shakespeare production and wealth; its single passing mention of climate change denial does not develop meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:05:49Z",
+  "duration_seconds": 2.44,
+  "error": null
+}

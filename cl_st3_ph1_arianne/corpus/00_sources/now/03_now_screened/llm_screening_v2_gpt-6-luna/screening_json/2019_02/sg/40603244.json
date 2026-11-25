@@ -1,0 +1,77 @@
+{
+  "article_id": "40603244",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/sg/40603244.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/sg/40603244.json"
+  },
+  "manifest_row": {
+    "article_id": "40603244",
+    "group": "2019_02",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/sg/40603244.txt",
+    "now_field_2": "605",
+    "date_original": "19-02-10",
+    "date_iso": "2019-02-10",
+    "source_name": "www.MICEtimes.asi",
+    "url": "http://micetimes.asia/invasion-of-polar-bears-on-the-archipelago-of-novaya-zemlya-photo/",
+    "title": "Invasion of polar bears on the archipelago of Novaya Zemlya. Photo",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Polar bears entering settlements on Novaya Zemlya and the resulting local emergency response",
+    "climate_relevance": "The article identifies climate-change-driven ice reduction as one cause of the bears' increased presence near settlements, alongside local waste-management problems.",
+    "reason": "The main article concerns human-wildlife conflict and local safety measures rather than climate change, but it includes a meaningful statement linking reduced sea ice to the event. Unrelated news snippets appear after the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a982e246c0c58b01571e3fdd0866afe6d0f29f273e02046498af9822c67f62ab",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "aa4ba08bd3c87890f49e4850c75d40317cb8ad15a69f7b540e43a1346d3cd114",
+    "raw_response_text_sha256": "0e1d2307c154f910e3b64c6cc0cec90f9194d11b126e4b05617cb0acc7ceac82"
+  },
+  "api_metadata": {
+    "id": "resp_0c5965cb305e2066006b061f4ad44887d29bf63b4cbc3c64c8",
+    "model": "gpt-6-luna",
+    "created_at": 1795563338.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1253,
+      "input_tokens_details": {
+        "cache_write_tokens": 1250,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1250
+        }
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 1491
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Polar bears entering settlements on Novaya Zemlya and the resulting local emergency response\",\n  \"climate_relevance\": \"The article identifies climate-change-driven ice reduction as one cause of the bears' increased presence near settlements, alongside local waste-management problems.\",\n  \"reason\": \"The main article concerns human-wildlife conflict and local safety measures rather than climate change, but it includes a meaningful statement linking reduced sea ice to the event. Unrelated news snippets appear after the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:35:40Z",
+  "duration_seconds": 2.159,
+  "error": null
+}

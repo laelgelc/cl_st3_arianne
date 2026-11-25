@@ -1,0 +1,77 @@
+{
+  "article_id": "51192431",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/ca/51192431.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/ca/51192431.json"
+  },
+  "manifest_row": {
+    "article_id": "51192431",
+    "group": "2019_11",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/ca/51192431.txt",
+    "now_field_2": "409",
+    "date_original": "19-11-16",
+    "date_iso": "2019-11-16",
+    "source_name": "vancourier.com",
+    "url": "https://www.vancourier.com/brown-bagging-liquor-reaches-new-heights-in-b-c-with-plastic-bag-ban-1.24008762",
+    "title": "Brown bagging liquor reaches new heights in B.C. with ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-ca1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Replacing plastic bags at government liquor stores and planned policies to reduce single-use plastics",
+    "climate_relevance": "Climate change appears only as part of the Environment and Climate Change minister's title; the article discusses plastic pollution and packaging policy, not climate change.",
+    "reason": "The climate reference is part of a ministerial title rather than meaningful climate discourse. The article's environmental focus is single-use plastics.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "990aec45ff082c57b71788283730afc00962fa970e931a848cef610bf0191cd9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dd0a15e023ebb27a7d1dc1a10fe5522083c8d03fb843d948c1f36db767ad7399",
+    "raw_response_text_sha256": "2db4229ebaf3899d6debb682b2b336dc78d75bb4e575f9eaba0ff5b5db331abd"
+  },
+  "api_metadata": {
+    "id": "resp_0fc2dd8c06638688006b062c95fcc487d1962b7071c310ba42",
+    "model": "gpt-6-luna",
+    "created_at": 1795566742.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1005,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 1255
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Replacing plastic bags at government liquor stores and planned policies to reduce single-use plastics\",\n  \"climate_relevance\": \"Climate change appears only as part of the Environment and Climate Change minister's title; the article discusses plastic pollution and packaging policy, not climate change.\",\n  \"reason\": \"The climate reference is part of a ministerial title rather than meaningful climate discourse. The article's environmental focus is single-use plastics.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:32:23Z",
+  "duration_seconds": 2.067,
+  "error": null
+}

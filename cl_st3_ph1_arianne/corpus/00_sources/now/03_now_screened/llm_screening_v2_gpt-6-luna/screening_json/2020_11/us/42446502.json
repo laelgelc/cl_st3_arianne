@@ -1,0 +1,77 @@
+{
+  "article_id": "42446502",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/us/42446502.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/us/42446502.json"
+  },
+  "manifest_row": {
+    "article_id": "42446502",
+    "group": "2020_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/us/42446502.txt",
+    "now_field_2": "4633",
+    "date_original": "20-11-09",
+    "date_iso": "2020-11-09",
+    "source_name": "rawstory.com",
+    "url": "https://www.rawstory.com/2020/11/alleged-victims-of-people-of-praise-terrified-of-amy-coneys-barretts-anti-gay-views-as-supreme-court-hears-lgbtq-case/",
+    "title": "EXCLUSIVE: Alleged `victims' of People of Praise ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An investigation into the People of Praise and former members' allegations concerning the religious community and Amy Coney Barrett.",
+    "climate_relevance": "Climate change appears only in a separate hurricane-season news snippet at the end, not in the identifiable main article.",
+    "reason": "The main article contains no meaningful climate discourse. The climate-related statement belongs to an unrelated snippet about the 2020 Atlantic hurricane season, so it does not make the main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "66654f53b001193ed81f2b1e4a395023a2134774ae812959930179c834eb440c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b63b15c42011b013818aa3812d26a81ff170fcf7b80242c80fed3d5e36323181",
+    "raw_response_text_sha256": "3a55debdcc1d7ed90d30c4f907d33d48d3af7716379b8d32e4fe3629501c43a6"
+  },
+  "api_metadata": {
+    "id": "resp_0dcad7b607e4cb1a006b062619de2087d29ca50179d858e632",
+    "model": "gpt-6-luna",
+    "created_at": 1795565082.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6589,
+      "input_tokens_details": {
+        "cache_write_tokens": 6586,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6586
+        }
+      },
+      "output_tokens": 442,
+      "output_tokens_details": {
+        "reasoning_tokens": 278
+      },
+      "total_tokens": 7031
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An investigation into the People of Praise and former members' allegations concerning the religious community and Amy Coney Barrett.\",\n  \"climate_relevance\": \"Climate change appears only in a separate hurricane-season news snippet at the end, not in the identifiable main article.\",\n  \"reason\": \"The main article contains no meaningful climate discourse. The climate-related statement belongs to an unrelated snippet about the 2020 Atlantic hurricane season, so it does not make the main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:04:45Z",
+  "duration_seconds": 4.054,
+  "error": null
+}

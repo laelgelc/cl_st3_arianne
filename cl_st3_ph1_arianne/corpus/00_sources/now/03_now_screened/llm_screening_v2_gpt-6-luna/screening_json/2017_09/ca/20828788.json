@@ -1,0 +1,77 @@
+{
+  "article_id": "20828788",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_09/ca/20828788.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_09/ca/20828788.json"
+  },
+  "manifest_row": {
+    "article_id": "20828788",
+    "group": "2017_09",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_09/ca/20828788.txt",
+    "now_field_2": "212",
+    "date_original": "17-09-29",
+    "date_iso": "2017-09-29",
+    "source_name": "The Weather Network",
+    "url": "https://www.theweathernetwork.com/news/articles/tornado-confirmed-northwest-ontario/86917",
+    "title": "Tornado confirmed in NW Ontario after last week's storms",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-09.txt\"]",
+    "metadata_article_files": "[\"text-17-09/text_17-09-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A confirmed tornado near Kenora, Ontario, and the province's tornado statistics",
+    "climate_relevance": "The text reports on a severe-weather event but does not discuss climate change or connect the tornado to it. Climate change appears only in the name of a government agency.",
+    "reason": "The article is a weather report about a tornado and contains no meaningful climate-change discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "162aaf808dad42a5e3842ba9134ec46e07f0118e04445aacafddb784d65a84c1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "41e1befd29ad428fcb067a032e3959151bc5f0be699227feeba1abad01e1e9bb",
+    "raw_response_text_sha256": "fdf9a2d951b436a50dd735357e24011d8b142d1c5b34554e32b4fc4f2245d44d"
+  },
+  "api_metadata": {
+    "id": "resp_0af6b74cda1c6aa6006b060de2a38887d2b0b95196a71d53b1",
+    "model": "gpt-6-luna",
+    "created_at": 1795558882.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 771,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 972
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A confirmed tornado near Kenora, Ontario, and the province's tornado statistics\",\n  \"climate_relevance\": \"The text reports on a severe-weather event but does not discuss climate change or connect the tornado to it. Climate change appears only in the name of a government agency.\",\n  \"reason\": \"The article is a weather report about a tornado and contains no meaningful climate-change discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:21:24Z",
+  "duration_seconds": 1.67,
+  "error": null
+}

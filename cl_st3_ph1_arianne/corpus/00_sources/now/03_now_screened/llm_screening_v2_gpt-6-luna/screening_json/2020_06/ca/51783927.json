@@ -1,0 +1,77 @@
+{
+  "article_id": "51783927",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/ca/51783927.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/ca/51783927.json"
+  },
+  "manifest_row": {
+    "article_id": "51783927",
+    "group": "2020_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/ca/51783927.txt",
+    "now_field_2": "776",
+    "date_original": "20-06-28",
+    "date_iso": "2020-06-28",
+    "source_name": "newswire.ca",
+    "url": "https://www.newswire.ca/news-releases/government-of-canada-announces-emergency-support-for-vancouver-aquarium-883170996.html",
+    "title": "Government of Canada announces emergency support for ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-ca1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Emergency federal funding for the Vancouver Aquarium during the COVID-19 pandemic",
+    "climate_relevance": "Climate change appears only in a government minister's official portfolio title; the text contains no meaningful discussion of climate change.",
+    "reason": "The article focuses on tourism, pandemic-related financial support, and the aquarium's operations and marine conservation work. The sole climate reference is incidental to a minister's title.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fa30e463f71a5325acc6446c113e8304269c405372983b9442d4ba333f0ed7aa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "40b1b3004994b40952e52622f07f9d2161db066723fcdca4336b835a48281129",
+    "raw_response_text_sha256": "619d98f4e561169a73bb9fbb6c0dfb1376d5cb6db5ea68b6cb6c77db4c6e5b20"
+  },
+  "api_metadata": {
+    "id": "resp_0a08b1ffc6119193006b062eb6f9b887d1a867fdba57b0791c",
+    "model": "gpt-6-luna",
+    "created_at": 1795567287.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1484,
+      "input_tokens_details": {
+        "cache_write_tokens": 1481,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1481
+        }
+      },
+      "output_tokens": 188,
+      "output_tokens_details": {
+        "reasoning_tokens": 39
+      },
+      "total_tokens": 1672
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Emergency federal funding for the Vancouver Aquarium during the COVID-19 pandemic\",\n  \"climate_relevance\": \"Climate change appears only in a government minister's official portfolio title; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on tourism, pandemic-related financial support, and the aquarium's operations and marine conservation work. The sole climate reference is incidental to a minister's title.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:41:29Z",
+  "duration_seconds": 2.359,
+  "error": null
+}

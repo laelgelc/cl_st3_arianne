@@ -1,0 +1,77 @@
+{
+  "article_id": "60961762",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/pk/60961762.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/pk/60961762.json"
+  },
+  "manifest_row": {
+    "article_id": "60961762",
+    "group": "2019_06",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/pk/60961762.txt",
+    "now_field_2": "177",
+    "date_original": "19-06-26",
+    "date_iso": "2019-06-26",
+    "source_name": "Business Recorder",
+    "url": "https://www.brecorder.com/2019/06/27/505830/oppositions-apc-held-only-to-protect-their-own-interests-nadeem-afzal/",
+    "title": "Opposition's APC held only to protect their own interests: Nadeem Afzal",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Pakistani opposition politics and National Assembly budget approvals",
+    "climate_relevance": "Climate Change Division appears only as an item in a list of budget grants, without discussion of climate change, policy, or impacts.",
+    "reason": "The text combines two unrelated news items. The budget report mentions allocations to the Climate Change Division, but this is a passing administrative reference rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a1193f5febca9d8f6f8410952af5654524a5597eb2110e1b0d9b73ec133123cc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a07218af95b5147c9d0f90d1337e4208db686ae628382cc0961a2fffb2cab6a8",
+    "raw_response_text_sha256": "e4b0dfa9862656999a226218d4d3b7a0933d8a3fcedee06eabce2aab2c09c5c3"
+  },
+  "api_metadata": {
+    "id": "resp_0d4f48f9aadbac63006b0635cb129c87d1b2ba564bce3874d8",
+    "model": "gpt-6-luna",
+    "created_at": 1795569099.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2541,
+      "input_tokens_details": {
+        "cache_write_tokens": 2538,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2538
+        }
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 2818
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Pakistani opposition politics and National Assembly budget approvals\",\n  \"climate_relevance\": \"Climate Change Division appears only as an item in a list of budget grants, without discussion of climate change, policy, or impacts.\",\n  \"reason\": \"The text combines two unrelated news items. The budget report mentions allocations to the Climate Change Division, but this is a passing administrative reference rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:11:41Z",
+  "duration_seconds": 2.478,
+  "error": null
+}

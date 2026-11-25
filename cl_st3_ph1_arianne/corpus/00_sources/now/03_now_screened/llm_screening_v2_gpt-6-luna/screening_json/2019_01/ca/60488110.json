@@ -1,0 +1,77 @@
+{
+  "article_id": "60488110",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/ca/60488110.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/ca/60488110.json"
+  },
+  "manifest_row": {
+    "article_id": "60488110",
+    "group": "2019_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/ca/60488110.txt",
+    "now_field_2": "1102",
+    "date_original": "19-01-28",
+    "date_iso": "2019-01-28",
+    "source_name": "The Globe and Mail",
+    "url": "https://www.theglobeandmail.com/investing/globe-wealth/article-what-kind-of-giver-are-you-five-donor-profiles/",
+    "title": "Popular charitable-giving accounts 'combine the head, the heart and ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Donor-advised funds and charitable giving in Canada",
+    "climate_relevance": "Climate change is not discussed. The only related wording is the name Environment and Climate Change Canada in a list of organizations that can accept ecologically sensitive land.",
+    "reason": "The article focuses on charitable giving and tax benefits; the climate-related reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e64f123a9d24deed8a8d278e8369b32028940926ae6bb09b501fa2281dcdf96f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c5703b9f65c22c5e5b8aeeac05f863f98e85cc235a3e57924dff48c0b360ecaf",
+    "raw_response_text_sha256": "332bbd314b23efeff49b6746e557e3f9618ae008712d949b47bfa8c24b77a862"
+  },
+  "api_metadata": {
+    "id": "resp_09f121eb042e4ab1006b0632d957cc87d1b5451dbfb552f396",
+    "model": "gpt-6-luna",
+    "created_at": 1795568345.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1956,
+      "input_tokens_details": {
+        "cache_write_tokens": 1953,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1953
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 2181
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Donor-advised funds and charitable giving in Canada\",\n  \"climate_relevance\": \"Climate change is not discussed. The only related wording is the name Environment and Climate Change Canada in a list of organizations that can accept ecologically sensitive land.\",\n  \"reason\": \"The article focuses on charitable giving and tax benefits; the climate-related reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:59:07Z",
+  "duration_seconds": 1.933,
+  "error": null
+}

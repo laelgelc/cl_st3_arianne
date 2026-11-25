@@ -1,0 +1,77 @@
+{
+  "article_id": "70151897",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/us/70151897.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/us/70151897.json"
+  },
+  "manifest_row": {
+    "article_id": "70151897",
+    "group": "2018_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/us/70151897.txt",
+    "now_field_2": "1667",
+    "date_original": "18-10-17",
+    "date_iso": "2018-10-17",
+    "source_name": "Slate Magazine",
+    "url": "https://slate.com/human-interest/2018/10/parenting-advice-climate-change.html",
+    "title": "Does Climate Change Mean I Shouldn't Have Kids?",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-us-2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Parenting advice, including whether to have children amid climate fears",
+    "climate_relevance": "The opening exchange directly discusses climate change, the U.N. report, fears about a child's future, and adoption, but most of the text addresses unrelated parenting questions.",
+    "reason": "Climate change receives meaningful discussion in the first advice exchange, so the text is relevant beyond a passing mention. However, the supplied column also contains several unrelated parenting exchanges, making climate a background rather than central topic of the text as a whole.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "91cb731dd2c174ca004a7dc67411e0e81ab3f72c6125ff5459ff7b9a85b61fe5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "183f5462da3c92fea38f97dc4671d8eb81d435951e4c52daeb732e8da4d8a381",
+    "raw_response_text_sha256": "b26e2c2d9b9bab3c105fb00f0f29387796ca1c64b4cde585bdf0704ed8792bb9"
+  },
+  "api_metadata": {
+    "id": "resp_0d949615b5c3fc9f006b063b1d4a4887d19085f123331056ea",
+    "model": "gpt-6-luna",
+    "created_at": 1795570461.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2570,
+      "input_tokens_details": {
+        "cache_write_tokens": 2567,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2567
+        }
+      },
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 2877
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Parenting advice, including whether to have children amid climate fears\",\n  \"climate_relevance\": \"The opening exchange directly discusses climate change, the U.N. report, fears about a child's future, and adoption, but most of the text addresses unrelated parenting questions.\",\n  \"reason\": \"Climate change receives meaningful discussion in the first advice exchange, so the text is relevant beyond a passing mention. However, the supplied column also contains several unrelated parenting exchanges, making climate a background rather than central topic of the text as a whole.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:34:24Z",
+  "duration_seconds": 2.952,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "9986266",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_07/ca/9986266.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_07/ca/9986266.json"
+  },
+  "manifest_row": {
+    "article_id": "9986266",
+    "group": "2016_07",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_07/ca/9986266.txt",
+    "now_field_2": "1594",
+    "date_original": "16-07-20",
+    "date_iso": "2016-07-20",
+    "source_name": "Huffington Post Canada",
+    "url": "http://www.huffingtonpost.ca/2016/07/20/trudeau-vows-new-child-benefit-will-meet-poverty-reduction-targets_n_11087690.html",
+    "title": "Trudeau Vows New Child Benefit Will Lift Kids Out Of Poverty",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-07-qxx/16-07-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Canada's new child benefit and its expected effects on child poverty",
+    "climate_relevance": "Climate-related policy appears only in an appended budget-highlights snippet, not in the identifiable main article.",
+    "reason": "The main article focuses on child benefits, poverty, and family finances. A separate budget summary briefly mentions a low-carbon economy fund and green infrastructure, but this is an unrelated snippet rather than climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3695607a596e57b264336ae735b5d552676eb4d2b5576f95fa290615553f277e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "84eca834e786f0363ddaf83bb43a8e2ead71174039e9053d80ff69aa6c4830f7",
+    "raw_response_text_sha256": "803fd018f7a808b7732f8f74adb2aa00a4962e84f220587f7069bbc96e0cd806"
+  },
+  "api_metadata": {
+    "id": "resp_04d232864301fb0a006b06517bbac087d1849a6d882c133a0b",
+    "model": "gpt-6-luna",
+    "created_at": 1795576187.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2658,
+      "input_tokens_details": {
+        "cache_write_tokens": 2655,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2655
+        }
+      },
+      "output_tokens": 500,
+      "output_tokens_details": {
+        "reasoning_tokens": 344
+      },
+      "total_tokens": 3158
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Canada's new child benefit and its expected effects on child poverty\",\n  \"climate_relevance\": \"Climate-related policy appears only in an appended budget-highlights snippet, not in the identifiable main article.\",\n  \"reason\": \"The main article focuses on child benefits, poverty, and family finances. A separate budget summary briefly mentions a low-carbon economy fund and green infrastructure, but this is an unrelated snippet rather than climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:09:51Z",
+  "duration_seconds": 4.3,
+  "error": null
+}

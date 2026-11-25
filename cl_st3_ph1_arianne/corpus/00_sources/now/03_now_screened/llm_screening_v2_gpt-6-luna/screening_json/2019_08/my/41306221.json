@@ -1,0 +1,77 @@
+{
+  "article_id": "41306221",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/my/41306221.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/my/41306221.json"
+  },
+  "manifest_row": {
+    "article_id": "41306221",
+    "group": "2019_08",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/my/41306221.txt",
+    "now_field_2": "626",
+    "date_original": "19-08-28",
+    "date_iso": "2019-08-28",
+    "source_name": "digitalnewsasia.com",
+    "url": "https://www.digitalnewsasia.com/digital-economy/pikom-chairman-calls-overarching-tech-ministry-budget-2020",
+    "title": "Pikom chairman calls for overarching tech ministry in ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Malaysian technology-sector policy and Budget 2020 incentives",
+    "climate_relevance": "Climate change appears only in the formal name of a ministry listed among agencies relevant to the technology industry.",
+    "reason": "The article discusses technology governance, digital-sector incentives, and investment. It contains no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "af7ece219e9ca5fcc0ed155d4129a0a6e934b1fe251be4c4154976cf0fd7f4d9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6ba39c9e8c82fb021c4f49e9d0e74ddfc85c0790e0336df6a51831b0c2f9aa6e",
+    "raw_response_text_sha256": "933b45d34352b369fa459558c56ee925c68176d039eb45bee702282a2a44fe46"
+  },
+  "api_metadata": {
+    "id": "resp_0b3cc036bd4e00ff006b062121483c87d29f2e717bd9357257",
+    "model": "gpt-6-luna",
+    "created_at": 1795563809.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1331,
+      "input_tokens_details": {
+        "cache_write_tokens": 1328,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1328
+        }
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1557
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Malaysian technology-sector policy and Budget 2020 incentives\",\n  \"climate_relevance\": \"Climate change appears only in the formal name of a ministry listed among agencies relevant to the technology industry.\",\n  \"reason\": \"The article discusses technology governance, digital-sector incentives, and investment. It contains no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:43:31Z",
+  "duration_seconds": 2.088,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "61681174",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/za/61681174.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/za/61681174.json"
+  },
+  "manifest_row": {
+    "article_id": "61681174",
+    "group": "2020_03",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/za/61681174.txt",
+    "now_field_2": "1817",
+    "date_original": "20-03-10",
+    "date_iso": "2020-03-10",
+    "source_name": "engineeringnews.co.za",
+    "url": "https://www.engineeringnews.co.za/page/latest-news/page:701",
+    "title": "Engineering News | Latest News | Real-Economy News",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A search-results page listing South African business and news articles",
+    "climate_relevance": "One truncated search-result snippet refers to climate change as a defining issue and mentions per-capita consumption, but the page provides no substantive climate coverage.",
+    "reason": "The supplied text is primarily search instructions and a list of unrelated article snippets. The climate reference appears only in one fragmentary listing, so it is not meaningful climate discourse in the available text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d1a913880ea058fb178b5f1c1e60d039f0d8026cf1dad28911cced7f2677a08a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "910d6f6ffb9562fbb05aa14a1481706ca39c65c3bb55e400f0b29409520c7cbc",
+    "raw_response_text_sha256": "b7eca2ac8ac5939c2898289f68bad8dd305c2657525aab3503127300d68258cc"
+  },
+  "api_metadata": {
+    "id": "resp_0feb698e12a8c6f2006b06382815f487d1b61839094025774e",
+    "model": "gpt-6-luna",
+    "created_at": 1795569704.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3160,
+      "input_tokens_details": {
+        "cache_write_tokens": 3157,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3157
+        }
+      },
+      "output_tokens": 428,
+      "output_tokens_details": {
+        "reasoning_tokens": 270
+      },
+      "total_tokens": 3588
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A search-results page listing South African business and news articles\",\n  \"climate_relevance\": \"One truncated search-result snippet refers to climate change as a defining issue and mentions per-capita consumption, but the page provides no substantive climate coverage.\",\n  \"reason\": \"The supplied text is primarily search instructions and a list of unrelated article snippets. The climate reference appears only in one fragmentary listing, so it is not meaningful climate discourse in the available text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:21:47Z",
+  "duration_seconds": 3.482,
+  "error": null
+}

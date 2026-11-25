@@ -1,0 +1,77 @@
+{
+  "article_id": "21465795",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/us/21465795.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/us/21465795.json"
+  },
+  "manifest_row": {
+    "article_id": "21465795",
+    "group": "2017_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/us/21465795.txt",
+    "now_field_2": "1316",
+    "date_original": "17-11-03",
+    "date_iso": "2017-11-03",
+    "source_name": "Tampabay.com",
+    "url": "http://www.tampabay.com/news/politics/Kriseman-questions-Baker-s-management-of-St-Pete-s-investments_162226275",
+    "title": "Kriseman questions Baker's management of St. Pete's investments",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A mayoral campaign dispute over Rick Baker's management of St. Petersburg's investments and losses related to Lehman Brothers' bankruptcy",
+    "climate_relevance": "Climate change appears only in an unrelated news snippet about a federal scientific report, not in the identifiable main article.",
+    "reason": "The main article concerns city investment management and a mayoral race. The climate-related text is part of an unrelated snippet and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ac7943aafe5dfa8024400b8c78a863d0cc983d33a9a1d70ec599860f262af7c3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e10bca7a1f5f610ee04396174981815a04ff2d7ee33f81fadd47fc11d5263235",
+    "raw_response_text_sha256": "799bc21ed737dec21d66555898136ddf2f73b7286112c5140cdba20a077597f2"
+  },
+  "api_metadata": {
+    "id": "resp_0dfd5cd775605241006b060eda6a3487d2ba0b6d3285df9a40",
+    "model": "gpt-6-luna",
+    "created_at": 1795559130.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2261,
+      "input_tokens_details": {
+        "cache_write_tokens": 2258,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2258
+        }
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 2493
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A mayoral campaign dispute over Rick Baker's management of St. Petersburg's investments and losses related to Lehman Brothers' bankruptcy\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated news snippet about a federal scientific report, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns city investment management and a mayoral race. The climate-related text is part of an unrelated snippet and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:25:32Z",
+  "duration_seconds": 1.838,
+  "error": null
+}

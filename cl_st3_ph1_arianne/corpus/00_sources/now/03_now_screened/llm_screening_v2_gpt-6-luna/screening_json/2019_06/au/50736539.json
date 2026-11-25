@@ -1,0 +1,77 @@
+{
+  "article_id": "50736539",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/au/50736539.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/au/50736539.json"
+  },
+  "manifest_row": {
+    "article_id": "50736539",
+    "group": "2019_06",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/au/50736539.txt",
+    "now_field_2": "473",
+    "date_original": "19-06-05",
+    "date_iso": "2019-06-05",
+    "source_name": "ABC Local",
+    "url": "https://www.abc.net.au/news/2019-06-05/trees-for-turtles-to-reduce-artificial-light/11180544",
+    "title": "Curtain of greenery protects endangered sea turtles from artificial light",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "passing",
+    "main_topic": "Artificial lighting affecting sea turtle hatchlings, and local efforts to protect turtle habitat and biodiversity",
+    "climate_relevance": "Climate change is mentioned once in a generic list of environmental issues, without further discussion of its causes, impacts, or responses.",
+    "reason": "The identifiable main article concerns light pollution and sea turtle conservation. Its brief climate-change reference is too incidental to contribute meaningfully to climate discourse analysis. The final sentence about meat processing and animal welfare appears to be an unrelated snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5f71aadaec0136b2511fd0a96197a678e7b6f24f56f01cb3b3e27e4f42e47d6f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5103783ade7619956eb4d54a36175bdfe5ecd92b060ce2e5b2d44734895b51a5",
+    "raw_response_text_sha256": "8f826f8454dc175210010572fe9f7fae1ef5547d7a817057440e1e9ad8de0c97"
+  },
+  "api_metadata": {
+    "id": "resp_024958c01163040d006b062aa0729487d1911530a17bdd922f",
+    "model": "gpt-6-luna",
+    "created_at": 1795566240.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1108,
+      "input_tokens_details": {
+        "cache_write_tokens": 1105,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1105
+        }
+      },
+      "output_tokens": 331,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 1439
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Artificial lighting affecting sea turtle hatchlings, and local efforts to protect turtle habitat and biodiversity\",\n  \"climate_relevance\": \"Climate change is mentioned once in a generic list of environmental issues, without further discussion of its causes, impacts, or responses.\",\n  \"reason\": \"The identifiable main article concerns light pollution and sea turtle conservation. Its brief climate-change reference is too incidental to contribute meaningfully to climate discourse analysis. The final sentence about meat processing and animal welfare appears to be an unrelated snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:24:03Z",
+  "duration_seconds": 3.32,
+  "error": null
+}

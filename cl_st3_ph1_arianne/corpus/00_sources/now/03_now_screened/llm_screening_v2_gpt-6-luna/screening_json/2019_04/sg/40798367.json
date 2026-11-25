@@ -1,0 +1,77 @@
+{
+  "article_id": "40798367",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/sg/40798367.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/sg/40798367.json"
+  },
+  "manifest_row": {
+    "article_id": "40798367",
+    "group": "2019_04",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/sg/40798367.txt",
+    "now_field_2": "411",
+    "date_original": "19-04-03",
+    "date_iso": "2019-04-03",
+    "source_name": "The News Minute",
+    "url": "https://www.thenewsminute.com/article/monsoon-likely-be-below-normal-year-skymet-99430",
+    "title": "Monsoon likely to be 'below normal' this year: Skymet",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Forecasts for the 2019 Indian monsoon and regional rainfall",
+    "climate_relevance": "The text discusses seasonal weather patterns, El Niño, and rainfall forecasts, but does not meaningfully address climate change. “Climate Change” appears only in officials’ job titles.",
+    "reason": "The article is about a seasonal monsoon forecast; its incidental climate-change references do not contribute meaningful climate-change discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4441abae16b240823600eb3e2e482bdb95158341d593642ec3b86b0b33e2bdf4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ea6fb127c04fe959b2d09ca9e07d39df0adfeb6203880f9380ac3ee2057af8cd",
+    "raw_response_text_sha256": "7b082b52dfc8bc89fd866cb866cef2e23df47dc97fd4596b53ff1111b37eb11a"
+  },
+  "api_metadata": {
+    "id": "resp_04515e2c4a4ccc84006b061fbca9f487d2a77270e3e94aa91e",
+    "model": "gpt-6-luna",
+    "created_at": 1795563452.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1064,
+      "input_tokens_details": {
+        "cache_write_tokens": 1061,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1061
+        }
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 1362
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Forecasts for the 2019 Indian monsoon and regional rainfall\",\n  \"climate_relevance\": \"The text discusses seasonal weather patterns, El Niño, and rainfall forecasts, but does not meaningfully address climate change. “Climate Change” appears only in officials’ job titles.\",\n  \"reason\": \"The article is about a seasonal monsoon forecast; its incidental climate-change references do not contribute meaningful climate-change discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:35Z",
+  "duration_seconds": 2.567,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50496109",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/au/50496109.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/au/50496109.json"
+  },
+  "manifest_row": {
+    "article_id": "50496109",
+    "group": "2019_03",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/au/50496109.txt",
+    "now_field_2": "683",
+    "date_original": "19-03-09",
+    "date_iso": "2019-03-09",
+    "source_name": "The Canberra Times",
+    "url": "https://www.canberratimes.com.au/national/act/staying-on-a-default-offer-could-be-costing-you-more-than-1000-20190305-p511v3.html",
+    "title": "Staying on a default offer could be costing you more than $1000",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Comparing household energy offers and ways for Canberra residents to reduce their energy bills.",
+    "climate_relevance": "The article discusses electricity and gas costs and household energy use, but does not meaningfully address climate change. The only explicit climate reference is part of a minister's title.",
+    "reason": "Climate change appears only incidentally in an official title; the article's focus is consumer energy pricing and savings.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "948fda9ba6047d1b285137a499f43189d14df39e6ae9c5fa7eaaed12b2ead6ca",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6ea8bb9f13c211fffd52bc41f1e2352e4980a494a63b9a164f7aad1f234ee4f2",
+    "raw_response_text_sha256": "07def349a3e3758c8f4859d1fd60d2bb4a298828b4cab027f5009a865f7a84c7"
+  },
+  "api_metadata": {
+    "id": "resp_0ea49d67a700e477006b06292cc2b087d1a56c86be56fbf725",
+    "model": "gpt-6-luna",
+    "created_at": 1795565868.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1390,
+      "input_tokens_details": {
+        "cache_write_tokens": 1387,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1387
+        }
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1605
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Comparing household energy offers and ways for Canberra residents to reduce their energy bills.\",\n  \"climate_relevance\": \"The article discusses electricity and gas costs and household energy use, but does not meaningfully address climate change. The only explicit climate reference is part of a minister's title.\",\n  \"reason\": \"Climate change appears only incidentally in an official title; the article's focus is consumer energy pricing and savings.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:17:51Z",
+  "duration_seconds": 2.395,
+  "error": null
+}

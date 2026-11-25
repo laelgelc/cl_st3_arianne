@@ -1,0 +1,77 @@
+{
+  "article_id": "31339378",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/nz/31339378.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/nz/31339378.json"
+  },
+  "manifest_row": {
+    "article_id": "31339378",
+    "group": "2019_10",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/nz/31339378.txt",
+    "now_field_2": "419",
+    "date_original": "19-10-10",
+    "date_iso": "2019-10-10",
+    "source_name": "newsie.co.nz",
+    "url": "https://newsie.co.nz/news/163895-vege-prices-could-rise-60-2043-horticulture-nz-warns.html",
+    "title": "Newsie - Vege prices could rise 60% by 2043, Horticulture ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.89,
+    "climate_role": "passing",
+    "main_topic": "Potential vegetable price increases and government waterway and land-use policies affecting growers",
+    "climate_relevance": "Climate change mitigation is mentioned once as one of several pressures on vegetable growing, without further discussion.",
+    "reason": "The article focuses on vegetable prices, productive land, freshwater access, and water-quality regulation. Its brief reference to climate change mitigation is not developed enough to contribute meaningfully to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2af2f00f6d85259e160cf414db3350116f67eb0e379b4a7f9b39c5f0f9faf4a7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4e17c46ebabfbb1f7d8eb4027c3192d5101a6b63eb36fa4c8142af767a493c2e",
+    "raw_response_text_sha256": "93e5e4c9b96ad55a2c35c9ba9663dfeb5ebccc3233278cee1d7367a182b06ae9"
+  },
+  "api_metadata": {
+    "id": "resp_0e677493a79be41f006b0616dc29f887d2aa52824121994039",
+    "model": "gpt-6-luna",
+    "created_at": 1795561181.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1048,
+      "input_tokens_details": {
+        "cache_write_tokens": 1045,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1045
+        }
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 1373
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.89,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Potential vegetable price increases and government waterway and land-use policies affecting growers\",\n  \"climate_relevance\": \"Climate change mitigation is mentioned once as one of several pressures on vegetable growing, without further discussion.\",\n  \"reason\": \"The article focuses on vegetable prices, productive land, freshwater access, and water-quality regulation. Its brief reference to climate change mitigation is not developed enough to contribute meaningfully to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:59:43Z",
+  "duration_seconds": 3.313,
+  "error": null
+}

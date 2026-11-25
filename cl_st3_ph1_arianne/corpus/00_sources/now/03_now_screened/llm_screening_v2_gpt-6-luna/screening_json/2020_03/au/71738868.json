@@ -1,0 +1,77 @@
+{
+  "article_id": "71738868",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/au/71738868.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/au/71738868.json"
+  },
+  "manifest_row": {
+    "article_id": "71738868",
+    "group": "2020_03",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/au/71738868.txt",
+    "now_field_2": "2785",
+    "date_original": "20-03-01",
+    "date_iso": "2020-03-01",
+    "source_name": "abc.net.au",
+    "url": "http://www.abc.net.au/news/feed/896/rss.xml",
+    "title": "Electricity Energy and Utilities",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "A compilation of Australian energy and utilities news headlines and summaries",
+    "climate_relevance": "Several separate entries meaningfully address climate change, including public opinion after bushfires, potential financial risks, and business action related to coal and emissions. Climate change is not the focus of the compilation as a whole.",
+    "reason": "The text is a collection of unrelated news snippets rather than one identifiable article. Although most entries concern energy-sector matters more broadly, some contain meaningful climate discourse, making the material peripheral rather than core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2ae1842abc8ad11f4d14d1f11440898938483f0da192ea095a86bda5f90a9ea7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3b6829dae5fb80d9ecdf13fd0ea91bb32f5d8db8657322cf95e6921656e89f43",
+    "raw_response_text_sha256": "1c18aa3cd552b5c1b61b314144d1138e0ae80eddfd1b02841e9218fad5a659c5"
+  },
+  "api_metadata": {
+    "id": "resp_0fd6f7313f3ca2e9006b0642af3d0887d19efece1496c60992",
+    "model": "gpt-6-luna",
+    "created_at": 1795572399.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6209,
+      "input_tokens_details": {
+        "cache_write_tokens": 6206,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6206
+        }
+      },
+      "output_tokens": 560,
+      "output_tokens_details": {
+        "reasoning_tokens": 391
+      },
+      "total_tokens": 6769
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A compilation of Australian energy and utilities news headlines and summaries\",\n  \"climate_relevance\": \"Several separate entries meaningfully address climate change, including public opinion after bushfires, potential financial risks, and business action related to coal and emissions. Climate change is not the focus of the compilation as a whole.\",\n  \"reason\": \"The text is a collection of unrelated news snippets rather than one identifiable article. Although most entries concern energy-sector matters more broadly, some contain meaningful climate discourse, making the material peripheral rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:06:43Z",
+  "duration_seconds": 4.687,
+  "error": null
+}

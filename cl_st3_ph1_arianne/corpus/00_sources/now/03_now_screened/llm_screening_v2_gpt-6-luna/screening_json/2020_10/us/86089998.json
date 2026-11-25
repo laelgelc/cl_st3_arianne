@@ -1,0 +1,77 @@
+{
+  "article_id": "86089998",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86089998.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86089998.json"
+  },
+  "manifest_row": {
+    "article_id": "86089998",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86089998.txt",
+    "now_field_2": "510",
+    "date_original": "20-10-07",
+    "date_iso": "2020-10-07",
+    "source_name": "Entrepreneur",
+    "url": "https://www.entrepreneur.com/article/357408",
+    "title": "Mario Molina, 1995 Nobel Prize in Chemistry, died",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "The death and career of Mexican scientist Mario Molina",
+    "climate_relevance": "Climate change is mentioned only as part of descriptions of institutions where Molina worked; the text does not discuss climate science, impacts, or policy.",
+    "reason": "The available text is primarily an obituary and career summary. Its brief references to climate change are incidental rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fc2fad8e68edf86135091f309d8c01edc1432dc8e5ca8b80a32e44518df8dc5c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "29c885f93f6c4539b0fa556402c0778318f862304c5ca4b117f43e36f36c1b36",
+    "raw_response_text_sha256": "3a2fc3ca149d543a8c8e94dae9881ccd8d6fc76345665e73f44d503ab38c3991"
+  },
+  "api_metadata": {
+    "id": "resp_09121dffc9b62823006b064e60017887d1aad1ebdc31f38b21",
+    "model": "gpt-6-luna",
+    "created_at": 1795575392.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1153,
+      "input_tokens_details": {
+        "cache_write_tokens": 1150,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1150
+        }
+      },
+      "output_tokens": 455,
+      "output_tokens_details": {
+        "reasoning_tokens": 318
+      },
+      "total_tokens": 1608
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The death and career of Mexican scientist Mario Molina\",\n  \"climate_relevance\": \"Climate change is mentioned only as part of descriptions of institutions where Molina worked; the text does not discuss climate science, impacts, or policy.\",\n  \"reason\": \"The available text is primarily an obituary and career summary. Its brief references to climate change are incidental rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:56:35Z",
+  "duration_seconds": 3.796,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "7451524",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_02/gb/7451524.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_02/gb/7451524.json"
+  },
+  "manifest_row": {
+    "article_id": "7451524",
+    "group": "2016_02",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_02/gb/7451524.txt",
+    "now_field_2": "645",
+    "date_original": "16-02-26",
+    "date_iso": "2016-02-26",
+    "source_name": "Telegraph.co.uk",
+    "url": "http://www.telegraph.co.uk/news/earth/energy/12175367/UK-energy-supply-forecasts-into-the-red-for-first-time-next-winter.html",
+    "title": "UK energy supply forecasts 'into the red' for first time next winter",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-02-iuq/16-02-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Forecast electricity supply shortages in Britain and measures to prevent winter blackouts",
+    "climate_relevance": "Climate change appears only in the name of the Department of Energy and Climate Change; the text does not discuss climate change or its implications.",
+    "reason": "The article focuses on energy security, power-generation capacity, imports, and emergency reserves. The department name is an incidental mention, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9117dc8b6280d22117368b2ba0ddb47e6d470b4fbb797140a88127ef047217c8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "da2036f8cdd890b9a46c9d3b2be3fd50cd873aa89ee633826f14e52d8ee0e700",
+    "raw_response_text_sha256": "4ec8bc16476977708409222bb9ffad6e72ff8644124a284ec961fbbe50f9467e"
+  },
+  "api_metadata": {
+    "id": "resp_0643b369514201e1006b064620613887d1aa7b5b5923e46df7",
+    "model": "gpt-6-luna",
+    "created_at": 1795573280.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1319,
+      "input_tokens_details": {
+        "cache_write_tokens": 1316,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1316
+        }
+      },
+      "output_tokens": 240,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 1559
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Forecast electricity supply shortages in Britain and measures to prevent winter blackouts\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Department of Energy and Climate Change; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on energy security, power-generation capacity, imports, and emergency reserves. The department name is an incidental mention, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:21:22Z",
+  "duration_seconds": 1.907,
+  "error": null
+}

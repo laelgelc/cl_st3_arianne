@@ -1,0 +1,77 @@
+{
+  "article_id": "82243673",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82243673.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82243673.json"
+  },
+  "manifest_row": {
+    "article_id": "82243673",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82243673.txt",
+    "now_field_2": "1137",
+    "date_original": "19-11-20",
+    "date_iso": "2019-11-20",
+    "source_name": "Standard-Examiner",
+    "url": "https://www.standard.net/opinion/columnists/dr-john-armstrong-making-and-baking-thanksgiving-science/article_d8c6e8f4-7659-55fa-a0e9-7d8e7c3ba27f.html",
+    "title": "Dr. John Armstrong: Making and baking Thanksgiving science",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us6.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Everyday science and Thanksgiving activities",
+    "climate_relevance": "Climate change is briefly listed as an example of something people can make sense of through science, but it is not discussed.",
+    "reason": "The article focuses on science education and informal experimentation. Its single climate-change reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "14cd8b6520f71d4b180a7d3cdff8751c573807726d2d30a5275b2fd397eb0b22",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1b0fc45ca8ad75c1fdca7806cf57f0231bdcd799558eaade21f49b956a4c867f",
+    "raw_response_text_sha256": "bfc455b0a970a62911b0274b91495a040199aeef08ebedfd1082fc458c62e57e"
+  },
+  "api_metadata": {
+    "id": "resp_0e3778c3f0c334fd006b06483ebaec87d1a593a10fc701c272",
+    "model": "gpt-6-luna",
+    "created_at": 1795573822.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1891,
+      "input_tokens_details": {
+        "cache_write_tokens": 1888,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1888
+        }
+      },
+      "output_tokens": 334,
+      "output_tokens_details": {
+        "reasoning_tokens": 204
+      },
+      "total_tokens": 2225
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Everyday science and Thanksgiving activities\",\n  \"climate_relevance\": \"Climate change is briefly listed as an example of something people can make sense of through science, but it is not discussed.\",\n  \"reason\": \"The article focuses on science education and informal experimentation. Its single climate-change reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:30:25Z",
+  "duration_seconds": 2.957,
+  "error": null
+}

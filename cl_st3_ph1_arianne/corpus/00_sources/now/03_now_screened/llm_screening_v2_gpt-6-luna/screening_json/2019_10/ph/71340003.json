@@ -1,0 +1,77 @@
+{
+  "article_id": "71340003",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/ph/71340003.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/ph/71340003.json"
+  },
+  "manifest_row": {
+    "article_id": "71340003",
+    "group": "2019_10",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/ph/71340003.txt",
+    "now_field_2": "701",
+    "date_original": "19-10-30",
+    "date_iso": "2019-10-30",
+    "source_name": "pna.gov.ph",
+    "url": "https://www.pna.gov.ph/categories/environment?p=10",
+    "title": "Environment | Philippine News Agency",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-ph.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.84,
+    "climate_role": "background",
+    "main_topic": "A collection of Philippine environmental news snippets",
+    "climate_relevance": "One snippet reports that a multi-agency group will develop a Philippine roadmap for blue carbon, a climate-related topic.",
+    "reason": "The available text is mainly about varied environmental issues rather than climate change. The blue-carbon roadmap provides meaningful but brief climate-related discourse, so the collection is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7ab8aa943dc6f920ec71f9e3c6605c069fc650f2a613d882774a128545fcfc98",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9c9ad7205460010671f0f364282337505f5097aa83503ce372a0882a1b3bfa36",
+    "raw_response_text_sha256": "24c6fb3daf1872474839f63b82bd3b97fbe9bc700abb241af65f5bcc5e48c823"
+  },
+  "api_metadata": {
+    "id": "resp_08a09d9847faaad7006b0640f1f65c87d1aea52714c0abf502",
+    "model": "gpt-6-luna",
+    "created_at": 1795571954.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1470,
+      "input_tokens_details": {
+        "cache_write_tokens": 1467,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1467
+        }
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 1776
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.84,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of Philippine environmental news snippets\",\n  \"climate_relevance\": \"One snippet reports that a multi-agency group will develop a Philippine roadmap for blue carbon, a climate-related topic.\",\n  \"reason\": \"The available text is mainly about varied environmental issues rather than climate change. The blue-carbon roadmap provides meaningful but brief climate-related discourse, so the collection is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:59:16Z",
+  "duration_seconds": 2.826,
+  "error": null
+}

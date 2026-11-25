@@ -1,0 +1,77 @@
+{
+  "article_id": "16516223",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/us/16516223.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/us/16516223.json"
+  },
+  "manifest_row": {
+    "article_id": "16516223",
+    "group": "2017_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/us/16516223.txt",
+    "now_field_2": "654",
+    "date_original": "17-01-21",
+    "date_iso": "2017-01-21",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/lifestyle/kidspost/hundreds-of-thousands-come-to-washington-for-womens-march/2017/01/21/97daf72a-dff3-11e6-ad42-f3375f271c9c_story.html",
+    "title": "Hundreds of thousands come to Washington for Women's March",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "The Women’s March on Washington and its protests against Trump administration policies",
+    "climate_relevance": "Climate change is listed among the march’s protest issues, and one young attendee says protecting the environment is important to her.",
+    "reason": "The article is primarily about the march and its broader equal-rights and political concerns. Climate and environmental protection receive only brief mention, without further discussion of climate causes, impacts, or policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c2e89501b3a0a156b49549939bd91fe17f019f3eac86910a68fc68903127dd54",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6c24710a98860595b3c249dbf29298eff4a84e51c0481d1929c0b3ecf9db817e",
+    "raw_response_text_sha256": "8df12771adcf7d32f734b1d09e4246a0076386ea342c96b13c3c2b6b0981db52"
+  },
+  "api_metadata": {
+    "id": "resp_0621e7beeec97952006b0607c548cc87d2b69324229ed4b09b",
+    "model": "gpt-6-luna",
+    "created_at": 1795557317.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1405,
+      "input_tokens_details": {
+        "cache_write_tokens": 1402,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1402
+        }
+      },
+      "output_tokens": 350,
+      "output_tokens_details": {
+        "reasoning_tokens": 199
+      },
+      "total_tokens": 1755
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The Women’s March on Washington and its protests against Trump administration policies\",\n  \"climate_relevance\": \"Climate change is listed among the march’s protest issues, and one young attendee says protecting the environment is important to her.\",\n  \"reason\": \"The article is primarily about the march and its broader equal-rights and political concerns. Climate and environmental protection receive only brief mention, without further discussion of climate causes, impacts, or policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:55:20Z",
+  "duration_seconds": 3.598,
+  "error": null
+}

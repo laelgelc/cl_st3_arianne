@@ -1,0 +1,77 @@
+{
+  "article_id": "8423435",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_04/in/8423435.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_04/in/8423435.json"
+  },
+  "manifest_row": {
+    "article_id": "8423435",
+    "group": "2016_04",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_04/in/8423435.txt",
+    "now_field_2": "382",
+    "date_original": "16-04-22",
+    "date_iso": "2016-04-22",
+    "source_name": "Times of India",
+    "url": "http://timesofindia.indiatimes.com/city/mumbai/Law-on-glass-lift-facades-still-to-be-implemented/articleshow/51949921.cms",
+    "title": "Law on glass lift facades still to be implemented",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-04-ovb/16-04-in.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Elevator safety regulations and glass lift facades",
+    "climate_relevance": "A sentence about signing the Paris Agreement appears as an unrelated snippet and does not contribute meaningful climate discourse to the main article.",
+    "reason": "The article is about elevator accidents and implementation of lift-safety rules. The climate reference is an unrelated appended snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5b76f5d6ddec957989dba32a53a0d722183340e07c9f8bd1cfebad6b44e9a002",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b9f6da30ff2442a7b0dea268cc296178b493b267c6fcb9ddf4715cf9e0bff325",
+    "raw_response_text_sha256": "f0c3ecb46a027c8a8db7cda637e2bac4cf5a5b6f1ee2e91954c0609c03336f72"
+  },
+  "api_metadata": {
+    "id": "resp_0b1a3b96382a64aa006b064a6d54f087d18d27912aa76a2baa",
+    "model": "gpt-6-luna",
+    "created_at": 1795574381.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1017,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 197,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1214
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Elevator safety regulations and glass lift facades\",\n  \"climate_relevance\": \"A sentence about signing the Paris Agreement appears as an unrelated snippet and does not contribute meaningful climate discourse to the main article.\",\n  \"reason\": \"The article is about elevator accidents and implementation of lift-safety rules. The climate reference is an unrelated appended snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:39:43Z",
+  "duration_seconds": 2.231,
+  "error": null
+}

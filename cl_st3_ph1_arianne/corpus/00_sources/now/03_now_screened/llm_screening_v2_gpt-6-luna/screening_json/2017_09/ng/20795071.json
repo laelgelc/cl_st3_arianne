@@ -1,0 +1,77 @@
+{
+  "article_id": "20795071",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_09/ng/20795071.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_09/ng/20795071.json"
+  },
+  "manifest_row": {
+    "article_id": "20795071",
+    "group": "2017_09",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_09/ng/20795071.txt",
+    "now_field_2": "585",
+    "date_original": "17-09-28",
+    "date_iso": "2017-09-28",
+    "source_name": "The Nation Newspaper",
+    "url": "http://thenationonlineng.net/nigeria-hosts-300-yali-conference/",
+    "title": "Nigeria hosts 300 at YALI conference",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-09.txt\"]",
+    "metadata_article_files": "[\"text-17-09/text_17-09-NG.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A conference for young African leaders and its participants",
+    "climate_relevance": "Climate change appears only in a list of topics available through YALI online courses.",
+    "reason": "The text contains no substantive discussion of climate change; the brief mention is incidental to the article's focus on the conference.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "46c5fb33be00ac004ca14e6709041141268af912a8e53400c63accbf15a72e43",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6f0fe8e413def75999414ee7f4fa14e83c76b83f42b505b8fc578b113f3c0995",
+    "raw_response_text_sha256": "55ce1213adacba58b247913751d603ae8a7131a41498c032b4aed085836b54eb"
+  },
+  "api_metadata": {
+    "id": "resp_0fe0116f95d98301006b060dd41ee487d297d8201a7dfd7d80",
+    "model": "gpt-6-luna",
+    "created_at": 1795558868.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1277,
+      "input_tokens_details": {
+        "cache_write_tokens": 1274,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1274
+        }
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 1487
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A conference for young African leaders and its participants\",\n  \"climate_relevance\": \"Climate change appears only in a list of topics available through YALI online courses.\",\n  \"reason\": \"The text contains no substantive discussion of climate change; the brief mention is incidental to the article's focus on the conference.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:21:11Z",
+  "duration_seconds": 3.062,
+  "error": null
+}

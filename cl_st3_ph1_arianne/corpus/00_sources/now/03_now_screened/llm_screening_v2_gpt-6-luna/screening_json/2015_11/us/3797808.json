@@ -1,0 +1,77 @@
+{
+  "article_id": "3797808",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_11/us/3797808.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_11/us/3797808.json"
+  },
+  "manifest_row": {
+    "article_id": "3797808",
+    "group": "2015_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_11/us/3797808.txt",
+    "now_field_2": "1475",
+    "date_original": "15-11-18",
+    "date_iso": "2015-11-18",
+    "source_name": "Voice of America",
+    "url": "http://www.voanews.com/content/aborigines-of-taiwan-see-hopes-for-autonomy-fade/3063009.html",
+    "title": "Aborigines of Taiwan See Hopes for Autonomy Fade",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-11-xje/15-11-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Taiwanese Indigenous autonomy and land rights, followed by unrelated news-video snippets",
+    "climate_relevance": "Climate change appears in a separate video teaser about the Paris agreement, emissions targets, and global warming; it is not part of the identifiable main article.",
+    "reason": "The main article concerns Indigenous autonomy in Taiwan. The climate-related passage is a distinct item among multiple unrelated snippets, so it does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9cb22f104bdc4c421fde169c22a92aca34e6424563d4d5c38a942741ef87187c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8043e26a3e2a5ca128326dd26f8883b1403beb34f5ef751faf6aee6c0d908fc8",
+    "raw_response_text_sha256": "850248e277a9de0e9a65b5b4a28ddaf3f76a2ddc4c054d51455aa55ee8ead7f1"
+  },
+  "api_metadata": {
+    "id": "resp_07445c309aa92116006b061d08da0c87d2bbe3249a8a548e55",
+    "model": "gpt-6-luna",
+    "created_at": 1795562760.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2375,
+      "input_tokens_details": {
+        "cache_write_tokens": 2372,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2372
+        }
+      },
+      "output_tokens": 558,
+      "output_tokens_details": {
+        "reasoning_tokens": 398
+      },
+      "total_tokens": 2933
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Taiwanese Indigenous autonomy and land rights, followed by unrelated news-video snippets\",\n  \"climate_relevance\": \"Climate change appears in a separate video teaser about the Paris agreement, emissions targets, and global warming; it is not part of the identifiable main article.\",\n  \"reason\": \"The main article concerns Indigenous autonomy in Taiwan. The climate-related passage is a distinct item among multiple unrelated snippets, so it does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:26:05Z",
+  "duration_seconds": 4.838,
+  "error": null
+}

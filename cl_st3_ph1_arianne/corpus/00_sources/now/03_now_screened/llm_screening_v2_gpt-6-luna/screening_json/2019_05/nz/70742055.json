@@ -1,0 +1,77 @@
+{
+  "article_id": "70742055",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/nz/70742055.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/nz/70742055.json"
+  },
+  "manifest_row": {
+    "article_id": "70742055",
+    "group": "2019_05",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/nz/70742055.txt",
+    "now_field_2": "2155",
+    "date_original": "19-05-02",
+    "date_iso": "2019-05-02",
+    "source_name": "The Spinoff",
+    "url": "https://thespinoff.co.nz/the-bulletin/03-05-2019/the-bulletin-has-foreign-house-buyer-ban-worked/",
+    "title": "The Bulletin: Has foreign house buyer ban worked?",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "climate_role": "passing",
+    "main_topic": "A daily news digest covering housing policy and several unrelated New Zealand news stories",
+    "climate_relevance": "A brief sponsored teaser says climate change will make challenges more difficult and that Vector is responding, but provides no further climate-related detail.",
+    "reason": "Climate change appears in a partner-content teaser rather than as a substantial topic of the digest. The mention indicates a climate-related response by an energy company, so it is more than unrelated boilerplate, but the available text is too limited for CORE classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bb93f7f43b357ae5f4f65cb8a7f30020c297ea0a358ae645798905a6b12394b6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d2569471713452a43b24a702b0e491f109862e11f84572baaccd27ffbda640ef",
+    "raw_response_text_sha256": "e71b3054cd6511cc9b031d02cb0900d666b76beb92e424b6e22430a0d510d45b"
+  },
+  "api_metadata": {
+    "id": "resp_0700c3055058a9ea006b063ed706b887d1a9035204e926c54a",
+    "model": "gpt-6-luna",
+    "created_at": 1795571415.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3131,
+      "input_tokens_details": {
+        "cache_write_tokens": 3128,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3128
+        }
+      },
+      "output_tokens": 519,
+      "output_tokens_details": {
+        "reasoning_tokens": 353
+      },
+      "total_tokens": 3650
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A daily news digest covering housing policy and several unrelated New Zealand news stories\",\n  \"climate_relevance\": \"A brief sponsored teaser says climate change will make challenges more difficult and that Vector is responding, but provides no further climate-related detail.\",\n  \"reason\": \"Climate change appears in a partner-content teaser rather than as a substantial topic of the digest. The mention indicates a climate-related response by an energy company, so it is more than unrelated boilerplate, but the available text is too limited for CORE classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:50:19Z",
+  "duration_seconds": 4.26,
+  "error": null
+}

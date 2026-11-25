@@ -1,0 +1,77 @@
+{
+  "article_id": "31237512",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/us/31237512.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/us/31237512.json"
+  },
+  "manifest_row": {
+    "article_id": "31237512",
+    "group": "2019_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/us/31237512.txt",
+    "now_field_2": "1557",
+    "date_original": "19-08-22",
+    "date_iso": "2019-08-22",
+    "source_name": "politico.com",
+    "url": "https://www.politico.com/states/new-jersey/story/2019/07/29/democrat-gottheimer-to-face-primary-challenge-in-new-jerseys-5th-district-1120278",
+    "title": "Democrat Gottheimer to face primary challenge in New ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "climate_role": "background",
+    "main_topic": "Minneapolis housing affordability, zoning reform, and the 2040 comprehensive plan",
+    "climate_relevance": "The housing article mentions climate change as one concern among renters and describes the plan as addressing issues including carbon-free energy, but climate is not a main focus. The preceding political profile also briefly discusses a candidate's support for the Green New Deal.",
+    "reason": "The identifiable main article is about housing policy and urban development. Climate appears in meaningful but limited context, so the text is relevant to broader climate discourse rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "92d1b38d0a3bd6b0e7d5c02b5781dd20c3361a387ce192cde05b6db3168a87f2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b8b45319620077c3c8640af4ace86d98869c6e2391e4c501b730d3438c326c4c",
+    "raw_response_text_sha256": "ba01e733f9cee1d2e5fb50e5cfe63bbc974230af5906e167481ada1501b08a7c"
+  },
+  "api_metadata": {
+    "id": "resp_08d7a32950a0828d006b06164589cc87d2aa632662774c905d",
+    "model": "gpt-6-luna",
+    "created_at": 1795561029.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6350,
+      "input_tokens_details": {
+        "cache_write_tokens": 6347,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6347
+        }
+      },
+      "output_tokens": 406,
+      "output_tokens_details": {
+        "reasoning_tokens": 232
+      },
+      "total_tokens": 6756
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Minneapolis housing affordability, zoning reform, and the 2040 comprehensive plan\",\n  \"climate_relevance\": \"The housing article mentions climate change as one concern among renters and describes the plan as addressing issues including carbon-free energy, but climate is not a main focus. The preceding political profile also briefly discusses a candidate's support for the Green New Deal.\",\n  \"reason\": \"The identifiable main article is about housing policy and urban development. Climate appears in meaningful but limited context, so the text is relevant to broader climate discourse rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:57:12Z",
+  "duration_seconds": 3.31,
+  "error": null
+}

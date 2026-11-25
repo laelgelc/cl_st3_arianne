@@ -1,0 +1,77 @@
+{
+  "article_id": "60373639",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ca/60373639.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ca/60373639.json"
+  },
+  "manifest_row": {
+    "article_id": "60373639",
+    "group": "2018_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ca/60373639.txt",
+    "now_field_2": "1090",
+    "date_original": "18-12-23",
+    "date_iso": "2018-12-23",
+    "source_name": "Toronto Star",
+    "url": "https://www.thestar.com/vancouver/2018/12/23/no-heat-water-or-hope-for-tens-of-thousands-of-bc-residents-battered-by-storms-as-christmas-approaches.html",
+    "title": "No heat, water or 'hope' for tens of thousands of BC residents battered ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "The impacts of a severe storm and prolonged power outages on British Columbia residents",
+    "climate_relevance": "The article links increasingly frequent and severe extreme weather events to climate change and notes that this may lead to more blackouts.",
+    "reason": "The main focus is the storm’s immediate effects, including outages, water access, and recovery efforts. Climate change is meaningfully discussed as context for the storm and future blackouts, but is not the article’s central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3b71eecaab79e6d3f74733524dd6d7bf198b816a01c9d1051a90d8302816d4c7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9d5b8ad18336f9a93544c8608477d970767b1ebb817c7553d72bbc4e93320156",
+    "raw_response_text_sha256": "68935e3c877fcc70085c7eae4f236706a0cc20f91a1973c38a508eec233d8b0f"
+  },
+  "api_metadata": {
+    "id": "resp_087c69b7d3217b3a006b06325d927487d1a4e181712f16253a",
+    "model": "gpt-6-luna",
+    "created_at": 1795568221.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1917,
+      "input_tokens_details": {
+        "cache_write_tokens": 1914,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1914
+        }
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 2176
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The impacts of a severe storm and prolonged power outages on British Columbia residents\",\n  \"climate_relevance\": \"The article links increasingly frequent and severe extreme weather events to climate change and notes that this may lead to more blackouts.\",\n  \"reason\": \"The main focus is the storm’s immediate effects, including outages, water access, and recovery efforts. Climate change is meaningfully discussed as context for the storm and future blackouts, but is not the article’s central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:57:03Z",
+  "duration_seconds": 2.4,
+  "error": null
+}

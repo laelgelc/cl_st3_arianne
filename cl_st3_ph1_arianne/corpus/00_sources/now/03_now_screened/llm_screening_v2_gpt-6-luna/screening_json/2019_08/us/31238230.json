@@ -1,0 +1,77 @@
+{
+  "article_id": "31238230",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/us/31238230.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/us/31238230.json"
+  },
+  "manifest_row": {
+    "article_id": "31238230",
+    "group": "2019_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/us/31238230.txt",
+    "now_field_2": "2827",
+    "date_original": "19-08-22",
+    "date_iso": "2019-08-22",
+    "source_name": "nymag.com",
+    "url": "http://nymag.com/intelligencer/article/dramatic-history-ride-hailing-app-uber-and-ceo-kalanick.html",
+    "title": "Uber Allegations Timeline: From #DeleteUber to Susan Fowler",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Uber's corporate culture, controversies, and company history",
+    "climate_relevance": "The identifiable main article is not about climate change. A separate promoted-link snippet discusses a proposed rollback of methane-emissions rules, but it is unrelated to the Uber article.",
+    "reason": "Climate-policy discussion appears only in an unrelated promoted-link snippet, not in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9770771a388660d2ea4acd7a6d40015dfe926910eeddb2167b21903218a16d9e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a14b016cea0c0baf99c9bf4bde701b17fef3e485e35265f7b885f3475e2a0afb",
+    "raw_response_text_sha256": "1bbfa9a9b8f989e885cf45b0c5e0966d0d4bef7f64cbb862865bb194f7af685f"
+  },
+  "api_metadata": {
+    "id": "resp_0de54d8fb0d517e3006b061646d84487d2b8b5c2d1914205f2",
+    "model": "gpt-6-luna",
+    "created_at": 1795561030.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4261,
+      "input_tokens_details": {
+        "cache_write_tokens": 4258,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4258
+        }
+      },
+      "output_tokens": 283,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 4544
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Uber's corporate culture, controversies, and company history\",\n  \"climate_relevance\": \"The identifiable main article is not about climate change. A separate promoted-link snippet discusses a proposed rollback of methane-emissions rules, but it is unrelated to the Uber article.\",\n  \"reason\": \"Climate-policy discussion appears only in an unrelated promoted-link snippet, not in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:57:13Z",
+  "duration_seconds": 2.278,
+  "error": null
+}

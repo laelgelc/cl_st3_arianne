@@ -1,0 +1,77 @@
+{
+  "article_id": "14140312",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_09/my/14140312.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_09/my/14140312.json"
+  },
+  "manifest_row": {
+    "article_id": "14140312",
+    "group": "2016_09",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_09/my/14140312.txt",
+    "now_field_2": "483",
+    "date_original": "16-09-01",
+    "date_iso": "2016-09-01",
+    "source_name": "Malay Mail Online",
+    "url": "http://www.themalaymailonline.com/money/article/iea-oil-glut-to-ease-by-2017-clean-energy-investment-to-rise",
+    "title": "IEA: Oil glut to ease by 2017, clean energy investment to rise",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-09-bmb/16-09-my.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Oil market supply, demand, and investment outlook",
+    "climate_relevance": "The report connects the post-Paris climate regime with clean-energy research and development, and discusses falling solar and wind power costs, but climate change is not its main subject.",
+    "reason": "The article is primarily about oil and gas markets. Its discussion of climate commitments and renewable energy is meaningful but secondary, making it relevant as peripheral climate discourse rather than core coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "744ce5e3d4acca3f50d946251da5dfe8bb060e91ac72f9c95823346b4bf7410f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "94b1677c39da06bdde094541eccbfc1fc8f4f92310e8aac14e41e6e4052e5bf5",
+    "raw_response_text_sha256": "ab89acdf75f8de03c3827c3b80daf7153cb3792fdec3d97fe20482c5133f58a1"
+  },
+  "api_metadata": {
+    "id": "resp_05c7dbd0c7d59463006b06057f07e487d28d54eb90c7873c82",
+    "model": "gpt-6-luna",
+    "created_at": 1795556735.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1115,
+      "input_tokens_details": {
+        "cache_write_tokens": 1112,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1112
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1343
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Oil market supply, demand, and investment outlook\",\n  \"climate_relevance\": \"The report connects the post-Paris climate regime with clean-energy research and development, and discusses falling solar and wind power costs, but climate change is not its main subject.\",\n  \"reason\": \"The article is primarily about oil and gas markets. Its discussion of climate commitments and renewable energy is meaningful but secondary, making it relevant as peripheral climate discourse rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:45:37Z",
+  "duration_seconds": 2.087,
+  "error": null
+}

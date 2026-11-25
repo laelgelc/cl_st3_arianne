@@ -1,0 +1,77 @@
+{
+  "article_id": "22426961",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_12/in/22426961.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_12/in/22426961.json"
+  },
+  "manifest_row": {
+    "article_id": "22426961",
+    "group": "2017_12",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_12/in/22426961.txt",
+    "now_field_2": "298",
+    "date_original": "17-12-26",
+    "date_iso": "2017-12-26",
+    "source_name": "Livemint",
+    "url": "http://www.livemint.com/Politics/rHz9O1LUgkhuoWmXSXAZeJ/Sumita-Misra-appointed-joint-secretary-in-PMs-economic-advi.html",
+    "title": "Sumita Misra appointed joint secretary in PM's economic advisory ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-12.txt\"]",
+    "metadata_article_files": "[\"text-17-12/text_17-12-IN.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Appointments in a mid-level government bureaucratic reshuffle",
+    "climate_relevance": "Climate change appears only in the name of a government ministry; the text does not discuss climate issues or policy.",
+    "reason": "The article reports bureaucratic appointments. References to the Ministry of Environment, Forest and Climate Change and the Ministry of New and Renewable Energy are incidental department names.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bf7fd66f1acb4ca4a85e8a9615c82baa31f624d4a848c6e6544e66a73dee492c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "201aabf30b7a18ac4f4d4994c96120f34ed7a969c0c897931103fc249d94ec80",
+    "raw_response_text_sha256": "5862e76e9fc265482fb255a7769c4b31ba93e62d63acb76588475d03f7457dd3"
+  },
+  "api_metadata": {
+    "id": "resp_09d04c2499ae503f006b0610213d3087d2a78f8d4b35c7c84a",
+    "model": "gpt-6-luna",
+    "created_at": 1795559457.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 895,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1110
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Appointments in a mid-level government bureaucratic reshuffle\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government ministry; the text does not discuss climate issues or policy.\",\n  \"reason\": \"The article reports bureaucratic appointments. References to the Ministry of Environment, Forest and Climate Change and the Ministry of New and Renewable Energy are incidental department names.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:30:59Z",
+  "duration_seconds": 1.993,
+  "error": null
+}

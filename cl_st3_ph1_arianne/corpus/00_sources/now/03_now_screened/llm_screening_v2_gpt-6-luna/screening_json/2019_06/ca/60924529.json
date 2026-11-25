@@ -1,0 +1,77 @@
+{
+  "article_id": "60924529",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ca/60924529.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ca/60924529.json"
+  },
+  "manifest_row": {
+    "article_id": "60924529",
+    "group": "2019_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ca/60924529.txt",
+    "now_field_2": "1220",
+    "date_original": "19-06-15",
+    "date_iso": "2019-06-15",
+    "source_name": "RealAgriculture",
+    "url": "https://www.realagriculture.com/2019/06/june-wasde-weather-boosts-grain-markets-this-week-in-the-grain-markets/",
+    "title": "June WASDE and weather boosts - this week in the grain markets",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Grain markets and crop production forecasts",
+    "climate_relevance": "The identifiable main article discusses agricultural markets and weather conditions but not climate change. A separate CBC story about a young climate activist appears later in the text.",
+    "reason": "The climate discussion is in an unrelated appended article, not the main grain-markets article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "564d735dcff0fb8f38e76f423aa021d6bc114b2177a0653ad84057fac91e7c2c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3425824977d9fd23b464aeee21c3d6b0c253ec47d9f07b543d4e3ea6a6d946e6",
+    "raw_response_text_sha256": "f6f1d378710ebdc9502276832480c66565f30e5bd04673fc19dd71a0f60460b1"
+  },
+  "api_metadata": {
+    "id": "resp_0e12c3dec7eb4768006b06357f1fcc87d189496c687d2a74e5",
+    "model": "gpt-6-luna",
+    "created_at": 1795569023.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2978,
+      "input_tokens_details": {
+        "cache_write_tokens": 2975,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2975
+        }
+      },
+      "output_tokens": 409,
+      "output_tokens_details": {
+        "reasoning_tokens": 274
+      },
+      "total_tokens": 3387
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Grain markets and crop production forecasts\",\n  \"climate_relevance\": \"The identifiable main article discusses agricultural markets and weather conditions but not climate change. A separate CBC story about a young climate activist appears later in the text.\",\n  \"reason\": \"The climate discussion is in an unrelated appended article, not the main grain-markets article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:10:26Z",
+  "duration_seconds": 3.274,
+  "error": null
+}

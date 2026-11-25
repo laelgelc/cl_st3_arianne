@@ -1,0 +1,77 @@
+{
+  "article_id": "83510118",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83510118.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83510118.json"
+  },
+  "manifest_row": {
+    "article_id": "83510118",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83510118.txt",
+    "now_field_2": "416",
+    "date_original": "20-01-29",
+    "date_iso": "2020-01-29",
+    "source_name": "UPI.com",
+    "url": "https://www.upi.com/Top_News/World-News/2020/01/29/European-Parliament-to-give-final-Brexit-approval-in-Brussels-vote/7781580299145/",
+    "title": "European Parliament to give final Brexit approval in Brussels vote",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Britain's departure from the European Union",
+    "climate_relevance": "Climate change appears once in a broad list of issues the UK may address after Brexit.",
+    "reason": "The article focuses on Brexit and provides no substantive discussion of climate change; the brief reference is a passing item in a general political statement.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "34e4795be226e71bbf80689587c8ae7f18ee47bd684ce92d248a31e7c856c6d5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7984cd68a1db9b37c7e6907fdd73d494e4ba1391096bbc8c246552447ec43a26",
+    "raw_response_text_sha256": "f3304810e26b0bbb2a1932ffa5859303786ff5a9edc53084e177443ac4896f0f"
+  },
+  "api_metadata": {
+    "id": "resp_091f04d1cd666380006b0649b0eb4887d186fa6e1938fa4f60",
+    "model": "gpt-6-luna",
+    "created_at": 1795574193.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1040,
+      "input_tokens_details": {
+        "cache_write_tokens": 1037,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1037
+        }
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 198
+      },
+      "total_tokens": 1365
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Britain's departure from the European Union\",\n  \"climate_relevance\": \"Climate change appears once in a broad list of issues the UK may address after Brexit.\",\n  \"reason\": \"The article focuses on Brexit and provides no substantive discussion of climate change; the brief reference is a passing item in a general political statement.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:36:35Z",
+  "duration_seconds": 3.136,
+  "error": null
+}

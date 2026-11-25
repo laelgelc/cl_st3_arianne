@@ -1,0 +1,77 @@
+{
+  "article_id": "41000984",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/my/41000984.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/my/41000984.json"
+  },
+  "manifest_row": {
+    "article_id": "41000984",
+    "group": "2019_05",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/my/41000984.txt",
+    "now_field_2": "673",
+    "date_original": "19-05-28",
+    "date_iso": "2019-05-28",
+    "source_name": "The Star Online",
+    "url": "https://www.thestar.com.my/news/nation/2019/05/29/malaysia-makes-its-stand-on-waste/",
+    "title": "Malaysia makes its stand on waste",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Malaysia's efforts to stop contaminated plastic waste imports and return the waste to its countries of origin.",
+    "climate_relevance": "Climate change appears only in the name of the Ministry of Energy, Science, Technology, Environment and Climate Change; the article does not discuss climate change or its implications.",
+    "reason": "The article focuses on plastic waste, recycling, and waste-import enforcement. The ministry name is a passing institutional reference, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "45fe2a616b8730d45029db8907afbad5abd0a3512ea542116d28025b29e88b35",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cde43070946d3bb3149b0df55562b50708ad95a0246ab8ae4c977874a63eb21f",
+    "raw_response_text_sha256": "c9099dfe36af5f2bf3ff50803b6ffc0fa64d66f97071ff31b90d48a926f81f31"
+  },
+  "api_metadata": {
+    "id": "resp_03af820c955f6aa7006b06208d396887d2ad696c328b5a7773",
+    "model": "gpt-6-luna",
+    "created_at": 1795563661.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1395,
+      "input_tokens_details": {
+        "cache_write_tokens": 1392,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1392
+        }
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 1610
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Malaysia's efforts to stop contaminated plastic waste imports and return the waste to its countries of origin.\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Ministry of Energy, Science, Technology, Environment and Climate Change; the article does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on plastic waste, recycling, and waste-import enforcement. The ministry name is a passing institutional reference, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:41:10Z",
+  "duration_seconds": 9.112,
+  "error": null
+}

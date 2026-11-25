@@ -1,0 +1,77 @@
+{
+  "article_id": "32180631",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/32180631.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/32180631.json"
+  },
+  "manifest_row": {
+    "article_id": "32180631",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/32180631.txt",
+    "now_field_2": "4280",
+    "date_original": "20-10-28",
+    "date_iso": "2020-10-28",
+    "source_name": "advances.sciencemag.org",
+    "url": "https://advances.sciencemag.org/content/6/44/eaba7621.full",
+    "title": "Residential solid fuel emissions contribute significantly ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Residential energy use, PM2.5 air pollution, and associated health impacts in China",
+    "climate_relevance": "Climate change appears only in a reference to a UNFCCC report and a brief statement that the study's methods could be applied to assess climate influences. It is not meaningfully discussed.",
+    "reason": "The article focuses on air pollution exposure and health effects, not climate change. The climate-related mentions are incidental and do not provide substantive material for climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d4fbf15c47817e16a45c1925d27d49d01eb549fdeeef3fec05a00af988fdfbc4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1cec6ffca9408be03f1c4cbba2dc5607c564094d96ae7d25ddaa9c7be834d7a1",
+    "raw_response_text_sha256": "27a4d2619bd9b8f5451daf40cbdea0b08044bbb91c4e0fafa60f2800eb86a59a"
+  },
+  "api_metadata": {
+    "id": "resp_01d9743c88335d9e006b061be52fdc87d290c31f173039975c",
+    "model": "gpt-6-luna",
+    "created_at": 1795562469.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6743,
+      "input_tokens_details": {
+        "cache_write_tokens": 6740,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6740
+        }
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 7016
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Residential energy use, PM2.5 air pollution, and associated health impacts in China\",\n  \"climate_relevance\": \"Climate change appears only in a reference to a UNFCCC report and a brief statement that the study's methods could be applied to assess climate influences. It is not meaningfully discussed.\",\n  \"reason\": \"The article focuses on air pollution exposure and health effects, not climate change. The climate-related mentions are incidental and do not provide substantive material for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:21:11Z",
+  "duration_seconds": 2.314,
+  "error": null
+}

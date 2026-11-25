@@ -1,0 +1,77 @@
+{
+  "article_id": "31428811",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/31428811.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/31428811.json"
+  },
+  "manifest_row": {
+    "article_id": "31428811",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/31428811.txt",
+    "now_field_2": "1467",
+    "date_original": "19-11-12",
+    "date_iso": "2019-11-12",
+    "source_name": "twincities.com",
+    "url": "https://www.twincities.com/2019/11/12/what-to-watch-as-impeachment-inquiry-of-trump-goes-public/",
+    "title": "What to watch as impeachment inquiry of Trump goes public ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The House impeachment hearings concerning President Donald Trump’s dealings with Ukraine.",
+    "climate_relevance": "Climate change appears only in an appended related-story snippet about state governments’ role in addressing it, not in the main article.",
+    "reason": "The identifiable main article is a guide to the impeachment hearings. The climate reference belongs to an unrelated teaser in the trailing 'More in Government & Politics' material and does not contribute to the main article’s discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a930f8a80d4c7a8ea3b73b8fbd89c9857f1daf8efbd574c9028a80bc4980b3b0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4ed83cd39867898a00d5f6909b7fdcb00ed08fc3b10b2cf9950ca9886f5535e0",
+    "raw_response_text_sha256": "8e8ce3cd17ff4cdb39d4549e1ba2de3764d533be2c8d630125c8dd04334dbc4a"
+  },
+  "api_metadata": {
+    "id": "resp_0fdcaf815e696d94006b061733e97487d2a40f526cec251dbf",
+    "model": "gpt-6-luna",
+    "created_at": 1795561268.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2509,
+      "input_tokens_details": {
+        "cache_write_tokens": 2506,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2506
+        }
+      },
+      "output_tokens": 302,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 2811
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The House impeachment hearings concerning President Donald Trump’s dealings with Ukraine.\",\n  \"climate_relevance\": \"Climate change appears only in an appended related-story snippet about state governments’ role in addressing it, not in the main article.\",\n  \"reason\": \"The identifiable main article is a guide to the impeachment hearings. The climate reference belongs to an unrelated teaser in the trailing 'More in Government & Politics' material and does not contribute to the main article’s discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:01:10Z",
+  "duration_seconds": 2.664,
+  "error": null
+}

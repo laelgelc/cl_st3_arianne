@@ -1,0 +1,77 @@
+{
+  "article_id": "84645861",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_04/ke/84645861.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_04/ke/84645861.json"
+  },
+  "manifest_row": {
+    "article_id": "84645861",
+    "group": "2020_04",
+    "country_code": "ke",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_04/ke/84645861.txt",
+    "now_field_2": "346",
+    "date_original": "20-04-19",
+    "date_iso": "2020-04-19",
+    "source_name": "ReliefWeb",
+    "url": "https://reliefweb.int/report/vanuatu/etas-community-donate-food-relief-tc-harold-victims",
+    "title": "Etas Community donate food relief for TC Harold victims",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-04.txt\"]",
+    "metadata_article_files": "[\"text-20-04/20-04-ke.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Community food donations for people affected by Tropical Cyclone Harold",
+    "climate_relevance": "Climate change appears only in the job title of a person quoted; the text does not discuss climate change or link it to the cyclone.",
+    "reason": "The article focuses on disaster relief and community donations. Its sole climate-change reference is an official's title, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a1d5594c3842ee151b9f9c5554cd76e1aea62a40ef0a93fb96eb648d32845a1e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c0652fe4dc6e822969f5cdc23b7339c647c65bc09c6f67e01ba8a33805cf80f3",
+    "raw_response_text_sha256": "2e9776d009c5299dde00fcf4914bc9a588124a715537b5678fd0702d41a40bcf"
+  },
+  "api_metadata": {
+    "id": "resp_09592f9183b7f9b1006b064ab202b887d18f52d80627f1834c",
+    "model": "gpt-6-luna",
+    "created_at": 1795574450.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 922,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 1134
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Community food donations for people affected by Tropical Cyclone Harold\",\n  \"climate_relevance\": \"Climate change appears only in the job title of a person quoted; the text does not discuss climate change or link it to the cyclone.\",\n  \"reason\": \"The article focuses on disaster relief and community donations. Its sole climate-change reference is an official's title, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:40:52Z",
+  "duration_seconds": 2.166,
+  "error": null
+}

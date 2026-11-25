@@ -1,0 +1,77 @@
+{
+  "article_id": "61375592",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/ie/61375592.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/ie/61375592.json"
+  },
+  "manifest_row": {
+    "article_id": "61375592",
+    "group": "2019_11",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/ie/61375592.txt",
+    "now_field_2": "516",
+    "date_original": "19-11-16",
+    "date_iso": "2019-11-16",
+    "source_name": "herald.ie",
+    "url": "https://www.herald.ie/news/dubs-hero-joins-battle-to-block-plans-for-flats-close-to-st-annes-park-38697133.html",
+    "title": "Dubs hero joins battle to block plans for flats close to ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-ie.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "A local campaign against apartment development near St Anne's Park, followed by a separate roundup of Irish sailing achievements.",
+    "climate_relevance": "A sailing-voyage passage says the project included research and data acquisition on climate change, but climate is not a main subject of either article.",
+    "reason": "The climate reference is brief but describes a substantive purpose of the voyage, making it more than an incidental mention. The available text is otherwise about housing development and sailing, so it is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a72eac1c4f915db5404cb430186ff455ddae92cac444f6fedd0fc75b2b8ebae8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "965a539c7e7d5ae7f409540b473d071ae75a1470e2026778d0ab0e487c5518ae",
+    "raw_response_text_sha256": "b73c147d74fd6ab0083a9489527b4bd2cca5296628b85adb47502cb2ed2c7a91"
+  },
+  "api_metadata": {
+    "id": "resp_06f1041417baf9d9006b0636e0042487d19a598565e3bf7575",
+    "model": "gpt-6-luna",
+    "created_at": 1795569376.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6130,
+      "input_tokens_details": {
+        "cache_write_tokens": 6127,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6127
+        }
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 6485
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A local campaign against apartment development near St Anne's Park, followed by a separate roundup of Irish sailing achievements.\",\n  \"climate_relevance\": \"A sailing-voyage passage says the project included research and data acquisition on climate change, but climate is not a main subject of either article.\",\n  \"reason\": \"The climate reference is brief but describes a substantive purpose of the voyage, making it more than an incidental mention. The available text is otherwise about housing development and sailing, so it is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:16:19Z",
+  "duration_seconds": 3.329,
+  "error": null
+}

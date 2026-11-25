@@ -1,0 +1,77 @@
+{
+  "article_id": "31628459",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_02/us/31628459.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_02/us/31628459.json"
+  },
+  "manifest_row": {
+    "article_id": "31628459",
+    "group": "2020_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_02/us/31628459.txt",
+    "now_field_2": "335",
+    "date_original": "20-02-06",
+    "date_iso": "2020-02-06",
+    "source_name": "eurekalert.org",
+    "url": "https://www.eurekalert.org/pub_releases/2020-02/uow-al1020520.php",
+    "title": "At least 13% of wastewater treated by Southern Ontario ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-02.txt\"]",
+    "metadata_article_files": "[\"text-20-02/20-02-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Wastewater from septic systems entering streams in rural Southern Ontario",
+    "climate_relevance": "Climate change appears only as part of the name Environment and Climate Change Canada; the article contains no meaningful climate discourse.",
+    "reason": "The article focuses on wastewater tracing and potential water contamination. The sole climate-related wording is an agency name.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2b771a48b00f82b9f4f3f6269ae0064280754d5b12ff1c88f06ff37a339a559b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a8adfb65410b6008d6d171447940b36d3ff75c1bb9fbd3546227eaff4080757a",
+    "raw_response_text_sha256": "b05ed77a4242161c933857db5c3383a7fb41b849b202e33ac2795fda9744de74"
+  },
+  "api_metadata": {
+    "id": "resp_0b2079fa136faf84006b06188a46a887d28d071dc5bc247a0b",
+    "model": "gpt-6-luna",
+    "created_at": 1795561610.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 914,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 180,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 1094
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Wastewater from septic systems entering streams in rural Southern Ontario\",\n  \"climate_relevance\": \"Climate change appears only as part of the name Environment and Climate Change Canada; the article contains no meaningful climate discourse.\",\n  \"reason\": \"The article focuses on wastewater tracing and potential water contamination. The sole climate-related wording is an agency name.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:06:51Z",
+  "duration_seconds": 1.656,
+  "error": null
+}

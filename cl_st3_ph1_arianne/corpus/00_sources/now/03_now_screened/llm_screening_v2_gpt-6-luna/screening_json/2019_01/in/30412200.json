@@ -1,0 +1,77 @@
+{
+  "article_id": "30412200",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/in/30412200.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/in/30412200.json"
+  },
+  "manifest_row": {
+    "article_id": "30412200",
+    "group": "2019_01",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/in/30412200.txt",
+    "now_field_2": "809",
+    "date_original": "19-01-03",
+    "date_iso": "2019-01-03",
+    "source_name": "Daily Pioneer",
+    "url": "https://www.dailypioneer.com/2019/columnists/the-politics-of-mining-riches.html",
+    "title": "The politics of mining riches",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-in1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Mining politics in Meghalaya, including illegal coal mining and opposition to uranium mining.",
+    "climate_relevance": "Climate change appears only in the formal name of the Ministry of Environment, Forest and Climate Change; the text does not discuss climate issues or their implications.",
+    "reason": "The article focuses on mining, safety, environmental impacts, uranium resources, and constitutional authority. The climate reference is incidental and does not constitute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ceb4960ea4265229c4dc769b4afcebdb7b07557c2a9ef140dc96b933e4e214b3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9deb0ae851ec00b22680aab3897e3eb9a794644cd6f283b99546c54141342585",
+    "raw_response_text_sha256": "6e8a5b6267e16159621ea10a0482113684eb96a36dd05b54024d99a169af20cb"
+  },
+  "api_metadata": {
+    "id": "resp_075e65417ddd7a9a006b061427b70c87d292cf7de99cdd3c5a",
+    "model": "gpt-6-luna",
+    "created_at": 1795560487.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1537,
+      "input_tokens_details": {
+        "cache_write_tokens": 1534,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1534
+        }
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 1808
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Mining politics in Meghalaya, including illegal coal mining and opposition to uranium mining.\",\n  \"climate_relevance\": \"Climate change appears only in the formal name of the Ministry of Environment, Forest and Climate Change; the text does not discuss climate issues or their implications.\",\n  \"reason\": \"The article focuses on mining, safety, environmental impacts, uranium resources, and constitutional authority. The climate reference is incidental and does not constitute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:48:09Z",
+  "duration_seconds": 2.267,
+  "error": null
+}

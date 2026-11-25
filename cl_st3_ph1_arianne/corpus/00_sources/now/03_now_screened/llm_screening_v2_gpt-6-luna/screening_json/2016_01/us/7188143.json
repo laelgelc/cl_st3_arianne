@@ -1,0 +1,77 @@
+{
+  "article_id": "7188143",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/us/7188143.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/us/7188143.json"
+  },
+  "manifest_row": {
+    "article_id": "7188143",
+    "group": "2016_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/us/7188143.txt",
+    "now_field_2": "993",
+    "date_original": "16-01-13",
+    "date_iso": "2016-01-13",
+    "source_name": "The Federalist",
+    "url": "http://thefederalist.com/2016/01/13/irans-humiliation-of-barack-obama-is-now-complete/",
+    "title": "Iran's Humiliation Of Barack Obama Is Now Complete",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.82,
+    "climate_role": "passing",
+    "main_topic": "A political commentary about Iran and the Obama administration, followed by a local news story about a restaurant recovering from flood damage.",
+    "climate_relevance": "The flood story briefly invokes climate change as a possible explanation for the flooding, but does not develop the topic.",
+    "reason": "Climate change appears in a sentence linking it to Storm Frank's flooding, which gives the mention some contextual relevance. However, climate is not a focus of the flood story, and the preceding political commentary is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b9f03c12e05a77702dc72a9ba8f7a5d97d7e4db64d00e773ec73a91425b893db",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7dd2f61276ed1490b2405d5f4c85198439026f3170199bfb400e19cc096e13f7",
+    "raw_response_text_sha256": "300800fae1f0d3fc22610649b3758dbb4bb46ad6779f6b29c6428679a7458700"
+  },
+  "api_metadata": {
+    "id": "resp_0ed10625d4e40314006b064313c02087d19059caae4d6b7235",
+    "model": "gpt-6-luna",
+    "created_at": 1795572499.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1748,
+      "input_tokens_details": {
+        "cache_write_tokens": 1745,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1745
+        }
+      },
+      "output_tokens": 679,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 2427
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.82,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A political commentary about Iran and the Obama administration, followed by a local news story about a restaurant recovering from flood damage.\",\n  \"climate_relevance\": \"The flood story briefly invokes climate change as a possible explanation for the flooding, but does not develop the topic.\",\n  \"reason\": \"Climate change appears in a sentence linking it to Storm Frank's flooding, which gives the mention some contextual relevance. However, climate is not a focus of the flood story, and the preceding political commentary is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:08:25Z",
+  "duration_seconds": 6.008,
+  "error": null
+}

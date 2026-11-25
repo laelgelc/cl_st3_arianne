@@ -1,0 +1,77 @@
+{
+  "article_id": "86491752",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/86491752.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/86491752.json"
+  },
+  "manifest_row": {
+    "article_id": "86491752",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/86491752.txt",
+    "now_field_2": "1155",
+    "date_original": "20-12-31",
+    "date_iso": "2020-12-31",
+    "source_name": "Forbes",
+    "url": "https://www.forbes.com/sites/anuradhavaranasi/2021/12/31/why-there-is-limited-support-for-anti-addiction-vaccines-despite-the-epidemic-of-opioid-overdoses/",
+    "title": "Why There Is Limited Support For Anti-Addiction Vaccines Despite The Epidemic Of Opioid Overdoses",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Opioid overdoses during the COVID-19 pandemic and limited support for anti-fentanyl vaccines",
+    "climate_relevance": "Climate change appears only in the author's biography, not in the article's substantive discussion.",
+    "reason": "The article focuses on opioid overdoses, addiction treatment, and anti-fentanyl vaccines. The sole climate reference is an incidental mention in the author's bio.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8b0ff56ce1a1381389075ea2264d4a2ced769874d18a891174d61b23707be3e2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cea2d99c0a1488b08365076a137162472a829fe4bea3ba609b92d3c071481f24",
+    "raw_response_text_sha256": "aa3a71edd3bef86dd9f4df7e2cb1f2729e5d78a8247310f16af1c1dac493f0a9"
+  },
+  "api_metadata": {
+    "id": "resp_0ee7b239ac5e38f2006b0650818fb887d19f9ef04480612b23",
+    "model": "gpt-6-luna",
+    "created_at": 1795575937.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2098,
+      "input_tokens_details": {
+        "cache_write_tokens": 2095,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2095
+        }
+      },
+      "output_tokens": 224,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 2322
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Opioid overdoses during the COVID-19 pandemic and limited support for anti-fentanyl vaccines\",\n  \"climate_relevance\": \"Climate change appears only in the author's biography, not in the article's substantive discussion.\",\n  \"reason\": \"The article focuses on opioid overdoses, addiction treatment, and anti-fentanyl vaccines. The sole climate reference is an incidental mention in the author's bio.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:05:39Z",
+  "duration_seconds": 2.157,
+  "error": null
+}

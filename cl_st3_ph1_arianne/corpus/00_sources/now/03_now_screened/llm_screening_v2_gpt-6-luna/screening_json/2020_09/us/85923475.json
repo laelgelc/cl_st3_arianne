@@ -1,0 +1,77 @@
+{
+  "article_id": "85923475",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/85923475.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/85923475.json"
+  },
+  "manifest_row": {
+    "article_id": "85923475",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/85923475.txt",
+    "now_field_2": "959",
+    "date_original": "20-09-13",
+    "date_iso": "2020-09-13",
+    "source_name": "Chicago Tribune",
+    "url": "https://www.chicagotribune.com/advice/sns-nyt-how-to-tell-friend-stop-paying-20200913-is4hhzrno5b6ti2mhfyxq6u5ba-story.html",
+    "title": "How do I tell my friend to stop paying for his son's lifestyle?",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Advice about family relationships, social etiquette, and Thanksgiving during the COVID-19 pandemic",
+    "climate_relevance": "Climate change appears only as a brief descriptor of one dinner guest, who is said to deny it.",
+    "reason": "The text does not discuss climate change or the guest's views; the mention serves only to characterize him in advice about avoiding political conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f2d97da764f03842cb5f88645408cad5be6de324bf1fbc08f4989187f6d5844c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7617f064cd7ea7397e2e29c5c03363f43b936568dafc6a9a5c4a4360de2b1545",
+    "raw_response_text_sha256": "b2872cbade88d3f3d6833800ff8aeb6179a6e12a14527ef3b3729e03a2183f24"
+  },
+  "api_metadata": {
+    "id": "resp_052b793581c646d3006b064d942f4c87d18711917386934651",
+    "model": "gpt-6-luna",
+    "created_at": 1795575188.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1705,
+      "input_tokens_details": {
+        "cache_write_tokens": 1702,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1702
+        }
+      },
+      "output_tokens": 310,
+      "output_tokens_details": {
+        "reasoning_tokens": 172
+      },
+      "total_tokens": 2015
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Advice about family relationships, social etiquette, and Thanksgiving during the COVID-19 pandemic\",\n  \"climate_relevance\": \"Climate change appears only as a brief descriptor of one dinner guest, who is said to deny it.\",\n  \"reason\": \"The text does not discuss climate change or the guest's views; the mention serves only to characterize him in advice about avoiding political conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:53:11Z",
+  "duration_seconds": 3.204,
+  "error": null
+}

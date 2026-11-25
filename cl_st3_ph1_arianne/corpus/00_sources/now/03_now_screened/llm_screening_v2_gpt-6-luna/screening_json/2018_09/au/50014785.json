@@ -1,0 +1,77 @@
+{
+  "article_id": "50014785",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/au/50014785.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/au/50014785.json"
+  },
+  "manifest_row": {
+    "article_id": "50014785",
+    "group": "2018_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/au/50014785.txt",
+    "now_field_2": "831",
+    "date_original": "18-09-10",
+    "date_iso": "2018-09-10",
+    "source_name": "The Sydney Morning Herald",
+    "url": "https://www.smh.com.au/world/north-america/us-braces-for-extremely-dangerous-hurricane-florence-20180911-p502xr.html",
+    "title": "US braces for extremely dangerous Hurricane Florence",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Hurricane Florence’s forecast impacts and emergency preparations in the Carolinas",
+    "climate_relevance": "The article notes that the affected coastline is particularly vulnerable to rising sea levels due to climate change.",
+    "reason": "The report is mainly about an approaching hurricane, its hazards, and preparations. Its explicit connection between climate change, rising sea levels, and coastal vulnerability is meaningful but brief, so the text is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "da408b23a101ba15a507d962c43bf58ba89a6d732137d50ea2206caaae20daae",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9b818d70cba9103416a7b57d822e008aa4446a18f05159b3cd4ad69b0deb3b6e",
+    "raw_response_text_sha256": "c5a0c9e4d213eea6e5febbb1f2fc275a573916b58112d8f6eea55dd7625a8c08"
+  },
+  "api_metadata": {
+    "id": "resp_0fd77b185e5743b8006b062760338487d1ad249857e8ff1885",
+    "model": "gpt-6-luna",
+    "created_at": 1795565408.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1597,
+      "input_tokens_details": {
+        "cache_write_tokens": 1594,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1594
+        }
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1815
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Hurricane Florence’s forecast impacts and emergency preparations in the Carolinas\",\n  \"climate_relevance\": \"The article notes that the affected coastline is particularly vulnerable to rising sea levels due to climate change.\",\n  \"reason\": \"The report is mainly about an approaching hurricane, its hazards, and preparations. Its explicit connection between climate change, rising sea levels, and coastal vulnerability is meaningful but brief, so the text is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:10:10Z",
+  "duration_seconds": 2.276,
+  "error": null
+}

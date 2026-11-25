@@ -1,0 +1,77 @@
+{
+  "article_id": "18777651",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/ca/18777651.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/ca/18777651.json"
+  },
+  "manifest_row": {
+    "article_id": "18777651",
+    "group": "2017_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/ca/18777651.txt",
+    "now_field_2": "657",
+    "date_original": "17-06-02",
+    "date_iso": "2017-06-02",
+    "source_name": "Globalnews.ca",
+    "url": "http://globalnews.ca/news/3498366/severe-thunderstorm-watch-for-saskatoon-central-saskatchewan-heat-warning/",
+    "title": "Severe thunderstorm watch for Saskatoon, central Sask.",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Local weather conditions, severe thunderstorm alerts, and a Saskatoon forecast",
+    "climate_relevance": "Climate change appears only as part of the name Environment and Climate Change Canada; the text contains no meaningful discussion of climate change.",
+    "reason": "The article is a routine weather report about thunderstorms, heat warnings, and the forecast. The agency name is not climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f2c4bda479df6d1d0f3e82f29113b242df0d8a94e97ec024cc77c7ad1f30c195",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "df5462c8180806cf8859425d6bc0bd05b47f1e41906ec7e1f4955f2a0544ca34",
+    "raw_response_text_sha256": "56fa9ce589d8e3585d1e060857665ccca19582d4bdf303aa0b705673c85012a2"
+  },
+  "api_metadata": {
+    "id": "resp_062747171ea166c9006b060ae484d087d2b8402000fea588f4",
+    "model": "gpt-6-luna",
+    "created_at": 1795558116.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1385,
+      "input_tokens_details": {
+        "cache_write_tokens": 1382,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1382
+        }
+      },
+      "output_tokens": 209,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1594
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Local weather conditions, severe thunderstorm alerts, and a Saskatoon forecast\",\n  \"climate_relevance\": \"Climate change appears only as part of the name Environment and Climate Change Canada; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article is a routine weather report about thunderstorms, heat warnings, and the forecast. The agency name is not climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:08:38Z",
+  "duration_seconds": 1.751,
+  "error": null
+}

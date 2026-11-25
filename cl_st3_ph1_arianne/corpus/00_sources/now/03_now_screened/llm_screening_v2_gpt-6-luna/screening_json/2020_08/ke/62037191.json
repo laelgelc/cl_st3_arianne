@@ -1,0 +1,77 @@
+{
+  "article_id": "62037191",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/ke/62037191.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/ke/62037191.json"
+  },
+  "manifest_row": {
+    "article_id": "62037191",
+    "group": "2020_08",
+    "country_code": "ke",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/ke/62037191.txt",
+    "now_field_2": "80707",
+    "date_original": "20-08-05",
+    "date_iso": "2020-08-05",
+    "source_name": "capitalfm.co.ke",
+    "url": "https://www.capitalfm.co.ke/eblog/category/featured/feed/",
+    "title": "Featured - Capital Blog",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-ke.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Debate over the safety and regulation of e-cigarettes and other smoke-free tobacco products",
+    "climate_relevance": "The identifiable main article contains no meaningful climate-change discourse. Some later, unrelated snippets discuss climate change, but they do not make the main article climate coverage.",
+    "reason": "The text begins with a coherent article about tobacco harm reduction and e-cigarette safety, then concatenates numerous unrelated articles and snippets. Following the instruction to assess the identifiable main article, this item is not relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7865ef5246700fcf7e3518b6d793f4cadce6ab2119943942199fc8157730b3a3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b70f89b9b765f9d00d5dbc9c78fd6545a2eaeafb18832c20dcebfeb963525114",
+    "raw_response_text_sha256": "0f6b172b6781d7350c6001c6df5ed5eea0967c49d0a9806385b1a74f7c2e20f4"
+  },
+  "api_metadata": {
+    "id": "resp_05d3067a02a262b8006b063931ec8487d1b2b4434b535156d8",
+    "model": "gpt-6-luna",
+    "created_at": 1795569970.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 106062,
+      "input_tokens_details": {
+        "cache_write_tokens": 106059,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 106059
+        }
+      },
+      "output_tokens": 392,
+      "output_tokens_details": {
+        "reasoning_tokens": 219
+      },
+      "total_tokens": 106454
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Debate over the safety and regulation of e-cigarettes and other smoke-free tobacco products\",\n  \"climate_relevance\": \"The identifiable main article contains no meaningful climate-change discourse. Some later, unrelated snippets discuss climate change, but they do not make the main article climate coverage.\",\n  \"reason\": \"The text begins with a coherent article about tobacco harm reduction and e-cigarette safety, then concatenates numerous unrelated articles and snippets. Following the instruction to assess the identifiable main article, this item is not relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:26:13Z",
+  "duration_seconds": 4.116,
+  "error": null
+}

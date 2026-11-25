@@ -1,0 +1,77 @@
+{
+  "article_id": "21357986",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/us/21357986.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/us/21357986.json"
+  },
+  "manifest_row": {
+    "article_id": "21357986",
+    "group": "2017_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/us/21357986.txt",
+    "now_field_2": "810",
+    "date_original": "17-10-28",
+    "date_iso": "2017-10-28",
+    "source_name": "PRI",
+    "url": "https://www.pri.org/stories/2017-10-28/neanderthals-went-extinct-many-us-still-carry-around-fragments-their-dna",
+    "title": "Neanderthals went extinct, but many of us still carry around ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Neanderthal genetics and the inheritance of Neanderthal DNA in modern humans",
+    "climate_relevance": "Climate change is mentioned once as the cause of permafrost melting, which could expose preserved Neanderthal remains.",
+    "reason": "The article is about genetics; climate change appears only in a brief speculative remark and is not meaningfully developed.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "96aeea8f3d61f717c26791cb3cc8319be422a62a63485bed064747e7eaaa9fc5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "128559f0c28e8ecda3c127fb9ad656dccedebc978e557d5f4083e33a03135e1f",
+    "raw_response_text_sha256": "c7f94437faed3c085f04ac83fefc01ed5e63532a8166931201fc2654c8f1b58a"
+  },
+  "api_metadata": {
+    "id": "resp_006f2d39bcb149d4006b060ead25e087d2bd6bdca58b750477",
+    "model": "gpt-6-luna",
+    "created_at": 1795559085.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1583,
+      "input_tokens_details": {
+        "cache_write_tokens": 1580,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1580
+        }
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 1860
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Neanderthal genetics and the inheritance of Neanderthal DNA in modern humans\",\n  \"climate_relevance\": \"Climate change is mentioned once as the cause of permafrost melting, which could expose preserved Neanderthal remains.\",\n  \"reason\": \"The article is about genetics; climate change appears only in a brief speculative remark and is not meaningfully developed.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:24:47Z",
+  "duration_seconds": 2.599,
+  "error": null
+}

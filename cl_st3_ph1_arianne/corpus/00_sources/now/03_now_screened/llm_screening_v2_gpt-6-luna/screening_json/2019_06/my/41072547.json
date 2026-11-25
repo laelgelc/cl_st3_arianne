@@ -1,0 +1,77 @@
+{
+  "article_id": "41072547",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/my/41072547.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/my/41072547.json"
+  },
+  "manifest_row": {
+    "article_id": "41072547",
+    "group": "2019_06",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/my/41072547.txt",
+    "now_field_2": "206",
+    "date_original": "19-06-17",
+    "date_iso": "2019-06-17",
+    "source_name": "The Sun Daily",
+    "url": "https://www.thesundaily.my/local/canada-in-talks-with-malaysia-about-taking-back-plastic-waste-NA983708",
+    "title": "Canada in talks with Malaysia about taking back plastic waste",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Canada's discussions with Malaysia about retrieving plastic waste originating in Canada",
+    "climate_relevance": "The article concerns plastic waste and diplomatic disputes, not climate change. The reference to Environment and Climate Change Canada is the name of a government department.",
+    "reason": "There is no meaningful discourse about climate change; its only apparent mention is in a department name.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "835d81baf49459b1877994bd9a11e8cb0d0b76e29f1c75dd66a540bcf41400d8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "90e60d29435a1cb5488d67597a093b388bf959ab16a3b07398ec67bd37304bc8",
+    "raw_response_text_sha256": "6a0a2ae986b12947c3bb85bea35c797ddd40ba27b465e05f1e14e673817082ca"
+  },
+  "api_metadata": {
+    "id": "resp_0eacaba6fd711eda006b0620cd9f3487d294e464955b3db548",
+    "model": "gpt-6-luna",
+    "created_at": 1795563725.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 728,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 926
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Canada's discussions with Malaysia about retrieving plastic waste originating in Canada\",\n  \"climate_relevance\": \"The article concerns plastic waste and diplomatic disputes, not climate change. The reference to Environment and Climate Change Canada is the name of a government department.\",\n  \"reason\": \"There is no meaningful discourse about climate change; its only apparent mention is in a department name.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:42:07Z",
+  "duration_seconds": 1.618,
+  "error": null
+}

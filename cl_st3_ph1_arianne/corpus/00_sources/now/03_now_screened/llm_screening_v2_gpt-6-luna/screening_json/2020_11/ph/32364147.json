@@ -1,0 +1,77 @@
+{
+  "article_id": "32364147",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/ph/32364147.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/ph/32364147.json"
+  },
+  "manifest_row": {
+    "article_id": "32364147",
+    "group": "2020_11",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/ph/32364147.txt",
+    "now_field_2": "291",
+    "date_original": "20-11-22",
+    "date_iso": "2020-11-22",
+    "source_name": "mb.com.ph",
+    "url": "https://mb.com.ph/category/world/page/117/",
+    "title": "World Archives - Page 117 of 117 - Manila Bulletin",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A collection of unrelated news snippets, including items on Hong Kong's national security law, a cruise ship illness outbreak, British politics, and other topics.",
+    "climate_relevance": "One snippet says a New Zealand politician made a speech about climate change, but gives no substantive information about climate issues or debate.",
+    "reason": "The text contains multiple unrelated snippets. Its only climate reference is a passing description of the subject of a speech, with no meaningful climate discourse to analyze.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8d4eaa507f94feb12a3af8fd8bedcb61596943f74708b6b1beaf546c1ff5d0f1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9989505e3f79342d71618bd6a1137c88f2225b241885c2cfa4a4b01c1862597c",
+    "raw_response_text_sha256": "83d4a8714e29efeaa24c40833ad8b218cbab81437b26d5438ab2a9ab53407cf8"
+  },
+  "api_metadata": {
+    "id": "resp_0c6679cffa6cffeb006b061c584e1c87d2bdf0194066072795",
+    "model": "gpt-6-luna",
+    "created_at": 1795562584.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 863,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 296,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 1159
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of unrelated news snippets, including items on Hong Kong's national security law, a cruise ship illness outbreak, British politics, and other topics.\",\n  \"climate_relevance\": \"One snippet says a New Zealand politician made a speech about climate change, but gives no substantive information about climate issues or debate.\",\n  \"reason\": \"The text contains multiple unrelated snippets. Its only climate reference is a passing description of the subject of a speech, with no meaningful climate discourse to analyze.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:23:06Z",
+  "duration_seconds": 2.685,
+  "error": null
+}

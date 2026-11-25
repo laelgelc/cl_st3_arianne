@@ -1,0 +1,77 @@
+{
+  "article_id": "18436778",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/sg/18436778.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/sg/18436778.json"
+  },
+  "manifest_row": {
+    "article_id": "18436778",
+    "group": "2017_05",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/sg/18436778.txt",
+    "now_field_2": "579",
+    "date_original": "17-05-14",
+    "date_iso": "2017-05-14",
+    "source_name": "The Straits Times",
+    "url": "http://www.straitstimes.com/asia/se-asia/scientists-identify-15-metre-creature-that-washed-up-on-an-indonesian-beach",
+    "title": "Scientists identify 15-metre creature that washed up on an ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-SG.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "A mysterious sea-creature carcass washed ashore in Indonesia and other unusual whale carcass sightings.",
+    "climate_relevance": "Climate change is mentioned only in a question about what the carcass might indicate; the article does not develop that connection.",
+    "reason": "The available text is mainly about identifying and explaining unusual floating carcasses. Its sole climate-change reference is passing, and the discussion of warm water concerns decomposition rather than climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5eae05a9f4c7a6c90e8a210a5c847686214eac11f17817b0311a43238b9ccd05",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d57c13d62d8c275b7b7fe77ef7d88844b4279aebef8b6b83ea77f56c4f8e26f6",
+    "raw_response_text_sha256": "a8fd674319519c07a8ef245be6142b14e5b4914be171b10123bb9af03cee3c9b"
+  },
+  "api_metadata": {
+    "id": "resp_0db68d148a4ec478006b060a3d9bf087d2948dcc1664c57ec6",
+    "model": "gpt-6-luna",
+    "created_at": 1795557949.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1233,
+      "input_tokens_details": {
+        "cache_write_tokens": 1230,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1230
+        }
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 166
+      },
+      "total_tokens": 1552
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A mysterious sea-creature carcass washed ashore in Indonesia and other unusual whale carcass sightings.\",\n  \"climate_relevance\": \"Climate change is mentioned only in a question about what the carcass might indicate; the article does not develop that connection.\",\n  \"reason\": \"The available text is mainly about identifying and explaining unusual floating carcasses. Its sole climate-change reference is passing, and the discussion of warm water concerns decomposition rather than climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:05:52Z",
+  "duration_seconds": 2.875,
+  "error": null
+}

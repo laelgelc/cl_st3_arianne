@@ -1,0 +1,77 @@
+{
+  "article_id": "70033463",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/us/70033463.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/us/70033463.json"
+  },
+  "manifest_row": {
+    "article_id": "70033463",
+    "group": "2018_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/us/70033463.txt",
+    "now_field_2": "1275",
+    "date_original": "18-09-15",
+    "date_iso": "2018-09-15",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/weather/2018/09/15/florence-forecast-another-inches-rain-could-fall-record-setting-flood-event-expands-inland/",
+    "title": "Florence forecast: Record-setting, flooding rain is 'far from done'",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Hurricane Florence rainfall, flooding, and storm forecasts",
+    "climate_relevance": "Climate change appears only in the author biography, which says he worked as a climate change science analyst; the article itself does not discuss climate change.",
+    "reason": "The substantive text reports on Florence's rainfall, flooding, and projected track. The sole climate-change reference is incidental biographical information and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f5067fc49e8e891dfae309eab590966ed7f5244f85287701111c38d1b0bf8611",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a4b44beff8385e95d933d3c0c7b219ba203d53cd3a7d2063bc6fe28a58abef59",
+    "raw_response_text_sha256": "ae8bd4079e61a000e351c8be67bb6b19853262a360d66618f45f5288867786f5"
+  },
+  "api_metadata": {
+    "id": "resp_0be7d4f119c8de96006b063a979ab487d1ab8ef356a89fac81",
+    "model": "gpt-6-luna",
+    "created_at": 1795570327.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2169,
+      "input_tokens_details": {
+        "cache_write_tokens": 2166,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2166
+        }
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 2422
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Hurricane Florence rainfall, flooding, and storm forecasts\",\n  \"climate_relevance\": \"Climate change appears only in the author biography, which says he worked as a climate change science analyst; the article itself does not discuss climate change.\",\n  \"reason\": \"The substantive text reports on Florence's rainfall, flooding, and projected track. The sole climate-change reference is incidental biographical information and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:32:09Z",
+  "duration_seconds": 2.418,
+  "error": null
+}

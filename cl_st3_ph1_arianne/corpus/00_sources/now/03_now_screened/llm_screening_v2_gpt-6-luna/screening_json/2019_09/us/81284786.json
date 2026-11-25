@@ -1,0 +1,77 @@
+{
+  "article_id": "81284786",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/81284786.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/81284786.json"
+  },
+  "manifest_row": {
+    "article_id": "81284786",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/81284786.txt",
+    "now_field_2": "333",
+    "date_original": "19-09-25",
+    "date_iso": "2019-09-25",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20190924201110-rvrn5/",
+    "title": "UEFA tells teams not to play where women can't watch",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "UEFA's response to restrictions on women's access to football stadiums",
+    "climate_relevance": "Climate change appears only in a generic editorial description of the news organization's coverage.",
+    "reason": "The article is about women's access to football matches and UEFA's recommendations. The climate change mention is unrelated boilerplate, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ee3720bd7aaec2a8a1560c023d0e3dfce55341e132f70e0207609ce5120658bd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "51aa9397d6b579cbde90be3bc2bd4dd67deaaa7d7ec8f05ea1d3bc07abde272f",
+    "raw_response_text_sha256": "56484f31935197f669b864361be8512f765bf1c2698f399d193e32a67a7dc1f7"
+  },
+  "api_metadata": {
+    "id": "resp_011e34ba7f47c9fd006b06472cf5cc87d1944921a949466639",
+    "model": "gpt-6-luna",
+    "created_at": 1795573549.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 898,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 195,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1093
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"UEFA's response to restrictions on women's access to football stadiums\",\n  \"climate_relevance\": \"Climate change appears only in a generic editorial description of the news organization's coverage.\",\n  \"reason\": \"The article is about women's access to football matches and UEFA's recommendations. The climate change mention is unrelated boilerplate, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:25:51Z",
+  "duration_seconds": 2.798,
+  "error": null
+}

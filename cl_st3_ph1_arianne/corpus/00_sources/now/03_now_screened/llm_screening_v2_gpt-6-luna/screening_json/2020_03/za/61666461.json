@@ -1,0 +1,77 @@
+{
+  "article_id": "61666461",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/za/61666461.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/za/61666461.json"
+  },
+  "manifest_row": {
+    "article_id": "61666461",
+    "group": "2020_03",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/za/61666461.txt",
+    "now_field_2": "50236",
+    "date_original": "20-03-04",
+    "date_iso": "2020-03-04",
+    "source_name": "thesouthafrican.com",
+    "url": "https://www.thesouthafrican.com/technology/gaming/feed/",
+    "title": "Gaming - The South African",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Gaming news, including console and game releases",
+    "climate_relevance": "A brief mention says Sony planned a PlayStation VR app to raise awareness about climate change.",
+    "reason": "The text is a large collection of gaming-related articles and snippets. Climate change appears only in a passing reference to a proposed awareness app, with no discussion of climate issues or the app's implications.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "da723c1bf3eb8f675a6e5fd486cc4a16e5dee705997788470e8180201bb02708",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cd5cb26fd8997aec565cd7600f2010d5385cb629521bb1c7dc239ed4b4074254",
+    "raw_response_text_sha256": "a7ab931a4bc0d43059d3bb9d7d28ff8fcdc3536604f39ed84f3d479aca9a3599"
+  },
+  "api_metadata": {
+    "id": "resp_0cd80418f25e7b90006b063815db3487d1bd1dcdc88af47741",
+    "model": "gpt-6-luna",
+    "created_at": 1795569685.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 74218,
+      "input_tokens_details": {
+        "cache_write_tokens": 74215,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 74215
+        }
+      },
+      "output_tokens": 460,
+      "output_tokens_details": {
+        "reasoning_tokens": 320
+      },
+      "total_tokens": 74678
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Gaming news, including console and game releases\",\n  \"climate_relevance\": \"A brief mention says Sony planned a PlayStation VR app to raise awareness about climate change.\",\n  \"reason\": \"The text is a large collection of gaming-related articles and snippets. Climate change appears only in a passing reference to a proposed awareness app, with no discussion of climate issues or the app's implications.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:21:30Z",
+  "duration_seconds": 4.46,
+  "error": null
+}

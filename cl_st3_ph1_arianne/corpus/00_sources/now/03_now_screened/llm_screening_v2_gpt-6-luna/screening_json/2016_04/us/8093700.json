@@ -1,0 +1,77 @@
+{
+  "article_id": "8093700",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_04/us/8093700.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_04/us/8093700.json"
+  },
+  "manifest_row": {
+    "article_id": "8093700",
+    "group": "2016_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_04/us/8093700.txt",
+    "now_field_2": "966",
+    "date_original": "16-04-05",
+    "date_iso": "2016-04-05",
+    "source_name": "Discovery News",
+    "url": "http://news.discovery.com/animals/endangered-species/green-sea-turtles-of-florida-mexico-no-longer-endangered-160405.htm",
+    "title": "Green Sea Turtles of Florida, Mexico No Longer Endangered",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-04-ovb/16-04-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "The conservation status and threats facing green sea turtle populations.",
+    "climate_relevance": "Climate change and sea-level rise are identified as threats that may erode nesting beaches and create harmful incubation conditions.",
+    "reason": "The main article focuses on sea turtle conservation and changes to their endangered status. Climate change is meaningfully mentioned as one of several conservation threats, but it is not the central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "94531206d370f4889bf868ed77730378a90ea5a386abb1f9eded3abf4e533d25",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8084a7da9263425da0cd85d68e9a59bbfdec40c8783d360b1c763cc2be58a1d8",
+    "raw_response_text_sha256": "b297a844c5ed8119c80a294b36a6509cd242714a38bdd3be94a7bcc7e82363fe"
+  },
+  "api_metadata": {
+    "id": "resp_08856fa6397b6e4b006b0646bbbc4087d18ed972fdc56580f4",
+    "model": "gpt-6-luna",
+    "created_at": 1795573435.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1812,
+      "input_tokens_details": {
+        "cache_write_tokens": 1809,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1809
+        }
+      },
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 2087
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The conservation status and threats facing green sea turtle populations.\",\n  \"climate_relevance\": \"Climate change and sea-level rise are identified as threats that may erode nesting beaches and create harmful incubation conditions.\",\n  \"reason\": \"The main article focuses on sea turtle conservation and changes to their endangered status. Climate change is meaningfully mentioned as one of several conservation threats, but it is not the central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:23:58Z",
+  "duration_seconds": 2.558,
+  "error": null
+}

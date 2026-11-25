@@ -1,0 +1,77 @@
+{
+  "article_id": "72465936",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/au/72465936.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/au/72465936.json"
+  },
+  "manifest_row": {
+    "article_id": "72465936",
+    "group": "2020_12",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/au/72465936.txt",
+    "now_field_2": "3662",
+    "date_original": "20-12-02",
+    "date_iso": "2020-12-02",
+    "source_name": "au.finance.yahoo.com",
+    "url": "https://au.finance.yahoo.com/news/erica-synths-syntrx-review-synthi-aks-synthesizer-140015009.html",
+    "title": "Erica Synths SYNTRX review - <strong>au.finance.yahoo.com</strong>",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Review of the Erica Synths SYNTRX analog synthesizer",
+    "climate_relevance": "The main article does not discuss climate change. A separate Rexel corporate update briefly mentions fighting climate change through sustainable, energy-efficient solutions and refers to climate-related indices, without developing the topic.",
+    "reason": "The identifiable main article is about a musical instrument. Climate references occur only in an appended, unrelated corporate announcement and are brief rather than substantive climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6c65bc9f6b99e61cad1329cc0945cd87b8fd72e34cc90a0bb24f6c08e8541590",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9f819bfa2175e131a4e149365317728a7e81e015f0872974234477f2a645fb1c",
+    "raw_response_text_sha256": "565d4fda0f6b373685fa979ae2a22ae65435355d88f038fe824bc70e16b883a3"
+  },
+  "api_metadata": {
+    "id": "resp_06e034f48692daf6006b06459c936087d1b9b499c2bbfa404b",
+    "model": "gpt-6-luna",
+    "created_at": 1795573148.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5478,
+      "input_tokens_details": {
+        "cache_write_tokens": 5475,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5475
+        }
+      },
+      "output_tokens": 577,
+      "output_tokens_details": {
+        "reasoning_tokens": 417
+      },
+      "total_tokens": 6055
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Review of the Erica Synths SYNTRX analog synthesizer\",\n  \"climate_relevance\": \"The main article does not discuss climate change. A separate Rexel corporate update briefly mentions fighting climate change through sustainable, energy-efficient solutions and refers to climate-related indices, without developing the topic.\",\n  \"reason\": \"The identifiable main article is about a musical instrument. Climate references occur only in an appended, unrelated corporate announcement and are brief rather than substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:19:14Z",
+  "duration_seconds": 5.708,
+  "error": null
+}

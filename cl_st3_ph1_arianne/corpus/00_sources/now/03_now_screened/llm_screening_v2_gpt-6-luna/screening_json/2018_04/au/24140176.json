@@ -1,0 +1,77 @@
+{
+  "article_id": "24140176",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_04/au/24140176.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_04/au/24140176.json"
+  },
+  "manifest_row": {
+    "article_id": "24140176",
+    "group": "2018_04",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_04/au/24140176.txt",
+    "now_field_2": "541",
+    "date_original": "18-04-13",
+    "date_iso": "2018-04-13",
+    "source_name": "NEWS.com.au",
+    "url": "http://www.news.com.au/technology/environment/climate-change/this-is-uncharted-territory-key-ocean-circulation-is-weakening/news-story/5320c5f1490b18c60ed6a430fe6a59ec",
+    "title": "'This is uncharted territory': Key ocean circulation is weakening",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-04.txt\"]",
+    "metadata_article_files": "[\"text-18-04/18-04-au.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "The weakening of the Atlantic meridional overturning circulation (AMOC) and its potential climate consequences",
+    "climate_relevance": "The text directly discusses climate science, the role of the AMOC in global heat redistribution, evidence of its decline, climate change as a contributing cause, and the risk of a future tipping point or collapse.",
+    "reason": "Climate change and its possible effects on the Atlantic circulation are the article’s central subject, not a passing reference.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1d9407dafbad12078077cc25306425d83a1b08bace92252245c7127314d922ed",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "acd57b5b99fa0ebcb49f45764857daaebcfc5ee5fb776751ec7fd783f706206b",
+    "raw_response_text_sha256": "1a87486a9442ccace3d787bf07f54dab62b52934f66c398a2f8b80dbd5d52803"
+  },
+  "api_metadata": {
+    "id": "resp_01b6ddcf5c3fba22006b06121a0de887d2b554d8d0511c9ef9",
+    "model": "gpt-6-luna",
+    "created_at": 1795559962.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1196,
+      "input_tokens_details": {
+        "cache_write_tokens": 1193,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1193
+        }
+      },
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1418
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"The weakening of the Atlantic meridional overturning circulation (AMOC) and its potential climate consequences\",\n  \"climate_relevance\": \"The text directly discusses climate science, the role of the AMOC in global heat redistribution, evidence of its decline, climate change as a contributing cause, and the risk of a future tipping point or collapse.\",\n  \"reason\": \"Climate change and its possible effects on the Atlantic circulation are the article’s central subject, not a passing reference.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:39:24Z",
+  "duration_seconds": 2.259,
+  "error": null
+}

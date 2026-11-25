@@ -1,0 +1,77 @@
+{
+  "article_id": "60163741",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/ca/60163741.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/ca/60163741.json"
+  },
+  "manifest_row": {
+    "article_id": "60163741",
+    "group": "2018_10",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/ca/60163741.txt",
+    "now_field_2": "681",
+    "date_original": "18-10-17",
+    "date_iso": "2018-10-17",
+    "source_name": "Canada NewsWir",
+    "url": "https://www.newswire.ca/news-releases/tinu-affordable-housing-officially-opens-697841551.html",
+    "title": "Ti'nu Affordable Housing Officially Opens",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Opening of an affordable housing complex in Banff",
+    "climate_relevance": "Climate change appears only in the official title of the Minister of Environment and Climate Change; the text contains no meaningful climate discourse.",
+    "reason": "The press release focuses on affordable housing, funding, and the new apartment complex. The climate reference is incidental to a minister's title.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "885ca46a9699789a29406ecca33fd01e36c7a662ef7fa31fa9556bacfe0cd38d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2212d280de192a0af957814062ed5cada4fccf5930345afbc04f8d1833a89076",
+    "raw_response_text_sha256": "4f254135d886c713c41a5daf746448b60897a94f7f7cd224920c27579377ef2b"
+  },
+  "api_metadata": {
+    "id": "resp_09e1041682ddb597006b0631501d0c87d1b6d5c3b50c23620b",
+    "model": "gpt-6-luna",
+    "created_at": 1795567952.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1408,
+      "input_tokens_details": {
+        "cache_write_tokens": 1405,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1405
+        }
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1607
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Opening of an affordable housing complex in Banff\",\n  \"climate_relevance\": \"Climate change appears only in the official title of the Minister of Environment and Climate Change; the text contains no meaningful climate discourse.\",\n  \"reason\": \"The press release focuses on affordable housing, funding, and the new apartment complex. The climate reference is incidental to a minister's title.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:52:34Z",
+  "duration_seconds": 1.967,
+  "error": null
+}

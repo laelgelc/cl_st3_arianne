@@ -1,0 +1,77 @@
+{
+  "article_id": "70924766",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/us/70924766.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/us/70924766.json"
+  },
+  "manifest_row": {
+    "article_id": "70924766",
+    "group": "2019_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/us/70924766.txt",
+    "now_field_2": "244",
+    "date_original": "19-06-30",
+    "date_iso": "2019-06-30",
+    "source_name": "MarketWatch",
+    "url": "https://www.marketwatch.com/story/how-an-income-portfolio-can-take-away-some-of-the-uncertainty-of-investing-2019-06-30",
+    "title": "How an income portfolio can take away some of the uncertainty of ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Income-producing investments and financial security",
+    "climate_relevance": "Climate change appears only in a separate related-story headline and a truncated teaser about consumer concern and green-energy adoption, not in the identifiable main article.",
+    "reason": "The main article concerns investing. The climate-related material belongs to an unrelated, incomplete story teaser and does not provide substantive climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c5eab6bce1be7f886fdf5c72a3ca551dd43fa6eef1d9d88a7779486a1d08b78b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fa707eb6c25ca9a81fafff6f249311ca3731cc966d7d4ec85b75556eca1b8f77",
+    "raw_response_text_sha256": "90e5d4ea497633352795893caf2dcade0af5384c2c4c4945b84fab59da1140ba"
+  },
+  "api_metadata": {
+    "id": "resp_06dfe981ca2a949c006b063ffe3be087d1a3fba2f8be4887b1",
+    "model": "gpt-6-luna",
+    "created_at": 1795571710.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 792,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 419,
+      "output_tokens_details": {
+        "reasoning_tokens": 274
+      },
+      "total_tokens": 1211
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Income-producing investments and financial security\",\n  \"climate_relevance\": \"Climate change appears only in a separate related-story headline and a truncated teaser about consumer concern and green-energy adoption, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns investing. The climate-related material belongs to an unrelated, incomplete story teaser and does not provide substantive climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:55:13Z",
+  "duration_seconds": 3.421,
+  "error": null
+}

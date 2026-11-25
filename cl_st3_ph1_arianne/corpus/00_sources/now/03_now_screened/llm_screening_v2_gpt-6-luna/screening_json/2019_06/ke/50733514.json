@@ -1,0 +1,77 @@
+{
+  "article_id": "50733514",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ke/50733514.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ke/50733514.json"
+  },
+  "manifest_row": {
+    "article_id": "50733514",
+    "group": "2019_06",
+    "country_code": "ke",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ke/50733514.txt",
+    "now_field_2": "584",
+    "date_original": "19-06-04",
+    "date_iso": "2019-06-04",
+    "source_name": "Brits in Kenya",
+    "url": "https://www.britsinkenya.com/2019/06/04/kenya-orders-closure-of-dadaab-refugee-camp-this-year-according-to-leaked-un-document/",
+    "title": "Kenya orders closure of Dadaab refugee camp this year, according to ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ke.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Kenya's plan to close the Dadaab refugee camp and the consequences for its residents",
+    "climate_relevance": "The article mentions drought as one factor in displacement, but does not connect it to climate change. The explicit climate-change reference appears only in boilerplate describing the publisher's coverage areas.",
+    "reason": "The main article concerns refugee policy, security, and return or resettlement. It contains no meaningful discussion of climate change; drought is mentioned without climate framing.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9910236c9a365f455f5faa5516963a415151035bf930313b8039ecbd0491ab3e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "981a8f030ef1bf5efff3a26c16901618184e2c4f586a0a30f2b4296d2398d972",
+    "raw_response_text_sha256": "4e977f19f26e9ab9c16a38f1a3c52e5fb9bf9ecf1471018c3714e205d54a0170"
+  },
+  "api_metadata": {
+    "id": "resp_031b17280d480fa9006b062a9a8e1c87d194d112cfd622e070",
+    "model": "gpt-6-luna",
+    "created_at": 1795566234.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1279,
+      "input_tokens_details": {
+        "cache_write_tokens": 1276,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1276
+        }
+      },
+      "output_tokens": 418,
+      "output_tokens_details": {
+        "reasoning_tokens": 252
+      },
+      "total_tokens": 1697
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Kenya's plan to close the Dadaab refugee camp and the consequences for its residents\",\n  \"climate_relevance\": \"The article mentions drought as one factor in displacement, but does not connect it to climate change. The explicit climate-change reference appears only in boilerplate describing the publisher's coverage areas.\",\n  \"reason\": \"The main article concerns refugee policy, security, and return or resettlement. It contains no meaningful discussion of climate change; drought is mentioned without climate framing.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:23:58Z",
+  "duration_seconds": 3.713,
+  "error": null
+}

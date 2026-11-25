@@ -1,0 +1,77 @@
+{
+  "article_id": "86251626",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/us/86251626.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/us/86251626.json"
+  },
+  "manifest_row": {
+    "article_id": "86251626",
+    "group": "2020_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/us/86251626.txt",
+    "now_field_2": "578",
+    "date_original": "20-11-09",
+    "date_iso": "2020-11-09",
+    "source_name": "CNBC",
+    "url": "https://www.cnbc.com/2020/11/10/canadas-justin-trudeau-looks-to-biden-for-help-in-dispute-with-china.html",
+    "title": "Canadian Prime Minister Justin Trudeau looks to Joe Biden for help in dispute with China",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "Canadian diplomacy with China and the detention of two Canadians",
+    "climate_relevance": "Climate change is listed briefly among topics discussed by Trudeau and Biden, without further detail or analysis.",
+    "reason": "The article is primarily about China-Canada relations and does not develop climate change discourse. A brief agenda-list mention is not meaningful for climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "45efb3732d5eb712a21c22eb1cfb155ba2bc8062f67c5164e6eb7451e88f4a3e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "87b221af80287b95424c91c65b4af58de9fc2ccb66df5aba92654e8e60ee3de5",
+    "raw_response_text_sha256": "03e691a06b46b4ae4f3e22dfd0b4b5fa773cf74b035e73a401efaac2796f82eb"
+  },
+  "api_metadata": {
+    "id": "resp_0d66ca898c30c2aa006b064f0de9b887d183e0e863e0f7d7ca",
+    "model": "gpt-6-luna",
+    "created_at": 1795575566.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1219,
+      "input_tokens_details": {
+        "cache_write_tokens": 1216,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1216
+        }
+      },
+      "output_tokens": 279,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 1498
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Canadian diplomacy with China and the detention of two Canadians\",\n  \"climate_relevance\": \"Climate change is listed briefly among topics discussed by Trudeau and Biden, without further detail or analysis.\",\n  \"reason\": \"The article is primarily about China-Canada relations and does not develop climate change discourse. A brief agenda-list mention is not meaningful for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:59:28Z",
+  "duration_seconds": 2.443,
+  "error": null
+}

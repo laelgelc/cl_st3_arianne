@@ -1,0 +1,77 @@
+{
+  "article_id": "51057476",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ng/51057476.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ng/51057476.json"
+  },
+  "manifest_row": {
+    "article_id": "51057476",
+    "group": "2019_09",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ng/51057476.txt",
+    "now_field_2": "2678",
+    "date_original": "19-09-22",
+    "date_iso": "2019-09-22",
+    "source_name": "blueprint.ng",
+    "url": "https://www.blueprint.ng/how-abuja-landlords-jackboots-crushing-tenants/",
+    "title": "How Abuja landlords' jackboots `crushing' tenants - Blueprint",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Housing affordability, rental conditions, and accommodation problems in Abuja",
+    "climate_relevance": "Climate change appears only in a separate, truncated column teaser about Greta Thunberg; it is not part of the identifiable main article.",
+    "reason": "The main article focuses on housing and landlords in Abuja. The climate reference belongs to an unrelated appended snippet and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4ecf30acfc32d6e0438689bd17e08a5a7f49942b049bf78b5acc2998f0b708f7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a94b2100f92dd26463cf67f5711ce8b68289a9113908ee3baab6c0a83e9b77e3",
+    "raw_response_text_sha256": "50ebee60750709965e23e06d75fccb9febd34235d552af7e633613a0b8c5cb92"
+  },
+  "api_metadata": {
+    "id": "resp_0dbc693fd8f8caab006b062bbab9f487d1a86efe69bca7d968",
+    "model": "gpt-6-luna",
+    "created_at": 1795566522.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3945,
+      "input_tokens_details": {
+        "cache_write_tokens": 3942,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3942
+        }
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 4260
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Housing affordability, rental conditions, and accommodation problems in Abuja\",\n  \"climate_relevance\": \"Climate change appears only in a separate, truncated column teaser about Greta Thunberg; it is not part of the identifiable main article.\",\n  \"reason\": \"The main article focuses on housing and landlords in Abuja. The climate reference belongs to an unrelated appended snippet and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:28:45Z",
+  "duration_seconds": 2.646,
+  "error": null
+}

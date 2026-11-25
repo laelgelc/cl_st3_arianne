@@ -1,0 +1,77 @@
+{
+  "article_id": "32343663",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/nz/32343663.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/nz/32343663.json"
+  },
+  "manifest_row": {
+    "article_id": "32343663",
+    "group": "2020_11",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/nz/32343663.txt",
+    "now_field_2": "3192",
+    "date_original": "20-11-16",
+    "date_iso": "2020-11-16",
+    "source_name": "scoop.co.nz",
+    "url": "https://www.scoop.co.nz/stories/PO2011/S00130/a-new-world-of-tax-compliance.htm",
+    "title": "A New World Of Tax Compliance | Scoop News",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Inland Revenue’s tax compliance systems, data use, and audit practices",
+    "climate_relevance": "Climate-related references occur only in unrelated trailing snippets, including a passing reference to the Paris climate accords and a brief item about switching businesses from fossil fuels to clean energy.",
+    "reason": "The identifiable main article is about tax administration and contains no meaningful climate discourse. The climate references appear in separate snippets rather than in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5b91b202529cba0af7ec60ecf45955b9c2964b3d054b0d6d7fd0319b65022d79",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0ab5a8c4a7c1f939625c5b6e1714941fc1d311dc3f70c07a70ad172ff9537647",
+    "raw_response_text_sha256": "c36398424bc9b8ec0808ac38a70c8328e516342c138d66441d3343f758be65cf"
+  },
+  "api_metadata": {
+    "id": "resp_033e4b9cb2c11f13006b061c41af8887d2967e577e1b1176f3",
+    "model": "gpt-6-luna",
+    "created_at": 1795562561.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2438,
+      "input_tokens_details": {
+        "cache_write_tokens": 2435,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2435
+        }
+      },
+      "output_tokens": 410,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 2848
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Inland Revenue’s tax compliance systems, data use, and audit practices\",\n  \"climate_relevance\": \"Climate-related references occur only in unrelated trailing snippets, including a passing reference to the Paris climate accords and a brief item about switching businesses from fossil fuels to clean energy.\",\n  \"reason\": \"The identifiable main article is about tax administration and contains no meaningful climate discourse. The climate references appear in separate snippets rather than in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:22:44Z",
+  "duration_seconds": 3.167,
+  "error": null
+}

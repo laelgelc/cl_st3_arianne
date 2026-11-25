@@ -1,0 +1,77 @@
+{
+  "article_id": "70549403",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70549403.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70549403.json"
+  },
+  "manifest_row": {
+    "article_id": "70549403",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70549403.txt",
+    "now_field_2": "819",
+    "date_original": "19-02-25",
+    "date_iso": "2019-02-25",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/HL1902/S00114/cameras-would-have-picked-up-fisheries-abuse-minister.htm",
+    "title": "Cameras would have picked up fisheries abuse - Minister",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Fisheries law enforcement and proposed monitoring of fishing vessels in New Zealand",
+    "climate_relevance": "Climate change appears only in a separate 'ALSO' snippet about wildfire risk, drought, and firefighting needs; it is not part of the main fisheries article.",
+    "reason": "The identifiable main article concerns fisheries violations, penalties, and onboard cameras. The climate-related sentence belongs to an unrelated snippet and does not make the main article useful as climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fd0c09b7886b10d0a5fc6a9b50f923b171d1d60df6ec4964c9cc52f0f64ac692",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b937e82c7bf5f2546ac63a057fb51cb91c38dd85e97dbac57f8385e472854d07",
+    "raw_response_text_sha256": "de872caf4bd25cc16920befb2a05d234c500f358a7030fd878e2118e23719d81"
+  },
+  "api_metadata": {
+    "id": "resp_07d6229a66cb65ed006b063d7e411c87d1a89038acf7bccbba",
+    "model": "gpt-6-luna",
+    "created_at": 1795571070.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1583,
+      "input_tokens_details": {
+        "cache_write_tokens": 1580,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1580
+        }
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 1876
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Fisheries law enforcement and proposed monitoring of fishing vessels in New Zealand\",\n  \"climate_relevance\": \"Climate change appears only in a separate 'ALSO' snippet about wildfire risk, drought, and firefighting needs; it is not part of the main fisheries article.\",\n  \"reason\": \"The identifiable main article concerns fisheries violations, penalties, and onboard cameras. The climate-related sentence belongs to an unrelated snippet and does not make the main article useful as climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:44:33Z",
+  "duration_seconds": 2.883,
+  "error": null
+}

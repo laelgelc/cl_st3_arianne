@@ -1,0 +1,77 @@
+{
+  "article_id": "85435409",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/85435409.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/85435409.json"
+  },
+  "manifest_row": {
+    "article_id": "85435409",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/85435409.txt",
+    "now_field_2": "631",
+    "date_original": "20-07-16",
+    "date_iso": "2020-07-16",
+    "source_name": "Science Daily",
+    "url": "https://www.sciencedaily.com/releases/2020/07/200716101610.htm",
+    "title": "Dehydration increases amphibian vulnerability to climate change",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Climate change impacts on amphibians, particularly increased heat and dehydration in their habitats",
+    "climate_relevance": "The main article directly examines how rising temperatures and associated water loss affect amphibians, including projections of future habitat suitability.",
+    "reason": "Climate change and its biological impacts are the article’s central subject. It discusses research methods, projected habitat risks, and consequences for amphibian populations. Separate snippets appear after the main article, but the main article is identifiable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "092dd858a5cd6e4575f53b8b048e359b3fd9b2a2d557da525b3afd47dea025f1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b1515c475da4b9975afd3d53c02218b20262440c97ca784e330d1b5c2311e000",
+    "raw_response_text_sha256": "d5362d4b4d90c4054cef21689499cf656db9a10c82ca9d0288eb386fe14a1793"
+  },
+  "api_metadata": {
+    "id": "resp_08b74196297f912d006b064c1936a487d183111918b0a9f9df",
+    "model": "gpt-6-luna",
+    "created_at": 1795574809.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1364,
+      "input_tokens_details": {
+        "cache_write_tokens": 1361,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1361
+        }
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 1610
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Climate change impacts on amphibians, particularly increased heat and dehydration in their habitats\",\n  \"climate_relevance\": \"The main article directly examines how rising temperatures and associated water loss affect amphibians, including projections of future habitat suitability.\",\n  \"reason\": \"Climate change and its biological impacts are the article’s central subject. It discusses research methods, projected habitat risks, and consequences for amphibian populations. Separate snippets appear after the main article, but the main article is identifiable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:46:51Z",
+  "duration_seconds": 2.442,
+  "error": null
+}

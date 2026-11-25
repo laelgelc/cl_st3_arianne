@@ -1,0 +1,77 @@
+{
+  "article_id": "52283326",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/pk/52283326.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/pk/52283326.json"
+  },
+  "manifest_row": {
+    "article_id": "52283326",
+    "group": "2020_12",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/pk/52283326.txt",
+    "now_field_2": "465",
+    "date_original": "20-12-11",
+    "date_iso": "2020-12-11",
+    "source_name": "brecorder.com",
+    "url": "https://www.brecorder.com/news/40040129",
+    "title": "Biden and Harris named Time 'Person of the Year' - World ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Time magazine naming Joe Biden and Kamala Harris its 2020 Person of the Year",
+    "climate_relevance": "Climate change appears only in a brief reference identifying Greta Thunberg as the previous year's Person of the Year.",
+    "reason": "The article focuses on the award and the 2020 US election; it contains no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ffa47eb5147a0773bc3d98ffa8fb957c2590f12657e4e1ab61bb1fbe06709ffc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e24ab7b24835f62f10b056f1e8735613b08f0ed1bc9c408eb6753faee9e49509",
+    "raw_response_text_sha256": "23659019f81322ee81c419dea37eef6ae089b9522a7edfa4ae38d0b57cc51407"
+  },
+  "api_metadata": {
+    "id": "resp_04bea3a510d1ed57006b0630733e7487d1927a20f22f7d0730",
+    "model": "gpt-6-luna",
+    "created_at": 1795567731.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1103,
+      "input_tokens_details": {
+        "cache_write_tokens": 1100,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1100
+        }
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1313
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Time magazine naming Joe Biden and Kamala Harris its 2020 Person of the Year\",\n  \"climate_relevance\": \"Climate change appears only in a brief reference identifying Greta Thunberg as the previous year's Person of the Year.\",\n  \"reason\": \"The article focuses on the award and the 2020 US election; it contains no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:48:53Z",
+  "duration_seconds": 1.944,
+  "error": null
+}

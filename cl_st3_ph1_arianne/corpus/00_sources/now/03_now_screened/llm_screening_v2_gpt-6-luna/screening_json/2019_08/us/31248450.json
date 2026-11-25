@@ -1,0 +1,77 @@
+{
+  "article_id": "31248450",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/us/31248450.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/us/31248450.json"
+  },
+  "manifest_row": {
+    "article_id": "31248450",
+    "group": "2019_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/us/31248450.txt",
+    "now_field_2": "1563",
+    "date_original": "19-08-27",
+    "date_iso": "2019-08-27",
+    "source_name": "npr.org",
+    "url": "https://www.npr.org/2019/08/27/754289441/reporters-notebook-here-s-how-iran-is-functioning-in-the-face-of-sanctions",
+    "title": "Reporter's Notebook: Here's How Iran Is Functioning In The ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Iran's economic and political resilience under U.S. sanctions",
+    "climate_relevance": "Climate change appears once in a list of global pressures; the text does not develop the topic or connect it meaningfully to the article's main discussion.",
+    "reason": "The article focuses on sanctions, economic conditions, and political dissent in Iran. The brief climate-change reference is incidental, and the mention of extreme heat describes conditions during a family visit without framing them as climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f8fe7651eb15dbe891c94a7b1577a7f29123144fe08633667bf4d83799d5238c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "621d18071849eb72de86de68c74b72e60e09e81bb6647e657da2b0f3c5b17937",
+    "raw_response_text_sha256": "95b979bfa4e74db38f2438ffe4c50a857ef386967e6a598f0bad54aad1402d9d"
+  },
+  "api_metadata": {
+    "id": "resp_061a7281b3832ed2006b06165b222487d2bd7baa9bb5d72636",
+    "model": "gpt-6-luna",
+    "created_at": 1795561051.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2515,
+      "input_tokens_details": {
+        "cache_write_tokens": 2512,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2512
+        }
+      },
+      "output_tokens": 309,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 2824
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Iran's economic and political resilience under U.S. sanctions\",\n  \"climate_relevance\": \"Climate change appears once in a list of global pressures; the text does not develop the topic or connect it meaningfully to the article's main discussion.\",\n  \"reason\": \"The article focuses on sanctions, economic conditions, and political dissent in Iran. The brief climate-change reference is incidental, and the mention of extreme heat describes conditions during a family visit without framing them as climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:57:33Z",
+  "duration_seconds": 2.633,
+  "error": null
+}

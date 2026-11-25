@@ -1,0 +1,77 @@
+{
+  "article_id": "40854485",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/sg/40854485.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/sg/40854485.json"
+  },
+  "manifest_row": {
+    "article_id": "40854485",
+    "group": "2019_04",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/sg/40854485.txt",
+    "now_field_2": "879",
+    "date_original": "19-04-18",
+    "date_iso": "2019-04-18",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/explainer-eu-vote-why-matters-143840363.html",
+    "title": "Explainer: How the EU will vote and why it matters",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "The European Parliament elections, their political stakes, and the EU’s institutional balance",
+    "climate_relevance": "Climate change is briefly listed as one of several campaign issues, and climate protection appears in a poster caption; neither is developed.",
+    "reason": "The article focuses on EU elections and political institutions. Climate appears only as a passing item in a list and a caption, without meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4dc86ad0b4b1bebb2d0f1467644bd665abc65698a1b29c83ce8fb0f8dbeab613",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7b0c781f91e8728e0aaee5d9fda5650d3b4b0178c2fb3d20b8bc8ad381536f89",
+    "raw_response_text_sha256": "b7f75cf38ff1728587dcb21d74a49e1f785ebc859b871b0cfee7616793137a8d"
+  },
+  "api_metadata": {
+    "id": "resp_09683a536090e863006b06200eda7487d285b5b373e1103145",
+    "model": "gpt-6-luna",
+    "created_at": 1795563534.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1682,
+      "input_tokens_details": {
+        "cache_write_tokens": 1679,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1679
+        }
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 1930
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The European Parliament elections, their political stakes, and the EU’s institutional balance\",\n  \"climate_relevance\": \"Climate change is briefly listed as one of several campaign issues, and climate protection appears in a poster caption; neither is developed.\",\n  \"reason\": \"The article focuses on EU elections and political institutions. Climate appears only as a passing item in a list and a caption, without meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:57Z",
+  "duration_seconds": 2.471,
+  "error": null
+}

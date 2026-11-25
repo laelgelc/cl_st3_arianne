@@ -1,0 +1,77 @@
+{
+  "article_id": "4721546",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/jm/4721546.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/jm/4721546.json"
+  },
+  "manifest_row": {
+    "article_id": "4721546",
+    "group": "2015_12",
+    "country_code": "jm",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/jm/4721546.txt",
+    "now_field_2": "791",
+    "date_original": "15-12-29",
+    "date_iso": "2015-12-29",
+    "source_name": "Government of Jamaica, Jamaica Information Service",
+    "url": "http://jis.gov.jm/more-jamaicans-accessing-quality-potable-water/",
+    "title": "More Jamaicans Accessing Quality Potable Water",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-jm.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.86,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Improving rural access to potable water through infrastructure and catchment-tank projects in Jamaica",
+    "climate_relevance": "The text mentions drought and names a ministry that includes climate change, but does not connect the water projects or drought to climate change.",
+    "reason": "The article focuses on water supply infrastructure. Drought is discussed as a practical challenge, but there is no meaningful climate-change framing; the climate reference appears only in the ministry name.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8d57b01a883b818a279a9a06d0bfdc10a83a7cd70dd17c57ce5b1919e1794a28",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "848767dda64a1abffcaf342f27f61e5d155185c26a60450c252acc6951ba1d5e",
+    "raw_response_text_sha256": "960fa353e18425756fa1d9881ae349fa808f703d57315f68496e3ab5d2498faa"
+  },
+  "api_metadata": {
+    "id": "resp_028f7458d84bdeb2006b0626adfd4087d28af962d2aa936436",
+    "model": "gpt-6-luna",
+    "created_at": 1795565230.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1523,
+      "input_tokens_details": {
+        "cache_write_tokens": 1520,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1520
+        }
+      },
+      "output_tokens": 764,
+      "output_tokens_details": {
+        "reasoning_tokens": 605
+      },
+      "total_tokens": 2287
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Improving rural access to potable water through infrastructure and catchment-tank projects in Jamaica\",\n  \"climate_relevance\": \"The text mentions drought and names a ministry that includes climate change, but does not connect the water projects or drought to climate change.\",\n  \"reason\": \"The article focuses on water supply infrastructure. Drought is discussed as a practical challenge, but there is no meaningful climate-change framing; the climate reference appears only in the ministry name.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:07:16Z",
+  "duration_seconds": 6.233,
+  "error": null
+}

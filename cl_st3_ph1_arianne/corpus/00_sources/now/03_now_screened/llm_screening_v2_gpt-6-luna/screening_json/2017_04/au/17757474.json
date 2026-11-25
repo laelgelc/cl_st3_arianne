@@ -1,0 +1,77 @@
+{
+  "article_id": "17757474",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/au/17757474.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/au/17757474.json"
+  },
+  "manifest_row": {
+    "article_id": "17757474",
+    "group": "2017_04",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/au/17757474.txt",
+    "now_field_2": "643",
+    "date_original": "17-04-03",
+    "date_iso": "2017-04-03",
+    "source_name": "The Sydney Morning Herald",
+    "url": "http://www.smh.com.au/business/cbd/sir-ron-brierley-still-walks-the-takeover-path-20170403-gvc92l.html",
+    "title": "Sir Ron Brierley still walks the takeover path",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Business and corporate news, including company deals, executive appointments, and delisting plans",
+    "climate_relevance": "Climate change is briefly named as one of several topics in a university program, without further discussion.",
+    "reason": "The text is primarily a business column, and the sole climate reference is a passing mention that offers no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0bbc7f41e94390a31465bb60a33745e77885b23accfec421622dde195654c35c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "28f8f6a493e28ada5c5da5e4f9d42eba979a99013ad5b65c1fdd1ea9a7cfdad3",
+    "raw_response_text_sha256": "c4640fb1dd3aa5ef887355a9673c7330be64619330b5e7b147b31b8a41c34689"
+  },
+  "api_metadata": {
+    "id": "resp_0b617b81734da967006b0609613a4c87d296d07d9fa97a9542",
+    "model": "gpt-6-luna",
+    "created_at": 1795557729.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1361,
+      "input_tokens_details": {
+        "cache_write_tokens": 1358,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1358
+        }
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 1645
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Business and corporate news, including company deals, executive appointments, and delisting plans\",\n  \"climate_relevance\": \"Climate change is briefly named as one of several topics in a university program, without further discussion.\",\n  \"reason\": \"The text is primarily a business column, and the sole climate reference is a passing mention that offers no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:02:12Z",
+  "duration_seconds": 3.117,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "18349779",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/us/18349779.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/us/18349779.json"
+  },
+  "manifest_row": {
+    "article_id": "18349779",
+    "group": "2017_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/us/18349779.txt",
+    "now_field_2": "175",
+    "date_original": "17-05-09",
+    "date_iso": "2017-05-09",
+    "source_name": "Reuters",
+    "url": "http://www.reuters.com/article/us-quake-vanuatu-idUSKBN1851PT?il=0",
+    "title": "Quake of 6.8 magnitude strikes off Vanuatu in South Pacific: USGS",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "A collection of short news snippets, including a nuclear-facility incident and climate-related political statements",
+    "climate_relevance": "Two snippets discuss U.S. climate policy and international commitment to a global climate agreement, but neither is developed in the available text.",
+    "reason": "The text contains meaningful climate-policy discourse, but it appears alongside unrelated material in a set of brief snippets rather than as a substantial climate-focused article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c99a4ba5513e11a042ad02591f498ed3856ad5c73e9eae57bfa7d916bec5f843",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "975da283fcb3cf6ddcc38921e415bbb6e3ab53c550be9cf1ff9ada2ec31f69bd",
+    "raw_response_text_sha256": "3a0de112e666505aea5edf980368e726a2d14972ac8b6416d8e9ebf11428bcea"
+  },
+  "api_metadata": {
+    "id": "resp_0699543207b8c5f4006b060a23145087d2ba11eda4b90d5709",
+    "model": "gpt-6-luna",
+    "created_at": 1795557923.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 704,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 283,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 987
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of short news snippets, including a nuclear-facility incident and climate-related political statements\",\n  \"climate_relevance\": \"Two snippets discuss U.S. climate policy and international commitment to a global climate agreement, but neither is developed in the available text.\",\n  \"reason\": \"The text contains meaningful climate-policy discourse, but it appears alongside unrelated material in a set of brief snippets rather than as a substantial climate-focused article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:05:25Z",
+  "duration_seconds": 2.596,
+  "error": null
+}

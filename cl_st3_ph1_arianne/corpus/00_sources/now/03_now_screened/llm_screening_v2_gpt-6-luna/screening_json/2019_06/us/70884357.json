@@ -1,0 +1,77 @@
+{
+  "article_id": "70884357",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/us/70884357.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/us/70884357.json"
+  },
+  "manifest_row": {
+    "article_id": "70884357",
+    "group": "2019_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/us/70884357.txt",
+    "now_field_2": "1113",
+    "date_original": "19-06-18",
+    "date_iso": "2019-06-18",
+    "source_name": "BuzzFeed News",
+    "url": "https://www.buzzfeednews.com/article/peteraldhous/global-survey-vaccine-safety-measles-outbreaks",
+    "title": "A Global Survey Shows Which Countries Are The World's Top Vaccine ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Global attitudes toward vaccine safety and vaccine hesitancy",
+    "climate_relevance": "Climate change is mentioned only as a brief analogy for partisan polarization.",
+    "reason": "The article focuses on vaccination and public trust. Its single reference to attitudes toward climate change is incidental and does not develop climate-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "60ff463523354e110519a85bb22f2652e523aff8679aeb3c3d000ed44411495c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "535783ec311f3a55016b489c71d0d006b3b1ccbb1fbf8276d0cd8fc2aee694a3",
+    "raw_response_text_sha256": "d804e383dc03922624a220bbb84f1262b8af80680a1c78688d7b47df2d0fcdb3"
+  },
+  "api_metadata": {
+    "id": "resp_03e385dea09005d6006b063fbb953c87d1939da7fae421c5a2",
+    "model": "gpt-6-luna",
+    "created_at": 1795571643.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1969,
+      "input_tokens_details": {
+        "cache_write_tokens": 1966,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1966
+        }
+      },
+      "output_tokens": 214,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 2183
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Global attitudes toward vaccine safety and vaccine hesitancy\",\n  \"climate_relevance\": \"Climate change is mentioned only as a brief analogy for partisan polarization.\",\n  \"reason\": \"The article focuses on vaccination and public trust. Its single reference to attitudes toward climate change is incidental and does not develop climate-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:54:06Z",
+  "duration_seconds": 2.763,
+  "error": null
+}

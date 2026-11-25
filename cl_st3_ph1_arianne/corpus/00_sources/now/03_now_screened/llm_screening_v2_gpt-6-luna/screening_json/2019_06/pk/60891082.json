@@ -1,0 +1,77 @@
+{
+  "article_id": "60891082",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/pk/60891082.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/pk/60891082.json"
+  },
+  "manifest_row": {
+    "article_id": "60891082",
+    "group": "2019_06",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/pk/60891082.txt",
+    "now_field_2": "490",
+    "date_original": "19-06-03",
+    "date_iso": "2019-06-03",
+    "source_name": "DAWN.com",
+    "url": "https://www.dawn.com/news/1486459/arrest-warrants-for-three-suspects-in-paragon-case",
+    "title": "Arrest warrants for three suspects in Paragon case",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "An accountability court’s arrest warrants in a corruption case involving a housing project",
+    "climate_relevance": "Climate change appears only in a reader comment, not in the news report.",
+    "reason": "The identifiable main article concerns alleged corruption and contains no climate discourse. A reader comment mentions climate change and water scarcity, but it is separate from the report’s coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "144f279d0ecca281aa50d7ee7e9442d088404c071ea754ac4b97625f905d77c4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "33ed38fa0ec61ddac96b5d6f30375d724142d5c0848130be747722f1d1473487",
+    "raw_response_text_sha256": "50ba29f312a62ba0c1a4e9cbab1b057f9103e98856a6cae8005db66e0dc1eb43"
+  },
+  "api_metadata": {
+    "id": "resp_080b3960bda7d98d006b0635398a2087d1a470e0d5d6ffadd0",
+    "model": "gpt-6-luna",
+    "created_at": 1795568953.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1198,
+      "input_tokens_details": {
+        "cache_write_tokens": 1195,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1195
+        }
+      },
+      "output_tokens": 419,
+      "output_tokens_details": {
+        "reasoning_tokens": 277
+      },
+      "total_tokens": 1617
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"An accountability court’s arrest warrants in a corruption case involving a housing project\",\n  \"climate_relevance\": \"Climate change appears only in a reader comment, not in the news report.\",\n  \"reason\": \"The identifiable main article concerns alleged corruption and contains no climate discourse. A reader comment mentions climate change and water scarcity, but it is separate from the report’s coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:09:17Z",
+  "duration_seconds": 3.731,
+  "error": null
+}

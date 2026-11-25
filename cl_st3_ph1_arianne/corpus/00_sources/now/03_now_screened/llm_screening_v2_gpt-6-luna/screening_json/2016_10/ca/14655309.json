@@ -1,0 +1,77 @@
+{
+  "article_id": "14655309",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_10/ca/14655309.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_10/ca/14655309.json"
+  },
+  "manifest_row": {
+    "article_id": "14655309",
+    "group": "2016_10",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_10/ca/14655309.txt",
+    "now_field_2": "1453",
+    "date_original": "16-10-02",
+    "date_iso": "2016-10-02",
+    "source_name": "Toronto Star",
+    "url": "https://www.thestar.com/news/insight/2016/10/02/life-on-the-ravines-edge-full-of-surprises.html",
+    "title": "Life on the ravine's edge full of surprises",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-10-ykw/16-10-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "Development, regulation, and conservation of privately owned ravine land in Toronto",
+    "climate_relevance": "Climate change is named once as an item the city’s ravine strategy will consider, without further discussion or explanation.",
+    "reason": "The article focuses on ravine protection, property rights, and condo development. Its lone climate-change reference is part of a list of strategy topics and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6b14ab16d58903b9a6976ca8a6f46d4fd57bf5180f32e3ea430e48f340285822",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e920e8e9042d324eeea9786a05b811b29b8249f605180cd0b3b45e0d43203594",
+    "raw_response_text_sha256": "a1a539562cb71fbe09b51bba7560e1c290d02031448cbde52b41516d65fc5101"
+  },
+  "api_metadata": {
+    "id": "resp_073486b036f4951b006b0605e8284087d2848d03b0bb750e25",
+    "model": "gpt-6-luna",
+    "created_at": 1795556840.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2442,
+      "input_tokens_details": {
+        "cache_write_tokens": 2439,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2439
+        }
+      },
+      "output_tokens": 345,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 2787
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Development, regulation, and conservation of privately owned ravine land in Toronto\",\n  \"climate_relevance\": \"Climate change is named once as an item the city’s ravine strategy will consider, without further discussion or explanation.\",\n  \"reason\": \"The article focuses on ravine protection, property rights, and condo development. Its lone climate-change reference is part of a list of strategy topics and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:47:22Z",
+  "duration_seconds": 2.611,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "51890601",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/pk/51890601.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/pk/51890601.json"
+  },
+  "manifest_row": {
+    "article_id": "51890601",
+    "group": "2020_08",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/pk/51890601.txt",
+    "now_field_2": "840",
+    "date_original": "20-08-16",
+    "date_iso": "2020-08-16",
+    "source_name": "arynews.tv",
+    "url": "https://arynews.tv/en/tag/fragility/feed/",
+    "title": "fragility - ARY NEWS",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "The social and economic effects of the coronavirus pandemic, including inequality and poverty",
+    "climate_relevance": "Climate change is briefly listed among concerns exposed by the pandemic, without further discussion of its causes, impacts, or responses.",
+    "reason": "The identifiable main article focuses on coronavirus and social inequality; its single climate-change mention is incidental. Unrelated cricket-report snippets also appear in the supplied text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "223bfe0ea868b25a1d36b91d8f068fe6fb519c8bbb5513929e554ac6905a3b16",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9af9e6572e801de8212508b57b5470248df5c27c3795b21c2da7083ec0dfeacc",
+    "raw_response_text_sha256": "f328d4dc5674a41e3c0ad87e2e9a9523df8b1629fe2ff8fd04638f835b38bddd"
+  },
+  "api_metadata": {
+    "id": "resp_08a2cddaa12f4c36006b062f1cdd4c87d18183add461207a6b",
+    "model": "gpt-6-luna",
+    "created_at": 1795567388.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1663,
+      "input_tokens_details": {
+        "cache_write_tokens": 1660,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1660
+        }
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 173
+      },
+      "total_tokens": 1980
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The social and economic effects of the coronavirus pandemic, including inequality and poverty\",\n  \"climate_relevance\": \"Climate change is briefly listed among concerns exposed by the pandemic, without further discussion of its causes, impacts, or responses.\",\n  \"reason\": \"The identifiable main article focuses on coronavirus and social inequality; its single climate-change mention is incidental. Unrelated cricket-report snippets also appear in the supplied text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:43:11Z",
+  "duration_seconds": 2.635,
+  "error": null
+}

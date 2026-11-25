@@ -1,0 +1,77 @@
+{
+  "article_id": "70574366",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/us/70574366.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/us/70574366.json"
+  },
+  "manifest_row": {
+    "article_id": "70574366",
+    "group": "2019_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/us/70574366.txt",
+    "now_field_2": "1004",
+    "date_original": "19-03-07",
+    "date_iso": "2019-03-07",
+    "source_name": "The Guardian",
+    "url": "https://www.theguardian.com/australia-news/2019/mar/08/tony-abbott-pull-out-paris-climate-agreement-after-all",
+    "title": "Tony Abbott says no need to pull out of Paris climate agreement after all",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Australian federal election debate over climate policy, emissions targets, coal-fired power, and renewable energy",
+    "climate_relevance": "The text substantially discusses Australia's Paris commitments, emissions, climate change as an election issue, coal power, and the costs and reliability of renewables.",
+    "reason": "Climate policy and energy choices are central to the debate described, including Abbott's position on the Paris Agreement and coal, competing claims about renewables, and Steggall's proposed emissions target. The later passage about a transport project appears to be a separate or appended snippet, but does not change the main article's climate focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e159a03de89559cc92ee8232e693afe8cb6186e89c29b8a4fe5bf4eedf96ee9a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8d695536a55976526dcbfabf603ade679d7d549267160bd0e069e1d676764dcb",
+    "raw_response_text_sha256": "34d7b7b6687a27bb7ff6c4959233565b51a1792929a14e7ac3e932313fdc1a3e"
+  },
+  "api_metadata": {
+    "id": "resp_0f8dea3d64745e5a006b063dac20fc87d18ad56a05408cf1c7",
+    "model": "gpt-6-luna",
+    "created_at": 1795571116.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1879,
+      "input_tokens_details": {
+        "cache_write_tokens": 1876,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1876
+        }
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 2159
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Australian federal election debate over climate policy, emissions targets, coal-fired power, and renewable energy\",\n  \"climate_relevance\": \"The text substantially discusses Australia's Paris commitments, emissions, climate change as an election issue, coal power, and the costs and reliability of renewables.\",\n  \"reason\": \"Climate policy and energy choices are central to the debate described, including Abbott's position on the Paris Agreement and coal, competing claims about renewables, and Steggall's proposed emissions target. The later passage about a transport project appears to be a separate or appended snippet, but does not change the main article's climate focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:45:18Z",
+  "duration_seconds": 2.945,
+  "error": null
+}

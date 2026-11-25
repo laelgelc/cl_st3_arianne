@@ -1,0 +1,77 @@
+{
+  "article_id": "70837251",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/nz/70837251.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/nz/70837251.json"
+  },
+  "manifest_row": {
+    "article_id": "70837251",
+    "group": "2019_06",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/nz/70837251.txt",
+    "now_field_2": "1822",
+    "date_original": "19-06-04",
+    "date_iso": "2019-06-04",
+    "source_name": "The Spinoff",
+    "url": "https://thespinoff.co.nz/the-bulletin/05-06-2019/the-bulletin-digital-services-tax-takes-shape/",
+    "title": "The Bulletin: Digital services tax takes shape",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A curated New Zealand news digest covering assorted stories",
+    "climate_relevance": "Climate change appears only in a brief teaser for a separate article about research and technology to combat it; no climate-related discussion is provided.",
+    "reason": "The available text is a multi-topic digest, and its sole explicit climate reference is a passing link-style mention rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9909e3e359f791afb714e2b8179228e28a3f4dcd3424f4810bb684b4dba59ca7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2d99c08aa74ccad61f483f2bc832bae79e6c5084be325fd0f6a3aa99c33fff94",
+    "raw_response_text_sha256": "f0307ea7456d5b4207277616319e22be96c496786a33b842edf0ab87574c370a"
+  },
+  "api_metadata": {
+    "id": "resp_0462e74acec448a4006b063f6f113087d185fcc1d042331d36",
+    "model": "gpt-6-luna",
+    "created_at": 1795571567.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3412,
+      "input_tokens_details": {
+        "cache_write_tokens": 3409,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3409
+        }
+      },
+      "output_tokens": 383,
+      "output_tokens_details": {
+        "reasoning_tokens": 240
+      },
+      "total_tokens": 3795
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A curated New Zealand news digest covering assorted stories\",\n  \"climate_relevance\": \"Climate change appears only in a brief teaser for a separate article about research and technology to combat it; no climate-related discussion is provided.\",\n  \"reason\": \"The available text is a multi-topic digest, and its sole explicit climate reference is a passing link-style mention rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:52:50Z",
+  "duration_seconds": 3.09,
+  "error": null
+}

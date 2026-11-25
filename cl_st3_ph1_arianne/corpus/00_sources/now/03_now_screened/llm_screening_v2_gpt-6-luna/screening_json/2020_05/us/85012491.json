@@ -1,0 +1,77 @@
+{
+  "article_id": "85012491",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/us/85012491.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/us/85012491.json"
+  },
+  "manifest_row": {
+    "article_id": "85012491",
+    "group": "2020_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/us/85012491.txt",
+    "now_field_2": "873",
+    "date_original": "20-05-25",
+    "date_iso": "2020-05-25",
+    "source_name": "YAHOO!",
+    "url": "https://news.yahoo.com/bushfire-hit-australians-still-tents-virus-slows-recovery-062020732.html",
+    "title": "Bushfire-hit Australians still in tents as virus slows recovery",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-us5.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Recovery challenges faced by Australians displaced by bushfires, compounded by the coronavirus pandemic",
+    "climate_relevance": "The article notes that the catastrophic bushfire crisis put a rare spotlight on climate change, but focuses primarily on survivors’ housing, financial, and community recovery.",
+    "reason": "Climate change is meaningfully connected to the bushfire context, but it is not developed beyond a brief contextual statement; the article is mainly about post-disaster recovery and the effects of COVID-19.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7fdb18de8245b28d40221cc678309d0debb13eebadb40e769234ae94d7c66fbb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "00a3888f2afcceb798d8814f9129fe56ca2b34aa40b6b6a1b014f182dff5e508",
+    "raw_response_text_sha256": "2183f7ae41acb6fc36227d22b77cc22d2f90c6ec0354d6c4f537f325b9003416"
+  },
+  "api_metadata": {
+    "id": "resp_0ac7f325ea30719d006b064b06dba087d1aff887b35f72b53e",
+    "model": "gpt-6-luna",
+    "created_at": 1795574534.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1671,
+      "input_tokens_details": {
+        "cache_write_tokens": 1668,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1668
+        }
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 1889
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Recovery challenges faced by Australians displaced by bushfires, compounded by the coronavirus pandemic\",\n  \"climate_relevance\": \"The article notes that the catastrophic bushfire crisis put a rare spotlight on climate change, but focuses primarily on survivors’ housing, financial, and community recovery.\",\n  \"reason\": \"Climate change is meaningfully connected to the bushfire context, but it is not developed beyond a brief contextual statement; the article is mainly about post-disaster recovery and the effects of COVID-19.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:42:17Z",
+  "duration_seconds": 2.248,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "15404226",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_11/nz/15404226.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_11/nz/15404226.json"
+  },
+  "manifest_row": {
+    "article_id": "15404226",
+    "group": "2016_11",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_11/nz/15404226.txt",
+    "now_field_2": "552",
+    "date_original": "16-11-15",
+    "date_iso": "2016-11-15",
+    "source_name": "New Zealand Herald",
+    "url": "http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&amp;objectid=11748670",
+    "title": "Millons 'driven into poverty' by natural disaster",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-11.txt\"]",
+    "metadata_article_files": "[\"text-16-11/text_16-11-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "How natural disasters affect poverty and the economic well-being of poor communities",
+    "climate_relevance": "The article says climate change will amplify the destructive effects of cyclones, flooding, and drought, and warns that climate shocks could reverse progress against poverty.",
+    "reason": "The main focus is the World Bank report's assessment of disaster-related poverty and resilience, rather than climate change itself. Climate change is meaningfully connected to the article's discussion of future disaster risks.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "722823858502419e5781373811132261a76c6630a12f705d72852db2fc697af4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "89a2decbb536e0a73a64286fc11516b5cd5c39c30f1360c0a22ec9919b470137",
+    "raw_response_text_sha256": "20c84fe81f064237cf30b2a6adebd4eba27cf1522dc2c8672f057a26fe605ca8"
+  },
+  "api_metadata": {
+    "id": "resp_061f58c43cf86eae006b0606a0e6b887d2b88c2012f724c135",
+    "model": "gpt-6-luna",
+    "created_at": 1795557025.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1233,
+      "input_tokens_details": {
+        "cache_write_tokens": 1230,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1230
+        }
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 1509
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"How natural disasters affect poverty and the economic well-being of poor communities\",\n  \"climate_relevance\": \"The article says climate change will amplify the destructive effects of cyclones, flooding, and drought, and warns that climate shocks could reverse progress against poverty.\",\n  \"reason\": \"The main focus is the World Bank report's assessment of disaster-related poverty and resilience, rather than climate change itself. Climate change is meaningfully connected to the article's discussion of future disaster risks.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:50:27Z",
+  "duration_seconds": 2.411,
+  "error": null
+}

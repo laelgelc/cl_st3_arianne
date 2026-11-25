@@ -1,0 +1,77 @@
+{
+  "article_id": "18978267",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/ie/18978267.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/ie/18978267.json"
+  },
+  "manifest_row": {
+    "article_id": "18978267",
+    "group": "2017_06",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/ie/18978267.txt",
+    "now_field_2": "321",
+    "date_original": "17-06-14",
+    "date_iso": "2017-06-14",
+    "source_name": "Her.ie",
+    "url": "https://www.her.ie/news/taoiseach-leo-varadkar-names-full-cabinet-ministers-350772",
+    "title": "Leo Varadkar names his cabinet and promises repeal referendum",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-IE.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Leo Varadkar's cabinet appointments and a planned referendum on the eighth amendment",
+    "climate_relevance": "Climate change appears only as part of the name of a ministerial portfolio.",
+    "reason": "The article concerns cabinet roles and contains no substantive discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "45041ad6f3425030463e03a44c9c0ea53cbb8c4f89e2433618b35f2e961a7c73",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "91c779d2ea59da8c214d737ffe0eeb2926039ec83d696d0557ebd6ed5cebccaf",
+    "raw_response_text_sha256": "64794c8b5054bbf9bc03f3efc63c3e81f9c5457bd5384a9d36ab78f7ff429bd7"
+  },
+  "api_metadata": {
+    "id": "resp_0ab1b0ec91894ada006b060b4c6c2c87d2b4309accfe7f268e",
+    "model": "gpt-6-luna",
+    "created_at": 1795558220.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 941,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 211,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1152
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Leo Varadkar's cabinet appointments and a planned referendum on the eighth amendment\",\n  \"climate_relevance\": \"Climate change appears only as part of the name of a ministerial portfolio.\",\n  \"reason\": \"The article concerns cabinet roles and contains no substantive discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:10:22Z",
+  "duration_seconds": 2.178,
+  "error": null
+}

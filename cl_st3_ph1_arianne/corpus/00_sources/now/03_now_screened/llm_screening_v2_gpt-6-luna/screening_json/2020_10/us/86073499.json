@@ -1,0 +1,77 @@
+{
+  "article_id": "86073499",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86073499.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86073499.json"
+  },
+  "manifest_row": {
+    "article_id": "86073499",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86073499.txt",
+    "now_field_2": "198",
+    "date_original": "20-10-05",
+    "date_iso": "2020-10-05",
+    "source_name": "USA Today",
+    "url": "https://www.usatoday.com/story/entertainment/celebrities/2020/10/05/jane-fonda-leads-80-s-workout-video-exercising-right-vote/3633289001/",
+    "title": "Jane Fonda leads Katy Perry, Orlando Bloom and more in '80s-style workout video to promote voting",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "Jane Fonda and other celebrities encouraging viewers to vote",
+    "climate_relevance": "Climate change is briefly mentioned as the subject of a previous activism campaign by Fonda.",
+    "reason": "The text focuses on a voting campaign. Its brief reference to Fonda's earlier climate protest and 'workout for the planet' does not develop climate discourse in a way that meaningfully supports analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f609632365c6f2afefef94e908b7761d8fe25b52b34f4bbedeaa0235d56b3192",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b56fd3019e17a50ae7f3dae46c0095de3eb933977655b9e452f85edea17351c5",
+    "raw_response_text_sha256": "9e78a2947a9d52258f213fd724c9c3ef9af667e25f2c87188962f01d00f70d44"
+  },
+  "api_metadata": {
+    "id": "resp_05b97fb9054f2fec006b064e4c321887d1b3f51f92a9657452",
+    "model": "gpt-6-luna",
+    "created_at": 1795575372.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 734,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 371,
+      "output_tokens_details": {
+        "reasoning_tokens": 229
+      },
+      "total_tokens": 1105
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Jane Fonda and other celebrities encouraging viewers to vote\",\n  \"climate_relevance\": \"Climate change is briefly mentioned as the subject of a previous activism campaign by Fonda.\",\n  \"reason\": \"The text focuses on a voting campaign. Its brief reference to Fonda's earlier climate protest and 'workout for the planet' does not develop climate discourse in a way that meaningfully supports analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:56:15Z",
+  "duration_seconds": 3.476,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "15451597",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_11/lk/15451597.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_11/lk/15451597.json"
+  },
+  "manifest_row": {
+    "article_id": "15451597",
+    "group": "2016_11",
+    "country_code": "lk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_11/lk/15451597.txt",
+    "now_field_2": "527",
+    "date_original": "16-11-17",
+    "date_iso": "2016-11-17",
+    "source_name": "Asian Tribune",
+    "url": "http://www.asiantribune.com/node/89745",
+    "title": "Air pollution is a leading factor in child mortality, the UNICEF",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-11.txt\"]",
+    "metadata_article_files": "[\"text-16-11/text_16-11-LK.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "The effects of indoor and outdoor air pollution on child health and mortality",
+    "climate_relevance": "The text connects calls to reduce air pollution with leaders attending the UN Climate Change Conference and mentions investment in energy systems and fossil fuels, but does not substantially discuss climate change itself.",
+    "reason": "Air pollution and child health dominate the article. Its reference to climate policy is meaningful background, but climate change is not a central or substantial topic.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d323fe7d8a2af51855f9feecedf5fd575f4cb49ab9da181a55554b1c3c87722e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "43f5368972ad137c7c259df749e85d78858f900344f52689d29d651a8f8d6fea",
+    "raw_response_text_sha256": "594f3147956c1cfbc5177c0cdaeb35ac115cc7f3ff162b9679ac06daeb7a3884"
+  },
+  "api_metadata": {
+    "id": "resp_0385651bafcdf784006b0606b1d23487d2a8f88a501fd97fc1",
+    "model": "gpt-6-luna",
+    "created_at": 1795557041.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1123,
+      "input_tokens_details": {
+        "cache_write_tokens": 1120,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1120
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 1373
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The effects of indoor and outdoor air pollution on child health and mortality\",\n  \"climate_relevance\": \"The text connects calls to reduce air pollution with leaders attending the UN Climate Change Conference and mentions investment in energy systems and fossil fuels, but does not substantially discuss climate change itself.\",\n  \"reason\": \"Air pollution and child health dominate the article. Its reference to climate policy is meaningful background, but climate change is not a central or substantial topic.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:50:44Z",
+  "duration_seconds": 2.438,
+  "error": null
+}

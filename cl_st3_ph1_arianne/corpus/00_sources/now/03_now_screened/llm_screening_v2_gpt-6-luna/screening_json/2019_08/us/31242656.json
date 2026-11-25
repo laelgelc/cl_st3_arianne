@@ -1,0 +1,77 @@
+{
+  "article_id": "31242656",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/us/31242656.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/us/31242656.json"
+  },
+  "manifest_row": {
+    "article_id": "31242656",
+    "group": "2019_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/us/31242656.txt",
+    "now_field_2": "2040",
+    "date_original": "19-08-24",
+    "date_iso": "2019-08-24",
+    "source_name": "nymag.com",
+    "url": "http://nymag.com/intelligencer/2019/08/cleveland-browns-2019-20-nfl-season-preview.html",
+    "title": "Cleveland Browns 2019-20 NFL Season Preview",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Cleveland Browns fandom and the team's prospects",
+    "climate_relevance": "A separate passage discusses a proposed rollback of methane-leak inspection and repair requirements for the oil and gas industry, explicitly framing it as a move to dismantle climate and environmental rules.",
+    "reason": "The identifiable main article is about football, but the supplied text also includes a meaningful climate-policy passage. The climate content is not central to the main article, so the text is peripheral for climate-discourse research.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fa0cce1364a06ee364b2f347945b25a0d8a61ca137c64b22ce6d0711cee9c1d2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d8f2d76ad5a58bacd67b3a1974392543404abb62115ab2f91b4e391721cc32c6",
+    "raw_response_text_sha256": "5502385b08cca9778163bcadfd533028be15f105e21cbf0ea50468a00af0a47c"
+  },
+  "api_metadata": {
+    "id": "resp_0e4c457261773903006b06164f52b887d2bc3aad955caa1fdd",
+    "model": "gpt-6-luna",
+    "created_at": 1795561039.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3105,
+      "input_tokens_details": {
+        "cache_write_tokens": 3102,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3102
+        }
+      },
+      "output_tokens": 465,
+      "output_tokens_details": {
+        "reasoning_tokens": 303
+      },
+      "total_tokens": 3570
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Cleveland Browns fandom and the team's prospects\",\n  \"climate_relevance\": \"A separate passage discusses a proposed rollback of methane-leak inspection and repair requirements for the oil and gas industry, explicitly framing it as a move to dismantle climate and environmental rules.\",\n  \"reason\": \"The identifiable main article is about football, but the supplied text also includes a meaningful climate-policy passage. The climate content is not central to the main article, so the text is peripheral for climate-discourse research.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:57:23Z",
+  "duration_seconds": 3.899,
+  "error": null
+}

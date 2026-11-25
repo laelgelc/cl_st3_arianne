@@ -1,0 +1,77 @@
+{
+  "article_id": "22167946",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_12/sg/22167946.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_12/sg/22167946.json"
+  },
+  "manifest_row": {
+    "article_id": "22167946",
+    "group": "2017_12",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_12/sg/22167946.txt",
+    "now_field_2": "286",
+    "date_original": "17-12-11",
+    "date_iso": "2017-12-11",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/2018-will-biggest-year-wellness-yet-183041019.html",
+    "title": "2018 will be the biggest year for 'wellness' yet",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-12.txt\"]",
+    "metadata_article_files": "[\"text-17-12/text_17-12-SG.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Wellness trends and Vogue's January cover",
+    "climate_relevance": "Climate change appears only in a parenthetical example of what the wellness trend 'planetary healing' might involve.",
+    "reason": "The article is about wellness and fashion, with no meaningful discussion of climate change beyond a brief passing reference.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7d72327284949d68ccab4f6ea7bbb9d12dc68eb77cc4085e5af2327a998803ec",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ca140dd1865c2a6330d5b710637335e3b3b221dcc56e34def4a504508e3b0811",
+    "raw_response_text_sha256": "11a33d88f02552564f114f9eed8b66dbbff303a741d4ebfef37ba56d37e95fa8"
+  },
+  "api_metadata": {
+    "id": "resp_0f56f58ec448dc81006b060fda11c887d28152c0c3880503d4",
+    "model": "gpt-6-luna",
+    "created_at": 1795559386.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 886,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 279,
+      "output_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "total_tokens": 1165
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Wellness trends and Vogue's January cover\",\n  \"climate_relevance\": \"Climate change appears only in a parenthetical example of what the wellness trend 'planetary healing' might involve.\",\n  \"reason\": \"The article is about wellness and fashion, with no meaningful discussion of climate change beyond a brief passing reference.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:29:48Z",
+  "duration_seconds": 2.411,
+  "error": null
+}

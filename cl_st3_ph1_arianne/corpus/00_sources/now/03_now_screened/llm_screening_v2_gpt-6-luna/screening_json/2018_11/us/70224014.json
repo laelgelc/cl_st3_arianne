@@ -1,0 +1,77 @@
+{
+  "article_id": "70224014",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/us/70224014.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/us/70224014.json"
+  },
+  "manifest_row": {
+    "article_id": "70224014",
+    "group": "2018_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/us/70224014.txt",
+    "now_field_2": "866",
+    "date_original": "18-11-08",
+    "date_iso": "2018-11-08",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/tim-walz-names-kristin-beckmann-to-head-transition-chris-schmitter-to-be-chief-of-staff/500066581/",
+    "title": "Tim Walz names Kristin Beckmann to head transition; Chris Schmitter ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Minnesota governor-elect Tim Walz's transition and early policy plans",
+    "climate_relevance": "A separate appended paragraph briefly discusses Trump's comments on global warming and a federal climate report, but climate change is not part of the identifiable main article.",
+    "reason": "The main article concerns the gubernatorial transition. The climate-related paragraph appears as an unrelated snippet, so it does not make the main article relevant for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f2cbb1618b32e9549f22cfc5f8698528dd798a7d2106951c741e6e9d4d6f4952",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c8e819a0a59edffd18eefe972ef5ff1241c2bbdaa3a1806e2f2bcb7ce45c66be",
+    "raw_response_text_sha256": "1b439a718ee28eae6a1eef24a2bbeb53f3638a81908e023db917b19103aa0a34"
+  },
+  "api_metadata": {
+    "id": "resp_006efdd1686f033f006b063b6a5fec87d18cbc156383594aef",
+    "model": "gpt-6-luna",
+    "created_at": 1795570538.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1625,
+      "input_tokens_details": {
+        "cache_write_tokens": 1622,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1622
+        }
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 217
+      },
+      "total_tokens": 1997
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Minnesota governor-elect Tim Walz's transition and early policy plans\",\n  \"climate_relevance\": \"A separate appended paragraph briefly discusses Trump's comments on global warming and a federal climate report, but climate change is not part of the identifiable main article.\",\n  \"reason\": \"The main article concerns the gubernatorial transition. The climate-related paragraph appears as an unrelated snippet, so it does not make the main article relevant for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:35:41Z",
+  "duration_seconds": 2.954,
+  "error": null
+}

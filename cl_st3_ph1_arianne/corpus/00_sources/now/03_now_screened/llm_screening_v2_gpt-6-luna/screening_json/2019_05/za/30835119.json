@@ -1,0 +1,77 @@
+{
+  "article_id": "30835119",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/za/30835119.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/za/30835119.json"
+  },
+  "manifest_row": {
+    "article_id": "30835119",
+    "group": "2019_05",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/za/30835119.txt",
+    "now_field_2": "2645",
+    "date_original": "19-05-02",
+    "date_iso": "2019-05-02",
+    "source_name": "Forbes Africa",
+    "url": "https://www.forbesafrica.com/wealth/2019/05/02/what-you-need-to-know-about-reginald-mengi-who-has-died-at-75/",
+    "title": "What You Need To Know About Mogul Reginald Mengi Who Has Died ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The life and business career of Tanzanian entrepreneur Reginald Mengi",
+    "climate_relevance": "The identifiable main article is an obituary profile and contains no meaningful climate discourse. A separate CEO-profile snippet discusses Shell, climate change, and carbon-footprint reduction.",
+    "reason": "The climate discussion belongs to an unrelated article within a concatenation of multiple snippets, not to the main article about Mengi. Following the instruction to assess the identifiable main article, this text is not relevant for the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "99bf653ca85b1e73680133237984116e5efae3e950f71c8a9b2b8221e664aa3a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d94f45f5174e5caad038e3a822b41047ea364ce49f489c1eb4d8c36e08e9311f",
+    "raw_response_text_sha256": "a4576f543fb5942673d3f97dc9b2a1c8987e6596ed0f206fa96fac822da1243f"
+  },
+  "api_metadata": {
+    "id": "resp_0cfa0f576bb864df006b0615617b9c87d2b46c89cf7a719a83",
+    "model": "gpt-6-luna",
+    "created_at": 1795560801.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4023,
+      "input_tokens_details": {
+        "cache_write_tokens": 4020,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4020
+        }
+      },
+      "output_tokens": 445,
+      "output_tokens_details": {
+        "reasoning_tokens": 274
+      },
+      "total_tokens": 4468
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The life and business career of Tanzanian entrepreneur Reginald Mengi\",\n  \"climate_relevance\": \"The identifiable main article is an obituary profile and contains no meaningful climate discourse. A separate CEO-profile snippet discusses Shell, climate change, and carbon-footprint reduction.\",\n  \"reason\": \"The climate discussion belongs to an unrelated article within a concatenation of multiple snippets, not to the main article about Mengi. Following the instruction to assess the identifiable main article, this text is not relevant for the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:53:24Z",
+  "duration_seconds": 3.325,
+  "error": null
+}

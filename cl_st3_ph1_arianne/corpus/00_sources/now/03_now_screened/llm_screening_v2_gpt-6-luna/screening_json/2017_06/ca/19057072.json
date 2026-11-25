@@ -1,0 +1,77 @@
+{
+  "article_id": "19057072",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/ca/19057072.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/ca/19057072.json"
+  },
+  "manifest_row": {
+    "article_id": "19057072",
+    "group": "2017_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/ca/19057072.txt",
+    "now_field_2": "641",
+    "date_original": "17-06-19",
+    "date_iso": "2017-06-19",
+    "source_name": "CTV News",
+    "url": "http://www.ctvnews.ca/canada/new-details-on-royals-visit-to-celebrate-canada-s-150th-birthday-1.3466397",
+    "title": "New details on royals' visit to celebrate Canada's 150th birthday",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "The itinerary for Prince Charles and Camilla’s visit to Canada’s 150th birthday celebrations",
+    "climate_relevance": "Climate change is mentioned only as one topic among various projects the royals will learn about at the Nunavut Research Institute.",
+    "reason": "The article is primarily a royal-visit itinerary and provides no substantive discussion of climate change, its implications, or related debate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f98afec9537922af29f9ed5527809603eedbc47d132af5a4820e80c1dbb0d832",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a163def3accc0214f40e82285ba642026f1e50e32becf3b7e3fbc8297821f1bc",
+    "raw_response_text_sha256": "f86623a95d5df402f893eec6ac6dc3e019d536e5af691b6d30d4cf8f92511a9d"
+  },
+  "api_metadata": {
+    "id": "resp_096ec8f15ea215c8006b060b67cc4087d29a954c7fc3d9ca44",
+    "model": "gpt-6-luna",
+    "created_at": 1795558247.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1316,
+      "input_tokens_details": {
+        "cache_write_tokens": 1313,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1313
+        }
+      },
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "reasoning_tokens": 159
+      },
+      "total_tokens": 1617
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The itinerary for Prince Charles and Camilla’s visit to Canada’s 150th birthday celebrations\",\n  \"climate_relevance\": \"Climate change is mentioned only as one topic among various projects the royals will learn about at the Nunavut Research Institute.\",\n  \"reason\": \"The article is primarily a royal-visit itinerary and provides no substantive discussion of climate change, its implications, or related debate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:10:50Z",
+  "duration_seconds": 2.452,
+  "error": null
+}

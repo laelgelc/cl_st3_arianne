@@ -1,0 +1,77 @@
+{
+  "article_id": "30454029",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/za/30454029.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/za/30454029.json"
+  },
+  "manifest_row": {
+    "article_id": "30454029",
+    "group": "2019_01",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/za/30454029.txt",
+    "now_field_2": "607",
+    "date_original": "19-01-15",
+    "date_iso": "2019-01-15",
+    "source_name": "Mail and Guardian",
+    "url": "https://mg.co.za/article/2019-01-15-communities-say-eskom-tariff-increase-will-make-the-cost-of-living-unbearable",
+    "title": "Communities say Eskom tariff increase will make the cost of living ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "Eskom electricity tariff increases and their effects on household affordability",
+    "climate_relevance": "Climate change appears only in the name of a group affiliated with some community members; the article does not discuss climate change or its implications.",
+    "reason": "The article focuses on electricity costs, poverty, and Eskom's finances. The brief reference to an anti-climate-change group does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f754d74ba9b76faf5acdae8c6168c2da4ce3e8e78eea41a7bacc371d23936096",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1235236dfdacfcfba53cf1ee6edfcc3dfc2db176e8b17f1bc104439f088f7883",
+    "raw_response_text_sha256": "b143323bd6b452e6dcaf3d63eb2b741b1136f201da322d0445ee8232d86b6792"
+  },
+  "api_metadata": {
+    "id": "resp_0067eae91914df3f006b06143b75ec87d2b3deaac26e04ffbd",
+    "model": "gpt-6-luna",
+    "created_at": 1795560507.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1292,
+      "input_tokens_details": {
+        "cache_write_tokens": 1289,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1289
+        }
+      },
+      "output_tokens": 274,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 1566
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Eskom electricity tariff increases and their effects on household affordability\",\n  \"climate_relevance\": \"Climate change appears only in the name of a group affiliated with some community members; the article does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on electricity costs, poverty, and Eskom's finances. The brief reference to an anti-climate-change group does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:48:29Z",
+  "duration_seconds": 2.396,
+  "error": null
+}

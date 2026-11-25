@@ -1,0 +1,77 @@
+{
+  "article_id": "13512720",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_07/ca/13512720.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_07/ca/13512720.json"
+  },
+  "manifest_row": {
+    "article_id": "13512720",
+    "group": "2016_07",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_07/ca/13512720.txt",
+    "now_field_2": "928",
+    "date_original": "16-07-25",
+    "date_iso": "2016-07-25",
+    "source_name": "InfoTel News Ltd",
+    "url": "http://infotel.ca/newsitem/if-hackers-wanted-to-mess-with-dem-convention-mission-accomplished-on-day-1/it33019",
+    "title": "If hackers wanted to mess with Dem convention, mission ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-07-qxx/16-07-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The first day of the 2016 Democratic National Convention and controversy over the party nomination and alleged Russian interference.",
+    "climate_relevance": "The main article does not discuss climate change. A separate, apparently truncated opinion snippet at the end mentions a town hall about how Canada should tackle climate change.",
+    "reason": "The identifiable main article is about the Democratic convention, not climate change. The climate-related sentence appears to belong to a separate snippet and does not make the main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "83264992c9224974717f435fdbf04125f1f88df6bce0cacc4e45c11c62b0861b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "91448563b9b961f3cfa4fe9b41042595cb4d46c9b6115d8e7c97364bb22cc6bb",
+    "raw_response_text_sha256": "5724ec9cc0f8684779c9fe52cc279103016afef0f3876b37b2cfd632537cf249"
+  },
+  "api_metadata": {
+    "id": "resp_0c2122d37be3b59a006b060517f27087d28ff932c253ed2fed",
+    "model": "gpt-6-luna",
+    "created_at": 1795556632.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1690,
+      "input_tokens_details": {
+        "cache_write_tokens": 1687,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1687
+        }
+      },
+      "output_tokens": 414,
+      "output_tokens_details": {
+        "reasoning_tokens": 244
+      },
+      "total_tokens": 2104
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The first day of the 2016 Democratic National Convention and controversy over the party nomination and alleged Russian interference.\",\n  \"climate_relevance\": \"The main article does not discuss climate change. A separate, apparently truncated opinion snippet at the end mentions a town hall about how Canada should tackle climate change.\",\n  \"reason\": \"The identifiable main article is about the Democratic convention, not climate change. The climate-related sentence appears to belong to a separate snippet and does not make the main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:43:54Z",
+  "duration_seconds": 2.759,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70530214",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70530214.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70530214.json"
+  },
+  "manifest_row": {
+    "article_id": "70530214",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70530214.txt",
+    "now_field_2": "518",
+    "date_original": "19-02-19",
+    "date_iso": "2019-02-19",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00481/venues-strategy-needed-before-town-hall-decision-made.htm",
+    "title": "Venues strategy needed before Town Hall decision made",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Wellington City Council's proposed Town Hall strengthening and its cost, value, and place in the city's venues strategy",
+    "climate_relevance": "The identifiable main article does not discuss climate change. A separate brief snippet mentions Greenpeace criticizing a political party's failure to address climate change, but that is unrelated to the main article.",
+    "reason": "Climate change appears only in a separate, unrelated snippet; it is not part of the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "38f848c128aa0844546146b7bb1f27f7d44816e2cc16154c38ce43999ba4edaf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "03661f1ab9729d1729d7c2b213d3cd0fbd659956ff89283aac8069f7d6dd6194",
+    "raw_response_text_sha256": "43fa42fc353da6364f2c4e4f277fa2911930d6ac621fa2c1057d4ddc16614317"
+  },
+  "api_metadata": {
+    "id": "resp_0634783c21b6fc29006b063d4df3cc87d180e84824a31f2ab0",
+    "model": "gpt-6-luna",
+    "created_at": 1795571022.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1160,
+      "input_tokens_details": {
+        "cache_write_tokens": 1157,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1157
+        }
+      },
+      "output_tokens": 430,
+      "output_tokens_details": {
+        "reasoning_tokens": 270
+      },
+      "total_tokens": 1590
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Wellington City Council's proposed Town Hall strengthening and its cost, value, and place in the city's venues strategy\",\n  \"climate_relevance\": \"The identifiable main article does not discuss climate change. A separate brief snippet mentions Greenpeace criticizing a political party's failure to address climate change, but that is unrelated to the main article.\",\n  \"reason\": \"Climate change appears only in a separate, unrelated snippet; it is not part of the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:45Z",
+  "duration_seconds": 3.146,
+  "error": null
+}

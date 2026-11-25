@@ -1,0 +1,77 @@
+{
+  "article_id": "17433556",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_03/us/17433556.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_03/us/17433556.json"
+  },
+  "manifest_row": {
+    "article_id": "17433556",
+    "group": "2017_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_03/us/17433556.txt",
+    "now_field_2": "1555",
+    "date_original": "17-03-15",
+    "date_iso": "2017-03-15",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/world/dutch-vote-in-an-immigration-focused-election-with-consequences-for-all-europe/2017/03/15/f748a84e-08e1-11e7-bd19-fd3afa0f7e2a_story.html",
+    "title": "Exit poll: Dutch anti-Muslim leader fails to capture top spot in elections",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-03.txt\"]",
+    "metadata_article_files": "[\"text-17-03/text_17-03-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "climate_role": "passing",
+    "main_topic": "The Dutch election and the electoral strength of anti-immigrant populism",
+    "climate_relevance": "Climate change is mentioned as an issue receiving less campaign debate than the issues associated with Geert Wilders.",
+    "reason": "The article is primarily about Dutch electoral politics, but the comparison identifies climate change as a sidelined topic in the campaign, making the mention relevant to broader political discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bb244bc30e26091bc2a1d1be742f53982dd2bd031ac20306aaf3eb10637c7037",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "68d039765ae7e078047704444913e1ad19e209a96531d26320c3e7cc9b9760dc",
+    "raw_response_text_sha256": "030f2b486e48290496d6f0f0c5f9d66d5725583a31ed574a5911e26d03f4a89e"
+  },
+  "api_metadata": {
+    "id": "resp_01b825da268d4cc9006b0608e1830487d2b9e8537e4663afaf",
+    "model": "gpt-6-luna",
+    "created_at": 1795557601.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2570,
+      "input_tokens_details": {
+        "cache_write_tokens": 2567,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2567
+        }
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 2848
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The Dutch election and the electoral strength of anti-immigrant populism\",\n  \"climate_relevance\": \"Climate change is mentioned as an issue receiving less campaign debate than the issues associated with Geert Wilders.\",\n  \"reason\": \"The article is primarily about Dutch electoral politics, but the comparison identifies climate change as a sidelined topic in the campaign, making the mention relevant to broader political discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:00:03Z",
+  "duration_seconds": 2.409,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "18961656",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/au/18961656.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/au/18961656.json"
+  },
+  "manifest_row": {
+    "article_id": "18961656",
+    "group": "2017_06",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/au/18961656.txt",
+    "now_field_2": "314",
+    "date_original": "17-06-13",
+    "date_iso": "2017-06-13",
+    "source_name": "The Sydney Morning Herald",
+    "url": "http://www.smh.com.au/federal-politics/the-pulse-live/politics-live-as-malcolm-turnbull-faces-leadership-pressure-on-energy-20170613-gwql9b.html",
+    "title": "Politics live as Malcolm Turnbull faces leadership pressure on energy",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "passing",
+    "main_topic": "Australian parliamentary question time and political developments",
+    "climate_relevance": "Climate change appears only as the subject of a question to the Prime Minister; the supplied text gives no substantive response or discussion.",
+    "reason": "The climate reference is brief and does not develop into meaningful climate discourse. Other mentions of energy policy are not explained or explicitly connected to climate change in the supplied text.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4f828de51cd47c0602bebac4703dde74d2db550cdb53036deb3b637561bd1844",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "74f9bf1f981e225eb8488e3a0553c09750b37a90ab0bcc88f6dd9afbc6c4be71",
+    "raw_response_text_sha256": "41af4d2b78498a7cbcd98a398dd3161480ced057d809a4d65aa27febf946e1d8"
+  },
+  "api_metadata": {
+    "id": "resp_0e4c6b6a411759bb006b060b46ae5487d2a0cdb79aedd6d6aa",
+    "model": "gpt-6-luna",
+    "created_at": 1795558214.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 962,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 1250
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Australian parliamentary question time and political developments\",\n  \"climate_relevance\": \"Climate change appears only as the subject of a question to the Prime Minister; the supplied text gives no substantive response or discussion.\",\n  \"reason\": \"The climate reference is brief and does not develop into meaningful climate discourse. Other mentions of energy policy are not explained or explicitly connected to climate change in the supplied text.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:10:17Z",
+  "duration_seconds": 2.545,
+  "error": null
+}

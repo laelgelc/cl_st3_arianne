@@ -1,0 +1,77 @@
+{
+  "article_id": "85409965",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/us/85409965.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/us/85409965.json"
+  },
+  "manifest_row": {
+    "article_id": "85409965",
+    "group": "2020_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/us/85409965.txt",
+    "now_field_2": "253",
+    "date_original": "20-07-13",
+    "date_iso": "2020-07-13",
+    "source_name": "The Nation",
+    "url": "https://www.thenation.com/authors/katie-orlinsky/",
+    "title": "Katie Orlinsky",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-us6.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.83,
+    "climate_role": "background",
+    "main_topic": "Photographer Katie Orlinsky's career and work",
+    "climate_relevance": "The bio says her work has focused primarily on climate change and on changing relationships between people, animals, and land, but does not discuss climate issues in depth.",
+    "reason": "Climate change is a meaningful part of the photographer's described work, though the text is primarily a career bio rather than climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1ab034361b3e2f0baadae822e67402d74777cf0f65056eb055205f0ba8e92330",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ad0921c66a56cbc30bf89f6026359c3fda371137dbeb1c0452978b7abdfb178d",
+    "raw_response_text_sha256": "f5de08008a337c2073cb0c0b20a415d1b8c14d8d9ad8371c663905f009396d43"
+  },
+  "api_metadata": {
+    "id": "resp_04807b96d475eb8b006b064c05ea6c87d1853d26fdbb6afe71",
+    "model": "gpt-6-luna",
+    "created_at": 1795574790.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 792,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 415,
+      "output_tokens_details": {
+        "reasoning_tokens": 271
+      },
+      "total_tokens": 1207
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.83,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Photographer Katie Orlinsky's career and work\",\n  \"climate_relevance\": \"The bio says her work has focused primarily on climate change and on changing relationships between people, animals, and land, but does not discuss climate issues in depth.\",\n  \"reason\": \"Climate change is a meaningful part of the photographer's described work, though the text is primarily a career bio rather than climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:46:33Z",
+  "duration_seconds": 3.419,
+  "error": null
+}

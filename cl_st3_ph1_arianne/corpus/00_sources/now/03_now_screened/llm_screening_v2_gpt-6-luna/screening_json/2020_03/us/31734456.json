@@ -1,0 +1,77 @@
+{
+  "article_id": "31734456",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/us/31734456.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/us/31734456.json"
+  },
+  "manifest_row": {
+    "article_id": "31734456",
+    "group": "2020_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/us/31734456.txt",
+    "now_field_2": "6280",
+    "date_original": "20-03-23",
+    "date_iso": "2020-03-23",
+    "source_name": "theringer.com",
+    "url": "https://www.theringer.com/2020/3/23/21190311/ringer-book-club-coronavirus-social-distancing-reading-recommendations",
+    "title": "The Ringer Book Club: Our Social-Distancing Reading ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Book recommendations for social-distancing readers",
+    "climate_relevance": "Climate change appears only in a list of themes in one recommended novel.",
+    "reason": "The text is a broad book-recommendation roundup focused on reading during the COVID-19 pandemic. Its sole climate-change mention is a passing item in a list and contains no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "00ead093cbf42b1be4b2ca300e281022ee3d92f1e7c61e21c2a6c72c638f1faa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c1d997440e832495a27f28c5d5608135cebb78f768f70b9a290229bdbfead8f1",
+    "raw_response_text_sha256": "5bd45f1dbf8b0ece689564e40c0d70a3c03a5f100f66858d2ad6078f7d26ad0e"
+  },
+  "api_metadata": {
+    "id": "resp_025b1b53cf02066d006b061928c40087d28e7ad8bd0bebaff9",
+    "model": "gpt-6-luna",
+    "created_at": 1795561768.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8729,
+      "input_tokens_details": {
+        "cache_write_tokens": 8726,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 8726
+        }
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 8946
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Book recommendations for social-distancing readers\",\n  \"climate_relevance\": \"Climate change appears only in a list of themes in one recommended novel.\",\n  \"reason\": \"The text is a broad book-recommendation roundup focused on reading during the COVID-19 pandemic. Its sole climate-change mention is a passing item in a list and contains no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:09:31Z",
+  "duration_seconds": 2.415,
+  "error": null
+}

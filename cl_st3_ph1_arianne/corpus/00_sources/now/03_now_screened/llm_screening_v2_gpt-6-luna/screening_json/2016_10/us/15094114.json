@@ -1,0 +1,77 @@
+{
+  "article_id": "15094114",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_10/us/15094114.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_10/us/15094114.json"
+  },
+  "manifest_row": {
+    "article_id": "15094114",
+    "group": "2016_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_10/us/15094114.txt",
+    "now_field_2": "536",
+    "date_original": "16-10-28",
+    "date_iso": "2016-10-28",
+    "source_name": "TIME",
+    "url": "http://time.com/4493973/industrial-pollution-aerial-photos/",
+    "title": "These Aerial Photos Reveal the Devastating Cost of Industrial ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-10-ykw/16-10-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Aerial photography documenting the environmental impacts of industrial activity",
+    "climate_relevance": "Climate change is explicitly discussed as a large-scale issue the photographs can help make visible, and the article links consumer supply chains and deforestation to climate change.",
+    "reason": "The article is mainly about photographer J. Henry Fair's work documenting industrial pollution and environmental damage. Climate change is a meaningful but secondary part of that discussion, so the text is relevant to broader climate discourse but is not core climate coverage. The ending contains unrelated website advertising-blocker boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f95800d26798e498b1b6308c399dd0504c80ee50b355498e41ae7cc4c3e9abcd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ea60f201bebceb2abfc0e063ba8acc665ee9f46013a404617bb71c2d7f26e45b",
+    "raw_response_text_sha256": "2c623e574b5b344c16cfe450f25d2599ab0ba66b080518e49c57b650c62fcde3"
+  },
+  "api_metadata": {
+    "id": "resp_02b9e764044552ee006b060648e6e887d2bf9a32b83d77fe11",
+    "model": "gpt-6-luna",
+    "created_at": 1795556937.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1175,
+      "input_tokens_details": {
+        "cache_write_tokens": 1172,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1172
+        }
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 1491
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Aerial photography documenting the environmental impacts of industrial activity\",\n  \"climate_relevance\": \"Climate change is explicitly discussed as a large-scale issue the photographs can help make visible, and the article links consumer supply chains and deforestation to climate change.\",\n  \"reason\": \"The article is mainly about photographer J. Henry Fair's work documenting industrial pollution and environmental damage. Climate change is a meaningful but secondary part of that discussion, so the text is relevant to broader climate discourse but is not core climate coverage. The ending contains unrelated website advertising-blocker boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:48:59Z",
+  "duration_seconds": 2.508,
+  "error": null
+}

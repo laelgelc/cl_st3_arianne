@@ -1,0 +1,77 @@
+{
+  "article_id": "19915710",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/gb/19915710.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/gb/19915710.json"
+  },
+  "manifest_row": {
+    "article_id": "19915710",
+    "group": "2017_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/gb/19915710.txt",
+    "now_field_2": "902",
+    "date_original": "17-08-08",
+    "date_iso": "2017-08-08",
+    "source_name": "The Independent",
+    "url": "http://www.independent.co.uk/news/world/americas/us-politics/trump-deported-50000-immigrants-department-of-justice-undocumented-immigration-a7883466.html",
+    "title": "Trump administration has deported 50000 people since he took ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Immigration enforcement and deportation under the Trump administration",
+    "climate_relevance": "Climate change appears only in a separate gallery item about Trump's executive orders, not in the main article.",
+    "reason": "The identifiable main article concerns deportations and immigration policy. The brief climate reference is confined to an unrelated gallery snippet and does not contribute meaningfully to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "22be4046f1f3acb6db7c96425311b233f63b877a24de16010dd7d6ff5b4df1dd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8b34f4632c6736550bb153ab6f8aca20308d37dd8385a57054fa8864463fab20",
+    "raw_response_text_sha256": "31229e16018b7e4502c6ddbef1ca9a693cef3849c94c1075d7d3fdc5a4ffdb56"
+  },
+  "api_metadata": {
+    "id": "resp_027ec28aa505ce18006b060c9f2e9087d2ac0b15ca5ae83853",
+    "model": "gpt-6-luna",
+    "created_at": 1795558559.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1663,
+      "input_tokens_details": {
+        "cache_write_tokens": 1660,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1660
+        }
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "total_tokens": 1969
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Immigration enforcement and deportation under the Trump administration\",\n  \"climate_relevance\": \"Climate change appears only in a separate gallery item about Trump's executive orders, not in the main article.\",\n  \"reason\": \"The identifiable main article concerns deportations and immigration policy. The brief climate reference is confined to an unrelated gallery snippet and does not contribute meaningfully to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:16:01Z",
+  "duration_seconds": 2.651,
+  "error": null
+}

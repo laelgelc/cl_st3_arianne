@@ -1,0 +1,77 @@
+{
+  "article_id": "16031830",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_12/ca/16031830.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_12/ca/16031830.json"
+  },
+  "manifest_row": {
+    "article_id": "16031830",
+    "group": "2016_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_12/ca/16031830.txt",
+    "now_field_2": "415",
+    "date_original": "16-12-22",
+    "date_iso": "2016-12-22",
+    "source_name": "Oshawa Express",
+    "url": "http://oshawaexpress.ca/clocas-low-water-level-warning-continues/",
+    "title": "December 22, 2016 in News: CLOCA's low water level warning ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-12.txt\"]",
+    "metadata_article_files": "[\"text-16-12/text_16-12-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Ongoing low water levels in the local watershed and their causes.",
+    "climate_relevance": "The text discusses low precipitation, snowpack, and aquifer recharge but does not connect these conditions to climate change.",
+    "reason": "The article is about a local water shortage and its hydrological causes; climate change is not meaningfully discussed.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9f205efee93a7682bb4e0466f2c4df4226151b50447719a0a29bbc3ad890ed9a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4467df434cfd3cdd012037ce005430d9060b92103753929b4dce928c022b64f8",
+    "raw_response_text_sha256": "4bc012a0e373e0d1dfaf4ef2f0bd2271f2cc03335deb26126956e9cac0be7f29"
+  },
+  "api_metadata": {
+    "id": "resp_0d28ce62e476902e006b0607442f1887d280e823c33e1ef0d1",
+    "model": "gpt-6-luna",
+    "created_at": 1795557188.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1044,
+      "input_tokens_details": {
+        "cache_write_tokens": 1041,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1041
+        }
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 1285
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ongoing low water levels in the local watershed and their causes.\",\n  \"climate_relevance\": \"The text discusses low precipitation, snowpack, and aquifer recharge but does not connect these conditions to climate change.\",\n  \"reason\": \"The article is about a local water shortage and its hydrological causes; climate change is not meaningfully discussed.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:53:10Z",
+  "duration_seconds": 2.326,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "23625645",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_03/gb/23625645.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_03/gb/23625645.json"
+  },
+  "manifest_row": {
+    "article_id": "23625645",
+    "group": "2018_03",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_03/gb/23625645.txt",
+    "now_field_2": "908",
+    "date_original": "18-03-11",
+    "date_iso": "2018-03-11",
+    "source_name": "HeraldScotland",
+    "url": "http://www.heraldscotland.com/news/homenews/16077912.Video__Disease_concern_as_Scots_salmon_farmers__produce__stomach_churning__record_levels_of_fish_deaths/",
+    "title": "Video: Scots salmon farmers' produce \"stomach-churning\" record ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-03.txt\"]",
+    "metadata_article_files": "[\"text-18-03/text_18-03-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Salmon farming mortality, disease, and environmental impacts in Scotland",
+    "climate_relevance": "Climate change appears in the name of a parliamentary committee, and an industry statement mentions changing marine conditions without explicitly linking them to climate change.",
+    "reason": "The article focuses on fish deaths, disease, and the sustainability of salmon farming. It contains no meaningful discussion of climate change; the committee-name reference is incidental, and the mention of changing marine conditions is not explicitly climate-related.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1f78c452baf9bc70ee490d787fb09c4f5cd4903d7c5439ace0cdfd68d6c9fcdc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b61ece34be5d1e5317fe0106ee8ef05d5a54733d99b43c9caa54dc7a8bd415a9",
+    "raw_response_text_sha256": "c57bbceb6879295ffb93f77fbf201daa241cf2c761eb9549bcf607e7d0ff1a84"
+  },
+  "api_metadata": {
+    "id": "resp_073b25e8b36e58dc006b06117514bc87d2821af8a0cbb27171",
+    "model": "gpt-6-luna",
+    "created_at": 1795559797.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1646,
+      "input_tokens_details": {
+        "cache_write_tokens": 1643,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1643
+        }
+      },
+      "output_tokens": 348,
+      "output_tokens_details": {
+        "reasoning_tokens": 184
+      },
+      "total_tokens": 1994
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Salmon farming mortality, disease, and environmental impacts in Scotland\",\n  \"climate_relevance\": \"Climate change appears in the name of a parliamentary committee, and an industry statement mentions changing marine conditions without explicitly linking them to climate change.\",\n  \"reason\": \"The article focuses on fish deaths, disease, and the sustainability of salmon farming. It contains no meaningful discussion of climate change; the committee-name reference is incidental, and the mention of changing marine conditions is not explicitly climate-related.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:36:39Z",
+  "duration_seconds": 2.58,
+  "error": null
+}

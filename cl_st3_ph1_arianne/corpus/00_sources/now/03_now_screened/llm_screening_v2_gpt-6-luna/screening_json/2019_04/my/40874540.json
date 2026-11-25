@@ -1,0 +1,77 @@
+{
+  "article_id": "40874540",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40874540.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40874540.json"
+  },
+  "manifest_row": {
+    "article_id": "40874540",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40874540.txt",
+    "now_field_2": "651",
+    "date_original": "19-04-23",
+    "date_iso": "2019-04-23",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/24/pharmaniaga-upbeat-on-securing-govt-concession-extension/",
+    "title": "Pharmaniaga upbeat on securing govt concession extension",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Pharmaniaga's government medicine-supply concession and business outlook",
+    "climate_relevance": "Climate change appears only in an unrelated introductory news bullet as part of a minister's portfolio; the main article contains no climate discourse.",
+    "reason": "The identifiable main article concerns pharmaceuticals and government procurement. An unrelated bullet mentions sustainable energy solutions and a minister responsible for climate change, but this is not developed into meaningful climate discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bc49ee4e2d2292ca715bb5c32d2cd4a78b2237701056dba40cbae78d15956e99",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3e87d39a18d0c5c325140d2ff4d11d6984baf648a84a7031d14a76c7d59f0d36",
+    "raw_response_text_sha256": "e29bf93dc4b3e5fb9f650ca5b62eb8b3715af0826e8251c3fdd45f996cd84c63"
+  },
+  "api_metadata": {
+    "id": "resp_09770c57ec9a4805006b06202661c487d2ac64db720e77f3ce",
+    "model": "gpt-6-luna",
+    "created_at": 1795563558.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1366,
+      "input_tokens_details": {
+        "cache_write_tokens": 1363,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1363
+        }
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 1671
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Pharmaniaga's government medicine-supply concession and business outlook\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated introductory news bullet as part of a minister's portfolio; the main article contains no climate discourse.\",\n  \"reason\": \"The identifiable main article concerns pharmaceuticals and government procurement. An unrelated bullet mentions sustainable energy solutions and a minister responsible for climate change, but this is not developed into meaningful climate discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:21Z",
+  "duration_seconds": 2.77,
+  "error": null
+}

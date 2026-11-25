@@ -1,0 +1,77 @@
+{
+  "article_id": "60972832",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/pk/60972832.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/pk/60972832.json"
+  },
+  "manifest_row": {
+    "article_id": "60972832",
+    "group": "2019_06",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/pk/60972832.txt",
+    "now_field_2": "351",
+    "date_original": "19-06-30",
+    "date_iso": "2019-06-30",
+    "source_name": "The Express Tribune",
+    "url": "https://tribune.com.pk/story/2003223/1-robbers-deprive-people-cash-valuables/",
+    "title": "Robbers deprive people of cash, valuables",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-pk.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Madrid traffic restrictions and air pollution",
+    "climate_relevance": "A protester describes the traffic-restriction scheme as one measure among those needed to slow climate change, but the article focuses primarily on air quality and municipal transport policy.",
+    "reason": "The identifiable Madrid article contains a meaningful connection between traffic restrictions and climate-change mitigation, but climate change is not its central subject. The text also includes unrelated crime-report snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "72ce483bd1bd30bb33c45ceb1585c9b836fffa2c2aa67c1b013f630660cb2987",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e8ee70b790fe5fd7ef6057b8f4f3a79429ad28ee16cc948fb5b1c92172463c35",
+    "raw_response_text_sha256": "81a31cf05013d1224a5276468edef20346b9817449c914bbd72f6ec1adfb7a2c"
+  },
+  "api_metadata": {
+    "id": "resp_0ff04d6d4c1e57cb006b0635e44ca487d189a6400ecd849610",
+    "model": "gpt-6-luna",
+    "created_at": 1795569124.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1540,
+      "input_tokens_details": {
+        "cache_write_tokens": 1537,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1537
+        }
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 1776
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Madrid traffic restrictions and air pollution\",\n  \"climate_relevance\": \"A protester describes the traffic-restriction scheme as one measure among those needed to slow climate change, but the article focuses primarily on air quality and municipal transport policy.\",\n  \"reason\": \"The identifiable Madrid article contains a meaningful connection between traffic restrictions and climate-change mitigation, but climate change is not its central subject. The text also includes unrelated crime-report snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:12:06Z",
+  "duration_seconds": 2.291,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40853478",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/sg/40853478.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/sg/40853478.json"
+  },
+  "manifest_row": {
+    "article_id": "40853478",
+    "group": "2019_04",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/sg/40853478.txt",
+    "now_field_2": "3326",
+    "date_original": "19-04-18",
+    "date_iso": "2019-04-18",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/online-activists-silencing-us-scientists-100205582.html",
+    "title": "Online activists are silencing us, scientists say",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Online harassment and activism directed at researchers studying chronic fatigue syndrome and the resulting effects on medical research.",
+    "climate_relevance": "Climate change appears briefly in a comparison about online conflicts between activism and science, without discussion of climate science, impacts, policy, or public debate.",
+    "reason": "The article is centrally about chronic fatigue syndrome research and online harassment. Its single passing reference to climate change does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "808605e4168aae788ab39f1042b9a3aabd8b37e2874380ced558322daa96200e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8903a3352cc90df736379ce77d0bec8d19407574cb3c485c2809082b5f232ef6",
+    "raw_response_text_sha256": "9c8db30b7e18d0fa1c52b7ce7cf525c41608e2604188b091988f34ac77486308"
+  },
+  "api_metadata": {
+    "id": "resp_0de9ccb30ce865c9006b06200d6b1887d2897651b248dfbecd",
+    "model": "gpt-6-luna",
+    "created_at": 1795563533.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4876,
+      "input_tokens_details": {
+        "cache_write_tokens": 4873,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4873
+        }
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 5146
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Online harassment and activism directed at researchers studying chronic fatigue syndrome and the resulting effects on medical research.\",\n  \"climate_relevance\": \"Climate change appears briefly in a comparison about online conflicts between activism and science, without discussion of climate science, impacts, policy, or public debate.\",\n  \"reason\": \"The article is centrally about chronic fatigue syndrome research and online harassment. Its single passing reference to climate change does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:55Z",
+  "duration_seconds": 2.519,
+  "error": null
+}

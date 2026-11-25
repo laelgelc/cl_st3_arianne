@@ -1,0 +1,77 @@
+{
+  "article_id": "23430184",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_02/in/23430184.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_02/in/23430184.json"
+  },
+  "manifest_row": {
+    "article_id": "23430184",
+    "group": "2018_02",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_02/in/23430184.txt",
+    "now_field_2": "427",
+    "date_original": "18-02-28",
+    "date_iso": "2018-02-28",
+    "source_name": "ANI News",
+    "url": "https://www.aninews.in/news/national/general-news/centre-approves-purchase-of-rs-9435-crore-worth-weapons201802282301430005/",
+    "title": "Centre approves purchase of Rs 9435 crore worth weapons",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-02.txt\"]",
+    "metadata_article_files": "[\"text-18-02/text_18-02-IN.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Indian military procurement and border security",
+    "climate_relevance": "A climate-change statement appears only in a separate, apparently unrelated news snippet at the end.",
+    "reason": "The identifiable main article concerns weapons and equipment procurement. The brief climate reference belongs to an unrelated appended snippet, not the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3d6e0012780bdfd9d11c7d6fe5fb13e3aeaf67117286cbc0e8491b000e4f8bdd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7325d2b321677ad59913f0286c9551b64aff0067bc63efd868738ff0137dee1a",
+    "raw_response_text_sha256": "0320c86fd35abda2748ed138ca101ab9f4d6fcabf793a1d75285e82d7b81892e"
+  },
+  "api_metadata": {
+    "id": "resp_0909a42a091c5aca006b0611398d1487d2991cb465391c9ade",
+    "model": "gpt-6-luna",
+    "created_at": 1795559737.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1108,
+      "input_tokens_details": {
+        "cache_write_tokens": 1105,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1105
+        }
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 185
+      },
+      "total_tokens": 1423
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Indian military procurement and border security\",\n  \"climate_relevance\": \"A climate-change statement appears only in a separate, apparently unrelated news snippet at the end.\",\n  \"reason\": \"The identifiable main article concerns weapons and equipment procurement. The brief climate reference belongs to an unrelated appended snippet, not the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:35:40Z",
+  "duration_seconds": 2.68,
+  "error": null
+}

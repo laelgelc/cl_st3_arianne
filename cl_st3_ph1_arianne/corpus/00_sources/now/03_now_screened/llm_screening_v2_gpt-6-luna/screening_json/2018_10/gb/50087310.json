@@ -1,0 +1,77 @@
+{
+  "article_id": "50087310",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/gb/50087310.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/gb/50087310.json"
+  },
+  "manifest_row": {
+    "article_id": "50087310",
+    "group": "2018_10",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/gb/50087310.txt",
+    "now_field_2": "5631",
+    "date_original": "18-10-01",
+    "date_iso": "2018-10-01",
+    "source_name": "The Independent",
+    "url": "https://www.independent.co.uk/news/world/americas/us-politics/kavanaugh-fbi-investigation-james-comey-trump-senate-confirmation-christine-ford-a8563501.html",
+    "title": "Fired FBI Director James Comey says Trump-ordered limited probe of ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The FBI’s investigation into allegations concerning Brett Kavanaugh during his Supreme Court confirmation process.",
+    "climate_relevance": "Climate change appears only in a caption within an unrelated world-news photo gallery, describing a protest banner calling for action on climate change.",
+    "reason": "The identifiable main article concerns the Kavanaugh investigation and contains no climate discourse. The climate reference is confined to an unrelated gallery caption and is incidental to the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8d13a3739fee23257c36f714e2bc0360d598ed765005466798c0747eba762e58",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bbe27285b47364ab767591744f5b749f66e22cb3523bc8cbc7537d2804c4d06a",
+    "raw_response_text_sha256": "88ce85542d580ea83a15169f5cb8bab3bebc0e6307a7950c5ba050d74ece5460"
+  },
+  "api_metadata": {
+    "id": "resp_0a901ce680cff06b006b06278d011087d1b84fe68fffa6291e",
+    "model": "gpt-6-luna",
+    "created_at": 1795565453.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8798,
+      "input_tokens_details": {
+        "cache_write_tokens": 8795,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 8795
+        }
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 9114
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The FBI’s investigation into allegations concerning Brett Kavanaugh during his Supreme Court confirmation process.\",\n  \"climate_relevance\": \"Climate change appears only in a caption within an unrelated world-news photo gallery, describing a protest banner calling for action on climate change.\",\n  \"reason\": \"The identifiable main article concerns the Kavanaugh investigation and contains no climate discourse. The climate reference is confined to an unrelated gallery caption and is incidental to the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:10:56Z",
+  "duration_seconds": 3.169,
+  "error": null
+}

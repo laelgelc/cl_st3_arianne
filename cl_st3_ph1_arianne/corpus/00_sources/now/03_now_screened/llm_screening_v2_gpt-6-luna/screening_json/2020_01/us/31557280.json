@@ -1,0 +1,77 @@
+{
+  "article_id": "31557280",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/31557280.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/31557280.json"
+  },
+  "manifest_row": {
+    "article_id": "31557280",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/31557280.txt",
+    "now_field_2": "3816",
+    "date_original": "20-01-06",
+    "date_iso": "2020-01-06",
+    "source_name": "politico.com",
+    "url": "https://www.politico.com/newsletters/playbook/2020/01/04/whats-on-pompeos-mind-487978",
+    "title": "POLITICO Playbook: What's on Pompeo's mind - POLITICO",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us7.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "POLITICO Playbook newsletter coverage of the U.S. killing of Qassem Soleimani and related political news",
+    "climate_relevance": "Climate change appears only in a subscription promotion listing it among broad global issues; a separate curated excerpt mentions sea ice in passing.",
+    "reason": "The available text contains no meaningful climate discourse. The climate references are incidental to the newsletter promotion and an unrelated excerpt, so they do not support climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3ba1bd1f23f59622e4f8f453c7000cc86b2b8396d6852bbc40f34c3b7136843a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a6e6c8b3edbdaa41b7c3a5bf6d755470e348c205072b0acc484789dcf06ae307",
+    "raw_response_text_sha256": "74fca44885b49a5767dbae6889ff113eee493bdb61f885402b5c1e757383d784"
+  },
+  "api_metadata": {
+    "id": "resp_0ff65cb83ebbde23006b0618070a3887d2ba5036a5168627cf",
+    "model": "gpt-6-luna",
+    "created_at": 1795561479.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5709,
+      "input_tokens_details": {
+        "cache_write_tokens": 5706,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5706
+        }
+      },
+      "output_tokens": 296,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 6005
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"POLITICO Playbook newsletter coverage of the U.S. killing of Qassem Soleimani and related political news\",\n  \"climate_relevance\": \"Climate change appears only in a subscription promotion listing it among broad global issues; a separate curated excerpt mentions sea ice in passing.\",\n  \"reason\": \"The available text contains no meaningful climate discourse. The climate references are incidental to the newsletter promotion and an unrelated excerpt, so they do not support climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:04:41Z",
+  "duration_seconds": 2.931,
+  "error": null
+}

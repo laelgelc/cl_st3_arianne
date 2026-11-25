@@ -1,0 +1,77 @@
+{
+  "article_id": "70457678",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/us/70457678.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/us/70457678.json"
+  },
+  "manifest_row": {
+    "article_id": "70457678",
+    "group": "2019_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/us/70457678.txt",
+    "now_field_2": "699",
+    "date_original": "19-01-27",
+    "date_iso": "2019-01-27",
+    "source_name": "Boulder Daily Camera",
+    "url": "http://www.dailycamera.com/science_environment/ci_32408521/cu-boulder-led-study-tracks-dramatic-retreat-canadian",
+    "title": "CU Boulder-led study tracks dramatic retreat of Canadian glaciers",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-us2.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "A study of glacial retreat on Baffin Island and evidence of exceptional Arctic warming.",
+    "climate_relevance": "The main article directly examines glacier retreat, Arctic warming, long-term ice cover, and potential implications for ecosystems, sea-level rise, and ocean circulation.",
+    "reason": "Climate change and its effects are the central focus of the identifiable main article. The supplied text also contains unrelated sports, music, and Jerusalem Post news content, but these do not alter the classification of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "650a251b607ea52627d7b520592189cb1d64285e431d63621e35780088c41b7d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7f345bc02325d935d616311fdf06ec7e494c8a4fe2fbf7dc080e75959b8357bd",
+    "raw_response_text_sha256": "8a7239cd195f2218d2268a5127de18dde4ca49ff391b6b697578f1569f4ae74d"
+  },
+  "api_metadata": {
+    "id": "resp_0006058e79771787006b063ca4619487d1952eddc0ccae9ac2",
+    "model": "gpt-6-luna",
+    "created_at": 1795570852.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3103,
+      "input_tokens_details": {
+        "cache_write_tokens": 3100,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3100
+        }
+      },
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "reasoning_tokens": 32
+      },
+      "total_tokens": 3299
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"A study of glacial retreat on Baffin Island and evidence of exceptional Arctic warming.\",\n  \"climate_relevance\": \"The main article directly examines glacier retreat, Arctic warming, long-term ice cover, and potential implications for ecosystems, sea-level rise, and ocean circulation.\",\n  \"reason\": \"Climate change and its effects are the central focus of the identifiable main article. The supplied text also contains unrelated sports, music, and Jerusalem Post news content, but these do not alter the classification of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:54Z",
+  "duration_seconds": 1.918,
+  "error": null
+}

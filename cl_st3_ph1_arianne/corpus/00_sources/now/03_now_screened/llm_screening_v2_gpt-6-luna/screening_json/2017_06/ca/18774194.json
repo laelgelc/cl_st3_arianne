@@ -1,0 +1,77 @@
+{
+  "article_id": "18774194",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/ca/18774194.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/ca/18774194.json"
+  },
+  "manifest_row": {
+    "article_id": "18774194",
+    "group": "2017_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/ca/18774194.txt",
+    "now_field_2": "773",
+    "date_original": "17-06-02",
+    "date_iso": "2017-06-02",
+    "source_name": "CBC.ca",
+    "url": "http://www.cbc.ca/news/politics/trump-trudeau-cell-phone-calls-1.4141012",
+    "title": "PMO not aware of any cellphone contact between Trump and Trudeau",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Security and protocol concerns around Donald Trump’s private cellphone communications with world leaders",
+    "climate_relevance": "The report notes that Trudeau expressed disappointment with Trump’s decision to withdraw from the Paris Agreement on Climate Change, but does not otherwise discuss climate issues.",
+    "reason": "Climate change appears in a meaningful but brief reference to the Paris Agreement; the article is primarily about diplomatic communications and security.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3038f73f79998227ff37cdd9763e0479b7f4d4217f14c5323edb286c19aee7ca",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "35ccd43f496b0f1ca5fc3f8539fff91ff8bf94cb7144d3a59fda30784bed2ee9",
+    "raw_response_text_sha256": "220d4e0dc268b7bf84c8690c475f6d1d91b51724c596f5a5a57c96202ad45e59"
+  },
+  "api_metadata": {
+    "id": "resp_035e8531ef526d23006b060ae07abc87d29924982ee6ea0d2e",
+    "model": "gpt-6-luna",
+    "created_at": 1795558112.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1486,
+      "input_tokens_details": {
+        "cache_write_tokens": 1483,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1483
+        }
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1706
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Security and protocol concerns around Donald Trump’s private cellphone communications with world leaders\",\n  \"climate_relevance\": \"The report notes that Trudeau expressed disappointment with Trump’s decision to withdraw from the Paris Agreement on Climate Change, but does not otherwise discuss climate issues.\",\n  \"reason\": \"Climate change appears in a meaningful but brief reference to the Paris Agreement; the article is primarily about diplomatic communications and security.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:08:34Z",
+  "duration_seconds": 1.994,
+  "error": null
+}

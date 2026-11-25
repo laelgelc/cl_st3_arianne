@@ -1,0 +1,77 @@
+{
+  "article_id": "40369848",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/sg/40369848.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/sg/40369848.json"
+  },
+  "manifest_row": {
+    "article_id": "40369848",
+    "group": "2018_12",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/sg/40369848.txt",
+    "now_field_2": "1410",
+    "date_original": "18-12-09",
+    "date_iso": "2018-12-09",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/yellow-jacket-protests-paralyze-paris-threaten-macrons-government-222544432.html",
+    "title": "'Yellow Jacket' protests paralyze Paris and threaten Macron's ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "The Yellow Jackets protests in France, their opposition to fuel-tax increases, and the resulting political crisis.",
+    "climate_relevance": "The article discusses the fuel tax as part of Macron’s climate policy, protesters’ views on whether it would address climate change, and the protests’ effects on climate activism.",
+    "reason": "Climate policy and the climate movement are meaningful secondary themes, but the article is primarily about the protests, cost-of-living concerns, and French politics.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9cb8f85393f7618f0ba587578d14c10d02256f9be9f0a1d1a6363f626adfb69e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3b6e92fe8562ae42833ec50599dacbaaf16bc453857efc02aeec78cbd8f05a80",
+    "raw_response_text_sha256": "64d0d8a6484067fd3cde2bd917e981a8a8c009917ac55c2323eeff41046ce436"
+  },
+  "api_metadata": {
+    "id": "resp_00537d325deeb577006b061ed870c887d2afd310a4fbebb324",
+    "model": "gpt-6-luna",
+    "created_at": 1795563224.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2423,
+      "input_tokens_details": {
+        "cache_write_tokens": 2420,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2420
+        }
+      },
+      "output_tokens": 295,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 2718
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The Yellow Jackets protests in France, their opposition to fuel-tax increases, and the resulting political crisis.\",\n  \"climate_relevance\": \"The article discusses the fuel tax as part of Macron’s climate policy, protesters’ views on whether it would address climate change, and the protests’ effects on climate activism.\",\n  \"reason\": \"Climate policy and the climate movement are meaningful secondary themes, but the article is primarily about the protests, cost-of-living concerns, and French politics.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:33:47Z",
+  "duration_seconds": 2.68,
+  "error": null
+}

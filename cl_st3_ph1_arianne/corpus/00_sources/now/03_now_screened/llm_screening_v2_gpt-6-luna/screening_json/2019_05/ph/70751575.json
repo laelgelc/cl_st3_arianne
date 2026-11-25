@@ -1,0 +1,77 @@
+{
+  "article_id": "70751575",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/ph/70751575.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/ph/70751575.json"
+  },
+  "manifest_row": {
+    "article_id": "70751575",
+    "group": "2019_05",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/ph/70751575.txt",
+    "now_field_2": "746",
+    "date_original": "19-05-06",
+    "date_iso": "2019-05-06",
+    "source_name": "Business Mirror",
+    "url": "https://businessmirror.com.ph/2019/05/07/lets-learn-proper-garbage-disposal/",
+    "title": "Let's learn proper garbage disposal",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Garbage disposal, recycling, and urban flooding in the Philippines",
+    "climate_relevance": "Climate change appears only in the name of a government department cited as an expert's affiliation; the text does not discuss climate change or its implications.",
+    "reason": "The article focuses on littering, waste management, recycling, and flooding attributed to blocked waterways. The isolated climate reference is incidental and does not constitute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "60d19d082d67766855e8d44b934a764d0a1dd5c538bf09909ce752748665fb8c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "10e4e932972e1c8b08978cec1596d37914fa8fc3a53112c7ea7e95f7062484b3",
+    "raw_response_text_sha256": "8f274c119c6674e95397d6737a52f55133bd7c1c95de833ba61ea380d0de0eb8"
+  },
+  "api_metadata": {
+    "id": "resp_0e1150ad5f4f637f006b063ee5700087d1b11e96a9b937042f",
+    "model": "gpt-6-luna",
+    "created_at": 1795571429.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1424,
+      "input_tokens_details": {
+        "cache_write_tokens": 1421,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1421
+        }
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 1644
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Garbage disposal, recycling, and urban flooding in the Philippines\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government department cited as an expert's affiliation; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on littering, waste management, recycling, and flooding attributed to blocked waterways. The isolated climate reference is incidental and does not constitute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:50:31Z",
+  "duration_seconds": 2.078,
+  "error": null
+}

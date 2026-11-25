@@ -1,0 +1,77 @@
+{
+  "article_id": "40622264",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/sg/40622264.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/sg/40622264.json"
+  },
+  "manifest_row": {
+    "article_id": "40622264",
+    "group": "2019_02",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/sg/40622264.txt",
+    "now_field_2": "355",
+    "date_original": "19-02-15",
+    "date_iso": "2019-02-15",
+    "source_name": "Channel NewsAsia",
+    "url": "https://www.channelnewsasia.com/news/world/fears-flood-water-runoff-could-smother-barrier-reef-scientists-11246114",
+    "title": "Fears flood water runoff could 'smother' Barrier Reef: Scientists",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Flood runoff degrading water quality and threatening parts of the Great Barrier Reef",
+    "climate_relevance": "The article notes that the reef has already suffered coral bleaching linked to rising sea temperatures and climate change, but the main focus is the immediate effects of flooding.",
+    "reason": "Climate change is meaningfully connected to the reef's prior bleaching, while the article primarily reports on flood sediment, reduced sunlight, and ecological risks.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cc98b3d66e74765d9236ec2f49d3a0eb5e0ceba4db3f547775e107f8e44c4cdb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fe02e5102f580ecbf727f1e78f66adb877b1f61c5c91dd1a539d50cfcf6b3cf1",
+    "raw_response_text_sha256": "e3ffb842e187502d4036d085f71f0e6488cf5301ee51cd4f99f031046b24a523"
+  },
+  "api_metadata": {
+    "id": "resp_09ef8bd577cdee57006b061f55a60c87d2bd8d40cf2abbbb57",
+    "model": "gpt-6-luna",
+    "created_at": 1795563349.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1022,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1223
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Flood runoff degrading water quality and threatening parts of the Great Barrier Reef\",\n  \"climate_relevance\": \"The article notes that the reef has already suffered coral bleaching linked to rising sea temperatures and climate change, but the main focus is the immediate effects of flooding.\",\n  \"reason\": \"Climate change is meaningfully connected to the reef's prior bleaching, while the article primarily reports on flood sediment, reduced sunlight, and ecological risks.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:35:51Z",
+  "duration_seconds": 1.882,
+  "error": null
+}

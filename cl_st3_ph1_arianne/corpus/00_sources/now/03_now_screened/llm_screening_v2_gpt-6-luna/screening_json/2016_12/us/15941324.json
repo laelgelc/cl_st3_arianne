@@ -1,0 +1,77 @@
+{
+  "article_id": "15941324",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_12/us/15941324.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_12/us/15941324.json"
+  },
+  "manifest_row": {
+    "article_id": "15941324",
+    "group": "2016_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_12/us/15941324.txt",
+    "now_field_2": "1253",
+    "date_original": "16-12-16",
+    "date_iso": "2016-12-16",
+    "source_name": "AOL News",
+    "url": "http://www.aol.com/article/news/2016/12/16/watch-live-president-obama-holds-final-news-conference-2016/21629667/",
+    "title": "Watch Live: President Obama holds final news conference of 2016",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-12.txt\"]",
+    "metadata_article_files": "[\"text-16-12/text_16-12-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "President Obama's final scheduled White House press conference of 2016, accompanied by a collection of photo captions",
+    "climate_relevance": "Climate change appears only in a caption listing topics Obama addressed in his 2016 State of the Union; no climate-related discussion is provided.",
+    "reason": "The available text is mainly a press-conference headline and unrelated image captions. The lone climate reference is incidental and does not meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f1fdec30e773835b651483d0ecb9bfa0920253cde1a461f0d3b8b090d06ac0ed",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "17c8bbcb8c8c62494d6ae75ffca0288d296bb38c93195752911406fea12b4d66",
+    "raw_response_text_sha256": "a12f2d6e7fb77eb239994c1bbddcd7626c379068d860ae454084c9ecd344fe28"
+  },
+  "api_metadata": {
+    "id": "resp_0efd44a5f6b32b8d006b060732bc2487d29a7501189c0d4aad",
+    "model": "gpt-6-luna",
+    "created_at": 1795557170.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2318,
+      "input_tokens_details": {
+        "cache_write_tokens": 2315,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2315
+        }
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 2588
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"President Obama's final scheduled White House press conference of 2016, accompanied by a collection of photo captions\",\n  \"climate_relevance\": \"Climate change appears only in a caption listing topics Obama addressed in his 2016 State of the Union; no climate-related discussion is provided.\",\n  \"reason\": \"The available text is mainly a press-conference headline and unrelated image captions. The lone climate reference is incidental and does not meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:52:52Z",
+  "duration_seconds": 2.202,
+  "error": null
+}

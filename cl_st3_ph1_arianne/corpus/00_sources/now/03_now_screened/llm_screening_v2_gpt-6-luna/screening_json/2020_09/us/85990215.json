@@ -1,0 +1,77 @@
+{
+  "article_id": "85990215",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/85990215.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/85990215.json"
+  },
+  "manifest_row": {
+    "article_id": "85990215",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/85990215.txt",
+    "now_field_2": "735",
+    "date_original": "20-09-21",
+    "date_iso": "2020-09-21",
+    "source_name": "NBC News",
+    "url": "https://www.nbcnews.com/news/us-news/california-hiker-dies-record-setting-heatwave-wildfires-scorch-state-n1239448",
+    "title": "California hiker dies as record heat wave and wildfires scorch state",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A hiker's death amid California's record heat wave and major wildfires",
+    "climate_relevance": "The report briefly connects increasingly intense wildfire seasons to climate change and cites research on higher temperatures potentially extending California's fire season.",
+    "reason": "The article is primarily a report on the hiker's death, extreme heat, and ongoing wildfires. Climate change appears in a meaningful but limited explanation of wildfire-season trends, so the text is relevant as peripheral climate discourse rather than core coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c558c86d3a157864f5342eb5ecc86c6c559cf69f8b048ce3c5ceb3cc70e396dd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2ea4b67da59e8b47fedbc47902a76c3851c7883440b55d2ce4db580b90758b13",
+    "raw_response_text_sha256": "b34020b52591381f595c7a6bb1b59455fdf9c3809a063b2bf6d17725569f46d4"
+  },
+  "api_metadata": {
+    "id": "resp_0307fde5b2760e7b006b064de5565c87d1918084b98b51afc1",
+    "model": "gpt-6-luna",
+    "created_at": 1795575269.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1459,
+      "input_tokens_details": {
+        "cache_write_tokens": 1456,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1456
+        }
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1706
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A hiker's death amid California's record heat wave and major wildfires\",\n  \"climate_relevance\": \"The report briefly connects increasingly intense wildfire seasons to climate change and cites research on higher temperatures potentially extending California's fire season.\",\n  \"reason\": \"The article is primarily a report on the hiker's death, extreme heat, and ongoing wildfires. Climate change appears in a meaningful but limited explanation of wildfire-season trends, so the text is relevant as peripheral climate discourse rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:54:31Z",
+  "duration_seconds": 2.331,
+  "error": null
+}

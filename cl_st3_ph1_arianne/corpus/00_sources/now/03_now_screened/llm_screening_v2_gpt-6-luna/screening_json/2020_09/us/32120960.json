@@ -1,0 +1,77 @@
+{
+  "article_id": "32120960",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/32120960.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/32120960.json"
+  },
+  "manifest_row": {
+    "article_id": "32120960",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/32120960.txt",
+    "now_field_2": "576",
+    "date_original": "20-09-29",
+    "date_iso": "2020-09-29",
+    "source_name": "stltoday.com",
+    "url": "https://www.stltoday.com/opinion/editorial/editorial-skewed-cdc-advice-is-latest-example-of-trump-loyalists-validating-his-lies/article_e1927512-a05a-5160-8e77-5a911109feaa.html",
+    "title": "Editorial: Skewed CDC advice is latest example of Trump ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Political interference in CDC coronavirus guidance",
+    "climate_relevance": "Climate change appears only in a brief list of subjects where the article alleges Trump loyalists have twisted facts; it is not discussed further.",
+    "reason": "The article focuses on COVID-19, the CDC, and political influence over public health guidance. Its single passing reference to climate change does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d55cf8e9531c1c39981f0e174640bcbb9e03d5b11e326f275546725f50e4fd38",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "257a766373c686a6c0d72b175d023d4a600c573705a9a50b0a1e00930960bfe3",
+    "raw_response_text_sha256": "6ea6ab31662d804c8a2ab00329b37acc7edbaf982cef2226ef972cbd56023ec7"
+  },
+  "api_metadata": {
+    "id": "resp_067b9dc15e1eb3d1006b061b5fcb5087d2b9fc1fdd2c89eb29",
+    "model": "gpt-6-luna",
+    "created_at": 1795562336.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1198,
+      "input_tokens_details": {
+        "cache_write_tokens": 1195,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1195
+        }
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 1466
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Political interference in CDC coronavirus guidance\",\n  \"climate_relevance\": \"Climate change appears only in a brief list of subjects where the article alleges Trump loyalists have twisted facts; it is not discussed further.\",\n  \"reason\": \"The article focuses on COVID-19, the CDC, and political influence over public health guidance. Its single passing reference to climate change does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:18:58Z",
+  "duration_seconds": 3.521,
+  "error": null
+}

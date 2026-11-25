@@ -1,0 +1,77 @@
+{
+  "article_id": "61242898",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ie/61242898.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ie/61242898.json"
+  },
+  "manifest_row": {
+    "article_id": "61242898",
+    "group": "2019_09",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ie/61242898.txt",
+    "now_field_2": "872",
+    "date_original": "19-09-20",
+    "date_iso": "2019-09-20",
+    "source_name": "echolive.ie",
+    "url": "https://www.echolive.ie/opinion/Colette-Sheridan-Society-needs-to-shake-off-its-hang-ups-about-the-menopause-50b99e38-94fa-4e8d-a08d-31a73b11da6a-ds",
+    "title": "Colette Sheridan: Society needs to shake off its hang-ups ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ie2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Menopause, its effects on women’s working lives, and workplace stigma.",
+    "climate_relevance": "The main article does not meaningfully discuss climate change. A separate, substantial passage concerns an Irish climate-action court case, but it appears to be an unrelated article fragment.",
+    "reason": "The identifiable main article is about menopause. The climate material is a distinct, unrelated news report appended to it, so it does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e3d2554276dcaa918163fd02097e262e472187b0518753b19d96b6789c4249c1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d779473f5f51fe9f596c98ef6a2ee6c80fa0ef33f565fc9b6e2b8f6cb5b1912b",
+    "raw_response_text_sha256": "cd8b1e880b6da44d1c2337a85303e82db2af65c3a292824de5347b38f53e25c9"
+  },
+  "api_metadata": {
+    "id": "resp_0a4cf02cd6efeae1006b063650539087d19606ddf7f272abd9",
+    "model": "gpt-6-luna",
+    "created_at": 1795569232.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2370,
+      "input_tokens_details": {
+        "cache_write_tokens": 2367,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2367
+        }
+      },
+      "output_tokens": 560,
+      "output_tokens_details": {
+        "reasoning_tokens": 397
+      },
+      "total_tokens": 2930
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Menopause, its effects on women’s working lives, and workplace stigma.\",\n  \"climate_relevance\": \"The main article does not meaningfully discuss climate change. A separate, substantial passage concerns an Irish climate-action court case, but it appears to be an unrelated article fragment.\",\n  \"reason\": \"The identifiable main article is about menopause. The climate material is a distinct, unrelated news report appended to it, so it does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:13:56Z",
+  "duration_seconds": 4.326,
+  "error": null
+}

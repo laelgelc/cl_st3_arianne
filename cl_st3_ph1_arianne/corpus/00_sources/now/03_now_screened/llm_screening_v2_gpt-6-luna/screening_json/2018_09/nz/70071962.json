@@ -1,0 +1,77 @@
+{
+  "article_id": "70071962",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/nz/70071962.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/nz/70071962.json"
+  },
+  "manifest_row": {
+    "article_id": "70071962",
+    "group": "2018_09",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/nz/70071962.txt",
+    "now_field_2": "749",
+    "date_original": "18-09-24",
+    "date_iso": "2018-09-24",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/WO1809/S00135/tonga-exploring-cheaper-and-sustainable-electricity.htm",
+    "title": "Tonga exploring cheaper and sustainable electricity",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "Biogas and circular-economy approaches to affordable, reliable electricity in Tonga",
+    "climate_relevance": "The article discusses renewable energy and replacing diesel generation, but does not connect these topics to climate change or emissions. Climate change appears only in a minister's portfolio title.",
+    "reason": "The main article focuses on energy costs, reliability, and biogas technology rather than climate change or its implications. The additional material after the paywall notice consists of unrelated snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "24cd3442de458846627d608c14015ce4d0da6e7de645795ef36f0512999e96bd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "02b470767ee54d835a11b1abaae5baadb0bb997502a411906fa44b9e92d3177c",
+    "raw_response_text_sha256": "b4560a56290a525c9e25bb2c75335c3bc1b760c4e6528cd3b9fe3ae4ec330f14"
+  },
+  "api_metadata": {
+    "id": "resp_0ac88b5d3a4c04c2006b063ab92bfc87d197f796805e7fc489",
+    "model": "gpt-6-luna",
+    "created_at": 1795570361.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1430,
+      "input_tokens_details": {
+        "cache_write_tokens": 1427,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1427
+        }
+      },
+      "output_tokens": 504,
+      "output_tokens_details": {
+        "reasoning_tokens": 346
+      },
+      "total_tokens": 1934
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Biogas and circular-economy approaches to affordable, reliable electricity in Tonga\",\n  \"climate_relevance\": \"The article discusses renewable energy and replacing diesel generation, but does not connect these topics to climate change or emissions. Climate change appears only in a minister's portfolio title.\",\n  \"reason\": \"The main article focuses on energy costs, reliability, and biogas technology rather than climate change or its implications. The additional material after the paywall notice consists of unrelated snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:32:44Z",
+  "duration_seconds": 3.844,
+  "error": null
+}

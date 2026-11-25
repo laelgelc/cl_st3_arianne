@@ -1,0 +1,77 @@
+{
+  "article_id": "70523471",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70523471.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70523471.json"
+  },
+  "manifest_row": {
+    "article_id": "70523471",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70523471.txt",
+    "now_field_2": "585",
+    "date_original": "19-02-17",
+    "date_iso": "2019-02-17",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00428/hamilton-gardens-arts-festival.htm",
+    "title": "Hamilton Gardens Arts Festival",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Hamilton Gardens Arts Festival",
+    "climate_relevance": "Climate change appears only in a separate Greenpeace news teaser, not in the festival article.",
+    "reason": "The identifiable main article describes an arts festival and contains no climate discourse. The only climate reference is in an unrelated snippet, so it does not provide meaningful climate material for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "be5d37611c598e4b075c54dc70f2b7ecbdf048e13e10e436929b0638d82b92c6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9919b056824703522bc5cbb4760ec229adc5d9bfcfb77c25f5014d273ebcdb77",
+    "raw_response_text_sha256": "b99ce875c2dbf80c991aca5c2e4e0fc3f91cf4892b2116f010ec4e5e8d6fe2f7"
+  },
+  "api_metadata": {
+    "id": "resp_00191fb12afcbb60006b063d3be63887d1a7794404016f8da3",
+    "model": "gpt-6-luna",
+    "created_at": 1795571004.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1261,
+      "input_tokens_details": {
+        "cache_write_tokens": 1258,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1258
+        }
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 1508
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Hamilton Gardens Arts Festival\",\n  \"climate_relevance\": \"Climate change appears only in a separate Greenpeace news teaser, not in the festival article.\",\n  \"reason\": \"The identifiable main article describes an arts festival and contains no climate discourse. The only climate reference is in an unrelated snippet, so it does not provide meaningful climate material for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:26Z",
+  "duration_seconds": 2.271,
+  "error": null
+}

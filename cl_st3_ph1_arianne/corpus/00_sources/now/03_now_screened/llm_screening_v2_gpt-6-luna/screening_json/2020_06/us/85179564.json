@@ -1,0 +1,77 @@
+{
+  "article_id": "85179564",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/us/85179564.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/us/85179564.json"
+  },
+  "manifest_row": {
+    "article_id": "85179564",
+    "group": "2020_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/us/85179564.txt",
+    "now_field_2": "990",
+    "date_original": "20-06-15",
+    "date_iso": "2020-06-15",
+    "source_name": "Axios",
+    "url": "https://www.axios.com/coronavirus-shared-cars-bikes-f80f27a8-1bc9-408d-a1a9-0a556b850f7b.html",
+    "title": "The coronavirus creates bigger risks for shared mobility",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-us6.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "The effects of the coronavirus pandemic on shared mobility and personal transportation choices",
+    "climate_relevance": "The article connects pandemic-era shifts in transportation to oil demand and climate change, and notes that transportation is the nation's largest source of carbon emissions. Climate implications are relevant but secondary to its focus on shared mobility and health risks.",
+    "reason": "The identifiable main article is about shared transportation during the pandemic, not climate change. It contains meaningful discussion of how transportation choices and trends could affect emissions and climate, so it is peripheral rather than excluded. The text also includes unrelated snippets after the 'Go deeper' heading.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f1dc1cb0c0a144e3befba074da45086281b064129a6eb0de59876c07d40205d3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d7952eb89cad0df96895ca787465173c5496cff4e32713387d5e0ca247ca2c82",
+    "raw_response_text_sha256": "84f2fcb43380f566550b4709a988f4698e267c407a6eb8a7a5ced3861814ae18"
+  },
+  "api_metadata": {
+    "id": "resp_0a12943f14c3552c006b064b690a4487d19cb3ab126e6da116",
+    "model": "gpt-6-luna",
+    "created_at": 1795574633.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1778,
+      "input_tokens_details": {
+        "cache_write_tokens": 1775,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1775
+        }
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 2031
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The effects of the coronavirus pandemic on shared mobility and personal transportation choices\",\n  \"climate_relevance\": \"The article connects pandemic-era shifts in transportation to oil demand and climate change, and notes that transportation is the nation's largest source of carbon emissions. Climate implications are relevant but secondary to its focus on shared mobility and health risks.\",\n  \"reason\": \"The identifiable main article is about shared transportation during the pandemic, not climate change. It contains meaningful discussion of how transportation choices and trends could affect emissions and climate, so it is peripheral rather than excluded. The text also includes unrelated snippets after the 'Go deeper' heading.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:43:55Z",
+  "duration_seconds": 2.399,
+  "error": null
+}

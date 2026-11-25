@@ -1,0 +1,77 @@
+{
+  "article_id": "4877500",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_11/za/4877500.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_11/za/4877500.json"
+  },
+  "manifest_row": {
+    "article_id": "4877500",
+    "group": "2015_11",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_11/za/4877500.txt",
+    "now_field_2": "370",
+    "date_original": "15-11-30",
+    "date_iso": "2015-11-30",
+    "source_name": "News24",
+    "url": "http://www.news24.com/Green/News/russia-may-cause-environmental-disaster-in-ukraine-poroshenko-20151130",
+    "title": "Russia may cause 'environmental disaster' in Ukraine: Poroshenko",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-11-xje/15-11-za.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "climate_role": "background",
+    "main_topic": "Ukraine's conflict with Russia and its environmental impacts, as discussed at the Paris climate conference",
+    "climate_relevance": "The text mentions pollution and risks of environmental disaster in eastern Ukraine, and includes Ukraine's emissions pledge and a claim that reconstruction could help combat climate change.",
+    "reason": "The main focus is Poroshenko's accusations about the conflict and its environmental damage. Climate change is meaningfully connected through the conference setting, emissions commitments, and reconstruction, but is not the central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3d9766f438368a3a247142207a0e376c61da33c5c0903e99b4494ad5a5e8b9c1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d21a51eb70553614ad62ab7c9aaa2c741ed4ea4a022971c8e06092126ac1cc37",
+    "raw_response_text_sha256": "e1a2ba9a876bd1cf86c3d0232e95ce66953136308d75b5531cea7e2238d0e031"
+  },
+  "api_metadata": {
+    "id": "resp_0c95409564459035006b0626fd474087d1929f168879f82616",
+    "model": "gpt-6-luna",
+    "created_at": 1795565309.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 990,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 358,
+      "output_tokens_details": {
+        "reasoning_tokens": 193
+      },
+      "total_tokens": 1348
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Ukraine's conflict with Russia and its environmental impacts, as discussed at the Paris climate conference\",\n  \"climate_relevance\": \"The text mentions pollution and risks of environmental disaster in eastern Ukraine, and includes Ukraine's emissions pledge and a claim that reconstruction could help combat climate change.\",\n  \"reason\": \"The main focus is Poroshenko's accusations about the conflict and its environmental damage. Climate change is meaningfully connected through the conference setting, emissions commitments, and reconstruction, but is not the central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:08:32Z",
+  "duration_seconds": 3.235,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "71358634",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/au/71358634.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/au/71358634.json"
+  },
+  "manifest_row": {
+    "article_id": "71358634",
+    "group": "2019_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/au/71358634.txt",
+    "now_field_2": "2134",
+    "date_original": "19-11-06",
+    "date_iso": "2019-11-06",
+    "source_name": "brisbanetimes.com.au",
+    "url": "https://www.brisbanetimes.com.au/business/companies/pilots-v-plane-the-final-minutes-inside-the-cockpit-of-doomed-ethiopian-airlines-flight-302-revealed-20190621-p51zua.html",
+    "title": "Boeing 737 MAX crisis: Ethiopian Airlines flight 302's ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The Ethiopian Airlines Flight 302 crash and Boeing 737 MAX flight-control and pilot-training issues.",
+    "climate_relevance": "The identifiable main article contains no meaningful climate-change discourse. A separate Aramco IPO article appended to the text mentions climate activism and pressure on oil companies, but that is not the main article.",
+    "reason": "The main article is about aviation safety, not climate change. The climate-related material appears only in a distinct, concatenated article, so it does not make the identifiable main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6a0c5e56baa5545d9b76485dd0b3c4b0c55a605d80205b92dca774800be4f6c8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f7bf2cae5b1afbfb99c0d0f7ecbf27b2175718815ee1de095332dbecd85851d7",
+    "raw_response_text_sha256": "78562787b6ea87d386af9bec63d6cb726d08504ffc812fe458cf375f23770e82"
+  },
+  "api_metadata": {
+    "id": "resp_0cc90f78ac72364b006b06410427d087d19649f2fef3c2cd66",
+    "model": "gpt-6-luna",
+    "created_at": 1795571972.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4132,
+      "input_tokens_details": {
+        "cache_write_tokens": 4129,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4129
+        }
+      },
+      "output_tokens": 586,
+      "output_tokens_details": {
+        "reasoning_tokens": 408
+      },
+      "total_tokens": 4718
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The Ethiopian Airlines Flight 302 crash and Boeing 737 MAX flight-control and pilot-training issues.\",\n  \"climate_relevance\": \"The identifiable main article contains no meaningful climate-change discourse. A separate Aramco IPO article appended to the text mentions climate activism and pressure on oil companies, but that is not the main article.\",\n  \"reason\": \"The main article is about aviation safety, not climate change. The climate-related material appears only in a distinct, concatenated article, so it does not make the identifiable main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:59:37Z",
+  "duration_seconds": 5.014,
+  "error": null
+}

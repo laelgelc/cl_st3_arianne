@@ -1,0 +1,77 @@
+{
+  "article_id": "21361300",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/us/21361300.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/us/21361300.json"
+  },
+  "manifest_row": {
+    "article_id": "21361300",
+    "group": "2017_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/us/21361300.txt",
+    "now_field_2": "926",
+    "date_original": "17-10-28",
+    "date_iso": "2017-10-28",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/risky-business-project-fears-u-s-can-t-weather-the-storm-of-climate-change/453693673/",
+    "title": "Risky Business Project fears US can't weather the storm of climate ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-US.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Business perspectives on climate risks and the economic feasibility of transitioning to a low-carbon economy",
+    "climate_relevance": "The main article discusses climate impacts on agriculture and business, adaptation and mitigation, clean-energy investment, emissions reduction, carbon pricing, and related economic trade-offs.",
+    "reason": "Climate change and responses to it are the central subject of the report and interview. A final sentence about student-loan forgiveness appears unrelated and seems to be an appended snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e14126b09241de58ea2c7d62ed1ca76e7b3eee2d98bca7110a3f5da0e254a763",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d70799071fbf64f117b1ea9e35009ba3b35fce65b14b4ade93c95ef21e34b7a5",
+    "raw_response_text_sha256": "748bc7bc276b3f3721b6430d837422e6459c1855a22b3210a289412aec0d9809"
+  },
+  "api_metadata": {
+    "id": "resp_07615c4472ff5285006b060eadabb087d2b2374bd2841e29b9",
+    "model": "gpt-6-luna",
+    "created_at": 1795559085.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1667,
+      "input_tokens_details": {
+        "cache_write_tokens": 1664,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1664
+        }
+      },
+      "output_tokens": 223,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 1890
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Business perspectives on climate risks and the economic feasibility of transitioning to a low-carbon economy\",\n  \"climate_relevance\": \"The main article discusses climate impacts on agriculture and business, adaptation and mitigation, clean-energy investment, emissions reduction, carbon pricing, and related economic trade-offs.\",\n  \"reason\": \"Climate change and responses to it are the central subject of the report and interview. A final sentence about student-loan forgiveness appears unrelated and seems to be an appended snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:24:47Z",
+  "duration_seconds": 2.202,
+  "error": null
+}

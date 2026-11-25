@@ -1,0 +1,77 @@
+{
+  "article_id": "41316006",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/gb/41316006.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/gb/41316006.json"
+  },
+  "manifest_row": {
+    "article_id": "41316006",
+    "group": "2019_09",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/gb/41316006.txt",
+    "now_field_2": "405",
+    "date_original": "19-09-01",
+    "date_iso": "2019-09-01",
+    "source_name": "zawya.com",
+    "url": "https://www.zawya.com/mena/en/legal/story/Coordination_needed_to_stamp_out_illegal_trade_in_birds_of_prey_says_Al_Mansouri-WAM20190827133440930/",
+    "title": "Co-ordination needed to stamp out illegal trade in birds ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Efforts to combat the illegal capture and trade of birds of prey",
+    "climate_relevance": "Climate change appears only in the official title of the UAE Minister of Climate Change and the Environment; the article contains no meaningful discussion of climate change.",
+    "reason": "The article focuses on falconry, wildlife conservation, and illegal trade in birds of prey. The climate reference is incidental, and the trailing stock heading and Reuters notice are unrelated boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c470fac88c450270ad3e99c58e106dfe3a669259dd572c13df736ff7f6380845",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "74c963e5eaed05fed2ff000bddf6888befbfc7513223c25a65f00a7ddd4cc699",
+    "raw_response_text_sha256": "3a95796e2e2c816ac3503f999ea9fd443e20130308fceaed8e5d75d5fceeb5b8"
+  },
+  "api_metadata": {
+    "id": "resp_0284eacdeb88bfb5006b06212abbe087d2b4c08dba27f6d727",
+    "model": "gpt-6-luna",
+    "created_at": 1795563818.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1033,
+      "input_tokens_details": {
+        "cache_write_tokens": 1030,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1030
+        }
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 1320
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Efforts to combat the illegal capture and trade of birds of prey\",\n  \"climate_relevance\": \"Climate change appears only in the official title of the UAE Minister of Climate Change and the Environment; the article contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on falconry, wildlife conservation, and illegal trade in birds of prey. The climate reference is incidental, and the trailing stock heading and Reuters notice are unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:43:40Z",
+  "duration_seconds": 2.308,
+  "error": null
+}

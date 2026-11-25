@@ -1,0 +1,77 @@
+{
+  "article_id": "70501726",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70501726.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70501726.json"
+  },
+  "manifest_row": {
+    "article_id": "70501726",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70501726.txt",
+    "now_field_2": "753",
+    "date_original": "19-02-10",
+    "date_iso": "2019-02-10",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PO1902/S00065/government-in-danger-of-breaching-treaty-of-waitangi.htm",
+    "title": "Government in danger of breaching Treaty of Waitangi",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Abortion and the Treaty of Waitangi",
+    "climate_relevance": "Climate change appears only in a separate related-news snippet about a National Party policy announcement, not in the identifiable main article.",
+    "reason": "The main article concerns abortion and Treaty rights. The climate reference is confined to an unrelated snippet and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cdaf00e94c8398c9e018a08a55a2f62b9ee639514a2209a4d22d996f9265739a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ebc655a4c9fdfe8c79415430779fba0769bab368d0e540f1bb5661807e09498f",
+    "raw_response_text_sha256": "8bdb65c05a54a682fbf997b4ac4bb4a1e93c4a5440331fe11d40efc92473224c"
+  },
+  "api_metadata": {
+    "id": "resp_0ab629d205826d10006b063d04362c87d1b2150b8de615367d",
+    "model": "gpt-6-luna",
+    "created_at": 1795570948.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1410,
+      "input_tokens_details": {
+        "cache_write_tokens": 1407,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1407
+        }
+      },
+      "output_tokens": 345,
+      "output_tokens_details": {
+        "reasoning_tokens": 203
+      },
+      "total_tokens": 1755
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Abortion and the Treaty of Waitangi\",\n  \"climate_relevance\": \"Climate change appears only in a separate related-news snippet about a National Party policy announcement, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns abortion and Treaty rights. The climate reference is confined to an unrelated snippet and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:30Z",
+  "duration_seconds": 2.743,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31844058",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/us/31844058.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/us/31844058.json"
+  },
+  "manifest_row": {
+    "article_id": "31844058",
+    "group": "2020_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/us/31844058.txt",
+    "now_field_2": "1125",
+    "date_original": "20-05-18",
+    "date_iso": "2020-05-18",
+    "source_name": "eurekalert.org",
+    "url": "https://www.eurekalert.org/pub_releases/2020-05/cioe-fwd051320.php",
+    "title": "Food webs determine the fate of mercury pollution in the ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Mercury movement through Colorado River food webs and the effects of flooding and invasive species.",
+    "climate_relevance": "Climate change appears only in a generic description of the Cary Institute's research; the article does not meaningfully discuss it.",
+    "reason": "The article focuses on mercury exposure and ecosystem food webs. Its sole climate reference is institutional boilerplate, not substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "825e36abb91b2c08959552a4b7db18b37f4e46c547fb5cc2b13b729758fa7355",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3f8b0964358129f541c35d1ce3f3c828bd952b62e01aeb7f88604134102c9237",
+    "raw_response_text_sha256": "f9f1a004bea7ea9fcdc5759a3bd4230678f5c7308cb4f7d51d9bf315e5f8e8fa"
+  },
+  "api_metadata": {
+    "id": "resp_0ea11ea70b9a4db9006b0619b6339c87d2ab66b6674af7a7a6",
+    "model": "gpt-6-luna",
+    "created_at": 1795561910.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1931,
+      "input_tokens_details": {
+        "cache_write_tokens": 1928,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1928
+        }
+      },
+      "output_tokens": 200,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 2131
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Mercury movement through Colorado River food webs and the effects of flooding and invasive species.\",\n  \"climate_relevance\": \"Climate change appears only in a generic description of the Cary Institute's research; the article does not meaningfully discuss it.\",\n  \"reason\": \"The article focuses on mercury exposure and ecosystem food webs. Its sole climate reference is institutional boilerplate, not substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:11:51Z",
+  "duration_seconds": 1.753,
+  "error": null
+}

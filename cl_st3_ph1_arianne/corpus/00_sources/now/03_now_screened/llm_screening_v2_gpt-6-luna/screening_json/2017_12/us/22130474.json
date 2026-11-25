@@ -1,0 +1,77 @@
+{
+  "article_id": "22130474",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_12/us/22130474.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_12/us/22130474.json"
+  },
+  "manifest_row": {
+    "article_id": "22130474",
+    "group": "2017_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_12/us/22130474.txt",
+    "now_field_2": "512",
+    "date_original": "17-12-09",
+    "date_iso": "2017-12-09",
+    "source_name": "Palm Beach Daily News",
+    "url": "http://www.palmbeachdailynews.com/news/local-obituaries/conair-founder-leandro-rizzuto-palm-beach-dies/AcOwvjGwkyDC1KyBclJnJK/",
+    "title": "Conair founder Leandro Rizzuto, of Palm Beach, dies",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-12.txt\"]",
+    "metadata_article_files": "[\"text-17-12/text_17-12-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Obituary for Conair co-founder Leandro Rizzuto",
+    "climate_relevance": "Climate change appears only in a related-news snippet about a developer urging Palm Beach officials to address flood and wind risks; it is not part of the obituary.",
+    "reason": "The identifiable main article concerns Rizzuto's life and death and contains no climate discourse. The climate-related material is an unrelated snippet, not meaningful climate coverage in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f6b3883abf005ca069f9e26a0794d067e50a2ccb1aa9a20a298f19e4147c6071",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2cc7b1d9fadd271d8d508a2e808d6d7db00757949d39f94ed3243260b28a7921",
+    "raw_response_text_sha256": "46e25e3eb9698418d050201290151ec8dfe741f4a962fcf52380aad5faae2a68"
+  },
+  "api_metadata": {
+    "id": "resp_06d9f09213f0b224006b060fcd724c87d2ae61b4469be66968",
+    "model": "gpt-6-luna",
+    "created_at": 1795559373.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1216,
+      "input_tokens_details": {
+        "cache_write_tokens": 1213,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1213
+        }
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 1509
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Obituary for Conair co-founder Leandro Rizzuto\",\n  \"climate_relevance\": \"Climate change appears only in a related-news snippet about a developer urging Palm Beach officials to address flood and wind risks; it is not part of the obituary.\",\n  \"reason\": \"The identifiable main article concerns Rizzuto's life and death and contains no climate discourse. The climate-related material is an unrelated snippet, not meaningful climate coverage in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:29:35Z",
+  "duration_seconds": 2.389,
+  "error": null
+}

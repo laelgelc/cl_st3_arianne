@@ -1,0 +1,77 @@
+{
+  "article_id": "40895321",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40895321.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40895321.json"
+  },
+  "manifest_row": {
+    "article_id": "40895321",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40895321.txt",
+    "now_field_2": "313",
+    "date_original": "19-04-29",
+    "date_iso": "2019-04-29",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/29/fiat-taps-2-executives-to-replace-powertrain-chief/",
+    "title": "Fiat taps 2 executives to replace powertrain chief",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "Fiat Chrysler executive appointments and powertrain strategy",
+    "climate_relevance": "The article discusses stricter emissions standards, vehicle electrification, and a deal to meet EU carbon dioxide limits, connecting the company’s strategy to emissions reduction.",
+    "reason": "Climate-related emissions are a meaningful part of the automotive strategy discussion, but climate change is not the article’s central subject. The opening lines contain separate financial, chemicals, and sustainable-energy news snippets; the identifiable main article concerns Fiat Chrysler.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "36d49ee8ce71db9a7e6348d70374653ff08d5424c5074ed96197919f4a698596",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8d93ba8fec3a3d3bc7a6c3d0d8508851e6fdac8137bcbcd4ed04cfc9bbc477bf",
+    "raw_response_text_sha256": "352c544de6f08639159d9276056ce535d33a5edf96463a54fd71b2b92190314e"
+  },
+  "api_metadata": {
+    "id": "resp_0b12b1da03e8908a006b062042f26487d2abb72c166a45b7aa",
+    "model": "gpt-6-luna",
+    "created_at": 1795563587.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 913,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 1188
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Fiat Chrysler executive appointments and powertrain strategy\",\n  \"climate_relevance\": \"The article discusses stricter emissions standards, vehicle electrification, and a deal to meet EU carbon dioxide limits, connecting the company’s strategy to emissions reduction.\",\n  \"reason\": \"Climate-related emissions are a meaningful part of the automotive strategy discussion, but climate change is not the article’s central subject. The opening lines contain separate financial, chemicals, and sustainable-energy news snippets; the identifiable main article concerns Fiat Chrysler.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:49Z",
+  "duration_seconds": 2.382,
+  "error": null
+}

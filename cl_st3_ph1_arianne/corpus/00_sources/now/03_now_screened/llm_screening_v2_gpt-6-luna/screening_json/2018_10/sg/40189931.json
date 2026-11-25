@@ -1,0 +1,77 @@
+{
+  "article_id": "40189931",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/sg/40189931.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/sg/40189931.json"
+  },
+  "manifest_row": {
+    "article_id": "40189931",
+    "group": "2018_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/sg/40189931.txt",
+    "now_field_2": "478",
+    "date_original": "18-10-24",
+    "date_iso": "2018-10-24",
+    "source_name": "The News Minute",
+    "url": "https://www.thenewsminute.com/article/new-mullaperiyar-dam-study-tn-parties-object-union-ministry-nod-eps-writes-pm-90509",
+    "title": "New Mullaperiyar dam study: TN parties object union ministry nod ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Political and legal dispute over an environmental impact assessment for a proposed new dam at Mullaperiyar",
+    "climate_relevance": "Climate change appears only as part of the ministry's official name; the text does not discuss climate change or its implications.",
+    "reason": "The article concerns the proposed dam, intergovernmental disagreement, and court orders. References to environmental impact do not develop climate-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d43d6c033adb64760b76e856092c82dbae7b241fe97fae749f20b1e2aeecdc4e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "161bee0a335b48d33716929baefcfe973de9b36cc33816cacbb38ef752c37f65",
+    "raw_response_text_sha256": "633b01c84f19cda2ce090743b742400eac1716f0f014a9ce13e4140d0a0514db"
+  },
+  "api_metadata": {
+    "id": "resp_04f0affa7df56304006b061e775fa487d2a9dbe1132721bcb7",
+    "model": "gpt-6-luna",
+    "created_at": 1795563127.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1071,
+      "input_tokens_details": {
+        "cache_write_tokens": 1068,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1068
+        }
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1272
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Political and legal dispute over an environmental impact assessment for a proposed new dam at Mullaperiyar\",\n  \"climate_relevance\": \"Climate change appears only as part of the ministry's official name; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article concerns the proposed dam, intergovernmental disagreement, and court orders. References to environmental impact do not develop climate-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:32:09Z",
+  "duration_seconds": 2.176,
+  "error": null
+}

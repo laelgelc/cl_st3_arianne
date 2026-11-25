@@ -1,0 +1,77 @@
+{
+  "article_id": "70136765",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/us/70136765.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/us/70136765.json"
+  },
+  "manifest_row": {
+    "article_id": "70136765",
+    "group": "2018_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/us/70136765.txt",
+    "now_field_2": "1485",
+    "date_original": "18-10-12",
+    "date_iso": "2018-10-12",
+    "source_name": "New York Times",
+    "url": "https://www.nytimes.com/2018/10/12/world/canada/ban-handguns-assault-weapons-canada-letter.html",
+    "title": "Debating the Future of Handguns: The Canada Letter",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-us-1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Canadian debate over handgun and assault-weapon restrictions",
+    "climate_relevance": "Climate change is briefly listed as one concern among 18-year-olds in a separate feature about girls’ lives.",
+    "reason": "The text is chiefly a newsletter about gun policy and includes several unrelated sections. Climate change receives only a passing mention in a list of young people’s concerns, with no further discussion that would meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "37525f119c37f7ef2c28edabacd4d7d3e7f9f03279174996da8b9c3a71beced7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cc49aeb8b943220e8f05db02e5519f61d64a064161a9773d8795cbdbba90b7f4",
+    "raw_response_text_sha256": "a19ee345931103e1ffd41d37061060a0fc9ec92441d34b65b668b86727e051aa"
+  },
+  "api_metadata": {
+    "id": "resp_060bc40b024292d4006b063b093d2487d18fa38204b6067988",
+    "model": "gpt-6-luna",
+    "created_at": 1795570441.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2485,
+      "input_tokens_details": {
+        "cache_write_tokens": 2482,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2482
+        }
+      },
+      "output_tokens": 345,
+      "output_tokens_details": {
+        "reasoning_tokens": 194
+      },
+      "total_tokens": 2830
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Canadian debate over handgun and assault-weapon restrictions\",\n  \"climate_relevance\": \"Climate change is briefly listed as one concern among 18-year-olds in a separate feature about girls’ lives.\",\n  \"reason\": \"The text is chiefly a newsletter about gun policy and includes several unrelated sections. Climate change receives only a passing mention in a list of young people’s concerns, with no further discussion that would meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:34:04Z",
+  "duration_seconds": 3.182,
+  "error": null
+}

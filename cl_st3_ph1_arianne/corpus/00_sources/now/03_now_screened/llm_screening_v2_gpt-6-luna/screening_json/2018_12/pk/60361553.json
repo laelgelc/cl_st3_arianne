@@ -1,0 +1,77 @@
+{
+  "article_id": "60361553",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/pk/60361553.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/pk/60361553.json"
+  },
+  "manifest_row": {
+    "article_id": "60361553",
+    "group": "2018_12",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/pk/60361553.txt",
+    "now_field_2": "168",
+    "date_original": "18-12-18",
+    "date_iso": "2018-12-18",
+    "source_name": "The Nation",
+    "url": "https://nation.com.pk/18-Dec-2018/air-pollution-free-pakistan-is-vision-of-pm-zartaj-gul",
+    "title": "Air pollution free Pakistan is vision of PM: Zartaj Gul",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A government initiative to reduce industrial air pollution in Pakistan",
+    "climate_relevance": "The article discusses air pollution control, but does not meaningfully address climate change, global warming, or their causes or impacts. The climate-change ministry title is incidental.",
+    "reason": "The main subject is an air-pollution-control plant and the government's efforts to reduce local air pollution; climate change is not discussed.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ef66af47e4075dba8dcc563078d99010febcf28c1223029b4228cf73e2447d6e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "30ad85270cb889dd06d54e51cb249b0a8e3a4686a83c6f619e7adf8005167d20",
+    "raw_response_text_sha256": "f3e98c1053f37c02979573d11c0356625700db20eb79a4f65120f02475950317"
+  },
+  "api_metadata": {
+    "id": "resp_0d0f6ae369443428006b06324cda8487d191317cf0bae318ee",
+    "model": "gpt-6-luna",
+    "created_at": 1795568204.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 685,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 900
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A government initiative to reduce industrial air pollution in Pakistan\",\n  \"climate_relevance\": \"The article discusses air pollution control, but does not meaningfully address climate change, global warming, or their causes or impacts. The climate-change ministry title is incidental.\",\n  \"reason\": \"The main subject is an air-pollution-control plant and the government's efforts to reduce local air pollution; climate change is not discussed.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:56:46Z",
+  "duration_seconds": 1.767,
+  "error": null
+}

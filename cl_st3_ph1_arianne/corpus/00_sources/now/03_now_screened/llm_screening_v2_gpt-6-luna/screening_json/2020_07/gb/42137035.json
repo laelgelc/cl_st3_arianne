@@ -1,0 +1,77 @@
+{
+  "article_id": "42137035",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/gb/42137035.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/gb/42137035.json"
+  },
+  "manifest_row": {
+    "article_id": "42137035",
+    "group": "2020_07",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/gb/42137035.txt",
+    "now_field_2": "452",
+    "date_original": "20-07-22",
+    "date_iso": "2020-07-22",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/keir-starmer-slams-pm-over-flip-flop-comments-1-6757816",
+    "title": "Boris Johnson's `flip flop' gag backfires during PMQs ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Boris Johnson and Keir Starmer's exchange at Prime Minister's Questions",
+    "climate_relevance": "Climate change is mentioned only in a duplicated promotional description of the publication's coverage, not discussed in the article.",
+    "reason": "The identifiable article concerns Brexit, Russia Today, and a parliamentary exchange. The climate reference is boilerplate and offers no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1761c51562f675a7b811cce8e201643edc80b9ee743d96a2fc61d1cbb64b3951",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9d6dbd05888970cc2eb0ac7239dfc25147a63fce247b71f89b4a67dcba4cdbb9",
+    "raw_response_text_sha256": "7f77cdae199149b40e1c1af22de6a2e57b7d40b5b0e164ffb77910b4857232ae"
+  },
+  "api_metadata": {
+    "id": "resp_0893ba408c42ec2e006b0624b3904087d2a5795c3f6aeda774",
+    "model": "gpt-6-luna",
+    "created_at": 1795564723.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1048,
+      "input_tokens_details": {
+        "cache_write_tokens": 1045,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1045
+        }
+      },
+      "output_tokens": 249,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 1297
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Boris Johnson and Keir Starmer's exchange at Prime Minister's Questions\",\n  \"climate_relevance\": \"Climate change is mentioned only in a duplicated promotional description of the publication's coverage, not discussed in the article.\",\n  \"reason\": \"The identifiable article concerns Brexit, Russia Today, and a parliamentary exchange. The climate reference is boilerplate and offers no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:58:45Z",
+  "duration_seconds": 2.251,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "82414481",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82414481.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82414481.json"
+  },
+  "manifest_row": {
+    "article_id": "82414481",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82414481.txt",
+    "now_field_2": "146",
+    "date_original": "19-11-29",
+    "date_iso": "2019-11-29",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191129220037-prlpe",
+    "title": "UK PM Johnson says important to enforce terrorism sentences after London Bridge attack",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us7.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Terrorism-related sentencing and prison release",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news organization's coverage areas.",
+    "reason": "The article is about criminal sentencing and an election; the climate reference is unrelated boilerplate and offers no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e88bf5d3964e9e08ee72ae345508eb30d00b010af8c3cfd604a13338799176e3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "261e650aa8640d1ad38f98c6df0985326c1ea55420dd61b533409fff0f7c9a51",
+    "raw_response_text_sha256": "90790323ffd94da9245ef03f05d2e622fbf1b5f5580b1748392783d6ced1e64b"
+  },
+  "api_metadata": {
+    "id": "resp_05d5d2d848d56b7e006b064874406c87d1b343503302d999e8",
+    "model": "gpt-6-luna",
+    "created_at": 1795573876.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 675,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 142,
+      "output_tokens_details": {
+        "reasoning_tokens": 14
+      },
+      "total_tokens": 817
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Terrorism-related sentencing and prison release\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news organization's coverage areas.\",\n  \"reason\": \"The article is about criminal sentencing and an election; the climate reference is unrelated boilerplate and offers no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:31:17Z",
+  "duration_seconds": 1.444,
+  "error": null
+}

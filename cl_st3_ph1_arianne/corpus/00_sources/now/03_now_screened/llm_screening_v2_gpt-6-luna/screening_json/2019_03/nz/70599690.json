@@ -1,0 +1,77 @@
+{
+  "article_id": "70599690",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70599690.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70599690.json"
+  },
+  "manifest_row": {
+    "article_id": "70599690",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70599690.txt",
+    "now_field_2": "325",
+    "date_original": "19-03-16",
+    "date_iso": "2019-03-16",
+    "source_name": "Stuff",
+    "url": "https://www.stuff.co.nz/taranaki-daily-news/news/south-taranaki-star/111263248/large-numbers-turnout-across-taranaki-for-annual-seaweek-event",
+    "title": "Large numbers turnout across Taranaki for annual seaweek event",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Seaweek events and marine conservation activities in Taranaki",
+    "climate_relevance": "Climate change is mentioned only as part of a list of Seaweek activities, in reference to an author reading session.",
+    "reason": "The article focuses on snorkelling, marine reserves, beach cleans, and pollution awareness. It contains no substantive discussion of climate change or its implications.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "70a1148d884aac1b14e6d8ff391ffac5759cfab4fa24df2443fdb6b0884c7bc3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c3ac1f4db49fc8f1587c239c2cc9a9eb466b9545fffc93f29865dc1a0c1afde4",
+    "raw_response_text_sha256": "d9d67e835b9b35719426580d91402d7e001667b94a20ddb1e332c7a69d3ac999"
+  },
+  "api_metadata": {
+    "id": "resp_01c447a6571df0b2006b063de049d887d1af5387d90f7140d0",
+    "model": "gpt-6-luna",
+    "created_at": 1795571168.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 925,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1130
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Seaweek events and marine conservation activities in Taranaki\",\n  \"climate_relevance\": \"Climate change is mentioned only as part of a list of Seaweek activities, in reference to an author reading session.\",\n  \"reason\": \"The article focuses on snorkelling, marine reserves, beach cleans, and pollution awareness. It contains no substantive discussion of climate change or its implications.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:46:10Z",
+  "duration_seconds": 1.966,
+  "error": null
+}

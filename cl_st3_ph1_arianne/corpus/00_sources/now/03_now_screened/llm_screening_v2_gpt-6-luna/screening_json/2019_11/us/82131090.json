@@ -1,0 +1,77 @@
+{
+  "article_id": "82131090",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82131090.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82131090.json"
+  },
+  "manifest_row": {
+    "article_id": "82131090",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82131090.txt",
+    "now_field_2": "147",
+    "date_original": "19-11-13",
+    "date_iso": "2019-11-13",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191113192753-0kd0f",
+    "title": "Trump expects to \\\"work something out\\\" with Erdogan, Senators on F-35s",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us8.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "U.S.-Turkey discussions about the F-35 fighter jet program",
+    "climate_relevance": "Climate change appears only in a boilerplate description of Reuters' coverage areas.",
+    "reason": "The article is about the F-35 program and Turkey's purchase of a Russian missile defense system; it contains no meaningful climate-change discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "eac14a60e1ab0f41357d925e6eff3c43b53b839fc0d20db34b301e4b9ef25cd2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a362bd6bdcb14136e9e40b48fafd6ac2da977c7d669bf2030e3154652876d13b",
+    "raw_response_text_sha256": "5cfea0fff8f8f3121813b4c26b32b413c9e26b0642acd5d0cac3832f279c7e0a"
+  },
+  "api_metadata": {
+    "id": "resp_021cd976171148c8006b06481a430887d1b3fef2e6533d7d29",
+    "model": "gpt-6-luna",
+    "created_at": 1795573786.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 682,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 186,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 868
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"U.S.-Turkey discussions about the F-35 fighter jet program\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of Reuters' coverage areas.\",\n  \"reason\": \"The article is about the F-35 program and Turkey's purchase of a Russian missile defense system; it contains no meaningful climate-change discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:29:48Z",
+  "duration_seconds": 1.955,
+  "error": null
+}

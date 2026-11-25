@@ -1,0 +1,77 @@
+{
+  "article_id": "23641470",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_03/ie/23641470.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_03/ie/23641470.json"
+  },
+  "manifest_row": {
+    "article_id": "23641470",
+    "group": "2018_03",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_03/ie/23641470.txt",
+    "now_field_2": "1619",
+    "date_original": "18-03-12",
+    "date_iso": "2018-03-12",
+    "source_name": "Irish Examiner",
+    "url": "https://www.irishexaminer.com/breakingnews/lifestyle/tide-turns-against-plastics-easkey-britton-is-tackling-the-challenge-of-plastic-in-our-oceans-832187.html",
+    "title": "Tide turns against plastics: Easkey Britton is tackling the challenge ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-03.txt\"]",
+    "metadata_article_files": "[\"text-18-03/text_18-03-IE.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Plastic pollution in the oceans and efforts to reduce single-use plastics",
+    "climate_relevance": "Climate change is briefly named in a list of threats facing the ocean, alongside acidification and overfishing, but is not discussed further.",
+    "reason": "The article focuses on plastic pollution, its impacts, and responses. The sole climate-change reference is an incidental list item and does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a2488b50bf40cbb9c84540f42394913263c9ad9141a069548c1fa800765442d9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "01be86e6d6b12c35e6b6adab4e9d0d9f3050819d0ca6e4ea8641c6e411455c7f",
+    "raw_response_text_sha256": "35ba661d06b060a566a1be46c11bafba54b197dfaf6c0e402917642f2afc9f74"
+  },
+  "api_metadata": {
+    "id": "resp_0bb6b912bc4256a0006b06117a0da887d29747ef7befbb0cd1",
+    "model": "gpt-6-luna",
+    "created_at": 1795559802.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2627,
+      "input_tokens_details": {
+        "cache_write_tokens": 2624,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2624
+        }
+      },
+      "output_tokens": 378,
+      "output_tokens_details": {
+        "reasoning_tokens": 230
+      },
+      "total_tokens": 3005
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Plastic pollution in the oceans and efforts to reduce single-use plastics\",\n  \"climate_relevance\": \"Climate change is briefly named in a list of threats facing the ocean, alongside acidification and overfishing, but is not discussed further.\",\n  \"reason\": \"The article focuses on plastic pollution, its impacts, and responses. The sole climate-change reference is an incidental list item and does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:36:44Z",
+  "duration_seconds": 2.961,
+  "error": null
+}

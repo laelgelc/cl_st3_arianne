@@ -1,0 +1,77 @@
+{
+  "article_id": "13968622",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_08/us/13968622.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_08/us/13968622.json"
+  },
+  "manifest_row": {
+    "article_id": "13968622",
+    "group": "2016_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_08/us/13968622.txt",
+    "now_field_2": "928",
+    "date_original": "16-08-22",
+    "date_iso": "2016-08-22",
+    "source_name": "Phys.Org",
+    "url": "http://phys.org/news/2016-08-reveals-meteorological-impact-solar-eclipse.html",
+    "title": "Study reveals meteorological impact of 2015 solar eclipse",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-08-pcg/16-08-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Meteorological effects of the 2015 solar eclipse",
+    "climate_relevance": "Climate change is briefly mentioned in a quotation, but the article does not discuss it or its implications.",
+    "reason": "The main article reports on how the solar eclipse affected temperature, wind, pressure, and cloud cover. Its brief, incomplete reference to the importance of climate change is incidental rather than meaningful climate discourse. Unrelated recommended-content snippets also appear after the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "46221cf2c80a2efa45c734e1f342e20f39d1fb0c6e1b14da595905df1849d997",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c9e2482ccaa175dc9466f8e325cfafb7456a817e85e40e5b0af7e527ce0d2874",
+    "raw_response_text_sha256": "89628c164b578932dd21503236caad9299f91e6b2582bb7446875c74676459bd"
+  },
+  "api_metadata": {
+    "id": "resp_0bfbaf28dff602f9006b060560200487d28d8bc6697c99bb52",
+    "model": "gpt-6-luna",
+    "created_at": 1795556704.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1749,
+      "input_tokens_details": {
+        "cache_write_tokens": 1746,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1746
+        }
+      },
+      "output_tokens": 352,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 2101
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Meteorological effects of the 2015 solar eclipse\",\n  \"climate_relevance\": \"Climate change is briefly mentioned in a quotation, but the article does not discuss it or its implications.\",\n  \"reason\": \"The main article reports on how the solar eclipse affected temperature, wind, pressure, and cloud cover. Its brief, incomplete reference to the importance of climate change is incidental rather than meaningful climate discourse. Unrelated recommended-content snippets also appear after the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:45:06Z",
+  "duration_seconds": 2.949,
+  "error": null
+}

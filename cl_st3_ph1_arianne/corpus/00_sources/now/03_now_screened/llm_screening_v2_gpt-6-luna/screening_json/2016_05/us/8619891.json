@@ -1,0 +1,77 @@
+{
+  "article_id": "8619891",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_05/us/8619891.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_05/us/8619891.json"
+  },
+  "manifest_row": {
+    "article_id": "8619891",
+    "group": "2016_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_05/us/8619891.txt",
+    "now_field_2": "459",
+    "date_original": "16-05-03",
+    "date_iso": "2016-05-03",
+    "source_name": "UN News Centre",
+    "url": "http://www.un.org/apps/news/story.asp?NewsID=53840",
+    "title": "At high-level forum, UN spotlights power of information technology in ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-05-bvk/16-05-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "Information and communication technologies and their role in development",
+    "climate_relevance": "Climate change appears only in a brief list of areas where ICTs may provide solutions.",
+    "reason": "The text focuses on the UN information society forum and digital development. Its sole climate reference is a passing item in a broader list, with no further discussion of climate causes, impacts, policy, or solutions.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a9acab9ee19bc97436acf596ec77b11d860f10505d4f06d88e338963e690fbf9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "158e364a8ce337a8d256a038fcef465a36f609e5f484f3456e9f7b916ab29e01",
+    "raw_response_text_sha256": "bb60bdffde8625d13e35dd6b2d988a87ad3b2324bab1c42ed7c433a6af402889"
+  },
+  "api_metadata": {
+    "id": "resp_0a68eaeb47bf2f3a006b064ebcf18087d19208aefaf3a99c63",
+    "model": "gpt-6-luna",
+    "created_at": 1795575485.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1096,
+      "input_tokens_details": {
+        "cache_write_tokens": 1093,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1093
+        }
+      },
+      "output_tokens": 421,
+      "output_tokens_details": {
+        "reasoning_tokens": 279
+      },
+      "total_tokens": 1517
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Information and communication technologies and their role in development\",\n  \"climate_relevance\": \"Climate change appears only in a brief list of areas where ICTs may provide solutions.\",\n  \"reason\": \"The text focuses on the UN information society forum and digital development. Its sole climate reference is a passing item in a broader list, with no further discussion of climate causes, impacts, policy, or solutions.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:58:08Z",
+  "duration_seconds": 3.368,
+  "error": null
+}

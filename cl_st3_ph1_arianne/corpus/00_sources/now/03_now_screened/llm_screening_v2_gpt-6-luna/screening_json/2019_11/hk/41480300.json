@@ -1,0 +1,77 @@
+{
+  "article_id": "41480300",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/hk/41480300.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/hk/41480300.json"
+  },
+  "manifest_row": {
+    "article_id": "41480300",
+    "group": "2019_11",
+    "country_code": "hk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/hk/41480300.txt",
+    "now_field_2": "1810",
+    "date_original": "19-11-12",
+    "date_iso": "2019-11-12",
+    "source_name": "nepal24hours.com",
+    "url": "https://www.nepal24hours.com/china-aims-to-build-its-own-yellowstone-on-tibetan-plateau/",
+    "title": "China aims to build its own Yellowstone ... - <strong>nepal24hours.com</strong>",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-hk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "China's plans to establish national parks and protect ecosystems and local livelihoods on the Tibetan plateau.",
+    "climate_relevance": "Climate change appears only in a promotional tagline about an AP series; the article itself does not meaningfully discuss climate change or its implications.",
+    "reason": "The main article focuses on conservation, biodiversity, and park planning. The sole climate reference is incidental promotional text, not substantive climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f9bb00d34a8cf0652ab14dff9f7b62e4185f4b43b1b67e2d4788ea4928759f0c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "19513f8f4809a3f4f7bc7df386bffe50394a8c09bcbe321ae14bab96b231e137",
+    "raw_response_text_sha256": "c09a94b79d276ef8b81110be2fec0b6628fcdfc112aad8ccca259af7534a6682"
+  },
+  "api_metadata": {
+    "id": "resp_0fe1e83e7cb900cc006b0621ed53e887d294652f01fac894cc",
+    "model": "gpt-6-luna",
+    "created_at": 1795564013.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2895,
+      "input_tokens_details": {
+        "cache_write_tokens": 2892,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2892
+        }
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 3209
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"China's plans to establish national parks and protect ecosystems and local livelihoods on the Tibetan plateau.\",\n  \"climate_relevance\": \"Climate change appears only in a promotional tagline about an AP series; the article itself does not meaningfully discuss climate change or its implications.\",\n  \"reason\": \"The main article focuses on conservation, biodiversity, and park planning. The sole climate reference is incidental promotional text, not substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:46:55Z",
+  "duration_seconds": 2.712,
+  "error": null
+}

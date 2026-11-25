@@ -1,0 +1,77 @@
+{
+  "article_id": "19613065",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/ca/19613065.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/ca/19613065.json"
+  },
+  "manifest_row": {
+    "article_id": "19613065",
+    "group": "2017_07",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/ca/19613065.txt",
+    "now_field_2": "243",
+    "date_original": "17-07-21",
+    "date_iso": "2017-07-21",
+    "source_name": "CHCH News",
+    "url": "http://www.chch.com/randle-reef-clean-enters-next-phase/",
+    "title": "Randle Reef clean up enters next phase",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Cleanup of contaminated sediment at Randle Reef and restoration of Hamilton Harbour",
+    "climate_relevance": "Climate change appears only in the title 'environment & climate change' and is not discussed.",
+    "reason": "The text focuses on dredging and containing toxic coal-tar sediment to restore the harbour ecosystem. The climate reference is part of a person's title, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c84182ed3f4bfd60277de9616e29ab5acd29fc7264bc73ba70a8089fa5d70b30",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "091b6b56335d1057fde655aafd818d70181bb369002a6db580a3c05b1cfc0e5b",
+    "raw_response_text_sha256": "931a2624b38dd4ae7d5d13f75a6cb6dc0f8ea478196762c0699297a7734ded74"
+  },
+  "api_metadata": {
+    "id": "resp_0f05cdfa12806cc1006b060c3f362c87d2ade9c8b96f16f32f",
+    "model": "gpt-6-luna",
+    "created_at": 1795558463.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 770,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 209,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 979
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Cleanup of contaminated sediment at Randle Reef and restoration of Hamilton Harbour\",\n  \"climate_relevance\": \"Climate change appears only in the title 'environment & climate change' and is not discussed.\",\n  \"reason\": \"The text focuses on dredging and containing toxic coal-tar sediment to restore the harbour ecosystem. The climate reference is part of a person's title, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:14:25Z",
+  "duration_seconds": 2.026,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70448202",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/us/70448202.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/us/70448202.json"
+  },
+  "manifest_row": {
+    "article_id": "70448202",
+    "group": "2019_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/us/70448202.txt",
+    "now_field_2": "172",
+    "date_original": "19-01-24",
+    "date_iso": "2019-01-24",
+    "source_name": "WGN-TV",
+    "url": "https://wgntv.com/2019/01/24/general-mills-recalls-some-5-pound-bags-of-flour-over-salmonella-fears/",
+    "title": "General Mills recalls some 5-pound bags of flour over salmonella fears",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "Wildlife deaths during an Australian heatwave",
+    "climate_relevance": "The heatwave report states that climate change played a key role in the increased frequency or intensity of heat events, fire weather, and drought.",
+    "reason": "The identifiable heatwave article is mainly about animal deaths and drought conditions, but it includes a meaningful statement linking these events to climate change. A separate flour-recall snippet is also present.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3482dbb868ad0b94259c793340866317e655f2e408490d20eda0e0aa90c43aa9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9eadce68966672dc68a39e12d43e87b0d5bef2feb709ef0e787e2d8b61f7f988",
+    "raw_response_text_sha256": "d062e5100fae6e360463902eaf349273907f14277291d275855b0fe14b22381d"
+  },
+  "api_metadata": {
+    "id": "resp_022bb7dceb789d0b006b063c969a2087d198e561975019a894",
+    "model": "gpt-6-luna",
+    "created_at": 1795570838.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1310,
+      "input_tokens_details": {
+        "cache_write_tokens": 1307,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1307
+        }
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 1624
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Wildlife deaths during an Australian heatwave\",\n  \"climate_relevance\": \"The heatwave report states that climate change played a key role in the increased frequency or intensity of heat events, fire weather, and drought.\",\n  \"reason\": \"The identifiable heatwave article is mainly about animal deaths and drought conditions, but it includes a meaningful statement linking these events to climate change. A separate flour-recall snippet is also present.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:41Z",
+  "duration_seconds": 3.119,
+  "error": null
+}

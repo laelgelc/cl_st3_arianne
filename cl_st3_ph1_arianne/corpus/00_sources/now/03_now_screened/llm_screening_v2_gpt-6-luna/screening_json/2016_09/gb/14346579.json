@@ -1,0 +1,77 @@
+{
+  "article_id": "14346579",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_09/gb/14346579.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_09/gb/14346579.json"
+  },
+  "manifest_row": {
+    "article_id": "14346579",
+    "group": "2016_09",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_09/gb/14346579.txt",
+    "now_field_2": "1925",
+    "date_original": "16-09-13",
+    "date_iso": "2016-09-13",
+    "source_name": "East Anglian Daily Times",
+    "url": "http://www.eadt.co.uk/news/sir_david_attenborough_says_nature_is_in_serious_trouble_but_east_anglia_is_central_to_efforts_to_preserve_it_1_4695321",
+    "title": "Sir David Attenborough says nature is in serious trouble - but East ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-09-bmb/16-09-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "UK wildlife conservation and biodiversity declines, with a focus on East Anglia",
+    "climate_relevance": "Climate change is briefly named as one of several factors that deserve greater attention, but it is not discussed further.",
+    "reason": "The article is centrally about wildlife declines, conservation projects, and farming impacts. Climate change receives only a passing mention alongside urbanisation and does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7b6be82c422425df1df5e88eb78e9b691819a4f9bf56956dee770a3f85c734ab",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0fef853b3c1045029936f64e47aca49b066b4413af1a07263d1b19acc93947c5",
+    "raw_response_text_sha256": "fde96b5c6ba37c075e488fd01f2f7bf17dd7d1ebdefd0a736870aa38befa227f"
+  },
+  "api_metadata": {
+    "id": "resp_08a9e594616a04b4006b0605a6eadc87d2bb301d66d51ce4f1",
+    "model": "gpt-6-luna",
+    "created_at": 1795556775.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3047,
+      "input_tokens_details": {
+        "cache_write_tokens": 3044,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3044
+        }
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 3340
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"UK wildlife conservation and biodiversity declines, with a focus on East Anglia\",\n  \"climate_relevance\": \"Climate change is briefly named as one of several factors that deserve greater attention, but it is not discussed further.\",\n  \"reason\": \"The article is centrally about wildlife declines, conservation projects, and farming impacts. Climate change receives only a passing mention alongside urbanisation and does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:46:17Z",
+  "duration_seconds": 2.377,
+  "error": null
+}

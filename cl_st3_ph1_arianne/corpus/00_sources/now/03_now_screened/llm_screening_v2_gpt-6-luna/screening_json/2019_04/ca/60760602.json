@@ -1,0 +1,77 @@
+{
+  "article_id": "60760602",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/ca/60760602.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/ca/60760602.json"
+  },
+  "manifest_row": {
+    "article_id": "60760602",
+    "group": "2019_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/ca/60760602.txt",
+    "now_field_2": "330",
+    "date_original": "19-04-21",
+    "date_iso": "2019-04-21",
+    "source_name": "Bayshore Broadcasting News Centre",
+    "url": "http://www.bayshorebroadcasting.ca/news_item.php?NewsID=109061",
+    "title": "New Study of Lake Huron's Shoreline Coming",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A coastal action plan studying Lake Huron's shoreline, ecosystems, and pollution",
+    "climate_relevance": "Climate change appears only in the name of Environment and Climate Change Canada; the text does not discuss climate change or its implications.",
+    "reason": "The article focuses on shoreline protection, restoration, sediment, and pollutant movement. Its sole climate reference is an institutional name, which does not constitute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5acaf53af3c7d94352b81d00e7e0e5bd2e8a4fb3149f66dccbc94b2ee0d59afc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a03015af575c9f7f5c4a36d78dd3a836bcd7d82dd49eb22949c762603846cfab",
+    "raw_response_text_sha256": "a0e71c2edcdb0a033f733781fb8eb3b7ef195979be68f185eff8a72b1354544b"
+  },
+  "api_metadata": {
+    "id": "resp_059939c0e89ae027006b063448974487d1b9c343d24da76234",
+    "model": "gpt-6-luna",
+    "created_at": 1795568712.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 920,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 1119
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A coastal action plan studying Lake Huron's shoreline, ecosystems, and pollution\",\n  \"climate_relevance\": \"Climate change appears only in the name of Environment and Climate Change Canada; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on shoreline protection, restoration, sediment, and pollutant movement. Its sole climate reference is an institutional name, which does not constitute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:05:14Z",
+  "duration_seconds": 1.751,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "3740804",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_11/us/3740804.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_11/us/3740804.json"
+  },
+  "manifest_row": {
+    "article_id": "3740804",
+    "group": "2015_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_11/us/3740804.txt",
+    "now_field_2": "1444",
+    "date_original": "15-11-03",
+    "date_iso": "2015-11-03",
+    "source_name": "Voice of America",
+    "url": "http://www.voanews.com/content/skeptical-us-lawmakers-awit-text-of-massive-pacific-trade-pact/3035437.html",
+    "title": "Skeptical US Lawmakers Await Text of Massive Pacific Trade Pact",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-11-xje/15-11-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "U.S. lawmakers’ views on the Trans-Pacific Partnership trade agreement",
+    "climate_relevance": "Climate change appears only in an unrelated video snippet about the Paris agreement, not in the identifiable main article.",
+    "reason": "The main article concerns congressional approval of the TPP. The climate-related passage is part of a set of unrelated video snippets and does not contribute to the main article’s discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4348f3b63f444a4b6d57fcbd984da4be913a407c9b9d8bf43fc77f6feefcb900",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0339f349ab2a2d8fb417ddce848b83b6f64f374872bdfe5f9e48bb2f9cebab61",
+    "raw_response_text_sha256": "c14bf06901df762dc373571639429223a084c38c53a4c267b315625890cdceb1"
+  },
+  "api_metadata": {
+    "id": "resp_06b51467ea77b61b006b061ccd1d0487d2b97b2607da0081f7",
+    "model": "gpt-6-luna",
+    "created_at": 1795562701.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2387,
+      "input_tokens_details": {
+        "cache_write_tokens": 2384,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2384
+        }
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 2691
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"U.S. lawmakers’ views on the Trans-Pacific Partnership trade agreement\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated video snippet about the Paris agreement, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns congressional approval of the TPP. The climate-related passage is part of a set of unrelated video snippets and does not contribute to the main article’s discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:25:03Z",
+  "duration_seconds": 2.399,
+  "error": null
+}

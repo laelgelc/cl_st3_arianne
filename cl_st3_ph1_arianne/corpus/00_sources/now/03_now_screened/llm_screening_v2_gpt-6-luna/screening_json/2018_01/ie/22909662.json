@@ -1,0 +1,77 @@
+{
+  "article_id": "22909662",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_01/ie/22909662.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_01/ie/22909662.json"
+  },
+  "manifest_row": {
+    "article_id": "22909662",
+    "group": "2018_01",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_01/ie/22909662.txt",
+    "now_field_2": "1324",
+    "date_original": "18-01-24",
+    "date_iso": "2018-01-24",
+    "source_name": "The Irish Sun",
+    "url": "https://www.thesun.ie/news/2087154/us-president-donald-trump-is-a-hate-figure-for-most-political-pundits-but-his-bad-press-is-bad-for-democracy/",
+    "title": "US President Donald Trump is a hate figure for most political pundits ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-01.txt\"]",
+    "metadata_article_files": "[\"text-18-01/text_18-01-IE.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A collection of political commentary and brief opinion pieces, including a section on vehicle policy, emissions, and the costs of climate goals.",
+    "climate_relevance": "The section titled “Driving down cost to climate” discusses a proposed ban on petrol and diesel car sales, the shift to electric vehicles, carbon emissions, carbon taxes, and the costs of meeting climate goals.",
+    "reason": "The text is a collection of largely unrelated material, and its main discussion concerns Trump, media coverage, and other topics. However, the vehicle-policy section contains meaningful climate discourse, so the text is relevant peripherally rather than as core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0809729932d271f042b27d8772f1265a56934ea305be6a45616add6016a49337",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0f4a14992146214cea5dd4bce33956a29e46d70428dbe3cfa5fcf49680018c63",
+    "raw_response_text_sha256": "424b7dfffa3565e03d91c34a921eb49ad894f3bbfdb14b4bb35b9afe541ff4d1"
+  },
+  "api_metadata": {
+    "id": "resp_0092e050f0f576d6006b0610aaa5b087d29f58393e6e69b8d7",
+    "model": "gpt-6-luna",
+    "created_at": 1795559594.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2144,
+      "input_tokens_details": {
+        "cache_write_tokens": 2141,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2141
+        }
+      },
+      "output_tokens": 420,
+      "output_tokens_details": {
+        "reasoning_tokens": 228
+      },
+      "total_tokens": 2564
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of political commentary and brief opinion pieces, including a section on vehicle policy, emissions, and the costs of climate goals.\",\n  \"climate_relevance\": \"The section titled “Driving down cost to climate” discusses a proposed ban on petrol and diesel car sales, the shift to electric vehicles, carbon emissions, carbon taxes, and the costs of meeting climate goals.\",\n  \"reason\": \"The text is a collection of largely unrelated material, and its main discussion concerns Trump, media coverage, and other topics. However, the vehicle-policy section contains meaningful climate discourse, so the text is relevant peripherally rather than as core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:33:17Z",
+  "duration_seconds": 3.384,
+  "error": null
+}

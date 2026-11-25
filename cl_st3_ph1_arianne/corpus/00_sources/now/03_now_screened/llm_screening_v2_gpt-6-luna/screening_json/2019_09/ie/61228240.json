@@ -1,0 +1,77 @@
+{
+  "article_id": "61228240",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ie/61228240.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ie/61228240.json"
+  },
+  "manifest_row": {
+    "article_id": "61228240",
+    "group": "2019_09",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ie/61228240.txt",
+    "now_field_2": "8210",
+    "date_original": "19-09-15",
+    "date_iso": "2019-09-15",
+    "source_name": "theparliamentmagazine.eu",
+    "url": "https://www.theparliamentmagazine.eu/rss-feeds?page=40",
+    "title": "RSS FEEDS - <strong>theparliamentmagazine.eu</strong>",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ie1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "A European affairs magazine roundup covering EU politics, policy, and public affairs",
+    "climate_relevance": "The roundup mentions plans to reduce greenhouse-gas emissions from cars and vans by 2030 and an appointment focused on energy and climate change. It also links plastic recycling measures with CO2 reduction, but climate change is not a main focus.",
+    "reason": "The text is a collection of mainly unrelated EU news and features. Its climate references are meaningful policy-related mentions, but they are brief within the broader material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "12137df6d8086ed7206bb1a6e3a570740e6acb8413e18f12de42317be2d6d2b5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "00024caa0b1d5aae9b89062807bc768355e28d41b213a7e515a0fe7edd819c67",
+    "raw_response_text_sha256": "0374dfeca0ee732d02c700fad1fec31bcd27d777201c03409d09681534f5d992"
+  },
+  "api_metadata": {
+    "id": "resp_0494f0116659ec3e006b06363cbbb887d190c09801ad754598",
+    "model": "gpt-6-luna",
+    "created_at": 1795569212.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 11514,
+      "input_tokens_details": {
+        "cache_write_tokens": 11511,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 11511
+        }
+      },
+      "output_tokens": 318,
+      "output_tokens_details": {
+        "reasoning_tokens": 149
+      },
+      "total_tokens": 11832
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A European affairs magazine roundup covering EU politics, policy, and public affairs\",\n  \"climate_relevance\": \"The roundup mentions plans to reduce greenhouse-gas emissions from cars and vans by 2030 and an appointment focused on energy and climate change. It also links plastic recycling measures with CO2 reduction, but climate change is not a main focus.\",\n  \"reason\": \"The text is a collection of mainly unrelated EU news and features. Its climate references are meaningful policy-related mentions, but they are brief within the broader material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:13:35Z",
+  "duration_seconds": 3.23,
+  "error": null
+}

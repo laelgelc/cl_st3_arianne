@@ -1,0 +1,77 @@
+{
+  "article_id": "71260547",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/ph/71260547.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/ph/71260547.json"
+  },
+  "manifest_row": {
+    "article_id": "71260547",
+    "group": "2019_10",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/ph/71260547.txt",
+    "now_field_2": "656",
+    "date_original": "19-10-01",
+    "date_iso": "2019-10-01",
+    "source_name": "business.mb.com.ph",
+    "url": "https://business.mb.com.ph/2018/11/03/cusi-pitches-for-nuclear-at-asean/",
+    "title": "Cusi pitches for nuclear at ASEAN _ Manila Bulletin Business",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Philippine nuclear power development and energy security",
+    "climate_relevance": "Climate change appears only in the name of a ministerial portfolio; the article does not discuss climate change or connect nuclear power to climate policy or emissions.",
+    "reason": "The article focuses on nuclear energy policy, energy security, and the practical challenges of developing nuclear power in the Philippines. The sole climate reference is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "331724f6ad9a17476e25ca1c626eb97238399ac0472ab8242cf9270d17a07056",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "02fe30a5ebab2e2c28d90e4e1527f476f6a395709b2189b17f4346d9c208d6b7",
+    "raw_response_text_sha256": "73d2d5bf11fcc80b0c89845837cca1d30a3b9910bb482182c6470dc84c67be7b"
+  },
+  "api_metadata": {
+    "id": "resp_0cfe5a8d221a7392006b0640ae02fc87d1af9f5326191fc856",
+    "model": "gpt-6-luna",
+    "created_at": 1795571886.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1327,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1324,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 1555
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Philippine nuclear power development and energy security\",\n  \"climate_relevance\": \"Climate change appears only in the name of a ministerial portfolio; the article does not discuss climate change or connect nuclear power to climate policy or emissions.\",\n  \"reason\": \"The article focuses on nuclear energy policy, energy security, and the practical challenges of developing nuclear power in the Philippines. The sole climate reference is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:58:08Z",
+  "duration_seconds": 2.458,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40741145",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/my/40741145.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/my/40741145.json"
+  },
+  "manifest_row": {
+    "article_id": "40741145",
+    "group": "2019_03",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/my/40741145.txt",
+    "now_field_2": "337",
+    "date_original": "19-03-19",
+    "date_iso": "2019-03-19",
+    "source_name": "Malaysiakini",
+    "url": "https://www.malaysiakini.com/news/468725",
+    "title": "Environment minister declares Sungai Kim Kim safe",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Cleanup and safety monitoring of a river polluted by chemical waste",
+    "climate_relevance": "Climate change appears only as part of the environment minister's official portfolio title; the article does not discuss climate issues.",
+    "reason": "The article focuses on chemical pollution, cleanup, and river safety, with no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6f796435c72ff5ad82c498b6e36341ec547933b065ee0dac04cdcc2d87c7a799",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "05012f116bc0488d814d104076951ca1657b8eea0d5f8b389d5b8e3bd39e6111",
+    "raw_response_text_sha256": "5a14375f135a5ddb52d330f8f7893c08ec55f9739c9579869c28018602386362"
+  },
+  "api_metadata": {
+    "id": "resp_06f9bde00ab9e2bd006b061f961ce487d2becdcf02bac0f9f9",
+    "model": "gpt-6-luna",
+    "created_at": 1795563414.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 926,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 189,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 1115
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Cleanup and safety monitoring of a river polluted by chemical waste\",\n  \"climate_relevance\": \"Climate change appears only as part of the environment minister's official portfolio title; the article does not discuss climate issues.\",\n  \"reason\": \"The article focuses on chemical pollution, cleanup, and river safety, with no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:36:55Z",
+  "duration_seconds": 1.757,
+  "error": null
+}

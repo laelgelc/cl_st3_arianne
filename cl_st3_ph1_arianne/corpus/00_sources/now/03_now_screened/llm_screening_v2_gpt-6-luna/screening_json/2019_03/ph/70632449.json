@@ -1,0 +1,77 @@
+{
+  "article_id": "70632449",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/ph/70632449.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/ph/70632449.json"
+  },
+  "manifest_row": {
+    "article_id": "70632449",
+    "group": "2019_03",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/ph/70632449.txt",
+    "now_field_2": "335",
+    "date_original": "19-03-27",
+    "date_iso": "2019-03-27",
+    "source_name": "Philippine Information Agency",
+    "url": "https://pia.gov.ph/press-releases/releases/1020264",
+    "title": "DOE holds consultation on EE&amp;C",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A consultation workshop on the Philippines' Energy Efficiency and Conservation Act",
+    "climate_relevance": "Climate change appears only in the name of the Climate Change Commission among the workshop attendees; the text does not discuss climate change or its implications.",
+    "reason": "The article focuses on energy-efficiency policy and mentions a climate-related institution only in an attendance list, which does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7c860528c603e7d083fe94eb3f2e7c7c980afb5188d3fc522a4887009bb5bb63",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fbea0c35bb46437b9742bd5a6b20f3d41b1bdc60c83e9df4f208403d85be34cd",
+    "raw_response_text_sha256": "eaec5fbee3c0f240aa581431f7327a5da39c78bc669bcaaf0741098405f543e8"
+  },
+  "api_metadata": {
+    "id": "resp_0af808dc07203a67006b063e1de5c487d19177bcba065f62e8",
+    "model": "gpt-6-luna",
+    "created_at": 1795571230.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 941,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1166
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A consultation workshop on the Philippines' Energy Efficiency and Conservation Act\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Climate Change Commission among the workshop attendees; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on energy-efficiency policy and mentions a climate-related institution only in an attendance list, which does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:47:11Z",
+  "duration_seconds": 1.964,
+  "error": null
+}

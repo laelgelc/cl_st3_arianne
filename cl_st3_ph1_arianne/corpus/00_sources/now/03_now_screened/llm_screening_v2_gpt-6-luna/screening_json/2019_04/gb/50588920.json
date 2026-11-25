@@ -1,0 +1,77 @@
+{
+  "article_id": "50588920",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/gb/50588920.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/gb/50588920.json"
+  },
+  "manifest_row": {
+    "article_id": "50588920",
+    "group": "2019_04",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/gb/50588920.txt",
+    "now_field_2": "870",
+    "date_original": "19-04-12",
+    "date_iso": "2019-04-12",
+    "source_name": "Telegraph.co.uk",
+    "url": "https://www.telegraph.co.uk/news/2019/04/12/thousands-retired-soldiers-protest-central-london-motorbikes/?playlist=structure%253Anews",
+    "title": "Thousands of retired soldiers protest through central London on ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A motorbike protest in support of a former soldier facing prosecution over Bloody Sunday",
+    "climate_relevance": "Climate change appears only in a brief reference to Youth Strike 4 Climate protesters who witnessed the motorbike procession.",
+    "reason": "The article focuses on the veterans' protest and the prosecution of Soldier F. The climate protest is incidental scene-setting, with no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8c4d1fbfdac2e7382f77f893369cc53b143af36518b770331653a00b82750cff",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6bbb753383fdba2b88541764822339b2bb0d5452a80126e8b4acc21ec4a2ea26",
+    "raw_response_text_sha256": "9802299d934f55127dafd015303dffcfea33c8be5017453986046767da6a61f0"
+  },
+  "api_metadata": {
+    "id": "resp_047254bb656354bf006b0629a124c887d1a67f036289473354",
+    "model": "gpt-6-luna",
+    "created_at": 1795565985.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1682,
+      "input_tokens_details": {
+        "cache_write_tokens": 1679,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1679
+        }
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 1950
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A motorbike protest in support of a former soldier facing prosecution over Bloody Sunday\",\n  \"climate_relevance\": \"Climate change appears only in a brief reference to Youth Strike 4 Climate protesters who witnessed the motorbike procession.\",\n  \"reason\": \"The article focuses on the veterans' protest and the prosecution of Soldier F. The climate protest is incidental scene-setting, with no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:19:47Z",
+  "duration_seconds": 2.493,
+  "error": null
+}

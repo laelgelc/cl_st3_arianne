@@ -1,0 +1,77 @@
+{
+  "article_id": "16896183",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/sg/16896183.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/sg/16896183.json"
+  },
+  "manifest_row": {
+    "article_id": "16896183",
+    "group": "2017_02",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/sg/16896183.txt",
+    "now_field_2": "831",
+    "date_original": "17-02-13",
+    "date_iso": "2017-02-13",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/newfound-amoeba-looks-just-gandalf-163600313.html",
+    "title": "Newfound Amoeba Looks Just Like Gandalf the Wizard's Hat",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-SG.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Discovery and description of a newly identified amoeba species",
+    "climate_relevance": "Climate change is mentioned only in an analogy comparing the amoeba's potential role as an environmental symbol to the polar bear's role as a symbol of climate change.",
+    "reason": "The article focuses on the amoeba's discovery, characteristics, and habitat. The single climate-change reference is incidental and provides no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0259cf0367f6c1425196da35ea7bb065aa7cbaa2a48b73289ce7e37eb827daa3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "58347240213bdf932713ac589c86e6f7a75e931e718eec24609c67995045d303",
+    "raw_response_text_sha256": "f1e9135036b84aa16b427b5b95250539f58ea6c996ce9f10d6700a3886ed3997"
+  },
+  "api_metadata": {
+    "id": "resp_08fb2d5f3d62e0cf006b060859cb1c87d288b4b705ee635c7d",
+    "model": "gpt-6-luna",
+    "created_at": 1795557465.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1707,
+      "input_tokens_details": {
+        "cache_write_tokens": 1704,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1704
+        }
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1926
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Discovery and description of a newly identified amoeba species\",\n  \"climate_relevance\": \"Climate change is mentioned only in an analogy comparing the amoeba's potential role as an environmental symbol to the polar bear's role as a symbol of climate change.\",\n  \"reason\": \"The article focuses on the amoeba's discovery, characteristics, and habitat. The single climate-change reference is incidental and provides no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:57:47Z",
+  "duration_seconds": 2.04,
+  "error": null
+}

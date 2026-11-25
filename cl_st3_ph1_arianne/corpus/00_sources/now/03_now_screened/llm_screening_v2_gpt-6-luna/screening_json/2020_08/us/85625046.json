@@ -1,0 +1,77 @@
+{
+  "article_id": "85625046",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/us/85625046.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/us/85625046.json"
+  },
+  "manifest_row": {
+    "article_id": "85625046",
+    "group": "2020_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/us/85625046.txt",
+    "now_field_2": "492",
+    "date_original": "20-08-09",
+    "date_iso": "2020-08-09",
+    "source_name": "Phys.org",
+    "url": "https://phys.org/news/2020-08-italy-resort-glacier-threat.html",
+    "title": "Italy resort lifts alert on melting glacier threat",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-us3.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Climate-related glacier melt and the threat it poses to an Italian Alpine resort",
+    "climate_relevance": "The report links climate change to accelerating glacier melt, describes the resulting risk of ice collapse and evacuation in Courmayeur, and cites projections for Alpine glacier loss depending on greenhouse-gas emissions.",
+    "reason": "Climate change and its local impacts are central to the report, not merely a passing reference. The page also contains standard website boilerplate, but the main article is identifiable.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c9440ee94b02fc9d27ca783d74842b9681ee25bc0187004c3f1887046fb7b9cc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7daa63981967190886ecd6e770f2496fd566180bf3ff4875264c477eca7d415f",
+    "raw_response_text_sha256": "07b4741af40a6b30757b47e7f0ac92c7f3d44ec07a38d06dee7ce1f58e31ac89"
+  },
+  "api_metadata": {
+    "id": "resp_0d54e8ead33a72c9006b064c8bd1bc87d19f181743e0275c15",
+    "model": "gpt-6-luna",
+    "created_at": 1795574923.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1121,
+      "input_tokens_details": {
+        "cache_write_tokens": 1118,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1118
+        }
+      },
+      "output_tokens": 214,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1335
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Climate-related glacier melt and the threat it poses to an Italian Alpine resort\",\n  \"climate_relevance\": \"The report links climate change to accelerating glacier melt, describes the resulting risk of ice collapse and evacuation in Courmayeur, and cites projections for Alpine glacier loss depending on greenhouse-gas emissions.\",\n  \"reason\": \"Climate change and its local impacts are central to the report, not merely a passing reference. The page also contains standard website boilerplate, but the main article is identifiable.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:48:45Z",
+  "duration_seconds": 2.2,
+  "error": null
+}

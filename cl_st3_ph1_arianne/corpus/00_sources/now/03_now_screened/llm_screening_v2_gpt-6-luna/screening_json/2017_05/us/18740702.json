@@ -1,0 +1,77 @@
+{
+  "article_id": "18740702",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_05/us/18740702.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_05/us/18740702.json"
+  },
+  "manifest_row": {
+    "article_id": "18740702",
+    "group": "2017_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_05/us/18740702.txt",
+    "now_field_2": "384",
+    "date_original": "17-05-31",
+    "date_iso": "2017-05-31",
+    "source_name": "USA TODAY",
+    "url": "https://www.usatoday.com/story/news/nation-now/2017/05/31/why-12-ton-water-tank-middle-times-square/359234001/",
+    "title": "Why a 12-ton water tank is in the middle of Times Square",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-05.txt\"]",
+    "metadata_article_files": "[\"text-17-05/text_17-05-US.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.9,
+    "climate_role": "substantial",
+    "main_topic": "A Times Square performance installation designed to illustrate the effects of climate change",
+    "climate_relevance": "The article explains that Holoscenes connects everyday activities to climate change and uses changing water levels to evoke drought and flooding.",
+    "reason": "Although framed as coverage of an art installation and public science event, climate change and its impacts are central to the installation’s purpose and the article’s explanation of it.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d562290ad4d291d77aa099000216da8f25db61533e0aaa6b53153496f3923e9d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "530e0de65b8b3a43a3397f23066cea0d70b0e3132cd8b51b2ffe22852a5a58ce",
+    "raw_response_text_sha256": "c13c62db0ae654f016782040275fac7864016a8bdb510dd0034c4e486222dee5"
+  },
+  "api_metadata": {
+    "id": "resp_0d4095558ba679a6006b060ab564d887d2a898ceee6b769f2f",
+    "model": "gpt-6-luna",
+    "created_at": 1795558069.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 977,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "total_tokens": 1283
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"A Times Square performance installation designed to illustrate the effects of climate change\",\n  \"climate_relevance\": \"The article explains that Holoscenes connects everyday activities to climate change and uses changing water levels to evoke drought and flooding.\",\n  \"reason\": \"Although framed as coverage of an art installation and public science event, climate change and its impacts are central to the installation’s purpose and the article’s explanation of it.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:07:52Z",
+  "duration_seconds": 2.946,
+  "error": null
+}

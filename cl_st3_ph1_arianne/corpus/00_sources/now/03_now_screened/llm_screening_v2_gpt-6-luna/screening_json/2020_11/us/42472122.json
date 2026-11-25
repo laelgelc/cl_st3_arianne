@@ -1,0 +1,77 @@
+{
+  "article_id": "42472122",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/us/42472122.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/us/42472122.json"
+  },
+  "manifest_row": {
+    "article_id": "42472122",
+    "group": "2020_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/us/42472122.txt",
+    "now_field_2": "750",
+    "date_original": "20-11-16",
+    "date_iso": "2020-11-16",
+    "source_name": "fastcompany.com",
+    "url": "https://www.fastcompany.com/90241185/this-bay-area-food-hall-is-designed-to-jumpstart-the-restaurants-of-female-minority-chefs?position=10&amp;campaign_date=11142020",
+    "title": "This Bay Area food hall will feature female, minority chefs",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A San Francisco food hall supporting women- and immigrant-owned food businesses",
+    "climate_relevance": "Climate change appears only in the writer's biographical description, not in the article's discussion.",
+    "reason": "The article focuses on affordable commercial space, food entrepreneurship, and a community food hall. The sole climate reference is an unrelated mention in the writer's bio.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "afc49ef7dd23ab5704b2f8bd3142f664525ab35c179b26e9400cee3ad68f2a24",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "859fccef02df95d12ad1caebf07bfa273461a8bb97b50a696fdb4db4c7bb6bf8",
+    "raw_response_text_sha256": "b728af05c256ce50c4e2392152026940e2235df9a7e1d00f162ea3df22d90cdd"
+  },
+  "api_metadata": {
+    "id": "resp_02d3a5b482b983b8006b062637bc0087d2bc7ad1fe92f158d4",
+    "model": "gpt-6-luna",
+    "created_at": 1795565111.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1426,
+      "input_tokens_details": {
+        "cache_write_tokens": 1423,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1423
+        }
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 1631
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A San Francisco food hall supporting women- and immigrant-owned food businesses\",\n  \"climate_relevance\": \"Climate change appears only in the writer's biographical description, not in the article's discussion.\",\n  \"reason\": \"The article focuses on affordable commercial space, food entrepreneurship, and a community food hall. The sole climate reference is an unrelated mention in the writer's bio.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:05:13Z",
+  "duration_seconds": 2.006,
+  "error": null
+}

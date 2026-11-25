@@ -1,0 +1,77 @@
+{
+  "article_id": "31843340",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/nz/31843340.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/nz/31843340.json"
+  },
+  "manifest_row": {
+    "article_id": "31843340",
+    "group": "2020_05",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/nz/31843340.txt",
+    "now_field_2": "1589",
+    "date_original": "20-05-17",
+    "date_iso": "2020-05-17",
+    "source_name": "i.stuff.co.nz",
+    "url": "https://i.stuff.co.nz/environment/climate-news/121413352/climate-change-coronavirus-exposes-flaws-in-recycling-scheme",
+    "title": "Climate change: coronavirus exposes flaws in recycling ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "New Zealand's recycling system and the effects of the coronavirus lockdown on waste collection and processing",
+    "climate_relevance": "Climate change appears in the headline but is not meaningfully discussed in the article.",
+    "reason": "The article focuses on recycling infrastructure, contamination, waste policy, and pandemic-related disruption. It contains no substantive discussion of climate change, its impacts, or climate policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "19c71e24a9152a76a8005aaf5c87d557aa6d249308442623c3c0cf90fd12fad0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "623f19e3a25cbeb40f9c260fe0fc91e61d3755822c80e892fa1737d5208d2ec9",
+    "raw_response_text_sha256": "38e8069478432323fa34878f33b6c98bab2842556132de59dfdedc532f0738a6"
+  },
+  "api_metadata": {
+    "id": "resp_0f1f039203b3cd0b006b0619b5029887d2bac2175607cd67a1",
+    "model": "gpt-6-luna",
+    "created_at": 1795561909.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2637,
+      "input_tokens_details": {
+        "cache_write_tokens": 2634,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2634
+        }
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 2901
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"New Zealand's recycling system and the effects of the coronavirus lockdown on waste collection and processing\",\n  \"climate_relevance\": \"Climate change appears in the headline but is not meaningfully discussed in the article.\",\n  \"reason\": \"The article focuses on recycling infrastructure, contamination, waste policy, and pandemic-related disruption. It contains no substantive discussion of climate change, its impacts, or climate policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:11:51Z",
+  "duration_seconds": 2.405,
+  "error": null
+}

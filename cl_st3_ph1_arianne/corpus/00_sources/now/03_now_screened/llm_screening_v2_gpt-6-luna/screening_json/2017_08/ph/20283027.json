@@ -1,0 +1,77 @@
+{
+  "article_id": "20283027",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/ph/20283027.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/ph/20283027.json"
+  },
+  "manifest_row": {
+    "article_id": "20283027",
+    "group": "2017_08",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/ph/20283027.txt",
+    "now_field_2": "345",
+    "date_original": "17-08-30",
+    "date_iso": "2017-08-30",
+    "source_name": "Sun.Star",
+    "url": "http://www.sunstar.com.ph/baguio/local-news/2017/08/31/search-outstanding-youth-organizations-561401",
+    "title": "Search on for outstanding youth organizations | SunStar",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-PH.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A call for entries to a national youth-organization awards program",
+    "climate_relevance": "Climate change adaptation appears only in a list of eligible project categories.",
+    "reason": "The article contains no substantive discussion of climate change or adaptation; the brief category listing is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b12691881d12e9e413ee3d3382ef616dd83a5b6ad59eaaa9f5644a1d4630737a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "05aaa98f88383ed9ecf3d30fc1cbf958d002aa28575ebf5f5b33865143553366",
+    "raw_response_text_sha256": "1d9e16d7bea9e169ec383dec22ab18b070084aca4a39273b0ddd2a5521539014"
+  },
+  "api_metadata": {
+    "id": "resp_0ba0672201061be5006b060d13024887d2957820c21be2b720",
+    "model": "gpt-6-luna",
+    "created_at": 1795558675.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 954,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 1189
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A call for entries to a national youth-organization awards program\",\n  \"climate_relevance\": \"Climate change adaptation appears only in a list of eligible project categories.\",\n  \"reason\": \"The article contains no substantive discussion of climate change or adaptation; the brief category listing is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:56Z",
+  "duration_seconds": 2.008,
+  "error": null
+}

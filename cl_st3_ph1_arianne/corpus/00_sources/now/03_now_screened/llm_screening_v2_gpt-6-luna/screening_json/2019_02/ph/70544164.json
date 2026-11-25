@@ -1,0 +1,77 @@
+{
+  "article_id": "70544164",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/ph/70544164.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/ph/70544164.json"
+  },
+  "manifest_row": {
+    "article_id": "70544164",
+    "group": "2019_02",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/ph/70544164.txt",
+    "now_field_2": "160",
+    "date_original": "19-02-24",
+    "date_iso": "2019-02-24",
+    "source_name": "Manila Bulletin",
+    "url": "https://news.mb.com.ph/2019/02/23/200-new-suspected-measles-cases-in-western-visayas/",
+    "title": "200 new suspected measles cases in Western Visayas",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-ph.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "The text combines a report on suspected measles cases with an article about a sustainable fisheries project in the Philippines.",
+    "climate_relevance": "The fisheries article says unsustainable fishing practices are exacerbated by climate change and coral reef and mangrove degradation, with impacts on food security, employment, and livelihoods.",
+    "reason": "Climate change is meaningfully connected to fisheries and their social impacts, but it is background to the fisheries project rather than the central subject. The measles report is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2a49e6810ee489a19dab760fbb13047303244fcf833c837f1c41822399f3d8f1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "481a4ddd70f86e930c7d1ae37f8bd5f962adaec6df0b9b8ab52652b547b5dc59",
+    "raw_response_text_sha256": "9a0d42241e3d2179a7da10e2a640809d76ab462ea90285186d315de34a0a6193"
+  },
+  "api_metadata": {
+    "id": "resp_02b251b52a2e164d006b063d70673487d1be38a4f249af18c1",
+    "model": "gpt-6-luna",
+    "created_at": 1795571056.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1637,
+      "input_tokens_details": {
+        "cache_write_tokens": 1634,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1634
+        }
+      },
+      "output_tokens": 318,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 1955
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The text combines a report on suspected measles cases with an article about a sustainable fisheries project in the Philippines.\",\n  \"climate_relevance\": \"The fisheries article says unsustainable fishing practices are exacerbated by climate change and coral reef and mangrove degradation, with impacts on food security, employment, and livelihoods.\",\n  \"reason\": \"Climate change is meaningfully connected to fisheries and their social impacts, but it is background to the fisheries project rather than the central subject. The measles report is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:44:18Z",
+  "duration_seconds": 2.571,
+  "error": null
+}

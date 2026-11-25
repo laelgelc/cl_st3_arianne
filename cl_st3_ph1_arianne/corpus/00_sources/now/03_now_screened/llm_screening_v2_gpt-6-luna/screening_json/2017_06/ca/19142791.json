@@ -1,0 +1,77 @@
+{
+  "article_id": "19142791",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/ca/19142791.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/ca/19142791.json"
+  },
+  "manifest_row": {
+    "article_id": "19142791",
+    "group": "2017_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/ca/19142791.txt",
+    "now_field_2": "556",
+    "date_original": "17-06-24",
+    "date_iso": "2017-06-24",
+    "source_name": "The Guardian",
+    "url": "http://www.theguardian.pe.ca/opinion/editorials/2017/6/24/editorial--shortage-continues.html",
+    "title": "EDITORIAL: Shortage continues",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Nursing staff shortages and their effects on health care in Prince Edward Island",
+    "climate_relevance": "A fragment after the article’s comment-submission notice mentions a carbon tax and emissions obligations under a climate accord, but it is separate from the editorial’s subject.",
+    "reason": "The identifiable main article is about nursing shortages. The only climate-related material appears as an unrelated post-article fragment, so it does not make the editorial relevant climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "08d5380c1cca402ebf60ec022d78467ba2303f9281fb378a4d5cd36cc207446b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b0371c086aa04126e0480b4b9b46051729be34f173eb5d4b0714c252f32ac80f",
+    "raw_response_text_sha256": "a8b154593f87b945326295f596d87d9212589dae52cc4dd4dbab67fc51162c71"
+  },
+  "api_metadata": {
+    "id": "resp_092be8b1c6ee6e70006b060b842a6087d2817865a382b1f64e",
+    "model": "gpt-6-luna",
+    "created_at": 1795558276.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1163,
+      "input_tokens_details": {
+        "cache_write_tokens": 1160,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1160
+        }
+      },
+      "output_tokens": 651,
+      "output_tokens_details": {
+        "reasoning_tokens": 491
+      },
+      "total_tokens": 1814
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Nursing staff shortages and their effects on health care in Prince Edward Island\",\n  \"climate_relevance\": \"A fragment after the article’s comment-submission notice mentions a carbon tax and emissions obligations under a climate accord, but it is separate from the editorial’s subject.\",\n  \"reason\": \"The identifiable main article is about nursing shortages. The only climate-related material appears as an unrelated post-article fragment, so it does not make the editorial relevant climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:11:20Z",
+  "duration_seconds": 4.362,
+  "error": null
+}

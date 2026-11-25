@@ -1,0 +1,77 @@
+{
+  "article_id": "51896239",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_08/ca/51896239.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_08/ca/51896239.json"
+  },
+  "manifest_row": {
+    "article_id": "51896239",
+    "group": "2020_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_08/ca/51896239.txt",
+    "now_field_2": "633",
+    "date_original": "20-08-19",
+    "date_iso": "2020-08-19",
+    "source_name": "winnipegfreepress.com",
+    "url": "https://www.winnipegfreepress.com/arts-and-life/life/greenpage/federal-government-to-join-assessment-of-teck-coal-mine-expansion-in-bc-572163312.html",
+    "title": "Federal government to join assessment of B.C. coal mine ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-08.txt\"]",
+    "metadata_article_files": "[\"text-20-08/20-08-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Federal participation in the environmental assessment of a proposed coal mine expansion in British Columbia, including water contamination and regulatory concerns.",
+    "climate_relevance": "The article discusses coal mining and environmental impacts, but does not meaningfully address climate change, emissions, or climate policy.",
+    "reason": "Coal is mentioned as the product being mined, but the available text focuses on project review, water quality, fish habitat, and jurisdictional issues rather than climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e9b7662ee1dc5a6178e6f940a3a6d0213eaf64759a8c0c8be365bac0f27188e9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d6f6d9595ded78013f0ef39d739c637a504d4338bf403c4fdb0776d99e50625c",
+    "raw_response_text_sha256": "c6656f98c885c28c29587cbff12be87d583a303ecf8cb8ece53a87a8e7adea76"
+  },
+  "api_metadata": {
+    "id": "resp_0a45f27a149159b7006b062f2370f487d18757b0d5be8aa7a7",
+    "model": "gpt-6-luna",
+    "created_at": 1795567395.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1327,
+      "input_tokens_details": {
+        "cache_write_tokens": 1324,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1324
+        }
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 1595
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Federal participation in the environmental assessment of a proposed coal mine expansion in British Columbia, including water contamination and regulatory concerns.\",\n  \"climate_relevance\": \"The article discusses coal mining and environmental impacts, but does not meaningfully address climate change, emissions, or climate policy.\",\n  \"reason\": \"Coal is mentioned as the product being mined, but the available text focuses on project review, water quality, fish habitat, and jurisdictional issues rather than climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:43:17Z",
+  "duration_seconds": 2.566,
+  "error": null
+}

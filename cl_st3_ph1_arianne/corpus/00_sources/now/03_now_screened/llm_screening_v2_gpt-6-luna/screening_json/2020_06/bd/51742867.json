@@ -1,0 +1,77 @@
+{
+  "article_id": "51742867",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/bd/51742867.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/bd/51742867.json"
+  },
+  "manifest_row": {
+    "article_id": "51742867",
+    "group": "2020_06",
+    "country_code": "bd",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/bd/51742867.txt",
+    "now_field_2": "1047",
+    "date_original": "20-06-10",
+    "date_iso": "2020-06-10",
+    "source_name": "theindependentbd.com",
+    "url": "http://www.theindependentbd.com/post/247528",
+    "title": "Sundarbans' eco-tourism expansion planned to attract ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-bd.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Planned expansion of eco-tourism facilities in the Sundarbans",
+    "climate_relevance": "Climate change appears only in the name of a government ministry; the article does not discuss climate change or its implications.",
+    "reason": "The main article concerns tourism development and forest conservation. The climate reference is an institutional label, and the trailing Fiji coronavirus snippet is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b02948ff107729b29a9089e1699b5635d35f77fc66d57bd723b55dba7e824cf7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0d7eb9b7773fc258fd7f1ba3fd76790f04237cda11604b229bb84c86c545c629",
+    "raw_response_text_sha256": "23ce4b3dd212b04a009e6597808d6ae7caef7493931de968869041558376ae6f"
+  },
+  "api_metadata": {
+    "id": "resp_099975d6e21e973b006b062e8e5c0487d18980480900072e6b",
+    "model": "gpt-6-luna",
+    "created_at": 1795567246.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1928,
+      "input_tokens_details": {
+        "cache_write_tokens": 1925,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1925
+        }
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 2164
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Planned expansion of eco-tourism facilities in the Sundarbans\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government ministry; the article does not discuss climate change or its implications.\",\n  \"reason\": \"The main article concerns tourism development and forest conservation. The climate reference is an institutional label, and the trailing Fiji coronavirus snippet is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:40:48Z",
+  "duration_seconds": 2.095,
+  "error": null
+}

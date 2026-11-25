@@ -1,0 +1,77 @@
+{
+  "article_id": "83013827",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83013827.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83013827.json"
+  },
+  "manifest_row": {
+    "article_id": "83013827",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83013827.txt",
+    "now_field_2": "704",
+    "date_original": "20-01-01",
+    "date_iso": "2020-01-01",
+    "source_name": "NBC 6 South Florida",
+    "url": "https://www.nbcmiami.com/news/national-international/pictures-from-2020-new-years-eve-celebrations-across-the-globe/2171687/",
+    "title": "Pictures From 2020 New Year's Eve Celebrations Across the World",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "climate_role": "passing",
+    "main_topic": "New Year celebrations around the world",
+    "climate_relevance": "Climate change appears in a sentence describing the year as dominated partly by demonstrations calling for climate action.",
+    "reason": "The text is a photo gallery of New Year celebrations. Its brief reference to demonstrations calling for climate action is relevant but not developed enough to make climate change a central or substantial topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a8156d8eccb63730cda1ad0002970af008cc7cb497d3c2dea0690ba0772c362c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "065d05ecf524fc41df95e8ff8ac2665afec4aa63f9ee5b55b668e14919904a25",
+    "raw_response_text_sha256": "f7e793761120ae50575c24bcc7ee6dc86ad8a0c2213d7c1cfabd4f886a767d06"
+  },
+  "api_metadata": {
+    "id": "resp_00ed447ac021bf78006b064909ac3487d19b1eb46d46e5ba69",
+    "model": "gpt-6-luna",
+    "created_at": 1795574025.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1647,
+      "input_tokens_details": {
+        "cache_write_tokens": 1644,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1644
+        }
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 1929
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"New Year celebrations around the world\",\n  \"climate_relevance\": \"Climate change appears in a sentence describing the year as dominated partly by demonstrations calling for climate action.\",\n  \"reason\": \"The text is a photo gallery of New Year celebrations. Its brief reference to demonstrations calling for climate action is relevant but not developed enough to make climate change a central or substantial topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:33:48Z",
+  "duration_seconds": 2.916,
+  "error": null
+}

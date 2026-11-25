@@ -1,0 +1,77 @@
+{
+  "article_id": "22367880",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_12/sg/22367880.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_12/sg/22367880.json"
+  },
+  "manifest_row": {
+    "article_id": "22367880",
+    "group": "2017_12",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_12/sg/22367880.txt",
+    "now_field_2": "1111",
+    "date_original": "17-12-22",
+    "date_iso": "2017-12-22",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/10-obama-regulations-trump-overturned-2-120614588.html",
+    "title": "10 Obama regulations Trump has overturned",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-12.txt\"]",
+    "metadata_article_files": "[\"text-17-12/text_17-12-SG.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.91,
+    "climate_role": "substantial",
+    "main_topic": "Trump's reversals of Obama-era policies, including climate and environmental regulations",
+    "climate_relevance": "Several major sections address climate policy and related environmental actions, including withdrawal from the Paris climate agreement, expanded oil drilling, and the rollback of power-plant greenhouse gas limits.",
+    "reason": "Although the article covers a range of policy areas, climate and environmental policy form a substantial part of its discussion, with multiple detailed examples of the administration's reversals.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c16955ceac0dbc75db4d1674372ff00902ed3ac39a7d72faf273f47c48bb78fc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e9e54e571c5761220b7e432d065a7b58da75f531924d2e2f53a4dd64cd407cf3",
+    "raw_response_text_sha256": "c1b8611831cb58cee3c207f136dc92b50f0f3fb8e78e40967363e494b93b1921"
+  },
+  "api_metadata": {
+    "id": "resp_05f37131b7d26057006b06101506dc87d2ae6ee3316ae98c70",
+    "model": "gpt-6-luna",
+    "created_at": 1795559445.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2030,
+      "input_tokens_details": {
+        "cache_write_tokens": 2027,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2027
+        }
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 173
+      },
+      "total_tokens": 2359
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Trump's reversals of Obama-era policies, including climate and environmental regulations\",\n  \"climate_relevance\": \"Several major sections address climate policy and related environmental actions, including withdrawal from the Paris climate agreement, expanded oil drilling, and the rollback of power-plant greenhouse gas limits.\",\n  \"reason\": \"Although the article covers a range of policy areas, climate and environmental policy form a substantial part of its discussion, with multiple detailed examples of the administration's reversals.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:30:47Z",
+  "duration_seconds": 2.979,
+  "error": null
+}

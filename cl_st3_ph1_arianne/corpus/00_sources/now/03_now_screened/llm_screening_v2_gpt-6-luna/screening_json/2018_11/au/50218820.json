@@ -1,0 +1,77 @@
+{
+  "article_id": "50218820",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/au/50218820.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/au/50218820.json"
+  },
+  "manifest_row": {
+    "article_id": "50218820",
+    "group": "2018_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/au/50218820.txt",
+    "now_field_2": "1262",
+    "date_original": "18-11-17",
+    "date_iso": "2018-11-17",
+    "source_name": "The Sydney Morning Herald",
+    "url": "https://www.smh.com.au/world/north-america/death-toll-climbs-with-1000-still-missing-in-california-fires-20181118-p50gq2.html",
+    "title": "Death toll climbs with 1000 still missing in California fires",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Deaths, devastation, emergency response, and air-quality impacts from California wildfires",
+    "climate_relevance": "Climate change appears only in a brief question about whether President Trump’s opinion had changed; no climate position or further climate discussion is provided.",
+    "reason": "The report focuses on the fires, casualties, forest management, and immediate consequences. The isolated climate-change reference does not provide meaningful discourse for climate analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "908d5caad277cd073249495a384bf12299fc557f58738330909eb5cc9551b561",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "82d2fd81eab49d64fdc9441816c7b02018d91a400eb3cde368b59e4d490aee65",
+    "raw_response_text_sha256": "4033ef71bac53c2fa3df965d995e9310fcaa81072a4a22d1ab0918515026d1b6"
+  },
+  "api_metadata": {
+    "id": "resp_02b36a01b83af227006b06280befa887d197d14ddaab8da59d",
+    "model": "gpt-6-luna",
+    "created_at": 1795565580.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2209,
+      "input_tokens_details": {
+        "cache_write_tokens": 2206,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2206
+        }
+      },
+      "output_tokens": 291,
+      "output_tokens_details": {
+        "reasoning_tokens": 144
+      },
+      "total_tokens": 2500
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Deaths, devastation, emergency response, and air-quality impacts from California wildfires\",\n  \"climate_relevance\": \"Climate change appears only in a brief question about whether President Trump’s opinion had changed; no climate position or further climate discussion is provided.\",\n  \"reason\": \"The report focuses on the fires, casualties, forest management, and immediate consequences. The isolated climate-change reference does not provide meaningful discourse for climate analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:13:02Z",
+  "duration_seconds": 2.687,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70109866",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/us/70109866.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/us/70109866.json"
+  },
+  "manifest_row": {
+    "article_id": "70109866",
+    "group": "2018_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/us/70109866.txt",
+    "now_field_2": "913",
+    "date_original": "18-10-04",
+    "date_iso": "2018-10-04",
+    "source_name": "Steel City Underground",
+    "url": "https://www.steelcityunderground.com/2018/10/04/ben-roethlisberger-talks-about-the-steelers-slow-start-lack-of-offense-and-their-upcoming-opponent/",
+    "title": "Ben Roethlisberger talks about the Steelers slow start, lack of offense ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-us-1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "The text contains unrelated excerpts: a Steelers interview, an article defending agricultural GMOs, and a story about mapping for self-driving cars.",
+    "climate_relevance": "The GMO article briefly describes crops requiring less water and fertilizer as a way to prepare for the effects of climate change.",
+    "reason": "Climate change is mentioned in a relevant agricultural context, but it is not a substantial focus of the excerpt.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6445c01789749ea8a3715a299bb53b2b958d6bfed8c284db5a9bbd627dd7950e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8114da0f29df0077e98ece653b87d483f58628c9040bf48c662650844e10b0a6",
+    "raw_response_text_sha256": "7909b61bea4991ddd2fef97771be3afb86954979d856b0ebc858e5deaa01eafc"
+  },
+  "api_metadata": {
+    "id": "resp_0408fe8c3df753f4006b063ae5be5c87d1a2cea12b1662d176",
+    "model": "gpt-6-luna",
+    "created_at": 1795570405.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4857,
+      "input_tokens_details": {
+        "cache_write_tokens": 4854,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4854
+        }
+      },
+      "output_tokens": 435,
+      "output_tokens_details": {
+        "reasoning_tokens": 289
+      },
+      "total_tokens": 5292
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The text contains unrelated excerpts: a Steelers interview, an article defending agricultural GMOs, and a story about mapping for self-driving cars.\",\n  \"climate_relevance\": \"The GMO article briefly describes crops requiring less water and fertilizer as a way to prepare for the effects of climate change.\",\n  \"reason\": \"Climate change is mentioned in a relevant agricultural context, but it is not a substantial focus of the excerpt.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:33:29Z",
+  "duration_seconds": 3.523,
+  "error": null
+}

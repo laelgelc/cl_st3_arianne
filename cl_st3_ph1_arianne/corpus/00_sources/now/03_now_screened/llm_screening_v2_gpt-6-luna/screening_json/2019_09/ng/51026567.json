@@ -1,0 +1,77 @@
+{
+  "article_id": "51026567",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/ng/51026567.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/ng/51026567.json"
+  },
+  "manifest_row": {
+    "article_id": "51026567",
+    "group": "2019_09",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/ng/51026567.txt",
+    "now_field_2": "940",
+    "date_original": "19-09-11",
+    "date_iso": "2019-09-11",
+    "source_name": "blueprint.ng",
+    "url": "https://www.blueprint.ng/is-the-cassava-bread-initiative-dead-2/",
+    "title": "Is the cassava bread initiative dead? - Blueprint",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Nigeria’s cassava bread initiative and efforts to reduce wheat imports",
+    "climate_relevance": "Climate change appears only in a separate, truncated column snippet about Greta Thunberg; it is not part of the identifiable main article.",
+    "reason": "The main article discusses cassava flour, food production, and economic diversification, with no meaningful climate discourse. The climate reference belongs to an unrelated snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "05b1babc3cb68074f1cae6b5dd8d8f03d3b6260f3b752327799c3707f2fc8b28",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fdd8ded09c901a408d3c99a6a27bc1bbae36fe4a61fad4511e8510959a62cf59",
+    "raw_response_text_sha256": "bb49f0c4910f7b1df9daa9eea77770bfa71458204dda487fb4ae5edbd4404d92"
+  },
+  "api_metadata": {
+    "id": "resp_0501f316be5535c4006b062b7de65887d19266da27fda08550",
+    "model": "gpt-6-luna",
+    "created_at": 1795566462.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1710,
+      "input_tokens_details": {
+        "cache_write_tokens": 1707,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1707
+        }
+      },
+      "output_tokens": 390,
+      "output_tokens_details": {
+        "reasoning_tokens": 241
+      },
+      "total_tokens": 2100
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Nigeria’s cassava bread initiative and efforts to reduce wheat imports\",\n  \"climate_relevance\": \"Climate change appears only in a separate, truncated column snippet about Greta Thunberg; it is not part of the identifiable main article.\",\n  \"reason\": \"The main article discusses cassava flour, food production, and economic diversification, with no meaningful climate discourse. The climate reference belongs to an unrelated snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:27:45Z",
+  "duration_seconds": 3.533,
+  "error": null
+}

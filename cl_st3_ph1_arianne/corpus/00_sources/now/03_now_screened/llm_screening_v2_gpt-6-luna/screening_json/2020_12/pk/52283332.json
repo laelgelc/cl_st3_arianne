@@ -1,0 +1,77 @@
+{
+  "article_id": "52283332",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/pk/52283332.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/pk/52283332.json"
+  },
+  "manifest_row": {
+    "article_id": "52283332",
+    "group": "2020_12",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/pk/52283332.txt",
+    "now_field_2": "153",
+    "date_original": "20-12-11",
+    "date_iso": "2020-12-11",
+    "source_name": "nation.com.pk",
+    "url": "https://nation.com.pk/11-Dec-2020/ihc-expresses-displeasure-over-delay-in-transfer-of-2-bears-to-jordan",
+    "title": "IHC expresses displeasure over delay in transfer of 2 ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Court proceedings concerning the transfer and welfare of animals at Islamabad's Marghazar Zoo",
+    "climate_relevance": "Climate change appears only in the title of the Ministry of Climate Change; the text contains no meaningful discussion of climate change.",
+    "reason": "The article focuses on animal welfare and the delayed relocation of two bears. The ministry reference is institutional, not climate-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7c5f6405f036f83e6169606d4aed59c6ced43af122a383510e08efd4ec37ab2f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4b008cd29faa35217d50f81290444ed04ca3ef85d25e02af7b6bb5cae86db233",
+    "raw_response_text_sha256": "a1e5b286596229ee3dcd187d7376d5bd24f47078d84e4732489fb23e45157fae"
+  },
+  "api_metadata": {
+    "id": "resp_030ada8ce0ecf524006b0630734b1c87d1bf4e82c6e9e872ab",
+    "model": "gpt-6-luna",
+    "created_at": 1795567731.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 685,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 884
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Court proceedings concerning the transfer and welfare of animals at Islamabad's Marghazar Zoo\",\n  \"climate_relevance\": \"Climate change appears only in the title of the Ministry of Climate Change; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article focuses on animal welfare and the delayed relocation of two bears. The ministry reference is institutional, not climate-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:48:53Z",
+  "duration_seconds": 2.255,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70428845",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/nz/70428845.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/nz/70428845.json"
+  },
+  "manifest_row": {
+    "article_id": "70428845",
+    "group": "2019_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/nz/70428845.txt",
+    "now_field_2": "746",
+    "date_original": "19-01-17",
+    "date_iso": "2019-01-17",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/WO1901/S00079/singapore-government-to-amend-the-copyright-act.htm",
+    "title": "Singapore government to amend the Copyright Act",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Singapore's proposed amendments to the Copyright Act and measures against illicit streaming devices",
+    "climate_relevance": "Climate change appears only in an unrelated 'ALSO' teaser for a climate-conference item, not in the main article.",
+    "reason": "The identifiable main article concerns copyright enforcement and video piracy. The climate-related text is a separate, brief related-content snippet and does not contribute meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "797be9efc00af37d4087adae39eeeb0e20f1eaa13129a71a3c3a03b8bb6fd04a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b101c5b96f97eaedbc6c29040167149d7204c2d107be255d31aed93e26d7dc60",
+    "raw_response_text_sha256": "cd468407f16ba4ce74fffdbf049e8da2565e90d15b315b6a75082d11511a0741"
+  },
+  "api_metadata": {
+    "id": "resp_0eed32960b30b1f6006b063c7d8f6087d1ad7c74a72c602379",
+    "model": "gpt-6-luna",
+    "created_at": 1795570813.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1433,
+      "input_tokens_details": {
+        "cache_write_tokens": 1430,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1430
+        }
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 1694
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Singapore's proposed amendments to the Copyright Act and measures against illicit streaming devices\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated 'ALSO' teaser for a climate-conference item, not in the main article.\",\n  \"reason\": \"The identifiable main article concerns copyright enforcement and video piracy. The climate-related text is a separate, brief related-content snippet and does not contribute meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:16Z",
+  "duration_seconds": 3.164,
+  "error": null
+}

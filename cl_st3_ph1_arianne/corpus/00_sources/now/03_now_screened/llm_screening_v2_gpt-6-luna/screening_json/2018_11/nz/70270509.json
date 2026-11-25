@@ -1,0 +1,77 @@
+{
+  "article_id": "70270509",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/nz/70270509.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/nz/70270509.json"
+  },
+  "manifest_row": {
+    "article_id": "70270509",
+    "group": "2018_11",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/nz/70270509.txt",
+    "now_field_2": "3274",
+    "date_original": "18-11-23",
+    "date_iso": "2018-11-23",
+    "source_name": "The Dominion Post",
+    "url": "https://www.stuff.co.nz/environment/108619029/hawkes-bays-water-triple-whammy-of-dry-summer-new-river-restrictions-and-plans-to-increase-irrigation",
+    "title": "Water wars: Triple whammy of dry summer, river restrictions and ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Water scarcity, groundwater extraction, irrigation, and competing water-use interests in Central Hawke’s Bay",
+    "climate_relevance": "The article links changing climate and predictions of hotter, drier conditions to regional water stress, and discusses the need for resilience to climate change. Its main focus, however, is water allocation and irrigation impacts.",
+    "reason": "Climate change forms meaningful background to the article’s discussion of drying conditions and future water-resource pressures, but the central subject is a local dispute over aquifer use, river flows, and irrigation.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2002d25b4a973e53f157277390f3f2eeecfc59555c6e7ade5b8068a1d4ef7502",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b2fbd47f85e4dcbee961ae0a1db7679c56b407e3ecd7584e182dc13a71342e6a",
+    "raw_response_text_sha256": "1fd5611d84fdc29758fe1912032f27d7da7e181adcce33cb688c9467c76c225b"
+  },
+  "api_metadata": {
+    "id": "resp_0a51ba85c279ec15006b063ba2066487d1bd2b680c8dbbbf15",
+    "model": "gpt-6-luna",
+    "created_at": 1795570594.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4869,
+      "input_tokens_details": {
+        "cache_write_tokens": 4866,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4866
+        }
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 5128
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Water scarcity, groundwater extraction, irrigation, and competing water-use interests in Central Hawke’s Bay\",\n  \"climate_relevance\": \"The article links changing climate and predictions of hotter, drier conditions to regional water stress, and discusses the need for resilience to climate change. Its main focus, however, is water allocation and irrigation impacts.\",\n  \"reason\": \"Climate change forms meaningful background to the article’s discussion of drying conditions and future water-resource pressures, but the central subject is a local dispute over aquifer use, river flows, and irrigation.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:36:36Z",
+  "duration_seconds": 2.6,
+  "error": null
+}

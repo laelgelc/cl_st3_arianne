@@ -1,0 +1,77 @@
+{
+  "article_id": "19887463",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/in/19887463.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/in/19887463.json"
+  },
+  "manifest_row": {
+    "article_id": "19887463",
+    "group": "2017_08",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/in/19887463.txt",
+    "now_field_2": "277",
+    "date_original": "17-08-07",
+    "date_iso": "2017-08-07",
+    "source_name": "Economic Times",
+    "url": "http://economictimes.indiatimes.com/jobs/what-you-are-scared-of-is-also-the-worlds-biggest-fear-jobs/articleshow/59953826.cms",
+    "title": "What you are scared of is also the world's biggest fear: Jobs",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-IN.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Public concerns in an international survey, especially unemployment and corruption",
+    "climate_relevance": "Climate change is mentioned only as a comparison while introducing the survey’s top concern; the text provides no substantive discussion of it.",
+    "reason": "The article focuses on unemployment and other reported worries. Its brief reference to climate change does not meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1b98108417e0e4a2e1d2c74ef59ceb55e732fb569f07539842b72ba3012f4e63",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5add9e1c7c88c260a288826f42bbc92abfae0816610552459c237b485de258de",
+    "raw_response_text_sha256": "d26d680ba6789660aff2bb2d7697bd4d57a25534227a9fb008c48d58ab16ee82"
+  },
+  "api_metadata": {
+    "id": "resp_0502b193837ef753006b060c966c0087d2a930119cafc90d2d",
+    "model": "gpt-6-luna",
+    "created_at": 1795558550.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 895,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1114
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Public concerns in an international survey, especially unemployment and corruption\",\n  \"climate_relevance\": \"Climate change is mentioned only as a comparison while introducing the survey’s top concern; the text provides no substantive discussion of it.\",\n  \"reason\": \"The article focuses on unemployment and other reported worries. Its brief reference to climate change does not meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:15:52Z",
+  "duration_seconds": 1.947,
+  "error": null
+}

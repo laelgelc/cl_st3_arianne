@@ -1,0 +1,77 @@
+{
+  "article_id": "86152712",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86152712.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86152712.json"
+  },
+  "manifest_row": {
+    "article_id": "86152712",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86152712.txt",
+    "now_field_2": "1020",
+    "date_original": "20-10-15",
+    "date_iso": "2020-10-15",
+    "source_name": "StarTribune",
+    "url": "https://www.startribune.com/california-heat-wave-prompts-power-shutdowns-fire-danger/572750321/",
+    "title": "California heat wave prompts power shutdowns, fire danger",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "California utility power shutoffs intended to reduce wildfire risk during extreme heat and fire conditions",
+    "climate_relevance": "The article reports that studies link larger American wildfires to climate change and explains that climate change has made California drier and vegetation more flammable.",
+    "reason": "The main article focuses on power outages, wildfire danger, and their effects on residents and schools. Climate change is meaningfully discussed as a factor in worsening wildfire conditions, but it is not the article's central subject. Unrelated coronavirus snippets appear at the end.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3627cbce3afeeafb4cd205fe8fa7d10e6ecf4be438c5c464b252451140ea26c2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0c154431b698784a0bfe1955c5713d696d8ad8ecc2fb6b15f3785768047e005a",
+    "raw_response_text_sha256": "966f9166c8bafa7ce348b2d37617db162b88280fabf6f6e96810efedbb62f1b9"
+  },
+  "api_metadata": {
+    "id": "resp_0311d95dc7f0285f006b064e93a00887d1a5ada19f65bf6086",
+    "model": "gpt-6-luna",
+    "created_at": 1795575443.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1803,
+      "input_tokens_details": {
+        "cache_write_tokens": 1800,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1800
+        }
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 2058
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"California utility power shutoffs intended to reduce wildfire risk during extreme heat and fire conditions\",\n  \"climate_relevance\": \"The article reports that studies link larger American wildfires to climate change and explains that climate change has made California drier and vegetation more flammable.\",\n  \"reason\": \"The main article focuses on power outages, wildfire danger, and their effects on residents and schools. Climate change is meaningfully discussed as a factor in worsening wildfire conditions, but it is not the article's central subject. Unrelated coronavirus snippets appear at the end.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:57:25Z",
+  "duration_seconds": 2.446,
+  "error": null
+}

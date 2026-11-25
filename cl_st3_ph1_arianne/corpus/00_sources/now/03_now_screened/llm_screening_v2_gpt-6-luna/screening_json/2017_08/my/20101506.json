@@ -1,0 +1,77 @@
+{
+  "article_id": "20101506",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/my/20101506.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/my/20101506.json"
+  },
+  "manifest_row": {
+    "article_id": "20101506",
+    "group": "2017_08",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/my/20101506.txt",
+    "now_field_2": "235",
+    "date_original": "17-08-20",
+    "date_iso": "2017-08-20",
+    "source_name": "The Sun Daily",
+    "url": "http://www.thesundaily.my/news/2017/08/20/40000-perlis-farmers-appeal-rm300-monthly-allowance",
+    "title": "40000 Perlis farmers appeal for RM300 monthly allowance",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-MY.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Perlis farmers' appeal for a monthly government allowance",
+    "climate_relevance": "The article connects farmers' livelihoods to climate change, citing severe droughts that prevent rice cultivation and excessive rain that causes flooding and crop damage.",
+    "reason": "The main focus is farmers' financial support and eligibility for an allowance. Climate-related impacts are meaningfully described as part of the case for assistance, but climate change is not the central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b8cde3d530f98d6ee74df84fe40f62165b6dcc4555c5844497989da3098171ea",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7bab5d48890cdb5ea4de86de1ca6320e6aad94821645848a2516e2dc93cbca7f",
+    "raw_response_text_sha256": "12306c609ea6173464645fd000cfe38bb7769a20b76613acf7a211cef3278be2"
+  },
+  "api_metadata": {
+    "id": "resp_040539f543babcd5006b060cdd90b087d2b07ec0e79781cfa9",
+    "model": "gpt-6-luna",
+    "created_at": 1795558621.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 789,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 178,
+      "output_tokens_details": {
+        "reasoning_tokens": 26
+      },
+      "total_tokens": 967
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Perlis farmers' appeal for a monthly government allowance\",\n  \"climate_relevance\": \"The article connects farmers' livelihoods to climate change, citing severe droughts that prevent rice cultivation and excessive rain that causes flooding and crop damage.\",\n  \"reason\": \"The main focus is farmers' financial support and eligibility for an allowance. Climate-related impacts are meaningfully described as part of the case for assistance, but climate change is not the central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:03Z",
+  "duration_seconds": 1.575,
+  "error": null
+}

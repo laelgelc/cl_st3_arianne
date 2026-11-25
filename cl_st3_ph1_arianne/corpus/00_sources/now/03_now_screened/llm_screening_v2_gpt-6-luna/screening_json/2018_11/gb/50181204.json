@@ -1,0 +1,77 @@
+{
+  "article_id": "50181204",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/gb/50181204.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/gb/50181204.json"
+  },
+  "manifest_row": {
+    "article_id": "50181204",
+    "group": "2018_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/gb/50181204.txt",
+    "now_field_2": "8487",
+    "date_original": "18-11-02",
+    "date_iso": "2018-11-02",
+    "source_name": "Business Insider UK",
+    "url": "http://uk.businessinsider.com/most-competitive-house-districts-in-2018-midterm-elections-2018-8",
+    "title": "These 25 Congressional races to watch are some of the most ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Competitive congressional races in the 2018 midterm elections",
+    "climate_relevance": "Climate change appears only in a list of issues on which one candidate crossed party lines.",
+    "reason": "The article is an election guide, and the brief reference to climate change provides no substantive discussion of climate policy or debate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3f912b79797ffb7994377716f4bb5cbfdb1608294d598d0b9ccc9beed62bc787",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7fbcf00c15a8e10710855ddb1b30ec1f50b2d5428db8c0f48f0324b94c9a8729",
+    "raw_response_text_sha256": "e2b48473c2903638338a903be194605349012f7b3d684855b59f7c717d7ded5d"
+  },
+  "api_metadata": {
+    "id": "resp_0a8665d51c429a0b006b0627e7746887d1b467e587b5a1a765",
+    "model": "gpt-6-luna",
+    "created_at": 1795565543.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 12430,
+      "input_tokens_details": {
+        "cache_write_tokens": 12427,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 12427
+        }
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 12656
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Competitive congressional races in the 2018 midterm elections\",\n  \"climate_relevance\": \"Climate change appears only in a list of issues on which one candidate crossed party lines.\",\n  \"reason\": \"The article is an election guide, and the brief reference to climate change provides no substantive discussion of climate policy or debate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:12:25Z",
+  "duration_seconds": 2.275,
+  "error": null
+}

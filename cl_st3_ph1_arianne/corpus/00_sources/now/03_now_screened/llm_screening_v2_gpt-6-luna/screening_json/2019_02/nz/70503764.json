@@ -1,0 +1,77 @@
+{
+  "article_id": "70503764",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70503764.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70503764.json"
+  },
+  "manifest_row": {
+    "article_id": "70503764",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70503764.txt",
+    "now_field_2": "706",
+    "date_original": "19-02-11",
+    "date_iso": "2019-02-11",
+    "source_name": "Horsetalk",
+    "url": "https://www.horsetalk.co.nz/2019/02/12/second-racing-yard-britain-equine-flu/",
+    "title": "Second racing yard in Britain hit by equine flu, as containment efforts ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Equine influenza cases and their effects on British horse racing",
+    "climate_relevance": "Climate change is discussed in a separate insect-decline article appended after the horse-racing report, not in the identifiable main article.",
+    "reason": "The main article concerns an equine influenza outbreak and racing restrictions. Although the appended insect-decline story meaningfully identifies climate change as one cause, it is a distinct, unrelated article rather than climate discourse in the main report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c7c1b7cb82efaff1dc6cb4a5ea7196f056d37dd7ae18c98fbf6cb0c9cbe7dedb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5c0533b20e6249d5c91f27016e36271fc2da2590174d080b861b119be1222f89",
+    "raw_response_text_sha256": "e87ef52b3850be6d152662461bb2992688663a3aa048c7a5f572196038d71ecb"
+  },
+  "api_metadata": {
+    "id": "resp_0d5901db8d62d67d006b063d09196c87d1808c42ab11eba13e",
+    "model": "gpt-6-luna",
+    "created_at": 1795570953.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2429,
+      "input_tokens_details": {
+        "cache_write_tokens": 2426,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2426
+        }
+      },
+      "output_tokens": 493,
+      "output_tokens_details": {
+        "reasoning_tokens": 331
+      },
+      "total_tokens": 2922
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Equine influenza cases and their effects on British horse racing\",\n  \"climate_relevance\": \"Climate change is discussed in a separate insect-decline article appended after the horse-racing report, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns an equine influenza outbreak and racing restrictions. Although the appended insect-decline story meaningfully identifies climate change as one cause, it is a distinct, unrelated article rather than climate discourse in the main report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:37Z",
+  "duration_seconds": 4.052,
+  "error": null
+}

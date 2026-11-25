@@ -1,0 +1,77 @@
+{
+  "article_id": "24942094",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/ng/24942094.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/ng/24942094.json"
+  },
+  "manifest_row": {
+    "article_id": "24942094",
+    "group": "2018_05",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/ng/24942094.txt",
+    "now_field_2": "1901",
+    "date_original": "18-05-31",
+    "date_iso": "2018-05-31",
+    "source_name": "Daily Sun",
+    "url": "http://sunnewsonline.com/inec-decries-declining-youths-participation-in-election-process/",
+    "title": "INEC decries declining youths participation in election process",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Youth participation in Nigeria's electoral process",
+    "climate_relevance": "Climate change appears only in an unrelated 'Latest' news snippet, which briefly mentions a forecast economic loss and the need for climate policy.",
+    "reason": "The identifiable main article concerns electoral participation and contains no climate discourse. The climate-related sentence belongs to a separate news item in the page's latest-news listing, not the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2cb8dc2897cff0ae1e01caccf49c2603789f857c9c14e7d1ea0b066e6ad6a423",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "60705b2420f9c03935f01fc118a6f0008b875ae2b90c5b881681807d53cffcf2",
+    "raw_response_text_sha256": "3af1ff69935986728ae5bd8777dca8b446267755aee0c0e6836c79b5465dc582"
+  },
+  "api_metadata": {
+    "id": "resp_07303cecf38caa7b006b0612f47ef087d2970cab816c348e78",
+    "model": "gpt-6-luna",
+    "created_at": 1795560180.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3067,
+      "input_tokens_details": {
+        "cache_write_tokens": 3064,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3064
+        }
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 3326
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Youth participation in Nigeria's electoral process\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated 'Latest' news snippet, which briefly mentions a forecast economic loss and the need for climate policy.\",\n  \"reason\": \"The identifiable main article concerns electoral participation and contains no climate discourse. The climate-related sentence belongs to a separate news item in the page's latest-news listing, not the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:43:03Z",
+  "duration_seconds": 2.894,
+  "error": null
+}

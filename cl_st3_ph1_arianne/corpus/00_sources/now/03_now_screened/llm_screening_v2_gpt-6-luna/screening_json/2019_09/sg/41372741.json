@@ -1,0 +1,77 @@
+{
+  "article_id": "41372741",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/sg/41372741.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/sg/41372741.json"
+  },
+  "manifest_row": {
+    "article_id": "41372741",
+    "group": "2019_09",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/sg/41372741.txt",
+    "now_field_2": "203",
+    "date_original": "19-09-25",
+    "date_iso": "2019-09-25",
+    "source_name": "eco-business.com",
+    "url": "https://www.eco-business.com/events/2nd-sustainable-rice-conference-exhibition/",
+    "title": "2nd Sustainable Rice Conference &amp; Exhibition | Events ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "A conference promoting sustainability in the global rice sector",
+    "climate_relevance": "Climate change appears only in a list of global SDG targets the conference may contribute to; no climate-related issue or discussion is developed.",
+    "reason": "The text is an event description focused on sustainable rice, with climate change mentioned only as one item in a broad list.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c1bc0c8b08569a62a2b908b8713a8ddca54c3fe8c083f3bf87d8418ed8ab031d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cc94f9eb36be3bc8606071b5db9ec59f7fe2196a417d4d6e2cd9da85e0417a58",
+    "raw_response_text_sha256": "ec86d1b8c4c8cc6bbe7b417eb954198d8a6dea3cb068156ce8e4e0aab220e1fb"
+  },
+  "api_metadata": {
+    "id": "resp_0bbf0d68547a0227006b062175b29887d285d91ba9e58b7c23",
+    "model": "gpt-6-luna",
+    "created_at": 1795563893.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 749,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 214,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 963
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A conference promoting sustainability in the global rice sector\",\n  \"climate_relevance\": \"Climate change appears only in a list of global SDG targets the conference may contribute to; no climate-related issue or discussion is developed.\",\n  \"reason\": \"The text is an event description focused on sustainable rice, with climate change mentioned only as one item in a broad list.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:44:55Z",
+  "duration_seconds": 1.894,
+  "error": null
+}

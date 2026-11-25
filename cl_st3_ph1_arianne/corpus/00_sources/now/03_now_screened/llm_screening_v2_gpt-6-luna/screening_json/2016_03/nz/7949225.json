@@ -1,0 +1,77 @@
+{
+  "article_id": "7949225",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_03/nz/7949225.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_03/nz/7949225.json"
+  },
+  "manifest_row": {
+    "article_id": "7949225",
+    "group": "2016_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_03/nz/7949225.txt",
+    "now_field_2": "523",
+    "date_original": "16-03-28",
+    "date_iso": "2016-03-28",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/BU1603/S00835/emirates-adds-birmingham-to-a380-connections-from-nz.htm",
+    "title": "Emirates Adds Birmingham to A380 Connections from NZ",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-03-sls/16-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Emirates launching A380 service to Birmingham",
+    "climate_relevance": "The main article is about airline service and contains no meaningful climate discussion. A separate 'ALSO' snippet mentions emissions trading policy.",
+    "reason": "The identifiable main article concerns aviation services, not climate change. The climate-policy reference appears only in an unrelated, separate news snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "958d69f722d6a1d47f871d8ee1f7fe6992b49902d93fe7f11d6efcc7cae535a5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "41f7baece4d604d4c1ae6f81fde65c2d7644268421d431563266bb3fc2efc4db",
+    "raw_response_text_sha256": "1c46715919446fa7599753bcec7193515b66322a106a5f4269843d8fc02b0e31"
+  },
+  "api_metadata": {
+    "id": "resp_0c14ca5dd42be0e4006b06468d9ec087d1858ece63383512e4",
+    "model": "gpt-6-luna",
+    "created_at": 1795573389.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1174,
+      "input_tokens_details": {
+        "cache_write_tokens": 1171,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1171
+        }
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 1446
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Emirates launching A380 service to Birmingham\",\n  \"climate_relevance\": \"The main article is about airline service and contains no meaningful climate discussion. A separate 'ALSO' snippet mentions emissions trading policy.\",\n  \"reason\": \"The identifiable main article concerns aviation services, not climate change. The climate-policy reference appears only in an unrelated, separate news snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:23:12Z",
+  "duration_seconds": 2.703,
+  "error": null
+}

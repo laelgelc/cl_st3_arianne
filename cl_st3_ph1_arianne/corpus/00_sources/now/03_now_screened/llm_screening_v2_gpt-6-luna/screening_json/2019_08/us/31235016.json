@@ -1,0 +1,77 @@
+{
+  "article_id": "31235016",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/us/31235016.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/us/31235016.json"
+  },
+  "manifest_row": {
+    "article_id": "31235016",
+    "group": "2019_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/us/31235016.txt",
+    "now_field_2": "534",
+    "date_original": "19-08-21",
+    "date_iso": "2019-08-21",
+    "source_name": "buzzfeednews.com",
+    "url": "https://www.buzzfeednews.com/article/hamedaleaziz/asylum-work-permits-deny-trump-immigration-policy",
+    "title": "The Trump Administration Plans To Deny Work Permits To ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "background",
+    "main_topic": "A mixture of immigration policy, an Iceland glacier memorial report, and Bernie Sanders's relationship with the press",
+    "climate_relevance": "A distinct passage reports on Iceland's first glacier lost to climate change, linking glacier melt to fossil-fuel emissions, warming, and sea-level rise.",
+    "reason": "The text contains multiple unrelated article excerpts, and no single main article is identifiable. The glacier memorial passage contains meaningful climate discourse, but climate change is not the organizing topic of the text as a whole.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "12cc57f4df3a9635f57c6136bec1c6396f61da51a396898d18e09696262ce0cc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fb4a8f0ddb6fd0c499ce9fddde9309d8edad31a7a6bf03364b813cfc68324513",
+    "raw_response_text_sha256": "b2f9ced70bcdfcc710f060541ab2741e0a86da60828c8619f6d7b88650d46ffc"
+  },
+  "api_metadata": {
+    "id": "resp_05f3414d55c5a590006b06163fbbb487d2bb3ea0378b82afaa",
+    "model": "gpt-6-luna",
+    "created_at": 1795561023.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3727,
+      "input_tokens_details": {
+        "cache_write_tokens": 3724,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3724
+        }
+      },
+      "output_tokens": 679,
+      "output_tokens_details": {
+        "reasoning_tokens": 513
+      },
+      "total_tokens": 4406
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A mixture of immigration policy, an Iceland glacier memorial report, and Bernie Sanders's relationship with the press\",\n  \"climate_relevance\": \"A distinct passage reports on Iceland's first glacier lost to climate change, linking glacier melt to fossil-fuel emissions, warming, and sea-level rise.\",\n  \"reason\": \"The text contains multiple unrelated article excerpts, and no single main article is identifiable. The glacier memorial passage contains meaningful climate discourse, but climate change is not the organizing topic of the text as a whole.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:57:08Z",
+  "duration_seconds": 4.875,
+  "error": null
+}

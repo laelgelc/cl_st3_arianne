@@ -1,0 +1,77 @@
+{
+  "article_id": "70159477",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/us/70159477.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/us/70159477.json"
+  },
+  "manifest_row": {
+    "article_id": "70159477",
+    "group": "2018_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/us/70159477.txt",
+    "now_field_2": "1188",
+    "date_original": "18-10-19",
+    "date_iso": "2018-10-19",
+    "source_name": "Phys.Org",
+    "url": "https://phys.org/news/2018-10-defectless-metal-crystals-unprecedented-size.html",
+    "title": "Producing defectless metal crystals of unprecedented size",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-us-2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A technique for producing large single-crystal metal foils",
+    "climate_relevance": "Climate change appears only in an unrelated recommended-story snippet, not in the main article.",
+    "reason": "The identifiable main article focuses on materials science and metal crystals. The climate-related text is part of a separate recommendation and does not contribute to the main article's climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "956f92f41b2a60693e4f92252fcb2685d01d9be0d0dbce5d3cb04db9ea830e1a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "273b48c9b89485aa4655b498fbbe6877b74c0fc97b640d754682791d6c1a40d4",
+    "raw_response_text_sha256": "849f69d60599467bf091effd80137771c2f5adcd61de7ef85b7e3092e1f3f834"
+  },
+  "api_metadata": {
+    "id": "resp_0e693d201e962178006b063b274ec487d1834e9ca18694e0ce",
+    "model": "gpt-6-luna",
+    "created_at": 1795570471.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2068,
+      "input_tokens_details": {
+        "cache_write_tokens": 2065,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2065
+        }
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 2305
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A technique for producing large single-crystal metal foils\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated recommended-story snippet, not in the main article.\",\n  \"reason\": \"The identifiable main article focuses on materials science and metal crystals. The climate-related text is part of a separate recommendation and does not contribute to the main article's climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:34:33Z",
+  "duration_seconds": 1.983,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50237710",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/ke/50237710.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/ke/50237710.json"
+  },
+  "manifest_row": {
+    "article_id": "50237710",
+    "group": "2018_11",
+    "country_code": "ke",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/ke/50237710.txt",
+    "now_field_2": "340",
+    "date_original": "18-11-25",
+    "date_iso": "2018-11-25",
+    "source_name": "Kenya News Agency",
+    "url": "http://www.kenyanews.go.ke/makueni-county-government-to-construct-six-mega-dams-by-2025/",
+    "title": "Makueni county government to construct six mega dams by 2025",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-ke.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Planned dams and other measures to address water shortages in Makueni County",
+    "climate_relevance": "Climate change appears only in the title of a county official; the article does not discuss climate change or connect water scarcity and water projects to it.",
+    "reason": "The article focuses on water infrastructure and rainwater harvesting without meaningful climate-change discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "89ac6592079de5896ec3145f3b5dd30885ef618b4a7948c2fd7096c074dd5060",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2bd6979967e5549e86d0d709d20d6356277cea3c21a3ce0a5dd0ff80873a8dad",
+    "raw_response_text_sha256": "3ed58b600b3af3c02b26a7ee65df748f07be3da91461c2c5ef131ace128ddd3a"
+  },
+  "api_metadata": {
+    "id": "resp_0912275e20286776006b06281d00cc87d1a4d9d3f0efef1eb6",
+    "model": "gpt-6-luna",
+    "created_at": 1795565597.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 924,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 243,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 1167
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Planned dams and other measures to address water shortages in Makueni County\",\n  \"climate_relevance\": \"Climate change appears only in the title of a county official; the article does not discuss climate change or connect water scarcity and water projects to it.\",\n  \"reason\": \"The article focuses on water infrastructure and rainwater harvesting without meaningful climate-change discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:13:19Z",
+  "duration_seconds": 2.552,
+  "error": null
+}

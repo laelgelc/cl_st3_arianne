@@ -1,0 +1,77 @@
+{
+  "article_id": "40825716",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40825716.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40825716.json"
+  },
+  "manifest_row": {
+    "article_id": "40825716",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40825716.txt",
+    "now_field_2": "342",
+    "date_original": "19-04-10",
+    "date_iso": "2019-04-10",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/11/the-genting-challenge-a-boost-for-junior-golf/",
+    "title": "The Genting Challenge a boost for Junior Golf",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Junior golf tournament in Malaysia",
+    "climate_relevance": "A separate introductory news snippet mentions sustainable energy solutions and includes climate change in a minister's portfolio title, but the identifiable main article is about golf and develops no climate-related discussion.",
+    "reason": "The climate references occur only in an unrelated snippet and an official's title; they do not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "440d8b7266ec88e98c81728877b1cc1f7847cd97a06aab79e23309620d216f2d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "06929a404f0673324635b3e3ae499556930816fe265e8b33ae2fb20fdc6c090f",
+    "raw_response_text_sha256": "8b0e3100c79f114bdc2fd74d442ecdd7dc01832dd7d616a1d8b125c50265262d"
+  },
+  "api_metadata": {
+    "id": "resp_0bbff403c7e90d33006b061fe72fe487d28ac2947ed14f2ff9",
+    "model": "gpt-6-luna",
+    "created_at": 1795563495.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 947,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 392,
+      "output_tokens_details": {
+        "reasoning_tokens": 245
+      },
+      "total_tokens": 1339
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Junior golf tournament in Malaysia\",\n  \"climate_relevance\": \"A separate introductory news snippet mentions sustainable energy solutions and includes climate change in a minister's portfolio title, but the identifiable main article is about golf and develops no climate-related discussion.\",\n  \"reason\": \"The climate references occur only in an unrelated snippet and an official's title; they do not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:38:18Z",
+  "duration_seconds": 3.091,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "82784089",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82784089.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82784089.json"
+  },
+  "manifest_row": {
+    "article_id": "82784089",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82784089.txt",
+    "now_field_2": "373",
+    "date_original": "19-12-19",
+    "date_iso": "2019-12-19",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191219232717-2uxlc",
+    "title": "Prosecutors oppose early prison release for ex-Trump lawyer Cohen",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us8.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Federal prosecutors' opposition to Michael Cohen's request for an early prison release",
+    "climate_relevance": "Climate change appears only in a generic description of the news organization's coverage.",
+    "reason": "The article is about Michael Cohen's legal case and contains no meaningful climate-change discourse; the sole mention is boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "36c8ec4afe3ffded2234be024fa7f9eda4e5a2e306e4577f30b9b6fdf07f49aa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b2dc19942bd432c47c126fe81c7d99447242a1f693c1f367804d27cf8a54e7a3",
+    "raw_response_text_sha256": "26bb4964a02e6975390096897f082912f554f2327f996656a3aa84065ae52ab5"
+  },
+  "api_metadata": {
+    "id": "resp_0c6bcb29c1fd580f006b0648ddae8087d1b500013a078746a1",
+    "model": "gpt-6-luna",
+    "created_at": 1795573981.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 953,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 179,
+      "output_tokens_details": {
+        "reasoning_tokens": 47
+      },
+      "total_tokens": 1132
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Federal prosecutors' opposition to Michael Cohen's request for an early prison release\",\n  \"climate_relevance\": \"Climate change appears only in a generic description of the news organization's coverage.\",\n  \"reason\": \"The article is about Michael Cohen's legal case and contains no meaningful climate-change discourse; the sole mention is boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:33:03Z",
+  "duration_seconds": 1.708,
+  "error": null
+}

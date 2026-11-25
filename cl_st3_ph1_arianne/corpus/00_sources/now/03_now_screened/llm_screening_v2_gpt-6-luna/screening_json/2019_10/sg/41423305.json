@@ -1,0 +1,77 @@
+{
+  "article_id": "41423305",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/sg/41423305.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/sg/41423305.json"
+  },
+  "manifest_row": {
+    "article_id": "41423305",
+    "group": "2019_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/sg/41423305.txt",
+    "now_field_2": "504",
+    "date_original": "19-10-18",
+    "date_iso": "2019-10-18",
+    "source_name": "eco-business.com",
+    "url": "https://www.eco-business.com/news/cocaine-traffickers-fuel-climate-change/",
+    "title": "Cocaine traffickers fuel climate change | News | Eco ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Cocaine trafficking, drug policy, and deforestation in Central America",
+    "climate_relevance": "The article explains that forest clearing and fires release stored carbon and contribute to global warming, linking trafficking and anti-drug policy to climate impacts.",
+    "reason": "Climate change is a meaningful part of the article’s framing and explanation, but most of the discussion focuses on drug trafficking, deforestation, conservation, and Indigenous land rights rather than climate change itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "acbfddba8a6151076fb5f389846d10c8cdc38c14aa4c1979dad14c32500889a1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "61e71628d470bdcd0b98b355dcd599d0b20c33fe46ff3c8cd87061dd8308f794",
+    "raw_response_text_sha256": "370b335cc116aff024c39093ca08517eeb4c7848b8ba1f7792d417a1a5dfd650"
+  },
+  "api_metadata": {
+    "id": "resp_0a0d15c89e82adf5006b0621b58bb487d2b7410a0b57aa63e8",
+    "model": "gpt-6-luna",
+    "created_at": 1795563957.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1146,
+      "input_tokens_details": {
+        "cache_write_tokens": 1143,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1143
+        }
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 1439
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Cocaine trafficking, drug policy, and deforestation in Central America\",\n  \"climate_relevance\": \"The article explains that forest clearing and fires release stored carbon and contribute to global warming, linking trafficking and anti-drug policy to climate impacts.\",\n  \"reason\": \"Climate change is a meaningful part of the article’s framing and explanation, but most of the discussion focuses on drug trafficking, deforestation, conservation, and Indigenous land rights rather than climate change itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:46:00Z",
+  "duration_seconds": 2.74,
+  "error": null
+}

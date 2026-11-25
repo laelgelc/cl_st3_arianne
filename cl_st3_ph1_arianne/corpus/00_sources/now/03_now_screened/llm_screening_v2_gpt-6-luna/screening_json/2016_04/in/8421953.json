@@ -1,0 +1,77 @@
+{
+  "article_id": "8421953",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_04/in/8421953.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_04/in/8421953.json"
+  },
+  "manifest_row": {
+    "article_id": "8421953",
+    "group": "2016_04",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_04/in/8421953.txt",
+    "now_field_2": "317",
+    "date_original": "16-04-22",
+    "date_iso": "2016-04-22",
+    "source_name": "Times of India",
+    "url": "http://timesofindia.indiatimes.com/city/bengaluru/Students-try-to-steal-petrol-while-smoking-sustain-burns/articleshow/51950843.cms",
+    "title": "Students try to steal petrol while smoking, sustain burns",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-04-ovb/16-04-in.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Two students sustain burns while attempting to steal petrol",
+    "climate_relevance": "A separate closing snippet mentions countries signing the Paris Agreement, but the identifiable main article contains no climate-change discourse.",
+    "reason": "The article is about a petrol theft incident. The climate-related sentence appears to be an unrelated appended snippet and does not make the main article relevant for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c6f86ed25ecc07498abc8e27fd4ddda7826686d90bbc102acc87f01246e8e5ea",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "44156a7e1889cd4709919c49252c08babff20367790de8f5e166579bef98de2a",
+    "raw_response_text_sha256": "ac99e0eceef9dacdfdc3a2bf3d73a9010c1a4945e1a208004019593534bebff8"
+  },
+  "api_metadata": {
+    "id": "resp_0683c40bcf2c1511006b064a699c0087d1a25ad9fa86ea444e",
+    "model": "gpt-6-luna",
+    "created_at": 1795574377.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 926,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 1151
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Two students sustain burns while attempting to steal petrol\",\n  \"climate_relevance\": \"A separate closing snippet mentions countries signing the Paris Agreement, but the identifiable main article contains no climate-change discourse.\",\n  \"reason\": \"The article is about a petrol theft incident. The climate-related sentence appears to be an unrelated appended snippet and does not make the main article relevant for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:39:40Z",
+  "duration_seconds": 3.377,
+  "error": null
+}

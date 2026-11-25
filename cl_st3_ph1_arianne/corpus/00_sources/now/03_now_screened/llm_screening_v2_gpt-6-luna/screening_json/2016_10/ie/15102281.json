@@ -1,0 +1,77 @@
+{
+  "article_id": "15102281",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_10/ie/15102281.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_10/ie/15102281.json"
+  },
+  "manifest_row": {
+    "article_id": "15102281",
+    "group": "2016_10",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_10/ie/15102281.txt",
+    "now_field_2": "215",
+    "date_original": "16-10-28",
+    "date_iso": "2016-10-28",
+    "source_name": "The Kerryman",
+    "url": "http://www.independent.ie/regionals/kerryman/news/citizens-assembly-snub-for-kerry-35162211.html",
+    "title": "Citizens' Assembly snub for Kerry",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-10-ykw/16-10-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Regional representation on Ireland's citizens' assembly",
+    "climate_relevance": "Climate change is only listed as one of several topics the assembly will consider; there is no discussion of it.",
+    "reason": "The text focuses on the geographic makeup of the assembly and contains no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "995290ae95b6fee8df9221fda60a2836da290fdf2312e8bb693207fa46bea5fa",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bdc0cf45befcd37f730b589bb79478559c6ae3d1cfe32d65d9cf57989af73789",
+    "raw_response_text_sha256": "f686c56af95661ea417f19029701cf6bf80004d64b77f9353125479ebaeef195"
+  },
+  "api_metadata": {
+    "id": "resp_00a3aa83f31abe3f006b06064b03a887d28c6bc9f91555d4a5",
+    "model": "gpt-6-luna",
+    "created_at": 1795556939.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 756,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 176,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 932
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Regional representation on Ireland's citizens' assembly\",\n  \"climate_relevance\": \"Climate change is only listed as one of several topics the assembly will consider; there is no discussion of it.\",\n  \"reason\": \"The text focuses on the geographic makeup of the assembly and contains no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:49:01Z",
+  "duration_seconds": 2.253,
+  "error": null
+}

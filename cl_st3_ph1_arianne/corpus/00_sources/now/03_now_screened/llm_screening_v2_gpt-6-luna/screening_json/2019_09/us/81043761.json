@@ -1,0 +1,77 @@
+{
+  "article_id": "81043761",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/81043761.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/81043761.json"
+  },
+  "manifest_row": {
+    "article_id": "81043761",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/81043761.txt",
+    "now_field_2": "133",
+    "date_original": "19-09-12",
+    "date_iso": "2019-09-12",
+    "source_name": "San Diego Reader",
+    "url": "https://www.sandiegoreader.com/events/2019/sep/12/a-bold-new-transportation-vision-in/",
+    "title": "San Diego Forward: The 2021 Regional Plan",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A presentation about SANDAG's 2021 Regional Plan and transportation strategies for the San Diego region.",
+    "climate_relevance": "Climate change appears in the event-series label and host organization's name, but the description does not meaningfully discuss climate change or its implications.",
+    "reason": "The available text focuses on transportation planning, connectivity, safety, sustainability, and quality of life. Climate references are contextual labels rather than substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6f20e9685e767f6e1f78927520cdf0873bdcc333619ca1dbf02db3f00d5307fe",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9d666c77c583bfa1688c1800c7da623d22d0a2a85d3e1d4bac3f191b7a08ce20",
+    "raw_response_text_sha256": "cf669aba8d73519f3c62895e6e2e12e87cb596e499c5fa6c3a002bc272171399"
+  },
+  "api_metadata": {
+    "id": "resp_03b7d34da3510241006b0646da2c5887d19e7aaf0b1a9ea936",
+    "model": "gpt-6-luna",
+    "created_at": 1795573466.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 647,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 905
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A presentation about SANDAG's 2021 Regional Plan and transportation strategies for the San Diego region.\",\n  \"climate_relevance\": \"Climate change appears in the event-series label and host organization's name, but the description does not meaningfully discuss climate change or its implications.\",\n  \"reason\": \"The available text focuses on transportation planning, connectivity, safety, sustainability, and quality of life. Climate references are contextual labels rather than substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:24:28Z",
+  "duration_seconds": 2.4,
+  "error": null
+}

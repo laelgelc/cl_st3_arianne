@@ -1,0 +1,77 @@
+{
+  "article_id": "60230242",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/ca/60230242.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/ca/60230242.json"
+  },
+  "manifest_row": {
+    "article_id": "60230242",
+    "group": "2018_11",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/ca/60230242.txt",
+    "now_field_2": "1149",
+    "date_original": "18-11-05",
+    "date_iso": "2018-11-05",
+    "source_name": "Vancouver Courier",
+    "url": "https://www.vancourier.com/news/mayor-kennedy-stewart-promises-respect-in-leading-mixed-city-council-1.23488053",
+    "title": "Mayor Kennedy Stewart promises 'respect' in leading mixed city council",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "Vancouver Mayor Kennedy Stewart's inauguration, council priorities, and the city's affordability crisis",
+    "climate_relevance": "Climate change is briefly named among the mayor's broad priorities, with no further discussion of its causes, impacts, policies, or implications.",
+    "reason": "The article is primarily about city council and housing affordability. Climate change appears only as a passing item in a list, so it offers little substantive material for climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "884981c297342a07a4ee13bc3cceb2dea99ae877c680089135c4914162c71acf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fc919d47837951501ca34518ff0a3ed95b6df36aae49bfff5323e97628df1f08",
+    "raw_response_text_sha256": "d422515acce1102b67ee583b88936d77e2fcb4fdb14c92ae963f0a42ee13271a"
+  },
+  "api_metadata": {
+    "id": "resp_0600368cb978d04d006b06319e561487d187dd8490fb1d462d",
+    "model": "gpt-6-luna",
+    "created_at": 1795568030.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2010,
+      "input_tokens_details": {
+        "cache_write_tokens": 2007,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2007
+        }
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 2267
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Vancouver Mayor Kennedy Stewart's inauguration, council priorities, and the city's affordability crisis\",\n  \"climate_relevance\": \"Climate change is briefly named among the mayor's broad priorities, with no further discussion of its causes, impacts, policies, or implications.\",\n  \"reason\": \"The article is primarily about city council and housing affordability. Climate change appears only as a passing item in a list, so it offers little substantive material for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:53:52Z",
+  "duration_seconds": 2.234,
+  "error": null
+}

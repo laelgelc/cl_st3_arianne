@@ -1,0 +1,77 @@
+{
+  "article_id": "70764739",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/us/70764739.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/us/70764739.json"
+  },
+  "manifest_row": {
+    "article_id": "70764739",
+    "group": "2019_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/us/70764739.txt",
+    "now_field_2": "855",
+    "date_original": "19-05-12",
+    "date_iso": "2019-05-12",
+    "source_name": "The Guardian",
+    "url": "https://www.theguardian.com/us-news/2019/may/12/pete-buttigieg-human-rights-campaign-trump",
+    "title": "Pete Buttigieg describes 'crisis of belonging' - and revels in Trump jabs",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Pete Buttigieg's presidential campaign speech and its themes of identity, belonging, and political divisions",
+    "climate_relevance": "Climate change appears only in a related-article headline about Joe Biden; the article itself contains no meaningful climate discourse.",
+    "reason": "The identifiable main article is about Buttigieg's campaign and speech. The climate-change reference is an unrelated navigation headline, not part of the article's substantive discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ecbb435df1a5370823c0ffaa8075cb1bc64618994f0046f37f45e14ef8705006",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a4efaa634d73609c033d026f4ec34ca7c5b12c8f0bd22acef87cf3ff38a9c0b8",
+    "raw_response_text_sha256": "96547dabbf57955a100588c8cbd62987d45fad5956b23ea542622be8de618865"
+  },
+  "api_metadata": {
+    "id": "resp_03a124f16b8e098b006b063f017fa887d18c6f9a5b136accaa",
+    "model": "gpt-6-luna",
+    "created_at": 1795571457.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1593,
+      "input_tokens_details": {
+        "cache_write_tokens": 1590,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1590
+        }
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 1852
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Pete Buttigieg's presidential campaign speech and its themes of identity, belonging, and political divisions\",\n  \"climate_relevance\": \"Climate change appears only in a related-article headline about Joe Biden; the article itself contains no meaningful climate discourse.\",\n  \"reason\": \"The identifiable main article is about Buttigieg's campaign and speech. The climate-change reference is an unrelated navigation headline, not part of the article's substantive discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:51:00Z",
+  "duration_seconds": 3.254,
+  "error": null
+}

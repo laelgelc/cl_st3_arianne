@@ -1,0 +1,77 @@
+{
+  "article_id": "17229427",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_03/us/17229427.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_03/us/17229427.json"
+  },
+  "manifest_row": {
+    "article_id": "17229427",
+    "group": "2017_03",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_03/us/17229427.txt",
+    "now_field_2": "722",
+    "date_original": "17-03-03",
+    "date_iso": "2017-03-03",
+    "source_name": "The Denver Post",
+    "url": "http://www.denverpost.com/2017/03/03/climate-change-lettuce-salad/",
+    "title": "What climate change has to do with the price of your lettuce",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-03.txt\"]",
+    "metadata_article_files": "[\"text-17-03/text_17-03-US.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "substantial",
+    "main_topic": "Potential lettuce shortages and agricultural disruption linked to unusual weather and climate change",
+    "climate_relevance": "The article discusses how climate change may contribute to warmer temperatures and heavier precipitation affecting lettuce harvests, and connects these disruptions to broader agricultural and food-security risks.",
+    "reason": "Climate change, its influence on weather, and its impacts on agriculture are substantial parts of the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2e486825a3fe502a8ad408a62c9e6f51d7497d9311580e795ce3dfa9e2d1076b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6b27fd448b129dca535de9e85fc21dcf5daea584226cb20980fe7cfc00ede8a1",
+    "raw_response_text_sha256": "6c6fb8b9c382415107e18f288c72ec5a2f0be8e3e422809f355875e49b7536b8"
+  },
+  "api_metadata": {
+    "id": "resp_09b83dec1507f9a6006b0608ad47d887d2988118548064bbf4",
+    "model": "gpt-6-luna",
+    "created_at": 1795557549.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1429,
+      "input_tokens_details": {
+        "cache_write_tokens": 1426,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1426
+        }
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 1630
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Potential lettuce shortages and agricultural disruption linked to unusual weather and climate change\",\n  \"climate_relevance\": \"The article discusses how climate change may contribute to warmer temperatures and heavier precipitation affecting lettuce harvests, and connects these disruptions to broader agricultural and food-security risks.\",\n  \"reason\": \"Climate change, its influence on weather, and its impacts on agriculture are substantial parts of the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:59:11Z",
+  "duration_seconds": 2.105,
+  "error": null
+}

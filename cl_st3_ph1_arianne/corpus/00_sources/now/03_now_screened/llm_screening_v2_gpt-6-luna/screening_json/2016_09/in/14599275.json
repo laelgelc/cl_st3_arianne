@@ -1,0 +1,77 @@
+{
+  "article_id": "14599275",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_09/in/14599275.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_09/in/14599275.json"
+  },
+  "manifest_row": {
+    "article_id": "14599275",
+    "group": "2016_09",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_09/in/14599275.txt",
+    "now_field_2": "512",
+    "date_original": "16-09-28",
+    "date_iso": "2016-09-28",
+    "source_name": "Financial Express",
+    "url": "http://www.financialexpress.com/economy/in-run-up-to-gst-cabinet-approves-rs-2200-crore-saksham-project/396506/",
+    "title": "In run-up to GST, Cabinet approves Rs 2200-crore Saksham project",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-09-bmb/16-09-in.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.86,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Project Saksham and integration of CBEC tax systems with the GST Network",
+    "climate_relevance": "The main article is about tax administration and IT systems. A separate appended snippet contains substantive reporting on India's ratification of the Paris Agreement, but it is unrelated to the identifiable main article.",
+    "reason": "The identifiable main article does not meaningfully discuss climate change; the climate-policy material appears to be a separate news item rather than part of it.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7fba5747d2afc3e2ed891dc47d57cc2ba80c322acf1451c28c2a7e9b2c8450b5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "512803fb76c70bbdb887f3c616261e2fe45fdd0006c79c5590105f794d90fea4",
+    "raw_response_text_sha256": "6e512fcc70610edd2a004c84cccda481f5e04e7e989a88b72a0f58cc885acd2d"
+  },
+  "api_metadata": {
+    "id": "resp_0e9c98ff09deb368006b0605dd88fc87d28017c2484a7d0f7f",
+    "model": "gpt-6-luna",
+    "created_at": 1795556829.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1172,
+      "input_tokens_details": {
+        "cache_write_tokens": 1169,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1169
+        }
+      },
+      "output_tokens": 635,
+      "output_tokens_details": {
+        "reasoning_tokens": 474
+      },
+      "total_tokens": 1807
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Project Saksham and integration of CBEC tax systems with the GST Network\",\n  \"climate_relevance\": \"The main article is about tax administration and IT systems. A separate appended snippet contains substantive reporting on India's ratification of the Paris Agreement, but it is unrelated to the identifiable main article.\",\n  \"reason\": \"The identifiable main article does not meaningfully discuss climate change; the climate-policy material appears to be a separate news item rather than part of it.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:47:14Z",
+  "duration_seconds": 5.174,
+  "error": null
+}

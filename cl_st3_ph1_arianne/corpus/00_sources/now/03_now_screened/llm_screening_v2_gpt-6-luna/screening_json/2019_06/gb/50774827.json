@@ -1,0 +1,77 @@
+{
+  "article_id": "50774827",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/gb/50774827.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/gb/50774827.json"
+  },
+  "manifest_row": {
+    "article_id": "50774827",
+    "group": "2019_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/gb/50774827.txt",
+    "now_field_2": "5399",
+    "date_original": "19-06-18",
+    "date_iso": "2019-06-18",
+    "source_name": "The Independent",
+    "url": "https://www.independent.co.uk/news/world/americas/us-politics/trump-news-live-orlando-rally-speech-florida-immigration-removals-ice-a8963091.html",
+    "title": "Trump news - live: President threatens to deport 'millions of illegal ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Donald Trump’s 2020 campaign launch and related political news",
+    "climate_relevance": "Climate appears in brief descriptions of Democratic candidates: Jay Inslee’s presidential bid is said to centre on climate change, and Wayne Messam is noted as opposing Trump’s withdrawal from the Paris Climate Accord.",
+    "reason": "The available text is mainly a political liveblog, not climate coverage. The candidate descriptions provide some meaningful context about climate as a campaign issue, so the text is relevant peripherally rather than suitable for the main climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fae9b967353aac1f5ff3b52d7d8f0908fd3a7243f929f0bcbd83dfcb9b83107a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d1820d611a77a9a4d4a58dae7834fe0ffd45e45caf8a1e591d9040d0e17909aa",
+    "raw_response_text_sha256": "0410715f531ffb9342d6d812c8f5395ba7c49185be79640013f2ab28cfa4a965"
+  },
+  "api_metadata": {
+    "id": "resp_00bb7ccf529ec426006b062ad9ad9887d1b7ab18e000c41ccd",
+    "model": "gpt-6-luna",
+    "created_at": 1795566297.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7815,
+      "input_tokens_details": {
+        "cache_write_tokens": 7812,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 7812
+        }
+      },
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 8122
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Donald Trump’s 2020 campaign launch and related political news\",\n  \"climate_relevance\": \"Climate appears in brief descriptions of Democratic candidates: Jay Inslee’s presidential bid is said to centre on climate change, and Wayne Messam is noted as opposing Trump’s withdrawal from the Paris Climate Accord.\",\n  \"reason\": \"The available text is mainly a political liveblog, not climate coverage. The candidate descriptions provide some meaningful context about climate as a campaign issue, so the text is relevant peripherally rather than suitable for the main climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:25:00Z",
+  "duration_seconds": 2.985,
+  "error": null
+}

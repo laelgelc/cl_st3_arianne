@@ -1,0 +1,77 @@
+{
+  "article_id": "21283228",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/nz/21283228.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/nz/21283228.json"
+  },
+  "manifest_row": {
+    "article_id": "21283228",
+    "group": "2017_10",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/nz/21283228.txt",
+    "now_field_2": "82",
+    "date_original": "17-10-24",
+    "date_iso": "2017-10-24",
+    "source_name": "TVNZ",
+    "url": "https://www.tvnz.co.nz/one-news/new-zealand/jacinda-ardern-set-first-meeting-incoming-pm-foreign-head-state",
+    "title": "Jacinda Ardern set for first meeting as incoming PM with foreign ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Ministerial portfolios in the Greens’ support agreement with Labour",
+    "climate_relevance": "Climate change is mentioned only as the name of a portfolio assigned to James Shaw.",
+    "reason": "The text reports political appointments and contains no substantive discussion of climate change, its impacts, or related policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "806d16d35d3b5807ce4082d06741025adcabeadd8556b3fab76cdc1c9ad243a4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "573d99288bccbf394ec668699871f8b85c30b4a229bdeedf8dc236b987abb62f",
+    "raw_response_text_sha256": "409b42e7885cd4bda33041e6b6972ebd01e6f5c0d06ef363aa0b44e4f2c3eaf0"
+  },
+  "api_metadata": {
+    "id": "resp_01037d355a7a3dcf006b060e8b794887d2b16eae9f9f023a38",
+    "model": "gpt-6-luna",
+    "created_at": 1795559051.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 591,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 185,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 776
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Ministerial portfolios in the Greens’ support agreement with Labour\",\n  \"climate_relevance\": \"Climate change is mentioned only as the name of a portfolio assigned to James Shaw.\",\n  \"reason\": \"The text reports political appointments and contains no substantive discussion of climate change, its impacts, or related policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:24:13Z",
+  "duration_seconds": 1.677,
+  "error": null
+}

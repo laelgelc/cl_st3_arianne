@@ -1,0 +1,77 @@
+{
+  "article_id": "61670898",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/ie/61670898.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/ie/61670898.json"
+  },
+  "manifest_row": {
+    "article_id": "61670898",
+    "group": "2020_03",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/ie/61670898.txt",
+    "now_field_2": "1626",
+    "date_original": "20-03-06",
+    "date_iso": "2020-03-06",
+    "source_name": "theparliamentmagazine.eu",
+    "url": "https://www.theparliamentmagazine.eu/articles/interviews/evelyn-regner-21st-century-woman",
+    "title": "Evelyn Regner: 21st Century Woman",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-ie.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.83,
+    "climate_role": "passing",
+    "main_topic": "Gender equality and women's rights in the European Union",
+    "climate_relevance": "Climate change is briefly listed as an area with gender-related issues in the proposed Gender Equality Strategy. A separate closing passage discusses the EU Green Deal and decarbonising heating.",
+    "reason": "The identifiable main article is an interview focused on gender equality, with climate change appearing only in a brief list of strategy topics. The closing climate passage appears to belong to a separate article and does not make the main article core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "265db87c8a7f7aab98e48ac0f833164a13c35b9ba17f87f5927aca2c8a90f8fe",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4242c683385910a91a1a0a1dfaf2e6dfae7326750461e7b71238faec9e990f83",
+    "raw_response_text_sha256": "0a82c7bb45d93bc5a4bc81f2390173c69cb25e4e306e980d661e7b916b8686e6"
+  },
+  "api_metadata": {
+    "id": "resp_0bfcd9acd6ce7e85006b06381d262887d190b802ac2ec24814",
+    "model": "gpt-6-luna",
+    "created_at": 1795569693.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2593,
+      "input_tokens_details": {
+        "cache_write_tokens": 2590,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2590
+        }
+      },
+      "output_tokens": 609,
+      "output_tokens_details": {
+        "reasoning_tokens": 442
+      },
+      "total_tokens": 3202
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.83,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Gender equality and women's rights in the European Union\",\n  \"climate_relevance\": \"Climate change is briefly listed as an area with gender-related issues in the proposed Gender Equality Strategy. A separate closing passage discusses the EU Green Deal and decarbonising heating.\",\n  \"reason\": \"The identifiable main article is an interview focused on gender equality, with climate change appearing only in a brief list of strategy topics. The closing climate passage appears to belong to a separate article and does not make the main article core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:21:38Z",
+  "duration_seconds": 5.245,
+  "error": null
+}

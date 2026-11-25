@@ -1,0 +1,77 @@
+{
+  "article_id": "50249100",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/gb/50249100.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/gb/50249100.json"
+  },
+  "manifest_row": {
+    "article_id": "50249100",
+    "group": "2018_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/gb/50249100.txt",
+    "now_field_2": "599",
+    "date_original": "18-11-29",
+    "date_iso": "2018-11-29",
+    "source_name": "GOV.UK",
+    "url": "https://www.gov.uk/government/news/pint-sized-scottish-satellites-launched-into-orbit",
+    "title": "'Pint sized' Scottish satellites launched into orbit",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "Small satellites and the UK commercial space sector",
+    "climate_relevance": "The article notes that satellite measurements of atmospheric conditions can support climate change monitoring, but climate change is not its main focus.",
+    "reason": "The main article is about satellite technology and space-sector development. Climate monitoring is a meaningful but brief application mentioned alongside weather forecasting. A GOV.UK feedback-form footer is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a8ebd144d58b208d5fcba3577753e3a7eb1bfa13ddb6e42a4e59b6e0afa8e7c6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e2fbd6077cda2388aa5c751f545c1443ba62111e81c3a9bf1b3f4fb784a91343",
+    "raw_response_text_sha256": "9fabb0b231e43ae9c18a537e23f0708733aa319584de73303b185079ab85789f"
+  },
+  "api_metadata": {
+    "id": "resp_02e6e31136d3a790006b06282e622087d19ed7cf4b4f104fb2",
+    "model": "gpt-6-luna",
+    "created_at": 1795565614.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1256,
+      "input_tokens_details": {
+        "cache_write_tokens": 1253,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1253
+        }
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 1523
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Small satellites and the UK commercial space sector\",\n  \"climate_relevance\": \"The article notes that satellite measurements of atmospheric conditions can support climate change monitoring, but climate change is not its main focus.\",\n  \"reason\": \"The main article is about satellite technology and space-sector development. Climate monitoring is a meaningful but brief application mentioned alongside weather forecasting. A GOV.UK feedback-form footer is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:13:37Z",
+  "duration_seconds": 3.495,
+  "error": null
+}

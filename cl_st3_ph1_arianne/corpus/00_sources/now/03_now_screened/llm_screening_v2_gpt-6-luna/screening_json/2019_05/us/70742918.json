@@ -1,0 +1,77 @@
+{
+  "article_id": "70742918",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/us/70742918.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/us/70742918.json"
+  },
+  "manifest_row": {
+    "article_id": "70742918",
+    "group": "2019_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/us/70742918.txt",
+    "now_field_2": "1486",
+    "date_original": "19-05-02",
+    "date_iso": "2019-05-02",
+    "source_name": "Las Vegas Review-Journal",
+    "url": "https://www.reviewjournal.com/news/politics-and-government/heroes-of-synagogue-shooting-help-trump-mark-national-day-of-prayer-1654936/",
+    "title": "Heroes of synagogue shooting help Trump mark National Day of Prayer",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A National Day of Prayer event featuring President Trump and survivors of the Poway synagogue shooting",
+    "climate_relevance": "Climate change appears only in a separate video teaser about Al Gore discussing its effects and renewable energy.",
+    "reason": "The identifiable main article concerns the National Day of Prayer and the synagogue shooting. The climate-related material is an unrelated snippet among several other news items, not part of the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "087cb8708443b939e04fad97159d81755643ac56b959a5fde19cb672facb495f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0928c53f7f52f135965f3a73150f81dc240acd8cdafe7c627448e262f871bfbd",
+    "raw_response_text_sha256": "d7c73c337699878771064009194b4c9d0e08b7f69844e799188bcd55a862c378"
+  },
+  "api_metadata": {
+    "id": "resp_068eb2983f0339c3006b063ed825ac87d183ee23e4e854518b",
+    "model": "gpt-6-luna",
+    "created_at": 1795571416.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2511,
+      "input_tokens_details": {
+        "cache_write_tokens": 2508,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2508
+        }
+      },
+      "output_tokens": 455,
+      "output_tokens_details": {
+        "reasoning_tokens": 301
+      },
+      "total_tokens": 2966
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A National Day of Prayer event featuring President Trump and survivors of the Poway synagogue shooting\",\n  \"climate_relevance\": \"Climate change appears only in a separate video teaser about Al Gore discussing its effects and renewable energy.\",\n  \"reason\": \"The identifiable main article concerns the National Day of Prayer and the synagogue shooting. The climate-related material is an unrelated snippet among several other news items, not part of the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:50:19Z",
+  "duration_seconds": 3.619,
+  "error": null
+}

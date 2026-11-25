@@ -1,0 +1,77 @@
+{
+  "article_id": "40813112",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40813112.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40813112.json"
+  },
+  "manifest_row": {
+    "article_id": "40813112",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40813112.txt",
+    "now_field_2": "667",
+    "date_original": "19-04-08",
+    "date_iso": "2019-04-08",
+    "source_name": "The Malaysian Reserve",
+    "url": "https://themalaysianreserve.com/2019/04/08/trump-advisor-kudlow-sees-no-let-up-in-china-talks/",
+    "title": "Trump advisor Kudlow sees no let-up in China talks",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "US–China trade negotiations and the prospects for a trade agreement",
+    "climate_relevance": "Climate-related wording appears only in an unrelated opening news brief about Malaysia exhibiting sustainable energy solutions; the identifiable main article concerns trade talks.",
+    "reason": "The climate reference is part of a separate brief, not a meaningful part of the main article’s discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1e3a91353402f6d7d47c46cc35862540a4a1849cd039b8357f222192dec8c3b7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8fae70b47655843cb9c5b4a80de397deca83c3726bc3847be3867c09db510ebd",
+    "raw_response_text_sha256": "385e5831b552b9960b2baa33ff7939a6710724ab2befc97fbde20012b4f096e1"
+  },
+  "api_metadata": {
+    "id": "resp_010c0b2dea4ee7bf006b061fd1eb8087d297930ced934472cb",
+    "model": "gpt-6-luna",
+    "created_at": 1795563474.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1368,
+      "input_tokens_details": {
+        "cache_write_tokens": 1365,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1365
+        }
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 1693
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"US–China trade negotiations and the prospects for a trade agreement\",\n  \"climate_relevance\": \"Climate-related wording appears only in an unrelated opening news brief about Malaysia exhibiting sustainable energy solutions; the identifiable main article concerns trade talks.\",\n  \"reason\": \"The climate reference is part of a separate brief, not a meaningful part of the main article’s discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:56Z",
+  "duration_seconds": 3.139,
+  "error": null
+}

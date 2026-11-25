@@ -1,0 +1,77 @@
+{
+  "article_id": "42559108",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/gb/42559108.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/gb/42559108.json"
+  },
+  "manifest_row": {
+    "article_id": "42559108",
+    "group": "2020_12",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/gb/42559108.txt",
+    "now_field_2": "2126",
+    "date_original": "20-12-17",
+    "date_iso": "2020-12-17",
+    "source_name": "stv.tv",
+    "url": "https://news.stv.tv/highlands-islands/beach-locked-down-following-discovery-of-human-remains?amp",
+    "title": "Beach locked down following discovery of human remains ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.9,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A legal challenge by west coast Scottish fishermen over inshore trawling rules and a proposed fisheries-monitoring scheme.",
+    "climate_relevance": "The identifiable lead story discusses fishing sustainability and marine habitats but does not meaningfully address climate change. Separate later snippets mention blue carbon and a net-zero transition, but they are unrelated articles.",
+    "reason": "The main article is about fisheries management and a court challenge, with no meaningful climate discourse. The climate-related material occurs in distinct snippets and does not make the lead article relevant to the main climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "47ef4c6a9a6cd8c5226915f159451724951ca312687ab831f4dd7e3b7bbbd2a2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9070b262562a873e1972fd86f2c7a490a96fcd61035d6dc403501e1685545568",
+    "raw_response_text_sha256": "fbc28d98f10384e2906710488248a912340c1677851f605c0f58de6fd9ff3cd3"
+  },
+  "api_metadata": {
+    "id": "resp_09b98763ad473a8c006b062681145887d286b66c91e2b0968f",
+    "model": "gpt-6-luna",
+    "created_at": 1795565185.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3322,
+      "input_tokens_details": {
+        "cache_write_tokens": 3319,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3319
+        }
+      },
+      "output_tokens": 542,
+      "output_tokens_details": {
+        "reasoning_tokens": 363
+      },
+      "total_tokens": 3864
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A legal challenge by west coast Scottish fishermen over inshore trawling rules and a proposed fisheries-monitoring scheme.\",\n  \"climate_relevance\": \"The identifiable lead story discusses fishing sustainability and marine habitats but does not meaningfully address climate change. Separate later snippets mention blue carbon and a net-zero transition, but they are unrelated articles.\",\n  \"reason\": \"The main article is about fisheries management and a court challenge, with no meaningful climate discourse. The climate-related material occurs in distinct snippets and does not make the lead article relevant to the main climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:06:29Z",
+  "duration_seconds": 4.565,
+  "error": null
+}

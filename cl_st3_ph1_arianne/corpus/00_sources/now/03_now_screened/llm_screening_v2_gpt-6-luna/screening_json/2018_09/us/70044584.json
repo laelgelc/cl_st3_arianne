@@ -1,0 +1,77 @@
+{
+  "article_id": "70044584",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/us/70044584.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/us/70044584.json"
+  },
+  "manifest_row": {
+    "article_id": "70044584",
+    "group": "2018_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/us/70044584.txt",
+    "now_field_2": "994",
+    "date_original": "18-09-18",
+    "date_iso": "2018-09-18",
+    "source_name": "WKMG News 6 &amp; ClickOrlando",
+    "url": "https://www.clickorlando.com/weather/giant-towers-proposed-to-clean-delhis-toxic-smog",
+    "title": "Giant towers proposed to clean Delhi's toxic smog",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A proposed urban air-filtration project to address Delhi's severe air pollution",
+    "climate_relevance": "Climate change appears only in the name of an expert's institutional division; the article focuses on smog, air quality, and pollution-control technology.",
+    "reason": "The discussion of emissions, carbon particles, and clean energy is framed around local air pollution and does not meaningfully address climate change or its implications.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "02bf6fa97b86d152b38a518d37d37360d9d2489057d71696752de1da4e670e20",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f009e718a958364ceffc8c3f1d80259773c6e5af60b42bbe0c16fdb6bc5cfd31",
+    "raw_response_text_sha256": "6c9e66dc52cfaf8e29f1a01142301311422fe07489f69d624c65a85150457187"
+  },
+  "api_metadata": {
+    "id": "resp_0c4f8d59366e953c006b063aa2582487d1a46f777c998764e2",
+    "model": "gpt-6-luna",
+    "created_at": 1795570338.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1883,
+      "input_tokens_details": {
+        "cache_write_tokens": 1880,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1880
+        }
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 2137
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A proposed urban air-filtration project to address Delhi's severe air pollution\",\n  \"climate_relevance\": \"Climate change appears only in the name of an expert's institutional division; the article focuses on smog, air quality, and pollution-control technology.\",\n  \"reason\": \"The discussion of emissions, carbon particles, and clean energy is framed around local air pollution and does not meaningfully address climate change or its implications.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:32:20Z",
+  "duration_seconds": 2.446,
+  "error": null
+}

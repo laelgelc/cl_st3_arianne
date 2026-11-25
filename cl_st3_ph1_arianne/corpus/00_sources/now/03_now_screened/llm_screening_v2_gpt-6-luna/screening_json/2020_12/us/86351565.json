@@ -1,0 +1,77 @@
+{
+  "article_id": "86351565",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/86351565.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/86351565.json"
+  },
+  "manifest_row": {
+    "article_id": "86351565",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/86351565.txt",
+    "now_field_2": "1056",
+    "date_original": "20-12-01",
+    "date_iso": "2020-12-01",
+    "source_name": "New York Times",
+    "url": "https://www.nytimes.com/2020/12/01/technology/why-whatsapp-matters.html",
+    "title": "Why WhatsApp Matters",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "WhatsApp’s business model and the broader effects of technology",
+    "climate_relevance": "Climate change appears only in a brief list of problems technology might address; the text does not develop the topic.",
+    "reason": "The article focuses on WhatsApp and technology, with a single passing reference to climate change that does not meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "774b53b21431a7a184f6be087918a5cdb81085507a6ab09573c46500f447a8ff",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2901b6a83a5a7e4820ba2b216e2b9becf579aa426d9dfe59571a226459b1afa8",
+    "raw_response_text_sha256": "9352e2e72e0a73b81a5d89b4bd1f7391e537d78cf1fd25d64962ce61db398d59"
+  },
+  "api_metadata": {
+    "id": "resp_036510fa4cec2cf0006b064fbfab8887d1898ed1beb9f44a1e",
+    "model": "gpt-6-luna",
+    "created_at": 1795575743.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1806,
+      "input_tokens_details": {
+        "cache_write_tokens": 1803,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1803
+        }
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 2059
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"WhatsApp’s business model and the broader effects of technology\",\n  \"climate_relevance\": \"Climate change appears only in a brief list of problems technology might address; the text does not develop the topic.\",\n  \"reason\": \"The article focuses on WhatsApp and technology, with a single passing reference to climate change that does not meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:02:26Z",
+  "duration_seconds": 2.678,
+  "error": null
+}

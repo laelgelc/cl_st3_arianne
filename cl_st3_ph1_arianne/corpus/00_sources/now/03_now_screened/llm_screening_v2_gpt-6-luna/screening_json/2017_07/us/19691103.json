@@ -1,0 +1,77 @@
+{
+  "article_id": "19691103",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/us/19691103.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/us/19691103.json"
+  },
+  "manifest_row": {
+    "article_id": "19691103",
+    "group": "2017_07",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/us/19691103.txt",
+    "now_field_2": "610",
+    "date_original": "17-07-26",
+    "date_iso": "2017-07-26",
+    "source_name": "Bloomberg",
+    "url": "https://www.bloomberg.com/news/articles/2017-07-26/corn-could-be-major-victim-of-climate-change",
+    "title": "Corn Could Be Major Victim of Climate Change",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-US.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Climate-induced drought and the risk of simultaneous water stress in major corn-producing regions",
+    "climate_relevance": "The text focuses on research modeling how climate change could increase severe water stress across major corn-producing regions, with implications for crop losses and resilience.",
+    "reason": "Climate change, its agricultural impacts, and related scientific modeling are the article's central subject. Newsletter boilerplate and corrupted text do not alter the main topic.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "97bb403ca98b329b2d6e78a8e8cce2602128867e9822d7d8f292c8bb8179e242",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5cd671bcd221e5c14f153975ebf8cc5c35aef84a70d6b3df8bdc00d4bb59b87b",
+    "raw_response_text_sha256": "0e6efcb54cba322416e56df5552b3440459e950bdc24669dea272815c2ef5e6a"
+  },
+  "api_metadata": {
+    "id": "resp_0123e1bc50760268006b060c5953d887d284a5911e7824aee5",
+    "model": "gpt-6-luna",
+    "created_at": 1795558489.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1269,
+      "input_tokens_details": {
+        "cache_write_tokens": 1266,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1266
+        }
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 1540
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Climate-induced drought and the risk of simultaneous water stress in major corn-producing regions\",\n  \"climate_relevance\": \"The text focuses on research modeling how climate change could increase severe water stress across major corn-producing regions, with implications for crop losses and resilience.\",\n  \"reason\": \"Climate change, its agricultural impacts, and related scientific modeling are the article's central subject. Newsletter boilerplate and corrupted text do not alter the main topic.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:14:51Z",
+  "duration_seconds": 2.522,
+  "error": null
+}

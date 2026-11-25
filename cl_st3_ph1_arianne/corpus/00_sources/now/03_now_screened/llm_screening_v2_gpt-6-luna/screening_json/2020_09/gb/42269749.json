@@ -1,0 +1,77 @@
+{
+  "article_id": "42269749",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/gb/42269749.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/gb/42269749.json"
+  },
+  "manifest_row": {
+    "article_id": "42269749",
+    "group": "2020_09",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/gb/42269749.txt",
+    "now_field_2": "596",
+    "date_original": "20-09-14",
+    "date_iso": "2020-09-14",
+    "source_name": "theneweuropean.co.uk",
+    "url": "https://www.theneweuropean.co.uk/top-stories/ex-vote-leave-campaign-director-wins-covid-gov-work-the-guardian-revealed-1-6826420",
+    "title": "Fourth firm with links to Dominic Cummings handed �640,000 ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Government contracts awarded to a public relations firm without an open tender",
+    "climate_relevance": "Climate change appears only in promotional text describing the publication's coverage areas.",
+    "reason": "The article focuses on government procurement and the firm's political connections; it contains no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "01e68e8f339124171e6d9a33d27c3c778f4c05f29ff550d9436b766c2a54ecf7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9abb6c5be3743d6524f80b1b06a5ad39e23094623cf2eed0867b6719a338f564",
+    "raw_response_text_sha256": "48f6fd78e541a290d6996057b221f3397108e1cb3988b1856c8ba5f88a8a770f"
+  },
+  "api_metadata": {
+    "id": "resp_0fd7dbc52e37e2e1006b0625730af087d2862246299beaec9d",
+    "model": "gpt-6-luna",
+    "created_at": 1795564915.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1231,
+      "input_tokens_details": {
+        "cache_write_tokens": 1228,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1228
+        }
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1449
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Government contracts awarded to a public relations firm without an open tender\",\n  \"climate_relevance\": \"Climate change appears only in promotional text describing the publication's coverage areas.\",\n  \"reason\": \"The article focuses on government procurement and the firm's political connections; it contains no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:01:57Z",
+  "duration_seconds": 2.305,
+  "error": null
+}

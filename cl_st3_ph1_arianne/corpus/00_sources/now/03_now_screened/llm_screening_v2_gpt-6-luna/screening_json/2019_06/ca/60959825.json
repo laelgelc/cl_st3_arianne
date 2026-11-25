@@ -1,0 +1,77 @@
+{
+  "article_id": "60959825",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ca/60959825.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ca/60959825.json"
+  },
+  "manifest_row": {
+    "article_id": "60959825",
+    "group": "2019_06",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ca/60959825.txt",
+    "now_field_2": "744",
+    "date_original": "19-06-26",
+    "date_iso": "2019-06-26",
+    "source_name": "CBC.ca",
+    "url": "https://www.cbc.ca/news/canada/prince-edward-island/pei-plastic-checkout-bag-ban-preparations-1.5189684",
+    "title": "PEI prepares for new rules on plastic checkout bags",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Prince Edward Island's ban on single-use plastic checkout bags and the transition to reusable alternatives",
+    "climate_relevance": "Climate change appears only as part of the name of a government department; the article discusses plastic bag reduction, not climate change.",
+    "reason": "The article focuses on preparing businesses and consumers for the plastic bag ban. It contains no meaningful discourse about climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "926b85163c842e04a5bec4ca90314571b6e02bf83c3d8862a800c679422a6b04",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "81da2edb788b168113997d15660b86c3d597db30db8ba855a901a13691752eaf",
+    "raw_response_text_sha256": "324f839d814586ee624d3de67401d48a1415bd3bf93dad5c9d67aa16aef0bffa"
+  },
+  "api_metadata": {
+    "id": "resp_0eed0cb594f95c4b006b0635c8ebc487d18ec3cb16eddc8181",
+    "model": "gpt-6-luna",
+    "created_at": 1795569097.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1509,
+      "input_tokens_details": {
+        "cache_write_tokens": 1506,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1506
+        }
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 1710
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Prince Edward Island's ban on single-use plastic checkout bags and the transition to reusable alternatives\",\n  \"climate_relevance\": \"Climate change appears only as part of the name of a government department; the article discusses plastic bag reduction, not climate change.\",\n  \"reason\": \"The article focuses on preparing businesses and consumers for the plastic bag ban. It contains no meaningful discourse about climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:11:38Z",
+  "duration_seconds": 2.031,
+  "error": null
+}

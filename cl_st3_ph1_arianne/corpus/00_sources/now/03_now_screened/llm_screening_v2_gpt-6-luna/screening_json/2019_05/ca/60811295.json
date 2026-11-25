@@ -1,0 +1,77 @@
+{
+  "article_id": "60811295",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/ca/60811295.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/ca/60811295.json"
+  },
+  "manifest_row": {
+    "article_id": "60811295",
+    "group": "2019_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/ca/60811295.txt",
+    "now_field_2": "181",
+    "date_original": "19-05-07",
+    "date_iso": "2019-05-07",
+    "source_name": "Westerly News",
+    "url": "https://www.westerlynews.ca/news/canada-will-bear-cost-of-repatriating-trash-filled-containers-from-philippines/",
+    "title": "Canada will bear cost of repatriating trash-filled containers from ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Canada's cost of repatriating garbage-filled shipping containers from the Philippines",
+    "climate_relevance": "Climate change appears only in the name Environment and Climate Change Canada; the article discusses waste repatriation and a dispute over improperly labelled trash.",
+    "reason": "There is no meaningful discussion of climate change or its implications.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a46b47c7a2ee1ddf5f68aa715c65921672d5c11e43ea2726b8b4070e0a94bc37",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4d91a2830e7b1085bf5c849d389c795eda072c8476c38247f558bbf3a4d3414f",
+    "raw_response_text_sha256": "be6223e7db5e901948c0821553868b4e0d0d612a2f83d4f732c66950d9621571"
+  },
+  "api_metadata": {
+    "id": "resp_0dde8f9e753ea5b8006b0634a5976487d1a43b04392ca75a7e",
+    "model": "gpt-6-luna",
+    "created_at": 1795568805.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 705,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 184,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 889
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Canada's cost of repatriating garbage-filled shipping containers from the Philippines\",\n  \"climate_relevance\": \"Climate change appears only in the name Environment and Climate Change Canada; the article discusses waste repatriation and a dispute over improperly labelled trash.\",\n  \"reason\": \"There is no meaningful discussion of climate change or its implications.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:06:47Z",
+  "duration_seconds": 1.862,
+  "error": null
+}

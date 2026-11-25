@@ -1,0 +1,77 @@
+{
+  "article_id": "40806845",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40806845.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40806845.json"
+  },
+  "manifest_row": {
+    "article_id": "40806845",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40806845.txt",
+    "now_field_2": "519",
+    "date_original": "19-04-05",
+    "date_iso": "2019-04-05",
+    "source_name": "EdgeProp.my",
+    "url": "https://www.edgeprop.my/content/1508210/pm-where-can-lynas-send-its-wastes-no-one-wants",
+    "title": "PM: Where can Lynas send its wastes that no one wants to?",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Lynas rare-earth processing and the management or export of its radioactive waste in Malaysia",
+    "climate_relevance": "Climate change appears only as part of the name of a government ministry; the article does not discuss climate issues.",
+    "reason": "The article focuses on radioactive waste, licensing, and industrial policy. The ministry name is not meaningful climate discourse. A property-news footer is also present but is unrelated to the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "33d584c97a9ce3ee3a565ebf8babcf496f5c3d46c64d2ae70e4da6513f38de8b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d2165284a2ab21107b2698248d23c30f1a0223a9313ad8f1495667f2c5fab022",
+    "raw_response_text_sha256": "898f5f3294e0a2a15cf6b211f5db2aee5195ea159ecd1491d2679f3455a9eda3"
+  },
+  "api_metadata": {
+    "id": "resp_0db2ed9731f323a5006b061fcb051887d297be3d65f308df5a",
+    "model": "gpt-6-luna",
+    "created_at": 1795563467.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1186,
+      "input_tokens_details": {
+        "cache_write_tokens": 1183,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1183
+        }
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 1438
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Lynas rare-earth processing and the management or export of its radioactive waste in Malaysia\",\n  \"climate_relevance\": \"Climate change appears only as part of the name of a government ministry; the article does not discuss climate issues.\",\n  \"reason\": \"The article focuses on radioactive waste, licensing, and industrial policy. The ministry name is not meaningful climate discourse. A property-news footer is also present but is unrelated to the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:37:49Z",
+  "duration_seconds": 2.33,
+  "error": null
+}

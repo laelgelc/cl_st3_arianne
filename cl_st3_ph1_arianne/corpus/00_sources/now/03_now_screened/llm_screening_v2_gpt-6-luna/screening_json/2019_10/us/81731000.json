@@ -1,0 +1,77 @@
+{
+  "article_id": "81731000",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81731000.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81731000.json"
+  },
+  "manifest_row": {
+    "article_id": "81731000",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81731000.txt",
+    "now_field_2": "695",
+    "date_original": "19-10-21",
+    "date_iso": "2019-10-21",
+    "source_name": "Phys.org",
+    "url": "https://phys.org/news/2019-10-global-eclipses-nuclear-war-nobel.html",
+    "title": "Global warming eclipses nuclear war as top concern: Nobel laureate",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "Climate change as a major global threat and the policies needed to address it",
+    "climate_relevance": "The report focuses on climate change, its impacts, emissions, carbon taxes, green economic initiatives, and implementation of climate agreements. A user comment also presents a climate-sceptical position.",
+    "reason": "Climate change is the central subject of the identifiable news report, with substantial discussion of its urgency, impacts, and policy responses. The appended sceptical comment is also relevant discourse, while the surrounding site text is boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "82ca937609d487556b5a0100b49eb90a6abb13694b2088c3cbe212fb14f9bd09",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "00c8484093dbe33e44c9e51bb2eab8ac2a92aeb6beecc3f54855aa30b482314f",
+    "raw_response_text_sha256": "930d3959e92b58836d9776eb1bda4c45f1ca6efbd3291509de01edb11c0f9fea"
+  },
+  "api_metadata": {
+    "id": "resp_05e92745f01f5cfa006b0647a3d79887d18b2a9dd32b900646",
+    "model": "gpt-6-luna",
+    "created_at": 1795573667.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1416,
+      "input_tokens_details": {
+        "cache_write_tokens": 1413,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1413
+        }
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 1703
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Climate change as a major global threat and the policies needed to address it\",\n  \"climate_relevance\": \"The report focuses on climate change, its impacts, emissions, carbon taxes, green economic initiatives, and implementation of climate agreements. A user comment also presents a climate-sceptical position.\",\n  \"reason\": \"Climate change is the central subject of the identifiable news report, with substantial discussion of its urgency, impacts, and policy responses. The appended sceptical comment is also relevant discourse, while the surrounding site text is boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:27:50Z",
+  "duration_seconds": 2.766,
+  "error": null
+}

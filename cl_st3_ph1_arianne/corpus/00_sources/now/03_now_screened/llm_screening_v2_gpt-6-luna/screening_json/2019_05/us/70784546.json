@@ -1,0 +1,77 @@
+{
+  "article_id": "70784546",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/us/70784546.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/us/70784546.json"
+  },
+  "manifest_row": {
+    "article_id": "70784546",
+    "group": "2019_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/us/70784546.txt",
+    "now_field_2": "716",
+    "date_original": "19-05-18",
+    "date_iso": "2019-05-18",
+    "source_name": "CNBC",
+    "url": "https://www.cnbc.com/2019/05/18/apple-ceo-tim-cook-tells-the-class-of-2019-my-generation-has-failed-you.html",
+    "title": "Apple CEO Tim Cook to the class of 2019: 'My generation has failed you'",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-us2.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.92,
+    "climate_role": "substantial",
+    "main_topic": "Tim Cook’s commencement speech urging graduates to address climate change and other social challenges with empathy and collective action",
+    "climate_relevance": "Cook explicitly connects climate change to increasingly frequent disasters, coastal communities relocating, effects on fisheries and wildlife, and disproportionate harms to marginalized people.",
+    "reason": "Although the article also covers Cook’s broader appeal to reduce political divisiveness, climate change is a substantial and explicitly emphasized part of the speech, with concrete discussion of its impacts.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ae4b22acc55c380db8c26e183ae5e49e40a47ae7fae7850713b595bf9d08ac70",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6ea31d04fba84cf995d5085f95f58964205543287c58b8b52372a772a54cad8d",
+    "raw_response_text_sha256": "34848b371ff18d0d3f885e648067b20958c55fbbf3be85c1a934b9dbc3bc5073"
+  },
+  "api_metadata": {
+    "id": "resp_0c3b9d9888aef0fd006b063f1f909087d1b8357c21f75429c0",
+    "model": "gpt-6-luna",
+    "created_at": 1795571487.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1392,
+      "input_tokens_details": {
+        "cache_write_tokens": 1389,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1389
+        }
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 1656
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Tim Cook’s commencement speech urging graduates to address climate change and other social challenges with empathy and collective action\",\n  \"climate_relevance\": \"Cook explicitly connects climate change to increasingly frequent disasters, coastal communities relocating, effects on fisheries and wildlife, and disproportionate harms to marginalized people.\",\n  \"reason\": \"Although the article also covers Cook’s broader appeal to reduce political divisiveness, climate change is a substantial and explicitly emphasized part of the speech, with concrete discussion of its impacts.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:51:30Z",
+  "duration_seconds": 2.534,
+  "error": null
+}

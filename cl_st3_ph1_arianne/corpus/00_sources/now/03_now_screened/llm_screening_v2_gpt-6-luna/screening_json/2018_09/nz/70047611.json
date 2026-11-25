@@ -1,0 +1,77 @@
+{
+  "article_id": "70047611",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/nz/70047611.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/nz/70047611.json"
+  },
+  "manifest_row": {
+    "article_id": "70047611",
+    "group": "2018_09",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/nz/70047611.txt",
+    "now_field_2": "528",
+    "date_original": "18-09-19",
+    "date_iso": "2018-09-19",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/HL1809/S00121/hurricane-florence-and-the-unbelievable-truths.htm",
+    "title": "Hurricane Florence and the unbelievable truths",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Environmental pollution and environmental injustice associated with industrial hog farming in North Carolina after Hurricane Florence.",
+    "climate_relevance": "The article explicitly connects extreme weather, flooding, and hurricanes to climate change and discusses human effects on weather patterns, but its main focus is hog-waste pollution and factory farming.",
+    "reason": "Climate change forms meaningful context for the discussion of Hurricane Florence and flooding, but it is not the article’s central subject. The text also includes unrelated snippets after the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8cde3ad50a884f73c085a0e5431804891e0156d746ff05ad4ab6231aad089bb2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "817a9664d59af01fdfea15f750a94a5d13e13dffb2ee68bac9b126f4c8f1eb6c",
+    "raw_response_text_sha256": "fe863e59f3370645f9bdab3dbb0bf9522a5916b346eba39db40e6ca7327c9c73"
+  },
+  "api_metadata": {
+    "id": "resp_03306eb4ecf3ebee006b063aa5763487d1aa2f390633dcd3b5",
+    "model": "gpt-6-luna",
+    "created_at": 1795570341.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1178,
+      "input_tokens_details": {
+        "cache_write_tokens": 1175,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1175
+        }
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 1465
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Environmental pollution and environmental injustice associated with industrial hog farming in North Carolina after Hurricane Florence.\",\n  \"climate_relevance\": \"The article explicitly connects extreme weather, flooding, and hurricanes to climate change and discusses human effects on weather patterns, but its main focus is hog-waste pollution and factory farming.\",\n  \"reason\": \"Climate change forms meaningful context for the discussion of Hurricane Florence and flooding, but it is not the article’s central subject. The text also includes unrelated snippets after the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:32:23Z",
+  "duration_seconds": 2.5,
+  "error": null
+}

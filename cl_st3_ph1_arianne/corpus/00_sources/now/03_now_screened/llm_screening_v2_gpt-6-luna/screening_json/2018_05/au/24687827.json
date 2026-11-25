@@ -1,0 +1,77 @@
+{
+  "article_id": "24687827",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/au/24687827.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/au/24687827.json"
+  },
+  "manifest_row": {
+    "article_id": "24687827",
+    "group": "2018_05",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/au/24687827.txt",
+    "now_field_2": "1047",
+    "date_original": "18-05-16",
+    "date_iso": "2018-05-16",
+    "source_name": "Particle",
+    "url": "https://particle.scitech.org.au/earth/these-australian-animals-might-be-gone-for-good-soon/",
+    "title": "These Australian animals might soon be gone",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "Extinction risks and conservation of threatened Australian birds and mammals",
+    "climate_relevance": "Climate change is briefly listed as one of several threats to some species, without further discussion.",
+    "reason": "The article focuses on threatened wildlife and conservation monitoring. Climate change receives only a passing mention among multiple causes of extinction, so it does not provide meaningful climate discourse for analysis. Republishing and video-licensing material is appended but does not change the identifiable main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d7cdcf811a758c0d251fbc698871ab7ea140d2ec1138064bdcffb7e3865ed096",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "66b6a6b2e48bea611fbf2c10590f5ba37d11fc5560f85432e1104ce96c187db1",
+    "raw_response_text_sha256": "60482f58571c32f4f61542388a700f516f464bd7c671341a2414d67465e77dd5"
+  },
+  "api_metadata": {
+    "id": "resp_00326859166cf7d8006b0612af541887d2a8990f559316825f",
+    "model": "gpt-6-luna",
+    "created_at": 1795560111.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1835,
+      "input_tokens_details": {
+        "cache_write_tokens": 1832,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1832
+        }
+      },
+      "output_tokens": 279,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 2114
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Extinction risks and conservation of threatened Australian birds and mammals\",\n  \"climate_relevance\": \"Climate change is briefly listed as one of several threats to some species, without further discussion.\",\n  \"reason\": \"The article focuses on threatened wildlife and conservation monitoring. Climate change receives only a passing mention among multiple causes of extinction, so it does not provide meaningful climate discourse for analysis. Republishing and video-licensing material is appended but does not change the identifiable main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:41:53Z",
+  "duration_seconds": 2.628,
+  "error": null
+}

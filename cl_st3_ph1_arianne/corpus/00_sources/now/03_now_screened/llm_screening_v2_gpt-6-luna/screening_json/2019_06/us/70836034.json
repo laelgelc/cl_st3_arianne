@@ -1,0 +1,77 @@
+{
+  "article_id": "70836034",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/us/70836034.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/us/70836034.json"
+  },
+  "manifest_row": {
+    "article_id": "70836034",
+    "group": "2019_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/us/70836034.txt",
+    "now_field_2": "853",
+    "date_original": "19-06-04",
+    "date_iso": "2019-06-04",
+    "source_name": "Aljazeera.com",
+    "url": "https://www.aljazeera.com/news/2019/06/londoners-gear-day-trump-protests-190604095156819.html",
+    "title": "Londoners gear up for day of Trump protests",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Protests against Donald Trump’s state visit to the UK",
+    "climate_relevance": "Climate change appears only as part of a list of groups expected to join the protests; no climate-related views, issues, or implications are discussed.",
+    "reason": "The identifiable main article concerns anti-Trump protests. Its brief reference to climate change activists is incidental and does not provide meaningful climate discourse. The text also includes an unrelated cryptocurrency and Warren Buffett snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "53d1414edc7cef1a5db8fcdea5dbe11801525e708b071dfac667711b2e802a7f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d33b6672b8c3581368d4c3d0cd59e4850635b534c05c01608115ced14a98712c",
+    "raw_response_text_sha256": "d818091c207f2e3afcfd7ba13900691dacba29b5ba441c0b928780f7a2e05ee3"
+  },
+  "api_metadata": {
+    "id": "resp_01bd2d1d663676da006b063f6d559c87d180ae51e5d7c42f2a",
+    "model": "gpt-6-luna",
+    "created_at": 1795571565.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2001,
+      "input_tokens_details": {
+        "cache_write_tokens": 1998,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1998
+        }
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 2271
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Protests against Donald Trump’s state visit to the UK\",\n  \"climate_relevance\": \"Climate change appears only as part of a list of groups expected to join the protests; no climate-related views, issues, or implications are discussed.\",\n  \"reason\": \"The identifiable main article concerns anti-Trump protests. Its brief reference to climate change activists is incidental and does not provide meaningful climate discourse. The text also includes an unrelated cryptocurrency and Warren Buffett snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:52:47Z",
+  "duration_seconds": 2.348,
+  "error": null
+}

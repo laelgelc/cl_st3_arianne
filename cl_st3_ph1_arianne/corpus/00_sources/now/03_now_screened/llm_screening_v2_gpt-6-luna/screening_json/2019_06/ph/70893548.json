@@ -1,0 +1,77 @@
+{
+  "article_id": "70893548",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ph/70893548.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ph/70893548.json"
+  },
+  "manifest_row": {
+    "article_id": "70893548",
+    "group": "2019_06",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ph/70893548.txt",
+    "now_field_2": "541",
+    "date_original": "19-06-21",
+    "date_iso": "2019-06-21",
+    "source_name": "Yahoo News",
+    "url": "https://ph.news.yahoo.com/johnny-mercer-backs-mark-field-greenpeace-incident-094523802.html",
+    "title": "Tory MP Johnny Mercer tells everyone to 'calm down' over Mark Field ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "The controversy over MP Mark Field physically removing a Greenpeace protester from a dinner and the reactions to his actions.",
+    "climate_relevance": "Climate change appears only in identifying the protester as a climate change activist; the text does not discuss climate issues or the protest's climate-related message.",
+    "reason": "The article is about the MP's conduct and the political response. The climate reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d03f6a941070d79ab8ad63cc3a73813acf5456ec1338ba81bb4fd5cc6fce6860",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7e2cfb8fd6ee67649e02cb8b6b455a6785b5618c01923a5f1d385a8d9cb7558b",
+    "raw_response_text_sha256": "9ea64985f73e6d9efc650d1e4729191753de14f1cd899d185b66170f7f41d611"
+  },
+  "api_metadata": {
+    "id": "resp_004ce092823e121e006b063fc8340887d1a51110dff854c11e",
+    "model": "gpt-6-luna",
+    "created_at": 1795571656.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1211,
+      "input_tokens_details": {
+        "cache_write_tokens": 1208,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1208
+        }
+      },
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 1476
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The controversy over MP Mark Field physically removing a Greenpeace protester from a dinner and the reactions to his actions.\",\n  \"climate_relevance\": \"Climate change appears only in identifying the protester as a climate change activist; the text does not discuss climate issues or the protest's climate-related message.\",\n  \"reason\": \"The article is about the MP's conduct and the political response. The climate reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:54:18Z",
+  "duration_seconds": 2.614,
+  "error": null
+}

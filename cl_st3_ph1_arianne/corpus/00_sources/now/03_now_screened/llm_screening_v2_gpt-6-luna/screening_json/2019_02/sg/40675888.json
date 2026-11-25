@@ -1,0 +1,77 @@
+{
+  "article_id": "40675888",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/sg/40675888.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/sg/40675888.json"
+  },
+  "manifest_row": {
+    "article_id": "40675888",
+    "group": "2019_02",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/sg/40675888.txt",
+    "now_field_2": "367",
+    "date_original": "19-02-28",
+    "date_iso": "2019-02-28",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/february-set-hottest-record-sun-will-disappear-weekend-113836510.html",
+    "title": "February set to be hottest on record - but sun will disappear this ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "climate_role": "background",
+    "main_topic": "Record February warmth and the changing UK weather forecast",
+    "climate_relevance": "The article connects the exceptional heatwave and weather extremes to climate change, including an expert comment on warmer, wetter winters and hotter, drier summers.",
+    "reason": "Most of the article reports on the record temperatures, fires, and forecast. Climate change is meaningfully discussed as context for the unusual conditions, but is not the main focus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f3a623cbbd8a462a2d6def8dcb5890e3803cea64acd1964ca747e0f891f380b1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "db85a4a327ede8b7ed9d5e33cb798fcc5fb040e601759c642a09424a15dc8f69",
+    "raw_response_text_sha256": "f629d31f5e9297841a15b9a697baa1bd1af5e3ddf5444c52474ff9a3d8f3d1f7"
+  },
+  "api_metadata": {
+    "id": "resp_00b6721ca617f63b006b061f6e331087d29a53b6883ed38767",
+    "model": "gpt-6-luna",
+    "created_at": 1795563374.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 988,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 444,
+      "output_tokens_details": {
+        "reasoning_tokens": 294
+      },
+      "total_tokens": 1432
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Record February warmth and the changing UK weather forecast\",\n  \"climate_relevance\": \"The article connects the exceptional heatwave and weather extremes to climate change, including an expert comment on warmer, wetter winters and hotter, drier summers.\",\n  \"reason\": \"Most of the article reports on the record temperatures, fires, and forecast. Climate change is meaningfully discussed as context for the unusual conditions, but is not the main focus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:36:17Z",
+  "duration_seconds": 3.68,
+  "error": null
+}

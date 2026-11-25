@@ -1,0 +1,77 @@
+{
+  "article_id": "24877300",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/ca/24877300.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/ca/24877300.json"
+  },
+  "manifest_row": {
+    "article_id": "24877300",
+    "group": "2018_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/ca/24877300.txt",
+    "now_field_2": "733",
+    "date_original": "18-05-28",
+    "date_iso": "2018-05-28",
+    "source_name": "Stockhouse",
+    "url": "http://www.stockhouse.com/news/press-releases/2018/05/28/pulse-oil-corp-announces-acquisition-of-3d-seismic-for-enhanced-oil-recovery",
+    "title": "Pulse Oil Corp. Announces Acquisition of 3D Seismic for Enhanced Oil ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Pulse Oil Corp.'s oil assets, seismic data acquisition, and enhanced oil recovery plans",
+    "climate_relevance": "Climate change appears only in a standard forward-looking risk list as a possible environmental factor.",
+    "reason": "The text is a corporate press release about oil operations and asset development. Its sole climate reference is boilerplate and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "bc8570841f2fad89fd2856337968a8f4b7c7fe6ea67480434b9f6283306409bd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ab749ef24bb06c29ac9ec43c5507156b5503edad2bd273afebff5e20515c30a2",
+    "raw_response_text_sha256": "9ab5c25faca6ce4b992ff890482cd6387a441ce6b0cb6c2fabc8668d222a8825"
+  },
+  "api_metadata": {
+    "id": "resp_0f3e342d370ddabc006b0612e5b73487d28208f2bc1f94c14f",
+    "model": "gpt-6-luna",
+    "created_at": 1795560165.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1405,
+      "input_tokens_details": {
+        "cache_write_tokens": 1402,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1402
+        }
+      },
+      "output_tokens": 193,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 1598
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Pulse Oil Corp.'s oil assets, seismic data acquisition, and enhanced oil recovery plans\",\n  \"climate_relevance\": \"Climate change appears only in a standard forward-looking risk list as a possible environmental factor.\",\n  \"reason\": \"The text is a corporate press release about oil operations and asset development. Its sole climate reference is boilerplate and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:42:47Z",
+  "duration_seconds": 1.806,
+  "error": null
+}

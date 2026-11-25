@@ -1,0 +1,77 @@
+{
+  "article_id": "60894459",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/ie/60894459.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/ie/60894459.json"
+  },
+  "manifest_row": {
+    "article_id": "60894459",
+    "group": "2019_06",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/ie/60894459.txt",
+    "now_field_2": "399",
+    "date_original": "19-06-05",
+    "date_iso": "2019-06-05",
+    "source_name": "Limerick Leader",
+    "url": "https://www.limerickleader.ie/news/home/421874/limerick-senator-calls-on-public-to-join-trump-protest-at-shannon-airport.html",
+    "title": "Limerick senator calls on public to join Trump protest at Shannon Airport",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-ie.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A protest at Shannon Airport opposing Donald Trump's visit and US military use of the airport.",
+    "climate_relevance": "Trump's denial of climate change is mentioned as one of several reasons to oppose him.",
+    "reason": "The article is mainly about protest, Irish neutrality, and US military use of Shannon Airport. Climate change appears in a politically meaningful but brief reference, so the text is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b373f1d9e4a56dacfb9650236dc31d57a000af4301f16f83e0b68b4dfe6a132c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "751ef4a0cbe28c8457c216a87187408671c0f0ee213312ed398162008d854839",
+    "raw_response_text_sha256": "4be7e251f1169bac4c1bfc4c073e00d2f27d57121eae0d7669fa9d49012532d3"
+  },
+  "api_metadata": {
+    "id": "resp_0669b4313fead230006b063542af6887d1ac5d156a08f46a7b",
+    "model": "gpt-6-luna",
+    "created_at": 1795568962.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1034,
+      "input_tokens_details": {
+        "cache_write_tokens": 1031,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1031
+        }
+      },
+      "output_tokens": 311,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 1345
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A protest at Shannon Airport opposing Donald Trump's visit and US military use of the airport.\",\n  \"climate_relevance\": \"Trump's denial of climate change is mentioned as one of several reasons to oppose him.\",\n  \"reason\": \"The article is mainly about protest, Irish neutrality, and US military use of Shannon Airport. Climate change appears in a politically meaningful but brief reference, so the text is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:09:26Z",
+  "duration_seconds": 3.709,
+  "error": null
+}

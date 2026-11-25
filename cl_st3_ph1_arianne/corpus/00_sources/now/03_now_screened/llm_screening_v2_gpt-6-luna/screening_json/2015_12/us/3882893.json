@@ -1,0 +1,77 @@
+{
+  "article_id": "3882893",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/us/3882893.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/us/3882893.json"
+  },
+  "manifest_row": {
+    "article_id": "3882893",
+    "group": "2015_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/us/3882893.txt",
+    "now_field_2": "2900",
+    "date_original": "15-12-10",
+    "date_iso": "2015-12-10",
+    "source_name": "The Atlantic",
+    "url": "http://www.theatlantic.com/international/archive/2015/12/google-loon-global-internet/419934/",
+    "title": "The Promise and Peril of Universal Internet",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Google's Project Loon and its potential to provide internet access using high-altitude balloons",
+    "climate_relevance": "The main article only mentions a hurricane as a weather hazard; it does not discuss climate change. A separate climate-focused passage appears at the end, but is not part of the identifiable main article.",
+    "reason": "The identifiable main article is about internet access and telecommunications, with no meaningful climate discourse. The closing passage about climate experts and emissions is a distinct snippet and should not change the classification of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "16f66c524121c6ef00a75ac359188e88ef9ea6da30d8f07cc97516702e2be96d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ef3135f476f566faa3d24d4ac2172871e8631ba7fa1c6c259f8e2e8f7bcd8735",
+    "raw_response_text_sha256": "4dc733efb16ea233dfa60cb615a5e3ce1b7c4db9999ecb6e31e0715e7987d7e9"
+  },
+  "api_metadata": {
+    "id": "resp_01aed46a8b1205e6006b061da42ca087d2966bdf8310449b5f",
+    "model": "gpt-6-luna",
+    "created_at": 1795562916.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4243,
+      "input_tokens_details": {
+        "cache_write_tokens": 4240,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4240
+        }
+      },
+      "output_tokens": 501,
+      "output_tokens_details": {
+        "reasoning_tokens": 330
+      },
+      "total_tokens": 4744
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Google's Project Loon and its potential to provide internet access using high-altitude balloons\",\n  \"climate_relevance\": \"The main article only mentions a hurricane as a weather hazard; it does not discuss climate change. A separate climate-focused passage appears at the end, but is not part of the identifiable main article.\",\n  \"reason\": \"The identifiable main article is about internet access and telecommunications, with no meaningful climate discourse. The closing passage about climate experts and emissions is a distinct snippet and should not change the classification of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:28:40Z",
+  "duration_seconds": 4.203,
+  "error": null
+}

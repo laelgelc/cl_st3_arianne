@@ -1,0 +1,77 @@
+{
+  "article_id": "50664622",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/au/50664622.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/au/50664622.json"
+  },
+  "manifest_row": {
+    "article_id": "50664622",
+    "group": "2019_05",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/au/50664622.txt",
+    "now_field_2": "1520",
+    "date_original": "19-05-11",
+    "date_iso": "2019-05-11",
+    "source_name": "ABC News",
+    "url": "https://www.abc.net.au/news/2019-05-12/mothers-day-and-mothers-guilt/11097082",
+    "title": "Working mum guilt: Is tackling the tension between work and care ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Working mothers, employment, and the division of family care",
+    "climate_relevance": "Climate change appears only in a brief list of campaign issues in a separate election snippet; no climate-related position or discussion is developed.",
+    "reason": "The identifiable main article focuses on working motherhood and contains no climate discourse. A separate political campaign snippet briefly lists action on climate change among a candidate's priorities, which is too incidental to meaningfully support climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a58c24bfbabc84cacfed679ff0d4e5ce1c15d41d172e072c36ff192892d8819f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4d640b16a6ee5e6f03523778f617486639e1e32310f160cc7bbedf58bac702ac",
+    "raw_response_text_sha256": "6894eb7cace474ffabfb9d9172fb4db79dba614a5c1d45c59ac48ec67bd6bd74"
+  },
+  "api_metadata": {
+    "id": "resp_021b18e35d616f8f006b062a1fa73c87d1b3130259659e388c",
+    "model": "gpt-6-luna",
+    "created_at": 1795566112.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3162,
+      "input_tokens_details": {
+        "cache_write_tokens": 3159,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3159
+        }
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 182
+      },
+      "total_tokens": 3499
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Working mothers, employment, and the division of family care\",\n  \"climate_relevance\": \"Climate change appears only in a brief list of campaign issues in a separate election snippet; no climate-related position or discussion is developed.\",\n  \"reason\": \"The identifiable main article focuses on working motherhood and contains no climate discourse. A separate political campaign snippet briefly lists action on climate change among a candidate's priorities, which is too incidental to meaningfully support climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:21:54Z",
+  "duration_seconds": 3.429,
+  "error": null
+}

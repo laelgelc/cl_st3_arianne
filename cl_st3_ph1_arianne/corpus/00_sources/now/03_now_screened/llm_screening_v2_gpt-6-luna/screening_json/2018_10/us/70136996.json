@@ -1,0 +1,77 @@
+{
+  "article_id": "70136996",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/us/70136996.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/us/70136996.json"
+  },
+  "manifest_row": {
+    "article_id": "70136996",
+    "group": "2018_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/us/70136996.txt",
+    "now_field_2": "1053",
+    "date_original": "18-10-12",
+    "date_iso": "2018-10-12",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/doing-good-together-s-festival-of-giving-a-new-tool-for-big-hearted-parenting/497254041/",
+    "title": "Doing Good Together's Festival of Giving a new tool for \"Big-Hearted ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-us-1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "A family philanthropy festival and teaching children generosity through volunteer activities",
+    "climate_relevance": "Climate change is briefly mentioned by the director of Minneapolis Climate Action while describing a reusable-bag activity and children's understanding of greenhouse gases.",
+    "reason": "The identifiable main article is about family volunteering, not climate change. Its brief climate reference is relevant but too limited for CORE classification. Unrelated snippets about Ringo Starr and Saudi Arabia appear after the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0f8e7cb37e5792255de2b3d5e80f31e9bd9de27a4ed9530a5b52bdc8295f23d3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7e1837dbf69d3720e0cba7e5d0865c9edc8ccc738cd4f82f300ec5318f22736f",
+    "raw_response_text_sha256": "704525570adf8bbde618e7f1d5cdfbe6d29d5ae9970876dfbe94ad349476ea2a"
+  },
+  "api_metadata": {
+    "id": "resp_0ede04ae3464d076006b063b0957c087d199a8100cedfb99a8",
+    "model": "gpt-6-luna",
+    "created_at": 1795570441.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1909,
+      "input_tokens_details": {
+        "cache_write_tokens": 1906,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1906
+        }
+      },
+      "output_tokens": 318,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 2227
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A family philanthropy festival and teaching children generosity through volunteer activities\",\n  \"climate_relevance\": \"Climate change is briefly mentioned by the director of Minneapolis Climate Action while describing a reusable-bag activity and children's understanding of greenhouse gases.\",\n  \"reason\": \"The identifiable main article is about family volunteering, not climate change. Its brief climate reference is relevant but too limited for CORE classification. Unrelated snippets about Ringo Starr and Saudi Arabia appear after the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:34:04Z",
+  "duration_seconds": 2.95,
+  "error": null
+}

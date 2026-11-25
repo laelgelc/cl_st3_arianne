@@ -1,0 +1,77 @@
+{
+  "article_id": "4890923",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/sg/4890923.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/sg/4890923.json"
+  },
+  "manifest_row": {
+    "article_id": "4890923",
+    "group": "2015_12",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/sg/4890923.txt",
+    "now_field_2": "660",
+    "date_original": "15-12-06",
+    "date_iso": "2015-12-06",
+    "source_name": "Catch News",
+    "url": "http://www.catchnews.com/national-news/most-indian-political-parties-back-lgbt-rights-a-rainbow-in-sight-1449397534.html",
+    "title": "Increasing support for gay rights from BJP leaders. A rainbow in sight?",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Political support for LGBT rights in India",
+    "climate_relevance": "Climate change appears only in a passing reference to a minister travelling to attend a climate conference.",
+    "reason": "The text focuses on LGBT rights and contains no meaningful discussion of climate change beyond that incidental mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b143ac01e812cbd26c52fe38dc6e167316651cf0afd9117134c031ff48ed2fd6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "287e76bdb8ec1f600372a968c913d96537640028b18a986d51eb242b3254a1d2",
+    "raw_response_text_sha256": "6c3e01ea2023c28632661550d309325fe84147999099736e085036225e73d5e6"
+  },
+  "api_metadata": {
+    "id": "resp_0b3acdf497f50c21006b062715631487d1a0afc36b86f5589f",
+    "model": "gpt-6-luna",
+    "created_at": 1795565333.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1346,
+      "input_tokens_details": {
+        "cache_write_tokens": 1343,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1343
+        }
+      },
+      "output_tokens": 176,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 1522
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Political support for LGBT rights in India\",\n  \"climate_relevance\": \"Climate change appears only in a passing reference to a minister travelling to attend a climate conference.\",\n  \"reason\": \"The text focuses on LGBT rights and contains no meaningful discussion of climate change beyond that incidental mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:08:55Z",
+  "duration_seconds": 1.966,
+  "error": null
+}

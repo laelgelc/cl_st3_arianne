@@ -1,0 +1,77 @@
+{
+  "article_id": "31306405",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/31306405.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/31306405.json"
+  },
+  "manifest_row": {
+    "article_id": "31306405",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/31306405.txt",
+    "now_field_2": "828",
+    "date_original": "19-09-23",
+    "date_iso": "2019-09-23",
+    "source_name": "newsday.com",
+    "url": "https://www.newsday.com/opinion/letters/newsday-reader-opinion-letter-1.36733899",
+    "title": "Letters: Probe Trump? Arguments against and in favor | Newsday",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A collection of reader letters on unrelated local and political issues",
+    "climate_relevance": "One letter discusses New York’s renewable-electricity targets, offshore wind, climate action, and trust in federal agencies on climate change.",
+    "reason": "Climate discourse is meaningful within one letter, but the text is a multi-topic letters page rather than coverage centrally focused on climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8f401687b021e73271828dd13e912bc921e9b446c494f4c3b39953c7bf70fd07",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cd91fd8d385e6511fd77826418a32a5c3a124473eb861519c1de701702ff111e",
+    "raw_response_text_sha256": "dfefe7d1cec96e6d156facfa3241fb5b762a138bfff9e8f624e72730482a7d34"
+  },
+  "api_metadata": {
+    "id": "resp_025c38203b6a7a13006b0616bcba5887d2bcb9c67670e9bcda",
+    "model": "gpt-6-luna",
+    "created_at": 1795561148.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1599,
+      "input_tokens_details": {
+        "cache_write_tokens": 1596,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1596
+        }
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 1858
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of reader letters on unrelated local and political issues\",\n  \"climate_relevance\": \"One letter discusses New York’s renewable-electricity targets, offshore wind, climate action, and trust in federal agencies on climate change.\",\n  \"reason\": \"Climate discourse is meaningful within one letter, but the text is a multi-topic letters page rather than coverage centrally focused on climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:59:10Z",
+  "duration_seconds": 2.32,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "32461371",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/32461371.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/32461371.json"
+  },
+  "manifest_row": {
+    "article_id": "32461371",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/32461371.txt",
+    "now_field_2": "974",
+    "date_original": "20-12-30",
+    "date_iso": "2020-12-30",
+    "source_name": "financialbuzz.com",
+    "url": "https://www.financialbuzz.com/vf-corporation-completes-acquisition-of-supreme/",
+    "title": "VF Corporation Completes Acquisition of Supreme ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "VF Corporation's acquisition of the Supreme brand",
+    "climate_relevance": "Climate change appears only in a list of potential business risks; sustainability is mentioned in company boilerplate, without meaningful discussion.",
+    "reason": "The text focuses on a corporate acquisition and contains no substantive climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3254f63d1bc3fb11697d2532da900d93c8b903681fc6938ca34a164ef37f203b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e3997adea292b77fda11a2a130c16d8b815c2aedf27c11cefba4e8991cd9d250",
+    "raw_response_text_sha256": "ab76bdf97ddbc2ad7ccdf8c9aca359f4dafb2e0421ececa510d0a00f43ec0af2"
+  },
+  "api_metadata": {
+    "id": "resp_004e69251bf61177006b061cbff65487d2bdbf1c0b2c8241ea",
+    "model": "gpt-6-luna",
+    "created_at": 1795562688.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1722,
+      "input_tokens_details": {
+        "cache_write_tokens": 1719,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1719
+        }
+      },
+      "output_tokens": 176,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 1898
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"VF Corporation's acquisition of the Supreme brand\",\n  \"climate_relevance\": \"Climate change appears only in a list of potential business risks; sustainability is mentioned in company boilerplate, without meaningful discussion.\",\n  \"reason\": \"The text focuses on a corporate acquisition and contains no substantive climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:24:49Z",
+  "duration_seconds": 1.66,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "82318064",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82318064.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82318064.json"
+  },
+  "manifest_row": {
+    "article_id": "82318064",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82318064.txt",
+    "now_field_2": "214",
+    "date_original": "19-11-24",
+    "date_iso": "2019-11-24",
+    "source_name": "MSN",
+    "url": "https://www.msn.com/en-ie/news/newsireland/dublin-city-council-considers-re-trial-of-street-recycling-bins/ar-BBXeYwN",
+    "title": "Dublin City Council considers re-trial of street recycling bins",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us6.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Dublin City Council's proposed trial of on-street recycling bins",
+    "climate_relevance": "Climate change appears only in the name of a council committee; the article discusses recycling-bin logistics without connecting them to climate change.",
+    "reason": "The article is about street recycling bins and litter management. Its climate reference is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "597fe4c7310292a6fb111493b66d22388276ea785f007418469a643914fef326",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e76c791eec26fc7e07842e3cfe8d3c96235802df774f46ba650f5ae6f4cf7f31",
+    "raw_response_text_sha256": "9fd3b69e2db87f515bdd448182a43305f308e26410ad933e841bf26694b7911f"
+  },
+  "api_metadata": {
+    "id": "resp_040641f947c58588006b064856942887d1911bbdcdd381169b",
+    "model": "gpt-6-luna",
+    "created_at": 1795573846.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 763,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 973
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Dublin City Council's proposed trial of on-street recycling bins\",\n  \"climate_relevance\": \"Climate change appears only in the name of a council committee; the article discusses recycling-bin logistics without connecting them to climate change.\",\n  \"reason\": \"The article is about street recycling bins and litter management. Its climate reference is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:30:48Z",
+  "duration_seconds": 2.21,
+  "error": null
+}

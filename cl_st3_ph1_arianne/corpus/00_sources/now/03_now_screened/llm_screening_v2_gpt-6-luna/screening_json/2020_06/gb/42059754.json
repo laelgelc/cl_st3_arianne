@@ -1,0 +1,77 @@
+{
+  "article_id": "42059754",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/gb/42059754.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/gb/42059754.json"
+  },
+  "manifest_row": {
+    "article_id": "42059754",
+    "group": "2020_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/gb/42059754.txt",
+    "now_field_2": "1206",
+    "date_original": "20-06-19",
+    "date_iso": "2020-06-19",
+    "source_name": "telegraph.co.uk",
+    "url": "https://www.telegraph.co.uk/politics/2020/06/19/pubs-restaurants-hotels-given-green-light-next-week-reopen-early/",
+    "title": "End of lockdown in sight as pubs, restaurants and hotels ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-gb2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "The main article covers England’s COVID-19 lockdown easing; a separate article discusses post-pandemic supply chains and deglobalisation.",
+    "climate_relevance": "The main article contains no meaningful climate discourse. The separate supply-chain article briefly mentions companies taking climate change seriously, dirty shipping, and minerals used in a low-carbon future.",
+    "reason": "The identifiable main article is about COVID-19 restrictions and reopening, not climate change. Climate-related material appears only in a separate article within the supplied text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "adee6222ff3bb608b592fd7b87e7e9506455b4f3c1a790045613962650e7b4ad",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "61ce01db2240d1f34288c46dad77f84111837d6ddc8ad63e19670619d324d258",
+    "raw_response_text_sha256": "fd271986629962c25974c333b55cd6088df529bad24538183b6ee877288f8f78"
+  },
+  "api_metadata": {
+    "id": "resp_0ac0cdd1ea1aa62f006b062440359087d2915fafa876739f53",
+    "model": "gpt-6-luna",
+    "created_at": 1795564608.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4592,
+      "input_tokens_details": {
+        "cache_write_tokens": 4589,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4589
+        }
+      },
+      "output_tokens": 681,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 5273
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The main article covers England’s COVID-19 lockdown easing; a separate article discusses post-pandemic supply chains and deglobalisation.\",\n  \"climate_relevance\": \"The main article contains no meaningful climate discourse. The separate supply-chain article briefly mentions companies taking climate change seriously, dirty shipping, and minerals used in a low-carbon future.\",\n  \"reason\": \"The identifiable main article is about COVID-19 restrictions and reopening, not climate change. Climate-related material appears only in a separate article within the supplied text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:56:53Z",
+  "duration_seconds": 5.553,
+  "error": null
+}

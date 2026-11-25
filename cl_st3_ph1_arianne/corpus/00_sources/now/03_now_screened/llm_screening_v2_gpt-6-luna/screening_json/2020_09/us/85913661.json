@@ -1,0 +1,77 @@
+{
+  "article_id": "85913661",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/85913661.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/85913661.json"
+  },
+  "manifest_row": {
+    "article_id": "85913661",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/85913661.txt",
+    "now_field_2": "545",
+    "date_original": "20-09-11",
+    "date_iso": "2020-09-11",
+    "source_name": "Wall Street Journal",
+    "url": "https://www.wsj.com/articles/xerox-names-heiss-interim-cfo-to-succeed-osbourn-11599861210",
+    "title": "Xerox Names Company Veteran as Interim Finance Chief",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Xerox CFO William Osbourn's departure and the appointment of an interim CFO",
+    "climate_relevance": "Climate change appears only in a clearly separated sponsored-content insert about Walmart's planning for climate effects and emissions goals; it is unrelated to the main article.",
+    "reason": "The identifiable main article concerns Xerox executive and financial news, with no meaningful climate discussion. The climate-related material is an unrelated sponsor insert, so it does not make the main article relevant for the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "34dcf07b3543760915fee96bbe639aac036f828123077695757d0d0ae493ada9",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "67949cb748bf7723b23b1db28e6c73d423cb7b7ae1e9e83c3dd2ad45103f7b0f",
+    "raw_response_text_sha256": "867e490b4a4b7b325a32960a16cd5f3781427eb3e4d45feab53ca7d02c13dd18"
+  },
+  "api_metadata": {
+    "id": "resp_015e4af78ec13222006b064d8a0ec887d1b1fb916c93602ffd",
+    "model": "gpt-6-luna",
+    "created_at": 1795575178.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1225,
+      "input_tokens_details": {
+        "cache_write_tokens": 1222,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1222
+        }
+      },
+      "output_tokens": 374,
+      "output_tokens_details": {
+        "reasoning_tokens": 206
+      },
+      "total_tokens": 1599
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Xerox CFO William Osbourn's departure and the appointment of an interim CFO\",\n  \"climate_relevance\": \"Climate change appears only in a clearly separated sponsored-content insert about Walmart's planning for climate effects and emissions goals; it is unrelated to the main article.\",\n  \"reason\": \"The identifiable main article concerns Xerox executive and financial news, with no meaningful climate discussion. The climate-related material is an unrelated sponsor insert, so it does not make the main article relevant for the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:53:01Z",
+  "duration_seconds": 3.108,
+  "error": null
+}

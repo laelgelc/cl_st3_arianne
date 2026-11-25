@@ -1,0 +1,77 @@
+{
+  "article_id": "50296768",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/gb/50296768.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/gb/50296768.json"
+  },
+  "manifest_row": {
+    "article_id": "50296768",
+    "group": "2018_12",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/gb/50296768.txt",
+    "now_field_2": "2844",
+    "date_original": "18-12-19",
+    "date_iso": "2018-12-19",
+    "source_name": "The Independent",
+    "url": "https://www.independent.co.uk/news/science/evolution-evidence-useless-quirks-charles-darwin-theory-spandrel-biology-genetic-mutation-a8686721.html",
+    "title": "How 'useless' quirks of evolution actually support Darwin's theory",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Evolutionary biology and evolutionary traits",
+    "climate_relevance": "Climate change appears only in an unrelated item within an embedded science-news image gallery, which briefly describes an IPCC report.",
+    "reason": "The article is centrally about evolutionary biology. The climate-related text is an unrelated gallery caption, not meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "28cb09d65b7e7faf956e0ea18a2ba276c7b752f68d1616ca5d2a1277b77180ce",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4299d7323c9b3ac12323546f16cd4f6a9aae22be8f0ce592b8207c4ee46e9c12",
+    "raw_response_text_sha256": "4c5dfb14d0b0be721b93436a2769dd0fe411bda6d3463717c618ad9ab453c476"
+  },
+  "api_metadata": {
+    "id": "resp_02d045f34119ee64006b062875542087d1a22242a72107bc3c",
+    "model": "gpt-6-luna",
+    "created_at": 1795565685.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4412,
+      "input_tokens_details": {
+        "cache_write_tokens": 4409,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4409
+        }
+      },
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 4608
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Evolutionary biology and evolutionary traits\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated item within an embedded science-news image gallery, which briefly describes an IPCC report.\",\n  \"reason\": \"The article is centrally about evolutionary biology. The climate-related text is an unrelated gallery caption, not meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:14:47Z",
+  "duration_seconds": 2.069,
+  "error": null
+}

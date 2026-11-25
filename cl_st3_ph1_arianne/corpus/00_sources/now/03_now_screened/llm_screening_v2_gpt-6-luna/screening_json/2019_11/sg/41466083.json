@@ -1,0 +1,77 @@
+{
+  "article_id": "41466083",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/sg/41466083.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/sg/41466083.json"
+  },
+  "manifest_row": {
+    "article_id": "41466083",
+    "group": "2019_11",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/sg/41466083.txt",
+    "now_field_2": "561",
+    "date_original": "19-11-06",
+    "date_iso": "2019-11-06",
+    "source_name": "catchnews.com",
+    "url": "http://www.catchnews.com/national-news/babul-supriyo-politics-is-the-biggest-polluting-agent-in-bengal-177938.html",
+    "title": "Babul Supriyo: Politics is the biggest polluting agent in ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A political dispute over West Bengal's representation at a science festival and cooperation with the central government.",
+    "climate_relevance": "Climate change appears only in the minister's official portfolio title; the article's environmental references concern Kolkata air pollution and afforestation, not climate change.",
+    "reason": "The article does not meaningfully discuss climate change, its causes, impacts, or policy. Its main focus is a political exchange, so the portfolio-title mention is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "735ec96cdda1524258872dd07f16fb950c5600cfbf154b12954faa1dbcf97626",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "63c5e517010b3150ff8788c03f3153d8b3e1472737bb8708727fc17050cb1c87",
+    "raw_response_text_sha256": "2bba48a6d2e2e29205ad4f8f99bb53722641bd3534f2d09fbfc555b7959d044c"
+  },
+  "api_metadata": {
+    "id": "resp_0854dbb6dc90c69b006b0621dfdf6087d280a258a3045a74d7",
+    "model": "gpt-6-luna",
+    "created_at": 1795564000.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1226,
+      "input_tokens_details": {
+        "cache_write_tokens": 1223,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1223
+        }
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 132
+      },
+      "total_tokens": 1519
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A political dispute over West Bengal's representation at a science festival and cooperation with the central government.\",\n  \"climate_relevance\": \"Climate change appears only in the minister's official portfolio title; the article's environmental references concern Kolkata air pollution and afforestation, not climate change.\",\n  \"reason\": \"The article does not meaningfully discuss climate change, its causes, impacts, or policy. Its main focus is a political exchange, so the portfolio-title mention is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:46:42Z",
+  "duration_seconds": 2.689,
+  "error": null
+}

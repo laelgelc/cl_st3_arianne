@@ -1,0 +1,77 @@
+{
+  "article_id": "70271025",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/us/70271025.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/us/70271025.json"
+  },
+  "manifest_row": {
+    "article_id": "70271025",
+    "group": "2018_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/us/70271025.txt",
+    "now_field_2": "999",
+    "date_original": "18-11-23",
+    "date_iso": "2018-11-23",
+    "source_name": "Tampa Bay Times",
+    "url": "https://www.tampabay.com/news/breaking/new-climate-report-warns-of-more-rain-hurricanes-and-flooding-in-florida-and-elsewhere-20181123/",
+    "title": "New climate report warns of more rain, hurricanes and flooding in ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-us2.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "The Fourth National Climate Assessment and climate change impacts, risks, and adaptation efforts in Florida, particularly around Tampa Bay.",
+    "climate_relevance": "Climate change is the article’s central subject, with substantial discussion of sea-level rise, flooding, extreme weather, health and economic impacts, scientific findings, and government responses.",
+    "reason": "The article reports on the national climate assessment and its findings, including human-caused warming and climate-related risks to Florida. A final sentence about a lawyer handling federal workplace disputes appears unrelated to the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e513a71768557661c6ce4122410bb101bf5fa3d64e5940689538d23b7a467db5",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "17bdba3981526331a959f1423b452aa351d0e67e63b419755c295c379177f8e2",
+    "raw_response_text_sha256": "60328538ca7f9fba2d6f4f63b7526e22728a22c8687e59892eaab72e6d7f551d"
+  },
+  "api_metadata": {
+    "id": "resp_029c19fb93b91102006b063ba352c087d1b5214fd933fa862a",
+    "model": "gpt-6-luna",
+    "created_at": 1795570595.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1765,
+      "input_tokens_details": {
+        "cache_write_tokens": 1762,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1762
+        }
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 2003
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"The Fourth National Climate Assessment and climate change impacts, risks, and adaptation efforts in Florida, particularly around Tampa Bay.\",\n  \"climate_relevance\": \"Climate change is the article’s central subject, with substantial discussion of sea-level rise, flooding, extreme weather, health and economic impacts, scientific findings, and government responses.\",\n  \"reason\": \"The article reports on the national climate assessment and its findings, including human-caused warming and climate-related risks to Florida. A final sentence about a lawyer handling federal workplace disputes appears unrelated to the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:36:37Z",
+  "duration_seconds": 2.612,
+  "error": null
+}

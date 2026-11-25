@@ -1,0 +1,77 @@
+{
+  "article_id": "19669822",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/au/19669822.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/au/19669822.json"
+  },
+  "manifest_row": {
+    "article_id": "19669822",
+    "group": "2017_07",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/au/19669822.txt",
+    "now_field_2": "311",
+    "date_original": "17-07-25",
+    "date_iso": "2017-07-25",
+    "source_name": "Gizmodo Australia",
+    "url": "https://www.gizmodo.com.au/2017/07/american-jedi-takes-a-thoughtful-look-at-the-people-who-have-madestar-warstheir-religion/",
+    "title": "American Jedi Takes A Thoughtful Look At The People Who Have ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A documentary about people who practice Jedism",
+    "climate_relevance": "Climate change appears only in an unrelated trending-stories snippet about geoengineering.",
+    "reason": "The identifiable main article concerns Jedism and the documentary American Jedi. The climate-related text is a separate trending-story teaser, not part of the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4afb88b6f3d8bd2c6f248b6002a18acda22d9e6e440e36e3cba17e4a816850b3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "4cc9c813ff62756011fbc14ea74a1bb39081ce4f94f9fb599d70e7d70dc474d3",
+    "raw_response_text_sha256": "988db5814c99e89a215555dc3f82aac34e7e46d3578a583c467cc84b5b237299"
+  },
+  "api_metadata": {
+    "id": "resp_0ee7ce5163a8f89f006b060c5215b487d294615448c5dc4b16",
+    "model": "gpt-6-luna",
+    "created_at": 1795558482.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 879,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 96
+      },
+      "total_tokens": 1111
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A documentary about people who practice Jedism\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated trending-stories snippet about geoengineering.\",\n  \"reason\": \"The identifiable main article concerns Jedism and the documentary American Jedi. The climate-related text is a separate trending-story teaser, not part of the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:14:44Z",
+  "duration_seconds": 2.164,
+  "error": null
+}

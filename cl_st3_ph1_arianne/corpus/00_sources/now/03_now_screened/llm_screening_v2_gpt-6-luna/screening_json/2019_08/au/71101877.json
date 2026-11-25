@@ -1,0 +1,77 @@
+{
+  "article_id": "71101877",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/au/71101877.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/au/71101877.json"
+  },
+  "manifest_row": {
+    "article_id": "71101877",
+    "group": "2019_08",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/au/71101877.txt",
+    "now_field_2": "666",
+    "date_original": "19-08-20",
+    "date_iso": "2019-08-20",
+    "source_name": "sunshinecoastdaily.com.au",
+    "url": "https://www.sunshinecoastdaily.com.au/news/everyone-must-pitch-in-to-save-our-planet/3804382/",
+    "title": "Everyone must pitch in to save our planet | Sunshine Coast ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-au.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.91,
+    "climate_role": "substantial",
+    "main_topic": "A letter arguing that population growth and consumption contribute to pollution and climate change, alongside a separate letter about rail funding.",
+    "climate_relevance": "The first letter directly discusses causes of climate change and urges reduced consumption, fewer emissions, and limits on development. The second letter is unrelated to climate change.",
+    "reason": "The first identifiable letter is substantially about climate change and proposed responses, so it is relevant as core climate discourse. The text also contains a separate, unrelated letter.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "118997b144b910595d286b155a0b6603afa9d566e0b176c12b2e41d5a16392c3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c367827fa9d9f1820c2c8bd528d3840791f0bb8f57e55535d7a3aac987656b9a",
+    "raw_response_text_sha256": "71684b23558d6ec3d883dcf138f05d37d57ab1a8386036e5b37ad1fecddf2c5c"
+  },
+  "api_metadata": {
+    "id": "resp_0408435f30de4550006b06400af3bc87d19e788cbf023b4bd3",
+    "model": "gpt-6-luna",
+    "created_at": 1795571723.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1360,
+      "input_tokens_details": {
+        "cache_write_tokens": 1357,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1357
+        }
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 1676
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"A letter arguing that population growth and consumption contribute to pollution and climate change, alongside a separate letter about rail funding.\",\n  \"climate_relevance\": \"The first letter directly discusses causes of climate change and urges reduced consumption, fewer emissions, and limits on development. The second letter is unrelated to climate change.\",\n  \"reason\": \"The first identifiable letter is substantially about climate change and proposed responses, so it is relevant as core climate discourse. The text also contains a separate, unrelated letter.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:55:25Z",
+  "duration_seconds": 2.689,
+  "error": null
+}

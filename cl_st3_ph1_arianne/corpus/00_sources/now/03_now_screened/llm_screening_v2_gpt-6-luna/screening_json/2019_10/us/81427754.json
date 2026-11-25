@@ -1,0 +1,77 @@
+{
+  "article_id": "81427754",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81427754.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81427754.json"
+  },
+  "manifest_row": {
+    "article_id": "81427754",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81427754.txt",
+    "now_field_2": "336",
+    "date_original": "19-10-03",
+    "date_iso": "2019-10-03",
+    "source_name": "The Edge on MSN.com",
+    "url": "https://www.msn.com/en-my/news/other/tnbs-maiden-lng-trial-cargo-results-in-cost-savings/ar-AAId6Hv",
+    "title": "TNB's maiden LNG trial cargo results in cost savings",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us3.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "TNB's maiden LNG trial cargo, gas delivery, and cost savings",
+    "climate_relevance": "Climate change appears only in the name of a government ministry; the article does not discuss climate change or its implications.",
+    "reason": "The article focuses on LNG supply arrangements and pricing. The sole climate-related wording is part of an institutional name, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cdba39b6063ea0b5fc1a630d86035fdc0c2dbd772d78df19cedb11b8d78d3e5c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "31fa8aa9fc53c12253ec43091a91564059911b880db14b55243a2e655949c7e5",
+    "raw_response_text_sha256": "38ac199b42c806c35b93f574d00be4328f8558e491ca1af57465013989b25258"
+  },
+  "api_metadata": {
+    "id": "resp_0de55ca5793db460006b064752296087d1bec7374a4fd61641",
+    "model": "gpt-6-luna",
+    "created_at": 1795573586.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 942,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 197,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 1139
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"TNB's maiden LNG trial cargo, gas delivery, and cost savings\",\n  \"climate_relevance\": \"Climate change appears only in the name of a government ministry; the article does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on LNG supply arrangements and pricing. The sole climate-related wording is part of an institutional name, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:26:27Z",
+  "duration_seconds": 1.773,
+  "error": null
+}

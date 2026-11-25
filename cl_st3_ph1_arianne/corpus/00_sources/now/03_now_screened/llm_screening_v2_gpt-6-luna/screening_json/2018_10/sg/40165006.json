@@ -1,0 +1,77 @@
+{
+  "article_id": "40165006",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/sg/40165006.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/sg/40165006.json"
+  },
+  "manifest_row": {
+    "article_id": "40165006",
+    "group": "2018_10",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/sg/40165006.txt",
+    "now_field_2": "633",
+    "date_original": "18-10-18",
+    "date_iso": "2018-10-18",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/desperate-times-australian-government-crunch-election-looms-071135039.html",
+    "title": "'Desperate' times for Australian government as crunch election looms",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.79,
+    "climate_role": "passing",
+    "main_topic": "The Australian Wentworth by-election and the political challenges facing Scott Morrison’s government.",
+    "climate_relevance": "Climate change is briefly identified as an issue in independent candidate Kerryn Phelps’s campaign.",
+    "reason": "The article is primarily about electoral politics, but it connects tackling climate change to a candidate’s campaign platform, making it relevant as a broader political issue rather than merely an incidental mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c1a121130aa072919d5c7fb6ce69c0a372c88e2fccc8e7691ee149294180276b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ed1290ec3773c0bda43a7de2d10713bfae544034c911b659527ed72d03d88929",
+    "raw_response_text_sha256": "93281131fd19138361574c1d61b7316db5b99995201bfeff27734ae59cba4d62"
+  },
+  "api_metadata": {
+    "id": "resp_0bb86d84bd3f9094006b061e63b83887d294d8bc6dbf9e726b",
+    "model": "gpt-6-luna",
+    "created_at": 1795563107.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1306,
+      "input_tokens_details": {
+        "cache_write_tokens": 1303,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1303
+        }
+      },
+      "output_tokens": 360,
+      "output_tokens_details": {
+        "reasoning_tokens": 215
+      },
+      "total_tokens": 1666
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.79,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The Australian Wentworth by-election and the political challenges facing Scott Morrison’s government.\",\n  \"climate_relevance\": \"Climate change is briefly identified as an issue in independent candidate Kerryn Phelps’s campaign.\",\n  \"reason\": \"The article is primarily about electoral politics, but it connects tackling climate change to a candidate’s campaign platform, making it relevant as a broader political issue rather than merely an incidental mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:31:51Z",
+  "duration_seconds": 4.402,
+  "error": null
+}

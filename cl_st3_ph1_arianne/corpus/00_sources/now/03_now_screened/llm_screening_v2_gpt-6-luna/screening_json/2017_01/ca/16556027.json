@@ -1,0 +1,77 @@
+{
+  "article_id": "16556027",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/ca/16556027.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/ca/16556027.json"
+  },
+  "manifest_row": {
+    "article_id": "16556027",
+    "group": "2017_01",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/ca/16556027.txt",
+    "now_field_2": "623",
+    "date_original": "17-01-23",
+    "date_iso": "2017-01-23",
+    "source_name": "CBC.ca",
+    "url": "http://www.cbc.ca/news/canada/british-columbia/jobless-rate-b-c-clark-1.3948239",
+    "title": "Critics take aim at BC Liberals' rosy job picture",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "British Columbia's job creation record and economic policy during an election campaign",
+    "climate_relevance": "Climate change appears only in a list of plans the opposition should promote; no climate policy or debate is discussed.",
+    "reason": "The article focuses on employment and the provincial economy. Its single climate reference is a passing mention and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e370c364edce06ad1307686b0d9110b09dd8384ea707af65d7d842dbd5fb3bf7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ce863d9d57ac460b86049fbc4b5ef91b10b62e0a9bd9cd77f75d7a1335cd54f6",
+    "raw_response_text_sha256": "f20d73e6f2b038d327ef033a7308f0802aacee1b03c427315b57bcb2e2399c09"
+  },
+  "api_metadata": {
+    "id": "resp_0a276d3ae1d1a2a0006b0607d5bbc087d28104dcdc418d485a",
+    "model": "gpt-6-luna",
+    "created_at": 1795557333.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1321,
+      "input_tokens_details": {
+        "cache_write_tokens": 1318,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1318
+        }
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 1558
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"British Columbia's job creation record and economic policy during an election campaign\",\n  \"climate_relevance\": \"Climate change appears only in a list of plans the opposition should promote; no climate policy or debate is discussed.\",\n  \"reason\": \"The article focuses on employment and the provincial economy. Its single climate reference is a passing mention and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:55:36Z",
+  "duration_seconds": 2.439,
+  "error": null
+}

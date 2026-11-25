@@ -1,0 +1,77 @@
+{
+  "article_id": "84579711",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_04/us/84579711.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_04/us/84579711.json"
+  },
+  "manifest_row": {
+    "article_id": "84579711",
+    "group": "2020_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_04/us/84579711.txt",
+    "now_field_2": "1408",
+    "date_original": "20-04-13",
+    "date_iso": "2020-04-13",
+    "source_name": "Yahoo! News",
+    "url": "https://news.yahoo.com/sanders-endorses-biden-182017192.html",
+    "title": "Sanders endorses Biden",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-04.txt\"]",
+    "metadata_article_files": "[\"text-20-04/20-04-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Bernie Sanders's endorsement of Joe Biden and efforts to unite Democratic Party progressives",
+    "climate_relevance": "Climate change appears only in a list of policy areas for proposed joint task forces; no climate-related issue or policy is discussed.",
+    "reason": "The article is about the presidential campaign and party politics. Its single climate reference is an incidental item in a list and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "43670dc679256ba84107aee61babf7e2aae76c986c1de78bcdac828a75b24f5d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5508fd0c695befa4ba86f96e495669bcc48b694fddd23073b16f5843815a0c44",
+    "raw_response_text_sha256": "8aa2b30583888a301791bed09007a426c16534d2873d159ac7ce3bbb03175c41"
+  },
+  "api_metadata": {
+    "id": "resp_06d4d419496a2000006b064aa31f7887d1b1edcdc3ebc0a946",
+    "model": "gpt-6-luna",
+    "created_at": 1795574435.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2316,
+      "input_tokens_details": {
+        "cache_write_tokens": 2313,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2313
+        }
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 2528
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Bernie Sanders's endorsement of Joe Biden and efforts to unite Democratic Party progressives\",\n  \"climate_relevance\": \"Climate change appears only in a list of policy areas for proposed joint task forces; no climate-related issue or policy is discussed.\",\n  \"reason\": \"The article is about the presidential campaign and party politics. Its single climate reference is an incidental item in a list and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:40:37Z",
+  "duration_seconds": 2.075,
+  "error": null
+}

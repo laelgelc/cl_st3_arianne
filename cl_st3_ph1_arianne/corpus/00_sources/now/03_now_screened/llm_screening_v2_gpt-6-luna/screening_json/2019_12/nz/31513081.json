@@ -1,0 +1,77 @@
+{
+  "article_id": "31513081",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/nz/31513081.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/nz/31513081.json"
+  },
+  "manifest_row": {
+    "article_id": "31513081",
+    "group": "2019_12",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/nz/31513081.txt",
+    "now_field_2": "1105",
+    "date_original": "19-12-18",
+    "date_iso": "2019-12-18",
+    "source_name": "newsroom.co.nz",
+    "url": "https://www.newsroom.co.nz/2019/12/18/952468/new-plan-to-fund-rail-infrastructure",
+    "title": "New plan to fund rail infrastructure",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Funding and governance of rail and road transport infrastructure in New Zealand",
+    "climate_relevance": "Climate change appears only in a promotional footer listing topics covered by Newsroom; the article itself does not discuss climate change or its implications.",
+    "reason": "The article focuses on transport funding, rail investment, and National Land Transport Fund revenue. The sole climate reference is incidental boilerplate and does not meaningfully contribute to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1b354414ea3345194124c263d324f77a13dbc7bb524f36f2c4bf2f4e2dd18bcb",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d76578c92397814a2d7994fe196274593052b0383fabb5c4663e699804c85311",
+    "raw_response_text_sha256": "ad1fc865ffb8833dfc8f37318a068441461799a6c08bfe8e26c4a91eb7fd5e36"
+  },
+  "api_metadata": {
+    "id": "resp_0f9d7501cdb2e17e006b0617b84f2887d29d9e0451e45cae38",
+    "model": "gpt-6-luna",
+    "created_at": 1795561400.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1909,
+      "input_tokens_details": {
+        "cache_write_tokens": 1906,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1906
+        }
+      },
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 2131
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Funding and governance of rail and road transport infrastructure in New Zealand\",\n  \"climate_relevance\": \"Climate change appears only in a promotional footer listing topics covered by Newsroom; the article itself does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on transport funding, rail investment, and National Land Transport Fund revenue. The sole climate reference is incidental boilerplate and does not meaningfully contribute to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:03:22Z",
+  "duration_seconds": 2.212,
+  "error": null
+}

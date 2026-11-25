@@ -1,0 +1,77 @@
+{
+  "article_id": "60569101",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/ie/60569101.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/ie/60569101.json"
+  },
+  "manifest_row": {
+    "article_id": "60569101",
+    "group": "2019_02",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/ie/60569101.txt",
+    "now_field_2": "2119",
+    "date_original": "19-02-21",
+    "date_iso": "2019-02-21",
+    "source_name": "The Journal of Music",
+    "url": "http://journalofmusic.com/focus/weve-got-one-chance-get-right-interview-anthony-long",
+    "title": "'We've got one chance to get this right': An Interview with Anthony Long",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-ie.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The management, funding, programming, and future of Ireland’s National Symphony Orchestra",
+    "climate_relevance": "The identifiable main article about the orchestra contains no meaningful climate discourse. A separate appended report discusses biodiversity loss and climate change, but it is unrelated to the main article.",
+    "reason": "The main article is about the National Symphony Orchestra. Climate change appears only in a distinct, apparently appended biodiversity report, so it does not make the identifiable main article relevant to the climate corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "712ca22ff089959b091f17ae68b78c9a9f49d2faf185182dbd01a3b60fc02391",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "83702d6d4ce965f4ac26d9ac053c9f1aad3a3330ddba03d26c22aa2ff21782c8",
+    "raw_response_text_sha256": "dc67968de4352567d142fd28ca5047f1416215ef8094dadc51a807c5a175ddb1"
+  },
+  "api_metadata": {
+    "id": "resp_01af9abf29edc2cc006b063337d06887d182acf8b2a161fa0a",
+    "model": "gpt-6-luna",
+    "created_at": 1795568439.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3954,
+      "input_tokens_details": {
+        "cache_write_tokens": 3951,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3951
+        }
+      },
+      "output_tokens": 482,
+      "output_tokens_details": {
+        "reasoning_tokens": 316
+      },
+      "total_tokens": 4436
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The management, funding, programming, and future of Ireland’s National Symphony Orchestra\",\n  \"climate_relevance\": \"The identifiable main article about the orchestra contains no meaningful climate discourse. A separate appended report discusses biodiversity loss and climate change, but it is unrelated to the main article.\",\n  \"reason\": \"The main article is about the National Symphony Orchestra. Climate change appears only in a distinct, apparently appended biodiversity report, so it does not make the identifiable main article relevant to the climate corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:00:43Z",
+  "duration_seconds": 3.96,
+  "error": null
+}

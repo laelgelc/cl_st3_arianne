@@ -1,0 +1,77 @@
+{
+  "article_id": "31578796",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/nz/31578796.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/nz/31578796.json"
+  },
+  "manifest_row": {
+    "article_id": "31578796",
+    "group": "2020_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/nz/31578796.txt",
+    "now_field_2": "1132",
+    "date_original": "20-01-16",
+    "date_iso": "2020-01-16",
+    "source_name": "odt.co.nz",
+    "url": "https://www.odt.co.nz/opinion/britain-lacks-means-be-truly-independent-eu",
+    "title": "Britain lacks means to be truly independent of EU | Otago ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "passing",
+    "main_topic": "Brexit and the future of UK-EU relations",
+    "climate_relevance": "Climate change is mentioned once as one item in a list of areas for UK-EU bilateral councils.",
+    "reason": "The article is substantially about Brexit, but the brief list mention does not develop climate policy or contribute meaningful climate discourse. The comments section is separate from the main article and discusses trade agreements rather than climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "17c0f5cd4fa4ad90b390e4d1c5371b32faffb89efa7a2707bf2b82d148190e66",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0861fa02a12c6f8515393d4d1ef3e99c5aba12e476c3bc3a37fb738db243adf4",
+    "raw_response_text_sha256": "53cab5a890fda816de3b76dbdf0d6441a3cad86b815659da0cabc7eb15e5eafa"
+  },
+  "api_metadata": {
+    "id": "resp_0dec34687301ea8b006b0618336f2887d2b362d9f55c8210ad",
+    "model": "gpt-6-luna",
+    "created_at": 1795561523.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1913,
+      "input_tokens_details": {
+        "cache_write_tokens": 1910,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1910
+        }
+      },
+      "output_tokens": 576,
+      "output_tokens_details": {
+        "reasoning_tokens": 430
+      },
+      "total_tokens": 2489
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Brexit and the future of UK-EU relations\",\n  \"climate_relevance\": \"Climate change is mentioned once as one item in a list of areas for UK-EU bilateral councils.\",\n  \"reason\": \"The article is substantially about Brexit, but the brief list mention does not develop climate policy or contribute meaningful climate discourse. The comments section is separate from the main article and discusses trade agreements rather than climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:05:27Z",
+  "duration_seconds": 4.332,
+  "error": null
+}

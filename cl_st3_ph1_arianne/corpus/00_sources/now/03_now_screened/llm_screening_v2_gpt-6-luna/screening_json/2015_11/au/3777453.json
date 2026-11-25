@@ -1,0 +1,77 @@
+{
+  "article_id": "3777453",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_11/au/3777453.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_11/au/3777453.json"
+  },
+  "manifest_row": {
+    "article_id": "3777453",
+    "group": "2015_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_11/au/3777453.txt",
+    "now_field_2": "2988",
+    "date_original": "15-11-12",
+    "date_iso": "2015-11-12",
+    "source_name": "MuMbrella",
+    "url": "http://mumbrella.com.au/abcs-fairfaxs-digital-subscribers-drop-while-print-subscriptions-continue-downward-trajectory-330170",
+    "title": "ABCs: Fairfax's digital subscribers drop while print subscriptions ...",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-11-xje/15-11-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Australian newspaper circulation and digital subscriptions",
+    "climate_relevance": "Climate change appears in a brief excerpt about a separate guest post on comedy and the Paris Climate Summit, not in the identifiable main article.",
+    "reason": "The main article concerns newspaper circulation and subscriptions. The climate-related passage is an unrelated snippet among multiple excerpts and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "072af33127ee8df69c23cb4ef35b8523886b20f4833457b05741f4f8fe22410e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "74175b103d6fb11029b9277125fe29246bd1ed2c9487b0e30ee8b3d00081716d",
+    "raw_response_text_sha256": "ed37f407eaf0d9edc75f194ce8f612ea92583b09f562fb0babee9caca40ae0d7"
+  },
+  "api_metadata": {
+    "id": "resp_018740d287d0e3f5006b061cf5441487d2a3402a96721f0da3",
+    "model": "gpt-6-luna",
+    "created_at": 1795562741.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4487,
+      "input_tokens_details": {
+        "cache_write_tokens": 4484,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4484
+        }
+      },
+      "output_tokens": 529,
+      "output_tokens_details": {
+        "reasoning_tokens": 384
+      },
+      "total_tokens": 5016
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Australian newspaper circulation and digital subscriptions\",\n  \"climate_relevance\": \"Climate change appears in a brief excerpt about a separate guest post on comedy and the Paris Climate Summit, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns newspaper circulation and subscriptions. The climate-related passage is an unrelated snippet among multiple excerpts and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:25:45Z",
+  "duration_seconds": 4.497,
+  "error": null
+}

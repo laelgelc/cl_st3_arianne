@@ -1,0 +1,77 @@
+{
+  "article_id": "18901249",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_06/ie/18901249.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_06/ie/18901249.json"
+  },
+  "manifest_row": {
+    "article_id": "18901249",
+    "group": "2017_06",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_06/ie/18901249.txt",
+    "now_field_2": "308",
+    "date_original": "17-06-10",
+    "date_iso": "2017-06-10",
+    "source_name": "BreakingNews.ie",
+    "url": "http://www.breakingnews.ie/ireland/citizens-assembly-considers-second-topic-issues-affecting-ageing-population-792983.html",
+    "title": "Citizens' Assembly considers second topic - issues affecting ageing ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-06.txt\"]",
+    "metadata_article_files": "[\"text-17-06/text_17-06-IE.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A Citizens’ Assembly discussion on the challenges and opportunities of an ageing population",
+    "climate_relevance": "Climate change is mentioned only as one item on a list of other Assembly topics.",
+    "reason": "The article focuses on ageing, pensions, care, and terminology for older people. It provides no discussion of the climate agenda item, so the mention is too incidental to contribute meaningfully to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ece44280847eefa6a9a405f6306c6925df4ada62aa36b425ad603479b177acda",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2c82ddd534d002f9b782c948ada248ff4cc4448f63f7e0007ccf1834d52b2d6a",
+    "raw_response_text_sha256": "8151dc2d9a8747e125edf1115c8ddac9305bfc3efe256f37175764cecf663e24"
+  },
+  "api_metadata": {
+    "id": "resp_0488765710c3f340006b060b362d8c87d28e9ed04e2a177aaa",
+    "model": "gpt-6-luna",
+    "created_at": 1795558198.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 882,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 338,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 1220
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A Citizens’ Assembly discussion on the challenges and opportunities of an ageing population\",\n  \"climate_relevance\": \"Climate change is mentioned only as one item on a list of other Assembly topics.\",\n  \"reason\": \"The article focuses on ageing, pensions, care, and terminology for older people. It provides no discussion of the climate agenda item, so the mention is too incidental to contribute meaningfully to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:10:00Z",
+  "duration_seconds": 2.84,
+  "error": null
+}

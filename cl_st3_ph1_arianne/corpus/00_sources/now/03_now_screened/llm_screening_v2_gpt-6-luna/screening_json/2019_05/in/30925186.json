@@ -1,0 +1,77 @@
+{
+  "article_id": "30925186",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/in/30925186.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/in/30925186.json"
+  },
+  "manifest_row": {
+    "article_id": "30925186",
+    "group": "2019_05",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/in/30925186.txt",
+    "now_field_2": "502",
+    "date_original": "19-05-30",
+    "date_iso": "2019-05-30",
+    "source_name": "The News Minute",
+    "url": "https://www.thenewsminute.com/article/maradu-municipality-asks-5-apartment-builders-kochi-start-demolition-buildings-102720",
+    "title": "Maradu municipality asks 5 apartment builders in Kochi to start ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-in2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Supreme Court-ordered demolition of apartment buildings found to violate Coastal Regulation Zone rules in Kochi.",
+    "climate_relevance": "Climate change appears only in the name of the Department of Environment and Climate Change; the article discusses the demolition's environmental impact, not climate change.",
+    "reason": "The article is about coastal development regulations, demolition procedures, and residents' responses. It contains no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f20d85a7764c56aa1cc4511ed322899350a3f840bbbc494aa46f667171a4d429",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "46be8defd7e4f5458d748147898edf95de14cf4fcff82ef3ca9eb365fd5a3e1d",
+    "raw_response_text_sha256": "d3af288924a9a9709c2f429e08c50b720b662e4af3584630a8eee24e2d5ea158"
+  },
+  "api_metadata": {
+    "id": "resp_07f1abdf18d45da0006b0615acba2487d2ad0d3e149ac8ef81",
+    "model": "gpt-6-luna",
+    "created_at": 1795560876.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1110,
+      "input_tokens_details": {
+        "cache_write_tokens": 1107,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1107
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 1360
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Supreme Court-ordered demolition of apartment buildings found to violate Coastal Regulation Zone rules in Kochi.\",\n  \"climate_relevance\": \"Climate change appears only in the name of the Department of Environment and Climate Change; the article discusses the demolition's environmental impact, not climate change.\",\n  \"reason\": \"The article is about coastal development regulations, demolition procedures, and residents' responses. It contains no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:54:38Z",
+  "duration_seconds": 1.904,
+  "error": null
+}

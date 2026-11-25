@@ -1,0 +1,77 @@
+{
+  "article_id": "81810678",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81810678.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81810678.json"
+  },
+  "manifest_row": {
+    "article_id": "81810678",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81810678.txt",
+    "now_field_2": "219",
+    "date_original": "19-10-25",
+    "date_iso": "2019-10-25",
+    "source_name": "MyNorthwest.com",
+    "url": "https://mynorthwest.com/1568380/tiny-beetle-named-after-climate-activist-greta-thunberg/",
+    "title": "Tiny beetle named after climate activist Greta Thunberg",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "A newly identified beetle named in honor of Greta Thunberg",
+    "climate_relevance": "Climate activism is mentioned to explain Thunberg's public profile and the naming choice, but the article does not discuss climate change itself.",
+    "reason": "The article focuses on the beetle and its discovery. Climate change appears only in brief contextual references, which do not provide meaningful material for climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "89a37c51f0fb8f87433fa0f96a3c9155dced870236c51a15b5ecc1c430ba59bd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6ae7f8edd6e93d2c7ff29685a335b4b9ef3ed2f7bdb965c6061e304af52d6563",
+    "raw_response_text_sha256": "73e4780644ecb999694e7e15a66ad15f561daafb0738930d5307886f4a63c337"
+  },
+  "api_metadata": {
+    "id": "resp_0a14dcb2020cb414006b0647ba683487d18074ca3da5a4d2ca",
+    "model": "gpt-6-luna",
+    "created_at": 1795573690.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 818,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 367,
+      "output_tokens_details": {
+        "reasoning_tokens": 221
+      },
+      "total_tokens": 1185
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A newly identified beetle named in honor of Greta Thunberg\",\n  \"climate_relevance\": \"Climate activism is mentioned to explain Thunberg's public profile and the naming choice, but the article does not discuss climate change itself.\",\n  \"reason\": \"The article focuses on the beetle and its discovery. Climate change appears only in brief contextual references, which do not provide meaningful material for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:28:13Z",
+  "duration_seconds": 3.276,
+  "error": null
+}

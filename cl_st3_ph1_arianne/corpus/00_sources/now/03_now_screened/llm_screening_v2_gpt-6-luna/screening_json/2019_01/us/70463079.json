@@ -1,0 +1,77 @@
+{
+  "article_id": "70463079",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/us/70463079.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/us/70463079.json"
+  },
+  "manifest_row": {
+    "article_id": "70463079",
+    "group": "2019_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/us/70463079.txt",
+    "now_field_2": "886",
+    "date_original": "19-01-29",
+    "date_iso": "2019-01-29",
+    "source_name": "The Guardian",
+    "url": "https://www.theguardian.com/us-news/2019/jan/29/california-hotel-workers-strike-sheraton-hilton-anaheim",
+    "title": "California hotel workers 'on the brink' of joining wave of strikes",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Hotel workers’ labor dispute and strike preparations in Anaheim",
+    "climate_relevance": "A substantial, standalone discussion of climate change and public attitudes appears after the hotel story, but it is unrelated to the identifiable main article.",
+    "reason": "The main article concerns hotel workers’ wages, benefits, and union negotiations. The climate discussion appears to be a separate appended article rather than climate discourse relevant to the main story.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cfb5d7159f79321dd7a6dfae81fa0f46b31fb47b09ad7f0aa3bfa8662f588db4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "92d3e3ef9046fe51ccd36ed349e0227951e00efe58dd24201c0eb4f3b2b19ef6",
+    "raw_response_text_sha256": "3fc8efedc6409d33ed2ca080d74e4dac7232d23a0eb0bf992808947a10d75a99"
+  },
+  "api_metadata": {
+    "id": "resp_0e7c40d5bb355061006b063cab878887d1967204f21f88e8e3",
+    "model": "gpt-6-luna",
+    "created_at": 1795570859.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2842,
+      "input_tokens_details": {
+        "cache_write_tokens": 2839,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2839
+        }
+      },
+      "output_tokens": 562,
+      "output_tokens_details": {
+        "reasoning_tokens": 410
+      },
+      "total_tokens": 3404
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Hotel workers’ labor dispute and strike preparations in Anaheim\",\n  \"climate_relevance\": \"A substantial, standalone discussion of climate change and public attitudes appears after the hotel story, but it is unrelated to the identifiable main article.\",\n  \"reason\": \"The main article concerns hotel workers’ wages, benefits, and union negotiations. The climate discussion appears to be a separate appended article rather than climate discourse relevant to the main story.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:41:03Z",
+  "duration_seconds": 4.269,
+  "error": null
+}

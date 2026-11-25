@@ -1,0 +1,77 @@
+{
+  "article_id": "17432986",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_03/ca/17432986.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_03/ca/17432986.json"
+  },
+  "manifest_row": {
+    "article_id": "17432986",
+    "group": "2017_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_03/ca/17432986.txt",
+    "now_field_2": "780",
+    "date_original": "17-03-15",
+    "date_iso": "2017-03-15",
+    "source_name": "Ottawa Citizen",
+    "url": "http://ottawacitizen.com/opinion/editorials/editorial-robbing-us-of-sound-science",
+    "title": "Editorial: Robbing us of sound science",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-03.txt\"]",
+    "metadata_article_files": "[\"text-17-03/text_17-03-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Predatory academic journals and fake scientific conferences",
+    "climate_relevance": "Climate change is briefly named as an example of an issue where policymakers rely on evidence-based research.",
+    "reason": "The article focuses on fraudulent journals and conferences; its single climate reference is illustrative and does not develop climate-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3449a2a19af0da902e062ba24cc2e983d747c011e625ec90ca0dd0a5c0f44579",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "64a98bc7ba51813e5f9ae929035dc781dd55a022725a319bae2b824238695906",
+    "raw_response_text_sha256": "b41f3314c890863f460d53a7acb7a6ba787c19b24c32bed9f7347a5655a2d193"
+  },
+  "api_metadata": {
+    "id": "resp_086b0863525b2360006b0608e16c1487d29546244ff8f25435",
+    "model": "gpt-6-luna",
+    "created_at": 1795557601.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1478,
+      "input_tokens_details": {
+        "cache_write_tokens": 1475,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1475
+        }
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 1750
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Predatory academic journals and fake scientific conferences\",\n  \"climate_relevance\": \"Climate change is briefly named as an example of an issue where policymakers rely on evidence-based research.\",\n  \"reason\": \"The article focuses on fraudulent journals and conferences; its single climate reference is illustrative and does not develop climate-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:00:03Z",
+  "duration_seconds": 2.129,
+  "error": null
+}

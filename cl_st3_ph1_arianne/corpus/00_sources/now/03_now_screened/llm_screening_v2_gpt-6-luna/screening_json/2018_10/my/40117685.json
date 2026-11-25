@@ -1,0 +1,77 @@
+{
+  "article_id": "40117685",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/my/40117685.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/my/40117685.json"
+  },
+  "manifest_row": {
+    "article_id": "40117685",
+    "group": "2018_10",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/my/40117685.txt",
+    "now_field_2": "629",
+    "date_original": "18-10-05",
+    "date_iso": "2018-10-05",
+    "source_name": "The Star Online",
+    "url": "https://www.thestar.com.my/metro/focus/2018/10/06/caught-unprepared-in-a-storm/",
+    "title": "Caught unprepared in a storm",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-my.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "Storm damage and preparedness in Klang",
+    "climate_relevance": "The article links future natural-disaster preparedness to climate change, but does not otherwise discuss climate change in depth.",
+    "reason": "The main focus is a local storm, its damage, and emergency preparedness. The closing reference to climate change provides meaningful context but is brief and does not make this core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "913157cb133e322ef26872dde72012be338f014b9b903ed5d0effe00e1f6da1e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ce6fb913c552df1e809999017897365a84b7a22d3df2d18c6b7d62daab9a4d90",
+    "raw_response_text_sha256": "8aba7b1dcba8b8c6e497d094d29386340aef1c48a9bcf25fc1185f58febc2951"
+  },
+  "api_metadata": {
+    "id": "resp_01ab2b5fcc4e3171006b061e3d299c87d282c67f962b677eb1",
+    "model": "gpt-6-luna",
+    "created_at": 1795563069.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1292,
+      "input_tokens_details": {
+        "cache_write_tokens": 1289,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1289
+        }
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1524
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Storm damage and preparedness in Klang\",\n  \"climate_relevance\": \"The article links future natural-disaster preparedness to climate change, but does not otherwise discuss climate change in depth.\",\n  \"reason\": \"The main focus is a local storm, its damage, and emergency preparedness. The closing reference to climate change provides meaningful context but is brief and does not make this core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:31:11Z",
+  "duration_seconds": 2.165,
+  "error": null
+}

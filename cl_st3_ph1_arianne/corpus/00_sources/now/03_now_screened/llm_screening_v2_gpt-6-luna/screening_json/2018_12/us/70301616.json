@@ -1,0 +1,77 @@
+{
+  "article_id": "70301616",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/us/70301616.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/us/70301616.json"
+  },
+  "manifest_row": {
+    "article_id": "70301616",
+    "group": "2018_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/us/70301616.txt",
+    "now_field_2": "4446",
+    "date_original": "18-12-03",
+    "date_iso": "2018-12-03",
+    "source_name": "New York Times",
+    "url": "https://www.nytimes.com/2018/12/03/us/oil-drilling-arctic-national-wildlife-refuge.html",
+    "title": "In the Blink of an Eye, a Hunt for Oil Threatens Pristine Alaska",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "The Trump administration’s push to open Alaska’s Arctic National Wildlife Refuge to oil exploration and the political, economic, and wildlife consequences.",
+    "climate_relevance": "The article connects expanded oil development to fossil-fuel dependence and global warming, and notes that climate change has reduced Arctic sea ice and contributed to declining polar bear numbers.",
+    "reason": "Climate change is meaningfully discussed, but the article chiefly focuses on the drilling campaign, its political and regulatory process, and its effects on the refuge and wildlife rather than climate change itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "f8413f560e7288dd29413b402d9a1c787e18a5114624e44e8470dabf8f790d80",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "78a952c49cc27d60e3d10a4c6cec1bec86fe453d742c45d677ef7f4cd9f01142",
+    "raw_response_text_sha256": "340a1771e4d2c5c497cb7c3c32554aa39213e74158c957f882ed16473b36fa0b"
+  },
+  "api_metadata": {
+    "id": "resp_05dc1f0a0573766e006b063bcf14a087d1935e272d078abeac",
+    "model": "gpt-6-luna",
+    "created_at": 1795570639.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6441,
+      "input_tokens_details": {
+        "cache_write_tokens": 6438,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 6438
+        }
+      },
+      "output_tokens": 308,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 6749
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The Trump administration’s push to open Alaska’s Arctic National Wildlife Refuge to oil exploration and the political, economic, and wildlife consequences.\",\n  \"climate_relevance\": \"The article connects expanded oil development to fossil-fuel dependence and global warming, and notes that climate change has reduced Arctic sea ice and contributed to declining polar bear numbers.\",\n  \"reason\": \"Climate change is meaningfully discussed, but the article chiefly focuses on the drilling campaign, its political and regulatory process, and its effects on the refuge and wildlife rather than climate change itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:37:21Z",
+  "duration_seconds": 2.885,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50066057",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/gb/50066057.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/gb/50066057.json"
+  },
+  "manifest_row": {
+    "article_id": "50066057",
+    "group": "2018_09",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/gb/50066057.txt",
+    "now_field_2": "18080",
+    "date_original": "18-09-02",
+    "date_iso": "2018-09-02",
+    "source_name": "POLITICO.eu",
+    "url": "https://www.politico.eu/article/notes-from-beyond-westminster/",
+    "title": "Notes from beyond Westminster",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "A reporter's tour of British towns and communities, focusing on local concerns, devolution, Brexit, and regional politics.",
+    "climate_relevance": "The main article discusses recurring flood risk in Boston and a climate-change report that warned parts of east Lincolnshire could face abandonment as tides rise. It also opens with a separate snippet about greenhouse-gas emissions from freight transport and proposed truck regulation.",
+    "reason": "Climate change appears in meaningful but limited discussion of flood risk and adaptation; it is not the main focus of the identifiable travelogue. The opening freight-emissions passage appears to be a separate article snippet, and unrelated reader comments are appended.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "77649b97a1b20ffadd8f85f58412565af3860632ab9c6c43a26ebb515f08c5a3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "419715ce4127eefef0d4e99b9f02d3e948c3579c333de8f403f02d2c087ea6a7",
+    "raw_response_text_sha256": "aee12a087cdf59822245de3c2ff2aab14a63837af3be3c46aadbaa26c2d4e563"
+  },
+  "api_metadata": {
+    "id": "resp_0aeaf730dd38c4bc006b06277c5dbc87d1b74fba2ad76f2692",
+    "model": "gpt-6-luna",
+    "created_at": 1795565436.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 24135,
+      "input_tokens_details": {
+        "cache_write_tokens": 24132,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 24132
+        }
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "total_tokens": 24490
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A reporter's tour of British towns and communities, focusing on local concerns, devolution, Brexit, and regional politics.\",\n  \"climate_relevance\": \"The main article discusses recurring flood risk in Boston and a climate-change report that warned parts of east Lincolnshire could face abandonment as tides rise. It also opens with a separate snippet about greenhouse-gas emissions from freight transport and proposed truck regulation.\",\n  \"reason\": \"Climate change appears in meaningful but limited discussion of flood risk and adaptation; it is not the main focus of the identifiable travelogue. The opening freight-emissions passage appears to be a separate article snippet, and unrelated reader comments are appended.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:10:40Z",
+  "duration_seconds": 3.898,
+  "error": null
+}

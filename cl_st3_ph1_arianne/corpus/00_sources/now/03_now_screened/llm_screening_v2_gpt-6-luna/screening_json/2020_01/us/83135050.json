@@ -1,0 +1,77 @@
+{
+  "article_id": "83135050",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/us/83135050.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/us/83135050.json"
+  },
+  "manifest_row": {
+    "article_id": "83135050",
+    "group": "2020_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/us/83135050.txt",
+    "now_field_2": "819",
+    "date_original": "20-01-08",
+    "date_iso": "2020-01-08",
+    "source_name": "The Desert Sun",
+    "url": "https://www.desertsun.com/story/opinion/readers/2020/01/08/putting-arena-downtown-palm-springs-less-than-neighborly-desert-sun-letters/2849994001/",
+    "title": "Letter: Putting an arena in downtown Palm Springs is less than neighborly",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A reader's opposition to a proposed downtown Palm Springs arena",
+    "climate_relevance": "The identifiable main article is about the arena and its effects on the city. Climate-related comments about fossil fuels and climate change appear in what seems to be a separate, appended letter.",
+    "reason": "The main article contains no meaningful climate discourse; the climate discussion belongs to an unrelated snippet and is not part of the identifiable arena letter.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a87c9633dca055e8ddfa4b6c144039a8b4491ea51c09023ef52d645df6dddf3b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f289abe825964e69535ce01fe122810b720f60e9f2033d551f83eabc33341e9a",
+    "raw_response_text_sha256": "8bdfbdfce272f3f1c6a19fd9b693e92d2497e19f18cbfb052387546fb6e6d3ca"
+  },
+  "api_metadata": {
+    "id": "resp_031da25e3036b05d006b06492fda5487d1a14f6a3478645df7",
+    "model": "gpt-6-luna",
+    "created_at": 1795574063.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1580,
+      "input_tokens_details": {
+        "cache_write_tokens": 1577,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1577
+        }
+      },
+      "output_tokens": 404,
+      "output_tokens_details": {
+        "reasoning_tokens": 250
+      },
+      "total_tokens": 1984
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A reader's opposition to a proposed downtown Palm Springs arena\",\n  \"climate_relevance\": \"The identifiable main article is about the arena and its effects on the city. Climate-related comments about fossil fuels and climate change appear in what seems to be a separate, appended letter.\",\n  \"reason\": \"The main article contains no meaningful climate discourse; the climate discussion belongs to an unrelated snippet and is not part of the identifiable arena letter.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:34:27Z",
+  "duration_seconds": 3.453,
+  "error": null
+}

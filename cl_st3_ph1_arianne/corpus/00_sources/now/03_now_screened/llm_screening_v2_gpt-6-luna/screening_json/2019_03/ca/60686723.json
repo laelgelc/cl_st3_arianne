@@ -1,0 +1,77 @@
+{
+  "article_id": "60686723",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/ca/60686723.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/ca/60686723.json"
+  },
+  "manifest_row": {
+    "article_id": "60686723",
+    "group": "2019_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/ca/60686723.txt",
+    "now_field_2": "665",
+    "date_original": "19-03-29",
+    "date_iso": "2019-03-29",
+    "source_name": "News@UofT",
+    "url": "https://www.utoronto.ca/news/pain-pain-go-away-new-tools-improve-students-vaccine-experience-ontario-schools",
+    "title": "Pain, pain go away: New tools improve students' vaccine experience ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "A school-based system to reduce students’ fear of vaccination",
+    "climate_relevance": "Climate change is mentioned only in a list of global health threats identified by the WHO.",
+    "reason": "The article focuses on vaccine delivery and needle anxiety; it contains no substantive discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ffb78c8b83c35b735887cdf5f184bbb4b88837665dd79ee50d58b3d728f957b4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7701f7f695aa850e7385f1a1a7b46fd1f221eb2a636b7ab4bc8d1a01a9769cf5",
+    "raw_response_text_sha256": "40550b49a19cf1029b12ae98065bcd881672a796089b87b14b3ec89122a2b5b8"
+  },
+  "api_metadata": {
+    "id": "resp_0f4d40f313dc4f59006b0633d2a42887d18c7f16092704a33c",
+    "model": "gpt-6-luna",
+    "created_at": 1795568594.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1322,
+      "input_tokens_details": {
+        "cache_write_tokens": 1319,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1319
+        }
+      },
+      "output_tokens": 185,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 1507
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A school-based system to reduce students’ fear of vaccination\",\n  \"climate_relevance\": \"Climate change is mentioned only in a list of global health threats identified by the WHO.\",\n  \"reason\": \"The article focuses on vaccine delivery and needle anxiety; it contains no substantive discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:03:16Z",
+  "duration_seconds": 2.06,
+  "error": null
+}

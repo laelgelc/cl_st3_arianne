@@ -1,0 +1,77 @@
+{
+  "article_id": "60803067",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/ca/60803067.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/ca/60803067.json"
+  },
+  "manifest_row": {
+    "article_id": "60803067",
+    "group": "2019_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/ca/60803067.txt",
+    "now_field_2": "875",
+    "date_original": "19-05-04",
+    "date_iso": "2019-05-04",
+    "source_name": "Yahoo News",
+    "url": "https://ca.news.yahoo.com/calgary-electricity-retailer-urges-government-110004366.html",
+    "title": "Calgary electricity retailer urges government to scrap overhaul of ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "climate_role": "background",
+    "main_topic": "Alberta's proposed electricity-market overhaul and its potential costs to consumers and generators",
+    "climate_relevance": "The article connects the market changes to the phaseout of coal-fired generation and the expansion of renewable power under Alberta's climate strategy. It also discusses integrating wind and solar into the grid, but climate policy is not the main focus.",
+    "reason": "The central coverage concerns electricity-market design, investment, and consumer costs. Climate-related energy transition is meaningful context, so the article is relevant to broader climate discourse but is not core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ab75dad48bbc9502b9a41186582262e1eed83942fe2ebe0b7d43803f78efa1a3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9df170ea67d39a6ff49688d2673edda96dbe90adb14c4f301623fe4d2e628cfd",
+    "raw_response_text_sha256": "f4388a8cdf82fff729932fc046f969fb6e23529a7ccacb3857d86df77e477a0a"
+  },
+  "api_metadata": {
+    "id": "resp_0566625b453595d3006b0634958bcc87d1b3131c4ecd586575",
+    "model": "gpt-6-luna",
+    "created_at": 1795568789.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1621,
+      "input_tokens_details": {
+        "cache_write_tokens": 1618,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1618
+        }
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 1909
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Alberta's proposed electricity-market overhaul and its potential costs to consumers and generators\",\n  \"climate_relevance\": \"The article connects the market changes to the phaseout of coal-fired generation and the expansion of renewable power under Alberta's climate strategy. It also discusses integrating wind and solar into the grid, but climate policy is not the main focus.\",\n  \"reason\": \"The central coverage concerns electricity-market design, investment, and consumer costs. Climate-related energy transition is meaningful context, so the article is relevant to broader climate discourse but is not core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:06:31Z",
+  "duration_seconds": 2.412,
+  "error": null
+}

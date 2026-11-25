@@ -1,0 +1,77 @@
+{
+  "article_id": "16544843",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_01/sg/16544843.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_01/sg/16544843.json"
+  },
+  "manifest_row": {
+    "article_id": "16544843",
+    "group": "2017_01",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_01/sg/16544843.txt",
+    "now_field_2": "208",
+    "date_original": "17-01-23",
+    "date_iso": "2017-01-23",
+    "source_name": "Yahoo Singapore News",
+    "url": "https://sg.news.yahoo.com/french-presidential-hopeful-valls-suggests-tax-us-imports-120500479.html",
+    "title": "French presidential hopeful Valls suggests tax on US imports",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-01.txt\"]",
+    "metadata_article_files": "[\"text-17-01/text_17-01-SG.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "French presidential campaign and Manuel Valls's proposed tax on U.S. imports",
+    "climate_relevance": "The proposed tax is explicitly conditional on the United States withdrawing from the Paris climate agreement, and the article also mentions climate priorities and Trump's position on the deal.",
+    "reason": "The article contains meaningful discussion of climate policy, but its main focus is a presidential candidate's campaign pledge and political response to Trump.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "65ef8df50d688208348928b78bb650a9248e7c739bec536cb021675b7f4527e4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "95c8723eae4a350b361177048199dd1468fb47166ba8a4e2b049bb721d393c22",
+    "raw_response_text_sha256": "058c49496486a641a84a4edd12c46e05c1fcc1c584150dc1ececa365d31cbd26"
+  },
+  "api_metadata": {
+    "id": "resp_0a46a09de6a12b85006b0607cfdcd887d2a659c482d4353603",
+    "model": "gpt-6-luna",
+    "created_at": 1795557328.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 773,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 1055
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"French presidential campaign and Manuel Valls's proposed tax on U.S. imports\",\n  \"climate_relevance\": \"The proposed tax is explicitly conditional on the United States withdrawing from the Paris climate agreement, and the article also mentions climate priorities and Trump's position on the deal.\",\n  \"reason\": \"The article contains meaningful discussion of climate policy, but its main focus is a presidential candidate's campaign pledge and political response to Trump.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:55:30Z",
+  "duration_seconds": 2.942,
+  "error": null
+}

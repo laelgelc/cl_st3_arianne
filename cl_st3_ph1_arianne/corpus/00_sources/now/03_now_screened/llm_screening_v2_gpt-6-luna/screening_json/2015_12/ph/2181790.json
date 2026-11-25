@@ -1,0 +1,77 @@
+{
+  "article_id": "2181790",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_12/ph/2181790.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_12/ph/2181790.json"
+  },
+  "manifest_row": {
+    "article_id": "2181790",
+    "group": "2015_12",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_12/ph/2181790.txt",
+    "now_field_2": "557",
+    "date_original": "15-12-28",
+    "date_iso": "2015-12-28",
+    "source_name": "SciDev.Net",
+    "url": "http://www.scidev.net/global/energy/news/abu-dhabi-device-solar-power.html",
+    "title": "Abu Dhabi device harvests untapped solar power",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-12-bjr/15-12-ph.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "background",
+    "main_topic": "A device designed to improve solar-cell efficiency and its potential production challenges",
+    "climate_relevance": "The main article concerns solar power technology, while a likely related-content snippet connects Gulf solar targets to UN climate commitments and emissions-reduction strategies.",
+    "reason": "The report focuses on a solar-energy device rather than climate change or climate policy. The UN climate framework and emissions-reduction reference provide meaningful climate context, but appear in a separate related-content snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "551095d71ecb9a5974293df0658ca2dcefa602baffb4534783109474b4213741",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7bfca1799ab09017128bd4d68e9132ac2d08d968b3efeac1ff3e204dd6066b0d",
+    "raw_response_text_sha256": "bea36305e10ee1cf00648baf2abac4b06d42dd2ad215c96a3e83ae2898e26ea1"
+  },
+  "api_metadata": {
+    "id": "resp_04fe1ff20ed317f2006b060f71cc3487d2b092083dd1f32aeb",
+    "model": "gpt-6-luna",
+    "created_at": 1795559281.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1176,
+      "input_tokens_details": {
+        "cache_write_tokens": 1173,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1173
+        }
+      },
+      "output_tokens": 427,
+      "output_tokens_details": {
+        "reasoning_tokens": 271
+      },
+      "total_tokens": 1603
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A device designed to improve solar-cell efficiency and its potential production challenges\",\n  \"climate_relevance\": \"The main article concerns solar power technology, while a likely related-content snippet connects Gulf solar targets to UN climate commitments and emissions-reduction strategies.\",\n  \"reason\": \"The report focuses on a solar-energy device rather than climate change or climate policy. The UN climate framework and emissions-reduction reference provide meaningful climate context, but appear in a separate related-content snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:28:05Z",
+  "duration_seconds": 3.713,
+  "error": null
+}

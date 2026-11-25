@@ -1,0 +1,77 @@
+{
+  "article_id": "85235185",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/us/85235185.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/us/85235185.json"
+  },
+  "manifest_row": {
+    "article_id": "85235185",
+    "group": "2020_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/us/85235185.txt",
+    "now_field_2": "527",
+    "date_original": "20-06-22",
+    "date_iso": "2020-06-22",
+    "source_name": "YAHOO!",
+    "url": "https://finance.yahoo.com/news/financial-conduct-authority-new-chief-executive-nikhil-rathi-london-stock-exchange-092224933.html",
+    "title": "London Stock Exchange boss tapped to lead finance watchdog",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-us7.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "Appointment of the new chief executive of the UK Financial Conduct Authority",
+    "climate_relevance": "Climate change appears only in a brief list of the appointee’s stated priorities, with no further discussion.",
+    "reason": "The article is about a financial-regulator appointment. Its single reference to tackling climate change is incidental and does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b25d744a37c8040273fbdbd1bf6c3d7fde63498db0f0f5cd7f479fb4e7c5879b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f4b005801ccba15267478050f9ec368cdd35505a039c738e67e8380c56ed1f1c",
+    "raw_response_text_sha256": "43d7ec69fb2d5673b7e9308eeec34ba475f364005808a6ad12461f96ab91feaf"
+  },
+  "api_metadata": {
+    "id": "resp_0be56aefa5368b81006b064b8f4e4487d1af1ff92dbcc6ea62",
+    "model": "gpt-6-luna",
+    "created_at": 1795574671.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1161,
+      "input_tokens_details": {
+        "cache_write_tokens": 1158,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1158
+        }
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "total_tokens": 1473
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Appointment of the new chief executive of the UK Financial Conduct Authority\",\n  \"climate_relevance\": \"Climate change appears only in a brief list of the appointee’s stated priorities, with no further discussion.\",\n  \"reason\": \"The article is about a financial-regulator appointment. Its single reference to tackling climate change is incidental and does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:44:33Z",
+  "duration_seconds": 2.786,
+  "error": null
+}

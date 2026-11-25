@@ -1,0 +1,77 @@
+{
+  "article_id": "40497821",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/sg/40497821.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/sg/40497821.json"
+  },
+  "manifest_row": {
+    "article_id": "40497821",
+    "group": "2019_01",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/sg/40497821.txt",
+    "now_field_2": "1219",
+    "date_original": "19-01-14",
+    "date_iso": "2019-01-14",
+    "source_name": "UCA News",
+    "url": "https://www.ucanews.com/news/and-i-will-continue-to-attack-them/84250",
+    "title": "'And I will continue to attack them'",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Rodrigo Duterte's attacks on the Catholic Church",
+    "climate_relevance": "Climate change appears only in the author's biography, which says he tracks climate change issues; the article itself contains no climate discourse.",
+    "reason": "The available article focuses on Duterte's rhetoric toward the Catholic Church. The sole climate reference is unrelated author-bio information.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4dd6da3211ae800cacf17991e969f424812e7dc0d0073cd678faf8422b05fb9e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ce80c1071019a248a19d07f95f37f59456b1a8663614e3875376dd1e411068f5",
+    "raw_response_text_sha256": "34f7ca2b71a40c5ffa6ce8cc0bb3233debb06d20c6cfcdf44a83f02d035bfbf4"
+  },
+  "api_metadata": {
+    "id": "resp_0cfa104b8ae48ef7006b061f0fa5fc87d286c65af70b450bc1",
+    "model": "gpt-6-luna",
+    "created_at": 1795563279.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2100,
+      "input_tokens_details": {
+        "cache_write_tokens": 2097,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2097
+        }
+      },
+      "output_tokens": 203,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 2303
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Rodrigo Duterte's attacks on the Catholic Church\",\n  \"climate_relevance\": \"Climate change appears only in the author's biography, which says he tracks climate change issues; the article itself contains no climate discourse.\",\n  \"reason\": \"The available article focuses on Duterte's rhetoric toward the Catholic Church. The sole climate reference is unrelated author-bio information.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:34:41Z",
+  "duration_seconds": 1.719,
+  "error": null
+}

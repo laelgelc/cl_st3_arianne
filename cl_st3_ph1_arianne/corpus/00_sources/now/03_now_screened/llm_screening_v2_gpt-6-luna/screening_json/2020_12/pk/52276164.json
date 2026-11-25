@@ -1,0 +1,77 @@
+{
+  "article_id": "52276164",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/pk/52276164.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/pk/52276164.json"
+  },
+  "manifest_row": {
+    "article_id": "52276164",
+    "group": "2020_12",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/pk/52276164.txt",
+    "now_field_2": "639",
+    "date_original": "20-12-09",
+    "date_iso": "2020-12-09",
+    "source_name": "thenews.com.pk",
+    "url": "https://www.thenews.com.pk/print/755993-two-year-report-of-info-commission-reveals-transparency-challenges",
+    "title": "Two-year report of Info Commission reveals transparency ...",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The Pakistan Information Commission's performance and access-to-information complaints",
+    "climate_relevance": "Climate change is not discussed; the Ministry of Climate Change appears only in a list of departments that received complaints.",
+    "reason": "The text focuses on transparency and the commission's handling of information requests. The sole climate-related reference is an incidental department name.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c24f20e5124d4ace2f8f701bee62625fa36e1e238e34509f7d420b500d133f2a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2ce88ab509ff9536e338aa9e6c83741915391edfe46ccc4430179dbf91637308",
+    "raw_response_text_sha256": "a3103c605b60e3d48eeaf74d17b582c1ed1b7e0b6f9b7c150276eef3f793ef48"
+  },
+  "api_metadata": {
+    "id": "resp_0b8478f77a846308006b06306d495487d190cc8e42e9e24d30",
+    "model": "gpt-6-luna",
+    "created_at": 1795567725.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1300,
+      "input_tokens_details": {
+        "cache_write_tokens": 1297,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1297
+        }
+      },
+      "output_tokens": 183,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 1483
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The Pakistan Information Commission's performance and access-to-information complaints\",\n  \"climate_relevance\": \"Climate change is not discussed; the Ministry of Climate Change appears only in a list of departments that received complaints.\",\n  \"reason\": \"The text focuses on transparency and the commission's handling of information requests. The sole climate-related reference is an incidental department name.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:48:47Z",
+  "duration_seconds": 2.032,
+  "error": null
+}

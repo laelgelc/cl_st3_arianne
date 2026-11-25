@@ -1,0 +1,77 @@
+{
+  "article_id": "60418961",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/pk/60418961.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/pk/60418961.json"
+  },
+  "manifest_row": {
+    "article_id": "60418961",
+    "group": "2019_01",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/pk/60418961.txt",
+    "now_field_2": "293",
+    "date_original": "19-01-08",
+    "date_iso": "2019-01-08",
+    "source_name": "Daily Seekers",
+    "url": "https://www.dailyseekers.com/jim-yong-kim-walks-out-as-world-bank-president/",
+    "title": "Jim Yong Kim Walks Out As World Bank President",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Jim Yong Kim's resignation as president of the World Bank",
+    "climate_relevance": "Climate change is briefly listed among global issues the World Bank Group addresses, without further discussion.",
+    "reason": "The article focuses on Kim's departure and contains only a passing mention of climate change in a list of other issues.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3b8cbcba47ccaf6d57df4e91fde49c78ba641cb4061ad4a42e1b8717a980ebcd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "685f6d738d1e28d7d4874bca0f4122410ca1e26e58df1f46241d81b9a906125c",
+    "raw_response_text_sha256": "6d0b40aacf8f995e05b2af448cb23d12fdaa31fd9bed0fb814441881b40a38a2"
+  },
+  "api_metadata": {
+    "id": "resp_05e5eadd79f6f7f4006b06328e325087d19da8fae212e75abf",
+    "model": "gpt-6-luna",
+    "created_at": 1795568270.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 840,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1050
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Jim Yong Kim's resignation as president of the World Bank\",\n  \"climate_relevance\": \"Climate change is briefly listed among global issues the World Bank Group addresses, without further discussion.\",\n  \"reason\": \"The article focuses on Kim's departure and contains only a passing mention of climate change in a list of other issues.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:57:52Z",
+  "duration_seconds": 2.304,
+  "error": null
+}

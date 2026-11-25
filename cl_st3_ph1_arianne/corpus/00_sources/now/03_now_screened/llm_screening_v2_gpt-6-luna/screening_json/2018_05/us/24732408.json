@@ -1,0 +1,77 @@
+{
+  "article_id": "24732408",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/us/24732408.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/us/24732408.json"
+  },
+  "manifest_row": {
+    "article_id": "24732408",
+    "group": "2018_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/us/24732408.txt",
+    "now_field_2": "897",
+    "date_original": "18-05-19",
+    "date_iso": "2018-05-19",
+    "source_name": "Arizona Daily Star",
+    "url": "http://tucson.com/news/national/government-and-politics/how-arizona-members-of-congress-voted-in-the-week-that/article_41c7898d-2268-5ce1-8bd2-ed56c9d4336c.html",
+    "title": "How Arizona members of Congress voted in the week that ended on ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "How Arizona members of Congress voted on legislation",
+    "climate_relevance": "Climate change appears only in a repeated photo caption describing an Earth Day tree installation; the main article does not discuss it.",
+    "reason": "The climate reference is incidental image-caption material, not meaningful climate discourse in the congressional voting report.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ca69c880a03ecf516573f172cfc955f16539f638c60c837e826288abd0dcd79d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "386064f39b4e00cbaf524cd1aa058ad44dd7fa03a5c98092a791a30a7674e018",
+    "raw_response_text_sha256": "dd8d15b84e6f9d7f44621eadf1482944b1c5121b97564c0c0610cca9e2e239ed"
+  },
+  "api_metadata": {
+    "id": "resp_0232561719bff1df006b0612bc108487d2836e8244f68cd5a8",
+    "model": "gpt-6-luna",
+    "created_at": 1795560124.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1850,
+      "input_tokens_details": {
+        "cache_write_tokens": 1847,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1847
+        }
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 2075
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"How Arizona members of Congress voted on legislation\",\n  \"climate_relevance\": \"Climate change appears only in a repeated photo caption describing an Earth Day tree installation; the main article does not discuss it.\",\n  \"reason\": \"The climate reference is incidental image-caption material, not meaningful climate discourse in the congressional voting report.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:42:06Z",
+  "duration_seconds": 2.187,
+  "error": null
+}

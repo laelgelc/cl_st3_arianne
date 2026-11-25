@@ -1,0 +1,77 @@
+{
+  "article_id": "86216366",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86216366.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86216366.json"
+  },
+  "manifest_row": {
+    "article_id": "86216366",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86216366.txt",
+    "now_field_2": "723",
+    "date_original": "20-10-26",
+    "date_iso": "2020-10-26",
+    "source_name": "Chicago Tribune",
+    "url": "https://www.chicagotribune.com/entertainment/music/howard-reich/ct-ott-shemekia-copeland-reich-1030-20201026-6glwpcatafazbgdkiqb66opaxa-story.html",
+    "title": "Shemekia Copeland scores a triumph with `Uncivil War'",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "A review of Shemekia Copeland’s album Uncivil War",
+    "climate_relevance": "Climate change is listed as one of several subjects addressed by the album, but the text gives no further discussion of it.",
+    "reason": "The article is primarily a music review. Its sole climate reference is a passing item in a list of themes, without meaningful elaboration for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4d06ea998ac4d0e48b86de8889b426143bf9f2876810b13d14aebcd9382fe24a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b86198b752e08f2ea0371e27f85053c697d73f70cb7a21a2a7c10047fb7f5546",
+    "raw_response_text_sha256": "862cad262576f5ff906850faf0948f81d13a464f6d95fa8a5f0344bfea4a2401"
+  },
+  "api_metadata": {
+    "id": "resp_060fb7eef70ec289006b064ecc81f487d1903bade2c43f86d1",
+    "model": "gpt-6-luna",
+    "created_at": 1795575500.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1530,
+      "input_tokens_details": {
+        "cache_write_tokens": 1527,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1527
+        }
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 1843
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A review of Shemekia Copeland’s album Uncivil War\",\n  \"climate_relevance\": \"Climate change is listed as one of several subjects addressed by the album, but the text gives no further discussion of it.\",\n  \"reason\": \"The article is primarily a music review. Its sole climate reference is a passing item in a list of themes, without meaningful elaboration for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:58:23Z",
+  "duration_seconds": 3.069,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70542926",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70542926.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70542926.json"
+  },
+  "manifest_row": {
+    "article_id": "70542926",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70542926.txt",
+    "now_field_2": "491",
+    "date_original": "19-02-23",
+    "date_iso": "2019-02-23",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/AK1902/S00578/titahi-bay-water-outage-supply-restored.htm",
+    "title": "Titahi Bay water outage - supply restored",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A burst pipe and temporary water outage in Titahi Bay, with advice to store emergency drinking water.",
+    "climate_relevance": "The main article contains no climate discourse. A separate teaser says Greenpeace criticized a National Party proposal for failing to address climate change and agriculture.",
+    "reason": "The identifiable main article is about a local water-supply outage. The climate reference appears only in an unrelated teaser and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e78ecaabb3a950aa4199b1019612127cd852fa6ed3dada5b80e14753cd3a7f9e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ca5a0228793857e93b856edcdb5369e97f6ebba67c85e75f8eb915e38c11f957",
+    "raw_response_text_sha256": "45ebe13f4f8a112e520a7e43425e06a828e26bd2cdd21ad1ae817bc4d38cc0fe"
+  },
+  "api_metadata": {
+    "id": "resp_00f82c7886e738a4006b063d6dac7487d1b99abaa0313fa23d",
+    "model": "gpt-6-luna",
+    "created_at": 1795571053.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1127,
+      "input_tokens_details": {
+        "cache_write_tokens": 1124,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1124
+        }
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 1412
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A burst pipe and temporary water outage in Titahi Bay, with advice to store emergency drinking water.\",\n  \"climate_relevance\": \"The main article contains no climate discourse. A separate teaser says Greenpeace criticized a National Party proposal for failing to address climate change and agriculture.\",\n  \"reason\": \"The identifiable main article is about a local water-supply outage. The climate reference appears only in an unrelated teaser and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:44:16Z",
+  "duration_seconds": 2.717,
+  "error": null
+}

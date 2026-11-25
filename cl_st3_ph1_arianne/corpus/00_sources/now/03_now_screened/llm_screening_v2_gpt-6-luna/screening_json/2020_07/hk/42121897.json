@@ -1,0 +1,77 @@
+{
+  "article_id": "42121897",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_07/hk/42121897.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_07/hk/42121897.json"
+  },
+  "manifest_row": {
+    "article_id": "42121897",
+    "group": "2020_07",
+    "country_code": "hk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_07/hk/42121897.txt",
+    "now_field_2": "631",
+    "date_original": "20-07-15",
+    "date_iso": "2020-07-15",
+    "source_name": "asiatimes.com",
+    "url": "https://asiatimes.com/2020/07/china-to-boost-investment-in-rural-areas/",
+    "title": "China to boost investment in rural areas - Asia Times",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-07.txt\"]",
+    "metadata_article_files": "[\"text-20-07/20_07-hk.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "Chinese investment in agriculture and rural areas, alongside unrelated economic briefs",
+    "climate_relevance": "A photo caption links water scarcity in northern China and drying rivers and glaciers to climate change, while also mentioning dams and pollution.",
+    "reason": "The climate reference gives a meaningful account of environmental impacts, but climate change is not the focus of the rural-investment article or the other brief items.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7975c23c3418932d380ec82d9d02caf6d2cb843d604a77ea7157ff56afe8f409",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8999fc5337e49ec897c6a43c2e90fe463d3e1d8f966682c28182b9bc247d9e93",
+    "raw_response_text_sha256": "220b8eb049f61cba6c76d9bd3d4f20dc08ab6131ecca88ce19db822bc827a475"
+  },
+  "api_metadata": {
+    "id": "resp_048a55e80153b4d8006b06249d19b487d2a092cc4f7d4ceb5d",
+    "model": "gpt-6-luna",
+    "created_at": 1795564701.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1315,
+      "input_tokens_details": {
+        "cache_write_tokens": 1312,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1312
+        }
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 1644
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Chinese investment in agriculture and rural areas, alongside unrelated economic briefs\",\n  \"climate_relevance\": \"A photo caption links water scarcity in northern China and drying rivers and glaciers to climate change, while also mentioning dams and pollution.\",\n  \"reason\": \"The climate reference gives a meaningful account of environmental impacts, but climate change is not the focus of the rural-investment article or the other brief items.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:58:23Z",
+  "duration_seconds": 2.647,
+  "error": null
+}

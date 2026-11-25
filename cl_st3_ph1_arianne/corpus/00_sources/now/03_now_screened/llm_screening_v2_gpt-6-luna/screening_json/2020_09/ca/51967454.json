@@ -1,0 +1,77 @@
+{
+  "article_id": "51967454",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/ca/51967454.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/ca/51967454.json"
+  },
+  "manifest_row": {
+    "article_id": "51967454",
+    "group": "2020_09",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/ca/51967454.txt",
+    "now_field_2": "18681",
+    "date_original": "20-09-20",
+    "date_iso": "2020-09-20",
+    "source_name": "thestar.com",
+    "url": "http://www.thestar.com/content/thestar/feed.RSSManagerServlet.topstories.full.rss",
+    "title": "TORONTO STAR",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "A proposed government investment to bring electric-vehicle production to Ford’s Oakville plant, amid labour negotiations and concerns about jobs and Canada’s auto industry.",
+    "climate_relevance": "The article connects electric-vehicle manufacturing with Canada’s net-zero emissions goal and broader climate ambitions, and notes pressure from environmentalists. Climate policy is relevant context, but the main focus is industrial investment and labour negotiations.",
+    "reason": "The identifiable lead article contains meaningful climate-related discussion through its framing of EV production as supporting emissions goals, but climate change is not its central subject. Other unrelated articles in the supplied text include additional climate references, including wildfire coverage, but they do not change the classification of the lead article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "563559c858657a08e80f3e0281bc10f5e84fb3a7a9534224aa0876d18b0704a2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "588f9c18480f6d4125286fcf3c5cc07572424c1d0bb24110c1e687a96bd18496",
+    "raw_response_text_sha256": "83e77ad61b49cedb7c2ea8cb68e9a3613f62e8e0a985e9a8b7989f49e2df6066"
+  },
+  "api_metadata": {
+    "id": "resp_0ecf59d400f473e1006b062f7c870487d1bdee10cb1f9434d1",
+    "model": "gpt-6-luna",
+    "created_at": 1795567484.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 36041,
+      "input_tokens_details": {
+        "cache_write_tokens": 36038,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 36038
+        }
+      },
+      "output_tokens": 391,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 36432
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A proposed government investment to bring electric-vehicle production to Ford’s Oakville plant, amid labour negotiations and concerns about jobs and Canada’s auto industry.\",\n  \"climate_relevance\": \"The article connects electric-vehicle manufacturing with Canada’s net-zero emissions goal and broader climate ambitions, and notes pressure from environmentalists. Climate policy is relevant context, but the main focus is industrial investment and labour negotiations.\",\n  \"reason\": \"The identifiable lead article contains meaningful climate-related discussion through its framing of EV production as supporting emissions goals, but climate change is not its central subject. Other unrelated articles in the supplied text include additional climate references, including wildfire coverage, but they do not change the classification of the lead article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:44:47Z",
+  "duration_seconds": 3.453,
+  "error": null
+}

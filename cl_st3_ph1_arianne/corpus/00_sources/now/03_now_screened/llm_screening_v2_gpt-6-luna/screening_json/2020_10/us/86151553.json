@@ -1,0 +1,77 @@
+{
+  "article_id": "86151553",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/86151553.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/86151553.json"
+  },
+  "manifest_row": {
+    "article_id": "86151553",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/86151553.txt",
+    "now_field_2": "770",
+    "date_original": "20-10-15",
+    "date_iso": "2020-10-15",
+    "source_name": "Sun Sentinel",
+    "url": "https://www.sun-sentinel.com/opinion/letters/fl-op-letters-campaign-donations-congressional-hearings-20201015-zxaha4yyjjhzlb4edwfxdzfnhi-story.html",
+    "title": "Campaign donations and congressional hearings could both be put to better use | Letters to the editor",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us3.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "A collection of letters to the editor about congressional hearings, campaign donations, insurance rates, and Florida coastal real estate.",
+    "climate_relevance": "One letter discusses a reported climate-driven housing crisis, acknowledges climate change, and disputes its role in coastal real-estate market trends.",
+    "reason": "Climate change receives meaningful discussion in one letter, but the supplied text is a collection of letters on several topics and is not centrally about climate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b5e3d6f00b9301e4faaf64ccdcd4fb9558ff429e457405875f6449ae123da5d1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c8e4567301174a705f582326c6d7f46411e2341808eda976d5475026e223ed55",
+    "raw_response_text_sha256": "a68aeb84218f26df8b837d7180bf9b9b72356c6cbb54d299df60aff3e92e9a22"
+  },
+  "api_metadata": {
+    "id": "resp_0cf12e348627fbc8006b064e921fbc87d18a3fd2f252e2087e",
+    "model": "gpt-6-luna",
+    "created_at": 1795575442.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1443,
+      "input_tokens_details": {
+        "cache_write_tokens": 1440,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1440
+        }
+      },
+      "output_tokens": 295,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 1738
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A collection of letters to the editor about congressional hearings, campaign donations, insurance rates, and Florida coastal real estate.\",\n  \"climate_relevance\": \"One letter discusses a reported climate-driven housing crisis, acknowledges climate change, and disputes its role in coastal real-estate market trends.\",\n  \"reason\": \"Climate change receives meaningful discussion in one letter, but the supplied text is a collection of letters on several topics and is not centrally about climate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:57:24Z",
+  "duration_seconds": 2.524,
+  "error": null
+}

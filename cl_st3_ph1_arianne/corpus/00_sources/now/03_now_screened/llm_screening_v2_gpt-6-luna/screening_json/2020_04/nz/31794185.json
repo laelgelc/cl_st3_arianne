@@ -1,0 +1,77 @@
+{
+  "article_id": "31794185",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_04/nz/31794185.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_04/nz/31794185.json"
+  },
+  "manifest_row": {
+    "article_id": "31794185",
+    "group": "2020_04",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_04/nz/31794185.txt",
+    "now_field_2": "6664",
+    "date_original": "20-04-22",
+    "date_iso": "2020-04-22",
+    "source_name": "thedailyblog.co.nz",
+    "url": "https://thedailyblog.co.nz/2020/04/22/media-watch-is-simon-bridges-about-to-be-rolled/",
+    "title": "MEDIA WATCH: Is Simon Bridges about to be rolled? | The ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-04.txt\"]",
+    "metadata_article_files": "[\"text-20-04/20-04-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.87,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Speculation about Simon Bridges's leadership of New Zealand's National Party during the Covid-19 lockdown period.",
+    "climate_relevance": "Climate change appears in a long Green Party speech embedded among comments and other material, including references to emissions reduction and environmental policy, but it is not part of the identifiable main article's discussion.",
+    "reason": "The main article concerns party leadership, the pandemic, and political and economic debate. The climate-related material belongs to a distinct embedded speech rather than the main article, so it is unrelated to the identifiable article's focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3547586fc442d7bd5764fa3606f216c34b77a9c37eada3c8dec060b44ca7b89f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "eefad02f060939be3981e57ed9a95e942c783ecf0f7eb9fe99ad32749e504afe",
+    "raw_response_text_sha256": "5bff67f04c0dc8f897ad998c7d9904297fbee6d0e814e6efa7cbe59450f75d08"
+  },
+  "api_metadata": {
+    "id": "resp_06c9ca3480d7c8e4006b06196e104487d2b5781b495a7820dc",
+    "model": "gpt-6-luna",
+    "created_at": 1795561838.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8731,
+      "input_tokens_details": {
+        "cache_write_tokens": 8728,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 8728
+        }
+      },
+      "output_tokens": 587,
+      "output_tokens_details": {
+        "reasoning_tokens": 406
+      },
+      "total_tokens": 9318
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Speculation about Simon Bridges's leadership of New Zealand's National Party during the Covid-19 lockdown period.\",\n  \"climate_relevance\": \"Climate change appears in a long Green Party speech embedded among comments and other material, including references to emissions reduction and environmental policy, but it is not part of the identifiable main article's discussion.\",\n  \"reason\": \"The main article concerns party leadership, the pandemic, and political and economic debate. The climate-related material belongs to a distinct embedded speech rather than the main article, so it is unrelated to the identifiable article's focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:10:42Z",
+  "duration_seconds": 4.819,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "20773046",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_09/nz/20773046.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_09/nz/20773046.json"
+  },
+  "manifest_row": {
+    "article_id": "20773046",
+    "group": "2017_09",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_09/nz/20773046.txt",
+    "now_field_2": "408",
+    "date_original": "17-09-27",
+    "date_iso": "2017-09-27",
+    "source_name": "Asia Pacific Report",
+    "url": "https://asiapacificreport.nz/2017/09/27/vanuatu-rescuers-face-tough-challenges-over-ambae-volcano-evacuation/",
+    "title": "Vanuatu rescuers face tough challenges over Ambae volcano ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-09.txt\"]",
+    "metadata_article_files": "[\"text-17-09/text_17-09-NZ.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Humanitarian response to volcanic-eruption evacuations on Ambae, including shelter, water, and food needs",
+    "climate_relevance": "Climate change appears only in the name of a provincial disaster committee; the text does not discuss climate change or its implications.",
+    "reason": "The article focuses on displacement and relief efforts following volcanic activity. Its sole climate-change reference is incidental and provides no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7f012c50c767c28fe37b755e737b6936bc18be7aff000d6f6b52d0fca33b7ae2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "18839b54cbd3f8b1bb9a6d7c43dde4f17eaf17c3303b55699d8b39690eb1111a",
+    "raw_response_text_sha256": "87d55d760ced9ac0b13baaa9d37f79c1d6af4cb42bfdef73d70edf8540e0be8a"
+  },
+  "api_metadata": {
+    "id": "resp_015c808db16445c8006b060dcc145087d2bb709224d4127313",
+    "model": "gpt-6-luna",
+    "created_at": 1795558860.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1038,
+      "input_tokens_details": {
+        "cache_write_tokens": 1035,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1035
+        }
+      },
+      "output_tokens": 223,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 1261
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Humanitarian response to volcanic-eruption evacuations on Ambae, including shelter, water, and food needs\",\n  \"climate_relevance\": \"Climate change appears only in the name of a provincial disaster committee; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article focuses on displacement and relief efforts following volcanic activity. Its sole climate-change reference is incidental and provides no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:21:02Z",
+  "duration_seconds": 2.122,
+  "error": null
+}

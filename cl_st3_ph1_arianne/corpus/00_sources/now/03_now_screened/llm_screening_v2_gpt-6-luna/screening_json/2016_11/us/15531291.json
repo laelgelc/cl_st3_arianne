@@ -1,0 +1,77 @@
+{
+  "article_id": "15531291",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_11/us/15531291.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_11/us/15531291.json"
+  },
+  "manifest_row": {
+    "article_id": "15531291",
+    "group": "2016_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_11/us/15531291.txt",
+    "now_field_2": "1830",
+    "date_original": "16-11-22",
+    "date_iso": "2016-11-22",
+    "source_name": "Washington Post",
+    "url": "https://www.washingtonpost.com/national/trump-says-he-could-continue-to-run-his-company-in-theory-from-the-oval-office/2016/11/22/935745da-b0e3-11e6-be1c-8cec35b1ad25_story.html",
+    "title": "Trump backs away from some of his strident campaign promises",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-11.txt\"]",
+    "metadata_article_files": "[\"text-16-11/text_16-11-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "climate_role": "background",
+    "main_topic": "Donald Trump's post-election shifts in position and other transition-related controversies",
+    "climate_relevance": "The article meaningfully discusses Trump's views on human-caused warming and whether the United States will remain in the Paris climate agreement, but climate change is one of several secondary issues.",
+    "reason": "Climate change receives several substantive sentences, including discussion of Trump's prior scepticism, his acknowledgment of a connection between human activity and rising temperatures, and his position on the Paris accord. The article as a whole is about Trump's broader political and transition positions, so it is peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cb7192d9239d704ccbece9cf9230e858b79a4cf737b4a45920c50543c6689c84",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "feb7e2e19c02cdab33d9be1afc313225a42e78907bf429dbfb3587329ce78633",
+    "raw_response_text_sha256": "c8948a2f06680df94da98df749131d4745ffbfab36e2c0ef2d0a7398634b0940"
+  },
+  "api_metadata": {
+    "id": "resp_0e9f5a0e945558ba006b0606c6af3c87d2b4be7f6dc57acf3c",
+    "model": "gpt-6-luna",
+    "created_at": 1795557062.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2905,
+      "input_tokens_details": {
+        "cache_write_tokens": 2902,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2902
+        }
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 3221
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Donald Trump's post-election shifts in position and other transition-related controversies\",\n  \"climate_relevance\": \"The article meaningfully discusses Trump's views on human-caused warming and whether the United States will remain in the Paris climate agreement, but climate change is one of several secondary issues.\",\n  \"reason\": \"Climate change receives several substantive sentences, including discussion of Trump's prior scepticism, his acknowledgment of a connection between human activity and rising temperatures, and his position on the Paris accord. The article as a whole is about Trump's broader political and transition positions, so it is peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:51:05Z",
+  "duration_seconds": 3.074,
+  "error": null
+}

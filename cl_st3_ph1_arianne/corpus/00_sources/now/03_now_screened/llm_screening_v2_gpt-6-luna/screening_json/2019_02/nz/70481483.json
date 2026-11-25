@@ -1,0 +1,77 @@
+{
+  "article_id": "70481483",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70481483.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70481483.json"
+  },
+  "manifest_row": {
+    "article_id": "70481483",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70481483.txt",
+    "now_field_2": "475",
+    "date_original": "19-02-04",
+    "date_iso": "2019-02-04",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PA1902/S00037/agriculture-minister-welcomes-certainty-for-telford.htm",
+    "title": "Agriculture Minister welcomes certainty for Telford",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Agricultural education and the transfer of the Telford campus to the Southern Institute of Technology",
+    "climate_relevance": "The main article does not discuss climate change. A separate teaser briefly says Greenpeace criticised a party's failure to address climate change and agriculture.",
+    "reason": "The identifiable main article concerns agricultural education. The only climate reference occurs in an unrelated, very brief teaser, so it does not make the main text useful for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1cb26bbad1f2b29f6c90831f0e6242511580aaca2e923fcbfdc82a8f5efc5980",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "38da711eaa3eac6f4fd633572475eaa2e8700add6a4da96ca272fca36fb67979",
+    "raw_response_text_sha256": "bbf8a865355815a5b88363af9abc5552c4720928cd9d5cc36202d7ff748b1688"
+  },
+  "api_metadata": {
+    "id": "resp_0ff6fa0a44ddf192006b063cd4838087d1a4a290a22b750671",
+    "model": "gpt-6-luna",
+    "created_at": 1795570900.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1099,
+      "input_tokens_details": {
+        "cache_write_tokens": 1096,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1096
+        }
+      },
+      "output_tokens": 352,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 1451
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Agricultural education and the transfer of the Telford campus to the Southern Institute of Technology\",\n  \"climate_relevance\": \"The main article does not discuss climate change. A separate teaser briefly says Greenpeace criticised a party's failure to address climate change and agriculture.\",\n  \"reason\": \"The identifiable main article concerns agricultural education. The only climate reference occurs in an unrelated, very brief teaser, so it does not make the main text useful for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:41:43Z",
+  "duration_seconds": 3.301,
+  "error": null
+}

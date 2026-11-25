@@ -1,0 +1,77 @@
+{
+  "article_id": "31582061",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/lk/31582061.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/lk/31582061.json"
+  },
+  "manifest_row": {
+    "article_id": "31582061",
+    "group": "2020_01",
+    "country_code": "lk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/lk/31582061.txt",
+    "now_field_2": "1438",
+    "date_original": "20-01-17",
+    "date_iso": "2020-01-17",
+    "source_name": "ft.lk",
+    "url": "http://www.ft.lk/2014/04/100",
+    "title": "Daily FT",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-lk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "passing",
+    "main_topic": "A collection of unrelated Sri Lankan political, economic, and social commentary snippets",
+    "climate_relevance": "One fragment begins to mention climate change but cuts off before making a substantive point. Another discusses coal power and rooftop solar in the context of electricity shortages, without connecting them to climate change.",
+    "reason": "The available text contains no complete, meaningful sentence about climate change or its implications. The climate reference is truncated, and the energy discussion does not explicitly engage with climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "62190a22d65245e299ef01638939b207d028d3a705693b4db783dfacafe586fd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "52ea52799a65d2d56b3ae5f8cdae70aab5a70c61197edcd0698177c2e32bf712",
+    "raw_response_text_sha256": "a7ba040df6fd72f80dbff79648913cc4b98df995bcea424d35cb4ca94267dbb6"
+  },
+  "api_metadata": {
+    "id": "resp_014b03398a90363b006b06183abbec87d2be8e718b1fdb239a",
+    "model": "gpt-6-luna",
+    "created_at": 1795561530.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2270,
+      "input_tokens_details": {
+        "cache_write_tokens": 2267,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2267
+        }
+      },
+      "output_tokens": 487,
+      "output_tokens_details": {
+        "reasoning_tokens": 327
+      },
+      "total_tokens": 2757
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of unrelated Sri Lankan political, economic, and social commentary snippets\",\n  \"climate_relevance\": \"One fragment begins to mention climate change but cuts off before making a substantive point. Another discusses coal power and rooftop solar in the context of electricity shortages, without connecting them to climate change.\",\n  \"reason\": \"The available text contains no complete, meaningful sentence about climate change or its implications. The climate reference is truncated, and the energy discussion does not explicitly engage with climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:05:34Z",
+  "duration_seconds": 3.883,
+  "error": null
+}

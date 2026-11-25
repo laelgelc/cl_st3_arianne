@@ -1,0 +1,77 @@
+{
+  "article_id": "17735760",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/in/17735760.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/in/17735760.json"
+  },
+  "manifest_row": {
+    "article_id": "17735760",
+    "group": "2017_04",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/in/17735760.txt",
+    "now_field_2": "395",
+    "date_original": "17-04-02",
+    "date_iso": "2017-04-02",
+    "source_name": "Financial Express",
+    "url": "http://www.financialexpress.com/india-news/watch-piyush-goyals-warning-up-power-officials-be-honest-or-resign-video-goes-viral/611715/",
+    "title": "WATCH: Piyush Goyal's warning to UP power officials, 'Be honest or ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-IN.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Corruption and conduct among power department officials in Uttar Pradesh",
+    "climate_relevance": "A single climate-change quote appears at the end but is unrelated to the article’s main discussion.",
+    "reason": "The identifiable main article concerns anti-corruption rules and officials’ conduct. The climate-change statement appears to be an unrelated inserted snippet and does not make this meaningful climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b4b1186cb2abac513a04475b3781442cf625a4f331177f0ebabec09e79153614",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8fad89be4ea630725524106339ea032f4a1b8e3c9352db29e23443f7202b3054",
+    "raw_response_text_sha256": "81f2f4ae2c5cf2ee9d7f2eeceb3a27f7f0b37c1956bb90caa14757d9bbd3d859"
+  },
+  "api_metadata": {
+    "id": "resp_0e42fa519b5f7e9b006b06095921e487d294e5e382bed8d1ef",
+    "model": "gpt-6-luna",
+    "created_at": 1795557721.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 966,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 1258
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Corruption and conduct among power department officials in Uttar Pradesh\",\n  \"climate_relevance\": \"A single climate-change quote appears at the end but is unrelated to the article’s main discussion.\",\n  \"reason\": \"The identifiable main article concerns anti-corruption rules and officials’ conduct. The climate-change statement appears to be an unrelated inserted snippet and does not make this meaningful climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:02:03Z",
+  "duration_seconds": 2.553,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "50681882",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_05/au/50681882.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_05/au/50681882.json"
+  },
+  "manifest_row": {
+    "article_id": "50681882",
+    "group": "2019_05",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_05/au/50681882.txt",
+    "now_field_2": "726",
+    "date_original": "19-05-17",
+    "date_iso": "2019-05-17",
+    "source_name": "Kalkine Medi",
+    "url": "https://kalkinemedia.com/news/qantas-closed-on-a-lower-side-of-asx-ladder/",
+    "title": "Qantas Closed On A Lower Side Of ASX Ladder",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-05.txt\"]",
+    "metadata_article_files": "[\"text-19-05/19-05-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "climate_role": "passing",
+    "main_topic": "Qantas financial performance and stock activity",
+    "climate_relevance": "Climate change appears only in a list of global forces that may affect Qantas; no implications or related issues are discussed.",
+    "reason": "The article is primarily a financial profile of Qantas, and its brief climate-change mention does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "af21f0ad269f3c98293c44273b62ebff8dbf822c2eaf97f200c065c77d129056",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9d2b4c6eda6113e1a4e23fa8cb57b0e91e3139a1b4f24957fa808d2d3e4d2b44",
+    "raw_response_text_sha256": "316887ce00ed2735bb4c755adea0b6298e553f4c9fd9dcf97685f336717d1879"
+  },
+  "api_metadata": {
+    "id": "resp_0d2e9c15c140e81b006b062a4090d887d1a10b808bfbd46674",
+    "model": "gpt-6-luna",
+    "created_at": 1795566144.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1522,
+      "input_tokens_details": {
+        "cache_write_tokens": 1519,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1519
+        }
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 1844
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Qantas financial performance and stock activity\",\n  \"climate_relevance\": \"Climate change appears only in a list of global forces that may affect Qantas; no implications or related issues are discussed.\",\n  \"reason\": \"The article is primarily a financial profile of Qantas, and its brief climate-change mention does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:22:27Z",
+  "duration_seconds": 2.943,
+  "error": null
+}

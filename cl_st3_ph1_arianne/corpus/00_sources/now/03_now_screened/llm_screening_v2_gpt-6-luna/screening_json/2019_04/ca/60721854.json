@@ -1,0 +1,77 @@
+{
+  "article_id": "60721854",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/ca/60721854.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/ca/60721854.json"
+  },
+  "manifest_row": {
+    "article_id": "60721854",
+    "group": "2019_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/ca/60721854.txt",
+    "now_field_2": "922",
+    "date_original": "19-04-09",
+    "date_iso": "2019-04-09",
+    "source_name": "The London Free Press",
+    "url": "https://lfpress.com/pmn/business-pmn/ceos-of-7-big-banks-to-appear-in-front-of-congress/wcm/e188faea-6715-4bfb-88e3-f796334e0f76",
+    "title": "CEOs of 7 big banks to appear in front of Congress",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "U.S. bank executives testifying before the House Financial Services Committee about banking, financial stability, and regulation",
+    "climate_relevance": "Climate change is only listed as one of several politically charged topics raised at the hearing; the text provides no discussion of it.",
+    "reason": "The article is about banking and congressional oversight. Its brief mention of climate change is incidental and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "12e33da7820e4db4d9aa8988fdadbb77d0f5485e6e5d6d81ae0867d18b272c00",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "58ebc67529c5251cc03584ab936eb2d90c8deb973b85d2752de235175785cdec",
+    "raw_response_text_sha256": "bb397b9a578cae38f78deca353c945b79fed97adafa45b8db1c5483d95b49d22"
+  },
+  "api_metadata": {
+    "id": "resp_008db3abc8c48d0b006b063407907487d1aec29c3683b99dd1",
+    "model": "gpt-6-luna",
+    "created_at": 1795568647.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1662,
+      "input_tokens_details": {
+        "cache_write_tokens": 1659,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1659
+        }
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 1883
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"U.S. bank executives testifying before the House Financial Services Committee about banking, financial stability, and regulation\",\n  \"climate_relevance\": \"Climate change is only listed as one of several politically charged topics raised at the hearing; the text provides no discussion of it.\",\n  \"reason\": \"The article is about banking and congressional oversight. Its brief mention of climate change is incidental and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:04:09Z",
+  "duration_seconds": 1.879,
+  "error": null
+}

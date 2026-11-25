@@ -1,0 +1,77 @@
+{
+  "article_id": "60769855",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/ca/60769855.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/ca/60769855.json"
+  },
+  "manifest_row": {
+    "article_id": "60769855",
+    "group": "2019_04",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/ca/60769855.txt",
+    "now_field_2": "1601",
+    "date_original": "19-04-24",
+    "date_iso": "2019-04-24",
+    "source_name": "Halifax Examiner",
+    "url": "https://www.halifaxexaminer.ca/featured/here-are-the-birch-cove-lakes-blue-mountain-land-purchases-the-government-will-announce-later-today/",
+    "title": "Here are the Birch Cove Lakes - Blue Mountain land purchases the ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A local news roundup covering land purchases for a wilderness park, a pulp mill environmental assessment, fracking policy, and other items.",
+    "climate_relevance": "Climate change appears only in the name Environment and Climate Change Canada. The discussion of fracking concerns a moratorium and committee agenda but does not meaningfully address climate change or its implications.",
+    "reason": "The text contains no substantive climate discourse; references to environmental policy and shale gas alone do not establish climate relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7c846ff3e574d97fcef4968e00a347c9a30f4118851306960027c9b2454565d6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "725972b4a23bca322c6d0ac7c2bc5971abd4bfa617fac2da449fa6ba9456d77a",
+    "raw_response_text_sha256": "40f44a663fadb0ebafdab979d7fd73d9f093b38fa85635b226351ff17e58a423"
+  },
+  "api_metadata": {
+    "id": "resp_0ccc4fe0b079f2c7006b063456ef6487d196d523da5118554b",
+    "model": "gpt-6-luna",
+    "created_at": 1795568727.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2627,
+      "input_tokens_details": {
+        "cache_write_tokens": 2624,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2624
+        }
+      },
+      "output_tokens": 339,
+      "output_tokens_details": {
+        "reasoning_tokens": 175
+      },
+      "total_tokens": 2966
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A local news roundup covering land purchases for a wilderness park, a pulp mill environmental assessment, fracking policy, and other items.\",\n  \"climate_relevance\": \"Climate change appears only in the name Environment and Climate Change Canada. The discussion of fracking concerns a moratorium and committee agenda but does not meaningfully address climate change or its implications.\",\n  \"reason\": \"The text contains no substantive climate discourse; references to environmental policy and shale gas alone do not establish climate relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:05:29Z",
+  "duration_seconds": 2.983,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "80890302",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/us/80890302.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/us/80890302.json"
+  },
+  "manifest_row": {
+    "article_id": "80890302",
+    "group": "2019_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/us/80890302.txt",
+    "now_field_2": "450",
+    "date_original": "19-09-03",
+    "date_iso": "2019-09-03",
+    "source_name": "Las Vegas Review-Journal",
+    "url": "https://www.reviewjournal.com/news/politics-and-government/pentagon-sidelines-127-building-projects-to-fund-border-wall-1840430/",
+    "title": "Pentagon sidelines 127 building projects to fund border wall",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-us1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Pentagon funding transfers for construction of the U.S.-Mexico border wall",
+    "climate_relevance": "Climate change appears only in an unrelated video teaser listing topics Joe Biden discussed; no climate-related discussion is provided.",
+    "reason": "The identifiable main article concerns military construction projects being deferred to fund the border wall. The climate reference is a passing mention in an unrelated snippet and does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "13444b6d2206049d0c98e2f549acbc5e6047a482ff0cd369b987ad2f635faf05",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8631059ea4c430bccf8a84690d2cab900ffc3c7896db771df7aa5efbcfec727d",
+    "raw_response_text_sha256": "ca2fd90585e84b5d39418382db6136b96f653fd57b105834b361a81b9fec5282"
+  },
+  "api_metadata": {
+    "id": "resp_06272fe98b05d68c006b0646ae28e487d18112ff982384e732",
+    "model": "gpt-6-luna",
+    "created_at": 1795573422.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1113,
+      "input_tokens_details": {
+        "cache_write_tokens": 1110,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1110
+        }
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 1370
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Pentagon funding transfers for construction of the U.S.-Mexico border wall\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated video teaser listing topics Joe Biden discussed; no climate-related discussion is provided.\",\n  \"reason\": \"The identifiable main article concerns military construction projects being deferred to fund the border wall. The climate reference is a passing mention in an unrelated snippet and does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:23:44Z",
+  "duration_seconds": 2.452,
+  "error": null
+}

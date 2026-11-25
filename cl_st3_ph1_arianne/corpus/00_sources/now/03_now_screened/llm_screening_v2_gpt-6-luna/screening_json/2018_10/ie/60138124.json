@@ -1,0 +1,77 @@
+{
+  "article_id": "60138124",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_10/ie/60138124.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_10/ie/60138124.json"
+  },
+  "manifest_row": {
+    "article_id": "60138124",
+    "group": "2018_10",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_10/ie/60138124.txt",
+    "now_field_2": "171",
+    "date_original": "18-10-10",
+    "date_iso": "2018-10-10",
+    "source_name": "Agriland",
+    "url": "https://www.agriland.ie/farming-news/auction-report-thirsty-for-a-30-at-this-sprawling-sale/",
+    "title": "Auction report: Thirsty for a '30' at this sprawling sale?",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-10.txt\"]",
+    "metadata_article_files": "[\"text-18-10/18-10-ie.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "background",
+    "main_topic": "Ireland's first green bond issuance and its financial details",
+    "climate_relevance": "The report describes a bond market that directs funds toward environmentally beneficial projects, including initiatives intended to blunt climate change, but focuses mainly on financing and public debt.",
+    "reason": "The identifiable main article is about a financial transaction rather than climate change itself. Its discussion of green bonds and climate-related project funding is meaningful but contextual, so it is peripheral.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8c7cbf726cd7df0dc565b6bbeab158027f391171e9914e9833f369c527569cd3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6336402db585c095576193468fe0cd77e41d3ece13569d36d7ad7c131a6978e4",
+    "raw_response_text_sha256": "abbde7a5fb5c4c97eeb396944b9b6d3aebfa0d5b7a379d811be8c3b74aa9814f"
+  },
+  "api_metadata": {
+    "id": "resp_0b0017ad38d6af08006b06312e9b3887d1be53742ea1190f16",
+    "model": "gpt-6-luna",
+    "created_at": 1795567918.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1421,
+      "input_tokens_details": {
+        "cache_write_tokens": 1418,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1418
+        }
+      },
+      "output_tokens": 388,
+      "output_tokens_details": {
+        "reasoning_tokens": 236
+      },
+      "total_tokens": 1809
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Ireland's first green bond issuance and its financial details\",\n  \"climate_relevance\": \"The report describes a bond market that directs funds toward environmentally beneficial projects, including initiatives intended to blunt climate change, but focuses mainly on financing and public debt.\",\n  \"reason\": \"The identifiable main article is about a financial transaction rather than climate change itself. Its discussion of green bonds and climate-related project funding is meaningful but contextual, so it is peripheral.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:52:01Z",
+  "duration_seconds": 3.186,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "40584313",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/sg/40584313.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/sg/40584313.json"
+  },
+  "manifest_row": {
+    "article_id": "40584313",
+    "group": "2019_02",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/sg/40584313.txt",
+    "now_field_2": "244",
+    "date_original": "19-02-05",
+    "date_iso": "2019-02-05",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/catch-daily-5pm-round-todays-top-stories-81-170238897.html",
+    "title": "The catch-up: Your daily 5pm round-up of today's top stories",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-sg.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "A daily news roundup covering several unrelated stories",
+    "climate_relevance": "One item links recent climate extremes, including a heatwave and unusual cold and dry conditions, to reduced potato yields and effects on UK fruit and vegetable farmers.",
+    "reason": "Climate change and its agricultural impacts receive meaningful discussion in one roundup item, but the text as a whole is not centrally about climate change.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cc8e86b4af2eae36fc305c69daa42e079cdf28ee9ede58450f3fe1082e2c5609",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6105f81ddf80ce7ea89121a16535c9221292e59a6be6dc45c83245db5e76bae9",
+    "raw_response_text_sha256": "588c0e44ada170c236b004a24c570b4a5d451fa2cf608610ff1c6b1c7b3c9841"
+  },
+  "api_metadata": {
+    "id": "resp_05fff73a3df3a20e006b061f40f4e487d29e7571a6474e1a18",
+    "model": "gpt-6-luna",
+    "created_at": 1795563329.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 818,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 249,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 1067
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A daily news roundup covering several unrelated stories\",\n  \"climate_relevance\": \"One item links recent climate extremes, including a heatwave and unusual cold and dry conditions, to reduced potato yields and effects on UK fruit and vegetable farmers.\",\n  \"reason\": \"Climate change and its agricultural impacts receive meaningful discussion in one roundup item, but the text as a whole is not centrally about climate change.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:35:31Z",
+  "duration_seconds": 2.12,
+  "error": null
+}

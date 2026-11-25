@@ -1,0 +1,77 @@
+{
+  "article_id": "13489822",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_07/gh/13489822.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_07/gh/13489822.json"
+  },
+  "manifest_row": {
+    "article_id": "13489822",
+    "group": "2016_07",
+    "country_code": "gh",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_07/gh/13489822.txt",
+    "now_field_2": "315",
+    "date_original": "16-07-24",
+    "date_iso": "2016-07-24",
+    "source_name": "Myjoyonline.com",
+    "url": "http://www.myjoyonline.com/news/2016/July-24th/viam-africa-appoints-new-country-manager.php",
+    "title": "VIAM Africa appoints new Country Manager",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-07-qxx/16-07-gh.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Appointment of a country manager for VIAM Africa",
+    "climate_relevance": "Climate change appears only in a list of the organisation's research areas.",
+    "reason": "The text is an announcement about a staff appointment and contains no meaningful discussion of climate change.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "2f3485eb89e59f7ecef7db20e7806024710255c8510b3abc5e610ef4c3f8774a",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "64497f2b12cb20976fb1e8274adcf0e6e29e1fdc04a0a77d0fdf2525e5d1ec2f",
+    "raw_response_text_sha256": "ed7bd6e93bc539a4c2c7d5db9867751974ba11a1346ad4d8a462779b087ccf93"
+  },
+  "api_metadata": {
+    "id": "resp_0ff6d01a65c5899a006b0605145d9887d29aba051f194ecbf8",
+    "model": "gpt-6-luna",
+    "created_at": 1795556628.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 903,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 163,
+      "output_tokens_details": {
+        "reasoning_tokens": 42
+      },
+      "total_tokens": 1066
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Appointment of a country manager for VIAM Africa\",\n  \"climate_relevance\": \"Climate change appears only in a list of the organisation's research areas.\",\n  \"reason\": \"The text is an announcement about a staff appointment and contains no meaningful discussion of climate change.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:43:49Z",
+  "duration_seconds": 1.662,
+  "error": null
+}

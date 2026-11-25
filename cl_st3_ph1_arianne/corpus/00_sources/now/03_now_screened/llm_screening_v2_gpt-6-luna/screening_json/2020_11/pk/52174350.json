@@ -1,0 +1,77 @@
+{
+  "article_id": "52174350",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_11/pk/52174350.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_11/pk/52174350.json"
+  },
+  "manifest_row": {
+    "article_id": "52174350",
+    "group": "2020_11",
+    "country_code": "pk",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_11/pk/52174350.txt",
+    "now_field_2": "545",
+    "date_original": "20-11-05",
+    "date_iso": "2020-11-05",
+    "source_name": "thenews.com.pk",
+    "url": "https://www.thenews.com.pk/print/736098-nuclear-ban",
+    "title": "Nuclear ban - <strong>thenews.com.pk</strong>",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-11/20-11-pk.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Nuclear weapons and the treaty banning them",
+    "climate_relevance": "Climate change appears only in an opening list of urgent global crises and is not discussed further.",
+    "reason": "The opinion piece focuses on nuclear disarmament; its brief mention of climate change does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8ba75d4fc81722ef0433e64be266a2577da5610bd921b770bd966eac86c8ddf3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f3028ad9b3e4cb6fdbca73ce74dbe60bdc3520b9b527592c102f50b828fe3805",
+    "raw_response_text_sha256": "42c0fbc5db6929c426f0bc26f3d8c6ba606e70ddb9c4594302b95b5fcf4909da"
+  },
+  "api_metadata": {
+    "id": "resp_0ab3ad523aaf399f006b063006e14087d1ad059c89c28823b8",
+    "model": "gpt-6-luna",
+    "created_at": 1795567623.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1147,
+      "input_tokens_details": {
+        "cache_write_tokens": 1144,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1144
+        }
+      },
+      "output_tokens": 178,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1325
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Nuclear weapons and the treaty banning them\",\n  \"climate_relevance\": \"Climate change appears only in an opening list of urgent global crises and is not discussed further.\",\n  \"reason\": \"The opinion piece focuses on nuclear disarmament; its brief mention of climate change does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:47:04Z",
+  "duration_seconds": 1.75,
+  "error": null
+}

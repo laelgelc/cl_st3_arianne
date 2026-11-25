@@ -1,0 +1,77 @@
+{
+  "article_id": "32143822",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/32143822.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/32143822.json"
+  },
+  "manifest_row": {
+    "article_id": "32143822",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/32143822.txt",
+    "now_field_2": "718",
+    "date_original": "20-10-10",
+    "date_iso": "2020-10-10",
+    "source_name": "phys.org",
+    "url": "https://phys.org/news/2020-10-fungal-disease-snakes-states-puerto.html",
+    "title": "Study finds fungal disease of snakes in 19 states, Puerto Rico",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "The distribution and prevalence of fungal disease in snakes",
+    "climate_relevance": "Climate change is briefly named as one of several pressures affecting snakes worldwide.",
+    "reason": "The article focuses on snake fungal disease and its distribution. Climate change appears in a meaningful but passing sentence about threats to snake populations, so the text has peripheral relevance to climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e00c13b61b0139c3a72673b26820b37f930fa903574e0009037a39bb7bc0d2b8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "52a79cabdfd57f5b448f9767a1a24a25719cd853322ff7ea91edbd0253ea9182",
+    "raw_response_text_sha256": "1407c6b99aa3f32cea1078703595d7eb6cfd8ba3a6c2052374c30c13f8a859a1"
+  },
+  "api_metadata": {
+    "id": "resp_0cb369ccda6e11d9006b061b8e370487d2948f5d18f3a47cca",
+    "model": "gpt-6-luna",
+    "created_at": 1795562382.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1448,
+      "input_tokens_details": {
+        "cache_write_tokens": 1445,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1445
+        }
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 1698
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The distribution and prevalence of fungal disease in snakes\",\n  \"climate_relevance\": \"Climate change is briefly named as one of several pressures affecting snakes worldwide.\",\n  \"reason\": \"The article focuses on snake fungal disease and its distribution. Climate change appears in a meaningful but passing sentence about threats to snake populations, so the text has peripheral relevance to climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:19:44Z",
+  "duration_seconds": 2.048,
+  "error": null
+}

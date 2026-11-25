@@ -1,0 +1,77 @@
+{
+  "article_id": "51522914",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_03/ca/51522914.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_03/ca/51522914.json"
+  },
+  "manifest_row": {
+    "article_id": "51522914",
+    "group": "2020_03",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_03/ca/51522914.txt",
+    "now_field_2": "136",
+    "date_original": "20-03-10",
+    "date_iso": "2020-03-10",
+    "source_name": "newswire.ca",
+    "url": "https://www.newswire.ca/news-releases/ministerial-regulatory-proposal-related-to-offshore-exploratory-drilling-east-of-newfoundland-and-labrador-comment-period-on-discussion-paper-866374145.html",
+    "title": "Ministerial Regulatory Proposal related to Offshore ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-03.txt\"]",
+    "metadata_article_files": "[\"text-20-03/20-03-ca1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A regional environmental assessment and exemptions from project-specific federal impact assessment",
+    "climate_relevance": "Climate change appears only in the official title of the Minister of Environment and Climate Change; the text contains no substantive climate discussion.",
+    "reason": "The passage focuses on assessment procedures, mitigation and follow-up measures, and regulatory requirements. The climate reference is incidental to a minister's title.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "79c7e910ced5a361e951bf49cbdf307c6959e5c7ecf754a993bb5a907acf0115",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a37faa6361fc9f7eee6835f472ea81974f198805c1eba3266c22e02327caa28c",
+    "raw_response_text_sha256": "fd0ce762f3d680ec3bc03d307518f40d8060c67a54c56225a5c56198d6703442"
+  },
+  "api_metadata": {
+    "id": "resp_02f395b219f83ca5006b062df5a84487d1b7529c6b817fbe09",
+    "model": "gpt-6-luna",
+    "created_at": 1795567093.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 636,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 200,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 836
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A regional environmental assessment and exemptions from project-specific federal impact assessment\",\n  \"climate_relevance\": \"Climate change appears only in the official title of the Minister of Environment and Climate Change; the text contains no substantive climate discussion.\",\n  \"reason\": \"The passage focuses on assessment procedures, mitigation and follow-up measures, and regulatory requirements. The climate reference is incidental to a minister's title.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:38:15Z",
+  "duration_seconds": 1.859,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "60559311",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/ca/60559311.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/ca/60559311.json"
+  },
+  "manifest_row": {
+    "article_id": "60559311",
+    "group": "2019_02",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/ca/60559311.txt",
+    "now_field_2": "908",
+    "date_original": "19-02-18",
+    "date_iso": "2019-02-18",
+    "source_name": "CBC.ca",
+    "url": "https://www.cbc.ca/news/canada/montreal/how-montreal-takes-300-000-truckloads-of-snow-off-the-street-every-winter-1.5023619",
+    "title": "How Montreal takes 300000 truckloads of snow off the street every ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-ca.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Montreal's snow-removal operations",
+    "climate_relevance": "The article says the city expects more snowfalls of similar size in the future because of climate change and is planning for them.",
+    "reason": "The article is primarily a behind-the-scenes account of snow clearing, transport, and disposal. Climate change appears in a brief but meaningful statement about anticipated snowfall and municipal planning, so the text is relevant as peripheral climate discourse rather than core coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "592effca19bdba74ef78d6f7934ce7919bdc5502a24640265c95a820baf5beda",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "99a9f05b681f61616c48b341de147726983d11082ac715a711a61fe735a21753",
+    "raw_response_text_sha256": "0963cbd6b4ccf75d353f77d11e09922c8bfd514859870e18d2a54303067690e5"
+  },
+  "api_metadata": {
+    "id": "resp_0a378869461e4e00006b06332c02dc87d1bc2d444e0d72552d",
+    "model": "gpt-6-luna",
+    "created_at": 1795568428.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1787,
+      "input_tokens_details": {
+        "cache_write_tokens": 1784,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1784
+        }
+      },
+      "output_tokens": 296,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 2083
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Montreal's snow-removal operations\",\n  \"climate_relevance\": \"The article says the city expects more snowfalls of similar size in the future because of climate change and is planning for them.\",\n  \"reason\": \"The article is primarily a behind-the-scenes account of snow clearing, transport, and disposal. Climate change appears in a brief but meaningful statement about anticipated snowfall and municipal planning, so the text is relevant as peripheral climate discourse rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:00:30Z",
+  "duration_seconds": 2.739,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "85996997",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/85996997.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/85996997.json"
+  },
+  "manifest_row": {
+    "article_id": "85996997",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/85996997.txt",
+    "now_field_2": "1034",
+    "date_original": "20-09-22",
+    "date_iso": "2020-09-22",
+    "source_name": "Union of Concerned Scientists",
+    "url": "https://www.ucsusa.org/resources/attacks-on-science/fda-now-lacks-authority-halt-use-inaccurate-coronavirus-tests",
+    "title": "FDA Now Lacks Authority to Halt Use of Inaccurate Coronavirus Tests",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "FDA oversight of laboratory-developed COVID-19 tests",
+    "climate_relevance": "Climate change appears only in a generic footer reference. The opening mention concerns nitrogen runoff and the Gulf of Mexico dead zone, not climate change.",
+    "reason": "The identifiable main article focuses on COVID-19 testing policy. Neither the footer mention nor the separate-looking runoff snippet provides meaningful climate-change discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "238bb96b6c41ecbc738034125a1930df0f4bf5b3241d405e8c41d63392ca84b4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2ca59ce17b5d45bffb39cb98902ffb24089eea7378b1942f2da7a43150c97537",
+    "raw_response_text_sha256": "3ba57a32bc4bbc1828ecd8044dd35e9d51d3185d2ee3d9e7927c92dac3968588"
+  },
+  "api_metadata": {
+    "id": "resp_04bbe04397345300006b064dee52e487d1a73f366352f162a8",
+    "model": "gpt-6-luna",
+    "created_at": 1795575278.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1738,
+      "input_tokens_details": {
+        "cache_write_tokens": 1735,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1735
+        }
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 2009
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"FDA oversight of laboratory-developed COVID-19 tests\",\n  \"climate_relevance\": \"Climate change appears only in a generic footer reference. The opening mention concerns nitrogen runoff and the Gulf of Mexico dead zone, not climate change.\",\n  \"reason\": \"The identifiable main article focuses on COVID-19 testing policy. Neither the footer mention nor the separate-looking runoff snippet provides meaningful climate-change discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:54:40Z",
+  "duration_seconds": 2.432,
+  "error": null
+}

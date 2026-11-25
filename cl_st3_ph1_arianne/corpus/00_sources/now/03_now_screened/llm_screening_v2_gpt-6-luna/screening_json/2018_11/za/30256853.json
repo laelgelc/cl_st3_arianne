@@ -1,0 +1,77 @@
+{
+  "article_id": "30256853",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/za/30256853.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/za/30256853.json"
+  },
+  "manifest_row": {
+    "article_id": "30256853",
+    "group": "2018_11",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/za/30256853.txt",
+    "now_field_2": "697",
+    "date_original": "18-11-14",
+    "date_iso": "2018-11-14",
+    "source_name": "DispatchLIVE",
+    "url": "https://www.dispatchlive.co.za/news/2018-11-14-herman-mashaba-apologises-for-post-on-citizens-arrest-of-cow-heads-trader/",
+    "title": "Herman Mashaba apologises for post on citizen's arrest of cow heads ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-za.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "climate_role": "background",
+    "main_topic": "Cape Town's loan for urban wastewater management and water resilience",
+    "climate_relevance": "The loan is explicitly linked to mitigating the effects of climate change and improving water resilience, but climate change is not the main focus of that report.",
+    "reason": "The text contains two apparently unrelated articles: one about food safety and Johannesburg's mayor, and another about Cape Town's wastewater-management loan. The second article includes meaningful climate-related context, making the material peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ec8f7430c891a0c7df71f90269fd4e2568e9fe45b94890301a8e69abfa0be223",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9718d9d728a5c2e1684436904d3e04865c52612518aae1dcc3203af36a7be510",
+    "raw_response_text_sha256": "52b5733009e70f434b0ce533119a50dfccf4af0da0e99165e51bc1096d50180a"
+  },
+  "api_metadata": {
+    "id": "resp_05662e48c912b501006b0613a9858c87d2835c8ae3af74e88e",
+    "model": "gpt-6-luna",
+    "created_at": 1795560361.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1775,
+      "input_tokens_details": {
+        "cache_write_tokens": 1772,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1772
+        }
+      },
+      "output_tokens": 249,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 2024
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Cape Town's loan for urban wastewater management and water resilience\",\n  \"climate_relevance\": \"The loan is explicitly linked to mitigating the effects of climate change and improving water resilience, but climate change is not the main focus of that report.\",\n  \"reason\": \"The text contains two apparently unrelated articles: one about food safety and Johannesburg's mayor, and another about Cape Town's wastewater-management loan. The second article includes meaningful climate-related context, making the material peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:46:03Z",
+  "duration_seconds": 1.989,
+  "error": null
+}

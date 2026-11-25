@@ -1,0 +1,77 @@
+{
+  "article_id": "70839668",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/us/70839668.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/us/70839668.json"
+  },
+  "manifest_row": {
+    "article_id": "70839668",
+    "group": "2019_06",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/us/70839668.txt",
+    "now_field_2": "1227",
+    "date_original": "19-06-05",
+    "date_iso": "2019-06-05",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/trump-to-pay-respects-to-allied-forces-who-fought-on-d-day/510848392/",
+    "title": "Trump on England's southern coast to attend D-Day ceremony",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "Donald Trump’s UK visit and his remarks on military service, public controversies, and other issues",
+    "climate_relevance": "The article reports that Trump discussed climate change with Prince Charles, describes Trump as having called it a hoax, and quotes his claim that weather changes in both directions.",
+    "reason": "Climate change is a meaningful but secondary part of the article: it provides context about Trump’s views and his conversation with Prince Charles, while the main focus is the D-Day commemoration and Trump’s wider comments.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "710e97756c046652007f0b41463f3ac33d4ed816e8f60196271be598efc68729",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d29bd5e2eab4e4b553be809f0cc9d1c0b92bf73dc2935a750554971d1e7d8d7a",
+    "raw_response_text_sha256": "510369af7423dd2aff453ab5af41d2bd3481aa80c5ac728d566f915ef80636c8"
+  },
+  "api_metadata": {
+    "id": "resp_07206a64a22fd513006b063f72be9087d1b91d2c82e3c947e9",
+    "model": "gpt-6-luna",
+    "created_at": 1795571570.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2057,
+      "input_tokens_details": {
+        "cache_write_tokens": 2054,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2054
+        }
+      },
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 2322
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Donald Trump’s UK visit and his remarks on military service, public controversies, and other issues\",\n  \"climate_relevance\": \"The article reports that Trump discussed climate change with Prince Charles, describes Trump as having called it a hoax, and quotes his claim that weather changes in both directions.\",\n  \"reason\": \"Climate change is a meaningful but secondary part of the article: it provides context about Trump’s views and his conversation with Prince Charles, while the main focus is the D-Day commemoration and Trump’s wider comments.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:52:53Z",
+  "duration_seconds": 2.622,
+  "error": null
+}

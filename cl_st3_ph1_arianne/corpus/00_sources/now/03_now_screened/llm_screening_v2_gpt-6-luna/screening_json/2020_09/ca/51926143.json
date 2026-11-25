@@ -1,0 +1,77 @@
+{
+  "article_id": "51926143",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/ca/51926143.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/ca/51926143.json"
+  },
+  "manifest_row": {
+    "article_id": "51926143",
+    "group": "2020_09",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/ca/51926143.txt",
+    "now_field_2": "274",
+    "date_original": "20-09-01",
+    "date_iso": "2020-09-01",
+    "source_name": "straight.com",
+    "url": "https://www.straight.com/tech/new-web-tool-enables-public-to-determine-water-quality-trends-in-bc-rivers",
+    "title": "New web tool enables public to determine water-quality ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A website for exploring water-quality monitoring results in British Columbia",
+    "climate_relevance": "Climate change appears only as part of the name of the Ministry of Environment and Climate Change Strategy; the text contains no meaningful climate discourse.",
+    "reason": "The article focuses on water-quality testing, E. coli contamination, and an online data tool. The ministry name is incidental and does not make the text relevant to climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "85edfdf1b07eccc574bc39e2cb9ec414b99f361a4068fe0b51fdb3852ddfd328",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6963be77e59e4dab8da29265228eb66bbdb44b7ce0f53e07aed507501039481f",
+    "raw_response_text_sha256": "352be38ca4e9b442181c944b8333f6a3e4a857ec3a4ed718d8b1aa04880df538"
+  },
+  "api_metadata": {
+    "id": "resp_024515c223957bd1006b062f44b88087d1b1cea85d539f6e43",
+    "model": "gpt-6-luna",
+    "created_at": 1795567428.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 848,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1084
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A website for exploring water-quality monitoring results in British Columbia\",\n  \"climate_relevance\": \"Climate change appears only as part of the name of the Ministry of Environment and Climate Change Strategy; the text contains no meaningful climate discourse.\",\n  \"reason\": \"The article focuses on water-quality testing, E. coli contamination, and an online data tool. The ministry name is incidental and does not make the text relevant to climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:43:50Z",
+  "duration_seconds": 1.998,
+  "error": null
+}

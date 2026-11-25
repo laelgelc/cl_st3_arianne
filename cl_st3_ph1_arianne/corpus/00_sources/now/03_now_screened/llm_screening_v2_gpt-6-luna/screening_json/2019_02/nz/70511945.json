@@ -1,0 +1,77 @@
+{
+  "article_id": "70511945",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70511945.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70511945.json"
+  },
+  "manifest_row": {
+    "article_id": "70511945",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70511945.txt",
+    "now_field_2": "553",
+    "date_original": "19-02-13",
+    "date_iso": "2019-02-13",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PA1902/S00122/kiwibuild-starving-private-builders.htm",
+    "title": "KiwiBuild starving private builders",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Criticism of the KiwiBuild housing programme",
+    "climate_relevance": "The main article does not discuss climate change. A separate related-news snippet mentions criticism of a party's climate policy.",
+    "reason": "The identifiable main article is about housing policy and KiwiBuild. The only climate reference appears in an unrelated news snippet, so it is not part of the main article's climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "3c4577d03f2404419ad3ef7d18b9afd6bdaac6ef7832671bd57abd9ff48fab26",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f3d3443c7081bfeecf9c3069620fbdb0b6d48fab8eb55d1def32db48cbe3a3c2",
+    "raw_response_text_sha256": "fd59982564d507133ec246b56b37218c40a35bbb4f6739188c680af62ecc5910"
+  },
+  "api_metadata": {
+    "id": "resp_0fea5df18fae491f006b063d24233887d1bb39543af7ae7274",
+    "model": "gpt-6-luna",
+    "created_at": 1795570980.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1214,
+      "input_tokens_details": {
+        "cache_write_tokens": 1211,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1211
+        }
+      },
+      "output_tokens": 330,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 1544
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Criticism of the KiwiBuild housing programme\",\n  \"climate_relevance\": \"The main article does not discuss climate change. A separate related-news snippet mentions criticism of a party's climate policy.\",\n  \"reason\": \"The identifiable main article is about housing policy and KiwiBuild. The only climate reference appears in an unrelated news snippet, so it is not part of the main article's climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:02Z",
+  "duration_seconds": 2.666,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "31852977",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_05/us/31852977.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_05/us/31852977.json"
+  },
+  "manifest_row": {
+    "article_id": "31852977",
+    "group": "2020_05",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_05/us/31852977.txt",
+    "now_field_2": "3406",
+    "date_original": "20-05-23",
+    "date_iso": "2020-05-23",
+    "source_name": "politico.com",
+    "url": "https://www.politico.com/newsletters/playbook/2020/05/18/welcome-to-coronavirus-limbo-489252",
+    "title": "POLITICO Playbook: Welcome to coronavirus limbo",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-05.txt\"]",
+    "metadata_article_files": "[\"text-20-05/20-05-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "U.S. politics and the coronavirus pandemic",
+    "climate_relevance": "Climate change appears only in a generic promotional list of topics covered by another newsletter.",
+    "reason": "The text contains no meaningful discussion of climate change; its sole mention is incidental newsletter promotion.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7ef52af80a8d7ffdd0e86f7eeb2bb7e3c4e6e0ff6d676680a35ea071ef6e4a17",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8ff7fa38ce94571ed8311f95ca989536b6b29b5a3832d54b7f4a529831f2b386",
+    "raw_response_text_sha256": "7e0211f479129f04804ab4e78eeebc4d263fb8cffbe45881d3c04e265c202c12"
+  },
+  "api_metadata": {
+    "id": "resp_01f366cbe127e2d9006b0619c67a1487d2b546a0dc2593d479",
+    "model": "gpt-6-luna",
+    "created_at": 1795561926.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5038,
+      "input_tokens_details": {
+        "cache_write_tokens": 5035,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5035
+        }
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 5273
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"U.S. politics and the coronavirus pandemic\",\n  \"climate_relevance\": \"Climate change appears only in a generic promotional list of topics covered by another newsletter.\",\n  \"reason\": \"The text contains no meaningful discussion of climate change; its sole mention is incidental newsletter promotion.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:12:08Z",
+  "duration_seconds": 2.274,
+  "error": null
+}

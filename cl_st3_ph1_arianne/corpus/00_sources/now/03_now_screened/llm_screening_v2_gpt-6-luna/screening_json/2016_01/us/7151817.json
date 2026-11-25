@@ -1,0 +1,77 @@
+{
+  "article_id": "7151817",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/us/7151817.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/us/7151817.json"
+  },
+  "manifest_row": {
+    "article_id": "7151817",
+    "group": "2016_01",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/us/7151817.txt",
+    "now_field_2": "1018",
+    "date_original": "16-01-15",
+    "date_iso": "2016-01-15",
+    "source_name": "OilPrice.com",
+    "url": "http://oilprice.com/Energy/Energy-General/Oil-Sinks-Below-30-As-Traders-Fear-Tidal-Wave-Of-Iranian-Oil.html",
+    "title": "Oil Sinks Below $30 As Traders Fear Tidal Wave Of Iranian Oil",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-us.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.89,
+    "climate_role": "background",
+    "main_topic": "Oil and gas markets, energy-industry developments, and clean-energy investment",
+    "climate_relevance": "The text reports clean-energy investment and discusses a coal-leasing review that will assess climate impacts, but climate change is not the main focus.",
+    "reason": "Most of the text concerns oil and LNG prices, projects, and companies. Its climate-related material provides some relevant policy and energy-transition context, making it peripheral rather than core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "947f64c1ef2fed96efc567df6f1e657676adcadf656c5f57f8ce4e249479e1c7",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "592feca8c68508ee4b4e2fc507147dd3c1c4292f85ab62ebd49c8a21b7c713be",
+    "raw_response_text_sha256": "168d259fc6f01ff25b6200df093a84cb699b8762cc3d25b3597b30714f897db4"
+  },
+  "api_metadata": {
+    "id": "resp_09e87e1de1e3b7ec006b0641bd88c087d19a75d1e9c5272016",
+    "model": "gpt-6-luna",
+    "created_at": 1795572157.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1771,
+      "input_tokens_details": {
+        "cache_write_tokens": 1768,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1768
+        }
+      },
+      "output_tokens": 420,
+      "output_tokens_details": {
+        "reasoning_tokens": 266
+      },
+      "total_tokens": 2191
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.89,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Oil and gas markets, energy-industry developments, and clean-energy investment\",\n  \"climate_relevance\": \"The text reports clean-energy investment and discusses a coal-leasing review that will assess climate impacts, but climate change is not the main focus.\",\n  \"reason\": \"Most of the text concerns oil and LNG prices, projects, and companies. Its climate-related material provides some relevant policy and energy-transition context, making it peripheral rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:02:41Z",
+  "duration_seconds": 3.658,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "41028497",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/sg/41028497.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/sg/41028497.json"
+  },
+  "manifest_row": {
+    "article_id": "41028497",
+    "group": "2019_06",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/sg/41028497.txt",
+    "now_field_2": "337",
+    "date_original": "19-06-05",
+    "date_iso": "2019-06-05",
+    "source_name": "Catch News",
+    "url": "http://www.catchnews.com/business-economy-news/pm-s-monthly-pension-scheme-shopkeepers-traders-to-get-rs-3000-monthly-pensions-here-s-how-to-avail-162704.html",
+    "title": "Good News! Shopkeepers, traders to get Rs 3000 under PM's monthly ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-sg.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A government pension scheme for shopkeepers, small traders, and retailers",
+    "climate_relevance": "Climate change appears only as part of the environment minister's official title; there is no substantive climate discourse.",
+    "reason": "The text focuses on eligibility and benefits of a pension scheme. The sole climate-related reference is incidental identification of the minister.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a00791d3fb7709ce8b5cfc3c15cf2b47383894a6553b677c27a3b1017ca796cc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f80f89d75f3e0be375081d271d884d09ac3c3cf2ccb2f88561bfa789ccca793e",
+    "raw_response_text_sha256": "6741da9cb353cdd242bbf452a5fda320dc2b874b56907ca753bb174bbebaad79"
+  },
+  "api_metadata": {
+    "id": "resp_08eb2b7adaf1a86e006b0620a8180887d29a8df9099cf44739",
+    "model": "gpt-6-luna",
+    "created_at": 1795563688.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 915,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 161,
+      "output_tokens_details": {
+        "reasoning_tokens": 23
+      },
+      "total_tokens": 1076
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A government pension scheme for shopkeepers, small traders, and retailers\",\n  \"climate_relevance\": \"Climate change appears only as part of the environment minister's official title; there is no substantive climate discourse.\",\n  \"reason\": \"The text focuses on eligibility and benefits of a pension scheme. The sole climate-related reference is incidental identification of the minister.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:41:29Z",
+  "duration_seconds": 1.578,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "51119568",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/ca/51119568.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/ca/51119568.json"
+  },
+  "manifest_row": {
+    "article_id": "51119568",
+    "group": "2019_10",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/ca/51119568.txt",
+    "now_field_2": "334",
+    "date_original": "19-10-18",
+    "date_iso": "2019-10-18",
+    "source_name": "barrietoday.com",
+    "url": "https://www.barrietoday.com/local-news/city-festival-theatre-productions-in-line-for-100k-in-provincial-funding-1621861",
+    "title": "City festival, theatre productions in line for $100K in ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Provincial funding for local festivals and events",
+    "climate_relevance": "The identifiable main article is about tourism and festival funding and contains no meaningful climate discussion. A separate appended election-campaign excerpt includes substantive climate-policy comments.",
+    "reason": "The climate material belongs to an unrelated snippet rather than the main article, so it does not make the festival-funding article relevant to the climate discourse corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fe6b58a467c8feb1e468e066974b1bbccb1d768c6d00cc944e5296b5f057e46b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "49fad470c284be3941bd2900c75fd3feaed05bafea6566fc25c3ab3ce7ff754d",
+    "raw_response_text_sha256": "1c1d36672e4bbbb0ff4a9c37a7fdcfcfe79658764ee38c3f849c31cd6ef96e58"
+  },
+  "api_metadata": {
+    "id": "resp_0b1031ccf030c474006b062c31a36887d1ba460b278301d444",
+    "model": "gpt-6-luna",
+    "created_at": 1795566641.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1639,
+      "input_tokens_details": {
+        "cache_write_tokens": 1636,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1636
+        }
+      },
+      "output_tokens": 363,
+      "output_tokens_details": {
+        "reasoning_tokens": 213
+      },
+      "total_tokens": 2002
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Provincial funding for local festivals and events\",\n  \"climate_relevance\": \"The identifiable main article is about tourism and festival funding and contains no meaningful climate discussion. A separate appended election-campaign excerpt includes substantive climate-policy comments.\",\n  \"reason\": \"The climate material belongs to an unrelated snippet rather than the main article, so it does not make the festival-funding article relevant to the climate discourse corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:30:44Z",
+  "duration_seconds": 3.3,
+  "error": null
+}

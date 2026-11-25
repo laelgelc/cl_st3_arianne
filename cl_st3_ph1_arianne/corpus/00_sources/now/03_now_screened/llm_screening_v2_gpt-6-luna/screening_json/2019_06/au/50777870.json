@@ -1,0 +1,77 @@
+{
+  "article_id": "50777870",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/au/50777870.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/au/50777870.json"
+  },
+  "manifest_row": {
+    "article_id": "50777870",
+    "group": "2019_06",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/au/50777870.txt",
+    "now_field_2": "607",
+    "date_original": "19-06-19",
+    "date_iso": "2019-06-19",
+    "source_name": "The Big Smoke Australia",
+    "url": "https://www.thebigsmoke.com.au/2019/06/19/nsw-political-state-short-skilled-labor/",
+    "title": "NSW: A political state short of skilled Labor",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Satirical commentary on leadership and factional politics in the NSW Labor Party",
+    "climate_relevance": "Climate-related wording appears only as a political metaphor and pun; the text does not discuss climate change or its implications.",
+    "reason": "The article is about NSW Labor leadership. References to “renewable power-broking” and “political climate change” are wordplay, not meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "03f3c4c12a4dd1554cfe3a66474eb6bb1315602afc1a269feba34e44982958c4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e7c66a5e33f8cb19c65fe12c57123f63dfdad2847c67cc5fe2f4e509c6f5e0cc",
+    "raw_response_text_sha256": "df8fcb65bb85b5eb2fbbe35cd04c134395a21547f8842efc24348eb1c6af4751"
+  },
+  "api_metadata": {
+    "id": "resp_0e9ec9850e4238c3006b062adf0ea087d1b338ddf7389471bd",
+    "model": "gpt-6-luna",
+    "created_at": 1795566303.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1222,
+      "input_tokens_details": {
+        "cache_write_tokens": 1219,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1219
+        }
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 1434
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Satirical commentary on leadership and factional politics in the NSW Labor Party\",\n  \"climate_relevance\": \"Climate-related wording appears only as a political metaphor and pun; the text does not discuss climate change or its implications.\",\n  \"reason\": \"The article is about NSW Labor leadership. References to “renewable power-broking” and “political climate change” are wordplay, not meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:25:05Z",
+  "duration_seconds": 2.151,
+  "error": null
+}

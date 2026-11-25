@@ -1,0 +1,77 @@
+{
+  "article_id": "86379568",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/us/86379568.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/us/86379568.json"
+  },
+  "manifest_row": {
+    "article_id": "86379568",
+    "group": "2020_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/us/86379568.txt",
+    "now_field_2": "734",
+    "date_original": "20-12-07",
+    "date_iso": "2020-12-07",
+    "source_name": "Washington Examiner",
+    "url": "https://www.washingtonexaminer.com/politics/georgia-to-recertify-biden-win-following-recount-as-sidney-powells-efforts-to-release-the-kraken-sink",
+    "title": "Georgia to recertify Biden win following recount as Sidney Powell's efforts to 'release the Kraken' sink",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-us4.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Georgia's 2020 presidential election recount and certification",
+    "climate_relevance": "Climate change appears only in an unrelated recommended-story snippet discussing Biden's promise to rejoin the Paris Agreement.",
+    "reason": "The identifiable main article is about the Georgia election recount and contains no meaningful climate discourse. The climate-policy discussion belongs to an unrelated snippet, so it does not make the main article relevant to the corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e57790bbf9bd2f36d3e37a94234bc6ae445f66dd43e0bc62c6352328cb932c0e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2ebd1c3e349d5c5382df28851d17b1e42e5531ab164ce6f9e73647446c770b8e",
+    "raw_response_text_sha256": "578c4eee374a67de0941bc348c6312db0ac9eff250e8623de14eb13b32f7a412"
+  },
+  "api_metadata": {
+    "id": "resp_0a5ac762a7beee03006b064fe73cb487d1825f2bfea48af4a1",
+    "model": "gpt-6-luna",
+    "created_at": 1795575783.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1437,
+      "input_tokens_details": {
+        "cache_write_tokens": 1434,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1434
+        }
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "total_tokens": 1762
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Georgia's 2020 presidential election recount and certification\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated recommended-story snippet discussing Biden's promise to rejoin the Paris Agreement.\",\n  \"reason\": \"The identifiable main article is about the Georgia election recount and contains no meaningful climate discourse. The climate-policy discussion belongs to an unrelated snippet, so it does not make the main article relevant to the corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T03:03:07Z",
+  "duration_seconds": 4.182,
+  "error": null
+}

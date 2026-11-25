@@ -1,0 +1,77 @@
+{
+  "article_id": "71535724",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/au/71535724.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/au/71535724.json"
+  },
+  "manifest_row": {
+    "article_id": "71535724",
+    "group": "2020_01",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/au/71535724.txt",
+    "now_field_2": "546",
+    "date_original": "20-01-01",
+    "date_iso": "2020-01-01",
+    "source_name": "9news.com.au",
+    "url": "https://www.9news.com.au/national/australian-wildfires-how-the-world-is-reacting-to-bushfire-crisis/6944781e-7a05-4919-a9b8-7ff97787f06b",
+    "title": "How the world is reacting to Australia's catastrophic ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "International media coverage of Australia's bushfire crisis",
+    "climate_relevance": "The article frames the fires as a climate crisis and mentions scrutiny of the prime minister's climate change response, but focuses mainly on how news outlets covered the fires and their human impacts.",
+    "reason": "Climate change is meaningfully present in the framing of the bushfires, but the available text does not substantially discuss climate science, causes, or policy; its main focus is media coverage of the disaster.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4693b8d42ad2aec7bfd202399faeeb265f4fa27854df8f843ac7db549f1373d4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "934aefd9c6a6a996b0d2757cff59f357b594623bfaa43ee15c314333832815e7",
+    "raw_response_text_sha256": "33dc329f3e7908ab540605350a93ec2996e4d4999e3644a4fe19df18c8106c99"
+  },
+  "api_metadata": {
+    "id": "resp_05032c674ae80da9006b0641d2a76887d18aea0099bb5666f4",
+    "model": "gpt-6-luna",
+    "created_at": 1795572178.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1230,
+      "input_tokens_details": {
+        "cache_write_tokens": 1227,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1227
+        }
+      },
+      "output_tokens": 323,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 1553
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"International media coverage of Australia's bushfire crisis\",\n  \"climate_relevance\": \"The article frames the fires as a climate crisis and mentions scrutiny of the prime minister's climate change response, but focuses mainly on how news outlets covered the fires and their human impacts.\",\n  \"reason\": \"Climate change is meaningfully present in the framing of the bushfires, but the available text does not substantially discuss climate science, causes, or policy; its main focus is media coverage of the disaster.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:03:01Z",
+  "duration_seconds": 3.119,
+  "error": null
+}

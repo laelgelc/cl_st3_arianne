@@ -1,0 +1,77 @@
+{
+  "article_id": "70421440",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/nz/70421440.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/nz/70421440.json"
+  },
+  "manifest_row": {
+    "article_id": "70421440",
+    "group": "2019_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/nz/70421440.txt",
+    "now_field_2": "439",
+    "date_original": "19-01-15",
+    "date_iso": "2019-01-15",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/WO1901/S00058/more-needed-to-end-ebola-epidemic-in-drc.htm",
+    "title": "More Needed to End Ebola Epidemic in DRC",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The Ebola epidemic and humanitarian response in eastern Democratic Republic of the Congo",
+    "climate_relevance": "Climate change appears only in a separate 'ALSO' teaser about the UN Climate Change Conference, not in the main article.",
+    "reason": "The identifiable main article focuses on the Ebola outbreak. The climate-related text is an unrelated snippet and does not contribute meaningfully to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ece9788efbfe49fd016515bf6bd4f6739c775dabefeece84ad71d364f4b2c84b",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "450f412ef357c2b727d8e9da1cadd575003d58599f2254d8abf1efb584336bd0",
+    "raw_response_text_sha256": "441acd9e81c92942ab2381c21e32e47d2331879a8c1d735427b19732ca2cf077"
+  },
+  "api_metadata": {
+    "id": "resp_082c66d0eedbb9fd006b063c73b42887d185ae8f4547554ca4",
+    "model": "gpt-6-luna",
+    "created_at": 1795570803.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1039,
+      "input_tokens_details": {
+        "cache_write_tokens": 1036,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1036
+        }
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 1297
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The Ebola epidemic and humanitarian response in eastern Democratic Republic of the Congo\",\n  \"climate_relevance\": \"Climate change appears only in a separate 'ALSO' teaser about the UN Climate Change Conference, not in the main article.\",\n  \"reason\": \"The identifiable main article focuses on the Ebola outbreak. The climate-related text is an unrelated snippet and does not contribute meaningfully to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:40:05Z",
+  "duration_seconds": 2.255,
+  "error": null
+}

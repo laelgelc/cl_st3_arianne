@@ -1,0 +1,77 @@
+{
+  "article_id": "70601746",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/nz/70601746.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/nz/70601746.json"
+  },
+  "manifest_row": {
+    "article_id": "70601746",
+    "group": "2019_03",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/nz/70601746.txt",
+    "now_field_2": "450",
+    "date_original": "19-03-17",
+    "date_iso": "2019-03-17",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/BU1903/S00442/kiwifruit-growers-appoint-labour-co-ordinator.htm",
+    "title": "Kiwifruit Growers appoint Labour Co-ordinator",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Appointment of a labour co-ordinator to support seasonal recruitment in New Zealand's kiwifruit industry",
+    "climate_relevance": "The main article is about workforce recruitment and contains no climate discussion. Climate-related material appears only in separate snippets appended to the text.",
+    "reason": "The identifiable main article is unrelated to climate change; the brief climate references belong to unrelated appended snippets rather than its substantive content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9e7086d9223312784352b27d808f40e452d95a0ce3231d990b84c8db5ad89a0c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6ca6cc1a5ceaf1be0bfbe6ac53c866f3e28d3efa34f18dee8eccfa113fff0d9a",
+    "raw_response_text_sha256": "75c0f430231566e46ba5b28b21093c4ce66b85b0dabae1fac4155efc6d957b3c"
+  },
+  "api_metadata": {
+    "id": "resp_0eb5a2f709a22a0e006b063de4d71087d18e5ad70a436eaffe",
+    "model": "gpt-6-luna",
+    "created_at": 1795571172.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1058,
+      "input_tokens_details": {
+        "cache_write_tokens": 1055,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1055
+        }
+      },
+      "output_tokens": 379,
+      "output_tokens_details": {
+        "reasoning_tokens": 228
+      },
+      "total_tokens": 1437
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Appointment of a labour co-ordinator to support seasonal recruitment in New Zealand's kiwifruit industry\",\n  \"climate_relevance\": \"The main article is about workforce recruitment and contains no climate discussion. Climate-related material appears only in separate snippets appended to the text.\",\n  \"reason\": \"The identifiable main article is unrelated to climate change; the brief climate references belong to unrelated appended snippets rather than its substantive content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:46:16Z",
+  "duration_seconds": 3.319,
+  "error": null
+}

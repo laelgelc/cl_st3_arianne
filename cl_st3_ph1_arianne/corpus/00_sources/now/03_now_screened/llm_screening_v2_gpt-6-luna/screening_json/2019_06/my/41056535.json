@@ -1,0 +1,77 @@
+{
+  "article_id": "41056535",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/my/41056535.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/my/41056535.json"
+  },
+  "manifest_row": {
+    "article_id": "41056535",
+    "group": "2019_06",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/my/41056535.txt",
+    "now_field_2": "133",
+    "date_original": "19-06-13",
+    "date_iso": "2019-06-13",
+    "source_name": "The Malaysian Insight",
+    "url": "https://www.themalaysianinsight.com/s/160851",
+    "title": "Analysis on Kuala Koh water completed, says Chemistry Dept",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Water sample analysis in Kg Kuala Koh",
+    "climate_relevance": "Climate change appears only as part of a ministry's name; the text contains no meaningful discussion of climate change.",
+    "reason": "The article reports on completed water testing and agency referrals. Its sole climate reference is within the name of a government ministry.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d27e415dea4484d92a71146e92eeb389222b82127e13823f38d48af590e197b8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "09ee03558501186701726c7dab0de77b0e59230ba72f28d8cb8b6c17c9fbe20b",
+    "raw_response_text_sha256": "a27f19a331c5a4a6a5ccce6b935bc2477f8bfa326ec4f18c08e1b26b90374f95"
+  },
+  "api_metadata": {
+    "id": "resp_006fa020db5bf2e7006b0620c20a3887d2b6fb1dbb20a2d0ec",
+    "model": "gpt-6-luna",
+    "created_at": 1795563714.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 668,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 173,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "total_tokens": 841
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Water sample analysis in Kg Kuala Koh\",\n  \"climate_relevance\": \"Climate change appears only as part of a ministry's name; the text contains no meaningful discussion of climate change.\",\n  \"reason\": \"The article reports on completed water testing and agency referrals. Its sole climate reference is within the name of a government ministry.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:41:55Z",
+  "duration_seconds": 1.754,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "19796529",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/ca/19796529.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/ca/19796529.json"
+  },
+  "manifest_row": {
+    "article_id": "19796529",
+    "group": "2017_08",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/ca/19796529.txt",
+    "now_field_2": "332",
+    "date_original": "17-08-01",
+    "date_iso": "2017-08-01",
+    "source_name": "The News",
+    "url": "http://www.ngnews.ca/news/local/2017/8/1/book-celebrates-farmers--foods-cuisine-of-africa.html",
+    "title": "Book celebrates farmers, foods cuisine of Africa",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-CA.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "climate_role": "background",
+    "main_topic": "A book celebrating African foods, farming, and cuisine",
+    "climate_relevance": "Climate change is identified as one factor contributing to food insecurity and as a risk facing family farming and locally produced food in Africa.",
+    "reason": "The article is primarily a book-launch announcement about African food and agriculture. It makes a meaningful but brief connection between climate change, food insecurity, and risks to farming, so it is relevant as peripheral discourse rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ba463a932873b036b95505d8f98277f7dd5982ee0565b39281f76153f1557cb8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ce3e7aaa15d26f85c2bad97f38f9650f0ee63e6cfe1e3ef55e610135f841ab1a",
+    "raw_response_text_sha256": "e657e6858c965f3983b570f5638735557486da057ff69d8b8a8d667ecf33d883"
+  },
+  "api_metadata": {
+    "id": "resp_008b9c286f2595d5006b060c73a36887d29300bab87dd64bc9",
+    "model": "gpt-6-luna",
+    "created_at": 1795558515.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 922,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 1150
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A book celebrating African foods, farming, and cuisine\",\n  \"climate_relevance\": \"Climate change is identified as one factor contributing to food insecurity and as a risk facing family farming and locally produced food in Africa.\",\n  \"reason\": \"The article is primarily a book-launch announcement about African food and agriculture. It makes a meaningful but brief connection between climate change, food insecurity, and risks to farming, so it is relevant as peripheral discourse rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:15:17Z",
+  "duration_seconds": 2.179,
+  "error": null
+}

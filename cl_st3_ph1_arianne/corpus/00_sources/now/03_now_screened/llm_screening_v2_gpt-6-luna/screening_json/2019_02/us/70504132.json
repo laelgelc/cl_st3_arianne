@@ -1,0 +1,77 @@
+{
+  "article_id": "70504132",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/us/70504132.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/us/70504132.json"
+  },
+  "manifest_row": {
+    "article_id": "70504132",
+    "group": "2019_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/us/70504132.txt",
+    "now_field_2": "283",
+    "date_original": "19-02-11",
+    "date_iso": "2019-02-11",
+    "source_name": "Hawaii News Now",
+    "url": "http://www.hawaiinewsnow.com/2019/02/11/wake-winter-storm-honolulu-mayor-has-message-residents-be-prepared-more/",
+    "title": "In wake of winter storm, Honolulu mayor has a message for residents ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "climate_role": "substantial",
+    "main_topic": "Honolulu's preparation for damaging weather events and the mayor's warnings about climate change",
+    "climate_relevance": "Climate change is explicitly linked to more frequent damaging weather, and the article discusses local preparedness, resilience, and adaptation.",
+    "reason": "The identifiable main article gives climate change a substantial role in explaining future severe weather and motivating residents to prepare. A final sentence about Michael Cohen and Trump is unrelated and appears to be an appended snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "234d813cbf017e3273563982a4a9f775ed59806e01b570f6ec21110b5b511703",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "dee05792244a0f4db90c6b5671179d43099eb9ee82949fa13ea01f8e4a2163c1",
+    "raw_response_text_sha256": "d8012e48381ba6ba71f78878f31fb333902587aa74220cc532a0335e002048fe"
+  },
+  "api_metadata": {
+    "id": "resp_03d584d792fb5e1b006b063d0a3dc487d1abf0abb0825e333d",
+    "model": "gpt-6-luna",
+    "created_at": 1795570954.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 851,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1078
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Honolulu's preparation for damaging weather events and the mayor's warnings about climate change\",\n  \"climate_relevance\": \"Climate change is explicitly linked to more frequent damaging weather, and the article discusses local preparedness, resilience, and adaptation.\",\n  \"reason\": \"The identifiable main article gives climate change a substantial role in explaining future severe weather and motivating residents to prepare. A final sentence about Michael Cohen and Trump is unrelated and appears to be an appended snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:36Z",
+  "duration_seconds": 2.136,
+  "error": null
+}

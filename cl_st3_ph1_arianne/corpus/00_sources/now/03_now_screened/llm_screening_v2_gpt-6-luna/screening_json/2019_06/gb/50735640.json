@@ -1,0 +1,77 @@
+{
+  "article_id": "50735640",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/gb/50735640.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/gb/50735640.json"
+  },
+  "manifest_row": {
+    "article_id": "50735640",
+    "group": "2019_06",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/gb/50735640.txt",
+    "now_field_2": "704",
+    "date_original": "19-06-04",
+    "date_iso": "2019-06-04",
+    "source_name": "Metro Newspaper UK",
+    "url": "https://www.metro.news/president-trumps-trade-vow-fuels-fears-of-shift-to-us-style-health-insurance/1586627/",
+    "title": "President Trump's trade vow fuels fears of shift to US-style health ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-gb1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "US-UK trade talks and whether the NHS could be included in a trade deal",
+    "climate_relevance": "Climate change appears only in a brief list of topics on which the leaders disagree; no climate-related position or discussion is developed.",
+    "reason": "The identifiable main article concerns the NHS and trade negotiations, with only a passing reference to tackling climate change. The text also contains a separate, unrelated opinion piece about Queens Park Rangers.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4389965631965196810962988adc555af52bc44ce8d8654ea99d8527120c712e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "604ec6fecc2154be226837a329a0a7f5303158db6c3155d4d5776872c14d368d",
+    "raw_response_text_sha256": "c25ab4004d46bdcb63461b3643564ece660feb9e0ffcc184b9e517063679d462"
+  },
+  "api_metadata": {
+    "id": "resp_056c5efa4a0b761d006b062a9e744887d191d6dea54102a1cc",
+    "model": "gpt-6-luna",
+    "created_at": 1795566238.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2082,
+      "input_tokens_details": {
+        "cache_write_tokens": 2079,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2079
+        }
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 2328
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"US-UK trade talks and whether the NHS could be included in a trade deal\",\n  \"climate_relevance\": \"Climate change appears only in a brief list of topics on which the leaders disagree; no climate-related position or discussion is developed.\",\n  \"reason\": \"The identifiable main article concerns the NHS and trade negotiations, with only a passing reference to tackling climate change. The text also contains a separate, unrelated opinion piece about Queens Park Rangers.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:24:00Z",
+  "duration_seconds": 2.11,
+  "error": null
+}

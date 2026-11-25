@@ -1,0 +1,77 @@
+{
+  "article_id": "70868559",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/nz/70868559.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/nz/70868559.json"
+  },
+  "manifest_row": {
+    "article_id": "70868559",
+    "group": "2019_06",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/nz/70868559.txt",
+    "now_field_2": "167",
+    "date_original": "19-06-14",
+    "date_iso": "2019-06-14",
+    "source_name": "Stuff.co.nz",
+    "url": "https://www.stuff.co.nz/entertainment/113506377/kiwi-teenagers-song-used-as-an-anthem-to-promote-tourism-in-us-city",
+    "title": "Kiwi teenager's song used as an anthem to promote tourism in US city",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A New Zealand teenager's song being used to promote tourism in San Jose, California",
+    "climate_relevance": "The identifiable main article is about tourism promotion and does not discuss climate change. Later text contains meaningful commentary about climate research and NIWA, but it appears to be an unrelated appended snippet.",
+    "reason": "The main article is unrelated to climate change; the climate-related material belongs to a separate discussion and does not make the tourism article relevant for the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4f9dff9d5b9f4755e3c8f61a26bac138a20f8fbbb9c92d3bb4719bf9d5fbb6e6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "462a9b247454f8e38941fc63519be505aff732f741ddef0819e9f62ca2c07c63",
+    "raw_response_text_sha256": "cd1c13340678bbd616c0ca48808e3dba796c5e94ef6381ba882a24b7bcaea000"
+  },
+  "api_metadata": {
+    "id": "resp_06322bbf78e94d97006b063fa5ecb087d1a88a10bef31b4577",
+    "model": "gpt-6-luna",
+    "created_at": 1795571622.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1666,
+      "input_tokens_details": {
+        "cache_write_tokens": 1663,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1663
+        }
+      },
+      "output_tokens": 381,
+      "output_tokens_details": {
+        "reasoning_tokens": 217
+      },
+      "total_tokens": 2047
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A New Zealand teenager's song being used to promote tourism in San Jose, California\",\n  \"climate_relevance\": \"The identifiable main article is about tourism promotion and does not discuss climate change. Later text contains meaningful commentary about climate research and NIWA, but it appears to be an unrelated appended snippet.\",\n  \"reason\": \"The main article is unrelated to climate change; the climate-related material belongs to a separate discussion and does not make the tourism article relevant for the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:53:44Z",
+  "duration_seconds": 3.059,
+  "error": null
+}

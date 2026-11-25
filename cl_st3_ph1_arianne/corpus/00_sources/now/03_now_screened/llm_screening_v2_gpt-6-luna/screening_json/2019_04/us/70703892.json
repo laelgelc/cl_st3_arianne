@@ -1,0 +1,77 @@
+{
+  "article_id": "70703892",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/us/70703892.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/us/70703892.json"
+  },
+  "manifest_row": {
+    "article_id": "70703892",
+    "group": "2019_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/us/70703892.txt",
+    "now_field_2": "724",
+    "date_original": "19-04-20",
+    "date_iso": "2019-04-20",
+    "source_name": "Minneapolis Star Tribune",
+    "url": "http://www.startribune.com/twins-ride-early-home-runs-and-eddie-rosario-s-glove-to-hold-off-baltimore-6-5-in-game-1-of-saturday-doubleheader/508855072/",
+    "title": "Twins ride early home runs, and Eddie Rosario's glove, to hold off ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A Minnesota Twins–Baltimore Orioles baseball game",
+    "climate_relevance": "A disconnected sentence at the end mentions climate change and its effects on wildfire response and agriculture, but it is unrelated to the baseball report.",
+    "reason": "The identifiable main article is about baseball; the climate reference appears only in an unrelated appended snippet and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "d70054924e8ab7d03affed9bac14240dad5c3ce5c4baf62ca44e9fd7dc8e9074",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8e60d19342350ad421dad92ed6f4375d098e184fe92bba6f67a961891bf0824c",
+    "raw_response_text_sha256": "7e3954b5243356c4ab55e9df6330229cd0a652aed462c665d5dc5c990e274124"
+  },
+  "api_metadata": {
+    "id": "resp_0d857ee101973b74006b063e9d454087d1be2a0c1630b04a3e",
+    "model": "gpt-6-luna",
+    "created_at": 1795571357.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1442,
+      "input_tokens_details": {
+        "cache_write_tokens": 1439,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1439
+        }
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 167
+      },
+      "total_tokens": 1755
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Minnesota Twins–Baltimore Orioles baseball game\",\n  \"climate_relevance\": \"A disconnected sentence at the end mentions climate change and its effects on wildfire response and agriculture, but it is unrelated to the baseball report.\",\n  \"reason\": \"The identifiable main article is about baseball; the climate reference appears only in an unrelated appended snippet and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:49:20Z",
+  "duration_seconds": 3.021,
+  "error": null
+}

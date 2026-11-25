@@ -1,0 +1,77 @@
+{
+  "article_id": "3748344",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_11/us/3748344.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_11/us/3748344.json"
+  },
+  "manifest_row": {
+    "article_id": "3748344",
+    "group": "2015_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_11/us/3748344.txt",
+    "now_field_2": "1686",
+    "date_original": "15-11-05",
+    "date_iso": "2015-11-05",
+    "source_name": "Voice of America",
+    "url": "http://www.voanews.com/content/syrian-rebel-leaders-suspicious-of-peace-talks/3038492.html",
+    "title": "Syrian Rebel Leaders Suspicious of Peace Talks",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-11-xje/15-11-us.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Syrian civil war peace talks and opposition leaders’ conditions for a political settlement",
+    "climate_relevance": "Climate change appears only in a separate video teaser about an accord, emissions, and global warming; it is unrelated to the identifiable main article.",
+    "reason": "The main article concerns diplomacy and conflict in Syria, not climate change. The climate-related material is an unrelated snippet rather than meaningful climate discourse within the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "b2487e7bb4b881a7a5643b610240899cdfad90e2ebe341d91f69457946dcec5e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cdb74ff6b0a21ea4bbc651d02d4f5a74c5741f04df33b7859bdcc21c636aa7c8",
+    "raw_response_text_sha256": "0bc9236100c21eb8375cfe8d29bc2a9387f7217fb2821bda083ca9f864fd4e49"
+  },
+  "api_metadata": {
+    "id": "resp_02f7d489eb89d3db006b061cd5b05087d2bb0b003eff079e1b",
+    "model": "gpt-6-luna",
+    "created_at": 1795562709.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2725,
+      "input_tokens_details": {
+        "cache_write_tokens": 2722,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2722
+        }
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 3031
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Syrian civil war peace talks and opposition leaders’ conditions for a political settlement\",\n  \"climate_relevance\": \"Climate change appears only in a separate video teaser about an accord, emissions, and global warming; it is unrelated to the identifiable main article.\",\n  \"reason\": \"The main article concerns diplomacy and conflict in Syria, not climate change. The climate-related material is an unrelated snippet rather than meaningful climate discourse within the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:25:12Z",
+  "duration_seconds": 2.476,
+  "error": null
+}

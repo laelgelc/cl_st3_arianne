@@ -1,0 +1,77 @@
+{
+  "article_id": "21691402",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/us/21691402.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/us/21691402.json"
+  },
+  "manifest_row": {
+    "article_id": "21691402",
+    "group": "2017_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/us/21691402.txt",
+    "now_field_2": "1173",
+    "date_original": "17-11-15",
+    "date_iso": "2017-11-15",
+    "source_name": "The Mercury News",
+    "url": "http://www.mercurynews.com/2017/11/15/ghost-ship-from-the-ashes-of-easystreet-a-posthumous-release/",
+    "title": "Ghost Ship: From the ashes of Easystreet, a posthumous release",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A posthumous music release and tribute honoring musicians Travis Hough and Chelsea Faith Dolan, who died in the Ghost Ship warehouse fire.",
+    "climate_relevance": "Climate change appears only in a final, unrelated snippet about Brown responding to President Trump's claim that it is a hoax.",
+    "reason": "The identifiable main article concerns music, loss, and a tribute to Ghost Ship fire victims. The climate reference is a passing fragment unrelated to that article and does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "9ff5b9fd9191f87a892e791561d4131b77e46ddee8996332bf70788cc34c67fe",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2ae220810f051a1c2647e65346557bc3a49fe4d16defa23cbbb0dec0bdb67ef6",
+    "raw_response_text_sha256": "87a27a81e5ec5e94f8c041487541c6b823c0d200d7b1aec408c6bd2e86d0e7a0"
+  },
+  "api_metadata": {
+    "id": "resp_07341942527ad7df006b060f40e76087d2819bc5f79d836031",
+    "model": "gpt-6-luna",
+    "created_at": 1795559233.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2069,
+      "input_tokens_details": {
+        "cache_write_tokens": 2066,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2066
+        }
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 2300
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A posthumous music release and tribute honoring musicians Travis Hough and Chelsea Faith Dolan, who died in the Ghost Ship warehouse fire.\",\n  \"climate_relevance\": \"Climate change appears only in a final, unrelated snippet about Brown responding to President Trump's claim that it is a hoax.\",\n  \"reason\": \"The identifiable main article concerns music, loss, and a tribute to Ghost Ship fire victims. The climate reference is a passing fragment unrelated to that article and does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:27:14Z",
+  "duration_seconds": 2.095,
+  "error": null
+}

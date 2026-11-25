@@ -1,0 +1,77 @@
+{
+  "article_id": "40045930",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_09/my/40045930.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_09/my/40045930.json"
+  },
+  "manifest_row": {
+    "article_id": "40045930",
+    "group": "2018_09",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_09/my/40045930.txt",
+    "now_field_2": "301",
+    "date_original": "18-09-18",
+    "date_iso": "2018-09-18",
+    "source_name": "The Edge Markets MY",
+    "url": "http://www.theedgemarkets.com/article/tnb-welcomes-more-competition-electric-supply-industry",
+    "title": "TNB welcomes more competition in electric supply industry",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-09.txt\"]",
+    "metadata_article_files": "[\"text-18-09/18-09-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Malaysia's electricity-sector reforms and TNB's role in the power industry",
+    "climate_relevance": "Climate change appears only in the name of the ministry; the text does not discuss climate issues or their implications.",
+    "reason": "The article focuses on power-sector competition, utility performance, and TNB's cooperation with MyPower. The sole climate reference is incidental to an agency description.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "23c937cbac5c5ec5b4f201ad856035fed30d51d7dc54daaefd91db0535d7d91c",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ca231c1b0758593b2fb6c5b4e632a042911e833a57967e79b117bf91de506a8d",
+    "raw_response_text_sha256": "2c7d0c6d7741ffce1f7a68834530add44d0b656432669c5ead30c2607bd210ae"
+  },
+  "api_metadata": {
+    "id": "resp_0e5e9eece02b9f9d006b061e0c333487d2981eea2c7320e81d",
+    "model": "gpt-6-luna",
+    "created_at": 1795563020.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 900,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 202,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 1102
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Malaysia's electricity-sector reforms and TNB's role in the power industry\",\n  \"climate_relevance\": \"Climate change appears only in the name of the ministry; the text does not discuss climate issues or their implications.\",\n  \"reason\": \"The article focuses on power-sector competition, utility performance, and TNB's cooperation with MyPower. The sole climate reference is incidental to an agency description.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:30:22Z",
+  "duration_seconds": 2.062,
+  "error": null
+}

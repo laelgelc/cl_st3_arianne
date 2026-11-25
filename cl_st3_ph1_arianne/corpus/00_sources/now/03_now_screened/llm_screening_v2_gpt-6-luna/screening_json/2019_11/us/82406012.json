@@ -1,0 +1,77 @@
+{
+  "article_id": "82406012",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82406012.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82406012.json"
+  },
+  "manifest_row": {
+    "article_id": "82406012",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82406012.txt",
+    "now_field_2": "145",
+    "date_original": "19-11-29",
+    "date_iso": "2019-11-29",
+    "source_name": "Thomson Reuters Foundation",
+    "url": "http://news.trust.org/item/20191130001944-qydqp",
+    "title": "Police name London Bridge attacker, previously convicted of terrorism offences",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A terrorist attack in London and the attacker’s background",
+    "climate_relevance": "Climate change appears only in a boilerplate description of the news agency’s coverage.",
+    "reason": "The article is about a terrorist attack; the sole climate reference is unrelated boilerplate and contributes no meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8724379e10fa8ca22e13b80d1be9089fbdbdc4a4ee40a191eeba792d577a31ed",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "8e15faa97aabfb87bc59ceae529b76b53d7d206cd88fda69de16decbcf41e480",
+    "raw_response_text_sha256": "e9113cf128e8c9c686745e3479072868f5c9df7dff26a56e0d1ea23b09faf7e6"
+  },
+  "api_metadata": {
+    "id": "resp_0419e5ee0f7191c7006b064871eb5487d1bbd0f061c6f5e308",
+    "model": "gpt-6-luna",
+    "created_at": 1795573874.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 681,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 879
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A terrorist attack in London and the attacker’s background\",\n  \"climate_relevance\": \"Climate change appears only in a boilerplate description of the news agency’s coverage.\",\n  \"reason\": \"The article is about a terrorist attack; the sole climate reference is unrelated boilerplate and contributes no meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:31:15Z",
+  "duration_seconds": 2.153,
+  "error": null
+}

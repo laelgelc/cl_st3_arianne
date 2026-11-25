@@ -1,0 +1,77 @@
+{
+  "article_id": "85888260",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/85888260.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/85888260.json"
+  },
+  "manifest_row": {
+    "article_id": "85888260",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/85888260.txt",
+    "now_field_2": "514",
+    "date_original": "20-09-09",
+    "date_iso": "2020-09-09",
+    "source_name": "CBS News",
+    "url": "https://www.cbsnews.com/news/california-wildfires-burn-2-million-acres-record-breaking/",
+    "title": "California wildfires have already burned 2.2 million acres in 2020 - more than any year on record",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.91,
+    "climate_role": "substantial",
+    "main_topic": "Record-breaking California wildfires and their connection to climate change",
+    "climate_relevance": "The article discusses climate change as a factor worsening fires and reports research linking human-caused warming to heat waves in the West.",
+    "reason": "Although the article focuses on the 2020 California wildfire season, it gives meaningful attention to climate change as a cause and impact-related factor, including statements from the governor, an explanation of how warmer conditions intensify fires, and findings about heat waves.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0df07fb56620ded2b6c707e67f1ad3731795c2b0338cba1d0b904a009a92ef2d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d749a8c2124b342229778f35793b55ada3eb4f0cf0951be15cd4bed52486393e",
+    "raw_response_text_sha256": "8e1af764608beda75e28e00dd1c7f6e198f0941a4def35e3d6aaaf4225c1b16e"
+  },
+  "api_metadata": {
+    "id": "resp_079986df24e024e3006b064d6c250487d1bc438fd42bf679f7",
+    "model": "gpt-6-luna",
+    "created_at": 1795575148.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1163,
+      "input_tokens_details": {
+        "cache_write_tokens": 1160,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1160
+        }
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 1421
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"Record-breaking California wildfires and their connection to climate change\",\n  \"climate_relevance\": \"The article discusses climate change as a factor worsening fires and reports research linking human-caused warming to heat waves in the West.\",\n  \"reason\": \"Although the article focuses on the 2020 California wildfire season, it gives meaningful attention to climate change as a cause and impact-related factor, including statements from the governor, an explanation of how warmer conditions intensify fires, and findings about heat waves.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:52:30Z",
+  "duration_seconds": 2.431,
+  "error": null
+}

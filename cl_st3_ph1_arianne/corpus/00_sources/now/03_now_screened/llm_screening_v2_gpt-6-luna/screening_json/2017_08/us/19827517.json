@@ -1,0 +1,77 @@
+{
+  "article_id": "19827517",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/us/19827517.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/us/19827517.json"
+  },
+  "manifest_row": {
+    "article_id": "19827517",
+    "group": "2017_08",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/us/19827517.txt",
+    "now_field_2": "2330",
+    "date_original": "17-08-03",
+    "date_iso": "2017-08-03",
+    "source_name": "The Atlantic",
+    "url": "https://www.theatlantic.com/politics/archive/2017/08/why-leaking-transcripts-of-trumps-calls-is-so-dangerous/535809/",
+    "title": "Why Leaking Transcripts of Trump's Calls Is So Dangerous",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-US.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The political and national-security consequences of leaking transcripts of President Trump's calls with foreign leaders.",
+    "climate_relevance": "Climate change appears only in an unrelated embedded excerpt about ecoanxiety and Trump's climate policies, not in the identifiable main article.",
+    "reason": "The main article concerns leaked diplomatic calls and government norms. Climate-related material occurs in a separate snippet and does not contribute to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "87fcddf5fca8e6b4fb23ba7b34713a0b645212997f595c6500fb066ae3fd667e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6e4674aad707b4fc25c7566b45207b4a7f7fe016fcd7de55d2f38b5076fb1249",
+    "raw_response_text_sha256": "503ec2e49aac1b8c5daa063893bb8ead812e76a12b6a093ce9ba63f5e8b4aab0"
+  },
+  "api_metadata": {
+    "id": "resp_0d29550f4232fce6006b060c7fd60c87d2a52a92323f174af7",
+    "model": "gpt-6-luna",
+    "created_at": 1795558527.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3532,
+      "input_tokens_details": {
+        "cache_write_tokens": 3529,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3529
+        }
+      },
+      "output_tokens": 527,
+      "output_tokens_details": {
+        "reasoning_tokens": 376
+      },
+      "total_tokens": 4059
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The political and national-security consequences of leaking transcripts of President Trump's calls with foreign leaders.\",\n  \"climate_relevance\": \"Climate change appears only in an unrelated embedded excerpt about ecoanxiety and Trump's climate policies, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns leaked diplomatic calls and government norms. Climate-related material occurs in a separate snippet and does not contribute to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:15:31Z",
+  "duration_seconds": 3.896,
+  "error": null
+}

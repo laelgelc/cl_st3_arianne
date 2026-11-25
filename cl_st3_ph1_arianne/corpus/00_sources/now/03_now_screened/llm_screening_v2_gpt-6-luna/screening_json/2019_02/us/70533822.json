@@ -1,0 +1,77 @@
+{
+  "article_id": "70533822",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/us/70533822.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/us/70533822.json"
+  },
+  "manifest_row": {
+    "article_id": "70533822",
+    "group": "2019_02",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/us/70533822.txt",
+    "now_field_2": "1363",
+    "date_original": "19-02-20",
+    "date_iso": "2019-02-20",
+    "source_name": "Science Daily",
+    "url": "https://www.sciencedaily.com/releases/2019/02/190220103339.htm",
+    "title": "Foreign bees monopolize prize resources in biodiversity hotspot",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.9,
+    "climate_role": "passing",
+    "main_topic": "The ecological effects of non-native honey bees on native pollinators and plants in San Diego.",
+    "climate_relevance": "Climate change is briefly listed alongside habitat loss as a threat to local species, without further discussion.",
+    "reason": "The article focuses on honey bee dominance and biodiversity. Its single passing reference to climate change does not meaningfully develop climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "85b47a4817d414592490a445dbfbf5564677510e2ea266858d501d3422f16bba",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f0224cc273c8cd9c68fd7986d5323c7e6920af7c1b1afba44c11d1dab4ceefe6",
+    "raw_response_text_sha256": "c08048220a7735676a8fab890407fc289932d2e1c98b52ad00d1f568d12c7d8d"
+  },
+  "api_metadata": {
+    "id": "resp_05967831e506828e006b063d599b8487d1a1fec51e0c052691",
+    "model": "gpt-6-luna",
+    "created_at": 1795571033.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2242,
+      "input_tokens_details": {
+        "cache_write_tokens": 2239,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2239
+        }
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 200
+      },
+      "total_tokens": 2579
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"The ecological effects of non-native honey bees on native pollinators and plants in San Diego.\",\n  \"climate_relevance\": \"Climate change is briefly listed alongside habitat loss as a threat to local species, without further discussion.\",\n  \"reason\": \"The article focuses on honey bee dominance and biodiversity. Its single passing reference to climate change does not meaningfully develop climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:56Z",
+  "duration_seconds": 2.778,
+  "error": null
+}

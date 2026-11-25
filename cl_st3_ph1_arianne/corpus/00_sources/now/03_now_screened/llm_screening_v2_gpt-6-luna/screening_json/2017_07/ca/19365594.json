@@ -1,0 +1,77 @@
+{
+  "article_id": "19365594",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_07/ca/19365594.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_07/ca/19365594.json"
+  },
+  "manifest_row": {
+    "article_id": "19365594",
+    "group": "2017_07",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_07/ca/19365594.txt",
+    "now_field_2": "1381",
+    "date_original": "17-07-07",
+    "date_iso": "2017-07-07",
+    "source_name": "The Globe and Mail",
+    "url": "https://www.theglobeandmail.com/news/national/morning-update-newsletter-g20-protests-government-makes-payment-to-khadr-gta-home-prices-drop/article35585478/",
+    "title": "Morning Update newsletter: G20 protests; Government makes ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-07.txt\"]",
+    "metadata_article_files": "[\"text-17-07/text_17-07-CA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "A morning news newsletter covering the G20 summit and several unrelated news and feature items",
+    "climate_relevance": "Climate change appears only in a brief reference to disagreement over Donald Trump’s position in the G20 communiqué; no climate-related issue is discussed.",
+    "reason": "The climate mention is incidental and does not provide meaningful material for climate discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "fac9c881d04583f6f5a5698b137567f7d58d2b25fc9258ece787f66efb62329f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fc9803065b669537f5b208c82f8b74a7f47523d38537c79435952b685b918f70",
+    "raw_response_text_sha256": "6dbfd236eb5cfe3d8fd65d5987a16e4f60697ad095ae480e80a0667fe21a181e"
+  },
+  "api_metadata": {
+    "id": "resp_048085cd9a622b48006b060bd4a50c87d2aa153d5cbc715dda",
+    "model": "gpt-6-luna",
+    "created_at": 1795558356.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2295,
+      "input_tokens_details": {
+        "cache_write_tokens": 2292,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2292
+        }
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 2595
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A morning news newsletter covering the G20 summit and several unrelated news and feature items\",\n  \"climate_relevance\": \"Climate change appears only in a brief reference to disagreement over Donald Trump’s position in the G20 communiqué; no climate-related issue is discussed.\",\n  \"reason\": \"The climate mention is incidental and does not provide meaningful material for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:12:39Z",
+  "duration_seconds": 2.437,
+  "error": null
+}

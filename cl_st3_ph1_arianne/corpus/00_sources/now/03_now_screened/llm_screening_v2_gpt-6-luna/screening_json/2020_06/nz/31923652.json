@@ -1,0 +1,77 @@
+{
+  "article_id": "31923652",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_06/nz/31923652.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_06/nz/31923652.json"
+  },
+  "manifest_row": {
+    "article_id": "31923652",
+    "group": "2020_06",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_06/nz/31923652.txt",
+    "now_field_2": "599",
+    "date_original": "20-06-28",
+    "date_iso": "2020-06-28",
+    "source_name": "tvnz.co.nz",
+    "url": "https://www.tvnz.co.nz/one-news/new-zealand/paula-bennett-retires-17-year-old-solo-mum-dropped-school-ended-up-becoming-deputy-prime-minister",
+    "title": "Paula Bennett retires: 'The 17-year-old solo mum who ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-06.txt\"]",
+    "metadata_article_files": "[\"text-20-06/20_06-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Paula Bennett's announcement that she is leaving politics",
+    "climate_relevance": "Climate change appears only in a list of ministerial portfolios she held.",
+    "reason": "The text contains no meaningful discussion of climate change; the portfolio mention is incidental to the resignation announcement.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "43bce4e9af12e8a2d1bc00c45cdce25281f8cc1798fbb736329a4e781ceeb210",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "9134693dae515dfc870cc8924bd6e5a6836b68aa7ef03cee98b6a9b39b580d8e",
+    "raw_response_text_sha256": "0c1b170a1912175c436a8c939b0c39926796de187d248c2383822f7baed9b804"
+  },
+  "api_metadata": {
+    "id": "resp_062b0aa38a565571006b061a2d36b087d2a8427e32d633f5d4",
+    "model": "gpt-6-luna",
+    "created_at": 1795562029.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1191,
+      "input_tokens_details": {
+        "cache_write_tokens": 1188,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1188
+        }
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1397
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Paula Bennett's announcement that she is leaving politics\",\n  \"climate_relevance\": \"Climate change appears only in a list of ministerial portfolios she held.\",\n  \"reason\": \"The text contains no meaningful discussion of climate change; the portfolio mention is incidental to the resignation announcement.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:13:51Z",
+  "duration_seconds": 2.235,
+  "error": null
+}

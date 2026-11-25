@@ -1,0 +1,77 @@
+{
+  "article_id": "70511209",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/nz/70511209.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/nz/70511209.json"
+  },
+  "manifest_row": {
+    "article_id": "70511209",
+    "group": "2019_02",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/nz/70511209.txt",
+    "now_field_2": "752",
+    "date_original": "19-02-13",
+    "date_iso": "2019-02-13",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PO1902/S00097/wellington-joins-national-day-of-action-to-protect-ihumatao.htm",
+    "title": "Wellington Joins National Day of Action to Protect Ihumatao",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Protest against housing development at Ihumatao and support for mana whenua land rights.",
+    "climate_relevance": "Climate change appears only in a separate Greenpeace policy teaser, not in the identifiable main article.",
+    "reason": "The main article concerns a land-rights protest and does not discuss climate change. The sole climate reference is in an unrelated snippet, so it does not provide meaningful climate discourse for this article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "86542498d70fb6f6cdbcc47fe35cbb89ef19ebfe06ed3b2c2837d42a284d14a4",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7d42938689f21d5704a3c239b90dc807e5400a68b1366c3b2ec344e5d814c60b",
+    "raw_response_text_sha256": "f7a47944c0417e17c1bf690d288c6e4c0b7d0978c594bff872dc3278eaab9263"
+  },
+  "api_metadata": {
+    "id": "resp_06addb6790c01bdd006b063d21f06487d1bf3938dbf52a0a5d",
+    "model": "gpt-6-luna",
+    "created_at": 1795570978.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1521,
+      "input_tokens_details": {
+        "cache_write_tokens": 1518,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1518
+        }
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 1837
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Protest against housing development at Ihumatao and support for mana whenua land rights.\",\n  \"climate_relevance\": \"Climate change appears only in a separate Greenpeace policy teaser, not in the identifiable main article.\",\n  \"reason\": \"The main article concerns a land-rights protest and does not discuss climate change. The sole climate reference is in an unrelated snippet, so it does not provide meaningful climate discourse for this article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:43:00Z",
+  "duration_seconds": 2.812,
+  "error": null
+}

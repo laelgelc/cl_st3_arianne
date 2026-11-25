@@ -1,0 +1,77 @@
+{
+  "article_id": "16722972",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_02/za/16722972.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_02/za/16722972.json"
+  },
+  "manifest_row": {
+    "article_id": "16722972",
+    "group": "2017_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_02/za/16722972.txt",
+    "now_field_2": "416",
+    "date_original": "17-02-03",
+    "date_iso": "2017-02-03",
+    "source_name": "Times LIVE",
+    "url": "http://www.timeslive.co.za/consumerlive/2017/02/03/Kuga-on-fire-moves-to-New-Zealand",
+    "title": "Kuga-on-fire moves to New Zealand",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-02.txt\"]",
+    "metadata_article_files": "[\"text-17-02/text_17-02-ZA.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Ford Kuga vehicle fires and safety recalls, amid several unrelated news snippets",
+    "climate_relevance": "A garbled fragment refers to greenhouse-gas emissions and uncertainty about U.S. climate policy, but it is unrelated to the identifiable vehicle-safety coverage.",
+    "reason": "The main identifiable article concerns Ford Kuga fires and recalls. The climate-policy wording appears as a disconnected fragment within a text containing multiple unrelated snippets, so it does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "36368aea4773dd84907afeb7410956485b9e3f5c74951a93767f126af96a6fc6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "11805be211d2d4ad31206454f7dba5ae35f6116300ab09bab4ed2e80124f5632",
+    "raw_response_text_sha256": "1c46cc88e28eb0516fb7c430540c09addf19b3d571f2adfe3dfd833d1f9bdffc"
+  },
+  "api_metadata": {
+    "id": "resp_0426001b9c6997c1006b06081ee65487d2b22d92351c0f646d",
+    "model": "gpt-6-luna",
+    "created_at": 1795557407.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1032,
+      "input_tokens_details": {
+        "cache_write_tokens": 1029,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1029
+        }
+      },
+      "output_tokens": 456,
+      "output_tokens_details": {
+        "reasoning_tokens": 291
+      },
+      "total_tokens": 1488
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ford Kuga vehicle fires and safety recalls, amid several unrelated news snippets\",\n  \"climate_relevance\": \"A garbled fragment refers to greenhouse-gas emissions and uncertainty about U.S. climate policy, but it is unrelated to the identifiable vehicle-safety coverage.\",\n  \"reason\": \"The main identifiable article concerns Ford Kuga fires and recalls. The climate-policy wording appears as a disconnected fragment within a text containing multiple unrelated snippets, so it does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:56:50Z",
+  "duration_seconds": 3.641,
+  "error": null
+}

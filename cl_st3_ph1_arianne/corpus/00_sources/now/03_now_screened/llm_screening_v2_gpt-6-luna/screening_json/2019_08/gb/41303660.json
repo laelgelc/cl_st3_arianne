@@ -1,0 +1,77 @@
+{
+  "article_id": "41303660",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_08/gb/41303660.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_08/gb/41303660.json"
+  },
+  "manifest_row": {
+    "article_id": "41303660",
+    "group": "2019_08",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_08/gb/41303660.txt",
+    "now_field_2": "272",
+    "date_original": "19-08-28",
+    "date_iso": "2019-08-28",
+    "source_name": "inews.co.uk",
+    "url": "https://inews.co.uk/news/uk/whaley-bridge-dam-collapse-update-derbyshire-burst-flooding-weather-evacuation-raf-chinook/",
+    "title": "Whaley Bridge dam collapse: latest news after flooding ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-08.txt\"]",
+    "metadata_article_files": "[\"text-19-08/19-08-gb.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "climate_role": "background",
+    "main_topic": "The Whaley Bridge dam emergency and the response to residents at risk.",
+    "climate_relevance": "A political statement links flooding to global warming and criticises the government’s response to climate impacts; another line calls for action on climate change.",
+    "reason": "The available news text is mainly about the dam emergency, but it contains meaningful climate-related political discourse. The newsletter promotion is unrelated boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "16f28617ed9340e78e0e6a5d34be026bc008e4afaf147717fb6ddfe3534cfc14",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "139976968b3871fcd2bd3de8772089e4b69401f5f39cc3ac9820a51cda3585d3",
+    "raw_response_text_sha256": "1d983fe23ad773697cf14330b838d8e1c3c602e42d39b63e29e2c74da4c53501"
+  },
+  "api_metadata": {
+    "id": "resp_0242f5997c463e68006b06211d692887d2b4d312bf7356abce",
+    "model": "gpt-6-luna",
+    "created_at": 1795563805.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 823,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 330,
+      "output_tokens_details": {
+        "reasoning_tokens": 185
+      },
+      "total_tokens": 1153
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The Whaley Bridge dam emergency and the response to residents at risk.\",\n  \"climate_relevance\": \"A political statement links flooding to global warming and criticises the government’s response to climate impacts; another line calls for action on climate change.\",\n  \"reason\": \"The available news text is mainly about the dam emergency, but it contains meaningful climate-related political discourse. The newsletter promotion is unrelated boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:43:28Z",
+  "duration_seconds": 3.071,
+  "error": null
+}

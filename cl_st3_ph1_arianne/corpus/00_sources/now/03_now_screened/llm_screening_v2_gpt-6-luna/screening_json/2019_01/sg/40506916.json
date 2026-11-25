@@ -1,0 +1,77 @@
+{
+  "article_id": "40506916",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/sg/40506916.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/sg/40506916.json"
+  },
+  "manifest_row": {
+    "article_id": "40506916",
+    "group": "2019_01",
+    "country_code": "sg",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/sg/40506916.txt",
+    "now_field_2": "694",
+    "date_original": "19-01-16",
+    "date_iso": "2019-01-16",
+    "source_name": "Yahoo News",
+    "url": "https://sg.news.yahoo.com/climate-risks-data-theft-top-fears-davos-100229996.html",
+    "title": "Climate risks, data theft top fears for Davos",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-sg.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "climate_role": "substantial",
+    "main_topic": "The World Economic Forum's global risk outlook, with climate change and climate-related risks prominent.",
+    "climate_relevance": "The article discusses climate change as the leading concern in the WEF survey, including catastrophic weather, flooding, rising temperatures, emissions policy, climate scepticism, and failure to mitigate.",
+    "reason": "Climate risks and the failure to act are substantial themes throughout the article, even though it also covers other economic and political concerns.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "374fb3d73ae11d36d843caa889d16d85a4fd5e8cc23f3983d2ae86ba5088e53d",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "cfbd1a34fd0ce87ff968e86eb2397bcfe437990edd590edaa60c0b0575a3df1e",
+    "raw_response_text_sha256": "fa6087e7b4e47e94c50417f4d404928396466c54bfdf9190ee750339de3d9c67"
+  },
+  "api_metadata": {
+    "id": "resp_08a4850f844c5460006b061f15ab6c87d296c678fd809d5b99",
+    "model": "gpt-6-luna",
+    "created_at": 1795563285.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1362,
+      "input_tokens_details": {
+        "cache_write_tokens": 1359,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1359
+        }
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1613
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"substantial\",\n  \"main_topic\": \"The World Economic Forum's global risk outlook, with climate change and climate-related risks prominent.\",\n  \"climate_relevance\": \"The article discusses climate change as the leading concern in the WEF survey, including catastrophic weather, flooding, rising temperatures, emissions policy, climate scepticism, and failure to mitigate.\",\n  \"reason\": \"Climate risks and the failure to act are substantial themes throughout the article, even though it also covers other economic and political concerns.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:34:47Z",
+  "duration_seconds": 2.127,
+  "error": null
+}

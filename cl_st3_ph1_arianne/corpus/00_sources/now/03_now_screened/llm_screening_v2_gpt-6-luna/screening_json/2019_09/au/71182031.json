@@ -1,0 +1,77 @@
+{
+  "article_id": "71182031",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/au/71182031.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/au/71182031.json"
+  },
+  "manifest_row": {
+    "article_id": "71182031",
+    "group": "2019_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/au/71182031.txt",
+    "now_field_2": "529",
+    "date_original": "19-09-04",
+    "date_iso": "2019-09-04",
+    "source_name": "reneweconomy.com.au",
+    "url": "https://reneweconomy.com.au/anu-charts-24-5-efficiency-perovskite-silicon-solar-cell-68353/",
+    "title": "ANU charts 24.5% efficiency for perovskite-silicon solar ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "climate_role": "background",
+    "main_topic": "Perovskite-silicon solar-cell efficiency, followed by a separate discussion of nuclear power and renewable-energy costs",
+    "climate_relevance": "The opening solar-cell report focuses on technology rather than climate change. A distinct later item contains substantial discussion of climate mitigation, including energy-system choices, emissions, and climate politics.",
+    "reason": "The text appears to combine at least two unrelated items. The identifiable opening article is mainly about solar-cell research, so it is not core climate coverage; the later nuclear-and-renewables discussion contains meaningful climate discourse and makes the supplied text relevant peripherally.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "5020299cbaafdb559d1414259406831ffef197d4cd04b32adfdca98a6aa86270",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d5b00760930690f124c3243414139b35c0e10ea2d485d6ff0fd3afd972d6eaac",
+    "raw_response_text_sha256": "ce41b97a525057953f386f7828da92576357b059e72519e449eac07f0fb22324"
+  },
+  "api_metadata": {
+    "id": "resp_03c275fae43a810a006b064043407487d1a03c486bc2ffc036",
+    "model": "gpt-6-luna",
+    "created_at": 1795571779.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3574,
+      "input_tokens_details": {
+        "cache_write_tokens": 3571,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3571
+        }
+      },
+      "output_tokens": 916,
+      "output_tokens_details": {
+        "reasoning_tokens": 730
+      },
+      "total_tokens": 4490
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Perovskite-silicon solar-cell efficiency, followed by a separate discussion of nuclear power and renewable-energy costs\",\n  \"climate_relevance\": \"The opening solar-cell report focuses on technology rather than climate change. A distinct later item contains substantial discussion of climate mitigation, including energy-system choices, emissions, and climate politics.\",\n  \"reason\": \"The text appears to combine at least two unrelated items. The identifiable opening article is mainly about solar-cell research, so it is not core climate coverage; the later nuclear-and-renewables discussion contains meaningful climate discourse and makes the supplied text relevant peripherally.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:56:25Z",
+  "duration_seconds": 6.462,
+  "error": null
+}

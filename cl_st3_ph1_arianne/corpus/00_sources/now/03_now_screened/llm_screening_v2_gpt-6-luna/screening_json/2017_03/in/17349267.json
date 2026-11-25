@@ -1,0 +1,77 @@
+{
+  "article_id": "17349267",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_03/in/17349267.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_03/in/17349267.json"
+  },
+  "manifest_row": {
+    "article_id": "17349267",
+    "group": "2017_03",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_03/in/17349267.txt",
+    "now_field_2": "1469",
+    "date_original": "17-03-10",
+    "date_iso": "2017-03-10",
+    "source_name": "Bangalore Mirror",
+    "url": "http://bangaloremirror.indiatimes.com/bangalore/cover-story/Heart-wrenching-Farm-animals-die-of-hunger-in-bone-dry-Kollegal-just-140-km-from-Bengaluru/articleshow/57581315.cms",
+    "title": "Heart-wrenching! Farm animals die of hunger in bone-dry Kollegal ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-03.txt\"]",
+    "metadata_article_files": "[\"text-17-03/text_17-03-IN.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Livestock deaths and fodder shortages during drought in villages in Karnataka, alongside forest grazing restrictions and government relief measures.",
+    "climate_relevance": "The report describes drought, scant rainfall, and heat, but does not connect them to climate change or discuss climate-related causes, policy, or debate. The ministry name is only an institutional reference.",
+    "reason": "Although the article is substantially about drought and its effects, the available text contains no meaningful discourse about climate change; drought alone is not enough to establish that connection.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "75e774f91344e97b3964a2efd739db5decf786201cc345e18529455cb7512a44",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0783f7bb2a0f931a7780e17f326825bac54819e4070f653ad7e5f5c1ee3b8a5c",
+    "raw_response_text_sha256": "8e35ecc1fd161837c61e24d488c08c6bfcb7d4b6e1767e0d0c2092e33b56c5b3"
+  },
+  "api_metadata": {
+    "id": "resp_0483a98ed23ab3d4006b0608c8ff7087d291a02cc604b91035",
+    "model": "gpt-6-luna",
+    "created_at": 1795557577.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2412,
+      "input_tokens_details": {
+        "cache_write_tokens": 2409,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2409
+        }
+      },
+      "output_tokens": 406,
+      "output_tokens_details": {
+        "reasoning_tokens": 233
+      },
+      "total_tokens": 2818
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Livestock deaths and fodder shortages during drought in villages in Karnataka, alongside forest grazing restrictions and government relief measures.\",\n  \"climate_relevance\": \"The report describes drought, scant rainfall, and heat, but does not connect them to climate change or discuss climate-related causes, policy, or debate. The ministry name is only an institutional reference.\",\n  \"reason\": \"Although the article is substantially about drought and its effects, the available text contains no meaningful discourse about climate change; drought alone is not enough to establish that connection.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:59:40Z",
+  "duration_seconds": 3.435,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "14986534",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_10/au/14986534.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_10/au/14986534.json"
+  },
+  "manifest_row": {
+    "article_id": "14986534",
+    "group": "2016_10",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_10/au/14986534.txt",
+    "now_field_2": "259",
+    "date_original": "16-10-21",
+    "date_iso": "2016-10-21",
+    "source_name": "NEWS.com.au",
+    "url": "http://www.news.com.au/entertainment/celebrity-style/red-carpet/shailene-woodley-hits-red-carpet-after-arrest/news-story/4eb1290852447f22b88edd42532f7ca0",
+    "title": "Woodley out of jail and hitting red carpets",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-10-ykw/16-10-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "passing",
+    "main_topic": "Shailene Woodley’s appearance at a screening and her arrest while protesting the Dakota Access Pipeline.",
+    "climate_relevance": "Climate change is mentioned only to describe the subject of the film Before the Flood; the article does not discuss climate issues or connect them meaningfully to the pipeline protest.",
+    "reason": "The article is celebrity and protest coverage. Its sole explicit climate reference is a passing description of a documentary, which is insufficient for meaningful climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "6513c1af73474a3409edd7ee299a1a5dbcb131f2c1e3f5e7c30e6a3083cbf916",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "645d572a79f592a0fbe6d83adf088ca946e3f05063d262fc99da73429405a4ce",
+    "raw_response_text_sha256": "686de06e52b8c297dfc915ada2d80d9e0215a259524aa6d9cb91c06ae7b2c521"
+  },
+  "api_metadata": {
+    "id": "resp_05fa48a796409c82006b060634af3887d2a6c2e274cc9360ca",
+    "model": "gpt-6-luna",
+    "created_at": 1795556916.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 837,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 157
+      },
+      "total_tokens": 1151
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Shailene Woodley’s appearance at a screening and her arrest while protesting the Dakota Access Pipeline.\",\n  \"climate_relevance\": \"Climate change is mentioned only to describe the subject of the film Before the Flood; the article does not discuss climate issues or connect them meaningfully to the pipeline protest.\",\n  \"reason\": \"The article is celebrity and protest coverage. Its sole explicit climate reference is a passing description of a documentary, which is insufficient for meaningful climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:48:39Z",
+  "duration_seconds": 2.476,
+  "error": null
+}

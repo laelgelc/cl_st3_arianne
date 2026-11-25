@@ -1,0 +1,77 @@
+{
+  "article_id": "50253130",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_11/au/50253130.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_11/au/50253130.json"
+  },
+  "manifest_row": {
+    "article_id": "50253130",
+    "group": "2018_11",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_11/au/50253130.txt",
+    "now_field_2": "1349",
+    "date_original": "18-11-30",
+    "date_iso": "2018-11-30",
+    "source_name": "ABC News",
+    "url": "https://www.abc.net.au/news/2018-12-01/40-years-of-reform-that-transformed-china-into-a-superpower/10573468",
+    "title": "China's 40 years of economic reform that opened the country up and ...",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-11.txt\"]",
+    "metadata_article_files": "[\"text-18-11/18-11-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "China's economic reforms and their social, political, and economic effects",
+    "climate_relevance": "Climate change appears only in a separate closing snippet about bushfires in Australia, not in the main article.",
+    "reason": "The identifiable main article concerns China's reform and opening-up. The climate-related sentence is an unrelated appended snippet and does not make the main article relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "a013fcd49acf2c985ea755e2a259ea5312d9c6f1a4ac31d88b12315b2bb25ca8",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "327eb0163dab6fe79dc29fd6125df8d793092e0dd7f6d84acc90e15d29255f99",
+    "raw_response_text_sha256": "b1776e114d6ec2a0b775158007d3fd2fd8a08ce57637b2c702f9f4930a2e8b01"
+  },
+  "api_metadata": {
+    "id": "resp_077fe601169a12c8006b06283863dc87d190006069846518a8",
+    "model": "gpt-6-luna",
+    "created_at": 1795565624.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2298,
+      "input_tokens_details": {
+        "cache_write_tokens": 2295,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2295
+        }
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 2570
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"China's economic reforms and their social, political, and economic effects\",\n  \"climate_relevance\": \"Climate change appears only in a separate closing snippet about bushfires in Australia, not in the main article.\",\n  \"reason\": \"The identifiable main article concerns China's reform and opening-up. The climate-related sentence is an unrelated appended snippet and does not make the main article relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:13:46Z",
+  "duration_seconds": 2.548,
+  "error": null
+}

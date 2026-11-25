@@ -1,0 +1,77 @@
+{
+  "article_id": "81880001",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/us/81880001.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/us/81880001.json"
+  },
+  "manifest_row": {
+    "article_id": "81880001",
+    "group": "2019_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/us/81880001.txt",
+    "now_field_2": "1470",
+    "date_original": "19-10-29",
+    "date_iso": "2019-10-29",
+    "source_name": "New Jersey Hills",
+    "url": "https://www.newjerseyhills.com/observer-tribune/news/platt-richardson-debate-in-harding-township/article_85056e6e-aa39-57f9-b274-20898daf6eaa.html",
+    "title": "Platt, Richardson debate in Harding Township",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "A local election debate focused on affordable housing, government transparency, and community issues.",
+    "climate_relevance": "The candidates briefly agree that climate change threatens the township and discuss storm preparedness.",
+    "reason": "Climate change is meaningfully mentioned in the environmental-issues discussion, but it is a minor part of an article mainly about a township election debate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1e3db5638dc27c177750a5794912646225701733ab39372178395d2e59362605",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "04fcf813ad5e3a420a85d11b17781d1d97cb56a85a56f729e0af53d33724ada1",
+    "raw_response_text_sha256": "8116e3fc55ef3243c464c7f6d3c07f424b46337524668d8bff14a0ce5d89fe35"
+  },
+  "api_metadata": {
+    "id": "resp_0eaa87628f872ad2006b0647cdeea887d1bab885d3ef90019b",
+    "model": "gpt-6-luna",
+    "created_at": 1795573710.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2462,
+      "input_tokens_details": {
+        "cache_write_tokens": 2459,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2459
+        }
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 2656
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A local election debate focused on affordable housing, government transparency, and community issues.\",\n  \"climate_relevance\": \"The candidates briefly agree that climate change threatens the township and discuss storm preparedness.\",\n  \"reason\": \"Climate change is meaningfully mentioned in the environmental-issues discussion, but it is a minor part of an article mainly about a township election debate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:28:31Z",
+  "duration_seconds": 2.097,
+  "error": null
+}

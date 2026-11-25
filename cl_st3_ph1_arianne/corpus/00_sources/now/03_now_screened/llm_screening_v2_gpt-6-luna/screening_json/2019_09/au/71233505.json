@@ -1,0 +1,77 @@
+{
+  "article_id": "71233505",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/au/71233505.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/au/71233505.json"
+  },
+  "manifest_row": {
+    "article_id": "71233505",
+    "group": "2019_09",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/au/71233505.txt",
+    "now_field_2": "634",
+    "date_original": "19-09-22",
+    "date_iso": "2019-09-22",
+    "source_name": "abc.net.au",
+    "url": "https://www.abc.net.au/news/2019-07-15/federer-djokovic-nadal-best-player-of-generation-debate/11309562",
+    "title": "Roger Federer's Wimbledon loss to Novak Djokovic raises ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "The debate over the greatest male tennis player of the current generation, focusing on Federer, Djokovic and Nadal.",
+    "climate_relevance": "Climate change appears only in a separate closing snippet about an RMIT ABC Fact Check of statements by Australian Prime Minister Scott Morrison.",
+    "reason": "The identifiable main article is about tennis. The climate-related text is an unrelated snippet and does not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "728d5ff5e4a64646a9f4c19cca5b44eff38ae2ea7f4158dd04b0846bd96d6f15",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "7884e6c8cb63e644295ce931d3dc58355640b53ae8022cc510ba1ff0aa955e01",
+    "raw_response_text_sha256": "38bdde5ee9f7ed0574d0b67e8a09710394efa1780feeed1e16738a4a567a2ff1"
+  },
+  "api_metadata": {
+    "id": "resp_077c1ba0eeef68b6006b064084cce487d19b9b028adc9c9115",
+    "model": "gpt-6-luna",
+    "created_at": 1795571844.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1295,
+      "input_tokens_details": {
+        "cache_write_tokens": 1292,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1292
+        }
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1521
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The debate over the greatest male tennis player of the current generation, focusing on Federer, Djokovic and Nadal.\",\n  \"climate_relevance\": \"Climate change appears only in a separate closing snippet about an RMIT ABC Fact Check of statements by Australian Prime Minister Scott Morrison.\",\n  \"reason\": \"The identifiable main article is about tennis. The climate-related text is an unrelated snippet and does not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:57:27Z",
+  "duration_seconds": 2.304,
+  "error": null
+}

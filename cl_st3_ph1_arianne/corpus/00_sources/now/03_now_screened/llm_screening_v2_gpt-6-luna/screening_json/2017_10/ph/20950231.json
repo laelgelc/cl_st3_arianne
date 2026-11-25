@@ -1,0 +1,77 @@
+{
+  "article_id": "20950231",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_10/ph/20950231.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_10/ph/20950231.json"
+  },
+  "manifest_row": {
+    "article_id": "20950231",
+    "group": "2017_10",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_10/ph/20950231.txt",
+    "now_field_2": "535",
+    "date_original": "17-10-06",
+    "date_iso": "2017-10-06",
+    "source_name": "Minda News",
+    "url": "http://www.mindanews.com/top-stories/2017/10/davaos-diversion-road-closed-due-to-landslide/",
+    "title": "Davao's Diversion Road closed due to landslide",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-10.txt\"]",
+    "metadata_article_files": "[\"text-17-10/text_17-10-PH.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "climate_role": "background",
+    "main_topic": "A landslide and road closure in Davao City, including evacuations and slope-safety measures.",
+    "climate_relevance": "The article links the area's land-use designation to climate change adaptation and disaster-risk reduction, but does not otherwise discuss climate change.",
+    "reason": "The main focus is a local landslide, its suspected triggers, and the response. The explicit climate-adaptation reference is meaningful context, making the text peripheral rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7713ec77c9c2034b0b5b91bd25830b6c386de39d7b4d89539f04d13ea32d06ae",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b60813f0995edb77155a1fb2eb90315e4d6ec9a3aa42944fad0fe335d97e7e7a",
+    "raw_response_text_sha256": "897062ec3832b254fdddf1db6073d48c7cdb320fcad6a073312f621588775b31"
+  },
+  "api_metadata": {
+    "id": "resp_048bf58343c39aea006b060e0ac8e487d2b15df121ff62c33a",
+    "model": "gpt-6-luna",
+    "created_at": 1795558923.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1208,
+      "input_tokens_details": {
+        "cache_write_tokens": 1205,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1205
+        }
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1438
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"A landslide and road closure in Davao City, including evacuations and slope-safety measures.\",\n  \"climate_relevance\": \"The article links the area's land-use designation to climate change adaptation and disaster-risk reduction, but does not otherwise discuss climate change.\",\n  \"reason\": \"The main focus is a local landslide, its suspected triggers, and the response. The explicit climate-adaptation reference is meaningful context, making the text peripheral rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:22:04Z",
+  "duration_seconds": 2.126,
+  "error": null
+}

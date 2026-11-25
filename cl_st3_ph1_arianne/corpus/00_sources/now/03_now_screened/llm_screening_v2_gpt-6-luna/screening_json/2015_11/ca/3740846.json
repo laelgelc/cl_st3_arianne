@@ -1,0 +1,77 @@
+{
+  "article_id": "3740846",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2015_11/ca/3740846.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2015_11/ca/3740846.json"
+  },
+  "manifest_row": {
+    "article_id": "3740846",
+    "group": "2015_11",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2015_11/ca/3740846.txt",
+    "now_field_2": "742",
+    "date_original": "15-11-03",
+    "date_iso": "2015-11-03",
+    "source_name": "Toronto Star",
+    "url": "http://www.thestar.com/news/canada/2015/11/03/justin-trudeaus-cabinet-will-carry-a-wealth-of-life-experience-tim-harper.html",
+    "title": "Justin Trudeau's cabinet will carry a wealth of life experience: Tim ...",
+    "source_files": "[\"now-sources-2015.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_15-11-xje/15-11-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "passing",
+    "main_topic": "Prospective members and gender parity in Justin Trudeau’s cabinet",
+    "climate_relevance": "Climate-related references appear only as credentials: one MP served on the IPCC, and another was a provincial environment minister and founded a reforestation company. The text does not discuss climate change or its implications.",
+    "reason": "The article is about cabinet appointments and women’s qualifications; climate-related details are incidental biographical mentions rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "029c7cc388a88e438994e3850fc8895decb363bfa43a679e868f1eb62959d4ab",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "6f27934e2da8e2eb6c7ddc6887b55f60f3b57e9dc521a7c3351c2e0e4daed579",
+    "raw_response_text_sha256": "1bd316fc2e94575d4f7953282c3c46816444f4ee3cb0374bf5629e47313351f5"
+  },
+  "api_metadata": {
+    "id": "resp_0bb9e28990ab6291006b061ccd71e887d2a397890e2286dc2b",
+    "model": "gpt-6-luna",
+    "created_at": 1795562701.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1471,
+      "input_tokens_details": {
+        "cache_write_tokens": 1468,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1468
+        }
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1723
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Prospective members and gender parity in Justin Trudeau’s cabinet\",\n  \"climate_relevance\": \"Climate-related references appear only as credentials: one MP served on the IPCC, and another was a provincial environment minister and founded a reforestation company. The text does not discuss climate change or its implications.\",\n  \"reason\": \"The article is about cabinet appointments and women’s qualifications; climate-related details are incidental biographical mentions rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:25:03Z",
+  "duration_seconds": 1.942,
+  "error": null
+}

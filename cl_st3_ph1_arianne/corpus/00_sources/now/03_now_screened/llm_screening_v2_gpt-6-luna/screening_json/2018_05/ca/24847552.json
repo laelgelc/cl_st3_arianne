@@ -1,0 +1,77 @@
+{
+  "article_id": "24847552",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_05/ca/24847552.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_05/ca/24847552.json"
+  },
+  "manifest_row": {
+    "article_id": "24847552",
+    "group": "2018_05",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_05/ca/24847552.txt",
+    "now_field_2": "2562",
+    "date_original": "18-05-26",
+    "date_iso": "2018-05-26",
+    "source_name": "Castanet.net",
+    "url": "https://www.castanet.net/edition/news-story-227249-4-.htm",
+    "title": "$60M goes without winner",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-05.txt\"]",
+    "metadata_article_files": "[\"text-18-05/18-05-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Ontario Liberal campaign promises and fiscal plans",
+    "climate_relevance": "The identifiable main article concerns provincial election finances and does not discuss climate change. A separate space-strategy snippet briefly says new technologies could help researchers better understand climate change.",
+    "reason": "The climate reference appears only in an unrelated snippet and offers no substantial climate discussion in the identifiable main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "257a7b1932d9c7e98c8ab5a9600ed2565f9c0053f16819857079ee78f49a6506",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1607db669df69c0521ecbe1387a2282c125ebdc4a056a13843abc258bfcccaa7",
+    "raw_response_text_sha256": "6676a4c96432654e74d8c10809507959573b85613145082ebd7db7e9861c3efc"
+  },
+  "api_metadata": {
+    "id": "resp_0f0239d2160e3cab006b0612d7604487d28bf2ecdcc976fe9b",
+    "model": "gpt-6-luna",
+    "created_at": 1795560151.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3929,
+      "input_tokens_details": {
+        "cache_write_tokens": 3926,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3926
+        }
+      },
+      "output_tokens": 565,
+      "output_tokens_details": {
+        "reasoning_tokens": 424
+      },
+      "total_tokens": 4494
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ontario Liberal campaign promises and fiscal plans\",\n  \"climate_relevance\": \"The identifiable main article concerns provincial election finances and does not discuss climate change. A separate space-strategy snippet briefly says new technologies could help researchers better understand climate change.\",\n  \"reason\": \"The climate reference appears only in an unrelated snippet and offers no substantial climate discussion in the identifiable main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:42:35Z",
+  "duration_seconds": 3.994,
+  "error": null
+}

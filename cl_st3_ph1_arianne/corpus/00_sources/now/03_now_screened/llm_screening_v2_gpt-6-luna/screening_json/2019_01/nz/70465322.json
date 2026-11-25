@@ -1,0 +1,77 @@
+{
+  "article_id": "70465322",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/nz/70465322.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/nz/70465322.json"
+  },
+  "manifest_row": {
+    "article_id": "70465322",
+    "group": "2019_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/nz/70465322.txt",
+    "now_field_2": "1069",
+    "date_original": "19-01-29",
+    "date_iso": "2019-01-29",
+    "source_name": "Stuff.co.nz",
+    "url": "https://www.stuff.co.nz/life-style/homed/garden/110205568/sonja-slinger-the-garden-harnessing-the-power-of-giving",
+    "title": "Sonja Slinger: The garden harnessing the power of giving",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "A collection of unrelated news items, including gardening, New Zealand tax and party politics, airline earnings, and housing policy.",
+    "climate_relevance": "The political coverage briefly lists climate change and climate issues as areas of focus, but provides no substantive discussion of them.",
+    "reason": "The text is a concatenation of unrelated articles and snippets. Its climate references are passing mentions within political coverage rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e181c3c47b16c845cf161bebb5d148d1c4444012cb8c1787d4f6aec41e60fcc0",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5b95c5fd8cd5ceac4b6bb4b45c17dc1146b242c0e9f7e8451bd705add2e17dd1",
+    "raw_response_text_sha256": "e47e74f56ac16dde3b5f4aea792a4e1f8c5930e499b73c756547cdcf5e2f592a"
+  },
+  "api_metadata": {
+    "id": "resp_0a4b15aa29bc7d03006b063cb17f2887d19f7560595a8b87bc",
+    "model": "gpt-6-luna",
+    "created_at": 1795570865.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5329,
+      "input_tokens_details": {
+        "cache_write_tokens": 5326,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5326
+        }
+      },
+      "output_tokens": 488,
+      "output_tokens_details": {
+        "reasoning_tokens": 340
+      },
+      "total_tokens": 5817
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A collection of unrelated news items, including gardening, New Zealand tax and party politics, airline earnings, and housing policy.\",\n  \"climate_relevance\": \"The political coverage briefly lists climate change and climate issues as areas of focus, but provides no substantive discussion of them.\",\n  \"reason\": \"The text is a concatenation of unrelated articles and snippets. Its climate references are passing mentions within political coverage rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:41:09Z",
+  "duration_seconds": 4.307,
+  "error": null
+}

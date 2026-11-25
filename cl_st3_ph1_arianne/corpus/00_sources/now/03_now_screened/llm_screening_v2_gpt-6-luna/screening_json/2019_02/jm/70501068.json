@@ -1,0 +1,77 @@
+{
+  "article_id": "70501068",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/jm/70501068.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/jm/70501068.json"
+  },
+  "manifest_row": {
+    "article_id": "70501068",
+    "group": "2019_02",
+    "country_code": "jm",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/jm/70501068.txt",
+    "now_field_2": "171",
+    "date_original": "19-02-10",
+    "date_iso": "2019-02-10",
+    "source_name": "Loop News Jamaica",
+    "url": "http://www.loopjamaica.com/content/cops-seek-help-locate-taxi-operator-missing-more-week",
+    "title": "Cops seek help to locate taxi operator missing for more than a week",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-jm.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "A missing-person investigation and an accounting conference",
+    "climate_relevance": "Climate change is mentioned only in a list of topics the accounting conference will address, with no further discussion.",
+    "reason": "The supplied text contains unrelated article snippets. The only climate reference is a passing item in a list, so it does not provide meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "8384d7eb7e9c8044dcf0753c875efd6d2f983bd867d76f49bac2a1661cda52fc",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ab1d0748e91b5c918906a3ad02d24b40436f9fc2a38870a94ff81dea12c66f2b",
+    "raw_response_text_sha256": "4278535f7b4cb3d8c7708bfa0aaa6d105524d152986c35c8a54c84ed406f3f3b"
+  },
+  "api_metadata": {
+    "id": "resp_0cfd7977db95ce2b006b063d01ec1c87d19c29c54c2497a199",
+    "model": "gpt-6-luna",
+    "created_at": 1795570946.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1352,
+      "input_tokens_details": {
+        "cache_write_tokens": 1349,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1349
+        }
+      },
+      "output_tokens": 269,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 1621
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A missing-person investigation and an accounting conference\",\n  \"climate_relevance\": \"Climate change is mentioned only in a list of topics the accounting conference will address, with no further discussion.\",\n  \"reason\": \"The supplied text contains unrelated article snippets. The only climate reference is a passing item in a list, so it does not provide meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:42:28Z",
+  "duration_seconds": 2.486,
+  "error": null
+}

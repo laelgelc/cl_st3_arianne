@@ -1,0 +1,77 @@
+{
+  "article_id": "51284805",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/ca/51284805.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/ca/51284805.json"
+  },
+  "manifest_row": {
+    "article_id": "51284805",
+    "group": "2019_12",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/ca/51284805.txt",
+    "now_field_2": "434",
+    "date_original": "19-12-18",
+    "date_iso": "2019-12-18",
+    "source_name": "ca.finance.yahoo.com",
+    "url": "https://ca.finance.yahoo.com/news/most-canadians-believe-food-prices-increasing-faster-than-income-164646157.html",
+    "title": "Most Canadians believe food prices increasing faster than ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-ca1.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "Food inflation and how Canadians plan to adjust their grocery shopping",
+    "climate_relevance": "Climate change is briefly listed as one of several factors contributing to projected food price increases, with no further discussion.",
+    "reason": "The article focuses on food affordability and consumer responses. Its single passing reference to climate change does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e2bd110ae7a2ee4d8ce55fb9256b46f3967bc2ecdc67871b35b15c454d9e365f",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "fa2da35bb4834e7695a917a9083cc7ec59601f7fbcb92708a3d931ccea251e64",
+    "raw_response_text_sha256": "1dc7ab9d7d096596b6884ec2696e22424637cea876680b9d9c9098c35925854e"
+  },
+  "api_metadata": {
+    "id": "resp_0f1d17ef031847df006b062d00f8b087d1bd49d88f8a0f996a",
+    "model": "gpt-6-luna",
+    "created_at": 1795566849.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1067,
+      "input_tokens_details": {
+        "cache_write_tokens": 1064,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1064
+        }
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 1382
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Food inflation and how Canadians plan to adjust their grocery shopping\",\n  \"climate_relevance\": \"Climate change is briefly listed as one of several factors contributing to projected food price increases, with no further discussion.\",\n  \"reason\": \"The article focuses on food affordability and consumer responses. Its single passing reference to climate change does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:34:11Z",
+  "duration_seconds": 2.581,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70908939",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/nz/70908939.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/nz/70908939.json"
+  },
+  "manifest_row": {
+    "article_id": "70908939",
+    "group": "2019_06",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/nz/70908939.txt",
+    "now_field_2": "212",
+    "date_original": "19-06-25",
+    "date_iso": "2019-06-25",
+    "source_name": "RNZ",
+    "url": "https://www.rnz.co.nz/international/pacific-news/392980/climate-change-linked-to-png-fishing-losses",
+    "title": "Climate change linked to PNG fishing losses",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-nz.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "climate_role": "central",
+    "main_topic": "Climate-driven changes in fish distribution and resulting losses for Papua New Guinea's fisheries sector",
+    "climate_relevance": "The report directly attributes declining fisheries revenue to climate change shifting fish species away from PNG waters.",
+    "reason": "Climate change is the central explanation for the fisheries losses discussed in the main article. A related-stories excerpt about a Chinese loan and an industrial-zone project is appended, but the main article is identifiable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4192e564d545acc6e99204d557f31d6ec28a7cf75b2e40e13775375fd5ae49ae",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "73da910aa30482d51ee5073ff3c220e8de017ce903ea836a107b7591b8d1347c",
+    "raw_response_text_sha256": "141f82d41fe2760cdbf96b9cb92740806c839f1d0cd1801635a369849e98567e"
+  },
+  "api_metadata": {
+    "id": "resp_01e87bf7af6409a1006b063fe1878887d1bfa6dc920465e6ca",
+    "model": "gpt-6-luna",
+    "created_at": 1795571681.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 770,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 1027
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"Climate-driven changes in fish distribution and resulting losses for Papua New Guinea's fisheries sector\",\n  \"climate_relevance\": \"The report directly attributes declining fisheries revenue to climate change shifting fish species away from PNG waters.\",\n  \"reason\": \"Climate change is the central explanation for the fisheries losses discussed in the main article. A related-stories excerpt about a Chinese loan and an industrial-zone project is appended, but the main article is identifiable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:54:43Z",
+  "duration_seconds": 2.35,
+  "error": null
+}

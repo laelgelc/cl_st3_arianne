@@ -1,0 +1,77 @@
+{
+  "article_id": "7690523",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_03/au/7690523.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_03/au/7690523.json"
+  },
+  "manifest_row": {
+    "article_id": "7690523",
+    "group": "2016_03",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_03/au/7690523.txt",
+    "now_field_2": "1166",
+    "date_original": "16-03-14",
+    "date_iso": "2016-03-14",
+    "source_name": "Green and Gold Rugby",
+    "url": "http://www.greenandgoldrugby.com/the-tuesday-top-5-16/",
+    "title": "Round 3 Report Card",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-03-sls/16-03-au.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "Rugby results, player performances, and tournament updates",
+    "climate_relevance": "A short section describes teams encountering different temperatures and weather conditions while travelling, and how these may affect player recovery and performance. It does not discuss climate change.",
+    "reason": "The text is about rugby. Its use of “climate changes” refers to week-to-week differences in local weather and conditions, not climate change discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "c57135a5dd3daaf45215ef76a84e048395795001ff5e64295dc47aa4e69bbbd2",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "c6dcfb4d85396490589314943d33922034ac1566ada97611d933f048143675cd",
+    "raw_response_text_sha256": "c1b79a15ea53dc5ef3fd80cab0e22bdae4947a52c33d6efe89b528b4a67beb9a"
+  },
+  "api_metadata": {
+    "id": "resp_0707af0ffeec620d006b064652379087d1824ef8c35e215dfe",
+    "model": "gpt-6-luna",
+    "created_at": 1795573330.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1988,
+      "input_tokens_details": {
+        "cache_write_tokens": 1985,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1985
+        }
+      },
+      "output_tokens": 377,
+      "output_tokens_details": {
+        "reasoning_tokens": 229
+      },
+      "total_tokens": 2365
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Rugby results, player performances, and tournament updates\",\n  \"climate_relevance\": \"A short section describes teams encountering different temperatures and weather conditions while travelling, and how these may affect player recovery and performance. It does not discuss climate change.\",\n  \"reason\": \"The text is about rugby. Its use of “climate changes” refers to week-to-week differences in local weather and conditions, not climate change discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:22:13Z",
+  "duration_seconds": 3.145,
+  "error": null
+}

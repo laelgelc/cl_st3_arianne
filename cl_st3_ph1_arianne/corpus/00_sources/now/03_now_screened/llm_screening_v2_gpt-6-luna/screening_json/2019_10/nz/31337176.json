@@ -1,0 +1,77 @@
+{
+  "article_id": "31337176",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/nz/31337176.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/nz/31337176.json"
+  },
+  "manifest_row": {
+    "article_id": "31337176",
+    "group": "2019_10",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/nz/31337176.txt",
+    "now_field_2": "2024",
+    "date_original": "19-10-10",
+    "date_iso": "2019-10-10",
+    "source_name": "interest.co.nz",
+    "url": "https://www.interest.co.nz/news/102075/us-inflation-unchanged-wall-street-us-china-pursue-mini-deal-world-bank-sees-china",
+    "title": "US inflation unchanged; Wall Street up; US-China pursue ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-nz.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "New Zealand market and economic news",
+    "climate_relevance": "The main briefing is about markets and economic events, but the accompanying comments contain meaningful discussion of climate policy, emissions, energy sources, methane, and Arctic permafrost.",
+    "reason": "Climate change is not a focus of the briefing itself; it appears in substantive reader comments, making the text useful as peripheral climate discourse rather than core climate coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "72d7435eb14a196bafe87ae63aaf21c4dda95dd8ef32ce6370697e771ff004bf",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "420c78af66db94b00ef44fedf7ab151213f7028f07323dc15c395d9e502b0e22",
+    "raw_response_text_sha256": "ea3ed1f1d8c03d33d95800177a5ebbdf328869d94a8dddb7ba582b7f5694e8e7"
+  },
+  "api_metadata": {
+    "id": "resp_0a87ee091321e21e006b0616d7ab1c87d2bbedb72f42a50abe",
+    "model": "gpt-6-luna",
+    "created_at": 1795561175.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3252,
+      "input_tokens_details": {
+        "cache_write_tokens": 3249,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3249
+        }
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 207
+      },
+      "total_tokens": 3607
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"New Zealand market and economic news\",\n  \"climate_relevance\": \"The main briefing is about markets and economic events, but the accompanying comments contain meaningful discussion of climate policy, emissions, energy sources, methane, and Arctic permafrost.\",\n  \"reason\": \"Climate change is not a focus of the briefing itself; it appears in substantive reader comments, making the text useful as peripheral climate discourse rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:59:38Z",
+  "duration_seconds": 3.006,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "70472478",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/nz/70472478.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/nz/70472478.json"
+  },
+  "manifest_row": {
+    "article_id": "70472478",
+    "group": "2019_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/nz/70472478.txt",
+    "now_field_2": "1043",
+    "date_original": "19-01-31",
+    "date_iso": "2019-01-31",
+    "source_name": "Scoop.co.nz",
+    "url": "http://www.scoop.co.nz/stories/PO1902/S00006/ambulance-officers-open-letter.htm",
+    "title": "Ambulance Officer's open letter",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Ambulance officers’ working conditions and partial strike actions",
+    "climate_relevance": "A separate snippet mentions infrastructure risks from sea-level rise and calls for climate policy, but climate change is not part of the identifiable main article.",
+    "reason": "The main article concerns an ambulance workforce dispute. The climate-related sentence appears among unrelated snippets and does not contribute to the main article’s discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "98c0d53345af1a2e68327bad888450036124c79bc34ca5e2556535c1bc69fe86",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e5228f578e4234fc7bae01a9db4a780b5a96e27e2cb23e0987578c7682444463",
+    "raw_response_text_sha256": "7e5ee9433084e75acc9e4e86fade64787604563f2a0cae06745728b07ba6043d"
+  },
+  "api_metadata": {
+    "id": "resp_0852447b4dad5d88006b063cc2965487d190c6955bfb2a29b6",
+    "model": "gpt-6-luna",
+    "created_at": 1795570882.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1774,
+      "input_tokens_details": {
+        "cache_write_tokens": 1771,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1771
+        }
+      },
+      "output_tokens": 401,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 2175
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ambulance officers’ working conditions and partial strike actions\",\n  \"climate_relevance\": \"A separate snippet mentions infrastructure risks from sea-level rise and calls for climate policy, but climate change is not part of the identifiable main article.\",\n  \"reason\": \"The main article concerns an ambulance workforce dispute. The climate-related sentence appears among unrelated snippets and does not contribute to the main article’s discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:41:25Z",
+  "duration_seconds": 3.174,
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "82097759",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_11/us/82097759.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_11/us/82097759.json"
+  },
+  "manifest_row": {
+    "article_id": "82097759",
+    "group": "2019_11",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_11/us/82097759.txt",
+    "now_field_2": "354",
+    "date_original": "19-11-12",
+    "date_iso": "2019-11-12",
+    "source_name": "Chico Enterprise-Record",
+    "url": "https://www.chicoer.com/2019/11/12/the-week-in-photos-nov-5-11/",
+    "title": "The week in photos, Nov. 5-11",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-11.txt\"]",
+    "metadata_article_files": "[\"text-19-11/19-11-us5.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "passing",
+    "main_topic": "A weekly photo roundup of local events and people",
+    "climate_relevance": "One caption mentions a forum about housing effects and climate change, but provides no substantive climate-related discussion.",
+    "reason": "Climate change appears only in a brief caption identifying a forum; the available text does not meaningfully describe climate issues or debate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "cf753d5b321c4da2d3322934e2da1fb08624008e4379e0f09c128d0c2c13a089",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "3360e3e75f1ceda7563db2d1f932b6562640c2449c921ab1a92fb3a00b5a23d4",
+    "raw_response_text_sha256": "a4b6450540bbffaaf218f2574fca871f57c3966fa30966d46dfe875618aad661"
+  },
+  "api_metadata": {
+    "id": "resp_0f54c64278017e96006b06480f6a2c87d1b0ae129a1d4a6fd2",
+    "model": "gpt-6-luna",
+    "created_at": 1795573775.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1016,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 376,
+      "output_tokens_details": {
+        "reasoning_tokens": 247
+      },
+      "total_tokens": 1392
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A weekly photo roundup of local events and people\",\n  \"climate_relevance\": \"One caption mentions a forum about housing effects and climate change, but provides no substantive climate-related discussion.\",\n  \"reason\": \"Climate change appears only in a brief caption identifying a forum; the available text does not meaningfully describe climate issues or debate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:29:38Z",
+  "duration_seconds": 2.796,
+  "error": null
+}

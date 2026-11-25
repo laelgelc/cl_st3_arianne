@@ -1,0 +1,77 @@
+{
+  "article_id": "32140717",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_10/us/32140717.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_10/us/32140717.json"
+  },
+  "manifest_row": {
+    "article_id": "32140717",
+    "group": "2020_10",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_10/us/32140717.txt",
+    "now_field_2": "8100",
+    "date_original": "20-10-08",
+    "date_iso": "2020-10-08",
+    "source_name": "arstechnica.com",
+    "url": "https://arstechnica.com/science/2020/10/last-years-us-emissions-went-down-after-2018-uptick/?comments=1",
+    "title": "Last year's US emissions went down after 2018 uptick | Ars ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-10.txt\"]",
+    "metadata_article_files": "[\"text-20-10/20-10-us1.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "US energy-related CO2 emissions trends in 2019 and the changing electricity mix",
+    "climate_relevance": "The article reports and explains emissions changes, connects them to fossil-fuel and renewable generation, and discusses emissions targets, climate action, and energy policy.",
+    "reason": "Climate-related emissions are the article’s central subject. The accompanying discussion also substantially addresses decarbonization, climate goals, and the role of different energy sources.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "aba75b6826bd5b7a5057c7513f6ed4a437e25b5c1192788b0a1d44f5f5a97065",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d41d16d1f94010640871eec47317815bca64f689217781ad0116ce1c1c871519",
+    "raw_response_text_sha256": "8c14657b16c73ff3e46203d2b2467d582820031a1c798948863069d21e46a855"
+  },
+  "api_metadata": {
+    "id": "resp_0fc5e1666cf06334006b061b87a67887d28c5b2998e5c7b2ad",
+    "model": "gpt-6-luna",
+    "created_at": 1795562375.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10833,
+      "input_tokens_details": {
+        "cache_write_tokens": 10830,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 10830
+        }
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 11118
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"US energy-related CO2 emissions trends in 2019 and the changing electricity mix\",\n  \"climate_relevance\": \"The article reports and explains emissions changes, connects them to fossil-fuel and renewable generation, and discusses emissions targets, climate action, and energy policy.\",\n  \"reason\": \"Climate-related emissions are the article’s central subject. The accompanying discussion also substantially addresses decarbonization, climate goals, and the role of different energy sources.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:19:37Z",
+  "duration_seconds": 2.231,
+  "error": null
+}

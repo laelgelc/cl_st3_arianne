@@ -1,0 +1,77 @@
+{
+  "article_id": "31593844",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_01/nz/31593844.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_01/nz/31593844.json"
+  },
+  "manifest_row": {
+    "article_id": "31593844",
+    "group": "2020_01",
+    "country_code": "nz",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_01/nz/31593844.txt",
+    "now_field_2": "1323",
+    "date_original": "20-01-22",
+    "date_iso": "2020-01-22",
+    "source_name": "newsroom.co.nz",
+    "url": "https://www.newsroom.co.nz/@pro/2020/01/21/996748/congestion-charging-inevitable-but-not-now",
+    "title": "Congestion charging 'inevitable,' but not now",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-01.txt\"]",
+    "metadata_article_files": "[\"text-20-01/20-01-nz.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Congestion charging and transport pricing policy in New Zealand",
+    "climate_relevance": "Climate change appears only in a generic list of topics covered by the publication, with no meaningful discussion in the article.",
+    "reason": "The article focuses on road congestion charges, GPS-based road pricing, and transport funding. Its only climate-change reference is unrelated boilerplate in a donation appeal.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "0944f1579368bf4381923fb923113f97b58970f822ad82c58cec2450981d9aee",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "1850a7e46f1e41786b8715b775e17029d97ea9135cb1badd2e3e84034eb17781",
+    "raw_response_text_sha256": "389b5cb86e38f2d9b52eae4cfe6006517ec11bbe60558e5099d40a95f8f075b6"
+  },
+  "api_metadata": {
+    "id": "resp_067c8a7107817d66006b06185257bc87d2803a67434ac9bf99",
+    "model": "gpt-6-luna",
+    "created_at": 1795561554.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2200,
+      "input_tokens_details": {
+        "cache_write_tokens": 2197,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2197
+        }
+      },
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 2407
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Congestion charging and transport pricing policy in New Zealand\",\n  \"climate_relevance\": \"Climate change appears only in a generic list of topics covered by the publication, with no meaningful discussion in the article.\",\n  \"reason\": \"The article focuses on road congestion charges, GPS-based road pricing, and transport funding. Its only climate-change reference is unrelated boilerplate in a donation appeal.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:05:56Z",
+  "duration_seconds": 1.943,
+  "error": null
+}

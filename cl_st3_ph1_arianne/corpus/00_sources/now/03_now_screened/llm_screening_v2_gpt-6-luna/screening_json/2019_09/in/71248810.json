@@ -1,0 +1,77 @@
+{
+  "article_id": "71248810",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_09/in/71248810.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_09/in/71248810.json"
+  },
+  "manifest_row": {
+    "article_id": "71248810",
+    "group": "2019_09",
+    "country_code": "in",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_09/in/71248810.txt",
+    "now_field_2": "165",
+    "date_original": "19-09-27",
+    "date_iso": "2019-09-27",
+    "source_name": "uniindia.com",
+    "url": "http://www.uniindia.com/~/monsoon-lashes-few-places-in-hp-warning-of-heavy-rainfall-in-isolated-places/States/news/1741447.html",
+    "title": "Monsoon lashes few places in HP, warning of heavy rainfall ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-09.txt\"]",
+    "metadata_article_files": "[\"text-19-09/19-09-in2.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "climate_role": "passing",
+    "main_topic": "A UN summit reviewing progress on the 2030 Sustainable Development Goals",
+    "climate_relevance": "Climate change appears as one focus of new acceleration initiatives registered alongside broader sustainable-development goals.",
+    "reason": "The identifiable SDG summit report is mainly about implementation of the 2030 Agenda. It mentions initiatives intended to boost action on climate change, but provides no further climate-specific discussion. The text also contains several unrelated news briefs.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "01fb64815733e1a7bbd7a9ca6c9588fb9afcfda5976c1fde4a3e00bf25f53715",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "241bcc8a1692a16be70bf1d724ceae8ec6ba68030f2bb1bafedba64004daf338",
+    "raw_response_text_sha256": "a49d1343400c07d65b7aebc9c416534a5f06ab95d67600aea57e47a7284bc8a3"
+  },
+  "api_metadata": {
+    "id": "resp_09faf105553a4f7a006b06409b45c487d183536abaceb9d2fe",
+    "model": "gpt-6-luna",
+    "created_at": 1795571867.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1381,
+      "input_tokens_details": {
+        "cache_write_tokens": 1378,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1378
+        }
+      },
+      "output_tokens": 381,
+      "output_tokens_details": {
+        "reasoning_tokens": 230
+      },
+      "total_tokens": 1762
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A UN summit reviewing progress on the 2030 Sustainable Development Goals\",\n  \"climate_relevance\": \"Climate change appears as one focus of new acceleration initiatives registered alongside broader sustainable-development goals.\",\n  \"reason\": \"The identifiable SDG summit report is mainly about implementation of the 2030 Agenda. It mentions initiatives intended to boost action on climate change, but provides no further climate-specific discussion. The text also contains several unrelated news briefs.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:57:50Z",
+  "duration_seconds": 3.09,
+  "error": null
+}

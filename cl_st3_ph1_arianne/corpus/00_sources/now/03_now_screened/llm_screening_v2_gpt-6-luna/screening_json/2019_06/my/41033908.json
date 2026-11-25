@@ -1,0 +1,77 @@
+{
+  "article_id": "41033908",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_06/my/41033908.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_06/my/41033908.json"
+  },
+  "manifest_row": {
+    "article_id": "41033908",
+    "group": "2019_06",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_06/my/41033908.txt",
+    "now_field_2": "173",
+    "date_original": "19-06-06",
+    "date_iso": "2019-06-06",
+    "source_name": "Malaysiakini",
+    "url": "https://www.malaysiakini.com/news/478771",
+    "title": "Bersih warns of absolute power's perils, and 6 things that happened ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-06.txt\"]",
+    "metadata_article_files": "[\"text-19-06/19-06-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.9,
+    "climate_role": "passing",
+    "main_topic": "A roundup of unrelated Malaysian political and social news items",
+    "climate_relevance": "Climate change appears only in a brief reference to a protest involving children; the text does not discuss climate issues or the protest's climate-related claims.",
+    "reason": "The climate reference is incidental within a list of unrelated items and offers no meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "7fa37d2e653147a81ddcdbc95a02f5ede5dfd25c04db6e3a877fcb661e79546e",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0d3be2447f562fa4ded67bbc56e759ad7406b0238ae0083449433274598ef134",
+    "raw_response_text_sha256": "f3995bbb78b72b53242fdb2b7d81629d495904efa938831b5233ceac39c937cc"
+  },
+  "api_metadata": {
+    "id": "resp_01407439a9a7028b006b0620af1a1c87d2b863c2b2d6debc8b",
+    "model": "gpt-6-luna",
+    "created_at": 1795563695.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 713,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 347,
+      "output_tokens_details": {
+        "reasoning_tokens": 213
+      },
+      "total_tokens": 1060
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.9,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"A roundup of unrelated Malaysian political and social news items\",\n  \"climate_relevance\": \"Climate change appears only in a brief reference to a protest involving children; the text does not discuss climate issues or the protest's climate-related claims.\",\n  \"reason\": \"The climate reference is incidental within a list of unrelated items and offers no meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:41:38Z",
+  "duration_seconds": 3.0,
+  "error": null
+}

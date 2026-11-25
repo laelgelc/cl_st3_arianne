@@ -1,0 +1,77 @@
+{
+  "article_id": "30533042",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_02/za/30533042.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_02/za/30533042.json"
+  },
+  "manifest_row": {
+    "article_id": "30533042",
+    "group": "2019_02",
+    "country_code": "za",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_02/za/30533042.txt",
+    "now_field_2": "806",
+    "date_original": "19-02-05",
+    "date_iso": "2019-02-05",
+    "source_name": "Independent Online",
+    "url": "https://www.iol.co.za/capeargus/news/watch-solar-panel-registration-deadline-for-cape-residents-pushed-to-31-may-19142241",
+    "title": "WATCH: Solar panel registration deadline for Cape residents pushed ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-02.txt\"]",
+    "metadata_article_files": "[\"text-19-02/19-02-za.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Cape Town’s registration and safety requirements for solar photovoltaic systems",
+    "climate_relevance": "The article discusses solar PV systems and mentions an official’s Energy and Climate Change portfolio, but does not meaningfully address climate change or its implications.",
+    "reason": "The focus is on grid connection, system safety, registration deadlines, and fees. Climate change appears only in a portfolio title, so the text does not contribute meaningful climate discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "491e6c3ebe4091cddc74d8589565d36da396be4ff2a0b191ceb1415a53410343",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "a721cca779866843957767b936e70372c5e2a946fe6256ceca8cf5699823039f",
+    "raw_response_text_sha256": "03f3252ec78fefc679d643c39616c17d7ea64f4fce3bc2277710905a37e26266"
+  },
+  "api_metadata": {
+    "id": "resp_0be99950de0abb48006b061470201487d290dd80fa13f8abdf",
+    "model": "gpt-6-luna",
+    "created_at": 1795560560.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1495,
+      "input_tokens_details": {
+        "cache_write_tokens": 1492,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1492
+        }
+      },
+      "output_tokens": 262,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 1757
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Cape Town’s registration and safety requirements for solar photovoltaic systems\",\n  \"climate_relevance\": \"The article discusses solar PV systems and mentions an official’s Energy and Climate Change portfolio, but does not meaningfully address climate change or its implications.\",\n  \"reason\": \"The focus is on grid connection, system safety, registration deadlines, and fees. Climate change appears only in a portfolio title, so the text does not contribute meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:49:22Z",
+  "duration_seconds": 2.306,
+  "error": null
+}

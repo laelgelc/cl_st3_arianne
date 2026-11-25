@@ -1,0 +1,77 @@
+{
+  "article_id": "7059185",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_01/au/7059185.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_01/au/7059185.json"
+  },
+  "manifest_row": {
+    "article_id": "7059185",
+    "group": "2016_01",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_01/au/7059185.txt",
+    "now_field_2": "1352",
+    "date_original": "16-01-12",
+    "date_iso": "2016-01-12",
+    "source_name": "Sydney Morning Herald",
+    "url": "http://www.smh.com.au/federal-politics/political-news/worse-than-game-of-thrones-red-wedding-liberal-mps-face-axe-before-federal-election-20160112-gm4n16.html",
+    "title": "'Worse than Game of Thrones red wedding': Liberal MPs face axe ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-01-yxh/16-01-au.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "climate_role": "background",
+    "main_topic": "Factional disputes and preselection challenges within the NSW Liberal Party",
+    "climate_relevance": "Climate change appears in reader comments discussing the party’s ideological positions, alongside a reference to the repeal of the carbon tax and its claimed effect on power bills.",
+    "reason": "The article is mainly about party politics, but the comments contain relevant climate-policy discourse, making it useful as peripheral material rather than core climate coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "82b85efbf9abcbf4cd28f6c55b45d831beac852ae3e4f0c058c0372baec8f905",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f3ce4a6db57fc83d1ddf14b7f44a7b7ab7c1684f2f9bd4f0ba097817a738a71a",
+    "raw_response_text_sha256": "e7fd56b6f36db1fafb416ee974146685ffea39d2fda8b486ba99a17e465e0535"
+  },
+  "api_metadata": {
+    "id": "resp_0b327d7da3c4891b006b063dcf6cc487d1840c6db764abcf51",
+    "model": "gpt-6-luna",
+    "created_at": 1795571151.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2443,
+      "input_tokens_details": {
+        "cache_write_tokens": 2440,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2440
+        }
+      },
+      "output_tokens": 274,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 2717
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Factional disputes and preselection challenges within the NSW Liberal Party\",\n  \"climate_relevance\": \"Climate change appears in reader comments discussing the party’s ideological positions, alongside a reference to the repeal of the carbon tax and its claimed effect on power bills.\",\n  \"reason\": \"The article is mainly about party politics, but the comments contain relevant climate-policy discourse, making it useful as peripheral material rather than core climate coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:45:53Z",
+  "duration_seconds": 2.537,
+  "error": null
+}

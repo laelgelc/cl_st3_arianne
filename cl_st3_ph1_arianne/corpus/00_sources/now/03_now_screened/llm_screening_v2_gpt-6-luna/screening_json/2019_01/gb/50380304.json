@@ -1,0 +1,77 @@
+{
+  "article_id": "50380304",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_01/gb/50380304.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_01/gb/50380304.json"
+  },
+  "manifest_row": {
+    "article_id": "50380304",
+    "group": "2019_01",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_01/gb/50380304.txt",
+    "now_field_2": "881",
+    "date_original": "19-01-24",
+    "date_iso": "2019-01-24",
+    "source_name": "GOV.UK",
+    "url": "https://www.gov.uk/government/speeches/antimicrobial-resistance-needs-an-urgent-global-response",
+    "title": "Antimicrobial resistance needs an urgent global response",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-01.txt\"]",
+    "metadata_article_files": "[\"text-19-01/19-01-gb.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "passing",
+    "main_topic": "Antimicrobial resistance and the global response to it",
+    "climate_relevance": "Climate change is mentioned once as a comparison for the scale of the threat posed by antimicrobial resistance; no climate-related causes, impacts, policies, or debate are discussed.",
+    "reason": "The speech is about antimicrobial resistance. Its single comparison to climate change is incidental and does not provide meaningful climate discourse for analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "307cd68d777660d91c30fd99170344eb1eb98b70f0b461482b86a2b7373a8ca3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "5e550e30df3b28a9cb82c7d45bc0895f24e84e9198085f4e9dbc4b5c09fc9c6d",
+    "raw_response_text_sha256": "6b385de18defa6d35be6d627bc1daf407dcaeb134714b956c6429c114f30115c"
+  },
+  "api_metadata": {
+    "id": "resp_061b488a40c92953006b0628b9fb1487d18d3a4c404b5b95fd",
+    "model": "gpt-6-luna",
+    "created_at": 1795565754.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1626,
+      "input_tokens_details": {
+        "cache_write_tokens": 1623,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1623
+        }
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1856
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Antimicrobial resistance and the global response to it\",\n  \"climate_relevance\": \"Climate change is mentioned once as a comparison for the scale of the threat posed by antimicrobial resistance; no climate-related causes, impacts, policies, or debate are discussed.\",\n  \"reason\": \"The speech is about antimicrobial resistance. Its single comparison to climate change is incidental and does not provide meaningful climate discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:15:56Z",
+  "duration_seconds": 2.751,
+  "error": null
+}

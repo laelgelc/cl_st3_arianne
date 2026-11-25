@@ -1,0 +1,77 @@
+{
+  "article_id": "40364881",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2018_12/ng/40364881.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2018_12/ng/40364881.json"
+  },
+  "manifest_row": {
+    "article_id": "40364881",
+    "group": "2018_12",
+    "country_code": "ng",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2018_12/ng/40364881.txt",
+    "now_field_2": "638",
+    "date_original": "18-12-08",
+    "date_iso": "2018-12-08",
+    "source_name": "Blueprint newspapers Limite",
+    "url": "https://www.blueprint.ng/senate-to-fg-collapse-n-power-under-nde/",
+    "title": "Senate to FG: Collapse N-Power under NDE",
+    "source_files": "[\"now-sources-2018.txt\", \"sources-18-12.txt\"]",
+    "metadata_article_files": "[\"text-18-12/18-12-ng.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Senate proposal to place the N-Power employment programme under the National Directorate of Employment",
+    "climate_relevance": "Climate change appears only in the title of a senator’s committee; the text contains no climate-related discussion.",
+    "reason": "The identifiable main article concerns employment and social intervention programmes. The sole climate reference is a committee designation, which is incidental rather than meaningful climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "81285955cc171e481ab503e181920c67bb17ef9374e735d0f1041180be8fdcfe",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ab021a20f8e3cc3c552ef314c1750a91739be19c0e52d5579c89535cc241d859",
+    "raw_response_text_sha256": "44fe348a44925f2b5e37669fd61a73339ee08cb954684b0a9fa0d5b183a3bb16"
+  },
+  "api_metadata": {
+    "id": "resp_07aa269829ac43fd006b061ed5011487d292cba2bdbd812921",
+    "model": "gpt-6-luna",
+    "created_at": 1795563221.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1375,
+      "input_tokens_details": {
+        "cache_write_tokens": 1372,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1372
+        }
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 1641
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Senate proposal to place the N-Power employment programme under the National Directorate of Employment\",\n  \"climate_relevance\": \"Climate change appears only in the title of a senator’s committee; the text contains no climate-related discussion.\",\n  \"reason\": \"The identifiable main article concerns employment and social intervention programmes. The sole climate reference is a committee designation, which is incidental rather than meaningful climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:33:43Z",
+  "duration_seconds": 2.427,
+  "error": null
+}

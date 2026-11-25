@@ -1,0 +1,77 @@
+{
+  "article_id": "42516460",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_12/my/42516460.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_12/my/42516460.json"
+  },
+  "manifest_row": {
+    "article_id": "42516460",
+    "group": "2020_12",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_12/my/42516460.txt",
+    "now_field_2": "502",
+    "date_original": "20-12-02",
+    "date_iso": "2020-12-02",
+    "source_name": "themalaysianreserve.com",
+    "url": "https://themalaysianreserve.com/2020/12/03/budget-for-8-ministries-passed-in-dewan-rakyat-so-far/",
+    "title": "Budget for 8 ministries passed in Dewan Rakyat so far",
+    "source_files": "[\"now-sources-2020.txt\"]",
+    "metadata_article_files": "[\"text-20-12/20-12-my.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.79,
+    "climate_role": "background",
+    "main_topic": "Government budget debate, particularly agricultural modernisation and ministry allocations",
+    "climate_relevance": "The text briefly discusses a new quota for net energy metering projects intended to support the solar industry, a policy area relevant to climate mitigation. Climate change otherwise appears only in the title of a former minister.",
+    "reason": "The article is mainly about agriculture and budget allocations, not climate change. Its brief reference to solar policy provides some climate-relevant context, making it peripheral rather than core coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "136a8da65a9ab99b104b53602c6234a3390590feb57073e9c3eb57df1946a689",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "501e89953521045f286a0c0d7ecee3041114bf8179379efe431fafe52046a256",
+    "raw_response_text_sha256": "da730ee08f486de81fd3d20f94b9af4b51693b7c039d01ef30ceea6d5a0170c6"
+  },
+  "api_metadata": {
+    "id": "resp_01f9c3d60884b5a2006b06265d809487d2bfb4fa2eef40fb85",
+    "model": "gpt-6-luna",
+    "created_at": 1795565149.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1164,
+      "input_tokens_details": {
+        "cache_write_tokens": 1161,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1161
+        }
+      },
+      "output_tokens": 379,
+      "output_tokens_details": {
+        "reasoning_tokens": 216
+      },
+      "total_tokens": 1543
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.79,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Government budget debate, particularly agricultural modernisation and ministry allocations\",\n  \"climate_relevance\": \"The text briefly discusses a new quota for net energy metering projects intended to support the solar industry, a policy area relevant to climate mitigation. Climate change otherwise appears only in the title of a former minister.\",\n  \"reason\": \"The article is mainly about agriculture and budget allocations, not climate change. Its brief reference to solar policy provides some climate-relevant context, making it peripheral rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:05:52Z",
+  "duration_seconds": 3.153,
+  "error": null
+}

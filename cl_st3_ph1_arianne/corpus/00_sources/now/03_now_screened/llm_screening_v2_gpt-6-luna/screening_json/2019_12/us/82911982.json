@@ -1,0 +1,77 @@
+{
+  "article_id": "82911982",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_12/us/82911982.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_12/us/82911982.json"
+  },
+  "manifest_row": {
+    "article_id": "82911982",
+    "group": "2019_12",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_12/us/82911982.txt",
+    "now_field_2": "874",
+    "date_original": "19-12-27",
+    "date_iso": "2019-12-27",
+    "source_name": "Los Angeles Times",
+    "url": "https://www.latimes.com/opinion/story/2019-12-27/trump-bad-year-review-climate-change",
+    "title": "Editorial: President Trump's very bad year on climate change hurts us all",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-12.txt\"]",
+    "metadata_article_files": "[\"text-19-12/19-12-us7.txt\"]"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "climate_role": "central",
+    "main_topic": "The Trump administration’s climate and energy policies, including regulatory rollbacks, fossil-fuel expansion, and withdrawal from the Paris agreement.",
+    "climate_relevance": "Climate change is the editorial’s central subject, discussed through its causes and impacts and through policies affecting emissions and renewable energy.",
+    "reason": "The main article substantially analyzes climate science, the consequences of global warming, and the administration’s actions on emissions and fossil fuels. A separate California housing sentence appears at the end and is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "1c5b1d1192bf67368dd21e2008a06fe7325801e99eeb8a0bc2fb7d9f5332b6c6",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "bb38b2d741cd6f2820d9e55be42cc3cf8f8d2fdce47926d96f5fc6d8aa37b02c",
+    "raw_response_text_sha256": "afa8e43f3d916b694052e4fa1b5553a48a3cf6f040e5d205247788aa2557a58f"
+  },
+  "api_metadata": {
+    "id": "resp_0c2d20a647311d16006b0648f767a087d1966b833920bcb319",
+    "model": "gpt-6-luna",
+    "created_at": 1795574007.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1550,
+      "input_tokens_details": {
+        "cache_write_tokens": 1547,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1547
+        }
+      },
+      "output_tokens": 214,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 1764
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"central\",\n  \"main_topic\": \"The Trump administration’s climate and energy policies, including regulatory rollbacks, fossil-fuel expansion, and withdrawal from the Paris agreement.\",\n  \"climate_relevance\": \"Climate change is the editorial’s central subject, discussed through its causes and impacts and through policies affecting emissions and renewable energy.\",\n  \"reason\": \"The main article substantially analyzes climate science, the consequences of global warming, and the administration’s actions on emissions and fossil fuels. A separate California housing sentence appears at the end and is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T02:33:29Z",
+  "duration_seconds": 2.439,
+  "error": null
+}

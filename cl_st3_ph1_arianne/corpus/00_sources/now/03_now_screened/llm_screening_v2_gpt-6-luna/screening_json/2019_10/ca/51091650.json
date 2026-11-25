@@ -1,0 +1,77 @@
+{
+  "article_id": "51091650",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_10/ca/51091650.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_10/ca/51091650.json"
+  },
+  "manifest_row": {
+    "article_id": "51091650",
+    "group": "2019_10",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_10/ca/51091650.txt",
+    "now_field_2": "1023",
+    "date_original": "19-10-07",
+    "date_iso": "2019-10-07",
+    "source_name": "theglobeandmail.com",
+    "url": "https://www.theglobeandmail.com/world/article-hong-kong-faces-more-protests-after-night-of-violence/",
+    "title": "Residents jeer as Hong Kong police stage show of force on ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-10.txt\"]",
+    "metadata_article_files": "[\"text-19-10/19-10-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Hong Kong protests and police response",
+    "climate_relevance": "The main report contains no meaningful climate discourse. A separate appended opinion article discusses fossil fuels and climate change, but it is unrelated to the identifiable main report.",
+    "reason": "The identifiable lead article is about protests in Hong Kong. Although the text later includes a distinct climate-relevant opinion article, the unrelated appended material does not make the main report relevant to climate discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "85ce014028f220c242090e3ac5b18cdd7ace1f4468781f70d577ccf8fe46d2ce",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "0cc4575592f4fd1158a55a52aed6dab0d483347e4536d72e868ff7fa752c3a80",
+    "raw_response_text_sha256": "8196a042e4c29229ac18ae43de167d1dc4bfb5ac11e005168bb3554324daeb43"
+  },
+  "api_metadata": {
+    "id": "resp_091a168558a80908006b062bff101887d19d0272bcee7d6958",
+    "model": "gpt-6-luna",
+    "created_at": 1795566591.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3218,
+      "input_tokens_details": {
+        "cache_write_tokens": 3215,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3215
+        }
+      },
+      "output_tokens": 672,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 3890
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Hong Kong protests and police response\",\n  \"climate_relevance\": \"The main report contains no meaningful climate discourse. A separate appended opinion article discusses fossil fuels and climate change, but it is unrelated to the identifiable main report.\",\n  \"reason\": \"The identifiable lead article is about protests in Hong Kong. Although the text later includes a distinct climate-relevant opinion article, the unrelated appended material does not make the main report relevant to climate discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T00:29:55Z",
+  "duration_seconds": 5.015,
+  "error": null
+}

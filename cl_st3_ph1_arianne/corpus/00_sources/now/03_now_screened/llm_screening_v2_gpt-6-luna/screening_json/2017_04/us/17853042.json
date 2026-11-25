@@ -1,0 +1,77 @@
+{
+  "article_id": "17853042",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_04/us/17853042.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_04/us/17853042.json"
+  },
+  "manifest_row": {
+    "article_id": "17853042",
+    "group": "2017_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_04/us/17853042.txt",
+    "now_field_2": "1697",
+    "date_original": "17-04-08",
+    "date_iso": "2017-04-08",
+    "source_name": "Los Angeles Times",
+    "url": "http://www.latimes.com/entertainment/music/la-et-ms-rock-hall-pearl-jam-tupac-20170408-story.html",
+    "title": "At Rock &amp; Roll Hall of Fame ceremony, Pearl Jam, Journey and a ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-04.txt\"]",
+    "metadata_article_files": "[\"text-17-04/text_17-04-US.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "climate_role": "background",
+    "main_topic": "The 2017 Rock & Roll Hall of Fame induction ceremony and its performers, tributes, and political commentary.",
+    "climate_relevance": "Pearl Jam singer Eddie Vedder explicitly calls climate change real and urges action to solve it, but climate change is not the article’s main subject.",
+    "reason": "The article is primarily a report on the music ceremony. Vedder’s climate-change statement is meaningful discourse, making the text peripheral rather than an incidental mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "4ac8c852811edb6ef7eb0d9777e49e81aafbfdb67f401ea43e95209a27e89ef1",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "f18b93ee0881e8775aaa167c4b83983bb4e1dcc52c663fc4a83974ba069eaa48",
+    "raw_response_text_sha256": "35855daf92211b93e79c20b31773735f87edcedb2cfc71153ce5ca95a3bc9191"
+  },
+  "api_metadata": {
+    "id": "resp_02c3d4a890feddc1006b06097eeeb087d2be1a937009fcd221",
+    "model": "gpt-6-luna",
+    "created_at": 1795557759.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2812,
+      "input_tokens_details": {
+        "cache_write_tokens": 2809,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2809
+        }
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 3050
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"The 2017 Rock & Roll Hall of Fame induction ceremony and its performers, tributes, and political commentary.\",\n  \"climate_relevance\": \"Pearl Jam singer Eddie Vedder explicitly calls climate change real and urges action to solve it, but climate change is not the article’s main subject.\",\n  \"reason\": \"The article is primarily a report on the music ceremony. Vedder’s climate-change statement is meaningful discourse, making the text peripheral rather than an incidental mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:02:40Z",
+  "duration_seconds": 2.04,
+  "error": null
+}

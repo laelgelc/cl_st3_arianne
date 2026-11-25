@@ -1,0 +1,77 @@
+{
+  "article_id": "40897639",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/my/40897639.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/my/40897639.json"
+  },
+  "manifest_row": {
+    "article_id": "40897639",
+    "group": "2019_04",
+    "country_code": "my",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/my/40897639.txt",
+    "now_field_2": "342",
+    "date_original": "19-04-29",
+    "date_iso": "2019-04-29",
+    "source_name": "The Star Online",
+    "url": "https://www.thestar.com.my/news/nation/2019/04/30/yeo-malaysia-hopes-to-rake-in-rm10bil-in-dubai-expo-next-year/",
+    "title": "Yeo: Malaysia hopes to rake in RM10bil in Dubai expo next year",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-my.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "Malaysia's participation in the Dubai World Expo and its business and investment goals",
+    "climate_relevance": "Climate change appears in the ministry's name, while clean energy and sustainability are mentioned briefly as part of the expo context.",
+    "reason": "The available text contains no meaningful discussion of climate change, its implications, or related policy; the climate references are incidental to an article about the expo.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "93e956f7926296a1d94246c25a280dbf14d867818c0fd8199f6eca4a82251655",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "10384a1a3acef254f544e89a7fff512c1b60c5906378175fb3769eb568f61ce2",
+    "raw_response_text_sha256": "a5d8954b59b2c040e4529fcb1e062a59a73c32886feea966dc683fa93abbc93b"
+  },
+  "api_metadata": {
+    "id": "resp_0300bf0dd50d33ed006b06204487ec87d2aff28f34e89eabf5",
+    "model": "gpt-6-luna",
+    "created_at": 1795563588.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 951,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 1241
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Malaysia's participation in the Dubai World Expo and its business and investment goals\",\n  \"climate_relevance\": \"Climate change appears in the ministry's name, while clean energy and sustainability are mentioned briefly as part of the expo context.\",\n  \"reason\": \"The available text contains no meaningful discussion of climate change, its implications, or related policy; the climate references are incidental to an article about the expo.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:39:50Z",
+  "duration_seconds": 2.302,
+  "error": null
+}

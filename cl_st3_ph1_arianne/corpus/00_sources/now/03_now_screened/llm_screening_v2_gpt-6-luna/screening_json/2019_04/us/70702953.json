@@ -1,0 +1,77 @@
+{
+  "article_id": "70702953",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_04/us/70702953.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_04/us/70702953.json"
+  },
+  "manifest_row": {
+    "article_id": "70702953",
+    "group": "2019_04",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_04/us/70702953.txt",
+    "now_field_2": "406",
+    "date_original": "19-04-20",
+    "date_iso": "2019-04-20",
+    "source_name": "Washington Examiner",
+    "url": "https://www.washingtonexaminer.com/news/mexican-troops-drew-weapons-on-american-soldiers-on-u-s-side-of-the-border",
+    "title": "Mexican troops drew weapons on American soldiers on US side of the ...",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-04.txt\"]",
+    "metadata_article_files": "[\"text-19-04/19-04-us2.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A border incident in which Mexican troops disarmed U.S. soldiers",
+    "climate_relevance": "Climate change appears only in a separate, unrelated sentence about Beto O'Rourke's campaign plan.",
+    "reason": "The identifiable main article concerns a U.S.-Mexico border incident. The climate-policy sentence is an unrelated inserted snippet, not part of the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "52873f0bb973e884e06ed07c17bac1278fe6c8558bb173e9ebe126d896ad4125",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "e5dd588cbc30dfc9684a72d7df3b2869968f9407b61b677142c1bc844821c4ef",
+    "raw_response_text_sha256": "12aa75a45df07c0e76f683907eaad0be39db8443647683cd74ee599376b9eacc"
+  },
+  "api_metadata": {
+    "id": "resp_066fc782f5d74092006b063e9b87b087d1a6882656da4b0cf9",
+    "model": "gpt-6-luna",
+    "created_at": 1795571355.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1018,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 225
+      },
+      "total_tokens": 1390
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A border incident in which Mexican troops disarmed U.S. soldiers\",\n  \"climate_relevance\": \"Climate change appears only in a separate, unrelated sentence about Beto O'Rourke's campaign plan.\",\n  \"reason\": \"The identifiable main article concerns a U.S.-Mexico border incident. The climate-policy sentence is an unrelated inserted snippet, not part of the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:49:18Z",
+  "duration_seconds": 3.176,
+  "error": null
+}

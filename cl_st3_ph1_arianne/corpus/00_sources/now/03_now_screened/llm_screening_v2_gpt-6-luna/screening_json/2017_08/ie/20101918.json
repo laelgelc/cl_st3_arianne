@@ -1,0 +1,77 @@
+{
+  "article_id": "20101918",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_08/ie/20101918.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_08/ie/20101918.json"
+  },
+  "manifest_row": {
+    "article_id": "20101918",
+    "group": "2017_08",
+    "country_code": "ie",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_08/ie/20101918.txt",
+    "now_field_2": "1149",
+    "date_original": "17-08-20",
+    "date_iso": "2017-08-20",
+    "source_name": "Limerick Leader",
+    "url": "http://www.limerickleader.ie/news/patricia-feehily-don-t-mind-me/265435/would-fairies-sink-so-low-to-cause-pot-holes.html",
+    "title": "Would fairies sink so low to cause pot holes?",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-08.txt\"]",
+    "metadata_article_files": "[\"text-17-08/text_17-08-IE.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "climate_role": "passing",
+    "main_topic": "Irish fairy lore, public reactions, and a road pothole",
+    "climate_relevance": "Climate change appears once in a brief conditional aside about tourism, without further discussion of its causes, impacts, or responses.",
+    "reason": "The article is an opinion column about fairy lore and potholes. Its single passing reference to climate change does not provide meaningful material for climate discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "df7d411bf66cbb31ef94ef6a1273fc2ebcc5dad89e4c74696d3aa97e0d3f20c3",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "2f79160489f8f3414cfe1123283b59b805575528fb2f7c5be9028471fe3af5e0",
+    "raw_response_text_sha256": "fe0390f264d9ffaac3deb7980505d24b325e5a90417b7bab435dcf14e6addb74"
+  },
+  "api_metadata": {
+    "id": "resp_0f29d390cab1f272006b060cddea5c87d2b7860481bda17b02",
+    "model": "gpt-6-luna",
+    "created_at": 1795558622.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1933,
+      "input_tokens_details": {
+        "cache_write_tokens": 1930,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1930
+        }
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 2165
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Irish fairy lore, public reactions, and a road pothole\",\n  \"climate_relevance\": \"Climate change appears once in a brief conditional aside about tourism, without further discussion of its causes, impacts, or responses.\",\n  \"reason\": \"The article is an opinion column about fairy lore and potholes. Its single passing reference to climate change does not provide meaningful material for climate discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:17:03Z",
+  "duration_seconds": 2.035,
+  "error": null
+}

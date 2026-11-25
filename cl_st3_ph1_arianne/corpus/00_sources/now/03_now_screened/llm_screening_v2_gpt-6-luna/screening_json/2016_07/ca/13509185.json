@@ -1,0 +1,77 @@
+{
+  "article_id": "13509185",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_07/ca/13509185.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_07/ca/13509185.json"
+  },
+  "manifest_row": {
+    "article_id": "13509185",
+    "group": "2016_07",
+    "country_code": "ca",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_07/ca/13509185.txt",
+    "now_field_2": "247",
+    "date_original": "16-07-25",
+    "date_iso": "2016-07-25",
+    "source_name": "InfoTel News Ltd",
+    "url": "http://infotel.ca/newsitem/rcmp-come-to-the-aid-of-dehydrated-hiker-in-west-kelowna-park/it33006",
+    "title": "RCMP come to the aid of dehydrated hiker in West Kelowna park",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\"]",
+    "metadata_article_files": "[\"text_16-07-qxx/16-07-ca.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "A hiker rescued by police in West Kelowna",
+    "climate_relevance": "Climate change appears only in a separate, truncated opinion snippet after the article and comment-policy text.",
+    "reason": "The identifiable main article is about a hiker rescue and contains no climate discourse. The brief climate-related sentence belongs to an unrelated snippet, so it does not make this article relevant for the corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "be4e7eb7ee06dd9235ccc10804467e14520292b652a7eb7b0be5422de8ea5f60",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "27acc6fa1125d82ff9d147588c09d79ce8ab2780f794ce481f8489c12ecd7584",
+    "raw_response_text_sha256": "be0a48592ce95fbc928942f514199d6b65f9257781e24d9baaf43287118955a7"
+  },
+  "api_metadata": {
+    "id": "resp_07356300089b3bbe006b060516ee6487d2a3b59540d4e5d828",
+    "model": "gpt-6-luna",
+    "created_at": 1795556631.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 827,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 393,
+      "output_tokens_details": {
+        "reasoning_tokens": 244
+      },
+      "total_tokens": 1220
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A hiker rescued by police in West Kelowna\",\n  \"climate_relevance\": \"Climate change appears only in a separate, truncated opinion snippet after the article and comment-policy text.\",\n  \"reason\": \"The identifiable main article is about a hiker rescue and contains no climate discourse. The brief climate-related sentence belongs to an unrelated snippet, so it does not make this article relevant for the corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:43:54Z",
+  "duration_seconds": 3.416,
+  "error": null
+}

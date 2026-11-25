@@ -1,0 +1,77 @@
+{
+  "article_id": "70634532",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2019_03/ph/70634532.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2019_03/ph/70634532.json"
+  },
+  "manifest_row": {
+    "article_id": "70634532",
+    "group": "2019_03",
+    "country_code": "ph",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2019_03/ph/70634532.txt",
+    "now_field_2": "272",
+    "date_original": "19-03-28",
+    "date_iso": "2019-03-28",
+    "source_name": "pageone.ph",
+    "url": "http://pageone.ph/paj-binhi-awards-for-excellence-in-agricultural-journalism-set/",
+    "title": "PAJ Binhi Awards For Excellence In Agricultural Journalism Set",
+    "source_files": "[\"now-sources-2019.txt\", \"sources-19-03.txt\"]",
+    "metadata_article_files": "[\"text-19-03/19-03-ph.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "climate_role": "passing",
+    "main_topic": "Agricultural journalism awards",
+    "climate_relevance": "Climate change appears only as the name of an award category, with no substantive discussion.",
+    "reason": "The article reports on the Binhi Awards and lists a Best Climate Change Story award, but provides no climate-related discourse. An unrelated PAGEONE promotional passage also appears at the end.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "58374b7db9de5e408481057eb142491f5e0e06dcab02d48aff2cc9089ad80295",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "ad9d53ee930003f486e82f54b43cfd25908a70dbfdcb988fbcbcc92fc2701796",
+    "raw_response_text_sha256": "5a64994fffd5340714cd936023e2c2ece81458e1c03669c51d12e648f438f150"
+  },
+  "api_metadata": {
+    "id": "resp_0f587925496be433006b063e235eb487d195118a0a8a543ab6",
+    "model": "gpt-6-luna",
+    "created_at": 1795571235.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 834,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1046
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"Agricultural journalism awards\",\n  \"climate_relevance\": \"Climate change appears only as the name of an award category, with no substantive discussion.\",\n  \"reason\": \"The article reports on the Binhi Awards and lists a Best Climate Change Story award, but provides no climate-related discourse. An unrelated PAGEONE promotional passage also appears at the end.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-25T01:47:17Z",
+  "duration_seconds": 2.213,
+  "error": null
+}

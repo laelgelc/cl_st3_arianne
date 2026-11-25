@@ -1,0 +1,77 @@
+{
+  "article_id": "15795184",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2016_12/au/15795184.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2016_12/au/15795184.json"
+  },
+  "manifest_row": {
+    "article_id": "15795184",
+    "group": "2016_12",
+    "country_code": "au",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2016_12/au/15795184.txt",
+    "now_field_2": "401",
+    "date_original": "16-12-07",
+    "date_iso": "2016-12-07",
+    "source_name": "The Australian Women's Weekly",
+    "url": "http://www.aww.com.au/latest-news/lets-talk/donald-trumps-man-of-the-year-join-list-of-controversial-honours-30037",
+    "title": "Man of the Year: Donald Trump and other controversial TIME ...",
+    "source_files": "[\"now-sources-2016.txt\", \"now_sources_pt2.txt\", \"sources-16-12.txt\"]",
+    "metadata_article_files": "[\"text-16-12/text_16-12-AU.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "climate_role": "passing",
+    "main_topic": "TIME Magazine's Person of the Year selections and their controversial honourees",
+    "climate_relevance": "Climate change is mentioned only in passing while describing TIME's 1988 recognition of The Endangered Earth.",
+    "reason": "The article is about TIME's annual honourees and includes no substantive discussion of climate change, its impacts, or related debate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "ba13e869f7bc48f59a6f4a0e0c4fec71e34f51eacb0ece7fc8c8d0283375c422",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "b9f70cef4e5acc79df3bd89b2c32ddf96fa90f9dd9cba093283ed361b008add2",
+    "raw_response_text_sha256": "376276d7dbdb07f11fabcbd6525186c3b96b728206176f685a323943f6eab493"
+  },
+  "api_metadata": {
+    "id": "resp_0c2d3c2abd64b27d006b060708e91c87d2ad5b88cd9c85f40a",
+    "model": "gpt-6-luna",
+    "created_at": 1795557129.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1030,
+      "input_tokens_details": {
+        "cache_write_tokens": 1027,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1027
+        }
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 1290
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"climate_role\": \"passing\",\n  \"main_topic\": \"TIME Magazine's Person of the Year selections and their controversial honourees\",\n  \"climate_relevance\": \"Climate change is mentioned only in passing while describing TIME's 1988 recognition of The Endangered Earth.\",\n  \"reason\": \"The article is about TIME's annual honourees and includes no substantive discussion of climate change, its impacts, or related debate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T21:52:10Z",
+  "duration_seconds": 2.149,
+  "error": null
+}

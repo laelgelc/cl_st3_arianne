@@ -1,0 +1,77 @@
+{
+  "article_id": "32095268",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2020_09/us/32095268.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2020_09/us/32095268.json"
+  },
+  "manifest_row": {
+    "article_id": "32095268",
+    "group": "2020_09",
+    "country_code": "us",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2020_09/us/32095268.txt",
+    "now_field_2": "903",
+    "date_original": "20-09-20",
+    "date_iso": "2020-09-20",
+    "source_name": "euronews.com",
+    "url": "https://www.euronews.com/living/2020/09/12/zimbabwe-s-bees-are-being-saved-from-extinction-by-an-innovative-new-project",
+    "title": "Zimbabwe's bees are being saved from extinction by an ...",
+    "source_files": "[\"now-sources-2020.txt\", \"sources-20-09.txt\"]",
+    "metadata_article_files": "[\"text-20-09/20-09-us4.txt\"]"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "climate_role": "background",
+    "main_topic": "Bee conservation and a community bee sanctuary in Zimbabwe",
+    "climate_relevance": "The text notes that recurrent droughts are prompting farmers to take up beekeeping and cites climate change among the threats to bees, but does not develop these climate-related points.",
+    "reason": "The article is mainly about protecting bees, supporting beekeepers, and establishing a sanctuary. Climate change and drought appear as meaningful context rather than the central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "e800e8544966ee12d0bd79af1b3ddd198acfc6a521dc846128b1dd990913c7fd",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "d518ea3441d41aaae1b7161792900645fc7c539e0740bd8c2b447f3bf3231c1a",
+    "raw_response_text_sha256": "00b9c39673466110ad479d8f3f9a7edaab16e618b7f2ccde269b4f4ef038b5ba"
+  },
+  "api_metadata": {
+    "id": "resp_0539bcb67a55fef0006b061b32688c87d2872541efc8053abc",
+    "model": "gpt-6-luna",
+    "created_at": 1795562290.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1731,
+      "input_tokens_details": {
+        "cache_write_tokens": 1728,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1728
+        }
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 1962
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"climate_role\": \"background\",\n  \"main_topic\": \"Bee conservation and a community bee sanctuary in Zimbabwe\",\n  \"climate_relevance\": \"The text notes that recurrent droughts are prompting farmers to take up beekeeping and cites climate change among the threats to bees, but does not develop these climate-related points.\",\n  \"reason\": \"The article is mainly about protecting bees, supporting beekeepers, and establishing a sanctuary. Climate change and drought appear as meaningful context rather than the central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T23:18:12Z",
+  "duration_seconds": 2.256,
+  "error": null
+}

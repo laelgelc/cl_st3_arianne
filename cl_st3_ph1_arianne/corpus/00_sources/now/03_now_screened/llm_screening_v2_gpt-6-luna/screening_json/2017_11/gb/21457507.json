@@ -1,0 +1,77 @@
+{
+  "article_id": "21457507",
+  "status": "success",
+  "input": {
+    "manifest_file": "02_now_organised_reconciled/climate_now.ndjson",
+    "article_file": "02_now_organised_reconciled/2017_11/gb/21457507.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "03_now_screened/llm_screening_v2_gpt-6-luna/screening_json/2017_11/gb/21457507.json"
+  },
+  "manifest_row": {
+    "article_id": "21457507",
+    "group": "2017_11",
+    "country_code": "gb",
+    "filepath": "corpus/00_sources/now/02_now_organised_reconciled/2017_11/gb/21457507.txt",
+    "now_field_2": "2723",
+    "date_original": "17-11-02",
+    "date_iso": "2017-11-02",
+    "source_name": "The Independent",
+    "url": "http://www.independent.co.uk/news/uk/politics/theresa-may-sex-mps-tory-sleaze-scandal-defence-secretary-split-gavin-williamson-a8034521.html",
+    "title": "Theresa May struggles to contain sexual harassment scandal as ...",
+    "source_files": "[\"now-sources-2017.txt\", \"sources-17-11.txt\"]",
+    "metadata_article_files": "[\"text-17-11/text_17-11-GB.txt\"]"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.92,
+    "climate_role": "boilerplate_or_unrelated",
+    "main_topic": "UK Conservative Party appointments and a sexual harassment scandal",
+    "climate_relevance": "Climate-related references occur only in unrelated captions in a news-in-pictures gallery, including a mention of COP 23 and an offshore wind farm.",
+    "reason": "The identifiable main article concerns Westminster politics and sexual harassment, not climate change. The climate references are incidental gallery captions and do not provide meaningful climate discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-6-luna",
+    "response_model": "gpt-6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "673fe2b377cb619d61d0e55e35a6b8289d8ad72ed8112bfb86af7dbb0e547864",
+    "article_text_sha256": "742bed5322c872ea9dd831fb1a36300d8f6ea62ac550e95f0d1e4c91423f2f28",
+    "prompt_template_sha256": "c12fdd209c362e61ccbbef74e5bd83cb87755a8a786867d3cab571921253506a",
+    "rendered_prompt_sha256": "238418dbc326577d191e8ac22aefeee8592d3159ef2c11086c7cffd9118b2b32",
+    "raw_response_text_sha256": "2770e4db0343301e8653425f684923c1467f0cd871cba9f4c7c4e0f2881fb6e3"
+  },
+  "api_metadata": {
+    "id": "resp_072dd0a80523b46e006b060ed5e21487d2ac706229c33c8c4b",
+    "model": "gpt-6-luna",
+    "created_at": 1795559125.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4393,
+      "input_tokens_details": {
+        "cache_write_tokens": 4390,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4390
+        }
+      },
+      "output_tokens": 392,
+      "output_tokens_details": {
+        "reasoning_tokens": 240
+      },
+      "total_tokens": 4785
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.92,\n  \"climate_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"UK Conservative Party appointments and a sexual harassment scandal\",\n  \"climate_relevance\": \"Climate-related references occur only in unrelated captions in a news-in-pictures gallery, including a mention of COP 23 and an offshore wind farm.\",\n  \"reason\": \"The identifiable main article concerns Westminster politics and sexual harassment, not climate change. The climate references are incidental gallery captions and do not provide meaningful climate discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-11-24T22:25:28Z",
+  "duration_seconds": 3.054,
+  "error": null
+}
