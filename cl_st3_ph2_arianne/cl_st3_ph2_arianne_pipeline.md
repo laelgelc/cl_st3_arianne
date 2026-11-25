@@ -94,6 +94,8 @@ python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/go
 
 Back up the existing corpus before compilation. The compiler selects approved candidates only and records the seed and candidate manifest hash.
 
+Earlier ONU review bundles use the legacy stratum label `treaty-segment`; the compiler maps ONU treaty candidates to `gov-treaty` without modifying the reviewed manifest or spreadsheet.
+
 ## 2. Tag the corpus
 
 This stage tags the finalized ENADE target corpus with POS tags and lemmas using TreeTagger (`tree-tagger-portuguese2`), producing 3-column tab-delimited files in `corpus/05_enade_tagged/` alongside provenance manifests.

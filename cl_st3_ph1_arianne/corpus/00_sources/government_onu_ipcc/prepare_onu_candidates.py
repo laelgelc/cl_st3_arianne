@@ -119,7 +119,7 @@ def _prepare(metadata, texts, output):
             if not text.strip():
                 diagnostics.append({'issue': 'empty text', 'id': path.stem})
             row = {'schema_version': 1, 'candidate_id': 'onu:' + path.stem,
-                   'stratum': 'treaty-segment', 'actor': 'government', 'register': 'treaty',
+                   'stratum': 'gov-treaty', 'actor': 'government', 'register': 'treaty',
                    'source': treaty[0] if treaty else 'ONU (unverified)', 'source_id': path.stem,
                    'source_url': info.get('source_url'), 'section_reference': match.group(2) if match else None,
                    'subject': subject, 'collection_date': info.get('collection_date'),

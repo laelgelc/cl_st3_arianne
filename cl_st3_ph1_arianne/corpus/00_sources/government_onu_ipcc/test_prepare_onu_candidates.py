@@ -81,3 +81,26 @@ def test_failure_cleans_new_output(tmp_path):
     with pytest.raises(FileNotFoundError):
         adapter.prepare(tmp_path / 'missing', tmp_path, tmp_path / 'out')
     assert not (tmp_path / 'out').exists()
+
+
+def test_treaty_review_compiles_with_canonical_stratum(tmp_path):
+    metadata, texts = fixture(tmp_path)
+    out = tmp_path / 'review'
+    adapter.prepare(metadata, texts, out)
+    rows = read(out / 'candidates.ndjson')
+    assert {row['stratum'] for row in rows} == {'gov-treaty'}
+    book = load_workbook(out / 'review.xlsx')
+    for row in range(2, 5):
+        book.active.cell(row, 4).value = 'approved'
+    book.save(out / 'review.xlsx')
+    reviewed = tmp_path / 'reviewed.ndjson'
+    compiler.import_review(out / 'candidates.ndjson', out / 'review.xlsx', reviewed)
+    # Previously generated ONU bundles used this legacy code.
+    legacy = read(reviewed)
+    for row in legacy:
+        row['stratum'] = 'treaty-segment'
+    reviewed.write_text(''.join(json.dumps(row) + '\n' for row in legacy), encoding='utf-8')
+    corpus = tmp_path / 'corpus'
+    compiler.compile_corpus(reviewed, corpus, 'gov-treaty', 3, 42)
+    assert {row['stratum'] for row in read(corpus / 'manifest.ndjson')} == {'gov-treaty'}
+    assert {row['stratum'] for row in read(reviewed)} == {'treaty-segment'}

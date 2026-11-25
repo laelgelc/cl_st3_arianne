@@ -112,6 +112,10 @@ def compile_corpus(input_path, output, stratum, count, seed, source_quotas=None)
         seen.add(cid)
         if row.get('review_status') not in ('pending', 'approved', 'rejected'):
             raise ValueError(f'Invalid review status for {cid}')
+        # Early ONU review bundles used a noncanonical stratum code.
+        if (row.get('stratum') == 'treaty-segment' and cid.startswith('onu:')
+                and row.get('actor') == 'government' and row.get('register') == 'treaty'):
+            row['stratum'] = 'gov-treaty'
         if row.get('stratum') == stratum and row['review_status'] == 'approved':
             if not all(isinstance(row.get(k), str) and row[k].strip() for k in ('text', 'actor', 'register', 'source', 'source_id')):
                 raise ValueError(f'Incomplete candidate {cid}')
