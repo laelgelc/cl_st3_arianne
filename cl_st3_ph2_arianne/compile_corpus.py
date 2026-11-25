@@ -93,7 +93,7 @@ def import_review(manifest, spreadsheet, output):
             temp.unlink(missing_ok=True)
 
 
-def compile_corpus(input_path, output, stratum, count, seed):
+def compile_corpus(input_path, output, stratum, count, seed, source_quotas=None):
     if count <= 0:
         raise ValueError('Count must be positive')
     data = input_path.read_bytes()
@@ -117,7 +117,18 @@ def compile_corpus(input_path, output, stratum, count, seed):
         raise ValueError(f'Need {count} approved candidates; found {len(candidates)}')
     if not stratum or any(c not in 'abcdefghijklmnopqrstuvwxyz0123456789-' for c in stratum):
         raise ValueError('Invalid stratum code')
-    selected = random.Random(seed).sample(sorted(candidates, key=lambda x: x['candidate_id']), count)
+    rng = random.Random(seed)
+    if source_quotas is None:
+        selected = rng.sample(sorted(candidates, key=lambda x: x['candidate_id']), count)
+    else:
+        if not source_quotas or any(not isinstance(k, str) or not k.strip() or type(v) is not int or v <= 0 for k, v in source_quotas.items()) or sum(source_quotas.values()) != count:
+            raise ValueError('Source quotas must be positive and sum to count')
+        selected = []
+        for source, quota in sorted(source_quotas.items()):
+            pool = sorted((row for row in candidates if row['source'] == source), key=lambda x: x['candidate_id'])
+            if len(pool) < quota:
+                raise ValueError(f'Need {quota} approved candidates for {source}; found {len(pool)}')
+            selected.extend(rng.sample(pool, quota))
     existing = output.exists()
     if existing and output.is_dir() and not output.is_symlink() and not any(output.iterdir()):
         existing = False
@@ -163,6 +174,10 @@ def compile_corpus(input_path, output, stratum, count, seed):
     sampling[stratum] = {'method': 'random.Random.sample over candidate_id sorted approved records',
         'seed': seed, 'stratum': stratum, 'count': count, 'eligible_count': len(candidates),
         'candidate_manifest': str(input_path), 'candidate_sha256': hashlib.sha256(data).hexdigest()}
+    if source_quotas is not None:
+        sampling[stratum]['method'] = 'random.Random.sample within each source in sorted source and candidate_id order'
+        sampling[stratum]['source_quotas'] = dict(sorted(source_quotas.items()))
+        sampling[stratum]['eligible_by_source'] = {source: sum(row['source'] == source for row in candidates) for source in sorted(source_quotas)}
     # Stage all new files before touching an existing corpus. Roll back ordinary
     # publication errors; interrupted processes may require manual recovery.
     with tempfile.TemporaryDirectory(prefix='.compile-', dir=output.parent) as temp:
@@ -205,12 +220,23 @@ def main():
     parser.add_argument('--seed', required=True, type=int)
     parser.add_argument('--review-xlsx', type=Path, help='Import review decisions before sampling')
     parser.add_argument('--reviewed-manifest', type=Path, help='New NDJSON path for validated decisions')
+    parser.add_argument('--source-quota', action='append', metavar='SOURCE=COUNT', help='Sample a fixed count per source; repeat for each source')
     args = parser.parse_args()
     if bool(args.review_xlsx) != bool(args.reviewed_manifest):
         parser.error('--review-xlsx and --reviewed-manifest must be supplied together')
+    quotas = None
+    if args.source_quota:
+        quotas = {}
+        for value in args.source_quota:
+            source, separator, amount = value.rpartition('=')
+            if not separator or not source.strip() or source != source.strip() or not amount.isdecimal() or int(amount) <= 0 or source in quotas:
+                parser.error('Each --source-quota must be a unique SOURCE=positive integer')
+            quotas[source] = int(amount)
+        if sum(quotas.values()) != args.count:
+            parser.error('Source quotas must sum to --count')
     if args.review_xlsx:
         import_review(args.candidates, args.review_xlsx, args.reviewed_manifest)
-    compile_corpus(args.reviewed_manifest or args.candidates, args.output, args.stratum, args.count, args.seed)
+    compile_corpus(args.reviewed_manifest or args.candidates, args.output, args.stratum, args.count, args.seed, quotas)
 
 
 if __name__ == '__main__':

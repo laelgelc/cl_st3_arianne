@@ -16,6 +16,28 @@ def write_rows(path, rows):
     path.write_text(''.join(json.dumps(row) + '\n' for row in rows), encoding='utf-8')
 
 
+def test_source_quotas_sample_deterministically_and_require_approval(tmp_path):
+    rows = [dict(candidate_id=f'{source}:{i}', stratum='ngo-story', review_status='approved',
+                 text='Climate text', actor='NGO', register='story', source=source, source_id=str(i))
+            for source in ('Greenpeace', 'WWF', 'WRI') for i in range(4)]
+    rows[-1]['review_status'] = 'pending'
+    path = tmp_path / 'candidates.ndjson'
+    write_rows(path, rows)
+    quotas = {'Greenpeace': 2, 'WWF': 1, 'WRI': 2}
+    for name in ('one', 'two'):
+        compile_corpus(path, tmp_path / name, 'ngo-story', 5, 42, quotas)
+    result = [json.loads(line) for line in (tmp_path / 'one/manifest.ndjson').read_text().splitlines()]
+    assert (tmp_path / 'one/manifest.ndjson').read_bytes() == (tmp_path / 'two/manifest.ndjson').read_bytes()
+    assert {source: sum(row['source'] == source for row in result) for source in quotas} == quotas
+    sampling = json.loads((tmp_path / 'one/sampling.json').read_text())['strata']['ngo-story']
+    assert sampling['source_quotas'] == quotas and sampling['eligible_by_source']['WRI'] == 3
+    with pytest.raises(ValueError, match='Need 4 approved candidates for WRI'):
+        compile_corpus(path, tmp_path / 'blocked', 'ngo-story', 6, 42, {'Greenpeace': 1, 'WWF': 1, 'WRI': 4})
+    with pytest.raises(ValueError, match='sum to count'):
+        compile_corpus(path, tmp_path / 'blocked', 'ngo-story', 5, 42, {'WRI': 1})
+    assert not (tmp_path / 'blocked').exists()
+
+
 def test_adapter_and_compilation(tmp_path):
     source = tmp_path / 'source.ndjson'
     write_rows(source, [{'_id': str(i), 'text': f'Climate change {i}', 'cdate': 1625164646880} for i in range(4)])

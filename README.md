@@ -16,4 +16,28 @@ Climate-relevance screening with `gpt-6-luna` completed for all 155,597 reconcil
 
 ## Phase 2 - Climate Change Target Corpus organisation and Lexical Multi-dimensional Analysis
 
+The [Phase 2 pipeline](cl_st3_ph2_arianne/cl_st3_ph2_arianne_pipeline.md) documents candidate preparation, review and compilation. Source-specific adapters prepare candidates in Phase 1; a shared compiler selects approved candidates using a recorded random seed and adds each stratum to the target corpus.
+
+GETTR candidates have a review spreadsheet for checking language, duplicates, completeness and provenance. The NOW adapter prepared all 52,308 CORE-classified articles for review; the spreadsheet contains previews, so reviewers must open the linked full texts and check relevance, English, dates, duplicates and completeness. Source files must remain at their recorded paths for validation. Screening is not approval; only manually approved candidates can be sampled. The targets for `social-post` and `press-news` are 200 each, with GETTR provisional.
+
+### Target corpus organisation
+
+Stratum codes combine actor and register: `gov-treaty`, `gov-report`, `press-news`, `ngo-story`, `acad-abstract`, `social-post` and `sceptic-blog`. Sources and generation conditions are recorded separately rather than encoded in the stratum. The compiler currently writes one UTF-8 file per selected human unit under `cl_st3_ph2_arianne/corpus/human/<stratum>/`, alongside `manifest.ndjson` and `sampling.json`. The manifest links stable unit and text IDs to provenance, grouping and length metadata; sampling metadata records the seed and candidate-manifest hash. Adding a new stratum merges the manifest and preserves existing texts; back up the corpus before updating it.
+
+The planned layout places generated texts under `llm/generic/<stratum>/` and `llm/summary-guided/<stratum>/`, and summaries under `summaries/<stratum>/`. Each generated text has its own `text_id` and shares a `unit_id` with its human unit. These outputs, their model allocation and adapters for the remaining sources are still to be implemented. The design targets 1,191 human units and two generated texts per unit; generic texts are paired by assignment, not necessarily by shared content.
+
+```text
+cl_st3_ph2_arianne/corpus/
+├── manifest.ndjson
+├── sampling.json
+├── human/
+│   └── <stratum>/
+├── llm/                         # planned
+│   ├── generic/<stratum>/
+│   └── summary-guided/<stratum>/
+└── summaries/<stratum>/         # planned
+```
+
+For lexical multidimensional analysis, feature measurements will be joined to metadata by `text_id`: binary presence/absence values for analysis, with raw counts and text lengths retained for sensitivity checks. A missing measurement must remain distinct from an absent feature. Token counting, feature extraction and SAS export remain pending.
+
 

@@ -44,6 +44,26 @@ python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/no
 
 At least 200 approvals are needed; the seed is an example. The compiler samples from the approved pool only, not from all CORE classifications. Back up the existing corpus before adding this stratum.
 
+### NGO story candidate preparation and review
+
+From `cl_st3_ph1_arianne/`, to create a new review bundle (requires `openpyxl`):
+
+```shell
+python corpus/00_sources/ngo/prepare_ngo_candidates.py --output-dir corpus/00_sources/ngo/ngo_review
+```
+
+The directory must not already exist. The current bundle has 851 Greenpeace, 72 WWF and 67 WRI in-window candidates, all pending, in `candidates.ndjson` and `review.xlsx`. Paragraphs are reassembled in numbered order separated by blank lines; dates represented in epoch milliseconds are interpreted in UTC, and date-only values have no inferred publication time. Check `stats.json` and `diagnostics.jsonl`: missing or conflicting dates and invalid text are excluded for investigation, and paragraph or metadata conflicts are flagged. The current run reports no diagnostics. Source datasets were collected with different methods; the WRI set is already a provisional sample, not the full population.
+
+The workbook contains previews only. Open every `full_text_path`, check the original article where needed, and review climate relevance, English, date, duplication, complete text and institutional-story eligibility. WRI includes a CNN-linked excerpt; do not assume it is complete. Edit only `review_status` and `review_notes`; keep all other fields and the text files unchanged at their recorded absolute paths. At least 67 Greenpeace, 66 WWF and 67 WRI approvals are needed. Since only 67 WRI candidates exist, any rejection requires an additional eligible WRI story and a revised review bundle before compilation; do not silently relax the quotas.
+
+After review, from `cl_st3_ph2_arianne/`:
+
+```shell
+python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/ngo/ngo_review/candidates.ndjson --review-xlsx ../cl_st3_ph1_arianne/corpus/00_sources/ngo/ngo_review/review.xlsx --reviewed-manifest ../cl_st3_ph1_arianne/corpus/00_sources/ngo/ngo_review/reviewed.ndjson --output corpus --stratum ngo-story --count 200 --seed 42 --source-quota Greenpeace=67 --source-quota WWF=66 --source-quota WRI=67
+```
+
+The compiler samples approved stories separately by source in sorted source order and records quotas, eligible counts and seed in `sampling.json`. The source names must match the candidate manifest exactly. Back up the corpus before adding the stratum.
+
 ### Compile a reviewed stratum
 
 From `cl_st3_ph2_arianne/`, after review:
