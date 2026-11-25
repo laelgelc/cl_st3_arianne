@@ -116,6 +116,26 @@ python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/go
 
 Back up the corpus before compilation. The compiler selects approved candidates only; original-document boundary offsets remain to be verified.
 
+### Academic abstract candidate preparation and review
+
+From `cl_st3_ph1_arianne/`, create a new bundle (requires `openpyxl`):
+
+```shell
+python corpus/00_sources/academia_abstracts_antcorgen/prepare_academic_candidates.py --output-dir corpus/00_sources/academia_abstracts_antcorgen/academic_review
+```
+
+The output directory must not already exist. The current bundle contains 200 pending candidates. Inspect `diagnostics.jsonl`: metadata for `Plos_Abs_011` has no matching text file, and `Plos_Abs_0011.txt` has no matching metadata. Do not assume they correspond; establish the correct source and repair provenance before approving or compiling the affected candidate.
+
+Open each `full_text_path` and verify the complete abstract, source identity, English, climate relevance, duplicates and original publication date. Earlier publications are a permitted timeframe exception; articles published after 30 November 2022 remain outside scope. The collection date is not a publication date. Record verified dates and corrections in `review_notes`; edit only `review_status` and `review_notes`. The spreadsheet shows previews, not full texts. Any rejection or unresolved candidate requires a replacement to reach 200.
+
+After resolving provenance and review, from `cl_st3_ph2_arianne/`:
+
+```shell
+python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/academia_abstracts_antcorgen/academic_review/candidates.ndjson --review-xlsx ../cl_st3_ph1_arianne/corpus/00_sources/academia_abstracts_antcorgen/academic_review/review.xlsx --reviewed-manifest ../cl_st3_ph1_arianne/corpus/00_sources/academia_abstracts_antcorgen/academic_review/reviewed.ndjson --output corpus --stratum acad-abstract --count 200 --seed 42
+```
+
+Back up the corpus before compilation. Only approved candidates are selected; compilation does not independently verify publication dates or provenance.
+
 ## 2. Tag the corpus
 
 This stage tags the finalized ENADE target corpus with POS tags and lemmas using TreeTagger (`tree-tagger-portuguese2`), producing 3-column tab-delimited files in `corpus/05_enade_tagged/` alongside provenance manifests.
