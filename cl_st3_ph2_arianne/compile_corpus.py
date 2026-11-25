@@ -5,6 +5,7 @@ import hashlib
 import json
 import os
 import random
+import re
 import shutil
 import tempfile
 from pathlib import Path
@@ -19,6 +20,7 @@ def import_review(manifest, spreadsheet, output):
     from openpyxl import load_workbook
 
     columns = ('candidate_id', 'text', 'publication_datetime_utc', 'review_status', 'review_notes')
+    linked_columns = ('candidate_id', 'text_preview', 'publication_datetime_utc', 'review_status', 'review_notes', 'text_sha256', 'full_text_path')
     rows = [json.loads(line) for line in manifest.read_text(encoding='utf-8').splitlines() if line.strip()]
     original = {}
     for row in rows:
@@ -31,20 +33,38 @@ def import_review(manifest, spreadsheet, output):
         sheet = workbook['Review']
         iterator = sheet.iter_rows()
         header = next(iterator, ())
-        if tuple(cell.value for cell in header) != columns:
+        header_values = tuple(cell.value for cell in header)
+        if header_values not in (columns, linked_columns):
             raise ValueError('Invalid review columns')
+        linked = header_values == linked_columns
         seen = set()
         for cells in iterator:
             if all(cell.value is None for cell in cells):
                 continue
-            if len(cells) != len(columns) or any(cell.data_type == 'f' for cell in cells):
+            if len(cells) != len(header_values) or any(cell.data_type == 'f' for cell in cells):
                 raise ValueError('Invalid row or formula in review sheet')
-            cid, text, published, status, notes = (cell.value for cell in cells)
+            values = [cell.value for cell in cells]
+            cid, text, published, status, notes = values[:5]
             if not isinstance(cid, str) or cid not in original or cid in seen:
                 raise ValueError(f'Unknown or duplicate candidate ID: {cid}')
             row = original[cid]
             original_text = row.get('text')
-            if normalize_newlines(text) != normalize_newlines(original_text) or published != row.get('publication_datetime_utc'):
+            if linked:
+                if not isinstance(original_text, str):
+                    raise ValueError(f'Invalid source text for {cid}')
+                digest = hashlib.sha256(original_text.encode('utf-8')).hexdigest()
+                path = row.get('review_source_path')
+                preview = normalize_newlines(original_text)[:200]
+                preview = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\ufffe\uffff]', lambda match: f'\\u{ord(match.group()):04x}', preview)
+                if (values[5] != digest or row.get('source_text_sha256') != digest or
+                        not isinstance(path, str) or not Path(path).is_absolute() or values[6] != path or
+                        text != preview):
+                    raise ValueError(f'Changed source data for {cid}')
+                if hashlib.sha256(Path(path).read_bytes()).hexdigest() != digest:
+                    raise ValueError(f'Changed source file for {cid}')
+            elif normalize_newlines(text) != normalize_newlines(original_text):
+                raise ValueError(f'Changed source data for {cid}')
+            if published != row.get('publication_datetime_utc'):
                 raise ValueError(f'Changed source data for {cid}')
             if status not in ('pending', 'approved', 'rejected') or not isinstance(notes, (str, type(None))):
                 raise ValueError(f'Invalid review decision for {cid}')
@@ -63,7 +83,11 @@ def import_review(manifest, spreadsheet, output):
                 out.write(json.dumps(row, ensure_ascii=False) + '\n')
             out.flush()
             os.fsync(out.fileno())
-        os.link(temp, output)
+        try:
+            os.link(temp, output)
+        except FileExistsError:
+            if output.is_symlink() or not output.is_file() or output.read_bytes() != temp.read_bytes():
+                raise FileExistsError(f'Existing reviewed manifest differs: {output}; choose a new --reviewed-manifest path')
     finally:
         if temp is not None:
             temp.unlink(missing_ok=True)
@@ -95,6 +119,8 @@ def compile_corpus(input_path, output, stratum, count, seed):
         raise ValueError('Invalid stratum code')
     selected = random.Random(seed).sample(sorted(candidates, key=lambda x: x['candidate_id']), count)
     existing = output.exists()
+    if existing and output.is_dir() and not output.is_symlink() and not any(output.iterdir()):
+        existing = False
     old_manifest = b''
     old_sampling = None
     records = []

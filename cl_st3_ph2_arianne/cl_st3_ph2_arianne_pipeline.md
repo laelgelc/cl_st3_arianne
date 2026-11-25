@@ -24,6 +24,26 @@ python corpus/00_sources/gettr/prepare_gettr_candidates.py --review-existing
 
 Requires `openpyxl`. Review the XLSX in LibreOffice Calc or Excel, editing only `review_status` (`pending`, `approved`, `rejected`) and `review_notes`; keep all rows, IDs, text and dates unchanged. Save and continue in the same spreadsheet rather than regenerating it. Review every candidate's English, duplication, text completeness and provenance. The source contains apparently imported Twitter posts and timestamps predating GETTR; `cdate` is not proof of a GETTR publication date. The provisional target is 200; no candidate is automatically approved.
 
+### NOW press candidate preparation and review
+
+From `cl_st3_ph1_arianne/`, run the following only if the outputs do not already exist:
+
+```shell
+python corpus/00_sources/now/prepare_now_candidates.py
+```
+
+The screened archive produces `corpus/00_sources/now/now_candidates.ndjson` and `corpus/00_sources/now/now_candidates_review.xlsx`: 52,308 CORE candidates, all pending review. Existing outputs are not overwritten. Requires `openpyxl`. The spreadsheet's `text_preview` is not the full article: open `full_text_path` for the complete text and review climate relevance, English, duplicates, publication date and completeness. The source may contain selected lines rather than complete articles. The date is date-only, not a measured UTC time.
+
+Edit only `review_status` and `review_notes`, keeping all rows and other fields unchanged. Save the workbook as review progresses. Keep the source files at their recorded absolute paths: import checks their contents against the manifest and spreadsheet. No candidate is automatically approved.
+
+After review, from `cl_st3_ph2_arianne/`:
+
+```shell
+python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/now/now_candidates.ndjson --review-xlsx ../cl_st3_ph1_arianne/corpus/00_sources/now/now_candidates_review.xlsx --reviewed-manifest ../cl_st3_ph1_arianne/corpus/00_sources/now/now_candidates_reviewed.ndjson --output corpus --stratum press-news --count 200 --seed 42
+```
+
+At least 200 approvals are needed; the seed is an example. The compiler samples from the approved pool only, not from all CORE classifications. Back up the existing corpus before adding this stratum.
+
 ### Compile a reviewed stratum
 
 From `cl_st3_ph2_arianne/`, after review:
@@ -32,9 +52,9 @@ From `cl_st3_ph2_arianne/`, after review:
 python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates.ndjson --review-xlsx ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates_review.xlsx --reviewed-manifest ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates_reviewed.ndjson --output corpus --stratum social-post --count 200 --seed 42
 ```
 
-The importer validates all IDs and unchanged source fields, allowing only line-ending differences in text, then writes a new NDJSON file without overwriting the original or an existing reviewed copy. Original text is preserved; only decisions and notes are imported. If compilation fails after import, retry with `--candidates` pointing to the reviewed manifest and omit both review options.
+The importer validates all IDs and unchanged source fields, allowing only line-ending differences in full-text spreadsheet cells, then writes a new NDJSON file without overwriting the original or an existing reviewed copy. For source-linked NOW reviews it also checks the original files and their hashes. Original text is preserved; only decisions and notes are imported. A retry reuses an existing reviewed manifest only if it exactly matches the newly validated output. If review decisions or source data have changed, choose a new `--reviewed-manifest` path. Alternatively, retry with `--candidates` pointing to the previously reviewed manifest and omit both review options.
 
-The compiler samples approved candidates uniformly after sorting by ID. To add a future stratum, use its reviewed candidate manifest, its own `--stratum`, `--count` and `--seed`, and the same `--output corpus`. The existing stratum or duplicate IDs are rejected; existing text files are preserved. `manifest.ndjson` is replaced with a merged manifest, and `sampling.json` retains the input hash and settings for each stratum, including legacy single-stratum settings. IDs derive from candidate identity and text hashes support validation. An interrupted update can leave partially published files: back up the corpus before adding a stratum and inspect it before retrying. Do not run multiple compilations concurrently.
+The compiler samples approved candidates uniformly after sorting by ID. The output may be a new or empty directory, or an existing complete corpus. To add a future stratum, use its reviewed candidate manifest, its own `--stratum`, `--count` and `--seed`, and the same `--output corpus`. The existing stratum or duplicate IDs are rejected; existing text files are preserved. `manifest.ndjson` is replaced with a merged manifest, and `sampling.json` retains the input hash and settings for each stratum, including legacy single-stratum settings. IDs derive from candidate identity and text hashes support validation. An interrupted update can leave partially published files: back up the corpus before adding a stratum and inspect it before retrying. Do not run multiple compilations concurrently.
 
 The manifest records word counts using whitespace splitting; token counts are unmeasured (`null`). Later feature extraction must retain raw counts and separate binary presence/absence values keyed by `text_id`, using missing values when a feature cannot be measured. SAS export, model allocation, generated texts, summaries and other source adapters remain pending. The sections below are legacy ENADE material and are not the current climate workflow.
 

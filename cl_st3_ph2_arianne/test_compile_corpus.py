@@ -132,13 +132,37 @@ def test_spreadsheet_review_roundtrip_and_validation(tmp_path):
     assert rows[0]['review_status'] == 'approved' and rows[0]['review_notes'] == 'Reviewed'
     assert rows[0]['text'] == '=Climate change 0'
     compile_corpus(reviewed, tmp_path / 'corpus', 'social-post', 1, 42)
-    with pytest.raises(FileExistsError):
+    import_review(candidates, sheet_path, reviewed)
+    sheet['E2'] = 'Changed decision'
+    book.save(sheet_path)
+    with pytest.raises(FileExistsError, match='reviewed manifest'):
         import_review(candidates, sheet_path, reviewed)
+    assert reviewed.read_text().splitlines()[0] == json.dumps(rows[0], ensure_ascii=False)
     sheet['B2'] = 'altered'
     book.save(sheet_path)
     with pytest.raises(ValueError, match='Changed source'):
         import_review(candidates, sheet_path, tmp_path / 'bad.ndjson')
     assert not (tmp_path / 'bad.ndjson').exists()
+
+
+def test_compile_accepts_empty_directory_but_not_unrelated_contents(tmp_path):
+    source = tmp_path / 'source.ndjson'
+    write_rows(source, [{'_id': '1', 'text': 'Climate change', 'cdate': 1625164646880}])
+    candidates = tmp_path / 'candidates.ndjson'
+    adapter.prepare(source, candidates)
+    row = json.loads(candidates.read_text())
+    row['review_status'] = 'approved'
+    write_rows(candidates, [row])
+    corpus = tmp_path / 'corpus'
+    corpus.mkdir()
+    compile_corpus(candidates, corpus, 'social-post', 1, 42)
+    assert (corpus / 'manifest.ndjson').is_file()
+    other = tmp_path / 'other'
+    other.mkdir()
+    (other / 'keep').write_text('keep')
+    with pytest.raises(ValueError, match='complete corpus'):
+        compile_corpus(candidates, other, 'social-post', 1, 42)
+    assert (other / 'keep').read_text() == 'keep'
 
 
 @pytest.mark.parametrize('change', ['missing', 'duplicate', 'status', 'formula'])
