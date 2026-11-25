@@ -11,6 +11,9 @@ import tempfile
 from pathlib import Path
 
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+
 def normalize_newlines(value):
     return value.replace('\r\n', '\n').replace('\r', '\n') if isinstance(value, str) else value
 
@@ -57,10 +60,10 @@ def import_review(manifest, spreadsheet, output):
                 preview = normalize_newlines(original_text)[:200]
                 preview = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\ufffe\uffff]', lambda match: f'\\u{ord(match.group()):04x}', preview)
                 if (values[5] != digest or row.get('source_text_sha256') != digest or
-                        not isinstance(path, str) or not Path(path).is_absolute() or values[6] != path or
+                        not isinstance(path, str) or not path or values[6] != path or
                         text != preview):
                     raise ValueError(f'Changed source data for {cid}')
-                if hashlib.sha256(Path(path).read_bytes()).hexdigest() != digest:
+                if hashlib.sha256((PROJECT_ROOT / path).read_bytes()).hexdigest() != digest:
                     raise ValueError(f'Changed source file for {cid}')
             elif normalize_newlines(text) != normalize_newlines(original_text):
                 raise ValueError(f'Changed source data for {cid}')
@@ -162,7 +165,12 @@ def compile_corpus(input_path, output, stratum, count, seed, source_quotas=None)
         # Identity derives from source identity rather than sampling order.
         unit = stratum + '-' + hashlib.sha256(row['candidate_id'].encode('utf-8')).hexdigest()
         rel = Path('human') / stratum / (unit + '.txt')
-        manifest.append({**{k: v for k, v in row.items() if k != 'text'},
+        provenance = {k: v for k, v in row.items() if k != 'text'}
+        for field in ('source_manifest', 'review_source_path'):
+            value = provenance.get(field)
+            if isinstance(value, str) and Path(value).is_absolute():
+                provenance[field] = os.path.relpath(value, PROJECT_ROOT)
+        manifest.append({**provenance,
             'unit_id': unit, 'text_id': unit + '-human', 'authorship': 'human',
             'condition': None, 'assigned_model': None, 'filepath': rel.as_posix(),
             'word_count': len(row['text'].split()), 'word_count_method': 'python str.split',
@@ -173,7 +181,7 @@ def compile_corpus(input_path, output, stratum, count, seed, source_quotas=None)
             raise ValueError(f'Duplicate {field} in corpus')
     sampling[stratum] = {'method': 'random.Random.sample over candidate_id sorted approved records',
         'seed': seed, 'stratum': stratum, 'count': count, 'eligible_count': len(candidates),
-        'candidate_manifest': str(input_path), 'candidate_sha256': hashlib.sha256(data).hexdigest()}
+        'candidate_manifest': os.path.relpath(input_path.absolute(), PROJECT_ROOT), 'candidate_sha256': hashlib.sha256(data).hexdigest()}
     if source_quotas is not None:
         sampling[stratum]['method'] = 'random.Random.sample within each source in sorted source and candidate_id order'
         sampling[stratum]['source_quotas'] = dict(sorted(source_quotas.items()))

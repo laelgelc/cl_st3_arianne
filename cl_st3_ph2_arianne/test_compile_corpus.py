@@ -1,5 +1,7 @@
 import importlib.util
+import hashlib
 import json
+import os
 from pathlib import Path
 
 import pytest
@@ -236,3 +238,67 @@ def test_review_accepts_normalized_line_endings_preserving_original(tmp_path):
     book.save(xlsx)
     with pytest.raises(ValueError, match='Changed source'):
         import_review(manifest, xlsx, tmp_path / 'invalid.ndjson')
+
+
+@pytest.mark.parametrize('relative', [True, False])
+def test_linked_review_paths_and_hashes(tmp_path, monkeypatch, relative):
+    from openpyxl import Workbook
+
+    root = Path(__file__).resolve().parents[1]
+    text = 'Climate change\nsecond line'
+    source = tmp_path / 'full.txt'
+    source.write_text(text, encoding='utf-8')
+    path = os.path.relpath(source, root) if relative else str(source)
+    digest = hashlib.sha256(text.encode()).hexdigest()
+    row = dict(candidate_id='one', text=text, publication_datetime_utc='2021-01-01',
+               review_status='pending', review_notes='', review_source_path=path,
+               source_text_sha256=digest, source_manifest=str(tmp_path / 'source.ndjson'),
+               stratum='social-post', actor='a', register='r', source='s', source_id='1')
+    manifest = tmp_path / 'candidates.ndjson'
+    write_rows(manifest, [row])
+    book = Workbook()
+    sheet = book.active
+    sheet.title = 'Review'
+    sheet.append(('candidate_id', 'text_preview', 'publication_datetime_utc', 'review_status', 'review_notes', 'text_sha256', 'full_text_path'))
+    sheet.append(('one', text, '2021-01-01', 'approved', '', digest, path))
+    xlsx = tmp_path / 'review.xlsx'
+    book.save(xlsx)
+    monkeypatch.chdir(tmp_path)
+    reviewed = tmp_path / 'reviewed.ndjson'
+    import_review(manifest, xlsx, reviewed)
+    assert json.loads(reviewed.read_text())['review_source_path'] == path
+    compile_corpus(reviewed, tmp_path / 'corpus', 'social-post', 1, 42)
+    result = json.loads((tmp_path / 'corpus/manifest.ndjson').read_text())
+    assert result['review_source_path'] == os.path.relpath(source, root)
+    assert result['source_manifest'] == os.path.relpath(tmp_path / 'source.ndjson', root)
+    sampling = json.loads((tmp_path / 'corpus/sampling.json').read_text())['strata']['social-post']
+    assert sampling['candidate_manifest'] == os.path.relpath(reviewed, root)
+    assert sampling['candidate_sha256'] == hashlib.sha256(reviewed.read_bytes()).hexdigest()
+
+    sheet['G2'] = str(source) if relative else os.path.relpath(source, root)
+    book.save(xlsx)
+    with pytest.raises(ValueError, match='Changed source data'):
+        import_review(manifest, xlsx, tmp_path / 'bad.ndjson')
+    sheet['G2'] = path
+    book.save(xlsx)
+    source.write_text('changed', encoding='utf-8')
+    with pytest.raises(ValueError, match='Changed source file'):
+        import_review(manifest, xlsx, tmp_path / 'bad.ndjson')
+
+
+def test_corpus_retains_legacy_basename_and_existing_absolute_provenance(tmp_path):
+    row = dict(candidate_id='one', text='Climate text', review_status='approved',
+               stratum='first', actor='a', register='r', source='s', source_id='1',
+               source_manifest='legacy.ndjson', review_source_path='/legacy/full.txt')
+    candidates = tmp_path / 'candidates.ndjson'
+    write_rows(candidates, [row])
+    corpus = tmp_path / 'corpus'
+    compile_corpus(candidates, corpus, 'first', 1, 1)
+    first = json.loads((corpus / 'manifest.ndjson').read_text())
+    assert first['source_manifest'] == 'legacy.ndjson'
+    first['review_source_path'] = '/legacy/full.txt'
+    write_rows(corpus / 'manifest.ndjson', [first])
+    old = (corpus / 'manifest.ndjson').read_bytes()
+    write_rows(candidates, [dict(row, candidate_id='two', stratum='second')])
+    compile_corpus(candidates, corpus, 'second', 1, 1)
+    assert (corpus / 'manifest.ndjson').read_bytes().startswith(old)

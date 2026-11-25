@@ -3,10 +3,12 @@
 import argparse
 import hashlib
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+PROJECT_ROOT = HERE.parents[3]
 REVIEW_COLUMNS = ('candidate_id', 'text', 'publication_datetime_utc', 'review_status', 'review_notes')
 
 
@@ -58,7 +60,7 @@ def prepare(source, output):
             'stratum': 'social-post', 'actor': 'social media', 'register': 'microblog post',
             'source': 'GETTR', 'source_id': post_id, 'source_url': None,
             'publication_datetime_utc': date.isoformat(), 'text': text,
-            'source_manifest': source.name, 'source_sha256': digest,
+            'source_manifest': os.path.relpath(source.resolve(), PROJECT_ROOT), 'source_sha256': digest,
             'review_status': 'pending', 'review_notes': '',
             'review_warning': 'Verify English, duplicates, completeness and GETTR origin; cdate may reflect imported content.'})
     with output.open('x', encoding='utf-8') as out:

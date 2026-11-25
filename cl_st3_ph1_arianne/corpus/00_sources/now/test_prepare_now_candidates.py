@@ -43,6 +43,9 @@ def test_prepare_review_and_compiler(tmp_path):
     assert rows[0]['text'] == '=formula\r\narticle\n'
     assert rows[0]['now_metadata']['country_code'] == 'ph'
     assert rows[0]['llm_screening_metadata']['model'] == 'test'
+    assert not Path(rows[0]['review_source_path']).is_absolute()
+    assert (adapter.PROJECT_ROOT / rows[0]['review_source_path']).resolve() == (tmp_path / '1.txt').resolve()
+    assert (adapter.PROJECT_ROOT / rows[0]['source_manifest']).resolve() == source.resolve()
     assert all(r['review_status'] == 'pending' for r in rows)
     book = load_workbook(review)
     assert book['Review']['B2'].data_type == 's'

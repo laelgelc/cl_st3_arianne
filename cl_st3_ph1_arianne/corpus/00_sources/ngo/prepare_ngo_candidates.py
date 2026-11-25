@@ -8,6 +8,7 @@ Epoch millisecond dates are interpreted in UTC; publication values remain date-o
 import argparse
 import hashlib
 import json
+import os
 import re
 import shutil
 from collections import Counter, defaultdict
@@ -15,6 +16,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+PROJECT_ROOT = HERE.parents[3]
 START, END = date(2015, 11, 1), date(2022, 11, 30)
 COLUMNS = ('candidate_id', 'text_preview', 'publication_datetime_utc', 'review_status', 'review_notes', 'text_sha256', 'full_text_path')
 INVALID_XML = re.compile(r'[\x00-\x08\x0b\x0c\x0e-\x1f\ufffe\uffff]')
@@ -57,7 +59,7 @@ def _prepare(inputs, output, start, end):
         raw = path.read_bytes()
         digest = hashlib.sha256(raw).hexdigest()
         counts = Counter()
-        stats['sources'][source] = {'path': str(path.resolve()), 'sha256': digest, 'counts': counts}
+        stats['sources'][source] = {'path': os.path.relpath(path.resolve(), PROJECT_ROOT), 'sha256': digest, 'counts': counts}
         for number, line in enumerate(raw.splitlines(), 1):
             if not line.strip():
                 continue
@@ -126,13 +128,13 @@ def _prepare(inputs, output, start, end):
             row = {'schema_version': 1, 'candidate_id': cid, 'stratum': 'ngo-story', 'actor': 'NGO', 'register': 'institutional story',
                    'source': str(metadata[0].get('Source') or source), 'source_id': source + ':' + post_id,
                    'source_url': metadata[0].get('Post URL'), 'publication_datetime_utc': published.isoformat(),
-                   'text': text, 'source_manifest': str(Path(inputs[source]).resolve()), 'source_sha256': stats['sources'][source]['sha256'],
-                   'source_text_sha256': text_hash, 'review_source_path': str(text_path),
+                   'text': text, 'source_manifest': os.path.relpath(Path(inputs[source]).resolve(), PROJECT_ROOT), 'source_sha256': stats['sources'][source]['sha256'],
+                   'source_text_sha256': text_hash, 'review_source_path': os.path.relpath(text_path, PROJECT_ROOT),
                    'ngo_metadata': metadata[0], 'source_lines': lines, 'review_status': 'pending', 'review_notes': '',
                    'review_warning': 'Review full text, relevance, date, completeness and duplicates. ' + '; '.join(warnings)}
             manifest.write(json.dumps(row, ensure_ascii=False) + '\n')
             preview = INVALID_XML.sub(lambda m: f'\\u{ord(m.group()):04x}', text.replace('\r\n', '\n').replace('\r', '\n')[:200])
-            values = (cid, preview, published.isoformat(), 'pending', None, text_hash, str(text_path))
+            values = (cid, preview, published.isoformat(), 'pending', None, text_hash, row['review_source_path'])
             if count >= 1048575:
                 raise ValueError('Excel review row limit exceeded')
             cells = []

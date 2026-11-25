@@ -44,6 +44,7 @@ def test_schemas_order_window_long_text_and_import(tmp_path):
     assert rows[0]['publication_datetime_utc'] == '2015-11-01'
     assert all(r['review_status'] == 'pending' for r in rows)
     assert all(r['stratum'] == 'ngo-story' for r in rows)
+    assert all(not Path(r['review_source_path']).is_absolute() and not Path(r['source_manifest']).is_absolute() for r in rows)
     book = load_workbook(out / 'review.xlsx')
     assert book['Review']['B2'].data_type == 's'
     book['Review']['D2'] = 'approved'
@@ -82,7 +83,7 @@ def test_changed_full_text_rejected_and_failure_cleanup(tmp_path):
     out = tmp_path / 'out'
     adapter.prepare({'grp': source}, out)
     row = read(out / 'candidates.ndjson')[0]
-    Path(row['review_source_path']).write_text('changed')
+    (adapter.PROJECT_ROOT / row['review_source_path']).write_text('changed')
     with pytest.raises(ValueError, match='source file'):
         compiler.import_review(out / 'candidates.ndjson', out / 'review.xlsx', tmp_path / 'reviewed')
     with pytest.raises(FileNotFoundError):

@@ -17,6 +17,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 PHASE1 = HERE.parents[2]
+PROJECT_ROOT = HERE.parents[3]
 DEFAULT_INPUT = HERE / '03_now_screened/llm_screening_v2_gpt-6-luna/climate_now_screened.tar.xz'
 REVIEW_COLUMNS = ('candidate_id', 'text_preview', 'publication_datetime_utc', 'review_status', 'review_notes', 'text_sha256', 'full_text_path')
 INVALID_XML = re.compile(r'[\x00-\x08\x0b\x0c\x0e-\x1f\ufffe\uffff]')
@@ -74,9 +75,9 @@ def candidates(archive, base):
                     'stratum': 'press-news', 'actor': 'news media', 'register': 'news article',
                     'source': row['source_name'], 'source_id': article_id, 'source_url': row.get('url'),
                     'publication_datetime_utc': published, 'text': text,
-                    'source_manifest': archive.name, 'source_sha256': digest,
+                    'source_manifest': os.path.relpath(archive.resolve(), PROJECT_ROOT), 'source_sha256': digest,
                     'source_text_sha256': hashlib.sha256(raw).hexdigest(),
-                    'review_source_path': str(article_path),
+                    'review_source_path': os.path.relpath(article_path, PROJECT_ROOT),
                     'now_metadata': {key: value for key, value in row.items() if key not in ('llm_screening', 'llm_screening_metadata')},
                     'llm_screening': screening, 'llm_screening_metadata': row.get('llm_screening_metadata'),
                     'review_status': 'pending', 'review_notes': '',
