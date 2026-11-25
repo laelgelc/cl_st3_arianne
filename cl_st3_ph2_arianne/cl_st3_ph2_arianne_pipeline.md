@@ -24,6 +24,16 @@ python corpus/00_sources/gettr/prepare_gettr_candidates.py --review-existing
 
 Requires `openpyxl`. Review the XLSX in LibreOffice Calc or Excel, editing only `review_status` (`pending`, `approved`, `rejected`) and `review_notes`; keep all rows, IDs, text and dates unchanged. Save and continue in the same spreadsheet rather than regenerating it. Review every candidate's English, duplication, text completeness and provenance. The source contains apparently imported Twitter posts and timestamps predating GETTR; `cdate` is not proof of a GETTR publication date. The provisional target is 200; no candidate is automatically approved.
 
+From `cl_st3_ph2_arianne/`, after review:
+
+```shell
+python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates.ndjson --review-xlsx ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates_review.xlsx --reviewed-manifest ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates_reviewed.ndjson --output corpus --stratum social-post --count 200 --seed 42
+```
+
+The importer validates all IDs and unchanged source fields, allowing only line-ending differences in full-text spreadsheet cells, then writes a new NDJSON file without overwriting the original or an existing reviewed copy. For source-linked NOW reviews it also checks the original files and their hashes. Original text is preserved; only decisions and notes are imported. A retry reuses an existing reviewed manifest only if it exactly matches the newly validated output. If review decisions or source data have changed, choose a new `--reviewed-manifest` path. Alternatively, retry with `--candidates` pointing to the previously reviewed manifest and omit both review options.
+
+The compiler samples approved candidates uniformly after sorting by ID. The output may be a new or empty directory, or an existing complete corpus. To add a future stratum, use its reviewed candidate manifest, its own `--stratum`, `--count` and `--seed`, and the same `--output corpus`. The existing stratum or duplicate IDs are rejected; existing text files are preserved. `manifest.ndjson` is replaced with a merged manifest, and `sampling.json` retains the input hash and settings for each stratum, including legacy single-stratum settings. IDs derive from candidate identity and text hashes support validation. An interrupted update can leave partially published files: back up the corpus before adding a stratum and inspect it before retrying. Do not run multiple compilations concurrently.
+
 ### NOW press candidate preparation and review
 
 From `cl_st3_ph1_arianne/`, run the following only if the outputs do not already exist:
@@ -63,28 +73,6 @@ python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/ng
 ```
 
 The compiler samples approved stories separately by source in sorted source order and records quotas, eligible counts and seed in `sampling.json`. The source names must match the candidate manifest exactly. Back up the corpus before adding the stratum.
-
-### Compile a reviewed stratum
-
-From `cl_st3_ph2_arianne/`, after review:
-
-```shell
-python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates.ndjson --review-xlsx ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates_review.xlsx --reviewed-manifest ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates_reviewed.ndjson --output corpus --stratum social-post --count 200 --seed 42
-```
-
-The importer validates all IDs and unchanged source fields, allowing only line-ending differences in full-text spreadsheet cells, then writes a new NDJSON file without overwriting the original or an existing reviewed copy. For source-linked NOW reviews it also checks the original files and their hashes. Original text is preserved; only decisions and notes are imported. A retry reuses an existing reviewed manifest only if it exactly matches the newly validated output. If review decisions or source data have changed, choose a new `--reviewed-manifest` path. Alternatively, retry with `--candidates` pointing to the previously reviewed manifest and omit both review options.
-
-The compiler samples approved candidates uniformly after sorting by ID. The output may be a new or empty directory, or an existing complete corpus. To add a future stratum, use its reviewed candidate manifest, its own `--stratum`, `--count` and `--seed`, and the same `--output corpus`. The existing stratum or duplicate IDs are rejected; existing text files are preserved. `manifest.ndjson` is replaced with a merged manifest, and `sampling.json` retains the input hash and settings for each stratum, including legacy single-stratum settings. IDs derive from candidate identity and text hashes support validation. An interrupted update can leave partially published files: back up the corpus before adding a stratum and inspect it before retrying. Do not run multiple compilations concurrently.
-
-### Path portability and existing artifacts
-
-New candidate `source_manifest` and `review_source_path` fields, review workbook `full_text_path` cells, and new `sampling.json` `candidate_manifest` entries are relative to the project root (the directory containing both phase directories). Resolve them against that root, not the current working directory. Corpus `filepath` remains relative to the corpus directory. External inputs expressed with `..` are portable only if their relative placement is preserved. Existing absolute review paths remain supported on the original machine.
-
-Existing artifacts are not automatically rewritten. Back them up before migrating: in `now/now_candidates.ndjson`, `now/now_candidates_reviewed.ndjson`, `ngo/ngo_review/candidates.ndjson`, and `ngo/ngo_review/reviewed.ndjson`, replace the old project-root prefix in `review_source_path` and `source_manifest` where present. Make the same replacement in the `full_text_path` column of `now/now_candidates_review.xlsx` and `ngo/ngo_review/review.xlsx`; the workbook and candidate manifest values must match exactly. Preserve review decisions, all other fields, and source files. `ngo/ngo_review/stats.json` also records source paths.
-
-For `corpus/manifest.ndjson`, migrate the same absolute fields; legacy `source_manifest` basenames for GETTR and NOW can be replaced with their verified project-root-relative source paths. Existing `corpus/sampling.json` candidate paths are relative to the Phase 2 directory, unlike newly written entries; convert them to project-root-relative paths if migrating. Its `candidate_sha256` records the bytes actually sampled: retain the original reviewed manifests unchanged as archival evidence, because changing any of them changes their hashes. Use migrated copies for future imports and choose a new reviewed-manifest filename if its contents differ. Do not regenerate review workbooks over existing decisions.
-
-The manifest records word counts using whitespace splitting; token counts are unmeasured (`null`). Later feature extraction must retain raw counts and separate binary presence/absence values keyed by `text_id`, using missing values when a feature cannot be measured. SAS export, model allocation, generated texts, summaries and other source adapters remain pending. The sections below are legacy ENADE material and are not the current climate workflow.
 
 ## 2. Tag the corpus
 
