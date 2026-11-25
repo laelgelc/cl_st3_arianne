@@ -74,6 +74,26 @@ python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/ng
 
 The compiler samples approved stories separately by source in sorted source order and records quotas, eligible counts and seed in `sampling.json`. The source names must match the candidate manifest exactly. Back up the corpus before adding the stratum.
 
+### Government treaty candidate preparation and review
+
+From `cl_st3_ph1_arianne/`, create a new bundle (requires `openpyxl`):
+
+```shell
+python corpus/00_sources/government_onu_ipcc/prepare_onu_candidates.py --output-dir corpus/00_sources/government_onu_ipcc/onu_review
+```
+
+The output directory must not already exist. The current bundle contains 84 pending candidates in `candidates.ndjson` and `review.xlsx`; `diagnostics.jsonl` flags missing `ONU_037` and `ONU_086`. Check these against the metadata and obtain replacements if needed. The 1992 UNFCCC and 1997 Kyoto Protocol are permitted exceptions to the research timeframe; the metadata collection date is not a publication date.
+
+Open each `full_text_path` and verify the text, completeness, boundaries, section and source against the official document. The spreadsheet contains previews only; edit only `review_status` and `review_notes` and keep source files and other fields unchanged. No candidate is automatically approved. Since the pool equals the target, any rejection requires a replacement before compiling 84 units; original-document boundary offsets remain to be verified.
+
+After review, from `cl_st3_ph2_arianne/`:
+
+```shell
+python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/government_onu_ipcc/onu_review/candidates.ndjson --review-xlsx ../cl_st3_ph1_arianne/corpus/00_sources/government_onu_ipcc/onu_review/review.xlsx --reviewed-manifest ../cl_st3_ph1_arianne/corpus/00_sources/government_onu_ipcc/onu_review/reviewed.ndjson --output corpus --stratum gov-treaty --count 84 --seed 42
+```
+
+Back up the existing corpus before compilation. The compiler selects approved candidates only and records the seed and candidate manifest hash.
+
 ## 2. Tag the corpus
 
 This stage tags the finalized ENADE target corpus with POS tags and lemmas using TreeTagger (`tree-tagger-portuguese2`), producing 3-column tab-delimited files in `corpus/05_enade_tagged/` alongside provenance manifests.
