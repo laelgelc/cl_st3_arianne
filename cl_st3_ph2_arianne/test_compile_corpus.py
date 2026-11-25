@@ -51,6 +51,66 @@ def test_invalid_source_and_duplicate_candidates(tmp_path):
         adapter.prepare(source, tmp_path / 'out')
 
 
+def test_add_stratum_preserves_legacy_corpus_and_rejects_duplicates(tmp_path):
+    source = tmp_path / 'source.ndjson'
+    write_rows(source, [{'_id': '1', 'text': 'Climate change', 'cdate': 1625164646880}])
+    candidates = tmp_path / 'candidates.ndjson'
+    adapter.prepare(source, candidates)
+    row = json.loads(candidates.read_text())
+    row['review_status'] = 'approved'
+    write_rows(candidates, [row])
+    corpus = tmp_path / 'corpus'
+    compile_corpus(candidates, corpus, 'social-post', 1, 42)
+    first = (corpus / 'manifest.ndjson').read_bytes()
+    first_record = json.loads(first)
+    first_text = (corpus / first_record['filepath']).read_bytes()
+    original_sampling = json.loads((corpus / 'sampling.json').read_text())['strata']['social-post']
+    (corpus / 'sampling.json').write_text(json.dumps(original_sampling))
+    other = dict(row, candidate_id='other:1', stratum='press-news')
+    write_rows(candidates, [other])
+    compile_corpus(candidates, corpus, 'press-news', 1, 7)
+    result = (corpus / 'manifest.ndjson').read_bytes()
+    assert result.startswith(first) and len(result.splitlines()) == 2
+    assert (corpus / first_record['filepath']).read_bytes() == first_text
+    sampling = json.loads((corpus / 'sampling.json').read_text())['strata']
+    assert sampling['social-post'] == original_sampling
+    assert sampling['press-news']['seed'] == 7
+    with pytest.raises(FileExistsError):
+        compile_corpus(candidates, corpus, 'press-news', 1, 7)
+    write_rows(candidates, [dict(other, candidate_id=row['candidate_id'], stratum='ngo-story')])
+    with pytest.raises(ValueError, match='Candidate ID already exists'):
+        compile_corpus(candidates, corpus, 'ngo-story', 1, 7)
+    assert (corpus / 'manifest.ndjson').read_bytes() == result
+
+
+def test_add_stratum_rolls_back_publication_failure(tmp_path, monkeypatch):
+    import compile_corpus as compiler
+
+    source = tmp_path / 'source.ndjson'
+    write_rows(source, [{'_id': '1', 'text': 'Climate change', 'cdate': 1625164646880}])
+    candidates = tmp_path / 'candidates.ndjson'
+    adapter.prepare(source, candidates)
+    row = json.loads(candidates.read_text())
+    row['review_status'] = 'approved'
+    write_rows(candidates, [row])
+    corpus = tmp_path / 'corpus'
+    compile_corpus(candidates, corpus, 'social-post', 1, 42)
+    before = [(corpus / name).read_bytes() for name in ('manifest.ndjson', 'sampling.json')]
+    write_rows(candidates, [dict(row, candidate_id='other', stratum='press-news')])
+    replace = compiler.os.replace
+
+    def fail_sampling(src, dst):
+        if Path(dst).name == 'sampling.json':
+            raise OSError('simulated failure')
+        return replace(src, dst)
+
+    monkeypatch.setattr(compiler.os, 'replace', fail_sampling)
+    with pytest.raises(OSError, match='simulated'):
+        compile_corpus(candidates, corpus, 'press-news', 1, 7)
+    assert [(corpus / name).read_bytes() for name in ('manifest.ndjson', 'sampling.json')] == before
+    assert not (corpus / 'human/press-news').exists()
+
+
 def test_spreadsheet_review_roundtrip_and_validation(tmp_path):
     from openpyxl import load_workbook
 

@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Compile a seeded sample of approved candidates to a new corpus directory."""
+"""Compile a seeded sample of approved candidates into a corpus directory."""
 import argparse
 import hashlib
 import json
 import os
 import random
+import shutil
 import tempfile
 from pathlib import Path
 
@@ -93,27 +94,80 @@ def compile_corpus(input_path, output, stratum, count, seed):
     if not stratum or any(c not in 'abcdefghijklmnopqrstuvwxyz0123456789-' for c in stratum):
         raise ValueError('Invalid stratum code')
     selected = random.Random(seed).sample(sorted(candidates, key=lambda x: x['candidate_id']), count)
-    output.mkdir(parents=True, exist_ok=False)
-    target = output / 'human' / stratum
-    target.mkdir(parents=True)
+    existing = output.exists()
+    old_manifest = b''
+    old_sampling = None
+    records = []
+    sampling = {}
+    if existing:
+        if not output.is_dir() or not (output / 'manifest.ndjson').is_file() or not (output / 'sampling.json').is_file():
+            raise ValueError('Existing output is not a complete corpus')
+        old_manifest = (output / 'manifest.ndjson').read_bytes()
+        records = [json.loads(line) for line in old_manifest.decode('utf-8').splitlines() if line.strip()]
+        old_sampling = (output / 'sampling.json').read_bytes()
+        previous = json.loads(old_sampling)
+        if 'stratum' in previous:
+            sampling = {previous['stratum']: previous}
+        else:
+            sampling = previous['strata']
+        if stratum in sampling or any(row.get('stratum') == stratum for row in records) or (output / 'human' / stratum).exists():
+            raise FileExistsError(f'Stratum already exists: {stratum}')
+        for field in ('candidate_id', 'unit_id', 'text_id', 'filepath'):
+            values = [row.get(field) for row in records]
+            if any(not isinstance(value, str) or not value for value in values) or len(values) != len(set(values)):
+                raise ValueError(f'Invalid or duplicate existing {field}')
+        if {row['candidate_id'] for row in selected} & {row['candidate_id'] for row in records}:
+            raise ValueError('Candidate ID already exists in corpus')
+    else:
+        output.parent.mkdir(parents=True, exist_ok=True)
     manifest = []
     for row in selected:
         # Identity derives from source identity rather than sampling order.
         unit = stratum + '-' + hashlib.sha256(row['candidate_id'].encode('utf-8')).hexdigest()
         rel = Path('human') / stratum / (unit + '.txt')
-        (output / rel).write_text(row['text'], encoding='utf-8')
         manifest.append({**{k: v for k, v in row.items() if k != 'text'},
             'unit_id': unit, 'text_id': unit + '-human', 'authorship': 'human',
             'condition': None, 'assigned_model': None, 'filepath': rel.as_posix(),
             'word_count': len(row['text'].split()), 'word_count_method': 'python str.split',
             'token_count': None, 'token_count_method': None,
             'text_sha256': hashlib.sha256(row['text'].encode('utf-8')).hexdigest()})
-    with (output / 'manifest.ndjson').open('x', encoding='utf-8') as out:
-        for row in manifest:
-            out.write(json.dumps(row, ensure_ascii=False) + '\n')
-    (output / 'sampling.json').write_text(json.dumps({'method': 'random.Random.sample over candidate_id sorted approved records',
+    for field in ('unit_id', 'text_id', 'filepath'):
+        if {row[field] for row in manifest} & {row[field] for row in records}:
+            raise ValueError(f'Duplicate {field} in corpus')
+    sampling[stratum] = {'method': 'random.Random.sample over candidate_id sorted approved records',
         'seed': seed, 'stratum': stratum, 'count': count, 'eligible_count': len(candidates),
-        'candidate_manifest': str(input_path), 'candidate_sha256': hashlib.sha256(data).hexdigest()}, indent=2) + '\n', encoding='utf-8')
+        'candidate_manifest': str(input_path), 'candidate_sha256': hashlib.sha256(data).hexdigest()}
+    # Stage all new files before touching an existing corpus. Roll back ordinary
+    # publication errors; interrupted processes may require manual recovery.
+    with tempfile.TemporaryDirectory(prefix='.compile-', dir=output.parent) as temp:
+        stage = Path(temp)
+        target = stage / 'human' / stratum
+        target.mkdir(parents=True)
+        for row, item in zip(selected, manifest):
+            (stage / item['filepath']).write_text(row['text'], encoding='utf-8')
+        merged = old_manifest + (b'\n' if old_manifest and not old_manifest.endswith(b'\n') else b'')
+        merged += ''.join(json.dumps(row, ensure_ascii=False) + '\n' for row in manifest).encode('utf-8')
+        (stage / 'manifest.ndjson').write_bytes(merged)
+        (stage / 'sampling.json').write_text(json.dumps({'strata': sampling}, indent=2) + '\n', encoding='utf-8')
+        if not existing:
+            os.rename(stage, output)
+            return
+        human = output / 'human'
+        if not human.is_dir():
+            raise ValueError('Existing corpus has no human directory')
+        destination = human / stratum
+        moved = False
+        try:
+            os.rename(target, destination)
+            moved = True
+            os.replace(stage / 'manifest.ndjson', output / 'manifest.ndjson')
+            os.replace(stage / 'sampling.json', output / 'sampling.json')
+        except Exception:
+            if moved:
+                shutil.rmtree(destination)
+            (output / 'manifest.ndjson').write_bytes(old_manifest)
+            (output / 'sampling.json').write_bytes(old_sampling)
+            raise
 
 
 def main():
