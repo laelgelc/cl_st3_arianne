@@ -3,8 +3,64 @@
 import argparse
 import hashlib
 import json
+import os
 import random
+import tempfile
 from pathlib import Path
+
+
+def import_review(manifest, spreadsheet, output):
+    """Validate the entire review sheet before publishing a new manifest."""
+    from openpyxl import load_workbook
+
+    columns = ('candidate_id', 'text', 'publication_datetime_utc', 'review_status', 'review_notes')
+    rows = [json.loads(line) for line in manifest.read_text(encoding='utf-8').splitlines() if line.strip()]
+    original = {}
+    for row in rows:
+        cid = row.get('candidate_id')
+        if not isinstance(cid, str) or not cid or cid in original:
+            raise ValueError('Candidate IDs must be unique nonempty strings')
+        original[cid] = row
+    workbook = load_workbook(spreadsheet, data_only=False, read_only=True)
+    try:
+        sheet = workbook['Review']
+        iterator = sheet.iter_rows()
+        header = next(iterator, ())
+        if tuple(cell.value for cell in header) != columns:
+            raise ValueError('Invalid review columns')
+        seen = set()
+        for cells in iterator:
+            if all(cell.value is None for cell in cells):
+                continue
+            if len(cells) != len(columns) or any(cell.data_type == 'f' for cell in cells):
+                raise ValueError('Invalid row or formula in review sheet')
+            cid, text, published, status, notes = (cell.value for cell in cells)
+            if not isinstance(cid, str) or cid not in original or cid in seen:
+                raise ValueError(f'Unknown or duplicate candidate ID: {cid}')
+            row = original[cid]
+            if text != row.get('text') or published != row.get('publication_datetime_utc'):
+                raise ValueError(f'Changed source data for {cid}')
+            if status not in ('pending', 'approved', 'rejected') or not isinstance(notes, (str, type(None))):
+                raise ValueError(f'Invalid review decision for {cid}')
+            seen.add(cid)
+            row['review_status'], row['review_notes'] = status, notes or ''
+        if seen != set(original):
+            raise ValueError('Review sheet is missing candidate IDs')
+    finally:
+        workbook.close()
+    # Publish a complete new file without overwriting existing review decisions.
+    temp = None
+    try:
+        with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=output.parent, delete=False) as out:
+            temp = Path(out.name)
+            for row in rows:
+                out.write(json.dumps(row, ensure_ascii=False) + '\n')
+            out.flush()
+            os.fsync(out.fileno())
+        os.link(temp, output)
+    finally:
+        if temp is not None:
+            temp.unlink(missing_ok=True)
 
 
 def compile_corpus(input_path, output, stratum, count, seed):
@@ -62,8 +118,14 @@ def main():
     parser.add_argument('--stratum', required=True)
     parser.add_argument('--count', required=True, type=int)
     parser.add_argument('--seed', required=True, type=int)
+    parser.add_argument('--review-xlsx', type=Path, help='Import review decisions before sampling')
+    parser.add_argument('--reviewed-manifest', type=Path, help='New NDJSON path for validated decisions')
     args = parser.parse_args()
-    compile_corpus(args.candidates, args.output, args.stratum, args.count, args.seed)
+    if bool(args.review_xlsx) != bool(args.reviewed_manifest):
+        parser.error('--review-xlsx and --reviewed-manifest must be supplied together')
+    if args.review_xlsx:
+        import_review(args.candidates, args.review_xlsx, args.reviewed_manifest)
+    compile_corpus(args.reviewed_manifest or args.candidates, args.output, args.stratum, args.count, args.seed)
 
 
 if __name__ == '__main__':

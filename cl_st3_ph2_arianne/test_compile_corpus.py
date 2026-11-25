@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from compile_corpus import compile_corpus
+from compile_corpus import compile_corpus, import_review
 
 ADAPTER = Path(__file__).resolve().parents[1] / 'cl_st3_ph1_arianne/corpus/00_sources/gettr/prepare_gettr_candidates.py'
 spec = importlib.util.spec_from_file_location('adapter', ADAPTER)
@@ -49,3 +49,60 @@ def test_invalid_source_and_duplicate_candidates(tmp_path):
     write_rows(source, [dict(row, cdate=0)])
     with pytest.raises(ValueError, match='outside'):
         adapter.prepare(source, tmp_path / 'out')
+
+
+def test_spreadsheet_review_roundtrip_and_validation(tmp_path):
+    from openpyxl import load_workbook
+
+    source = tmp_path / 'source.ndjson'
+    write_rows(source, [{'_id': str(i), 'text': '=Climate change ' + str(i), 'cdate': 1625164646880} for i in range(2)])
+    candidates = tmp_path / 'candidates.ndjson'
+    adapter.prepare(source, candidates)
+    sheet_path = tmp_path / 'review.xlsx'
+    adapter.export_review(candidates, sheet_path)
+    book = load_workbook(sheet_path)
+    sheet = book['Review']
+    assert sheet['B2'].data_type == 's'
+    sheet['D2'] = 'approved'
+    sheet['E2'] = 'Reviewed'
+    book.save(sheet_path)
+    reviewed = tmp_path / 'reviewed.ndjson'
+    import_review(candidates, sheet_path, reviewed)
+    rows = [json.loads(line) for line in reviewed.read_text().splitlines()]
+    assert rows[0]['review_status'] == 'approved' and rows[0]['review_notes'] == 'Reviewed'
+    assert rows[0]['text'] == '=Climate change 0'
+    compile_corpus(reviewed, tmp_path / 'corpus', 'social-post', 1, 42)
+    with pytest.raises(FileExistsError):
+        import_review(candidates, sheet_path, reviewed)
+    sheet['B2'] = 'altered'
+    book.save(sheet_path)
+    with pytest.raises(ValueError, match='Changed source'):
+        import_review(candidates, sheet_path, tmp_path / 'bad.ndjson')
+    assert not (tmp_path / 'bad.ndjson').exists()
+
+
+@pytest.mark.parametrize('change', ['missing', 'duplicate', 'status', 'formula'])
+def test_review_rejects_bad_decisions(tmp_path, change):
+    from openpyxl import load_workbook
+
+    source = tmp_path / 'source.ndjson'
+    write_rows(source, [{'_id': str(i), 'text': 'Climate change', 'cdate': 1625164646880} for i in range(2)])
+    manifest = tmp_path / 'candidates.ndjson'
+    adapter.prepare(source, manifest)
+    xlsx = tmp_path / 'review.xlsx'
+    adapter.export_review(manifest, xlsx)
+    book = load_workbook(xlsx)
+    sheet = book['Review']
+    if change == 'missing':
+        sheet.delete_rows(3)
+    elif change == 'duplicate':
+        sheet['A3'] = sheet['A2'].value
+    elif change == 'status':
+        sheet['D2'] = 'yes'
+    else:
+        sheet['E2'] = '=1+1'
+    book.save(xlsx)
+    output = tmp_path / 'invalid.ndjson'
+    with pytest.raises(ValueError):
+        import_review(manifest, xlsx, output)
+    assert not output.exists()

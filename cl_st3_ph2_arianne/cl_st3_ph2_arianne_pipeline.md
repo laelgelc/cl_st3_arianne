@@ -16,17 +16,23 @@ From `cl_st3_ph1_arianne/`, run:
 python corpus/00_sources/gettr/prepare_gettr_candidates.py
 ```
 
-The output is `corpus/00_sources/gettr/gettr_candidates.ndjson`; the command refuses to overwrite an existing file. Review every candidate's English, duplication, text completeness and provenance. The source contains apparently imported Twitter posts and timestamps predating GETTR; `cdate` is not proof of a GETTR publication date. Decide eligibility before marking `review_status` as `approved` or `rejected` and recording the rationale in `review_notes`. Preserve the source text and identity. The provisional target is 200; no candidate is automatically approved.
+The outputs are `corpus/00_sources/gettr/gettr_candidates.ndjson` and `corpus/00_sources/gettr/gettr_candidates_review.xlsx`; existing files are not overwritten. To export an existing candidate manifest without regenerating it, use:
+
+```shell
+python corpus/00_sources/gettr/prepare_gettr_candidates.py --review-existing
+```
+
+Requires `openpyxl`. Review the XLSX in LibreOffice Calc or Excel, editing only `review_status` (`pending`, `approved`, `rejected`) and `review_notes`; keep all rows, IDs, text and dates unchanged. Save and continue in the same spreadsheet rather than regenerating it. Review every candidate's English, duplication, text completeness and provenance. The source contains apparently imported Twitter posts and timestamps predating GETTR; `cdate` is not proof of a GETTR publication date. The provisional target is 200; no candidate is automatically approved.
 
 ### Compile a reviewed stratum
 
 From `cl_st3_ph2_arianne/`, after review:
 
 ```shell
-python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates.ndjson --output corpus --stratum social-post --count 200 --seed 42
+python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates.ndjson --review-xlsx ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates_review.xlsx --reviewed-manifest ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates_reviewed.ndjson --output corpus --stratum social-post --count 200 --seed 42
 ```
 
-The compiler samples approved candidates uniformly after sorting by ID; seed 42 is an example to record and agree upon. It requires a **new output directory** and refuses an insufficient approved pool or an existing directory. If `corpus/` already exists, choose another new directory; combining additional strata into an existing corpus is not yet implemented. Output includes `human/social-post/` text files, `manifest.ndjson` and `sampling.json` with the input hash and sampling settings. IDs derive from candidate identity, and text hashes support validation.
+The importer validates all IDs and unchanged source fields, then atomically writes a new NDJSON file without overwriting the original or an existing reviewed copy. Only decisions and notes are imported. The compiler samples approved candidates uniformly after sorting by ID; seed 42 is an example to record and agree upon. It requires a **new output directory** and refuses an insufficient approved pool or an existing directory. If compilation fails after import, the reviewed manifest remains: retry with `--candidates` pointing to it and omit both review options, or choose a new reviewed-manifest filename after further spreadsheet edits. If `corpus/` already exists, choose another new directory; combining additional strata into an existing corpus is not yet implemented. Output includes `human/social-post/` text files, `manifest.ndjson` and `sampling.json` with the reviewed input hash and sampling settings. IDs derive from candidate identity, and text hashes support validation.
 
 The manifest records word counts using whitespace splitting; token counts are unmeasured (`null`). Later feature extraction must retain raw counts and separate binary presence/absence values keyed by `text_id`, using missing values when a feature cannot be measured. SAS export, model allocation, generated texts, summaries and other source adapters remain pending. The sections below are legacy ENADE material and are not the current climate workflow.
 

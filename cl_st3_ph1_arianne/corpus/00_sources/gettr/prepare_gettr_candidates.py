@@ -7,6 +7,33 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+REVIEW_COLUMNS = ('candidate_id', 'text', 'publication_datetime_utc', 'review_status', 'review_notes')
+
+
+def export_review(manifest, output):
+    from openpyxl import Workbook
+    from openpyxl.worksheet.datavalidation import DataValidation
+
+    rows = [json.loads(line) for line in manifest.read_text(encoding='utf-8').splitlines() if line.strip()]
+    ids = [row['candidate_id'] for row in rows]
+    if len(set(ids)) != len(ids):
+        raise ValueError('Duplicate candidate IDs')
+    workbook = Workbook()
+    sheet = workbook.active
+    sheet.title = 'Review'
+    sheet.append(REVIEW_COLUMNS)
+    for row in rows:
+        sheet.append([row.get(key) or '' for key in REVIEW_COLUMNS])
+        for cell in sheet[sheet.max_row]:
+            if isinstance(cell.value, str):
+                cell.data_type = 's'  # Never interpret source text as an Excel formula.
+    validation = DataValidation(type='list', formula1='"pending,approved,rejected"')
+    sheet.add_data_validation(validation)
+    validation.add(f'D2:D{max(2, len(rows) + 1)}')
+    sheet.freeze_panes = 'A2'
+    sheet.auto_filter.ref = sheet.dimensions
+    with output.open('xb') as destination:
+        workbook.save(destination)
 
 
 def prepare(source, output):
@@ -44,8 +71,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--input', type=Path, default=HERE / 'gettr.ndjson')
     parser.add_argument('--output', type=Path, default=HERE / 'gettr_candidates.ndjson')
+    parser.add_argument('--review-xlsx', type=Path, default=HERE / 'gettr_candidates_review.xlsx')
+    parser.add_argument('--review-existing', action='store_true', help='Export an existing --output manifest without regenerating it')
     args = parser.parse_args()
-    print(f'Prepared {prepare(args.input, args.output)} candidates for review')
+    if not args.review_existing:
+        if args.review_xlsx.exists():
+            raise FileExistsError(args.review_xlsx)
+        print(f'Prepared {prepare(args.input, args.output)} candidates for review')
+    export_review(args.output, args.review_xlsx)
+    print(f'Review spreadsheet: {args.review_xlsx}')
 
 
 if __name__ == '__main__':
