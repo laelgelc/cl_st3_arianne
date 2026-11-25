@@ -8,6 +8,27 @@ cl_st3_ph2_arianne/
 
 ## 1. Organise the Climate Change target corpus
 
+### GETTR candidate preparation and review
+
+From `cl_st3_ph1_arianne/`, run:
+
+```shell
+python corpus/00_sources/gettr/prepare_gettr_candidates.py
+```
+
+The output is `corpus/00_sources/gettr/gettr_candidates.ndjson`; the command refuses to overwrite an existing file. Review every candidate's English, duplication, text completeness and provenance. The source contains apparently imported Twitter posts and timestamps predating GETTR; `cdate` is not proof of a GETTR publication date. Decide eligibility before marking `review_status` as `approved` or `rejected` and recording the rationale in `review_notes`. Preserve the source text and identity. The provisional target is 200; no candidate is automatically approved.
+
+### Compile a reviewed stratum
+
+From `cl_st3_ph2_arianne/`, after review:
+
+```shell
+python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/gettr/gettr_candidates.ndjson --output corpus --stratum social-post --count 200 --seed 42
+```
+
+The compiler samples approved candidates uniformly after sorting by ID; seed 42 is an example to record and agree upon. It requires a **new output directory** and refuses an insufficient approved pool or an existing directory. If `corpus/` already exists, choose another new directory; combining additional strata into an existing corpus is not yet implemented. Output includes `human/social-post/` text files, `manifest.ndjson` and `sampling.json` with the input hash and sampling settings. IDs derive from candidate identity, and text hashes support validation.
+
+The manifest records word counts using whitespace splitting; token counts are unmeasured (`null`). Later feature extraction must retain raw counts and separate binary presence/absence values keyed by `text_id`, using missing values when a feature cannot be measured. SAS export, model allocation, generated texts, summaries and other source adapters remain pending. The sections below are legacy ENADE material and are not the current climate workflow.
 
 ## 2. Tag the corpus
 
