@@ -188,10 +188,13 @@ Inside the session, run:
 ```shell
 bash run_python_ec2.sh summarise_corpus.py generate \
   --corpus corpus \
-  --checkpoints summary_runs/production
+  --checkpoints summary_runs/production \
+  2>> summary_production.log
 ```
 
-This processes all compiled human units and incurs API costs. Ensure the corpus, API key and `openai` package are available on EC2, and check the wrapper's Conda and AWS settings. The wrapper attempts to stop the instance on success **or failure**; keep checkpoints on persistent storage. Detach with `Ctrl+B`, then `D`, and reattach with `tmux attach -t summaries`. Rerun the same command after an error to resume; do not run concurrent processes against the same checkpoints.
+This processes all compiled human units and incurs API costs. Ensure the corpus, API key and `openai` package are available on EC2, and check the wrapper's Conda and AWS settings. The wrapper attempts to stop the instance on success **or failure**; keep checkpoints and the log on persistent storage. Detach with `Ctrl+B`, then `D`, and reattach with `tmux attach -t summaries`.
+
+Standard-error diagnostics are appended to `summary_production.log`; inspect it with `tail -f summary_production.log`. JSON events include per-unit progress, failures, invalid responses and a run summary; response status and available token usage help diagnose incomplete responses. The log does not include source or response text, prompts, or exception messages. The wrapper may also write non-JSON messages to this file. Unit-level API failures and invalid responses are skipped for that run, which exits unsuccessfully if any occurred; setup, authentication and permission errors stop the run early. Rerun the same command to retry missing units while reusing compatible checkpoints; changed sources, prompt, model or token limit require a separate checkpoint directory. Do not run concurrent processes against the same checkpoints. An abrupt termination may prevent a final run-summary event.
 
 After generation, export and review the spreadsheet, then import the decisions into a new manifest:
 

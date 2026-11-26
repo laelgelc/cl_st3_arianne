@@ -1,4 +1,5 @@
 import json
+import io
 import os
 import tempfile
 import unittest
@@ -38,6 +39,26 @@ class SummaryWorkflowTests(unittest.TestCase):
     def generate(self):
         summary.generate(self.corpus, self.checkpoints, self.prompt, client=self.client)
 
+    def test_diagnostics_continue_and_resume_without_leaking(self):
+        log = io.StringIO()
+        self.client.responses.create.side_effect = [
+            SimpleNamespace(status='incomplete', output_text='secret source text',
+                            incomplete_details=SimpleNamespace(reason='max_output_tokens'),
+                            usage=SimpleNamespace(input_tokens=12, output_tokens=2000, total_tokens=2012)),
+            SimpleNamespace(status='completed', output_text='Valid')]
+        with patch('sys.stderr', log), self.assertRaises(summary.GenerationError):
+            self.generate()
+        events = [json.loads(line) for line in log.getvalue().splitlines()]
+        invalid = next(e for e in events if e['event'] == 'invalid_response')
+        self.assertEqual((invalid['unit_id'], invalid['status'], invalid['reason'], invalid['output_tokens']),
+                         ('one', 'incomplete', 'max_output_tokens', 2000))
+        self.assertEqual(events[-1]['failed'], 1)
+        self.assertNotIn('secret', log.getvalue())
+        self.assertTrue((self.checkpoints / 'two.json').exists())
+        self.client.responses.create.side_effect = None
+        self.generate()
+        self.assertEqual(self.client.responses.create.call_count, 3)
+
     def test_generation_resume_and_provenance(self):
         self.generate()
         self.assertEqual(self.client.responses.create.call_count, 2)
@@ -51,7 +72,7 @@ class SummaryWorkflowTests(unittest.TestCase):
 
     def test_failure_leaves_completed_checkpoint_for_retry(self):
         self.client.responses.create.side_effect = [SimpleNamespace(status='completed', output_text='First'), RuntimeError('API error')]
-        with self.assertRaisesRegex(RuntimeError, 'API error'):
+        with self.assertRaises(summary.GenerationError):
             self.generate()
         self.assertTrue((self.checkpoints / 'one.json').exists())
         self.assertFalse((self.checkpoints / 'two.json').exists())
@@ -64,9 +85,108 @@ class SummaryWorkflowTests(unittest.TestCase):
                          SimpleNamespace(status='completed', output_text=''),
                          SimpleNamespace(status='completed', output_text='word ' * 101)):
             self.client.responses.create.return_value = response
-            with self.assertRaises(ValueError):
+            with self.assertRaises(summary.GenerationError):
                 self.generate()
             self.assertFalse((self.checkpoints / 'one.json').exists())
+
+    def test_api_exception_redacted_and_interruption_summary(self):
+        log = io.StringIO()
+        self.client.responses.create.side_effect = [RuntimeError('secret one source text'), KeyboardInterrupt()]
+        with patch('sys.stderr', log), self.assertRaises(KeyboardInterrupt):
+            self.generate()
+        events = [json.loads(line) for line in log.getvalue().splitlines()]
+        self.assertEqual(events[1], {'event': 'failure', 'unit_id': 'one', 'reason': 'api_exception', 'error_type': 'unknown'})
+        self.assertEqual(events[-1]['outcome'], 'interrupted')
+        self.assertEqual(events[-1]['failed'], 1)
+        self.assertNotIn('secret', log.getvalue())
+        self.assertNotIn('source text', log.getvalue())
+
+    def test_api_exception_classification_and_fatal_auth(self):
+        AuthenticationError = type('AuthenticationError', (Exception,), {})
+        error = AuthenticationError('secret')
+        error.status_code = 401
+        self.client.responses.create.side_effect = error
+        log = io.StringIO()
+        with patch('sys.stderr', log), self.assertRaises(summary.GenerationError):
+            self.generate()
+        events = [json.loads(line) for line in log.getvalue().splitlines()]
+        self.assertEqual(events[1], {'event': 'failure', 'unit_id': 'one', 'reason': 'api_exception',
+                                     'error_type': 'AuthenticationError', 'http_status': 401})
+        self.assertEqual(events[-1]['outcome'], 'failed')
+        self.assertEqual(events[-1]['failed'], 1)
+        self.assertEqual(self.client.responses.create.call_count, 1)
+        self.assertNotIn('secret', log.getvalue())
+
+    def test_retryable_and_unknown_exception_diagnostics(self):
+        RateLimitError = type('RateLimitError', (Exception,), {})
+        error = RateLimitError('secret')
+        error.status_code = 429
+        unknown = type('SecretClassName', (Exception,), {})('secret')
+        unknown.status_code = 'secret'
+        self.client.responses.create.side_effect = [error, unknown]
+        log = io.StringIO()
+        with patch('sys.stderr', log), self.assertRaises(summary.GenerationError):
+            self.generate()
+        failures = [json.loads(line) for line in log.getvalue().splitlines() if '"event": "failure"' in line]
+        self.assertEqual([(e['error_type'], e.get('http_status')) for e in failures],
+                         [('RateLimitError', 429), ('unknown', None)])
+        self.assertEqual(self.client.responses.create.call_count, 2)
+        self.assertNotIn('secret', log.getvalue())
+        self.assertNotIn('SecretClassName', log.getvalue())
+
+    def test_client_setup_failure_stops_once(self):
+        import sys
+        log = io.StringIO()
+        with patch.dict(sys.modules, {'openai': SimpleNamespace(OpenAI=Mock(side_effect=RuntimeError('secret')))}), \
+             patch('sys.stderr', log), self.assertRaises(summary.GenerationError):
+            summary.generate(self.corpus, self.checkpoints, self.prompt)
+        events = [json.loads(line) for line in log.getvalue().splitlines()]
+        self.assertEqual(events[1]['reason'], 'client_setup')
+        self.assertEqual(events[-1]['outcome'], 'failed')
+        self.assertEqual(events[-1]['failed'], 1)
+        self.assertEqual(len([e for e in events if e['event'] == 'progress']), 1)
+        self.assertNotIn('secret', log.getvalue())
+
+    def test_permission_and_status_stop_without_sdk_class(self):
+        for error in (type('PermissionDeniedError', (Exception,), {})(), RuntimeError()):
+            if type(error) is RuntimeError:
+                error.status_code = 403
+            self.client.responses.create.reset_mock()
+            self.client.responses.create.side_effect = error
+            with patch('sys.stderr', io.StringIO()), self.assertRaises(summary.GenerationError):
+                self.generate()
+            self.assertEqual(self.client.responses.create.call_count, 1)
+
+    def test_missing_sdk_stops_once(self):
+        import sys
+        log = io.StringIO()
+        with patch.dict(sys.modules, {'openai': None}), patch('sys.stderr', log), \
+             self.assertRaises(summary.GenerationError):
+            summary.generate(self.corpus, self.checkpoints, self.prompt)
+        events = [json.loads(line) for line in log.getvalue().splitlines()]
+        self.assertEqual(events[1]['reason'], 'client_setup')
+        self.assertEqual(events[-1]['outcome'], 'failed')
+        self.assertEqual(len([e for e in events if e['event'] == 'progress']), 1)
+
+    def test_checkpoint_symlink_is_not_followed(self):
+        self.checkpoints.mkdir()
+        external = self.root / 'external'
+        external.write_text('do not touch')
+        (self.checkpoints / 'one.json').symlink_to(external)
+        with patch('sys.stderr', io.StringIO()), self.assertRaisesRegex(ValueError, 'symlink'):
+            self.generate()
+        self.assertEqual(external.read_text(), 'do not touch')
+        self.assertEqual(self.client.responses.create.call_count, 0)
+
+    def test_cli_failure_and_interruption_exit_codes(self):
+        for error, code in ((summary.GenerationError('secret'), 1), (KeyboardInterrupt(), 130)):
+            log = io.StringIO()
+            with patch('sys.argv', ['summarise_corpus.py', 'generate', '--corpus', 'c', '--checkpoints', 'd']), \
+                 patch('sys.stderr', log), patch.object(summary, 'generate', side_effect=error), \
+                 self.assertRaises(SystemExit) as result:
+                summary.main()
+            self.assertEqual(result.exception.code, code)
+            self.assertNotIn('secret', log.getvalue())
 
     def test_review_validation_and_no_overwrite(self):
         self.generate()

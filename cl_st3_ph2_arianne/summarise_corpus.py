@@ -5,6 +5,9 @@ Generate checkpoints, export a JSONL or XLSX review file, edit only review_statu
 review_notes and summary, then import into a new JSONL file. Review statuses are pending,
 approved and rejected. All paths are explicit; no corpus files are modified.
 Requires the openai Python package only for generation.
+Generation emits JSON lines to stderr: progress, failures, invalid responses and a
+run summary. Rerun the same command to retry missing units; valid checkpoints are
+reused. Diagnostic records exclude response text, prompts and exception messages.
 """
 import argparse
 import hashlib
@@ -12,6 +15,7 @@ import io
 import json
 import os
 import re
+import sys
 import tempfile
 from pathlib import Path, PurePosixPath
 
@@ -135,6 +139,42 @@ def load_checkpoint(path, expected=None):
     return row
 
 
+class GenerationError(Exception):
+    """One or more units failed; rerun to retry missing checkpoints."""
+
+
+def diagnostic(event, **fields):
+    print(json.dumps({'event': event, **fields}, sort_keys=True), file=sys.stderr, flush=True)
+
+
+def exception_diagnostics(error):
+    allowed = ('APIError', 'APIStatusError', 'APIConnectionError', 'APITimeoutError',
+               'AuthenticationError', 'PermissionDeniedError', 'BadRequestError',
+               'NotFoundError', 'ConflictError', 'UnprocessableEntityError',
+               'RateLimitError', 'InternalServerError', 'OpenAIError')
+    name = type(error).__name__
+    result = {'error_type': name if name in allowed else 'unknown'}
+    status = getattr(error, 'status_code', None)
+    if type(status) is int and 100 <= status <= 599:
+        result['http_status'] = status
+    return result
+
+
+def response_diagnostics(response):
+    status = getattr(response, 'status', None)
+    result = {'status': status if status in ('completed', 'incomplete', 'failed', 'cancelled', 'queued', 'in_progress') else 'unknown'}
+    details = getattr(response, 'incomplete_details', None)
+    reason = getattr(details, 'reason', None)
+    if reason in ('max_output_tokens', 'content_filter'):
+        result['reason'] = reason
+    usage = getattr(response, 'usage', None)
+    for key in ('input_tokens', 'output_tokens', 'total_tokens'):
+        value = getattr(usage, key, None)
+        if type(value) is int and value >= 0:
+            result[key] = value
+    return result
+
+
 def generate(corpus, directory, prompt_path=PROMPT, model=MODEL, client=None, stratum=None, limit=None, max_output_tokens=2000, env_file=ENV_FILE):
     prompt = prompt_path.read_text(encoding='utf-8')
     if not prompt.strip() or not model.strip():
@@ -144,24 +184,71 @@ def generate(corpus, directory, prompt_path=PROMPT, model=MODEL, client=None, st
     items = sources(corpus, stratum, limit)
     directory = Path(directory)
     directory.mkdir(parents=True, exist_ok=True)
-    for item in items:
-        expected = metadata(item, prompt, model, max_output_tokens)
-        target = checkpoint_path(directory, item['unit_id'])
-        if target.exists() or target.is_symlink():
-            load_checkpoint(target, expected)
-            continue
-        if client is None:
-            from openai import OpenAI
-            load_api_key(env_file)
-            client = OpenAI()
-        response = client.responses.create(model=model, instructions=prompt, input=item['text'], max_output_tokens=max_output_tokens)
-        if getattr(response, 'status', None) != 'completed':
-            raise ValueError(f'Incomplete or failed API response for {item["unit_id"]}')
-        summary = valid_summary(getattr(response, 'output_text', None))
-        row = {**expected, 'summary': summary, 'summary_word_count': words(summary),
-               'review_status': 'pending', 'review_notes': '',
-               'response_id': getattr(response, 'id', None), 'actual_model': getattr(response, 'model', None)}
-        publish(target, encoded(row))
+    counts = {'total': len(items), 'reused': 0, 'generated': 0, 'failed': 0}
+    outcome = 'aborted'
+    try:
+        for index, item in enumerate(items, 1):
+            uid = item['unit_id']
+            diagnostic('progress', unit_id=uid, index=index, total=len(items))
+            expected = metadata(item, prompt, model, max_output_tokens)
+            target = checkpoint_path(directory, uid)
+            if target.is_symlink():
+                diagnostic('failure', unit_id=uid, reason='unsafe_checkpoint')
+                raise ValueError('Checkpoint must not be a symlink')
+            if target.exists():
+                try:
+                    load_checkpoint(target, expected)
+                except (ValueError, OSError):
+                    diagnostic('failure', unit_id=uid, reason='invalid_checkpoint')
+                    raise
+                counts['reused'] += 1
+                continue
+            if client is None:
+                try:
+                    from openai import OpenAI
+                    load_api_key(env_file)
+                    client = OpenAI()
+                except Exception as error:
+                    counts['failed'] += 1
+                    diagnostic('failure', unit_id=uid, reason='client_setup', **exception_diagnostics(error))
+                    break
+            try:
+                response = client.responses.create(model=model, instructions=prompt, input=item['text'], max_output_tokens=max_output_tokens)
+            except Exception as error:
+                counts['failed'] += 1
+                info = exception_diagnostics(error)
+                diagnostic('failure', unit_id=uid, reason='api_exception', **info)
+                if info['error_type'] in ('AuthenticationError', 'PermissionDeniedError') or info.get('http_status') in (401, 403):
+                    break
+                continue
+            info = response_diagnostics(response)
+            text = getattr(response, 'output_text', None)
+            validation = None
+            if info['status'] != 'completed':
+                validation = 'response_not_completed'
+            elif not isinstance(text, str) or not text.strip():
+                validation = 'empty_summary'
+            elif words(text) > 100:
+                validation = 'summary_too_long'
+            if validation:
+                counts['failed'] += 1
+                diagnostic('invalid_response', unit_id=uid, validation=validation, **info)
+                continue
+            text = text.strip()
+            row = {**expected, 'summary': text, 'summary_word_count': words(text),
+                   'review_status': 'pending', 'review_notes': '',
+                   'response_id': getattr(response, 'id', None), 'actual_model': getattr(response, 'model', None)}
+            publish(target, encoded(row))
+            counts['generated'] += 1
+            diagnostic('generated', unit_id=uid, **info)
+        outcome = 'failed' if counts['failed'] else 'completed'
+    except KeyboardInterrupt:
+        outcome = 'interrupted'
+        raise
+    finally:
+        diagnostic('run_summary', outcome=outcome, **counts)
+    if counts['failed']:
+        raise GenerationError('Generation failed for one or more units; rerun to retry')
 
 
 def review_rows(corpus, directory, stratum=None, limit=None):
@@ -287,7 +374,13 @@ def main():
                 command.add_argument('--review', type=Path, required=True)
     args = parser.parse_args()
     if args.command == 'generate':
-        generate(args.corpus, args.checkpoints, args.prompt, args.model, stratum=args.stratum, limit=args.limit, max_output_tokens=args.max_output_tokens, env_file=args.env_file)
+        try:
+            generate(args.corpus, args.checkpoints, args.prompt, args.model, stratum=args.stratum, limit=args.limit, max_output_tokens=args.max_output_tokens, env_file=args.env_file)
+        except KeyboardInterrupt:
+            raise SystemExit(130)
+        except Exception:
+            diagnostic('fatal', reason='generation_failed')
+            raise SystemExit(1)
     elif args.command == 'export-review':
         export_review(args.corpus, args.checkpoints, args.output, args.stratum, args.limit)
     else:
