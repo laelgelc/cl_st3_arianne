@@ -212,6 +212,9 @@ After generation, export and review the spreadsheet, then import the decisions i
 
 ```shell
 python summarise_corpus.py export-review --corpus corpus --checkpoints summary_runs/production --output summary_runs/production_review.xlsx
+```
+
+```shell
 python summarise_corpus.py import-review --corpus corpus --checkpoints summary_runs/production --review summary_runs/production_review.xlsx --output summary_runs/production_reviewed.ndjson
 ```
 
