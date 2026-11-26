@@ -54,6 +54,18 @@ python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/no
 
 At least 200 approvals are needed; the seed is an example. The compiler samples from the approved pool only, not from all CORE classifications. Back up the existing corpus before adding this stratum.
 
+#### Replace a rejected press text
+
+Back up the corpus and summary checkpoints. Mark the existing candidate rejected in the saved review spreadsheet, and approve at least one suitable article not already in the corpus. From `cl_st3_ph2_arianne/`, for example:
+
+```shell
+python compile_corpus.py --candidates ../cl_st3_ph1_arianne/corpus/00_sources/now/now_candidates.ndjson --review-xlsx ../cl_st3_ph1_arianne/corpus/00_sources/now/now_candidates_review.xlsx --reviewed-manifest ../cl_st3_ph1_arianne/corpus/00_sources/now/now_candidates_replacement_reviewed.ndjson --output corpus --replace-candidate now:52216374 --seed 42
+```
+
+Use a new reviewed-manifest filename if decisions have changed. The importer validates the spreadsheet and source files; the replacement is selected from approved, unused candidates in the same stratum using the recorded seed. The new unit ID, removed unit ID, reviewed-manifest hash and selection details are recorded in `sampling.json`. Other units and summary checkpoints are not regenerated. For strata with source quotas, replacements are restricted to the same source.
+
+The operation copies the corpus before publication; allow sufficient disk space and do not run concurrent updates. Publication is not crash-atomic: after interruption, inspect the adjacent `.replace-*` directory and restore from backup if needed. A reviewed manifest may already have been created even if replacement fails. After replacement, rerun summary generation with the same settings and checkpoints to reuse compatible summaries and generate the new unit's summary, then export a new review spreadsheet. Old review exports and the removed unit's checkpoint remain historical evidence, not current corpus summaries.
+
 ### NGO story candidate preparation and review
 
 From `cl_st3_ph1_arianne/`, to create a new review bundle (requires `openpyxl`):

@@ -302,3 +302,190 @@ def test_corpus_retains_legacy_basename_and_existing_absolute_provenance(tmp_pat
     write_rows(candidates, [dict(row, candidate_id='two', stratum='second')])
     compile_corpus(candidates, corpus, 'second', 1, 1)
     assert (corpus / 'manifest.ndjson').read_bytes().startswith(old)
+
+
+def test_replace_unit_review_and_preservation(tmp_path):
+    from openpyxl import load_workbook
+    from compile_corpus import replace_unit
+
+    source = tmp_path / 'source.ndjson'
+    write_rows(source, [{'_id': str(i), 'text': f'Climate change {i}', 'cdate': 1625164646880} for i in range(6)])
+    candidates = tmp_path / 'candidates.ndjson'
+    adapter.prepare(source, candidates)
+    rows = [json.loads(line) for line in candidates.read_text().splitlines()]
+    for row in rows:
+        row['review_status'] = 'approved'
+    write_rows(candidates, rows)
+    sheet = tmp_path / 'review.xlsx'
+    adapter.export_review(candidates, sheet)
+    corpus = tmp_path / 'corpus'
+    compile_corpus(candidates, corpus, 'social-post', 2, 42)
+    before = [json.loads(line) for line in (corpus / 'manifest.ndjson').read_text().splitlines()]
+    removed, kept = before
+    (corpus / 'summary.txt').write_text('unchanged')
+    old_sampling = json.loads((corpus / 'sampling.json').read_text())['strata']
+    book = load_workbook(sheet)
+    for row in book['Review'].iter_rows(min_row=2):
+        if row[0].value == removed['candidate_id']:
+            row[3].value = 'rejected'
+    book.save(sheet)
+    reviewed = tmp_path / 'reviewed.ndjson'
+    import_review(candidates, sheet, reviewed)
+    import shutil
+    other = tmp_path / 'other'
+    shutil.copytree(corpus, other)
+    for target in (corpus, other):
+        replace_unit(reviewed, target, removed['candidate_id'], 7)
+    after = [json.loads(line) for line in (corpus / 'manifest.ndjson').read_text().splitlines()]
+    assert after[1] == kept
+    assert after[0]['candidate_id'] not in {r['candidate_id'] for r in before}
+    assert (corpus / 'manifest.ndjson').read_bytes() == (other / 'manifest.ndjson').read_bytes()
+    assert not (corpus / removed['filepath']).exists()
+    assert (corpus / kept['filepath']).read_bytes() == (other / kept['filepath']).read_bytes()
+    assert (corpus / 'summary.txt').read_text() == 'unchanged'
+    sampling = json.loads((corpus / 'sampling.json').read_text())
+    assert sampling['strata'] == old_sampling
+    assert sampling['replacements'][0]['removed_candidate_id'] == removed['candidate_id']
+    assert sampling['replacements'][0]['replacement_candidate_id'] == after[0]['candidate_id']
+    extra = tmp_path / 'extra.ndjson'
+    write_rows(extra, [dict(rows[0], candidate_id='extra', stratum='other')])
+    compile_corpus(extra, corpus, 'other', 1, 1)
+    assert json.loads((corpus / 'sampling.json').read_text())['replacements'] == sampling['replacements']
+
+
+def test_replace_unit_fails_safely(tmp_path, monkeypatch):
+    import compile_corpus as compiler
+
+    rows = [dict(candidate_id=str(i), text='Climate text', review_status='approved',
+                 stratum='social-post', actor='a', register='r', source='s', source_id=str(i)) for i in range(3)]
+    candidates = tmp_path / 'candidates.ndjson'
+    write_rows(candidates, rows)
+    corpus = tmp_path / 'corpus'
+    compile_corpus(candidates, corpus, 'social-post', 1, 42)
+    original = {p.relative_to(corpus): p.read_bytes() for p in corpus.rglob('*') if p.is_file()}
+    removed = json.loads((corpus / 'manifest.ndjson').read_text())['candidate_id']
+    with pytest.raises(ValueError, match='rejected'):
+        compiler.replace_unit(candidates, corpus, removed, 4)
+    for row in rows:
+        if row['candidate_id'] == removed:
+            row['review_status'] = 'rejected'
+            row['text'] = 'different'
+    write_rows(candidates, rows)
+    with pytest.raises(ValueError, match='does not match corpus'):
+        compiler.replace_unit(candidates, corpus, removed, 4)
+    for row in rows:
+        row['text'] = 'Climate text'
+    write_rows(candidates, rows)
+    rename = compiler.os.rename
+
+    # Fail only the staged publish, not the restoration of the backup.
+    def fail_once(src, dst):
+        if Path(dst) == corpus and Path(src).name == 'staged':
+            raise OSError('simulated publish failure')
+        return rename(src, dst)
+
+    monkeypatch.setattr(compiler.os, 'rename', fail_once)
+    with pytest.raises(OSError, match='simulated'):
+        compiler.replace_unit(candidates, corpus, removed, 4)
+    assert {p.relative_to(corpus): p.read_bytes() for p in corpus.rglob('*') if p.is_file()} == original
+
+
+def test_replacement_retains_backup_if_restoration_fails(tmp_path, monkeypatch):
+    import compile_corpus as compiler
+
+    rows = [dict(candidate_id=str(i), text='Climate text', review_status='approved',
+                 stratum='social-post', actor='a', register='r', source='s', source_id=str(i)) for i in range(2)]
+    candidates = tmp_path / 'candidates.ndjson'
+    write_rows(candidates, rows)
+    corpus = tmp_path / 'corpus'
+    compile_corpus(candidates, corpus, 'social-post', 1, 42)
+    before = (corpus / 'manifest.ndjson').read_bytes()
+    removed = json.loads(before)['candidate_id']
+    for row in rows:
+        if row['candidate_id'] == removed:
+            row['review_status'] = 'rejected'
+    write_rows(candidates, rows)
+    rename = compiler.os.rename
+
+    def fail_publish_and_restore(src, dst):
+        if Path(dst) == corpus:
+            raise OSError('simulated failure')
+        return rename(src, dst)
+
+    monkeypatch.setattr(compiler.os, 'rename', fail_publish_and_restore)
+    with pytest.raises(OSError, match='simulated'):
+        compiler.replace_unit(candidates, corpus, removed, 4)
+    backups = list(tmp_path.glob('.replace-*/backup/manifest.ndjson'))
+    assert len(backups) == 1 and backups[0].read_bytes() == before
+
+
+def test_replacement_source_quota_and_no_eligible(tmp_path):
+    from compile_corpus import replace_unit
+
+    rows = [dict(candidate_id=str(i), text=f'text {i}', review_status='approved',
+                 stratum='social-post', actor='a', register='r', source=source, source_id=str(i))
+            for i, source in enumerate(('a', 'a', 'b', 'b'))]
+    candidates = tmp_path / 'candidates.ndjson'
+    write_rows(candidates, rows)
+    corpus = tmp_path / 'corpus'
+    compile_corpus(candidates, corpus, 'social-post', 2, 1, {'a': 1, 'b': 1})
+    before = [json.loads(line) for line in (corpus / 'manifest.ndjson').read_text().splitlines()]
+    removed = before[0]
+    for row in rows:
+        if row['candidate_id'] == removed['candidate_id']:
+            row['review_status'] = 'rejected'
+        elif row['source'] == removed['source']:
+            row['review_status'] = 'pending'
+    write_rows(candidates, rows)
+    original = (corpus / 'manifest.ndjson').read_bytes()
+    with pytest.raises(ValueError, match='No eligible'):
+        replace_unit(candidates, corpus, removed['candidate_id'], 1)
+    assert (corpus / 'manifest.ndjson').read_bytes() == original
+    for row in rows:
+        if row['review_status'] == 'pending':
+            row['review_status'] = 'approved'
+    write_rows(candidates, rows)
+    replace_unit(candidates, corpus, removed['candidate_id'], 1)
+    after = [json.loads(line) for line in (corpus / 'manifest.ndjson').read_text().splitlines()]
+    assert after[0]['source'] == removed['source']
+
+
+def test_replacement_cli_requires_valid_review(tmp_path):
+    import subprocess
+    import sys
+    from openpyxl import load_workbook
+
+    source = tmp_path / 'source.ndjson'
+    write_rows(source, [{'_id': str(i), 'text': f'Climate {i}', 'cdate': 1625164646880} for i in range(3)])
+    candidates = tmp_path / 'candidates.ndjson'
+    adapter.prepare(source, candidates)
+    rows = [json.loads(line) for line in candidates.read_text().splitlines()]
+    for row in rows:
+        row['review_status'] = 'approved'
+    write_rows(candidates, rows)
+    corpus = tmp_path / 'corpus'
+    compile_corpus(candidates, corpus, 'social-post', 1, 42)
+    removed = json.loads((corpus / 'manifest.ndjson').read_text())['candidate_id']
+    sheet = tmp_path / 'review.xlsx'
+    adapter.export_review(candidates, sheet)
+    book = load_workbook(sheet)
+    for row in book['Review'].iter_rows(min_row=2):
+        if row[0].value == removed:
+            row[3].value = 'rejected'
+            row[1].value = 'tampered'
+    book.save(sheet)
+    reviewed = tmp_path / 'reviewed.ndjson'
+    command = [sys.executable, str(Path(__file__).with_name('compile_corpus.py')), '--candidates', str(candidates),
+               '--output', str(corpus), '--replace-candidate', removed, '--seed', '7',
+               '--review-xlsx', str(sheet), '--reviewed-manifest', str(reviewed)]
+    before = (corpus / 'manifest.ndjson').read_bytes()
+    result = subprocess.run(command, capture_output=True, text=True)
+    assert result.returncode != 0 and 'Changed source data' in result.stderr
+    assert not reviewed.exists() and (corpus / 'manifest.ndjson').read_bytes() == before
+    for row in book['Review'].iter_rows(min_row=2):
+        if row[0].value == removed:
+            row[1].value = next(item['text'] for item in rows if item['candidate_id'] == removed)
+    book.save(sheet)
+    result = subprocess.run(command, capture_output=True, text=True)
+    assert result.returncode == 0, result.stderr
+    assert json.loads((corpus / 'manifest.ndjson').read_text())['candidate_id'] != removed
