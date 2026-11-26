@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Generate and review summaries. Run with --help for commands and options.
 
-Generate checkpoints, export a JSONL review file, edit only review_status,
+Generate checkpoints, export a JSONL or XLSX review file, edit only review_status,
 review_notes and summary, then import into a new JSONL file. Review statuses are pending,
 approved and rejected. All paths are explicit; no corpus files are modified.
 Requires the openai Python package only for generation.
 """
 import argparse
 import hashlib
+import io
 import json
 import os
 import re
@@ -17,6 +18,25 @@ from pathlib import Path, PurePosixPath
 
 PROMPT = Path(__file__).with_name('summary_prompt.md')
 MODEL = 'gpt-6.1-terra'
+ENV_FILE = Path(__file__).resolve().parent / 'env' / '.env'
+
+
+def load_api_key(path):
+    """Load a simple OPENAI_API_KEY assignment without overriding the environment."""
+    path = Path(path)
+    if not path.exists():
+        return
+    for raw_line in path.read_text(encoding='utf-8').splitlines():
+        line = raw_line.strip()
+        if line.startswith('export '):
+            line = line[7:].strip()
+        key, separator, value = line.partition('=')
+        if separator and key.strip() == 'OPENAI_API_KEY':
+            value = value.strip()
+            if len(value) >= 2 and value[0] == value[-1] and value[0] in ('"', "'"):
+                value = value[1:-1]
+            os.environ.setdefault('OPENAI_API_KEY', value)
+            break
 
 
 def digest(data):
@@ -115,7 +135,7 @@ def load_checkpoint(path, expected=None):
     return row
 
 
-def generate(corpus, directory, prompt_path=PROMPT, model=MODEL, client=None, stratum=None, limit=None, max_output_tokens=2000):
+def generate(corpus, directory, prompt_path=PROMPT, model=MODEL, client=None, stratum=None, limit=None, max_output_tokens=2000, env_file=ENV_FILE):
     prompt = prompt_path.read_text(encoding='utf-8')
     if not prompt.strip() or not model.strip():
         raise ValueError('Prompt and model must not be empty')
@@ -132,6 +152,7 @@ def generate(corpus, directory, prompt_path=PROMPT, model=MODEL, client=None, st
             continue
         if client is None:
             from openai import OpenAI
+            load_api_key(env_file)
             client = OpenAI()
         response = client.responses.create(model=model, instructions=prompt, input=item['text'], max_output_tokens=max_output_tokens)
         if getattr(response, 'status', None) != 'completed':
@@ -156,17 +177,75 @@ def review_rows(corpus, directory, stratum=None, limit=None):
 
 
 def export_review(corpus, directory, output, stratum=None, limit=None):
-    publish(output, b''.join(encoded(row) for row in review_rows(corpus, directory, stratum, limit)))
+    rows = review_rows(corpus, directory, stratum, limit)
+    if Path(output).suffix.lower() != '.xlsx':
+        publish(output, b''.join(encoded(row) for row in rows))
+        return
+    from openpyxl import Workbook
+    from openpyxl.cell.cell import ILLEGAL_CHARACTERS_RE
+    from openpyxl.worksheet.datavalidation import DataValidation
+
+    workbook = Workbook()
+    sheet = workbook.active
+    sheet.title = 'Summaries'
+    headers = ('unit_id', 'stratum', 'filepath', 'source_sha256', 'checkpoint_sha256',
+               'summary', 'review_status', 'review_notes')
+    sheet.append(headers)
+    for row in rows:
+        values = [row['unit_id'], row['stratum'], row['filepath'], row['source_sha256'],
+                  digest(checkpoint_path(directory, row['unit_id']).read_bytes()),
+                  row['summary'], row['review_status'], row['review_notes']]
+        for value in values:
+            if isinstance(value, str) and (len(value) > 32767 or ILLEGAL_CHARACTERS_RE.search(value)):
+                raise ValueError(f'Value cannot be represented in XLSX: {row["unit_id"]}; use JSONL')
+        sheet.append(values)
+        for cell in sheet[sheet.max_row]:
+            if isinstance(cell.value, str):
+                cell.data_type = 's'
+    validation = DataValidation(type='list', formula1='"pending,approved,rejected"')
+    sheet.add_data_validation(validation)
+    validation.add(f'G2:G{max(2, len(rows) + 1)}')
+    sheet.freeze_panes = 'A2'
+    sheet.auto_filter.ref = sheet.dimensions
+    data = io.BytesIO()
+    workbook.save(data)
+    publish(output, data.getvalue())
 
 
 def import_review(corpus, directory, review, output, stratum=None, limit=None):
     originals = {row['unit_id']: row for row in review_rows(corpus, directory, stratum, limit)}
     reviewed = []
     seen = set()
-    for line in Path(review).read_text(encoding='utf-8').splitlines():
-        if not line.strip():
-            continue
-        row = json.loads(line)
+    if Path(review).suffix.lower() == '.xlsx':
+        from openpyxl import load_workbook
+        workbook = load_workbook(review, read_only=True, data_only=False)
+        try:
+            sheet = workbook['Summaries']
+            lines = sheet.iter_rows()
+            headers = ('unit_id', 'stratum', 'filepath', 'source_sha256', 'checkpoint_sha256',
+                       'summary', 'review_status', 'review_notes')
+            if tuple(cell.value for cell in next(lines)) != headers:
+                raise ValueError('Invalid review workbook columns')
+            rows = []
+            for cells in lines:
+                if all(cell.value is None for cell in cells):
+                    continue
+                if len(cells) != len(headers) or any(cell.data_type == 'f' for cell in cells):
+                    raise ValueError('Invalid review workbook row')
+                values = dict(zip(headers, (cell.value for cell in cells)))
+                uid = values['unit_id']
+                if uid not in originals:
+                    raise ValueError(f'Unknown unit: {uid}')
+                original = originals[uid]
+                if any(values[k] != original[k] for k in ('stratum', 'filepath', 'source_sha256')) or values['checkpoint_sha256'] != digest(checkpoint_path(directory, uid).read_bytes()):
+                    raise ValueError(f'Changed immutable review fields: {uid}')
+                rows.append({**original, 'summary': values['summary'], 'review_status': values['review_status'],
+                             'review_notes': values['review_notes'] if values['review_notes'] is not None else ''})
+        finally:
+            workbook.close()
+    else:
+        rows = [json.loads(line) for line in Path(review).read_text(encoding='utf-8').splitlines() if line.strip()]
+    for row in rows:
         uid = row.get('unit_id')
         if uid not in originals or uid in seen:
             raise ValueError(f'Unknown or duplicate unit: {uid}')
@@ -201,13 +280,14 @@ def main():
             command.add_argument('--prompt', type=Path, default=PROMPT)
             command.add_argument('--model', default=MODEL)
             command.add_argument('--max-output-tokens', type=int, default=2000)
+            command.add_argument('--env-file', type=Path, default=ENV_FILE, help='Optional API key file (default: phase directory/env/.env)')
         else:
             command.add_argument('--output', type=Path, required=True)
             if name == 'import-review':
                 command.add_argument('--review', type=Path, required=True)
     args = parser.parse_args()
     if args.command == 'generate':
-        generate(args.corpus, args.checkpoints, args.prompt, args.model, stratum=args.stratum, limit=args.limit, max_output_tokens=args.max_output_tokens)
+        generate(args.corpus, args.checkpoints, args.prompt, args.model, stratum=args.stratum, limit=args.limit, max_output_tokens=args.max_output_tokens, env_file=args.env_file)
     elif args.command == 'export-review':
         export_review(args.corpus, args.checkpoints, args.output, args.stratum, args.limit)
     else:

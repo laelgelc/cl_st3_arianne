@@ -158,22 +158,22 @@ Back up the corpus before compilation. Only approved candidates are selected; co
 
 ### Summary generation and review
 
-After compiling human units, install the `openai` Python package and set `OPENAI_API_KEY` in the environment. From `cl_st3_ph2_arianne/`, start a small pilot (this example selects the first two `social-post` units sorted by ID):
+After compiling human units, install the `openai` Python package. For generation, put `OPENAI_API_KEY=your_key` in `cl_st3_ph2_arianne/env/.env`, or set `OPENAI_API_KEY` in the process environment. The environment takes precedence; a missing file is ignored. The default file is resolved relative to the programme, regardless of the working directory; use `--env-file PATH` to select another file (relative paths use the working directory). The loader accepts simple assignments, optional `export`, and quoted values. Keep the key private and do not commit the file. From `cl_st3_ph2_arianne/`, start a small pilot (this example selects the first two `social-post` units sorted by ID):
 
 ```shell
 python summarise_corpus.py generate --corpus corpus --checkpoints summary_runs/social_pilot --stratum social-post --limit 2
-python summarise_corpus.py export-review --corpus corpus --checkpoints summary_runs/social_pilot --stratum social-post --limit 2 --output summary_runs/social_review.ndjson
+python summarise_corpus.py export-review --corpus corpus --checkpoints summary_runs/social_pilot --stratum social-post --limit 2 --output summary_runs/social_review.xlsx
 ```
 
 Repeat with other strata in separate pilot directories. This is a deterministic pilot, not a random sample. The default model is `gpt-6.1-terra`, with `--max-output-tokens 2000`; both are configurable. API calls incur costs. Successful units are checkpointed; rerun the same command after a failure to resume. Changed sources, prompt, model or token limit are rejected for existing checkpoints. Do not run concurrent processes against the same checkpoint directory.
 
-Review every summary against its human text for accuracy, attribution, missing qualifications, neutrality and copying. Edit only `summary`, `review_status` (`pending`, `approved`, `rejected`) and `review_notes` in the review NDJSON; keep all records and other fields unchanged. Then import to a new file using the same selection:
+Install `openpyxl` for XLSX review. Open each `filepath` relative to `corpus/` and review every summary against its human text for accuracy, attribution, missing qualifications, neutrality and copying. Edit only `summary`, `review_status` (`pending`, `approved`, `rejected`) and `review_notes` in the spreadsheet; keep all rows and other fields unchanged. Then import to a new NDJSON file using the same selection:
 
 ```shell
-python summarise_corpus.py import-review --corpus corpus --checkpoints summary_runs/social_pilot --stratum social-post --limit 2 --review summary_runs/social_review.ndjson --output summary_runs/social_reviewed.ndjson
+python summarise_corpus.py import-review --corpus corpus --checkpoints summary_runs/social_pilot --stratum social-post --limit 2 --review summary_runs/social_review.xlsx --output summary_runs/social_reviewed.ndjson
 ```
 
-Review exports and imports do not overwrite existing files. The reviewed output includes pending and rejected records as well as approved ones; only approved summaries should guide generation. Checkpoints retain the original summary and prompt; reviewed records preserve the original summary and checkpoint hash. The 100-word limit and source word count use Python `str.split`; semantic quality still requires human assessment. Source texts and hashes must remain unchanged during review. A full run can omit `--stratum` and `--limit`, but pilot and review the method first. Generation workflows and the optional, default-on length instruction are not yet implemented; no target length range has been selected.
+Review exports and imports do not overwrite existing files. XLSX is selected by the `.xlsx` extension; NDJSON review remains available. Values that cannot be represented in Excel cause export to fail; use NDJSON instead. The reviewed output includes pending and rejected records as well as approved ones; only approved summaries should guide generation. Checkpoints retain the original summary and prompt; reviewed records preserve the original summary and checkpoint hash. The 100-word limit and source word count use Python `str.split`; semantic quality still requires human assessment. Source texts and hashes must remain unchanged during review. A full run can omit `--stratum` and `--limit`, but pilot and review the method first. Generation workflows and the optional, default-on length instruction are not yet implemented; no target length range has been selected.
 
 ## 2. Tag the corpus
 

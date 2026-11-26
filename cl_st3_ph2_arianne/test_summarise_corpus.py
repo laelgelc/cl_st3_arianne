@@ -1,4 +1,5 @@
 import json
+import os
 import tempfile
 import unittest
 from pathlib import Path
@@ -162,6 +163,48 @@ class SummaryWorkflowTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             summary.import_review(self.corpus, self.checkpoints, review, self.root / 'out')
 
+    def test_xlsx_review_roundtrip_and_validation(self):
+        from openpyxl import load_workbook
+        self.generate()
+        review, output = self.root / 'review.xlsx', self.root / 'reviewed.ndjson'
+        summary.export_review(self.corpus, self.checkpoints, review)
+        book = load_workbook(review)
+        sheet = book['Summaries']
+        sheet['F2'] = 'Corrected summary'
+        sheet['G2'] = 'approved'
+        sheet['H2'] = 'Checked'
+        book.save(review)
+        summary.import_review(self.corpus, self.checkpoints, review, output)
+        row = json.loads(output.read_text().splitlines()[0])
+        self.assertEqual((row['summary'], row['review_status'], row['review_notes']),
+                         ('Corrected summary', 'approved', 'Checked'))
+        self.assertEqual(row['generated_summary'], 'A concise summary.')
+        sheet['D2'] = 'changed'
+        book.save(review)
+        with self.assertRaisesRegex(ValueError, 'immutable'):
+            summary.import_review(self.corpus, self.checkpoints, review, self.root / 'bad')
+        sheet['D2'] = self.manifest[0]['text_sha256']
+        sheet['F2'] = '=1+1'
+        book.save(review)
+        with self.assertRaisesRegex(ValueError, 'workbook row'):
+            summary.import_review(self.corpus, self.checkpoints, review, self.root / 'bad')
+
+    def test_xlsx_rejects_missing_and_duplicate_rows(self):
+        from openpyxl import load_workbook
+        self.generate()
+        review = self.root / 'review.xlsx'
+        summary.export_review(self.corpus, self.checkpoints, review)
+        book = load_workbook(review)
+        sheet = book['Summaries']
+        sheet.delete_rows(3)
+        book.save(review)
+        with self.assertRaisesRegex(ValueError, 'missing'):
+            summary.import_review(self.corpus, self.checkpoints, review, self.root / 'out')
+        sheet.append([cell.value for cell in sheet[2]])
+        book.save(review)
+        with self.assertRaisesRegex(ValueError, 'duplicate'):
+            summary.import_review(self.corpus, self.checkpoints, review, self.root / 'out')
+
     def test_changed_source_with_updated_manifest_rejects_resume(self):
         self.generate()
         text = 'new source text'
@@ -176,7 +219,31 @@ class SummaryWorkflowTests(unittest.TestCase):
                                 '--stratum', 'pilot', '--limit', '3', '--max-output-tokens', '321']), \
              patch.object(summary, 'generate') as generate:
             summary.main()
-        self.assertEqual(generate.call_args.kwargs, {'stratum': 'pilot', 'limit': 3, 'max_output_tokens': 321})
+        self.assertEqual(generate.call_args.kwargs, {'stratum': 'pilot', 'limit': 3, 'max_output_tokens': 321, 'env_file': summary.ENV_FILE})
+
+    def test_api_key_file_and_environment_precedence(self):
+        env_file = self.root / '.env'
+        env_file.write_text('# comment\nexport OPENAI_API_KEY="file-key"\n', encoding='utf-8')
+        with patch.dict(os.environ, {}, clear=True):
+            summary.load_api_key(env_file)
+            self.assertEqual(os.environ['OPENAI_API_KEY'], 'file-key')
+            os.environ['OPENAI_API_KEY'] = 'shell-key'
+            summary.load_api_key(env_file)
+            self.assertEqual(os.environ['OPENAI_API_KEY'], 'shell-key')
+        with patch.dict(os.environ, {}, clear=True):
+            summary.load_api_key(self.root / 'missing')
+            self.assertNotIn('OPENAI_API_KEY', os.environ)
+
+    def test_generation_loads_key_before_creating_client(self):
+        import sys
+        env_file = self.root / '.env'
+        env_file.write_text('OPENAI_API_KEY=from-file\n', encoding='utf-8')
+        def create_client():
+            self.assertEqual(os.environ['OPENAI_API_KEY'], 'from-file')
+            return self.client
+        with patch.dict(os.environ, {}, clear=True), patch.dict(sys.modules, {'openai': SimpleNamespace(OpenAI=create_client)}):
+            summary.generate(self.corpus, self.checkpoints, self.prompt, env_file=env_file)
+        self.assertEqual(self.client.responses.create.call_count, 2)
 
 
 if __name__ == '__main__':
