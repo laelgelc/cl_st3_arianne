@@ -137,6 +137,8 @@ Illustrative paired instructions for a Greenpeace story, with the same length gu
 ### 7.3 Summary Preparation and Provenance
 Use an LLM to prepare one neutral summary per human unit, in its own words rather than copied excerpts. Review summaries against the source for accuracy, missing context and copied wording before generation; retain the reviewed summary for any reuse across models. Record the source-unit ID, summary, summarising model, prompt and version, review decisions, assigned generation model, condition, persona, generation prompt and output. These links support paired analysis and reproducibility without treating content alignment as stylistic similarity.
 
+Use `gpt-6.1-terra` initially as an informed model choice, subject to a stratified pilot and human review; model selection is not evidence of summary quality. Preserve attribution, qualifications and uncertainty without endorsing claims or imposing a stance. Record source word counts for later length guidance; the range and counting convention require validation. When generation is implemented, make the shared length instruction configurable and enabled by default for both conditions.
+
 ---
 
 ## 8. Lexical Query Construction and Harvesting Strategy
