@@ -175,6 +175,33 @@ python summarise_corpus.py import-review --corpus corpus --checkpoints summary_r
 
 Review exports and imports do not overwrite existing files. XLSX is selected by the `.xlsx` extension; NDJSON review remains available. Values that cannot be represented in Excel cause export to fail; use NDJSON instead. The reviewed output includes pending and rejected records as well as approved ones; only approved summaries should guide generation. Checkpoints retain the original summary and prompt; reviewed records preserve the original summary and checkpoint hash. The 100-word limit and source word count use Python `str.split`; semantic quality still requires human assessment. Source texts and hashes must remain unchanged during review. A full run can omit `--stratum` and `--limit`, but pilot and review the method first. Generation workflows and the optional, default-on length instruction are not yet implemented; no target length range has been selected.
 
+#### Full summary run on EC2 with tmux
+
+After reviewing the pilots, from `cl_st3_ph2_arianne/` on EC2, start a session:
+
+```shell
+tmux new -s summaries
+```
+
+Inside the session, run:
+
+```shell
+bash run_python_ec2.sh summarise_corpus.py generate \
+  --corpus corpus \
+  --checkpoints summary_runs/production
+```
+
+This processes all compiled human units and incurs API costs. Ensure the corpus, API key and `openai` package are available on EC2, and check the wrapper's Conda and AWS settings. The wrapper attempts to stop the instance on success **or failure**; keep checkpoints on persistent storage. Detach with `Ctrl+B`, then `D`, and reattach with `tmux attach -t summaries`. Rerun the same command after an error to resume; do not run concurrent processes against the same checkpoints.
+
+After generation, export and review the spreadsheet, then import the decisions into a new manifest:
+
+```shell
+python summarise_corpus.py export-review --corpus corpus --checkpoints summary_runs/production --output summary_runs/production_review.xlsx
+python summarise_corpus.py import-review --corpus corpus --checkpoints summary_runs/production --review summary_runs/production_review.xlsx --output summary_runs/production_reviewed.ndjson
+```
+
+Save the reviewed spreadsheet before importing. Choose new output filenames if these already exist.
+
 ## 2. Tag the corpus
 
 This stage tags the finalized ENADE target corpus with POS tags and lemmas using TreeTagger (`tree-tagger-portuguese2`), producing 3-column tab-delimited files in `corpus/05_enade_tagged/` alongside provenance manifests.
